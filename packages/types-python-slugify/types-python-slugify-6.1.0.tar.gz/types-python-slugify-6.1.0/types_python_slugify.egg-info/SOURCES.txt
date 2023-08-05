@@ -1,0 +1,11 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+slugify-stubs/METADATA.toml
+slugify-stubs/__init__.pyi
+slugify-stubs/slugify.pyi
+slugify-stubs/special.pyi
+types_python_slugify.egg-info/PKG-INFO
+types_python_slugify.egg-info/SOURCES.txt
+types_python_slugify.egg-info/dependency_links.txt
+types_python_slugify.egg-info/top_level.txt
