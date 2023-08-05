@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ezyquant
+Version: 0.1.0
+Requires-Python: >=3.8.0
+Requires-Dist: pandas (>=1.4)
+Requires-Dist: sqlalchemy (>=1.4)
+Requires-Dist: ta (>=0.10)
+Requires-Dist: XlsxWriter (>=3.0)
+
