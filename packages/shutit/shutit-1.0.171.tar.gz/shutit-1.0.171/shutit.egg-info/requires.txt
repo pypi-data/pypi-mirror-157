@@ -1,0 +1,11 @@
+cjkwrap
+curtsies>=0.3.0
+future>=0.15
+jinja2>=0.1
+pexpect>=4.0
+six>=1.10
+texttable>=0.1
+
+[dev]
+
+[test]
