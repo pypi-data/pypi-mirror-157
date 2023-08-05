@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: PyStorCLI2
+Version: 0.5.0
+Summary: StorCLI module wrapper 2
+Home-page: https://github.com/Naudit/pystorcli2
+Author: Rafael Leira
+Author-email: rafael.leira@naudit.es
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Topic :: System :: Hardware :: Hardware Drivers
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# PyStorCLI2
+
+[![Coverage Status](https://coveralls.io/repos/github/Naudit/pystorcli2/badge.svg?branch=master)](https://coveralls.io/github/Naudit/pystorcli2?branch=master)
+
+PyStorCLI2 official fork from [pystorcli](https://github.com/Chillisystems/pystorcli).
+
+# How to use PyStorCLI2:
+
+FIXME: create useful readme
