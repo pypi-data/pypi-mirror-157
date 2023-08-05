@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: RCML
+Version: 1.1.2
+Summary: Minimal implementations of classical ML algorithms
+Home-page: https://github.com/piyush01123/Revisiting-Classical-ML
+Author: Piyush Singh
+License: MIT License
+        
+        Copyright (c) 2022, Piyush Singh
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Revisiting Classsical ML
+Implementations of classical ML algorithms in Numpy. Algorithms covered:
+- Linear Regression
+- Logistic Regression
+- Support Vector Machines
+- K Nearest Neighbours (both classifier and regressor)
+- Naive Bayes
+- K Means Clustering
+- Decision Trees
+- HMM
+
+## Installation
+```
+pip install RCML
+```
+
+## Import classical ML algorithm implementations
+```
+# Classification models
+from RCML import KNN_Classifier
+from RCML import Decision_Tree
+from RCML import Logistic_Regression
+from RCML import SVM
+from RCML import Naive_Bayes
+
+# Clustering models
+from RCML import KMeans
+from RCML import KMeansPlusPlus
+
+# Regression models
+from RCML import KNN_Regressor 
+from RCML import Linear_Regressor
+
+# Sequence models
+from RCML import viterbi as HMM
+```
+
+See examples of usage in the repo in files having prefix `run_*`
