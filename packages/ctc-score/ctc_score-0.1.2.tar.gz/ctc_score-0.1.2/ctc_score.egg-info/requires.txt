@@ -1,0 +1,5 @@
+nltk
+transformers>=4.3
+datasets>=1.5
+cleantext
+bert_score>=0.3
