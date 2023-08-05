@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+jobbatch/__init__.py
+jobbatch/main.py
+jobbatch.egg-info/PKG-INFO
+jobbatch.egg-info/SOURCES.txt
+jobbatch.egg-info/dependency_links.txt
+jobbatch.egg-info/top_level.txt
