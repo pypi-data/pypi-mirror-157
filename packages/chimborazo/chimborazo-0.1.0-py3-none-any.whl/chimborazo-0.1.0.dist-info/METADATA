@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: chimborazo
+Version: 0.1.0
+Summary: 
+Author: José Pullaguari
+Author-email: jepullaguari@utpl.edu.ec
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numpy (>=1.23.0,<2.0.0)
