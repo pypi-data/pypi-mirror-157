@@ -1,0 +1,9 @@
+lark>=1.0.0
+
+[docs]
+Sphinx==5.0.2
+sphinx-rtd-theme==1.0.0
+sphinxcontrib-apidoc==0.3.0
+
+[interactive]
+questionary>=1.5.1
