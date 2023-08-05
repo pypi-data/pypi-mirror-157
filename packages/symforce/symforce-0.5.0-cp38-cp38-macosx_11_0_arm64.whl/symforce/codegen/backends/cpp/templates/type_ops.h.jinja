@@ -1,0 +1,75 @@
+{# ----------------------------------------------------------------------------
+ # SymForce - Copyright 2022, Skydio, Inc.
+ # This source code is under the Apache 2.0 license found in the LICENSE file.
+ # ---------------------------------------------------------------------------- #}
+
+#pragma once
+
+#include <Eigen/Dense>
+#include <Eigen/Sparse>
+
+// Import all the known types.
+#include <sym/ops/lie_group_ops.h>
+#include <sym/ops/storage_ops.h>
+#include <sym/pose2.h>
+#include <sym/pose3.h>
+#include <sym/rot2.h>
+#include <sym/rot3.h>
+{% for class_name in camera_cal_class_names %}
+#include <sym/{{ python_util.camelcase_to_snakecase(class_name) }}.h>
+{% endfor %}
+#include <sym/util/typedefs.h>
+
+#include <lcmtypes/sym/type_t.hpp>
+
+namespace sym {
+
+template <typename T>
+static constexpr const bool kIsEigenType = std::is_base_of<Eigen::MatrixBase<T>, T>::value;
+
+template <typename T>
+static constexpr const bool kIsSparseEigenType =
+    std::is_base_of<Eigen::SparseMatrix<typename T::Scalar>, T>::value;
+
+/**
+ * Helper to handle polymorphism by creating a switch from a runtime type enum to dispatch
+ * to the templated method func. Used to perform type-aware operations.
+ *
+ * Args:
+ *   name: Name of the output function (ex: FormatByType)
+ *   func: Name of a function template (ex: FormatHelper)
+ */
+#define BY_TYPE_HELPER(name, func)                                     \
+  template <typename Scalar, typename... Args>                         \
+  auto name(const type_t type, Args&&... args) {                       \
+    switch (type.value) {                                              \
+      case type_t::ROT2:                                               \
+        return func<sym::Rot2<Scalar>>(args...);                       \
+      case type_t::ROT3:                                               \
+        return func<sym::Rot3<Scalar>>(args...);                       \
+      case type_t::POSE2:                                              \
+        return func<sym::Pose2<Scalar>>(args...);                      \
+      case type_t::POSE3:                                              \
+        return func<sym::Pose3<Scalar>>(args...);                      \
+      case type_t::SCALAR:                                             \
+        return func<Scalar>(args...);                                  \
+        {% for i in range(1, 10) %}
+      case type_t::VECTOR{{ i }}:                                      \
+        return func<Eigen::Matrix<Scalar, {{ i }}, 1>>(args...);       \
+        {% endfor %}
+        {% for i in range(1, 10) %}
+        {% for j in range(2, 10) %}
+      case type_t::MATRIX{{ i }}{{ j }}:                               \
+        return func<Eigen::Matrix<Scalar, {{ i }}, {{ j }}>>(args...); \
+        {% endfor %}
+        {% endfor %}
+      {% for class_name in camera_cal_class_names %}
+      case type_t::{{ python_util.camelcase_to_screaming_snakecase(class_name) }}: \
+        return func<sym::{{ class_name }}<Scalar>>(args...);         \
+      {% endfor %}
+      default:                                                         \
+        SYM_ASSERT(false);                                             \
+    }                                                                  \
+  }
+
+}  // namespace sym
