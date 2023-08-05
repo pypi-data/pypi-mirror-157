@@ -1,0 +1,2 @@
+[console_scripts]
+xrayhat = xrayhat.__main__:main
