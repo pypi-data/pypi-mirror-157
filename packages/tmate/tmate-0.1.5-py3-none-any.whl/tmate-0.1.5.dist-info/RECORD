@@ -1,0 +1,10 @@
+tmate/__init__.py,sha256=KSOIlUSVYDq6Y70q-rChAa6TgCWO99M1BMQwCNKXy3A,43
+tmate/__main__.py,sha256=GtssEpEcqKPEKQbygKb2YURDiWRDIhBJJQ6et3JEb3g,1376
+tmate/client.py,sha256=Kba6XpeKizVt2f_dQcQ37lBig43fzfHTa0Ctfr78gng,14474
+tmate/shell.py,sha256=mqbP1mXr1jNfAl3pKYuIiYqwzecGlAO4_EmJemIFjLQ,2929
+tmate/utils.py,sha256=dfnXZKlRgoUryTWg0BDRH4aIHCTiYdQt6_X1MErHlS4,3225
+tmate-0.1.5.dist-info/METADATA,sha256=nAKnP6DLmyXGUBlvvMFzuNxhq-qZvoSCxP-to59TyNg,2590
+tmate-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tmate-0.1.5.dist-info/entry_points.txt,sha256=NQeWQ6rf2tFW1sPpk1uiivSfXzjsSKtKKpHOdqF76hU,47
+tmate-0.1.5.dist-info/top_level.txt,sha256=9iHS9_3j-4GYapxUJtv0H4rH25BmdwVqK-rg59xd93Y,6
+tmate-0.1.5.dist-info/RECORD,,
