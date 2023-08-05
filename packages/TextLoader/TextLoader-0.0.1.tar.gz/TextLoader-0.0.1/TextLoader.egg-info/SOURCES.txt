@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+TextLoader/TextLoader.py
+TextLoader/__init__.py
+TextLoader.egg-info/PKG-INFO
+TextLoader.egg-info/SOURCES.txt
+TextLoader.egg-info/dependency_links.txt
+TextLoader.egg-info/requires.txt
+TextLoader.egg-info/top_level.txt
