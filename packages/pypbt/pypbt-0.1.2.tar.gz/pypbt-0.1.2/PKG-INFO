@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: pypbt
+Version: 0.1.2
+Summary: Library of functions to write Property Based Tests in python
+Home-page: https://github.com/cabrero/pypbt
+License: GPL-2.0-only
+Author: David Cabrero Souto
+Author-email: david.cabrero@madsgroup.org
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Project-URL: Bug Tracker, https://github.com/cabrero/pypbt/issues
+Project-URL: Documentation, https://pypbt.readthedocs.io/en/latest/
+Description-Content-Type: text/markdown
+
+# pypbt
+
+This library implements functions to write _property based tests_ in
+python.
+
+It started as a proof of concept. By now there are still some missing
+features:
+
+  - Shrinking
+  
+  - Generation strategies
+  
+  - State machines
+  
+We can not make any promises about them.
+
+
+## Installation
+
+```
+pip install pypbt
+```
+
+## Documentation
+
+See [documentation on readthedocs](https://pypbt.readthedocs.io/en/latest/).
+
+## Support
+
+Please [open an issue](https://github.com/cabrero/pypbt/issues) for support.
+
+## License
+
+The project is licensed under the LGPL license.
+
