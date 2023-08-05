@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Abrez
+Version: 0.0.1
+Summary: ABREZ
+Home-page: UNKNOWN
+Author: Abrez
+Author-email: tajwarhuma2015@gmail.com
+License: UNKNOWN
+Description: when you'll make jarvis it will help you very much you'll not need to install many modules
+Keywords: speak,wish,take_command,python_tutorial,jarvis,Artificial Intelligence,AI,Abrez
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown

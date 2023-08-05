@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+Abrez.egg-info/PKG-INFO
+Abrez.egg-info/SOURCES.txt
+Abrez.egg-info/dependency_links.txt
+Abrez.egg-info/requires.txt
+Abrez.egg-info/top_level.txt
+abru/__init__.py
+abru/speak.py
+abru/take_command.py
+abru/wish.py
