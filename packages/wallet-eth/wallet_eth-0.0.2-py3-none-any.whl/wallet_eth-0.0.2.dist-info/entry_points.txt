@@ -1,0 +1,2 @@
+[console_scripts]
+wallet = xy_wallet.wallet_main:main
