@@ -1,0 +1,3 @@
+[console_scripts]
+radio-mlbee=radio_mlbee.__main__:app
+
