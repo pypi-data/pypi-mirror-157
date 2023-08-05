@@ -1,0 +1,10 @@
+vuba
+numpy
+scipy
+more_itertools
+numba
+matplotlib
+tqdm
+pytest
+scikit-image
+wget
