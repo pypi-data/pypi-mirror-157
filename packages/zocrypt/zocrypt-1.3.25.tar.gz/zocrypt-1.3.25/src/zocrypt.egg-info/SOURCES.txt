@@ -1,0 +1,12 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+src/zocrypt/__init__.py
+src/zocrypt/decrypter.py
+src/zocrypt/encrypter.py
+src/zocrypt/key.py
+src/zocrypt.egg-info/PKG-INFO
+src/zocrypt.egg-info/SOURCES.txt
+src/zocrypt.egg-info/dependency_links.txt
+src/zocrypt.egg-info/top_level.txt
