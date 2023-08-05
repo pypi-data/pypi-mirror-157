@@ -1,0 +1,80 @@
+[tool.poetry]
+name = "openldap-acl-test"
+version = "1.0.1"
+description = "OpenLDAP ACL check tool"
+authors = ["KAWAI Shun <mypaceshun@gmail.com>"]
+license = "MIT"
+readme = "README.rst"
+repository = "https://github.com/mypaceshun/openldap-acl-test"
+packages = [
+  { include = "openldap_acl_test", from = "src" }
+]
+include = [
+  "CHANGELOG.rst"
+]
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.1.3"
+PyYAML = "^6.0"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.961"
+types-setuptools = "^57.4.18"
+flake8 = "^4.0.1"
+pyproject-flake8 = "^0.0.1-alpha.4"
+autoflake = "^1.4"
+isort = "^5.10.1"
+black = "^22.3.0"
+poethepoet = "^0.14.0"
+pre-commit = "^2.19.0"
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+Sphinx = "^5.0.2"
+types-PyYAML = "^6.0.9"
+
+[tool.poetry.scripts]
+acltest = "openldap_acl_test.cli:main"
+
+[tool.poe.tasks.test]
+cmd = "pytest -v --cov=src/ --cov-report=html --cov-report=xml --cov-report=term tests/"
+help = "run test"
+
+[tool.poe.tasks.lint]
+sequence = [
+  { cmd = "pflake8 src/ tests/" },
+  { cmd = "mypy src/" }
+]
+help = "check syntax"
+ignore_fail = "return_non_zero"
+
+[tool.poe.tasks.format]
+sequence = [ 
+  { cmd = "autoflake -ir --remove-all-unused-imports --remove-unused-variables --ignore-init-module-imports src/ tests/" },
+  { cmd = "isort src/ tests/" },
+  { cmd = "black src/ tests/" },
+  "lint"
+]
+help = "format code style"
+
+[tool.poe.tasks.doc]
+sequence = [
+  { cmd = "sphinx-apidoc -f -e -o docs/ src/openldap_acl_test/"},
+  { cmd = "sphinx-build docs/ build-docs/" }
+]
+help = "build document"
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 88
+max-omplexity = 10
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
