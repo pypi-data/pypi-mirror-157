@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: mbs
+Version: 0.2
+Summary: Utilities for MB Scientific analyzer data
+Home-page: http://github.com/mueslo/mbs
+Author: mueslo
+Author-email: mueslo@mueslo.de
+License: GPLv3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib (~=3.4)
+Requires-Dist: pandas
+Provides-Extra: docs
+Requires-Dist: sphinx (~=4.5) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: tox ; extra == 'tests'
+Provides-Extra: widgets
+Requires-Dist: jupyterlab (~=3.2) ; extra == 'widgets'
+Requires-Dist: ipympl (~=0.8) ; extra == 'widgets'
+Requires-Dist: ipywidgets (~=7.6) ; extra == 'widgets'
+Provides-Extra: xarray
+Requires-Dist: xarray ; extra == 'xarray'
+
+[![](https://img.shields.io/github/release/mueslo/mbs.svg?style=flat-square)](https://github.com/mueslo/fplore/releases)
+[![](https://img.shields.io/pypi/v/mbs.svg?style=flat-square)](https://pypi.org/project/fplore/)
+[![](https://img.shields.io/github/workflow/status/mueslo/mbs/Run%20tests/master?style=flat-square)](https://github.com/mueslo/fplore/actions/workflows/tests.yml)
+[![](https://img.shields.io/readthedocs/mbsutils.svg?style=flat-square)](https://fplore.readthedocs.io)
+[![](https://img.shields.io/github/license/mueslo/mbs.svg?style=flat-square)](https://github.com/mueslo/fplore/blob/master/LICENSE)
+
+
+# MBS
+
+Simple Python library for loading and plotting MB Scientific ARPES detector data in both KRX and TXT format.
+
+## Installation
+
+To install using `pip`, simply run `pip install mbs`.
+
+To install using `conda`, please follow [these instructions](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-pkgs.html#installing-non-conda-packages), as `mbs` is not directly published on `conda`.
+
+## Usage & Documentation
+
+For some simple examples, see [mbs_example.ipynb](mbs_example.ipynb). Full documentation is still a work in progress will be found [here](mbsutils.readthedocs.org).
