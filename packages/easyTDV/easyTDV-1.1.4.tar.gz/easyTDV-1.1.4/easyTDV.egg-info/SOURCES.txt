@@ -1,0 +1,15 @@
+setup.py
+easyTDV/Deploy.py
+easyTDV/DeploymentNomenclature.py
+easyTDV/Train.py
+easyTDV/TrainNomenclature.py
+easyTDV/UserAwsAuth.py
+easyTDV/__init__.py
+easyTDV/deployment_helper.py
+easyTDV/main.py
+easyTDV/train_helper.py
+easyTDV.egg-info/PKG-INFO
+easyTDV.egg-info/SOURCES.txt
+easyTDV.egg-info/dependency_links.txt
+easyTDV.egg-info/requires.txt
+easyTDV.egg-info/top_level.txt
