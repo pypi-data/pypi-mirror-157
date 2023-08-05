@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: management-client
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UKP
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE.txt
+Requires-Dist: square-auth (>=0.0.3)
+Requires-Dist: asyncio
+Requires-Dist: aiohttp (==3.8.1)
+Requires-Dist: requests (==2.27.1)
+
+UNKNOWN
+
