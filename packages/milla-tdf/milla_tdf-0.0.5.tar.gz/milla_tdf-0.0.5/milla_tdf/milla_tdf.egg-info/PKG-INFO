@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: milla-tdf
+Version: 0.0.5
+Summary: My package description
+Author: Bao Phan
+Author-email: bao.phan@vcsc.com.vn
+License: BSD 3-Clause License
+Keywords: one,two
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
