@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "uncontained"
+version = "0.1.0"
+description = ""
+authors = ["Nitzan Zada <nitzan.zada@gmail.com>"]
+readme = "README.md"
+keywords = [
+    "Dependency injection",
+    "DI",
+    "Inversion of Control",
+    "IoC",
+    "Factory",
+    "Singleton",
+    "Design patterns",
+]
+license = "MIT"
+include = [
+    "LICENSE",
+]
+packages = [
+    { include = "uncontained", from = "src" },
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.10.1"
+black = "^22.3.0"
+pytest = "^7.1.2"
+
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
