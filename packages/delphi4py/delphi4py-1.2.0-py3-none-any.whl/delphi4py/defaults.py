@@ -1,0 +1,26 @@
+precision = "single"
+igrid = 121
+scale = 2
+perfil = 0
+epsin = 2
+epsout = 80
+conc = 0
+ibctyp = 2
+res2 = 0
+nlit = 0
+radprb = 1.4
+relfac = 0.0
+relpar = 0.0
+nonit = 0
+fcrg = False
+pbx = False
+pby = False
+isurftype = -1
+parallel = False
+debug = False
+outputfile = "/dev/null"
+
+acent = []
+energy = ["s", "c"]
+site = ["a", "q", "p"]
+rmaxdim = 999.999
