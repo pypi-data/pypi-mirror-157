@@ -1,0 +1,11 @@
+sqlalchemy_access/__init__.py,sha256=yLwE-xeOIwsc8HFghMGLC3a2b2numyCc5WK9eUZFsTM,523
+sqlalchemy_access/base.py,sha256=dLI6_XObtYkyE3K-CB3oounK1NgqJPaBYBNjzIdFRdQ,26330
+sqlalchemy_access/pyodbc.py,sha256=lDgOIPc7W6Eeqp9XfPEY5JpiQa2P2w49R2Osp-pfH3s,3498
+sqlalchemy_access/requirements.py,sha256=5oyqwN0Icet5pTQxuKt3P5NsAAU5h3Kt4XiodOZJA4Y,2252
+sqlalchemy_access-1.1.3.dist-info/AUTHORS,sha256=1nRqF8Fb2zEDPdITG4ThjYmvRVU_2uMPNUjdR9fCYO0,563
+sqlalchemy_access-1.1.3.dist-info/LICENSE,sha256=jiu7wM6r7RMAo6iW8cVrpMFu6azLbmnGmJ2scgzzE6M,1117
+sqlalchemy_access-1.1.3.dist-info/METADATA,sha256=TGQPeye7CT5xzKXeUyM0pm4Wj0PlgT18Rhh1sdKsqVM,3988
+sqlalchemy_access-1.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sqlalchemy_access-1.1.3.dist-info/entry_points.txt,sha256=v_RqyrHbLeBOFzAOSbqyGdC-_-tTVy6eHX3O9S9IZh0,84
+sqlalchemy_access-1.1.3.dist-info/top_level.txt,sha256=Sxqww2vxk62LZjpQ3c33uorjxmT9ZcrywrBxApD38dI,18
+sqlalchemy_access-1.1.3.dist-info/RECORD,,
