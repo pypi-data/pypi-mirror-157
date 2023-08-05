@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jsonteng
+Version: 1.1.0
+Summary: A template engine for JSON files.
+Home-page: UNKNOWN
+Author: VMware
+Author-email: jimy@vmware.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+A template engine for parameterized JSON files
+
+
