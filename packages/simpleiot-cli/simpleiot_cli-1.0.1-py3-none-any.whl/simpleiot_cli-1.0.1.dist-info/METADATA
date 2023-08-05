@@ -1,0 +1,289 @@
+Metadata-Version: 2.1
+Name: simpleiot-cli
+Version: 1.0.1
+Summary: SimpleIOT command line interface
+Home-page: http://github.com/awslabs/simpleiot-cli
+Download-URL: https://github.com/awslabs/simpleiot-cli
+Author: Ramin Firoozye
+Author-email: framin@amazon.com
+License: Apache 2.0
+Keywords: simpleiot,simpleiot-cli,iot,aws,awslabs,cli
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: System :: Hardware
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: arrow (==1.2.2)
+Requires-Dist: asciimatics (==1.14.0)
+Requires-Dist: attrs (==21.4.0)
+Requires-Dist: aws-requests-auth (==0.4.3)
+Requires-Dist: AWSIoTPythonSDK (==1.5.2)
+Requires-Dist: backports.entry-points-selectable (==1.1.1)
+Requires-Dist: bitstring (==3.1.9)
+Requires-Dist: bleach (==5.0.0)
+Requires-Dist: boto3 (==1.22.13)
+Requires-Dist: botocore (==1.25.13)
+Requires-Dist: certifi (==2021.10.8)
+Requires-Dist: cffi (==1.15.0)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: charset-normalizer (==2.0.12)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: commonmark (==0.9.1)
+Requires-Dist: coverage (==6.3.2)
+Requires-Dist: cryptography (==37.0.2)
+Requires-Dist: decorator (==5.1.1)
+Requires-Dist: distlib (==0.3.4)
+Requires-Dist: dnslib (==0.9.19)
+Requires-Dist: dnspython (==2.2.1)
+Requires-Dist: docker-py (==1.10.6)
+Requires-Dist: docker-pycreds (==0.4.0)
+Requires-Dist: docopt (==0.6.2)
+Requires-Dist: docutils (==0.18.1)
+Requires-Dist: ecdsa (==0.17.0)
+Requires-Dist: esptool (==4.1)
+Requires-Dist: filelock (==3.6.0)
+Requires-Dist: future (==0.18.2)
+Requires-Dist: idna (==3.3)
+Requires-Dist: importlib-metadata (==4.11.3)
+Requires-Dist: iniconfig (==1.1.1)
+Requires-Dist: invoke (==1.7.1)
+Requires-Dist: Jinja2 (==3.1.2)
+Requires-Dist: jmespath (==1.0.0)
+Requires-Dist: jsonschema (==4.5.1)
+Requires-Dist: keyring (==23.5.0)
+Requires-Dist: MarkupSafe (==2.1.1)
+Requires-Dist: packaging (==21.3)
+Requires-Dist: paho-mqtt (==1.6.1)
+Requires-Dist: pbr (==5.9.0)
+Requires-Dist: pexpect (==4.8.0)
+Requires-Dist: Pillow (==9.1.1)
+Requires-Dist: pkginfo (==1.8.2)
+Requires-Dist: platformdirs (==2.5.2)
+Requires-Dist: pluggy (==1.0.0)
+Requires-Dist: prettytable (==3.3.0)
+Requires-Dist: prompt-toolkit (==3.0.29)
+Requires-Dist: ptyprocess (==0.7.0)
+Requires-Dist: py (==1.11.0)
+Requires-Dist: pyaes (==1.6.1)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: pyfiglet (==0.8.post1)
+Requires-Dist: Pygments (==2.12.0)
+Requires-Dist: PyJWT (==2.4.0)
+Requires-Dist: pykwalify (==1.8.0)
+Requires-Dist: pyparsing (==3.0.9)
+Requires-Dist: pypng (==0.0.21)
+Requires-Dist: pyrsistent (==0.18.1)
+Requires-Dist: pyserial (==3.5)
+Requires-Dist: pytest (==7.1.2)
+Requires-Dist: pytest-html (==3.1.1)
+Requires-Dist: pytest-metadata (==2.0.1)
+Requires-Dist: python-box (==6.0.2)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pyusb (==1.2.1)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: questionary (==1.10.0)
+Requires-Dist: readme-renderer (==35.0)
+Requires-Dist: reedsolo (==1.5.4)
+Requires-Dist: requests (==2.27.1)
+Requires-Dist: requests-aws4auth (==1.1.2)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: rfc3986 (==2.0.0)
+Requires-Dist: rich (==12.4.1)
+Requires-Dist: ruamel.yaml (==0.17.21)
+Requires-Dist: ruamel.yaml.clib (==0.2.6)
+Requires-Dist: s3transfer (==0.5.2)
+Requires-Dist: semver (==2.13.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: sqlitedict (==2.0.0)
+Requires-Dist: stevedore (==3.5.0)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: tomli (==2.0.1)
+Requires-Dist: tqdm (==4.64.0)
+Requires-Dist: twine (==4.0.0)
+Requires-Dist: typing-extensions (==4.2.0)
+Requires-Dist: urllib3 (==1.26.9)
+Requires-Dist: validators (==0.19.0)
+Requires-Dist: virtualenv (==20.14.1)
+Requires-Dist: wcwidth (==0.2.5)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: websocket-client (==1.3.2)
+Requires-Dist: zipp (==3.8.0)
+
+# SimpleIOT Command-Line-Interface (CLI)
+
+![](media/readme/TopBar.png)
+
+![](https://img.shields.io/badge/Powered%20by-AWS-orange.svg?style=for-the-badge&logo=amazon-aws&logoColor=orange)
+![](https://img.shields.io/hexpm/l/plug?color=orange&style=for-the-badge)
+![](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge)
+
+![](https://img.shields.io/badge/python-simpleiot-blueviolet)
+
+This is the command-line-interface (CLI) for the [SimpleIOT](https://simpleiot.net) framework.
+
+SimpleIOT abstracts out IoT device connectivity and hides the underlying details so you can focus on your application's unique features.
+
+## Basic Concepts
+
+![](media/readme/Basic-Concepts.png)
+
+In the SimpleIOT world, an installation supports the following concepts:
+
+- **team**: A single installation of SimpleIOT in the cloud. This is mainly relevant to using the Command-Line-Interface (CLI) tool.
+- **project**: Each backend supports one or more _Projects_.
+- **Model**: A _Model_ describes a device's capabilities. For example, what data it likes to exchange with the cloud, whether an end-node or a gateway device, what features it supports (i.e., storage, encryption, or AI/ML.), and how it communicates with the cloud.
+- **DataType**: A _DataType_ is a single named value that can be exchanged between a device and the cloud. A _Model_ typically has one or more _DataTypes_ associated with it.
+- **Device**: A _Device_ represents a single instance of a _Model_. Each device has a unique identification via its _serial_number_.
+- **Data**: A _Data_ element is an instance of a _DataType_ associated with a single _Device_. For example, if a _Model_ defines a _DataType_ named `pressure`, each unique _Device_ will have its own instance of `pressure`. You can get/set values associated with each _Device_ instance by name.
+
+_Data_ elements are bi-directional so that updates go from the devices to or from the cloud back to the device. It is up to the firmware to handle what to do with values received from the cloud.
+
+## Dual-use
+
+This CLI can be used by both backend administrators as well as end-users.
+
+As an Administrator, you need to:
+- Have one or more AWS accounts with IAM Administrative privileges.
+- Configure a profile for each account by running the `aws configure` command.
+
+With this CLI, you can:
+
+- Create a private, serverless IOT backend on AWS.
+- Create one or more Teams (individual backend installations on each account).
+- Securely invite users to join the team (including support for bulk emailing).
+- Remove users from a Team.
+
+As a User, you can:
+
+- Join a Team to which you have been invited.
+- Install an Arduino command-line toolchain with support for ESP32 processors.
+- Create and manage Projects, Models, DataTypes, and Devices.
+- Simulate and monitor remote device values via `set` and `get` operations.
+- Provision and deploy secure IOT device instances.
+- Generate firmware source code based on templates (currently supporting the ESP32/Arduino toolchain).
+- Compile and flash firmware to an M5Stack ESP-32 device via USB cable.
+- Monitor MQTT traffic sent to/from AWS IOT.
+
+The CLI can be installed on systems running at least Windows 10 or MacOS Big Sur. It requires pre-installation of **Python** (Users + Administrators) and **Docker Desktop** (Administrators).
+
+## Installation
+
+Administrators can install and remove the backend cloud for a SimpleIOT deployment. They can also invite new users to the _Team_ so they can interact with an existing installation.
+
+### Step 1: AWS CLI
+
+Before creating a backend, you need to make sure you have an AWS account created and a user account configured via the [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
+
+---
+**NOTE**
+
+This will require downloading and setting up an account with AWS IAM Administrative Privileges. If you are not allowed to have AWS admin privileges, [see here](https://simpleiot.net/admin_privs) for the list of fine-grain privileges your account will need to be deployed.
+
+This is a one-time operation. Once configured, you may proceed with the following steps. You can configure multiple named profiles using the `aws config` command. 
+
+During installation, you will be prompted to choose which profile you would like to use. If only one account is configured, it will be considered the _default_ profile.
+
+---
+
+### Step 2: Install pre-requisites
+
+For all Users:
+
+- Latest version of Python from [https://python.org](https://python.org) (minimum 3.9+)
+- Silicon Labs [CP210x USB to UART Bridge drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers). Under Windows, once you plug in an AWS EduKit device, it should automatically install this driver. You will have to download the above driver and manually install it if it fails. Under MacOS, you need to download and install it manually.
+
+Additionally, for Administrators:
+
+- Docker Desktop: [https://docs.docker.com/desktop/](https://docs.docker.com/desktop/)
+
+Installing these may require other dependencies on Windows or Mac. Once installed, the system may need to be rebooted.
+
+### Step 3: Install SimpleIOT CLI
+
+Open a powershell (Windows) or terminal (Mac) terminal window, then run:
+
+```
+pip install simpleiot-cli
+```
+
+Once installed, you can test the command-line interface:
+
+```
+% iot help
+Usage: iot [OPTIONS] COMMAND [ARGS]...
+
+Options:
+ --help Show this message and exit.
+
+Commands:
+ auth User Authentication
+ cloud Cloud backend provisioning
+ data Data set and retrieve
+ datatype Model DataType management
+ device Device provisioning
+ firmware Generate sample source
+ location Location management
+ model Manage Models
+ project Project management
+ team Team management (CLI only)
+ template Project Template management
+ toolchain Project Template management
+ twin Manage Digital 3D Twin files
+ update OTA Firmware Updates
+```
+
+### Uninstalling
+
+To uninstall `simpleiot-cli` use the `pip` command:
+
+```
+% pip uninstall simpleiot-cli
+```
+
+Note that this only removes the CLI itself. If you have installed other items, like the compiler toolchain or actual projects, those must be removed before reinstalling.
+
+If the CLI was used to create a cloud backend, it should be deleted via:
+
+```
+% iot cloud uninstall
+```
+
+Be careful if you have allowed others access to this team. This command will permanently delete the entire backend infrastructure, including user accounts and all provisioned AWS IOT Things and certificates.
+
+### Troubleshooting
+
+#### Python missing or out-of-date
+
+Once `simpleiot-cli` is installed, you can verify that it is operational by running the `iot --help` command. If this returns an error, your version of Python may be missing or not up-to-date. To verify, open a **Powershell** or **Terminal** window and enter:
+
+```
+% python --version
+Python 3.9.4
+```
+
+You should get a version higher than 3.9. If not, please update or install the latest version of Python. If the _python_ command is not found, re-run the Python installer and check the box that asks if it should be added to the PATH.
+
+#### Unable to deploy the backend
+
+This could be due to a variety of reasons, including:
+
+- AWS CLI is not installed correctly.
+- `aws configure` has not been run properly.
+- AWS configuration settings in `~/.aws` are not valid.
+- The account does not have sufficient IAM privileges to create the components for the SimpleIOT platform.
+
+Please check and remedy these problems before proceeding.
+
+
+## License
+
+This project is licensed under the Apache-2.0 License.
