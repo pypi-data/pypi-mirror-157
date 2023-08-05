@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mapperscript.egg-info/PKG-INFO
+src/mapperscript.egg-info/SOURCES.txt
+src/mapperscript.egg-info/dependency_links.txt
+src/mapperscript.egg-info/top_level.txt
+src/micromapper/Micromapper.py
+src/micromapper/__init__.py
