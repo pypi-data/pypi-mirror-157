@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: abate
+Version: 0.0.dev7
+Summary: A package to fit exoplanet atmosphere lightcurves, especially for JWST data
+Author: Everett Schlawin, Keith Baka
+License-File: LICENSE.rtf
+Requires-Dist: numpy (>=1.15)
+Requires-Dist: scipy (>=1.1.0)
+Requires-Dist: astropy (>=2.0)
+Requires-Dist: tqdm (>=4.46.0)
+Requires-Dist: photutils (>=0.4.1)
+Requires-Dist: bokeh (>=1.4.0)
+Requires-Dist: pytest (>=7.1.2)
+Requires-Dist: exoplanet (>=0.5.2)
+Requires-Dist: tshirt (>=0.1.dev9)
+Requires-Dist: pymc3-ext (>=0.1.1)
+Requires-Dist: celerite2 (>=0.2.1)
+Requires-Dist: ipython (>=8.4.0)
+Requires-Dist: starry (>=1.2.0)
+Requires-Dist: corner (>=2.2.1)
+

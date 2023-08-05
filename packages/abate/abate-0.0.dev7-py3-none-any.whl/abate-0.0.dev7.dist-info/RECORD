@@ -1,0 +1,8 @@
+abate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+abate/fit_GENERIC.py,sha256=dNIpqaAppEsp44yFIjc0r05A1TsJ0S6DzaHE9IiI9qY,2551
+abate/simple_pymc_fits.py,sha256=O4VILQdzBqaM9Ab_eF3yQVvSXUo9BvL1adFoase3r4g,41655
+abate-0.0.dev7.dist-info/LICENSE.rtf,sha256=0KYrxvCqWDOy8fd5NMOEYGYfSyzhYw7jq3F7V6atxWA,12996
+abate-0.0.dev7.dist-info/METADATA,sha256=N5A8BgMBz0qRnCIizt2Jr5ov0asGiyBP8Z_XHbjRkpU,659
+abate-0.0.dev7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+abate-0.0.dev7.dist-info/top_level.txt,sha256=vmy2X1QSvp8bWhAAtUXWTfV-xzTlEoT23GbQMNsCugo,6
+abate-0.0.dev7.dist-info/RECORD,,
