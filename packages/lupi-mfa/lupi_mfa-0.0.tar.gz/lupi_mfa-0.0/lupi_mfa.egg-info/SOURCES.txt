@@ -1,0 +1,5 @@
+setup.py
+lupi_mfa.egg-info/PKG-INFO
+lupi_mfa.egg-info/SOURCES.txt
+lupi_mfa.egg-info/dependency_links.txt
+lupi_mfa.egg-info/top_level.txt
