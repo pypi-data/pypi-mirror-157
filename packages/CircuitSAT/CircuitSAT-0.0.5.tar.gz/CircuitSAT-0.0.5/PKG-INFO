@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: CircuitSAT
+Version: 0.0.5
+Summary: A Circuit SAT Language that emit CNF code.
+Home-page: https://twitter.com/maxtuno
+Author: Oscar Riveros
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
