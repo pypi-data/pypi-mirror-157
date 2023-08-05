@@ -1,0 +1,15 @@
+[package]
+name = "sqlupy"
+version = "0.0.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "sqlupy"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.16.5", features = ["extension-module"] }
+sqlu = { git = "https://github.com/zhangyuan/sqlu", tag = "v0.0.1" }
+serde_json = "1.0"
+anyhow = "1.0"
