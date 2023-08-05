@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: armada-client
+Version: 0.1.0.dev0
+Summary: 
+License: APACHE
+Author: G Research Open Source Software
+Author-email: armada@armadaproject.io
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: grpcio (>=1.46.1,<2.0.0)
+Requires-Dist: grpcio-tools (>=1.46.1,<2.0.0)
