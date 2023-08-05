@@ -1,0 +1,11 @@
+politely/__init__.py,sha256=B0XNBsH_N-Mk544bR-Q16AzOUSfYx-fjRz3PYP6krZU,322
+politely/errors.py,sha256=FPakcsBXLPD-lem9FIcBNv1SBUpMLjQRLNti0ZEsr30,441
+politely/fetchers.py,sha256=B4jp0I2hQlAXzbOtbGe62icwGurBx_oADvF_AmFwVPs,561
+politely/paths.py,sha256=ceMrIh5P1DIB8u8fTErJ0ej5PV-6dIsOGnzHNQKPREs,223
+politely/styler.py,sha256=M8ptNwz9sRjFF6uIdHBnIHAY36-Hbz_8MMCOhBglVoE,3286
+politely/resources/honorifics.yaml,sha256=9fol4eITdPHudOmT1xkz0U4hQh8dC1DZedPWktY_jIo,3349
+politely/resources/rules.yaml,sha256=WSQRV3G6CPf9Qx2vd0GEbGqLiOOWkM262u3UgjR18vM,1678
+politely-2.7.0.dist-info/METADATA,sha256=UciFikJk6e_7z-pjWf_LG6azLzVcG-oj3CswQ-cggm8,5612
+politely-2.7.0.dist-info/WHEEL,sha256=5vr2ZUYMIPpdABBOSv8-NuqiKYrGTWMNuyATpVRyrq8,86
+politely-2.7.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+politely-2.7.0.dist-info/RECORD,,
