@@ -1,0 +1,50 @@
+[build-system]
+requires = ["poetry>=1.1"]
+build-backend = "poetry.masonry.api"
+
+[tool.black]
+line-length = 96
+target-version = ['py310']
+
+[tool.poetry]
+name = "fondat-salesforce"
+version = "4.0a1"
+description = "Fondat package for Salesforce."
+readme = "README.md"
+authors = ["fondat-salesforce authors"]
+homepage = "https://github.com/fondat/fondat-salesforce/"
+documentation = "https://github.com/fondat/fondat-salesforce/wiki"
+license = "MIT"
+keywords = ["asgi", "framework", "resource", "openapi"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+]
+packages = [
+    { include = "fondat" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.8"
+fondat = "^4.0a5"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6"
+isort = "^5.10.1"
+pre-commit = "^2.19"
+pytest = "^7.1"
+pytest-asyncio = "^0.18"
+pytest-cov = "^3.0"
+
+[tool.isort]
+profile = "black"
+lexicographical = true
+lines_after_imports = 2
+lines_between_types = 1
+line_length = 96
+no_sections = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
