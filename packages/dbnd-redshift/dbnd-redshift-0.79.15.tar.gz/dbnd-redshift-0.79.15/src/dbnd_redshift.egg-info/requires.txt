@@ -1,0 +1,3 @@
+psycopg2-binary
+dbnd==0.79.15
+redshift_connector
