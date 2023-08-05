@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "d-oss"
+version = "0.1.5"
+description = "迪的OSS存储"
+authors = ["good-as-water <790990241@qq.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+oss2 = "^2.15.0"
+typer = {extras = ["all"], version = "^0.4.1"}
+rich = "^12.4.2"
+
+
+
+[tool.poetry.scripts]
+oss = "d_oss.main:app"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
