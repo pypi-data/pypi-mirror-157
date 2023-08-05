@@ -1,0 +1,23 @@
+{
+    "title": "pyElli",
+    "description": "A matrix solver for 1D layered structures with an emphasis on day to day spectral ellipsometry tasks.",
+    "license": "GPL-3.0-or-later", 
+    "upload_type": "software", 
+    "creators": [
+       {
+          "name": "Müller, Marius J."
+       }, 
+       {
+          "name": "Dobener, Florian"
+       }
+    ],
+    "keywords": [
+       "python",
+       "simulation",
+       "solver",
+       "ellipsometry",
+       "transfer-matrix-method",
+       "berreman4x4"
+    ],
+    "access_right": "open"
+ }

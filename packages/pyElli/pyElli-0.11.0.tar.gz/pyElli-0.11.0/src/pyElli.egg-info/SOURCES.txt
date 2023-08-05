@@ -1,0 +1,126 @@
+.coveragerc
+.gitignore
+.readthedocs.yml
+.zenodo.json
+AUTHORS.md
+CHANGELOG.md
+CONTRIBUTING.md
+Dockerfile
+LICENSE.txt
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+tox.ini
+.github/workflows/benchmark.yml
+.github/workflows/build-docker.yml
+.github/workflows/pytest.yml
+.github/workflows/python-publish.yml
+docs/Makefile
+docs/authors.rst
+docs/changelog.rst
+docs/conf.py
+docs/contributing.rst
+docs/index.rst
+docs/license.rst
+docs/readme.rst
+docs/requirements.txt
+examples/Bragg-mirror/Bragg-example.ipynb
+examples/Bragg-mirror/Bragg-example.py
+examples/Bragg-mirror/validation-Bragg.ipynb
+examples/Bragg-mirror/validation-Bragg.py
+examples/Ellipsometry uniaxial materials/Fujiwara-641.ipynb
+examples/Ellipsometry uniaxial materials/Fujiwara-641.py
+examples/Ellipsometry uniaxial materials/Fujiwara-642.ipynb
+examples/Ellipsometry uniaxial materials/Fujiwara-642.py
+examples/Interfaces/Interferences.ipynb
+examples/Interfaces/Interferences.py
+examples/Interfaces/interface-reflection.ipynb
+examples/Interfaces/interface-reflection.py
+examples/Liquid crystals/cholesteric-example.ipynb
+examples/Liquid crystals/cholesteric-example.py
+examples/Liquid crystals/twisted-nematic.ipynb
+examples/Liquid crystals/twisted-nematic.py
+examples/Liquid crystals/validation-cholesteric.ipynb
+examples/Liquid crystals/validation-cholesteric.py
+examples/SiO2_Si Mueller Matrix/SiO2_Si Mueller Matrix.ipynb
+examples/SiO2_Si Mueller Matrix/Si_Aspnes.mat
+examples/SiO2_Si Mueller Matrix/Wafer_MM_70.txt
+examples/TiO2 Fit/Si_Aspnes.mat
+examples/TiO2 Fit/TiO2 Multilayerfit.ipynb
+examples/TiO2 Fit/TiO2 Multilayerfit.md
+examples/TiO2 Fit/TiO2_400cycles.txt
+examples/Total internal reflection/FrustratedTIR-angle.ipynb
+examples/Total internal reflection/FrustratedTIR-angle.py
+examples/Total internal reflection/FrustratedTIR-thickness.ipynb
+examples/Total internal reflection/FrustratedTIR-thickness.py
+examples/Total internal reflection/TIR.ipynb
+examples/Total internal reflection/TIR.py
+src/elli/__init__.py
+src/elli/experiment.py
+src/elli/materials.py
+src/elli/materials_db.py
+src/elli/math.py
+src/elli/nexus.py
+src/elli/result.py
+src/elli/solver.py
+src/elli/solver2x2.py
+src/elli/solver4x4.py
+src/elli/spectraray.py
+src/elli/structure.py
+src/elli/utils.py
+src/elli/dispersions/__init__.py
+src/elli/dispersions/base_dispersion.py
+src/elli/dispersions/dispersions.py
+src/elli/fitting/__init__.py
+src/elli/fitting/decorator.py
+src/elli/fitting/decorator_mmatrix.py
+src/elli/fitting/decorator_psi_delta.py
+src/elli/fitting/params_hist.py
+src/elli/plot/__init__.py
+src/elli/plot/mueller_matrix.py
+src/elli/plot/structure.py
+src/pyElli.egg-info/PKG-INFO
+src/pyElli.egg-info/SOURCES.txt
+src/pyElli.egg-info/dependency_links.txt
+src/pyElli.egg-info/not-zip-safe
+src/pyElli.egg-info/requires.txt
+src/pyElli.egg-info/top_level.txt
+tests/benchmark_propagators_TiO2.py
+tests/create_dispersion_prototypes.py
+tests/test_TiO2.py
+tests/test_bragg_mirror.py
+tests/test_dispersion_factory.py
+tests/test_dispersions.py
+tests/test_internal_reflection.py
+tests/test_liquid_crystals.py
+tests/test_nexus.py
+tests/test_notebook.ipynb
+tests/test_uniaxial_crystals.py
+tests/test_TiO2/Si_Aspnes.mat
+tests/test_TiO2/TiO2_400cycles.txt
+tests/test_dispersions/Cauchy_custom_values.csv
+tests/test_dispersions/Cauchy_default.csv
+tests/test_dispersions/DrudeEnergy_custom_values.csv
+tests/test_dispersions/DrudeEnergy_default.csv
+tests/test_dispersions/DrudeResistivity_custom_values.csv
+tests/test_dispersions/DrudeResistivity_default.csv
+tests/test_dispersions/Gauss_custom_values.csv
+tests/test_dispersions/Gauss_default.csv
+tests/test_dispersions/LorentzEnergy_custom_values.csv
+tests/test_dispersions/LorentzEnergy_default.csv
+tests/test_dispersions/LorentzLambda_custom_values.csv
+tests/test_dispersions/LorentzLambda_default.csv
+tests/test_dispersions/Poles_custom_values.csv
+tests/test_dispersions/Poles_default.csv
+tests/test_dispersions/Sellmeier_default.csv
+tests/test_dispersions/TableEpsilon_custom_values.csv
+tests/test_dispersions/TableEpsilon_default.csv
+tests/test_dispersions/Table_custom_values.csv
+tests/test_dispersions/Table_default.csv
+tests/test_dispersions/Tanguy_custom_values.csv
+tests/test_dispersions/Tanguy_default.csv
+tests/test_dispersions/TaucLorentz_custom_values.csv
+tests/test_dispersions/TaucLorentz_default.csv
+tests/test_nexus/ellips.test.nxs
