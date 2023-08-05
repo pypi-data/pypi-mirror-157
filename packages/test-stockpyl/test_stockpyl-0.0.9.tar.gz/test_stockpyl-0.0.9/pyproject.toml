@@ -1,0 +1,73 @@
+[tool.poetry]
+name = "test_stockpyl"
+version = "0.0.9"
+description = "Python inventory optimization tools."
+authors = ["Alex Kressner"]
+license = "GNU Version 3"
+repository = "https://github.com/LarrySnyder/stockpyl"
+documentation = "http://stockpyl.readthedocs.io"
+readme = "README.md"
+packages = [
+    { include = "stockpyl", from = "src" },
+]
+keywords = [
+    "inventory management", "orms",
+]
+exclude = [
+    "docs",
+    "*.tests",
+    "*.tests.*",
+    "tests.*",
+    "tests",
+    "tests",
+]
+include = [
+    "src/stockpyl",
+    "*.md",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+jsonpickle = "2.2.0"
+matplotlib = "3.5.2"
+networkx = "2.8.2"
+numpy = "1.22.4"
+sphinx_rtd_theme = "1.0.0"
+tabulate = "0.8.9"
+tqdm = "4.64.0"
+scipy = "^1.8.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+flake8 = "^3.9.2"
+black = "^22.3.0"
+isort = "^5.9.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+known_third_party = []
+skip_glob = []
+line_length = 80
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
