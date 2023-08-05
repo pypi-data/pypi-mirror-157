@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "jobbatch"
+version = "1.0.3"
+authors = [
+    "Quentin Stafford-Fraser <quentin@pobox.com>"
+]
+description = "A utility for splitting tasks up into batches"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[console_scripts]
+jobbatch = "jobbatch:main"
+
+[tool.poetry.scripts]
+jobbatch = "jobbatch:main"
+
+[tool.poetry.dependencies]
+python = ">=3.5"
+
+[project.urls]
+"Homepage" = "https://github.com/quentinsf/jobbatch"
+"Bug Tracker" = "https://github.com/quentinsf/jobbatch/issues"
+
