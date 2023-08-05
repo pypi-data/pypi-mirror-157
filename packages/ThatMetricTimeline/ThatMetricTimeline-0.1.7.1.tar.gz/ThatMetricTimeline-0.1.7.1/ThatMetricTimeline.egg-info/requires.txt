@@ -1,0 +1,4 @@
+prompt_toolkit
+pysondb==1.6.7
+pyperclip
+pathspec
