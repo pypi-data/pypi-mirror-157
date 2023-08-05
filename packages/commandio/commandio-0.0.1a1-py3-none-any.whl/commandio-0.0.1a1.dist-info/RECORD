@@ -1,0 +1,16 @@
+commandio/__init__.py,sha256=_z7Nh-4Juekljyf7uutRb1l3cV2IhIPZS7Nfi5R7XwM,1324
+commandio/command.py,sha256=rvi_CxmYJFd8gQR4QPLGwnbunacgbDVcNyDC7QM3fbU,6484
+commandio/enums.py,sha256=Gs18erVPpB47HQz9997wa9stqkE22dET39we2now5Sk,304
+commandio/fileio.py,sha256=nZNXJGQIENedwC-c5bNcgOduWDjY-yGvkRWUmYqzZrE,8110
+commandio/iobase.py,sha256=bWOwwd5cR0g89mGavIsYOujYuQTnX4tLhgPtCnAHx-w,15119
+commandio/logutil.py,sha256=lcfx1FmD13sLYHuZAGUbR8FIiMeDhFpnn4rvTxmCo8M,9184
+commandio/tmpdir.py,sha256=CCIPFSbqumzy50ZYynPuu8cmEhBs2qk7nH6xMgp6WSc,2776
+commandio/tmpfile.py,sha256=JRhSM4ZIqINI0lWj9A8Na-cl-l_GdBoy-X5HRTZi3VM,2064
+commandio/util.py,sha256=PUmAJwwpfZYi3PAwwJNzKrZRyc8Uf1KR5Ls3DKFL94E,1870
+commandio/workdir.py,sha256=9ULXOvcszpTU1K-YlpyPImknGid00mQ6iql5-MeMvCU,5244
+commandio/misc/version.txt,sha256=Fk8XYSTDlv4_OHiRwiT4_bEcfQJoIbEfxxFHymuEVlE,7
+commandio-0.0.1a1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+commandio-0.0.1a1.dist-info/METADATA,sha256=MQRKCpxPkLdHpaQVoTaSPHWo71xijtNRr9EUwjWcdU0,1572
+commandio-0.0.1a1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+commandio-0.0.1a1.dist-info/top_level.txt,sha256=e4gyQrTikGQ4OVzMP71-O-6R_f6y-LwL-KLQixF8d_k,10
+commandio-0.0.1a1.dist-info/RECORD,,
