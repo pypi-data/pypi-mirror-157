@@ -1,0 +1,13 @@
+easyTDV/Deploy.py,sha256=eaw4A7CiUq8fpX3z1-Y9G80mGDxcla8zvCYveVqqYLc,6895
+easyTDV/DeploymentNomenclature.py,sha256=vV21LZ8i8z2tCjmzfMvAOX3Ujf6NhSH1OuV2UerTa3Q,1066
+easyTDV/Train.py,sha256=gbo6WetFj0uWY1rEW-HMn30oNj_F9WwgDIR7B4IZPtQ,12345
+easyTDV/TrainNomenclature.py,sha256=E8jR-xV7GKBNij7oEtq_iUAclWxwCZsVMrrSjzkottI,1249
+easyTDV/UserAwsAuth.py,sha256=57t78zevuGnMX1x0w4GH65VZddK1bP_hPn7p_q51eXQ,1641
+easyTDV/__init__.py,sha256=6vYeBXrhDL61U819VcPpcuOXiHTrJn5bakOPSTnYrzs,90
+easyTDV/deployment_helper.py,sha256=UxShWw94DBSxqX-gcZgUEXnUaFIiLsoyeuw3DfYkb2k,2975
+easyTDV/main.py,sha256=W0qocuDRXnIseLN4_pk9v-5kb6s0YNQ0Ib_4zUef5ro,3172
+easyTDV/train_helper.py,sha256=FixBsc7sVdC_iteJ3Nz6eGUIzkRB_JZV9kQ-v0q-bY8,5358
+easyTDV-1.1.2.dist-info/METADATA,sha256=82InV0co0UvYrAn3X3ojlNmOWQG5oKycxx1Na8oKY8g,628
+easyTDV-1.1.2.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+easyTDV-1.1.2.dist-info/top_level.txt,sha256=qBt9rlqLtfGOoCdCjCvuPiuqVFFqqDPc_y5lPW-i4RY,8
+easyTDV-1.1.2.dist-info/RECORD,,
