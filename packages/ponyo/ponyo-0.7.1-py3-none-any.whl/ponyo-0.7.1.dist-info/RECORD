@@ -1,0 +1,10 @@
+ponyo/helper_vae.py,sha256=w2lOstDNLyt5BOigMLlcEPVLwnnBe-FufySwcopnP8c,3417
+ponyo/simulate_expression_data.py,sha256=2Dspz4h8wgTyf_9JnHQtzYhEcukvewnskKKv8z6zpWY,36869
+ponyo/train_vae_modules.py,sha256=nkZLyWA6k3RDyCXVVbP5Yi-_vohTLeuWSxy-zn_lseg,4512
+ponyo/utils.py,sha256=DozJsrBGEsSu3pnOJF4Kgsvl5xoHM6zJlhW3vUs4aMg,4890
+ponyo/vae.py,sha256=UzSen7iIlPBN4oP0r9ATFIGPzvYWBWbrcZZeky0clDg,12895
+ponyo-0.7.1.dist-info/LICENSE,sha256=COQTQLgxCPdCV40Ig0jH_x-vrblJRt4GE7-hJf6q0-8,1525
+ponyo-0.7.1.dist-info/METADATA,sha256=F0Cvk43Qe9ec43z3tfKpFA6IghGZFMnybl8KMa21G7o,10959
+ponyo-0.7.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+ponyo-0.7.1.dist-info/top_level.txt,sha256=67xDt7BAljtjeEjR7WUh9-IyFCgeoeWShGbkbn1ut2g,6
+ponyo-0.7.1.dist-info/RECORD,,
