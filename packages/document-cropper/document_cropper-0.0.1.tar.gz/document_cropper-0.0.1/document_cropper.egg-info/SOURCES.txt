@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+document_cropper/__init__.py
+document_cropper/corner_detection.py
+document_cropper/cropper_pipeline.py
+document_cropper/image_cropper.py
+document_cropper/segmentation.py
+document_cropper.egg-info/PKG-INFO
+document_cropper.egg-info/SOURCES.txt
+document_cropper.egg-info/dependency_links.txt
+document_cropper.egg-info/requires.txt
+document_cropper.egg-info/top_level.txt
