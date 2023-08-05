@@ -1,0 +1,13 @@
+LICENSE.txt
+README.rst
+setup.py
+idarest/__init__.py
+idarest/idarest.py
+idarest/idarest_client.py
+idarest/idarest_master.py
+idarest/idarest_mixins.py
+idarest.egg-info/PKG-INFO
+idarest.egg-info/SOURCES.txt
+idarest.egg-info/dependency_links.txt
+idarest.egg-info/requires.txt
+idarest.egg-info/top_level.txt
