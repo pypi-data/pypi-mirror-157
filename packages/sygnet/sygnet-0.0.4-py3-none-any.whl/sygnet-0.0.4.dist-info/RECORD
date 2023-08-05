@@ -1,0 +1,12 @@
+sygnet/__init__.py,sha256=rE01Hg6HXfrFuyzmdUGZhyWfC0l2Vpf6I2m-wECGp_0,31
+sygnet/sygnet_dataloaders.py,sha256=0YKhXqqIka0_ZVpadx_adKLCuwF48mo4rTtqF8idy3I,5727
+sygnet/sygnet_interface.py,sha256=_TRfoI6OVNk2yuZv1nLxehagx_MqZwwQWb6jAgzCOgQ,18692
+sygnet/sygnet_loader.py,sha256=eekf3Xft6oCA2kdEhdYKAmNY4Vz4e8FaK2r5RN380Wk,539
+sygnet/sygnet_models.py,sha256=Ocec_N-zoDr7NwrLQQh9UV996rALOEHKs5OZf20zlj4,13206
+sygnet/sygnet_requirements.py,sha256=H2CB_x9P4haoaC1CR-iDFcSDBF4wkx55Ef10LPZ7M-M,351
+sygnet/sygnet_train.py,sha256=rZ0G67zFm_IVi4nZu3mJirqfKF0j3nZxywpV5l_6XC0,13519
+sygnet/sygnet_tune.py,sha256=gGfa4NE05wSNNXNq_GmNVFo9WB4Qn53i8_2vhx5C0cs,6884
+sygnet-0.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sygnet-0.0.4.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+sygnet-0.0.4.dist-info/METADATA,sha256=TjUHratq7O1i8GiGOQcSDevXhf6mZor4jf383JxhJwk,2924
+sygnet-0.0.4.dist-info/RECORD,,
