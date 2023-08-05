@@ -1,0 +1,11 @@
+nbdev_demo/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+nbdev_demo/_nbdev.py,sha256=4mYLuRx6XRMo072_r6KhIgYH0IJtNTIwyt6uATnjE3I,479
+nbdev_demo/card.py,sha256=MZdFUh45FUaFQq2wOR7ZabhfqWyAYU9fZIdXaBjDuUw,1306
+nbdev_demo/core.py,sha256=SnlmlfWgxgAu-j_ZcFJeeWGvtVajlbS_LJN2xdbWug0,298
+nbdev_demo/deck.py,sha256=HsfHKDE4FHjwnywyOfXPW9sF12jw27H1H5m0cBmoK_s,1737
+nbdev_demo-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nbdev_demo-0.0.1.dist-info/METADATA,sha256=k-MrT0OaS1RWJGGcD4RZrNVVQ2_IBJPPBWJqg0uHGwg,1097
+nbdev_demo-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+nbdev_demo-0.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+nbdev_demo-0.0.1.dist-info/top_level.txt,sha256=EVKOJhjLzlbehYoHA0-u6hC2NOLZtsOc0lytZe2ZMrQ,11
+nbdev_demo-0.0.1.dist-info/RECORD,,
