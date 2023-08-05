@@ -1,0 +1,2 @@
+[console_scripts]
+iot = simpleiot.iot:iotcli
