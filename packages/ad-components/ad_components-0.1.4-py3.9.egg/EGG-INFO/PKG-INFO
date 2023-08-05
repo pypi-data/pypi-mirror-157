@@ -1,0 +1,217 @@
+Metadata-Version: 2.1
+Name: ad-components
+Version: 0.1.4
+Summary: Accelerated Discovery Reusable Components.
+Home-page: https://github.ibm.com/Accelerated-Discovery/Discovery-Platform
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+
+# Storage Access Reusable Component
+
+This is the implementation of Storage Access Reusable Component. It serves as a wrapper around Dapr and intended to replace all other components' I/O operations.
+
+## 1. Supported operations
+Below is a list of the operations you might intend to perform in your component.
+
+### 1.1. Upload
+Uploads data from a file to an object in a bucket.
+
+#### Arguments
+* `src`: Name of file to download.
+* `dest`: Object name in the bucket.
+* `binding`: The name of the binding to perform the operation.
+
+### 1.2. Download
+Downloads data of an object to file.
+
+#### Arguments
+* `src`: Object name in the bucket.
+* `dest`: Name of file to download.
+* `binding`: The name of the binding to perform the operation.
+
+
+## 2. Dapr configurations
+* `address`: Dapr Runtime gRPC endpoint address.
+* `timeout`: Value in seconds we should wait for sidecar to come up
+
+
+## 3. Verbose mode
+If you want to run the script in verbose mode you can append `--verbose` or `-v` to the command.
+
+## 4. Usage
+### 4.1 Pipeline native
+Follow the step-by-step method below to add this component in your pipeline, or refer to the full example here [workflow/components/storage/dummy_pipeline.py](workflow/components/storage/dummy_pipeline.py).
+
+1. Load the `component.yaml` file using load_component_from_file
+```python
+io_op = kfp.components.load_component_from_file("path/to/component.yaml")
+```
+Or alternatively you can load from Github like this:
+
+```python
+file_url = "https://raw.github.ibm.com/Accelerated-Discovery/Discovery-Platform/main/workflow/components/storage/component.yaml"
+io_op = kfp.components.load_component_from_url(file_url)
+```
+
+2. In your pipeline call the component with the parameters that fir your needs
+```python
+dummy_task_1 = io_op(
+    action="download",
+    src="test.txt",
+    dest="/mnt/downloaded.txt",
+)
+```
+
+3. Optional: Use volumes to keep files consistent between pods
+```python
+vop = kfp.dsl.VolumeOp(
+    name="volume_creation",
+    resource_name="mypvc",
+    size="1Mi",
+    modes=kfp.dsl.VOLUME_MODE_RWO,
+)
+
+dummy_task_1 = io_op(
+    action="download",
+    src="test.txt",
+    dest="/mnt/downloaded.txt",
+).add_pvolumes({"/mnt": vop.volume})
+
+dummy_task_2 = io_op(
+    action="upload",
+    src="/data/downloaded.txt",
+    dest="{{workflow.namespace}}/{{workflow.name}}/{{workflow.uid}}/downloaded.txt",
+).add_pvolumes({"/data": dummy_task_1.pvolume})
+```
+
+4. Compile your pipeline as you're used to, for example
+```shell
+dsl-compile-tekton \
+    --py <your pipeline file>.py \
+    --output <your output name>.yaml
+```
+
+### 4.2 Python module
+You can also invoke the manager using native python, which doesn't require a docker image to run. However, the package must be present in you python environment.
+
+#### 4.2.1 Setup
+```shell
+pip install ad-storage-component
+```
+
+#### 4.2.2 Usage
+
+```python
+from adstorage import download, upload
+
+download_resp = download(
+    src, dest,
+    # binding_name="s3-state",  # Or any other binding
+    # address=None, # endpoint:port
+    # timeout=300,  # in seconds
+)
+
+upload_resp = upload(
+    src, dest,
+    # binding_name="s3-state",  # Or any other binding
+    # address=None, # endpoint:port
+    # timeout=300,  # in seconds
+)
+```
+
+### 4.3 CLI
+
+```shell
+$ adsc -h
+
+usage: adsc [-h] --src PATH --dest PATH [--binding NAME] [--address URL] [--timeout SEC] [--verbose] [--version] {download,upload}
+
+Storage Access reusable component.
+
+positional arguments:
+  {download,upload}   action to be performed on data.
+
+optional arguments:
+  -h, --help          show this help message and exit
+  --verbose, -v       run the script in debug mode.
+  --version           show program's version number and exit
+
+action arguments:
+  --src, -r PATH      path of file to perform action on.
+  --dest, -d PATH     object's desired full path in the destination.
+  --binding, -b NAME  the name of the binding as defined in the components.
+
+dapr arguments:
+  --address, -a URL   Dapr Runtime gRPC endpoint address.
+  --timeout, -t SEC   value in seconds we should wait for sidecar to come up.
+```
+
+> **Note:** You can replace `adsc` with `python adstorage/main.py ...` if you don't have the package installed in your python environment.
+
+#### Examples
+1. To download an object from S3 run
+```bash
+adsc download \
+    --src test.txt \
+    --dest tmp/downloaded.txt \
+    --verbose
+```
+
+2. To upload an object to S3 run
+```bash
+adsc upload \
+    --src tmp/downloaded.txt \
+    --dest local/uploaded.txt \
+    --verbose
+```
+
+## 5. Publishing
+Every change to the python script requires a new Docker image to be published or a PyPi package to be pushed.
+
+### 5.1 Publish on all ends
+To publish a docker image and a pypi image run the following command:
+
+> **Note:** Please make sure each one's documentation below.
+
+```shell
+make
+```
+
+### 5.2 Docker
+#### 5.2.1 Local registry
+With kind I'm using a local registry accessible using `5001` port, running the following command will build and push the image to my local
+registry:
+
+```shell
+make docker-publish
+```
+
+#### 5.2.2 Remote registry
+To publish a new image in a remote registry you need to set the registry path variable:
+
+```shell
+REPO="registry-1.docker.io/distribution" make docker-publish
+```
+
+### 5.3. PyPi registry
+If you have the right (write) permissions, and a correctly-configured `$HOME/.pypirc` file, run the following command to publish the package
+
+```shell
+make pypi-publish
+```
+
+#### Increment the version
+To increment the version, go to [adstorage/version.py](adstorage/version.py) and increment the version there. Both the [setup.py](setup.py) and the `CLI` will read the new version correctly.
+
+> **Note:** We will run the `pypi-install` target to confirm the package is installable before publishing it to our PyPi registry.
+
+
