@@ -1,0 +1,12 @@
+*.autosave
+*.egg-info
+*.mo
+*.py[co]
+/.cache/
+/.coverage
+/.pytest_cache/
+/build/
+/dist/
+/tmp/
+__pycache__/
+_build/

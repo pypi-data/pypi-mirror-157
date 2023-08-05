@@ -1,0 +1,72 @@
+# -*- coding: utf-8 -*-
+# :Project:   PatchDB — Packaging metadata
+# :Created:   dom 26 giu 2022, 11:58:31
+# :Author:    Lele Gaifax <lele@metapensiero.it>
+# :License:   GNU General Public License version 3 or later
+# :Copyright: © 2022 Lele Gaifax
+#
+
+[project]
+name = "metapensiero.sphinx.patchdb"
+description = "Extract scripts from a reST document and apply them in order."
+version = "4.0.dev1"
+authors = [{name = "Lele Gaifax", email = "lele@metapensiero.it"}]
+readme = "README.rst"
+license = { text = "GPL-3.0-or-later" }
+classifiers = [
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Topic :: Database",
+  "Topic :: Utilities",
+  "Framework :: Sphinx :: Extension",
+  "Environment :: Console",
+  "Natural Language :: English",
+  "Natural Language :: Italian",
+]
+requires-python = ">=3.9"
+dependencies = [
+  "enlighten",
+  "sqlparse",
+]
+
+[project.urls]
+Changelog = "https://gitlab.com/metapensiero/metapensiero.sphinx.patchdb/-/blob/master/CHANGES.rst"
+Source = "https://gitlab.com/metapensiero/metapensiero.sphinx.patchdb"
+
+[project.optional-dependencies]
+dev = [
+  "babel",
+  "bump2version",
+  "hatchling",
+  "pygments",
+  "sphinx",
+  "tomli",
+  "twine",
+]
+
+[project.scripts]
+patchdb = "metapensiero.sphinx.patchdb.pup:main"
+patchdb-states = "metapensiero.sphinx.patchdb.states:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+artifacts = [ "*.mo" ]
+
+[tool.hatch.build.targets.sdist]
+exclude = [ ".*" ]
+
+[tool.hatch.build.targets.wheel]
+packages = [ "src/metapensiero" ]
+exclude = [ "*.cfg", "*.pot" ]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules --doctest-glob=*.rst"
+testpaths = "tests"
