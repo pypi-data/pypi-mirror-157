@@ -1,0 +1,4 @@
+numpy
+xyz_py>=4.5.0
+plotly
+scikit-learn

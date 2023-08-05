@@ -1,0 +1,2 @@
+[console_scripts]
+atom_access = atom_access.cli:main
