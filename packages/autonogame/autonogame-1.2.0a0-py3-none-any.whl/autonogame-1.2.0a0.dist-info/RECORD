@@ -1,0 +1,14 @@
+autonogame/__init__.py,sha256=5ppI8IZN_zOwoJFdu_Oq9ipxtyHw9n6OMVAa_s9T_yY,24
+autonogame/auth.py,sha256=C9FEOjUiR0M4XAyEb3Zq5PUu3kyz4h2QkjCpIvlbgm0,2512
+autonogame/bot.py,sha256=lFuZ5xeE7iWS9XexC9UyZE82CpJxXN6jYZcl_J8Posg,10777
+autonogame/config.py,sha256=3ziWwsIEIK_pF3UUxzplztjGOi-j-sBC8L07MmD9lbw,6952
+autonogame/crypto.py,sha256=ZMWmDYf3PTLdNfb-GdCEi1qzkgPeLih32MDeOufJeuA,1018
+autonogame/gui.py,sha256=Znddf2zE2kCcyb5566eKFkVjDskICbo_TrJXd2exh_A,7108
+autonogame/tab_account.py,sha256=HJi48EUHdlq_jiFnlpGdsu91V96Jeo_oHVIvY20WHmc,8450
+autonogame/version.py,sha256=EynIYxza6IZNa5-ZpQJc6TZpZXio00AHBxj5d3vAotA,28
+autonogame-1.2.0a0.dist-info/LICENSE,sha256=GTNh4oc_SJ2E5nyHVcEX1Cz9YsEFk7tuwRZb83VXI4w,1093
+autonogame-1.2.0a0.dist-info/METADATA,sha256=2lAyI7KJ2KFkD4X19_D8NqhZlCyhhlqa_Uak1RecBgg,2616
+autonogame-1.2.0a0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+autonogame-1.2.0a0.dist-info/entry_points.txt,sha256=oU3HqXD6vc5AQxO4_p5mtGpT1-Nxtu0dA3rfKsPcZ88,51
+autonogame-1.2.0a0.dist-info/top_level.txt,sha256=wzp4VfP9c_1QNwxtQeHlIYufOjZYC2R0Pi_ZTnjhUFY,11
+autonogame-1.2.0a0.dist-info/RECORD,,
