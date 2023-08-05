@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: eurlex2lexparency
+Version: 1.3
+Summary: Transforming documents from Eur-Lex to Lexparency
+Home-page: https://github.com/Lexparency/eurlex2lexparency
+Author: Martin Heimsoth
+Author-email: mail@lexparency.org
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lexref
+Requires-Dist: singletonmetaclasss
+Requires-Dist: pandas
+Requires-Dist: cachier
+Requires-Dist: dataclasses
+Requires-Dist: lxml
+Requires-Dist: Pillow
+Requires-Dist: SPARQLWrapper (==1.8.5)
+Requires-Dist: rdflib (==4.2.2)
+Requires-Dist: SQLAlchemy
+Requires-Dist: urllib3
+Requires-Dist: certifi
+Requires-Dist: anytree
+Requires-Dist: requests
+Requires-Dist: dateparser
+Requires-Dist: beautifulsoup4
+Requires-Dist: html5lib
+Requires-Dist: keepalive
+Requires-Dist: numpy
+
+# eurlex2lexparency
+Transforming documents from Eur-Lex to Lexparency
+
+## Installation
+
+`pip install eurlex2lexparency`
+
+## Usage
+
+Using this package requires a settings-module on first level,
+featuring the definition of the following variables.
+
+| Name                 | Description                                               |
+|----------------------|-----------------------------------------------------------|
+| LEXPATH              | Filesystem path to store the transformed documents.       |
+| CELEX_CONNECT_STRING | To be used by `sqlalchemy.create_engine`                  |
+| LANG_2_ADDRESS       | Dictionary, language code to corresponding Lexparency URL |
+
+
