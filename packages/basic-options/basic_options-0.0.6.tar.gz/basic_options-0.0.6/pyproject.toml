@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "basic_options"
+version = "0.0.6"
+authors = [
+  { name="DuncanRuns" },
+]
+description = "This package provides a basic way to create configuration files, especially for tkinter GUI applictions."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/DuncanRuns/basic_options"
+"Bug Tracker" = "https://github.com/DuncanRuns/basic_options/issues"

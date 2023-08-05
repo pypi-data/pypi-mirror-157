@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/basic_options/__init__.py
+src/basic_options/basic_options.py
+src/basic_options.egg-info/PKG-INFO
+src/basic_options.egg-info/SOURCES.txt
+src/basic_options.egg-info/dependency_links.txt
+src/basic_options.egg-info/top_level.txt
