@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: dds4xnat
+Version: 0.1
+Summary: Renames the scan type for MR sessions stored on XNAT using the DeepDicomSort algorithm
+Home-page: https://github.com/australian-imaging-service/deepdicomsort4xnat
+Author: Mahdieh Dashtbani-Moghari
+Author-email: dashtbani.2009@gmail.com
+License: CC0
+Keywords: repository neuroimaging workflows xnat
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: test
+License-File: LICENSE
+
+Deep Dicom Sort for XNAT
+========================
+
+An implementation of the [Deep Dicom Sort algorithm](https://github.com/Svdvoort/DeepDicomSort) that sorts MRI sessions stored in [XNAT](https://xnat.org) repositories in-place.
+
+
+Reference: https://link.springer.com/article/10.1007/s12021-020-09475-7

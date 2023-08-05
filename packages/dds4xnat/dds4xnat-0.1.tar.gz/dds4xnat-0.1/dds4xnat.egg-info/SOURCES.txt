@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dds4xnat/__init__.py
+dds4xnat/tasks.py
+dds4xnat/workflow.py
+dds4xnat.egg-info/PKG-INFO
+dds4xnat.egg-info/SOURCES.txt
+dds4xnat.egg-info/dependency_links.txt
+dds4xnat.egg-info/requires.txt
+dds4xnat.egg-info/top_level.txt
+dds4xnat/preprocessing/DICOM_preparation_functions.py
+dds4xnat/preprocessing/NIFTI_preparation_functions.py
+dds4xnat/preprocessing/__init__.py
+dds4xnat/tools/__init__.py
+dds4xnat/tools/data_IO.py
