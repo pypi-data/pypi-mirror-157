@@ -1,0 +1,14 @@
+numpy
+pandas
+pyyaml
+pytz
+tzlocal
+python-dateutil
+confapp-shaliulab==1.1.13
+codetiming
+
+[bloscpack]
+bloscpack
+
+[cv2cuda]
+cv2cuda>=1.0.4
