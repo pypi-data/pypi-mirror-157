@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+versioneer.py
+als.bcs.egg-info/PKG-INFO
+als.bcs.egg-info/SOURCES.txt
+als.bcs.egg-info/dependency_links.txt
+als.bcs.egg-info/requires.txt
+als.bcs.egg-info/top_level.txt
+als/bcs/_version.py
