@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+net_math_init/__init__.py
+watts_net_math.egg-info/PKG-INFO
+watts_net_math.egg-info/SOURCES.txt
+watts_net_math.egg-info/dependency_links.txt
+watts_net_math.egg-info/top_level.txt
