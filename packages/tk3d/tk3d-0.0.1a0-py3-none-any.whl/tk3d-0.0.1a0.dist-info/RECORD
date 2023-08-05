@@ -1,0 +1,9 @@
+tk3d/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tk3d/__pycache__/__init__.cpython-39.pyc,sha256=2q_NaOAI5yuCOpvZyiyKDkXlIwQXVMVU7KLGJAxBpGc,175
+tk3d/api/pywavfront.py,sha256=VBaPRk3J8whuA9jMs1yXkN3te-dcGRs5MnnONj-BWFU,4366
+tk3d/api/__pycache__/pywavfront.cpython-39.pyc,sha256=NflZW4F8rF6VnZc7psiEfhkxLifvMUl7uZE6gRJLGcM,4166
+tk3d-0.0.1a0.dist-info/LICENSE,sha256=ajxCpFG1ZxRGDKhOE45GyYsTpVBwzw4xagnZYh2Uooc,1086
+tk3d-0.0.1a0.dist-info/METADATA,sha256=aZxOEtPfSXR0Ya6bU4Dy9SAj2b2cT3c16jCoEKsOblI,2260
+tk3d-0.0.1a0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tk3d-0.0.1a0.dist-info/top_level.txt,sha256=8yWpb8UQXMHD-J1usJzZ-7CpghGMYUlWW8WKQ2zyjME,5
+tk3d-0.0.1a0.dist-info/RECORD,,
