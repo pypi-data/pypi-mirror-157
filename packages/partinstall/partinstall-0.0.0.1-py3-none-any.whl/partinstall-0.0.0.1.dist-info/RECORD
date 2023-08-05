@@ -1,0 +1,11 @@
+partinstall/__init__.py,sha256=YF4HWem_zImFfS2VODE-5dkNJq61MFLx8a5Gk61-m6Q,224
+partinstall/base_test.py,sha256=i611lTgGsRMpe0kwszDwF3AnOzUGeFOEaa35j8WSPmY,305
+partinstall/hello.py,sha256=wrGjwaWqf1emXVUgC4UhFnt9yDzNgfdrko3nmHH_6S4,72
+partinstall/array/__init__.py,sha256=xmp0IwffGarhQNE5hDTDkMxM58f9m1b_nzuKtayiaic,323
+partinstall/array/array_test.py,sha256=GgrpHPje36q150wdF8GEQsrkhahhx3TcKky200UD7AE,166
+partinstall/dataframe/__init__.py,sha256=oD4Mlo7LjSWsXeIz_uHsQggIi5DIQqTk_DSP1fq18mo,339
+partinstall/dataframe/dataframe_test.py,sha256=Vaz7bXf2kZY2QuFNNFHJpFVTLZQw0D_sq8D2tdly7Jc,130
+partinstall-0.0.0.1.dist-info/METADATA,sha256=7hUpQ_AQkE4A2GK8cOmvlYCqZgvfqdq_q6CwkrI_da8,768
+partinstall-0.0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+partinstall-0.0.0.1.dist-info/top_level.txt,sha256=sq9W9tM-oURHtSX87xg0PrzlgPfvaksNcQO3tGBcdVc,12
+partinstall-0.0.0.1.dist-info/RECORD,,
