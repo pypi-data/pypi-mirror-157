@@ -1,0 +1,79 @@
+# -*- coding: utf-8 -*-
+"""Core functionality for chonf's json configuration parser.
+
+Functions:
+
+    read(keys: List[str], dir_path: pathlib.Path, *args, **kargs) -> Any:
+        Tries to read a configuration option from a json file.
+
+"""
+import json
+from functools import cache
+from pathlib import Path
+from typing import Any, List, Set
+
+from chonf.exceptions import FileAccessError, NotSubtree, SkipSource
+
+
+def read(keys: List[str], path: Path, *_, **__) -> Any:
+    """Read configuration option from a Json file.
+
+    Args:
+        keys (List[str]): Ordered keys to access the option.
+        dir_path: (pathlib.Path): path object representing the file
+
+    Returns:
+        Any: Whatever data is found in the file with the given keys.
+    """
+    config = load_configs(path / "config.json")
+    try:
+        for key in keys:
+            config = config[key]
+    except KeyError as err:
+        raise SkipSource from err
+    return config
+
+
+def list_children(keys: List[str], path: Path, *_, **__) -> Set[str]:
+    """List all children of a configuration node on a Json file.
+
+    Args:
+        keys (List[str]): Ordered keys to access the node.
+        dir_path: (pathlib.Path): path object representing the file
+
+    Returns:
+        Set[str]: list of children keys to requested node, might be empty.
+
+    """
+    config = load_configs(path / "config.json")
+    try:
+        for key in keys:
+            config = config[key]
+    except KeyError:
+        return set()
+    if isinstance(config, dict):
+        return set(config.keys())
+    raise NotSubtree(config)
+
+
+@cache
+def load_configs(path: Path) -> dict:
+    """Read Json file into a dict.
+
+    This wraps the load() function from the json package,
+    and will use it's default behaviour when called with
+    only a file object created by open(path).
+
+    Args:
+        path (pathlib.Path): Path to the json file.
+
+    Returns:
+        dict: Data read from json file.
+    """
+    try:
+        with open(path, "r", encoding="utf-8") as json_file:
+            return json.load(json_file)
+    except FileNotFoundError:
+        return {}
+    except Exception as err:
+        raise FileAccessError from err
