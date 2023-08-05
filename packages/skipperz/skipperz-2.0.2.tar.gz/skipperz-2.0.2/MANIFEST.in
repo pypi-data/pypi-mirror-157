@@ -1,0 +1,5 @@
+include src/skipperz/assets/*.*
+include src/skipperz/pgSprite/*.*
+include src/skipperz/skip_libs/*.*
+include src/skipperz/FX/*.*
+include src/skipperz/levels/*.*
