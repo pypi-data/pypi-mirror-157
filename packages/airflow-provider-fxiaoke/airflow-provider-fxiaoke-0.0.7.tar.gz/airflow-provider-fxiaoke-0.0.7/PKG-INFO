@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: airflow-provider-fxiaoke
+Version: 0.0.7
+Summary: `Fxiaoke CRM(ShareCRM) for Airflow hooks and operators.`__ 
+Home-page: https://github.com/wbchn/apache-airflow-providers-fxiaoke
+Author: wbin
+Author-email: wbin.chn@gmail.com
+License: Apache License 2.0
+Description: # Apache-airflow-providers-fxiaoke
+        
+        Airflow plugin for [fxiaoke API](https://open.fxiaoke.com/wiki.html)
+        
+        ## Install
+        
+        ```bash
+        pip install airflow-providers-fxiaoke
+        ```
+        
+        ## Usage
+        
+        Create New connections named `fxiaoke_default` with extra json:
+        `{"app_id":"", "app_secret":"", "permanent_code":"", "open_user_id":""}`
+        
+        ### Hooks
+        
+        - FxiaokeHooks
+        
+        
+        ### Operators
+        
+        - FxiaokeToGCSOperator
+        
+Keywords: clickhouse,airflow,providers,fxiaoke,ShareCRM
+Platform: UNKNOWN
+Classifier: Framework :: Apache Airflow
+Classifier: Framework :: Apache Airflow :: Provider
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown

@@ -1,0 +1,33 @@
+
+---
+package-name: airflow-provider-fxiaoke
+name: Fxiaoke
+description: |
+    `Fxiaoke CRM(ShareCRM) for Airflow hooks and operators.`__
+
+versions:
+  - 0.0.7
+
+additional-dependencies:
+  - apache-airflow>=2.2.0
+  - apache-airflow-providers-google>=6.0.0
+  - fxiaoke-python>=0.0.2
+
+integrations:
+  - integration-name: FXiaoKe(ShareCRM) Toolkit
+    external-doc-url: https://github.com/wbchn/apache-airflow-providers-fxiaoke
+    tags: [fxiaoke, sharecrm]
+
+operators:
+  - integration-name: FXiaoKe(ShareCRM) Toolkit
+    python-modules:
+      - airflow_fxiaoke.operators.fxiaoke_to_gcs.FxiaokeToGCSOperator
+
+hooks:
+  - integration-name: FXiaoKe(ShareCRM) Toolkit
+    python-modules:
+      - airflow_fxiaoke.hooks.query.FxiaokeHooks
+
+connection-types:
+  - hook-class-name: airflow_fxiaoke.hooks.query.FxiaokeHooks
+    connection-type: fxiaoke
