@@ -1,0 +1,4 @@
+[console_scripts]
+sportran-analysis = sportran.analysis:main
+sportran-gui = sportran_gui.main:run
+
