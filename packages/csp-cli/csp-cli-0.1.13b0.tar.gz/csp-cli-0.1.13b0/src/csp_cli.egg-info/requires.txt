@@ -1,0 +1,14 @@
+Click
+requests
+PyYAML
+tqdm
+seaborn
+chardet
+prettytable
+Pillow
+numpy<1.22.0,>1.21.0
+matplotlib
+lxml
+openpyxl
+zipp>=3.7.0
+loguru
