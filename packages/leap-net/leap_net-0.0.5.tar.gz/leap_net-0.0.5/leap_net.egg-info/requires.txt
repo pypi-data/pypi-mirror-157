@@ -1,0 +1,9 @@
+numpy
+scipy
+tensorflow
+
+[recommended]
+grid2op
+pandas
+sklearn
+tqdm
