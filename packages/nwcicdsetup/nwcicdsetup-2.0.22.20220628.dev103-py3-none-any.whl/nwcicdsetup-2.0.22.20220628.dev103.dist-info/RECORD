@@ -1,0 +1,17 @@
+nwcicdsetup/__main__.py,sha256=fKt15ps6prYRF0i11oeLnevgzoKwAp6R2_9WWSi7bc0,2342
+nwcicdsetup/circleci.py,sha256=XdXzlR7DUR_OOsBIr_04QZYiFRFtGMaK6NcrtewKXY8,4794
+nwcicdsetup/circleciapiclient.py,sha256=YTzpNiTyV9YE7canR1-I1v_cwcZhkn_moUBQhmobf5M,5972
+nwcicdsetup/circlecibuild.py,sha256=n9AjVYmjvTqUDI9E5zFVp3PTS6CEUVYF5UxyEWTn67U,602
+nwcicdsetup/circlecicontext.py,sha256=MqttAvh2R3-YeFulZOR5_FMJc6GVEQT7A4DVyJNP5NQ,1672
+nwcicdsetup/circlecijob.py,sha256=889V_KK-PjGF5ObBjq--1V46i0lWvrIyhVoyw1XvrQY,607
+nwcicdsetup/circleciworkflowjob.py,sha256=-qfUdJv0Oum-0n-PwCvo0oEh99uqp9M0JAKiMTt6GZY,514
+nwcicdsetup/dotnetdependencyresolver.py,sha256=seOzBjx5DfFNLFeghQ1lomB3w6JsAPO8jtycnzP99ms,2928
+nwcicdsetup/generator.py,sha256=Qf6VuTuSL5il41X9ToIB3GYipMbf95jJxv66scxOGyg,3975
+nwcicdsetup/githubapiclient.py,sha256=z5mqQE85UOp-BIM2L-seIB6jVURW2gGB3Wu3PqYxz2E,3988
+nwcicdsetup/githubchangeset.py,sha256=LZcWsUkOtoKZ3tdiSCSTvi0Iyszy9s1ZV0oOfyQQ9G8,2265
+nwcicdsetup/nwservice.py,sha256=9i-bNF-GAwmBJ4RzkNEE2mmO2yOKgNZPLguHET3gIDk,26052
+nwcicdsetup/validationschema.py,sha256=dIqfelha7S96c3k7FDi0U9-e-Ayzd3WYJMMBLkkaft0,8870
+nwcicdsetup/validator.py,sha256=8HSrsdrJ53SbIqahpEJFHB2Hu7a-ieYI8JWbcDbc4Vw,2581
+nwcicdsetup-2.0.22.20220628.dev103.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+nwcicdsetup-2.0.22.20220628.dev103.dist-info/METADATA,sha256=UvomWwGKWL6Aee6svUVNAIQxg_SqAUBWsL8GjP2Na-c,504
+nwcicdsetup-2.0.22.20220628.dev103.dist-info/RECORD,,
