@@ -1,0 +1,4 @@
+[console_scripts]
+laipvt = laipvt.cli.main:main
+laipvt-poc = laipvt.cli.poc:main
+
