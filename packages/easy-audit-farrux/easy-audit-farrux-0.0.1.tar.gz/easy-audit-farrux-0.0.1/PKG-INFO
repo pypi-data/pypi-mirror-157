@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: easy-audit-farrux
+Version: 0.0.1
+Summary: Yet another Django audit log app, hopefully the simplest one.
+Home-page: https://github.com/suyunovfarrux4544/django-easy-audit-farrux.git
+Author: Suyunov Farrux
+Author-email: suyunovfarrux4544@gmail.com
+License: GPL3
+Platform: UNKNOWN
+Classifier: Environment :: Plugins
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.5
+License-File: LICENSE
+
+=================
+easy-audit-farrux
+=================
+
+Yet another Django audit log app, hopefully the simplest one.
+
+Quick start
+-----------
+
+1. Add "easyauditfarrux" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'easyauditfarrux',
+    ]
+
+2. Add easyauditfarrux's middleware to your MIDDLEWARE (or MIDDLEWARE_CLASSES) setting like this::
+
+    MIDDLEWARE = (
+        ...
+        'easyauditfarrux.middleware.easyaudit.EasyAuditMiddleware',
+    )
+
+3. Run 'python manage.py migrate easyauditfarrux' to create the audit models.
+
+4. That's it! Now every CRUD event on your whole project will be registered in the audit models, which you will be able to query from the Django admin app. Additionally, this app will also log all authentication events and all URLs requested.
+
+
