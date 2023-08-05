@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ppppocr
+Version: 1.0.6
+Summary: PPOCR
+Home-page: https://github.com/duolabmeng6/ppppocr
+Author: duolabmeng6
+Author-email: 1715109585@qq.com
+Keywords: ppocr paddleOCR ppppocr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# ppppocr
+
+ppppocr 是一款自动识别图片中的文字的工具类，可以自动识别图片中的文字，非常容易调用~
+
+本项目使用 PaddleOCR 的模型效果一级棒~
+
+# 使用非常简单
+`pip install ppppocr`
+
+```python
+import ppppocr
+ocr = ppppOcr() # ppppOcr(model="server", lang="cn") 服务端模型 , lang 语言：cn/en/japan/korean
+image_path = r'test_images/det_images/ch_en_num.jpg'
+dt_boxes, rec_res = ocr.ocr(image_path)
+result = ocr.toText(rec_res) # 转换为文本
+```
