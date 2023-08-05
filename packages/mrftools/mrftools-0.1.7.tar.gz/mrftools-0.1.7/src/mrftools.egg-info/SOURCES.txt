@@ -1,0 +1,16 @@
+README.md
+setup.py
+src/mrftools/__init__.py
+src/mrftools/dictionaryParameters.py
+src/mrftools/phantomGenerators.py
+src/mrftools/sequenceGenerators.py
+src/mrftools/sequenceParameters.py
+src/mrftools/simulation.py
+src/mrftools/testing.py
+src/mrftools/types.py
+src/mrftools.egg-info/PKG-INFO
+src/mrftools.egg-info/SOURCES.txt
+src/mrftools.egg-info/dependency_links.txt
+src/mrftools.egg-info/not-zip-safe
+src/mrftools.egg-info/requires.txt
+src/mrftools.egg-info/top_level.txt
