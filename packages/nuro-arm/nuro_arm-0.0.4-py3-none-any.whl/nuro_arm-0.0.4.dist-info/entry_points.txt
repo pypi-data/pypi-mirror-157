@@ -1,0 +1,6 @@
+[console_scripts]
+calibrate_camera = nuro_arm.scripts.calibrate_camera:main
+calibrate_xarm = nuro_arm.scripts.calibrate_xarm:main
+generate_aruco_tags = nuro_arm.scripts.generate_aruco_tags:main
+move_arm_with_gui = nuro_arm.scripts.move_arm_with_gui:main
+record_movements = nuro_arm.scripts.record_movements:main
