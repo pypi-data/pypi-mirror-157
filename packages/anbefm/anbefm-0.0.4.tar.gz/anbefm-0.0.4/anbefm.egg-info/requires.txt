@@ -1,0 +1,4 @@
+aiomysql==0.0.21
+tornado==6.1
+click==7.1.2
+PyMySQL==0.9.3
