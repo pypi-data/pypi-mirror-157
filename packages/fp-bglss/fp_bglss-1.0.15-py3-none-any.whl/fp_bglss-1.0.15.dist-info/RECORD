@@ -1,0 +1,12 @@
+fp_bglss/__init__.py,sha256=Nj3lEwrNSnK-LtnMLRM6caMJItO2ETaA_JAaTbJdOU4,3078
+fp_bglss/config.py,sha256=TSuD7X57PEHzVQhzOsunAZjCzd477FvxoLAS2a3z5NI,19015
+fp_bglss/configForward.py,sha256=TjdLbGeZmIlgYLfkF94l7txytOdEHhICoIBGWoB415A,20034
+fp_bglss/consts.py,sha256=Mwh-kKTb0y2Xo-gvNRES1O9Ev4fxNJ8mVRJBPiU4NFE,1357
+fp_bglss/env.py,sha256=NjKVjf_3TBWMvoJOtIZ_8lSYGNbhvnaNYVdys7G2ZyM,5437
+fp_bglss/logevent.py,sha256=mFRQHZZSF7XilbJBD7-qHmR9tpB7mlGk9o8s1uRKjSg,2567
+fp_bglss/logeventdaemon.py,sha256=LXqtvAk6C9nVCoVW5Xp_1NMm3If-jZYGi3-NIElj0NU,38316
+fp_bglss/secret.py,sha256=lvp73kiyHMOAs00sQhb0d1iulV1fZhefUYMQOyGjoAc,3810
+fp_bglss-1.0.15.dist-info/METADATA,sha256=OHrwBueeGlGAQ65Jf9rrOfVANfbMYusmwmBB3LiUGtc,589
+fp_bglss-1.0.15.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fp_bglss-1.0.15.dist-info/top_level.txt,sha256=lFptuYpjBfiHnXTof2AnAJmxJYmidYX6htdr3DskeAM,9
+fp_bglss-1.0.15.dist-info/RECORD,,

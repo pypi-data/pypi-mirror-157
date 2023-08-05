@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fp-bglss
+Version: 1.0.15
+Summary: Shared code for Bitglass Log Streaming Server (used for integration with Splunk, QRadar, Phantom, Demisto and other SIEM platforms)
+Home-page: https://github.com/asingh-bitglass/fp-bglss
+Author: Alexei Yur
+Author-email: alexeiyur@gmail.com
+Project-URL: Bug Tracker, https://github.com/asingh-bitglass/fp-bglss/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
