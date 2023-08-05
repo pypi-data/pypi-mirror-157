@@ -1,0 +1,14 @@
+context_predeployed/__init__.py,sha256=whd_Nc_PNO6F1SWQuodpzc8Bd1FYNvo0L-kDGTAz0hc,84
+context_predeployed/address.py,sha256=jTIXr0UXsT82Te_jX6npMsqiOq-Fu8CGoTDdQkV0jjc,110
+context_predeployed/context_generator.py,sha256=sifbNiRZzJWOYkV57oGk-HjXRIVcmfUnjJdPczPDKF8,1736
+context_predeployed/artifacts/Context.json,sha256=OWngWbllaKbVmTP1UDbN2r096durbfIOAHl2G-z3lbA,4600
+context_predeployed/artifacts/Context.meta.json,sha256=Z_vSvOdAp3GKENprUpbVd3DI3lebkv1Z4wqdxfGGoGs,1813
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_context_generator.py,sha256=fQ4N3QRQuaGJEFmFiQWFwKvRSfCQf_gJuaYs6FhaHjw,1264
+test/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/tools/test_predeployed.py,sha256=XiwE8b8KD6aJ3bp12HQf-K0iNvnHaV39_A0Ka4QcOHo,3067
+test/tools/test_solidity_project.py,sha256=x5V0tQQhp9CGFZzqaqllL3YmWdxSc-tj3G33uQjFpj0,511
+context_predeployed-1.0.0.dev1.dist-info/METADATA,sha256=z3GjobhNaeVUOj-rRJvi65uA6IlECN8V0mAuPEN8hHc,965
+context_predeployed-1.0.0.dev1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+context_predeployed-1.0.0.dev1.dist-info/top_level.txt,sha256=GfItymKqIRpa658g4cPrc8jQE9r4maM6ih8IvziLgr4,25
+context_predeployed-1.0.0.dev1.dist-info/RECORD,,

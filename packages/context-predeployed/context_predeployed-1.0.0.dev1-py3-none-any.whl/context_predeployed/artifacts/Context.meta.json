@@ -1,0 +1,36 @@
+{
+    "name": "Context",
+    "solcVersion": "0.5.8",
+    "solcLongVersion": "0.5.8+commit.23d335f2",
+    "input": {
+        "language": "Solidity",
+        "sources": {
+            "contracts/Context.sol": {
+                "content": "pragma solidity ^0.5.8;\n\ncontract Context\n{\n    address owner;\n    string schainName = \"SKALE\";\n\n    function getSchainName() public view returns (string memory)\n    {\n        return schainName;\n    }\n    function getSchainOwnerAddress() public view returns (address)\n    {\n        return owner;\n    }\n    function setSchainOwnerAddress(address newOwner) public\n    {\n        require(msg.sender == owner);\n        owner = newOwner;\n    }\n}"
+            },
+            "contracts/Migrations.sol": {
+                "content": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Migrations {\n  address public owner = msg.sender;\n  uint public last_completed_migration;\n\n  modifier restricted() {\n    require(\n      msg.sender == owner,\n      \"This function is restricted to the contract's owner\"\n    );\n    _;\n  }\n\n  function setCompleted(uint completed) public restricted {\n    last_completed_migration = completed;\n  }\n}\n"
+            }
+        },
+        "settings": {
+            "optimizer": {
+                "enabled": false,
+                "runs": 200
+            },
+            "outputSelection": {
+                "*": {
+                    "*": [
+                        "abi",
+                        "evm.bytecode",
+                        "evm.deployedBytecode",
+                        "evm.methodIdentifiers",
+                        "metadata"
+                    ],
+                    "": [
+                        "ast"
+                    ]
+                }
+            }
+        }
+    }
+}
