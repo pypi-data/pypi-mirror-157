@@ -1,0 +1,15 @@
+image_object_slicer/COCOParser.py,sha256=rOAxPRJ8xUx3UIuuf_pxK0G_jMzTl2Yxb3qVW5D9-V8,2718
+image_object_slicer/CVATImagesParser.py,sha256=GQKn7I72ATIMPZtdfq-PGEptfpA-Q5DLD1bRyTVfBtk,1877
+image_object_slicer/DatumaroParser.py,sha256=Vtg_g4cyAsZeFNFWDE_yzA4be-71oWqEKyACwkQPAkE,2313
+image_object_slicer/KITTIParser.py,sha256=z671vaXJbXorzLqhWLmP1KvzJ-csKDWyFFdqTUC46SU,1732
+image_object_slicer/LabelMeParser.py,sha256=5jcSvA69PRFIzw9Wp2HbLJhL1txV5pbOj8oUaobknVE,2049
+image_object_slicer/MultipleFileAnnotationParser.py,sha256=9ciwB7Vf454LffhCFXR44OK8yB6D0Zc_3K0UJsY9q-8,1172
+image_object_slicer/PascalVOCParser.py,sha256=Yz-cjhBH2o_0zoQjUsXgjgtvqV3KOnokzt2zNcOCETk,1900
+image_object_slicer/SingleFileAnnotationParser.py,sha256=m7bzQiEm_JUKonsNymmeXkT1cOy_aqF83KOwponSRkI,1309
+image_object_slicer/__init__.py,sha256=IScldW_shyV3dYTyKLIKB58FYu8LFGAeT1TxD5vD09Y,8737
+image_object_slicer-1.8.1.data/scripts/image-object-slicer,sha256=5NZKaZ5oNX5QFO73iUlZ99DS_lNEOc-eSDR8eNQ63dk,63
+image_object_slicer-1.8.1.dist-info/LICENSE,sha256=944tNTIwjwPDOwllerbnwBW6NESJNnC-e27Ch0TOJ-g,35150
+image_object_slicer-1.8.1.dist-info/METADATA,sha256=DIJAx1OVlWwiq5XXA9uEb0NzdKBQJkG_e5ciXNPBZGI,3151
+image_object_slicer-1.8.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+image_object_slicer-1.8.1.dist-info/top_level.txt,sha256=fkaRlKOAMn6BfkW5fow0q10tlXv3O3HsJpPiet2hX5A,20
+image_object_slicer-1.8.1.dist-info/RECORD,,
