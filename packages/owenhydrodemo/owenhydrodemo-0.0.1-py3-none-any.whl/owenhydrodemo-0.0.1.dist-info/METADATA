@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: owenhydrodemo
+Version: 0.0.1
+Summary: hydro test
+Home-page: https://github.com/OuyangWenyu/hydro-test
+Author: Wenyu Ouyang
+Author-email: wenyuouyang@outlook.com
+License: MIT_license
+Keywords: test
+Platform: any
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: numpy
+
+a test repo for pypi packaging

@@ -1,0 +1,9 @@
+hydro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hydro/hello.py,sha256=l0CCvLGLpAVjum7wqKNjhZswUAcHxjUj5sWOIaisiOU,113
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_hello.py,sha256=4lBmDh2gibA35gqWwp_bq6vcMy8qlyKOoSVt-ENr-8g,11
+owenhydrodemo-0.0.1.dist-info/LICENSE,sha256=4Cm0YX5TSNjJEVTn2INJML_yNYUCG1fWEzzRn7KD6OY,1068
+owenhydrodemo-0.0.1.dist-info/METADATA,sha256=7Ey_9xNz3kCwaFABMrP4QztTbdXCUeviYgZk3j6puvM,337
+owenhydrodemo-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+owenhydrodemo-0.0.1.dist-info/top_level.txt,sha256=4gD5QMWASqU9ZWoz6RHN_Vuxa1ScTu04LW5d9qqjmZw,11
+owenhydrodemo-0.0.1.dist-info/RECORD,,
