@@ -1,0 +1,2 @@
+[console_scripts]
+generate_ontology = forte.command_line.generate_ontology.__main__:main

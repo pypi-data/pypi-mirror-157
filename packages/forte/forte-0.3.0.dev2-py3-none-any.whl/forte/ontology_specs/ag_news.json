@@ -1,0 +1,15 @@
+{
+    "name": "ag_news",
+    "imports": [
+      "base_ontology.json"
+    ],
+    "additional_prefixes": [
+        "ftx.onto.ag_news"
+    ],
+    "definitions": [
+      {
+        "entry_name": "ftx.onto.ag_news.Description",
+        "parent_entry": "forte.data.ontology.top.Annotation"
+      }
+    ]
+}

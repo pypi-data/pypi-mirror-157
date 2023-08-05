@@ -1,0 +1,108 @@
+{
+  "name": "wikipedia",
+  "imports": [
+    "base_ontology.json"
+  ],
+  "definitions": [
+    {
+      "entry_name": "ft.onto.wikipedia.WikiPage",
+      "parent_entry": "forte.data.ontology.top.Annotation",
+      "attributes": [
+        {
+          "name": "page_id",
+          "type": "str"
+        },
+        {
+          "name": "page_name",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "entry_name": "ft.onto.wikipedia.WikiBody",
+      "parent_entry": "forte.data.ontology.top.Annotation",
+      "attributes": []
+    },
+    {
+      "entry_name": "ft.onto.wikipedia.WikiSection",
+      "parent_entry": "forte.data.ontology.top.Annotation",
+      "attributes": [
+        {
+          "name": "is_intro",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "entry_name": "ft.onto.wikipedia.WikiParagraph",
+      "parent_entry": "forte.data.ontology.top.Annotation",
+      "attributes": []
+    },
+    {
+      "entry_name": "ft.onto.wikipedia.WikiTitle",
+      "parent_entry": "forte.data.ontology.top.Annotation",
+      "description": "Title for the wikipedia sections.",
+      "attributes": []
+    },
+    {
+      "entry_name": "ft.onto.wikipedia.WikiArticleTitle",
+      "parent_entry": "forte.data.ontology.top.Annotation",
+      "description": "The title for the whole article.",
+      "attributes": []
+    },
+    {
+      "entry_name": "ft.onto.wikipedia.WikiAnchor",
+      "parent_entry": "forte.data.ontology.top.Annotation",
+      "attributes": [
+        {
+          "name": "target_page_name",
+          "type": "str"
+        },
+        {
+          "name": "is_external",
+          "type": "bool",
+          "description": "whether this is a link to external (i.e. outside wikipedia)."
+        }
+      ]
+    },
+    {
+      "entry_name": "ft.onto.wikipedia.WikiInfoBoxProperty",
+      "parent_entry": "forte.data.ontology.top.Generics",
+      "attributes": [
+        {
+          "name": "key",
+          "type": "str"
+        },
+        {
+          "name": "value",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "entry_name": "ft.onto.wikipedia.WikiInfoBoxMapped",
+      "parent_entry": "forte.data.ontology.top.Generics",
+      "attributes": [
+        {
+          "name": "key",
+          "type": "str"
+        },
+        {
+          "name": "value",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "entry_name": "ft.onto.wikipedia.WikiCategory",
+      "parent_entry": "forte.data.ontology.top.Generics",
+      "attributes": [
+        {
+          "name": "values",
+          "type": "List",
+          "item_type": "str"
+        }
+      ]
+    }
+  ]
+}
