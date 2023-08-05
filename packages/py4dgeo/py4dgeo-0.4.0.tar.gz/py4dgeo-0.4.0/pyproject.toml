@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "scikit-build", "cmake>=3.17"]
+build-backend = "setuptools.build_meta"
+
+[tool.cibuildwheel]
+# Super-verbose output for debugging purpose
+build-verbosity = 3
+
+# We restrict ourselves to recent Python versions.
+# We temporarily skip win32 builds, because lazrs
+# does not provide Win32 wheels.
+skip = "pp* *p27-* cp35-* cp36-* *musllinux* *-win32"
+
+# Testing commands for our wheels
+test-command = "pytest {package}/tests/python"
+test-requires = ["pytest"]
+
+[tool.cibuildwheel.macos]
+before-all = "brew install libomp"
+environment = { OpenMP_ROOT="$(brew --prefix libomp)" }
