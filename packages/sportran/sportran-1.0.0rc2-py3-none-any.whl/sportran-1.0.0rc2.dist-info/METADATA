@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: sportran
+Version: 1.0.0rc2
+Summary: Cepstral Data Analysis of current time series for Green-Kubo transport coefficients
+Home-page: https://github.com/sissaschool/sportran
+Author: Loris Ercole, Riccardo Bertossa, Sebastiano Bisacchi
+Author-email: loris.ercole@epfl.ch
+License: GPL 3
+Keywords: cepstral data analysis thermal conductivity transport coefficients physics green-kubo
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Environment :: Console
+Requires-Python: >=3.6.*, <4
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.18.0)
+Requires-Dist: scipy (>=1.3.2)
+Requires-Dist: matplotlib (>=3.1.2)
+Requires-Dist: markdown2 (>=2.0.0)
+Requires-Dist: pillow (>=5.4.0)
+Provides-Extra: doc
+Requires-Dist: sphinx (==4.2.0) ; extra == 'doc'
+Requires-Dist: myst-parser (==0.15.2) ; extra == 'doc'
+Requires-Dist: nbsphinx (==0.8.7) ; extra == 'doc'
+Provides-Extra: notebook
+Requires-Dist: jupyter ; extra == 'notebook'
+Provides-Extra: pre-commit
+Requires-Dist: pre-commit (>=1.11.0) ; extra == 'pre-commit'
+Requires-Dist: yapf (==0.32.0) ; extra == 'pre-commit'
+Provides-Extra: tests
+Requires-Dist: pytest (>=5.1.0) ; extra == 'tests'
+Requires-Dist: pytest-regressions (==2.2.0) ; extra == 'tests'
+Requires-Dist: pandas (>=1.1.0) ; extra == 'tests'
+Requires-Dist: testbook ; extra == 'tests'
+Requires-Dist: ipykernel ; extra == 'tests'
+
+# *SporTran*  (FKA thermocepstrum)
+
+A code to estimate transport coefficients from the cepstral analysis of a multi-variate current stationary time series.
+
+[![PyPI version](https://badge.fury.io/py/sportran.svg)](https://badge.fury.io/py/sportran)
+[![Documentation Status](https://readthedocs.org/projects/sportran/badge/?version=latest)](https://sportran.readthedocs.io/en/latest/?badge=latest)
+
+### Documentation
+https://sportran.readthedocs.io
+
+### References
+ - [Ercole L., Bertossa R., Bisacchi S., and Baroni S., "_SporTran: a code to estimate transport coefficients from the cepstral analysis of (multivariate) current time series_", *arXiv*:2202.11571 (2022)](https://arxiv.org/abs/2202.11571), submitted to *Comput. Phys. Commun.*
+ - (cepstral analysis) [Ercole, Marcolongo, Baroni, *Sci. Rep.* **7**, 15835 (2017)](https://doi.org/10.1038/s41598-017-15843-2)
+ - (multicomponent systems) [Bertossa, Grasselli, Ercole, Baroni, *Phys. Rev. Lett.* **122**, 255901 (2019)](https://doi.org/10.1103/PhysRevLett.122.255901) ([arXiv](https://arxiv.org/abs/1808.03341))
+ - (review) [Baroni, Bertossa, Ercole, Grasselli, Marcolongo, *Handbook of Materials Modeling* (2018)](https://doi.org/10.1007/978-3-319-50257-1_12-1) ([arXiv](https://arxiv.org/abs/1802.08006))
+
+Developed by Loris Ercole, Riccardo Bertossa, Sebastiano Bisacchi under the supervision of prof. Stefano Baroni
+
+**Acknowledgment**  The development of this software is part of the scientific program of the EU MaX Centre of Excellence for Supercomputing Applications (Grant No. 676598, 824143) and has been partly funded through it.
+
+---
+
+### Usage
+There is a [**GUI**](README_GUI.md) that you can try after installing the package. Click [here](README_GUI.md) for instructions.
+
+The code can be used as a **library**, for example in a Jupyter notebook.
+In the [`examples`](examples/) folder you can find some examples.
+
+Alternatively, you can run the code `analysis.py` from the **command line** without any installation procedure.
+It can execute most of the cepstral analysis routines, returning the results in a series of data files and PDF plots.
+See the [`examples/example_commandline_NaCl`](examples/example_commandline_NaCl/) folder and the help (`python analysis.py --help`) for more information.
+
+### Requirements
+ - numpy
+ - scipy
+ - matplotlib
+ - tkinter
+ - markdown2
+ - pillow
+
+
+### Installation
+  You can simply pip-install SporTran downloading it from PyPI with `pip install sportran`.
+
+  Alternatively:
+
+  1. Clone this repository: `git clone https://github.com/sissaschool/sportran.git`
+  2. Install the package with pip (dependencies will be automatically downloaded). For example:
+```
+cd sportran
+pip install .
+```
+  You are all set! You can check that the installation is working by trying to run the command `sportran-analysis`.
+
+  The Graphical User Interface can be started with the command `sportran-gui`.
+
+### Issues
+  You are strongly encouraged to report any issue on the [official](https://github.com/sissaschool/sportran/issues) GitHub issues page.
+
+
