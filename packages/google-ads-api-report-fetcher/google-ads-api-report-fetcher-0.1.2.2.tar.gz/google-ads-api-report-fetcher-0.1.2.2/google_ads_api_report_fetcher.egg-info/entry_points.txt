@@ -1,0 +1,4 @@
+[console_scripts]
+gaarf = gaarf_cli
+gaarf-bq = cli_bq
+
