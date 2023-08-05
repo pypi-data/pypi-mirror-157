@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scroll_of_seals/__init__.py
+scroll_of_seals/dl.py
+scroll_of_seals/tools.py
+scroll_of_seals.egg-info/PKG-INFO
+scroll_of_seals.egg-info/SOURCES.txt
+scroll_of_seals.egg-info/dependency_links.txt
+scroll_of_seals.egg-info/requires.txt
+scroll_of_seals.egg-info/top_level.txt
