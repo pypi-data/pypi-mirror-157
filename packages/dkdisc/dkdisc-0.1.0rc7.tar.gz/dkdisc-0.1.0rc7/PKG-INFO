@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dkdisc
+Version: 0.1.0rc7
+Summary: Collection of solvers for Dean-Kawasaki
+Home-page: https://github.com/qwinters/dean-kawasaki-discretizations
+Author: Fischer Group
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## Dean-Kawasaki Discretizations
+
+This repository contains code that solves the Dean-Kawasaki equations in arbitrary number of 
+dimensions using arbitrary many particles and produces arbitrary many sample paths. The 
+brunt of the code is vectorized using numpy to allow for quickly computing these samples
+on a large scale. 
