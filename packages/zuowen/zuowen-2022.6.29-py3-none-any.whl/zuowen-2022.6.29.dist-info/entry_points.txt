@@ -1,0 +1,5 @@
+[console_scripts]
+zuowen = zuowen.generate:main
+zuowen-preprocess = zuowen.preprocess:main
+zuowen-trainer = zuowen.train:main
+zuowen-ui = zuowen.run_ui:main
