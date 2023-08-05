@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: cepton-sdk2
+Version: 2.0.23.3
+Summary: Cepton SDK2 Python3 bindings
+Home-page: https://www.cepton.com
+Author: Cepton Technologies, Inc.
+Author-email: dongyi.liao@cepton.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Cepton SDK2
+Cepton SDK version 2.x 
+
+## Designed scopes
+- Python3 only.
+- Support python 3.7 or later due to the use of asyncio native coroutines
+- Module itself is arch independent, but the FFI part loads from dynamic libraries
+
+## Install
+```bash
+pip install cepton-sdk2
+```
+
+## Usage
+```
+import cepton_sdk2
+```
