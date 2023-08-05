@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: theartisans-shared-python
+Version: 0.1.1
+Summary: For the Artisans Inc.
+Home-page: https://github.com/felix-phil/theartisans-shared_python.git
+Author: Felix A. Philips
+Author-email: devfelixphil@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENCE
+
+Shared Library for The Artisans Microservices
