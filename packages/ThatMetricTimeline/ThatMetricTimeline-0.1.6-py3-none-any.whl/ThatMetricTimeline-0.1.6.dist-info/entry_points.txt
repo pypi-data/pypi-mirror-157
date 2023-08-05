@@ -1,0 +1,2 @@
+[console_scripts]
+tmt_tui = tmt.tmt_tui:main
