@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: testfull-pack
+Version: 0.1.2
+Summary: 
+Author: Denis Kustov
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: logsmal (>=0.0.9,<0.0.10)
+Requires-Dist: pytest (>=7.1.1,<8.0.0)
