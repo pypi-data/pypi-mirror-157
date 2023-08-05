@@ -1,0 +1,19 @@
+#
+# File:    ./MANIFEST.in
+# Author:  Jiří Kučera <sanczes AT gmail.com>
+# Date:    2022-06-24 14:03:43 +0200
+# Project: vutils-python: Python language tools
+# Brief:   What extra should or should not be packaged
+#
+# SPDX-License-Identifier: MIT
+#
+
+include LICENSE
+include *.md
+include pyproject.toml
+include tox.ini
+recursive-include src *.pyi
+recursive-include src py.typed
+graft tests
+
+global-exclude *.py[cod]
