@@ -1,0 +1,5 @@
+[console_scripts]
+cnext-init=cnext_app.__main__:main
+cnext-path=cnext_app.__main__:path
+cnext-run=cnext_app.__main__:start
+
