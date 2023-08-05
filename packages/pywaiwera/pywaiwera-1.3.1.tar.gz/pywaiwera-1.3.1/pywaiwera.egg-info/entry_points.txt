@@ -1,0 +1,3 @@
+[console_scripts]
+waiwera-dkr = pywaiwera.docker:main
+
