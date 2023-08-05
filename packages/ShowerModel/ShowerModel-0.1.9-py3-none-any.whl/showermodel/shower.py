@@ -1,0 +1,619 @@
+# coding: utf-8
+
+import showermodel as sm
+import matplotlib.pyplot as plt
+
+
+# Default values for shower
+from .track import _theta, _az, _x0, _y0
+from .profile import _E, _prf_model
+
+
+# Class #######################################################################
+class Shower:
+    """
+    Object containing a discretization of a shower.
+
+    It includes the atmosphere, both the track and profile of the shower
+    as well as its fluorescence and Cherenkov light production.
+
+    Use sm.Shower() to construct the default Shower object.
+
+    Parameters
+    ----------
+    E : float
+        Energy of the primary particle in MeV.
+    theta : float
+        Zenith angle in degrees of the apparent position of the source.
+    alt : float
+        Altitude in degrees of the apparent position of the source. If None,
+        theta is used. If given, theta is overwritten.
+    az : float
+        Azimuth angle (from north, clockwise) in degrees of the apparent
+        position of the source.
+    x0, y0 : float
+        East and north coordinates in km of shower impact point at ground.
+    xi, yi, zi : float, default None
+        East, north and height coordinates in km of the first interaction point
+        of the shower. If given, x0 and y0 are ignored.
+    prf_model : 'Greisen', 'Gaisser-Hillas' or DataFrame
+        If 'Greisen', the Greisen function for electromagnetic showers is used.
+        If 'Gaisser-Hillas', the Gaisser-Hillas function for hadron-induced
+        showers is used. If a DataFrame with an energy deposit profile is input,
+        it must have two columns with the slant depth in g/cm2 and dE/dX in
+        MeV.cm2/g. 
+    X_max : float
+        Slant depth in g/cm^2 at shower maximum. If None and prf_model is
+        'Greisen' or 'Gaisser-Hillas', a typical value of X_max for gamma or
+        proton showers is used. If None and a numerical energy deposit profile
+        is input, lambda_r = 36.7 g/cm^2 is the radiation length E_c = 81 MeV
+        is the critical energy.
+    X0_GH : float
+        X0 parameter in g/cm2 to be used when prf_model=='Gaisser-Hillas'.
+        If None, a typical value for the input energy is used.
+    lambda_GH : float
+        Lambda parameter in g/cm2 to be used when prf_model=='Gaisser-Hillas'.
+        If None, a typical value for the input energy is used.
+    atmosphere : Atmosphere
+        If None, a new Atmosphere object is generated.
+    **kwargs : {h0, h_top, N_steps, model}
+        Options to construct the new Atmosphere object when atmosphere==None.
+        If None, the default Atmosphere object is used.
+
+    Attributes
+    ----------
+    atmosphere : Atmosphere
+        Atmosphere object that is used.
+    h0 : float
+        Ground level in km above sea level.
+    h_top : float
+        Top level of the atmosphere in km above sea level.
+    N_steps : int
+        Number of discretization steps.
+    h_step : float
+        Size of discretization step in km.
+    model : int
+        CORSIKA atmospheric model. Presently either 1 or 17. More models to
+        be implemented.
+    track : Track
+        Track object that is generated.
+    profile : Profile
+        Profile object that is generated.
+    E : float
+        Energy of the primary particle in MeV.
+    theta : float
+        Zenith angle in degrees of the apparent position of the source.
+    alt : float
+        Altitude in degrees of the apparent position of the source.
+    az : float
+        Azimuth angle (from north, clockwise) in degrees of the apparent
+        position of the source.
+    x0, y0, z0 : float or None
+        Coordinates in km of shower impact point at ground (z0=0).
+        Set to None for ascending showers beginning at zi>0.
+    xi, yi, zi : float
+        Coordinates in km of the first interaction point of the shower.
+    prf_model : 'Greisen', 'Gaisser-Hillas' or DataFrame.
+    X_max : float
+        Slant depth in g/cm^2 at shower maximum.
+    X0_GH : float
+        X0 parameter in g/cm2 for prf_model=='Gaisser-Hillas'.
+    lambda_GH : float
+        Lambda parameter in g/cm2 for prf_model=='Gaisser-Hillas'.
+    fluorescence : Fluorescence
+        Fluorescence object that is generated.
+    cherenkov : Cherenkov
+        Cherenkov object that is generated.
+
+    Methods
+    -------
+    copy()
+        Copy a Shower object, but with optional changes.
+    Projection()
+        Make a Projection object containing the coordinates of a
+        shower track relative to a telescope position.
+    Signal()
+        Make a Signal object containing the signal produced by the shower
+        detected by a telescope.
+    Event()
+        Make an Event object containing the characteristics of the shower,
+        an observatory and the signal produced by the shower in each telescope.
+    show_profile()
+        Show the shower profile, both number of charged particles
+        and energy deposit, as a function of slant depth.
+    show_light_production()
+        Show the production of both Cherenkov and fluorescence photons
+        as a function of slant depth.
+    show_projection()
+        Make a Projection object and show it.
+    show_signal()
+        Make a Signal object and show it.
+    show_geometry2D()
+        Show a 2D plot of the shower track and input telescope positions.
+    show_geometry3D()
+        Show a 3D plot of the shower track and input telescopes positions.
+    show_distribution()
+        Make a GridEvent object and show the distribution of photons
+        per m^2 in a 1D or 2D plot.
+
+    See also
+    --------
+    Atmosphere : DataFrame containing the atmosphere discretization.
+    Track : DataFrame containing a shower track discretization.
+    Profile : DataFrame containing a shower profile discretization.
+    """
+    def __init__(self, E=_E, theta=_theta, alt=None, az=_az, x0=_x0, y0=_y0,
+                 xi=_x0, yi=_y0, zi=None, prf_model=_prf_model, X_max=None,
+                 N_ch_max=None, X0_GH=None, lambda_GH=None, atmosphere=None,
+                 **kwargs):
+        _shower(self, E, theta, alt, az, x0, y0, xi, yi, zi, prf_model, X_max,
+                N_ch_max, X0_GH, lambda_GH, atmosphere, **kwargs)
+
+    def copy(self, **kwargs):
+        """
+        Copy a Shower object, but with optional changes.
+
+        Parameters
+        ----------
+        **kwargs
+            Optional key arguments to be passed to the constructors of
+            the different attributes of the Shower object.
+
+        Returns
+        -------
+        shower : Shower
+
+        See also
+        --------
+        Shower : Make a discretization of a shower.
+        """
+        return _copy(self, **kwargs)
+
+    def Projection(self, telescope):
+        """
+        Obtain the coordinates of a shower track relative to a telescope
+        position in both zenith and camera projection and determine the
+        fraction of the track within the telescope field of view.
+
+        Parameters
+        ----------
+        telescope : Telescope
+            Telescope object to be used.
+
+        Returns
+        -------
+        projection : Projection
+        (ax1, ax2) : AxesSubplot
+
+        See also
+        --------
+        Projection.show
+        """
+        return sm.Projection(telescope, self.track)
+
+    def Signal(self, telescope, atm_trans=True, tel_eff=True, **kwargs):
+        """
+        Calculate the signal produced by the shower detected by a telescope.
+
+        Parameters
+        ----------
+        telescope : Telescope
+            Telescope object to be used.
+        atm_trans : bool, default True
+            Include the atmospheric transmission.
+        tel_eff : bool, default True
+            Include the telescope efficiency. If False, 100% efficiency is
+            assumed for a given wavelength interval.
+        **kwargs : {wvl_ini, wvl_fin, wvl_step}
+            These parameters will modify the wavelength interval when
+            tel_eff==False. If None, the wavelength interval defined in the
+            telescope is used.
+
+        Returns
+        -------
+        signal : Signal
+        """
+        return sm.Signal(telescope, self, atm_trans, tel_eff, **kwargs)
+
+    def Event(self, observatory, atm_trans=True, tel_eff=True, **kwargs):
+        """
+        Make an Event object containing the characteristics of a shower, an
+        observatory and the signal produced by the shower in each telescope.
+
+        Parameters
+        ----------
+        observatory : Observatory 
+            Observatory object (may be a Grid object).
+        atm_trans : bool, default True
+            Include the atmospheric transmision to calculate the signals.
+        tel_eff : bool, default True
+            Include the telescope efficiency to calculate the signals.
+            If False, 100% efficiency is assumed for a given
+            wavelength interval.
+        **kwargs : {wvl_ini, wvl_fin, wvl_step}
+            These parameters will modify the wavelenght interval when
+            tel_eff==False. If None, the wavelength interval defined in the
+            telescope is used.
+
+        Returns
+        -------
+        event : Event
+        """
+        return sm.Event(observatory, self, atm_trans, tel_eff, **kwargs)
+
+    def show_projection(self, telescope, shower_size=True, axes=True,
+                        max_theta=30., X_mark='X_max'):
+        """
+        Make a Projection object and show it.
+
+        Parameters
+        ----------
+        telescope : Telescope
+            Telescope object to be used.
+        shower_size : bool, default True
+            Make the radii of the shower track points proportional to the
+            shower size.
+        axes : bool, default True
+            Show the axes of both frames of reference.
+        max_theta : float, default 30 degrees
+            Maximum offset angle in degrees relative to the telescope
+            pointing direction.
+        X_mark : float
+            Reference slant depth in g/cm^2 of the shower track to be ma
+            ked in the figure, default X_max. If X_mark=None, no mark is
+            included.
+
+        Returns
+        -------
+        projection : Projection
+        (ax1, ax2) : PolarAxesSubpot
+
+        See also
+        --------
+        Projection.show
+        """
+        if X_mark == 'X_max':
+            X_mark = self.X_max
+        projection = sm.Projection(telescope, self.track)
+        profile = self.profile
+        from ._tools import show_projection
+        return projection, (show_projection(projection, profile, shower_size,
+                                            axes, max_theta, X_mark))
+
+    def show_profile(self):
+        """
+        Show the shower profile, both number of charged particles and energy
+        deposit, as a function of slant depth.
+
+        Returns
+        -------
+        (ax1, ax2) : AxesSubplot
+        """
+        return self.profile.show()
+
+    def show_light_production(self):
+        """
+        Show the production of both Cherenkov and fluorescence photons in the
+        290 - 430 nm range as a function of slant depth.
+
+        Returns
+        -------
+        (ax1, ax2) : AxesSubplot
+        """
+        # Cherenkov
+        fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize=(10, 5))
+        ax1.plot(self.profile.X, self.cherenkov.N_ph, 'r-')
+        ax1.axes.xaxis.set_label_text("Slant depth (g/cm$^2$)")
+        ax1.axes.yaxis.set_label_text(
+            "Cherenkov production (photons·cm$^2$/g)")
+
+        # Fluorescence
+        ax2.plot(self.profile.X, self.fluorescence.sum(axis=1), 'b-')
+        ax2.axes.xaxis.set_label_text("Slant depth (g/cm$^2$)")
+        ax2.axes.yaxis.set_label_text(
+            "Fluorescence production (Photons·cm$^2$/g)")
+        plt.tight_layout()
+        return (ax1, ax2)
+
+    def show_signal(self, telescope, atm_trans=True, tel_eff=True, **kwargs):
+        """
+        Make a Signal object and show it.
+
+        Parameters
+        ----------
+        telescope : Telescope
+            Telescope object to be used.
+        atm_trans : bool, default True
+            Include the atmospheric transmision.
+        tel_eff : bool, default True
+            Include the telescope efficiency. If False, 100% efficiency is
+            assumed for a given wavelength interval.
+        **kwargs : {wvl_ini, wvl_fin, wvl_step}
+            These parameters will modify the wavelenght interval when
+            tel_eff==False. If None, the wavelength interval defined in the
+            telescope is used.
+
+        Returns
+        -------
+        signal : Signal
+        (ax1, ax2) : AxesSubplot
+        """
+        signal = sm.Signal(telescope, self, atm_trans, tel_eff, **kwargs)
+        ax1, ax2 = signal.show()
+        return signal, (ax1, ax2)
+
+    def show_geometry2D(self, observatory, x_min=-1., x_max=1., y_min=-1,
+                        y_max=1., X_mark='X_max', shower_size=True,
+                        tel_index=False):
+        """
+        Show the shower track together with the telescope positions in a
+        2D plot.
+
+        Parameters
+        ----------
+        x_min : float
+            Lower limit of the coordinate x in km.
+        x_max : float
+            Upper limit of the coordinate x in km.
+        y_min : float
+            Lower limit of the coordinate y in km.
+        y_max : float
+            Upper limit of the coordinate y in km.
+        X_mark : float
+            Reference slant depth in g/cm^2 of the shower track to be
+            marked in the figure, default to X_max. If X_mark is set to None,
+            no mark is included.
+        shower_size : bool, default True
+            Make the radii of the shower track points proportional to the
+            shower size.
+        tel_index : bool, default True
+            Show the telescope indexes together the telescope position points.
+
+        Returns
+        -------
+        ax : AxesSubplot
+        """
+        if X_mark == 'X_max':
+            X_mark = self.X_max
+        from ._tools import show_geometry
+        return show_geometry(self, observatory, '2d', x_min, x_max, y_min,
+                             y_max, X_mark, shower_size, False, tel_index,
+                             False, False)
+
+    def show_geometry3D(self, observatory, x_min=-1., x_max=1., y_min=-1,
+                        y_max=1., X_mark='X_max', shower_size=True,
+                        xy_proj=True, pointing=False):
+        """
+        Show the shower track together with the telescope positions in a
+        3D plot.
+
+        Parameters
+        ----------
+        x_min : float
+            Lower limit of the coordinate x in km.
+        x_max : float
+            Upper limit of the coordinate x in km.
+        y_min : float
+            Lower limit of the coordinate y in km.
+        y_max : float
+            Upper limit of the coordinate y in km.
+        X_mark : float
+            Reference slant depth in g/cm^2 of the shower track to be
+            marked in the figure, default to X_max. If X_mark is set to None,
+            no mark is included.
+        shower_size : bool, default True
+            Make the radii of the shower track points proportional to
+            the shower size.
+        xy_proj : bool, default True
+            Show the xy projection of the shower track.
+        pointing : bool, default False
+            Show the telescope axes.
+
+        Returns
+        -------
+        ax : Axes3DSubplot
+        """
+        if X_mark == 'X_max':
+            X_mark = self.X_max
+        from ._tools import show_geometry
+        return show_geometry(self, observatory, '3d', x_min, x_max, y_min,
+                             y_max, X_mark, shower_size, False, False, xy_proj,
+                             pointing)
+
+    def show_distribution(self, grid=None, telescope=None, x_c=0., y_c=0., z_c=0.,
+                          theta=None, alt=None, az=None, size_x=2., size_y=2.,
+                          N_x=10, N_y=10, atm_trans=True, tel_eff=False,
+                          **kwargs):
+        """
+        Make a GridEvent object and show the distribution of photons
+        (or photoelectrons) per m^2 in an either 1D or 2D plot, depending on
+        the grid dimensions.
+
+        Parameters
+        ----------
+        grid : Grid
+            If None, a new Grid object is generated from the specificed
+            dimensions and telescope characteristics.
+            If given, {telescope, tel_type, ..., N_x, N_y} are not used.
+        telescope : Telescope
+            When grid==None. If telescope==None, the Grid object is constructed
+            based on the default GridElement object.
+        x_c : float
+            x coordinate in km of the center of the grid.
+        y_c : float
+            y coordinate in km of the center of the grid.
+        z_c : float
+            Height of the grid in km above ground level.
+        theta : float
+            Zenith angle in degrees of the telescope pointing directions.
+        alt : float
+            Altitude in degrees of the telescope pointing direction.
+            If None, theta is used. If given, theta is overwritten.
+        az : float
+            Azimuth angle (from north, clockwise) in degrees of the telescope
+            pointing direction.
+        size_x : float
+            Size of the grid in km across the x direction.
+        size_y : float
+            Size of the grid in km across the y direction.
+        N_x : int
+            Number of cells across the x direction.
+        N_y : int
+            Number of cells across the y direction.
+        atm_trans : bool, default True
+            Include the atmospheric transmision to transport photons.
+        tel_eff : bool, default True
+            Include the telescope efficiency to calculate the signal. If False,
+            100% efficiency is assumed for a given wavelenght interval.
+        **kwargs : {wvl_ini, wvl_fin, wvl_step}
+            These parameters will modify the wavelenght interval when
+            tel_eff==False. If None, the wavelength interval defined in the
+            telescope is used.
+
+        Returns
+        -------
+        grid_event : GridEvent
+        ax : AxesSubplot
+            If 1D grid.
+        (ax1, ax2, cbar) : AxesSubplot and Colorbar
+            If 2D grid.
+        """
+        if not isinstance(grid, sm.Grid):
+            if grid is None:
+                grid = sm.Grid(telescope, x_c, y_c, z_c, theta, alt,
+                               az, size_x, size_y, N_x, N_y)
+            else:
+                raise ValueError('The input grid is not valid')
+
+        grid_event = sm.GridEvent(grid, self, atm_trans, tel_eff, **kwargs)
+        return grid_event, grid_event.show_distribution()
+
+
+# Auxiliary functions #########################################################
+def _copy(shower, atmosphere=None, **kwargs):
+    """
+    Copy a Shower object, but with optional changes.
+    """
+    kwargs['E'] = kwargs.get('E', shower.E)
+    # If 'alt' in kwargs and != None, theta is not used
+    kwargs['theta'] = kwargs.get('theta', shower.theta)
+    kwargs['az'] = kwargs.get('az', shower.az)
+    # xi, yi, zi are used unless zi is not given but x0 or y0 are specified
+    if kwargs.get('zi') is None and (kwargs.get('x0') is not None
+                                     or kwargs.get('y0') is not None):
+        kwargs['x0'] = kwargs.get('x0', shower.x0)
+        kwargs['y0'] = kwargs.get('y0', shower.y0)
+    else:
+        kwargs['xi'] = kwargs.get('xi', shower.xi)
+        kwargs['yi'] = kwargs.get('yi', shower.yi)
+        kwargs['zi'] = kwargs.get('zi', shower.zi)
+    kwargs['X_max'] = kwargs.get('X_max', shower.X_max)
+    kwargs['prf_model'] = kwargs.get('prf_model', shower.prf_model)
+    kwargs['X0_GH'] = kwargs.get('X0_GH', shower.X0_GH)
+    kwargs['lambda_GH'] = kwargs.get('lambda_GH', shower.lambda_GH)
+    kwargs['atmosphere'] = kwargs.get('atmosphere', shower.atmosphere)
+
+    return Shower(**kwargs)
+
+
+# Constructor #################################################################
+def _shower(shower, E, theta, alt, az, x0, y0, xi, yi, zi, prf_model, X_max,
+            N_ch_max, X0_GH, lambda_GH, atmosphere, **kwargs):
+    """
+    Constructor of Shower object.
+
+    It includes the shower profile and its fluorescence and Cherenkov light
+    production.
+
+    Parameters
+    ----------
+    shower : Shower
+        Shower object.
+    E : float
+        Energy of the primary particle in MeV.
+    theta : float
+        Zenith angle in degrees of the apparent position of the source.
+    alt : float
+        Altitude in degrees of the apparent position of the source. If None,
+        theta is used. If given, theta is overwritten.
+    az : float
+        Azimuth angle (from north, clockwise) in degrees of the apparent
+        position of the source.
+    x0, y0, z0 : float or None
+        Coordinates in km of shower impact point at ground (z0=0).
+        Set to None for ascending showers beginning at zi>0.
+    xi, yi, zi : float
+        Coordinates in km of the first interaction point of the shower.
+    prf_model : {'Greisen', 'Gaisser-Hillas'} or DataFrame
+        If 'Greisen', the Greisen function for electromagnetic showers is used.
+        If 'Gaisser-Hillas', the Gaisser-Hillas function for hadron-induced
+        showers is used. If a DataFrame with an energy deposit profile is input,
+        it must have two columns with the slant depth in g/cm2 and dE/dX in
+        MeV.cm2/g. 
+    X_max : float
+        Slant depth in g/cm^2 at shower maximum. If None and prf_model is
+        'Greisen' or 'Gaisser-Hillas', a typical value of X_max for gamma or
+        proton showers is used. If None and a numerical energy deposit profile
+        is input, lambda_r = 36.7 g/cm^2 is the radiation length E_c = 81 MeV
+        is the critical energy.
+    X0_GH : float
+        X0 parameter in g/cm2 to be used when prf_model=='Gaisser-Hillas'.
+        If None, a typical value for the input energy is used.
+    lambda_GH : float
+        Lambda parameter in g/cm2 to be used when prf_model=='Gaisser-Hillas'.
+        If None, a typical value for the input energy is used.
+    atmosphere : Atmosphere
+        If None, a new Atmosphere object is generated.
+    **kwargs : {h0, h_top, N_steps, model}
+        Options to construct the new Atmosphere object when atmosphere==None.
+        If None, the default Atmosphere object is used.
+    """
+    if isinstance(atmosphere, sm.Atmosphere):
+        pass
+    elif atmosphere is None:
+        atmosphere = sm.Atmosphere(**kwargs)
+    else:
+        raise ValueError('The input atmosphere is not valid.')
+
+    # shower = Shower()
+    shower.E = E
+    if alt is None:
+        alt = 90. - theta
+    else:
+        theta = 90. - alt
+    shower.theta = theta
+    shower.alt = alt
+    shower.az = az
+
+    # Atmosphere
+    shower.atmosphere = atmosphere
+
+    shower.h0 = atmosphere.h0
+    shower.h_top = atmosphere.h_top
+    shower.N_steps = atmosphere.N_steps
+    shower.model = atmosphere.model
+
+    # Shower track
+    shower.track = sm.Track(theta, None, az, x0, y0, xi, yi, zi, atmosphere)
+    shower.x0 = shower.track.x0
+    shower.y0 = shower.track.y0
+    shower.z0 = shower.track.z0
+    shower.xi = shower.track.xi
+    shower.yi = shower.track.yi
+    shower.zi = shower.track.zi
+
+    # Shower profile
+    profile = sm.Profile(E, theta, None, prf_model, X_max, X0_GH, lambda_GH,
+                         zi, atmosphere)
+    shower.profile = profile
+
+    shower.prf_model = profile.prf_model
+    shower.X_max = profile.X_max
+    shower.X0_GH = profile.X0_GH
+    shower.lambda_GH = profile.lambda_GH
+
+    # Fluorescence emission
+    shower.fluorescence = shower.profile.Fluorescence()
+
+    # Cherenkov emission
+    shower.cherenkov = shower.profile.Cherenkov()
