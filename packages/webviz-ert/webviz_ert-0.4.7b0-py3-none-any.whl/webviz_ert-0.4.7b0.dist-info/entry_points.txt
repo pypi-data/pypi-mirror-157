@@ -1,0 +1,8 @@
+[ert]
+webviz_ert = webviz_ert.ert_hooks
+
+[webviz_config_plugins]
+ObservationAnalyzer = webviz_ert.plugins:ObservationAnalyzer
+ParameterComparison = webviz_ert.plugins:ParameterComparison
+ResponseComparison = webviz_ert.plugins:ResponseComparison
+ResponseCorrelation = webviz_ert.plugins:ResponseCorrelation
