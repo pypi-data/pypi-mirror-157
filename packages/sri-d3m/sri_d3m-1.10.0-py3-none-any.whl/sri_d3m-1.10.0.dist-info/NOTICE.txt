@@ -1,0 +1,10 @@
+SRI D3M Primitives and Support Library
+Copyright 2017-2020 SRI International
+
+This product includes software developed at
+SRI International
+9988 Hibert Street, Suite 203
+San Diego, CA
+858-527-1412
+freitag@ai.sri.com
+www.sri.com

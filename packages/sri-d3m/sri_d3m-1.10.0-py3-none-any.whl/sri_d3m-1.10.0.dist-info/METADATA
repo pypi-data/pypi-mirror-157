@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: sri-d3m
+Version: 1.10.0
+Summary: Graph and PSL based TA1 primitive for D3M
+Home-page: https://gitlab.com/datadrivendiscovery/contrib/sri-d3m
+Maintainer: Remi Rampin
+Maintainer-email: remi.rampin@nyu.edu
+License: Apache-2.0
+Project-URL: Bug Tracker, https://gitlab.com/datadrivendiscovery/contrib/sri-d3m/-/issues
+Keywords: d3m_primitive
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Requires-Dist: d3m
+Requires-Dist: datasets (==1.6.1)
+Requires-Dist: psutil
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: transformers (==4.5.1)
+
+Graph and PSL based TA1 primitive for D3M
+
+
