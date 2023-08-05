@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/urlrequest/__init__.py
+src/urlrequest/urlrequest.py
+src/urlrequest.egg-info/PKG-INFO
+src/urlrequest.egg-info/SOURCES.txt
+src/urlrequest.egg-info/dependency_links.txt
+src/urlrequest.egg-info/top_level.txt
