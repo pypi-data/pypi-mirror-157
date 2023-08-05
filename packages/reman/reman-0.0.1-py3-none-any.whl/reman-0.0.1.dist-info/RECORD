@@ -1,0 +1,11 @@
+reman/KubaConanFile.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reman/NfpmGenerator.py,sha256=bnWDEbhGDPptg3uUmf5TH_zhtRXQtoBsMcfj4_xV1Q8,87
+reman/ReMan.py,sha256=cPa9eKynFhZfO2Jcep-KXgqLcYXkun4_9L_7mB-dtUk,2160
+reman/Versionning.py,sha256=9SxjtiFqK2dUistSs1g9AUX-gWH65GVOOZuS9lrqiHc,7163
+reman/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reman-0.0.1.data/scripts/reman,sha256=1hUCzlV29M7k5V7sHrMT8h4jw8OJ2WXZb0zxJcLtYr0,1154
+reman-0.0.1.dist-info/LICENCE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reman-0.0.1.dist-info/METADATA,sha256=fOPTnqicjDJ5dACjfT1z3LycyRHnjHmefGfuky1kabs,475
+reman-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+reman-0.0.1.dist-info/top_level.txt,sha256=wGwrsb1kcxXpSWbLV6qK_IfWTTgoUXyKmbdRKgfUuYI,12
+reman-0.0.1.dist-info/RECORD,,
