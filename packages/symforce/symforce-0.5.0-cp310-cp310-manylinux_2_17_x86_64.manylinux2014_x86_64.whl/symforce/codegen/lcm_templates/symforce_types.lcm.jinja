@@ -1,0 +1,46 @@
+{# ----------------------------------------------------------------------------
+ # SymForce - Copyright 2022, Skydio, Inc.
+ # This source code is under the Apache 2.0 license found in the LICENSE file.
+ # ---------------------------------------------------------------------------- #}
+package sym;
+
+/**
+ * Data types that can be stored in a Values object.
+ */
+enum type_t : int32_t {
+  INVALID = 0,
+
+  // Scalar type
+  SCALAR = 1,
+
+  // Geometry types
+  ROT2 = 2,
+  ROT3 = 3,
+  POSE2 = 4,
+  POSE3 = 5,
+
+  // DataBuffer
+  DATABUFFER = 6,
+
+  // Vector types, dynamic and fixed
+  VECTORX = 10,
+  {% set k = namespace(value=11) %}
+  {% for i in range(1, 10) %}
+  VECTOR{{ i }} = {{ k.value }},
+  {% set k.value = k.value + 1 %}
+  {% endfor %}
+
+  // Matrix types, dynamic and fixed
+  {% for i in range(1, 10) %}
+  {% for j in range(2, 10) %}
+  MATRIX{{ i }}{{ j }} = {{ k.value }},
+  {% set k.value = k.value + 1 %}
+  {% endfor %}
+  {% endfor %}
+
+  // Camera calibrations
+  {% for name in camera_cal_class_names %}
+  {{ python_util.camelcase_to_screaming_snakecase(name) }} = {{ k.value }},
+  {% set k.value = k.value + 1 %}
+  {% endfor %}
+};
