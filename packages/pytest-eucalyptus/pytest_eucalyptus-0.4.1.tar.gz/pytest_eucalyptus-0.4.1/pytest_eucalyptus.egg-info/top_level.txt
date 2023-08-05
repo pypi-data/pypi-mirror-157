@@ -1,0 +1,4 @@
+aloe
+aloe_sphinx
+pytest_eucalyptus
+tests

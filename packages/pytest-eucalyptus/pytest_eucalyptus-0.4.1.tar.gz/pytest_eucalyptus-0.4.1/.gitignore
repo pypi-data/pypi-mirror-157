@@ -1,0 +1,14 @@
+__pycache__
+*.pyc
+tmp_file_*
+/.eggs
+/aloe.egg-info
+/pytest_eucalyptus.egg-info
+/build/
+/dist/
+/docs/_build/
+/tests/integration/calculator-actual.txt
+.tox
+.coverage
+.idea
+coverage.xml

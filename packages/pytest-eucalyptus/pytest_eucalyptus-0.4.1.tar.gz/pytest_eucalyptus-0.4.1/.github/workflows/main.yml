@@ -1,0 +1,42 @@
+name: CI
+
+# Triggers the workflow on push or pull request
+# events but only for the main branch
+on: [push, pull_request]
+
+env:
+  PYTHON_VERSION: "3.9"
+
+jobs:
+  test:
+    runs-on: "ubuntu-latest"
+    strategy:
+      matrix:
+        python-version: [3.6, 3.7, 3.8, 3.9]
+    steps:
+        - name: "Check out code"
+          uses: "actions/checkout@v2"
+        - uses: "actions/setup-python@v2"
+          with:
+            python-version: ${{ matrix.python-version }}
+        - name: "Install dependencies"
+          run: |
+            python -m pip install --upgrade pip
+            python -m pip install tox tox-gh-actions
+        - name: Test with tox
+          run: tox
+
+  verify-wheel:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Check out code"
+        uses: "actions/checkout@v2"
+      - uses: "actions/setup-python@v2"
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: "Build wheel"
+        uses: "./.github/actions/build-dist"
+      - name: "Verify wheel"
+        uses: "./.github/actions/verify-wheel"
+        with:
+          package-import-name: "pytest_eucalyptus"
