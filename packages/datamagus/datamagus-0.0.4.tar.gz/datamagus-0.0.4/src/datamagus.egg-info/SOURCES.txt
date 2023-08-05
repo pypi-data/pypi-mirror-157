@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/datamagus/__init__.py
+src/datamagus/api.py
+src/datamagus/core.py
+src/datamagus/model.py
+src/datamagus/vis.py
+src/datamagus.egg-info/PKG-INFO
+src/datamagus.egg-info/SOURCES.txt
+src/datamagus.egg-info/dependency_links.txt
+src/datamagus.egg-info/requires.txt
+src/datamagus.egg-info/top_level.txt
