@@ -1,0 +1,5 @@
+aioxmpp>=0.13.1
+aiohttp
+click>=8
+colorlog
+pyaes>=1.6.1
