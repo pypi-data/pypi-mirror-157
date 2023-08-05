@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: multichain.crypto.wallet
+Version: 0.0.1
+Summary: multichain
+Home-page: UNKNOWN
+Author: ajibade abdullah
+Author-email: <ajibadeabd@email.com>
+License: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: web3
+
+multichain-crypto-wallet allows you to connect with all evm compatible lockchain and solana blockchain
+
+
