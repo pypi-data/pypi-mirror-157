@@ -1,0 +1,3 @@
+[console_scripts]
+hurocon=hurocon:__main__
+
