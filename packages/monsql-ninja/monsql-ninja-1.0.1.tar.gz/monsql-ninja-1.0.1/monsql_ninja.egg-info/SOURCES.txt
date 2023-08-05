@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+monsql/__init__.py
+monsql_ninja.egg-info/PKG-INFO
+monsql_ninja.egg-info/SOURCES.txt
+monsql_ninja.egg-info/dependency_links.txt
+monsql_ninja.egg-info/requires.txt
+monsql_ninja.egg-info/top_level.txt
