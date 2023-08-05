@@ -1,0 +1,17 @@
+web_bricks/__init__.py,sha256=tb3-n7pi4gH-P8DWrfb3RSuGod_bkgVSKk2nqomq_G0,459
+web_bricks/acesss_logger.py,sha256=bLirkCYGuBl8JAG4yyxVvhD7nYJ3JIDvUYek2m7K-wA,806
+web_bricks/chain_forward_resolver.py,sha256=eqQMLqeVb1EAhprOyVspsbqoK5U7yMFhZGHK4R1LsuE,1355
+web_bricks/component.py,sha256=GFYTN0e7XjjIqx8TCWbrIbW7rEkVV9MB6ZNyWeYOGZI,7638
+web_bricks/index_locator.py,sha256=Dd0wp5hPjB5fZv6OwDJaW7upjQT2hYvuRJdEAnVOU0o,136
+web_bricks/locator_extractor.py,sha256=8t0DZggkJKiGWOWUsrvJl0u4hTGFcYhwZTC2lr5sL5I,392
+web_bricks/resolve_result.py,sha256=fy-BdEAnwIO1JnLei0mVdh14u4vYgJDPpastV3Ya39M,85
+web_bricks/resolver.py,sha256=hUn_ikuobGPfZS9OavnDxfVIJ8iCiE1iUMA7-6neuXw,1518
+web_bricks/resolver_interface.py,sha256=tvOkwzwn0uxxNNBnJum9152M2viZRH6WsSu9JYwLs3A,214
+web_bricks/safety_error.py,sha256=lJZN7H2-5W75EVlAVrLNHeiL_ELm_FL0CQmjBxVtZ3A,139
+web_bricks/utils.py,sha256=4mVI-uluuZ_iufAjaPRDx33Lx5W0C9vT9F6LHxNJBsI,5160
+web_bricks/web_bricks_config.py,sha256=HGmnlw6EnfCkkXp8i31iZuYIJVHRrBZlHLXTBHJ2p0c,1918
+web_bricks-0.1.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+web_bricks-0.1.3.dist-info/METADATA,sha256=r5vvRjR0eRwD4-zqyp6NcTCXHD0IGaf2tGiJg-FThr4,3196
+web_bricks-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+web_bricks-0.1.3.dist-info/top_level.txt,sha256=SrjGbJqOboaZVxhyJkK6oip8-0hhTssK1lHD4js-D10,11
+web_bricks-0.1.3.dist-info/RECORD,,
