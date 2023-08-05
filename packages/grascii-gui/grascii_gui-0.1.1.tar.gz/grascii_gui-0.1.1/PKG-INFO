@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: grascii-gui
+Version: 0.1.1
+Summary: A graphical interface for Grascii Search
+Project-URL: Documentation, https://github.com/grascii/grascii-gui
+Project-URL: Issues, https://github.com/grascii/grascii-gui/issues
+Project-URL: Source, https://github.com/grascii/grascii-gui
+Author-email: Chanic Panic <dev@chanicpanic.com>
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: grascii~=0.4.0
+Description-Content-Type: text/markdown
+
+# grascii-gui
+
+[![PyPI - Version](https://img.shields.io/pypi/v/grascii-gui.svg)](https://pypi.org/project/grascii-gui)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/grascii-gui.svg)](https://pypi.org/project/grascii-gui)
+
+-----
+
+**Table of Contents**
+
+- [About](#about)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## About
+
+`grascii-gui` is a graphical interface for Grascii Search provided by
+[`grascii`](https://github.com/grascii/grascii).
+
+## Installation
+
+```console
+pip install grascii-gui
+```
+
+## Usage
+
+```console
+grascii-gui
+```
+
+## License
+
+`grascii-gui` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
