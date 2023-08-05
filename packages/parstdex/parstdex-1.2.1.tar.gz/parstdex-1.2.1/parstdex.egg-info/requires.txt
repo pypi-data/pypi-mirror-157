@@ -1,0 +1,2 @@
+pytextspan~=0.5.0
+numpy>=1.12
