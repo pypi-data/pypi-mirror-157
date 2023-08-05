@@ -1,0 +1,11 @@
+advanced_pid/__init__.py,sha256=0nP8ct5ympgEwTPnE58KHpvbSpQDWZ4Z6T34p5IL3mc,32
+advanced_pid/pid.py,sha256=dNA_3dF93WlpRqJdbQ_u7fWyF7plHMTCLPZo1FvVOTs,4711
+advanced_pid/integrate/__init__.py,sha256=xCpi-N-yoEZnNDs6hMs07pCr5wBUdhSoMGU-e50fmbA,76
+advanced_pid/integrate/state_space.py,sha256=6wle74Xmb6wsPf9IUujaUhgZ-GJKLsxD8NmLMZlR1UE,4059
+advanced_pid/models/__init__.py,sha256=uM_4yn5sBj4LJP6q1lTmBcqllGYqxX6SBzvuCoXVLH0,67
+advanced_pid/models/mass_spring_damper.py,sha256=vExx0rHO2SYYNPkPuCvwuqtRkSKwu_YmKlpkJ2OopVo,3086
+advanced_pid-0.0.7.dist-info/LICENSE,sha256=rr_mUmzwI8TGDrfjk9VIyCwBot3t_B4uuyKwapOexIc,1063
+advanced_pid-0.0.7.dist-info/METADATA,sha256=cV6WbBbXrv1iuzYNC2pQBXSPCtsCYbCucl4vCV8W-Po,3656
+advanced_pid-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+advanced_pid-0.0.7.dist-info/top_level.txt,sha256=3bD1eHzIm5C4SvdGvcF4R38_0NKGoixzDYJTxwJyETE,13
+advanced_pid-0.0.7.dist-info/RECORD,,
