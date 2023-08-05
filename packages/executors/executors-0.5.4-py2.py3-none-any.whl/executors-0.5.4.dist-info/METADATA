@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: executors
+Version: 0.5.4
+Summary: Job scheduling abstractions
+Home-page: https://github.com/harvard-nrg/executors
+Author: Neuroinformatics Research Group
+Author-email: info@neuroinfo.org
+Requires-Dist: paramiko
+Requires-Dist: ratelimit
+
