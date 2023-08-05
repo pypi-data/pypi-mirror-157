@@ -1,0 +1,19 @@
+[build-system]
+requires = ["poetry-core>=1.0.4"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "gobomatic"
+version = "2.0.0"
+description = "Gobomatic is a Python library to generate Scratch (3>) projects from Object-Oriented representation of Scratch projects in Python code."
+authors = ["aspizu <aspizu@protonmail.com>"]
+maintainers = ["aspizu <aspizu@protonmail.com>"]
+homepage = "https://github.com/aspizu/gobomatic"
+repository = "https://github.com/aspizu/gobomatic"
+documentation = "https://github.com/aspizu/gobomatic"
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+]
+include = ["LICENSE", "README.md", "gobomatic/py.typed"]
+readme = "README.md"
+license = "MIT"
