@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/h5massembly/__init__.py
+src/h5massembly/assembly.py
+src/h5massembly.egg-info/PKG-INFO
+src/h5massembly.egg-info/SOURCES.txt
+src/h5massembly.egg-info/dependency_links.txt
+src/h5massembly.egg-info/requires.txt
+src/h5massembly.egg-info/top_level.txt
