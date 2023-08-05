@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: datamagus
+Version: 0.0.3
+Summary: Data analysis
+Home-page: https://github.com/Alazia/datamagus
+Author: alazia
+Author-email: alazia@email.com
+License: Apache-2.0 license
+Description: Packages and API interface for basic data analysis         processing, graphing and modeling, and practical use.
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
