@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+cell_row_span/cell_row_span.py
+fontquery.egg-info/PKG-INFO
+fontquery.egg-info/SOURCES.txt
+fontquery.egg-info/dependency_links.txt
+fontquery.egg-info/entry_points.txt
+fontquery.egg-info/requires.txt
+fontquery.egg-info/top_level.txt
+pyfontquery/__init__.py
+pyfontquery/build.py
+pyfontquery/client.py
+pyfontquery/container.py
+pyfontquery/htmlformatter.py
+pyfontquery/version.py
+pyfontquery/version.txt
