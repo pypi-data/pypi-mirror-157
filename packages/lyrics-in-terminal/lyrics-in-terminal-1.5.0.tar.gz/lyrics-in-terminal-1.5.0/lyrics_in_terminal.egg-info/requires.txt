@@ -1,0 +1,7 @@
+dbus-python
+
+[full]
+python-mpd2
+
+[mpd]
+python-mpd2
