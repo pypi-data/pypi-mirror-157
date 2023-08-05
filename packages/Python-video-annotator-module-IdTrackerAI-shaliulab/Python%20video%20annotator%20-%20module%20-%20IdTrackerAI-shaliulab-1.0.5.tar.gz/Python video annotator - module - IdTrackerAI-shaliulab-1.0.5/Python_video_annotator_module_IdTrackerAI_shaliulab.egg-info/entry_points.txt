@@ -1,0 +1,2 @@
+[console_scripts]
+idtrackerai2annotator = pythonvideoannotator_module_idtrackerai.__main__:run
