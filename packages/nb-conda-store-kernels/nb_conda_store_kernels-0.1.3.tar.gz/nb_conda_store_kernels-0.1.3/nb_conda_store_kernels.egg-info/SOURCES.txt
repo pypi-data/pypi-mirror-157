@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+nb_conda_store_kernels/__init__.py
+nb_conda_store_kernels/discovery.py
+nb_conda_store_kernels/install.py
+nb_conda_store_kernels/manager.py
+nb_conda_store_kernels/runner.py
+nb_conda_store_kernels.egg-info/PKG-INFO
+nb_conda_store_kernels.egg-info/SOURCES.txt
+nb_conda_store_kernels.egg-info/dependency_links.txt
+nb_conda_store_kernels.egg-info/entry_points.txt
+nb_conda_store_kernels.egg-info/requires.txt
+nb_conda_store_kernels.egg-info/top_level.txt
+nb_conda_store_kernels.egg-info/zip-safe
