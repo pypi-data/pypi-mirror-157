@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: advanced-pid
+Version: 0.0.6
+Summary: An advanced PID controller in Python.
+Home-page: https://github.com/eadali/advanced-pid
+Author: Erkan ADALI
+Author-email: erkanadali91@gmail.com
+License: MIT
+Project-URL: Documentation, https://advanced-pid.readthedocs.io/
+Project-URL: Source Code, https://github.com/eadali/advanced-pid
+Keywords: control,theory,engineering,pid,real,time
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+An advanced PID controller in Python. The derivative term can also be used in real applications thanks to built-in first-order filter.
