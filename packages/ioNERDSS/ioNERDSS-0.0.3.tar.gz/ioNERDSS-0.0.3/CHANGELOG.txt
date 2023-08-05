@@ -1,0 +1,14 @@
+Change Log
+==========
+
+0.0.1 (06/27/2022)
+------------------
+- First Release (setup dodecahedron face as COM model).
+
+0.0.2 (06/27/2022)
+------------------
+- Adding all Platonic solid model.
+
+0.0.3 (06/28/2022)
+------------------
+- Moving Platonic function into seperate file.
