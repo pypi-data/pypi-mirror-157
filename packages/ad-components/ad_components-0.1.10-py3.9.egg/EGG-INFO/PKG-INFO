@@ -1,0 +1,152 @@
+Metadata-Version: 2.1
+Name: ad-components
+Version: 0.1.10
+Summary: Accelerated Discovery Reusable Components.
+Home-page: https://github.ibm.com/Accelerated-Discovery/Discovery-Platform
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+
+# Storage Access Reusable Component
+
+The central implementation of Accelerated Discover Reusable Components. It serves as a wrapper around Dapr and intended to replace the long implementations of dapr-related functionality in your kubeflow pipelines.
+
+## Installation
+All components will be availble using
+
+```shell
+pip install ad-components
+```
+
+### CLI
+Here's an example usage of the CLI
+
+```
+usage: adc [-h] [--verbose] [--version] {<component>} ...
+
+Accelerated Discovery reusable components.
+
+positional arguments:
+  <component>    the component that you want to trigger.
+
+optional arguments:
+  -h, --help     show this help message and exit.
+  --verbose, -v  run the script in debug mode.
+  --version      show program's version number and exit.
+```
+
+## 1. Supported components
+### 1.1. Storage
+#### 1.1.1. Supported operations
+Below is a list of the operations you might intend to perform in your component.
+
+##### Upload
+Uploads data from a file to an object in a bucket.
+
+###### Arguments
+* `src`: Name of file to download.
+* `dest`: Object name in the bucket.
+* `binding`: The name of the binding to perform the operation.
+
+##### Download
+Downloads data of an object to file.
+
+###### Arguments
+* `src`: Object name in the bucket.
+* `dest`: Name of file to download.
+* `binding`: The name of the binding to perform the operation.
+
+
+##### Dapr configurations
+* `address`: Dapr Runtime gRPC endpoint address.
+* `timeout`: Value in seconds we should wait for sidecar to come up
+
+
+## 2. Usage
+### 2.1 Storage
+
+#### 4.2 Python module
+You can invoke the manager using native python. Please note that the package must be present in you python environment.
+
+```python
+from ad.storage import download, upload
+
+download_resp = download(
+    src, dest,
+    # binding_name="s3-state",  # Or any other binding
+    # address=None, # endpoint:port
+    # timeout=300,  # in seconds
+)
+
+upload_resp = upload(
+    src, dest,
+    # binding_name="s3-state",  # Or any other binding
+    # address=None, # endpoint:port
+    # timeout=300,  # in seconds
+)
+```
+
+#### 4.3 CLI
+
+```shell
+usage: adc storage [-h] --src PATH --dest PATH [--binding NAME] [--timeout SEC] {download,upload}
+
+positional arguments:
+  {download,upload}     action to be performed on data.
+
+optional arguments:
+  -h, --help            show this help message and exit
+
+action arguments:
+  --src PATH, -r PATH   path of file to perform action on.
+  --dest PATH, -d PATH  object's desired full path in the destination.
+  --binding NAME, -b NAME
+                        the name of the binding as defined in the components.
+
+dapr arguments:
+  --timeout SEC, -t SEC
+                        value in seconds we should wait for sidecar to come up.
+```
+
+> **Note:** You can replace `adc` with `python ad/main.py ...` if you don't have the package installed in your python environment.
+
+##### Examples
+1. To download an object from S3 run
+```bash
+adc storage download \
+    --src test.txt \
+    --dest tmp/downloaded.txt \
+    --verbose
+```
+
+2. To upload an object to S3 run
+```bash
+adc storage upload \
+    --src tmp/downloaded.txt \
+    --dest local/uploaded.txt \
+    --verbose
+```
+
+
+## 3. Verbose mode
+If you want to run the script in verbose mode you can append `--verbose` or `-v` to the command.
+
+## 4. Publishing
+Every change to the python script requires to be pushed to a PyPi registry.
+
+If you have the right (write) permissions, and a correctly-configured `$HOME/.pypirc` file, run the following command to publish the package
+
+```shell
+make
+```
+
+> **Note:** We will run the `install` target to confirm the package is installable before publishing it to our PyPi registry.
+
+### Increment the version
+To increment the version, go to [adstorage/version.py](adstorage/version.py) and increment the version there. Both the [setup.py](setup.py) and the `CLI` will read the new version correctly.
