@@ -1,0 +1,10 @@
+pyamtrack-0.13.0.dist-info/top_level.txt,sha256=DkqcdHkWUhiPnTm4pbyMRImJKmfHIZXK4oLOaSAO564,10
+pyamtrack-0.13.0.dist-info/WHEEL,sha256=usWW0-CgxdPBVYpgZ_lJ0meOx22iAjgjrJV8cY7U2fs,164
+pyamtrack-0.13.0.dist-info/METADATA,sha256=JT3WPIRiblVajTqLTYh7_Q9fOFhxUuimQYPY-6Of410,1046
+pyamtrack-0.13.0.dist-info/RECORD,,
+pyamtrack/libAT.py,sha256=829Mb8Amvf4QgrzMd6IUEod7wS588OIO1LkjyyoJnl8,536925
+pyamtrack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyamtrack/lib/_libAT.abi3.so,sha256=-l7zbaEPv_qVvkB3CRywMzIZr9q52I6eAjwEpra9NrU,27120794
+pyamtrack/lib/libgslcblas.so.0,sha256=jWvyqefy4k0jSSoUmE9gjiOqfWCOOFuIPQGm1puTMV4,1107295
+pyamtrack/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyamtrack/lib/libgsl.so.27,sha256=UJ4Be7n3KrM0Glo64xf8bIenMl3PletaCgTlz8wDjsA,14497080
