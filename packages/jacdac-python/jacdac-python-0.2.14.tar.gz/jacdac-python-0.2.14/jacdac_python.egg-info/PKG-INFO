@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: jacdac-python
+Version: 0.2.14
+Summary: Python client package for Jacdac
+Home-page: https://microsoft.github.io/jacdac-docs/clients/python/
+Author: Microsoft Corporation
+License: MIT
+Project-URL: Bug Tracker, https://github.com/microsoft/jacdac/issues
+Project-URL: Discussions, https://github.com/microsoft/jacdac/discussions
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: System :: Hardware
+Classifier: Topic :: Software Development :: Embedded Systems
+Description-Content-Type: text/markdown
+Provides-Extra: pi
+Provides-Extra: serial
+Provides-Extra: spi
+License-File: LICENSE
+
+# Jacdac Python
+
+A Python client and server SDK for Jacdac.
+
+**Jacdac** is a plug-and-play hardware/software stack
+for **microcontrollers** and their peripherals (sensors/actuators),
+with applications to rapid prototyping, making, and physical computing.
+
+-   **[Jacdac Home](https://aka.ms/jacdac/)**
+-   **[Jacdac Python Documentation](https://microsoft.github.io/jacdac-docs/clients/python/)**
+-   **[API Reference](https://jacdac-python.readthedocs.io/)**
+-   Discussions at https://github.com/microsoft/jacdac/discussions
+-   Issues are tracked on https://github.com/microsoft/jacdac/issues
+
+

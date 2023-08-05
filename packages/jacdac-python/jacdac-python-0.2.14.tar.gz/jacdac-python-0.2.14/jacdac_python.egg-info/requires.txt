@@ -1,0 +1,12 @@
+websocket-client
+websockets
+requests
+
+[pi]
+spidev
+
+[serial]
+pyserial
+
+[spi]
+spidev
