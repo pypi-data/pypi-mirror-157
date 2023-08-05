@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cloud-init-server
+Version: 0.1.0
+Summary: Simple HTTP serving cloud-init metadata files
+License: MIT
+Author: Piotr Styczyński
+Author-email: piotr@styczynski.in
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: fastapi (>=0.78.0,<0.79.0)
+Requires-Dist: fs (>=2.4.16,<3.0.0)
+Requires-Dist: prometheus-fastapi-instrumentator (>=5.8.2,<6.0.0)
+Requires-Dist: pydantic (>=1.9.1,<2.0.0)
+Requires-Dist: slowapi (>=0.1.5,<0.2.0)
+Requires-Dist: uvicorn (>=0.18.1,<0.19.0)
