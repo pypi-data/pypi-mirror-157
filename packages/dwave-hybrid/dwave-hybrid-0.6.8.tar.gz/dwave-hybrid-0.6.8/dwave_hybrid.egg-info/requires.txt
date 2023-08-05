@@ -1,0 +1,15 @@
+numpy>=1.19.1
+networkx
+click>5
+plucky>=0.4.3
+dimod<0.13,>=0.10.13
+dwave-preprocessing
+minorminer>=0.1.7
+dwave-networkx>=0.8.8
+dwave-system>=0.7.6
+dwave-neal>=0.5.4
+dwave-tabu>=0.2.0
+dwave-greedy>=0.1.0
+
+[test]
+coverage
