@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pygleif
+Version: 4.0.6
+Summary: UNKNOWN
+Home-page: https://github.com/ggravlingen/pygleif
+Author: ggravlingen
+Author-email: no@email.com
+License: MIT
+Download-URL: https://github.com/ggravlingen/pygleif/archive/4.0.6.zip
+Keywords: lei-code lei api gleif leicode
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Financial and Insurance Industry
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![PyPI version](https://badge.fury.io/py/pygleif.svg)](https://badge.fury.io/py/pygleif)
+
+This library queries the API of GLEIF.org to return data about a specific entity company. The result is typed using `Pydantic` It is also possible to search for organisation id to find LEI codes and also to get child notes for a specific LEI code.
+
+
