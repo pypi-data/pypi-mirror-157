@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sample_package_wabisabi5432"
+version = "2.0.1"
+authors = [
+  { name="Wabi Sabi", email="wabisabi5432@gmail.com" },
+]
+description = "A sample package to used for testing"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com"
+"Bug Tracker" = "https://github.com"

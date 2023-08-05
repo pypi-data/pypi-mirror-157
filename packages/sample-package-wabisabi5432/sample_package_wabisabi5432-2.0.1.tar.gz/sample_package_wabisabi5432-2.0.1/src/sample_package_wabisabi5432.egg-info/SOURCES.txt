@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/sample_package_wabisabi5432/__init__.py
+src/sample_package_wabisabi5432/sample.py
+src/sample_package_wabisabi5432.egg-info/PKG-INFO
+src/sample_package_wabisabi5432.egg-info/SOURCES.txt
+src/sample_package_wabisabi5432.egg-info/dependency_links.txt
+src/sample_package_wabisabi5432.egg-info/top_level.txt
