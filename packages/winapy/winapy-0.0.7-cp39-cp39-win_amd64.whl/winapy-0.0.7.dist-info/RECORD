@@ -1,0 +1,9 @@
+winapy_gdi.cp39-win_amd64.pyd,sha256=xJO-r4d3VlhB3ks2ZZoERelwxB5J4m0Ne4Ocp3bsfgU,31744
+winapy_mme.cp39-win_amd64.pyd,sha256=go6OIF4FguMOOvMxi36yTHISIFo9AtXpdJT06SqqX5E,18432
+winapy_user.cp39-win_amd64.pyd,sha256=Uw_9F4jhCEFZCHK5gOZgExVmRJMCKK4erLLVEdD3YhI,24064
+winapy/__init__.py,sha256=5rsYGC4CUOKwGV4YleW2yU_JTl1h4-BEz30tyvlWNMo,174
+winapy_con/__init__.py,sha256=VJVBLx1fSlPZb9rVW43k0Gh9alYAO28T2xQDe98_GBk,125642
+winapy-0.0.7.dist-info/METADATA,sha256=feAoOPlXuwjC-5-Z_3EqLlxYHhEQSyds60yJpt1YTkw,886
+winapy-0.0.7.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+winapy-0.0.7.dist-info/top_level.txt,sha256=zZrfD8uwYMbmhUzbeGDkspDL4XvTppo-6MHmlVtVeHc,52
+winapy-0.0.7.dist-info/RECORD,,
