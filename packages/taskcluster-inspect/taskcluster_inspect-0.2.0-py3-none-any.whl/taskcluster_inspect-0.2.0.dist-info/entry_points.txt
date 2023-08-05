@@ -1,0 +1,3 @@
+[console_scripts]
+tc-inspect=taskcluster_inspect.console.application:cli
+

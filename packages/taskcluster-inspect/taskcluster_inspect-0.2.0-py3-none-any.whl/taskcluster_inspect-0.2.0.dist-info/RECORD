@@ -1,0 +1,10 @@
+taskcluster_inspect/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+taskcluster_inspect/console/application.py,sha256=LmQsIClu3jwNfRcNgjOKDG56VCu2S7i4P9PQajIOgvw,350
+taskcluster_inspect/console/commands/pool.py,sha256=pNJtyMSwBAyTYsxKBC7R7_PKHzxr9pLR9T5GcatPRaY,2059
+taskcluster_inspect/console/commands/worker_manager.py,sha256=JnxDG45b_SFoB5gQ5iel9KaN_2XOWCCc77c2mgwB4-o,1386
+taskcluster_inspect/pool.py,sha256=Qv7WKKRcsTofmVB1ZNLqe2e1xQ71H67LCTJXD_D7adU,1474
+taskcluster_inspect/task.py,sha256=K9gr0OJgFHAdjihTyAcy0ckktomaEtwb5rgOfvnokmw,154
+taskcluster_inspect-0.2.0.dist-info/entry_points.txt,sha256=sARZ28dVWKCedyS_NDc58rP9Kb-1zqlgjQ2bgfBxwYU,74
+taskcluster_inspect-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+taskcluster_inspect-0.2.0.dist-info/METADATA,sha256=Vja17pHSnNR-bcXncyEGxt_c1RgSy6VFqOORrQbD8gw,677
+taskcluster_inspect-0.2.0.dist-info/RECORD,,
