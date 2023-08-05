@@ -1,0 +1,3 @@
+[console_scripts]
+fp-indexer = funny_passphrase.indexer.__main__:main
+funny-passphrase = funny_passphrase.__main__:main
