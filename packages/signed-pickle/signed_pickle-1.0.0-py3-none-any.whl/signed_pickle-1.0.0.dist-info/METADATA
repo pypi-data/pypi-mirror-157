@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: signed-pickle
+Version: 1.0.0
+Summary: Description
+Home-page: https://github.com/mumblepins/signed-pickle/
+License: LGPL-3.0-or-later
+Author: Daniel Sullivan
+Author-email: mumblepins@users.noreply.github.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: lz4
+Requires-Dist: lz4; extra == "lz4"
+Project-URL: Documentation, https://mumblepins.github.io/signed-pickle/
+Project-URL: Repository, https://github.com/mumblepins/signed-pickle/
+Description-Content-Type: text/markdown
+
+# Signed Pickle
+
