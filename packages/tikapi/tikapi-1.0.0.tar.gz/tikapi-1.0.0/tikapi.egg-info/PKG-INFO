@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: tikapi
+Version: 1.0.0
+Summary: TikAPI | TikTok Unofficial API
+Home-page: https://www.tikapi.io
+Author: TikAPI
+Author-email: contact@tikapi.io
+License: TikAPI
+Description: A fully managed unofficial TikTok app with OAuth capabilities
+Keywords: tikapi,tiktok api,tiktok scraper,tiktok,TikTokApi
+Platform: UNKNOWN
