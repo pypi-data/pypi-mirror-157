@@ -1,0 +1,7 @@
+pywavefront
+
+[dev]
+check-manifest
+
+[test]
+coverage
