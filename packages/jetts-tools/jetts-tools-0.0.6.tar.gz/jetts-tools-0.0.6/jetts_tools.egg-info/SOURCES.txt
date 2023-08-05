@@ -1,0 +1,9 @@
+README.md
+setup.py
+jettools/__init__.py
+jettools/dict.py
+jetts_tools.egg-info/PKG-INFO
+jetts_tools.egg-info/SOURCES.txt
+jetts_tools.egg-info/dependency_links.txt
+jetts_tools.egg-info/top_level.txt
+test/test_dict.py
