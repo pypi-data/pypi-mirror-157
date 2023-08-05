@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+yc_package/__init__.py
+yc_package/main.py
+yc_package.egg-info/PKG-INFO
+yc_package.egg-info/SOURCES.txt
+yc_package.egg-info/dependency_links.txt
+yc_package.egg-info/top_level.txt
