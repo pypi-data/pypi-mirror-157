@@ -1,0 +1,16 @@
+cryptocode
+line_notify
+matplotlib
+msgpack
+mypylib
+numpy
+pandas
+pandasql
+playsound
+plotly
+requests
+setuptools
+shioaji
+termcolor
+twine
+wheel
