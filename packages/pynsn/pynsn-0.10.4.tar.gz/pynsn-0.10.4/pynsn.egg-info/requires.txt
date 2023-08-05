@@ -1,0 +1,16 @@
+numpy>=1.6
+scipy>=1.0
+Pillow>=5.0
+svgwrite>=1.4
+
+[expyriment]
+expyriment>=0.9
+
+[gui]
+PyQt5>=5.14
+
+[matplotlib]
+matplotlib>=3.2
+
+[pygame]
+pygame>=1.9
