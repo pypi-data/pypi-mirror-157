@@ -1,0 +1,116 @@
+{
+  "TOKEN": {
+    "regex": ".*",
+    "children": [
+      "PUNCT",
+      "ALPHANUM"
+    ],
+    "parent": "",
+    "code": {
+      "key": "@",
+      "data": ""
+    }
+  },
+  "PUNCT": {
+    "regex": "^[\\.\\?!,:'()\"]$",
+    "children": [],
+    "parent": "TOKEN",
+    "code": {
+      "key": "A",
+      "data": "A1"
+    }
+  },
+  "ALPHANUM": {
+    "regex": "[\\da-zA-Z]+",
+    "children": [
+      "ALPHA",
+      "NUMBER"
+    ],
+    "parent": "TOKEN",
+    "code": {
+      "key": "A",
+      "data": "A2"
+    }
+  },
+  "ALPHA": {
+    "regex": "^[a-zA-Z]+$",
+    "children": [
+      "CAPS",
+      "LOWER",
+      "ALLCAPS"
+    ],
+    "parent": "ALPHANUM",
+    "code": {
+      "key": "B",
+      "data": "A2.B1"
+    }
+  },
+  "NUMBER": {
+    "regex": "^(-?(\\d*\\.?\\d*)|(-?\\d+(\\,\\d+)*))$",
+    "children": ["DECIMAL", "INT"],
+    "parent": "ALPHANUM",
+    "code": {
+      "key": "B",
+      "data": "A2.B2"
+    }
+  },
+  "DECIMAL": {
+    "regex": "^-?\\d*\\.\\d*$",
+    "children": [],
+    "parent": "NUMBER",
+    "code": {
+      "key": "C",
+      "data": "A2.B2.C1"
+    }
+  },
+  "INT": {
+    "regex": "^(-?\\d+(\\,\\d+)*)$",
+    "children": ["DIGIT"],
+    "parent": "NUMBER",
+    "code": {
+      "key": "C",
+      "data": "A2.B2.C2"
+    }
+  },
+  "DIGIT": {
+    "regex": "^\\d+$",
+    "children": [],
+    "parent": "INT",
+    "code": {
+      "key": "D",
+      "data": "A2.B2.C2.D1"
+    }
+  },
+  "CAPS": {
+    "regex": "^[A-Z][a-z]*$",
+    "children": [
+    ],
+    "parent": "ALPHA",
+    "code": {
+      "key": "C",
+      "data": "A2.B1.C2"
+    }
+  },
+  "LOWER": {
+    "regex": "^[a-z]+$",
+    "children": [],
+    "parent": "ALPHA",
+    "code":  {
+      "key": "C",
+      "data": "A2.B1.C3"
+    }
+  },
+  "ALLCAPS": {
+    "regex": "^[A-Z]+$",
+    "children": [],
+    "parent": "CAPS",
+    "code":  {
+      "key": "C",
+      "data": "A2.B1.C1"
+    }
+  },
+  "HTML": {
+    "regex": "",
+    "children": []
+  }
+}
