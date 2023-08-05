@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+taxontools/__init__.py
+taxontools/cli.py
+taxontools/pipelines.py
+taxontools/versions.py
+taxontools.egg-info/PKG-INFO
+taxontools.egg-info/SOURCES.txt
+taxontools.egg-info/dependency_links.txt
+taxontools.egg-info/entry_points.txt
+taxontools.egg-info/requires.txt
+taxontools.egg-info/top_level.txt
+taxontools/one_kp/1kp.acc.taxon.txt
+taxontools/one_kp/estimated_species_tree.tree

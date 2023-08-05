@@ -1,0 +1,2 @@
+[console_scripts]
+TaxonTools = taxontools.cli:main
