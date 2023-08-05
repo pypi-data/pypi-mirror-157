@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+requirements.txt
+setup.py
+examples/raw_data.ipynb
+examples/report.ipynb
+examples/segment.ipynb
+mytracker_export_api/__init__.py
+mytracker_export_api/exceptions.py
+mytracker_export_api/mytracker.py
+mytracker_export_api.egg-info/PKG-INFO
+mytracker_export_api.egg-info/SOURCES.txt
+mytracker_export_api.egg-info/dependency_links.txt
+mytracker_export_api.egg-info/not-zip-safe
+mytracker_export_api.egg-info/requires.txt
+mytracker_export_api.egg-info/top_level.txt
