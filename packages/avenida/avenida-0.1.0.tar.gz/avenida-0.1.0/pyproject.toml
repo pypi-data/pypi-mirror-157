@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "avenida"
+version = "0.1.0"
+description = ""
+authors = ["Ivanna Añazco <ivanna_ao97@outlook.es>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.23.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^22.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
