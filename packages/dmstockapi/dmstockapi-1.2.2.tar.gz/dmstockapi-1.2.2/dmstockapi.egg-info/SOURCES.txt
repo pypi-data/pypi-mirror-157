@@ -1,0 +1,10 @@
+README.md
+setup.py
+dmstockapi/__init__.py
+dmstockapi/client.py
+dmstockapi/exceptions.py
+dmstockapi.egg-info/PKG-INFO
+dmstockapi.egg-info/SOURCES.txt
+dmstockapi.egg-info/dependency_links.txt
+dmstockapi.egg-info/requires.txt
+dmstockapi.egg-info/top_level.txt
