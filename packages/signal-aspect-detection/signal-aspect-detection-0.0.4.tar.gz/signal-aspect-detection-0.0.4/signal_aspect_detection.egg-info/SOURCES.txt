@@ -1,0 +1,17 @@
+setup.py
+signal_aspect_detection/__init__.py
+signal_aspect_detection/color_detector.py
+signal_aspect_detection/crop_image_line.py
+signal_aspect_detection/draw.py
+signal_aspect_detection/find_ellipses.py
+signal_aspect_detection/find_polygones.py
+signal_aspect_detection/image_accessor_class.py
+signal_aspect_detection/light_class.py
+signal_aspect_detection/signal_class.py
+signal_aspect_detection/signal_matching.py
+signal_aspect_detection.egg-info/PKG-INFO
+signal_aspect_detection.egg-info/SOURCES.txt
+signal_aspect_detection.egg-info/dependency_links.txt
+signal_aspect_detection.egg-info/not-zip-safe
+signal_aspect_detection.egg-info/requires.txt
+signal_aspect_detection.egg-info/top_level.txt

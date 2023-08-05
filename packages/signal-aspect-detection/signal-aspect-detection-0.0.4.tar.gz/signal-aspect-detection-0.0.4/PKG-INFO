@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: signal-aspect-detection
+Version: 0.0.4
+Summary: A railway signal aspect detection library
+Home-page: https://gitlab.hpi.de/osm/drohnenflieger/signal-aspect-detection
+Author: Dirk Friedenberger
+Author-email: Dirk.Friedenberger@guest.hpi.de
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
