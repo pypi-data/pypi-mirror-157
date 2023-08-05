@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: villonaco
+Version: 0.1.0
+Summary: 
+Author: Marco Montanio
+Author-email: mjmontano1@utpl.edu.ec
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.23.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+
