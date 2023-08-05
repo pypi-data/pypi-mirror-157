@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-sim-SIMulator = napari_sim_simulator:napari.yaml

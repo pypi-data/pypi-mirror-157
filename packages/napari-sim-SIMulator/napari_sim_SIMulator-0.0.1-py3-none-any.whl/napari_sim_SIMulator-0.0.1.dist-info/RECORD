@@ -1,0 +1,17 @@
+napari_sim_simulator/__init__.py,sha256=KZci1ttGVd65191VZKL0Q0IBp60i4GgLSw2q_Of0gqc,381
+napari_sim_simulator/_reader.py,sha256=ZrU4MD4sN94oY8toIx4lZxxyfUsz5PZRHly8ET3F32Q,2477
+napari_sim_simulator/_sample_data.py,sha256=mDdaoh2S5yx0IUKJ4bNLv1JDZ4KYESF6PVQwarBz7-M,375
+napari_sim_simulator/_widget.py,sha256=Kpo_2wEVk9jLuExetNMn6dr0ESKBhiX7-_SACc82PcM,1373
+napari_sim_simulator/_writer.py,sha256=bACbJtxXwg-Act595QTMEz-Rc9f_u6FpwqCcO-Bd9B8,636
+napari_sim_simulator/napari.yaml,sha256=j0dxUv7x6P_vgyZ4hLieI24G2_ftqk4sA-EAp_nu8rw,2051
+napari_sim_simulator/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_sim_simulator/_tests/test_reader.py,sha256=G7Qge9UtemocCt1Vulu-g3-sQ7nFUPRwZCxud_uOCJk,982
+napari_sim_simulator/_tests/test_sample_data.py,sha256=Qh0C367sm837gUpIg2GrqaAAbK8ojt3CWG63HQJZ2cA,111
+napari_sim_simulator/_tests/test_widget.py,sha256=-PBG-3EekqY0kKFaHKYhhxb40ttyftlPNsGricoAlLc,1253
+napari_sim_simulator/_tests/test_writer.py,sha256=5kvA9tYSdnF8Z4ietvD7HMDEgGH2vFz1KO5CnvV2-0k,129
+napari_sim_SIMulator-0.0.1.dist-info/LICENSE,sha256=SuEG-3A1mpId2KadlZQLxP9hdsaVkCtx9leXujgc-pQ,1491
+napari_sim_SIMulator-0.0.1.dist-info/METADATA,sha256=G6OR_iOaWCePXXef7ll37dx_evEm1BHihQI39QFJIkA,4298
+napari_sim_SIMulator-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_sim_SIMulator-0.0.1.dist-info/entry_points.txt,sha256=st9hoVTedRMqmMjVgAmLih-aK8IL-eaAH5rAUoxj97Q,74
+napari_sim_SIMulator-0.0.1.dist-info/top_level.txt,sha256=Hec54f7Mnf4wUkMuuHuf4q5wNAUHGb-Z2YkH_x9n3h0,21
+napari_sim_SIMulator-0.0.1.dist-info/RECORD,,
