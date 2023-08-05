@@ -1,0 +1,25 @@
+<h2 class="form-title">Instructor</h2>
+
+<table class="table table-fluid">
+    <thead>
+        <tr>
+            <th>Instructor</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for instructor in object_list %}
+        <tr>
+            <td>{{ instructor }}</td>
+            <td><a href="{% url "instructor-detail" instructor.id %}">view</a></td>
+            <td><a href="{% url "instructor-update" instructor.id %}">edit</a></td>
+            <td><a href="{% url "instructor-delete" instructor.id %}">delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url "instructor-create" %}">New</a>
+</div>

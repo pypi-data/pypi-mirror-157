@@ -1,0 +1,25 @@
+<h2 class="form-title">ClassRoom</h2>
+
+<table class="table table-fluid">
+    <thead>
+        <tr>
+            <th>ClassRoom</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for classroom in object_list %}
+        <tr>
+            <td>{{ classroom }}</td>
+            <td><a href="{% url "classroom-detail" classroom.id %}">view</a></td>
+            <td><a href="{% url "classroom-update" classroom.id %}">edit</a></td>
+            <td><a href="{% url "classroom-delete" classroom.id %}">delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url "classroom-create" %}">New</a>
+</div>

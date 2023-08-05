@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><XMI xmlns:UML="href://org.omg/UML/1.3" xmi.version="1.1">
+    <XMI.header>
+        <XMI.metamodel xmi.name="UML" xmi.version="1.3"/>
+    </XMI.header>
+    <XMI.content>
+        <UML:Model name="PlantUML" xmi.id="model1">
+            <UML:Namespace.ownedElement>
+                <UML:Class name="ExampleTestModel" namespace="testapp" xmi.id="cl0003">
+                    <UML:ModelElement.stereotype>
+                        <UML:Stereotype name="Stereotype_1"/>
+                        <UML:Stereotype name="Stereotype_2"/>
+                    </UML:ModelElement.stereotype>
+                    <UML:Classifier.feature>
+                        <UML:Attribute name="big_integer_field : BigIntegerField()" xmi.id="att5"/>
+                        <UML:Attribute name="boolean_field : BooleanField()" xmi.id="att6"/>
+                        <UML:Attribute name="char_field : CharField(max_length=30)" visibility="private" xmi.id="att7"/>
+                        <UML:Attribute name="date_field : DateField()" visibility="protected" xmi.id="att8"/>
+                        <UML:Attribute name="date_time_field : DateTimeField()" visibility="package" xmi.id="att9"/>
+                        <UML:Attribute name="decimal_field : DecimalField(max_digits=9,decimal_places=4)" visibility="public" xmi.id="att10"/>
+                        <UML:Attribute name="duration_field : DurationField()" xmi.id="att11"/>
+                        <UML:Attribute name="email_field : EmailField()" xmi.id="att12"/>
+                        <UML:Attribute name="file_field : FileField()" xmi.id="att13"/>
+                        <UML:Attribute name="float_field : FloatField()" xmi.id="att14"/>
+                        <UML:Attribute name="generic_ip_address_field : GenericIPAddressField()" xmi.id="att15"/>
+                        <UML:Attribute name="integer_field : IntegerField()" xmi.id="att16"/>
+                        <UML:Attribute name="json_field : JSONField()" xmi.id="att17"/>
+                        <UML:Attribute name="positive_big_integer_field : PositiveBigIntegerField()" xmi.id="att18"/>
+                        <UML:Attribute name="positive_Integer_field : PositiveIntegerField()" xmi.id="att19"/>
+                        <UML:Attribute name="positive_small_integer_field : PositiveSmallIntegerField()" xmi.id="att20"/>
+                        <UML:Attribute name="slug_field : SlugField()" xmi.id="att21"/>
+                        <UML:Attribute name="smallInteger_field : SmallIntegerField()" xmi.id="att22"/>
+                        <UML:Attribute name="text_field : TextField()" xmi.id="att23"/>
+                        <UML:Attribute name="time_field : TimeField()" xmi.id="att24"/>
+                        <UML:Attribute name="url_field : URLField()" xmi.id="att25"/>
+                        <UML:Attribute name="uuid_field : UUIDField()" xmi.id="att26"/>
+                    </UML:Classifier.feature>
+                </UML:Class>
+                <UML:Class name="SecondModel" namespace="testapp" xmi.id="cl0004">
+                    <UML:Classifier.feature>
+                        <UML:Attribute name="name" xmi.id="att27"/>
+                        <UML:Attribute name="other_char_field" xmi.id="att28"/>
+                    </UML:Classifier.feature>
+                </UML:Class>
+            </UML:Namespace.ownedElement>
+        </UML:Model>
+    </XMI.content>
+</XMI>

@@ -1,0 +1,12 @@
+@startuml
+package testapp {
+    class ExampleTestModel {
+        {field} -char_field : CharField(max_length=30)
+    }
+}
+package other_test_app {
+    class OtherModel {
+        {field} -char_field : CharField(max_length=30)
+    }
+}
+@enduml

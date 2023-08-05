@@ -1,0 +1,5 @@
+from .SubjectClassCreateView import SubjectClassCreateView
+from .SubjectClassDeleteView import SubjectClassDeleteView
+from .SubjectClassDetailView import SubjectClassDetailView
+from .SubjectClassListView import SubjectClassListView
+from .SubjectClassUpdateView import SubjectClassUpdateView

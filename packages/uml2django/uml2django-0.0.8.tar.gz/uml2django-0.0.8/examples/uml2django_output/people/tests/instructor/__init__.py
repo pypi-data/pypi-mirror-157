@@ -1,0 +1,1 @@
+from .InstructorViewsTest import InstructorViewsTest

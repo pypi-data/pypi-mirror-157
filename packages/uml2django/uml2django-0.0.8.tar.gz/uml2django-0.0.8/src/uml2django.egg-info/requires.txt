@@ -1,0 +1,6 @@
+cheetah3
+inflect
+redbaron
+
+[dev]
+tox

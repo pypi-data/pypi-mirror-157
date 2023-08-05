@@ -1,0 +1,56 @@
+# pyproject.toml
+[build-system]
+# AVOID CHANGING REQUIRES: IT WILL BE UPDATED BY PYSCAFFOLD!
+requires = ["setuptools>=46.1.0", "wheel",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uml2django"
+version = "0.0.8"
+description = "Generate Django code from PlantUML class diagrams."
+readme = "README.rst"
+authors = [
+    { name = "Joao Cunha", email = "jvsdc1992@gmail.com" }
+]
+license = { file = "LICENSE.txt" }
+# Add here all kinds of additional classifiers as defined under
+# https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "License :: Public Domain",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Code Generators",
+]
+# keywords = ["feed", "reader", "tutorial"]
+requires-python = ">=3.8"
+dependencies = [
+    "cheetah3",
+    "inflect",
+    "redbaron",
+]
+
+[project.optional-dependencies]
+dev = [
+    "tox",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/j-hanks/uml2django"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+# exclude = ["tests", "docs"] 
+
+[tool.setuptools]
+
+
+
+[project.scripts] 
+uml2django = "uml2django.main:run"
+
+

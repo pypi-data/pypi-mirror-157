@@ -1,0 +1,2 @@
+from .SubjectRequirementCreateForm import SubjectRequirementCreateForm
+from .SubjectRequirementUpdateForm import SubjectRequirementUpdateForm

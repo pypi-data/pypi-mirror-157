@@ -1,0 +1,5 @@
+from .InstructorCreateView import InstructorCreateView
+from .InstructorDeleteView import InstructorDeleteView
+from .InstructorDetailView import InstructorDetailView
+from .InstructorListView import InstructorListView
+from .InstructorUpdateView import InstructorUpdateView

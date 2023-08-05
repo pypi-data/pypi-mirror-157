@@ -1,0 +1,2 @@
+from .InstructorCreateForm import InstructorCreateForm
+from .InstructorUpdateForm import InstructorUpdateForm

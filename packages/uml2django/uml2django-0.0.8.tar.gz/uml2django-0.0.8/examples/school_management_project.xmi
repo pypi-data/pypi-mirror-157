@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?><XMI xmlns:UML="href://org.omg/UML/1.3" xmi.version="1.1">
+    <XMI.header>
+        <XMI.metamodel xmi.name="UML" xmi.version="1.3"/>
+    </XMI.header>
+    <XMI.content>
+        <UML:Model name="PlantUML" xmi.id="model1">
+            <UML:Namespace.ownedElement>
+                <UML:Association name="inherit" namespace="model1" xmi.id="ass26">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass26" type="cl0003" xmi.id="end27">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class isAbstract="true" name="AbstractPerson" namespace="people" xmi.id="cl0003">
+                                    <UML:Classifier.feature>
+                                        <UML:Attribute name="first_name : CharField(max_length=255)" visibility="private" xmi.id="att28"/>
+                                        <UML:Attribute name="last_name : CharField(max_length=255)" visibility="private" xmi.id="att29"/>
+                                        <UML:Attribute name="birth_date : DateField()" xmi.id="att30"/>
+                                        <UML:Attribute name="mother_name : CharField()" xmi.id="att31"/>
+                                        <UML:Attribute name="father_name : CharField()" xmi.id="att32"/>
+                                    </UML:Classifier.feature>
+                                </UML:Class>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass26" type="cl0004" xmi.id="end33">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class name="Student" namespace="people" xmi.id="cl0004">
+                                    <UML:Classifier.feature>
+                                        <UML:Attribute name="ufrrj_id : CharField()" xmi.id="att34"/>
+                                    </UML:Classifier.feature>
+                                </UML:Class>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="inherit" namespace="model1" xmi.id="ass35">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass35" type="cl0003" xmi.id="end36">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class xmi.idref="cl0003"/>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass35" type="cl0006" xmi.id="end37">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class name="Instructor" namespace="people" xmi.id="cl0006">
+                                    <UML:Classifier.feature>
+                                        <UML:Attribute name="ufrrj_id : PositiveIntegerField()" xmi.id="att38"/>
+                                    </UML:Classifier.feature>
+                                </UML:Class>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="" namespace="model1" xmi.id="ass39">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass39" type="cl0009" xmi.id="end40">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class name="SchoolarPeriod" namespace="educational" xmi.id="cl0009">
+                                    <UML:Classifier.feature>
+                                        <UML:Attribute name="name : CharField(max_length=255)" xmi.id="att41"/>
+                                        <UML:Attribute name="start_date : DateField()" xmi.id="att42"/>
+                                        <UML:Attribute name="end_date : DateField()" xmi.id="att43"/>
+                                    </UML:Classifier.feature>
+                                </UML:Class>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass39" type="cl0010" xmi.id="end44">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class name="Subject" namespace="educational" xmi.id="cl0010">
+                                    <UML:Classifier.feature>
+                                        <UML:Attribute name="title : CharField(max_length=255)" visibility="protected" xmi.id="att45"/>
+                                        <UML:Attribute name="name : CharField(max_length=255)" visibility="protected" xmi.id="att46"/>
+                                        <UML:Operation name="use_slug(name)" xmi.id="att47"/>
+                                        <UML:Operation name="rest_api_writable_nested_objects(SubjectLevel,SubjectRequirement)" xmi.id="att48"/>
+                                    </UML:Classifier.feature>
+                                </UML:Class>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="" namespace="model1" xmi.id="ass49">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass49" type="cl0010" xmi.id="end50">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class xmi.idref="cl0010"/>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass49" type="cl0011" xmi.id="end51">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class name="SubjectLevel" namespace="educational" xmi.id="cl0011">
+                                    <UML:Classifier.feature>
+                                        <UML:Attribute name="subject : ForeignKey('Subject')" xmi.id="att52"/>
+                                        <UML:Attribute name="title : CharField(max_length=255)" xmi.id="att53"/>
+                                        <UML:Attribute name="description : TextField()" xmi.id="att54"/>
+                                        <UML:Operation name="unique_together(subject,title)" xmi.id="att55"/>
+                                    </UML:Classifier.feature>
+                                </UML:Class>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="" namespace="model1" xmi.id="ass56">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass56" type="cl0009" xmi.id="end57">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class xmi.idref="cl0009"/>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass56" type="cl0012" xmi.id="end58">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class name="SubjectRequirement" namespace="educational" xmi.id="cl0012">
+                                    <UML:Classifier.feature>
+                                        <UML:Attribute name="subject : ForeignKey('Subject')" xmi.id="att59"/>
+                                        <UML:Attribute name="title : CharField(max_length=255)" xmi.id="att60"/>
+                                        <UML:Attribute name="description : TextField()" xmi.id="att61"/>
+                                    </UML:Classifier.feature>
+                                </UML:Class>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="" namespace="model1" xmi.id="ass62">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass62" type="cl0012" xmi.id="end63">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class xmi.idref="cl0012"/>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass62" type="cl0013" xmi.id="end64">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class name="SubjectClass" namespace="educational" xmi.id="cl0013">
+                                    <UML:Classifier.feature>
+                                        <UML:Attribute name="subject : ForeignKey('Subject')" xmi.id="att65"/>
+                                        <UML:Attribute name="subject_level : ForeignKey('SubjectLevel')" xmi.id="att66"/>
+                                        <UML:Attribute name="title : CharField(max_length=255)" xmi.id="att67"/>
+                                        <UML:Attribute name="capacity : IntegerField()" xmi.id="att68"/>
+                                        <UML:Attribute name="start_date : DateField()" xmi.id="att69"/>
+                                        <UML:Attribute name="end_date : DateField()" xmi.id="att70"/>
+                                    </UML:Classifier.feature>
+                                </UML:Class>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="" namespace="model1" xmi.id="ass71">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass71" type="cl0013" xmi.id="end72">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class xmi.idref="cl0013"/>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass71" type="cl0014" xmi.id="end73">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class name="SubjectClassSchedulePeriod" namespace="educational" xmi.id="cl0014">
+                                    <UML:Classifier.feature>
+                                        <UML:Attribute name="subject_class : ForeignKey('SubjectClass')" xmi.id="att74"/>
+                                        <UML:Attribute name="day_of_week : CharField(max_length=255)" xmi.id="att75"/>
+                                        <UML:Attribute name="from_hour : TimeField()" xmi.id="att76"/>
+                                        <UML:Attribute name="to_time : TimeField()" xmi.id="att77"/>
+                                        <UML:Operation name="unique_together(subject_class,day_of_week,from_hour,to_time)" xmi.id="att78"/>
+                                    </UML:Classifier.feature>
+                                </UML:Class>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="" namespace="model1" xmi.id="ass79">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass79" type="cl0016" xmi.id="end80">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class name="Building" namespace="infrastructure" xmi.id="cl0016">
+                                    <UML:Classifier.feature>
+                                        <UML:Attribute name="name : CharField(max_length=255)" visibility="protected" xmi.id="att81"/>
+                                        <UML:Operation name="use_slug(name)" xmi.id="att82"/>
+                                        <UML:Operation name="rest_api_writable_nested_objects(WorkingPeriod)" xmi.id="att83"/>
+                                    </UML:Classifier.feature>
+                                </UML:Class>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass79" type="cl0017" xmi.id="end84">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class name="ClassRoom" namespace="infrastructure" xmi.id="cl0017">
+                                    <UML:Classifier.feature>
+                                        <UML:Attribute name="building : ForeignKey('Building')" xmi.id="att85"/>
+                                        <UML:Attribute name="name : CharField(max_length=255)" xmi.id="att86"/>
+                                        <UML:Operation name="use_slug(name)" xmi.id="att87"/>
+                                        <UML:Operation name="rest_api_writable_nested_objects(WorkingPeriod)" xmi.id="att88"/>
+                                        <UML:Operation name="unique_together(building,name)" xmi.id="att89"/>
+                                    </UML:Classifier.feature>
+                                </UML:Class>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association name="" namespace="model1" xmi.id="ass90">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd association="ass90" type="cl0016" xmi.id="end91">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class xmi.idref="cl0016"/>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd association="ass90" type="cl0018" xmi.id="end92">
+                            <UML:AssociationEnd.participant>
+                                <UML:Class name="WorkingPeriod" namespace="infrastructure" xmi.id="cl0018">
+                                    <UML:Classifier.feature>
+                                        <UML:Attribute name="building : ForeignKey('Building')" xmi.id="att93"/>
+                                        <UML:Attribute name="class_room : ForeignKey('ClassRoom')" xmi.id="att94"/>
+                                        <UML:Attribute name="day_of_week : CharField(max_length=255)" xmi.id="att95"/>
+                                        <UML:Attribute name="from_hour : TimeField()" xmi.id="att96"/>
+                                        <UML:Attribute name="to_time : TimeField()" xmi.id="att97"/>
+                                    </UML:Classifier.feature>
+                                </UML:Class>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+            </UML:Namespace.ownedElement>
+        </UML:Model>
+    </XMI.content>
+</XMI>

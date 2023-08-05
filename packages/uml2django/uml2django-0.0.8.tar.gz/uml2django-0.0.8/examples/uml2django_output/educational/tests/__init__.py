@@ -1,0 +1,6 @@
+from .schoolarperiod import SchoolarPeriodViewsTest
+from .subject import SubjectViewsTest
+from .subjectlevel import SubjectLevelViewsTest
+from .subjectrequirement import SubjectRequirementViewsTest
+from .subjectclass import SubjectClassViewsTest
+from .subjectclassscheduleperiod import SubjectClassSchedulePeriodViewsTest

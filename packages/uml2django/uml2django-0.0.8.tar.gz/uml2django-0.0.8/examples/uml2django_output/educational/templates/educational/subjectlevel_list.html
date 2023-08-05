@@ -1,0 +1,25 @@
+<h2 class="form-title">SubjectLevel</h2>
+
+<table class="table table-fluid">
+    <thead>
+        <tr>
+            <th>SubjectLevel</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for subjectlevel in object_list %}
+        <tr>
+            <td>{{ subjectlevel }}</td>
+            <td><a href="{% url "subjectlevel-detail" subjectlevel.id %}">view</a></td>
+            <td><a href="{% url "subjectlevel-update" subjectlevel.id %}">edit</a></td>
+            <td><a href="{% url "subjectlevel-delete" subjectlevel.id %}">delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url "subjectlevel-create" %}">New</a>
+</div>

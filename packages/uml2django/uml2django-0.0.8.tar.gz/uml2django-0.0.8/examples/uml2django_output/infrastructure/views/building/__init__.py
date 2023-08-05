@@ -1,0 +1,5 @@
+from .BuildingCreateView import BuildingCreateView
+from .BuildingDeleteView import BuildingDeleteView
+from .BuildingDetailView import BuildingDetailView
+from .BuildingListView import BuildingListView
+from .BuildingUpdateView import BuildingUpdateView

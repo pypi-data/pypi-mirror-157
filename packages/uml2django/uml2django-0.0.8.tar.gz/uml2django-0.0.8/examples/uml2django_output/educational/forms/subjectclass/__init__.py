@@ -1,0 +1,2 @@
+from .SubjectClassCreateForm import SubjectClassCreateForm
+from .SubjectClassUpdateForm import SubjectClassUpdateForm

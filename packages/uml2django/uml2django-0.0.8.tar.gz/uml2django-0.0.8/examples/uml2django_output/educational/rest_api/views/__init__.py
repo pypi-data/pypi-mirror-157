@@ -1,0 +1,6 @@
+from .SchoolarPeriodViewSet import SchoolarPeriodViewSet
+from .SubjectViewSet import SubjectViewSet
+from .SubjectLevelViewSet import SubjectLevelViewSet
+from .SubjectRequirementViewSet import SubjectRequirementViewSet
+from .SubjectClassViewSet import SubjectClassViewSet
+from .SubjectClassSchedulePeriodViewSet import SubjectClassSchedulePeriodViewSet

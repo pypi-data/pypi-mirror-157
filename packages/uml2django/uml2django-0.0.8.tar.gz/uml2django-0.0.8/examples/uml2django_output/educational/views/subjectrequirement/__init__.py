@@ -1,0 +1,5 @@
+from .SubjectRequirementCreateView import SubjectRequirementCreateView
+from .SubjectRequirementDeleteView import SubjectRequirementDeleteView
+from .SubjectRequirementDetailView import SubjectRequirementDetailView
+from .SubjectRequirementListView import SubjectRequirementListView
+from .SubjectRequirementUpdateView import SubjectRequirementUpdateView

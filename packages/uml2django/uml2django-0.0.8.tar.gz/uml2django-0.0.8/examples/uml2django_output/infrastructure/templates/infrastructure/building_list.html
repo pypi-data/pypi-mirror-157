@@ -1,0 +1,25 @@
+<h2 class="form-title">Building</h2>
+
+<table class="table table-fluid">
+    <thead>
+        <tr>
+            <th>Building</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for building in object_list %}
+        <tr>
+            <td>{{ building }}</td>
+            <td><a href="{% url "building-detail" building.id %}">view</a></td>
+            <td><a href="{% url "building-update" building.id %}">edit</a></td>
+            <td><a href="{% url "building-delete" building.id %}">delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url "building-create" %}">New</a>
+</div>

@@ -1,0 +1,25 @@
+<h2 class="form-title">SubjectClassSchedulePeriod</h2>
+
+<table class="table table-fluid">
+    <thead>
+        <tr>
+            <th>SubjectClassSchedulePeriod</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for subjectclassscheduleperiod in object_list %}
+        <tr>
+            <td>{{ subjectclassscheduleperiod }}</td>
+            <td><a href="{% url "subjectclassscheduleperiod-detail" subjectclassscheduleperiod.id %}">view</a></td>
+            <td><a href="{% url "subjectclassscheduleperiod-update" subjectclassscheduleperiod.id %}">edit</a></td>
+            <td><a href="{% url "subjectclassscheduleperiod-delete" subjectclassscheduleperiod.id %}">delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url "subjectclassscheduleperiod-create" %}">New</a>
+</div>

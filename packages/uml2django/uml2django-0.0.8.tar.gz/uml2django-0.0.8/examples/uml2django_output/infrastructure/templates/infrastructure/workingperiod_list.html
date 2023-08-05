@@ -1,0 +1,25 @@
+<h2 class="form-title">WorkingPeriod</h2>
+
+<table class="table table-fluid">
+    <thead>
+        <tr>
+            <th>WorkingPeriod</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for workingperiod in object_list %}
+        <tr>
+            <td>{{ workingperiod }}</td>
+            <td><a href="{% url "workingperiod-detail" workingperiod.id %}">view</a></td>
+            <td><a href="{% url "workingperiod-update" workingperiod.id %}">edit</a></td>
+            <td><a href="{% url "workingperiod-delete" workingperiod.id %}">delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url "workingperiod-create" %}">New</a>
+</div>

@@ -1,0 +1,25 @@
+<h2 class="form-title">SchoolarPeriod</h2>
+
+<table class="table table-fluid">
+    <thead>
+        <tr>
+            <th>SchoolarPeriod</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for schoolarperiod in object_list %}
+        <tr>
+            <td>{{ schoolarperiod }}</td>
+            <td><a href="{% url "schoolarperiod-detail" schoolarperiod.id %}">view</a></td>
+            <td><a href="{% url "schoolarperiod-update" schoolarperiod.id %}">edit</a></td>
+            <td><a href="{% url "schoolarperiod-delete" schoolarperiod.id %}">delete</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url "schoolarperiod-create" %}">New</a>
+</div>
