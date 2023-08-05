@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mycroft_plugin_tts_mimic3
+Version: 0.1.5
+Summary: Text to speech plugin for Mycroft using Mimic3
+Home-page: http://github.com/MycroftAI/plugin-tts-mimic3
+Author: Michael Hansen
+Author-email: michael.hansen@mycroft.ai
+License: Apache-2.0
+Description: UNKNOWN
+Keywords: mycroft plugin tts mimic mimic3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: all
+Provides-Extra: de
+Provides-Extra: es
+Provides-Extra: fa
+Provides-Extra: fr
+Provides-Extra: it
+Provides-Extra: nl
+Provides-Extra: ru
+Provides-Extra: sw
