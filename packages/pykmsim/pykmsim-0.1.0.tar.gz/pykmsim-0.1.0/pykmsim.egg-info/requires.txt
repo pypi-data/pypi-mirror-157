@@ -1,0 +1,44 @@
+numpy
+scipy
+
+[all]
+black==22.3.0
+identify>=1.4.20
+myst-parser
+pre-commit
+pypandoc>=1.6.3
+pytest
+pytest-cov
+pytest-flake8
+sphinx-autobuild
+sphinx-rtd-dark-mode
+sphinx>=3.5.4
+
+[all:python_version < "3.6"]
+watchdog<1.0.0
+
+[all:python_version >= "3.6"]
+readthedocs-sphinx-search
+
+[dev]
+black==22.3.0
+identify>=1.4.20
+pre-commit
+
+[docs]
+myst-parser
+pypandoc>=1.6.3
+sphinx>=3.5.4
+sphinx-autobuild
+sphinx-rtd-dark-mode
+
+[docs:python_version < "3.6"]
+watchdog<1.0.0
+
+[docs:python_version >= "3.6"]
+readthedocs-sphinx-search
+
+[test]
+pytest
+pytest-cov
+pytest-flake8

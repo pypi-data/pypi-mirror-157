@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pykmsim
+Version: 0.1.0
+Summary: This is a python rewrite of kmsim to allow for better maintainbility and usability
+Home-page: https://github.com/jrachit10/pykmsim
+Author: Rachit Jain
+Author-email: rachit.jain@wustl.edu
+License: MIT
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: all
+License-File: LICENSE
+
+PYKMSIM
+--------
+Under construction!
