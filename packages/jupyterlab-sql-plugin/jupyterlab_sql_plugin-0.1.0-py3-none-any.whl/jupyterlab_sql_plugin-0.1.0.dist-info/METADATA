@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: jupyterlab-sql-plugin
+Version: 0.1.0
+Summary: A JupyterLab extension.
+Home-page: https://github.com/reoono/jupyterlab-sql-plugin
+Author: Reo Ono
+Author-email: 1992reo@gmail.com
+License: BSD-3-Clause
+Keywords: Jupyter,JupyterLab,JupyterLab3
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: 3
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jupyter-server (<2,>=1.6)
+Requires-Dist: sqlalchemy
+Requires-Dist: jsonschema
+
+# jupyterlab_sql_plugin
+
+[![Github Actions Status](https://github.com/reoono/jupyterlab-sql-plugin/workflows/Build/badge.svg)](https://github.com/reoono/jupyterlab-sql-plugin/actions/workflows/build.yml)[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/reoono/jupyterlab-sql-plugin/main?urlpath=lab)
+
+A port of [jupyterlab-sql](https://github.com/pbugnion/jupyterlab-sql) to work with JupyterLab 3.x.
+
+I am currently developing this wonderful extension to work in a more recent environment.
