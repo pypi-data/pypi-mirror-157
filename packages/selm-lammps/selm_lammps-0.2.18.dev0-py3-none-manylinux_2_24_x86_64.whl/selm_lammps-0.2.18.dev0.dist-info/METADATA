@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: selm-lammps
+Version: 0.2.18.dev0
+Summary: SELM-LAMMPS package for pre-compiled binaries with python interface.  For more information, see http://mango-selm.org
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
