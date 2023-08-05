@@ -1,0 +1,8 @@
+numpy
+qutip
+h5py
+jax
+optax
+scipy
+matplotlib
+rqutils>=0.1.4
