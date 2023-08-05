@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: eztool
+Version: 0.0.2
+Summary: Useful tools makes your life easier.
+Home-page: https://github.com/Ken-Yeung/KensToolkit/tree/eztool
+Author: Ken Yeung
+Author-email: 
+License: MIT
+Project-URL: Bug Tracker, https://github.com/Ken-Yeung/KensToolkit/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools (>=42)
+Requires-Dist: wheel
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: xlwings (==0.22.2)
+Requires-Dist: openpyxl (==3.0.7)
+
+# A package makes your life easier.
