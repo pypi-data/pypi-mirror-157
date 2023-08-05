@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: RCML
+Version: 0.1
+Author: Piyush Singh
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: cvxpy
+
