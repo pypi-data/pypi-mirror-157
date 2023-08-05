@@ -1,0 +1,3 @@
+[console_scripts]
+oss=d_oss.main:app
+
