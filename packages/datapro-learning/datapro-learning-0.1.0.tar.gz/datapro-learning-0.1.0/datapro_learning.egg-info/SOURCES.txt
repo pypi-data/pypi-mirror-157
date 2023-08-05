@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+datapro/__init__.py
+datapro/dataPro.py
+datapro/prefixNode.py
+datapro/treeType.py
+datapro/data/tree-type.json
+datapro_learning.egg-info/PKG-INFO
+datapro_learning.egg-info/SOURCES.txt
+datapro_learning.egg-info/dependency_links.txt
+datapro_learning.egg-info/requires.txt
+datapro_learning.egg-info/top_level.txt

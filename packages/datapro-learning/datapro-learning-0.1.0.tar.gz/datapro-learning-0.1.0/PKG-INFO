@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: datapro-learning
+Version: 0.1.0
+Summary: learning common data structure
+Home-page: https://github.com/NonKhuna/DataPro-Algorithm
+Author: Khunanon Rattanagoses
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+The task is learning the common structure of data. The DataPro algorithm is the algorithm that finds statistically significant patterns in a set of token sequences.
+This repository is Implemented from the paper "Learning the Common Structure of Data" by Kristina Lerman and Steven Minton.
