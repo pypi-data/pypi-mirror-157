@@ -1,0 +1,54 @@
+# Time
+SAAT	ساعت
+DAGHIGHEH	دقیقه
+SANIEH	ثانیه
+ROBNIM  ربع|نیم
+YEK یک|سه|یه
+
+# Date
+SAL	سال
+FASL    فصل
+MAH	ماه
+HAFTE   هفته
+TARIKH  تاریخ
+VAGHT   وقت
+# DateTime
+SHABROOZ شب|روز
+SALROOZ سال<>روز
+
+# General
+HA ها
+MEEN مین
+SEVOMIN سومین
+VA	و
+VYA	و|یا
+AZ از
+BE به
+MEE می
+BAR بار
+TEY طی
+HAR هر
+DAR در
+TOOL    بین|طول|بازه|در<>فاصله|فاصله|در<>مدت|مدت|طی|حد<>فاصل|ظرف|در<>عرض|به مدت|در<>طول
+TAKNN   تا<>کنون|تا<>اکنون|تا<>الان|تا<>هنوز|تا به حال
+CHAND   چند|چندین
+DARSAD  درصد
+HAMIN   همین
+HSPACE  \\u200C
+YEKBAR یکبار
+JADID   جدید|نو
+YEKIDO  یکی دو
+PARL    \\u0028
+PARR    \\u0029
+FSPACE  \\u0020
+# Adverserial
+BAZAR بازار
+LEAGUE  لیگ
+TEAM    تیم
+GHARN   قرن
+MOBARAK مبارک
+COMMA   ،
+CUR ریال|دلار|تومن|تومان|پول|روپیه|پوند|فرانک|قرون|قران|یورو
+IP  ((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\.)){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)
+IMOJI   :دی
+TARIKH  در<>تاریخ|از<>تاریخ|تا<>تاریخ|تاریخ

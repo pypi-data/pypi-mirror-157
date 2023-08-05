@@ -1,0 +1,63 @@
+# دوشنبه بازار
+(TOOL|PRV)?<>WD BAZAR
+
+# آدرس IP
+IP
+
+# :دی
+IMOJI
+
+# لیگ شانزدهم
+LEAGUE<>NUM
+LEAGUE<>D99
+LEAGUE DN
+
+# تیم بهمن
+TEAM MNTH
+TEAM SSN
+
+# می‌کشد
+(TOOL|PRV)?<>MEE<>PEVPOV
+(TOOL|PRV)?<>MEE<>PAVPOV
+FSPACE(N31|DN)<>MEE<>PEVPOV
+FSPACE(N31|DN)<>MEE<>PAVPOV
+
+# می‌توان
+(TOOL|PRV)?<>MEE<>PEV
+(TOOL|PRV)?<>MEE<>PAV
+
+
+# ورزشگاه ۱۷ تیر
+PLACE DN MNTH
+PLACE<>N31<>MNTH
+# میدان ۱۷ تیر
+ADD DN MNTH
+ADD<>N31<>MNTH
+
+# ورزشگاه خرداد
+PLACE MNTH
+PLACE SSN
+# میدان فروردین
+ADD MNTH
+ADD SSN
+
+# پنج هزار تومان
+DLARGE CUR
+NUM<>CUR
+
+NUM<>DARSAD
+
+DLARGE UNIT
+NUM<>UNIT
+NUM<>UNIT<>PF
+DLARGE UNIT<>PF
+
+# adv unique
+ADUQ
+
+# remove event part of patterns
+EVE
+
+# paranthesis
+PARR
+PARL
