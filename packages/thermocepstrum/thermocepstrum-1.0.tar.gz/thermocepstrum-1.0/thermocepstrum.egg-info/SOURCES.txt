@@ -1,0 +1,7 @@
+README.md
+setup.py
+thermocepstrum.egg-info/PKG-INFO
+thermocepstrum.egg-info/SOURCES.txt
+thermocepstrum.egg-info/dependency_links.txt
+thermocepstrum.egg-info/requires.txt
+thermocepstrum.egg-info/top_level.txt

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: thermocepstrum
+Version: 1.0
+Summary: thermocepstrum is now sportran
+Home-page: https://github.com/sissaschool/sportran
+Author: Loris Ercole, Riccardo Bertossa, Sebastiano Bisacchi
+Author-email: loris.ercole@epfl.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+
+# thermocepstrum is now sportran
+
+This package has been renamed. Use `pip install sportran` instead.
+
+New package: https://pypi.org/project/sportran/
+GitHub: https://github.com/sissaschool/sportran
+
+
