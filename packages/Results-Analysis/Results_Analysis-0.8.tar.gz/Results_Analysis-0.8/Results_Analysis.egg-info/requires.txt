@@ -1,0 +1,15 @@
+pandas
+openpyxl
+pycel
+IPython
+formulas
+numpy
+matplotlib
+ipywidgets
+pathlib
+dataframe_image
+aspose.words
+wordcloud
+scipy
+statsmodels
+wget

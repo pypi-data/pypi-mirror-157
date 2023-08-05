@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Results-Analysis
+Version: 0.8
+Summary: allow user to test the questionnaire and compare results between questionnaire
+Home-page: https://github.com/Sinha1111/Results_Analysis
+Download-URL: https://github.com/Sinha1111/Results_Analysis/archive/refs/tags/v_08.tar.gz
+Author: Nina Abittan
+Author-email: your.email@domain.com
+License: MIT
+Keywords: ,,
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
