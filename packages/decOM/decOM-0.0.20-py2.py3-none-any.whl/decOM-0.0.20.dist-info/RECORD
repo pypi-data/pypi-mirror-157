@@ -1,0 +1,15 @@
+decOM/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+decOM/__main__.py,sha256=Xpi9RpWWQC_ONpsolBYw_cQd1m7yJb6RfcZyt93H_n4,14979
+decOM/__version__.py,sha256=2HXaaHC9Xl9BqTkMCzF1KrnViBZbueeO8znZSwwWG4c,19
+decOM/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+decOM/data/kmtricks.fof,sha256=6iIM1jzBqxheBP6kxasqjcHcTolvWL_momf9-edLHRo,44330
+decOM/data/metadata.csv,sha256=09uESMFSiYLJJLa4sB9tzncM6BIXwZcwIUbzjJsWZ30,77474
+decOM/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+decOM/modules/sink.py,sha256=hP0yRNKrEqnrAcxuACqIQ-iA7BcCV1yzLBBfxxFD6fA,1861
+decOM/modules/utils.py,sha256=u31GoOqfaG9ZGP_zYhiT2vb7AjV9esF1s0JpM_KTkMA,4381
+decOM-0.0.20.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+decOM-0.0.20.dist-info/METADATA,sha256=5m28vKKXxhe-6VyluJ5PTOKGzn57A-C915AfAo8Jcjo,8676
+decOM-0.0.20.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+decOM-0.0.20.dist-info/entry_points.txt,sha256=NAkmL6rxlvkpMFgOHx7JyAoTxlKg-r0JLsrwDM4EqNg,46
+decOM-0.0.20.dist-info/top_level.txt,sha256=UaudvqimB3RXJHH9zMoDpuAxqYPnbSl_cuAB6gKNGM4,6
+decOM-0.0.20.dist-info/RECORD,,
