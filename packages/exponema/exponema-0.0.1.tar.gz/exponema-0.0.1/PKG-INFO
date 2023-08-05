@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: exponema
+Version: 0.0.1
+Summary: This package finds the exponent of a value with respect to a given degree
+Home-page: https://www.RAINigeria.com
+Author: Stephen Ogunmuyiwa
+Author-email: ogunmuyiwatomiwo.official@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h2>BRIEF:</h2>
+<p>This package finds the exponent of a value with respect to a given degree</p>
+
+<h1>HOW TO USE </h1>:
+<p>------> call the funtion : ex(value,degree)</p>
+<p>------> NB: value and degree arguments are expeced to be integers</p>
+
+<h2>EXAMPLE:</h2>
+<p>from exponema import expon</p>
+<p>expon.ex(2,3)</p>
+<p>### result 8 </p>

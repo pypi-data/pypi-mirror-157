@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+exponema/__init__.py
+exponema/expon.py
+exponema.egg-info/PKG-INFO
+exponema.egg-info/SOURCES.txt
+exponema.egg-info/dependency_links.txt
+exponema.egg-info/top_level.txt
