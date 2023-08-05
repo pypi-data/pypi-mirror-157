@@ -1,0 +1,9 @@
+xganalyzer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xganalyzer/events_aggregator.py,sha256=h10SPsqkAh08DJu3ho43kDkOu-fgsWL4kn-jRBNt0yI,13123
+xganalyzer/final_aggregator.py,sha256=vDR-x9lOsNiq8waqZYb2KGmc8XxrIMyMvho7RffL9Ao,884
+xganalyzer/season_aggregator.py,sha256=cQr7oV9wqUeuTw7sW-6l_yQpLw4xSXAESd9K9vn-Svw,7391
+xganalyzer-0.1.4.dist-info/LICENSE,sha256=T0eTPzleHkBrtJvHkUXH-RR8DaI_ULFNjLC2aPeExM4,1073
+xganalyzer-0.1.4.dist-info/METADATA,sha256=pX2Wro3R9zFOjyQp3efuBiSshvQ7BOnKGbYjbO7AF2k,632
+xganalyzer-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+xganalyzer-0.1.4.dist-info/top_level.txt,sha256=D5zDqe31SxAZlVvg6KwOUrruxcHSZ0ptimilVx0e97E,11
+xganalyzer-0.1.4.dist-info/RECORD,,
