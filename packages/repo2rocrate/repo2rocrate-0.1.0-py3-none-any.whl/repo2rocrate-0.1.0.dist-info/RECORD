@@ -1,0 +1,15 @@
+repo2rocrate/__init__.py,sha256=02X54CWRHJ6CScVHcqb01EmkB0p5j_hW5pQTH-EHsrw,1013
+repo2rocrate/cli.py,sha256=baU1Heosbn2DcDCjm_QDYM1IA3eDOOtkwCSyQxCQTBc,2947
+repo2rocrate/common.py,sha256=ojZawFyjjTFxqKTlEK1f2zCp_6sGO4WsHuRfRBqOMsU,4598
+repo2rocrate/galaxy.py,sha256=tdd-IbsMm5BIJiH50EHV6kFwWDnsq-RDS7R8URy6mTE,5506
+repo2rocrate/nextflow.py,sha256=xA0HDHcLndfji6gR2SrtfEgid0e0PEmVorhXazYKWHc,4925
+repo2rocrate/snakemake.py,sha256=JvFDPSjseLvpPvtGIhovh648zOy0pL-5DMTUhxUZGjw,3557
+repo2rocrate/utils.py,sha256=JtDAefprUP-72Wgr4fcQH8h7tEoCuCoEuJog8UEhVYY,1014
+repo2rocrate/version.py,sha256=NgYoI_XverSm3bz10rzLdQpVWd4kZkFLxT2OJ9NMIrw,584
+repo2rocrate-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+repo2rocrate-0.1.0.dist-info/METADATA,sha256=7QYLnSam7tcDeha4b-Aemy4eoHhSzPKgwdmz_NY_xVY,1073
+repo2rocrate-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+repo2rocrate-0.1.0.dist-info/entry_points.txt,sha256=Tc3nm0SpCA7yupyQE6h3u2OaFY82S8uZwVmHNKnIQ18,55
+repo2rocrate-0.1.0.dist-info/top_level.txt,sha256=5K8ZWiuaLOYPwV78f8t7WCmsUwv0qoU226uenFgi8sc,13
+repo2rocrate-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+repo2rocrate-0.1.0.dist-info/RECORD,,
