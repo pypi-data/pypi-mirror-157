@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+irisml/commands/run_aml.py
+irisml/tasks/run_azureml_child.py
+irisml_tasks_azureml.egg-info/PKG-INFO
+irisml_tasks_azureml.egg-info/SOURCES.txt
+irisml_tasks_azureml.egg-info/dependency_links.txt
+irisml_tasks_azureml.egg-info/entry_points.txt
+irisml_tasks_azureml.egg-info/requires.txt
+irisml_tasks_azureml.egg-info/top_level.txt
