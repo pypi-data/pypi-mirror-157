@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mcrpy
+Version: 0.1.0
+Summary: Microstructure characterization and reconstruction in Python
+Home-page: https://github.com/NEFM-TUDresden/MCRpy
+Author: NEFM-TUDresden
+Author-email: paul.seibert@tu-dresden.de
+License: Apache2.0
+Platform: UNKNOWN
+Provides-Extra: FFTCorrelations
+Provides-Extra: animations
+Provides-Extra: GUI
+License-File: LICENSE
+
+UNKNOWN
+
