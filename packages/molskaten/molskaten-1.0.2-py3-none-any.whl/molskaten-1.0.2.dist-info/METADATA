@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: molskaten
+Version: 1.0.2
+Summary: A (forked) python wrapper for the skolmaten service.
+Home-page: https://github.com/granis/skolmaten-python
+License: MIT
+Author: granis
+Author-email: granis@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: importlib-metadata (>=4,<5); python_version < "3.8"
+Requires-Dist: requests (>=2.28.0,<3.0.0)
+Project-URL: Repository, https://github.com/granis/skolmaten-python
