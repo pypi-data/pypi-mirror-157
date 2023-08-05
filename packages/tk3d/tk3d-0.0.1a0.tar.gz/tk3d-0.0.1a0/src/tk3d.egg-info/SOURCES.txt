@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/tk3d/__init__.py
+src/tk3d.egg-info/PKG-INFO
+src/tk3d.egg-info/SOURCES.txt
+src/tk3d.egg-info/dependency_links.txt
+src/tk3d.egg-info/requires.txt
+src/tk3d.egg-info/top_level.txt
+src/tk3d/__pycache__/__init__.cpython-39.pyc
+src/tk3d/api/pywavfront.py
+src/tk3d/api/__pycache__/pywavfront.cpython-39.pyc
