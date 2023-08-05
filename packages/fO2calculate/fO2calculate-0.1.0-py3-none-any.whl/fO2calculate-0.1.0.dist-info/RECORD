@@ -1,0 +1,16 @@
+fO2calculate/__init__.py,sha256=IewdDgTqnnU20sz21UapAM1NdJcdJLxoOUV1y-iIJvk,907
+fO2calculate/activitycoefficients.py,sha256=ZWpRPTBvXcBXIbPT0gcz6MNL1AHmtB9KL3177cZNH0U,5556
+fO2calculate/batch_calculate.py,sha256=q5VzFwpWVGoVg3zRxU0TBHFF6EB_NjvzJSG7J2l1zuc,24353
+fO2calculate/batchfile.py,sha256=R_T70ipVRv4oIsYhHoqhgp0STrF6juv-0Pra6aZXHA4,33297
+fO2calculate/calculate.py,sha256=0lSr4KOI8Ny1gG7IWS6gPNJ3-H_6D-da3M17pkeDabU,34897
+fO2calculate/core.py,sha256=ATRisSsUdh6tMxwtEVSbyzR3_iHH1UwQ93rbE7gi9tY,4001
+fO2calculate/interactionparameters.py,sha256=w9p4tRCaLr9UKlGNE-PPjDpSRCaHAIhZFZDo9n19Az8,32563
+fO2calculate/sample_class.py,sha256=2nJ0YEXhGYsh7vvt0a9hg7zLwGuGaww6i6ckY49aNlo,25320
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_activities.py,sha256=fhof9sjhHAcKbKgvgkqGSDwLwD2BHdaq4vcjkRkrtgg,4283
+tests/test_sample.py,sha256=B8VtC-Cn4Y3N-Z3x7ehBaOMsWP2_QvLCnxqfi9y9w58,18834
+fO2calculate-0.1.0.dist-info/LICENSE,sha256=sgGGNGsvK413Dp4MlTp276__r8lGQKpY423GJjKzawQ,1064
+fO2calculate-0.1.0.dist-info/METADATA,sha256=B6cNQbtm1cwBM9I6MENjXdapzwG7qxxx1reNELsT0YQ,818
+fO2calculate-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fO2calculate-0.1.0.dist-info/top_level.txt,sha256=7BqHxX0ULaoQPhIa1D1L0lHv-_b8zk__I6HyJU9zC0o,19
+fO2calculate-0.1.0.dist-info/RECORD,,

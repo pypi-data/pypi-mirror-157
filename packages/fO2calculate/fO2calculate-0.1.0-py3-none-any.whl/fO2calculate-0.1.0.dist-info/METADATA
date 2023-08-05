@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fO2calculate
+Version: 0.1.0
+Summary: A python library for calculating the oxygen fugacity of metal-silicate systems using non-ideal activities for Fe-FeO and Si-SiO2 equilibria.
+Home-page: https://github.com/kaylai/MetalSilicateFO2
+Author: Kayla Iacovino
+Author-email: kaylaiacovino@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: mendeleev
+
+# MetalSilicateFO2
+A python library for calculating the oxygen fugacity of metal-silicate systems using non-ideal activities for Fe-FeO and Si-SiO2 equilibria.
+
+
