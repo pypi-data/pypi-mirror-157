@@ -1,0 +1,14 @@
+puhdistusalue/__init__.py,sha256=QQxMBinn3FuUl6vtkdGtKdgcObxFL0598Dzuqd3f0X0,122
+puhdistusalue/__main__.py,sha256=Tf254g5O9BzCbuiDiahqqjaeIWOh_nvVgfmiseHN7Gg,188
+puhdistusalue/cli.py,sha256=af3pB8wdX8i2E_-UG9BfAonzU1vLgnQuatERENYbs6o,3851
+puhdistusalue/puhdistusalue.py,sha256=c1tPQJjhRxI9gn6BqV6ydYe0YB7A_kht9iOn5ZMMKok,2082
+tests/__init__.py,sha256=YyUhssxVD_qF9s4IJNtCqjXfqb8zDymxV5fhVG1rDNQ,134
+tests/context.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=U-juSeF-4yd52X0JDDw7B4dBmO6Q7gMR9e3VfsTCCR0,1603
+tests/test_puhdistusalue.py,sha256=5rYmghODcDjYDMo35h1C95JJsg3Uau82XMsCUwefnOY,3385
+puhdistusalue-2022.6.29.dist-info/LICENSE,sha256=pdUNBCZdNRp6SMlN3v5BnLKYwFcOY29EBemY-4rymvc,1069
+puhdistusalue-2022.6.29.dist-info/METADATA,sha256=wkTxcH-bDec7uRfvKd-ViXPnM0bXqpOfPeMkuijfTpM,2600
+puhdistusalue-2022.6.29.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+puhdistusalue-2022.6.29.dist-info/entry_points.txt,sha256=MHGVQOmzk-CRUzV2TQnVhmW0OtsmvoH-Z_NlXeY2lc4,57
+puhdistusalue-2022.6.29.dist-info/top_level.txt,sha256=eLME-2wWxV80My_sBqHRfSvGm9Pu1gsfpToGXG2C_KU,20
+puhdistusalue-2022.6.29.dist-info/RECORD,,

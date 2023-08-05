@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: puhdistusalue
+Version: 2022.6.29
+Summary: Puhdistusalue (Finnish for clean area here meaning purge range) - Purge monotonically named files in folders keeping range endpoints.
+Home-page: https://github.com/sthagen/puhdistusalue
+Author: Stefan Hagen
+Author-email: stefan@hagen.link
+Maintainer: Stefan Hagen
+Maintainer-email: stefan@hagen.link
+Project-URL: Bug Tracker, https://github.com/sthagen/puhdistusalue/issues
+Project-URL: Documentation, https://sthagen.github.io/puhdistusalue
+Project-URL: Source Code, https://github.com/sthagen/puhdistusalue
+Keywords: compression,developer-tools,file-processing
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: puristaa (>=2022.6.27)
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-flake8 ; extra == 'dev'
+
+# puhdistusalue
+
+Puhdistusalue (Finnish for clean area here meaning purge range).
+
+[![license](https://img.shields.io/github/license/sthagen/puhdistusalue.svg?style=flat)](https://github.com/sthagen/puhdistusalue/blob/default/LICENSE)
+[![version](https://img.shields.io/pypi/v/puhdistusalue.svg?style=flat)](https://pypi.python.org/pypi/puhdistusalue/)
+[![downloads](https://img.shields.io/pypi/dm/puhdistusalue.svg?style=flat)](https://pypi.python.org/pypi/puhdistusalue/)
+[![wheel](https://img.shields.io/pypi/wheel/puhdistusalue.svg?style=flat)](https://pypi.python.org/pypi/puhdistusalue/)
+[![supported-versions](https://img.shields.io/pypi/pyversions/puhdistusalue.svg?style=flat)](https://pypi.python.org/pypi/puhdistusalue/)
+[![supported-implementations](https://img.shields.io/pypi/implementation/puhdistusalue.svg?style=flat)](https://pypi.python.org/pypi/puhdistusalue/)
+
+Purge monotonically named files in folders keeping range endpoints.
+
+## Status
+
+Experimental
+
+*Note*: Within a folder, only the ordering and the min-max membership to its content identity range determines to keep a file.
+
+More info needed?
+
+... read the source, Luke.
+
+**Note**: The default branch is `default`.
