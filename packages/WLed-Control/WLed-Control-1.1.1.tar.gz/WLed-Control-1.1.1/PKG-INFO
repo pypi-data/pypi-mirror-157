@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: WLed-Control
+Version: 1.1.1
+Summary: A very basic WLed control library
+Home-page: 
+Author: Kasper H. Larsen
+Author-email: kasperhornlarsen@gmail.com
+License: MIT
+Keywords: Wled
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a very simple WLed controller
+
+setup:
+    - import WLed-Control
+    - create a WLed object with "wled = WLedControl(ip, port)"
+
+Control lights
+    to turn it on or off or toggle
+        use: onOff()
+            choses are ["on", "off", "toggle"]
+
+Control brightness
+    to get the brightness
+        use: get_bri()
+
+    to set the brightness
+        use set_bri()
+            with a value between 0 and 255
+
+Control color
+    to get the color
+        use: get_col()
+            you will get the RGB values
+
+    to set the color
+        use: set_col() 
+            with the RGB values or a color name
+
+Control effect
+    to get the effect
+        use: get_fx()
+
+    to set the effect
+        use: set_fx()
+            with a value between 0 and 101 or the name of the effect
+
+Control speed
+    to set speed
+        use: set_speed()
+            with a value between 0 and 255
+
+
+Change Log
+==========
+
+0.0.1 (19/04/2020)
+-------------------
+- First Release
+
+
