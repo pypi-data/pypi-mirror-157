@@ -1,0 +1,2 @@
+[gui_scripts]
+SolarGUI = SolarGUI.solar_gui:Main

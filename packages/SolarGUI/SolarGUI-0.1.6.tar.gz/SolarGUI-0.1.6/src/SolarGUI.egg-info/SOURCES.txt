@@ -1,0 +1,79 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/SolarGUI/__init__.py
+src/SolarGUI/cel__CONSTANTS.py
+src/SolarGUI/cel__moons.py
+src/SolarGUI/cel__object.py
+src/SolarGUI/cel__others.py
+src/SolarGUI/cel__planets.py
+src/SolarGUI/cel__stars.py
+src/SolarGUI/show_celestial_object.py
+src/SolarGUI/solar_gui.py
+src/SolarGUI/tk_functions.py
+src/SolarGUI/utilities.py
+src/SolarGUI.egg-info/PKG-INFO
+src/SolarGUI.egg-info/SOURCES.txt
+src/SolarGUI.egg-info/dependency_links.txt
+src/SolarGUI.egg-info/entry_points.txt
+src/SolarGUI.egg-info/requires.txt
+src/SolarGUI.egg-info/top_level.txt
+src/SolarGUI/images/earth/2335_earthmars_med : Earth and Moon as seen from Martian surface by Curiosity rover ~ NASA, JPL-Caltech, TAMU.jpg
+src/SolarGUI/images/earth/Apollo10ViewofEarth : View of Earth captured by Apollo 10 spacecraft ~ NASA.jpg
+src/SolarGUI/images/earth/CrescentEarth : Cresent view of Earth captured by Apollo 17 mission ~ NASA.jpg
+src/SolarGUI/images/earth/PIA13227 : Mosaic of Earths' images taken from the Moon using Lunar Reconnaissance Orbiter Camera ~ NASA, GSFC, Arizona State University.jpg
+src/SolarGUI/images/earth/as11-44-6549_orig : Image of Earth captured by Apollo 11 spacecraft in July 1969 ~ NASA.jpg
+src/SolarGUI/images/jupiter/13051_PIA07783 : A mosaic of images from Cassini spacecraft images showing the north pole view of Jupiter using cylindrical and polar stereographic projections ~ NASA, JPL, Space Science Institute.jpg
+src/SolarGUI/images/jupiter/13054_PIA07784 : 13051_PIA07783 : A mosaic of images from Cassini spacecraft images showing the sourth pole view of Jupiter ~ NASA, JPL, Space Science Institute.jpg
+src/SolarGUI/images/jupiter/192016main_100907_11 : New Horizon's view of Jupiter and one of its moons (Io) taken during the flyby in 2007 ~ NASA, JHUAPL.jpg
+src/SolarGUI/images/jupiter/2486_stsci-h-p1936a_1800 : June 2019 image of Jupiter by the HST showing the spectacular cloud patterns ~ NASA, ESA, A. Simon (GSFC), and M. H. Wong (University of California, Berkeley).jpg
+src/SolarGUI/images/jupiter/739470main_jup_74hc680_0 : Jupiter as seen by Pioneer 11 spacecraft from the North pole of Jupiter ~ NASA Ames.jpg
+src/SolarGUI/images/jupiter/P44431Ac : Impact of fragmented Shoemaker Levy 9 comet hitting the Jovian giant planet. Image taken on July 1994 ~ HST Comet Team, NASA.jpg
+src/SolarGUI/images/jupiter/PIA21775 : The great red spot in true color composite captured by Juno on its 7th closeby in 2017 ~ NASA, JPL-Caltech, SwRI, MSSS, Bjorn Jonsson.jpg
+src/SolarGUI/images/mars/2203_JezeroCrater_1600 : Jazero crater, the landing site of the NASA rover mission 2020 ~ NASA, JPL-Caltech, MSSS, JHUAPL.jpg
+src/SolarGUI/images/mars/463_CrispCrater : The Crisp Crater, a rather fresh crator with sharply defined features indicating traces of activity on Mars' surface ~ NASA, JPL-Caltech, UoA.jpg
+src/SolarGUI/images/mars/592_PIA00525 : Image mosiac of martian rocks on the horizon from Viking 2's camera ~ NASA, JPL .jpg
+src/SolarGUI/images/mars/725_pia22221_Sol4999-pcam-dawn : Sunrise on Mars, captured by Mars Exploratroy Rover, Opportunity on Feb 2018 ~ NASA, JPL-Caltech, Arizona State Universtiy, Texas A&M.jpg
+src/SolarGUI/images/mars/745_mars_marci : Weather patterns on the Red planet, constructed on the data obtained from The Mars Color Imager (MARCI) on the Mars Reconnaissance Orbiter (MRO) ~ NASA, JPL-Caltech, MalinSSS.jpg
+src/SolarGUI/images/mercury/1053_PIA13508 : Mosaic of images from NASA's MESSENGER spacecraft showing the impact crater Hokusai, located on Mercury at a latitude of 58 N ~ NASA, JHU Applied Physics Laboratory, Carnegie Institution of Washington.jpg
+src/SolarGUI/images/mercury/PIA16853 : Planetary frontal view of Mercury using MESSENGER data ~ NASA, JHU Applied Physics Laboratory, Carnegie Institution of Washington.jpg
+src/SolarGUI/images/mercury/PIA17386 : Enhanced color map for the chemical composition of Mercury using MESSENGER data ~ NASA, JHU Applied Physics Laboratory, Carnegie Institution of Washington.jpg
+src/SolarGUI/images/mercury/PIA17409 : Eminescue crator, a crator similar in shape to the infamous cat eye nebula ~ NASA, JHU Applied Physics Laboratory, Carnegie Institution of Washington.jpg
+src/SolarGUI/images/mercury/PIA19216 : False color composite of Caloris Basin on Mercury ~ NASA, JHU Applied Physics Laboratory, Carnegie Institution of Washington.jpg
+src/SolarGUI/images/neptune/614_PIA01997 : Neptunian ring system as seen in two 591 second exposures from Voyager 2 WAC ~ NASA, JPL.jpg
+src/SolarGUI/images/neptune/616_PIA02215 : A view of Neptune with its moon Triton as captured by Voyager 2 space craft ~ NASA, JPL.jpg
+src/SolarGUI/images/neptune/842_31101484000_02c1a70913_o : A Voyager 2 view of Neptune processed by an amateur image processor. The image was taken on August 31st 1989 ~ NASA, JPL-Caltech, Kevin M. Gill.jpg
+src/SolarGUI/images/neptune/936_eso1824a : Neptune view of MUSE-GALACSI instrument on the ESO's VLT ~ ESO, P. Weilbacher.jpg
+src/SolarGUI/images/pluto/242_PlutosMoons : A pair of small moons that NASA's Hubble Space Telescope discovered orbiting Pluto now have official names: Nix and Hydra ~ NASA.jpg
+src/SolarGUI/images/pluto/641_PIA20213 : Mosaic of images from New Horizon comprising roughly 80 kilometer wide image array ~ NASA, JHU Applied Physics Lab, Southwest Research Institute.jpg
+src/SolarGUI/images/pluto/853_pluto_and_charon : Image of Pluto and its moon Charon from New Horizons ~ NASA, JHU Applied Physics Lab, Southwest Research Institute.jpg
+src/SolarGUI/images/pluto/854_pluto : Pluto from 476000 miles, July 13, 2015 ~ NASA, JHU Applied Physics Lab, Southwest Research Institute.jpg
+src/SolarGUI/images/pluto/933_BIG_P_COLOR_TRUE :  The most accurate natural color images of Pluto taken by NASA's New Horizons spacecraft in 2015 ~ NASA, JHU Applied Physics Lab, Southwest Research Institute, Alex Parker.jpg
+src/SolarGUI/images/saturn/171_PIA13405 : False color composite of Saturn in infrared spectrum ~ NASA, JPL, ASI, University of Arizona.jpg
+src/SolarGUI/images/saturn/209_PIA20496 : An example of an "opposition surge" making that area on the rings appear extra bright, this is because of the Sun being behind the rings at that time ~ NASA, JPL-Caltech, Space Science Institute.jpg
+src/SolarGUI/images/saturn/5678_IMG004678 : Image of Saturn taken by NASA Cassini on Nov. 27, 2012 from approximately 400,048 km away ~ NASA, JPL-Caltech, Space Science Institute.jpg
+src/SolarGUI/images/saturn/739460main_ac79-9107.3 : Image of Saturn rings taken by the Pioneer 11 spacecraft on April 5, 1973. The Pioneer spacecraft came within 21,000 km of the planet, where it discovered two new moons ~ NASA Ames.jpg
+src/SolarGUI/images/saturn/PIA06175 : Natural color mosaic of Saturn Rings system revealing the color and diversity present in this wonder of the solar system ~ NASA, JPL, Space Science Institute.jpg
+src/SolarGUI/images/saturn/PIA11214 : These two images of Saturn show the entire south polar region, Earth-like storm patterns seem to be powering the vortex ~ NASA, JPL, University of Arizona.jpg
+src/SolarGUI/images/saturn/PIA12797-full : On July 29, 2011, Cassini captured five of Saturn’s moons in a single frame with its narrow-angle camera ~ NASA, JPL-Caltech, Space Science Institute.jpg
+src/SolarGUI/images/saturn/stsci-h-p1943a-f-2076x1484 : View of Saturn from NASA's HST captures exquisite details of the ring system and atmospheric details ~ NASA, ESA, A. Simon (GSFC), M.H. Wong (University of California, Berkeley) and the OPAL Team.png
+src/SolarGUI/images/sun/2626_Sun : Spotless sun in Feb 2019 in filtered white light by Solar Dynamics Observatory ~ NASA, GSFC, SDO.jpg
+src/SolarGUI/images/sun/381_SunHighEnergy : X-rays stream off the Sun in this image showing observations by NASA's Nuclear Spectroscopic Telescope Array, or NuSTAR, overlaid on a picture taken by NASA's Solar Dynamics Observatory (SDO) ~ NASA, JPL-Caltech, GSFC.jpg
+src/SolarGUI/images/sun/390_solarspectrum : A high-resolution version of the spectrum of our Sun, this image was created from a digital atlas observed with the FTS at the McMath-Pierce Solar Facility at the NSO on Kitt Peak ~ N.A. Sharp, NOAO, NSO, Kitt Peak FTS AURA, NSF.jpg
+src/SolarGUI/images/sun/698_SlicesOfSDO : This composite image of the Sun reveals the entire solar atmosphere in multiple wavelengths ~ NASA, SDO.jpg
+src/SolarGUI/images/sun/764_prominence : A solar prominence eruption captured by the Solar Dynamics Observatory (SDO) ~ NASA, GSFC, SDO.jpg
+src/SolarGUI/images/sun/823_cover-1920 : Million-degree plasma in the sun's atmosphere rains down on Sun creating a dazzling magnetic display known as coronal rain ~ NASA, GSFC, SDO.jpg
+src/SolarGUI/images/uranus/451_PIA01280 : Atmospheric view of uranus as seen by the Hubble Space Telescope in infrared filters ~ NASA, JPL, STScI.jpg
+src/SolarGUI/images/uranus/599_PIA18182 : image of the planet Uranus taken by the spacecraft Voyager 2 on January 14th 1986 from a distance of approximately 12.7 million km ~ NASA, JPL.jpg
+src/SolarGUI/images/uranus/601_PIA00033 : False color composite of Uranus' ring system as seen by Voyager 2 space probe using 6 images of 15 s exposure ~ NASA, JPL.jpg
+src/SolarGUI/images/uranus/605_PIA17306 : Near infrared images of uranus' northern and southern hemispehre constructed via images obtained from Keck telescope ~ Lawrence Sromovsky, UoW-Madison, W.W.Keck Observatory.jpg
+src/SolarGUI/images/venus/2267_PIA00148_1280 : Mosiac image of Margaret Mead crater on the surface of Venus. The crator is 2745 km in diameter ~ NASA, JPL-Caltech.jpg
+src/SolarGUI/images/venus/2524_PIA23791 : Departing view of Venus captured by Mariner 10 spacecraft ~ NASA, JPL-Caltech.jpg
+src/SolarGUI/images/venus/480_VenusMaatMons1200w : 3D perspective image of Maat Mons on Venus planet. The peak ascends up to 8 km ~ NASA, JPL.jpg
+src/SolarGUI/images/venus/486_PIA00159 : Full surface color composite mosaic of Venus prepared using the images provided by Magellan spacecraft over four years 1990 - 1994 ~ NASA, JPL, USGS.jpg
+src/SolarGUI/images/venus/a_NightonVenus : The night side view of Venus captured by the Akatsuki spacecraft ~ ISAS, JAXA.jpg
+src/SolarGUI/images/venus/b_LunarVenus : Lunar occultation of planet Venus as seen on December 7, 2015 ~ NASA, Joel Kowsky.jpg
+src/SolarGUI/images/venus/opo9516g : UV view of Venusian surface by the Hubble Space Telescope showing the dense sulfur clouds ~ L. Esposito (University of Colorado, Boulder), and NASA, ESA.jpg
