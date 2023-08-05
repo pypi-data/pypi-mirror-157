@@ -1,0 +1,11 @@
+fund_alchemy/__init__.py,sha256=yAEIbAFBwHQWDf9PEBN3Azmauw0mcQhrw52gTEefRGo,58
+fund_alchemy/config.py,sha256=Xv_sBMzi5rgpEiDTJd8Ifs4Guy4gSUt3tOtkARgQ85c,123318
+fund_alchemy/custodian_table.py,sha256=0ysx126IGRQKAeWGm6PC8jzGKjyiqluMh1f8Mx5uLHs,18095
+fund_alchemy/figure.py,sha256=ZXZPoJC4Jsarp8A3SYLJrpdaHHfDaJJLEfupvJcPz7g,9330
+fund_alchemy/general_tools.py,sha256=RhV8L8bfTwIFfBdsmJLH1H8EHGmsuow-0Od3dCetEgI,24182
+fund_alchemy/mysql_tools.py,sha256=QfsbjbuYRyJxxaGnoJtDJhwYHDYBrJmNvu2w9uPuOSk,14423
+fund_alchemy-1.0.8.dist-info/LICENSE.txt,sha256=hIhpnOSqWn8t8hy-Kgp_-cFQRuN1C2PZZ20wWLHJ-rA,1079
+fund_alchemy-1.0.8.dist-info/METADATA,sha256=dwuohHeLZIO81_mPmi4yvP-axW4a2R951u2Jk1izmCQ,699
+fund_alchemy-1.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fund_alchemy-1.0.8.dist-info/top_level.txt,sha256=3ObQ7ibQ6__5MaKtsqzre73vPhgprAONSTgVu3pALSw,13
+fund_alchemy-1.0.8.dist-info/RECORD,,
