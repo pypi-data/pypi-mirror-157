@@ -1,0 +1,10 @@
+durak/__init__.py,sha256=2JUqt1v61LviIjkEVS4XVxYKnjH0f5ooKyaoxWUjRFw,19545
+durak/grammar/DurakLexer.py,sha256=QEIFeDXT6BHaAOkvCADo3UMSgSTL6YAfrTy3bvCTU3w,15601
+durak/grammar/DurakParser.py,sha256=k3IFAtLGioVtYD-e9mmaI0SEsBX-H8jadRXP-aVnwho,84906
+durak/grammar/DurakParserVisitor.py,sha256=naGxY1QMQKa9RhaQZ025mE3I5REUJnGLM0vBtGO9s4k,4278
+durak-0.1.3.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+durak-0.1.3.dist-info/METADATA,sha256=y3FKAxTuCL3qDlQfNJvevWmRso3VOOFZscRtuy0GKhs,325
+durak-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+durak-0.1.3.dist-info/entry_points.txt,sha256=8BOlvuNBrUVyDPfqm6oxBHOZIRZdJNbkcdld33FpYG8,38
+durak-0.1.3.dist-info/top_level.txt,sha256=ij4Cn7mGhAHd6aXUPBOkonsvU0qyzm2CLmJV4Lt3gUM,6
+durak-0.1.3.dist-info/RECORD,,
