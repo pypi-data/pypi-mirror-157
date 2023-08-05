@@ -1,0 +1,5 @@
+chardet
+python-dotenv
+requests
+pendulum
+ujson
