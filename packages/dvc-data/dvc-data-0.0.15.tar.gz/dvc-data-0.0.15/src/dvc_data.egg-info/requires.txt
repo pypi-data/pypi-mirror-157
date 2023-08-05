@@ -1,0 +1,37 @@
+funcy>=1.14
+dictdiffer>=0.8.1
+pygtrie>=2.3.2
+shortuuid>=0.5.0
+dvc-objects==0.0.15
+diskcache>=5.2.1
+nanotime>=0.5.2
+
+[dev]
+pytest==7.1.2
+pytest-sugar==0.9.4
+pytest-cov==3.0.0
+pytest-mock==3.8.1
+pylint==2.14.3
+mypy==0.961
+moto[server]==3.1.15
+requests==2.28.0
+types-requests==2.28.0
+universal-pathlib==0.0.19
+
+[dev:python_version < "3.11"]
+s3fs[boto3]>=2022.02.0
+
+[tests]
+pytest==7.1.2
+pytest-sugar==0.9.4
+pytest-cov==3.0.0
+pytest-mock==3.8.1
+pylint==2.14.3
+mypy==0.961
+moto[server]==3.1.15
+requests==2.28.0
+types-requests==2.28.0
+universal-pathlib==0.0.19
+
+[tests:python_version < "3.11"]
+s3fs[boto3]>=2022.02.0
