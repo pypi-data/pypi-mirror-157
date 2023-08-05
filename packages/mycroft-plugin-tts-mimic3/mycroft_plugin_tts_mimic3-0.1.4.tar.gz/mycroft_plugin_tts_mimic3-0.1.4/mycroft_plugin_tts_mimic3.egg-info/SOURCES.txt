@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+requirements.txt
+setup.py
+mycroft_plugin_tts_mimic3/VERSION
+mycroft_plugin_tts_mimic3/__init__.py
+mycroft_plugin_tts_mimic3/py.typed
+mycroft_plugin_tts_mimic3.egg-info/PKG-INFO
+mycroft_plugin_tts_mimic3.egg-info/SOURCES.txt
+mycroft_plugin_tts_mimic3.egg-info/dependency_links.txt
+mycroft_plugin_tts_mimic3.egg-info/entry_points.txt
+mycroft_plugin_tts_mimic3.egg-info/requires.txt
+mycroft_plugin_tts_mimic3.egg-info/top_level.txt
