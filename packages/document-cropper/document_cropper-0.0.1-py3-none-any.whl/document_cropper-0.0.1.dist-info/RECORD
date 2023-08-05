@@ -1,0 +1,10 @@
+document_cropper/__init__.py,sha256=iUDlGXHvi6IQNRGttq5pnCwi5qqfdxKOYn2DU0ss7us,119
+document_cropper/corner_detection.py,sha256=qoKLN49u7BUYUhWFI8lrtLVERvd_RDqdpllWZbPs7Cg,4432
+document_cropper/cropper_pipeline.py,sha256=dIEv7SGXRJ78mXu0M84QzNAMOy1OzfT7zUdYjO3G3xo,2220
+document_cropper/image_cropper.py,sha256=N7PDDG1L3JKm6BLwLbHIooE555oDUemdyrlioFIfFIU,1329
+document_cropper/segmentation.py,sha256=2NwDTwCT7LjSE550W4kQrodapcAsXpYsERUEGfBb4H0,4347
+document_cropper-0.0.1.dist-info/LICENSE,sha256=hvVyc_UMbz0qfyd-fQWXfxHF5WLWmzsoZZotYi68-LE,1068
+document_cropper-0.0.1.dist-info/METADATA,sha256=sglQkKOyb3llF19wQvqLXNSSZYi3asGz1Zv5CTQVlTo,2008
+document_cropper-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+document_cropper-0.0.1.dist-info/top_level.txt,sha256=iI6aq_35PREyjDMSKWX4YCsATQwfqPOjpvv1hKIjxMc,17
+document_cropper-0.0.1.dist-info/RECORD,,

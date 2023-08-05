@@ -1,0 +1,41 @@
+from skimage.transform import ProjectiveTransform, warp
+from scipy.spatial import distance
+from skimage.util import img_as_ubyte
+from document_cropper.corner_detection import detect_corners
+from document_cropper.segmentation import binarize
+from skimage import io
+import numpy as np
+
+
+def crop_image(filename: str=None, new_filename: str=None, image: np.ndarray=None) -> np.ndarray:
+    '''Cropes document from given image and saves the result in specified directory
+
+    Args:
+        filename: path to the image to crop (.jpg or .png)
+            if value is None method expects to have not None image parameter
+        new_filename: if is not None saves cropped file in specified directory
+        image: image to crop in form of np.ndarray
+    
+    Returns:
+        cropped image as np.ndarray
+    '''
+    if filename is not None:
+        image = io.imread(filename)
+    mask = binarize(image)
+    corners = detect_corners(mask)
+
+    d = distance.pdist(corners)
+    w = int(max(d[0], d[5]))
+    h = int(max(d[2], d[3]))
+
+    tr = ProjectiveTransform()
+    tr.estimate(np.array([[0,0], [w,0], [w,h], [0,h]]), corners)
+
+    cropped = warp(image, tr, output_shape=(h, w), order=1, mode="reflect")
+
+    cropped = img_as_ubyte(cropped)
+
+    if new_filename is not None:
+        io.imsave(new_filename, cropped)
+
+    return cropped
