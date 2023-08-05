@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+alsi/alsi_py.egg-info/PKG-INFO
+alsi/alsi_py.egg-info/SOURCES.txt
+alsi/alsi_py.egg-info/dependency_links.txt
+alsi/alsi_py.egg-info/requires.txt
+alsi/alsi_py.egg-info/top_level.txt
