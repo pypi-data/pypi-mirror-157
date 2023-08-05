@@ -1,0 +1,5 @@
+[
+  "test_driver.py::test_driver_start_requests",
+  "test_driver.py::test_driver_start_stop_selenium",
+  "test_driver.py::test_driver_start_stop_selenium_headless_false"
+]
