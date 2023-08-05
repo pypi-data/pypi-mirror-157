@@ -1,0 +1,13 @@
+pybuild_header_dependency/__init__.py,sha256=EPIC-Uts7jHuu0SGHP0RetSbEYJMWV-gIwNWYYhBAag,44
+pybuild_header_dependency/gitlab_downloader.py,sha256=RGw6UZ6O5RVLU4gjiMHo3ZqmE2DGgVdkFr9AdMzokFM,1456
+pybuild_header_dependency/header_resolver.py,sha256=pTF-ttknyZQDG6tK-CMfGV6KTR1fcLCAKqLuQdQEA74,2581
+pybuild_header_dependency/package_downloader.py,sha256=Agej4Z3oP2pzgin8hZkdbbt67MVtMP4ZavU-wJBoluk,1311
+pybuild_header_dependency/pkg_path.py,sha256=Fo9WSk28PnNdzWw7Slj-1ZsFuPBcR3Tm9FN4qg1plts,126
+pybuild_header_dependency/all_pkgs/__init__.py,sha256=Kfk8sRDd4dbJITWQoerMbTitZNR5AjbwAFpnSq5PtK4,27
+pybuild_header_dependency/all_pkgs/boost.py,sha256=oOJcTBiNH9QmpFIwzyANm96bDeNmIPMh5P-JfAtzHis,1047
+pybuild_header_dependency/all_pkgs/eigen.py,sha256=CR4Dm7jwCexKVzzLDPfj2uqcIkzVYg4kD2_tdCuTg-4,218
+pybuild_header_dependency-0.1.2.dist-info/LICENSE,sha256=n7h4TUECPQ9bKY3ZEYmdwOh14XR_XOAf2gKe4N9Rc5Q,1518
+pybuild_header_dependency-0.1.2.dist-info/METADATA,sha256=Tq-Fcq4WtSWh54o7QLtQ4qVZ6SNHCK3wQPrLwmOHvrI,721
+pybuild_header_dependency-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pybuild_header_dependency-0.1.2.dist-info/top_level.txt,sha256=wb-w_YJmvvjem9hpKlI7V-qChDJOVYzSpPK8MvJZFVs,26
+pybuild_header_dependency-0.1.2.dist-info/RECORD,,
