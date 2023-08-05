@@ -1,0 +1,8 @@
+signed_pickle/__init__.py,sha256=UJvfSl_hy4MUNJiDn0l-zd0u-4M14BsjEhA4F73AEi8,937
+signed_pickle/dumper_signer.py,sha256=tLkte68bZ54udL25a43sk58asJLmOvt5udkgrzA55xQ,7420
+signed_pickle/pickle_signer.py,sha256=jKBU4bJGt2PZMNgB3dkqNgCEaqWKLno4-MeLn9Lzxao,560
+signed_pickle/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+signed_pickle-1.0.1.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+signed_pickle-1.0.1.dist-info/WHEEL,sha256=FWzWAvOOsDP6aqtZj_z3pIhVEk8S9F03Xwafa0tLqIY,90
+signed_pickle-1.0.1.dist-info/METADATA,sha256=tXsltsQQ-6A3TyAVTcLkVIKBhmcqf4F7Yhlh2gdtblc,862
+signed_pickle-1.0.1.dist-info/RECORD,,
