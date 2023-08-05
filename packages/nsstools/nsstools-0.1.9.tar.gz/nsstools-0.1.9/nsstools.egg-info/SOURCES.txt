@@ -1,0 +1,9 @@
+README.md
+setup.py
+nsstools/__init__.py
+nsstools/classes.py
+nsstools.egg-info/PKG-INFO
+nsstools.egg-info/SOURCES.txt
+nsstools.egg-info/dependency_links.txt
+nsstools.egg-info/requires.txt
+nsstools.egg-info/top_level.txt
