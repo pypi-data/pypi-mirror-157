@@ -1,0 +1,10 @@
+asn1crypto
+ldap0>=0.6.4
+psutil
+setuptools
+
+[metrics]
+prometheus_client>=0.7.1
+
+[zabbix]
+py-zabbix
