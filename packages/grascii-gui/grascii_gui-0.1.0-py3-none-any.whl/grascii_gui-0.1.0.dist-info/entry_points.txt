@@ -1,0 +1,2 @@
+[gui_scripts]
+grascii-gui = grascii_gui.__main__:main
