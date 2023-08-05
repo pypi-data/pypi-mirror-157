@@ -1,0 +1,10 @@
+.DS_Store,sha256=O4UrBChigXXiKBNDPjurM1z6-Z_cEnFZjjGyCQU2qi0,6148
+wfmap/.DS_Store,sha256=BTaK_9SJwmRWK8dBplUBeNjat0kfA5P7-Fk1MxoF_V4,6148
+wfmap/__init__.py,sha256=cQqkobb8QqxY4lqqOTizpuDpn1JhAXgaxpqC7bU7nZA,21637
+wfmap/data.py,sha256=1Ezk8tNvcPThJ56JMTGZ2Glo343UGJ9b-O8FWSijiGs,247
+wfmap/data/wfdata.csv,sha256=f3r6ToaLk7hKb-oArmffP9MWGZbbofaauOCaatymRrE,3457344
+wfmap-1.0.2.dev0.dist-info/LICENSE,sha256=s_IDI3T6X1ZCx6A0zmp2IRn4oYAoeFQ8KeTh7pKMWXY,1066
+wfmap-1.0.2.dev0.dist-info/METADATA,sha256=TmjzYCyjaQv59bFQ_4W9IWkSaK8VpE2qd-Qtg9JeCGU,4191
+wfmap-1.0.2.dev0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+wfmap-1.0.2.dev0.dist-info/top_level.txt,sha256=GGuuBu14j0QF6qgcPwkYPhj2IEWQSA5x24DP3_kUzU8,6
+wfmap-1.0.2.dev0.dist-info/RECORD,,
