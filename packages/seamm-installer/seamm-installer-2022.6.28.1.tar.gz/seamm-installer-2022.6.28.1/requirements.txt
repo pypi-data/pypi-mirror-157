@@ -1,0 +1,4 @@
+platformdirs
+requests
+tabulate
+
