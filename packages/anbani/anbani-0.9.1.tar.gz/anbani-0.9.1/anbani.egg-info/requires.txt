@@ -1,0 +1,5 @@
+pymupdf
+hjson
+numpy
+pandas
+tqdm
