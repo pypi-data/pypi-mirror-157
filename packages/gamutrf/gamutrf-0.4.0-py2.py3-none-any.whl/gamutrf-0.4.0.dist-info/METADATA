@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: gamutrf
+Version: 0.4.0
+Summary: An orchestrated SDR scanner
+Home-page: https://github.com/IQTLabs/gamutRF
+Author: cglewis
+Author-email: clewis@iqt.org
+License: Apache-2
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Requires-Dist: Jinja2 (==3.1.2)
+Requires-Dist: bjoern (==3.2.1)
+Requires-Dist: falcon-cors (==1.1.7)
+Requires-Dist: falcon (==3.1.0)
+Requires-Dist: gpsd-py3 (==0.3.0)
+Requires-Dist: httpx (==0.23.0)
+Requires-Dist: matplotlib (==3.5.2)
+Requires-Dist: numpy (==1.23.0)
+Requires-Dist: paho-mqtt (==1.6.1)
+Requires-Dist: pandas (==1.4.3)
+Requires-Dist: pbr (==5.9.0)
+Requires-Dist: prometheus-client (==0.14.1)
+Requires-Dist: requests (==2.28.0)
+Requires-Dist: schedule (==1.1.0)
+Requires-Dist: sigmf (==1.0.0)
+Requires-Dist: smbus2 (==0.4.2)
+
+UNKNOWN
+
+
