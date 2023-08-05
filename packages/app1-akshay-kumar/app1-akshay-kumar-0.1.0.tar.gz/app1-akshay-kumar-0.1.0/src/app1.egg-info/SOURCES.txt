@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/app1.egg-info/PKG-INFO
+src/app1.egg-info/SOURCES.txt
+src/app1.egg-info/dependency_links.txt
+src/app1.egg-info/entry_points.txt
+src/app1.egg-info/requires.txt
+src/app1.egg-info/top_level.txt
+src/imppkg/HarmonicMean.py
+src/imppkg/__init__.py
+src/imppkg/hello.c
+src/imppkg/hello.cp310-win_amd64.pyd
+src/imppkg/hello.pyx

@@ -1,0 +1,21 @@
+[project]
+name = "app1-akshay-kumar"
+version = "0.1.0"
+description = "Application Visibility"
+readme = "README.md"
+requires-python = ">=3.8"
+# license = {file = "LICENSE.txt"}
+# keywords = ["egg", "bacon", "sausage", "tomatoes", "Lobster Thermidor"]
+authors = [
+  {email = "akshay.kumar4@hpe.com"},
+  {name = "Akshay Kumar"}
+]
+
+
+[build-system]
+requires=["cython","setuptools","wheel"]
+build-backend = "setuptools.build_meta:__legacy__"
+
+[tool.black]
+line-length=30
+target-version=["py39","py310"]

@@ -1,0 +1,1 @@
+* This package was developed in python 3.10.2
