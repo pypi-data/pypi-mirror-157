@@ -1,0 +1,9 @@
+dplus_ceres.cpython-38-x86_64-linux-gnu.so,sha256=Jl_t7n5RtIU0t2hf27cfuNKwH2uQdo7Sg2JIog1mUWY,8089344
+dplus_ceres/iteration_callback_func.pyx,sha256=3Y9eNiS4UWu3OBQnFN_IiPBY1j2AR5Tc5KOgFv_uYvQ,963
+dplus_ceres/dplus_ceres.pyx,sha256=IoN2sGNIuSrc5m2cUfrBgynghA0WjFikbpc35yPc6ZU,20602
+dplus_ceres/call_cost_function.pyx,sha256=vw2iP-IMCpczRonWupAWkkcoCSE7_LhA9ER66wlMPRk,862
+dplus_ceres-0.4.0.dist-info/top_level.txt,sha256=PPnp3zs0kWR2ZcjougG5bLqlLqlkswRVbOZ4Ho8tXaQ,12
+dplus_ceres-0.4.0.dist-info/WHEEL,sha256=Z_Rb1HK01l8x9Vg4167UbAebNFSDPepf_z300ONs1JA,112
+dplus_ceres-0.4.0.dist-info/LICENSE,sha256=veMwkCnx1s3gkWwhzQXU8EeHy83uMtLIXhA-Gl1Mu84,4016
+dplus_ceres-0.4.0.dist-info/METADATA,sha256=CZRrvOj93HQDOD2SfpBzzoNKtnTRpx3Aq2gVc5wTUpQ,5308
+dplus_ceres-0.4.0.dist-info/RECORD,,
