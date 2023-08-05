@@ -1,0 +1,2 @@
+[console_scripts]
+mdiocre = mdiocre.interface.cli:cli
