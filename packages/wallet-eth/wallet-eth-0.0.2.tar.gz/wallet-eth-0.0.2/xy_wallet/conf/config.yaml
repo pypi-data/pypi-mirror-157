@@ -1,0 +1,8 @@
+GAS_URL: https://api-rinkeby.etherscan.io/api?\module=proxy&action=eth_gasPrice&apikey=JKXR76EA1NK9XSKES1T2BNYBZ41T3BJ2JH
+KEYNAME: root.keystore
+KEYPATH: conf/keystores/
+NETWORK:
+- https://ropsten.infura.io/v3/5e91213112f649588f92530b4d0bb4cf
+TOKEN-LIST:
+- ADDRESS: '0x43710f201183008EAf8170E729481289D52A695B'
+  NAME: umi
