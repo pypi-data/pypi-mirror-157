@@ -1,0 +1,2 @@
+[console_scripts]
+pyid = py_id.cli:run_as_command
