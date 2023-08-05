@@ -1,0 +1,10 @@
+debianbts/__init__.py,sha256=9HcFdStgglledbiDfIf-35Sr4n1fojaLK3_M1XdNHYM,92
+debianbts/__main__.py,sha256=nmLLRrLLa3ocuDXDOUO4wpMGoI1Noihb33prcVRF7Zg,271
+debianbts/debianbts.py,sha256=vqK6l1ZGWWzK_1gNqGPMHigN5fWIaPOlKazBMaMwUZ0,18475
+debianbts/version.py,sha256=thuoAg1ZNm6e3DDo9zAyaMTk0btkqmGtrxd_mwqpwvs,212
+python_debianbts-3.2.3.dist-info/LICENSE,sha256=AJbfjScq_wYhU5spsW7LrjWrGu3XPJlbIRFebcZdHMo,1072
+python_debianbts-3.2.3.dist-info/METADATA,sha256=V5sgSzGplIVgjYGpDyiJOKV5_OV74KY4rR1FFp8d-jQ,2940
+python_debianbts-3.2.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+python_debianbts-3.2.3.dist-info/entry_points.txt,sha256=NOo_TQ3_Qxh7ADmCwDR1HytLwox5-rbtCt3cRIBqVtE,55
+python_debianbts-3.2.3.dist-info/top_level.txt,sha256=MWYwECey5t6I62ehHwv1wvNdTdZHkfm-5e_ooSPtWik,10
+python_debianbts-3.2.3.dist-info/RECORD,,
