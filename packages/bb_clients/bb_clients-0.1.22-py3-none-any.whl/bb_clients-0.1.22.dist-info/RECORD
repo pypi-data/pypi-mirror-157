@@ -1,0 +1,7 @@
+bb_clients/__init__.py,sha256=vHIV1a-oKc96BHCXbcP21JMMIep5UcVGpMZCggRjnKQ,151
+bb_clients/fc/__init__.py,sha256=eXmcpB60qx1KqyfAdYrVtjYhXN8oessQyTKBSJGPvu8,7819
+bb_clients/ims/__init__.py,sha256=x128v4u-D2014JUlsVMKco4B4PMeRPPbnNxknmg4Xmc,8257
+bb_clients-0.1.22.dist-info/LICENSE,sha256=7PXW2FUTtC5q7ZUdO7SH5Aa2o8y3wRES2Z7l7nG1xUc,1078
+bb_clients-0.1.22.dist-info/WHEEL,sha256=jPMR_Dzkc4X4icQtmz81lnNY_kAsfog7ry7qoRvYLXw,81
+bb_clients-0.1.22.dist-info/METADATA,sha256=taaTAo1ReHuR9Z11SB9e597hqxjhUQ05W-wqPLAf_9A,720
+bb_clients-0.1.22.dist-info/RECORD,,
