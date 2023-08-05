@@ -1,0 +1,64 @@
+# -*- coding: utf-8 -*-
+# :Project:   metapensiero.tool.tinject — Packaging metadata
+# :Created:   mer 29 giu 2022, 10:42:40
+# :Author:    Lele Gaifax <lele@metapensiero.it>
+# :License:   GNU General Public License version 3 or later
+# :Copyright: © 2022 Lele Gaifax
+#
+
+[project]
+name = "metapensiero.tool.tinject"
+description = "Automate creation of sources"
+version = "1.0"
+authors = [{ name = "Lele Gaifax", email = "lele@metapensiero.it" }]
+readme = "README.rst"
+license = { text = "GPL-3.0-or-later" }
+classifiers = [
+  "Environment :: Console",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  'Programming Language :: Python :: 3 :: Only',
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Topic :: Software Development",
+  "Topic :: Utilities",
+]
+keywords = [
+  "YAML",
+  "Jinja2",
+  "scaffolding",
+  "skeleton",
+]
+requires-python = ">=3.9"
+dependencies = [
+  "jinja2",
+  "jinja2-time",
+  "questionary",
+  "ruamel.yaml",
+]
+
+[project.urls]
+Changelog = "https://gitlab.com/metapensiero/metapensiero.tool.tinject/-/blob/master/CHANGES.rst"
+Source = "https://gitlab.com/metapensiero/metapensiero.tool.tinject"
+
+[project.optional-dependencies]
+dev = [
+  "bump2version",
+  "hatchling",
+  "tomli",
+  "twine",
+]
+
+[project.scripts]
+tinject = "metapensiero.tool.tinject.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+exclude = [ ".*" ]
+
+[tool.hatch.build.targets.wheel]
+packages = [ "src/metapensiero" ]
