@@ -1,0 +1,3 @@
+[console_scripts]
+pycrashreport = pycrashreport.__main__:cli
+
