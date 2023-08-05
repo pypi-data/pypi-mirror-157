@@ -1,0 +1,8 @@
+orbit_etl/__init__.py,sha256=DbXSZKQmpLJpOHNMaDima9NoH6XzO9C8Tuap75k9RV8,114
+orbit_etl/clean.py,sha256=wKVQr-YvYLArj6_7JeoNt_vF9h5t0JRJYt2NxRKKcUc,1086
+orbit_etl/extract.py,sha256=4BMCmjUHwkpiokpQU3eUrK3mpRhdhqlC6pfhb_RK85E,2205
+orbit_etl/load.py,sha256=510_i2Dr5dDLRbtoKgHePuYdlFgYBzFUznBY92SOzJU,1340
+orbit_etl-0.8.dist-info/METADATA,sha256=xrwF9KADkCTtnV8DKYM_c8ZDFO2Ask-RPAh-eJLGbSQ,928
+orbit_etl-0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+orbit_etl-0.8.dist-info/top_level.txt,sha256=GIy3cQJOt3v9bRYbyNC_fw7sxq2D2sdqFcCY5mHnHyE,10
+orbit_etl-0.8.dist-info/RECORD,,
