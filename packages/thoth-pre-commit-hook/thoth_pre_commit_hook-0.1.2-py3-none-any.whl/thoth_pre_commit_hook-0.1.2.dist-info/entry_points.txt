@@ -1,0 +1,2 @@
+[console_scripts]
+thoth-advise = thoth_pre_commit_hook.thoth_advise:main
