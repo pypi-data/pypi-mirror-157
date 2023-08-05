@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: PressurePyLite
+Version: 0.0.9
+Summary: Controls Arduinos to put pressure in a box
+Home-page: https://github.com/thiloschild/PressurePyLite
+Author: Thilo Schild
+Author-email: work@thilo-schild.de
+License: MIT
+Description: # PressurePyLite
+        no dash version of PressurePy
+        
+        made to run on a raspberry pi to control 2 arduinos (one controlling a pump/one to read a sensor)
+        
+        
+        ###arguments
+        -s -> "change the port of the sensor arduino"
+        
+        -p -> "change the port of the pump arduino"
+        
+        -t -> "change the pressure"
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
