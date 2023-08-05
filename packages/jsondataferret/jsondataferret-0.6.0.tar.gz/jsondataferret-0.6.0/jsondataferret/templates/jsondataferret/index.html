@@ -1,0 +1,17 @@
+{% extends 'jsondataferret/base.html' %}
+
+{% block breadcrumbs %}
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+      </ol>
+    </nav>
+{% endblock %}
+
+{% block content %}
+
+<p>Welcome</p>
+<p><a href="{% url 'jsondataferret_type_list' %}" class="btn btn-primary">Types</a></p>
+<p><a href="{% url 'jsondataferret_event_list' %}" class="btn btn-primary">Events</a></p>
+
+{% endblock %}

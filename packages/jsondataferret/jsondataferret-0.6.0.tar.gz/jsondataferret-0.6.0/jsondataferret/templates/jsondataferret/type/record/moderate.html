@@ -1,0 +1,120 @@
+{% extends 'jsondataferret/base.html' %}
+
+
+{% block breadcrumbs %}
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'jsondataferret_index' %}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'jsondataferret_type_list' %}">Types</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'jsondataferret_type_index' public_id=type.public_id %}">Type {{ type.title }}</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'jsondataferret_record_index' type_id=type.public_id record_id=record.public_id %}">Record {{ record.public_id }}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Moderate</li>
+      </ol>
+    </nav>
+{% endblock %}
+
+{% block content %}
+
+    <h2>Moderate</h2>
+
+    {% if edits %}
+        <form action="" method="post">
+            {% csrf_token %}
+            {% for edit in edits %}
+
+            <table>
+                <tr>
+                    <th>Mode</th>
+                    <td>{{ edit.mode }}</td>
+                </tr>
+                <tr>
+                    <th>Key</th>
+                    <td>{{ edit.data_key }}</td>
+                </tr>
+                <tr>
+                    <th>Data</th>
+                    <td>
+                        {% with fields_to_list=edit.get_data_fields_include_differences_from_latest_data %}
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item active">
+                                    <a class="nav-link active" href="#edit-{{ edit.public_id }}-data-json" data-toggle="tab">JSON</a>
+                                </li>
+                                {% if fields_to_list %}
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#edit-{{ edit.public_id }}-data-fields" data-toggle="tab">Fields</a>
+                                </li>
+                                {% endif %}
+                            </ul>
+                            <div class="tab-content ">
+                                <div class="tab-pane fade show active" id="edit-{{ edit.public_id }}-data-json">
+                                    <p>{{ edit.get_data_html|safe }}</p>
+                                </div>
+                                {% if fields_to_list %}
+                                    <div class="tab-pane fade" id="edit-{{ edit.public_id }}-data-fields">
+                                        <table class="table">
+                                            {% for field_data in fields_to_list %}
+                                                <tr>
+                                                    <th>{{ field_data.title }}</th>
+                                                    <td>
+                                                        {% if field_data.different_from_latest_value %}<strong>{% endif %}
+                                                        {{ field_data.value }}
+                                                        {% if field_data.different_from_latest_value %} (Changed)</strong>{% endif %}
+                                                    </td>
+                                                </tr>
+                                            {% endfor %}
+                                        </table>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        {% endwith %}
+                    </td>
+                </tr>
+                <tr>
+                    <th>Made</th>
+                    <td>
+                        {{ edit.creation_event.created }}{% if edit.creation_event.user %} by {{ edit.creation_event.user }}{% endif %}
+                    </td>
+                </tr>
+                {% if edit.creation_event.comment %}
+                    <tr>
+                        <th>Comment</th>
+                        <td>{{ edit.creation_event.comment|linebreaks }}</td>
+                    </tr>
+                {% endif %}
+                <tr>
+                    <th>Action</th>
+                    <td>
+                        <label>
+                            <input type="radio" name="action_{{ edit.id }}" value="approve">
+                            Approve
+                        </label>
+                        <label>
+                            <input type="radio" name="action_{{ edit.id }}" value="reject">
+                            Reject
+                        </label>
+                        <label>
+                            <input type="radio" name="action_{{ edit.id }}" value="" checked>
+                            No Action
+                        </label>
+                    </td>
+                </tr>
+            </table>
+
+            {% endfor %}
+
+            <div>
+                <label>
+                    Comment
+                    <textarea name="comment"></textarea>
+                </label>
+            </div>
+
+            <input type="submit" value="Moderate">
+        </form>
+
+    {% else %}
+        <p>There is nothing to moderate, well done!</p>
+    {% endif %}
+
+
+{% endblock %}

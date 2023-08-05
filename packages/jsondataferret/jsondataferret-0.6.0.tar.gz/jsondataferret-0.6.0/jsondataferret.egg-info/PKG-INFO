@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: jsondataferret
+Version: 0.6.0
+Summary: Django App for managing JSON Data
+Home-page: https://github.com/OpenDataServices/json-data-ferret
+Author: Open Data Services
+Author-email: code@opendataservices.coop
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Provides-Extra: dev

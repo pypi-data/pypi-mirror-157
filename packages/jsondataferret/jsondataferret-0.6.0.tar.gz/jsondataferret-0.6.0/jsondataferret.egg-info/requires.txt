@@ -1,0 +1,15 @@
+Django>=3.2
+django-filter
+jsonmerge
+spreadsheetforms
+Pygments
+jsonschema
+psycopg2
+json-merge-patch
+
+[dev]
+pip-tools
+black==22.3
+flake8
+isort
+django-environ
