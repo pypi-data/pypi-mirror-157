@@ -1,0 +1,1 @@
+A variation of conventional commits with YouTrack Tasks.

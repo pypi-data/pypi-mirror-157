@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cz_commitizen_youtrack
+Version: 0.0.7
+Home-page: https://github.com/CanisHelix/commitizen_youtrack
+Author: Nigel George
+Author-email: nigel.george@shiroikuma.co.uk
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+A variation of conventional commits with YouTrack Tasks.
