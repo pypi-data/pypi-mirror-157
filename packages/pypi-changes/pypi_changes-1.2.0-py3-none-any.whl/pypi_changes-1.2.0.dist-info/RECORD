@@ -1,0 +1,17 @@
+pypi_changes/__init__.py,sha256=V1pxiDJ_TkrO2rcTW69y6TH7LFzKG8ZqdPf6wo9zLac,724
+pypi_changes/__main__.py,sha256=Jfvk-CLeH7dmmHk7MkM4AQHRcR_HXc1XnsFlGPVQlpQ,123
+pypi_changes/_cli.py,sha256=TxbJTMvF1hgiC38ewnMm_p8eIifMKsFPzIt4auks1qU,2797
+pypi_changes/_distributions.py,sha256=t3m7eoy4RLI0NjqCvKH7_l3iecfrek0EuOPzfQmGyx0,2021
+pypi_changes/_info.py,sha256=XtwyZKv0ztyyCLJ7Flp5UAjqN0CVBwWbj8W7EMQq3k4,5852
+pypi_changes/_pkg.py,sha256=Qsk1L1n7jdod-imyJqwj7el2Sst8p0qLgZyYv2HB6Ho,2163
+pypi_changes/_version.py,sha256=4q8_sylp0L-BPur66cws4hHWElHjorBkNlk1qnKAgrY,176
+pypi_changes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypi_changes/_print/__init__.py,sha256=kCBPQcp7c2neClA5f5DIOzqsY7NnHqMccKSnbu0OapY,811
+pypi_changes/_print/json.py,sha256=nUkHLksM8oA_9BHiGzkRGefWGVcDdMcjVhzQUai-5Xs,1438
+pypi_changes/_print/tree.py,sha256=AR_mWB1_QTgCuGMCRAwPnfiiw2V-ltY5q6BmKmu3o7A,1601
+pypi_changes-1.2.0.dist-info/LICENSE,sha256=kOJeH68qSq6o2V7o5_VziwUqGswMnFgGgQH5Mahr1Yg,1023
+pypi_changes-1.2.0.dist-info/METADATA,sha256=Y4WyhqxXs4p8JOQoPk27Ks2fG0KZ3K0NJhRGg2Ojdhs,3437
+pypi_changes-1.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pypi_changes-1.2.0.dist-info/entry_points.txt,sha256=wpsFqNkToOx8nSBPUHKRzOZz6-FHCwT6SMP17F7cUl8,60
+pypi_changes-1.2.0.dist-info/top_level.txt,sha256=cUXfQ-cXDq_N2ynrgKVyDPfKC-xTWSWOIQ0tVG6c_fE,13
+pypi_changes-1.2.0.dist-info/RECORD,,
