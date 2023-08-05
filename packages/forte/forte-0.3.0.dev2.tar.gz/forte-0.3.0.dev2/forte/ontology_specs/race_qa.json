@@ -1,0 +1,22 @@
+{
+  "name": "race_multi_choice_qa_ontology",
+  "imports": [
+    "base_ontology.json"
+  ],
+  "additional_prefixes": [
+    "ftx.onto.race_qa"
+  ],
+
+  "definitions": [
+    {
+      "entry_name": "ftx.onto.race_qa.Passage",
+      "parent_entry": "forte.data.ontology.top.Annotation",
+      "attributes": [
+        {
+          "name": "passage_id",
+          "type": "str"
+        }
+      ]
+    }
+  ]
+}
