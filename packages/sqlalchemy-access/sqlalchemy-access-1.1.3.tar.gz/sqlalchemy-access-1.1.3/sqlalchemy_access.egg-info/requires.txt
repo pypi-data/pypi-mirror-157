@@ -1,0 +1,3 @@
+SQLAlchemy
+pyodbc>=4.0.27
+pywin32
