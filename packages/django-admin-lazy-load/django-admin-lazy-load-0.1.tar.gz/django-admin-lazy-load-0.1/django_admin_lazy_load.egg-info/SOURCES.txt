@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+admin_lazy_load/__init__.py
+admin_lazy_load/static/js/lazyload.js
+django_admin_lazy_load.egg-info/PKG-INFO
+django_admin_lazy_load.egg-info/SOURCES.txt
+django_admin_lazy_load.egg-info/dependency_links.txt
+django_admin_lazy_load.egg-info/top_level.txt
