@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+global_gender_predictor/__init__.py
+global_gender_predictor/global_gender_predictor.py
+global_gender_predictor.egg-info/PKG-INFO
+global_gender_predictor.egg-info/SOURCES.txt
+global_gender_predictor.egg-info/dependency_links.txt
+global_gender_predictor.egg-info/top_level.txt
+global_gender_predictor/data/gender_wgnd2.jsonl.gz
