@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tema-analyzer
+Version: 1.3.0
+Summary: Analysis and processing of TEMA data files
+Home-page: https://github.com/lviornery/tema-analyzer
+Author: Luis Viornery & Taryn Imamura
+Author-email: lviornery@cmu.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: interactive

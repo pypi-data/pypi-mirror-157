@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+tema_analyzer.egg-info/PKG-INFO
+tema_analyzer.egg-info/SOURCES.txt
+tema_analyzer.egg-info/dependency_links.txt
+tema_analyzer.egg-info/requires.txt
+tema_analyzer.egg-info/top_level.txt
+temaanalyzer/__init__.py
+temaanalyzer/temafunctions.py
+temaanalyzer/interactive/TEMAExampleFile.txt
+temaanalyzer/interactive/goodExport.csv
+temaanalyzer/interactive/temaanalyzer-notebook.ipynb
