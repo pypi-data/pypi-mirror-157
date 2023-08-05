@@ -1,0 +1,49 @@
+# WIP
+Python interface for interoperability with dSpace running in Matlab.
+pyDspace has been designed to used inside Jupyter Notebooks.
+# Dependencies
+- python >= 3.6
+- numpy
+- matlabengineforpython
+
+# Installation
+```shell
+pip install pydspace
+```
+
+# API
+Import the module as usual
+```python
+import pydspace
+```
+When importing the module a Matlab engine is created and you can use:
+```python
+pydspace.get_matlab_engine()
+pydspace.reset_matlab_engine()
+pydspace.kill_matlab_engine()
+```
+In order to open dspace from the jupyter notebook, first you must specify where the Matlab Dspace is located
+with:
+```python
+pydspace.set_dspace_path(dspace_path)
+```
+now you can call dspace as usual with numpy arrays, pandas dataframes and queries made with datajoint.
+```python
+df = pd.read_csv(CSV_PATH)
+N = len(df)
+
+M1 = np.random.rand(N,100)
+M2 = np.random.rand(N,100)
+M_no_name = np.random.rand(N,100)
+
+# Datajoint 
+data = query.fetch()
+
+dspace = pydspace.dspace(df, "matrix1", M1, "matrix2", M2, M_no_name, data)
+```
+the returned object is a DspaceWrapper object that implements the following methods:
+```python
+dspace.dsource_info() # Prints info about the dsource object
+dspace.add_data("new_matrix", M3, M2_no_name) # Adds additional sources.
+```
+you can find more detailed info about the methods in their corresponding docstring.
