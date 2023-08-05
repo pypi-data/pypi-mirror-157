@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: gpr-algorithm
+Version: 1.0.0
+Summary: Gene Programming Rules (GPR) implementation
+Author: Anna Czmil
+Author-email: czmilanna@gmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: deap (==1.3.1)
+Requires-Dist: geppy (==0.1.3)
+Requires-Dist: numpy (==1.21.6)
+Requires-Dist: scikit-learn (==1.0.2)
+Requires-Dist: sympy (==1.9)
+Description-Content-Type: text/x-rst
+
+GPR Algorithm
+=============
+
+An implementation of an extremely simple classifier (GPR_) that consists of highly interpretable fuzzy metarules
+and is suitable for many applications. GPR is effective in accuracy and area under the receiver operating characteristic
+(ROC) curve. We provide a Python implementation of the GPR algorithm to enable the use of the algorithm without using
+commercial software tools and open access to the research community. We also added enhancements to facilitate the
+reading and interpretation of the rules.
+
+.. _GPR: https://doi.org/10.1016/j.ins.2021.05.041
+
+Example usage
+--------------
+
+.. code:: python3
+
+    import numpy as np
+    from gpr_algorithm import GPR
+
+    feature_names = ['weight', 'height']
+    target_names = ['sick', 'healthy']
+
+    cls = GPR(
+        feature_names=feature_names,
+        target_names=target_names,
+        max_n_of_rules=2, max_n_of_ands=2, n_generations=10, n_populations=10,
+        verbose=False
+    )
+
+    attributes = np.array([
+        [.9, .1],  # sick
+        [1., .9],  # sick
+        [0., .9],
+        [.1, .1]
+    ])
+    labels = np.array([
+        0,  # sick
+        0,  # sick
+        1,
+        1
+    ])
+    cls.fit(attributes, labels)
+
+    pred_labels = cls.predict(attributes)
+
+    assert np.all(labels == pred_labels)
+    rules = cls.rules
+    assert rules == ['IF weight is Low THEN healthy | Support: 0.9500', 'ELSE sick']
