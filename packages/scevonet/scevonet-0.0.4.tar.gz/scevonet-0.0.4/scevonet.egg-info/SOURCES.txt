@@ -1,0 +1,10 @@
+README.md
+setup.py
+scevonet/__init__.py
+scevonet/net.py
+scevonet/utils.py
+scevonet.egg-info/PKG-INFO
+scevonet.egg-info/SOURCES.txt
+scevonet.egg-info/dependency_links.txt
+scevonet.egg-info/requires.txt
+scevonet.egg-info/top_level.txt
