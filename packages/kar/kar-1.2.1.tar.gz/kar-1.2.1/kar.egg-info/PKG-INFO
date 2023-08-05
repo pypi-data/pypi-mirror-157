@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kar
+Version: 1.2.1
+Summary: KAR Python SDK.
+Home-page: https://github.com/IBM/kar
+Author: KAR authors
+License: Apache 2.0
+Project-URL: Bug Reports, https://github.com/IBM/kar/issues
+Project-URL: Source, https://github.com/IBM/kar
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+KAR Python SDK.
+
