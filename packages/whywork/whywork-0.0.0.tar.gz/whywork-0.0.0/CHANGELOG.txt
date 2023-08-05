@@ -1,0 +1,7 @@
+Change Log
+==========
+
+0.0.1 (06/29/2022)
+-------------------
+- First Release
+- X and E additions coming soon
