@@ -1,0 +1,3 @@
+[console_scripts]
+compile-env = compile_env.__init__:main
+

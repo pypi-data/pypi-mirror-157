@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: compile-env
+Version: 0.4.1
+Summary: Solve the problem that environment variables are not interpolated by docker-compose
+Home-page: https://github.com/mnieber/compile-env
+Author: Maarten Nieber
+Author-email: hallomaarten@yahoo.com
+License: MIT
+Download-URL: https://github.com/mnieber/compile-env/tarball/0.4.1
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
