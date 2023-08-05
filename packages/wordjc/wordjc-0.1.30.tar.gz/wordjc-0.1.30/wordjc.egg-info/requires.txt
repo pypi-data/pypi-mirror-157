@@ -1,0 +1,9 @@
+numpy
+pandas
+importlib_resources
+regex
+nltk
+matplotlib
+wordcloud
+pillow
+jieba
