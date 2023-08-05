@@ -1,0 +1,11 @@
+black==22.3.0
+coverage
+flake8
+isort
+matplotlib
+pytest>=6.0
+pytest-xdist
+pytest-cov
+seaborn
+xarray>=0.13
+wheel
