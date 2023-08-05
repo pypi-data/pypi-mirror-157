@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: netlink-sharepoint
+Version: 0.0.3
+Summary: Tools to work with Sharepoint
+Home-page: https://gitlab.com/netlink-consulting/netlink-sharepoint
+License: MIT
+Keywords: sharepoint
+Author: Bernhard Radermacher
+Author-email: bernhard.radermacher@netlink-consulting.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Requires-Dist: Office365-REST-Python-Client (>=2.3.12,<3.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: netlink-logging (>=0.1.3,<0.2.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://gitlab.com/netlink-consulting/netlink-sharepoint
+Description-Content-Type: text/markdown
+
+# netlink-sharepoint
+
+Tools to work with SharePoint
+
+For now **Lists** are considered.
+
+Initial:
+
+- Script to help mapping:
+
+## `sharepoint_list_info`
+
+```shell
+Usage: sharepoint_list_info.py [OPTIONS] [NAME]...
+
+  Print information about SharePoint List(s)
+
+  NAME is not provided, all lists are returned.
+
+Options:
+  -u, --url TEXT     Sharepoint URL
+  -i, --id TEXT      Client ID
+  -s, --secret TEXT  Client Secret
+  -t, --toml FILE    TOML file with 'url', 'id', and 'secret'
+  -f, --fields       include fields
+  --hidden           include hidden lists
+
+```
+
+
+## Roadmap
+
+Next:
+
+- subpackage to integrate with SQLAlchemy
+- define lists by subclassing 
+
+
+## License
+
+MIT
+
