@@ -1,0 +1,55 @@
+{
+    "protocol": {
+      "name": "BLocks",
+      "endpoint": {
+        "ethereum": "https://api.thegraph.com/subgraphs/name/elkfinance/eth-blocks",
+        "bsc":"https://api.thegraph.com/subgraphs/name/matthewlilley/bsc-blocks",
+        "polygon":"https://api.thegraph.com/subgraphs/name/ord786/matic-blocks",
+        "avalanche": "https://api.thegraph.com/subgraphs/name/radioshackcreator/blocks-avalanche",
+        "arbitrum": "https://api.thegraph.com/subgraphs/name/elkfinance/arbitrum-blocks",
+        "optimism": "https://api.thegraph.com/subgraphs/name/beethovenxfi/optimism-blocks",
+        "fantom": "https://api.thegraph.com/subgraphs/name/beethovenxfi/fantom-blocks"
+      }
+    },
+    "entities": {
+      "block": {
+        "attributes": {
+          "number": [
+            "number"
+          ],
+          "timestamp": [
+            "timestamp"
+          ]
+        },
+        "query": {
+          "name": "blocks",
+          "extra_fields": {},
+          "params": {
+            "orderBy": "timestamp"
+          }
+        },
+        "transformations": []
+      },
+      "block_info": {
+        "attributes": {
+          "id": [
+            "id"
+          ],
+          "number": [
+            "number"
+          ],
+          "timestamp": [
+            "timestamp"
+          ]
+        },
+        "query": {
+          "name": "blocks",
+          "extra_fields": {},
+          "params": {
+            "number": "number"
+          }
+        },
+        "transformations": []
+      }
+    }
+  }
