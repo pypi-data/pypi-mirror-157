@@ -1,0 +1,13 @@
+PyOpenGL
+PyQt5==5.14
+PyQtChart==5.14
+Shapely
+future
+matplotlib
+numpy
+opencv-python
+pioneer-common
+pycollada
+tqdm
+transforms3d
+utm

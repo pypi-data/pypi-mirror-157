@@ -1,0 +1,6 @@
+recursive-include pioneer *.qml qmldir Utils.js
+include requirements.txt
+global-include CMakeLists.txt *.cmake
+recursive-include src *
+recursive-include pybind11/include *.h
+recursive-include pioneer *.so
