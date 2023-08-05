@@ -1,0 +1,9 @@
+pandas
+os
+numpy
+
+[dev]
+pytest
+requests_mock
+coverage
+mypy
