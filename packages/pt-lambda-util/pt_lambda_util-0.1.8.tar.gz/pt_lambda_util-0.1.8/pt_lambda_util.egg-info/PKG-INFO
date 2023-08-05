@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pt-lambda-util
+Version: 0.1.8
+Summary: common utility for aws lambda application
+Home-page: UNKNOWN
+Author: JimmyMo
+Author-email: jocund_mo@aliyun.com
+License: Apache License 2.0
+Description: pt-lambda-util
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
