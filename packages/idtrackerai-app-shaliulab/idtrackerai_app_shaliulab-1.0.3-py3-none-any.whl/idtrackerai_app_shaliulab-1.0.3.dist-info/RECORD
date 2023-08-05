@@ -1,0 +1,15 @@
+idtrackerai_app/__init__.py,sha256=VMxHXHexFUsxLJwtXoxTK5g4Mh3MlEOIcPznPAEK7EY,136
+idtrackerai_app/__main__.py,sha256=5iiNCDX_naLYpZx4NADrfClhEDqtp6WmF8J2aHa17DA,1765
+idtrackerai_app/base_idtrackerai.py,sha256=PRs0oD6PdctWqk_ZHr6V0IV9gcIMJPxADNLA6ZEEZzg,21894
+idtrackerai_app/win_idtrackerai.py,sha256=P3N1P4v8TqVA5riA3uwwTAUc_hA1MHibXjUFw5Kk_-s,17481
+idtrackerai_app/gui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+idtrackerai_app/gui/grapharea_win.py,sha256=09UJImnl1P9puoJ-O4A4Z8tjUSIkLEZjyzkcn3mQYxo,719
+idtrackerai_app/gui/player_win_interactions.py,sha256=WRZqkT0hXyBd07mdacywJJgaV8_LcUg4lGj4CObJgzU,7406
+idtrackerai_app/gui/range_win.py,sha256=MzogqPbx6ER6mnXglLfDluBgYK3tHwvqBio7cQ4LpWw,1218
+idtrackerai_app/gui/roi_selection.py,sha256=uQlP-ihvdz9STVOtxgaaaptPr4GA3JznkhAVm6XE1ew,4113
+idtrackerai_app/gui/setup_points_selection.py,sha256=5jA7ECsMGf-x6C4YtrR9O7AGLuoOzpRVpUMT-Nv92vs,2911
+idtrackerai_app_shaliulab-1.0.3.dist-info/METADATA,sha256=3tCzSP9Bub4tDBge3Xr-GDLubmZZohiST1k2FQm8L6Q,687
+idtrackerai_app_shaliulab-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+idtrackerai_app_shaliulab-1.0.3.dist-info/entry_points.txt,sha256=lriq83OYA3Q-4c4WJkgue9tsmHOFv-XI7gh_bXRrOh0,63
+idtrackerai_app_shaliulab-1.0.3.dist-info/top_level.txt,sha256=7-May3jBgRmS49t-w2Mmm4Jtbbf0eHcFp1A6mD5bLEw,16
+idtrackerai_app_shaliulab-1.0.3.dist-info/RECORD,,
