@@ -1,0 +1,225 @@
+Metadata-Version: 2.1
+Name: ad-components
+Version: 0.1.37
+Summary: Accelerated Discovery Reusable Components.
+Home-page: https://github.ibm.com/Accelerated-Discovery/Discovery-Platform
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+
+# Accelerated Discovery Reusable Components
+
+The central implementation of Accelerated Discover Reusable Components. It serves as a wrapper around client libraries we use locally like Dapr and MLflow.
+
+## 1.Installation
+All components will be availble using
+
+```shell
+pip install dapr ad-components
+```
+
+### pip config
+Since the package is hosted in a private registry, you need to make sure
+to tell pip to look for the package outside pypi.org.
+
+```shell
+mkdir -p $HOME/.pip
+
+cat << EOF > $HOME/.pip/pip.conf
+[global]
+extra-index-url = https://$ARTIFACTORY_USERNAME:$ARTIFACTORY_TOKEN@na.artifactory.swg-devops.com/artifactory/api/pypi/res-discovery-platform-team-pypi-local/simple
+EOF
+
+# If you decide to choose a different path for the pip conf, make sure to tell pip about it
+# echo 'export PIP_CONFIG_FILE="$HOME/.pip/pip.conf"' >> ~/.zprofile
+```
+
+### CLI
+Here's an example usage of the CLI
+
+```
+usage: adc [-h] [--verbose] [--version] {<component>} ...
+
+Accelerated Discovery reusable components.
+
+positional arguments:
+  <component>    the component that you want to trigger.
+
+optional arguments:
+  -h, --help     show this help message and exit.
+  --version      show program's version number and exit.
+```
+
+## 2. Usage
+### 2.0. In your pipeline
+To use a component in your pipeline, you need to run it in a Step context
+
+```python
+from ad.step import DaprStep
+from ad.storage import download, upload
+
+with DaprStep():
+    resp = download(download_src, download_dest, binding_name=binding)
+    print(f"download resp: {resp}")
+
+    resp = upload(upload_src, upload_dest, binding_name=binding)
+    print(f"upload resp: {resp}")
+```
+
+Running the components inside a step will make sure the client dependencies are handled correctly.
+
+
+### 2.1. Storage
+
+#### 2.1.2. Python module
+You can invoke the manager using native python. Please note that the package must be present in you python environment.
+
+```python
+from ad.storage import download, upload
+
+download_resp = download(
+    src, dest,
+    # binding_name="s3-state",  # Or any other binding
+)
+
+upload_resp = upload(
+    src, dest,
+    # binding_name="s3-state",  # Or any other binding
+)
+```
+
+#### 2.1.3. CLI
+
+```shell
+usage: adc storage [-h] --src PATH --dest PATH [--binding NAME] [--timeout SEC] {download,upload}
+
+positional arguments:
+  {download,upload}     action to be performed on data.
+
+optional arguments:
+  -h, --help            show this help message and exit
+
+action arguments:
+  --src PATH, -r PATH   path of file to perform action on.
+  --dest PATH, -d PATH  object's desired full path in the destination.
+  --binding NAME, -b NAME
+                        the name of the binding as defined in the components.
+
+dapr arguments:
+  --timeout SEC, -t SEC
+                        value in seconds we should wait for sidecar to come up.
+```
+
+> **Note:** You can replace `adc` with `python ad/main.py ...` if you don't have the package installed in your python environment.
+
+##### Examples
+1. To download an object from S3 run
+```bash
+adc storage download \
+    --src test.txt \
+    --dest tmp/downloaded.txt
+```
+
+2. To upload an object to S3 run
+```bash
+adc storage upload \
+    --src tmp/downloaded.txt \
+    --dest local/uploaded.txt
+```
+
+
+## 3. Supported components
+### 3.1. Storage
+#### 3.1.1. Supported operations
+Below is a list of the operations you might intend to perform in your component.
+
+##### Upload
+Uploads data from a file to an object in a bucket.
+
+###### Arguments
+* `src`: Name of file to download.
+* `dest`: Object name in the bucket.
+* `binding`: The name of the binding to perform the operation.
+
+##### Download
+Downloads data of an object to file.
+
+###### Arguments
+* `src`: Object name in the bucket.
+* `dest`: Name of file to download.
+* `binding`: The name of the binding to perform the operation.
+
+
+##### Dapr configurations
+* `address`: Dapr Runtime gRPC endpoint address.
+* `timeout`: Value in seconds we should wait for sidecar to come up
+
+
+## 4. Publishing
+Every change to the python script requires:
+- A new version to be pushed PyPi registry.
+- A docker image to pushed to the cluster. (This is temprorary until kfp 2.0 is released and kfp-tekton starts supporting it)
+
+
+If you have the right (write) permissions, and a correctly-configured `$HOME/.pypirc` file and docker registry, run the following command to publish the package
+
+```shell
+# pypi registry credentials
+export ARTIFACTORY_USERNAME=<username>@ibm.com
+export ARTIFACTORY_TOKEN=<token>
+
+# To push to an OpenShift cluster
+export PROJECT=kubeflow
+export REPO_ROUTE="$(oc get route/default-route -n openshift-image-registry --template='{{ .spec.host }}'):443"
+export REPO=${REPO_ROUTE}/${PROJECT}
+
+make
+```
+
+### 4.1. Increment the version
+To increment the version, go to [adstorage/version.py](adstorage/version.py) and increment the version there. Both the [setup.py](setup.py) and the `CLI` will read the new version correctly.
+
+### 4.2 Configure PyPi registry
+To be able to push to the package to our private registry, you need to tell PyPi about it. This one-liner command will take care of it for you
+
+```shell
+cat << EOF > $HOME/.pypirc
+[distutils]
+index-servers =
+    ad-discovery
+    pypi
+
+[pypi]
+repository: https://pypi.org/pypi
+
+[ad-discovery]
+repository: https://na.artifactory.swg-devops.com/artifactory/api/pypi/res-discovery-platform-team-pypi-local
+username: $ARTIFACTORY_USERNAME
+password: $ARTIFACTORY_TOKEN
+EOF
+```
+
+### 4.3 Configure Docker registry
+Follow these steps to log into your OpenShift cluster registry
+
+```shell
+# Replace the following command with the command given from your cluster.
+# Ignore this command if you're already logged in.
+oc login --token=<oc token> --server=https://api.adp-rosa-2.5wcf.p1.openshiftapps.com:6443
+
+
+# If this is the first push to your cluster, you need to to create an image stream
+oc create is ad
+
+# Change the server value if you're in a different cluster ()
+SERVER="$(oc get route/default-route -n openshift-image-registry --template='{{ .spec.host }}'):443"
+docker login -u `oc whoami` -p `oc whoami --show-token` $SERVER
+```
+
+> **Note:** Both the pip package and the docker image will fetch the version from `ad/version.py` file, so make sure to increment before pushing or you'll **override** the previous version.
