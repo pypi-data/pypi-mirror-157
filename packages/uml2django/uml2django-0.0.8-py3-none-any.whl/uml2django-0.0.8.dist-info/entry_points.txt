@@ -1,0 +1,2 @@
+[console_scripts]
+uml2django = uml2django.main:run
