@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: milla-tdf
+Version: 0.0.13
+Summary: My package description
+Author: Bao Phan
+Author-email: bao.phan@vcsc.com.vn
+License: BSD 3-Clause License
+Keywords: one,two
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Requires-Dist: setuptools (>=42)
+Requires-Dist: wheel
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: dataclasses-json (==0.5.7)
+Requires-Dist: dacite (==1.6.0)
+Requires-Dist: python-dateutil
+Requires-Dist: selenium (==4.3.0)
+Requires-Dist: pyarrow (==8.0.0)
+
