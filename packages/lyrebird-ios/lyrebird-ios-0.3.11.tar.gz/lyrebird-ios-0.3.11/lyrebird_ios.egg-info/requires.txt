@@ -1,0 +1,8 @@
+lyrebird
+facebook-wda==1.4.3
+tidevice==0.6.12
+
+[dev]
+autopep8
+pylint
+pytest
