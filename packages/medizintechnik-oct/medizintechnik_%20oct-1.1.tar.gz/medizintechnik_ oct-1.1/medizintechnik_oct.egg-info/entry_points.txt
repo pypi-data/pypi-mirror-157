@@ -1,0 +1,2 @@
+[console_scripts]
+oct_gui = medizintechnik_oct.OCT_GUI:run

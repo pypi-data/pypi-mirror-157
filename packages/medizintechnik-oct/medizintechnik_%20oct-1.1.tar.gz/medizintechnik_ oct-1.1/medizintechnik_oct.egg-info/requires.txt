@@ -1,0 +1,6 @@
+Pillow
+pylablib
+pyusb
+matplotlib
+numpy
+tqdm

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: medizintechnik_ oct
+Version: 1.1
+Summary: Steuersoftware zum Versuch 'OCT' im Medizintechnik-Praktikum der MLU Halle-Wittenberg
+Home-page: https://github.com/sebasj13/MedTechnik_OCT
+Author: Sebastian Schäfer
+Author-email: sebastian.schaefer@student.uni-halle.de
+Project-URL: Bug Tracker, https://github.com/sebasj13/MedTechnik_OCT/issues
+Keywords: MLU,Medizintechnik,OCT,Oszilloskop
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MedTechnik_OCT
+Steuersoftware zum Versuch "OCT" im Medizintechnik-Praktikum der MLU Halle-Wittenberg
