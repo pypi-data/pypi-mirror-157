@@ -1,0 +1,10 @@
+LICENSE.rtf
+setup.py
+src/abate/__init__.py
+src/abate/fit_GENERIC.py
+src/abate/simple_pymc_fits.py
+src/abate.egg-info/PKG-INFO
+src/abate.egg-info/SOURCES.txt
+src/abate.egg-info/dependency_links.txt
+src/abate.egg-info/requires.txt
+src/abate.egg-info/top_level.txt

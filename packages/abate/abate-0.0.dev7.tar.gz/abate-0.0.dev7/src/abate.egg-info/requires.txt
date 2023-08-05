@@ -1,0 +1,14 @@
+numpy>=1.15
+scipy>=1.1.0
+astropy>=2.0
+tqdm>=4.46.0
+photutils>=0.4.1
+bokeh>=1.4.0
+pytest>=7.1.2
+exoplanet>=0.5.2
+tshirt>=0.1.dev9
+pymc3_ext>=0.1.1
+celerite2>=0.2.1
+ipython>=8.4.0
+starry>=1.2.0
+corner>=2.2.1
