@@ -1,0 +1,2 @@
+streamlit_rightly_component
+test

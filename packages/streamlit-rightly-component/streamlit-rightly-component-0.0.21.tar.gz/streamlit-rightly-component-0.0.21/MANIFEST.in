@@ -1,0 +1,1 @@
+recursive-include streamlit_rightly_component/frontend/build *
