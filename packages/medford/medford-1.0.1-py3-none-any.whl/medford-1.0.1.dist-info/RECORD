@@ -1,0 +1,13 @@
+MEDFORD/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MEDFORD/medford.py,sha256=7oDcPNZN4qOhcQnw6Xs0WredlIVo_u3hhm1jcNsai4w,4241
+MEDFORD/medford_BagIt.py,sha256=d6DZzm_4xhIscj_PaZqYQ1nb0RMlf3YHy6u49YpfHRQ,12214
+MEDFORD/medford_detail.py,sha256=z5iazOcKfRUILHbm6loSfkJIGp1QfSvw9Ytc3da-RFg,9634
+MEDFORD/medford_detailparser.py,sha256=Turqt_fopBzd_WOkcaWkb_J-WcDwT0M8ZQ__Od3YOzY,7636
+MEDFORD/medford_error_mngr.py,sha256=Arl_3eNm_3CVS55lipAGw9vJRIh4ABtkfBqnoOMbWIs,5810
+MEDFORD/medford_models.py,sha256=MEnnisJgobAsffYy-NIiwWv7nAH3aUcdoiFWLFtMhmo,7993
+medford-1.0.1.dist-info/LICENSE,sha256=SvHsT03t54IGFXfkvNu7axZLRthnfJn1somtECsn0QY,1103
+medford-1.0.1.dist-info/METADATA,sha256=zDr10zvhx4KvRIMZ4oqnDq3saCRxYPAUDq4vEzwVn58,3327
+medford-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+medford-1.0.1.dist-info/entry_points.txt,sha256=uOwhC-hTCSA4NZcqbN6TlKDWkylvjmFqqBGzJxuGJKs,62
+medford-1.0.1.dist-info/top_level.txt,sha256=-9zseRjPv73IsILxAM40_qH8_cref_7uIqMoxqDFj-Q,8
+medford-1.0.1.dist-info/RECORD,,
