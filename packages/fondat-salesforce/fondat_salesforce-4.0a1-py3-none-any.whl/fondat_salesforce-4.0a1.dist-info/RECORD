@@ -1,0 +1,12 @@
+fondat/salesforce/__init__.py,sha256=O7N5i62Jx2gIJdJSsdgUvFlDjaSYo0y97r0WlM9qlA0,41
+fondat/salesforce/bulk.py,sha256=f85oJxKl3pVpXnTW7Bb6E-cUob1BrUHfz7KZww4ctjU,4249
+fondat/salesforce/client.py,sha256=VbcDFjepnWxm3jr8iQzcZ_eLdwZp4r4px1uIRsVHAoo,3924
+fondat/salesforce/jobs.py,sha256=lBQAnHEaXn63gjJEtYFWi_ELZM9cbYZ5Xafa_ff_h8Y,4982
+fondat/salesforce/limits.py,sha256=ieERXizqqdubziOWyjum3i5vpI-XbKcZVtrwrHfFUhw,1299
+fondat/salesforce/oauth.py,sha256=wa3kVnWIsXnawSQj03Ee3fnxyPRpAZZbYMMkIhBpcXs,6111
+fondat/salesforce/service.py,sha256=NkgNYwSwmFDlpIVK1zI6xjdZkyjKiKRF52uWkqPDCXg,1323
+fondat/salesforce/sobjects.py,sha256=JPcpxcysuIx55geyoYK53dMLK-AEYJu9g4GLxouO-QE,7110
+fondat_salesforce-4.0a1.dist-info/LICENSE,sha256=edXVec-qQIolu12HvYBXImjzKsge0DoorbviOnkuGVY,1065
+fondat_salesforce-4.0a1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+fondat_salesforce-4.0a1.dist-info/METADATA,sha256=OI1c_PA630E5JdafqlD_PjdX35HHb9fTQw3LhTZ1yEM,1634
+fondat_salesforce-4.0a1.dist-info/RECORD,,
