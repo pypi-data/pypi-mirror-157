@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: Python video annotator - models-shaliulab
+Version: 0.9.0
+Home-page: https://bitbucket.org/fchampalimaud/pythonvideoannotator-models
+Author: ['Ricardo Ribeiro']
+Author-email: ricardojvr@gmail.com
+Provides-Extra: imgstore
