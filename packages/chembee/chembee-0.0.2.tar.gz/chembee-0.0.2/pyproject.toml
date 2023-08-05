@@ -1,0 +1,19 @@
+[project]
+name = "chembee"
+version = "0.0.2"
+authors = [
+  { name="Julian M. Kleber", email="julian.kleber@sail.black" },
+]
+description = "Chembee rapid prototyping"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">= 3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "http://www.codeberg.org/cap_jmk/chembee"
+"Bug Tracker" = "http://www.codeberg.org/cap_jmk/chembee/issues"
