@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: eminusmap
+Version: 0.0.3
+Summary: Additional colormaps
+Home-page: https://github.com/TheGingerbeard/eminusmap
+Author: Dags Olsteins
+Author-email: <dags.olsteins@gmail.com>
+License: UNKNOWN
+Keywords: python,plotting,data,colormaps
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE.txt
+
+Additional colormaps created with quantum transport measurements in mind
+
