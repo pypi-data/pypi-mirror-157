@@ -1,0 +1,325 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+	<script type="text/javascript">
+		function set_new_status(status) {
+			$('#new_status').val(status);
+		}
+		function set_new_assigned_to(assigned_to) {
+			$('#new_assigned_to').val(assigned_to);
+		}
+	</script>
+{% endblock %}
+
+{% block scrsiptsready %}
+	<script type="text/javascript">
+		$('#form_new_status_or_assigned_to').unbind('submit').submit();
+	</script>
+{% endblock %}
+
+{% block style %}
+	<style>
+		.userround {
+			border: 2px solid #445566;
+			border-radius: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-top: 2px;
+			padding-bottom: 2px;
+			margin-top: 5px;
+		}
+
+		.blue {
+			background-color: blue;
+		}
+		
+		.green {
+			background-color: green;
+		}
+	</style>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+	<div class="container-fluid col-sm-4">
+		<div class="well well-sm">
+			<div class="btn-group" role="group" aria-label="">
+				{% if is_read_only %}
+				{% else %}
+					<form method='POST' name='' id="form_new_status_or_assigned_to" action='{% url "bug" bug.id %}'>
+						{% csrf_token %}
+						<input type="hidden" name="new_status" id="new_status">
+						<input type="hidden" name="new_assigned_to" id="new_assigned_to">
+						<div class="btn_group">
+							{% for next_status in next_statuses %}
+								<button onClick="set_new_status('{{ next_status }}');" id="new_status_{{ next_status }}" class="btn btn-default">
+									{{ next_status }}
+									<span class="glyphicon glyphicon-fast-forward" aria-hidden=true></span>
+								</button>
+							{% endfor %}
+							<BR>
+							{% for assigned_to in assigned_tos %}
+								<button onClick="set_new_assigned_to('{{ assigned_to }}');" id="new_assigned_to_{{ assigned_to }}" class="btn btn-default">
+									<span class="glyphicon glyphicon-user" aria-hidden=true></span>
+									{{ assigned_to }}
+								</button>
+							{% endfor %}
+						</div>
+					</form>
+				{% endif %}
+				<BR>
+				{% if can_be_edited %}
+					<button type="button" class="btn btn-default" onClick="window.location = '{% url 'bug_edit' bug.id %}'">Edit</button>
+				{% endif %}
+				{% if can_use_private_flags %}
+					<button class="btn btn-default" onClick="$('.can_be_toggled').toggle();">Toggle</button>
+				{% endif %}
+<!--				<button type="button" class="btn btn-default">Second button</button>-->
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label class="col-sm-4 control-label">User</label>
+						<div class="col-sm-8">
+							<p class="form-control-static">{{ bug.user }}</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Subject</label>
+						<div class="col-sm-8">
+							<p class="form-control-static">{{ bug.subject }}</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Status</label>
+						<div class="col-sm-8">
+							<p class="form-control-static">{{ bug.bugstatus.name }}</p>
+						</div>
+					</div>
+<!--					<div class="form-group">
+						<label class="col-sm-4 control-label">Sprint</label>
+						<div class="col-sm-8">
+							<p class="form-control-static">
+								{% for sprint in bug.sprint.all %}
+									{% if forloop.counter0 %}, {% endif %}
+									{% include "bugtrack/templates/blocks/sprint_name.html" %}
+								{% endfor %}
+							</p>
+						</div>
+					</div>-->
+					{% if parent %}
+						<div class="form-group">
+							<label class="col-sm-4 control-label">Parent</label>
+							<div class="col-sm-8">
+								<p class="form-control-static">
+									{% with parent as bug %}
+										{% include "blocks/bug_name.html" %}
+									{% endwith %}
+								</p>
+							</div>
+						</div>
+					{% endif %}
+<!--					{% if bug.children.all %}
+						<div class="form-group">
+							<label class="col-sm-4 control-label">Children</label>
+							<div class="col-sm-8">
+								<p class="form-control-static">
+									{% for bug in bug.children.all %}
+										{% if forloop.counter0 %}, {% endif %}
+										{-% include "bugtrack/templates/blocks/bug_name.html" %}
+									{% endfor %}
+								</p>
+							</div>
+						</div>
+					{% endif %}-->
+					{% if bug.depends_on %}
+						<div class="form-group">
+							<label class="col-sm-4 control-label">Depends on</label>
+							<div class="col-sm-8">
+								<p class="form-control-static">
+									<A href="{% url 'bug' bug.depends_on %}">
+										{{ bug.depends_on }}
+									</A>
+								</p>
+							</div>
+						</div>
+					{% endif %}
+					{% if bug.effects.all %}
+						<div class="form-group">
+							<label class="col-sm-4 control-label">Effects</label>
+							<div class="col-sm-8">
+								<p class="form-control-static">
+									{% for bug in bug.effects.all %}
+										{% if forloop.counter0 %}, {% endif %}
+										{% include "blocks/bug_name.html" %}
+									{% endfor %}
+								</p>
+							</div>
+						</div>
+					{% endif %}
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Category</label>
+						<div class="col-sm-8">
+							<p class="form-control-static">
+								{% for category in categories %}
+									{% if forloop.counter0 %} -> {% endif %}
+									{% include "blocks/category_name.html" %}
+								{% endfor %}
+							</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Priority</label>
+						<div class="col-sm-8">
+							<p class="form-control-static">{{ bug.priority.name }}</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Severity</label>
+						<div class="col-sm-8">
+							<p class="form-control-static">{{ bug.severity.name }}</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Executor / Tester</label>
+						<div class="col-sm-8">
+							<p class="form-control-static">{% firstof bug.executor.get_full_name '-' %} / {% firstof bug.tester.get_full_name '-' %}</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Waiting for reply</label>
+						<div class="col-sm-8">
+							<p class="form-control-static">
+							{% if bug.waiting_for_reply %}
+								<span class="glyphicon glyphicon-question-sign" aria-hidden=true></span>
+							{% endif %}
+							</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Created</label>
+						<div class="col-sm-8">
+							<p class="form-control-static">{{ bug.created }}</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Last move</label>
+						<div class="col-sm-8">
+							<p class="form-control-static">{{ bug.last_modified }}</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Watchers</label>
+						<div class="col-sm-8">
+							<p class="form-control-static">{{ watchers }}</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Assigned to</label>
+						<div class="col-sm-8">
+							<p class="form-control-static"{% if bug.assigned_to == user %} style="background-color:lightgreen"{% endif %}>{{ bug.assigned_to.get_full_name }}</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Bug</label>
+						<div class="col-sm-8">
+							<p class="form-control-static">{{ bug.text|linebreaks }}</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Estimation</label>
+						<div class="col-sm-8">
+							<p class="form-control-static">{{ bug.estimation }}{% if bug.estimation %}h{% endif %}</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Duration</label>
+						<div class="col-sm-8">
+							<p class="form-control-static">{{ bug.duration }}{% if bug.duration %}h{% endif %}</p>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-sm-8">
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#first_tab" data-toggle="tab">Flow</a></li>
+			{% if can_be_commented %}
+				<li role="presentation"><a href="#second_tab" data-toggle="tab">New entry</a></li>
+			{% endif %}
+		</ul>
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="first_tab">
+				<div role="panel" class="panel panel-default" id="first_panel">
+					{% for bugentity in bugentities %}
+						<div style="background-color: {% if bugentity.text %}#ffeedd{% else %}#ccffee{% endif %};"{% if bugentity.private or bugentity.private_for_my_group %} class="can_be_toggled"{% endif %}>
+							<table border="0" width="100%">
+								<tr bgcolor="lightgrey">
+									<td>{{ bugentity.user }}</td>
+									<td>{% if bugentity.private %}<div style="background-color: red; height: 10px; width: 20px;"></div>{% endif %}{% if bugentity.private_for_my_group %}<div style="background-color: green; height: 10px; width: 20px;"></div>{% endif %}</td>
+									<td align="right">{{ bugentity.created }}</td>
+								</tr>
+								<tr{% if not bugentity.active %} style="border: 1px solid red;"{% endif %}>
+									<td colspan="3">
+<!--										<div class="userround" style="background-color: {% if bugentity.new_assignment %}blue{% elif bugentity.new_status %}green{% else %}yellow{% endif %};">-->
+										<div class="userround" style="border: 0px double {% if bugentity.new_assignment %}blue{% elif bugentity.new_status %}green{% else %}yellow{% endif %};">
+											{% if bugentity.new_assignment or bugentity.new_status %}
+												<tt>
+											{% endif %}
+											{% if bugentity.text %}
+												{% if bugentity.safe %}
+													{{ bugentity.text|safe|linebreaks }}
+												{% else %}
+													{{ bugentity.text|linebreaks }}
+												{% endif %}
+											{% endif %}
+											{% if bugentity.new_assignment or bugentity.new_status %}
+												</tt>
+											{% endif %}
+										</div>
+										{% for document in bugentity.document_set.all %}
+											<A href="{% url 'download_document' document.id %}">{{ document.name }}</A>
+										{% endfor %}
+									</td>
+								</tr>
+							</table>
+						</div>
+						<BR>
+					{% endfor %}
+				</div>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="second_tab">
+				<form method='post' name='form_new_entry' id='form_new_entry' enctype='multipart/form-data'>
+					{% csrf_token %}
+					<textarea name="new_entry" id="new_entry" class="form-control"></textarea>
+					<input type="checkbox" name="waiting_for_reply" id="waiting_for_reply"> Waiting for reply
+					{% if can_use_private_flags %}
+						<input type="checkbox" name="private" id="private">Private
+						<input type="checkbox" name="private_for_my_group" id="private_for_my_group">Private for my group
+					{% endif %}
+					{% if user.username == 'sarancs1' %}
+						<input type="checkbox" name="safe" id="safe">Safe
+					{% endif %}
+					<BR>
+					<A href="" onClick="$('#div_upload_file').show(); return false;">Upload file</A>
+					<div name="div_upload_file" id="div_upload_file" style="background-color: #aaccff; border: 1px solid lightgreen; display: none;">
+						<input type="file" name="new_entry_file0">
+						<input type="file" name="new_entry_file1">
+						<input type="file" name="new_entry_file2">
+						<input type="file" name="new_entry_file3">
+						<input type="file" name="new_entry_file4">
+					</div>
+					<BR>
+					<input type="submit" name="submit_new_entry" id="submit_new_entry" value="Submit reply">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}
