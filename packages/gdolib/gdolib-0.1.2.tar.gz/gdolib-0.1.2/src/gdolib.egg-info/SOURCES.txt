@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/gdolib/GDOTools.py
+src/gdolib/__init__.py
+src/gdolib.egg-info/PKG-INFO
+src/gdolib.egg-info/SOURCES.txt
+src/gdolib.egg-info/dependency_links.txt
+src/gdolib.egg-info/top_level.txt
