@@ -1,0 +1,9 @@
+anndata
+numpy
+pandas
+scipy
+rich[jupyter]
+spatialtis_core
+milkviz
+legendkit
+thefuzz

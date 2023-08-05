@@ -1,0 +1,24 @@
+numpy
+pandas
+anndata
+matplotlib
+seaborn
+milkviz
+legendkit
+scikit-image
+scipy
+rich[jupyter]
+lightgbm
+ipython
+
+# test suite
+pytest
+pytest-cov
+
+# doc
+sphinx
+sphinx-book-theme
+sphinx-autodoc-typehints
+setuptools
+nbsphinx
+nbsphinx_link

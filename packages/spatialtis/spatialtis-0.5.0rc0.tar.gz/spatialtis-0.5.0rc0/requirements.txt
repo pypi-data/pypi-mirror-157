@@ -1,0 +1,28 @@
+anndata
+leidenalg
+matplotlib
+numpy
+pandas
+python-igraph
+ray
+scikit-image
+scikit-learn
+scipy
+seaborn
+rich[jupyter]
+lightgbm
+
+# dev
+python-hmr
+
+# test suite
+pytest
+pytest-cov
+
+# doc
+sphinx
+sphinx-book-theme
+sphinx-autodoc-typehints
+setuptools
+nbsphinx
+nbsphinx_link
