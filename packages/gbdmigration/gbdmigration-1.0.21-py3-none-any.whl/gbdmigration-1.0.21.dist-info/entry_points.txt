@@ -1,0 +1,19 @@
+[console_scripts]
+gbd-collection = gbdmigration.execs:export_collection
+gbd-download-package = gbdmigration.execs:download_packages
+gbd-export-clean-snapshot = gbdmigration.execs:clean_errors
+gbd-export-done = gbdmigration.execs:export_done
+gbd-export-entities = gbdmigration.execs:export_entities
+gbd-export-error-snapshot = gbdmigration.execs:export_snapshot_errors
+gbd-export-package = gbdmigration.execs:export_package
+gbd-export-pipelines = gbdmigration.execs:export_pipelines
+gbd-export-snapincr = gbdmigration.execs:export_snapincr
+gbd-export-snapshot = gbdmigration.execs:export_snapshot
+gbd-import-collection = gbdmigration.execs:import_collection
+gbd-import-done = gbdmigration.execs:import_done
+gbd-import-entities = gbdmigration.execs:import_entities
+gbd-import-package = gbdmigration.execs:import_package
+gbd-import-pipelines-secrets = gbdmigration.execs:import_pipelines_secrets
+gbd-migration-delete = gbdmigration.execs:delete_files
+gbd-upload-package = gbdmigration.execs:upload_package
+
