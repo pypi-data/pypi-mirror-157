@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: zocrypt
+Version: 1.2.0
+Summary: UNKNOWN
+Home-page: https://github.com/SidmoGoesBrrr/zocrypt
+Author: Siddhant Mohile
+Author-email: meetsiddhant@gmail.com
+License: MIT
+Description: 
+        Zocrypt
+        =======
+        
+        Intended mainly for use by **ZeroAndOne Developers** for protection of
+        data with 6 level encryption.
+        
+        Based on our project [secret message encoder
+        decoder](https://Secret-Message-Encoder-Decoder.itszeroandone.repl.co)
+        
+        Installing
+        ==========
+        
+        ``` {.bash}
+        pip install zocrypt
+        ```
+        
+        Usage
+        =====
+        
+        ``` {.bash}
+        >>> from zocrypt import encrypt,decrypt,key
+        >>> from encrypt import encrypt_text
+        >>> from decrypt import decrypt_text
+        >>> text="5 Mangoes are better than 6 Mangoes"
+        >>> key=key.generate()
+        >>> encrypt_text(text,key)
+        '`"V`O/i|;^a^.~k|4~k|;a|R#`k|l`V~#^#^V~Hk~V|l/a|k^"~V/O/i^;|a^.`k3'
+        >>> decrypt_text(text,key)
+        '5 Mangoes are better than 6 Mangoes'
+        ```
+        
+        
+Keywords: encrypt,decrypt,encoding,secret messages
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
