@@ -1,0 +1,3 @@
+[console_scripts]
+hmp-aviel=hmp_aviel.console:main
+
