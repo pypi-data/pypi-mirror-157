@@ -1,0 +1,8 @@
+pandas
+networkx
+requests
+python-igraph
+colorbrewer
+chardet
+decorator
+enum
