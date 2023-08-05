@@ -1,0 +1,9 @@
+-r base.pip
+
+flask
+regex
+graphviz>=0.17
+requests
+Pygments
+jinja2
+docutils

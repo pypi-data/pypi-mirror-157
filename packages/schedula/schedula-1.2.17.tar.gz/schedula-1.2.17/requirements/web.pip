@@ -1,0 +1,5 @@
+-r base.pip
+
+flask
+regex
+requests
