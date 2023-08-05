@@ -1,0 +1,11 @@
+name: napari-sim-SIMulator
+display_name: napari SIMulator
+contributions:
+  commands:
+    - id: napari-sim-SIMulator.make_simulator_widget
+      python_name: napari_sim_simulator._widget:SIMulator_widget
+      title: raw images SIMulator
+
+  widgets:
+    - command: napari-sim-SIMulator.make_simulator_widget
+      display_name: raw images SIMulator
