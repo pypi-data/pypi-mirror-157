@@ -1,0 +1,12 @@
+protobuf_to_pydantic/__init__.py,sha256=1xel_HX5vWdb-D6LMD2MUu-wehncaa1LSMayf7bNII4,120
+protobuf_to_pydantic/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protobuf_to_pydantic/contrib/proto_parser.py,sha256=7VdpUpq1yWojYUOUmQfZ4lffaT11mhSvDX0-of-0Rd8,14320
+protobuf_to_pydantic/gen_code.py,sha256=iIfCxyUW1T9AtOsc90U4Pc84kuMu0aGO49dVUuqazNk,5727
+protobuf_to_pydantic/gen_model.py,sha256=W_N-zIoFQhyLe3faCIaUJZxq0vFVoJxEE9nlIPGwp0A,10828
+protobuf_to_pydantic/get_desc.py,sha256=7qcXnzdgdqwymqJm-1P2NzHEzY8bDf8ezheAb6tZiqA,4522
+protobuf_to_pydantic/grpc_types.py,sha256=IHZvamzwAH08_VY-elC00mbqfeHBKrD5HGudHS2bT5o,367
+protobuf_to_pydantic/util.py,sha256=qMovz-2qVDlJO5FrNVyRqcewgei1YrU5ec2zcgCQAyk,796
+protobuf_to_pydantic-0.0.1.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+protobuf_to_pydantic-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+protobuf_to_pydantic-0.0.1.dist-info/METADATA,sha256=lBuZohN9HkNPjE4DA5N9E00-ChZ47xmVZn8I37M_nXA,11524
+protobuf_to_pydantic-0.0.1.dist-info/RECORD,,
