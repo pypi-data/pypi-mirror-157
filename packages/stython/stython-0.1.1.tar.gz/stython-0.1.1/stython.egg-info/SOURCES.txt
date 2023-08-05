@@ -1,0 +1,9 @@
+MANIFEST.in
+README.txt
+setup.cfg
+setup.py
+stython/__init__.py
+stython.egg-info/PKG-INFO
+stython.egg-info/SOURCES.txt
+stython.egg-info/dependency_links.txt
+stython.egg-info/top_level.txt
