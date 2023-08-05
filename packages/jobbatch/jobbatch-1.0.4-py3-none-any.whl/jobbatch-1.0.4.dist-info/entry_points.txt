@@ -1,0 +1,3 @@
+[console_scripts]
+jobbatch=jobbatch.main:main
+
