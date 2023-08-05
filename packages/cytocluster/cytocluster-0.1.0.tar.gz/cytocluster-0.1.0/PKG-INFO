@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cytocluster
+Version: 0.1.0
+Summary: A package for clustering high-dimensional cytometry data in Python.
+Author: burtonrj
+Author-email: burtonrj@cardiff.ac.uk
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: MiniSom (>=2.3.0,<3.0.0)
+Requires-Dist: PhenoGraph (>=1.5.7,<2.0.0)
+Requires-Dist: cytoplots (>=0.1.0,<0.2.0)
+Requires-Dist: cytotools (>=0.1.1,<0.2.0)
+Requires-Dist: ensembleclustering (>=1.0.1,<2.0.0)
+Requires-Dist: hdmedians (>=0.14.2,<0.15.0)
+Requires-Dist: hnswlib (>=0.6.2,<0.7.0)
+Requires-Dist: ipython (>=8.4.0,<9.0.0)
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: pandas (>=1.4.3,<2.0.0)
