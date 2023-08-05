@@ -1,0 +1,11 @@
+README.md
+setup.py
+config_py2/__init__.py
+config_py2/config_entrypoint.py
+config_py2/loader.py
+config_py2.egg-info/PKG-INFO
+config_py2.egg-info/SOURCES.txt
+config_py2.egg-info/dependency_links.txt
+config_py2.egg-info/entry_points.txt
+config_py2.egg-info/requires.txt
+config_py2.egg-info/top_level.txt
