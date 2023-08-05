@@ -1,0 +1,13 @@
+pip
+packaging
+numpy
+fastcore<1.5,>=1.3.27
+scipy
+matplotlib>=3.5.1
+scikit-learn
+pytorch
+torchvision
+tqdm
+captum
+
+[dev]
