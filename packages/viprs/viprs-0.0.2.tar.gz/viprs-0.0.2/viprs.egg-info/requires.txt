@@ -1,0 +1,13 @@
+numpy
+scipy
+pandas
+tqdm
+magenpy>=0.0.5
+statsmodels
+scikit-learn
+psutil
+
+[full]
+Cython
+scikit-optimize==0.8.1
+seaborn
