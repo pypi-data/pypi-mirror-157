@@ -1,0 +1,4 @@
+[console_scripts]
+celigo_pipeline_cli = celigo_pipeline_core.bin.celigo_pipeline_core_cli:main
+celigo_pipeline_directory = celigo_pipeline_core.bin.run_dir_cli:main
+
