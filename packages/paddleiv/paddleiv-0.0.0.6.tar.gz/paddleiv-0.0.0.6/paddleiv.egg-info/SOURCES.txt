@@ -1,0 +1,27 @@
+LICENSE
+MANIFEST.in
+README.md
+packaging_tutorial - 快捷方式 (2).lnk
+packaging_tutorial - 快捷方式.lnk
+setup.py
+.idea/.gitignore
+.idea/misc.xml
+.idea/modules.xml
+.idea/packaging_tutorial.iml
+.idea/workspace.xml
+.idea/inspectionProfiles/profiles_settings.xml
+dist/paddleiv-0.0.0.5-py3-none-any.whl
+dist/paddleiv-0.0.0.5.tar.gz
+paddleiv/__init__.py
+paddleiv/__version__.py
+paddleiv.egg-info/PKG-INFO
+paddleiv.egg-info/SOURCES.txt
+paddleiv.egg-info/dependency_links.txt
+paddleiv.egg-info/requires.txt
+paddleiv.egg-info/top_level.txt
+paddleiv/.idea/.gitignore
+paddleiv/.idea/imgvision.iml
+paddleiv/.idea/misc.xml
+paddleiv/.idea/modules.xml
+paddleiv/.idea/workspace.xml
+paddleiv/.idea/inspectionProfiles/profiles_settings.xml

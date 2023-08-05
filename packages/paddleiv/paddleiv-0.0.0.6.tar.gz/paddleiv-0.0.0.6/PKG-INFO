@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: paddleiv
+Version: 0.0.0.6
+Summary: 适用于 Paddle2.0+ 的图像处理库
+Home-page: https://github.com/Caoxuheng
+Author: Xuheng Cao
+Author-email: caoxuhengcn@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
+PaddleIv 基于Imgvision0.1.7+ 包括新的图像处理方案。如果卷积网络参数初始化、适用于图像的损失函数、图像退化卷积等
+
