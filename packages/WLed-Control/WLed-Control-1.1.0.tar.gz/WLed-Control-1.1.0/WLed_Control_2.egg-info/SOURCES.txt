@@ -1,0 +1,15 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+WLed-Control/__init__.py
+WLed_Control.egg-info/SOURCES.txt
+WLed_Control.egg-info/dependency_links.txt
+WLed_Control.egg-info/requires.txt
+WLed_Control.egg-info/top_level.txt
+WLed_Control_2.egg-info/PKG-INFO
+WLed_Control_2.egg-info/SOURCES.txt
+WLed_Control_2.egg-info/dependency_links.txt
+WLed_Control_2.egg-info/requires.txt
+WLed_Control_2.egg-info/top_level.txt
