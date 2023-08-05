@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "commandio"
+authors = [{name = "Adebayo Braimah", email = "adebayo.braimah@gmail.com"}]
+description = "Python package that logs and executes commands for the command line."
+dynamic = ["version", "readme"]
+keywords = ["Command line", "shell", "UNIX", "Windows"]
+license = {text = "GNU General Public License"}
+
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: System :: Software Distribution",
+    "Topic :: Utilities",
+]
+
+# dependencies = [
+#     "requests",
+#     'importlib-metadata; python_version<"3.8"',
+# ]
+
+[tool.setuptools.dynamic]
+version = {attr = "commandio.VERSION"}
+readme = {file = ["README.rst"]}
+
+[tool.setuptools]
+packages = ["commandio"]
+exclude = ["commandio.tests*"]  # exclude packages matching these glob patterns (empty by default)
+
+# [tool.setuptools.packages.find]
+# where = ["commandio"]  # list of folders that contain the packages (["."] by default)
+# include = ["commandio*"]  # package names should match these glob patterns (["*"] by default)
+# exclude = ["commandio.tests*"]  # exclude packages matching these glob patterns (empty by default)
+# namespaces = false  # to disable scanning PEP 420 namespaces (true by default)

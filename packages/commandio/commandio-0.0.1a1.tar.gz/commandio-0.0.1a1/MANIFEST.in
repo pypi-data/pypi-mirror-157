@@ -1,0 +1,4 @@
+# Misc
+include LICENSE
+include CHANGES.rst
+include commandio/misc/version.txt
