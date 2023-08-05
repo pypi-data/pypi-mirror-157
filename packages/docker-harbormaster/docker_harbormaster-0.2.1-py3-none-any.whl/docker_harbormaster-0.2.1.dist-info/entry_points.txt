@@ -1,0 +1,3 @@
+[console_scripts]
+harbormaster=docker_harbormaster.cli:cli
+
