@@ -1,0 +1,2 @@
+[napari.manifest]
+brainreg-napari = brainreg_napari:napari.yaml
