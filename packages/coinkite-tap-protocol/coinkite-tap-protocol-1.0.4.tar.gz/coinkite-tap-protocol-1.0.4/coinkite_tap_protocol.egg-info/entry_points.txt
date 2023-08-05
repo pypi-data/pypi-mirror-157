@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        cktap=cktap.cli:main
+    
