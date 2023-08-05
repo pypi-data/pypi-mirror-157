@@ -1,0 +1,2 @@
+[console_scripts]
+ctc_score = ctc_score_cli.score:main
