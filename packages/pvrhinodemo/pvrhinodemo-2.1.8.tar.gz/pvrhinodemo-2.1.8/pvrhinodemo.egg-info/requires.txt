@@ -1,0 +1,2 @@
+pvrhino==2.1.7
+pvrecorder==1.1.0
