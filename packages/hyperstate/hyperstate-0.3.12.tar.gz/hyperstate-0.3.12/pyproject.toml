@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "hyperstate"
+version = "0.3.12"
+description = "Library for managing hyperparameters and mutable state of machine learning training systems."
+authors = ["Clemens Winter <clemenswinter1@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: Apache Software License",
+    "License :: OSI Approved :: MIT License",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+python-ron = "^0.2.1"
+click = "^8.1"
+msgpack = "^1.0.3"
+msgpack-numpy = "^0.4.7"
+dill = "^0.3.4"
+docstring-parser = "^0.13"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3"
+mypy = "^0.910"
+pytest = "^6.2.5"
+Sphinx = "^4.5.0"
+sphinx-rtd-theme = "^1.0.0"
+sphinx-autodoc-typehints = "^1.18.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
