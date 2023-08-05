@@ -1,0 +1,11 @@
+funny_passphrase/__init__.py,sha256=Hey7hGu5qFmkkx73KfuVBdVHLD2F0HN5w5d8L0GPwPo,1176
+funny_passphrase/__main__.py,sha256=o5PO_xah8J_5lRuVJ0C5HP3vJpofOObQlft7ReGz9NQ,2567
+funny_passphrase/generator.py,sha256=RM_IMH5NXUpjCYtRoWt7DdbIepVfL6curx1OcOte6eM,3362
+funny_passphrase/indexer/__init__.py,sha256=aTuIRxtWDh470diqJbTykJ9WIWh9QMkH4Vt843fIqSI,5356
+funny_passphrase/indexer/__main__.py,sha256=S1exryPjhcsEdhT-MAMUosrPV0kobL0T2481lAR4Og0,1873
+funny_passphrase-0.2.0.dist-info/LICENSE,sha256=3GJlINzVOiL3J68-5Cx3DlbJemT-OtsGN5nYqwMv5VE,26530
+funny_passphrase-0.2.0.dist-info/METADATA,sha256=nadr_A8c2oBg09RihLi_dk0Bpj90wElCRmWUNHCFBf4,3112
+funny_passphrase-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+funny_passphrase-0.2.0.dist-info/entry_points.txt,sha256=_CCX6c8Zcd3l-TgHBkDcCbxgbedraytfodke7pXxaSE,120
+funny_passphrase-0.2.0.dist-info/top_level.txt,sha256=iJ5eTCuMtC774BDoGE3p5mbMneV_RR9r13Uf00E6m2E,17
+funny_passphrase-0.2.0.dist-info/RECORD,,
