@@ -1,0 +1,3 @@
+[console_scripts]
+pibackbone = pibackbone.__main__:main
+
