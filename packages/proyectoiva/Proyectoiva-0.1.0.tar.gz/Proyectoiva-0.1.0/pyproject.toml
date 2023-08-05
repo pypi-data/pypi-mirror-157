@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "Proyectoiva"
+version = "0.1.0"
+description = "Proyecto se trata de Arquitectura interior"
+authors = ["Imanazco <ivanna_ao97@outlook.es>"]
+keywords = ["Diseño Interior"]
+readme = "README.md"
+license = "MIT"
+homepage = "<https://github.com/JuanPerez/package_name>"
+repository = "<https://github.com/JuanPerez/package_name>"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+saludo = 'Proyectoiva.main:main'
