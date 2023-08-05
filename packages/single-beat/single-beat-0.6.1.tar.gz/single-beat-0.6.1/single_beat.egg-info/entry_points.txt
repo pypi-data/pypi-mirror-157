@@ -1,0 +1,3 @@
+[console_scripts]
+single-beat = singlebeat.beat:main
+single-beat-cli = singlebeat.cli:main
