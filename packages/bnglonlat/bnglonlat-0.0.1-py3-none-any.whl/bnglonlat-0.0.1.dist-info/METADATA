@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: bnglonlat
+Version: 0.0.1
+Summary: Pure python port of convertbng.util.convert_lonlat.
+Home-page: https://github.com/MichaelClerx/bnglonlat
+Author: Michael Clerx
+Author-email: work@michaelclerx.com
+License: MIT license
+Project-URL: Bug Tracker, https://github.com/MichaelClerx/bnglonlat/issues
+Project-URL: Source Code, https://github.com/MichaelClerx/bnglonlat
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: flake8 (>=3) ; extra == 'dev'
+Requires-Dist: convertbng (>=0.6.32) ; extra == 'dev'
+
+[![Ubuntu unit tests](https://github.com/MichaelClerx/bnglonglat/workflows/Ubuntu%20unit%20tests/badge.svg)](https://github.com/MichaelClerx/bnglonglat/actions?query=workflow%3A"Ubuntu+unit+tests")
+[![Style](https://github.com/MichaelClerx/bnglonglat/workflows/Style/badge.svg)](https://github.com/MichaelClerx/bnglonglat/actions?query=workflow%3A"Style")
+
+# British National Grid to Longitude/Lattitude
+
+Pure python implementation of `convert_lonlat` from [lonlat_bng](https://github.com/urschrei/lonlat_bng).
+
+Note: This uses the version without OSTN15 corrections, which can be several meters off.
+
+## License
+
+This code is available under an MIT license, See [license.txt](./license.txt).
+
+It is based on [lonlat_bng](https://github.com/urschrei/lonlat_bng), which is Copyright (c) 2015 Stephan Hügel, and also published with an MIT license.
+
+

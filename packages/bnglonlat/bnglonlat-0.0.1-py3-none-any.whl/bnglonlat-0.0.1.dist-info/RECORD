@@ -1,0 +1,8 @@
+bnglonlat/__init__.py,sha256=8pFSd225QS7DDakxX7iF0W5qHPKxoFwhfraFLQ28nO4,100
+bnglonlat/_bnglonlat.py,sha256=U3cB1NQte9YmKD7TSHp1wPmjDh3KU-HsdCvtJCbKWsU,6417
+bnglonlat/tests/__init__.py,sha256=L1JL88SRoOIfSWkakbHRPjfM3deOzJrE_txbixmKjhM,41
+bnglonlat/tests/test_bnglonlat.py,sha256=NSv2LV70AhcOHvP-vfuZVu18mr7ktjpSEtqU30X7kwU,1097
+bnglonlat-0.0.1.dist-info/METADATA,sha256=235H_nWykHHh1cxGTkU6aOq3lnTAjiFN7UFroPDrCSk,1721
+bnglonlat-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bnglonlat-0.0.1.dist-info/top_level.txt,sha256=74PGoLSGX44X2Fe5LiglcASJ-oaOxa6e79m1NZdljko,10
+bnglonlat-0.0.1.dist-info/RECORD,,
