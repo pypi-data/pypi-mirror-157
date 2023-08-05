@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/test.py
+src/okta_py_ma/__init__.py
+src/okta_py_ma.egg-info/PKG-INFO
+src/okta_py_ma.egg-info/SOURCES.txt
+src/okta_py_ma.egg-info/dependency_links.txt
+src/okta_py_ma.egg-info/top_level.txt
