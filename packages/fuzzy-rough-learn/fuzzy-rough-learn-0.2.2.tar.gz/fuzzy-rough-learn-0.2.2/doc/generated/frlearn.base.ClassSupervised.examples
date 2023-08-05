@@ -1,0 +1,80 @@
+
+
+Examples using ``frlearn.base.ClassSupervised``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The figures contain the training instances within a section of the selected feature space. The ...">
+
+.. only:: html
+
+ .. figure:: /examples/classifiers/images/thumb/sphx_glr_frovoco_thumb.png
+     :alt: Imbalanced multiclass classification with FROVOCO
+
+     :ref:`sphx_glr_examples_classifiers_frovoco.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_examples_classifiers_frovoco.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The figures contain the training instances within a section of the selected feature space. The ...">
+
+.. only:: html
+
+ .. figure:: /examples/classifiers/images/thumb/sphx_glr_frnn_thumb.png
+     :alt: Multiclass classification with FRNN
+
+     :ref:`sphx_glr_examples_classifiers_frnn.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_examples_classifiers_frnn.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Sample usage of FRFS feature selection, demonstrated in combination with (strict) FRNN classifi...">
+
+.. only:: html
+
+ .. figure:: /examples/preprocessors/images/thumb/sphx_glr_frfs_thumb.png
+     :alt: Feature selection with FRFS
+
+     :ref:`sphx_glr_examples_preprocessors_frfs.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_examples_preprocessors_frfs.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Sample usage of FRPS preprocessing, demonstrated in combination with (strict) FRNN classificati...">
+
+.. only:: html
+
+ .. figure:: /examples/preprocessors/images/thumb/sphx_glr_frps_thumb.png
+     :alt: Instance selection with FRPS
+
+     :ref:`sphx_glr_examples_preprocessors_frps.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_examples_preprocessors_frps.py`

@@ -1,0 +1,23 @@
+
+
+Examples using ``frlearn.neighbours.FRONEC``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The figures contain training instances within a section of the feature space. The training inst...">
+
+.. only:: html
+
+ .. figure:: /examples/classifiers/images/thumb/sphx_glr_fronec_thumb.png
+     :alt: Multilabel classification with FRONEC
+
+     :ref:`sphx_glr_examples_classifiers_fronec.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_examples_classifiers_fronec.py`

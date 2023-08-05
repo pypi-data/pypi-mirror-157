@@ -1,0 +1,23 @@
+
+
+Examples using ``frlearn.base.FeaturePreprocessor``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Sample usage of FRFS feature selection, demonstrated in combination with (strict) FRNN classifi...">
+
+.. only:: html
+
+ .. figure:: /examples/preprocessors/images/thumb/sphx_glr_frfs_thumb.png
+     :alt: Feature selection with FRFS
+
+     :ref:`sphx_glr_examples_preprocessors_frfs.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_examples_preprocessors_frfs.py`

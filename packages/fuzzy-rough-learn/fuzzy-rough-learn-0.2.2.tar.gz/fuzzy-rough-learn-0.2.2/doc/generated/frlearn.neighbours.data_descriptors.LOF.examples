@@ -1,0 +1,23 @@
+
+
+Examples using ``frlearn.neighbours.data_descriptors.LOF``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Data descriptors generalise knowledge about a target class of data to the whole attribute space...">
+
+.. only:: html
+
+ .. figure:: /examples/data_descriptors/images/thumb/sphx_glr_one_class_classification_thumb.png
+     :alt: One class classification
+
+     :ref:`sphx_glr_examples_data_descriptors_one_class_classification.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_examples_data_descriptors_one_class_classification.py`

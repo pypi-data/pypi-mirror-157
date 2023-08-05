@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>NND &mdash; fuzzy-rough-learn 0.2.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/fuzzy-rough-learn.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/fuzzy-rough-learn.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/gallery-binder.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/gallery-dataframe.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/gallery-rendered-html.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SVM" href="frlearn.data_descriptors.SVM.html" />
+    <link rel="prev" title="MD" href="frlearn.data_descriptors.MD.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> fuzzy-rough-learn
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.2.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">fuzzy-rough-learn API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api.html#classifiers">Classifiers</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api.html#data-descriptors">Data descriptors</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="frlearn.data_descriptors.ALP.html">ALP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frlearn.data_descriptors.CD.html">CD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frlearn.data_descriptors.EIF.html">EIF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frlearn.data_descriptors.IF.html">IF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frlearn.data_descriptors.LNND.html">LNND</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frlearn.data_descriptors.LOF.html">LOF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frlearn.data_descriptors.MD.html">MD</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">NND</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#examples-using-frlearn-data-descriptors-nnd">Examples using <code class="docutils literal notranslate"><span class="pre">frlearn.data_descriptors.NND</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="frlearn.data_descriptors.SVM.html">SVM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#regressors">Regressors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#feature-preprocessors">Feature preprocessors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#instance-preprocessors">Instance preprocessors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#id10">Other</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Classifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html#data-descriptors">Data descriptors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html#preprocessors">Preprocessors</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Release history</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">fuzzy-rough-learn</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../api.html">fuzzy-rough-learn API</a> &raquo;</li>
+        
+      <li>NND</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/generated/frlearn.data_descriptors.NND.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="nnd">
+<h1>NND<a class="headerlink" href="#nnd" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="frlearn.data_descriptors.NND">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">frlearn.data_descriptors.</span></span><span class="sig-name descname"><span class="pre">NND</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">dissimilarity:</span> <span class="pre">str</span> <span class="pre">or</span> <span class="pre">float</span> <span class="pre">or</span> <span class="pre">Callable[[np.array],</span> <span class="pre">float]</span> <span class="pre">or</span> <span class="pre">Callable[[np.array,</span> <span class="pre">np.array],</span> <span class="pre">float]</span> <span class="pre">=</span> <span class="pre">'boscovich',</span> <span class="pre">k:</span> <span class="pre">int</span> <span class="pre">or</span> <span class="pre">Callable[[int],</span> <span class="pre">float]</span> <span class="pre">or</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">1,</span> <span class="pre">weights:</span> <span class="pre">Callable[[int],</span> <span class="pre">np.array]</span> <span class="pre">|</span> <span class="pre">None</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">proximity:</span> <span class="pre">Callable[[float],</span> <span class="pre">float]</span> <span class="pre">=</span> <span class="pre">&lt;function</span> <span class="pre">shifted_reciprocal&gt;,</span> <span class="pre">nn_search:</span> <span class="pre">NeighbourSearchMethod</span> <span class="pre">=</span> <span class="pre">&lt;frlearn.neighbours.neighbour_search_methods.KDTree</span> <span class="pre">object&gt;,</span> <span class="pre">preprocessors=(&lt;frlearn.statistics.feature_preprocessors.IQRNormaliser</span> <span class="pre">object&gt;,)</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/frlearn/neighbours/data_descriptors.html#NND"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#frlearn.data_descriptors.NND" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implementation of the Nearest Neighbour Distance (NND) data descriptor, which goes back to at least <a class="reference internal" href="#r2f1514802a03-1" id="id1">[1]</a>.
+It has also been used to calculate upper and lower approximations of fuzzy rough sets,
+where the addition of aggregation with OWA operators is due to <a class="reference internal" href="#r2f1514802a03-2" id="id2">[2]</a>.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>dissimilarity: str or float or (np.array -&gt; float) or ((np.array, np.array) -&gt; float) = ‘boscovich’</strong></dt><dd><p>The dissimilarity measure to use.</p>
+<p>A vector size measure <cite>np.array -&gt; float</cite> induces a dissimilarity measure through application to <cite>y - x</cite>.
+A float is interpreted as Minkowski size with the corresponding value for <cite>p</cite>.
+For convenience, a number of popular measures can be referred to by name.</p>
+<p>The default is the Boscovich norm (also known as cityblock, Manhattan or taxicab norm).</p>
+</dd>
+<dt><strong>k</strong><span class="classifier">int or (int -&gt; float) or None = 1</span></dt><dd><p>Which nearest neighbour(s) to consider.
+Should be either a positive integer,
+or a function that takes the target class size <cite>n</cite> and returns a float,
+or None, which is resolved as <cite>n</cite>.
+All such values are rounded to the nearest integer in <cite>[1, n]</cite>.
+If <cite>weights = None</cite>, only the kth neighbour is used,
+otherwise closer neighbours are also taken into account.</p>
+</dd>
+<dt><strong>proximity</strong><span class="classifier">float -&gt; float = np_utils.shifted_reciprocal</span></dt><dd><p>The function used to convert distance values to proximity values.
+It should be be an order-reversing map from <cite>[0, ∞)</cite> to <cite>[0, 1]</cite>.</p>
+</dd>
+<dt><strong>weights</strong><span class="classifier">(int -&gt; np.array) or None = None</span></dt><dd><p>How to aggregate the proximity values from the <cite>k</cite> nearest neighbours.
+The default is to only consider the kth nearest neighbour distance.</p>
+</dd>
+<dt><strong>preprocessors</strong><span class="classifier">iterable = (IQRNormaliser(), )</span></dt><dd><p>Preprocessors to apply. The default interquartile range normaliser rescales all features
+to ensure that they all have the same interquartile range.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p><cite>k</cite> is the principal hyperparameter that can be tuned to increase performance.
+Its default value is based on the empirical evaluation in <a class="reference internal" href="#r2f1514802a03-3" id="id3">[3]</a>.</p>
+<p class="rubric">References</p>
+<dl class="citation">
+<dt class="label" id="r2f1514802a03-1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><a class="reference external" href="https://www.aaai.org/Library/KDD/1997/kdd97-044.php">Knorr EM, Ng RT (1997).
+A Unified Notion of Outliers: Properties and Computation.
+KDD-97: Proceedings of the Third International Conference on Knowledge Discovery and Data Mining, pp 219–222.
+AAAI.
+doi: 10.5555/3001392.3001438</a></p>
+</dd>
+<dt class="label" id="r2f1514802a03-2"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p><a class="reference external" href="https://link.springer.com/chapter/10.1007/978-3-642-16248-0_16">Cornelis C, Verbiest N, Jensen R (2010).
+Ordered weighted average based fuzzy rough sets.
+RSKT 2010: Proceedings of the 5th International Conference on Rough Set and Knowledge Technology, pp 78–85.
+Springer, Lecture Notes in Artificial Intelligence 6401.
+doi: 10.1007/978-3-642-16248-0_16</a></p>
+</dd>
+<dt class="label" id="r2f1514802a03-3"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dd><p><a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S0031320321001783">Lenz OU, Peralta D, Cornelis C (2021).
+Average Localised Proximity: A new data descriptor with good default one-class classification performance.
+Pattern Recognition, vol 118, no 107991.
+doi: 10.1016/j.patcog.2021.107991</a></p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="frlearn.data_descriptors.NND.Model">
+<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Model</span></span><a class="reference internal" href="../_modules/frlearn/neighbours/data_descriptors.html#NND.Model"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#frlearn.data_descriptors.NND.Model" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py property">
+<dt class="sig sig-object py" id="frlearn.data_descriptors.NND.Model.query">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">query</span></span><a class="headerlink" href="#frlearn.data_descriptors.NND.Model.query" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<section id="examples-using-frlearn-data-descriptors-nnd">
+<h2>Examples using <code class="docutils literal notranslate"><span class="pre">frlearn.data_descriptors.NND</span></code><a class="headerlink" href="#examples-using-frlearn-data-descriptors-nnd" title="Permalink to this headline">¶</a></h2>
+<div class="sphx-glr-thumbcontainer" tooltip="Data descriptors generalise knowledge about a target class of data to the whole attribute space..."><figure class="align-default" id="id7">
+<img alt="One class classification" src="../_images/sphx_glr_one_class_classification_thumb.png" />
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../examples/data_descriptors/one_class_classification.html#sphx-glr-examples-data-descriptors-one-class-classification-py"><span class="std std-ref">One class classification</span></a></span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div style='clear:both'></div></section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="frlearn.data_descriptors.SVM.html" class="btn btn-neutral float-right" title="SVM" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="frlearn.data_descriptors.MD.html" class="btn btn-neutral float-left" title="MD" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019–2021, Oliver Urs Lenz.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

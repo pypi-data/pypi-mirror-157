@@ -1,0 +1,399 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>frlearn.trees.data_descriptors &mdash; fuzzy-rough-learn 0.2.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/fuzzy-rough-learn.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/fuzzy-rough-learn.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery-binder.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery-dataframe.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery-rendered-html.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/js/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> fuzzy-rough-learn
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.2.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../api.html">fuzzy-rough-learn API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Classifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html#data-descriptors">Data descriptors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html#preprocessors">Preprocessors</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">Release history</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">fuzzy-rough-learn</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>frlearn.trees.data_descriptors</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for frlearn.trees.data_descriptors</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Decision tree data descriptors&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Callable</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">IsolationForest</span>
+
+<span class="kn">from</span> <span class="nn">frlearn.base</span> <span class="kn">import</span> <span class="n">DataDescriptor</span>
+
+
+<div class="viewcode-block" id="EIF"><a class="viewcode-back" href="../../../generated/frlearn.data_descriptors.EIF.html#frlearn.data_descriptors.EIF">[docs]</a><span class="k">class</span> <span class="nc">EIF</span><span class="p">(</span><span class="n">DataDescriptor</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Wrapper for the Extended Isolation Forest (IF) data descriptor [1]_.</span>
+<span class="sd">    Requires the eif library, which is not automatically installed.</span>
+<span class="sd">    Expresses the effort required to isolate a query instance from the target data</span>
+<span class="sd">    by separating instances with random hyperplanes.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    psi : int or (int -&gt; int) = 256</span>
+<span class="sd">        Sub-sampling size. Number of training instances to use for each random tree.</span>
+<span class="sd">        Should be either a positive integer,</span>
+<span class="sd">        or a function that takes the size of the target class and returns such an integer.</span>
+<span class="sd">        If the size of the target class is a smaller number, that will be used instead.</span>
+
+<span class="sd">    t : int = 100</span>
+<span class="sd">        Number of random trees.</span>
+
+<span class="sd">    random_state : int = 0</span>
+<span class="sd">        Random state to use.</span>
+
+<span class="sd">    eif_params</span>
+<span class="sd">        additional keyword parameters will be passed on as-is to eif&#39;s iForest constructor.</span>
+
+<span class="sd">    preprocessors : iterable = ()</span>
+<span class="sd">        Preprocessors to apply.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    Scores are the complement of the anomaly scores in [1]_.</span>
+<span class="sd">    `psi` and `t` are two hyperparameters that can potentially be tuned,</span>
+<span class="sd">    but the default values should be good enough [2]_.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    .. [1] `Hariri S, Carrasco Kind M, Brunner RJ (2021).</span>
+<span class="sd">       Extended Isolation Forest.</span>
+<span class="sd">       IEEE Transactions on Knowledge and Data Engineering, vol 33, no 4, pp 1479–1489.</span>
+<span class="sd">       doi: 10.1109/TKDE.2019.2947676</span>
+<span class="sd">       &lt;https://ieeexplore.ieee.org/document/8888179&gt;`_</span>
+<span class="sd">    .. [2] `Liu FT, Ting KM, Zhou Z-H (2008).</span>
+<span class="sd">       Isolation Forest.</span>
+<span class="sd">       ICDM 2008: Proceedings of the Eighth IEEE International Conference on Data Mining, pp 413–422.</span>
+<span class="sd">       IEEE.</span>
+<span class="sd">       doi: 10.1109/ICDM.2008.17</span>
+<span class="sd">       &lt;https://ieeexplore.ieee.org/document/4781136&gt;`_</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">psi</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">],</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="mi">256</span><span class="p">,</span>
+            <span class="n">t</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span>
+            <span class="n">random_state</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="n">preprocessors</span><span class="o">=</span><span class="p">(),</span>
+            <span class="o">**</span><span class="n">eif_params</span>
+    <span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">preprocessors</span><span class="o">=</span><span class="n">preprocessors</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="kn">import</span> <span class="nn">eif</span>
+        <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span><span class="s1">&#39;EIF data descriptor requires the eif library.&#39;</span><span class="p">)</span> <span class="kn">from</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">psi</span> <span class="o">=</span> <span class="n">psi</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">t</span> <span class="o">=</span> <span class="n">t</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">random_state</span> <span class="o">=</span> <span class="n">random_state</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">eif_params</span> <span class="o">=</span> <span class="n">eif_params</span>
+
+    <span class="k">def</span> <span class="nf">_construct</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="kn">import</span> <span class="nn">eif</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">_construct</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">psi</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">psi</span><span class="p">,</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">t</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">t</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">random_state</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">random_state</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">forest</span> <span class="o">=</span> <span class="n">eif</span><span class="o">.</span><span class="n">iForest</span><span class="p">(</span>
+            <span class="n">X</span><span class="p">,</span>
+            <span class="n">ntrees</span><span class="o">=</span><span class="n">model</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">sample_size</span><span class="o">=</span><span class="n">model</span><span class="o">.</span><span class="n">psi</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="n">model</span><span class="o">.</span><span class="n">random_state</span><span class="p">,</span>
+            <span class="n">ExtensionLevel</span><span class="o">=</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">eif_params</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">model</span>
+
+<div class="viewcode-block" id="EIF.Model"><a class="viewcode-back" href="../../../generated/frlearn.data_descriptors.EIF.html#frlearn.data_descriptors.EIF.Model">[docs]</a>    <span class="k">class</span> <span class="nc">Model</span><span class="p">(</span><span class="n">DataDescriptor</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+
+        <span class="n">psi</span><span class="p">:</span> <span class="nb">int</span>
+        <span class="n">t</span><span class="p">:</span> <span class="nb">int</span>
+        <span class="n">random_state</span><span class="p">:</span> <span class="nb">int</span>
+        <span class="n">forest</span><span class="p">:</span> <span class="o">...</span>
+
+        <span class="k">def</span> <span class="nf">_query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+            <span class="c1"># convert anomaly scores to normality scores</span>
+            <span class="k">return</span> <span class="mi">1</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">forest</span><span class="o">.</span><span class="n">compute_paths</span><span class="p">(</span><span class="n">X_in</span><span class="o">=</span><span class="n">X</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="IF"><a class="viewcode-back" href="../../../generated/frlearn.data_descriptors.IF.html#frlearn.data_descriptors.IF">[docs]</a><span class="k">class</span> <span class="nc">IF</span><span class="p">(</span><span class="n">DataDescriptor</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Wrapper for the Isolation Forest (IF) data descriptor [1]_ implemented in scikit-learn.</span>
+<span class="sd">    Expresses the effort required to isolate a query instance from the target data</span>
+<span class="sd">    by random splits on attribute values.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    psi : int or (int -&gt; int) = 256</span>
+<span class="sd">        Sub-sampling size. Number of training instances to use for each random tree.</span>
+<span class="sd">        Should be either a positive integer,</span>
+<span class="sd">        or a function that takes the size of the target class and returns such an integer.</span>
+<span class="sd">        If the size of the target class is a smaller number, that will be used instead.</span>
+
+<span class="sd">    t : int = 100</span>
+<span class="sd">        Number of random trees.</span>
+
+<span class="sd">    random_state : int = 0</span>
+<span class="sd">        Random state to use.</span>
+
+<span class="sd">    preprocessors : iterable = ()</span>
+<span class="sd">        Preprocessors to apply.</span>
+
+<span class="sd">    sklearn_params</span>
+<span class="sd">        Additional keyword parameters will be passed on as-is to scikit-learn&#39;s IsolationForest constructor.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    Scores are the complement of the anomaly scores in [1]_.</span>
+<span class="sd">    `psi` and `t` are two hyperparameters that can potentially be tuned,</span>
+<span class="sd">    but the default values should be good enough [1]_.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    .. [1] `Liu FT, Ting KM, Zhou Z-H (2008).</span>
+<span class="sd">       Isolation Forest.</span>
+<span class="sd">       ICDM 2008: Proceedings of the Eighth IEEE International Conference on Data Mining, pp 413–422.</span>
+<span class="sd">       IEEE.</span>
+<span class="sd">       doi: 10.1109/ICDM.2008.17</span>
+<span class="sd">       &lt;https://ieeexplore.ieee.org/document/4781136&gt;`_</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">psi</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">],</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="mi">256</span><span class="p">,</span>
+            <span class="n">t</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span>
+            <span class="n">random_state</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="n">preprocessors</span><span class="o">=</span><span class="p">(),</span>
+            <span class="o">**</span><span class="n">sklearn_params</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">preprocessors</span><span class="o">=</span><span class="n">preprocessors</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">psi</span> <span class="o">=</span> <span class="n">psi</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">t</span> <span class="o">=</span> <span class="n">t</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">random_state</span> <span class="o">=</span> <span class="n">random_state</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sklearn_params</span> <span class="o">=</span> <span class="n">sklearn_params</span>
+
+    <span class="k">def</span> <span class="nf">_construct</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">_construct</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">psi</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">psi</span><span class="p">,</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">t</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">t</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">random_state</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">random_state</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">forest</span> <span class="o">=</span> <span class="n">IsolationForest</span><span class="p">(</span>
+            <span class="n">max_samples</span><span class="o">=</span><span class="n">model</span><span class="o">.</span><span class="n">psi</span><span class="p">,</span> <span class="n">n_estimators</span><span class="o">=</span><span class="n">model</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">random_state</span><span class="p">,</span>
+            <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">sklearn_params</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">model</span>
+
+<div class="viewcode-block" id="IF.Model"><a class="viewcode-back" href="../../../generated/frlearn.data_descriptors.IF.html#frlearn.data_descriptors.IF.Model">[docs]</a>    <span class="k">class</span> <span class="nc">Model</span><span class="p">(</span><span class="n">DataDescriptor</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+
+        <span class="n">psi</span><span class="p">:</span> <span class="nb">int</span>
+        <span class="n">t</span><span class="p">:</span> <span class="nb">int</span>
+        <span class="n">random_state</span><span class="p">:</span> <span class="nb">int</span>
+        <span class="n">forest</span><span class="p">:</span> <span class="n">IsolationForest</span>
+
+        <span class="k">def</span> <span class="nf">_query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+            <span class="c1"># map from [-1, 0] to [0, 1]</span>
+            <span class="k">return</span> <span class="mi">1</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">forest</span><span class="o">.</span><span class="n">score_samples</span><span class="p">(</span><span class="n">X</span><span class="p">)</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019–2021, Oliver Urs Lenz.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

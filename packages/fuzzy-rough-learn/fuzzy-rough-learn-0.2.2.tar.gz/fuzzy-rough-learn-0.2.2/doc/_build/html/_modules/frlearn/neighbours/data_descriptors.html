@@ -1,0 +1,699 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>frlearn.neighbours.data_descriptors &mdash; fuzzy-rough-learn 0.2.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/fuzzy-rough-learn.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/fuzzy-rough-learn.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery-binder.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery-dataframe.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery-rendered-html.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/js/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> fuzzy-rough-learn
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.2.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../api.html">fuzzy-rough-learn API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Classifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html#data-descriptors">Data descriptors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html#preprocessors">Preprocessors</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">Release history</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">fuzzy-rough-learn</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>frlearn.neighbours.data_descriptors</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for frlearn.neighbours.data_descriptors</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Nearest neighbour data descriptors&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
+
+<span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">abstractmethod</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Callable</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">frlearn.array_functions</span> <span class="kn">import</span> <span class="n">div_or</span><span class="p">,</span> <span class="n">soft_head</span><span class="p">,</span> <span class="n">soft_max</span>
+<span class="kn">from</span> <span class="nn">frlearn.base</span> <span class="kn">import</span> <span class="n">DataDescriptor</span>
+<span class="kn">from</span> <span class="nn">frlearn.feature_preprocessors</span> <span class="kn">import</span> <span class="n">IQRNormaliser</span>
+<span class="kn">from</span> <span class="nn">frlearn.neighbour_search_methods</span> <span class="kn">import</span> <span class="n">NeighbourSearchMethod</span><span class="p">,</span> <span class="n">KDTree</span>
+<span class="kn">from</span> <span class="nn">frlearn.neighbours.utilities</span> <span class="kn">import</span> <span class="n">resolve_k</span>
+<span class="kn">from</span> <span class="nn">frlearn.parametrisations</span> <span class="kn">import</span> <span class="n">log_multiple</span>
+<span class="kn">from</span> <span class="nn">frlearn.transformations</span> <span class="kn">import</span> <span class="n">shifted_reciprocal</span>
+<span class="kn">from</span> <span class="nn">frlearn.weights</span> <span class="kn">import</span> <span class="n">LinearWeights</span>
+<span class="kn">from</span> <span class="nn">frlearn.uncategorised.utilities</span> <span class="kn">import</span> <span class="n">resolve_dissimilarity</span>
+
+
+<span class="c1"># TODO: consider implementing NNDescriptor as addition of NeighbourSearchMethod to preprocessors,</span>
+<span class="c1"># but have to handle k somehow (especially for ALP which also has l)</span>
+
+<span class="k">class</span> <span class="nc">NNDataDescriptor</span><span class="p">(</span><span class="n">DataDescriptor</span><span class="p">):</span>
+
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">dissimilarity</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+            <span class="n">k</span><span class="p">:</span> <span class="nb">int</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">],</span> <span class="nb">int</span><span class="p">]</span> <span class="ow">or</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="n">nn_search</span><span class="p">:</span> <span class="n">NeighbourSearchMethod</span><span class="p">,</span>
+            <span class="n">localised</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">preprocessors</span><span class="o">=</span><span class="p">()</span>
+    <span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">preprocessors</span><span class="o">=</span><span class="n">preprocessors</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dissimilarity</span> <span class="o">=</span> <span class="n">resolve_dissimilarity</span><span class="p">(</span><span class="n">dissimilarity</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nn_search</span> <span class="o">=</span> <span class="n">nn_search</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">k</span> <span class="o">=</span> <span class="n">k</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">localised</span> <span class="o">=</span> <span class="n">localised</span>
+
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span> <span class="nf">_construct</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Model</span><span class="p">:</span>
+        <span class="n">model</span><span class="p">:</span> <span class="n">NNDataDescriptor</span><span class="o">.</span><span class="n">Model</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">_construct</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">nn_model</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">nn_search</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dissimilarity</span><span class="p">)</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">nn_model</span> <span class="o">=</span> <span class="n">nn_model</span>
+        <span class="c1"># TODO: is this the right way to resolve k?</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">k</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">_resolve_k</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">,</span> <span class="n">localised</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">localised</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">model</span>
+
+    <span class="k">class</span> <span class="nc">Model</span><span class="p">(</span><span class="n">DataDescriptor</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+
+        <span class="n">nn_model</span><span class="p">:</span> <span class="n">NeighbourSearchMethod</span><span class="o">.</span><span class="n">Model</span>
+        <span class="n">k</span><span class="p">:</span> <span class="nb">int</span>
+
+        <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+            <span class="c1"># TODO: inherit from super</span>
+            <span class="k">for</span> <span class="n">preprocessing_model</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">preprocessing_models</span><span class="p">:</span>
+                <span class="n">X</span> <span class="o">=</span> <span class="n">preprocessing_model</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+            <span class="n">q_neighbours</span><span class="p">,</span> <span class="n">q_distances</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">nn_model</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">)</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_query</span><span class="p">(</span><span class="n">q_neighbours</span><span class="p">,</span> <span class="n">q_distances</span><span class="p">)</span>
+
+        <span class="nd">@abstractmethod</span>
+        <span class="k">def</span> <span class="nf">_query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">q_neighbours</span><span class="p">,</span> <span class="n">q_distances</span><span class="p">):</span>
+            <span class="k">pass</span>
+
+        <span class="k">def</span> <span class="nf">_resolve_k</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">:</span> <span class="nb">float</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="ow">or</span> <span class="kc">None</span><span class="p">,</span> <span class="n">localised</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="p">):</span>
+            <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">            Helper method to obtain a valid number of neighbours</span>
+<span class="sd">            from a parameter `k` given `n` target records,</span>
+<span class="sd">            where `k` may be defined in terms of `n`.</span>
+<span class="sd">            The maximum number of neighbours `k_max` is `n`,</span>
+<span class="sd">            unless `localised` is `True`, in which case it is `n - 1`.</span>
+
+<span class="sd">            Parameters</span>
+<span class="sd">            ----------</span>
+<span class="sd">            k: float or (int -&gt; float) or None</span>
+<span class="sd">                Parameter value to resolve. Can be a float,</span>
+<span class="sd">                a callable that takes `n` and returns a float,</span>
+<span class="sd">                or None.</span>
+
+<span class="sd">            localised: bool = False</span>
+<span class="sd">                Whether `k` also has to be valid for target records,</span>
+<span class="sd">                while excluding these from being their own nearest neighbour.</span>
+<span class="sd">                If so, then `k_max` is `n - 1`.</span>
+
+<span class="sd">            Returns</span>
+<span class="sd">            -------</span>
+<span class="sd">            k: int</span>
+<span class="sd">               If `k` is a float in [1, k_max]: `k`;</span>
+<span class="sd">               If `k` is None: `k_max`;</span>
+<span class="sd">               If `k` is callable, the output of `k` applied to `n`,</span>
+<span class="sd">               rounded to the nearest integer in `[1, k_max]`.</span>
+
+<span class="sd">            Raises</span>
+<span class="sd">            ------</span>
+<span class="sd">            ValueError</span>
+<span class="sd">                If `k` is a float not in [1, k_max].</span>
+
+<span class="sd">            &quot;&quot;&quot;</span>
+            <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+            <span class="n">k_max</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">localised</span> <span class="k">else</span> <span class="n">n</span>
+            <span class="k">return</span> <span class="n">resolve_k</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">k_max</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="ALP"><a class="viewcode-back" href="../../../generated/frlearn.data_descriptors.ALP.html#frlearn.data_descriptors.ALP">[docs]</a><span class="k">class</span> <span class="nc">ALP</span><span class="p">(</span><span class="n">NNDataDescriptor</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Implementation of the Average Localised Proximity (ALP) data descriptor [1]_.</span>
+<span class="sd">    Expresses the proximity of a query instance to the target data,</span>
+<span class="sd">    by localising its nearest neighbour distances against the local nearest neighbour distances in the target data.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    dissimilarity: str or float or (np.array -&gt; float) or ((np.array, np.array) -&gt; float) = &#39;boscovich&#39;</span>
+<span class="sd">        The dissimilarity measure to use.</span>
+
+<span class="sd">        A vector size measure `np.array -&gt; float` induces a dissimilarity measure through application to `y - x`.</span>
+<span class="sd">        A float is interpreted as Minkowski size with the corresponding value for `p`.</span>
+<span class="sd">        For convenience, a number of popular measures can be referred to by name.</span>
+
+<span class="sd">        The default is the Boscovich norm (also known as cityblock, Manhattan or taxicab norm).</span>
+
+<span class="sd">    k : int or (int -&gt; float) or None = 5.5 * log n</span>
+<span class="sd">        How many nearest neighbour distances / localised proximities to consider.</span>
+<span class="sd">        Corresponds to the scale at which proximity is evaluated.</span>
+<span class="sd">        Should be either a positive integer,</span>
+<span class="sd">        or a function that takes the target class size `n` and returns a float,</span>
+<span class="sd">        or None, which is resolved as `n`.</span>
+<span class="sd">        All such values are rounded to the nearest integer in `[1, n]`.</span>
+
+<span class="sd">    l : int or (int -&gt; float) or None = 6 * log n</span>
+<span class="sd">        How many nearest neighbours to use for determining the local ith nearest neighbour distance, for each `i &lt;= k`.</span>
+<span class="sd">        Lower values correspond to more localisation.</span>
+<span class="sd">        Should be either a positive integer,</span>
+<span class="sd">        or a function that takes the target class size `n` and returns a float,</span>
+<span class="sd">        or None, which is resolved as `n`.</span>
+<span class="sd">        All such values are rounded to the nearest integer in `[1, n]`.</span>
+
+<span class="sd">    scale_weights : (int -&gt; np.array) or None = LinearWeights()</span>
+<span class="sd">        Weights to use for calculating the soft maximum of localised proximities.</span>
+<span class="sd">        Determines to which extent scales with high localised proximity are emphasised.</span>
+
+<span class="sd">    localisation_weights : (int -&gt; np.array) or None = LinearWeights()</span>
+<span class="sd">        Weights to use for calculating the local ith nearest neighbour distance, for each `i &lt;= k`.</span>
+<span class="sd">        Determines to which extent nearer neighbours dominate.</span>
+
+<span class="sd">    max_array_size : int = 2**26</span>
+<span class="sd">        Maximum array size to use. For a query set of size `q`,</span>
+<span class="sd">        calculating local distances requires an array of size `[q, l, k]`,</span>
+<span class="sd">        which can be too large to fit in memory. If the size of this array is larger than `max_array_size`,</span>
+<span class="sd">        a query set is batch-processed, which is slower.</span>
+<span class="sd">        TODO: determine maximum array size dynamically, investigate lowering float precision</span>
+
+<span class="sd">    preprocessors : iterable = (IQRNormaliser(), )</span>
+<span class="sd">        Preprocessors to apply. The default interquartile range normaliser rescales all features</span>
+<span class="sd">        to ensure that they all have the same interquartile range.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    `k` and `l` are the two principal hyperparameters that can be tuned to increase performance.</span>
+<span class="sd">    Its default values are based on the empirical evaluation in [1]_.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    .. [1] `Lenz OU, Peralta D, Cornelis C (2021).</span>
+<span class="sd">       Average Localised Proximity: A new data descriptor with good default one-class classification performance.</span>
+<span class="sd">       Pattern Recognition, vol 118, no 107991.</span>
+<span class="sd">       doi: 10.1016/j.patcog.2021.107991</span>
+<span class="sd">       &lt;https://www.sciencedirect.com/science/article/abs/pii/S0031320321001783&gt;`_</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">dissimilarity</span><span class="p">:</span> <span class="nb">str</span> <span class="ow">or</span> <span class="nb">float</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;boscovich&#39;</span><span class="p">,</span>
+            <span class="n">k</span><span class="p">:</span> <span class="nb">int</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="ow">or</span> <span class="kc">None</span> <span class="o">=</span> <span class="n">log_multiple</span><span class="p">(</span><span class="mf">5.5</span><span class="p">),</span>
+            <span class="n">l</span><span class="p">:</span> <span class="nb">int</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="ow">or</span> <span class="kc">None</span> <span class="o">=</span> <span class="n">log_multiple</span><span class="p">(</span><span class="mi">6</span><span class="p">),</span>
+            <span class="n">scale_weights</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="n">LinearWeights</span><span class="p">(),</span>
+            <span class="n">localisation_weights</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="n">LinearWeights</span><span class="p">(),</span>
+            <span class="n">nn_search</span><span class="p">:</span> <span class="n">NeighbourSearchMethod</span> <span class="o">=</span> <span class="n">KDTree</span><span class="p">(),</span>
+            <span class="n">max_array_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">2</span><span class="o">**</span><span class="mi">26</span><span class="p">,</span>
+            <span class="n">preprocessors</span><span class="o">=</span><span class="p">(</span><span class="n">IQRNormaliser</span><span class="p">(),</span> <span class="p">)</span>
+    <span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">dissimilarity</span><span class="o">=</span><span class="n">dissimilarity</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">nn_search</span><span class="o">=</span><span class="n">nn_search</span><span class="p">,</span> <span class="n">localised</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">preprocessors</span><span class="o">=</span><span class="n">preprocessors</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">l</span> <span class="o">=</span> <span class="n">l</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">scale_weights</span> <span class="o">=</span> <span class="n">scale_weights</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">localisation_weights</span> <span class="o">=</span> <span class="n">localisation_weights</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_array_size</span> <span class="o">=</span> <span class="n">max_array_size</span>
+
+    <span class="k">def</span> <span class="nf">_construct</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="n">model</span><span class="p">:</span> <span class="n">ALP</span><span class="o">.</span><span class="n">Model</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">_construct</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">l</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">_resolve_k</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">l</span><span class="p">,</span> <span class="n">localised</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">_kl</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">k</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">l</span><span class="p">)</span>
+        <span class="n">_</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">distances</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">nn_model</span><span class="o">.</span><span class="n">query_self</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">k</span><span class="p">)</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">scale_weights</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">scale_weights</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">localisation_weights</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">localisation_weights</span>
+        <span class="k">return</span> <span class="n">model</span>
+
+<div class="viewcode-block" id="ALP.Model"><a class="viewcode-back" href="../../../generated/frlearn.data_descriptors.ALP.html#frlearn.data_descriptors.ALP.Model">[docs]</a>    <span class="k">class</span> <span class="nc">Model</span><span class="p">(</span><span class="n">NNDataDescriptor</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+
+        <span class="n">l</span><span class="p">:</span> <span class="nb">int</span>
+        <span class="n">_kl</span><span class="p">:</span> <span class="nb">int</span>
+        <span class="n">distances</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+        <span class="n">scale_weights</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">]</span>
+        <span class="n">localisation_weights</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">]</span>
+
+        <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+            <span class="c1"># TODO: inherit from super</span>
+            <span class="k">for</span> <span class="n">preprocessing_model</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">preprocessing_models</span><span class="p">:</span>
+                <span class="n">X</span> <span class="o">=</span> <span class="n">preprocessing_model</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+            <span class="n">q_neighbours</span><span class="p">,</span> <span class="n">q_distances</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">nn_model</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_kl</span><span class="p">)</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_query</span><span class="p">(</span><span class="n">q_neighbours</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">l</span><span class="p">],</span> <span class="n">q_distances</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">])</span>
+
+        <span class="k">def</span> <span class="nf">_query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">q_neighbours</span><span class="p">,</span> <span class="n">q_distances</span><span class="p">):</span>
+            <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">2</span><span class="o">**</span><span class="mi">26</span> <span class="o">//</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">l</span><span class="p">)</span>
+            <span class="n">local_distances</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">q_neighbours</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">batch_size</span><span class="p">):</span>
+                <span class="n">local_distances</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">soft_head</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">distances</span><span class="p">[</span><span class="n">q_neighbours</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">batch_size</span><span class="p">]],</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">localisation_weights</span><span class="p">,</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">l</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">2</span>
+                <span class="p">))</span>
+            <span class="n">local_distances</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">(</span><span class="n">local_distances</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+            
+            <span class="c1"># if both distances are zero, default to 1</span>
+            <span class="n">localised_distances</span> <span class="o">=</span> <span class="n">div_or</span><span class="p">(</span><span class="n">q_distances</span><span class="p">,</span> <span class="n">local_distances</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="n">localised_proximities</span> <span class="o">=</span> <span class="n">shifted_reciprocal</span><span class="p">(</span><span class="n">localised_distances</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">soft_max</span><span class="p">(</span><span class="n">localised_proximities</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">scale_weights</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="LNND"><a class="viewcode-back" href="../../../generated/frlearn.data_descriptors.LNND.html#frlearn.data_descriptors.LNND">[docs]</a><span class="k">class</span> <span class="nc">LNND</span><span class="p">(</span><span class="n">NNDataDescriptor</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Implementation of the Localised Nearest Neighbour Distance (LNND) data descriptor [1]_[2]_.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    dissimilarity: str or float or (np.array -&gt; float) or ((np.array, np.array) -&gt; float) = &#39;boscovich&#39;</span>
+<span class="sd">        The dissimilarity measure to use.</span>
+
+<span class="sd">        A vector size measure `np.array -&gt; float` induces a dissimilarity measure through application to `y - x`.</span>
+<span class="sd">        A float is interpreted as Minkowski size with the corresponding value for `p`.</span>
+<span class="sd">        For convenience, a number of popular measures can be referred to by name.</span>
+
+<span class="sd">        The default is the Boscovich norm (also known as cityblock, Manhattan or taxicab norm).</span>
+
+<span class="sd">    k : int or (int -&gt; float) or None = 3.4 * log n</span>
+<span class="sd">        Which nearest neighbour to consider.</span>
+<span class="sd">        Should be either a positive integer,</span>
+<span class="sd">        or a function that takes the target class size `n` and returns a float,</span>
+<span class="sd">        or None, which is resolved as `n`.</span>
+<span class="sd">        All such values are rounded to the nearest integer in `[1, n]`.</span>
+
+<span class="sd">    preprocessors : iterable = (IQRNormaliser(), )</span>
+<span class="sd">        Preprocessors to apply. The default interquartile range normaliser rescales all features</span>
+<span class="sd">        to ensure that they all have the same interquartile range.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    The scores are derived with 1/(1 + l_distances).</span>
+<span class="sd">    `k` is the principal hyperparameter that can be tuned to increase performance.</span>
+<span class="sd">    Its default value is based on the empirical evaluation in [3]_.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    .. [1] `de Ridder D, Tax DMJ, Duin RPW (1998).</span>
+<span class="sd">       An experimental comparison of one-class classification methods.</span>
+<span class="sd">       ASCI`98: Proceedings of the Fourth Annual Conference of the Advanced School for Computing and Imaging, 213–218.</span>
+<span class="sd">       ASCI.</span>
+<span class="sd">       &lt;http://rduin.nl/papers/asci_98.html&gt;`_</span>
+<span class="sd">    .. [2] `Tax DMJ, Duin RPW (1998).</span>
+<span class="sd">       Outlier detection using classifier instability.</span>
+<span class="sd">       SSPR/SPR 1998: Joint IAPR International Workshops on Statistical Techniques in Pattern Recognition and Structural and Syntactic Pattern Recognition, 593--601.</span>
+<span class="sd">       Springer.</span>
+<span class="sd">       doi: 10.1007/BFb0033283</span>
+<span class="sd">       &lt;https://link.springer.com/chapter/10.1007/BFb0033283&gt;`_</span>
+<span class="sd">    .. [3] `Lenz OU, Peralta D, Cornelis C (2021).</span>
+<span class="sd">       Average Localised Proximity: A new data descriptor with good default one-class classification performance.</span>
+<span class="sd">       Pattern Recognition, vol 118, no 107991.</span>
+<span class="sd">       doi: 10.1016/j.patcog.2021.107991</span>
+<span class="sd">       &lt;https://www.sciencedirect.com/science/article/abs/pii/S0031320321001783&gt;`_</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">dissimilarity</span><span class="p">:</span> <span class="nb">str</span> <span class="ow">or</span> <span class="nb">float</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;boscovich&#39;</span><span class="p">,</span>
+            <span class="n">k</span><span class="p">:</span> <span class="nb">int</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="ow">or</span> <span class="kc">None</span> <span class="o">=</span> <span class="n">log_multiple</span><span class="p">(</span><span class="mf">3.4</span><span class="p">),</span>
+            <span class="n">nn_search</span><span class="p">:</span> <span class="n">NeighbourSearchMethod</span> <span class="o">=</span> <span class="n">KDTree</span><span class="p">(),</span>
+            <span class="n">preprocessors</span><span class="o">=</span><span class="p">(</span><span class="n">IQRNormaliser</span><span class="p">(),</span> <span class="p">)</span>
+    <span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">dissimilarity</span><span class="o">=</span><span class="n">dissimilarity</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">nn_search</span><span class="o">=</span><span class="n">nn_search</span><span class="p">,</span> <span class="n">localised</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">preprocessors</span><span class="o">=</span><span class="n">preprocessors</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_construct</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Model</span><span class="p">:</span>
+        <span class="n">model</span><span class="p">:</span> <span class="n">LNND</span><span class="o">.</span><span class="n">Model</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">_construct</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">_</span><span class="p">,</span> <span class="n">distances</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">nn_model</span><span class="o">.</span><span class="n">query_self</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">k</span><span class="p">)</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">distances</span> <span class="o">=</span> <span class="n">distances</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">model</span>
+
+<div class="viewcode-block" id="LNND.Model"><a class="viewcode-back" href="../../../generated/frlearn.data_descriptors.LNND.html#frlearn.data_descriptors.LNND.Model">[docs]</a>    <span class="k">class</span> <span class="nc">Model</span><span class="p">(</span><span class="n">NNDataDescriptor</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+
+        <span class="n">distances</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+
+        <span class="k">def</span> <span class="nf">_query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">q_neighbours</span><span class="p">,</span> <span class="n">q_distances</span><span class="p">):</span>
+            <span class="c1"># if both distances are zero, default to 1</span>
+            <span class="n">l_distances</span> <span class="o">=</span> <span class="n">div_or</span><span class="p">(</span><span class="n">q_distances</span><span class="p">[:,</span> <span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">distances</span><span class="p">[</span><span class="n">q_neighbours</span><span class="p">[:,</span> <span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">]],</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="c1"># replace infinites with very large numbers, but keep nans (which shouldn&#39;t be here) to flag problems</span>
+            <span class="n">l_distances</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan_to_num</span><span class="p">(</span><span class="n">l_distances</span><span class="p">,</span> <span class="n">nan</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">shifted_reciprocal</span><span class="p">(</span><span class="n">l_distances</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="LOF"><a class="viewcode-back" href="../../../generated/frlearn.data_descriptors.LOF.html#frlearn.data_descriptors.LOF">[docs]</a><span class="k">class</span> <span class="nc">LOF</span><span class="p">(</span><span class="n">NNDataDescriptor</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Implementation of the Local Outlier Factor (LOF) data descriptor [1]_.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    dissimilarity: str or float or (np.array -&gt; float) or ((np.array, np.array) -&gt; float) = &#39;boscovich&#39;</span>
+<span class="sd">        The dissimilarity measure to use.</span>
+
+<span class="sd">        A vector size measure `np.array -&gt; float` induces a dissimilarity measure through application to `y - x`.</span>
+<span class="sd">        A float is interpreted as Minkowski size with the corresponding value for `p`.</span>
+<span class="sd">        For convenience, a number of popular measures can be referred to by name.</span>
+
+<span class="sd">        The default is the Boscovich norm (also known as cityblock, Manhattan or taxicab norm).</span>
+
+<span class="sd">    k : int or (int -&gt; float) or None = 2.5 * log n</span>
+<span class="sd">        How many nearest neighbours to consider.</span>
+<span class="sd">        Should be either a positive integer,</span>
+<span class="sd">        or a function that takes the target class size `n` and returns a float,</span>
+<span class="sd">        or None, which is resolved as `n`.</span>
+<span class="sd">        All such values are rounded to the nearest integer in `[1, n]`.</span>
+
+<span class="sd">    preprocessors : iterable = (IQRNormaliser(), )</span>
+<span class="sd">        Preprocessors to apply. The default interquartile range normaliser rescales all features</span>
+<span class="sd">        to ensure that they all have the same interquartile range.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    The scores are derived with 1/(1 + lof).</span>
+<span class="sd">    `k` is the principal hyperparameter that can be tuned to increase performance.</span>
+<span class="sd">    Its default value is based on the empirical evaluation in [2]_.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    .. [1] `Breunig MM, Kriegel H-P, Ng RT, Sander J (2000).</span>
+<span class="sd">       LOF: identifying density-based local outliers.</span>
+<span class="sd">       SIGMOD 2000: ACM international conference on Management of data, 93–104.</span>
+<span class="sd">       ACM.</span>
+<span class="sd">       doi: 10.1145/342009.335388</span>
+<span class="sd">       &lt;https://dl.acm.org/doi/abs/10.1145/342009.335388&gt;`_</span>
+<span class="sd">    .. [2] `Lenz OU, Peralta D, Cornelis C (2021).</span>
+<span class="sd">       Average Localised Proximity: A new data descriptor with good default one-class classification performance.</span>
+<span class="sd">       Pattern Recognition, vol 118, no 107991.</span>
+<span class="sd">       doi: 10.1016/j.patcog.2021.107991</span>
+<span class="sd">       &lt;https://www.sciencedirect.com/science/article/abs/pii/S0031320321001783&gt;`_</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">dissimilarity</span><span class="p">:</span> <span class="nb">str</span> <span class="ow">or</span> <span class="nb">float</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;boscovich&#39;</span><span class="p">,</span>
+            <span class="n">k</span><span class="p">:</span> <span class="nb">int</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="ow">or</span> <span class="kc">None</span> <span class="o">=</span> <span class="n">log_multiple</span><span class="p">(</span><span class="mf">2.5</span><span class="p">),</span>
+            <span class="n">nn_search</span><span class="p">:</span> <span class="n">NeighbourSearchMethod</span> <span class="o">=</span> <span class="n">KDTree</span><span class="p">(),</span>
+            <span class="n">preprocessors</span><span class="o">=</span><span class="p">(</span><span class="n">IQRNormaliser</span><span class="p">(),</span> <span class="p">)</span>
+    <span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">dissimilarity</span><span class="o">=</span><span class="n">dissimilarity</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">nn_search</span><span class="o">=</span><span class="n">nn_search</span><span class="p">,</span> <span class="n">localised</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">preprocessors</span><span class="o">=</span><span class="n">preprocessors</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_construct</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Model</span><span class="p">:</span>
+        <span class="n">model</span><span class="p">:</span> <span class="n">LOF</span><span class="o">.</span><span class="n">Model</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">_construct</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">neighbours</span><span class="p">,</span> <span class="n">distances</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">nn_model</span><span class="o">.</span><span class="n">query_self</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">k</span><span class="p">)</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">distances</span> <span class="o">=</span> <span class="n">distances</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">lrd</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">_get_lrd</span><span class="p">(</span><span class="n">neighbours</span><span class="p">,</span> <span class="n">distances</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">model</span>
+
+<div class="viewcode-block" id="LOF.Model"><a class="viewcode-back" href="../../../generated/frlearn.data_descriptors.LOF.html#frlearn.data_descriptors.LOF.Model">[docs]</a>    <span class="k">class</span> <span class="nc">Model</span><span class="p">(</span><span class="n">NNDataDescriptor</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+
+        <span class="n">distances</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+        <span class="n">lrd</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+
+        <span class="k">def</span> <span class="nf">_get_lrd</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">q_neighbours</span><span class="p">,</span> <span class="n">q_distances</span><span class="p">):</span>
+            <span class="n">r_distances</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span><span class="n">q_distances</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">distances</span><span class="p">[</span><span class="n">q_neighbours</span><span class="p">])</span>
+            <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">r_distances</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="k">def</span> <span class="nf">_query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">q_neighbours</span><span class="p">,</span> <span class="n">q_distances</span><span class="p">):</span>
+            <span class="n">q_lrd</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_lrd</span><span class="p">(</span><span class="n">q_neighbours</span><span class="p">,</span> <span class="n">q_distances</span><span class="p">)</span>
+            <span class="n">lof</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">lrd</span><span class="p">[</span><span class="n">q_neighbours</span><span class="p">],</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">q_lrd</span>
+            <span class="c1"># handle nan, which comes from inf/inf</span>
+            <span class="n">lof</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">lof</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">return</span> <span class="n">shifted_reciprocal</span><span class="p">(</span><span class="n">lof</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="NND"><a class="viewcode-back" href="../../../generated/frlearn.data_descriptors.NND.html#frlearn.data_descriptors.NND">[docs]</a><span class="k">class</span> <span class="nc">NND</span><span class="p">(</span><span class="n">NNDataDescriptor</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Implementation of the Nearest Neighbour Distance (NND) data descriptor, which goes back to at least [1]_.</span>
+<span class="sd">    It has also been used to calculate upper and lower approximations of fuzzy rough sets,</span>
+<span class="sd">    where the addition of aggregation with OWA operators is due to [2]_.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    dissimilarity: str or float or (np.array -&gt; float) or ((np.array, np.array) -&gt; float) = &#39;boscovich&#39;</span>
+<span class="sd">        The dissimilarity measure to use.</span>
+
+<span class="sd">        A vector size measure `np.array -&gt; float` induces a dissimilarity measure through application to `y - x`.</span>
+<span class="sd">        A float is interpreted as Minkowski size with the corresponding value for `p`.</span>
+<span class="sd">        For convenience, a number of popular measures can be referred to by name.</span>
+
+<span class="sd">        The default is the Boscovich norm (also known as cityblock, Manhattan or taxicab norm).</span>
+
+<span class="sd">    k : int or (int -&gt; float) or None = 1</span>
+<span class="sd">        Which nearest neighbour(s) to consider.</span>
+<span class="sd">        Should be either a positive integer,</span>
+<span class="sd">        or a function that takes the target class size `n` and returns a float,</span>
+<span class="sd">        or None, which is resolved as `n`.</span>
+<span class="sd">        All such values are rounded to the nearest integer in `[1, n]`.</span>
+<span class="sd">        If `weights = None`, only the kth neighbour is used,</span>
+<span class="sd">        otherwise closer neighbours are also taken into account.</span>
+
+<span class="sd">    proximity : float -&gt; float = np_utils.shifted_reciprocal</span>
+<span class="sd">        The function used to convert distance values to proximity values.</span>
+<span class="sd">        It should be be an order-reversing map from `[0, ∞)` to `[0, 1]`.</span>
+
+<span class="sd">    weights : (int -&gt; np.array) or None = None</span>
+<span class="sd">        How to aggregate the proximity values from the `k` nearest neighbours.</span>
+<span class="sd">        The default is to only consider the kth nearest neighbour distance.</span>
+
+<span class="sd">    preprocessors : iterable = (IQRNormaliser(), )</span>
+<span class="sd">        Preprocessors to apply. The default interquartile range normaliser rescales all features</span>
+<span class="sd">        to ensure that they all have the same interquartile range.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    `k` is the principal hyperparameter that can be tuned to increase performance.</span>
+<span class="sd">    Its default value is based on the empirical evaluation in [3]_.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    .. [1] `Knorr EM, Ng RT (1997).</span>
+<span class="sd">       A Unified Notion of Outliers: Properties and Computation.</span>
+<span class="sd">       KDD-97: Proceedings of the Third International Conference on Knowledge Discovery and Data Mining, pp 219–222.</span>
+<span class="sd">       AAAI.</span>
+<span class="sd">       doi: 10.5555/3001392.3001438</span>
+<span class="sd">       &lt;https://www.aaai.org/Library/KDD/1997/kdd97-044.php&gt;`_</span>
+<span class="sd">    .. [2] `Cornelis C, Verbiest N, Jensen R (2010).</span>
+<span class="sd">       Ordered weighted average based fuzzy rough sets.</span>
+<span class="sd">       RSKT 2010: Proceedings of the 5th International Conference on Rough Set and Knowledge Technology, pp 78--85.</span>
+<span class="sd">       Springer, Lecture Notes in Artificial Intelligence 6401.</span>
+<span class="sd">       doi: 10.1007/978-3-642-16248-0_16</span>
+<span class="sd">       &lt;https://link.springer.com/chapter/10.1007/978-3-642-16248-0_16&gt;`_</span>
+<span class="sd">    .. [3] `Lenz OU, Peralta D, Cornelis C (2021).</span>
+<span class="sd">       Average Localised Proximity: A new data descriptor with good default one-class classification performance.</span>
+<span class="sd">       Pattern Recognition, vol 118, no 107991.</span>
+<span class="sd">       doi: 10.1016/j.patcog.2021.107991</span>
+<span class="sd">       &lt;https://www.sciencedirect.com/science/article/abs/pii/S0031320321001783&gt;`_</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">dissimilarity</span><span class="p">:</span> <span class="nb">str</span> <span class="ow">or</span> <span class="nb">float</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;boscovich&#39;</span><span class="p">,</span>
+            <span class="n">k</span><span class="p">:</span> <span class="nb">int</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="ow">or</span> <span class="kc">None</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="n">weights</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="n">proximity</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">float</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="n">shifted_reciprocal</span><span class="p">,</span>
+            <span class="n">nn_search</span><span class="p">:</span> <span class="n">NeighbourSearchMethod</span> <span class="o">=</span> <span class="n">KDTree</span><span class="p">(),</span>
+            <span class="n">preprocessors</span><span class="o">=</span><span class="p">(</span><span class="n">IQRNormaliser</span><span class="p">(),</span> <span class="p">)</span>
+    <span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">dissimilarity</span><span class="o">=</span><span class="n">dissimilarity</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">nn_search</span><span class="o">=</span><span class="n">nn_search</span><span class="p">,</span> <span class="n">preprocessors</span><span class="o">=</span><span class="n">preprocessors</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">weights</span> <span class="o">=</span> <span class="n">weights</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">proximity</span> <span class="o">=</span> <span class="n">proximity</span>
+
+    <span class="k">def</span> <span class="nf">_construct</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Model</span><span class="p">:</span>
+        <span class="n">model</span><span class="p">:</span> <span class="n">NND</span><span class="o">.</span><span class="n">Model</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">_construct</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">proximity</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">proximity</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">weights</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">weights</span>
+        <span class="k">return</span> <span class="n">model</span>
+
+<div class="viewcode-block" id="NND.Model"><a class="viewcode-back" href="../../../generated/frlearn.data_descriptors.NND.html#frlearn.data_descriptors.NND.Model">[docs]</a>    <span class="k">class</span> <span class="nc">Model</span><span class="p">(</span><span class="n">NNDataDescriptor</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+
+        <span class="n">proximity</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">float</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span>
+        <span class="n">weights</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span>
+
+        <span class="k">def</span> <span class="nf">_query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">q_neighbours</span><span class="p">,</span> <span class="n">q_distances</span><span class="p">):</span>
+            <span class="n">proximities</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">proximity</span><span class="p">(</span><span class="n">q_distances</span><span class="p">)</span>
+            <span class="n">score</span> <span class="o">=</span> <span class="n">soft_max</span><span class="p">(</span><span class="n">proximities</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">weights</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">score</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019–2021, Oliver Urs Lenz.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

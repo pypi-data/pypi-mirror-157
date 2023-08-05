@@ -1,0 +1,23 @@
+
+
+Examples using ``frlearn.weights.LinearWeights``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The figures contain the training instances within a section of the selected feature space. The ...">
+
+.. only:: html
+
+ .. figure:: /examples/classifiers/images/thumb/sphx_glr_frnn_thumb.png
+     :alt: Multiclass classification with FRNN
+
+     :ref:`sphx_glr_examples_classifiers_frnn.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_examples_classifiers_frnn.py`

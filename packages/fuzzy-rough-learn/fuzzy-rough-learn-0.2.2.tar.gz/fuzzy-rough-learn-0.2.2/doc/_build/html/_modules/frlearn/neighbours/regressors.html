@@ -1,0 +1,327 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>frlearn.neighbours.regressors &mdash; fuzzy-rough-learn 0.2.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/fuzzy-rough-learn.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/fuzzy-rough-learn.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery-binder.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery-dataframe.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery-rendered-html.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/js/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> fuzzy-rough-learn
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.2.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../api.html">fuzzy-rough-learn API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Classifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html#data-descriptors">Data descriptors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html#preprocessors">Preprocessors</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">Release history</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">fuzzy-rough-learn</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>frlearn.neighbours.regressors</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for frlearn.neighbours.regressors</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Callable</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">frlearn.base</span> <span class="kn">import</span> <span class="n">Regressor</span>
+<span class="kn">from</span> <span class="nn">frlearn.feature_preprocessors</span> <span class="kn">import</span> <span class="n">RangeNormaliser</span>
+<span class="kn">from</span> <span class="nn">frlearn.neighbours.utilities</span> <span class="kn">import</span> <span class="n">resolve_k</span>
+<span class="kn">from</span> <span class="nn">frlearn.parametrisations</span> <span class="kn">import</span> <span class="n">at_most</span>
+<span class="kn">from</span> <span class="nn">frlearn.uncategorised.utilities</span> <span class="kn">import</span> <span class="n">apply_dissimilarity</span><span class="p">,</span> <span class="n">resolve_dissimilarity</span>
+
+
+<div class="viewcode-block" id="FRNN"><a class="viewcode-back" href="../../../generated/frlearn.regressors.FRNN.html#frlearn.regressors.FRNN">[docs]</a><span class="k">class</span> <span class="nc">FRNN</span><span class="p">(</span><span class="n">Regressor</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Implementation of the Fuzzy Rough Nearest Neighbour (FRNN) regressor [1]_.</span>
+
+<span class="sd">    Predicts an output value of a test instance `y` on the basis of the output values</span>
+<span class="sd">    of the `k` nearest neighbours of `y`, similar to KNN regression.</span>
+<span class="sd">    The difference is that the output value is calculated as a weighted mean,</span>
+<span class="sd">    with the weights corresponding to membership degrees in the upper and lower approximations</span>
+<span class="sd">    of the tolerance sets of the output values of the neighbours.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    k: int or (int -&gt; float) = at_most(10)</span>
+<span class="sd">        Number of neighbours to consider.</span>
+<span class="sd">        Should be either a positive integer,</span>
+<span class="sd">        or a function that takes the training set size `n` and returns a float.</span>
+<span class="sd">        All such values are rounded to the nearest integer in `[1, n]`.</span>
+<span class="sd">        Due to the computational complexity of this algorithm,</span>
+<span class="sd">        `k` should not be chosen too large.</span>
+
+<span class="sd">    dissimilarity: str or float or (np.array -&gt; float) or ((np.array, np.array) -&gt; float) = &#39;chebyshev&#39;</span>
+<span class="sd">        The dissimilarity measure to use.</span>
+<span class="sd">        The similarity between two instances is calculated as 1 minus their dissimilarity.</span>
+
+<span class="sd">        A vector size measure `np.array -&gt; float` induces a dissimilarity measure through application to `y - x`.</span>
+<span class="sd">        A float is interpreted as Minkowski size with the corresponding value for `p`.</span>
+<span class="sd">        For convenience, a number of popular measures can be referred to by name.</span>
+
+<span class="sd">        When a float or string is passed, the corresponding dissimilarity measure is automatically scaled</span>
+<span class="sd">        to ensure that the dissimilarity of `[1, 1, ..., 1]` with `[0, 0, ..., 0]` is 1.</span>
+
+<span class="sd">        For the default Chebyshev norm, this is already the case,</span>
+<span class="sd">        since it assigns the maximum of the per-attribute differences,</span>
+<span class="sd">        but e.g. the Boscovich norm normally amounts to the sum of the per-attribute differences.</span>
+<span class="sd">        In this case, the scaling step divides by the number of dimensions,</span>
+<span class="sd">        and we obtain a dissimilarity that is the mean of the per-attribute differences.</span>
+
+<span class="sd">        This can be prevented by explicitly passing a dissimilarity measure without scaling.</span>
+
+<span class="sd">    preprocessors : iterable = (RangeNormaliser(), )</span>
+<span class="sd">        Preprocessors to apply. The default range normaliser ensures that all features have range 1.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    Although proposed in the same paper [1]_, FRNN regression and FRNN classification are different algorithms.</span>
+
+<span class="sd">    [1]_ does not recommend any specific value for `k`, but seems to use `k = 10` for its experiments.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    .. [1] `Jensen R, Cornelis C (2011).</span>
+<span class="sd">       Fuzzy-rough nearest neighbour classification and prediction.</span>
+<span class="sd">       Theoretical Computer Science, vol 412, pp 5871–5884.</span>
+<span class="sd">       doi: 10.1016/j.tcs.2011.05.040</span>
+<span class="sd">       &lt;https://www.sciencedirect.com/science/article/pii/S0304397511004580&gt;`_</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="n">k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">at_most</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span>
+            <span class="n">dissimilarity</span><span class="p">:</span> <span class="nb">str</span> <span class="ow">or</span> <span class="nb">float</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;chebyshev&#39;</span><span class="p">,</span>
+            <span class="n">preprocessors</span><span class="o">=</span><span class="p">(</span><span class="n">RangeNormaliser</span><span class="p">(),</span> <span class="p">)</span>
+    <span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">preprocessors</span><span class="o">=</span><span class="n">preprocessors</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">k</span> <span class="o">=</span> <span class="n">k</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dissimilarity</span> <span class="o">=</span> <span class="n">resolve_dissimilarity</span><span class="p">(</span><span class="n">dissimilarity</span><span class="p">,</span> <span class="n">scale_by_dimensionality</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_construct</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Model</span><span class="p">:</span>
+        <span class="n">model</span><span class="p">:</span> <span class="n">FRNN</span><span class="o">.</span><span class="n">Model</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">_construct</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">k</span> <span class="o">=</span> <span class="n">resolve_k</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">n</span><span class="p">)</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">dissimilarity</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dissimilarity</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">X</span> <span class="o">=</span> <span class="n">X</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">y_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
+        <span class="k">return</span> <span class="n">model</span>
+
+<div class="viewcode-block" id="FRNN.Model"><a class="viewcode-back" href="../../../generated/frlearn.regressors.FRNN.html#frlearn.regressors.FRNN.Model">[docs]</a>    <span class="k">class</span> <span class="nc">Model</span><span class="p">(</span><span class="n">Regressor</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+
+        <span class="n">k</span><span class="p">:</span> <span class="nb">int</span>
+        <span class="n">dissimilarity</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span> <span class="ow">or</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">],</span> <span class="nb">float</span><span class="p">]</span>
+        <span class="n">X</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span>
+        <span class="n">y</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span>
+        <span class="n">y_range</span><span class="p">:</span> <span class="nb">float</span>
+
+        <span class="k">def</span> <span class="nf">_query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+            <span class="c1">#distances = cdist(X, self.X, self.dissimilarity)</span>
+            <span class="n">distances</span> <span class="o">=</span> <span class="n">apply_dissimilarity</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">X</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dissimilarity</span><span class="p">)</span>
+            <span class="n">neighbour_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argpartition</span><span class="p">(</span><span class="n">distances</span><span class="p">,</span> <span class="n">kth</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)[:,</span> <span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">]</span>
+            <span class="n">neighbour_vals</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">neighbour_indices</span><span class="p">]</span>
+            <span class="n">neighbour_vals_sims</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">((</span><span class="n">neighbour_vals</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">y_range</span><span class="p">)[</span><span class="o">...</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">y_range</span><span class="p">)</span>
+            <span class="n">lower_approx_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span><span class="n">neighbour_vals_sims</span><span class="p">,</span> <span class="n">distances</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">,</span> <span class="p">:]),</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+            <span class="n">upper_approx_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">minimum</span><span class="p">(</span><span class="n">neighbour_vals_sims</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">distances</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">,</span> <span class="p">:]),</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+            <span class="n">combined_vals</span> <span class="o">=</span> <span class="p">(</span><span class="n">lower_approx_vals</span> <span class="o">+</span> <span class="n">upper_approx_vals</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">combined_vals</span><span class="o">*</span><span class="n">neighbour_vals</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">combined_vals</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019–2021, Oliver Urs Lenz.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

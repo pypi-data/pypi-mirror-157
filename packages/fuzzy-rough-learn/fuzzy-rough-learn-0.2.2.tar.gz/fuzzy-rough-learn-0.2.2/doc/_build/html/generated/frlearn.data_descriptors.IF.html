@@ -1,0 +1,316 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>IF &mdash; fuzzy-rough-learn 0.2.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/fuzzy-rough-learn.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/fuzzy-rough-learn.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/gallery-binder.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/gallery-dataframe.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/gallery-rendered-html.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="LNND" href="frlearn.data_descriptors.LNND.html" />
+    <link rel="prev" title="EIF" href="frlearn.data_descriptors.EIF.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> fuzzy-rough-learn
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.2.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../api.html">fuzzy-rough-learn API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api.html#classifiers">Classifiers</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api.html#data-descriptors">Data descriptors</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="frlearn.data_descriptors.ALP.html">ALP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frlearn.data_descriptors.CD.html">CD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frlearn.data_descriptors.EIF.html">EIF</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">IF</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#examples-using-frlearn-data-descriptors-if">Examples using <code class="docutils literal notranslate"><span class="pre">frlearn.data_descriptors.IF</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="frlearn.data_descriptors.LNND.html">LNND</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frlearn.data_descriptors.LOF.html">LOF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frlearn.data_descriptors.MD.html">MD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frlearn.data_descriptors.NND.html">NND</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frlearn.data_descriptors.SVM.html">SVM</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#regressors">Regressors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#feature-preprocessors">Feature preprocessors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#instance-preprocessors">Instance preprocessors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#id10">Other</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Classifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html#data-descriptors">Data descriptors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html#preprocessors">Preprocessors</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Release history</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">fuzzy-rough-learn</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../api.html">fuzzy-rough-learn API</a> &raquo;</li>
+        
+      <li>IF</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/generated/frlearn.data_descriptors.IF.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="if">
+<h1>IF<a class="headerlink" href="#if" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="frlearn.data_descriptors.IF">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">frlearn.data_descriptors.</span></span><span class="sig-name descname"><span class="pre">IF</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">psi</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a> <span class="p"><span class="pre">|</span></span> <span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">256</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preprocessors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">sklearn_params</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/frlearn/trees/data_descriptors.html#IF"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#frlearn.data_descriptors.IF" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrapper for the Isolation Forest (IF) data descriptor <a class="reference internal" href="#r288ff40200ea-1" id="id1">[1]</a> implemented in scikit-learn.
+Expresses the effort required to isolate a query instance from the target data
+by random splits on attribute values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>psi</strong><span class="classifier">int or (int -&gt; int) = 256</span></dt><dd><p>Sub-sampling size. Number of training instances to use for each random tree.
+Should be either a positive integer,
+or a function that takes the size of the target class and returns such an integer.
+If the size of the target class is a smaller number, that will be used instead.</p>
+</dd>
+<dt><strong>t</strong><span class="classifier">int = 100</span></dt><dd><p>Number of random trees.</p>
+</dd>
+<dt><strong>random_state</strong><span class="classifier">int = 0</span></dt><dd><p>Random state to use.</p>
+</dd>
+<dt><strong>preprocessors</strong><span class="classifier">iterable = ()</span></dt><dd><p>Preprocessors to apply.</p>
+</dd>
+<dt><strong>sklearn_params</strong></dt><dd><p>Additional keyword parameters will be passed on as-is to scikit-learn’s IsolationForest constructor.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Scores are the complement of the anomaly scores in <a class="reference internal" href="#r288ff40200ea-1" id="id2">[1]</a>.
+<cite>psi</cite> and <cite>t</cite> are two hyperparameters that can potentially be tuned,
+but the default values should be good enough <a class="reference internal" href="#r288ff40200ea-1" id="id3">[1]</a>.</p>
+<p class="rubric">References</p>
+<dl class="citation">
+<dt class="label" id="r288ff40200ea-1"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>,<a href="#id3">3</a>)</span></dt>
+<dd><p><a class="reference external" href="https://ieeexplore.ieee.org/document/4781136">Liu FT, Ting KM, Zhou Z-H (2008).
+Isolation Forest.
+ICDM 2008: Proceedings of the Eighth IEEE International Conference on Data Mining, pp 413–422.
+IEEE.
+doi: 10.1109/ICDM.2008.17</a></p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="frlearn.data_descriptors.IF.Model">
+<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">Model</span></span><a class="reference internal" href="../_modules/frlearn/trees/data_descriptors.html#IF.Model"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#frlearn.data_descriptors.IF.Model" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py property">
+<dt class="sig sig-object py" id="frlearn.data_descriptors.IF.Model.query">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">query</span></span><a class="headerlink" href="#frlearn.data_descriptors.IF.Model.query" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<section id="examples-using-frlearn-data-descriptors-if">
+<h2>Examples using <code class="docutils literal notranslate"><span class="pre">frlearn.data_descriptors.IF</span></code><a class="headerlink" href="#examples-using-frlearn-data-descriptors-if" title="Permalink to this headline">¶</a></h2>
+<div class="sphx-glr-thumbcontainer" tooltip="Data descriptors generalise knowledge about a target class of data to the whole attribute space..."><figure class="align-default" id="id5">
+<img alt="One class classification" src="../_images/sphx_glr_one_class_classification_thumb.png" />
+<figcaption>
+<p><span class="caption-text"><a class="reference internal" href="../examples/data_descriptors/one_class_classification.html#sphx-glr-examples-data-descriptors-one-class-classification-py"><span class="std std-ref">One class classification</span></a></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</div><div style='clear:both'></div></section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="frlearn.data_descriptors.LNND.html" class="btn btn-neutral float-right" title="LNND" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="frlearn.data_descriptors.EIF.html" class="btn btn-neutral float-left" title="EIF" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019–2021, Oliver Urs Lenz.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

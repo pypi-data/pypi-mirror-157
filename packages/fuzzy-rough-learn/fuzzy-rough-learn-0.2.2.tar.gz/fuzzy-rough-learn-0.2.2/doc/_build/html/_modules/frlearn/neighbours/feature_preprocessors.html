@@ -1,0 +1,311 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>frlearn.neighbours.feature_preprocessors &mdash; fuzzy-rough-learn 0.2.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/fuzzy-rough-learn.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/fuzzy-rough-learn.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery-binder.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery-dataframe.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/gallery-rendered-html.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/js/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> fuzzy-rough-learn
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.2.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../api.html">fuzzy-rough-learn API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Classifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html#data-descriptors">Data descriptors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html#preprocessors">Preprocessors</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">Release history</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">fuzzy-rough-learn</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>frlearn.neighbours.feature_preprocessors</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for frlearn.neighbours.feature_preprocessors</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Nearest neighbour feature preprocessors&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Callable</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">frlearn.base</span> <span class="kn">import</span> <span class="n">FeatureSelector</span><span class="p">,</span> <span class="n">ClassSupervised</span>
+<span class="kn">from</span> <span class="nn">frlearn.statistics.feature_preprocessors</span> <span class="kn">import</span> <span class="n">Standardiser</span>
+<span class="kn">from</span> <span class="nn">frlearn.array_functions</span> <span class="kn">import</span> <span class="n">soft_min</span>
+<span class="kn">from</span> <span class="nn">frlearn.t_norms</span> <span class="kn">import</span> <span class="n">lukasiewicz_t_norm</span>
+<span class="kn">from</span> <span class="nn">frlearn.uncategorised.quantifiers</span> <span class="kn">import</span> <span class="n">QuadraticSigmoid</span>
+<span class="kn">from</span> <span class="nn">frlearn.weights</span> <span class="kn">import</span> <span class="n">QuantifierWeights</span>
+
+
+<div class="viewcode-block" id="FRFS"><a class="viewcode-back" href="../../../generated/frlearn.feature_preprocessors.FRFS.html#frlearn.feature_preprocessors.FRFS">[docs]</a><span class="k">class</span> <span class="nc">FRFS</span><span class="p">(</span><span class="n">ClassSupervised</span><span class="p">,</span> <span class="n">FeatureSelector</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Implementation of the Fuzzy Rough Feature Selection (FRFS) preprocessor.</span>
+
+<span class="sd">    Greedily selects features that induce the greatest increase in the size of the positive region,</span>
+<span class="sd">    until it matches the size of the positive region with all features,</span>
+<span class="sd">    or until the required number of features is selected.</span>
+
+<span class="sd">    The positive region is defined as the union of the lower approximations of the decision classes in `X`.</span>
+<span class="sd">    Its size is the sum of its membership values.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    n_features : int or None, default=None</span>
+<span class="sd">        Number of features to select. If None, will continue to add features until positive region size becomes maximal.</span>
+
+<span class="sd">    owa_weights: (int -&gt; np.array) = QuantifierWeights(QuadraticSigmoid(0.2, 1))</span>
+<span class="sd">        OWA weights to use for calculation of the soft minimum in the positive regions.</span>
+
+<span class="sd">    t_norm : (ndarray, int, ) -&gt; ndarray, default=lukasiewicz_t_norm</span>
+<span class="sd">        Function that takes an ndarray and a keyword argument `axis`,</span>
+<span class="sd">        and returns an ndarray with the corresponding axis removed.</span>
+<span class="sd">        Used to define the similarity relation `R` from the per-attribute similarities.</span>
+<span class="sd">        Should be a t-norm, or else the size of the positive region may decrease as features are added.</span>
+
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    .. [1] `Cornelis C, Verbiest N, Jensen R (2011).</span>
+<span class="sd">       Ordered Weighted Average Based Fuzzy Rough Sets</span>
+<span class="sd">       In: Yu J, Greco S, Lingras P, Wang G, Skowron A (eds). Rough Set and Knowledge Technology. RSKT 2010.</span>
+<span class="sd">       Lecture Notes in Computer Science, vol 6401. Springer, Berlin, Heidelberg.</span>
+<span class="sd">       doi: 10.1007/978-3-642-16248-0_16</span>
+<span class="sd">       &lt;https://link.springer.com/chapter/10.1007/978-3-642-16248-0_16&gt;`_</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="n">n_features</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">owa_weights</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">int</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">]</span> <span class="o">=</span> <span class="n">QuantifierWeights</span><span class="p">(</span><span class="n">QuadraticSigmoid</span><span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)),</span>
+            <span class="n">t_norm</span><span class="o">=</span><span class="n">lukasiewicz_t_norm</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_features</span> <span class="o">=</span> <span class="n">n_features</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">owa_weights</span> <span class="o">=</span> <span class="n">owa_weights</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">t_norm</span> <span class="o">=</span> <span class="n">t_norm</span>
+
+    <span class="k">def</span> <span class="nf">_construct</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">_construct</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+        <span class="n">X_scaled</span> <span class="o">=</span> <span class="n">Standardiser</span><span class="p">()(</span><span class="n">X</span><span class="p">)(</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">R_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">minimum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">X_scaled</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">,</span> <span class="p">:]</span> <span class="o">-</span> <span class="n">X_scaled</span><span class="p">),</span> <span class="mi">0</span><span class="p">),</span> <span class="n">y</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">!=</span> <span class="n">y</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">])</span>
+        <span class="n">POS_A_size</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_POS_size</span><span class="p">(</span><span class="n">R_a</span><span class="p">)</span>
+        <span class="n">selected_attributes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="kc">False</span><span class="p">)</span>
+        <span class="n">remaining_attributes</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+        <span class="n">best_size</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">condition</span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">selected_attributes</span><span class="p">)</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_features</span><span class="p">)</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_features</span> <span class="k">else</span> <span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">best_size</span> <span class="o">&lt;</span> <span class="n">POS_A_size</span><span class="p">)</span>
+        <span class="k">while</span> <span class="n">condition</span><span class="p">():</span>
+            <span class="n">best_size</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">remaining_attributes</span><span class="p">:</span>
+                <span class="n">candidate</span> <span class="o">=</span> <span class="n">selected_attributes</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+                <span class="n">candidate</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="n">candidate_size</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_POS_size</span><span class="p">(</span><span class="n">R_a</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">candidate</span><span class="p">])</span>
+                <span class="k">if</span> <span class="n">candidate_size</span> <span class="o">&gt;</span> <span class="n">best_size</span><span class="p">:</span>
+                    <span class="n">best_size</span> <span class="o">=</span> <span class="n">candidate_size</span>
+                    <span class="n">new_attribute</span> <span class="o">=</span> <span class="n">i</span>
+            <span class="n">selected_attributes</span><span class="p">[</span><span class="n">new_attribute</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">remaining_attributes</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">new_attribute</span><span class="p">)</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">selection</span> <span class="o">=</span> <span class="n">selected_attributes</span>
+        <span class="k">return</span> <span class="n">model</span>
+
+    <span class="k">def</span> <span class="nf">_POS_size</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">R_a</span><span class="p">):</span>
+        <span class="n">R</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">t_norm</span><span class="p">(</span><span class="n">R_a</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">soft_min</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">R</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">owa_weights</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">))</span>
+
+<div class="viewcode-block" id="FRFS.Model"><a class="viewcode-back" href="../../../generated/frlearn.feature_preprocessors.FRFS.html#frlearn.feature_preprocessors.FRFS.Model">[docs]</a>    <span class="k">class</span> <span class="nc">Model</span><span class="p">(</span><span class="n">ClassSupervised</span><span class="o">.</span><span class="n">Model</span><span class="p">,</span> <span class="n">FeatureSelector</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+        <span class="k">pass</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2019–2021, Oliver Urs Lenz.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

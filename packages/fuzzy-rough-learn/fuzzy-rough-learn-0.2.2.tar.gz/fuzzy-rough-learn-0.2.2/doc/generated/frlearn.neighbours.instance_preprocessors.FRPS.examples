@@ -1,0 +1,23 @@
+
+
+Examples using ``frlearn.neighbours.instance_preprocessors.FRPS``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Sample usage of FRPS preprocessing, demonstrated in combination with (strict) FRNN classificati...">
+
+.. only:: html
+
+ .. figure:: /examples/preprocessors/images/thumb/sphx_glr_frps_thumb.png
+     :alt: Instance selection with FRPS
+
+     :ref:`sphx_glr_examples_preprocessors_frps.py`
+
+.. raw:: html
+
+    </div>
+
+.. only:: not html
+
+ * :ref:`sphx_glr_examples_preprocessors_frps.py`
