@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+smtp_server/__init__.py
+smtp_server/__main__.py
+smtp_server/smtp_server.py
+smtp_server.egg-info/PKG-INFO
+smtp_server.egg-info/SOURCES.txt
+smtp_server.egg-info/dependency_links.txt
+smtp_server.egg-info/requires.txt
+smtp_server.egg-info/top_level.txt
