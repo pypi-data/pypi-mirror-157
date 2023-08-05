@@ -1,0 +1,5 @@
+numpy
+
+[dev]
+flake8>=3
+convertbng>=0.6.32
