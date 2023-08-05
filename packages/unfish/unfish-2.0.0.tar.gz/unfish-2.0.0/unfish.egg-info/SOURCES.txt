@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+bin/resize.sh
+bin/unfish
+unfish/__init__.py
+unfish/calc.py
+unfish.egg-info/PKG-INFO
+unfish.egg-info/SOURCES.txt
+unfish.egg-info/dependency_links.txt
+unfish.egg-info/requires.txt
+unfish.egg-info/top_level.txt
