@@ -1,0 +1,500 @@
+CHANGES
+=======
+
+v0.4.0
+------
+
+* speed up specgram generation by 20% by doing hstack() once and removing no-op calculations (including scaling by 1.)
+* move compass to pibackbone; update STLs
+* add option to execute directly
+* compass no longer relies on gamutrf
+* Update dependency grafana/grafana to v9.0.2
+* fix path
+* add missing deps
+* need gcc
+* add calibration option for compass
+* upstream include fix has been merged, so we can switch back to using https://github.com/ThomasHabets/gr-habets39
+* split to sample reader
+* markdown
+* fix numbering
+* update docs; reduce dependencies for compass
+* break out compose file, remove birdseye
+* Upgrade to gnuradio 3.10 from 3.9, with retuning tag patch
+* Update dependency pandas to v1.4.3
+* Update dependency pytype to v2022.6.23
+* update test for name change
+* rename to heading
+* convert to degrees for compass
+* can change output format
+* Update dependency numpy to v1.23.0
+* cover
+* Make RSSI server restartable with test
+* Update dependency grafana/grafana to v9.0.1
+* add stl files
+* Update dependency zstandard to v0.18.0
+* Enable grsource to read file, so basic scanner can be tested
+* Update dependency prom/prometheus to v2.36.2
+* don't ignore paths
+* Update dependency pylint to v2.14.3
+* fix import order for test
+* reorder for arguments
+* keep lambda
+* keep lambda
+* precommit fixes
+* Use bigger MTU between scanner and sigfinder, compress scan CSV file in background when rotating
+* Move to common grsource
+* Update specgram.py
+* Update specgram.py
+* Update requirements.txt
+* Update dependency pytype to v2022.6.14
+* Update dependency pylint to v2.14.2
+* Update dependency grafana/grafana to v9
+* Update dependency grafana/grafana to v8.5.6
+
+v0.3.0
+------
+
+* docker client
+* Add integration test for birdseye RSSI (poke random complex values, ensure noise RSSI is streamed)
+* handle failure to write to mqtt log
+* Update dependency requests to v2.28.0
+* Update dependency prom/prometheus to v2.36.1
+* enable RSSI calculator to read an gnuradio style I/Q sample file
+* temporary put in try/except
+* don't start threads in tests
+* fix imports
+* put import back
+* fix args
+* test api app
+* using smbus2
+* test compass with fake smbus
+* keep it binary
+* fix types
+* should make a new line for each tuple in scan
+* use scan
+* add scan.csv sample
+* fix path
+* fix arg parse
+* add more tests
+* needs sudo
+* need ldconfig
+* need sudo
+* install habets39
+* add tests for scan.py
+* Update dependency grafana/grafana to v8.5.5
+* Update dependency pytype to v2022.6.6
+* Update dependency pylint to v2.14.1
+* Update dependency smbus2 to v0.4.2
+* get bearing and error checking
+* set bearing
+* add native display for birdseye
+* add maintainer and unbuffered output
+* need to read z even if not using it
+* add nice; better naming and defaults
+* FakeSock
+* pytype
+* Make FFT data reception non-blocking, so other threads can proceed
+* Update dependency pylint to v2.14.0
+* Update dependency grafana/grafana to v8.5.4
+* Update dependency prom/prometheus to v2.36.0
+* remove unused thread
+* add dep
+* fix port
+* move out compass stuff to the orc to be called by the worker
+* drop squelch and throttle. fix ettus args. sync with ref. flowgraph use keep one in n block to limit RSSI calculations
+* Set birdseye squelch to -95
+* only use i2c if compass is enabled
+* fix up variables and deps
+* add bearing
+* Fix bladeRF AGC config for BirdsEye, make moving average size configurable
+* Update dependency alpine to v3.16
+* Update dependency numpy to v1.22.4
+* add birdseye container
+* Update dependency pytype to v2022.5.19
+* fix tests
+* fix tests
+* lower pylint
+* add more metadata to filename recordings
+* fix ettus args in wrong order
+* deconflict field name
+* need to pass through env var
+* Namespace -> dict
+* add antenna field
+* add config arguments into mqtt message
+* fix var name
+* save mqtt messages
+* Update dependency grafana/grafana to v8.5.3
+* more coverage
+* add more coverage
+* pytype
+* pylint
+* Add AGC config for BirdsEye, add zst support for Ettus and Lime, refactor for ease of maintenance and add tests
+* Update dependency scipy to v1.8.1
+* Allow configuring lower RSSI treshold for testing
+* should be dev
+* libjpeg now required
+* 0 repeats is still one request
+* make it clear which signal
+* usb args have to be in device\_args, not stream\_args
+* add back worker name
+* limit RSSI updates to 1000Hz on sender thread side
+* import error class
+* check for fix, add time recorded back
+* remerge
+* RSSI args, casting + checks, logging, MQTT is optional
+* doesn't have a dep
+* fix name
+* add name to mqtt record
+* move to jobs
+* roll back soapy changes
+* bladerf soapy driver already installed in deps
+* remove unused sox translation function. switch to duration from nsamps to avoid Ettus limit
+* Update dependency pylint to v2.13.9
+* note about certs
+* missed arguments
+* fix up docker builds
+* merge in rssi options
+* extra zero
+* need soapysdr module explicitly
+* RSSI baseline
+* needs to sleep between failures
+* work around
+* better error handling; deal with datetime; update docs
+* whitespace
+* typo
+* add mqtt docker build
+* add mqtt
+* add access to gps info on the worker
+* fix args for thread
+* need to check schedule on inner while
+* typo
+* fix status
+* fix accidentally removed lines
+* get long running scheduled requests
+* need to check schedule
+* finish implementing record requests
+* Update dependency pytype to v2022.5.10
+* formatting
+* formatting
+* reorder
+* add webform for requesting recording
+* use internal port
+* needs to be on the same network
+* needs to be run as root for now
+* it's a dict
+* don't override builtin
+* add prometheus and grafana for monitoring
+* fixes for pytype
+* add extra varibles for prom to track
+* should be a string
+* add worker name; exit worker if bad status
+* consistent log format between sigfinder and api
+* opening as clean file
+* Update docker/setup-qemu-action action to v2
+* Update dependency pytype to v2022.5.5
+* Update docker/setup-buildx-action action to v2
+* Update docker/build-push-action action to v3
+* Update dependency pbr to v5.9.0
+* Update dependency matplotlib to v3.5.2
+* Update dependency pylint to v2.13.8
+* reduce buffer memory slightly
+* 0.5 for headroom
+* More buffer tuning to let specgram coexist with recorder
+* Use cgroup limits to stop specgram from competing with api's real time needs
+* center of frequency should be calculated only in one place
+* flag
+* Add test
+* Calculate center frequency from start frequency, not 0
+* Run specgram generator on worker
+* needs sudo
+* no need to build with watchtower
+* :
+* fix prereqs
+* update docs
+* test
+* reorder
+* handle FFT/non FFT, change to default 2048 points
+* when parsing an FFT, it's raw
+* Record in power of 2 mbps (1024^2), more efficient FFT
+* fix volume and perms for worker
+* Add experimental option to allow skipping of FFT calculation (will be calculated by mt\_rx\_samples\_to\_file and co
+* Update dependency pytype to v2022.4.26
+* fix buildx ordering
+
+v0.2.0
+------
+
+* Update github/codeql-action action to v2
+* invert dB scaling
+* Move to Ubuntu 22.04 and python3.10, and sigmf 1.0.0
+* Update dependency pytest to v7.1.2
+* Update dependency pytype to v2022.4.22
+* Update codecov/codecov-action action to v3.1.0
+* Update dependency pylint to v2.13.7
+* mhz
+* record\_signals/subprocess
+* The scanner might emit an FFT entry outside its configured range (e.g. was restarted with different parameters), so verify range in sigfinder also
+* sigmif uses a lot of CPU by default
+* fix extraneous "s"
+* Update dependency pytype to v2022.4.15
+* Allow parallel spectrogram production. Allow skipping existing spectrogram (so a run on a directory can be resumed)
+* Update dependency prometheus\_client to v0.14.1
+* allow configuration of FFT overlap
+* Update dependency pytype to v2022.4.6
+* Update dependency pylint to v2.13.5
+* rename orchestrator. worker needs args to override --help (on worker, AGC should be disabled by default, sigmf should be enabled)
+* Update dependency prometheus\_client to v0.14.0
+* Update codecov/codecov-action action to v3
+* Change specgram default image type, to png
+* Update dependency pandas to v1.4.2
+* Update dependency pylint to v2.13.4
+* allow image type to be set with --iext
+* Update dependency pytype to v2022.3.29
+* Update dependency pylint to v2.13.3
+* Update dependency pylint to v2.13.2
+* Update dependency pylint to v2.13.1
+* Update dependency falcon to v3.1.0
+* Update dependency pylint to v2.13.0
+* Add --bare argument, so we can generate just a spectrogram image with no axis/metadata, suitable for an ML image recognition pipeline
+* Update dependency pytype to v2022.3.21
+* Update requirements.txt
+* Update requirements.txt
+* Update dependency pytest to v7.1.1
+* Update dependency pytest to v7.1.0
+* Update dependency pytype to v2022.3.8
+* Update dependency numpy to v1.22.3
+* Update actions/stale action to v5
+* Update actions/checkout action to v3
+* Add docker healthcheck, and also monitor gnuradio block for frequency updates and exit if none
+* breakout compose files
+* More flexible filename parsing, use MHz for scaling, graph notation improvements, use Google turbo colormap
+* Update dependency pytype to v2022.2.23
+* add smoke test for freqxlator and scanner
+* Add freqxlator
+* build check
+* utils
+* default ettus args for performance, for scanner, and make common
+* Fix for writing to absolute path
+* build
+* Add FM radio decoder
+* Update dependency pytype to v2022.2.17
+* Update dependency bjoern to v3.2.1
+* Resolve pyplot memory leak by explicitly deleting image from axes
+* Update dependency pandas to v1.4.1
+* Update dependency pytest to v7.0.1
+* w/s
+* pytype
+* pathlib
+* convenience utility to convert sample files to gnuradio style so they can be analyzed more easily
+* use reader
+* placate codacity
+* enable zst sample compression
+* Update dependency pytype to v2022.2.8
+* run in subprocess to workaround leak
+* scoped import, leak workaround
+* clf
+* arguments
+* Add max queue size/parameter
+* process a directory
+* Use new mt recorder that writes to temporary dotfile
+* build specgram image
+* add dockerfile for specgram
+* Update dependency pbr to v5.8.1
+* increase Ettus frame count to 128, explicitly set default antenna
+* Update dependency scipy to v1.8.0
+* add deps and use env
+* change job order and dependency
+* Update dependency pytest to v7
+* More useful record gain for radios with no AGC (30dB) Catch called process error
+* Update dependency numpy to v1.22.2
+* fix test
+* Implement fully incremental FFT/plotter (can read compressed or uncompressed samples in chunks to minimize memory)
+* Update dependency pytype to v2022.1.31
+* Update dependency prometheus\_client to v0.13.1
+* Update dependency prometheus\_client to v0.13.0
+* Use mt\_rx\_samples\_to\_file ver 1.0.0
+* move to mt\_rx\_samples\_to\_file
+* Update dependency pandas to v1.4.0
+* bigger spb
+* Tuned rx parameters
+* enable gzip recording for Ettus
+* Allow config of receive buffer size, increase default
+* change job order and dependency
+* implement incremental fft (reduce memory/runtime by 20% - next step is incremental sample reading, which should reduce memory by further 50%)
+* Update dependency numpy to v1.22.1
+* api needs build deps
+* repo name
+* base
+* need gamutrf image
+* reduce gnuradio overall deps somewhat, introduce gnuradio deps to avoid buildx timeouts
+* reduce gnuradio dependencies
+* split out gnuradio
+* still need git
+* break up the dockerfile
+* Update dependency pytype to v2022.1.13
+* use less specific copy
+* tests
+* deps for specgram
+* use complex single precision, switch to scipy fft (now can run against 20Msps, 10s sample on an 8GB Pi4)
+* set platform
+* build in stages
+* test
+* clear buffer
+* no netcat
+* need .git for pbr
+* add basic dockerignore
+* hadolint
+* hadolint
+* Use copy
+* Add prometheus client, with basic frequency monitoring
+* Update dependency pytype to v2022.1.7
+* Update dependency pytype to v2022
+* Update dependency requests to v2.27.1
+* update copyright year
+* add stale bot
+* Update dependency requests to v2.27.0
+* Update dependency numpy to v1.22.0
+* Update dependency numpy to v1.21.5
+* Update dependency pytype to v2021.12.15
+* Update dependency pandas to v1.3.5
+* Update dependency matplotlib to v3.5.1
+* Update dependency pytype to v2021.12.8
+* don't need to build GRC
+* Update dependency pylint to v2.12.2
+* use append so recorders can be specified in compose
+* Add scan2rtlpow.py which generates a FFT CSV log, compatible with rtl\_power
+* common scan log reader
+* Update dependency pytype to v2021.11.29
+* allow change of colormap, setting of AGC and dB
+* Update dependency pylint to v2.12.1
+* Update dependency pylint to v2.12.0
+* Update dependency pytype to v2021.11.24
+* Fixes for recorders being down
+* buildx and multi-stage not happy
+* use build-push-action
+* buildx now native?
+* buildx doesn't work with COPY --from
+* remove unneeded gnuradio cruft
+* fix tags
+* don't build, pull
+* reduce image size with builder
+* add dependency
+* optionally write a sigmf metafile
+* Update dependency pytype to v2021.11.18
+* Update dependency pbr to v5.8.0
+* parse/exclusions, choose recorder avoiding excluded ranges
+* plot spectogram
+* Update dependency pytype to v2021.11.12
+* Add lime recording
+* build lime support
+* lime string
+* Update dependency numpy to v1.21.4
+
+v0.1.0
+------
+
+* fix pypi and rework dockerfiles
+* Update dependency pbr to v5.7.0
+* Update dependency pytype to v2021.11.2
+* Update dependency pytype to v2021.10.25
+* add frequency and sample rate to recording
+* prepend history
+* call remote collectors
+* actually try converting
+* add option for sample\_rate
+* better split for buildx
+* breakup buildx for gha timeout
+* redundant downloader
+* update for bladerf capture
+* Add recorder scheduling
+* Update dependency numpy to v1.21.3
+* Add UHD images
+* nproc
+* use gnuradio fork with tags
+* Update python Docker tag to v3.10
+* Update dependency pytest-cov to v3
+* Update dependency pytest-cov to v2.12.1
+* Pin dependency pbr to ==5.6.0
+* don't call api yet
+* don't install package
+* tweaks
+* tweak
+* only cover package
+* add pytest-cov
+* breakup docker build and tests
+* pytype
+* ignore attribute error for pytype
+* tweaks for pytype
+* use directory
+* improve coverage
+* deps for tests in gha
+* codacy cleanup
+* build api docker image; fix other dockerfiles
+* add dockerfile and fix tests
+* remove record
+* resolve
+* move rest api to falcon/bjoern
+* more lint
+* an -> a; linting
+* rename to scan, add bladerf support (bladerf requires gnuradio fork w/stream tags)
+* Update dependency pytype to v2021.10.18
+* =
+* Add flask
+* minimal post API
+* Update dependency pandas to v1.3.4
+* Add library functions to record from Ettus and BladeRF, and convert recordings to gnuradio/gqrx type standard (I/Q as float)
+* Add low signal filter
+* Move to chunk reader from be-spoke re-seek in big file (faster), Workaround pybind11-dev mismatch
+* Update dependency pytype to v2021.10.11
+* Add min filter
+* Update dependency pytype to v2021.10.4
+* move log rotate suffix
+* sanity checks in UDP data, append to existing log
+* include .env
+* make frequency range configurable with compose
+* be able to override log volume path
+* initial docker-compose
+* common db calculation
+* log peak dB of detected signal
+* typo
+* prototype sigfinder
+* test with noisy spectrum, allow frame limits/dumping
+* fix data path
+* forgot to move sigwindows
+* make into a package
+* relative imports
+* lower pylint score needed
+* fix requirements references
+* remove arm v7 build and move test requirements file
+* remove arm v7
+* force add csv file for tests
+* restructure
+* set minimum score for pylint; set image names
+* remove unused import
+* don't fail on error for pylint
+* Create codeql-analysis.yml
+* suppress pytype; add GHA for pushing docker images
+* linting
+* testdata
+* test can find wifi
+* write out frames faster, better xtics
+* logic backwards
+* allow setting igain, range check freq\_start/end
+* Update dependency pytype to v2021.9.27
+* allow tmproot override
+* Update dependency pylint to v2.11.1
+* don't ignore any paths
+* incremental log parsing, scan2mp4 args, tests
+* add derivative note
+* plot rolling diff
+* numpy
+* better spread of retuning interval (even multiple caused "walking peaks") attempt to enable realtime scheduling if possible
+* Move graph/video generator to dB
+* cleanup
+* remove the container upon exit
+* add dockerfile for generating graph video
+* add faq
+* Add renovate.json
+* init
+* update copyright
+* Initial commit

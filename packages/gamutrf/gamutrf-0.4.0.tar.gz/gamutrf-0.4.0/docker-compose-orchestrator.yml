@@ -1,0 +1,74 @@
+version: "3.3"
+networks:
+  gamutrf:
+    driver: bridge
+    driver_opts:
+      com.docker.network.driver.mtu: 9000
+services:
+  compass:
+    restart: always
+    image: iqtlabs/pibackbone-compass:latest
+    networks:
+      - gamutrf
+    devices:
+      - "/dev/i2c-1:/dev/i2c-1"
+    ports:
+      - '8000:8000'
+  mqtt:
+    restart: always
+    image: iqtlabs/gamutrf-mqtt:latest
+    networks:
+      - gamutrf
+    ports:
+      - '1883:1883'
+  gamutrf:
+    restart: always
+    image: iqtlabs/gamutrf:latest
+    depends_on:
+      sigfinder:
+        condition: service_started
+    networks:
+      - gamutrf
+    ports:
+      - '9001:9000'
+    cap_add:
+      - SYS_NICE
+      - SYS_RAWIO
+    devices:
+      - /dev/bus/usb:/dev/bus/usb
+    command:
+      - --logaddr=sigfinder
+      - --igain=30
+      - '--freq-start=${FREQ_START}'
+      - '--freq-end=${FREQ_END}'
+    healthcheck:
+      test: [CMD, "/root/scanhc.sh", "9000"]
+      interval: 10s
+      timeout: 10s
+      retries: 3
+  sigfinder:
+    restart: always
+    image: iqtlabs/gamutrf-sigfinder:latest
+    networks:
+      - gamutrf
+    ports:
+      - '80:80'
+      - '9002:9000'
+    volumes:
+      - '${VOL_PREFIX}:/logs'
+    command:
+      - --logaddr=sigfinder
+      - --log=/logs/scan.csv
+      - '--freq-start=${FREQ_START}'
+      - '--freq-end=${FREQ_END}'
+  watchtower:
+    image: containrrr/watchtower:latest
+    restart: always
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    environment:
+      - "WATCHTOWER_POLL_INTERVAL=3600"
+      - "WATCHTOWER_CLEANUP=true"
+      - "WATCHTOWER_INCLUDE_RESTARTING=true"
+      - "WATCHTOWER_INCLUDE_STOPPED=true"
+      - "WATCHTOWER_REVIVE_STOPPED=true"
