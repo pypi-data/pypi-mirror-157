@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+funny_passphrase/__init__.py
+funny_passphrase/__main__.py
+funny_passphrase/generator.py
+funny_passphrase.egg-info/PKG-INFO
+funny_passphrase.egg-info/SOURCES.txt
+funny_passphrase.egg-info/dependency_links.txt
+funny_passphrase.egg-info/entry_points.txt
+funny_passphrase.egg-info/requires.txt
+funny_passphrase.egg-info/top_level.txt
+funny_passphrase/indexer/__init__.py
+funny_passphrase/indexer/__main__.py
