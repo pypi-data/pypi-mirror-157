@@ -1,0 +1,7 @@
+numpy>=1.17.0
+Shapely>=1.6.4
+gdal>=2.4.0
+pandas>=0.25.3
+geopandas>=0.6.0
+threedigrid>=1.0.16
+xarray
