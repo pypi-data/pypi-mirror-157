@@ -1,0 +1,5 @@
+numpy
+click
+tqdm
+prettytable
+matplotlib
