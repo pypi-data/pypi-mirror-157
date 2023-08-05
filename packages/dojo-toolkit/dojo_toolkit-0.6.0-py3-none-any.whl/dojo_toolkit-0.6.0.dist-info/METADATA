@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dojo-toolkit
+Version: 0.6.0
+Summary: Toolkit for Python Coding Dojos.
+Author: grupy-sanca
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: clint (>=0.5.1,<0.6.0)
+Requires-Dist: pgi (>=0.0.11,<0.0.12); sys_platform == "linux"
+Requires-Dist: pyglet (>=1.5.21,<2.0.0)
+Requires-Dist: watchdog (>=2.1.6,<3.0.0)
