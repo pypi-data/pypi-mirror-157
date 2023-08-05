@@ -1,0 +1,14 @@
+pyproject.toml
+setup.cfg
+src/fp_bglss/__init__.py
+src/fp_bglss/config.py
+src/fp_bglss/configForward.py
+src/fp_bglss/consts.py
+src/fp_bglss/env.py
+src/fp_bglss/logevent.py
+src/fp_bglss/logeventdaemon.py
+src/fp_bglss/secret.py
+src/fp_bglss.egg-info/PKG-INFO
+src/fp_bglss.egg-info/SOURCES.txt
+src/fp_bglss.egg-info/dependency_links.txt
+src/fp_bglss.egg-info/top_level.txt
