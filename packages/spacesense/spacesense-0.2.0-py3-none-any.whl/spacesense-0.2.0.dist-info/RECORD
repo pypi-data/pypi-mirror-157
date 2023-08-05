@@ -1,0 +1,16 @@
+spacesense/__init__.py,sha256=_VO8hLWLC5Id1FMiUFMHFR9PfaT4oxJ4euMOzCu7DPo,94
+spacesense/__version__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+spacesense/config.py,sha256=Be1saJ85PzTN7rA_XIqE_H0hLX9YMgKywboyTldIclY,523
+spacesense/collections/__init__.py,sha256=V6P_9xGeTGrm4F3IW_9HGHTZUMRpZXjXUmsttO48c2o,68
+spacesense/collections/client.py,sha256=2sWxVbsdPIwIUFGVGDxzJikpRNGKLtZauErCkbUvVJw,48645
+spacesense/collections/file_handler.py,sha256=GynVbt42B4gJWVCEjPP9V0TglbO9JIFkH7I8F34f2Cg,3526
+spacesense/collections/models.py,sha256=HuVQ47MnCTX5z_h-6bswTEYUv54_qRQC7nrHU7lRh6s,4185
+spacesense/common/proto/backend/backend_pb2.py,sha256=SnxdztO2czSW6PYfKLRDlgxdGrvl_ayDIO9sfwZmz2Y,58988
+spacesense/common/proto/backend/backend_pb2_grpc.py,sha256=GAlnIrgEwOJh8J4OVTPsCC6Vn0HzGM7iejqrNySM3bc,9922
+spacesense/resources/config.json,sha256=CBiHHmweZYEVVyTXNZYsbDPmC7cfbbb_jJ6_x8XvmtA,22
+spacesense/resources/server.crt,sha256=hWpmV4LnNcHpTKNz4hATuuSmOB_Wg2gmfUyJLUsHCF0,1074
+spacesense-0.2.0.dist-info/LICENSE,sha256=6gvhfpztIeEW5MA5AXwl8mibDTNDTxQoXOWnpZNC4SM,556
+spacesense-0.2.0.dist-info/METADATA,sha256=w22mqO0Jl3rqV_x4Bh7DQ1cP3lEnvzGIvsn417EL3JM,1912
+spacesense-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+spacesense-0.2.0.dist-info/top_level.txt,sha256=osepgwVg3MDesvKIFFmV7XKrzzsveLMnCfYQ2kWKhM8,11
+spacesense-0.2.0.dist-info/RECORD,,
