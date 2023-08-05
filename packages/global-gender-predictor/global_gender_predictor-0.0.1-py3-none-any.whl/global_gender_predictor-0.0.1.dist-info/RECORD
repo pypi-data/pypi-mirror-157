@@ -1,0 +1,8 @@
+global_gender_predictor/__init__.py,sha256=nqW1ifB50PBu11LiGmesXFb0yN8Gtt6Byma1IVjIn6s,82
+global_gender_predictor/global_gender_predictor.py,sha256=1OrqUxgbbeANr-8MKLTsHfks_4lQgBtBObtyI4y2P2E,1296
+global_gender_predictor/data/gender_wgnd2.jsonl.gz,sha256=CzAdux3qZ6rKq_Ghx9Q-BgW543af9gPzzXcJ35b8y5c,16946479
+global_gender_predictor-0.0.1.dist-info/LICENSE,sha256=lpGb_07mpBtQqZydkK5fwtfCOOx_MbUjThB3Mvvk5B0,1067
+global_gender_predictor-0.0.1.dist-info/METADATA,sha256=4ZMDTd9OhGZv-ulTH4cu0UPeMZldqeY9b372WZlB5tQ,3138
+global_gender_predictor-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+global_gender_predictor-0.0.1.dist-info/top_level.txt,sha256=yjF9euYiKWK5v6aAJBYwww_6jgwliyC_wqdhM4AajcE,24
+global_gender_predictor-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: global-gender-predictor
+Version: 0.0.1
+Summary: Predict gender using first name using data from World Gender Name Dictionary 2.0.
+Home-page: https://github.com/attract-ai/global-gender-predictor
+Author: Rianne Klaver
+Author-email: "attract.ai" <hello@attract.ai>
+License: MIT License        
+        Copyright (c) 2022 attract.ai        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.        
+Project-URL: Homepage, https://github.com/attract-ai/global-gender-predictor
+Project-URL: Bug Tracker, https://github.com/attract-ai/global-gender-predictor/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Global Gender Predictor
+Predict gender using first name using data from World Gender Name Dictionary 2.0. 
+The dataset contains 4,148,966 unique names. The predictor is case-insensitive and predicts ``Male``, ``Female``, or ``Unknown`` (i.e. unisex or not found in data)
+
+Install using pip:
+```bash
+pip install global_gender_predictor
+```
+## Usage
+```python
+from global_gender_predictor import GlobalGenderPredictor
+
+predictor = GlobalGenderPredictor()
+
+predictor.predict_gender('John')
+'Male'
+predictor.predict_gender('Jane')
+'Female'
+predictor.predict_gender('attract.ai')
+'Unknown'
+```
+The dataset contains probabilities for each name:
+`{'name': 'taylor', 'gender_prob': {'F': 0.699, 'M': 0.301}}`.
+Change the probability threshold for unisex names:
+```python
+predictor.predict_gender('taylor',threshold=0.5)
+'Female'
+predictor.predict_gender('taylor',threshold=0.8)
+'Unknown'
+```
+
+## Citation
+World Gender Name Dictionary (WGND 2.0)
+```bibtex
+@data{DVN/MSEGSJ_2021,
+author = {Raffo, Julio},
+publisher = {Harvard Dataverse},
+title = {{WGND 2.0}},
+UNF = {UNF:6:5rI3h1mXzd6zkVhHurelLw==},
+year = {2021},
+version = {DRAFT VERSION},
+doi = {10.7910/DVN/MSEGSJ},
+url = {https://doi.org/10.7910/DVN/MSEGSJ}
+}
+```
