@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: scroll_of_seals
+Version: 0.0.13
+Summary: A useful library
+Home-page: https://github.com/tuliofalmeida/scroll-of-seals
+Author: Túlio F. Almeida
+Author-email: tuliofalmeida@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# scroll-of-seals
+Useful tools for code
+
+
