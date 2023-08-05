@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: blabpy
+Version: 0.10.2
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: pyarrow
+Requires-Dist: pympi-ling
+Requires-Dist: pydub
+Requires-Dist: StrEnum
+
