@@ -1,0 +1,4 @@
+GitPython
+markdown
+pymdown-extensions
+toml
