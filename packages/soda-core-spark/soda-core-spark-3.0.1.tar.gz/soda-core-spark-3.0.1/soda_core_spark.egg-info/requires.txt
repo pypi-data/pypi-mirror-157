@@ -1,0 +1,6 @@
+soda-core==3.0.1
+pyodbc
+PyHive
+thrift
+sasl
+thrift-sasl
