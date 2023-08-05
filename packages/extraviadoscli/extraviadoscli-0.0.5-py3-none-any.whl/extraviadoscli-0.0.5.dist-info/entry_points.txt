@@ -1,0 +1,2 @@
+[console_scripts]
+extraviadoscli = extraviadoscli.__main__:main
