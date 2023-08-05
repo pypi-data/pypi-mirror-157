@@ -1,0 +1,14 @@
+many_more_routes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+many_more_routes/client.py,sha256=_wJuxWBmkYeFvlm0eckgBciahX6vk8LadV40qRpQY7s,1422
+many_more_routes/construct.py,sha256=uf_uOlQkfHcRVLeDvRY7jMSIH_34Gy0vr9Ki9jXXOpM,3633
+many_more_routes/ducks.py,sha256=JfENehQH2p8NDjMGMHJwVXLuI_gC2VaD9vZvE_dx5F4,362
+many_more_routes/io.py,sha256=-knQQfoaSJ1H8zmL3SjK5L9ftjDbRw7KtAXDIIkr-oM,2976
+many_more_routes/methods.py,sha256=ELQJSM_DjNbZK7avMaIDzf8PeW5m1158eLzj7zHF7qE,3791
+many_more_routes/models.py,sha256=JsVugge66wCM92sVxeVZXUjJQyYaQglRG7qShrL3uJc,9337
+many_more_routes/models.py.bak,sha256=AACJOiWASgCh10jTwyv1ZA6qteqwlmN9FQH9Vkh2Fds,6851
+many_more_routes/sequence.py,sha256=12VyfYJFWCkMij17GUT78MjhLGUSm7m-3XHji8FKUx8,3693
+many_more_routes-0.3.16.dist-info/entry_points.txt,sha256=WFZMH0Ohb3s96NPSJlIaO_cQnlYN-ncQ6L9L4qVvtSg,51
+many_more_routes-0.3.16.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+many_more_routes-0.3.16.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+many_more_routes-0.3.16.dist-info/METADATA,sha256=wESR--T9uwwzKEdydG0PMGUvWIT5oxA_qX7ZeSpIBvs,500
+many_more_routes-0.3.16.dist-info/RECORD,,
