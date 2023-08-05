@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0",
+  "configurations": [
+    {
+      "type": "pwa-msedge",
+      "request": "launch",
+      "name": "Launch Edge against localhost",
+      "url": "http://localhost:3001",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+        "name": "debug streamlit",
+        "type": "python",
+        "request": "launch",
+        "program": "/home/vscode/.local/bin/streamlit",
+        "args": [
+            "run",
+            "examples/apps/app.py"
+          ]
+    }
+  ]
+  }
