@@ -1,0 +1,13 @@
+numpy
+requests>=2.11.1
+blosc>=1.4.4
+six
+mock
+nose2
+
+[cloudvolume]
+cloud-volume==6.1.1
+brotli>=1.0.7
+
+[meshing]
+zmesh>=0.5.0

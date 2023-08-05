@@ -1,0 +1,40 @@
+intern/test_data
+
+# OS Things
+.DS_Store
+.thumbnails
+
+# Private Things
+.coverage
+.coveralls.yml
+coverage.xml
+nose2-junit.xml
+
+# Compiled Things
+*.pyc
+*.bak
+*.pickle
+
+# Data
+*.hdf5
+*.png
+*.tif
+*.tiff
+
+# Temp Files
+*.swp
+*.swo
+
+# Visual Studio Files
+.vs/
+*.suo
+
+
+/.idea
+/intern/test*.cfg
+/test*.cfg
+/.pypirc
+/build
+/intern.egg-info
+/dist
+.mypy_cache/
