@@ -1,0 +1,10 @@
+h_devops/.gitignore,sha256=A4csD2FWQ7aiMrZcIAq5QamSflOndbkwY_AGCgdodJ8,10833
+h_devops/__init__.py,sha256=KpC9jQxv0oVxI0_mngtXb_stjYBQiP9yl6PELdRPe7s,23
+h_devops/__main__.py,sha256=XdYz30kMiRIbx1VyR76pF88-GEJb6lK0DS_inRqa0FA,49
+h_devops/h-devops-config.json,sha256=IEW_eatY2xYmr4X8th6QA6qaW_CbtQFEsxI5iikWCHo,74
+h_devops/main.py,sha256=gGoF8CVmGEgKrMEQBn72oBhFjz-cqvIv00nlN9Iu208,12929
+h_devops-0.3.2.dist-info/entry_points.txt,sha256=E7q_xaIz81P-ezibrJwZ67NJ0RDtsjHjU7G5xaaEJ7A,46
+h_devops-0.3.2.dist-info/LICENSE.md,sha256=Z0CmnPiobW6PrnFMVQA1je8U9ZuIuAjvMyTNRmJTCn8,1076
+h_devops-0.3.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+h_devops-0.3.2.dist-info/METADATA,sha256=EUqtv-C_puIZn3j3QVe-yh7opLLEBAirzKzQl0SEY5o,1250
+h_devops-0.3.2.dist-info/RECORD,,
