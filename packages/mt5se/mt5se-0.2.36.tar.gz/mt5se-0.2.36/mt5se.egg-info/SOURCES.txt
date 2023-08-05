@@ -1,0 +1,16 @@
+README.md
+setup.py
+mt5se/__init__.py
+mt5se/ai_utils.py
+mt5se/analysts.py
+mt5se/backtest.py
+mt5se/broker.py
+mt5se/finmath.py
+mt5se/mt5se.py
+mt5se/operations.py
+mt5se/sampleTraders.py
+mt5se/tech.py
+mt5se.egg-info/PKG-INFO
+mt5se.egg-info/SOURCES.txt
+mt5se.egg-info/dependency_links.txt
+mt5se.egg-info/top_level.txt
