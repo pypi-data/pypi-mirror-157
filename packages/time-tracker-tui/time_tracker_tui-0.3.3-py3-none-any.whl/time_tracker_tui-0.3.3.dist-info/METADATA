@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: time-tracker-tui
+Version: 0.3.3
+Summary: Simple tui time tracker
+License: MIT
+Author: Mark Bragin
+Author-email: m4rk.brag1n@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: platformdirs (>=2.5.2,<3.0.0)
+Requires-Dist: textual (>=0.1.18,<0.2.0)
