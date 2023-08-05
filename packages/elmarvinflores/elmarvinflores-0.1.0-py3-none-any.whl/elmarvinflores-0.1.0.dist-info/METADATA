@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: elmarvinflores
+Version: 0.1.0
+Summary: 
+Author: Marvin Flores
+Author-email: elmarvinflores@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numpy (>=1.23.0,<2.0.0)
