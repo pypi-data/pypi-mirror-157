@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+cellshape/__init__.py
+cellshape/cellshape_train.py
+cellshape/example.py
+cellshape/main.py
+cellshape.egg-info/PKG-INFO
+cellshape.egg-info/SOURCES.txt
+cellshape.egg-info/dependency_links.txt
+cellshape.egg-info/not-zip-safe
+cellshape.egg-info/requires.txt
+cellshape.egg-info/top_level.txt
