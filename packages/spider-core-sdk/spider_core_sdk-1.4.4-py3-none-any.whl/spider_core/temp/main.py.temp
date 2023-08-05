@@ -1,0 +1,72 @@
+import logging
+import sys
+import time
+import json
+import threading
+
+from spider_core.serverapi import ServerApi
+
+logger = logging.getLogger(__name__)
+logger.setLevel(LOGGER_LEVEL)
+simple_fmt = logging.Formatter('[%(asctime)s-%(levelname)s] %(message)s')
+
+def run(datas):
+    pass
+
+
+class SendHeartbeatTask:
+    def __init__(self):
+        self.status = 'waiting'
+
+    def send_working_heartbeat(self):
+        while True:
+            time.sleep(60)
+            api.send_heartbeat(self.status)
+
+
+def main():
+    sh = SendHeartbeatTask()
+    t = threading.Thread(target=sh.send_working_heartbeat)
+    t.start()
+    while True:
+        if not api.data_list_key:
+            time.sleep(5)
+            task_info = api.task_query()
+            logger.debug(f'task_info: {task_info}')
+            if task_info and task_info['code'] == 200:
+                task_data = task_info['data']
+                logger.info(f'task_data: {task_data}')
+                api.set_args(task_data)
+
+        result = api.get_data(api.data_list_key, number=1)
+        logger.debug(f'result: {result}')
+        if result and result['code'] == 200:
+            datas = [json.loads(i) for i in result['data']]
+            logger.info(f'datas: {data}')
+            sh.status = 'working'
+            try:
+                run(datas)
+            except Exception as e:
+                record_full_log(logger, e)
+            finally:
+                sh.status = 'waiting'
+        else:
+            api.data_list_key = ''
+
+
+if __name__ == '__main__':
+    ops = sys.argv[1:]
+    instance_id = ops[0]
+    spider_id = ops[1]
+    env = ops[2]
+    api = ServerApi(instance_id, spider_id)
+    api.init_setting(env)
+    log_file = f'log_{instance_id}.log'
+    log_handler = RotatingFileHandler(
+        filename=log_file, maxBytes=2048000, backupCount=5, encoding='utf-8'
+    )
+    log_handler.setFormatter(simple_fmt)
+    log_handler.setLevel(LOGGER_LEVEL)
+    logging.root.addHandler(log_handler)
+    logging.root.setLevel(LOGGER_LEVEL)
+    main()

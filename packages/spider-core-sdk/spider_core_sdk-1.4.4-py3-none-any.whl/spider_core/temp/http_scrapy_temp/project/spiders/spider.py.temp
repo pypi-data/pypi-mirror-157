@@ -1,0 +1,20 @@
+import time
+import scrapy
+from spider_core.http_spider import HttpSpider
+
+
+class {{ project_info['project_name_camel_case'] }}Spider(HttpSpider):
+    name = "{{ project_info['project_name'] }}"
+    allowed_domains = []
+    FETCH_NUM = 16
+
+    def make_request_from_data(self, data):
+        url = 'https://www.baidu.com'
+        return scrapy.Request(url=url, meta={'data': data}, callback=self.detail, dont_filter=True)
+
+    def detail(self, response, **kwargs):
+        if response.status == 200:
+            item = {'test': 'test'}
+            yield item
+        else:
+            self.logger.error(f'response error: Code:{response.status} Error: {response.text}')
