@@ -1,0 +1,18 @@
+[project]
+name = "reel44"
+version = "1.0.1"
+authors = [
+  { name="Keshri-InfoTech", email="keshrinfotech@gmail.com" },
+]
+dependencies = [
+    "pyjwt"
+]
+description = "A Python Encryption Library BY-Keshri-InfoTech"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
