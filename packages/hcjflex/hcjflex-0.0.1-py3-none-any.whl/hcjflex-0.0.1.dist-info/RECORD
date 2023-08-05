@@ -1,0 +1,12 @@
+hcjflex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hcjflex/build/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hcjflex/build/build.py,sha256=SOpCNNpiRZ14K4Su7_dI781mDty83Q3usjfddNRf000,191
+hcjflex/contentcreation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hcjflex/contentcreation/createcontent.py,sha256=DznSn43Cvr28od5xrGpl7OPgp2f64LX5Ec5vZKU-1-w,150
+hcjflex/gui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hcjflex/gui/gui.py,sha256=RxrHPWuDtth7wwHy-WOe0U6we3o3z355GLqPp0wcF9o,540
+hcjflex-0.0.1.dist-info/METADATA,sha256=If5Qst60SOoWLeSeHyl4It0Rhccxj_pYXwHIbitkGOI,1813
+hcjflex-0.0.1.dist-info/WHEEL,sha256=5vr2ZUYMIPpdABBOSv8-NuqiKYrGTWMNuyATpVRyrq8,86
+hcjflex-0.0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hcjflex-0.0.1.dist-info/license_files/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+hcjflex-0.0.1.dist-info/RECORD,,
