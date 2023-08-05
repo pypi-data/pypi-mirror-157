@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/py7dtd/__init__.py
+src/py7dtd/version.py
+src/py7dtd.egg-info/PKG-INFO
+src/py7dtd.egg-info/SOURCES.txt
+src/py7dtd.egg-info/dependency_links.txt
+src/py7dtd.egg-info/entry_points.txt
+src/py7dtd.egg-info/requires.txt
+src/py7dtd.egg-info/top_level.txt
