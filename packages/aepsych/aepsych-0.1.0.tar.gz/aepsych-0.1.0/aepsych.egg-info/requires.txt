@@ -1,0 +1,12 @@
+matplotlib
+torch
+pyzmq==19.0.2
+scipy
+sklearn
+gpytorch>=1.4
+botorch>=0.6.1
+SQLAlchemy
+dill
+pandas
+tqdm
+pathos
