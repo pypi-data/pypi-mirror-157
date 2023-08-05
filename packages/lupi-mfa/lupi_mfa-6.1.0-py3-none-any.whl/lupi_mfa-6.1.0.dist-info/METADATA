@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: lupi-mfa
+Version: 6.1.0
+Summary: Perspecta Labs LupiMFA primitive
+Home-page: https://gitlab.com/datadrivendiscovery/contrib/lupi_mfa
+Author: VencoreLabs
+Maintainer: Peter Lin
+Maintainer-email: plin@perspectalabs.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: d3m
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+
+UNKNOWN
+
+
