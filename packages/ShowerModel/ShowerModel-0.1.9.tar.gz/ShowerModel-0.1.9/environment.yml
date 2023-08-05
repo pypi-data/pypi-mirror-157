@@ -1,0 +1,13 @@
+name: showermodel
+channels:
+  - default
+  - conda-forge
+dependencies:
+# core
+  - python
+  - jupyter
+  - ipython
+  - matplotlib
+  - numpy
+  - pandas
+  - scipy

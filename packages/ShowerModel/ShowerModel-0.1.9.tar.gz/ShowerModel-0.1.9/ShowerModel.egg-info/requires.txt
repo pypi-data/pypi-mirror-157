@@ -1,0 +1,17 @@
+numpy
+pandas
+matplotlib
+scipy
+ipython
+setuptools_scm
+
+[docs]
+sphinx_rtd_theme
+sphinx_automodapi
+sphinx
+nbsphinx
+nbsphinx-link
+numpydoc
+jupyter
+notebook
+graphviz
