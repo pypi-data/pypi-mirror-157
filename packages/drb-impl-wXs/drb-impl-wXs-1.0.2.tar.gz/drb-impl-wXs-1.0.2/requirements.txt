@@ -1,0 +1,6 @@
+requests~=2.27.1
+drb>=1.0.4,<1.1.0
+drb-impl-http>=1.0.4,<1.1.0
+defusedxml>=0.7.1
+drb-impl-json>=1.0.1,<1.1.0
+drb-impl-xml>=1.0.0,<1.1.0
