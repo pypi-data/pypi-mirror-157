@@ -1,0 +1,3 @@
+[console_scripts]
+acltest=openldap_acl_test.cli:main
+

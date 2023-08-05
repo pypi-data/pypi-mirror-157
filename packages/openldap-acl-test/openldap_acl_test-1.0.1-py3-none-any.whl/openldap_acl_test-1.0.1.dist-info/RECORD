@@ -1,0 +1,13 @@
+CHANGELOG.rst,sha256=5YFIs4zDD5MD1dO6QB7vUGwH3freN3l1V4ms5vczhPs,122
+openldap_acl_test/__init__.py,sha256=x2WsWsb9J8z2K_ufaN8UqeWFItes_hkJLLsAvMdRER0,207
+openldap_acl_test/cli.py,sha256=bDGXC-Y2h35HDgpo6mstA31KJPOv6SpkVwSvk0aJwN4,2662
+openldap_acl_test/conf.py,sha256=3yCsle5XnlWng5pT_W9RfiFPLiDGVGx9xqhgExbA7_g,1512
+openldap_acl_test/exceptions.py,sha256=zJQjWNpB-Nm6qM3dgf_D5nAUvECIQ-kNWoh_GGGBOfk,192
+openldap_acl_test/log.py,sha256=7xD0pEMTG372mgJInmVQ12Fm36rC738JIuwtDMmtWW8,2068
+openldap_acl_test/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openldap_acl_test/testcase.py,sha256=qb22oSGROpGDHSnJSbo5eLPJQbA7rw1j_0H0tV3izQo,6643
+openldap_acl_test-1.0.1.dist-info/entry_points.txt,sha256=mFOKFL2B1uYLzJ-39w7L9Di0ORUvMv613QSPJu1egIc,54
+openldap_acl_test-1.0.1.dist-info/LICENSE,sha256=pHrXbtFVyTGlDdq75VzJ_p7X9PTBpfqwAEYRBi56JRc,1061
+openldap_acl_test-1.0.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+openldap_acl_test-1.0.1.dist-info/METADATA,sha256=TJA7BifpLAqM11-Fm-PVLE4X6Pkc3O9ehR-yIMuriRk,2127
+openldap_acl_test-1.0.1.dist-info/RECORD,,
