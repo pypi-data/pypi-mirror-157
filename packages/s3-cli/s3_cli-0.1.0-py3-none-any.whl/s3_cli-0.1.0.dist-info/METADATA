@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: s3-cli
+Version: 0.1.0
+Summary: 
+Author: Diogo Neto
+Author-email: diogo.neto@promptlyhealth.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3 (>=1.24.18,<2.0.0)
