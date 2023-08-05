@@ -1,0 +1,10 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/example.py,sha256=9BdI-_nfPrPKuxlB6BiP13RK5oomnBCrtSlA26-ghvw,40
+src/nester.py,sha256=nTjTQP8VQ3TwT-HBt8008LG7-PTGjIras0KfKVi0lVQ,940
+src/nester/nester.py,sha256=nTjTQP8VQ3TwT-HBt8008LG7-PTGjIras0KfKVi0lVQ,940
+src/nester/setup.py,sha256=i6QcpufKNrUx8yorPSU3D88tD_KJ0mKOBGHntcACeM4,299
+nester_monstrosity878-1.3.0.dist-info/METADATA,sha256=Trj_raQ9GZXWZbDLqTjfXOi_hXD1pR4z8yCusiDiE28,754
+nester_monstrosity878-1.3.0.dist-info/WHEEL,sha256=5vr2ZUYMIPpdABBOSv8-NuqiKYrGTWMNuyATpVRyrq8,86
+nester_monstrosity878-1.3.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nester_monstrosity878-1.3.0.dist-info/license_files/LICENSE.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+nester_monstrosity878-1.3.0.dist-info/RECORD,,
