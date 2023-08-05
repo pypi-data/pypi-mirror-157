@@ -1,0 +1,9 @@
+_example
+build
+example
+example-2
+news
+notebooks
+old-news
+plume
+tests
