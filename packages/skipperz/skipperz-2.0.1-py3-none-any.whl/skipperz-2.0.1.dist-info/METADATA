@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: skipperz
+Version: 2.0.1
+Summary: A game where you skip incoming spaceships. Lateral scroll
+Home-page: https://bitbucket.org/holypython/skipper/src/master/
+Author: Simon Zozol
+Author-email: simon.zozol@gmail.com
+Classifier: Topic :: Games/Entertainment :: Side-Scrolling/Arcade Games
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pygame (>=2)
+Requires-Dist: numpy
+Requires-Dist: pygame-menu
+
+Skipperz, by Simon Zozol
+=======
+![screenshot from skipperz](https://holy-python.com/skipperz/skipperz_screenshot.jpg)
+
+
+Description
+----
+In this game, you control a spaceship initially at the right side of the screen.
+
+Some other ships will come from the left
+
+Just skip them
+
+install and run
+-----
+Easiest way to install is from you system console:
+	pip install skipperz
+
+then run with this command:
+	python -m skipperz
+
+
+controls
+----
+Curently, you can only use the keyboard directional arrows.
+
+Well... actually, you can try to edit `params.py` directly on your drive. It is somewhat technical, but nothing crazy.
+
+I will add other methods later (touchscreen, mouse, joypad)
+
+
+licence
+----
+Licence Creative common 0. 
+
+You do whatever you want with this. I take no responsability if it backfires.
+
+
+Where can I follow the wonderful work of Simon Zozol?
+-----
+holy-python.com
+
+It might be in French
+
+ 
