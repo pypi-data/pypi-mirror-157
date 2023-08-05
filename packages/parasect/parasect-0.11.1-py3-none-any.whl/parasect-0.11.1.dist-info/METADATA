@@ -1,0 +1,162 @@
+Metadata-Version: 2.1
+Name: parasect
+Version: 0.11.1
+Summary: Parasect
+Home-page: https://github.com/AvyFly/parasect
+License: MIT
+Author: George Zogopoulos
+Author-email: geo.zogop.papal@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: defusedxml (>=0.7.1,<0.8.0)
+Requires-Dist: directory-tree (>=0.0.2,<0.0.3)
+Requires-Dist: pydantic (>=1.9.1,<2.0.0)
+Project-URL: Changelog, https://github.com/AvyFly/parasect/releases
+Project-URL: Documentation, https://parasect.readthedocs.io
+Project-URL: Repository, https://github.com/AvyFly/parasect
+Description-Content-Type: text/x-rst
+
+Parasect
+========
+
+|PyPI| |Status| |Python Version| |License|
+
+|Read the Docs| |Tests| |Codecov|
+
+|pre-commit| |Black|
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/parasect.svg
+   :target: https://pypi.org/project/parasect/
+   :alt: PyPI
+.. |Status| image:: https://img.shields.io/pypi/status/parasect.svg
+   :target: https://pypi.org/project/parasect/
+   :alt: Status
+.. |Python Version| image:: https://img.shields.io/pypi/pyversions/parasect
+   :target: https://pypi.org/project/parasect
+   :alt: Python Version
+.. |License| image:: https://img.shields.io/github/license/AvyFly/parasect
+   :target: https://opensource.org/licenses/MIT
+   :alt: License
+.. |Read the Docs| image:: https://img.shields.io/readthedocs/parasect/latest.svg?label=Read%20the%20Docs
+   :target: https://parasect.readthedocs.io/
+   :alt: Read the documentation at https://parasect.readthedocs.io/
+.. |Tests| image:: https://github.com/AvyFly/parasect/workflows/Tests/badge.svg
+   :target: https://github.com/AvyFly/parasect/actions?workflow=Tests
+   :alt: Tests
+.. |Codecov| image:: https://codecov.io/gh/AvyFly/parasect/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/AvyFly/parasect
+   :alt: Codecov
+.. |pre-commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+   :target: https://github.com/pre-commit/pre-commit
+   :alt: pre-commit
+.. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/psf/black
+   :alt: Black
+
+
+Welcome to *Parasect*, a utility for manipulating parameter sets for autopilots!
+
+Features
+--------
+
+*Parasect* has two-fold capabilities:
+
+1. Compare two parameter sets and highlighting their differences.
+2. Parsing from user-defined content and generating new parameter sets, ready for loading into an autopilot.
+
+List of currently supported autopilots:
+
+* PX4_
+
+Requirements
+------------
+
+*Parasect* is a pure-Python project. Its requirements are managed by the Poetry_ dependency manager.
+When you install *Parasect* via pip_ its requirements will also be installed automatically.
+
+Currently *Parasect* has been tested:
+
+* in Continuous Integration servers for **Ubuntu Linux**, **Windows** and **MacOS**
+* manually in **Ubuntu Linux**.
+
+
+Installation
+------------
+
+You can install *Parasect* via pip_ from PyPI_:
+
+.. code:: console
+
+   $ pip install parasect
+
+
+Usage
+-----
+
+*Parasect* is primarily used as a command-line program.
+In its simplest form, two parameter files can be compared via:
+
+.. code:: console
+
+   $ parasect compare <FILE_1> <FILE_2>
+
+The usage for building parameter sets is more involved.
+Please see the `Command-line Reference <CLI usage_>`_ for details.
+
+Additionally, it exposes a minimal API, enabling automated operations.
+This is described in the `API Reference <API usage_>`_.
+
+It is strongly recommended that you read the Concepts_ that *Parasect* employs, if you plan to make full use of it.
+
+
+Contributing
+------------
+
+Contributions are very welcome.
+To learn more, see the `Contributor Guide`_.
+
+
+License
+-------
+
+Distributed under the terms of the `MIT license`_,
+*Parasect* is free and open source software.
+
+
+Issues
+------
+
+If you encounter any problems,
+please `file an issue`_ along with a detailed description.
+
+
+Credits
+-------
+
+This project was sponsored by `Avy B.V. <Avy_>`_, a UAV company in Amsterdam.
+
+This project was generated from `@cjolowicz`_'s `Hypermodern Python Cookiecutter`_ template.
+
+.. _@cjolowicz: https://github.com/cjolowicz
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _MIT license: https://opensource.org/licenses/MIT
+.. _PyPI: https://pypi.org/
+.. _Hypermodern Python Cookiecutter: https://github.com/cjolowicz/cookiecutter-hypermodern-python
+.. _file an issue: https://github.com/AvyFly/parasect/issues
+.. _pip: https://pip.pypa.io/
+.. _CLI usage: https://parasect.readthedocs.io/en/latest/usage.html
+.. _API usage: https://parasect.readthedocs.io/en/latest/reference.html
+.. _Concepts: https://parasect.readthedocs.io/en/latest/concepts.html
+.. _PX4: https://px4.io/
+.. _Poetry: https://python-poetry.org/
+.. _Avy: https://avy.eu
+.. github-only
+.. _Contributor Guide: CONTRIBUTING.rst
+

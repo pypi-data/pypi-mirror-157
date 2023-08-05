@@ -1,0 +1,3 @@
+[console_scripts]
+parasect=parasect.__main__:cli
+
