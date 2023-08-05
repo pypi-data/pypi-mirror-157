@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: helpme_assistance
+Version: 0.2.4
+Summary: The project "HelpMe" - its your personal CLI assistant. AddressBook, NoteBook, CleanFolder - in one app.
+Home-page: https://github.com/vlad-bb
+Author: Vladyslav Babenko
+Author-email: vlad_bb@icloud.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

@@ -1,0 +1,3 @@
+dist
+helpme_pack
+venv
