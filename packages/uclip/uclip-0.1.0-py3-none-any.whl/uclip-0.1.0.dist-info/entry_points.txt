@@ -1,0 +1,3 @@
+[console_scripts]
+uclip=uclip.main:uclip
+
