@@ -1,0 +1,13 @@
+site_name: Python NetDot API Wrapper
+theme:
+  name: material
+nav:
+  - Home: README.md
+  - User Guide: user-guide.md
+  - Release Notes: release-notes.md
+  - Developer Guide: 
+    - Getting Started: development.md
+    - Software Design: design.md
+    - Dependency Management: dependencies.md
+    - RESTful API Reference: api.md
+  - Deployment Guide: jenkins-cicd.md
