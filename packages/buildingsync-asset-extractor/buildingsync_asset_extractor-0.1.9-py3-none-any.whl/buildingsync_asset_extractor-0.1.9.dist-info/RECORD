@@ -1,0 +1,10 @@
+buildingsync_asset_extractor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+buildingsync_asset_extractor/config/asset_definitions.json,sha256=nSHD_aaWVhjHjN48hSOr0ezN2x84WO5b9oDNFlWNkkQ,3848
+buildingsync_asset_extractor/main.py,sha256=5bTwCjAjAQ3gglyZajsNTojZLPAdnB28aMsB0DUryC4,3930
+buildingsync_asset_extractor/processor.py,sha256=nYrWDdfFADfhWqEc_kmbvBxzo-EIHIsjCO_lTJRQfxY,40903
+buildingsync_asset_extractor/schemas/asset_definitions_schema.json,sha256=rBKmpoTjWz0Y8PeoJ32nya9ET4MAzGKhdOEPXs8VUKc,2191
+buildingsync_asset_extractor/schemas/extracted_assets_schema.json,sha256=Hpc3Z7btb-gAf7n-M1V_OfZDWJW5xR4uKPJeqp4o4eA,998
+buildingsync_asset_extractor-0.1.9.dist-info/LICENSE,sha256=8biJIZjm5LZWtju4HZRM25CYJJ1fh0DzThH3U1lXWn0,1988
+buildingsync_asset_extractor-0.1.9.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+buildingsync_asset_extractor-0.1.9.dist-info/METADATA,sha256=RKqYhudeAeotRUblTRHQwE1G00f-fZdxnRLKGk0Qbxo,6263
+buildingsync_asset_extractor-0.1.9.dist-info/RECORD,,
