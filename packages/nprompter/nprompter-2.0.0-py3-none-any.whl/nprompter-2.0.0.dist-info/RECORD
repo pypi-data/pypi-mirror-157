@@ -1,0 +1,13 @@
+nprompter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nprompter/__main__.py,sha256=rrd4gcC3rUZjUkaFRZ-rJ3phbkcwmefRrLWLWqauH2M,1463
+nprompter/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nprompter/api/notion_client.py,sha256=LowUb81PYff-5613TjRjvewVZ34_ejoL3OwDfFE4cqg,1559
+nprompter/processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nprompter/processing/processor.py,sha256=YOhgiB1UG9ZvrduDTkUeTDGTq4PabGSB2wNTV5AGW6I,2411
+nprompter/web/assets/nprompter.css,sha256=Wdg_I7r3ZIW8NfR_3ehMPnxowkJzlPPWsLf0k56BtFI,1187
+nprompter/web/assets/script.js,sha256=1qEQWmHv-7e660S4vIOarzggc5UOwo2S6g_7ipEoWOs,3476
+nprompter/web/templates/script.html,sha256=7V6LeHGmAXFVtRlaqeZnxuIuc-qfCEisjzA2I-HRCLc,445
+nprompter-2.0.0.dist-info/entry_points.txt,sha256=K6ROGFMTTYU9rR-yzQ0yU51_cPjGXZ1-eN9b-yV-Th8,52
+nprompter-2.0.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+nprompter-2.0.0.dist-info/METADATA,sha256=S4jmL79lqftyuJwhXMAMuQ7N3VNCe7D2rvGmIit4Ni0,650
+nprompter-2.0.0.dist-info/RECORD,,
