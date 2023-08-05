@@ -1,0 +1,3 @@
+[console_scripts]
+config_py2 = config_py2.config_entrypoint:entrypoint
+
