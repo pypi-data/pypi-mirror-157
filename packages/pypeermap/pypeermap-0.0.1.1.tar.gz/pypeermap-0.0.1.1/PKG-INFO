@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: pypeermap
+Version: 0.0.1.1
+Summary: pypeermap is a simple python tool for obtaining all the IP addresses on your local network. 
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Author-email: Naseem Alsadi <nalsadi01@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022 nalsadi
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# pypeermap
+
+pypeermap is a simple python tool for obtaining all the IP addresses on your local network. 
+
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pypeermap.
+
+<div align="center">
+  <a href="https://github.com/nalsadi/pypeermap">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+</div>
+
+
+```bash
+pip install pypeermap
+```
+
+## Usage
+
+```python
+import pypeermap
+
+# returns your IP
+ip = pypeermap.get_my_ip()
+
+# set scan range
+scan_range = pypeermap.perform_scan(ip,'0/24')
+
+# returns list of client names and IP's
+pypeermap.get_ip_list(scan_range)
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
