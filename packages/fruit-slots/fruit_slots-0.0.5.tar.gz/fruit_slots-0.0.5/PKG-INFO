@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fruit_slots
+Version: 0.0.5
+Summary: An experiment in implicit communication between learning agents
+Home-page: https://github.com/cool-RR/fruit_slots
+Author: Ram Rachum
+Author-email: ram@rachum.com
+License: UNKNOWN
+Description: todo
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: tests
