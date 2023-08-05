@@ -1,0 +1,16 @@
+scikit-learn
+tensorflow
+statsmodels
+scipy
+eli5
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+xgboost
+lightgbm
+openpyxl
+pandas-datareader
+shap
+numba>=
