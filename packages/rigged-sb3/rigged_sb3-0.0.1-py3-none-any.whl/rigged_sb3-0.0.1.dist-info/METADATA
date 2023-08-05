@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: rigged-sb3
+Version: 0.0.1
+Summary: Experimental version of SB3
+Home-page: https://github.com/DLR-RM/stable-baselines3
+Author: Ram Rachum
+Author-email: antonin.raffin@dlr.de
+License: MIT
+Keywords: reinforcement-learning-algorithms reinforcement-learning machine-learning gym openai stable baselines toolbox python data-science
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: cloudpickle
+Requires-Dist: gym (==0.22)
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: torch (>=1.11)
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-autobuild ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinxcontrib.spelling ; extra == 'docs'
+Provides-Extra: extra
+Requires-Dist: ale-py (==0.7.4) ; extra == 'extra'
+Requires-Dist: autorom[accept-rom-license] (~=0.4.2) ; extra == 'extra'
+Requires-Dist: opencv-python ; extra == 'extra'
+Requires-Dist: pillow ; extra == 'extra'
+Requires-Dist: protobuf (~=3.19.0) ; extra == 'extra'
+Requires-Dist: psutil ; extra == 'extra'
+Requires-Dist: tensorboard (>=2.2.0) ; extra == 'extra'
+Provides-Extra: tests
+Requires-Dist: black ; extra == 'tests'
+Requires-Dist: flake8-bugbear ; extra == 'tests'
+Requires-Dist: flake8 (>=3.8) ; extra == 'tests'
+Requires-Dist: isort (>=5.0) ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-env ; extra == 'tests'
+Requires-Dist: pytest-xdist ; extra == 'tests'
+Requires-Dist: pytype ; extra == 'tests'
+Requires-Dist: scipy (>=1.4.1) ; extra == 'tests'
+
+
+# This isn't the official Stable Baselines3, it's an experimental version
+
+The official SB3 is here: https://github.com/DLR-RM/stable-baselines3
+
