@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pybuild-header-dependency
+Version: 0.1.3
+Summary: Helper package to resolve C/C++ header-only libraries for Python build with native extensions
+Author-email: Tony Xiang <tonyxiang@live.nl>
+License: BSD License (BSD)
+Project-URL: Home-page, https://github.com/TonyXiang8787/pybuild-header-dependency
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+# pybuild-header-dependency
+Helper package to resolve C/C++ header-only libraries for Python build with native extensions
