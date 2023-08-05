@@ -1,0 +1,9 @@
+factly/downloads/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+factly/downloads/downloads.py,sha256=U4o2jXX2biDrABm5GQzX2mZAyTDpoDs-Rj_ttNh-HhI,7323
+factly/downloads/wasabi_bulk_upload.py,sha256=5mSK1GAxdR4c4-l3Y4OOYDyyX3EUy2eM4wIxq8O_Pow,4735
+factly/downloads/wasabi_download.py,sha256=xjY0qn9_-dQnEhDmqIvAZD1XNX1AWkJwKHzyOQfaIks,2142
+factly/downloads/wasabi_upload.py,sha256=ISClGbNrB0NUb5IR5re78o61XDavqNqrmxnvMDey_f4,1839
+factly_downloads-0.1.1.dist-info/entry_points.txt,sha256=FYvZBUldGzPPkt4wlSLTxw3-7gFqBPXkFgRBpEiM6KA,64
+factly_downloads-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+factly_downloads-0.1.1.dist-info/METADATA,sha256=_y-6bdNFdPQKVJBzT7gvFOstEEW5ZofL9eWPBPWcYu8,355
+factly_downloads-0.1.1.dist-info/RECORD,,

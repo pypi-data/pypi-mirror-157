@@ -1,0 +1,3 @@
+[console_scripts]
+wbu=factly.downloads.wasabi_bulk_upload:main
+
