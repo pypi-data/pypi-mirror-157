@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: databoy
+Version: 1.0.0
+Summary: This is a python package for easily storing, reading and manipulating data.
+Project-URL: Bug Tracker, https://github.com/aliNafea/PyDataMan/issues
+Project-URL: Homepage, https://github.com/aliNafea/PyDataMan
+Author-email: Cosmic Dev <alinafea4real@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+## DataBoy ##
+This is a python module that is tested and has been confirmed to work with python 3.10 and above
+===========================================================
+Credits: 
+Cosmic Dev
+===========================================================
+This is version 1.0 of this module. More features and thing WILL be added in the future.
+That being said. Enjoy!
