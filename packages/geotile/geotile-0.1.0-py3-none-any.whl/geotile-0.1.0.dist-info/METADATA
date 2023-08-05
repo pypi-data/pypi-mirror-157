@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: geotile
+Version: 0.1.0
+Summary: Package for working with geographic raster tiles
+Home-page: https://github.com/iamtekson/geotile
+Author: Tek Kshetri
+Author-email: iamtekson@gmail.com
+License: MIT License
+Keywords: geotile,geotiling,geoTiler,geospatial,geospatial data,geospatial raster tiles,raster tiles,raster,tiles,tile,tiling python,python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: gdal
+Requires-Dist: numpy
+Requires-Dist: geopandas
+Requires-Dist: rasterio
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: sphinx (>=1.7) ; extra == 'dev'
+Requires-Dist: pydata-sphinx-theme ; extra == 'dev'
+
+# GeoTiler
+
+GeoTiler is the python package for creating the tiles of geographic raster data.
+
+### TO DO
+
+- Vectorize mask
+- vectorize raster
+
+
