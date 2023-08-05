@@ -1,0 +1,13 @@
+MANIFEST.in
+pyproject.toml
+requirements.txt
+setup.py
+ineff/VERSION
+ineff/__init__.py
+ineff/config.py
+ineff/utils.py
+inefficient_networks.egg-info/PKG-INFO
+inefficient_networks.egg-info/SOURCES.txt
+inefficient_networks.egg-info/dependency_links.txt
+inefficient_networks.egg-info/requires.txt
+inefficient_networks.egg-info/top_level.txt
