@@ -1,0 +1,12 @@
+nops_metadata/__init__.py,sha256=fqzJq-fFJGefdLro5vcZFwecn4cXZBWhH2d_TvwryhI,4985
+nops_metadata/constants.py,sha256=GB4wiP3Vao5RsDO2XEDFUt9yFPxavaOIvslwxk_rkyU,17156
+nops_metadata/schema.py,sha256=ZYNNlCnNjRXDIT96SQoLebHuDhO1beD5zCQnBXnDoBM,4487
+nops_metadata/spark_schema.py,sha256=KjkcSX88eeKzrgoN23CuBaUZdgf7Hflqg-x2noYZLEc,6144
+nops_metadata/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nops_metadata/tests/conftest.py,sha256=GoUInS1H7F5ROw1JqofNiKvi1TMxHQoxldC2ufzWQbI,256
+nops_metadata/tests/test_fetcher.py,sha256=zo6R1yLF9Cjw3ufTiQyVtgja7Xgd4Y0sgfaUWaagG3M,4010
+nops_metadata/tests/test_schema.py,sha256=70c1snDcvh04Fmyp10CKVMJmsO8L6XatUAl5AsTPDPM,1603
+nops_metadata/utils.py,sha256=E9CNM-F2Ui6sAh95orhv9PbuA3NVM_pdtHgATrXyyfQ,2905
+nops_metadata-0.3.8.dist-info/WHEEL,sha256=wycAfLpmmoS0r5FEKIVwKB-iEMUiIZXv6P5GBpfA1-Q,87
+nops_metadata-0.3.8.dist-info/METADATA,sha256=tWxPtOZ98Qcpb5b02OAC3KQHl1EbxFE5kiN0f0b-0hY,759
+nops_metadata-0.3.8.dist-info/RECORD,,
