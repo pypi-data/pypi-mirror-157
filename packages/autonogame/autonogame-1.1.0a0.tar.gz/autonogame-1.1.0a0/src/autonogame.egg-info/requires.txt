@@ -1,0 +1,3 @@
+cryptography==37.0.2
+pyinstaller==5.1
+ogame==8.4.0.22
