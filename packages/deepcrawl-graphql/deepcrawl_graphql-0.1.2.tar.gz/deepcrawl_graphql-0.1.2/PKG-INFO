@@ -1,0 +1,797 @@
+Metadata-Version: 2.1
+Name: deepcrawl_graphql
+Version: 0.1.2
+Summary: A package to simplify usage of the DeepCrawl GraphQL
+Home-page: https://github.com/DeepCrawlSEO/dc_graphql_wrapper
+Author: Andrei Mutu
+Author-email: mutuandrei02@gmail.com
+License: UNKNOWN
+Description: 
+        
+        
+        
+        
+        
+        DeepCrawl GraphQL Wrapper 1.0.0 documentation
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        Welcome to DeepCrawl GraphQL Wrapper’s documentation!¶
+        ======================================================
+        
+        
+        
+        ```
+        pip install deepcrawl_graphql
+        
+        ```
+        
+        
+        
+        
+        Authentication¶
+        ===============
+        
+        
+        To authenticate with the DeepCrawl API you have to first create a connection.
+        
+        
+        
+        
+        
+        Connection¶
+        -----------
+        
+        
+        
+        
+        *class* deepcrawl_graphql.api.DeepCrawlConnection(*user_key_id=None*, *secret=None*, *token=None*)¶
+        DeepCrawlConnection class
+        
+        
+        Creates a connection instance used for sending GraphQL queries to DeepCrawl.
+        
+        
+        
+        ```
+        >>> from deepcrawl_graphql.api import DeepCrawlConnection
+        
+        ```
+        
+        
+        
+        ```
+        >>> DeepCrawlConnection("user_key_id", "secret")
+        DeepCrawlConnection instance
+        
+        ```
+        
+        
+        
+        ```
+        >>> DeepCrawlConnection(token="token")
+        DeepCrawlConnection instance
+        
+        ```
+        
+        
+        
+        Parameters:
+        * **user_key_id** (*int* *or* *str*) – user key, used together with secret for authentication.
+        * **secret** (*str*) – secret key, used together with user_key_id for authentication.
+        * **token** (*str*) – authentication token, if used ignores the user_key_id and secret
+        
+        
+        
+        
+        
+        
+        run_query(*query*)¶
+        Runs a query.
+        
+        
+        
+        ```
+        >>> conn = DeepCrawlConnection("user_key_id", "secret")
+        
+        ```
+        
+        
+        There are 3 possible ways you can run a query
+        
+        
+        Using a query string. You can use the DeepCrawl explorer to construct the string https://graph-docs.deepcrawl.com/graphql/explorer
+        
+        
+        
+        ```
+        >>> query = 'query MyQuery {version}'
+        >>> conn.run_query(query)
+        {'version': '1.91.1-next.0-en'}
+        
+        ```
+        
+        
+        Using the gql package to construct a dynamic query.
+        
+        
+        
+        ```
+        >>> from gql.dsl import DSLQuery
+        >>> query = DSLQuery(conn.ds.Query.me.select(conn.ds.User.id, conn.ds.User.username))
+        >>> conn.run_query(query)
+        {
+         'me': {
+         'id': 'id',
+         'username': 'email@example.com'
+         }
+        }
+        # For more information about constructing queries with dsl
+        # see https://gql.readthedocs.io/en/stable/advanced/dsl_module.html
+        
+        ```
+        
+        
+        Import a query from the deepcrawl_graphql package and use it’s prebuild queries.
+        
+        
+        
+        ```
+        >>> from deepcrawl_graphql.me.me import MeQuery
+        >>> me_query = MeQuery(conn)
+        >>> me_query.select_me()
+        >>> conn.run_query(me_query)
+        {
+         'me': {
+         'id': 'id',
+         'username': 'email@example.com',
+         'email': 'email@example.com',
+         'firstName': 'FirstName',
+         'lastName': 'LastName',
+         'createdAt': '2019-10-27T17:11:17.000Z',
+         'updatedAt': '2022-01-15T10:10:38.000Z',
+         'jobTitle': None,
+         'overallLimitLevelsMax': 1000,
+         'overallLimitPagesMax': 10000000,
+         'ssoClientId': None,
+         'termsAgreed': True,
+         'rawID': 'id',
+         'permissions': []
+         }
+        }
+        
+        ```
+        
+        
+        
+        Parameters:
+        **query** (*str* *or* *Query*) – query object
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        Me¶
+        ===
+        
+        
+        
+        
+        MeQuery¶
+        --------
+        
+        
+        
+        
+        *class* deepcrawl_graphql.me.me.MeQuery(*conn: DeepCrawlConnection*)¶
+        MeQuery class
+        
+        
+        Creates a me query instance. “Me” being the authenticated user.
+        The instance will be passed to the run_query method in order to execute the query.
+        
+        
+        
+        ```
+        >>> from deepcrawl_graphql.me.me import MeQuery
+        
+        ```
+        
+        
+        
+        ```
+        >>> me_query = MeQuery(conn)
+        >>> me_query.select_me()
+        >>> me_query.select_accounts()
+        >>> me = conn.run_query(me_query)
+        
+        ```
+        
+        
+        
+        Parameters:
+        **conn** (*DeepCrawlConnection*) – Connection.
+        
+        
+        
+        
+        
+        
+        select_me()¶
+        Selects user fields.
+        
+        
+        
+        
+        
+        select_accounts(*account_query=None*)¶
+        Selects users accounts.
+        
+        
+        
+        
+        
+        
+        
+        
+        Accounts¶
+        =========
+        
+        
+        
+        
+        AccountQuery¶
+        -------------
+        
+        
+        
+        
+        *class* deepcrawl_graphql.accounts.account.AccountQuery(*conn: DeepCrawlConnection*, *account_id*)¶
+        AccountQuery class
+        
+        
+        Creates an accout query instance.
+        The instance will be passed to the run_query method in order to execute the query.
+        
+        
+        
+        ```
+        >>> from deepcrawl_graphql.accounts.account import AccountQuery
+        
+        ```
+        
+        
+        
+        ```
+        >>> account_query = AccountQuery(conn, "id")
+        >>> account_query.select_account()
+        >>> account_query.select_settings()
+        >>> account_query.select_callback_headers()
+        >>> account_query.select_feature_flags()
+        >>> account_query.select_locations()
+        >>> account_query.select_package()
+        >>> account_query.select_subscription()
+        >>> account_query.select_projects()
+        >>> account_query.select_project("project_id")
+        >>> account = conn.run_query(account_query)
+        
+        ```
+        
+        
+        
+        Parameters:
+        * **conn** (*DeepCrawlConnection*) – Connection.
+        * **account_id** (*int* *or* *str*) – account id.
+        
+        
+        
+        
+        
+        
+        select_account()¶
+        Selects account fields.
+        
+        
+        
+        
+        
+        select_settings()¶
+        Selects account accountSettings.
+        
+        
+        
+        
+        
+        select_callback_headers()¶
+        Selects account apiCallbackHeaders.
+        
+        
+        
+        
+        
+        select_feature_flags()¶
+        Selects account featureFlags.
+        
+        
+        
+        
+        
+        select_locations()¶
+        Selects account locations.
+        
+        
+        
+        
+        
+        select_package()¶
+        Selects account primaryAccountPackage.
+        
+        
+        
+        
+        
+        select_subscription(*include_addons=False*, *integration_type=None*)¶
+        Selects account subscription.
+        
+        
+        
+        Parameters:
+        * **include_addons** (*bool*) – If true includes the addons available.
+        * **integration_type** (*str*) – Selects an addon by integration type
+        
+        
+        
+        
+        
+        
+        
+        select_projects()¶
+        Selects account projects.
+        
+        
+        
+        
+        
+        select_project(*project_id*)¶
+        Selects account project by id.
+        
+        
+        
+        Parameters:
+        **project_id** (*bool*) – Project id.
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        Projects¶
+        =========
+        
+        
+        
+        
+        ProjectQuery¶
+        -------------
+        
+        
+        
+        
+        *class* deepcrawl_graphql.projects.project.ProjectQuery(*conn: DeepCrawlConnection*, *project_id*)¶
+        ProjectQuery class
+        
+        
+        Creates a project query instance.
+        The instance will be passed to the run_query method in order to execute the query.
+        
+        
+        
+        ```
+        >>> from deepcrawl_graphql.projects.project import ProjectQuery
+        
+        ```
+        
+        
+        
+        ```
+        >>> project_query = ProjectQuery(conn, "project_id")
+        >>> project_query.select_project()
+        >>> project_query.select_sitemaps()
+        >>> project_query.select_advanced_crawl_rate()
+        >>> project_query.select_majestic_configuration()
+        >>> project_query.select_location()
+        >>> project_query.select_google_search_configuration()
+        >>> project_query.select_custom_extraction_settings()
+        >>> project_query.select_account()
+        >>> project_query.select_crawls()
+        >>> project = conn.run_query(project_query)
+        
+        ```
+        
+        
+        
+        Parameters:
+        * **conn** (*DeepCrawlConnection*) – Connection.
+        * **project_id** (*int* *or* *str*) – project id.
+        
+        
+        
+        
+        
+        
+        select_project()¶
+        Selects project fields.
+        
+        
+        
+        
+        
+        select_sitemaps()¶
+        Selects project sitemaps.
+        
+        
+        
+        
+        
+        select_advanced_crawl_rate()¶
+        Selects project maximumCrawlRateAdvanced.
+        
+        
+        
+        
+        
+        select_majestic_configuration()¶
+        Selects project majesticConfiguration.
+        
+        
+        
+        
+        
+        select_location()¶
+        Selects project location.
+        
+        
+        
+        
+        
+        select_last_finished_crawl()¶
+        Selects project lastFinishedCrawl.
+        
+        
+        Not implemented yet.
+        
+        
+        
+        
+        
+        select_google_search_configuration()¶
+        Selects project googleSearchConsoleConfiguration.
+        
+        
+        
+        
+        
+        select_google_analytics_project_view()¶
+        Selects project googleAnalyticsProjectView.
+        
+        
+        Not implemented yet.
+        
+        
+        
+        
+        
+        select_custom_extraction_settings()¶
+        Selects project customExtractions.
+        
+        
+        
+        
+        
+        select_account()¶
+        Selects project account.
+        
+        
+        
+        
+        
+        select_crawls()¶
+        Selects project crawls.
+        
+        
+        
+        
+        
+        
+        
+        
+        Crawls¶
+        =======
+        
+        
+        
+        
+        CrawlQuery¶
+        -----------
+        
+        
+        
+        
+        *class* deepcrawl_graphql.crawls.crawl.CrawlQuery(*conn: DeepCrawlConnection*, *crawl_id*)¶
+        CrawlQuery class
+        
+        
+        Creates a crawl query instance.
+        The instance will be passed to the run_query method in order to execute the query.
+        
+        
+        
+        ```
+        >>> from deepcrawl_graphql.crawls.crawl import CrawlQuery
+        
+        ```
+        
+        
+        
+        ```
+        >>> crawl_query = CrawlQuery(conn, "crawl_id")
+        >>> crawl_query.select_crawl()
+        >>> crawl_query.select_parquet_files("datasource_name")
+        >>> crawl_query.select_compared_to()
+        >>> crawl = conn.run_query(crawl_query)
+        
+        ```
+        
+        
+        
+        Parameters:
+        * **conn** (*DeepCrawlConnection*) – Connection.
+        * **crawl_id** (*int* *or* *str*) – crawl id.
+        
+        
+        
+        
+        
+        
+        select_crawl()¶
+        Selects crawl fields.
+        
+        
+        
+        
+        
+        select_parquet_files(*datasource_name*)¶
+        Selects crawl parquetFiles.
+        
+        
+        
+        Parameters:
+        **datasource_name** (*str*) – Datasource name.
+        
+        
+        
+        
+        
+        
+        
+        select_crawl_type_counts(*crawl_types*, *segment_id=None*)¶
+        Selects crawl fields.
+        
+        
+        Not implemented yet.
+        
+        
+        
+        Parameters:
+        * **crawl_types** (*str*) – Crawl type.
+        * **segment_id** (*int* *or* *str*) – Segment id.
+        
+        
+        
+        
+        
+        
+        
+        select_crawl_settings()¶
+        Selects crawl crawlSetting.
+        
+        
+        
+        
+        
+        select_compared_to()¶
+        Selects crawl comparedTo.
+        
+        
+        
+        
+        
+        
+        
+        
+        Reports¶
+        ========
+        
+        
+        
+        
+        ReportQuery¶
+        ------------
+        
+        
+        
+        
+        *class* deepcrawl_graphql.reports.report.ReportQuery(*conn: DeepCrawlConnection*, *crawl_id*, *report_tamplate_code*, *report_type_code*, *segment_id=None*)¶
+        ReportQuery class
+        
+        
+        Creates a report query instance.
+        The instance will be passed to the run_query method in order to execute the query.
+        
+        
+        
+        ```
+        >>> from deepcrawl_graphql.reports.report import ReportQuery
+        
+        ```
+        
+        
+        
+        ```
+        >>> report_query = ReportQuery(conn, "crawl_id", "report_tamplate_code", "report_type_code")
+        >>> report_query.select_report()
+        >>> report_query.select_datasource()
+        >>> report_query.select_type()
+        >>> report_query.select_trend()
+        >>> report_query.select_segment()
+        >>> report_query.select_report_template()
+        >>> conn.run_query(report_query)
+        
+        ```
+        
+        
+        
+        Parameters:
+        * **conn** (*DeepCrawlConnection*) – Connection.
+        * **crawl_id** (*int* *or* *str*) – crawl id.
+        * **report_tamplate_code** (*str*) – report template code.
+        * **report_type_code** (*str*) – report type code.
+        * **segment_id** (*int* *or* *str*) – segment id.
+        
+        
+        
+        
+        
+        
+        select_report()¶
+        Selects report fields.
+        
+        
+        
+        
+        
+        select_datasource()¶
+        Selects report datasources.
+        
+        
+        
+        
+        
+        select_type()¶
+        Selects report type.
+        
+        
+        
+        
+        
+        select_trend()¶
+        Selects report trend.
+        
+        
+        
+        
+        
+        select_segment()¶
+        Selects report segment.
+        
+        
+        
+        
+        
+        select_report_template()¶
+        Selects report reportTemplate.
+        
+        
+        
+        
+        
+        
+        
+        
+        Indices and tables¶
+        ===================
+        
+        
+        * Index
+        * Module Index
+        * Search Page
+        
+        
+        
+        
+        
+        
+        
+        
+        DeepCrawl GraphQL Wrapper
+        =========================
+        
+        
+        ### Navigation
+        
+        
+        * MeQuery
+        
+        
+        * AccountQuery
+        
+        
+        * ProjectQuery
+        
+        
+        * CrawlQuery
+        
+        
+        * ReportQuery
+        
+        
+        
+        ### Related Topics
+        
+        
+        * Documentation overview
+        
+        
+        
+        
+        
+        
+        
+        
+         ©2022, Andrei Mutu.
+         
+         |
+         Powered by Sphinx 5.0.2
+         & Alabaster 0.7.12
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
