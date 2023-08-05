@@ -1,0 +1,3 @@
+[console_scripts]
+sharepoint_list_info=netlink.sharepoint.cli:print_list_info
+
