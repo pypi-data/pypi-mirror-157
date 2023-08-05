@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: reel44
+Version: 1.0.1
+Summary: A Python Encryption Library BY-Keshri-InfoTech
+Home-page: UNKNOWN
+Author: Keshri-InfoTech
+Author-email: keshrinfotech@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyjwt
+
+
+     A Python Password and Important Textual Based Encryption Library Made For A Fast, Secure and Reliable Encryption.
+     This Library Uses A Custom Algorightim Made By Us. It Can Be Used As A Trusted Encryption Library.
+     We Also Provide Premium Version Of The Library. To Get That Contact Us On Our Email-Id.
+     
+
