@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+Results_Analysis/ComparedDataFile.py
+Results_Analysis/__init__.py
+Results_Analysis/dataFile.py
+Results_Analysis.egg-info/PKG-INFO
+Results_Analysis.egg-info/SOURCES.txt
+Results_Analysis.egg-info/dependency_links.txt
+Results_Analysis.egg-info/requires.txt
+Results_Analysis.egg-info/top_level.txt
