@@ -1,0 +1,8 @@
+ckanapi>=3.5
+flask-caching
+flask>=1.0
+libhxl==4.25.1
+mysql-connector-python
+redis
+requests>=2.11
+requests_cache
