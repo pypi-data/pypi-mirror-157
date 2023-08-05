@@ -1,0 +1,8 @@
+README.md
+setup.py
+LGTVController/__init__.py
+LGTVController.egg-info/PKG-INFO
+LGTVController.egg-info/SOURCES.txt
+LGTVController.egg-info/dependency_links.txt
+LGTVController.egg-info/requires.txt
+LGTVController.egg-info/top_level.txt
