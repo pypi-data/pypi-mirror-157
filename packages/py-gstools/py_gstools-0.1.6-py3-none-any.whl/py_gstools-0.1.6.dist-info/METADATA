@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: py-gstools
+Version: 0.1.6
+Summary: Tool classes and functions for Guiosoft projects
+Home-page: https://github.com/guionardo/py-gstools
+Author: Guionardo Furlan
+Author-email: guionardo@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/guionardo/py-gstools/wiki
+Project-URL: Source, https://github.com/guionardo/py-gstools
+Keywords: tools
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8.*
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: redis (>=4.3.3)
+Requires-Dist: PyYAML (==6.0)
+
+# PY-GSTOOLS
+
+Tool classes and functions for Guiosoft projects
+
+[![CodeQL](https://github.com/guionardo/py-gstools/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/guionardo/py-gstools/actions/workflows/codeql-analysis.yml)
+[![Upload Python Package](https://github.com/guionardo/py-gstools/actions/workflows/python-publish.yml/badge.svg)](https://github.com/guionardo/py-gstools/actions/workflows/python-publish.yml)
+![PyPI](https://img.shields.io/pypi/v/py-gstools)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/py-gstools)
+[![Pylint](https://github.com/guionardo/py-gstools/actions/workflows/pylint.yml/badge.svg)](https://github.com/guionardo/py-gstools/actions/workflows/pylint.yml)
+
+## Cache
+
+Cache wrapper for multiple providers.
+
+Usage:
+
+```python
+from datetime import timedelta
+from gs.cache import get_cache
+
+cache = get_cache('memory')
+
+#    connection string can be:
+#    - memory
+#    - path:/path/to/cache/directory
+#    - redis://host:port/db_number
+
+cache.set(key='key',
+          value='This is an cached data', 
+          ttl=timedelta(seconds=600))
+
+value = cache.get('key')
+
+print(value)
+```
