@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+src/jupythree/__init__.py
+src/jupythree/colorable.py
+src/jupythree/mesh.py
+src/jupythree/pointcloud.py
+src/jupythree/utils.py
+src/jupythree/window.py
+src/jupythree.egg-info/PKG-INFO
+src/jupythree.egg-info/SOURCES.txt
+src/jupythree.egg-info/dependency_links.txt
+src/jupythree.egg-info/requires.txt
+src/jupythree.egg-info/top_level.txt
