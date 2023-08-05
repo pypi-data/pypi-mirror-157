@@ -1,0 +1,6 @@
+uncontained/__init__.py,sha256=5bgnd0jbCSpXm6aXuCp3OR1a3vF6WVfBzARK6u1WXr8,103
+uncontained/container.py,sha256=P_LZJJYedWPWHvventWZClmVGH9ZrabUxyQz0DKKqQ0,3263
+uncontained/providers.py,sha256=ujXjLH3P0JnbcSD3LNgiJnZ2LkkLESl3Ly9n1nmRnFc,1442
+uncontained-0.1.0.dist-info/WHEEL,sha256=FWzWAvOOsDP6aqtZj_z3pIhVEk8S9F03Xwafa0tLqIY,90
+uncontained-0.1.0.dist-info/METADATA,sha256=WJl_tO8MRgmPY4KEQy5OLmRZEtOWvR2EcmIdos70xM0,547
+uncontained-0.1.0.dist-info/RECORD,,
