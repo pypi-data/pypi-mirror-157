@@ -1,0 +1,9 @@
+README.md
+aprompt.py
+setup.cfg
+setup.py
+aprompt.egg-info/PKG-INFO
+aprompt.egg-info/SOURCES.txt
+aprompt.egg-info/dependency_links.txt
+aprompt.egg-info/requires.txt
+aprompt.egg-info/top_level.txt
