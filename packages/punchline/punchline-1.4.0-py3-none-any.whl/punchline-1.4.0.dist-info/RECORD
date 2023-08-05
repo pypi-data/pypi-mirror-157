@@ -1,0 +1,10 @@
+punchline/__init__.py,sha256=lh4wVLJWx5HYYgpYVxUZiFYkMg0tGnWahUdxAB-oLUc,149
+punchline/__main__.py,sha256=ZPGytkQ2AZkJkbvPNhYmk7XH9lL6WO4K9U96G9-rQwM,43
+punchline/_cli.py,sha256=hq8Rtqvllg5DY3ouk5YmYkXCha0faxKrXpCZ9FycokM,932
+punchline/_melody.py,sha256=ovOtkdF-qNN5vLSkgp059tbBZEiN8L82B7J8MOIfn6A,7169
+punchline/_music_box.py,sha256=T8D2oGp4bcVvMLH8szMAtEzmcacX6KyEp9aIgeXv83s,6216
+punchline/_staves.py,sha256=9ekpCKs_McSB8XueE3gBNBIjgZv6QaLRpo663WQOUCg,16022
+punchline-1.4.0.dist-info/LICENSE,sha256=s1X_JkJciAgWY1Lw4f4cxSHrpocUTbDsKvF3814zEZw,1048
+punchline-1.4.0.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+punchline-1.4.0.dist-info/METADATA,sha256=dcUZGK4wKYgNHZDYHKhp7iINan59CBf1f9ISTF34Xw0,4370
+punchline-1.4.0.dist-info/RECORD,,
