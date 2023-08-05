@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pulsewidth
+Version: 1.0.4
+Summary: Useful to get coordinates with slopes above a certain threshold value
+Home-page: https://github.com/Astrojigs/pulsewidth
+License: MIT
+License-File: LICENSE
+
