@@ -1,0 +1,10 @@
+numpy==1.19.5
+pandas>=1.2.4
+joblib>=1.1.0
+opencv-python==4.5.1.48
+pyaml>=6.0
+pypylon>=1.8.0
+simple_pyspin>=0.1.1
+imgstore-shaliulab>=0.4.8
+scikit-video>=1.1.11
+arrayqueues>=1.3.0
