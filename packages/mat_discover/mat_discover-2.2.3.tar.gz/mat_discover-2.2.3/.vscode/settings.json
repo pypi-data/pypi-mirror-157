@@ -1,0 +1,6 @@
+{
+    "restructuredtext.confPath": "${workspaceFolder}\\docs\\source",
+    "restructuredtext.languageServer.disabled": true,
+    "esbonio.server.enabled": false,
+    "esbonio.sphinx.confDir": "${workspaceFolder}\\docs\\source"
+}
