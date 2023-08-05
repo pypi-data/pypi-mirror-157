@@ -1,0 +1,10 @@
+setup.py
+LeTrille/winapy_gdi.c
+LeTrille/winapy_mme.c
+LeTrille/winapy_user.c
+winapy/__init__.py
+winapy.egg-info/PKG-INFO
+winapy.egg-info/SOURCES.txt
+winapy.egg-info/dependency_links.txt
+winapy.egg-info/top_level.txt
+winapy_con/__init__.py
