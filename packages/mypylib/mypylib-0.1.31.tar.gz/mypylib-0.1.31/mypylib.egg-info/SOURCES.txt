@@ -1,0 +1,16 @@
+README.md
+setup.py
+mypylib/__init__.py
+mypylib/chdbif.py
+mypylib/libexcel.py
+mypylib/mvp.py
+mypylib/mytest.py
+mypylib/option_test.py
+mypylib/shioaji_history_ticks.py
+mypylib/shioaji_ticks.py
+mypylib/sjtools.py
+mypylib/ti.py
+mypylib.egg-info/PKG-INFO
+mypylib.egg-info/SOURCES.txt
+mypylib.egg-info/dependency_links.txt
+mypylib.egg-info/top_level.txt
