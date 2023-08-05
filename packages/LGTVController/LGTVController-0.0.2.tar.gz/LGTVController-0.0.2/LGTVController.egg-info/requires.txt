@@ -1,0 +1,4 @@
+python_box==6.0.2
+stackprinter==0.2.6
+wakeonlan==2.1.0
+websocket_client==1.3.3
