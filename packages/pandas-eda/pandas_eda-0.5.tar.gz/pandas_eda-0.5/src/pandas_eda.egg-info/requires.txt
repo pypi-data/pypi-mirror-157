@@ -1,0 +1,6 @@
+scipy
+tqdm
+pandas
+streamlit
+numpy
+faker
