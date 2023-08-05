@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./extendableenum/__init__.py
+./extendableenum/extendableenum.py
+extendable_enum.egg-info/PKG-INFO
+extendable_enum.egg-info/SOURCES.txt
+extendable_enum.egg-info/dependency_links.txt
+extendable_enum.egg-info/top_level.txt
