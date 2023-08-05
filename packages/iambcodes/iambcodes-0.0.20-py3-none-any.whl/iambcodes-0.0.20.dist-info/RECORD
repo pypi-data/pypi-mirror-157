@@ -1,0 +1,11 @@
+iambcodes/__init__.py,sha256=t9LM_Rj8l5ONkUmw-59tXZUuvZWki5azNuB0glD9Xnc,118
+iambcodes/biolog.py,sha256=ArLOhK4FMp5RgqzEGJ2CXhoNIFrZbFHg8qYMqSy4cqg,6956
+iambcodes/bsfun.py,sha256=EWBbKJYbfmX4n-zxUnb-MpV4vSA6q7RVoeXkPGruAN0,7632
+iambcodes/cobra.py,sha256=8WD_yoy6A6HOxgzufTGdhWsLw7sFQfcKV2pe4zo8s9o,9631
+iambcodes/fasta.py,sha256=fRGge0NHnBx5mxqngTBBhY1BD9qPwHBxAJ0GzAytT0k,3144
+iambcodes/rates.py,sha256=CwUPAsvJaqFL1npWdv-2K1pqDdqLzX5ol-bdNx2s-lE,6559
+iambcodes-0.0.20.dist-info/LICENSE,sha256=57CPvls3kwavmcs4zVL6Z1iPaaxhQ5rlMwiU_Qp3X0s,1067
+iambcodes-0.0.20.dist-info/METADATA,sha256=mo5dAkEr9KnxB_8iCcvV-KOJzlQzPt9eMAn0HL7M_dg,547
+iambcodes-0.0.20.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+iambcodes-0.0.20.dist-info/top_level.txt,sha256=JBfBMEOYuSHeYG0twQw1bnk40mhMId2fNxQnBFHjSMY,10
+iambcodes-0.0.20.dist-info/RECORD,,
