@@ -1,0 +1,3 @@
+[console_scripts]
+saludo=Proyectoiva.main:main
+
