@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: rigged_sb3
+Version: 0.0.1
+Summary: Experimental version of SB3
+Home-page: https://github.com/DLR-RM/stable-baselines3
+Author: Ram Rachum
+Author-email: antonin.raffin@dlr.de
+License: MIT
+Description: 
+        # This isn't the official Stable Baselines3, it's an experimental version
+        
+        The official SB3 is here: https://github.com/DLR-RM/stable-baselines3
+Keywords: reinforcement-learning-algorithms reinforcement-learning machine-learning gym openai stable baselines toolbox python data-science
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: extra
+Provides-Extra: tests
