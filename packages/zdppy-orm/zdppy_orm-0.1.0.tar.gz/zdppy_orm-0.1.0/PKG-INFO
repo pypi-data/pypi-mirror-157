@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: zdppy-orm
+Version: 0.1.0
+Summary: Python ORM框架，完美兼容zdppy_api
+Home-page: https://github.com/tiangolo/sqlmodel
+License: MIT
+Author: zhangdapeng520
+Author-email: pygosuperman@outlook.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Typing :: Typed
+Requires-Dist: zdppy-mysql (>=0.2.5,<0.3.0)
+Project-URL: Documentation, https://sqlmodel.tiangolo.com
+Project-URL: Repository, https://github.com/tiangolo/sqlmodel
+Description-Content-Type: text/markdown
+
+# zdpppy_orm
+
+基于peewee二次开发
+
+## 版本历史
+
+- v0.1.0 2022/06/29 新增：基本功能
