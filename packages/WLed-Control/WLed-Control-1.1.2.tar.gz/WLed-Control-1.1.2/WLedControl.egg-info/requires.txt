@@ -1,0 +1,2 @@
+requests==2.27.1
+webcolors==1.12
