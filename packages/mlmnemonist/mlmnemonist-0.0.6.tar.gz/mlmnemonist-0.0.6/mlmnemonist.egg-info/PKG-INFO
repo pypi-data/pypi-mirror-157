@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: mlmnemonist
+Version: 0.0.6
+Summary: A light-weight framework to store the progress you madeon your ML operations with the ability to smartly cache your modelsand retrieve it even when your session crashes.
+Home-page: https://github.com/HamidrezaKmK/ML-Mnemonist
+Author: Hamidreza Kamkari
+Author-email: hamidrezakamkari@gmail.com
+License: MIT
+Keywords: MLOps,Caching
+Platform: UNKNOWN
+License-File: LICENCE.txt
+
+A lightweight framework to run MLOps experiments with caching abilities.
+
+TODO: complete readme
+
+Change Log
+=================
+
+0.0.6 (29.6.2022)
+-----------------
+- Bug removal in CACHE.RESET() where directories are included in the logs
+- Runner pipeline cloning option added
+- preprocess does keep the pipeline by default
+
+0.0.5 (24.6.2022)
+-----------------
+- Add reload_cfg before each call of runner.run
+- Add reload_cfg before each call of runner.preprocess
+- Add runner.export_logs() method to get a zip file from all
+  logfiles in the experiment directory
+
+0.0.4 (23.6.2022)
+-----------------
+- Add more logs for verbose runners
+- Add CACHE.LOGS_DIR to save logs such as tensorboard
+- Add maximum cache limit that can be manipulated using mlm.MAX_CACHE_SIZE
+
+0.0.3 (23.6.2022)
+-----------------
+- README updated
+- full support without configurations
+- secret_root added to factory and reveal_true_path
+
+0.0.2 (23.6.2022)
+-----------------
+- Bug removal of some initial problems with the setup
+
+0.0.1 (23.6.2022)
+-----------------
+- First release
+
+
