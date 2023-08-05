@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+""" Main chord-finder entry point """
+
+import wx, sys, logging
+from chordfinder import ChordData, Gui
+
+debug = False
+config = {'version':'0.91'}
+
+if debug:
+    config['logging_level'] = logging.DEBUG
+    config['data_dir'] = 'data/'
+else:
+    config['logging_level'] = logging.INFO
+    config['data_dir'] = '/etc/chord-finder/'
+
+logging.basicConfig(stream=sys.stderr, level=config['logging_level'])
+
+###########
+# MAIN () #
+###########
+CHORD_DB = ChordData.ChordDatabase(chords_csv=config['data_dir']+'ChordData.csv')
+APP = wx.App(False)
+wx.InitAllImageHandlers()
+MAIN_FRAME = Gui.MainFrame(None, ident=-1, title="", chord_db=CHORD_DB, config=config)
+APP.SetTopWindow(MAIN_FRAME)
+MAIN_FRAME.Show()
+MAIN_FRAME.Centre()
+
+logging.debug("CHORD_DB object: {}".format(CHORD_DB))
+logging.debug("APP object: {}".format(APP))
+logging.debug("MAIN_FRAME object: {}".format(MAIN_FRAME))
+APP.MainLoop()
