@@ -1,0 +1,6 @@
+jtype: Flow
+version: '1'
+with:
+jcloud:
+  version: 3.6.6
+executors:
