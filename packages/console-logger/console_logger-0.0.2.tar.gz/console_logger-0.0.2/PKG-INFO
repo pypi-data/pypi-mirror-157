@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: console_logger
+Version: 0.0.2
+Summary: Yet another logging package for Python
+Home-page: https://github.com/BuchnevM/console_logger
+Author: Mikhail Buchnev
+Author-email: me@buchnev.page
+License: MIT License
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Description will be soon.
+
