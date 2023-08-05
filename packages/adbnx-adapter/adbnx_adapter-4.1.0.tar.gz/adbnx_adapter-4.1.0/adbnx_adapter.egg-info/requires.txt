@@ -1,0 +1,14 @@
+requests>=2.27.1
+python-arango>=7.4.1
+networkx>=2.5.1
+setuptools>=45
+
+[dev]
+black
+flake8>=3.8.0
+isort>=5.0.0
+mypy>=0.790
+pytest>=6.0.0
+pytest-cov>=2.0.0
+coveralls>=3.3.1
+types-setuptools
