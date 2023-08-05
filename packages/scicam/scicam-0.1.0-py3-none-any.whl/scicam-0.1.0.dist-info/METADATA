@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: scicam
+Version: 0.1.0
+Requires-Python: >=3.8
+Requires-Dist: numpy (>=1.22.4)
+Requires-Dist: pandas (>=1.2.4)
+Requires-Dist: joblib (>=1.1.0)
+Requires-Dist: opencv-python (>=4.6.0)
+Requires-Dist: pyaml (>=6.0)
+Requires-Dist: pypylon (>=1.8.0)
+Requires-Dist: simple-pyspin (>=0.1.1)
+Requires-Dist: imgstore-shaliulab (>=0.4.8)
+Requires-Dist: scikit-video (>=1.1.11)
+
