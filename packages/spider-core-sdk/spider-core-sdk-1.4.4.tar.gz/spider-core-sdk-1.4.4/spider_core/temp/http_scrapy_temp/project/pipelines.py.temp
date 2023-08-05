@@ -1,0 +1,14 @@
+# Define your item pipelines here
+#
+# Don't forget to add your pipeline to the ITEM_PIPELINES setting
+# See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+
+
+# useful for handling different item types with a single interface
+from itemadapter import ItemAdapter
+
+
+class {{ project_info['project_name_camel_case'] }}Pipeline:
+    def process_item(self, item, spider):
+        spider.api.nginx_store_api(item=item, data_type="{{ project_info['data_type'] }}")
+        return item

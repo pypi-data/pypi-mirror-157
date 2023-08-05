@@ -1,0 +1,4 @@
+include spider_core/temp/*
+include spider_core/temp/http_scrapy_temp/*
+include spider_core/temp/http_scrapy_temp/project/*
+include spider_core/temp/http_scrapy_temp/project/spiders/*

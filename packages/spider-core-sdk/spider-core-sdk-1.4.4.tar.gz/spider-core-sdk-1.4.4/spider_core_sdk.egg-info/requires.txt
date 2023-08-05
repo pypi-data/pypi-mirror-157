@@ -1,0 +1,4 @@
+likeshell>=1.1.5
+jinja2
+requests
+termcolor
