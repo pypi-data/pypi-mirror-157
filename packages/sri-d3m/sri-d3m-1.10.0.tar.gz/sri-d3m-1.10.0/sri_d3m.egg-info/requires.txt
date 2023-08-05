@@ -1,0 +1,6 @@
+d3m
+datasets==1.6.1
+psutil
+torch
+torchvision
+transformers==4.5.1
