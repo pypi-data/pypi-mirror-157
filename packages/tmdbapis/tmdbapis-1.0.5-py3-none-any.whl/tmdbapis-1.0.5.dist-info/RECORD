@@ -1,0 +1,17 @@
+tmdbapis/__init__.py,sha256=ulQ4MR3Oe5GcMtjewvs3z9xyACO3VFGuf7wdcKajYKA,1940
+tmdbapis/api3.py,sha256=N8sQVDLCgxSp5Y2m9kALDniQunxLx4IgPhyaAU7rxwU,144932
+tmdbapis/api4.py,sha256=0j7RXh_DsVvLv6-1kDlwNzV51TVvDyfAyz2uZ4OK2ts,23774
+tmdbapis/exceptions.py,sha256=AHVRHOt2qKi5GQRmYSpwMRTvonLeDDUcRnUAVqxhsjY,597
+tmdbapis/tmdb.py,sha256=UuZmYX3Yz5A1w7bQcTEPTsbrrTaAM6hb3Dglm61kB0E,70405
+tmdbapis/objs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tmdbapis/objs/base.py,sha256=nm44zLHcTadd4Y0JSKFrW6nn-l53GentDxmrM0DuWgE,11755
+tmdbapis/objs/image.py,sha256=vgj5T0hGGhS0AfuV3vn_Q7eP3tR569Y2RX_5uI1R4Ew,3243
+tmdbapis/objs/mixin.py,sha256=wP9ex7DHgYMdJfXoWRDdRcVWsB77s6brwKQHg7KlD5M,1681
+tmdbapis/objs/pagination.py,sha256=Dr5JpjopqqCa63B6mPORlAPh0l7HWB7cGY4GhO_TbDg,38884
+tmdbapis/objs/reload.py,sha256=GnWKI3u9YpSXvshWnWAJdUFKbGPrAfTxC9cJDi1vtNQ,58590
+tmdbapis/objs/simple.py,sha256=BfYsthxqCl6gO9aFITRYWLY3nKBBDpsk7dZ0acRyYJA,15589
+tmdbapis-1.0.5.dist-info/LICENSE,sha256=BSVPh6CJcvbXYsx-PjqZvpnMTH4xoJsYxKr2CLXItoU,1067
+tmdbapis-1.0.5.dist-info/METADATA,sha256=L8ULCObVP6VA22_LA1sg9B4So21WUZaAqLzTKS7jrEA,8623
+tmdbapis-1.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tmdbapis-1.0.5.dist-info/top_level.txt,sha256=SD6bTAptwinwiPtKaAxkUD3sysrSmuQRr61C6yd56h4,9
+tmdbapis-1.0.5.dist-info/RECORD,,
