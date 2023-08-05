@@ -1,0 +1,12 @@
+ukb_api/__init__.py,sha256=x9Zwo8JoLFSxP24nBAfB4oHVcRYPv9LK9C_XR6zgItI,20
+ukb_api/module_bulk_data_handler.py,sha256=jT8AFdsJyAF9aQ2nI5dImRpPYZWr9eDRBXIFK2XMy6k,7870
+ukb_api/module_genetic_data_handler.py,sha256=aDw5HBy-bpXvK_Q0zm3442Ln-k5_kiPnrSNYaFrIi_o,5691
+ukb_api/module_get_fs_summary_stats.py,sha256=QFzIA0hCHn6N2T-aV9Q-HktLBhuFf0t2ucyxAHVUQuw,4011
+ukb_api/module_harmonize_fs_data.py,sha256=L0fje0YlZCFjH-7AjmWCv9Frmy8MywGQDIVzWjLGfSI,3923
+ukb_api/module_scalar_data_handler.py,sha256=uedxKkdkI-eZVCIwLQ2RnofWVswKik3WO2T_f5Mv2vg,5669
+ukb_api/temp.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ukb_api-0.405.dist-info/LICENSE,sha256=aH8Nj2TgxMkPM7fmrqxz5v9VysJBKUHnohtr4tdkHi4,1076
+ukb_api-0.405.dist-info/METADATA,sha256=OwLCYP71I3cnjWiUaUuitvP7H6XcSqfzj6HM4E6DTfg,2925
+ukb_api-0.405.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ukb_api-0.405.dist-info/top_level.txt,sha256=SmDlDDindIJLGcWZgm_pR-6kNybEr6zDRQvmxc7WIVw,8
+ukb_api-0.405.dist-info/RECORD,,
