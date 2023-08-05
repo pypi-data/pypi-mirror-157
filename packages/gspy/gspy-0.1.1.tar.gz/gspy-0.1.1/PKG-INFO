@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gspy
+Version: 0.1.1
+Summary: Data handling
+Home-page: https://github.com/usgs.gov
+Author: Leon Foks, Stephanie James, Burke Minsley
+Author-email: nfoks@contractor.usgs.gov
+License: UNKNOWN
+Download-URL: https://github.com/usgs/gspy/releases/v0.1.1.tar.gz
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE.md
+
+gspy converts commonly used data formats into a netcdf file honoring our GS convention.
+

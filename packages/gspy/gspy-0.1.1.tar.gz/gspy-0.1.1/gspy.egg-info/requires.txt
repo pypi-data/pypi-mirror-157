@@ -1,0 +1,11 @@
+numpy
+xarray
+scipy
+h5py
+netcdf4
+matplotlib
+sphinx
+fortranformat
+rioxarray
+pyproj
+aseg-gdf2
