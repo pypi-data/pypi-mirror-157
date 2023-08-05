@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: mmxc
+Version: 0.1.4
+Summary: personal python lib stored in pypi
+Home-page: https://github.com/pfas/personal-python-lib
+Author: pfas
+Author-email: linfusheng95@qq.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+
+
+依赖
+```
+python -m pip install --user --upgrade setuptools wheel twine keyrings.cryptfile
+```
+
+打包库
+```
+python setup.py sdist bdist_wheel
+```
+
+上传到 pypi
+
+```
+twine upload dist/*
+```

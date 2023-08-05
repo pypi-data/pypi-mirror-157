@@ -1,0 +1,9 @@
+README.md
+setup.py
+mmxc/__init__.py
+mmxc/log.py
+mmxc/rect.py
+mmxc.egg-info/PKG-INFO
+mmxc.egg-info/SOURCES.txt
+mmxc.egg-info/dependency_links.txt
+mmxc.egg-info/top_level.txt
