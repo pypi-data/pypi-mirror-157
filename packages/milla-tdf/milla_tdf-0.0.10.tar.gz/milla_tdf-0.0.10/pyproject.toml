@@ -1,0 +1,49 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    'pandas',
+    'requests',
+    'numpy',
+    'dataclasses-json==0.5.7',
+    'dacite==1.6.0',
+    'python-dateutil',
+    'selenium==4.3.0'
+
+]
+build-backend = "setuptools.build_meta"
+
+# [tool.setuptools]
+# packages = ["milla_tdf"
+# ,"milla_tdf.auth_token"
+# ,"milla_tdf.config"
+# ,"milla_tdf.crawler"
+# ,"milla_tdf.data_model"
+# ,"milla_tdf.field_mapping"
+# ,"milla_tdf.logger"
+# ,"milla_tdf.storage"]
+
+[project]
+name = "milla_tdf"
+description = "My package description"
+readme = "README.rst"
+requires-python = ">=3.9"
+keywords = ["one", "two"]
+license = {text = "BSD 3-Clause License"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "setuptools>=42",
+    "wheel",
+    "pandas",
+    "requests",
+    "numpy",
+    "dataclasses-json==0.5.7",
+    "dacite==1.6.0",
+    "python-dateutil",
+    "selenium==4.3.0",
+]
+dynamic = ["version"]
+
+
