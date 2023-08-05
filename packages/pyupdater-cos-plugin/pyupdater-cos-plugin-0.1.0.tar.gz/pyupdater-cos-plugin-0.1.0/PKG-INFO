@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyupdater-cos-plugin
+Version: 0.1.0
+Summary: 
+Author: 杨志勇
+Author-email: eye.zhi@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cos-python-sdk-v5 (>=1.9.20,<2.0.0)
