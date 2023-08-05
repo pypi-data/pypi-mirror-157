@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyjkernel/__init__.py
+pyjkernel/__main__.py
+pyjkernel/jkrarchive.py
+pyjkernel/jkrcomp.py
+pyjkernel.egg-info/PKG-INFO
+pyjkernel.egg-info/SOURCES.txt
+pyjkernel.egg-info/dependency_links.txt
+pyjkernel.egg-info/entry_points.txt
+pyjkernel.egg-info/requires.txt
+pyjkernel.egg-info/top_level.txt

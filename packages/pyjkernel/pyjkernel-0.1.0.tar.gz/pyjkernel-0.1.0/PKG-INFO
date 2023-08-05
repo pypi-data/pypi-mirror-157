@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pyjkernel
+Version: 0.1.0
+Summary: Python library for Nintendo's JKRArchive/ResourceArchive format
+Home-page: https://github.com/SunakazeKun/pyjkernel
+Author: Aurum
+License: gpl-3.0
+Description: # pyjkernel
+        **pyjkernel** is a high-level implementation of Nintendo's homemade ResourceArchive (RARC) as well as SZS and SZP compression formats. As of now, it's still work in progress.
+        
+        ## Setup
+        This library requires **Python 3.6 or newer** as well as [oead](https://github.com/zeldamods/oead). The latter will be installed automatically. You can use pip to install *pyjkernel*:
+        ```sh
+        pip install pyjkernel
+        ```
+        
+Keywords: nintendo,jkernel,rarc,archive,modding
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
