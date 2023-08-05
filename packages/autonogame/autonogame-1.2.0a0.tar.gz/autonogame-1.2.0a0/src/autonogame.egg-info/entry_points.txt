@@ -1,0 +1,2 @@
+[console_scripts]
+autonogame = autonogame.gui:main

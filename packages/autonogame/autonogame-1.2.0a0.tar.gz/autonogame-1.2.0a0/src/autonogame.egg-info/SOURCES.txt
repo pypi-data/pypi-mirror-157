@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+src/autonogame/__init__.py
+src/autonogame/auth.py
+src/autonogame/bot.py
+src/autonogame/config.py
+src/autonogame/crypto.py
+src/autonogame/gui.py
+src/autonogame/tab_account.py
+src/autonogame/version.py
+src/autonogame.egg-info/PKG-INFO
+src/autonogame.egg-info/SOURCES.txt
+src/autonogame.egg-info/dependency_links.txt
+src/autonogame.egg-info/entry_points.txt
+src/autonogame.egg-info/requires.txt
+src/autonogame.egg-info/top_level.txt
