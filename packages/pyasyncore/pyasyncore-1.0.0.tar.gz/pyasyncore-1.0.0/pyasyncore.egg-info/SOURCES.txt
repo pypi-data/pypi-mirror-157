@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+pyasyncore.egg-info/PKG-INFO
+pyasyncore.egg-info/SOURCES.txt
+pyasyncore.egg-info/dependency_links.txt
+pyasyncore.egg-info/top_level.txt
