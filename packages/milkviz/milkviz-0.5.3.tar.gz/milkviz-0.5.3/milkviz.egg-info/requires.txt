@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+seaborn
+legendkit
+typing_extensions
+
+[all]
+networkx
+matplotlib-venn
+UpSetPlot
