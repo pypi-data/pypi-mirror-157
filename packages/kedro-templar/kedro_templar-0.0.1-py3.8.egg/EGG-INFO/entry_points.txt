@@ -1,0 +1,3 @@
+[kedro.project_commands]
+kedro_templar = kedro_templar.plugin:commands
+
