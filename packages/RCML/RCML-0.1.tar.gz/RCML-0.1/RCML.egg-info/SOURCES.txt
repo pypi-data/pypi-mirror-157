@@ -1,0 +1,8 @@
+README.md
+setup.py
+RCML.egg-info/PKG-INFO
+RCML.egg-info/SOURCES.txt
+RCML.egg-info/dependency_links.txt
+RCML.egg-info/requires.txt
+RCML.egg-info/top_level.txt
+src/__init__.py
