@@ -1,0 +1,11 @@
+README.md
+setup.py
+GaussianAndBinomialDistributionsUdacity/Binomialdistribution.py
+GaussianAndBinomialDistributionsUdacity/Gaussiandistribution.py
+GaussianAndBinomialDistributionsUdacity/Generaldistribution.py
+GaussianAndBinomialDistributionsUdacity/__init__.py
+GaussianAndBinomialDistributionsUdacity.egg-info/PKG-INFO
+GaussianAndBinomialDistributionsUdacity.egg-info/SOURCES.txt
+GaussianAndBinomialDistributionsUdacity.egg-info/dependency_links.txt
+GaussianAndBinomialDistributionsUdacity.egg-info/not-zip-safe
+GaussianAndBinomialDistributionsUdacity.egg-info/top_level.txt
