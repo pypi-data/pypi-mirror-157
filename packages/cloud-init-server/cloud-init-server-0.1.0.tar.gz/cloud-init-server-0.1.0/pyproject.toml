@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "cloud-init-server"
+version = "0.1.0"
+description = "Simple HTTP serving cloud-init metadata files"
+authors = ["Piotr Styczyński <piotr@styczynski.in>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.78.0"
+prometheus-fastapi-instrumentator = "^5.8.2"
+slowapi = "^0.1.5"
+uvicorn = "^0.18.1"
+Jinja2 = "^3.1.2"
+pydantic = "^1.9.1"
+fs = "^2.4.16"
+PyYAML = "^6.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
