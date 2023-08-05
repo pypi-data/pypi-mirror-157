@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: partinstall
+Version: 0.0.0.3
+Summary: part install test
+Home-page: 
+Download-URL: 
+Author: stone2f
+Author-email: stone2f@gmail.com
+Keywords: part install
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Requires-Dist: python-multipart
+Provides-Extra: array
+Requires-Dist: numpy (>=1.18) ; extra == 'array'
+Provides-Extra: complete
+Requires-Dist: numpy (>=1.18) ; extra == 'complete'
+Requires-Dist: pandas (>=1.0) ; extra == 'complete'
+Provides-Extra: dataframe
+Requires-Dist: pandas (>=1.0) ; extra == 'dataframe'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-rerunfailures ; extra == 'test'
+Requires-Dist: pytest-xdist ; extra == 'test'
+Requires-Dist: pre-commit ; extra == 'test'
+
