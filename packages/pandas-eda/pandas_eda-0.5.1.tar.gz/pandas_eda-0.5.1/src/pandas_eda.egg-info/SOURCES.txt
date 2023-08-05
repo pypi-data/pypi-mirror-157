@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/pandas_eda/__init__.py
+src/pandas_eda/explore.py
+src/pandas_eda/streamlit_app.py
+src/pandas_eda.egg-info/PKG-INFO
+src/pandas_eda.egg-info/SOURCES.txt
+src/pandas_eda.egg-info/dependency_links.txt
+src/pandas_eda.egg-info/requires.txt
+src/pandas_eda.egg-info/top_level.txt
