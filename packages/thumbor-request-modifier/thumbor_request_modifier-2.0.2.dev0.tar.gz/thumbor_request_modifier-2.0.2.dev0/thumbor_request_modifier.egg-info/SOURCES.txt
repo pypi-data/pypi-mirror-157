@@ -1,0 +1,9 @@
+README.md
+setup.py
+thumbor_request_modifier/__init__.py
+thumbor_request_modifier/loader.py
+thumbor_request_modifier.egg-info/PKG-INFO
+thumbor_request_modifier.egg-info/SOURCES.txt
+thumbor_request_modifier.egg-info/dependency_links.txt
+thumbor_request_modifier.egg-info/requires.txt
+thumbor_request_modifier.egg-info/top_level.txt
