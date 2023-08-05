@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+nicks_plot_utils/Hist1D.py
+nicks_plot_utils/Hist2D.py
+nicks_plot_utils/Rhist.py
+nicks_plot_utils/Scatter.py
+nicks_plot_utils/__init__.py
+nicks_plot_utils.egg-info/PKG-INFO
+nicks_plot_utils.egg-info/SOURCES.txt
+nicks_plot_utils.egg-info/dependency_links.txt
+nicks_plot_utils.egg-info/requires.txt
+nicks_plot_utils.egg-info/top_level.txt
