@@ -1,0 +1,11 @@
+algcol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+algcol/max.py,sha256=m1iJt4xG89N0utpbeaL-jhND5_4nm3Pd779Q_n4m530,149
+algcol/test.py,sha256=JWIJgo4EWXi2QDpYBsxmAqzwHvIYh7XQ20bsKmX5njw,29
+code/__init__.py,sha256=vBE3MCywhYLrWfiWbS8WIEN5LaAQPEdwCKVDyFNySto,15
+code/test.py,sha256=JWIJgo4EWXi2QDpYBsxmAqzwHvIYh7XQ20bsKmX5njw,29
+testalg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testalg/test.py,sha256=JWIJgo4EWXi2QDpYBsxmAqzwHvIYh7XQ20bsKmX5njw,29
+algcol-0.0.4.dist-info/METADATA,sha256=pmX8rpxyMVln19vs8Aam9uUeTfjFThcsG8jUu8cLbEI,390
+algcol-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+algcol-0.0.4.dist-info/top_level.txt,sha256=bOpIOyMIzdoLyvEjlds04EPJA0ZBL4pszuPdyhRk_tE,7
+algcol-0.0.4.dist-info/RECORD,,
