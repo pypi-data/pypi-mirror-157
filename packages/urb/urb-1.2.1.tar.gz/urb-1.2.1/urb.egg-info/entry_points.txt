@@ -1,0 +1,3 @@
+[console_scripts]
+urb = urb.__main__:main
+
