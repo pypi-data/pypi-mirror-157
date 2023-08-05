@@ -1,0 +1,5 @@
+jinja2
+python-multipart
+sqlalchemy<1.5,>=1.4
+starlette
+wtforms<4,>=3
