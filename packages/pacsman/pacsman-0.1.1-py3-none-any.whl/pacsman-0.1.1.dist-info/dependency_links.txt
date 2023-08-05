@@ -1,0 +1,1 @@
+git+https://github.com/pydicom/pynetdicom3.git#egg=pynetdicom3
