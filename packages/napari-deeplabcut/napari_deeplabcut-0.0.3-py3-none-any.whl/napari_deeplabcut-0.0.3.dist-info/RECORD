@@ -1,0 +1,16 @@
+napari_deeplabcut/__init__.py,sha256=MAm0oDF5WOLzgjgEjvoSMmYQ0u2KXr4bUKC5PY9gepo,393
+napari_deeplabcut/_reader.py,sha256=9AHF6pa17utooTxG9To7cRSEAcVsiNgrkSRv0NbOKO8,6022
+napari_deeplabcut/_version.py,sha256=5merWDUw0G-u-o9WyjorBVaqkoLl3OthjRycjK5VzO0,176
+napari_deeplabcut/_widgets.py,sha256=FaFwV_3v_w-xCDYAYqi1kre6gx6uyo17onAwJ-1Vkcw,12597
+napari_deeplabcut/_writer.py,sha256=NZxM2Goqofz46r5VolYoBq8uTjHpl3Jk-zpuMN71OgU,3711
+napari_deeplabcut/keypoints.py,sha256=usqD2nGe4wUvfP-bdhsq6s8h6Ja1qiFTCMmOwQQsKNQ,6120
+napari_deeplabcut/misc.py,sha256=IwaQ1i9jNP1UboUL7VVMFiqorvv_GuVflE394lrcdoc,5236
+napari_deeplabcut/napari.yaml,sha256=3H4NJuL6ETCa4vT16r0as-_xURCOZ7uUNRyELlauokM,2000
+napari_deeplabcut/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_deeplabcut/_tests/test_reader.py,sha256=a6UTcFJNybqd-HjfcaweRI7ionfZMxcg694M4uwZ4Fk,31
+napari_deeplabcut-0.0.3.dist-info/LICENSE,sha256=5SeAJ7L9i-MwBAszd4Wqiln-UYYnYQvAUNdHR04ibU0,1499
+napari_deeplabcut-0.0.3.dist-info/METADATA,sha256=HC4sNFzTiMH6V_n1cmjyqWCY7FXuSU4mcSG0X-PVM6o,9276
+napari_deeplabcut-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_deeplabcut-0.0.3.dist-info/entry_points.txt,sha256=TrQtguqx0rxGxxAgamNoPRXxR0ZnWdkHx37LCR2VHf8,68
+napari_deeplabcut-0.0.3.dist-info/top_level.txt,sha256=znYhHVR-rcI91PEyVzaNGZpgY2V5kViliA0GCSdwMxY,18
+napari_deeplabcut-0.0.3.dist-info/RECORD,,
