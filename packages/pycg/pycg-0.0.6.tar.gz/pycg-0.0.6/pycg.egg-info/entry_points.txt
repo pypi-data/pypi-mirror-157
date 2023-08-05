@@ -1,0 +1,2 @@
+[console_scripts]
+pycg = pycg.__main__:main
