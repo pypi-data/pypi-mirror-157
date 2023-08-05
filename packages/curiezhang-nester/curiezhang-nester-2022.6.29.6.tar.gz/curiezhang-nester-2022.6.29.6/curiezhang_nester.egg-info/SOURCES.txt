@@ -1,0 +1,6 @@
+setup.py
+curiezhang_nester.egg-info/PKG-INFO
+curiezhang_nester.egg-info/SOURCES.txt
+curiezhang_nester.egg-info/dependency_links.txt
+curiezhang_nester.egg-info/entry_points.txt
+curiezhang_nester.egg-info/top_level.txt
