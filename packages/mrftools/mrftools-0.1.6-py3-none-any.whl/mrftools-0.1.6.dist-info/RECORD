@@ -1,0 +1,11 @@
+mrftools/__init__.py,sha256=_p9_jH6Fc16sDajvL1m1Rv-4Mc7d-_TLxlrhQtj-ZdI,209
+mrftools/dictionaryParameters.py,sha256=PpH58ujtiaeX7gcFzpsevwqycA5I8QVz1UAzSQWJ2Kw,7349
+mrftools/sequenceGenerators.py,sha256=ROQEfCq8jvdGG2sVOy2XLiNdK9xEqlS9HrHDS8OniOM,2204
+mrftools/sequenceParameters.py,sha256=DW7Kv3SNa-Ja-AQBiVGe-jPzZInjeaJAba66-6uPGp4,4510
+mrftools/simulation.py,sha256=uAie-hPP4BGKtfpEESCWWb55dr8St3Wz3t6aQt9MseI,12809
+mrftools/types.py,sha256=7AYcIAkWjGuOvUdfv3CFeTt_HqdWRMnozC4g7Kg6wFM,168
+mrftools-0.1.6.dist-info/LICENSE,sha256=VCySxB3qpjBXNoY6EbuhE_qGmLfIiNWXMU3Tyu8j_HY,35148
+mrftools-0.1.6.dist-info/METADATA,sha256=UTlePrSMEy8j6Z1i-LhLorhvVNhSZDQaVKmE19JXqno,2057
+mrftools-0.1.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mrftools-0.1.6.dist-info/top_level.txt,sha256=ZSpK_I-WIUg6AYeSZW_BaHPeHvMjOU2tRL9zeREcK2g,9
+mrftools-0.1.6.dist-info/RECORD,,
