@@ -1,0 +1,14 @@
+dds4xnat/__init__.py,sha256=yhnIdO1LP5hmCc_0Bg8ycUWaEOQFeq3rB1o2KYOUJ2g,61
+dds4xnat/tasks.py,sha256=kxd4ASdXfsh3_wK2brq9GIuvl3ITufMHHYn98TBygUc,10221
+dds4xnat/workflow.py,sha256=n-UAKG2JMsPgKP5cCtZm7ggGoRZIYvRUcNqFBPpPJFg,1214
+dds4xnat/preprocessing/DICOM_preparation_functions.py,sha256=q8uN_pUfbowpLC9mwFEjzD-4uC6mtDAIQ__EDquQNeQ,6080
+dds4xnat/preprocessing/NIFTI_preparation_functions.py,sha256=3WvTFD0FiTXduCNHjbBM_O4WwminYLWJ4VlD5VfAwGg,7924
+dds4xnat/preprocessing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dds4xnat/preprocessing/preprocessing_pipeline.py,sha256=ncWtfQ3_zAkxZKEZr5qUK796kwiyXnb8QS9WnVCbc_Y,2197
+dds4xnat/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dds4xnat/tools/data_IO.py,sha256=XmExb3Atiz0LG7YH8BDHrmg8q60_UBdodf87b_8w0f0,3547
+dds4xnat-0.1.dist-info/LICENSE,sha256=XDfkETUJGjmCHPswathRZiWwu0lRDOVq2Fw0e7xG3yk,6383
+dds4xnat-0.1.dist-info/METADATA,sha256=zvjK6H5wzkGtXxhJCvg7HbkHuH7xJMHcWwT6Pc-9I1g,1456
+dds4xnat-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dds4xnat-0.1.dist-info/top_level.txt,sha256=1PIpmmXq9OlczpcdHQSuGj8gMocw2HowNvkHKl286wg,9
+dds4xnat-0.1.dist-info/RECORD,,
