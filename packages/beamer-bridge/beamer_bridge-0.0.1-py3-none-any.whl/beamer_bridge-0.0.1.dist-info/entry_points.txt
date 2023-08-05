@@ -1,0 +1,3 @@
+[console_scripts]
+beamer-agent=beamer.cli:main
+
