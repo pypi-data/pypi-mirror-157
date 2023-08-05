@@ -1,0 +1,12 @@
+microblog/__init__.py,sha256=BjL2_dhkCl3io034mTXCi9hMiO_hzRBYnZbH70JZ-CM,48
+microblog/cli.py,sha256=M2YFgEh1mogCtR3HXvS-EIRJ-3Ep7u6lWrL6QX8iqa8,4802
+microblog/logging.py,sha256=5IR_L5AlnU_YtUXt4S-MZC-V9O4HlhTHxnfMXxX3mUQ,649
+microblog/renderers.py,sha256=VyKiM6whfMbF--hV9kMqYFyI-6u-FmR2_641uNiDcGg,2287
+microblog/repo.py,sha256=1fUquJg8LYR1yyV2-IS7o6nDYpymvtIwIQshzu53irA,4032
+pelican/plugins/microblog/__init__.py,sha256=gf4wK8drqtlc3NdhR6ecA46qhBK1jhi4RieBks5TWN0,3039
+microblog_git-0.10.0.dist-info/LICENSE,sha256=4DukHX-rIHAHaf5BGLq1DYAMt0-ZA1OgXS9f_xwig2M,11558
+microblog_git-0.10.0.dist-info/METADATA,sha256=JGEsUHCAu6gxPu7shSiwQ-kWxccXCb8I6BNhHlos7gg,1338
+microblog_git-0.10.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+microblog_git-0.10.0.dist-info/entry_points.txt,sha256=qkvdrFugy4Bvv34iTEkCXKVSck0XlYeT0P56xVxorpk,49
+microblog_git-0.10.0.dist-info/top_level.txt,sha256=gRTsDWb1leQt9ZNe1BqDsN13Qgsb0G68aTRx8uoNqaQ,18
+microblog_git-0.10.0.dist-info/RECORD,,
