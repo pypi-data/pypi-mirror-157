@@ -1,0 +1,5 @@
+six
+edx-braze-client
+redis
+celery
+edx-rest-api-client
