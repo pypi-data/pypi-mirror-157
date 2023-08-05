@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: heartcv
+Version: 0.2.0
+Summary: Automated, noninvasive quantification of cardiac traits in transparent animals.
+Home-page: https://github.com/EmbryoPhenomics/heartcv
+Author: Ziad Ibbini, John I. Spicer, Manuela Truebano, John Bishop, Oliver Tills
+Author-email: ziad.ibbini@students.plymouth.ac.uk
+License: MIT
+Project-URL: Source, https://github.com/EmbryoPhenomics/heartcv/tree/main/heartcv
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+Requires-Dist: vuba
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: more-itertools
+Requires-Dist: numba
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+Requires-Dist: pytest
+Requires-Dist: scikit-image
+Requires-Dist: wget
+
+# HeartCV
+
+[![CircleCI](https://circleci.com/gh/EmbryoPhenomics/heartcv.svg?style=shield&circle-token=32e472d51251a951959dee2b3ed7d7eb3c1c585d)](https://app.circleci.com/pipelines/github/EmbryoPhenomics)
+
+HeartCV is an easy to use library for automated, noninvasive quantification of cardiac traits in transparent animals. We developed this library to primarily reduce the barrier to entry for researchers seeking to assess the cardiac physiology of their animals through bioimaging. 
+
+* **Documentation**: https://heartcv.readthedocs.io/en/stable/
+* **Example scripts**: [https://github.com/EmbryoPhenomics/heartcv/examples](https://github.com/EmbryoPhenomics/heartcv/tree/main/examples)
+* **Installation**: https://heartcv.readthedocs.io/en/stable/installing.html
+* **Source code**: [https://github.com/EmbryoPhenomics/heartcv/heartcv](https://github.com/EmbryoPhenomics/heartcv/tree/main/heartcv)
+
+
