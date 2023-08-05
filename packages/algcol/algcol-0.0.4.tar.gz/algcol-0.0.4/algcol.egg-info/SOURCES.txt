@@ -1,0 +1,9 @@
+README.md
+setup.py
+algcol/__init__.py
+algcol/max.py
+algcol/test.py
+algcol.egg-info/PKG-INFO
+algcol.egg-info/SOURCES.txt
+algcol.egg-info/dependency_links.txt
+algcol.egg-info/top_level.txt
