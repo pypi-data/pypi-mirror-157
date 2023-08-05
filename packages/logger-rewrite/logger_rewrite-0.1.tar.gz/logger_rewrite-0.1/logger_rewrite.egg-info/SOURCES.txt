@@ -1,0 +1,8 @@
+README.md
+setup.py
+logger_rewrite/__init__.py
+logger_rewrite/logger.py
+logger_rewrite.egg-info/PKG-INFO
+logger_rewrite.egg-info/SOURCES.txt
+logger_rewrite.egg-info/dependency_links.txt
+logger_rewrite.egg-info/top_level.txt
