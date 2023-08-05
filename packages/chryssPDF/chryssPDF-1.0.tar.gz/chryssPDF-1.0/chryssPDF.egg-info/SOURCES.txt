@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+chryssPDF.egg-info/PKG-INFO
+chryssPDF.egg-info/SOURCES.txt
+chryssPDF.egg-info/dependency_links.txt
+chryssPDF.egg-info/top_level.txt
+chrysspdf/__init__.py
+chrysspdf/pdf2image.py
+chrysspdf/pdf2text.py
