@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+calltraces/calltraces.egg-info/PKG-INFO
+calltraces/calltraces.egg-info/SOURCES.txt
+calltraces/calltraces.egg-info/dependency_links.txt
+calltraces/calltraces.egg-info/top_level.txt
