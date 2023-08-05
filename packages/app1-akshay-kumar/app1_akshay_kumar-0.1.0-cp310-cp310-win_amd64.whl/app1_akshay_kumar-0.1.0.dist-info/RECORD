@@ -1,0 +1,10 @@
+imppkg/HarmonicMean.py,sha256=P47Hbl2pvkdedkhpGHZCLM1h8t7jbxiYpK6AyPHdVfw,383
+imppkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imppkg/hello.c,sha256=LrMetm-QacQC0fmLHuniznSp6Yn1kEJS9_eXMp3K5wk,115605
+imppkg/hello.cp310-win_amd64.pyd,sha256=lt6zok7MiurkEqcqMC9wJEVrXbr2Vw7EbEgqvf3jQoU,20480
+imppkg/hello.pyx,sha256=0RljRcUxWHLcHn2KH-jLzda-aQj3EPQx99d0Tk87wKM,119
+app1_akshay_kumar-0.1.0.dist-info/METADATA,sha256=o9pQHc1ZZdpAw0G-qFe_9TMrmRwvzxyGg1Q8sP7xdBE,298
+app1_akshay_kumar-0.1.0.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+app1_akshay_kumar-0.1.0.dist-info/entry_points.txt,sha256=YoAfaq_raAw_AN5RPm1nnntOlRBZe0UEeBv94xZOhrk,58
+app1_akshay_kumar-0.1.0.dist-info/top_level.txt,sha256=I91hjGcw_F0H8zGbV0bRxPlcQJVwYHLtIyAPaQ9x-hE,7
+app1_akshay_kumar-0.1.0.dist-info/RECORD,,
