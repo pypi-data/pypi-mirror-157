@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README
+requirements.txt
+setup.py
+lupi_mfa/__init__.py
+lupi_mfa/lupi_mfa.py
+lupi_mfa.egg-info/PKG-INFO
+lupi_mfa.egg-info/SOURCES.txt
+lupi_mfa.egg-info/dependency_links.txt
+lupi_mfa.egg-info/entry_points.txt
+lupi_mfa.egg-info/requires.txt
+lupi_mfa.egg-info/top_level.txt
