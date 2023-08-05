@@ -1,0 +1,17 @@
+genbadge/__init__.py,sha256=w1fNXoOPaoALA5gjdnKaKEt8zIjWLWADIvRNIhBjIno,833
+genbadge/_version.py,sha256=PulEUBkpagxzjEfq5xsODoaY_IKpqZ20QRmQtrHBJp8,176
+genbadge/badge-template.svg,sha256=4hdPkS3y7SoSOanLv-J1jOeBgA1yanxNwwhGjXzNwNk,1539
+genbadge/main.py,sha256=owlO9pPXT_KDYetvaYvQ6BluZtoJahmn2oF3Fi7VKHs,15471
+genbadge/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genbadge/utils_badge.py,sha256=go3j0nO-C1t4cVnv9M_sNx_YRpPleAvcuNAsRYTG8ZY,7733
+genbadge/utils_coverage.py,sha256=06QXXSbkQqrOaTJgFJiG5n9bf2fZ9v5iFDt_T8sgKp4,5801
+genbadge/utils_flake8.py,sha256=K4_09MRISyI2egFx_DtOd1JY06TJum1QKeq27JyuhFQ,6290
+genbadge/utils_junit.py,sha256=iFo3cIf-KnsbQCiAHsItS3AsUAKlueZD8SqqVjX8s3Q,3204
+genbadge/verdana.ttf,sha256=lu0UlJyktzks_yNbnEHVXBJTgqu-DA08K53WaJfK4Ms,139640
+genbadge/xunitparser_copy.py,sha256=NDh_2J8BZSaJqQxGIgGYFOtNCW7WO2GaQKOkB7Bm3sw,7072
+genbadge-1.1.0.dist-info/LICENSE,sha256=Jsnadx31-Iqa7aJ6TEfbq6brownnm3jFw8lXJRxk1tg,1522
+genbadge-1.1.0.dist-info/METADATA,sha256=OAdG45d8RD9WD_IIFcn-vyqqb2iaj6peRJv4f--2Moo,3526
+genbadge-1.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+genbadge-1.1.0.dist-info/entry_points.txt,sha256=kOydUBswPPKGDDwukU0uqdLsBQIZxG9kdijKefqdNq4,52
+genbadge-1.1.0.dist-info/top_level.txt,sha256=POP2gKb3MfpkZlwnl5XSVCBUhgo_te7lQt0s3xPtQ2k,9
+genbadge-1.1.0.dist-info/RECORD,,
