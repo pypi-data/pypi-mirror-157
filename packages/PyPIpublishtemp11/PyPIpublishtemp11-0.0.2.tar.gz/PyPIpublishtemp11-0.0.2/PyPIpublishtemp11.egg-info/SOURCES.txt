@@ -1,0 +1,8 @@
+README.md
+setup.py
+PYPI11/__init__.py
+PYPI11/hello.py
+PyPIpublishtemp11.egg-info/PKG-INFO
+PyPIpublishtemp11.egg-info/SOURCES.txt
+PyPIpublishtemp11.egg-info/dependency_links.txt
+PyPIpublishtemp11.egg-info/top_level.txt
