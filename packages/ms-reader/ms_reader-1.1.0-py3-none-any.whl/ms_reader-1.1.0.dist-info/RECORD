@@ -1,0 +1,10 @@
+ms_reader/__init__.py,sha256=LGVQyDsWifdACo7qztwb8RWWHds1E7uQ-ZqD8SAjyw4,22
+ms_reader/__main__.py,sha256=PgY6hwhT2Zw8IbAGLKaEIRCr3jEjiUz5d9uWEL3u1tE,902
+ms_reader/app.py,sha256=kmtPZ8K7DFQkihyiwr6kWEmWd0BXd8unCx5LcSfly-s,8778
+ms_reader/extract.py,sha256=Z-A4faJIG9vikhckUI6KYrAs8OoGR8FIPGuPaT0hXVE,40826
+ms_reader/utils.py,sha256=gbrPHAa-8Yae2iQ5fcmkZ51NLZT_OktU7OHYKFFmjqA,373
+ms_reader-1.1.0.dist-info/METADATA,sha256=6oVI4S96FdghL-4G7fCQs0-fg3tQ2FcrivNOw8zBd2Y,1346
+ms_reader-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ms_reader-1.1.0.dist-info/entry_points.txt,sha256=7Apk3suHsHRK9aDE9FNKAYVgulwuXi4YMB7_cBBWQFw,54
+ms_reader-1.1.0.dist-info/top_level.txt,sha256=4YcRHFEzk_4YdwhevAfpb3kt6ep4mFFbdmdfik0mH9E,10
+ms_reader-1.1.0.dist-info/RECORD,,
