@@ -1,0 +1,14 @@
+COPYING
+MANIFEST.in
+README.md
+lxc.c
+setup.cfg
+setup.py
+examples/api_test.py
+examples/pyconsole-vte.py
+examples/pyconsole.py
+lxc/__init__.py
+lxc.egg-info/PKG-INFO
+lxc.egg-info/SOURCES.txt
+lxc.egg-info/dependency_links.txt
+lxc.egg-info/top_level.txt
