@@ -1,0 +1,340 @@
+Metadata-Version: 2.1
+Name: sed-plume
+Version: 0.2.1
+Summary: A hypopycnal sediment-carrying plume entering the ocean.
+Author: Eric Hutton
+Author-email: mcflugen@gmail.com
+Maintainer: Eric Hutton
+Maintainer-email: mcflugen@gmail.com
+License: The MIT License (MIT)
+        =====================
+        
+        Copyright (c) `2020` `Eric Hutton`
+        
+        Permission is hereby granted, free of charge, to any person
+        obtaining a copy of this software and associated documentation
+        files (the "Software"), to deal in the Software without
+        restriction, including without limitation the rights to use,
+        copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the
+        Software is furnished to do so, subject to the following
+        conditions:
+        
+        The above copyright notice and this permission notice shall be
+        included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+        OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+        NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+        HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+        WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+        FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+        OTHER DEALINGS IN THE SOFTWARE.
+        
+        
+Project-URL: homepage, https://github.com/csdms
+Project-URL: documentation, https://github.com/mcflugen/plume/blob/main/README.rst
+Project-URL: repository, https://github.com/mflugen/plume
+Project-URL: changelog, https://github.com/mcflugen/plume/blob/main/CHANGES.rst
+Keywords: bmi,landlab,sediment,hypopycnal plume
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+Provides-Extra: testing
+Provides-Extra: notebook
+License-File: LICENSE.rst
+License-File: AUTHORS.rst
+
+.. image:: https://travis-ci.org/mcflugen/plume.svg?branch=master
+   :target: https://travis-ci.org/mcflugen/plume
+
+.. image:: https://ci.appveyor.com/api/projects/status/yle29j1hl6a8yu8p?svg=true
+   :target: https://ci.appveyor.com/project/mcflugen/plume
+
+.. image:: https://coveralls.io/repos/github/mcflugen/plume/badge.svg?branch=mcflugen%2Fadd-unit-tests
+   :target: https://coveralls.io/github/mcflugen/plume?branch=master
+
+==================================================
+plume: A hypopycnal plume model built with landlab
+==================================================
+
+
+Requirements
+------------
+
+*plume* requires Python 3.
+
+Apart from Python, *plume* has a number of other requirements, all of which
+can be obtained through either *pip* or *conda*, that will be automatically
+installed when you install *plume*.
+
+To see a full listing of the requirements, have a look at the project's
+*requirements.txt* file.
+
+If you are a developer of *plume* you will also want to install
+additional dependencies for running *plume*'s tests to make sure
+that things are working as they should. These dependencies are listed
+in *requirements-testing.txt*.
+
+Installation
+------------
+
+To install *plume*, first create a new environment in
+which *plume* will be installed. This, although not necessary, will
+isolate the installation so that there won't be conflicts with your
+base *Python* installation. This can be done with *conda* as:
+
+.. code:: bash
+
+    $ conda create -n plume python=3
+    $ conda activate plume
+
+Stable Release
+--------------
+
+*plume*, and its dependencies, can be installed either with *pip*
+or *conda*. Using *pip*:
+
+.. code:: bash
+
+    $ pip install plume
+
+Using *conda*:
+
+.. code:: bash
+
+    $ conda install plume -c conda-forge
+
+From Source
+```````````
+
+Before building *plume* from source, you will need an installation of
+the GNU Scientific Library (gsl). There are several ways to install
+this but the easiest is through *conda*,
+
+.. code:: bash
+
+   $ mamba install gsl
+
+After downloading the *plume* source code, run the following from
+*plume*'s top-level folder (the one that contains *setup.py*) to
+install *plume* into the current environment:
+
+.. code:: bash
+
+    $ pip install -e .
+
+Input Files
+-----------
+
+Configuration File
+``````````````````
+
+The main *plume* input file is a yaml-formatted text file that lists
+constants used by *plume*. Running the following will print a sample
+*plume* configuration file:
+
+.. code:: bash
+
+    $ plume generate plume.toml
+
+This will print something like the following,
+
+.. code:: toml
+
+   [plume]
+   _version = "0.2.0.dev0"
+
+   [plume.grid]
+   shape = [500, 500]
+   xy_spacing = [100.0, 100.0]
+   xy_of_lower_left = [0.0, 0.0]
+
+   [plume.river]
+   filepath = "river.csv"
+   width = 50.0
+   depth = 5.0
+   velocity = 1.5
+   location = [0.0, 25000.0]
+   angle = 0.0
+
+   [plume.sediment]
+   removal_rate = 60.0
+   bulk_density = 1600.0
+
+   [plume.ocean]
+   filepath = "ocean.csv"
+   along_shore_velocity = 0.1
+   sediment_concentration = 0.0
+
+   [plume.output]
+   filepath = "plume.nc"
+
+Ocean File
+``````````
+
+The *plume* ocean file defines parameters of the ocean for each day of
+the simulation. This is a csv-formatted text file to *day*, *along-shore velocity*,
+and *sediment concentration*.
+
+.. code:: bash
+
+    $ plume generate ocean.csv
+
+.. code::
+
+   # version: 0.2.0.dev0
+   # Time [d], Along-shore velocity [m/s], Sediment Concentration [-]
+   0.0,0.1,0.0
+
+River File
+``````````
+
+The *plume* river file is a csv-formatted text file that gives river parameters
+for each day of the simulation. Columns are *time*, *river width*, *river depth*,
+and *river velocity*.
+
+.. code:: bash
+
+  $ plume generate river.csv
+
+.. code::
+
+  # version: 0.2.0.dev0
+  # Time [d], Width [m], Depth [m], Velocity [m/s]
+  0.0,50.0,5.0,1.5
+
+The *plume* river file defines
+
+Output File
+-----------
+
+The only output file of *plume* is a *netCDF* file that contains
+sediment concentrations for each day of the simulation.
+
+Examples
+--------
+
+To run a simulation using the sample input files described above, you first
+need to create a set of sample files:
+
+.. code:: bash
+
+    $ mkdir example
+    $ plume --cd=example setup
+
+You can now run the simulation:
+
+.. code:: bash
+
+    $ plume --cd=example run
+
+=======
+Credits
+=======
+
+Development Leads
+-----------------
+
+- `Eric Hutton <https://github.com/mcflugen>`_
+
+
+=============
+Release Notes
+=============
+
+.. towncrier release notes start
+
+0.2.1 (2022-06-29)
+------------------
+
+Bug Fixes
+`````````
+
+- Fixed an error when trying to get the version from the command line with
+  ``plume --version```. (`#9 <https://github.com/mcflugen/plume/issues/9>`_)
+
+
+0.2.0 (2022-06-28)
+------------------
+
+New Features
+````````````
+
+- Updated the *Plume* component to be compatible with *landlab* version 2. This
+  will allow *plume* to operate with the newest version of *landlab* and be
+  incorporated into other *landlab* frameworks such as the *Sequence* model. (`#5 <https://github.com/mcflugen/plume/issues/5>`_)
+- Change the *plume* command-line program to use *toml*-formatted input files. (`#5 <https://github.com/mcflugen/plume/issues/5>`_)
+- The *plume* model now builds and runs on Windows! (`#5 <https://github.com/mcflugen/plume/issues/5>`_)
+
+
+Bug Fixes
+`````````
+
+- Fixed a bug where the existing deposit thickness was being zeroed-out before
+  the plume was run. The plume now adds sediment to an existing deposit and
+  leaves it up to the user to clear an existing deposit. (`#7 <https://github.com/mcflugen/plume/issues/7>`_)
+
+
+Documentation Enhancements
+``````````````````````````
+
+- Updated the documentation to include installation instructions, usage and
+  examples. (`#5 <https://github.com/mcflugen/plume/issues/5>`_)
+
+
+Other Changes and Additions
+```````````````````````````
+
+- Setup towncrier to manage the changelog. (`#5 <https://github.com/mcflugen/plume/issues/5>`_)
+- Switch from *versioneer* to *zest.releaser* to manage release versions. (`#5 <https://github.com/mcflugen/plume/issues/5>`_)
+- Set up continuous integration workflows using GitHub Actions. CI tests include
+  testing for code style using *black*, checking for lint with *flake8*,
+  testing notebooks and running the test suite. (`#5 <https://github.com/mcflugen/plume/issues/5>`_)
+- Updated the package metadata and moved static metaddata from *setup.py*
+  to *pyproject.toml*. (`#5 <https://github.com/mcflugen/plume/issues/5>`_)
+- Setup up pre-commit hooks for ensuring style, lack of lint, python 3.8+
+  syntax, and clean notebooks. (`#5 <https://github.com/mcflugen/plume/issues/5>`_)
+- Added a citation file that users of *plume* can use to cite the software. (`#6 <https://github.com/mcflugen/plume/issues/6>`_)
+- Removed ocean and river time series from the plume command line interface.
+  The plume command now runs just a single plume. (`#7 <https://github.com/mcflugen/plume/issues/7>`_)
+- Added GitHub Actions workflows for pushing prereleases to TestPyPI and
+  releases to PyPI. (`#8 <https://github.com/mcflugen/plume/issues/8>`_)
+
+
+0.1.0 (2018-06-13)
+------------------
+
+Features
+````````
+
+- Create *plume* package that simulates 1D (i.e. centerline), and 2D hypopycnal
+  plumes.
+
+Documentation Enhancements
+``````````````````````````
+
+- Added a new *Jupyter* notebook that demonstrates how to use simulate 2D and 1D
+  plumes using the *plume* package. (`#3 <https://github.com/mcflugen/plume/issues/3>`_)
+
+
+Other Changes and Additions
+```````````````````````````
+
+- Set up continuous integration testing with Travis-CI. CI builds are run
+  for Linux and Mac. Windows support is not yet available. (`#1 <https://github.com/mcflugen/plume/issues/1>`_)
+- Added a suite of tests, which use *pytest*, for testing the *plume*
+  package. (`#2 <https://github.com/mcflugen/plume/issues/2>`_)
+- Added *versioneer* to manage package release versions. (`#4 <https://github.com/mcflugen/plume/issues/4>`_)
