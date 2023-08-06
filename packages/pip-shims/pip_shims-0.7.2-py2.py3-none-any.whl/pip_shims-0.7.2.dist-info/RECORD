@@ -1,0 +1,12 @@
+pip_shims/__init__.py,sha256=LCMPIjnKFH1Sl216WrQQmk_lU0Ex09bvR7HgpG-afmw,1188
+pip_shims/compat.py,sha256=Cd_80W6-YVtUoMf8vfJzTXoTpwfza-z-8ulwbYBl0no,74592
+pip_shims/environment.py,sha256=KjUMlCJhD32jHRoD8-qiOxR_aQcsFKY34gnhs5t9rYU,1089
+pip_shims/models.py,sha256=BuJI3ACP9If0rp5OOaRxMdXJH7h9UDEPRW_SUCENtr4,44645
+pip_shims/shims.py,sha256=9So7TMKeoe-REVnN6AOpP0DMefKN8sbxL2UaqRD5w8Q,1980
+pip_shims/utils.py,sha256=D3XB2thAe7qoX-B2CSXEfkqPk4UzvpwgtSQR4IXFV_c,14564
+pip_shims-0.7.2.dist-info/LICENSE,sha256=dydxqwwgovh02H0X4wT3k330qjoJ23FrBGCEw4wDpMY,761
+pip_shims-0.7.2.dist-info/METADATA,sha256=O9hWnKXmU6X_pThhEkpWEnVL9IGJPRaEGq-MNEjcwKo,11587
+pip_shims-0.7.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+pip_shims-0.7.2.dist-info/top_level.txt,sha256=Q-imSQFzCOe21O3B8n-pQxon3CUuR367EXOYc93503E,10
+pip_shims-0.7.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pip_shims-0.7.2.dist-info/RECORD,,
