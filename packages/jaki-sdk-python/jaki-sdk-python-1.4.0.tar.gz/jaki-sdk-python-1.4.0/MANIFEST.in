@@ -1,0 +1,2 @@
+include requirements/requirement.txt
+include blog/lib/degate_mac.so
