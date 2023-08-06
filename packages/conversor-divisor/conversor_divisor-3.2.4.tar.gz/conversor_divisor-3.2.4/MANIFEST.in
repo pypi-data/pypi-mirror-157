@@ -1,0 +1,3 @@
+recursive-include FFmpeg *
+recursive-include HandBrakeCLI * 
+recursive-include MP4Box * 
