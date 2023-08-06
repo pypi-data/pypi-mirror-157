@@ -1,0 +1,11 @@
+ugly_todo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ugly_todo/__main__.py,sha256=asjo1bpaVj3izFD_1HN1wD4Y8_vyhd0SELUMw3mvXQM,2103
+ugly_todo/cli.py,sha256=t5xF93CCIV_2Dqa84tt4x_gd5nn-QUpu4OPWPxNn5wo,2118
+ugly_todo/utd.py,sha256=a0yzRD-Cd_40aESyQQRYoTghEgJw5i1CUT6F6UyRsOc,3565
+ugly_todo/util.py,sha256=v_-wowPXY1u-EXJJb58zm8jz09YEXWkOSTVxlO24bV0,588
+utd-0.1.3.dist-info/LICENSE,sha256=yiq99pWITHfqS0pbZMp7cy2dnbreTuvBwudsU-njvIM,1210
+utd-0.1.3.dist-info/METADATA,sha256=SgwbhGAlwWHQqAge_TtiYrlOBJbBExK5ZWUA8G7-S6E,2175
+utd-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+utd-0.1.3.dist-info/entry_points.txt,sha256=wrb_YKB-9AIOX4oCiDaJkNJw7fjIS9fOFcP-XA5ATLI,48
+utd-0.1.3.dist-info/top_level.txt,sha256=_OeVvCVVFu2jAP0VAB3ycCgmzvLxnbDBNxyeB2LlFrE,10
+utd-0.1.3.dist-info/RECORD,,
