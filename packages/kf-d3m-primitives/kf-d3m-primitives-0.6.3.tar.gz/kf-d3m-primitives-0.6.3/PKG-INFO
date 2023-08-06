@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: kf-d3m-primitives
+Version: 0.6.3
+Summary: All Kung Fu D3M primitives as a single library
+Home-page: https://gitlab.com/datadrivendiscovery/contrib/kungfuai-primitives
+License: Apache-2.0
+Description: UNKNOWN
+Keywords: d3m_primitive
+Platform: UNKNOWN
+Provides-Extra: cpu
+Provides-Extra: gpu-cuda-10.1
+Provides-Extra: gpu-cuda-9.2
