@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/partehmath/__init__.py
+src/partehmath/math.py
+src/partehmath.egg-info/PKG-INFO
+src/partehmath.egg-info/SOURCES.txt
+src/partehmath.egg-info/dependency_links.txt
+src/partehmath.egg-info/top_level.txt
