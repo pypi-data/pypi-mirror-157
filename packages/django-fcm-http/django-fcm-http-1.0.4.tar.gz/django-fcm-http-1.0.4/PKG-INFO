@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: django-fcm-http
+Version: 1.0.4
+Summary: Django fcm http is a Django app to send push notifications to android, ios devices and web applications.
+Home-page: https://github.com/Kazion500/django-fcm-http
+Author: Patrick Kabwe
+Author-email: patrickckabwe@gmail.com
+License: MIT
+Keywords: django,fcm,django-fcm-http,django-fcm,push,notification,http,rest,push notification,django fcm,django-fcm
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+==================
+DJANGO FCM HTTP v1
+==================
+
+Django fcm http is a Django app to send push notifications to android, ios devices and web applications.
+
+Detailed documentation is in the "docs" directory.
+
+Quick start
+-----------
+
+1. First, install with pip:
+
+    python -m pip install django-fcm-http
+
+2. Add "django_fcm_http_v1" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'django_fcm_http_v1',
+    ]
+
+3. Create a firebase project and download the service_file.json file.
+
+    Notice: Make sure you add the file in the root of your project.
+
+4. Add "FCM_SERVICE_FILE_PATH" to your settings.py like this::
+
+    FCM_SERVICE_FILE_PATH = '/path/to/service/file.json'
+
+5. Run ``python manage.py migrate`` to create the device models.
+
+6. Start the development server and visit http://127.0.0.1:8000/admin/
+   to create a poll (you'll need the Admin app enabled).
+
+7. Visit http://127.0.0.1:8000/polls/ to participate in the poll.
+
