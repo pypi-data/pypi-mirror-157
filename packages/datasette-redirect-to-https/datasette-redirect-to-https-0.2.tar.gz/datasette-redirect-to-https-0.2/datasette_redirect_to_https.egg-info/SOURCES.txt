@@ -1,0 +1,9 @@
+README.md
+setup.py
+datasette_redirect_to_https/__init__.py
+datasette_redirect_to_https.egg-info/PKG-INFO
+datasette_redirect_to_https.egg-info/SOURCES.txt
+datasette_redirect_to_https.egg-info/dependency_links.txt
+datasette_redirect_to_https.egg-info/entry_points.txt
+datasette_redirect_to_https.egg-info/requires.txt
+datasette_redirect_to_https.egg-info/top_level.txt
