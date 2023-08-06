@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: linkml-solr
+Version: 0.1.3
+Summary: 
+Author: Chris Mungall
+Author-email: cjm@berkeleybop.org
+Requires-Python: >=3.7.4,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: linkml (>=1.2.0,<2.0.0)
+Requires-Dist: linkml-dataops (>=0.1.0,<0.2.0)
+Requires-Dist: linkml-runtime (>=1.2.7,<2.0.0)
+Requires-Dist: pysolr (>=3.9.0,<4.0.0)
