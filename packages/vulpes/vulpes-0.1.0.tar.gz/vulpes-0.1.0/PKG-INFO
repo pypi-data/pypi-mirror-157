@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: vulpes
+Version: 0.1.0
+Summary: Test many classification, regression models and clustering algorithms to see which one is most suitable for your dataset.
+Home-page: https://github.com/AdrienC21/vulpes
+Download-URL: https://pypi.org/project/vulpes/
+Author: Adrien Carrel
+Author-email: a.carrel@hotmail.fr
+Maintainer: Adrien Carrel
+Maintainer-email: a.carrel@hotmail.fr
+License: MIT
+Project-URL: Bug Tracker, https://github.com/AdrienC21/vulpes/issues
+Project-URL: Documentation, https://github.com/AdrienC21/vulpes
+Project-URL: Source Code, https://github.com/AdrienC21/vulpes
+Keywords: vulpes,python,machine,learning,model,scikit,learn,artificial,intelligence,dataset,classification,regression,hyperparameter,tuning
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Vulpes
+
+**Vulpes: Test many classification, regression models and clustering algorithms to see which one is most suitable for your dataset.**
+
+Vulpes 🦊 is a Python package that allows you to test many models, whether you want to do classification, regression or clustering in your projects. It calculates many metrics for each model to compare them. It is highly customizable and it contains many features to save time building robust ML models.
+
+If you like this project, please leave a star ⭐ on GitHub !
+
+Alpha version.
+
+Author: Adrien Carrel.
+
+## Installation
+
+Using pip:
+
+```python
+pip install vulpes
+```
+
+Then, you can use vulpes by importing the package:
+
+```python
+import vulpes
+```
+
+See examples below.
+
+## Examples
+
+Test:
+
+```python
+test
+```
+
+## Documentation
+
+Link to the documentation
+
+## Testing
+
+```python
+pytest vulpes/tests/
+```
+
+## Why Vulpes?
+
+Vulpes stands for: **V**ector (**U**n)supervised **L**earning **P**rogram **E**stimation **S**ystem.
+
+Nah, I'm kidding, I just love foxes, they are cute! The most common and widespread species of fox is the red fox (Vulpes vulpes).
+
+![alt text](https://github.com/AdrienC21/vulpes/blob/main/fox.jpg?raw=true)
+
+## Acknowledgment
+
+- Lazy Predict by Shankar Rao Pandala (and some contributors) for the inspiration. Even though it is older and it offers less functionnalities, it is the first package to my knowledge that, in the same way, allows to test many models.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+Change Log
+==========
+
+0.1.0 (21/04/2022)
+------------------
+- Version 1 of the Vulpes python package.
+
