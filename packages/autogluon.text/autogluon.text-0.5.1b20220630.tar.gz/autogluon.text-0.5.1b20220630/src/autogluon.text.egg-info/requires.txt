@@ -1,0 +1,4 @@
+autogluon.multimodal==0.5.1b20220630
+
+[tests]
+black>=22.3,~=22.0
