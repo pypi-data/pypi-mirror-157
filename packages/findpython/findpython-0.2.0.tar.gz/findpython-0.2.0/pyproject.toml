@@ -1,0 +1,72 @@
+[project]
+name = "findpython"
+description = "A utility to find python versions on your system"
+authors = [
+    { name = "Frost Ming", email = "mianghong@gmail.com" },
+]
+dependencies = [
+    "packaging>=20",
+]
+requires-python = ">=3.7"
+readme = "README.md"
+dynamic = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+version = "0.2.0"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/frostming/findpython"
+
+[project.scripts]
+findpython = "findpython.__main__:main"
+
+[tool.pdm]
+package-dir = "src"
+
+[tool.pdm.version]
+from = "src/findpython/__init__.py"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "vendoring; python_version >= '3.8'",
+]
+tests = [
+    "pytest",
+]
+
+[tool.black]
+line-length = 90
+include = "\\.pyi?$"
+exclude = "/(\n    \\.eggs\n  | \\.git\n  | \\.hg\n  | \\.mypy_cache\n  | \\.tox\n  | \\.venv\n  | build\n  | dist\n  | src/pythonfinder/_vendor\n)\n"
+
+[tool.isort]
+profile = "black"
+atomic = true
+filter_files = true
+known_first_party = [
+    "findpython",
+]
+
+[tool.vendoring]
+destination = "src/findpython/_vendor/"
+requirements = "src/findpython/_vendor/vendor.txt"
+namespace = "findpython._vendor"
+protected-files = [
+    "__init__.py",
+    "README.md",
+    "vendor.txt",
+]
+
+[build-system]
+requires = [
+    "pdm-pep517",
+]
+build-backend = "pdm.pep517.api"
