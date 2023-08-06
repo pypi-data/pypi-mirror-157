@@ -1,0 +1,1 @@
+Kittyscript helps people to learn and create python projects
