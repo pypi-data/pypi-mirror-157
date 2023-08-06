@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pytest-test-utils
+Version: 0.0.7
+Home-page: https://github.com/iterative/pytest-test-utils
+Maintainer-email: support@dvc.org
+License: Apache License 2.0
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Framework :: Pytest
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest (>=5)
+Provides-Extra: dev
+Requires-Dist: pytest (==7) ; extra == 'dev'
+Requires-Dist: pytest-sugar ; extra == 'dev'
+Requires-Dist: coverage (==6) ; extra == 'dev'
+Requires-Dist: pylint (==2.14.3) ; extra == 'dev'
+Requires-Dist: mypy (==0.961) ; extra == 'dev'
+Provides-Extra: tests
+Requires-Dist: pytest (==7) ; extra == 'tests'
+Requires-Dist: pytest-sugar ; extra == 'tests'
+Requires-Dist: coverage (==6) ; extra == 'tests'
+
+# pytest-test-utils
