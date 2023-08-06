@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: kundih
+Version: 0.0.4
+Summary: Library of Python projects by David Kundih.
+Home-page: http://github.com/dkundih/vandal
+Author: David Kundih
+Author-email: kundihdavid@gmail.com
+Maintainer: David Kundih
+Maintainer-email: kundihdavid@gmail.com
+License: Apache Software License
+Download-URL: https://github.com/dkundih/vandal/archive/refs/tags/v0.0.4.tar.gz
+Project-URL: Documentation, https://github.com/dkundih/vandal/blob/master/README.md
+Project-URL: Source Code, https://github.com/dkundih/vandal/tree/master/vandal
+Description: kundih
+        =====
+        
+        Library of Python projects by David Kundih.
+        Use permitted according to the terms of use and conditions set by the attached license.
+        
+        **A word from the author!**
+        
+        The library itself, it's maintenance, updates and stability, logo, videos, promotional materials and everything associated with duality are done by **David Kundih** from **Croatia**.
+        
+        <h1 align='center'> Hi! :wave:</h1>
+         
+        <img src='https://raw.githubusercontent.com/dkundih/dkundih/main/.logistics/BLUERED_GHiLI.jpg'/>
+        
+        <p align='center'>
+        My name is <b>David Kundih</b> and I am a Master's student of <b>Logistics systems management</b> at the <b>University North</b>, currently specializing in <b>Digital Transformation of Logistics using Python.</b>
+        </p>
+         
+        <h4 align='center'>My latest projects:</h4>
+        <p align='center'>
+        <a href="https://github.com/dkundih/vandal">vandal</p>  
+        <p align='center'>
+        <a href="https://github.com/dkundih/duality">duality</p>  
+        <p align='center'>
+        <a href="https://github.com/dkundih/unin">unin</a></p>
+        </p>
+        
+        <h3 align='center'><i>People shine the brightest when they seek to understand what kind of love sustains them.</i></h3>
+        
+        <p align='center'>
+        <a href="https://www.instagram.com/dkundih/"><img height="25" src="https://raw.githubusercontent.com/dkundih/dkundih/main/.logistics/instagram.jpg"></a>
+        <a href="https://www.facebook.com/dkundih/"><img height="25" src="https://raw.githubusercontent.com/dkundih/dkundih/main/.logistics/fb.jpg"></a>
+        <a href="https://www.linkedin.com/in/dkundih/"><img height="25" src="https://raw.githubusercontent.com/dkundih/dkundih/main/.logistics/linkedin.png"></a>
+        <a href="https://www.pypi.org/user/dkundih/"><img height="25" src="https://raw.githubusercontent.com/dkundih/dkundih/main/.logistics/pypi.jpg"></a>
+        <a href="https://www.buymeacoffee.com/dkundih"><img height="25" src="https://raw.githubusercontent.com/dkundih/dkundih/main/.logistics/buymeacoffee.jpg"></a>
+        <a href="https://www.patreon.com/dkundih"><img height="25" src="https://raw.githubusercontent.com/dkundih/dkundih/main/.logistics/patreon.jpg"></a>
+        <a href="https://www.behance.net/dkundih"><img height="25" src="https://raw.githubusercontent.com/dkundih/dkundih/main/.logistics/behance.jpg"></a>
+        <a href="https://www.researchgate.net/profile/David-Kundih"><img height="25" src="https://raw.githubusercontent.com/dkundih/dkundih/main/.logistics/rg.jpg"></a>
+        
+        
+        CHANGELOG 
+        ==========
+        
+        **as kundih**
+        
+        0.0.1 (24/06/2022)
+        - initial release.
+        
+        0.0.2 (24/06/2022)
+        - republish.
+        
+        0.0.3 (24/06/2022)
+        - republish.
+        
+        0.0.4 (04/07/2022)
+        - KSrednjeVrijednosti added.
+Keywords: data science,machine learning,data manipulation,artificial intelligence,AI,unin,duality,duality-py,duality.py,vandal,vandal-py,vandal.py
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Database
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Topic :: Office/Business :: Financial :: Point-Of-Sale
+Classifier: Topic :: Office/Business :: Financial :: Spreadsheet
+Description-Content-Type: text/markdown
