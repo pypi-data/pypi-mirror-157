@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "pymlpipe"
+version = "0.1.5"
+description = "PyMLpipe is a Python library for ease Machine Learning Model monitering and Deployment."
+license = "MIT"
+repository = 'https://github.com/neelindresh/pymlpipe'
+readme = 'README.md'
+authors = ["Indresh Bhattacharya <indresh2neel@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.4.3"
+sklearn = "^0.0"
+PyYAML = "^6.0"
+Flask = "^2.1.2"
+Flask-API = "^3.0.post1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+pymlpipeui = "pymlpipe.pymlpipeUI:start_ui"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
