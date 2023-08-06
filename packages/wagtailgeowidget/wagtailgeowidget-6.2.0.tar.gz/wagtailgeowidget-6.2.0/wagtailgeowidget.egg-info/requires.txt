@@ -1,0 +1,6 @@
+Wagtail>=2.15
+
+[test]
+pytest
+pytest-django
+factory-boy
