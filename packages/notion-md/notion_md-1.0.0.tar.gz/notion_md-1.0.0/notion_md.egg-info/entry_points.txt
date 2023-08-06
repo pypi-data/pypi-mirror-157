@@ -1,0 +1,2 @@
+[console_scripts]
+notion_md = notion_md.exporter:main
