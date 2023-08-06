@@ -1,0 +1,10 @@
+README.md
+setup.py
+cuspy/__init__.py
+cuspy/_config_base.py
+cuspy/config_utils.py
+cuspy.egg-info/PKG-INFO
+cuspy.egg-info/SOURCES.txt
+cuspy.egg-info/dependency_links.txt
+cuspy.egg-info/entry_points.txt
+cuspy.egg-info/top_level.txt
