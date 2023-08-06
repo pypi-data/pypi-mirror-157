@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: gator-models
+Version: 1.1.1
+Summary: MongoDB models for Gator API
+Author: Shon Verch
+Author-email: verchshon@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: marshmallow (>=3.17.0,<4.0.0)
+Requires-Dist: marshmallow-enum (>=1.5.1,<2.0.0)
+Requires-Dist: mongoengine (>=0.20)
+Description-Content-Type: text/markdown
+
+# gator-models
+MongoDB models for Gator API
+
+## Package manager
+Gator-models uses the [poetry](https://python-poetry.org/) package manager to manage its dependencies. To install the dependencies, run the following command:
+```
+poetry install
+```
+See the [poetry](https://python-poetry.org/) documentation for more information and
+installation instructions.
+
+## Tools
+
+#### Linting the codebase
+For detecting code quality and style issues, run
+```
+flake8
+```
+For checking compliance with Python docstring conventions, run
+```
+pydocstyle
+```
+
+**NOTE**: these tools will not fix any issues, but they can help you identify potential problems.
+
+
+#### Formatting the codebase
+For automatically formatting the codebase, run
+```
+autopep8 --in-place --recursive .
+```
+For more information on this command, see the [autopep8](https://pypi.python.org/pypi/autopep8) documentation.
+
+For automatically sorting imports, run
+```
+isort .
+```
