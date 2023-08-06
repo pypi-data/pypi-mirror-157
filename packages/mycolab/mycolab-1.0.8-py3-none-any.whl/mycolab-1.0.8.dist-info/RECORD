@@ -1,0 +1,11 @@
+mycolab/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mycolab/__main__.py,sha256=pFNJ7-1WQ4gXklEppQriQJOTsc__ZBt1XZfAgwGO4jE,1000
+mycolab/common.py,sha256=wMQHdwuarAJ3fOyVMUXmhIGHBqD6fAvt105TLsVunZs,1194
+mycolab/genbank.py,sha256=5j0MO2EWJ7yALDhY3PcxZTkOpnsAntfAVcQJAjEntuQ,1628
+mycolab-1.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mycolab-1.0.8.dist-info/METADATA,sha256=AeYxb4gJkz65yhMcpYIKylx05Ueox1SW8GW-ZlRQcS0,1330
+mycolab-1.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mycolab-1.0.8.dist-info/dependency_links.txt,sha256=Pwv2v7KKo1E1EhcT9EM570cbApZlM0oyEyweKnmUm6c,15
+mycolab-1.0.8.dist-info/entry_points.txt,sha256=wmBdxinWxwHbe-OQ28kI3fIv5iJQJCjvx61atH9IAvE,73
+mycolab-1.0.8.dist-info/top_level.txt,sha256=-zbXRNy8Fj9EflF4x4KVTQQx9B6NUn9mYV-7nFJ5VYM,8
+mycolab-1.0.8.dist-info/RECORD,,

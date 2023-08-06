@@ -1,0 +1,4 @@
+
+          [console_scripts]
+          mycolab=mycolab.__main__:main
+    
