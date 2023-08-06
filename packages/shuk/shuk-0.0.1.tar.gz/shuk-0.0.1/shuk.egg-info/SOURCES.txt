@@ -1,0 +1,9 @@
+README.md
+setup.py
+shuk/__init__.py
+shuk/datasets.py
+shuk.egg-info/PKG-INFO
+shuk.egg-info/SOURCES.txt
+shuk.egg-info/dependency_links.txt
+shuk.egg-info/requires.txt
+shuk.egg-info/top_level.txt
