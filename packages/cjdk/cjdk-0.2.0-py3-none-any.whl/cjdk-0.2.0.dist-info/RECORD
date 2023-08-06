@@ -1,0 +1,17 @@
+cjdk/__init__.py,sha256=jwmaFKKkgsxLCktyrNS6Vp07k2RdkPoVzxKryxEKmjg,367
+cjdk/_api.py,sha256=zirQZKPa7nfwyo9BkRNWVjNMJuIzuPUe1DTihD9cVXc,6682
+cjdk/_cache.py,sha256=D2Or6kDGYZHbsYW4H6hFNt0dF4rE1Utkvwf5g3CVc_k,10007
+cjdk/_cli.py,sha256=znrwu748HLaB8e797_I7oE5xZN5mV6v-qFiYVsSq8Qw,5960
+cjdk/_compat.py,sha256=I_tNN7mVqgqxrVjeUnEfDO0Acqn780bViZeKYWb7rdo,662
+cjdk/_conf.py,sha256=JqYEHsE6uwN6b-gqtIh-RFevAzRj2q58Lu6Js8r8j00,6237
+cjdk/_download.py,sha256=K0LT1kktnB_0f4BXmiUkH_ejSNLguX1v8_uoBDOVS44,3469
+cjdk/_index.py,sha256=vBzppoN1z-XRxKb8zc4gfV5bgcDcbQQdivhZ8Und5qU,5285
+cjdk/_install.py,sha256=BAWIdAGlv78Y05thIMJDlJCkL-uedksyz7ctmQuWfh8,1451
+cjdk/_jdk.py,sha256=Gpb_LY75dHJT1N7vB6UUtJzZBJ-1RoCIkVSQ5J2gCnA,1720
+cjdk/_version.py,sha256=diln-L6vS-HnAnl9N8-VYY3NwgodyNrCeC8U4tCF9QQ,176
+cjdk-0.2.0.dist-info/LICENSE.txt,sha256=4ByjsQbfEOxpq4HUxe1gecJc7iZx2hKDPIn2uqJHIAw,1126
+cjdk-0.2.0.dist-info/METADATA,sha256=CY96D5wUzUz222xohR0al2sOpuivZTambJPHerM5LHg,3771
+cjdk-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cjdk-0.2.0.dist-info/entry_points.txt,sha256=07HUcJPEoOu2iKs0VOUwauOgqiPdr-QlvPsNfcFHkPU,40
+cjdk-0.2.0.dist-info/top_level.txt,sha256=aR9Mvyvp60ISrbDThIhoZo3Z6iiuYHUpjjgwOc30fKc,5
+cjdk-0.2.0.dist-info/RECORD,,

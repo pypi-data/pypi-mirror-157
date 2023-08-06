@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: cjdk
+Version: 0.2.0
+Summary: Download JDK or JRE distributions on the fly
+Author: Mark A. Tsuchida
+License: Copyright 2022, Board of Regents of the University of Wisconsin System        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:        
+        The above copyright notice and this permission notice (including the next
+        paragraph) shall be included in all copies or substantial portions of the
+        Software.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.        
+Project-URL: homepage, https://github.com/marktsuchida/cjdk
+Project-URL: repository, https://github.com/marktsuchida/cjdk
+Keywords: Java,JDK,JRE,JVM
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Java
+Classifier: Topic :: Software Development
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: click (>=8.0)
+Requires-Dist: requests (>=2.24)
+Requires-Dist: tqdm (>=4.0)
+Provides-Extra: testing
+Requires-Dist: flask (>=2.0) ; extra == 'testing'
+Requires-Dist: pytest (>=7.0) ; extra == 'testing'
+Requires-Dist: werkzeug (>=2.0) ; extra == 'testing'
+
+# cjdk
+
+<!--
+This file is part of cjdk.
+Copyright 2022, Board of Regents of the University of Wisconsin System
+SPDX-License-Identifier: MIT
+--->
+
+**cjdk** (for "cached JDK") is a Python package and command-line tool to
+download and run JDK (Java Development Kit) or JRE (Java Runtime Environment)
+distributions.
+
+Previously used JDKs are kept in the user's cache directory, so that future
+invocations do now require a download.
+
+## What for
+
+- Installing exact JDK versions for reproducible testing
+- Working with multiple versions of JDKs
+- Deploying tools that require Java
+
+Using the command-line interface of **cjdk**, you can run Java programs using a
+one-liner, without having to worry about whether the user has installed a new
+enough Java runtime and set `JAVA_HOME` and `PATH` to appropriate values.
+
+For example, the following command will run
+[CheckStyle](https://checkstyle.org/) using Temurin JRE 17 (which will be
+downloaded if this is the first time it is requested):
+
+```sh
+cjdk --jdk=temurin-jre:11 exec java -jar checkstyle-10.3-all.jar -c style.xml MyApp.java
+```
+
+See the [documentation](https://marktsuchida.github.io/cjdk/latest) for
+detailed usage.
+
+**cjdk** was inspired by [Coursier](https://get-coursier.io/)'s
+[`java`](https://get-coursier.io/docs/cli-java) command, and uses Coursier's
+[JDK index](https://github.com/coursier/jvm-index)). Unlike Coursier, **cjdk**
+does not require a Java runtime to bootstrap.
+
+## Installing
+
+**cjdk** requires Python 3.8.
+
+```sh
+pip install cjdk
+```
+
+## [Documentation](https://marktsuchida.github.io/cjdk/latest)
+
+## Licensing
+
+**cjdk** is distributed under the MIT license. Please see LICENSE.txt.
