@@ -1,0 +1,2 @@
+[console_scripts]
+bert-clf-train = bert_clf.pipeline:main
