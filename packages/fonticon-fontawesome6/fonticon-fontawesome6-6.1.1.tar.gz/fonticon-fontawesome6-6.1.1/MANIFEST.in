@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+
+recursive-include fonticon_fa6 *.py
+recursive-include * *.otf *.ttf *.txt
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

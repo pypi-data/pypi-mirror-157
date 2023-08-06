@@ -1,0 +1,4 @@
+[superqt.fonticon]
+fa6b = fonticon_fa6:FA6B
+fa6r = fonticon_fa6:FA6R
+fa6s = fonticon_fa6:FA6S

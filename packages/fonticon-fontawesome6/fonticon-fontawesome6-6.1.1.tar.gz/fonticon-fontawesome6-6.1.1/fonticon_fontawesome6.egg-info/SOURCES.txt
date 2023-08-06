@@ -1,0 +1,24 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+fonticon_fa6/__init__.py
+fonticon_fa6/_iconfont.py
+fonticon_fa6/fa6b.py
+fonticon_fa6/fa6r.py
+fonticon_fa6/fa6s.py
+fonticon_fa6/_tests/test_font.py
+fonticon_fa6/fonts/Font Awesome 5 Brands-Regular-400.otf
+fonticon_fa6/fonts/Font Awesome 5 Free-Regular-400.otf
+fonticon_fa6/fonts/Font Awesome 5 Free-Solid-900.otf
+fonticon_fa6/fonts/Font Awesome 6 Brands-Regular-400.otf
+fonticon_fa6/fonts/Font Awesome 6 Free-Regular-400.otf
+fonticon_fa6/fonts/Font Awesome 6 Free-Solid-900.otf
+fonticon_fa6/fonts/LICENSE.txt
+fonticon_fontawesome6.egg-info/PKG-INFO
+fonticon_fontawesome6.egg-info/SOURCES.txt
+fonticon_fontawesome6.egg-info/dependency_links.txt
+fonticon_fontawesome6.egg-info/entry_points.txt
+fonticon_fontawesome6.egg-info/requires.txt
+fonticon_fontawesome6.egg-info/top_level.txt
