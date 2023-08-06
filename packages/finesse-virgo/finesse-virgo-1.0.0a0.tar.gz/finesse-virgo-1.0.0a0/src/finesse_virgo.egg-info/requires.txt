@@ -1,0 +1,6 @@
+finesse
+numpy
+scipy
+matplotlib
+control
+tqdm

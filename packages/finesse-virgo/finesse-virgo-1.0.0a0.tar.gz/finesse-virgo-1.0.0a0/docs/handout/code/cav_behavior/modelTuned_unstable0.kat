@@ -1,0 +1,40 @@
+
+laser i1 P=20.0  #just one arm cavity
+mod eom6 f=6270777 midx=0.22
+mod eom8 f=(1.3333333333333333*eom6.f) midx=0.15
+
+
+# prc
+var lPRC 11.95196615985547
+
+# Rc updated to -1436.38 to match arm cavity (instead of PRC)
+m PR R=0.95162 T=0.04835 L=30u Rc=[-2.0, -2.0]
+s s_prc PR.p2 ITM.p1 L=(lPRC+0.0)
+
+# arm cav
+m ITM R=0.986203 T=0.013769999999999949 L=27u Rc=[-1425.0, -1425.0]
+s scav ITM.p2 ETM.p1 L=3000
+m ETM R=0.9999686 T=4.400000000015503e-06 L=27u Rc=[1695, 1695]
+
+# dofs
+dof PR_z PR.dofs.z 1 DC=90.00000000838197
+dof ETM_z ETM.dofs.z 1 DC=8.84397195802155e-15
+
+# readouts and detectors
+readout_rf prc_err PR.p1.o  f=eom8.f phase=62.92216035734016 output_detectors=true
+readout_rf arm_err ITM.p1.o f=eom6.f phase=89.99704957826313 output_detectors=true
+pd prc_dc PR.p2.o
+pd arm_dc ITM.p2.o
+
+# locks
+lock prc_lock prc_err_I PR_z.DC -1.833 1e-6
+lock arm_lock arm_err_I ETM_z.DC -0.0001071 1e-6
+
+modes(maxtem=0)
+cav cav ITM.p2.o priority=3
+# cav cav PR.p2.o via=ETM.p1.i priority=1
+
+# Items below could not be matched to original script, or were not present when the model was originally parsed.
+space i1_p1__eom6_p1 portA=i1.p1 portB=eom6.p1
+space eom6_p2__eom8_p1 portA=eom6.p2 portB=eom8.p1
+space eom8_p2__PR_p1 portA=eom8.p2 portB=PR.p1

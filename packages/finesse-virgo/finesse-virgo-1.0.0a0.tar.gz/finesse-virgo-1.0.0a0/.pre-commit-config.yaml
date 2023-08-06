@@ -1,0 +1,28 @@
+files: ^src/
+repos:
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v4.1.0
+      hooks:
+        - id: check-yaml
+        - id: end-of-file-fixer
+        - id: mixed-line-ending
+          args: ['--fix', 'lf']
+        - id: trailing-whitespace
+    - repo: https://github.com/myint/docformatter
+      rev: v1.4
+      hooks:
+        - id: docformatter
+          args: ["--in-place", "--wrap-summaries", "88", "--wrap-descriptions", "88"]
+    - repo: https://github.com/psf/black
+      rev: 22.3.0
+      hooks:
+        - id: black
+          files: ^src/
+    - repo: https://gitlab.com/pycqa/flake8
+      rev: 4.0.1
+      hooks:
+        - id: flake8
+    - repo: https://github.com/kynan/nbstripout
+      rev: 0.5.0
+      hooks:
+        - id: nbstripout
