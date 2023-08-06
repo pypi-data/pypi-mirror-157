@@ -1,0 +1,9 @@
+Pillow>=3.3
+aiogrpc>=1.4
+cryptography>=36.0.2
+flask>=2.1.0
+googleapis-common-protos>=1.56.0
+grpc-tools>=0.0.1
+grpcio-tools>=1.47.0
+numpy>=1.11
+requests>=2.0.0
