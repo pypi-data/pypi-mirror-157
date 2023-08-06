@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: register-it
+Version: 0.3
+Summary: Register it: A more flexible register for the DeepLearning project.
+Home-page: https://github.com/lartpang/RegisterIt
+Author: lartpang
+Author-email: lartpang@gmail.com
+License: MIT
+Keywords: tools,deep learning
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# RegisterIt
+
+Register it: A more flexible register for the DeepLearning project.
+
+The registry that provides name -> object mapping, to support classes and functions.
+
+## Install
+
+```shell
+pip install register_it
+```
+
+## Usage
+
+To create a registry (e.g. a class registry and a function registry):
+
+```python
+DATASETS = Registry(name="dataset")
+EVALUATE = Registry(name="evaluate")
+```
+
+To register an object:
+
+```python
+@DATASETS.register(name='mymodule')
+class MyModule(*args, **kwargs):
+    ...
+
+@EVALUATE.register(name='myfunc')
+def my_func(*args, **kwargs):
+    ...
+```
+
+Or:
+
+```python
+DATASETS.register(name='mymodule', obj=MyModule)
+
+EVALUATE.register(name='myfunc', obj=my_func)
+```
+
+To construct an object of the class or the function:
+
+```python
+DATASETS = Registry(name="dataset")
+# The callers of the DATASETS are from the module data, we need to manually import it.
+DATASETS.import_module_from_module_names(["data"])
+
+EVALUATE = Registry(name="evaluate")
+# The callers of the EVALUATE are from the module evaluate, we need to manually import it.
+EVALUATE.import_module_from_module_names(["evaluate"])
+```
+
+## Thanks
+
+- [fvcore](https://github.com/facebookresearch/fvcore)
+
+
