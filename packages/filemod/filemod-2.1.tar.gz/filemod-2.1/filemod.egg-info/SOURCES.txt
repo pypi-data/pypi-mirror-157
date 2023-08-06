@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+filemod/__init__.py
+filemod/support.py
+filemod.egg-info/PKG-INFO
+filemod.egg-info/SOURCES.txt
+filemod.egg-info/dependency_links.txt
+filemod.egg-info/top_level.txt
