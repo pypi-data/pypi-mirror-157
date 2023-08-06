@@ -1,0 +1,6 @@
+exclude __main__.py 
+exclude __pycache__
+exclude getpass.py 
+exclude setup.py 
+exclude speedtests/* 
+exclude **/*egg-info/
