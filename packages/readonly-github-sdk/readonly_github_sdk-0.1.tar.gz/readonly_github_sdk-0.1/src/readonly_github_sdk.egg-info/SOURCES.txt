@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/readonly_github_sdk/__init__.py
+src/readonly_github_sdk/endpoints.py
+src/readonly_github_sdk/model.py
+src/readonly_github_sdk.egg-info/PKG-INFO
+src/readonly_github_sdk.egg-info/SOURCES.txt
+src/readonly_github_sdk.egg-info/dependency_links.txt
+src/readonly_github_sdk.egg-info/requires.txt
+src/readonly_github_sdk.egg-info/top_level.txt
