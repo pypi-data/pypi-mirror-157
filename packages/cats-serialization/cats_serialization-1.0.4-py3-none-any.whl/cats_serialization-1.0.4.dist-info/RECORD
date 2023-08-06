@@ -1,0 +1,10 @@
+cats_serialization/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cats_serialization/fields.py,sha256=IdCt4hOCZApmOaCldEJr7w5d3ioCqKfshUeDDNUbNk8,1548
+cats_serialization/generic_field.py,sha256=qVurm_roaCwyg7piMzhSCmAIvsItTMxk-iyMRqitUZI,240
+cats_serialization/scheme.py,sha256=eB6xirKM82oFLcUO_43TdcdhGizUdnQt0veuPvnK9Mk,3383
+cats_serialization/utils.py,sha256=3RJp9dLEE91ppbUj4967yVF83hnoxWvJZkhHkVfGZMk,1000
+cats_serialization-1.0.4.dist-info/LICENSE.txt,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+cats_serialization-1.0.4.dist-info/METADATA,sha256=cn5wqNMsiHm93JnNT5kY4cru3xMhTf_udVRHe7G9D-4,10533
+cats_serialization-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cats_serialization-1.0.4.dist-info/top_level.txt,sha256=x0cljv68sCw0nmcjT4gg8ifs7PzJkoq8lLymKvxu7WQ,19
+cats_serialization-1.0.4.dist-info/RECORD,,
