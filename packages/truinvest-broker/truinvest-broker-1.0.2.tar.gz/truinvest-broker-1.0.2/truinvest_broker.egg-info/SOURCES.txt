@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+client/IciciTrading.py
+client/KiteTrading.py
+client/KotakTrading.py
+client/MasterTrust.py
+client/TradingInterface.py
+client/TruinvestBroker.py
+client/__init__.py
+client/uTradeBroker.py
+truinvest_broker.egg-info/PKG-INFO
+truinvest_broker.egg-info/SOURCES.txt
+truinvest_broker.egg-info/dependency_links.txt
+truinvest_broker.egg-info/requires.txt
+truinvest_broker.egg-info/top_level.txt
