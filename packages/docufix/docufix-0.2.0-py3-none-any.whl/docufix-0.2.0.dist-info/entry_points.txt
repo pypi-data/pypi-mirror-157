@@ -1,0 +1,3 @@
+[console_scripts]
+docufix=docufix.__main__:main
+

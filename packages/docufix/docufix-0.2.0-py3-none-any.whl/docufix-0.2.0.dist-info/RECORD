@@ -1,0 +1,17 @@
+docufix/__init__.py,sha256=AZO_4jsNPRXS3eqfuAc8sniNMaqKhLJ9TY1NxApe9Jw,362
+docufix/__main__.py,sha256=nQdGl8IAlAT1YnGihm7I7Dya33zYRJnbRdiobNFi6GQ,1615
+docufix/core.py,sha256=C8xYObn0SmLbd4pMB0qEdQ-QQkIYPkmwefjFvzksRkU,5491
+docufix/rules/__init__.py,sha256=gyIpJgxYhKfbYIg9wgkuH9YgCsgPZZd3BI1GUXhBEjg,509
+docufix/rules/ensure_final_newline.py,sha256=Cvn7dRDNzZUFS9Iz4SHnyXkCXLTt-DqBpuf4ha93z4k,1536
+docufix/rules/insert_whitespace_between_cn_and_en_char.py,sha256=wnAdkBX3Uc1W8NZx8tnTYrBm6nfD3q2IZT0an9UIN7Q,2477
+docufix/rules/trim_trailing_blank_lines.py,sha256=JK6T-8F4fM-1KVjmGeJjTLjDapargiFZvzd23-ae_ZY,1709
+docufix/rules/trim_trailing_whitespace.py,sha256=f-MrnK7h8dGJQAxoDISbL9aGO6l1ayKxw4dZXkfRT7M,1686
+docufix/rules/unify_newline.py,sha256=LswTavpQBW89aa3fFV5xEVuvfb1E6EWy9MreZXZ3Y28,1861
+docufix/utils/__init__.py,sha256=MF1pb5qBfF_oQ0t50ZcE7DFmK9EPaUpcmzMGUoPpngY,47
+docufix/utils/colorful.py,sha256=qz8hlYwLuTgU5PXBpm1coXXIF01qyn1RA8dfseXeLf4,563
+docufix/utils/newline.py,sha256=C5iXw84af4lu-Cba5SUvvfNUDiIkJkX6mvLIMvUBq0E,544
+docufix-0.2.0.dist-info/entry_points.txt,sha256=XXokEZGQT63tASklf6-4WHo9IDOAesxq8aXR0kLkXnM,49
+docufix-0.2.0.dist-info/LICENSE,sha256=F8Ih_eZRhznGeT4RjIqdNOtOj6tU4ZHiMF5EZjZViuc,1090
+docufix-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+docufix-0.2.0.dist-info/METADATA,sha256=MgfStMIpZKhDncSqhtsq-sZjgCq2Mwmy4p11iCBnlwU,296
+docufix-0.2.0.dist-info/RECORD,,
