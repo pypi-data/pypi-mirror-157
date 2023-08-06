@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: audiochunker
+Version: 0.2.1
+Summary: Python library for chunking audio
+Home-page: https://github.com/isaacvitor/audiochunker
+Author: Isaac Vitor
+License: MIT
+Project-URL: Bug Tracker, https://github.com/isaacvitor/audiochunker/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: pydub (==0.25.1)
+
