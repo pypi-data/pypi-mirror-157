@@ -1,0 +1,32 @@
+# Hadder--专用蛋白质补氢工具
+
+很多蛋白质数据库往往会采用去掉氢原子的方式来存储各种pdb蛋白质结构文件，
+这就要求我们在实际构建力场的过程中手动去补齐氢原子，
+本开源工具就可以实现这样的功能。
+
+# 安装与使用
+本软件支持pip一键安装：
+```
+python3 -m pip install hadder --upgrade
+```
+支持在python中调用API接口，来完成蛋白质补氢：
+```python
+from hadder import AddHydrogen
+AddHydrogen('input.pdb', 'output.pdb')
+```
+如果成功运行，会在终端窗口上打印如下文字：
+```
+1 H-Adding task complete.
+```
+
+# 示例
+在`examples`路径下有一个`case2.pdb`的文件，这是一个不含氢原子的蛋白质，其结构如下图所示：
+
+![](./examples/case2.png)
+
+使用`Hadder`完成补氢的操作之后，得到的结果如下图所示：
+
+![](./examples/case2-complete.png)
+
+# 博客推荐
+1. [从Hadder看蛋白质分子中的加氢算法](https://www.cnblogs.com/dechinphy/p/hadder.html)
