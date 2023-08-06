@@ -1,0 +1,7 @@
+setup.py
+vufr/__init__.py
+vufr/vufr.py
+vufr.egg-info/PKG-INFO
+vufr.egg-info/SOURCES.txt
+vufr.egg-info/dependency_links.txt
+vufr.egg-info/top_level.txt
