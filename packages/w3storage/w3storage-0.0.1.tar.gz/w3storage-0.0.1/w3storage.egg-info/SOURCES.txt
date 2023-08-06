@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+w3storage/__init__.py
+w3storage.egg-info/PKG-INFO
+w3storage.egg-info/SOURCES.txt
+w3storage.egg-info/dependency_links.txt
+w3storage.egg-info/requires.txt
+w3storage.egg-info/top_level.txt
