@@ -1,0 +1,6 @@
+setup.py
+MsgJimPyClient.egg-info/PKG-INFO
+MsgJimPyClient.egg-info/SOURCES.txt
+MsgJimPyClient.egg-info/dependency_links.txt
+MsgJimPyClient.egg-info/requires.txt
+MsgJimPyClient.egg-info/top_level.txt
