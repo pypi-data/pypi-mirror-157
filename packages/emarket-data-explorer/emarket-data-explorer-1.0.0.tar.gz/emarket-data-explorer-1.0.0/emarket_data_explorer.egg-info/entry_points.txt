@@ -1,0 +1,2 @@
+[console_scripts]
+emarket-data-explorer = emarket_data_explorer.__main__:main
