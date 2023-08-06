@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mpandas.egg-info/PKG-INFO
+mpandas.egg-info/SOURCES.txt
+mpandas.egg-info/dependency_links.txt
+mpandas.egg-info/requires.txt
+mpandas.egg-info/top_level.txt
+src/__init__.py
+src/mapply.py
