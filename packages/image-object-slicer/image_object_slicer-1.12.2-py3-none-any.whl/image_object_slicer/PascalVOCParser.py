@@ -1,0 +1,47 @@
+# This file is part of image-object-slicer
+# Copyright (C) 2018  Jori Regter <joriregter@gmail.com>
+# Copyright (C) 2022  Natan Junges <natanajunges@gmail.com>
+#
+# image-object-slicer is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# any later version.
+#
+# image-object-slicer is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with image-object-slicer.  If not, see <https://www.gnu.org/licenses/>.
+
+from xml.etree import ElementTree
+
+from .MultipleFileAnnotationParser import MultipleFileAnnotationParser
+
+class PascalVOCParser(MultipleFileAnnotationParser):
+    """Class that abstracts the annotation parsing of the Pascal VOC format."""
+
+    glob = "Annotations/**/*.xml"
+
+    @classmethod
+    def parse_file(cls, file, labels):
+        """Parse a Pascal VOC annotation file to a usable dict format."""
+        data = ElementTree.parse(file)
+        name = data.find("filename").text.split("/")[-1]
+        slices = []
+        labels = set()
+
+        for obj in data.iterfind("object"):
+            object_label = obj.find("name").text
+            object_bndbox = obj.find("bndbox")
+            labels.add(object_label)
+            slices.append({
+                "xmin": round(float(object_bndbox.find("xmin").text)),
+                "ymin": round(float(object_bndbox.find("ymin").text)),
+                "xmax": round(float(object_bndbox.find("xmax").text)),
+                "ymax": round(float(object_bndbox.find("ymax").text)),
+                "label": object_label
+            })
+
+        return {"name": name, "slices": slices, "labels": labels}
