@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ratpy
+Version: 1.1.9.5
+Summary: An interpreter and visualiser of RATS files
+Author: Steve Ayrton
+Author-email: Steve Ayrton <stephen_ayrton@waters.com>
+License: BSD
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Other Audience
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
