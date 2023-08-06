@@ -1,0 +1,10 @@
+LICENSE
+README.md
+edc.py
+eoxhub.py
+setup.py
+eoxhub.egg-info/PKG-INFO
+eoxhub.egg-info/SOURCES.txt
+eoxhub.egg-info/dependency_links.txt
+eoxhub.egg-info/requires.txt
+eoxhub.egg-info/top_level.txt
