@@ -1,0 +1,7 @@
+autohooks/plugins/black/__init__.py,sha256=gQFfoLwAEqzY-gb5wtGn9JETYbctCJzttES0DLaT0gk,762
+autohooks/plugins/black/__version__.py,sha256=N8XInNvytQuq3_wTaySR3cyvIOZPqkRBJeNCDA9mglY,103
+autohooks/plugins/black/black.py,sha256=xmwDjvB-yBJZ1h-S2O22q-JqwR0n3Bzkm2ACAzL0ac0,2856
+autohooks_plugin_black-22.7.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+autohooks_plugin_black-22.7.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+autohooks_plugin_black-22.7.0.dist-info/METADATA,sha256=4qMhtV-_4Sa31vmyN5Xx7_WzEHhVJTHVXwlhh4-67Ms,3526
+autohooks_plugin_black-22.7.0.dist-info/RECORD,,
