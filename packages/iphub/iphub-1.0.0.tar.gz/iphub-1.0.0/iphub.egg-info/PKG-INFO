@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: iphub
+Version: 1.0.0
+Summary: IPhub.info API wrapper.
+Home-page: https://github.com/DedInc/iphub
+Author: Maehdakvan
+Author-email: visitanimation@google.com
+Project-URL: Bug Tracker, https://github.com/DedInc/iphub/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h1 align="center">iphub - IPhub.info API wrapper.</h1>
+
+<br>
+
+<h1 align="center"> -How to use?- </h1>
+
+```python
+import iphub
+
+s = iphub.getSession('login', 'password') #Authirization
+key = iphub.generateKey(s) #Generate/Get key
+iphub.setKey(key) #Set key for use
+print(iphub.checkIP(s, '127.0.0.1')) #Check ip and print result (note: Auto regenerate key if expired)
+```
