@@ -1,0 +1,12 @@
+nonebot/adapters/onebot_qq_extension/__init__.py,sha256=9cLtM9SP0d2psE6hS4HYHR5-jsh9A3GZGqtqhtAMX8o,650
+nonebot/adapters/onebot_qq_extension/adapter.py,sha256=d1OPSjQKWKEQOIAYL4arodwxmNCr00BGntXzskFw02w,9201
+nonebot/adapters/onebot_qq_extension/bot.py,sha256=6GQ-ONniaIG8k5G34GlEa6o_9MrKAdp4xH79anKudZ8,90
+nonebot/adapters/onebot_qq_extension/bot.pyi,sha256=hYqsXYpjFZfv0-csYW1D16XbpJ4p0eA0E6qW28MG9VA,7217
+nonebot/adapters/onebot_qq_extension/event.py,sha256=bPwTjlzqPN4fUps16WCr4p8SM8kHDA5C7xo8P8kP7P8,3860
+nonebot/adapters/onebot_qq_extension/exception.py,sha256=2aP5Nf8NqsNIdB7MG14x3EsWNeNreirsUKVvzyxsZvI,6260
+nonebot/adapters/onebot_qq_extension/log.py,sha256=1ur7UyRoVoyIlYQq6YQ8h2stsOik3jeOASpMfssyH2o,196
+nonebot/adapters/onebot_qq_extension/message.py,sha256=fivk8_FzVobrLg6r7NZTjV5k-Qz0kl4xnvMfkvs5Ey0,240
+nonebot/adapters/onebot_qq_extension/utils.py,sha256=jGuJ41o8CV7urmPEU5S4sPFzXFkV8fv1yFT8e1F9UH4,561
+onebot_qq_extension-0.1.2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+onebot_qq_extension-0.1.2.dist-info/METADATA,sha256=l5LN_R_h6pakWe2PNDqptKGUn5L30d9oJ2K8wv5o2-Y,3951
+onebot_qq_extension-0.1.2.dist-info/RECORD,,
