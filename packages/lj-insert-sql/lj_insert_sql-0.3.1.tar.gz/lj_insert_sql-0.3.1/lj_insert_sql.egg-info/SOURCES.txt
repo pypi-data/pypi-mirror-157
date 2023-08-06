@@ -1,0 +1,12 @@
+README.md
+setup.py
+lj_insert_sql.egg-info/PKG-INFO
+lj_insert_sql.egg-info/SOURCES.txt
+lj_insert_sql.egg-info/dependency_links.txt
+lj_insert_sql.egg-info/entry_points.txt
+lj_insert_sql.egg-info/top_level.txt
+package/__init__.py
+package/lj_sqlpackage.py
+package/utils.py
+test/__init__.py
+test/test.py
