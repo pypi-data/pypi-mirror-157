@@ -1,0 +1,10 @@
+hpgeom/__init__.py,sha256=j8Yr6qFXbnP0ZDPSgZ3a5yAAUM7VX3mW9PNS1BR1Uzc,311
+hpgeom/_hpgeom.cpython-38-darwin.so,sha256=d2XT3BdJkz6-cM5oV7miAR4HJgGt4jpgeFGwXDKWIyk,115288
+hpgeom/healpy_compat.py,sha256=BeA4_Elyo2-wb9esCGg7dgJ6HNyYxgDozp_v3LYCvpw,14369
+hpgeom/hpgeom.py,sha256=x6Y3ffo3yKAtmWYqlNxZoBUozqTCdC6Am93-PNsjmAA,11823
+hpgeom-0.6.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+hpgeom-0.6.0.dist-info/METADATA,sha256=7OfYIh8fK22mCekMN3akdm5jLEPpniLrO8aH3rSEvbs,3182
+hpgeom-0.6.0.dist-info/WHEEL,sha256=pXLpj1wTvqlD6RVUEKOuGQGeFX0NOPyDrsC-9xVDmYU,109
+hpgeom-0.6.0.dist-info/top_level.txt,sha256=KMXgOieeXkh2CMZb9GBcMP-Sn52Bqn74mF8QfuVfjc0,7
+hpgeom-0.6.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+hpgeom-0.6.0.dist-info/RECORD,,
