@@ -1,0 +1,5 @@
+Pillow>=7.1.0
+pyqrcode
+requests==2.22.0
+robotframework>=3.2.2
+robotframework-pythonlibcore>=2.1.0
