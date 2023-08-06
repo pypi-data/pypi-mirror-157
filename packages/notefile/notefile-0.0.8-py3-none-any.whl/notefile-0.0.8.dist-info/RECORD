@@ -1,0 +1,14 @@
+notefile/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notefile/compress/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notefile/compress/tarfile.py,sha256=xV0HVAemMvcpZdspJ2Nuk8LGMMIRAQ4rXILtdPDDlMw,3019
+notefile/file/__init__.py,sha256=JQvS_wDmo0Ktm3vldvUYXHWendXU3EwZIQjFMBZ36cM,23
+notefile/file/core.py,sha256=kTf4Y_pwFUn7XLCam8gG0OMxEWHYkfLSe7oojchCTSQ,85
+notefile/system/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notefile/system/base.py,sha256=ihgv1VJaLLxYQcKskHreZvJadzC9t8rIhg9FPUwEXHE,2428
+notefile/system/lanzou/__init__.py,sha256=Lnj7NtJ8744hbGDx7rVeQqyp-3gTYrD4Ccze8UairhU,52
+notefile/system/lanzou/core.py,sha256=4bxv_gb9WWp1r3dU_F6t2NEESkmquvjYHasmgsqqp9c,70332
+notefile/system/lanzou/utils.py,sha256=MsTITseAfLbMqri4bQtZxGv0GzW1Y61kwoxQWYJQ0vM,8157
+notefile-0.0.8.dist-info/METADATA,sha256=v6UAh2gimGjtgyytMNQi9a4HFIQUulWiC-hIFEUOTw0,228
+notefile-0.0.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+notefile-0.0.8.dist-info/top_level.txt,sha256=LQHTU27G2lR9tioxYxkppEXhIwaQ2dOM9G1fgHMiD8w,9
+notefile-0.0.8.dist-info/RECORD,,
