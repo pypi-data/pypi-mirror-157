@@ -1,0 +1,10 @@
+LICENCE.txt
+README.md
+setup.py
+src/femtomat/TA.py
+src/femtomat/__init__.py
+src/femtomat/functions.py
+src/femtomat.egg-info/PKG-INFO
+src/femtomat.egg-info/SOURCES.txt
+src/femtomat.egg-info/dependency_links.txt
+src/femtomat.egg-info/top_level.txt
