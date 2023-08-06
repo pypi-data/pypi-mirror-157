@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+src/number_utility.py
+src/sbpyp.egg-info/PKG-INFO
+src/sbpyp.egg-info/SOURCES.txt
+src/sbpyp.egg-info/dependency_links.txt
+src/sbpyp.egg-info/requires.txt
+src/sbpyp.egg-info/top_level.txt
