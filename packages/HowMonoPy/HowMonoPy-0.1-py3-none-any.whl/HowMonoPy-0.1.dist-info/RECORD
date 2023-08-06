@@ -1,0 +1,10 @@
+HowMonoPy/__init__.py,sha256=JD7KsPiG2eW1KdYyyhlxm_kJugoAYaURQgNQqdhb5Vo,117
+HowMonoPy/_wrapper.py,sha256=iRX_wr3b60DMl1PQXiVvn9nTrh_okldic_hHMm9-JmU,601
+HowMonoPy/clib/howmonochromatic.dll,sha256=19mAyubQjln_df4_BG62SG3-q5reHDy4E9QEQXSs49g,27928733
+HowMonoPy/clib/libhowmonochromatic.so,sha256=_S8ueJKhgtyJCi6vwyLQANAcSCiiXCxu06LatlW2sgw,152304
+HowMonoPy-0.1.dist-info/LICENSE,sha256=NDmQ4ayL6YD5NfoM-9XO9xLzEp_lWLg64CydJWy3v90,1069
+HowMonoPy-0.1.dist-info/METADATA,sha256=bVmwv5bRxa36pHJo6OY8JATvXzfd9JBF2IMH8bC30ek,1640
+HowMonoPy-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+HowMonoPy-0.1.dist-info/top_level.txt,sha256=I8tt2-twua-vSt8ppUf4cQ3DcmDpF1gdEoUK_6cIy9Y,10
+HowMonoPy-0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+HowMonoPy-0.1.dist-info/RECORD,,
