@@ -1,0 +1,9 @@
+aiohttp>=3.0.0
+typing_extensions>=3.7.4
+
+[celery]
+celery>=4.0
+
+[redis]
+redis>=2.9.1
+gevent>=21.1.2
