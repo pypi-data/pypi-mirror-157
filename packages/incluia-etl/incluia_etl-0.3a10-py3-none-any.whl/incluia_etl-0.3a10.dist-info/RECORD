@@ -1,0 +1,13 @@
+incluia_etl/__init__.py,sha256=LNqk1qiqJBKPiKPyYHNyF4zQ3dQG3p83uDiioP223nw,363
+incluia_etl/album_functions.py,sha256=e-WVp6xme5J_dPkIeRdQGspeAR2vybx1ghpXSyYWxkU,7297
+incluia_etl/batch_functions.py,sha256=PgwTtf4tNFZS27zY7s65JGT4NEtU_Zt23EfaGnGYqdE,9340
+incluia_etl/grid_functions.py,sha256=vKlP6O7ZOT6hmLXrpMC4R5X4PLTsmr4vDfDWFjbh8a4,14807
+incluia_etl/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+incluia_etl/utils/mosaics_functions.py,sha256=sdCIvRSiIVGcjO_BJZviCSqQRyJns5DMEzUsff_wt2E,6323
+incluia_etl/utils/request_functions.py,sha256=BviHh8TpvUpVY4SnWcwY0l-BRia-rLp4xO8jx3JpHd8,16422
+incluia_etl/utils/utils.py,sha256=EEQlkH6W3pVBTzBUrrwvJIR4O1zOxOxO_Kd69M-QhnM,3736
+incluia_etl-0.3a10.dist-info/LICENSE,sha256=CuM22AkG_c38p4SMZkdyNCkufK7Txvq7jNklYCupgak,1082
+incluia_etl-0.3a10.dist-info/METADATA,sha256=lAoBqkAjV9EC_-N-EHE0agzEbgD6TBOgslTPR9ycPC4,1671
+incluia_etl-0.3a10.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+incluia_etl-0.3a10.dist-info/top_level.txt,sha256=rR5bgrlnQ67wuNj5AFqqftfuHdW_5IqRRJe8aexQcp4,12
+incluia_etl-0.3a10.dist-info/RECORD,,
