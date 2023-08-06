@@ -1,0 +1,13 @@
+aiofiles
+aiohttp
+importlib-metadata
+psutil
+typing-extensions
+PyYAML
+
+[dev]
+numpy
+pre-commit
+pytest
+pytest-cov
+torchrec_nightly
