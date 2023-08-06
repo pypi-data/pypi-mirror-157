@@ -1,0 +1,16 @@
+algorithms_OhGreat/DART.py,sha256=A3xMITZ6j-1VI1mIeTyDx_1yetgF2MYfNqnFhjvosSs,10149
+algorithms_OhGreat/FBP.py,sha256=mAav12rKVoNCgIXOQMi3rfiVdaj9G4BmT6VwuA_l1rg,782
+algorithms_OhGreat/SART.py,sha256=QGTN9oC2JdEvmhrjD0dxDx5YtkOaPeYAYImNwfG1rZ0,1014
+algorithms_OhGreat/SIRT.py,sha256=hVa077QxIZ0QTI6doyr0qmhdjJ9Vq_OpBXn0w2qCrvE,770
+algorithms_OhGreat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phantoms_OhGreat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phantoms_OhGreat/creator.py,sha256=-dHlc8_db93sbO3ss0AlJQ-h85nJwFd0qXWrukDe81s,12780
+projections_OhGreat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+projections_OhGreat/project.py,sha256=QfUM5Tuvy_Z8QTligkY0tI04ElffgoTWzeRz3zhtxX0,2169
+utils_OhGreat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils_OhGreat/utils.py,sha256=j1niquN34HIw-0XMaP3kLxulyUBG4oFQZ_3nDN1mFIY,3539
+DART_OhGreat-0.0.5.dist-info/LICENCE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+DART_OhGreat-0.0.5.dist-info/METADATA,sha256=Dsqfx7iwx5BOJ4kZFSo-POhEK_3raRCKZYpYQX6xLb8,13123
+DART_OhGreat-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+DART_OhGreat-0.0.5.dist-info/top_level.txt,sha256=KvV_551UscNcJ5Hb5Dn89nDkda09BW15mi46D_w0IcE,70
+DART_OhGreat-0.0.5.dist-info/RECORD,,
