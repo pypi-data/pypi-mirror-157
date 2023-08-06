@@ -1,0 +1,4 @@
+include jdAnimatedImageEditor/*.ui
+include jdAnimatedImageEditor/translations/*.qm
+include jdAnimatedImageEditor/version.txt
+include jdAnimatedImageEditor/Icon.svg
