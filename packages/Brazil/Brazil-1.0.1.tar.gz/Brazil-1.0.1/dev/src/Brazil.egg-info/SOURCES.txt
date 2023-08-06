@@ -1,0 +1,7 @@
+README.md
+setup.py
+dev/src/Brazil.egg-info/PKG-INFO
+dev/src/Brazil.egg-info/SOURCES.txt
+dev/src/Brazil.egg-info/dependency_links.txt
+dev/src/Brazil.egg-info/top_level.txt
+dev/src/Brazil.egg-info/SOURCES.txt
