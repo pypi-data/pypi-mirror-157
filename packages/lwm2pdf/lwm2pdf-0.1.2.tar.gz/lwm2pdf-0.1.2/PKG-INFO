@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lwm2pdf
+Version: 0.1.2
+Summary: Takes a variety of lighweight markup files and returns PDFs styled with provided css (via WeasyPrint)
+License: MIT
+Author: Danny Elfanbaum
+Author-email: drelfanbaum@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: asciidoc (>=10.2.0,<11.0.0)
+Requires-Dist: markdown2 (>=2.4.3,<3.0.0)
+Requires-Dist: weasyprint (==52.5)
