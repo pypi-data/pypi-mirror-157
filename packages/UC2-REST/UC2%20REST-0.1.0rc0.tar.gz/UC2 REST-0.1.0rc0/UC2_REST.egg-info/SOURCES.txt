@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+UC2_REST.egg-info/PKG-INFO
+UC2_REST.egg-info/SOURCES.txt
+UC2_REST.egg-info/dependency_links.txt
+UC2_REST.egg-info/not-zip-safe
+UC2_REST.egg-info/requires.txt
+UC2_REST.egg-info/top_level.txt
+uc2rest/ESP32Client.py
+uc2rest/TEST_ESP32Client.py
+uc2rest/TEST_Tutorial.py
+uc2rest/__init__.py
+uc2rest/__version__.py
