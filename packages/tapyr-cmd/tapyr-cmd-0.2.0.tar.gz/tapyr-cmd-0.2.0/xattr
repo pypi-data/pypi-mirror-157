@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+import sys
+import os 
+from tapyr.api import Tapir
+
+def usage():
+  print("Usage:", "show attribute:",  sys.argv[0], "[PATH]")
+  print("      ", "set attribute: ", sys.argv[0], "[NAME] [VALUE] [PATH]")
+
+
+argc = len(sys.argv)
+if argc == 2:
+  path = sys.argv[1]
+  session = Tapir()
+  node = session.node_attributes_json(path)
+  print(node)
+elif argc == 4:
+  name = sys.argv[1]
+  value = sys.argv[2]
+  path = sys.argv[3]
+  session = Tapir()
+  node = session.node(path)
+  session.add_attribute(node.id, name, value)
+else:
+    usage()

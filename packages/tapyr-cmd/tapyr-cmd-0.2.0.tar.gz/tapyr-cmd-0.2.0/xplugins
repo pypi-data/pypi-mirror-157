@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+import sys
+import os
+from tapyr.api import Tapir
+
+session = Tapir()
+
+for plugin in session.plugins():
+  print(plugin["name"], "\t\t:", plugin["description"])

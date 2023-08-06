@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+import sys
+import os
+from tapyr.api import Tapir
+
+if len(sys.argv) == 2:
+  session = Tapir()
+  plugin = session.plugin(sys.argv[1])
+  if plugin:
+    print(plugin["name"], ":", plugin["description"], plugin["config"])
+  else:
+    print(sys.argv[1], "not found")
+else:
+  print(sys.argv[0], " plugin_name")

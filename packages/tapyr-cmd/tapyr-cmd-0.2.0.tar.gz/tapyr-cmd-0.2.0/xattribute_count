@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+import os
+from tapyr.api import Tapir
+
+session = Tapir()
+print(session.attribute_count())

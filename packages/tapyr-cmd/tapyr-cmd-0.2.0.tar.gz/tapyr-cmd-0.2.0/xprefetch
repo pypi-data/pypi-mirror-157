@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+import sys
+import os 
+from tapyr.api import Tapir
+import json
+
+if len(sys.argv) != 2:
+  print(sys.argv[0] + " [FILE_PATH]")
+else:
+  session = Tapir()
+  prefetch_node = session.node(sys.argv[1])
+  res = session.run("prefetch", {"file" : prefetch_node.id})

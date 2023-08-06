@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+import sys
+from tapyr.api import Tapir
+
+#XXX add directory extraction
+#XXX add possiblity to get node id from query, time line etc
+#XXX add possbility to put all in a zip file with password or not 
+if len(sys.argv) == 3:
+  session = Tapir()
+  path = sys.argv[2]
+  for node in session.nodes_by_id(session.query(sys.argv[1]), name=True, path=True):
+    try:
+      b = session.download(node.id, path + "/" + node.name())
+    except Exception:
+      print("Can't download file : " + node.path)
+else:
+  print("Usage:", sys.argv[0], "[QUERY] [PATH]")
+  print("      ", sys.argv[0], '"name == w\'*.jpg\'"', "images/")
+  print("      ", sys.argv[0], '"attribute:\'datatype\' == \'windows/registry\'"', "registry/")

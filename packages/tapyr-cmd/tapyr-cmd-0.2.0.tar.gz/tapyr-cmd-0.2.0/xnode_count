@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+import sys
+import os
+from tapyr.api import Tapir
+
+session = Tapir()
+
+print(session.node_count())

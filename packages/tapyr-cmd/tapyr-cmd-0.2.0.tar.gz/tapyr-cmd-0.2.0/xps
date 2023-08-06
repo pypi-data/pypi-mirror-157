@@ -1,0 +1,93 @@
+#!/usr/bin/python3
+import sys
+import json
+import os
+from tapyr.api import Tapir
+
+session = Tapir()
+
+class PrettyPrinter():
+  def __init__(self, session):
+    self.session = session
+    self.plugins = session.plugins()
+    self.plugin_arg_pytypes = {}
+    for plugin in self.plugins:
+      config = plugin["config"]
+      self.plugin_arg_pytypes[plugin["name"]] = self.config_schema_to_pytype(config)
+      # print(plugin, self.plugin_arg_pytypes[plugin])
+
+  def get_type(self, arg):
+     schemar_type = arg.get('type') 
+     if schemar_type:
+       return schemar_type
+     schemar_ref = arg.get('$ref')
+     if schemar_ref == "#/definitions/TreeNodeId":
+       return "NodeId"
+     elif schemar_ref == "#/definitions/AttributePath":
+       return "AttributePath"
+     elif schemar_ref == "#/definitions/VecTreeNodeId":
+       return "Array_NodeId"
+     schemar_all_of = arg.get('allOf')
+     if schemar_all_of:
+        return "Option" + self.get_type(schemar_all_of[0])
+
+  def config_schema_to_pytype(self, config):
+    pytype = {}
+    for (arg_name, arg_type) in config['properties'].items():
+      schemar_ref = arg_type.get('$ref')
+      schemar_type = arg_type.get('type')
+      if schemar_type == 'array':
+        sub_type = self.get_type(arg_type['items']) 
+        pytype[arg_name] = "Array_" + sub_type
+      # elif schemar_type == 'object':
+        # print(arg_type)
+      elif schemar_type != None:
+        pytype[arg_name] = schemar_type 
+      else:
+        pytype[arg_name] = self.get_type(arg_type)
+    return pytype 
+
+  def json_task(self, task):
+    plugin_name = task["plugin_name"]
+    args = task["argument"]
+    arg_str = plugin_name + " "
+    args = json.loads(bytearray(args, 'UTF-8'))
+    pyarg_types = self.plugin_arg_pytypes[plugin_name]
+    for (arg_name, value) in args.items():
+       pytype = pyarg_types.get(arg_name)
+       if pytype == 'NodeId':
+          arg_str += "--" + str(arg_name) + " " + str(session.path(value)) + " "
+       elif pytype == 'AttributePath':
+          arg_str += "--" + str(arg_name) + " " + str(session.path(value['node_id'])) + " "   
+       elif pytype == "OptionAttributePath":
+          node_id = value['node_id'] #XXX options can be null ?
+          attr_name = value['attribute_name']
+          attr_path = session.path(node_id) + ":" + attr_name
+          arg_str += "--" + str(arg_name) + " " + str(attr_path) + " "
+       elif pytype == "Array_NodeId":
+          new_list = []
+          for node_id in value:
+            new_list += (session.path(node_id) ,)
+          arg_str += "--" + str(arg_name) + " " + str(new_list) + " "
+       else:
+          arg_str += "--" + str(arg_name) + " " + str(value) + " "
+    return arg_str 
+
+  def task(self, pid):
+    task = session.task(pid)
+    line = str(pid) + "\t" + task["state"] + "\t" + pp.json_task(task["task"])
+    # line = str(pid) + "\t" + task["state"] + "\t" + pp.json_task(task["task"]) + "\t" + str(task)
+    return line
+
+pp = PrettyPrinter(session)
+if len(sys.argv) == 2:
+  pid = sys.argv[1]
+  if int(pid) < 1 or int(pid) > session.task_count():
+    print("invalid pid")
+  else:
+    print("PID\tSTATE    \tCMD")
+    print(pp.task(pid))
+else:
+  print("PID\tSTATE    \tCMD")
+  for pid in range(1, session.task_count() + 1):
+    print(pp.task(pid))

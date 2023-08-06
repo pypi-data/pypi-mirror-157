@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+import sys
+import os 
+from tapyr.api import Tapir
+
+if len(sys.argv) != 2:
+  print(sys.argv[0] + " [FILE_PATH]")
+  print(sys.argv[0] + " [FILE_PATH] [OUTPUT_NAME]")
+else:
+  session = Tapir()
+  node = session.node(sys.argv[1])
+  name = sys.argv[1].rsplit('/')[-1]
+  try: 
+    name = sys.argv[2]
+  except:
+    pass
+
+  #XXX don't use download for large file
+  #as all file is buffered before return
+  #use rather cat
+  b = session.download(node.id, name)
