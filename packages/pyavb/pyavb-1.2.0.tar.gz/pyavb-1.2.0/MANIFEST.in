@@ -1,0 +1,3 @@
+include README.rst LICENSE
+include src/avb/*.pyx
+include src/avb/*.cpp
