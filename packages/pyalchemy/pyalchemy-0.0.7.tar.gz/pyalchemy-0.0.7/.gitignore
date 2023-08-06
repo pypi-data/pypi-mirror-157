@@ -1,0 +1,6 @@
+# Ignore everything connected to the PyPI distribution
+dist
+README_PyPI.md
+pyproject.toml
+pypi_notes.txt
+src/pyalchemy/__pycache__
