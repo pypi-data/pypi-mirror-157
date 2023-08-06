@@ -1,0 +1,15 @@
+FunFun/FunFun.py,sha256=kqwowCbP58vbGnPPqLcmKo-tGJi3623LFz4pS6Ca3sk,3568
+FunFun/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FunFun/data/CONCATENATE_base.tsv,sha256=Fu4ljVwP74v-sGP2EyEIInN48rqqEFpsyczUKeuOi6Y,12229516
+FunFun/data/ITS1_base.tsv,sha256=LslNr38HDKrSirE1GdKHDSCikR2Bu-K0uyT8S7aKQaw,12223585
+FunFun/data/ITS2_base.tsv,sha256=iycuhzapaVCbgLivU8h25L9LDE5uBw3FaAyWT86h3og,12222928
+FunFun/data/functionality.tsv,sha256=9lqXgbRJYMMDK_2KH9NpKPs78tzmXhF2Imrq2HYJ1OE,41441723
+FunFun/example/its2.fasta,sha256=OR56PGlll1yS9YsVXWSquMBAla4M29iJJqpm79M98dQ,384
+FunFun/src/Get_distance.py,sha256=dQvJmCxNdB5qcwk6yIQE3JEoXfICw7gxP_0mL-_HQJ8,3472
+FunFun/src/Get_functional.py,sha256=XUOzT9HdkGDK3g23hjKDEYiJFR47AxDmITR0olCQWwE,1135
+FunFun-0.1.15.dist-info/LICENSE,sha256=R7_eSydqWVY6ulX6BXoMS9LZLpIjjElLV2WO0hH33t8,1070
+FunFun-0.1.15.dist-info/METADATA,sha256=-MmphNeZMcvW-7AAEzuCqqAdw-5IAwBsP0LJ-FS8Vys,592
+FunFun-0.1.15.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+FunFun-0.1.15.dist-info/entry_points.txt,sha256=Nd-Ill1BNjdgSrpJIQ9zKAvMSdhTwrRxbM8QdAbcnsQ,46
+FunFun-0.1.15.dist-info/top_level.txt,sha256=_ncGUqR5k7PNcG_lzmuAiNRBgiWUAEE_DH3QMgxqZ-c,7
+FunFun-0.1.15.dist-info/RECORD,,

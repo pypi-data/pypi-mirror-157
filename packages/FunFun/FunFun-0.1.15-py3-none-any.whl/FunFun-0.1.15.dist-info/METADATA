@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: FunFun
+Version: 0.1.15
+Summary: ITS-based functional annotator
+Home-page: https://github.com/DanilKrivonos/FunFun
+Author: D.V. Krivonos, D.N. Konanov
+Author-email: danil01060106@gmail.com
+Project-URL: Bug Tracker, https://github.com/DanilKrivonos/FunFun
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: biopython
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: scipy
+
+FunFun
