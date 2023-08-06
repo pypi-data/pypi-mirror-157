@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+sudokuku/__init__.py
+sudokuku/coordinate_calculator.py
+sudokuku/field_status.py
+sudokuku/manager.py
+sudokuku/sudokuwrapped.py
+sudokuku.egg-info/PKG-INFO
+sudokuku.egg-info/SOURCES.txt
+sudokuku.egg-info/dependency_links.txt
+sudokuku.egg-info/top_level.txt
