@@ -1,0 +1,13 @@
+beautifulsoup4
+jsonschema
+lxml
+numpy
+pandas
+pylogconf
+pytconf
+pytidylib
+pyyaml
+requests
+tqdm
+types-requests
+unidecode
