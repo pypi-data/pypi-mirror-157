@@ -1,0 +1,4 @@
+# Ignore everything connected to the PyPI distribution
+dist
+README_PyPI.md
+pyproject.toml
