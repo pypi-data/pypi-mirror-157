@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: logger_rewrite
+Version: 0.3
+Summary: log scripts
+Home-page: https://github.com/cuongngm/logger_rewrite
+Author: cuongngm
+Author-email: cuonghip0908@gmail.com
+License: UNKNOWN
+Description: # logger_rewrite
+        Easy way to log everything
+        ### Install
+        ```bash
+        pip install logger_rewrite
+        ```
+        
+        ### Use
+        ```bash
+        from logger_rewrite import setup_log
+        logger = setup_log(save_dir='saved')
+        logger.info('Hello world')
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
