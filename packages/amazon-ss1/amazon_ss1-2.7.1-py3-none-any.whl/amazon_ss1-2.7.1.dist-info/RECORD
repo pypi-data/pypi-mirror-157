@@ -1,0 +1,10 @@
+amazon_ss1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+amazon_ss1/add_one.py,sha256=lb-DThgJIL2-asdx9RJkLvn_BkpQRkqmSDspWnQezu8,45
+amazon_ss1/ap_region.py,sha256=_m6lMvmKZ949TPxiao-XPusjxVDP1DE0ku7pK6SmYKk,266
+amazon_ss1/version.py,sha256=JInvPLIEcryn73jLGS-84zZoUDiAesFFsRDhguwVJ6A,85
+amazon_ss1-2.7.1.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+amazon_ss1-2.7.1.dist-info/METADATA,sha256=A2HqMz1Ls9ISN3nEfNSUsrsZcHesZuj6_0rcMU7w6Pk,904
+amazon_ss1-2.7.1.dist-info/NOTICE.txt,sha256=N9UhPOU65LsxaIBqH_PJzHHwq0YsmAWudxcNBjczN3Q,549
+amazon_ss1-2.7.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+amazon_ss1-2.7.1.dist-info/top_level.txt,sha256=Q3VCJaANYpw1BNVCyyXuigYfRFrNX6zriFn3cdOXAh4,11
+amazon_ss1-2.7.1.dist-info/RECORD,,
