@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pystata.egg-info/PKG-INFO
+pystata.egg-info/SOURCES.txt
+pystata.egg-info/dependency_links.txt
+pystata.egg-info/requires.txt
+pystata.egg-info/top_level.txt
+src/__init__.py
+src/pyreg.py
+src/pystata.py
