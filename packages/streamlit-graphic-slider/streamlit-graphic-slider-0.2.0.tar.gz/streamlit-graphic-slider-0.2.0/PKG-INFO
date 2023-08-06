@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: streamlit-graphic-slider
+Version: 0.2.0
+Summary: Graphic background slider for Streamlit
+Author: Mirko Mälicke
+Author-email: mirko@hydrocode.de
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
