@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: rext
+Version: 0.1.10
+Summary: A toolbox by Rex
+Home-page: https://github.com/FallingHeart/rext
+Author: rex nathan
+Author-email: ceo@bamo.tech
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pymongo
+Requires-Dist: pandas
+
+
+# rex
+
+## git commit
+
+vx.x.x
+
+## clean
+
+python setup.py sdist
+
+## release
+
+python setup.py upload --verbose
+
+## install
+
+pip intall rext
+
+## upgrade
+
+pip install --upgrade rext
+
+## list
+
+pip list
+
+## import
+
+from rext import mstring as ms
+
+## use
+
+print(ms.remove_space_all("666 666"))
+
+
