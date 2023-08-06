@@ -1,0 +1,14 @@
+_kiwipiepy.cp310-win32.pyd,sha256=jXXOLW9ViRIZ_K6ofeGMcwH2Jemo7tzEZ5DT4FlDLNE,1374720
+kiwipiepy/__init__.py,sha256=i6grZmV1Zm4N1Re2FLNERBZqCqlHFN0qoW4WsePOmwI,7226
+kiwipiepy/__main__.py,sha256=NYXDrsie-wFhFxfymzcBW451cGOzVj3TWEpLQqPeiH4,2199
+kiwipiepy/_version.py,sha256=aNATXYFxgy1gBtvCZs5bLdMQz5ZJj4oMC5lGOFMO5Y0,24
+kiwipiepy/_wrap.py,sha256=UWnxhD7ZtL1zlYc9C08HMydu5JKVJFdXxpeGSnxk9tI,57071
+kiwipiepy/const.py,sha256=4-CW5Tv-1fRz8lKx_urc0Eab0MjYR-Zl9peNeDnchkM,3248
+kiwipiepy/documentation.md,sha256=5SGJRlo7bTOjOd047ekp7fbm4F2KJfsyyyxJ6VfSNEI,36678
+kiwipiepy/utils.py,sha256=Wm_XFguKy1XxPZG4Am_VZmzo1F9QApQj7zBylrhC67g,6428
+kiwipiepy/corpus/stopwords.txt,sha256=rzIvBQueAyJbc3xtmgJuSNjYb-p9zRnS25VMtT7zLsU,945
+kiwipiepy-0.13.1.dist-info/LICENSE.txt,sha256=2ghzJa3MOv9msS89ynTvAVO6Lia2lIJ3uRvH4EhFkK0,849
+kiwipiepy-0.13.1.dist-info/METADATA,sha256=6jAQlzJyDmbwGcHakyasDUtJ8n9eZczBn4IGI2EktkY,961
+kiwipiepy-0.13.1.dist-info/WHEEL,sha256=l5uI7e2vYDQsG8-BdAxXE9BLA-oyyyoK5DyD9-hAApg,98
+kiwipiepy-0.13.1.dist-info/top_level.txt,sha256=2K_Miiwb0zKgJI99sA9LkDdzftl4hunBQbpA20gfeU8,21
+kiwipiepy-0.13.1.dist-info/RECORD,,
