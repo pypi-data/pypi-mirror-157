@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/tagasuri/__init__.py
+src/tagasuri/__main__.py
+src/tagasuri/app.py
+src/tagasuri/epd.py
+src/tagasuri/logging.py
+src/tagasuri.egg-info/PKG-INFO
+src/tagasuri.egg-info/SOURCES.txt
+src/tagasuri.egg-info/dependency_links.txt
+src/tagasuri.egg-info/entry_points.txt
+src/tagasuri.egg-info/requires.txt
+src/tagasuri.egg-info/top_level.txt
