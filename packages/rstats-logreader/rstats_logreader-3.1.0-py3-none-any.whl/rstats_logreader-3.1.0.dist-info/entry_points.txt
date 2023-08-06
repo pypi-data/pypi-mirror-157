@@ -1,0 +1,2 @@
+[console_scripts]
+rstats-reader = rstats_logreader.cli:main
