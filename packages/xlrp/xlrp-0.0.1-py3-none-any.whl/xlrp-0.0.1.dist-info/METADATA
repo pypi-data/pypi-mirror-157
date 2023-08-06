@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: xlrp
+Version: 0.0.1
+Summary: 生成excel测试报告
+Home-page: 
+Author: 测码范晔
+Author-email: 1538379200@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: openpyxl
+Requires-Dist: pywin32
+
+# xlrp - Excel测试报告生成
+xlrp可以方便的在代码中添加标记，生成excel报告，包含运行的所有用例，以及用例运行的报告图表
+
+## 用例标记
+标记可以使用装饰器或者with的形式，标明代码块的所属
+
+**SysName**
+> 类、函数、方法上面使用装饰器形式，可以添加一个name参数，代表当前测试的系统名称
+> 代码内部，使用with的形式，with SysName(xxx):
+
+**ModelName**
+> 函数、方法上面使用装饰器形式，可以添加一个name参数，标明后续用例所属模块
+> 代码内部，使用with的形式，with ModelName(xxx):
+
+**StepName**
+> 函数、方法上面使用装饰器形式，可以添加一个name参数，标明当前测试的用例
+> 代码内部，使用with的形式，with StepName(xxx):
+
+## 运行单个函数、方法
+在运行单个函数或者方法的时候，可以使用run方法
+run方法接受两个参数
+obj代表当前需要运行的方法或者函数名称
+param_iter代表实际参数，运行会循环列表中的数据，放入函数中运行
+```pycon
+from XLRP import xlrp
+
+runner = xlrp.Runner()
+runner.run(testcase, [a, b, c])
+```
+
+## 运行整个class用例
+```pycon
+from XLRP import xlrp
+
+
+runner = xlrp.Runner()
+runner.run_class(testclass)
+```
+
+## 保存报告图像到excel
+```pycon
+from XLRP import xlrp
+
+
+runner = xlrp.Runner()
+runner.run_class(testclass).plot_save_excel('test.xlsx')
+```
+
+## 保存所有数据，默认形式
+会在当前文件目录下生成一个XlrpReport文件夹，存放excel报告文件
+```pycon
+from XLRP import xlrp
+
+
+runner = xlrp.Runner()
+runner.run_class(testclass).save_default()
+```
+
+
