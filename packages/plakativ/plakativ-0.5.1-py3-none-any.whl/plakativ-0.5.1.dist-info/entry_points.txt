@@ -1,0 +1,8 @@
+[console_scripts]
+plakativ = plakativ:main
+
+[gui_scripts]
+plakativ-gui = plakativ:gui
+
+[setuptools.installation]
+eggsecutable = plakativ:main
