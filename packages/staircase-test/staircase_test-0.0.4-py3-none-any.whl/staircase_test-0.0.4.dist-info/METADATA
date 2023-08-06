@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: staircase-test
+Version: 0.0.4
+Summary: Simple step-based testing framework.
+Home-page: https://github.com/jettdc/staircase
+Author: Jett Crowson & Dylan Cormican
+Author-email: jettcrowson@gmail.com
+License: MIT
+Keywords: testing framework test-framework step-testing
+Platform: UNKNOWN
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+Requires-Dist: jetts-tools
+Requires-Dist: barb
+Requires-Dist: python-dotenv
+Requires-Dist: typing-extensions
+
+## staircase
+A simple, step-based testing framework.
+
