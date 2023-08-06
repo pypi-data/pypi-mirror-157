@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="diagho_toolkit"
+version="0.1.1"
+authors= [
+    { name="Diagho Team", email="admin@diagho.com" },
+]
+description = "Library with useful tools for processing genomic data"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/DiaghoProject/python-diagho-toolkit"
+"Bug Tracker" = "https://github.com/DiaghoProject/python-diagho-toolkit/issues"
+
+[tool.black]
+line-length = 88 # default
+target-version = ['py39', 'py310']
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-rA --disable-warnings --cov=tests"
+python_files = "tests.py test_*.py *_tests.py"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = [black, linters, tests]
+skipsdist = true
+
+[testenv:black]
+deps =
+    black
+commands =
+    black --check --diff src/diagho_toolkit
+
+[testenv:linters]
+deps =
+    flake8
+    pylint
+commands =
+    flake8 --max-line-length 88 --extend-ignore E203,W503 src/diagho_toolkit
+    pylint --disable C,E0401,I,R,W,no-self-argument,not-context-manager --ignore __pycache__ src/diagho_toolkit
+    
+[testenv:tests]
+passenv = *
+deps =
+    -r requirements.txt
+    pytest-cov
+commands =
+    pytest tests
+"""
