@@ -1,0 +1,11 @@
+gitwatch/__init__.py,sha256=FXxM3_xR8T7AA8PG4rGIWoG8RLHS7SxlHu_j0SmD-qo,1217
+gitwatch/config.yaml,sha256=IFy2QDpMMeHx7mzykAb2pJcOFb3PQL-5mrZ5EGCOtN0,149
+gitwatch/gitwatch.py,sha256=ko5J_I3yepClcBJf9N6qsHsnfbssp5ybLv1yVrkp-Y8,2172
+gitwatch/gitwatch_cli.py,sha256=Kb7jdP2VNr7gHtX4UWsG5N-ko1j0NG7G5vD7rkjT1AI,609
+gitwatch-0.1.0.dist-info/AUTHORS.md,sha256=EDugg_7l5nmVD5bvlZuY0Czy_1KeoewHWnDWr19Uc_8,163
+gitwatch-0.1.0.dist-info/LICENSE,sha256=50bgsa5ZEVH3iajjz0Iq6W5l-_qSEKJe4RsBDuL-EUU,1074
+gitwatch-0.1.0.dist-info/METADATA,sha256=XG5w5IGhrT-XYw_WOlgcZaXx98TLiVs9oJPKfyv0XbQ,7135
+gitwatch-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gitwatch-0.1.0.dist-info/entry_points.txt,sha256=9VjCs2X45cY4uMReOTnOWYqqsrbcK0LW3373YquasdU,54
+gitwatch-0.1.0.dist-info/top_level.txt,sha256=iGhHFI9PRgiGyz1d6bVhejm8ZZZ7R1fm28dM2ugahdk,9
+gitwatch-0.1.0.dist-info/RECORD,,
