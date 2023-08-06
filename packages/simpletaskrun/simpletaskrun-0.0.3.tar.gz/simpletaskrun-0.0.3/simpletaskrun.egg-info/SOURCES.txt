@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+simpletaskrun/__init__.py
+simpletaskrun.egg-info/PKG-INFO
+simpletaskrun.egg-info/SOURCES.txt
+simpletaskrun.egg-info/dependency_links.txt
+simpletaskrun.egg-info/requires.txt
+simpletaskrun.egg-info/top_level.txt
