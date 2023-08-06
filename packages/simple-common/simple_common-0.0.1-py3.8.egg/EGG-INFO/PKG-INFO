@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: simple-common
+Version: 0.0.1
+Summary: some python code
+Home-page: https://github.com/xunull/simple-common
+Author: xunull
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# simple-common
+
+python setup.py sdist bdist_wheel
+
