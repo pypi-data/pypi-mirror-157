@@ -1,0 +1,20 @@
+[package]
+name = "markdown-html-finder"
+version = "0.2.5"
+edition = "2018"
+description = "A Python library to find html in strings"
+repository = "https://github.com/chdsbd/markdown-html-finder"
+authors = []
+readme = "README.md"
+keywords = ["html"]
+
+[lib]
+name = "markdown_html_finder"
+crate-type = ["cdylib"]
+
+[dependencies]
+pulldown-cmark = "0.5.3"
+
+[dependencies.pyo3]
+version = "0.16.5"
+features = ["extension-module"]
