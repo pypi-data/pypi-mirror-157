@@ -1,0 +1,3 @@
+[console_scripts]
+thymed=thymed.__main__:main
+
