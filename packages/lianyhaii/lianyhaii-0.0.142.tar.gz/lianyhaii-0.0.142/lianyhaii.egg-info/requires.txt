@@ -1,0 +1,10 @@
+scikit-learn
+optuna
+plotly
+catboost
+xgboost
+lightgbm
+seaborn
+pyarrow
+gensim
+pathos
