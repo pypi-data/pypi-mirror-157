@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: jaki-sdk-python
+Version: 1.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/kobesjava/python-sdk.git
+Author: Jaki
+License: MIT
+Keywords: Jaki,Public API
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Jaki Public API Connector Python
+
+
