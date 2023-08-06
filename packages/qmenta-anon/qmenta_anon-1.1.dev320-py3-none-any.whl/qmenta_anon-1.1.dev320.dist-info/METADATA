@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: qmenta-anon
+Version: 1.1.dev320
+Summary: The qmenta-anon library is used to anonymize files before transferring them to the QMENTA platform.
+Author: QMENTA
+Author-email: dev@qmenta.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Dist: nibabel (>=3.2.2,<4.0.0)
+Requires-Dist: pydicom (>=2.3.0,<3.0.0)
