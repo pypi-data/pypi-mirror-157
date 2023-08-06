@@ -1,0 +1,20 @@
+ubii-message-formats>=0.2.8.dev2
+codestare-async-utils>=0.1
+pyyaml
+aiohttp
+
+[:python_version < "3.8"]
+importlib_metadata
+backports.cached_property
+typing_extensions
+
+[cli]
+argparse
+
+[dev]
+pytest
+pytest-asyncio
+setuptools-changelog
+
+[docs]
+sphinx
