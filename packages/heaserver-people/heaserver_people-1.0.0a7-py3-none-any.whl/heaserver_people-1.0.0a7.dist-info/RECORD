@@ -1,0 +1,9 @@
+heaserver/person/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+heaserver/person/service.py,sha256=_Sy7WeVGKsfHpBSJH1FFmdFbl54-feKozkpPTmdii3o,5223
+heaserver/person/wstl/all.json,sha256=xmQKQ-ckMlgGywGKDGJomjZ3MQHxY5uyYpK79P1r4K8,8397
+heaserver_people-1.0.0a7.dist-info/LICENSE,sha256=7OGLr2mf4iOKsoeZ4ePSVZDkkPK3SlM00ZmlQF3EN7U,11625
+heaserver_people-1.0.0a7.dist-info/METADATA,sha256=gqrXFrBLNMhPQp7crZfGUIMqNrMniSU7X93mwq0P1XY,4866
+heaserver_people-1.0.0a7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+heaserver_people-1.0.0a7.dist-info/entry_points.txt,sha256=V7PuFtSIb-ulhR1bv5MsorPQ8BgOJJ510YxBIoJ6ba0,68
+heaserver_people-1.0.0a7.dist-info/top_level.txt,sha256=NkEy5wN6upFmnDxEJ8pTX7gUpWeFPfDhk7zvlMeOv7M,10
+heaserver_people-1.0.0a7.dist-info/RECORD,,

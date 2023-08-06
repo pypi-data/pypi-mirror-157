@@ -1,0 +1,234 @@
+{
+    "wstl": {
+        "title": "HEA Person Microservice",
+        "actions": [
+            {
+                "name": "heaserver-people-person-duplicate",
+                "type": "safe",
+                "target": "item",
+                "prompt": "Duplicate"
+            },
+            {
+                "name": "heaserver-people-person-open",
+                "type": "safe",
+                "target": "item",
+                "prompt": "Open"
+            },
+            {
+                "name": "heaserver-people-person-get-properties",
+                "description": "View and edit this Person's properties",
+                "type": "unsafe",
+                "target": "item cj-template",
+                "action": "update",
+                "prompt": "Properties",
+                "inputs": [
+                    {
+                        "name": "id",
+                        "prompt": "Id",
+                        "readOnly": true
+                    },
+                    {
+                        "name": "display_name",
+                        "prompt": "Name",
+                        "required": true
+                    },
+                    {
+                        "name": "description",
+                        "prompt": "Description",
+                        "type": "textarea"
+                    },
+                    {
+                        "name": "preferred_name",
+                        "prompt": "Preferred Name"
+                    },
+                    {
+                        "name": "first_name",
+                        "prompt": "First Name"
+                    },
+                    {
+                        "name": "last_name",
+                        "prompt": "Last Name"
+                    },
+                    {
+                        "name": "title",
+                        "prompt": "Title"
+                    },
+                    {
+                        "name": "email",
+                        "prompt": "Email",
+                        "hea": {
+                            "type": "email"
+                        }
+                    },
+                    {
+                        "name": "phone_number",
+                        "prompt": "Phone Number",
+                        "hea": {
+                            "type": "tel"
+                        }
+                    },
+                    {
+                        "name": "owner",
+                        "prompt": "Owner",
+                        "required": true,
+                        "type": "select",
+                        "hea": {
+                            "optionsFromUrl": {
+                                "path": "/people/",
+                                "value": "id",
+                                "text": "display_name"
+                            }
+                        }
+                    },
+                    {
+                        "name": "created",
+                        "prompt": "Created",
+                        "readOnly": true,
+                        "hea": {
+                            "type": "datetime"
+                        }
+                    },
+                    {
+                        "name": "modified",
+                        "prompt": "Modified",
+                        "readOnly": true,
+                        "hea": {
+                            "type": "datetime"
+                        }
+                    },
+                    {
+                        "name": "source",
+                        "prompt": "Source"
+                    },
+                    {
+                        "hea": {
+                            "section": "shares",
+                            "sectionPrompt": "Shares",
+                            "optionsFromUrl": {
+                                "path": "/people/",
+                                "value": "id",
+                                "text": "display_name"
+                            }
+                        },
+                        "name": "user",
+                        "prompt": "User",
+                        "required": true,
+                        "type": "select"
+                    },
+                    {
+                        "hea": {
+                            "section": "shares",
+                            "cardinality": "multiple"
+                        },
+                        "name": "permissions",
+                        "prompt": "Permissions",
+                        "type": "select",
+                        "suggest": [
+                            {"value":  "COOWNER", "text":  "Co-owner"},
+                            {"value":  "CREATOR", "text":  "Creator"},
+                            {"value":  "DELETER", "text":  "Deleter"},
+                            {"value":  "EDITOR", "text":  "Editor"},
+                            {"value":  "SHARER", "text":  "Sharer"},
+                            {"value":  "VIEWER", "text":  "Viewer"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "heaserver-people-person-duplicate-form",
+                "description": "Duplicate this person",
+                "type": "unsafe",
+                "target": "item cj-template",
+                "action": "update",
+                "prompt": "Duplicate",
+                "inputs": [
+                    {
+                        "name": "display_name",
+                        "prompt": "Name",
+                        "required": true
+                    },
+                    {
+                        "name": "description",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "preferred_name",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "first_name",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "last_name",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "title",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "email",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "phone_number",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "owner",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "created",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "modified",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "source",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "hea": {
+                            "section": "shares",
+                            "display": false
+                        },
+                        "name": "user"
+                    },
+                    {
+                        "hea": {
+                            "section": "shares",
+                            "display": false
+                        },
+                        "name": "permissions"
+                    }
+                ]
+            }
+        ]
+    }
+}
