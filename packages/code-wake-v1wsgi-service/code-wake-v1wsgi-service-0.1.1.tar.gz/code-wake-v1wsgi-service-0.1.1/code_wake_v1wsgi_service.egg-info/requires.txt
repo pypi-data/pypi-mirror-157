@@ -1,0 +1,14 @@
+bencode.py~=4.0.0
+code-wake~=0.1.0
+werkzeug~=2.1.2
+
+[dev]
+black==22.3.0
+code-wake-sql14-store==0.1.0
+code-wake-v1rest-store==0.1.0
+coverage==6.2
+flask==2.1.2
+isort==5.10.1
+mypy==0.961
+pytest==7.0.1
+types-requests==2.28.0
