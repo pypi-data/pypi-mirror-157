@@ -1,0 +1,7 @@
+README.md
+setup.py
+dev/src/america.egg-info/PKG-INFO
+dev/src/america.egg-info/SOURCES.txt
+dev/src/america.egg-info/dependency_links.txt
+dev/src/america.egg-info/top_level.txt
+dev/src/america.egg-info/SOURCES.txt
