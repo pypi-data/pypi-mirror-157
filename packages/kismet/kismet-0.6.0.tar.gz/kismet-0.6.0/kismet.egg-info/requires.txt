@@ -1,0 +1,9 @@
+aiohttp
+discord.py
+ipython>=7
+jupyterlab
+lark-parser
+numpy
+prompt_toolkit
+slackclient
+torch
