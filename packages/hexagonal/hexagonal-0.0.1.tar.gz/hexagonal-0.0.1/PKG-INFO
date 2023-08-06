@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hexagonal
+Version: 0.0.1
+Summary: Hexagon provides classes for dealing with hexagonal grids.
+Author: Tom Fryers
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Project-URL: Home, https://gitlab.com/Tom_Fryers/hexagonal
+
+# Hexagonal
+
+`hexagonal` has classes for working with hexagonal coordinates and grids.
+
