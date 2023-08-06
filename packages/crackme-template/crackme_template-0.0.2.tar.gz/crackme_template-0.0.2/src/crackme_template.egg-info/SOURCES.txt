@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/crackme_template/__init__.py
+src/crackme_template/main.py
+src/crackme_template/version.py
+src/crackme_template.egg-info/PKG-INFO
+src/crackme_template.egg-info/SOURCES.txt
+src/crackme_template.egg-info/dependency_links.txt
+src/crackme_template.egg-info/entry_points.txt
+src/crackme_template.egg-info/requires.txt
+src/crackme_template.egg-info/top_level.txt
