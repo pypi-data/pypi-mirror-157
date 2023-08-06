@@ -1,0 +1,10 @@
+rstats_logreader/__init__.py,sha256=N8AS40yy6rkbgMiKb_uwMh8WZrIwSyEvi_VbniaKp2A,486
+rstats_logreader/cli.py,sha256=-rZxPVH3gWGGxknvGzTxCH6YfOtFTlWq9MIp03xmOYU,3956
+rstats_logreader/reader.py,sha256=P2HLemI5EXZfR37fW126AbuySTs3mbZCcMasSSIWByw,13823
+rstats_logreader-3.1.2.dist-info/LICENSE.md,sha256=5NuRqpvMet5Ic7uBZqx5Ex3cG56nTZ7wDgW12Tmr_qo,3056
+rstats_logreader-3.1.2.dist-info/METADATA,sha256=ktYM3GYlgRMwa94KZGkRFdNJdL8BMEgTZbCQkNiBkEU,6772
+rstats_logreader-3.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rstats_logreader-3.1.2.dist-info/entry_points.txt,sha256=ozruzzTB391Si0cS8YUbejyZ7gaib64LNmNOpfeMe_s,60
+rstats_logreader-3.1.2.dist-info/top_level.txt,sha256=DY3PkFpBshkfii1DZAD4llb8WRowL0d36FQ9YYkiddA,17
+rstats_logreader-3.1.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+rstats_logreader-3.1.2.dist-info/RECORD,,

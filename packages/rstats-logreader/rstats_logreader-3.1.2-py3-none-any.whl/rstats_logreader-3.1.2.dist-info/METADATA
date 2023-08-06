@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: rstats-logreader
+Version: 3.1.2
+Summary: Parse RStats-format bandwidth logfiles and perform simple analysis/aggregation.
+Author-email: Jeremy Brown <mischif@users.noreply.github.com>
+License: # The Prosperity Public License 3.0.0        
+        Contributor: Jeremy Brown        
+        Source Code: https://github.com/mischif/rstats-logreader        
+        ## Purpose        
+        This license allows you to use and share this software for noncommercial purposes for free and to try this software for commercial purposes for thirty days.        
+        ## Agreement        
+        In order to receive this license, you have to agree to its rules.  Those rules are both obligations under that agreement and conditions to your license.  Don't do anything with this software that triggers a rule you can't or won't follow.        
+        ## Notices        
+        Make sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.        
+        ## Commercial Trial        
+        Limit your use of this software for commercial purposes to a thirty-day trial period.  If you use this software for work, your company gets one trial period for all personnel, not one trial per person.        
+        ## Contributions Back        
+        Developing feedback, changes, or additions that you contribute back to the contributor on the terms of a standardized public software license such as [the Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0), [the Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [the MIT license](https://spdx.org/licenses/MIT.html), or [the two-clause BSD license](https://spdx.org/licenses/BSD-2-Clause.html) doesn't count as use for a commercial purpose.        
+        ## Personal Uses        
+        Personal use for research, experiment, and testing for the benefit of public knowledge, personal study, private entertainment, hobby projects, amateur pursuits, or religious observance, without any anticipated commercial application, doesn't count as use for a commercial purpose.        
+        ## Noncommercial Organizations        
+        Use by any charitable organization, educational institution, public research organization, public safety or health organization, environmental protection organization, or government institution doesn't count as use for a commercial purpose regardless of the source of funding or obligations resulting from the funding.        
+        ## Defense        
+        Don't make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.        
+        ## Copyright        
+        The contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.        
+        ## Patent        
+        The contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.        
+        ## Reliability        
+        The contributor can't revoke this license.        
+        ## Excuse        
+        You're excused for unknowingly breaking [Notices](#notices) if you take all practical steps to comply within thirty days of learning you broke the rule.        
+        ## No Liability        
+        ***As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won't be liable to anyone for any damages related to this software or this license, under any kind of legal claim.***        
+Project-URL: repository, https://github.com/mischif/rstats-logreader
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Networking :: Monitoring
+Classifier: Topic :: Utilities
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Provides-Extra: test
+Requires-Dist: codecov ; extra == 'test'
+Requires-Dist: coverage[toml] ; extra == 'test'
+Requires-Dist: hypothesis ; extra == 'test'
+Requires-Dist: hypothesis-pytest ; extra == 'test'
+Requires-Dist: pytest (>=6.0) ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+rstats-logreader
+================
+
+[![GitHub Workflow](https://img.shields.io/github/workflow/status/mischif/rstats-logreader/CI?logo=github&style=for-the-badge)](https://github.com/mischif/rstats-logreader/actions)
+[![Codecov](https://img.shields.io/codecov/c/github/mischif/rstats-logreader?logo=codecov&style=for-the-badge)](https://codecov.io/gh/mischif/rstats-logreader)
+[![Python Versions](https://img.shields.io/pypi/pyversions/rstats-logreader?style=for-the-badge)](https://pypi.org/project/rstats-logreader/)
+[![Package Version](https://img.shields.io/pypi/v/rstats-logreader?style=for-the-badge)](https://pypi.org/project/rstats-logreader/)
+
+Read bandwidth logfiles in the RStats format (usually created by routers running some offshoot of the Tomato firmware) and perform simple analysis/aggregation.
+
+Supports printing bandwidth data to the console, as well as conversion to CSV or JSON formats for further ingestion downstream.
+
+Supports arbitrary week/month beginnings and conversion to arbitrary units.
+
+Usage
+-----
+
+### Simple Usage
+
+Printing to screen:
+
+	$ rstats-reader --print dwm /path/to/logfile.gz
+
+Saving to another format:
+
+	$ rstats-reader --write dwm -f json -o out.json /path/to/logfile.gz
+
+### All Options
+
+	$ rstats-reader -h
+
+	usage: rstats-reader [--print {dwm}] [-w {Mon - Sun}] [-m {1 - 31}]
+			     [--write {dwm}] [-o outfile.dat] [-f {csv,json}]
+			     [-u {B - TiB}] [-h] [--version]
+			     logpath
+
+	positional arguments:
+		logpath				gzipped rstats logfile
+
+	optional arguments:
+		--print {dwm}			Print daily, weekly or monthly statistics to the console
+		-w, --week-start {Mon - Sun}	Day of the week statistics should reset
+		-m, --month-start {1 - 31}	Day of the month statistics should reset
+		-u, --units {B - TiB}		Units statistics will be displayed in
+		-h, --help			show this help message and exit
+		--version			show program's version number and exit
+
+	write:
+		--write {dwm}			Write daily, weekly or monthly statistics to a file
+		-o, --outfile outfile.dat	File to write statistics to
+		-f, --format {csv,json}		Format to write statistics in
