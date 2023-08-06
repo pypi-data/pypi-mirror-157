@@ -1,0 +1,2 @@
+class EmptyVectorError(Exception):
+    pass
