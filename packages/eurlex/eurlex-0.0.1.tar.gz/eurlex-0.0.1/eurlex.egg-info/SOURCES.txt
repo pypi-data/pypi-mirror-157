@@ -1,0 +1,6 @@
+README.md
+setup.py
+eurlex.egg-info/PKG-INFO
+eurlex.egg-info/SOURCES.txt
+eurlex.egg-info/dependency_links.txt
+eurlex.egg-info/top_level.txt
