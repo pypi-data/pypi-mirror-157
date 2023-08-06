@@ -1,0 +1,26 @@
+"""
+Copyright (c) 2008-2021 synodriver <synodriver@gmail.com>
+"""
+from unittest import TestCase
+import os
+
+os.environ["BZ3_USE_CFFI"] = "1"
+
+from bz3 import compress, decompress, test
+
+
+class TestCompress(TestCase):
+    def test_compress(self):
+        with open("shga_sample_750k.tar", "rb") as inp, open("compressed.bz3", "wb") as out:
+            compress(inp, out, 1000 * 1000)
+
+    def test_decompress(self):
+        with open("compressed.bz3", "rb") as inp, open("output.tar", "wb") as out:
+            decompress(inp, out)
+
+
+
+if __name__ == "__main__":
+    import unittest
+
+    unittest.main()
