@@ -1,0 +1,9 @@
+README.md
+setup.py
+NPMpy/__init__.py
+NPMpy/curate.py
+NPMpy.egg-info/PKG-INFO
+NPMpy.egg-info/SOURCES.txt
+NPMpy.egg-info/dependency_links.txt
+NPMpy.egg-info/requires.txt
+NPMpy.egg-info/top_level.txt
