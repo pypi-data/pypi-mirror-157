@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pytest-tools
+Version: 0.0.1
+Summary: Pytest tools
+Home-page: UNKNOWN
+Author: José Luis Lloret
+Author-email: <l1oret@outlook.com>
+License: UNKNOWN
+Keywords: python,pytest
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Pytest
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Testing
+License-File: LICENSE
+
+Verifies that no exception is raised
+
