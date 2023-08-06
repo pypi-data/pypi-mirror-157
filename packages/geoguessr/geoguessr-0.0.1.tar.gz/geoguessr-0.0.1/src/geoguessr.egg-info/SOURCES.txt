@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/geoguessr/__init__.py
+src/geoguessr/geoguessr.py
+src/geoguessr/py.typed
+src/geoguessr/util.py
+src/geoguessr.egg-info/PKG-INFO
+src/geoguessr.egg-info/SOURCES.txt
+src/geoguessr.egg-info/dependency_links.txt
+src/geoguessr.egg-info/not-zip-safe
+src/geoguessr.egg-info/requires.txt
+src/geoguessr.egg-info/top_level.txt
