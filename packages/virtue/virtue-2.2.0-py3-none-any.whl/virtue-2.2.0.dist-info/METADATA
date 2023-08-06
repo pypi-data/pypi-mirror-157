@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: virtue
+Version: 2.2.0
+Summary: After trial comes virtue. A test runner for good.
+Project-URL: documentation, https://virtue.readthedocs.io/
+Project-URL: funding, https://github.com/sponsors/Julian
+Project-URL: homepage, https://github.com/Julian/Virtue
+Project-URL: issues, https://github.com/Julian/Virtue/issues/
+Project-URL: source, https://github.com/Julian/Virtue
+Author: Julian Berman
+Author-email: Julian+Virtue@GrayVines.com
+License: MIT
+Keywords: test runner,testing,tests,unittest
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: attrs>=19
+Requires-Dist: click
+Requires-Dist: colorama
+Requires-Dist: importlib-metadata; python_version < '3.8'
+Requires-Dist: pyrsistent
+Requires-Dist: twisted
+Description-Content-Type: text/x-rst
+
+======
+Virtue
+======
+
+|PyPI| |Pythons| |CI| |ReadTheDocs| |Precommit|
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/Virtue.svg
+  :alt: PyPI version
+  :target: https://pypi.org/project/Virtue/
+
+.. |Pythons| image:: https://img.shields.io/pypi/pyversions/Virtue.svg
+  :alt: Supported Python versions
+  :target: https://pypi.org/project/Virtue/
+
+.. |CI| image:: https://github.com/Julian/Virtue/workflows/CI/badge.svg
+  :alt: Build status
+  :target: https://github.com/Julian/Virtue/actions?query=workflow%3ACI
+
+.. |ReadTheDocs| image:: https://readthedocs.org/projects/virtue/badge/?version=stable&style=flat
+  :alt: ReadTheDocs status
+  :target: https://virtue.readthedocs.io/en/stable/
+
+.. |Precommit| image:: https://results.pre-commit.ci/badge/github/Julian/virtue/main.svg
+   :alt: pre-commit.ci status
+   :target: https://results.pre-commit.ci/latest/github/Julian/virtue/main
+
+
+``virtue`` is a modern, extensible,
+`unittest <https://docs.python.org/3/library/unittest.html>`_ compliant
+test runner.
+
+It is *not* a test framework (it doesn't contain a ``TestCase`` subclass
+and it never will).
+
+Usage
+-----
+
+Running a ``unittest``-based suite works essentially as it does for
+``twisted``'s ``trial``, i.e.::
+
+    $ python -m virtue mypackage.tests
+
+will run the tests subpackage of a given importable package.
+
+More docs are coming. Sorry.
+
+
+Contributing
+------------
+
+I'm Julian Berman.
+
+``virtue`` is on `GitHub <http://github.com/Julian/Virtue>`_.
+
+Get in touch, via GitHub or otherwise, if you've got something to contribute,
+it'd be most welcome!
+
+You can also generally find me on Libera (nick: ``Julian``) in various
+channels, including ``#python``.
+
+If you feel overwhelmingly grateful, you can also `sponsor me
+<https://github.com/sponsors/Julian/>`_.
