@@ -1,0 +1,9 @@
+openpyxl>=3.0.10
+python-dateutil>=2.8.2
+
+[:python_version < "3.11"]
+tomli
+
+[dev]
+pip-tools
+pytest
