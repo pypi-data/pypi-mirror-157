@@ -1,0 +1,16 @@
+discapty/__init__.py,sha256=FPrEYGmex4bXrPhPT0AjRqs6gRg3tYS0K0ROYBteyV8,654
+discapty/captcha.py,sha256=XD4QXxkemaphQhfUn74KzOFh4LHX3sJ2gkenF9iayNU,2028
+discapty/captcha_queue.py,sha256=77JKhlMes4tvBFQcFnc4xDNMlXtlpdbc_KoTdDwfTvQ,4314
+discapty/challenge.py,sha256=0Ddn_llhY8tQUmiPwUfeuQO0yVmHRPH6cWQ84U-yUdo,10714
+discapty/errors.py,sha256=LjYzUapyOiyYOkOW5gIRotH-jQeHgx4L0bIn3hg6irg,1016
+discapty/fonts/Roboto-Regular.ttf,sha256=AXwL6aqm0DWXN-H6dirTBMDgEHkn-v9abB9BXH9SRO0,171272
+discapty/generators.py,sha256=lSU_iijWHTh71eiZKqDE0lekdVDoA6uL1uaSrn65xf4,10919
+discapty/utils.py,sha256=fYgDI7k9Jr2KP6AQbU_i4mLtc6md1o7e5u170vEglOs,2426
+discapty/wheezylib/README.md,sha256=V_UlRmeBg43BHy7viG40m8aDb7X7vuUi_sYRqHsgq_w,293
+discapty/wheezylib/__init__.py,sha256=Pzehnsv1qC2DYvWt31u25TChbU6E8sVGgaHdeoSYceo,1102
+discapty/wheezylib/bezier.py,sha256=WOfhryMmc_17vsR2wVPFF0WAaqNB7qp5-v8ofOTBtP4,1122
+discapty/wheezylib/image.py,sha256=HH9X5GtnhWaoVeNstKXtJbMgXKFsX9rrG3VQmvcZK9g,6834
+discapty-2.0.1.dist-info/LICENSE,sha256=PmODEbDztH2aJEWKmc563dCjMA--3Gv84WXElqCY38Y,1424
+discapty-2.0.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+discapty-2.0.1.dist-info/METADATA,sha256=BCudcHbZHOBaihZCqKoF7QGNPWkiAeMHJMoe1HQabXE,5729
+discapty-2.0.1.dist-info/RECORD,,
