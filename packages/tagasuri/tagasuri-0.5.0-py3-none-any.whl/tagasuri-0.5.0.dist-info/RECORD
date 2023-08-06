@@ -1,0 +1,11 @@
+tagasuri/__init__.py,sha256=oIP2pclmmu5dtauBLCiCQtA1C0pkyPtH__0AvLc55Yg,134
+tagasuri/__main__.py,sha256=a72XKPW5ocM0XAIqEm1Uz7InN0JGeFu_XL32c8iG_00,3078
+tagasuri/app.py,sha256=a-kjdBc4U0kDNhnDtPcjfBbD-BFCeOTCHgKewV2gAck,1079
+tagasuri/epd.py,sha256=eLvolr6kwLUM9l6kMEmuExoE1z-lHskX7i1opT0xSs8,7968
+tagasuri/logging.py,sha256=1zq6pn9TPBV-xxE6bVDFZGyA18EJWHDtdL3D0VKUzZI,481
+tagasuri-0.5.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+tagasuri-0.5.0.dist-info/METADATA,sha256=ZVsMhPnfe8-mtpL3ttGydsiaJzxcBPOzBkMvay5ZQz4,4691
+tagasuri-0.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tagasuri-0.5.0.dist-info/entry_points.txt,sha256=Jncn_qwUvqc0ajJ5g2UTYxnzU7G2e79pOo8ifFHxOao,43
+tagasuri-0.5.0.dist-info/top_level.txt,sha256=OYVwXYQcJc0vcOHAtC3bHJTCEqFMWBO1qvXmRxRDces,9
+tagasuri-0.5.0.dist-info/RECORD,,
