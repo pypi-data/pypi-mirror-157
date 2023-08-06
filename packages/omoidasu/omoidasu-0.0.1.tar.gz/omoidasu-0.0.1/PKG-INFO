@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: omoidasu
+Version: 0.0.1
+Summary: CLI for Omoidasu
+Author: 0djentd
+Project-URL: Homepage, https://github.com/0djentd/omoidasu
+Project-URL: Bug Tracker, https://github.com/0djentd/omoidasu/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# omoidasu

@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/omoidasu/__init__.py
+src/omoidasu/cli.py
+src/omoidasu.egg-info/PKG-INFO
+src/omoidasu.egg-info/SOURCES.txt
+src/omoidasu.egg-info/dependency_links.txt
+src/omoidasu.egg-info/entry_points.txt
+src/omoidasu.egg-info/top_level.txt
