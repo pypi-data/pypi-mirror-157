@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: ofglib
+Version: 0.3.5
+Author: dies0mbre
+Requires-Python: >3.6
+License-File: LICENSE
