@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+blacksheep_messages/__init__.py
+blacksheep_messages.egg-info/PKG-INFO
+blacksheep_messages.egg-info/SOURCES.txt
+blacksheep_messages.egg-info/dependency_links.txt
+blacksheep_messages.egg-info/not-zip-safe
+blacksheep_messages.egg-info/requires.txt
+blacksheep_messages.egg-info/top_level.txt
