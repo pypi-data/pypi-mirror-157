@@ -1,0 +1,8 @@
+CHANGELOG.md,sha256=LDlInE2bj1U_r1n0GZIL2dV8xYjywwwt-TkPXUMHZxU,1270
+entrypoint/__init__.py,sha256=tJpNCeR8dPg55jBAswgfpgdL37L_KrDvEftiGRFIQ8M,605
+entrypoint/core.py,sha256=a_gLdz-MDoupK86kVu2QxlWXCCYGrKYCwWOyGTB0hok,1850
+entrypoint/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+entrypoint-1.2.5.dist-info/LICENSE,sha256=HJJBKm7hthryaIWfVY2kKLCjbZ4oD9RhoYEKXGoiZl0,1092
+entrypoint-1.2.5.dist-info/WHEEL,sha256=FWzWAvOOsDP6aqtZj_z3pIhVEk8S9F03Xwafa0tLqIY,90
+entrypoint-1.2.5.dist-info/METADATA,sha256=9tfkmqQmu1Fsd2x04iktV9e95Ix6cOx2xBu3NFWz_fo,5746
+entrypoint-1.2.5.dist-info/RECORD,,
