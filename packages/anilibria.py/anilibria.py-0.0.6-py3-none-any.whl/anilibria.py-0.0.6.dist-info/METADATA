@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: anilibria.py
+Version: 0.0.6
+Summary: The async API wrapper for anilibria.tv
+Home-page: https://github.com/Damego/anilibria.py
+Author: Damego
+Author-email: danyabatueff@gmail.com
+License: GPL-3.0 License
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Provides-Extra: readthedocs
+Requires-Dist: furo ; extra == 'readthedocs'
+Requires-Dist: Sphinx ; extra == 'readthedocs'
+Requires-Dist: sphinx-hoverxref ; extra == 'readthedocs'
+Requires-Dist: readthedocs-sphinx-search ; extra == 'readthedocs'
+
+# anilibria.py
+**Python async wrapper for anilibria.tv**
+
+![Discord Shield](https://discordapp.com/api/guilds/992384114667823194/widget.png?style=shield)
+
+## О библиотеке
+anilibria.py - это REST API и Websocket обёртка API. <br>
+Вы можете ей пользоваться для получение уведомлений о выходе новой серии, получение информации о тайтлах и других вещей.
+
+## Предупреждение
+На данный момент https://anilibria.tv/ заблокирован на территории РФ. <br>
+Для того, чтобы воспользоваться библиотекой, вам необходимо использовать VPN или прокси. <br>
+Если вы не из России, то можете спокойно ей пользоваться.
+
+## Установка
+
+`pip install anilibria.py`
+
+или
+
+`pip install git+https://github.com/Damego/anilibria.py.git`
+
+## Использование
+
+Ниже представлено самое простое использование библиотеки. <br>
+Функция `on_connect` будет вызвана после успешного подключения к API anilibria.
+Функция `on_title_update` будет вызываться после того, как на сервер будет залита новая серия любого тайтла. <br>
+
+```py
+from anilibria import AniLibriaClient, TitleUpdateEvent
+
+client = AniLibriaClient(proxy="http://0.0.0.0:80")  # proxy - не обязательный аргумент
+
+@client.event
+async def on_connect():
+  print("Подключено")
+
+@client.event
+async def on_title_update(event: TitleUpdateEvent):
+  print(event.title.names.ru)  # Выведет название тайтла на русском, который обновили.
+  
+client.start()
+```
+
+### Подписка на определённые тайтлы.
+
+Если вы хотите получать уведомления об определённых тайтлах, то вы можете подписаться на них. <br>
+
+```py
+#  Первый способ
+@client.event
+async def on_connect():
+  print("Подключено")
+  data = {"id": 8700}
+  await client.subscribe(data)
+  # Подпишется на тайтл с id 8700.
+  # Теперь ивент `on_title_update` будет вызываться только тогда, 
+  # когда обновится тайтл, на который вы подписались
+
+#  Второй способ
+@client.on_title(id=8700)
+async def texhnolyze(event: TitleUpdateEvent):  # Название функции может быть любое
+  print("Вышла новая серия технолайза! (хз что это)")
+
+# Оба способа работают даже вместе.
+
+```
+Вы также можете использовать эту библиотеку вместе с другими:
+- `discord.py` и его форках.
+- `aiogram`
+
+Примеры использования представлены в папке [examples](https://github.com/Damego/anilibria.py/tree/main/examples)
+
+## Документация
+[Оффициальная документация API](https://github.com/anilibria/docs/blob/master/api_v2.md) <br>
+[Документация](https://anilibriapy.readthedocs.io/ru/latest/)
+
+
