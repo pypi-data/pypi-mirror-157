@@ -1,0 +1,7 @@
+opentelemetry-api~=1.3
+opentelemetry-instrumentation==0.32b0
+
+[instruments]
+
+[test]
+opentelemetry-test-utils==0.32b0
