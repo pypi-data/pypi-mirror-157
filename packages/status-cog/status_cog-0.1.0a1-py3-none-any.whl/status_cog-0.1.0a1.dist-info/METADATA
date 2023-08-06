@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: status-cog
+Version: 0.1.0a1
+Summary: Shows the bot status in your discord server.
+Home-page: https://github.com/1Pjay/StatusCog.git
+License: MIT
+Keywords: bot,discord,discord-bot,discord-api,discord-py
+Author: Pjay
+Author-email: Pjay1@tutanota.com
+Requires-Python: >=3.7.2,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Dist: aiohttp (>=3.7.4,<4.0.0)
+Requires-Dist: discord.py (>=1.7.3,<2.0.0)
+Project-URL: Repository, https://github.com/1Pjay/StatusCog.git
+Description-Content-Type: text/markdown
+
+# StatusCog
+## Installation
+```commandline
+pip install status-cog
+```
+
+## Usage
+```python
+import os
+from discord.ext import commands
+
+os.environ["status_cog_webhook_url"] = None # WEBHOOK URL HERE
+os.environ["status_cog_message_id"] = None # Message ID here if you want the bot to edit the previous message (can also be None)
+
+bot = commands.Bot(command_prefix="!")
+bot.load_extension("status_cog")
+
+bot.run()
+```
