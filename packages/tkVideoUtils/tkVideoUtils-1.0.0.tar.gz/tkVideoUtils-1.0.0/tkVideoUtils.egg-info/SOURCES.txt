@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tkVideoUtils.egg-info/PKG-INFO
+tkVideoUtils.egg-info/SOURCES.txt
+tkVideoUtils.egg-info/dependency_links.txt
+tkVideoUtils.egg-info/not-zip-safe
+tkVideoUtils.egg-info/requires.txt
+tkVideoUtils.egg-info/top_level.txt
+tkvideoutils/__init__.py
+tkvideoutils/tkvideoutils.py

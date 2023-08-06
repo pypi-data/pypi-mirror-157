@@ -1,0 +1,8 @@
+imageio
+imageio-ffmpeg
+pillow
+opencv-python
+ttkwidgets
+pyaudio
+ffmpy
+moviepy
