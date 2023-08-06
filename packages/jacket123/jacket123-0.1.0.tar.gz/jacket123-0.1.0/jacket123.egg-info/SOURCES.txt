@@ -1,0 +1,6 @@
+jacket123.py
+setup.py
+jacket123.egg-info/PKG-INFO
+jacket123.egg-info/SOURCES.txt
+jacket123.egg-info/dependency_links.txt
+jacket123.egg-info/top_level.txt
