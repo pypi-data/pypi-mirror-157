@@ -1,0 +1,9 @@
+recursive-include src/opendr/engine *
+include src/opendr/engine *
+include src/opendr/utils *
+exclude src/opendr/__init__.py 
+include description.txt 
+include packages.txt 
+include README.md 
+include src/opendr/_version.py 
+include src/opendr/_setup.py 
