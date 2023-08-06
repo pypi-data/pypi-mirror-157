@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "py-patterns-util"
+version = "0.1.0"
+description = "A util library for common patterns in python."
+authors = ["Priyanshu Jain <ipriyanshujain@gmail.com>"]
+packages = [
+    {include = "py_patterns"}
+]
+
+include = ['LICENSE',]
+license = 'MIT'
+readme = 'README.md'
+
+repository = 'https://github.com/priyanshujain/py-patterns'
+
+keywords = [
+    'python',
+    'design-patterns',
+    'adapters',
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+absl-py = "^1.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
