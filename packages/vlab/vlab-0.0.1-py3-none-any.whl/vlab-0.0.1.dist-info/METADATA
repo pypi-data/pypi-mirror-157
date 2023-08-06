@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: vlab
+Version: 0.0.1
+Summary: A set of tools for CV researchers
+Home-page: https://github.com/jianglongye/vlab
+Author: Jianglong Ye
+Author-email: jianglong.yeh@gmail.com
+Project-URL: Bug Tracker, https://github.com/jianglongye/vlab/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pyyaml
+Requires-Dist: yacs
+Requires-Dist: rich
+Requires-Dist: matplotlib
+
+# vlab
+
+A set of tools for CV researchers.
+
+## Installation
+
+We aim to limit our dependencies to the following libraries (which should be quite common):
+
+```
+torch
+numpy
+opencv2
+matplotlib
+pyyaml
+rich
+```
+
+And following libraries should be optional:
+
+```
+trimesh (for geometry process)
+open3d  (for 3d visualization)
+```
+
+### Install locally
+
+```bash
+pip install -e .
+```
+
+## Acknowledgement
+
+Some code is adapted from [mmcv](https://github.com/open-mmlab/mmcv/)
+and [detectron2](https://github.com/facebookresearch/detectron2/).
