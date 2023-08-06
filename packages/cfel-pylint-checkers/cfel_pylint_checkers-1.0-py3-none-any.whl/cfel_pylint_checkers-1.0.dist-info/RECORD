@@ -1,0 +1,7 @@
+LICENSE,sha256=phrmLSiwfFUkq1PI0WtFf7rQ56YahW6QSj6dpGACRds,34468
+cfel_pylint_checkers/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+cfel_pylint_checkers/no_direct_dict_access.py,sha256=io7JZbEfFg58I8Qu3WE3Ye47A5BFvCdANqpyDehuMEw,1084
+cfel_pylint_checkers-1.0.dist-info/LICENSE,sha256=phrmLSiwfFUkq1PI0WtFf7rQ56YahW6QSj6dpGACRds,34468
+cfel_pylint_checkers-1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+cfel_pylint_checkers-1.0.dist-info/METADATA,sha256=ZmduRINY89xidQ7vYY805qzjMJ1iVtZVpo-IqrdOYk8,1784
+cfel_pylint_checkers-1.0.dist-info/RECORD,,
