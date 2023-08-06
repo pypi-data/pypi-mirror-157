@@ -1,0 +1,22 @@
+class Logger:
+	def __init__( self, stdhandle, logfile, _print = True ):
+		self._stdhandle = stdhandle
+		self._logfile = logfile
+		self._print = _print
+		# clear the log file
+		open(logfile, 'w').close()
+	
+	def flush( self ):
+		self._stdhandle.flush()
+	
+	def write( self, msg ):
+		f = open( self._logfile, 'a' )
+		f.write( msg )
+		f.close()
+		if self._print:
+			self._stdhandle.write( msg )
+	
+import sys, datetime
+sys.stderr = Logger( sys.stderr, r'[log_file_loc]', False )
+sys.stdout = Logger( sys.stdout, r'[log_file_loc]', False )
+print('--------- Date: %s Version: %s ---------' % (datetime.datetime.today(), sys.version))
