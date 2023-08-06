@@ -1,0 +1,20 @@
+[project]
+dependencies = [
+    "asyncio-mqtt==0.12.1",
+    "pydantic>=1.9.1",
+]
+description = "Webduino Core"
+name = "webduino_core"
+requires-python = ">=3.10"
+version = "0.8.0"
+
+[build-system]
+build-backend = "pdm.pep517.api"
+requires = [
+    "pdm-pep517>=0.12.0",
+]
+
+[tool.pdm.build]
+includes = [
+    "webduino_core",
+]
