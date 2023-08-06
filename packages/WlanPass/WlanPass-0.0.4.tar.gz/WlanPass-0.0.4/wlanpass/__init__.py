@@ -1,0 +1,1 @@
+from wlanpass import getwifipass
