@@ -1,0 +1,8 @@
+click
+pygithub
+mkdocs
+tomli
+jinja2
+pyyaml
+pytest
+markdown-it-py
