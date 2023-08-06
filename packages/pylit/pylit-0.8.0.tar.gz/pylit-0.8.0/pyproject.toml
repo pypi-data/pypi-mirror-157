@@ -1,0 +1,28 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "pylit"
+author = "Günter Milde"
+author-email = "milde@users.sf.net"
+home-page = "https://codeberg.org/milde/pylit"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Topic :: Software Development :: Documentation",
+
+]
+description-file = "README.rst"
+requires-python = ">=2.7"
+
+
+[tool.flit.metadata.requires-extra]
+test = ["nose",]
+doc = ["sphinx"]
+
+
+[tool.flit.scripts]
+pylit = "pylit:main"

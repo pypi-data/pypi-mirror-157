@@ -1,0 +1,99 @@
+.. -*- rst-mode -*-
+
+Requirements
+============
+
+* Python_ version 2.7 or newer (`download Python`_).
+
+
+Download
+========
+
+Get the most up to date version from the `Git repository`_
+or a release from PyPi_.
+
+PyLit
+-----
+
+Download a `repository snapshot`_ as zip file or the single files:
+
+`pylit.py`_
+  the actual PyLit module,
+
+pylit_
+  a simple starter and configuration wrapper
+  (see section Installation_ below),
+
+`pylit_test.py`_
+  unit tests for the `pylit` module (requires nose_).
+
+.. _Git repository: https://codeberg.org/milde/pylit
+.. _Git mirror: http://repo.or.cz/pylit.git
+.. _PyPI: https://pypi.python.org/pypi/pylit
+.. _pip: https://pip.pypa.io/en/stable/
+.. _repository snapshot:
+    https://codeberg.org/milde/pylit/archive/master.zip
+.. _pylit.py:
+    https://codeberg.org/milde/pylit/raw/branch/master/pylit.py
+.. _pylit_test.py:
+    https://codeberg.org/milde/pylit/raw/branch/master/test/pylit_test.py
+
+
+Tools
+-----
+
+* Docutils_ or Sphinx_ for conversion of reStructuredText to HTML or PDF
+  (not strictly required by PyLit but needed for "pretty printing" the text
+  source)
+
+* `Editor Support for reStructuredText`_
+
+* `pylit mode`_ for the `JED editor`_
+
+.. _Docutils: https://docutils.sourceforge.io/
+.. _Sphinx: https://www.sphinx-doc.org/
+.. _`Editor Support for reStructuredText`:
+    https://docutils.sourceforge.io/tools/editors/README.html
+.. _`pylit mode`: https://jedmodes.sourceforge.io/mode/pylit/
+.. _`JED editor`: http://www.jedsoft.org/jed/
+
+
+Installation
+============
+
+The easiest way is to install with pip_ (``pip install pylit``).
+This will install the ``pylit.py`` module
+and a command line script ``pylit``.
+
+
+As `PyLit` is a pure Python module, installation "by hand" is
+straightforward, too:
+
+*  Put `pylit.py`_ in Python's `Module Search Path`_.
+
+   You can now call the script with ::
+
+     python -m pylit OPTIONS INFILE [OUTFILE]
+
+   or ::
+
+     python -m pylit --help
+
+* Easier invocation is possible with a small executable wrapper in the
+  binary PATH. On Unix you can use a script like `<pylit>`_:
+
+  .. include:: pylit
+     :literal:
+
+  This has two advantages:
+
+  #. `Command line use`_ is simplified.
+  #. `Default settings`_ can be customised without changing the module file.
+
+.. _Python: https://www.python.org
+.. _Download Python: https://www.python.org/downloads/
+.. _nose: https://pypi.org/project/nose/
+.. _module search path:
+    https://docs.python.org/3/tutorial/modules.html#the-module-search-path
+.. _command line use: ../usage.html#command-line-use
+.. _default settings: ../usage.html#defaults

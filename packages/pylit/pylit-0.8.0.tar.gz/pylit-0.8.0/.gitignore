@@ -1,0 +1,16 @@
+*~
+*.pyc
+/pylit.py.*
+/README.html
+/dist/*
+/doc/*.html
+/doc/*/*.html
+/doc/build/*
+/doc/examples/conf.py.txt
+/doc/examples/pylit.py.txt
+/doc/examples/pylit_test.py.txt
+/doc/examples/*.py
+/doc/examples/*.sty
+/doc/logo/*.png
+/doc/logo/*.ico
+/pages
