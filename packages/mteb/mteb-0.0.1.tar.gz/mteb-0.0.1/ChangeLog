@@ -1,0 +1,188 @@
+CHANGES
+=======
+
+* make default evaluation for classification 10 experiments each using 8 samples per label
+* use seed from init arg
+* styling
+* add error message when trying to load beir
+* add argument to specify error logs path
+* make beir an optional package
+* quick modifications
+* add example
+* make beir optional dependency
+* Smaller fixes in Classification task
+* update available tasks
+* update available tasks
+* add evaluation time to final scores
+* quick fix loading beir task
+* add available tasks
+* add more scores to summarization evaluator
+* add SummEval task
+* add Summarization abstract task
+* add specifying language for task example
+* fix bitext mining evaluation
+* update README
+* update README
+* add --available\_tasks flag to CLI
+* styling
+* fix missing params eval\_splits in load\_data
+* CLI quick fixes
+* quick fixes
+* styling
+* fix eval\_splits loading using beir
+* capture errors instead of failing
+* quick fixes
+* update BeIRModel
+* load data and free it after each task evaluation
+* update reqs
+* fixing beir imports
+* add multiproc test
+* update BitextMining main scores
+* support distributed evaluation for IR 🥳
+* remove "train" from eval\_splits
+* gather all nodes outputs in CPU after distributed computation
+* support DRPES for Parallel IR evaluation
+* quick fix
+* set logistic regression default max\_iter to 200
+* add evaluators logs 📜
+* make style
+* add Makefile and better styling tools ✨
+* dataloading moved from \_\_init\_\_ to run
+* fixes
+* fixes
+* fixes+black
+* beautiful task display
+* rich library
+* datasets
+* fever
+* quora
+* dbpedia
+* climatefever
+* cqadupstack
+* arguana
+* beir retrieval
+* only save if output\_folder argument is specified
+* Update python-package.yml
+* all tests are passing now ✅
+* Create python-package.yml
+* normalize STS scores
+* normalize score names
+* format @k scores
+* rename CrossLingual to Crosslingual
+* remove train split from evaluation splits
+* bug fix
+* calculate AP only in binary classification
+* add kwargs and batch\_size to evaluate funcs
+* update main scores for some tasks
+* add limit argument to limit evaluation data
+* add test for PairClassificationEvaluator
+* use evaluators.PairClassificationEvaluator instead of sent-formers BinaryClassificationEvaluator
+* reformatting
+* add test for RerankingEvaluator
+* reformat RerankingEvaluator
+* more docs
+* tests folder
+* add test\_RetrievalEvaluator
+* more docs
+* add AP score to ClassificationEvaluator
+* add nDCG score to RerankingEvaluator
+* quick fix
+* use max cross similarity in case of multiple queries
+* support multiple queries in Reranking tasks
+* bug fixes
+* rename binary classification to pair classification
+* rename available\_splits to eval\_splits
+* rename available\_langs to eval\_langs
+* minor fixes
+* quick fix bug
+* report stderr in AbsTaskClassification in case of bootstrapping
+* add STS22CrosslingualSTS
+* add MindSmallReranking
+* precision recall f1 bitext evaluator
+* korean to sts17
+* quick fix RetrievalEvaluator
+* update README
+* update example
+* remove useless import
+* fix cmd.py arguments
+* add kwargs where needed
+* add cli script
+* adopt pbr packaging
+* quick fixes
+* rename kNNClassification to Classification
+* add bootstrap parameters to AbsTaskKNNClassification
+* add EmotionClassification
+* add TweetSentimentExtractionClassification
+* add ToxicConversationsClassification
+* add AmazonCounterfactualClassification
+* add ImdbClassification task
+* add AmazonPolarityClassification dataset
+* hack fix bug loading tasks twice
+* add AmazonReviewsClassification
+* add create data script for amazon reviews multi
+* make shuffling reproducible in logReg-10-splits-5-intents
+* add logReg-10-splits-5-intents for kNNClassificationEvaluator
+* quick fix batch size
+* quick fixes
+* add batch size to kNNClassificationEvaluator
+* black
+* bitext mining evaluator
+* bucc
+* tatoeba
+* bitext mining
+* bitext mining
+* add MTOP classification tasks
+* crosslingual tasks
+* STS17 benchmark
+* add methods
+* formatting
+* quick fix
+* add MultilingualTask
+* fix loading for multilingual datasets
+* skip task if results alrdy exist
+* add banking77 and massive scenario datasets
+* add logRegClassificationEvaluator
+* add kNNClassificationEvaluatorPytorch
+* cosine and euclidean distances in kNNClassificationEvaluator
+* add requirements dev file
+* update results json file format to account for multi langs
+* load\_dataset directly inside AbsTask
+* add default language as "en" for all tasks
+* WIP add kNN Classification and MassiveIntentClassification task
+* tasks can be provided as class now in task\_list
+* add bs param in clusteringevaluator
+* quick docs fixes
+* fix line length
+* linting
+* add reqs
+* redditp2p + sep2p
+* clustering tasks
+* scripts
+* first commit
+* loading scripts
+* Update README.md
+* init file
+* Update README.md
+* retrieval evaluator
+* removed results folder
+* reranking evaluator
+* added custom evaluators
+* STS datasets
+* gitignore
+* added STS
+* reranking
+* binary classification
+* added verbosity level
+* added file logging
+* added available tasks/categories/selected list
+* finegrained task selection
+* added retrieval
+* fixed seed
+* typos
+* added clustering tasks
+* seeded benchmarks
+* evaluation schema
+* basic tasks schema
+* proof of concept
+* Create README.md
+* Initial commit
