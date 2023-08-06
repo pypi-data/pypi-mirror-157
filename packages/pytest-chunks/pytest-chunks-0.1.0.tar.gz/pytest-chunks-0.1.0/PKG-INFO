@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pytest-chunks
+Version: 0.1.0
+Summary: Run only a chunk of your test suite
+License: Apache-2.0
+Author: Mehdi Abaakouk
+Author-email: sileht@sileht.net
+Requires-Python: >=3.10,<4.0
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pytest (>=6.0.0)
