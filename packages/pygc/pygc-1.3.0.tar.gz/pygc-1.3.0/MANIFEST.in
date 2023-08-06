@@ -1,0 +1,13 @@
+include *.txt
+include README.md
+
+graft pygc
+include pyproject.toml
+
+prune *.egg-info
+
+exclude *.yml
+exclude .pre-commit-config.yaml
+exclude .gitignore
+exclude .isort.cfg
+exclude pygc/_version.py
