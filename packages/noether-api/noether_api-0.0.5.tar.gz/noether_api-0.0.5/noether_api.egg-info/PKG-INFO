@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: noether-api
+Version: 0.0.5
+Summary: Noether API client library for Python
+Author-email: Henry Steinitz <henry@noetherinc.com>
+License: Copyright (c) 2018 The Python Packaging Authority
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://noether.dev
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+## How to install
+```
+pip install noether-api
+```
+
+## How to use
+Let's ask Noether about the following image:
+![Image](https://cdn.vox-cdn.com/thumbor/oCiqoTZlurIloHrG8O3cHqpBOiE=/241x193:2304x1644/1200x800/filters:focal(1034x301:1446x713)/cdn.vox-cdn.com/uploads/chorus_image/image/53741489/618916710.0.jpg)
+
+```
+# Import NoetherClient
+from noether_api import NoetherClient
+
+# Create Noether client
+noether = NoetherClient(api_key="...")
+
+image_url = "https://cdn.vox-cdn.com/thumbor/oCiqoTZlurIloHrG8O3cHqpBOiE=/241x193:2304x1644/1200x800/filters:focal(1034x301:1446x713)/cdn.vox-cdn.com/uploads/chorus_image/image/53741489/618916710.0.jpg"
+
+# Ask 
+result = noether.ask(
+	image_url=image_url,
+	question="What color are the letters on the player's shirt?"
+)
+print(result)
+```
+The script above should print the following:
+```
+{'data': ['white'], 'success': True}
+```
+
+Let's ask a few more questions:
+```
+result = noether.ask(
+	image_url=image_url,
+	question="What color is the player's shirt?"
+)
+print(result)
+```
+```
+{'data': ['black'], 'success': True}
+```
+```
+result = noether.ask(
+	image_url=image_url,
+	question="What sport are they playing?"
+)
+print(result)
+```
+```
+{'data': ['basketball'], 'success': True}
+```
+Visit [noether.dev](https://noether.dev) for more details.
