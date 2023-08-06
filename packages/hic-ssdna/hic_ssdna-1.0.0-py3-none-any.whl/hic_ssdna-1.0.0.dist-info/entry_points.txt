@@ -1,0 +1,3 @@
+[console_scripts]
+hic_ssdna.contacts_filter = hic_ssdna.contacts_filter:main
+hic_ssdna.oligos_replacement = hic_ssdna.oligos_replacement:main
