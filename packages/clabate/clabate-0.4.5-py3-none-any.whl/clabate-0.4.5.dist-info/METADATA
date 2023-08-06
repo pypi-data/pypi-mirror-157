@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: clabate
+Version: 0.4.5
+Summary: Minimalistic class-based templates
+Home-page: https://declassed.art/repository/clabate
+Author: AXY
+Author-email: axy@declassed.art
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+
+Clabate: minimalistic class-based templates for Python.
+
+Clabate is a minimalistic template system for Python language.
+It utilizes python class hierarchy, class attributes, and PEP 3101 string formatting.
+
+The basic Template class can be used for bare textual templates, such as configuration files.
+
+For markup, Clabate escapes everything by default, helping to avoid overlooked unescaped substitutions
+as much as possible.
+
+You can find more or less comprehensive examples under clabate/examples which is also a simple test suite.
+
+An introduction to Clabate:
+https://declassed.art/en/blog/2022/06/29/clabate-class-based-templates
+
+
