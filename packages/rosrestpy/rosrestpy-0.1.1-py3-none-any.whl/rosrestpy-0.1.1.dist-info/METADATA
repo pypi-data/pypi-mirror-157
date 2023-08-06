@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: rosrestpy
+Version: 0.1.1
+Summary: RouterOS v7 REST API python module
+Home-page: https://github.com/hexatester/rosrestpy
+License: GPL-3.0-only
+Author: hexatester
+Author-email: hexatester@protonmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: attrs (>=21.4.0,<22.0.0)
+Requires-Dist: cattrs (>=22.1.0,<23.0.0)
+Requires-Dist: requests (>=2.28.1,<3.0.0)
+Project-URL: Repository, https://github.com/hexatester/rosrestpy
+Description-Content-Type: text/markdown
+
+# rosrestpy
+
+[![PyPi Package Version](https://img.shields.io/pypi/v/rosrestpy)](https://pypi.org/project/rosrestpy/)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/rosrestpy)](https://pypi.org/project/rosrestpy/)
+[![LICENSE](https://img.shields.io/github/license/hexatester/rosrestpy)](https://github.com/hexatester/rosrestpy/blob/main/LICENSE)
+
+RouterOS v7 REST API python module
+
+## RouterOS v7 REST API Support
+
+Not all types and methods of the RouterOS v7 REST API are supported, yet.
+
+## Installing
+
+You can install or upgrade python-telegram-bot with:
+
+```bash
+pip install rosrestpy --upgrade
+```
+
