@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: Raindeer
+Version: 0.0.1
+Summary: A Tkinter Extension
+Home-page: UNKNOWN
+Author: scorpio8k
+Author-email: scorpion8k2@hotmail.com
+License: UNKNOWN
+Keywords: python,extension,tkinter
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+# Raindeer
+
+## The Developed Tkinter Extension
+
+
+
+## Installation
+``pip install raindeer``
+
+if you are on mac you might have to use
+
+``pip3 install raindeer``
+
+# 
+
+## Contributors
+[@Scorpioisoffical](https://github.com/Scorpioisoffical)
+
+
+
