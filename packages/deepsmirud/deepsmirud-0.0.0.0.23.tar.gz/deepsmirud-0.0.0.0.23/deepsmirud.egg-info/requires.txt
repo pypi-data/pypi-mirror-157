@@ -1,0 +1,7 @@
+pandas
+numpy
+biopython
+pyfiglet
+click
+tensorflow==2.6.0
+rdkit-pypi==2022.3.1
