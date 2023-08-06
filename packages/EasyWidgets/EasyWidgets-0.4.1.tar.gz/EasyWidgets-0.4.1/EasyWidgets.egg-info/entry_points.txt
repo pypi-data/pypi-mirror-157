@@ -1,0 +1,7 @@
+[easy_widgets.engines]
+core-ew = ew.render:CoreEngine
+jinja2 = ew.render:Jinja2Engine
+json = ew.render:JsonEngine
+
+[paste.filter_factory]
+easy_widgets = ew.middleware:paste_filter_factory
