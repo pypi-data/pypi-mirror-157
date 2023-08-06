@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+xontrib/init_ssh_agent.py
+xontrib_init_ssh_agent.egg-info/PKG-INFO
+xontrib_init_ssh_agent.egg-info/SOURCES.txt
+xontrib_init_ssh_agent.egg-info/dependency_links.txt
+xontrib_init_ssh_agent.egg-info/requires.txt
+xontrib_init_ssh_agent.egg-info/top_level.txt
