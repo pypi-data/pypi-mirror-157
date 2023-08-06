@@ -1,0 +1,63 @@
+
+# minimal required information
+
+[project]
+name = "wezel"
+version = "0.0.3"
+dependencies = [
+  "PyQt5",
+  "dbdicom",
+  "matplotlib",
+  "numpy",
+  "pandas",
+  "pyqtgraph",
+]
+
+# optional information
+
+description = "Prototyping medical imaging applications"
+readme = "README.md"
+authors = [
+  { name = "Steve Shillitoe", email = "s.shillitoe@sheffield.ac.uk" },
+  { name = "Joao Almeida e Sousa", email = "j.g.sousa@sheffield.ac.uk" }, 
+  { name = "Steven Sourbron", email = "s.sourbron@sheffield.ac.uk" }
+  ]
+license = { file = "LICENSE" }
+classifiers = [
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  'Development Status :: 3 - Alpha',
+
+  # Indicate who your project is intended for
+  'Intended Audience :: Developers',
+  'Intended Audience :: Science/Research',
+  'Topic :: Scientific/Engineering',
+  'Environment :: Console',
+  'Operating System :: OS Independent',
+
+  'License :: OSI Approved :: Apache Software License',
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3"
+]
+keywords = ['python', "medical imaging", "Graphical User Interface"]
+
+requires-python = ">=3.6"
+
+[project.urls]
+"Homepage" = "https://github.com/QIB-Sheffield/wezel"
+
+#[tool.setuptools]
+#packages = ["wezel"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+#include = ["wezel*"] 
+
+
+
+
+
+
+

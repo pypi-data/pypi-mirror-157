@@ -1,0 +1,6 @@
+PyQt5
+dbdicom
+matplotlib
+numpy
+pandas
+pyqtgraph
