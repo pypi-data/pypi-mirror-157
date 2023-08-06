@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "katzcom"
+version = "0.1.0"
+description = "Katz domain communications."
+authors = ["Kevin Katz <contact@kevinkatz.io>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+paho-mqtt = "^1.6.1"
+python-osc = "^1.8.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
