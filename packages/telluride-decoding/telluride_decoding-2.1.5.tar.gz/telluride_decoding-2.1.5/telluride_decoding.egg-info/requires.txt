@@ -1,0 +1,8 @@
+absl-py
+attrs
+matplotlib
+mock
+pandas
+pyedflib
+scipy
+tensorflow>=2
