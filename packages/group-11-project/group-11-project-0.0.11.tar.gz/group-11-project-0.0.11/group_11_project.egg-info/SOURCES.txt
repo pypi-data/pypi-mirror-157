@@ -1,0 +1,12 @@
+setup.py
+group_11_project.egg-info/PKG-INFO
+group_11_project.egg-info/SOURCES.txt
+group_11_project.egg-info/dependency_links.txt
+group_11_project.egg-info/top_level.txt
+第11小组抽样设计python管理/2022-0318-简单随机不放回抽样.py
+第11小组抽样设计python管理/2022-0325-自建简单随机抽样包-钻石抽样.py
+第11小组抽样设计python管理/2022-0408-最优分配.py
+第11小组抽样设计python管理/2022-0415-枪手对决.py
+第11小组抽样设计python管理/2022-0513-代码法和拉希里法.py
+第11小组抽样设计python管理/__init__.py
+第11小组抽样设计python管理/小组大作业—MCMC抽样.py
