@@ -1,0 +1,2 @@
+[console_scripts]
+heimdallsword = heimdallsword.__main__:main
