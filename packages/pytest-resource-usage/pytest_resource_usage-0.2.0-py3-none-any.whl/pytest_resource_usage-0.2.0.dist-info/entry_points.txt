@@ -1,0 +1,6 @@
+[pytest11]
+report_duration=pytest_resource_usage.duration
+report_resource_usage=pytest_resource_usage.report
+report_tracemalloc=pytest_resource_usage.tracemalloc
+report_uss=pytest_resource_usage.uss
+

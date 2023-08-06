@@ -1,0 +1,11 @@
+pytest_resource_usage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_resource_usage/duration.py,sha256=NPWPmFyewe4U3GJPZALmX2ORdE8TtNrAd5XcCigbjvg,797
+pytest_resource_usage/psutil_uss.py,sha256=7pVc68RkKBErfzAon8fed-R4rXSCYY3htkrjOi1lCjA,4296
+pytest_resource_usage/report.py,sha256=7nQGNQsN4-9Wf6T4avZ4-yrcVoIY5W63d6WjQceunHc,1073
+pytest_resource_usage/tracemalloc.py,sha256=cIWlQG0mbE3JIZC2s7GM4OaCh0DLztqg0dFC2My1fHU,1345
+pytest_resource_usage/uss.py,sha256=iRTI1fg6mpl99uNUS-fzdnvUUcOKOCtcfR7LCY1pPNo,122
+pytest_resource_usage-0.2.0.dist-info/entry_points.txt,sha256=LqX7HxgkZ_bOs8l1XFgFYzsPafdB_BDAdxIemGX1-8c,200
+pytest_resource_usage-0.2.0.dist-info/LICENSE,sha256=cGTcPYborFXeW7rGzf4GfCre7ioVVCe9rOhTBR8uKVQ,1096
+pytest_resource_usage-0.2.0.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+pytest_resource_usage-0.2.0.dist-info/METADATA,sha256=Fx5KMAe9WNfKbJyS4wf4cPgOVvNFbqFAI89fcB6UpyI,3821
+pytest_resource_usage-0.2.0.dist-info/RECORD,,
