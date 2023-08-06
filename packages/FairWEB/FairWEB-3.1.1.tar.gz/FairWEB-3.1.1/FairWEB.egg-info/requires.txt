@@ -1,0 +1,5 @@
+FCoRE>=1.0.3
+FairNLP>=1.2.0
+FairMongo>=1.0.4
+beautifulsoup4==4.9.3
+newspaper3k==0.2.8
