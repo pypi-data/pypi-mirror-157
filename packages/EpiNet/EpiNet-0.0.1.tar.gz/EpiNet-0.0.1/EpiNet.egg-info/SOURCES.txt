@@ -1,0 +1,5 @@
+setup.py
+EpiNet.egg-info/PKG-INFO
+EpiNet.egg-info/SOURCES.txt
+EpiNet.egg-info/dependency_links.txt
+EpiNet.egg-info/top_level.txt
