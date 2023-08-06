@@ -1,0 +1,9 @@
+LICENSE.txt
+README.txt
+pyproject.toml
+setup.cfg
+setup.py
+stython.egg-info/PKG-INFO
+stython.egg-info/SOURCES.txt
+stython.egg-info/dependency_links.txt
+stython.egg-info/top_level.txt
