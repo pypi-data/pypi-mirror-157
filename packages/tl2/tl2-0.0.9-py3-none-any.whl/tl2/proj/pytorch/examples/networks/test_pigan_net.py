@@ -1,0 +1,556 @@
+import itertools
+import os
+import sys
+import unittest
+import argparse
+from einops import rearrange
+
+import torch
+import torch.nn as nn
+
+from tl2.proj.pytorch.pytorch_hook import VerboseModel
+from tl2.proj.pytorch import torch_utils
+
+
+class Testing_pigan_net(unittest.TestCase):
+
+  def test__build_ScaleLinear(self, debug=True):
+    """
+    Usage:
+
+        # export CUDA_VISIBLE_DEVICES=$cuda_devices
+        # export RUN_NUM=$run_num
+
+        export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+        export PORT=12345
+        export TIME_STR=1
+        export PYTHONPATH=.
+        python -c "from tl2.launch.tests.test_launch import Testing_Launch_v1;\
+          Testing_Launch_v1().test_launch_ddp(debug=False)" \
+          --tl_opts root_obs s3://$bucket/ZhouPeng/ \
+          --tl_outdir results/train_ffhq_256/train_ffhq_256-20210726_202423_412
+          # --tl_outdir results/$resume_dir
+
+    :return:
+    """
+    if 'CUDA_VISIBLE_DEVICES' not in os.environ:
+      os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+    if 'TIME_STR' not in os.environ:
+      os.environ['TIME_STR'] = '0'
+    if 'RUN_NUM' not in os.environ:
+      os.environ['RUN_NUM'] = '0'
+    from tl2 import tl2_utils
+    from tl2.launch.launch_utils import \
+      (get_command_and_outdir, setup_outdir_and_yaml, get_append_cmd_str, start_cmd_run)
+
+    tl_opts_list = tl2_utils.parser_args_from_list(name="--tl_opts", argv_list=sys.argv, type='list')
+    tl_opts = ' '.join(tl_opts_list)
+    print(f'tl_opts:\n {tl_opts}')
+
+    if debug:
+      # sys.argv.extend(['--tl_outdir', 'results/train_ffhq_256/train_ffhq_256-test'])
+      pass
+    command, outdir = get_command_and_outdir(self, func_name=sys._getframe().f_code.co_name, file=__file__)
+    resume = os.path.isdir(f"{outdir}/ckptdir/resume") and \
+             tl2_utils.parser_args_from_list(name="--tl_outdir", argv_list=sys.argv, type='str') is not None
+    argv_str = f"""
+                --tl_config_file tl2_lib/tl2/proj/pytorch/examples/networks/pigan_net.yaml
+                --tl_command {command}
+                --tl_outdir {outdir}
+                {"--tl_resume --tl_resumedir " + outdir if resume else ""}
+                --tl_opts {tl_opts}
+                --tl_debug True
+                """
+    args, cfg = setup_outdir_and_yaml(argv_str, return_cfg=True)
+
+    import itertools
+    from tl2.proj.pytorch.pytorch_hook import VerboseModel
+    from tl2.proj.pytorch.examples.networks import multi_head_mapping
+    from tl2.proj.pytorch.examples.networks import pigan_net
+    from tl2.proj.pytorch import torch_utils
+
+    net = pigan_net.ScaleLinear(**{**cfg,
+                                   'gamma': 10.,
+                                   'scale_gradients': True}).cuda()
+
+    bs = 4
+    N = 10
+    in_dim = cfg.in_features
+
+    x = torch.randn(bs, N, in_dim, requires_grad=True).cuda()
+    x = nn.Parameter(x)
+
+    # scale_w false
+    x.grad = None
+    net.scale_gradients = False
+    net.gamma = 1
+    net.beta = 0
+    net.zero_grad(set_to_none=True)
+    VerboseModel.forward_verbose(net,
+                                 inputs_args=(x,),
+                                 name_prefix='ori.')
+    out = net(x)
+    out.mean().backward()
+
+    grad_str = torch_utils.get_grad_norm_string(itertools.chain(net.named_parameters(), [('x', x)]))
+    print(grad_str)
+
+    # scale_w true
+    x.grad = None
+    net.scale_gradients = False
+    net.gamma = 10
+    net.beta = 30
+    net.zero_grad(set_to_none=True)
+    VerboseModel.forward_verbose(net,
+                                 inputs_args=(x,),
+                                 name_prefix='no_scale.')
+    out = net(x)
+    out.mean().backward()
+
+    grad_str = torch_utils.get_grad_norm_string(itertools.chain(net.named_parameters(), [('x', x)]))
+    print(grad_str)
+
+
+    # scale_gradients true
+    x.grad = None
+    net.scale_gradients = True
+    net.gamma = 10
+    net.beta = 30
+    net.zero_grad(set_to_none=True)
+    VerboseModel.forward_verbose(net,
+                                 inputs_args=(x,),
+                                 name_prefix='scale.')
+    out = net(x)
+    out.mean().backward()
+
+    grad_str = torch_utils.get_grad_norm_string(itertools.chain(net.named_parameters(), [('x', x)]))
+    print(grad_str)
+
+    pass
+
+  def test__build_ModFiLMLayer(self, debug=True):
+    """
+    Usage:
+
+        # export CUDA_VISIBLE_DEVICES=$cuda_devices
+        # export RUN_NUM=$run_num
+
+        export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+        export PORT=12345
+        export TIME_STR=1
+        export PYTHONPATH=.
+        python -c "from tl2.launch.tests.test_launch import Testing_Launch_v1;\
+          Testing_Launch_v1().test_launch_ddp(debug=False)" \
+          --tl_opts root_obs s3://$bucket/ZhouPeng/ \
+          --tl_outdir results/train_ffhq_256/train_ffhq_256-20210726_202423_412
+          # --tl_outdir results/$resume_dir
+
+    :return:
+    """
+    if 'CUDA_VISIBLE_DEVICES' not in os.environ:
+      os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+    if 'TIME_STR' not in os.environ:
+      os.environ['TIME_STR'] = '0'
+    if 'RUN_NUM' not in os.environ:
+      os.environ['RUN_NUM'] = '0'
+    from tl2 import tl2_utils
+    from tl2.launch.launch_utils import \
+      (get_command_and_outdir, setup_outdir_and_yaml, get_append_cmd_str, start_cmd_run)
+
+    tl_opts_list = tl2_utils.parser_args_from_list(name="--tl_opts", argv_list=sys.argv, type='list')
+    tl_opts = ' '.join(tl_opts_list)
+    print(f'tl_opts:\n {tl_opts}')
+
+    if debug:
+      # sys.argv.extend(['--tl_outdir', 'results/train_ffhq_256/train_ffhq_256-test'])
+      pass
+    command, outdir = get_command_and_outdir(self, func_name=sys._getframe().f_code.co_name, file=__file__)
+    resume = os.path.isdir(f"{outdir}/ckptdir/resume") and \
+             tl2_utils.parser_args_from_list(name="--tl_outdir", argv_list=sys.argv, type='str') is not None
+    argv_str = f"""
+                --tl_config_file tl2_lib/tl2/proj/pytorch/examples/networks/pigan_net.yaml
+                --tl_command {command}
+                --tl_outdir {outdir}
+                {"--tl_resume --tl_resumedir " + outdir if resume else ""}
+                --tl_opts {tl_opts}
+                """
+    args, cfg = setup_outdir_and_yaml(argv_str, return_cfg=True)
+
+    import itertools
+    from tl2.proj.pytorch.examples.networks import pigan_net
+
+    torch_utils.init_seeds()
+
+    net = pigan_net.ModFiLMLayer(**cfg).cuda()
+
+    bs = 4
+    N = 10
+    in_dim = cfg.in_dim
+    style_dim = cfg.style_dim
+
+    x = torch.randn(bs, N, in_dim, requires_grad=True).cuda()
+    x = nn.Parameter(x)
+    style = torch.randn(bs, style_dim).cuda()
+    style = nn.Parameter(style)
+
+    VerboseModel.forward_verbose(net,
+                                 inputs_args=(x, style),
+                                 name_prefix='net3.')
+    out_3 = net(x, style)
+
+    out_3.mean().backward()
+    grad_str = torch_utils.get_grad_norm_string(itertools.chain(net.named_parameters(),
+                                                                [('x', x),
+                                                                 ('style', style)]))
+    print(grad_str)
+
+    x = torch.randn(bs, in_dim, requires_grad=True).cuda()
+    style = torch.randn(bs, style_dim).cuda()
+
+    VerboseModel.forward_verbose(net,
+                                 inputs_args=(x, style),
+                                 name_prefix='net2.')
+    out_2 = net(x, style)
+
+    pass
+
+  def test__build_ModSIREN_Net(self, debug=True):
+    """
+    Usage:
+
+        # export CUDA_VISIBLE_DEVICES=$cuda_devices
+        # export RUN_NUM=$run_num
+
+        export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+        export PORT=12345
+        export TIME_STR=1
+        export PYTHONPATH=.
+        python -c "from tl2.launch.tests.test_launch import Testing_Launch_v1;\
+          Testing_Launch_v1().test_launch_ddp(debug=False)" \
+          --tl_opts root_obs s3://$bucket/ZhouPeng/ \
+          --tl_outdir results/train_ffhq_256/train_ffhq_256-20210726_202423_412
+          # --tl_outdir results/$resume_dir
+
+    :return:
+    """
+    if 'CUDA_VISIBLE_DEVICES' not in os.environ:
+      os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+    if 'TIME_STR' not in os.environ:
+      os.environ['TIME_STR'] = '0'
+    if 'RUN_NUM' not in os.environ:
+      os.environ['RUN_NUM'] = '0'
+    from tl2 import tl2_utils
+    from tl2.launch.launch_utils import \
+      (get_command_and_outdir, setup_outdir_and_yaml, get_append_cmd_str, start_cmd_run)
+
+    tl_opts_list = tl2_utils.parser_args_from_list(name="--tl_opts", argv_list=sys.argv, type='list')
+    tl_opts = ' '.join(tl_opts_list)
+    print(f'tl_opts:\n {tl_opts}')
+
+    if debug:
+      # sys.argv.extend(['--tl_outdir', 'results/train_ffhq_256/train_ffhq_256-test'])
+      pass
+    command, outdir = get_command_and_outdir(self, func_name=sys._getframe().f_code.co_name, file=__file__)
+    resume = os.path.isdir(f"{outdir}/ckptdir/resume") and \
+             tl2_utils.parser_args_from_list(name="--tl_outdir", argv_list=sys.argv, type='str') is not None
+    argv_str = f"""
+                --tl_config_file tl2_lib/tl2/proj/pytorch/examples/networks/pigan_net.yaml
+                --tl_command {command}
+                --tl_outdir {outdir}
+                {"--tl_resume --tl_resumedir " + outdir if resume else ""}
+                --tl_opts {tl_opts}
+                --tl_debug True
+                """
+    args, cfg = setup_outdir_and_yaml(argv_str, return_cfg=True)
+
+    from tl2.proj.pytorch.pytorch_hook import VerboseModel
+    from tl2.proj.pytorch.examples.networks import multi_head_mapping
+    from tl2.proj.pytorch.examples.networks import pigan_net
+
+    torch_utils.init_seeds()
+
+    net = pigan_net.ModSIREN_Net(**cfg).cuda()
+    head_dim_dict = net.style_dim_dict
+    mapping_net = multi_head_mapping.MultiHeadMappingNetwork(head_dim_dict=head_dim_dict, **cfg.mapping_cfg).cuda()
+
+    bs = 4
+    N = 10
+    in_dim = cfg.input_dim
+
+    z = torch.randn(bs, cfg.mapping_cfg.z_dim).cuda()
+    z = nn.Parameter(z)
+    style_dict = mapping_net(z)
+
+    x = torch.randn(bs, N, in_dim).cuda()
+    x = nn.Parameter(x)
+
+    out = net(x, style_dict=style_dict)
+
+    out.mean().backward()
+    grad_str = torch_utils.get_grad_norm_string(itertools.chain(net.named_parameters(),
+                                                                mapping_net.named_parameters(),
+                                                                [('x', x),
+                                                                 ('z', z)]))
+    print(grad_str)
+
+    # VerboseModel.forward_verbose(mapping_net,
+    #                              inputs_args=(z,),
+    #                              name_prefix='mapping.',
+    #                              )
+
+    pass
+
+  def test__build_piGAN_NeRF_Net(self, debug=True):
+    """
+    Usage:
+
+        # export CUDA_VISIBLE_DEVICES=$cuda_devices
+        # export RUN_NUM=$run_num
+
+        export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+        export PORT=12345
+        export TIME_STR=1
+        export PYTHONPATH=.
+        python -c "from tl2.launch.tests.test_launch import Testing_Launch_v1;\
+          Testing_Launch_v1().test_launch_ddp(debug=False)" \
+          --tl_opts root_obs s3://$bucket/ZhouPeng/ \
+          --tl_outdir results/train_ffhq_256/train_ffhq_256-20210726_202423_412
+          # --tl_outdir results/$resume_dir
+
+    :return:
+    """
+    if 'CUDA_VISIBLE_DEVICES' not in os.environ:
+      os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+    if 'TIME_STR' not in os.environ:
+      os.environ['TIME_STR'] = '0'
+    if 'RUN_NUM' not in os.environ:
+      os.environ['RUN_NUM'] = '0'
+    from tl2 import tl2_utils
+    from tl2.launch.launch_utils import \
+      (get_command_and_outdir, setup_outdir_and_yaml, get_append_cmd_str, start_cmd_run)
+
+    tl_opts_list = tl2_utils.parser_args_from_list(name="--tl_opts", argv_list=sys.argv, type='list')
+    tl_opts = ' '.join(tl_opts_list)
+    print(f'tl_opts:\n {tl_opts}')
+
+    if debug:
+      # sys.argv.extend(['--tl_outdir', 'results/train_ffhq_256/train_ffhq_256-test'])
+      pass
+    command, outdir = get_command_and_outdir(self, func_name=sys._getframe().f_code.co_name, file=__file__)
+    resume = os.path.isdir(f"{outdir}/ckptdir/resume") and \
+             tl2_utils.parser_args_from_list(name="--tl_outdir", argv_list=sys.argv, type='str') is not None
+    argv_str = f"""
+                --tl_config_file tl2_lib/tl2/proj/pytorch/examples/networks/pigan_net.yaml
+                --tl_command {command}
+                --tl_outdir {outdir}
+                {"--tl_resume --tl_resumedir " + outdir if resume else ""}
+                --tl_opts {tl_opts}
+                --tl_debug True
+                """
+    args, cfg = setup_outdir_and_yaml(argv_str, return_cfg=True)
+
+    from tl2.proj.pytorch.examples.networks import pigan_net
+    from . import multi_head_mapping
+    from ..nerf import volume_rendering
+    from ..nerf import cam_params
+
+    net = pigan_net.piGAN_NeRF_Net(**cfg).cuda()
+
+    bs = 4
+    H = 64
+    W = 64
+
+    cam_param = cam_params.CamParams.from_config(num_imgs=1,
+                                                 H0=H,
+                                                 W0=W,
+                                                 so3_repr='axis-angle',
+                                                 intr_repr='square',
+                                                 initial_fov=53.13,
+                                                 freeze_intr=False).cuda()
+
+    intr = cam_param(mode='get_intrinsic')
+
+    rays_o, rays_d, select_inds = cam_param.get_rays_random_pose(
+      device='cuda',
+      bs=bs,
+      intr=intr,
+      h_stddev=0.3,
+      v_stddev=0.155,
+    )
+
+    rays_o = rearrange(rays_o, "b h w c -> b (h w) c", h=H, w=W)
+    rays_d = rearrange(rays_d, "b h w c -> b (h w) c", h=H, w=W)
+
+    z_vals, points = volume_rendering.ray_sample_points(rays_o=rays_o,
+                                                        rays_d=rays_d,
+                                                        near=0.5,
+                                                        far=1.5,
+                                                        N_samples=24,
+                                                        perturb=0)
+
+    print(f"x range: [{points[..., 0].min()}, {points[..., 0].max()}]")
+    print(f"y range: [{points[..., 1].min()}, {points[..., 1].max()}]")
+    print(f"z range: [{points[..., 2].min()}, {points[..., 2].max()}]")
+
+    z_dim = 128
+    style_dim = 128
+
+    mapping_shape = multi_head_mapping.MultiHeadMappingNetwork(z_dim=z_dim,
+                                                               hidden_dim=net.shape_net_cfg.style_dim,
+                                                               base_layers=4,
+                                                               head_layers=0,
+                                                               head_dim_dict=net.style_dim_dict_shape,
+                                                               add_norm=True,
+                                                               norm_out=True).cuda()
+    mapping_app = multi_head_mapping.MultiHeadMappingNetwork(z_dim=z_dim,
+                                                             hidden_dim=net.app_net_cfg.style_dim,
+                                                             base_layers=4,
+                                                             head_layers=0,
+                                                             head_dim_dict=net.style_dim_dict_app,
+                                                             add_norm=True,
+                                                             norm_out=True).cuda()
+
+    z_shape = torch.randn(bs, z_dim, requires_grad=True).cuda()
+    z_app = torch.randn(bs, z_dim, requires_grad=True).cuda()
+
+    style_dict = {}
+    style_dict.update(mapping_shape(z_shape))
+    style_dict.update(mapping_app(z_app))
+
+    points = rearrange(points, "b Nr Ns c -> b (Nr Ns) c")
+    # points = points[:, 0]
+    out = net(points, style_dict)
+
+    out.mean().backward()
+
+    grad_str = torch_utils.get_grad_norm_string(itertools.chain(net.named_parameters(),
+                                                                mapping_shape.named_parameters(),
+                                                                mapping_app.named_parameters()
+                                                                ))
+    print(grad_str)
+
+    pass
+
+  def test__build_NeRF_Net(self, debug=True):
+    """
+    Usage:
+
+        # export CUDA_VISIBLE_DEVICES=$cuda_devices
+        # export RUN_NUM=$run_num
+
+        export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+        export PORT=12345
+        export TIME_STR=1
+        export PYTHONPATH=.
+        python -c "from tl2.launch.tests.test_launch import Testing_Launch_v1;\
+          Testing_Launch_v1().test_launch_ddp(debug=False)" \
+          --tl_opts root_obs s3://$bucket/ZhouPeng/ \
+          --tl_outdir results/train_ffhq_256/train_ffhq_256-20210726_202423_412
+          # --tl_outdir results/$resume_dir
+
+    :return:
+    """
+    if 'CUDA_VISIBLE_DEVICES' not in os.environ:
+      os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+    if 'TIME_STR' not in os.environ:
+      os.environ['TIME_STR'] = '0'
+    if 'RUN_NUM' not in os.environ:
+      os.environ['RUN_NUM'] = '0'
+    from tl2 import tl2_utils
+    from tl2.launch.launch_utils import \
+      (get_command_and_outdir, setup_outdir_and_yaml, get_append_cmd_str, start_cmd_run)
+
+    tl_opts_list = tl2_utils.parser_args_from_list(name="--tl_opts", argv_list=sys.argv, type='list')
+    tl_opts = ' '.join(tl_opts_list)
+    print(f'tl_opts:\n {tl_opts}')
+
+    if debug:
+      # sys.argv.extend(['--tl_outdir', 'results/train_ffhq_256/train_ffhq_256-test'])
+      pass
+    command, outdir = get_command_and_outdir(self, func_name=sys._getframe().f_code.co_name, file=__file__)
+    resume = os.path.isdir(f"{outdir}/ckptdir/resume") and \
+             tl2_utils.parser_args_from_list(name="--tl_outdir", argv_list=sys.argv, type='str') is not None
+    argv_str = f"""
+                --tl_config_file tl2_lib/tl2/proj/pytorch/examples/networks/siren_net.yaml
+                --tl_command {command}
+                --tl_outdir {outdir}
+                {"--tl_resume --tl_resumedir " + outdir if resume else ""}
+                --tl_opts {tl_opts}
+                --tl_debug True
+                """
+    args, cfg = setup_outdir_and_yaml(argv_str, return_cfg=True)
+
+    from tl2.proj.pytorch.examples.networks import siren_net
+    from . import multi_head_mapping
+    from ..nerf import volume_rendering
+    from ..nerf import cam_params
+
+    net = siren_net.NeRF_Net(**cfg).cuda()
+
+    bs = 4
+    H = 64
+    W = 64
+
+    cam_param = cam_params.CamParams.from_config(num_imgs=1,
+                                                 H0=H,
+                                                 W0=W,
+                                                 so3_repr='axis-angle',
+                                                 intr_repr='square',
+                                                 initial_fov=53.13,
+                                                 freeze_intr=False).cuda()
+
+    intr = cam_param(mode='get_intrinsic')
+
+    rays_o, rays_d, select_inds = cam_param.get_rays_random_pose(
+      device='cuda',
+      bs=bs,
+      intr=intr,
+      h_stddev=0.3,
+      v_stddev=0.155,
+    )
+
+    rays_o = rearrange(rays_o, "b h w c -> b (h w) c", h=H, w=W)
+    rays_d = rearrange(rays_d, "b h w c -> b (h w) c", h=H, w=W)
+
+    z_vals, points = volume_rendering.ray_sample_points(rays_o=rays_o,
+                                                        rays_d=rays_d,
+                                                        near=0.5,
+                                                        far=1.5,
+                                                        N_samples=24,
+                                                        perturb=0)
+
+    print(f"x range: [{points[..., 0].min()}, {points[..., 0].max()}]")
+    print(f"y range: [{points[..., 1].min()}, {points[..., 1].max()}]")
+    print(f"z range: [{points[..., 2].min()}, {points[..., 2].max()}]")
+
+    z_dim = 128
+    style_dim = 128
+
+    mapping_shape = multi_head_mapping.MultiHeadMappingNetwork(z_dim=z_dim,
+                                                               hidden_dim=net.shape_net_cfg.style_dim,
+                                                               base_layers=4,
+                                                               head_layers=0,
+                                                               head_dim_dict=net.style_dim_dict_shape,
+                                                               add_norm=True,
+                                                               norm_out=True).cuda()
+    mapping_app = multi_head_mapping.MultiHeadMappingNetwork(z_dim=z_dim,
+                                                             hidden_dim=net.app_net_cfg.style_dim,
+                                                             base_layers=4,
+                                                             head_layers=0,
+                                                             head_dim_dict=net.style_dim_dict_app,
+                                                             add_norm=True,
+                                                             norm_out=True).cuda()
+
+    z_shape = torch.randn(bs, z_dim).cuda()
+    z_app = torch.randn(bs, z_dim).cuda()
+
+    style_dict = {}
+    style_dict.update(mapping_shape(z_shape))
+    style_dict.update(mapping_app(z_app))
+
+    points = rearrange(points, "b Nr Ns c -> b (Nr Ns) c")
+    # points = points[:, 0]
+    out = net(points, style_dict)
+
+    out.mean().backward()
+    pass

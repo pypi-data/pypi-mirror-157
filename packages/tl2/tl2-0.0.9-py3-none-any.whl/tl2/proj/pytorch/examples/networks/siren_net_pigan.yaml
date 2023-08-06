@@ -1,0 +1,87 @@
+_build_ModFiLMLayer:
+  in_dim: 128
+  out_dim: 256
+  style_dim: 512
+  gradient_scale: 1/15
+
+
+mapping_cfg: &mapping_cfg
+  z_dim: 256
+  hidden_dim: 256
+  base_layers: 4
+  head_layers: 0
+  add_norm: true
+  norm_out: true
+
+
+_build_ModFiLMBlock:
+  mapping_cfg: *mapping_cfg
+  in_dim: 128
+  out_dim: 128
+  style_dim: 256
+
+
+_build_SIRENNet_skip:
+  mapping_cfg: *mapping_cfg
+  input_dim: 3
+  hidden_dim: 128
+  out_dim: 64
+  style_dim: 256
+  num_blocks: 4
+  add_out_layer: false
+  add_in_layer: true
+
+
+shape_cfg: &shape_cfg
+  input_dim: 3
+  hidden_dim: 256
+  out_dim: 256
+  N_layers: 8
+
+_build_ShapeNet:
+  mapping_cfg: *mapping_cfg
+  shape_cfg: *shape_cfg
+
+
+app_cfg: &app_cfg
+  input_dim: 256
+  hidden_dim: 256
+  out_dim: 256
+  N_layers: 1
+
+_build_AppNet:
+  mapping_cfg: *mapping_cfg
+  shape_cfg: *app_cfg
+
+_build_NeRF_Net_kwargs: &_build_NeRF_Net_kwargs
+  shape_net_cfg: *shape_cfg
+  app_net_cfg: *app_cfg
+  shape_block_end_index: 8
+  app_block_end_index: 1
+
+
+_build_MappingNetwork:
+  z_dim: 256
+  map_hidden_dim: 256
+  map_output_dim: "9 * 256 * 2"
+  N_layers: 4
+
+_build_StyleMappingBaseNet:
+  z_dim: 256
+  hidden_dim: 256
+  N_layers: 3
+
+_build_StyleMappingShapeApp:
+  nerf_cfg: *_build_NeRF_Net_kwargs
+  mapping_cfg:
+    base_cfg:
+      z_dim: 256
+      hidden_dim: 256
+      N_layers: 3
+
+
+_build_NeRF_Net:
+  shape_net_cfg: *shape_cfg
+  app_net_cfg: *app_cfg
+  shape_block_end_index: 8
+  app_block_end_index: 1

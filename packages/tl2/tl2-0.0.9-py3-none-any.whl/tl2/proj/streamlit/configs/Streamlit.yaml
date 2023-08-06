@@ -1,0 +1,63 @@
+show_video:
+  port: 8501
+  sidebar:
+    sidebar_name: "show_video"
+  model_cfg:
+    register_modules:
+      - tl2_lib.tl2.proj.streamlit.scripts.run_web
+    name: tl2_lib.tl2.proj.streamlit.scripts.run_web.STModel
+  mode:
+    - show_video
+  show_video:
+    num_video: 7
+
+
+show_results:
+  base: show_video
+  port: 8501
+  sidebar:
+    sidebar_name: "show_results"
+  model_cfg:
+    register_modules:
+      - tl2_lib.tl2.proj.streamlit.scripts.run_web
+    name: tl2_lib.tl2.proj.streamlit.scripts.run_web.STModel
+  mode:
+    - show_results
+    - show_video
+  show_results:
+    results_dir: "results/pretrained/inverse_render_web-20210701_163343_951/exp/0000"
+
+
+show_image_list:
+  port: 8501
+  sidebar:
+    sidebar_name: "show_image_list"
+  model_cfg:
+    register_modules:
+      - tl2_lib.tl2.proj.streamlit.scripts.run_web
+    name: tl2_lib.tl2.proj.streamlit.scripts.run_web.STModel
+  mode:
+    - show_image_list
+  show_image_list:
+    image_list_files:
+      image_list:
+        image_list_file: datasets/image_list.txt
+
+
+project_image_web:
+  port: 8561
+  sidebar:
+    sidebar_name: "project_image_web"
+  model_cfg:
+    register_modules:
+      - exp2.hrinversion.models.hrinversion_st
+    name: exp2.hrinversion.models.hrinversion_st.HRInversion_Web
+  mode:
+    - project_image_web
+  project_image_web:
+    image_list_files:
+      images_smpl:
+        image_list_file: "datasets/images_smpl"
+
+
+

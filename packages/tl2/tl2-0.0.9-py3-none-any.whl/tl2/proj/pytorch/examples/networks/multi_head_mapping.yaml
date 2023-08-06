@@ -1,0 +1,7 @@
+_build_MultiHeadMappingNetwork:
+  z_dim: 256
+  hidden_dim: 256
+  base_layers: 4
+  head_layers: 0
+  add_norm: true
+  norm_out: true

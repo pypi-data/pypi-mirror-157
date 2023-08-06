@@ -1,0 +1,86 @@
+plot_figure:
+  xlabel: "Iterations"
+  ylabel: "FID"
+  fontsize:
+    tick_fs: 10
+    xylabel_fs: 17
+    legend_size: 16
+  clip_x:
+    - 0
+    - 170000
+  properties:
+#    xlim:
+#      - -200000
+#      - 51000000
+    ylim:
+      - 10
+      - 45
+  get_min_value: true
+  add_auxi_label: true
+  lines:
+    pigan_r64:
+      pkl_file: "tl2_lib/tl2/proj/matplot/data/pigan_nerfgan_r64r128_gradpoints.pkl"
+      dict_index: "FID_r64"
+      data_index: "20210919_211014_667-pigan"
+      color: 'dark_red'
+      properties:
+        label: "pi-GAN"
+#        ls: "--"
+        lw: 2
+#        marker: "."
+    nerfgan_r64:
+      pkl_file: "tl2_lib/tl2/proj/matplot/data/pigan_nerfgan_r64r128_gradpoints.pkl"
+      dict_index: "FID_r64"
+      data_index: "20210920_121122_187-nerfgan-auxD-warmupDfirstlayer"
+      color: 'blue'
+      properties:
+        label: "NeRFGAN"
+#        ls: "--"
+        lw: 2
+#        marker: "."
+
+  saved_file: "nerfgan_pigan_r64r128.pdf"
+
+plot_figure_smooth:
+  xlabel: "Iterations"
+  ylabel: "FID"
+  fontsize:
+    tick_fs: 10
+    xylabel_fs: 17
+    legend_size: 16
+  clip_x:
+    - 0
+    - 170000
+#  properties:
+#    xlim:
+#      - -200000
+#      - 51000000
+#    ylim:
+#      - 10
+#      - 45
+  get_min_value: true
+  add_auxi_label: true
+  lines:
+    pigan_r64:
+      pkl_file: "tl2_lib/tl2/proj/matplot/data/pigan_nerfgan_r64r128_gradpoints.pkl"
+      dict_index: "FID_r64"
+      data_index: "20210919_211014_667-pigan"
+      color: 'dark_red'
+      properties:
+        label: "pi-GAN"
+#        ls: "--"
+        lw: 2
+#        marker: "."
+    nerfgan_r64:
+      pkl_file: "tl2_lib/tl2/proj/matplot/data/pigan_nerfgan_r64r128_gradpoints.pkl"
+      dict_index: "FID_r64"
+      data_index: "20210920_121122_187-nerfgan-auxD-warmupDfirstlayer"
+      color: 'blue'
+      properties:
+        label: "NeRFGAN"
+#        ls: "--"
+        lw: 2
+#        marker: "."
+
+  saved_file: "nerfgan_pigan_r64r128.pdf"
+

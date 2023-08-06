@@ -1,0 +1,15 @@
+open3d_tensorbard_web:
+  port: 8501
+  sidebar:
+    sidebar_name: "show_video"
+  model_cfg:
+    register_modules:
+      - tl2_lib.tl2.proj.trimesh.examples.open3d.open3d_tensorboard
+    name: tl2_lib.tl2.proj.trimesh.examples.open3d.open3d_tensorboard.STModel
+  mode:
+    - simple_geometry
+
+  default_mode: "simple_geometry"
+  simple_geometry:
+    fps: 20
+

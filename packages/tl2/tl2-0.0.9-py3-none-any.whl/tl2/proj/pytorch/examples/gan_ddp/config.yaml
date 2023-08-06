@@ -1,0 +1,83 @@
+root_obs: &root_obs s3://bucket-3690/ZhouPeng
+modelarts_download: &modelarts_download
+  ffhq256:
+    datapath_obs: '{global_cfg.root_obs}/keras/ffhq/downsample_ffhq_256x256.zip'
+    datapath: "datasets/ffhq/downsample_ffhq_256x256.zip"
+    overwrite: false
+    eval: true
+    unzip: true
+  ffhq256_list:
+    datapath_obs: '{global_cfg.root_obs}/keras/ffhq/ffhq_256.txt'
+    datapath: "datasets/ffhq/ffhq_256.txt"
+    overwrite: false
+    eval: true
+    unzip: false
+  fid_inception:
+    datapath_obs: '{global_cfg.root_obs}/keras/cache/torch/hub/checkpoints/weights-inception-2015-12-05-6726825d.pth'
+    datapath: "/home/ma-user/.cache/torch/hub/checkpoints/weights-inception-2015-12-05-6726825d.pth"
+    overwrite: false
+    eval: true
+    unzip: false
+
+
+G_cfg: &G_cfg
+  register_modules:
+  - tl2_lib.tl2.proj.pytorch.examples.gan_ddp.networks
+  name: tl2_lib.tl2.proj.pytorch.examples.gan_ddp.networks.Generator
+
+
+D_cfg: &D_cfg
+  register_modules:
+    - tl2_lib.tl2.proj.pytorch.examples.gan_ddp.networks
+  name: tl2_lib.tl2.proj.pytorch.examples.gan_ddp.networks.Discriminator
+
+
+data_cfg: &data_cfg
+  register_modules:
+    - tl2_lib.tl2.proj.pytorch.examples.gan_ddp.datasets
+  name: tl2_lib.tl2.proj.pytorch.examples.gan_ddp.datasets.CIFAR10
+  root: "datasets/cifar10"
+  img_size: 64
+
+
+train:
+  # resume
+  load_optimizers: true
+  load_G_ema: true
+  reset_best_fid: false
+  # log
+  print_every: 50
+  log_every: 50
+  log_every_start: 2000
+  save_every: 500
+  del_fid_real_images: true
+  num_images_real_eval: 2048
+  num_images_gen_eval: 2048
+  forward_bs: 10
+  # dataset
+  fixed_z_bs: 25
+  num_workers: 8
+  batch_size: 32
+  batch_split: 1
+  data_cfg: *data_cfg
+  # train
+  seed: 1234
+  ema_decay: 0.999
+  ema_start_itr: 1000
+  use_amp_D: false
+  use_amp_G: false
+  use_diffaug: false
+  d_reg_every: 1
+  r1_lambda: 10.
+  grad_clip: 10.
+  topk_interval: 2000
+#  topk_v: 0.6
+  topk_v: 0.
+  # optimizer:
+  gen_lr: 0.0002
+  disc_lr: 0.0002
+  betas: [0, 0.999]
+  G_cfg: *G_cfg
+  D_cfg: *D_cfg
+  root_obs: *root_obs
+  modelarts_download: *modelarts_download

@@ -1,0 +1,65 @@
+_build_SirenLayer:
+  input_dim: 3
+  hidden_dim: 128
+  use_bias: true
+  w0: 20
+  is_first: true
+
+_build_ModSirenLayer:
+  input_dim: 128
+  hidden_dim: 128
+  style_dim: 128
+  use_bias: true
+  w0: 1
+  is_first: false
+
+_build_ModSirenBlock:
+  in_dim: 128
+  out_dim: 128
+  style_dim: 256
+
+mapping_cfg: &mapping_cfg
+  z_dim: 256
+  hidden_dim: 256
+  base_layers: 4
+  head_layers: 0
+  add_norm: true
+  norm_out: true
+
+_build_ModSIREN_Skip_Net:
+  mapping_cfg: *mapping_cfg
+  input_dim: 3
+  hidden_dim: 128
+  out_dim: 32
+  style_dim: 256
+  num_blocks: 3
+  add_out_layer: false
+  add_in_layer: true
+  xyz_sine_w: 20.
+
+
+_shape_cfg: &_shape_cfg
+  input_dim: 3
+  hidden_dim: 128
+  out_dim: 32
+  style_dim: 256
+  num_blocks: 3
+  add_out_layer: false
+  add_in_layer: true
+  in_layer_mode: 'mod_film'
+  xyz_sine_w: 20.
+  disable_to_rgb: true
+
+_app_cfg: &_app_cfg
+#  input_dim: 64
+  hidden_dim: 128
+  out_dim: 32
+  style_dim: 256
+  num_blocks: 1
+
+_build_NeRF_Net:
+  shape_net_cfg: *_shape_cfg
+  app_net_cfg: *_app_cfg
+  shape_block_end_index: 3
+  app_block_end_index: 1
+  sigma_mul: null
