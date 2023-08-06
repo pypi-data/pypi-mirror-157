@@ -1,0 +1,7 @@
+psycopg2-binary
+huscy.project_documents
+huscy.project_ethics
+huscy.users
+
+[testing]
+tox
