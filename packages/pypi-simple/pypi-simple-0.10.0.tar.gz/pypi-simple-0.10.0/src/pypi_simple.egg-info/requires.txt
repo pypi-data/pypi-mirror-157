@@ -1,0 +1,10 @@
+beautifulsoup4~=4.5
+mailbits~=0.2
+packaging>=20
+requests~=2.20
+
+[:python_version < "3.8"]
+typing_extensions
+
+[tqdm]
+tqdm
