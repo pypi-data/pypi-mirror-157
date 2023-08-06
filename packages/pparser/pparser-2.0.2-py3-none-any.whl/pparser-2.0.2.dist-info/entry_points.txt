@@ -1,0 +1,2 @@
+[console_scripts]
+pparser = pparser.main:main
