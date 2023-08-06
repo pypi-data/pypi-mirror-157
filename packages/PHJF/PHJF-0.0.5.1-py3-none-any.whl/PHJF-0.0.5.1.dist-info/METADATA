@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: PHJF
+Version: 0.0.5.1
+Summary: 使用python将html转化成json并部署到服务器
+Home-page: https://github.com/Xuanluo-Qiu/PHJF
+Author: CCAil
+Author-email: vioercer@otlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# PHJF Alpha v0.0.5
+* 简单易懂的爬虫
+* 使用python将html转化成json并部署到服务器
+-----------------
+**>>注意<<**: 如果想使用本库的全部内容，请至少达到能知道大多数Python3基础知识并且知道BeautifulSoup的基本用法和爬虫的概念和Flask库的基本知识
+
+*立志于用最简单的工作*
+***
+ **为什么选择PHJF？**  
+ * *简单* 
+ * *轻便*
+ * *超强的可塑性*
+ * *一键部署*
+
+
+
+ **实现的功能**  
+ + 模块化
+ + 算是debug
+ + 保存为json并且格式化
+ + 键部署到本地服务器
+
+**未实现的功能**
++ 部署到真正意义上的互联网服务器
++ 爬虫未响应自动结束程序
++ 部署到服务器时进行格式化
+
+ ---
+
+## __迅速开始__  
+
+### 使用*pip*下载 ``pip3 install PHJF``
+
+**注意：所依赖的第三方库**
+* BeautifulSoup
+* Flask
+### 库地址：[PHJF in Github](https://github.com/Xuanluo-Qiu/PHJF)
+***
+## 快速入门
+### **最简单的项目**  
+**创建``main.py``**  
+
+_注意：必须是main.py_
+ ### **get_page(url, encoding, 工作模式)**
+ 获取页面，拥有三种工作模式
+ * *url* : 输入您所需要爬虫的网页 
+ * *encoding* : 编码格式，默认为 utf-8  
+ * **工作模式** : 见下文
+
+**工作模式的选择**
+* *let* : 对接页面数据，解析时使用
+* *save* : 保存页面到当前目录
+
+### 玩法实例
+**爬取``baidu.com``的数据并保存**
+```python3
+from PHJF import *
+
+def main():
+  get_page("https://baidu.com", "", "save")
+
+if __name__ == "__main__"
+  main()
+```
+## **进阶玩法**
+```python3
+from PHJf import *
+
+
+def data(page_text, lists_info):
+    soup = BeautifulSoup(page_text, 'lxml')
+    # 在这里写入你需要的
+    lists_info.append({})
+
+
+def main():
+    get_page("", "", "")
+    run_compile_page("", "")
+    run_server()
+
+
+if __name__ == "__main__":
+    main()
+```
+### data()
+*不要改变data()里的内容*
+* data 函数用来注入soup来编译html
+* lists_info.append({}) 用来放置输出，未来将会编译成中文json  
+
+**比如**：
+```python3
+def data(page_text, lists_info):
+    soup = BeautifulSoup(page_text, 'lxml')
+    page_list = soup.select('.Revision_list > ul > li')
+    for each in page_list:
+        image = each.find("img")
+        image_url = image['data-original']
+        title = each.find("a", attrs={"class": "bt"})
+        text = each.find("div", attrs={"class": "miaoshu"}).text
+        data = each.find("span", attrs={"class": "time"}).text
+        lists_info.append({"image": image_url, "title": title.text, "text": text, "data": data})
+```
+### run_compile_page(工作模式, 文件名字)
+**工作模式**
+* *json* : 保存页面到当前目录
+* *data* : 为运行本地服务器对接数据
+
+**文件名字**
+* 为你的本地服务器设置目录名称与保存文件时的名称
+
+### run_server()
+* 启动本地服务器
+***
+**常见问题**
+* Q:爬虫爬不动了  
+  A:重新启动程序
+***
+*来自 邱璇洛 2022 ©*️
+
