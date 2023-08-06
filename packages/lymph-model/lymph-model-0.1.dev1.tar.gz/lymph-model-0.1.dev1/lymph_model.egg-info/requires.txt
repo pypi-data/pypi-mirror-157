@@ -1,0 +1,12 @@
+numpy
+scipy
+pandas
+emcee
+h5py
+tables
+tqdm
+
+[test]
+pytest
+coverage
+hypothesis
