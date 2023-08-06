@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: wantstoparty
+Version: 0.0.7
+Summary: An API wrapper for the wants-to.party API.
+Home-page: https://github.com/acatiadroid/wantstoparty
+Author: acatiadroid
+Author-email: <acatia@mail.com>
+Keywords: python,api wrapper
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<div align="center">
+    <h1>wantstoparty</h1>
+    <h3>An API wrapper for the <a href="https://wants-to.party">wants-to.party</a> API.</h3>
+</div>
+
+
+## Getting started
+1. install the package:
+    ```
+    pip install wantstoparty
+    ```
+2. Create a [wants-to.party](https://wants-to.party) account.
+3. On your dashboard, click the "View api key" button:
+4. Copy the API key in the box above.
+
+## Examples
+Some examples can be found in the [examples/](https://github.com/acatiadroid/py-wants-to-party/tree/main/examples) folder.
+
+## Contributing
+Contributions are welcome! Check out the [contributing guidelines](https://github.com/acatiadroid/py-wants-to-party/blob/main/.github/CONTRIBUTING.md) beforehand.
+
+## License
+This is licensed under MIT. Read the license [here](https://github.com/acatiadroid/py-wants-to-party/blob/main/LICENSE.txt).
