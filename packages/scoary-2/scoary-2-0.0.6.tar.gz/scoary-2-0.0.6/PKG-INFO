@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: scoary-2
+Version: 0.0.6
+Summary: Scoary 2: Associate genes with traits!
+License: GPL3
+Author: MrTomRod
+Author-email: roder.thomas@gmail.com
+Requires-Python: >=3.10,<3.11
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: fast-fisher (>=0.0.4,<0.0.5)
+Requires-Dist: fire (>=0.4.0,<0.5.0)
+Requires-Dist: matplotlib (>=3.5.2,<4.0.0)
+Requires-Dist: numba (>=0.55.1,<0.56.0)
+Requires-Dist: pandas (>=1.4.0,<2.0.0)
+Requires-Dist: scikit-learn (>=1.0.2,<2.0.0)
+Requires-Dist: scipy (>=1.7.3,<2.0.0)
+Requires-Dist: statsmodels (>=0.13.2,<0.14.0)
