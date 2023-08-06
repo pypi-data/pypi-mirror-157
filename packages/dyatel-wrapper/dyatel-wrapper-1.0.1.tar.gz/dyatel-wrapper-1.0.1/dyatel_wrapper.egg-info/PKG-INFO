@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dyatel-wrapper
+Version: 1.0.1
+Summary: Wrapper of Selenium, Appium, Playwright
+Home-page: https://github.com/EnvInc/dyatel
+Author: Podolian Vladimir
+Author-email: vladimir.podolyan64@gmail.com
+Project-URL: Source, https://github.com/EnvInc/dyatel
+Project-URL: Tracker, https://github.com/EnvInc/dyatel/issues
+Keywords: selenium appium playwright web_automation mobile_automation
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Dyatel 
+
+Dyatel is a wrapper tool of Selenium/Appium/Playwright libraries to test 
+web applications in a single project with possibility to easy switching between these engines.

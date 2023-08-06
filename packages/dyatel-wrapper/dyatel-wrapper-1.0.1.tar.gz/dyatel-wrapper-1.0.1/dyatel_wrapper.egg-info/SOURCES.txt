@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dyatel/internal_utils.py
+dyatel/js_scripts.py
+dyatel/shared_utils.py
+dyatel/visual_comparison.py
+dyatel_wrapper.egg-info/PKG-INFO
+dyatel_wrapper.egg-info/SOURCES.txt
+dyatel_wrapper.egg-info/dependency_links.txt
+dyatel_wrapper.egg-info/requires.txt
+dyatel_wrapper.egg-info/top_level.txt
