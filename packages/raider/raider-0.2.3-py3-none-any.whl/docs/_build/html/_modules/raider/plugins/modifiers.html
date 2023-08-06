@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>raider.plugins.modifiers &mdash; raider 0.2.2 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/assets/jsonview.bundle.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-needs/libs/html/datatables.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-needs/common.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-needs/layouts.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-needs/styles.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-needs/modern.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/assets/jsonview.bundle.js"></script>
+        <script src="../../../_static/assets/jsonview_loader.js"></script>
+        <script src="../../../_static/sphinx-needs/libs/html/datatables.min.js"></script>
+        <script src="../../../_static/sphinx-needs/libs/html/datatables_loader.js"></script>
+        <script src="../../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> raider
+          </a>
+              <div class="version">
+                0.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../user/install.html">Installing Raider</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../user/architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../user/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../user/definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../user/faq.html">Frequently asked questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/special_variables.html">Special variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/flows.html">Flows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/attacks.html">Fuzzing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/operations.html">Operations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/api.html">User API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/api.html#internal-api-reference">Internal API reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">raider</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+      <li>raider.plugins.modifiers</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for raider.plugins.modifiers</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (C) 2022 DigeeX</span>
+<span class="c1">#</span>
+<span class="c1"># This program is free software: you can redistribute it and/or modify</span>
+<span class="c1"># it under the terms of the GNU General Public License as published by</span>
+<span class="c1"># the Free Software Foundation, either version 3 of the License, or</span>
+<span class="c1"># (at your option) any later version.</span>
+<span class="c1">#</span>
+<span class="c1"># This program is distributed in the hope that it will be useful,</span>
+<span class="c1"># but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1"># MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="c1"># GNU General Public License for more details.</span>
+<span class="c1">#</span>
+<span class="c1"># You should have received a copy of the GNU General Public License</span>
+<span class="c1"># along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+<span class="sd">&quot;&quot;&quot;Plugins that modify other plugins.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partial</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Union</span>
+
+<span class="kn">from</span> <span class="nn">raider.plugins.common</span> <span class="kn">import</span> <span class="n">Plugin</span>
+
+
+<div class="viewcode-block" id="Alter"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.modifiers.Alter">[docs]</a><span class="k">class</span> <span class="nc">Alter</span><span class="p">(</span><span class="n">Plugin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plugin used to alter other plugin&#39;s value.</span>
+
+<span class="sd">    If the value extracted from other plugins cannot be used in it&#39;s raw</span>
+<span class="sd">    form and needs to be somehow processed, Alter plugin can be used to</span>
+<span class="sd">    do that. Initialize it with the original plugin and a function which</span>
+<span class="sd">    will process the string and return the modified value.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      alter_function:</span>
+<span class="sd">        A function which will be given the plugin&#39;s value. It should</span>
+<span class="sd">        return a string with the processed value.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">parent_plugin</span><span class="p">:</span> <span class="n">Plugin</span><span class="p">,</span>
+        <span class="n">alter_function</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">[[</span><span class="nb">str</span><span class="p">],</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Alter Plugin.</span>
+
+<span class="sd">        Given the original plugin, and a function to alter the data,</span>
+<span class="sd">        initialize the object, and get the modified value.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          plugin:</span>
+<span class="sd">            The original Plugin where the value is to be found.</span>
+<span class="sd">          alter_function:</span>
+<span class="sd">            The Function with instructions on how to alter the value.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">parent_plugin</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="n">value</span><span class="o">=</span><span class="n">parent_plugin</span><span class="o">.</span><span class="n">value</span><span class="p">,</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">Plugin</span><span class="o">.</span><span class="n">DEPENDS_ON_OTHER_PLUGINS</span><span class="p">,</span>
+            <span class="n">function</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">process_value</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">plugins</span> <span class="o">=</span> <span class="p">[</span><span class="n">parent_plugin</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">alter_function</span> <span class="o">=</span> <span class="n">alter_function</span>
+
+<div class="viewcode-block" id="Alter.process_value"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.modifiers.Alter.process_value">[docs]</a>    <span class="k">def</span> <span class="nf">process_value</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Process the original plugin&#39;s value.</span>
+
+<span class="sd">        Gives the original plugin&#39;s value to ``alter_function``. Return</span>
+<span class="sd">        the processed value and store it in self.value.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          A string with the processed value.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">plugins</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">alter_function</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">alter_function</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">plugins</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span></div>
+
+<div class="viewcode-block" id="Alter.prepend"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.modifiers.Alter.prepend">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">prepend</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">parent_plugin</span><span class="p">:</span> <span class="n">Plugin</span><span class="p">,</span> <span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Alter&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Prepend a string to plugin&#39;s value.&quot;&quot;&quot;</span>
+        <span class="n">alter</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">parent_plugin</span><span class="o">=</span><span class="n">parent_plugin</span><span class="p">,</span>
+            <span class="n">alter_function</span><span class="o">=</span><span class="k">lambda</span> <span class="n">value</span><span class="p">:</span> <span class="n">string</span> <span class="o">+</span> <span class="n">value</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">alter</span></div>
+
+<div class="viewcode-block" id="Alter.append"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.modifiers.Alter.append">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">append</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">parent_plugin</span><span class="p">:</span> <span class="n">Plugin</span><span class="p">,</span> <span class="n">string</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Alter&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Append a string after the plugin&#39;s value&quot;&quot;&quot;</span>
+        <span class="n">alter</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">parent_plugin</span><span class="o">=</span><span class="n">parent_plugin</span><span class="p">,</span>
+            <span class="n">alter_function</span><span class="o">=</span><span class="k">lambda</span> <span class="n">value</span><span class="p">:</span> <span class="n">value</span> <span class="o">+</span> <span class="n">string</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">alter</span></div>
+
+<div class="viewcode-block" id="Alter.replace"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.modifiers.Alter.replace">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">replace</span><span class="p">(</span>
+        <span class="bp">cls</span><span class="p">,</span>
+        <span class="n">parent_plugin</span><span class="p">:</span> <span class="n">Plugin</span><span class="p">,</span>
+        <span class="n">old_value</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">new_value</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">],</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Alter&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Replace a substring from plugin&#39;s value with something else.&quot;&quot;&quot;</span>
+
+        <span class="k">def</span> <span class="nf">replace_old_value</span><span class="p">(</span>
+            <span class="n">value</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">old</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">new</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">]</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+            <span class="sd">&quot;&quot;&quot;Replaces an old substring with the new one.&quot;&quot;&quot;</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">new</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">):</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">new</span><span class="o">.</span><span class="n">value</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="kc">None</span>
+                <span class="k">return</span> <span class="n">value</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">old</span><span class="p">,</span> <span class="n">new</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">value</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">old</span><span class="p">,</span> <span class="n">new</span><span class="p">)</span>
+
+        <span class="n">alter</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">parent_plugin</span><span class="o">=</span><span class="n">parent_plugin</span><span class="p">,</span>
+            <span class="n">alter_function</span><span class="o">=</span><span class="n">partial</span><span class="p">(</span>
+                <span class="n">replace_old_value</span><span class="p">,</span> <span class="n">old</span><span class="o">=</span><span class="n">old_value</span><span class="p">,</span> <span class="n">new</span><span class="o">=</span><span class="n">new_value</span>
+            <span class="p">),</span>
+        <span class="p">)</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">new_value</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">):</span>
+            <span class="n">alter</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_value</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">alter</span></div></div>
+
+
+<div class="viewcode-block" id="Combine"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.modifiers.Combine">[docs]</a><span class="k">class</span> <span class="nc">Combine</span><span class="p">(</span><span class="n">Plugin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plugin to combine the values of other plugins.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">]):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize Combine object.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">args</span> <span class="o">=</span> <span class="n">args</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="nb">hash</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">args</span><span class="p">))</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">Plugin</span><span class="o">.</span><span class="n">DEPENDS_ON_OTHER_PLUGINS</span><span class="p">,</span>
+            <span class="n">function</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">concatenate_values</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">plugins</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Combine.concatenate_values"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.modifiers.Combine.concatenate_values">[docs]</a>    <span class="k">def</span> <span class="nf">concatenate_values</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Concatenate the provided values.</span>
+
+<span class="sd">        This function will concatenate the arguments values. Accepts</span>
+<span class="sd">        both strings and plugins.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">combined</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">args</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+                <span class="n">combined</span> <span class="o">+=</span> <span class="n">item</span>
+            <span class="k">elif</span> <span class="n">item</span><span class="o">.</span><span class="n">value</span><span class="p">:</span>
+                <span class="n">combined</span> <span class="o">+=</span> <span class="n">item</span><span class="o">.</span><span class="n">value</span>
+        <span class="k">return</span> <span class="n">combined</span></div></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OWASP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

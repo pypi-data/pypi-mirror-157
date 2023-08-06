@@ -1,0 +1,489 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>raider.attacks &mdash; raider 0.2.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx-needs/libs/html/datatables.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx-needs/common.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx-needs/layouts.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx-needs/styles.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx-needs/modern.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/datatables.min.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> raider
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.2.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user/install.html">Installing Raider</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/faq.html">Frequently asked questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/special_variables.html">Special variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/flows.html">Flows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/attacks.html">Fuzzing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/operations.html">Operations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/api.html">User API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/api.html#internal-api-reference">Internal API reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">raider</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>raider.attacks</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for raider.attacks</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (C) 2021 DigeeX</span>
+<span class="c1">#</span>
+<span class="c1"># This program is free software: you can redistribute it and/or modify</span>
+<span class="c1"># it under the terms of the GNU General Public License as published by</span>
+<span class="c1"># the Free Software Foundation, either version 3 of the License, or</span>
+<span class="c1"># (at your option) any later version.</span>
+<span class="c1">#</span>
+<span class="c1"># This program is distributed in the hope that it will be useful,</span>
+<span class="c1"># but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1"># MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="c1"># GNU General Public License for more details.</span>
+<span class="c1">#</span>
+<span class="c1"># You should have received a copy of the GNU General Public License</span>
+<span class="c1"># along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+
+<span class="sd">&quot;&quot;&quot;Attacks to be run on Flows.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partial</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
+
+<span class="kn">from</span> <span class="nn">raider.application</span> <span class="kn">import</span> <span class="n">Application</span>
+<span class="kn">from</span> <span class="nn">raider.flow</span> <span class="kn">import</span> <span class="n">Flow</span>
+<span class="kn">from</span> <span class="nn">raider.plugins.common</span> <span class="kn">import</span> <span class="n">Plugin</span>
+
+
+<div class="viewcode-block" id="Fuzz"><a class="viewcode-back" href="../../dev/attacks.html#raider.attacks.Fuzz">[docs]</a><span class="k">class</span> <span class="nc">Fuzz</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Fuzz an input.&quot;&quot;&quot;</span>
+
+    <span class="c1"># Fuzzing flags</span>
+    <span class="n">IS_AUTHENTICATION</span> <span class="o">=</span> <span class="mh">0x01</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">application</span><span class="p">:</span> <span class="n">Application</span><span class="p">,</span>
+        <span class="n">flow</span><span class="p">:</span> <span class="n">Flow</span><span class="p">,</span>
+        <span class="n">fuzzing_point</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">flags</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initialize the Fuzz object.</span>
+
+<span class="sd">        Given a :class:`Flow &lt;raider.flow.Flow&gt;`, a fuzzing point (in</span>
+<span class="sd">        case of Raider this should be a :class:`Plugin</span>
+<span class="sd">        &lt;raider.plugins.Plugin&gt;`), and a function, run the attack. The</span>
+<span class="sd">        function is used to generate the strings to be used for</span>
+<span class="sd">        fuzzing. The ``fuzzing_point`` attribute should contain the name</span>
+<span class="sd">        of the plugin.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          application:</span>
+<span class="sd">            An :class:`Application &lt;raider.application.Application&gt;`</span>
+<span class="sd">            object.</span>
+<span class="sd">          flow:</span>
+<span class="sd">            A :class:`Flow &lt;raider.flow.Flow&gt;` object which needs to be</span>
+<span class="sd">            fuzzed.</span>
+<span class="sd">          fuzzing_point:</span>
+<span class="sd">            The name given to the :class:`Plugin</span>
+<span class="sd">            &lt;raider.plugins.Plugin&gt;` which should be fuzzed.</span>
+<span class="sd">          fuzzing_generator:</span>
+<span class="sd">            A function which returns a Python generator, that will</span>
+<span class="sd">            create the strings that will be used for fuzzing. The</span>
+<span class="sd">            function should accept one argument. This will be the value</span>
+<span class="sd">            of the plugin before fuzzing. It can be considered when</span>
+<span class="sd">            building the fuzzing list, or ignored.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">application</span> <span class="o">=</span> <span class="n">application</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">flow</span> <span class="o">=</span> <span class="n">flow</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fuzzing_point</span> <span class="o">=</span> <span class="n">fuzzing_point</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">flags</span> <span class="o">=</span> <span class="n">flags</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">generator</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">processor</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">str</span><span class="p">],</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">value</span><span class="p">:</span> <span class="n">value</span>
+
+<div class="viewcode-block" id="Fuzz.run"><a class="viewcode-back" href="../../dev/attacks.html#raider.attacks.Fuzz.run">[docs]</a>    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Runs the fuzzer.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_authentication</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">attack_authentication</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">attack_function</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Fuzz.set_input_file"><a class="viewcode-back" href="../../dev/attacks.html#raider.attacks.Fuzz.set_input_file">[docs]</a>    <span class="k">def</span> <span class="nf">set_input_file</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">prepend</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">append</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Sets the input file for the fuzzer.</span>
+
+<span class="sd">        Uses the input file to generate fuzzing strings, and sets the</span>
+<span class="sd">        generator function to return those values.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">def</span> <span class="nf">fuzzing_generator</span><span class="p">(</span>
+            <span class="n">value</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">prepend</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span> <span class="n">append</span><span class="p">:</span> <span class="nb">bool</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+            <span class="sd">&quot;&quot;&quot;Generate a list of strings to use for fuzzing.</span>
+
+<span class="sd">            Args:</span>
+<span class="sd">              value:</span>
+<span class="sd">                The original value of the field.</span>
+<span class="sd">              filename:</span>
+<span class="sd">                The filename with the inputs.</span>
+<span class="sd">              prepend:</span>
+<span class="sd">                A boolean flag meaning the original value will be</span>
+<span class="sd">                prepended with the fuzzing string.</span>
+<span class="sd">              append:</span>
+<span class="sd">                A boolean flag meaning the original value will be</span>
+<span class="sd">                appended with the fuzzing string.</span>
+
+<span class="sd">            Returns:</span>
+<span class="sd">              A list of final strings to be fuzzed.</span>
+<span class="sd">            &quot;&quot;&quot;</span>
+            <span class="n">fuzzstrings</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="k">as</span> <span class="n">contents</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">contents</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+                    <span class="k">if</span> <span class="n">prepend</span><span class="p">:</span>
+                        <span class="n">fuzzstrings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">+</span> <span class="n">value</span><span class="p">)</span>
+                    <span class="k">elif</span> <span class="n">append</span><span class="p">:</span>
+                        <span class="n">fuzzstrings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value</span> <span class="o">+</span> <span class="n">item</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">fuzzstrings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+
+            <span class="k">return</span> <span class="n">fuzzstrings</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">generator</span> <span class="o">=</span> <span class="n">partial</span><span class="p">(</span>
+            <span class="n">fuzzing_generator</span><span class="p">,</span>
+            <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span>
+            <span class="n">prepend</span><span class="o">=</span><span class="n">prepend</span><span class="p">,</span>
+            <span class="n">append</span><span class="o">=</span><span class="n">append</span><span class="p">,</span>
+        <span class="p">)</span></div>
+
+<div class="viewcode-block" id="Fuzz.get_fuzzing_input"><a class="viewcode-back" href="../../dev/attacks.html#raider.attacks.Fuzz.get_fuzzing_input">[docs]</a>    <span class="k">def</span> <span class="nf">get_fuzzing_input</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">flow</span><span class="p">:</span> <span class="n">Flow</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Plugin</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns the Plugin associated with the fuzzing input.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          flow:</span>
+<span class="sd">            The flow object with the plugin to be returned.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          The plugin object to be fuzzed.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">flow_inputs</span> <span class="o">=</span> <span class="n">flow</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">list_inputs</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">flow_inputs</span><span class="p">:</span>
+            <span class="n">fuzzing_plugin</span> <span class="o">=</span> <span class="n">flow_inputs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fuzzing_point</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">fuzzing_plugin</span><span class="p">:</span>
+                <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span>
+                    <span class="s2">&quot;Fuzzing point </span><span class="si">%s</span><span class="s2"> not found&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">fuzzing_point</span>
+                <span class="p">)</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span><span class="s2">&quot;Flow </span><span class="si">%s</span><span class="s2"> has no inputs&quot;</span><span class="p">,</span> <span class="n">flow</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="n">fuzzing_plugin</span></div>
+
+<div class="viewcode-block" id="Fuzz.attack_function"><a class="viewcode-back" href="../../dev/attacks.html#raider.attacks.Fuzz.attack_function">[docs]</a>    <span class="k">def</span> <span class="nf">attack_function</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Attacks a flow defined in ``_functions``.</span>
+
+<span class="sd">        Fuzz blindly the Flow object. It doesn&#39;t take into account the</span>
+<span class="sd">        authentication process, so this function is useful for fuzzing</span>
+<span class="sd">        stuff as an already authenticated user.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          user:</span>
+<span class="sd">            A :class:`User &lt;raider.user.User&gt;` object with the user</span>
+<span class="sd">            specific information.</span>
+<span class="sd">          config:</span>
+<span class="sd">            A :class:`Config &lt;raider.config.Config&gt;` object with global</span>
+<span class="sd">            **Raider** configuration.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">user</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">active_user</span>
+        <span class="n">config</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">config</span>
+        <span class="n">flow</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">flow</span><span class="p">)</span>
+        <span class="n">fuzzing_plugin</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_fuzzing_input</span><span class="p">(</span><span class="n">flow</span><span class="p">)</span>
+        <span class="n">flow</span><span class="o">.</span><span class="n">get_plugin_values</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+
+        <span class="c1"># Reset plugin flags because it doesn&#39;t need userdata nor</span>
+        <span class="c1"># the HTTP response anymore when fuzzing</span>
+        <span class="n">fuzzing_plugin</span><span class="o">.</span><span class="n">flags</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">generator</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span>
+                <span class="s2">&quot;Cannot run fuzzing without configuring the generator.&quot;</span>
+            <span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">generator</span><span class="p">(</span><span class="n">fuzzing_plugin</span><span class="o">.</span><span class="n">value</span><span class="p">):</span>
+            <span class="n">fuzzing_plugin</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">processor</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+            <span class="n">fuzzing_plugin</span><span class="o">.</span><span class="n">function</span> <span class="o">=</span> <span class="n">fuzzing_plugin</span><span class="o">.</span><span class="n">return_value</span>
+            <span class="n">flow</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">config</span><span class="p">)</span>
+            <span class="n">flow</span><span class="o">.</span><span class="n">run_operations</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Fuzz.attack_authentication"><a class="viewcode-back" href="../../dev/attacks.html#raider.attacks.Fuzz.attack_authentication">[docs]</a>    <span class="k">def</span> <span class="nf">attack_authentication</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Attacks a Flow defined in ``_authentication``.</span>
+
+<span class="sd">        Unlike ``attack_function``, this will take into account the</span>
+<span class="sd">        finite state machine defined in the hyfiles. This should be used</span>
+<span class="sd">        when the authentication process can be altered by the fuzzing,</span>
+<span class="sd">        for example if some token needs to be extracted again from a</span>
+<span class="sd">        previous authentication step for fuzzing to work.</span>
+
+<span class="sd">        It will first follow the authentication process until reaching</span>
+<span class="sd">        the desired state, then it will try fuzzing it, and if a</span>
+<span class="sd">        :class:`NextStage &lt;raider.operations.NextStage&gt;` operation is</span>
+<span class="sd">        encountered, it will follow the instruction and move to this</span>
+<span class="sd">        stage, then continue fuzzing.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">authentication</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">authentication</span>
+        <span class="n">user</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">active_user</span>
+        <span class="n">config</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">config</span>
+
+        <span class="k">while</span> <span class="n">authentication</span><span class="o">.</span><span class="n">current_stage_name</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">flow</span><span class="o">.</span><span class="n">name</span><span class="p">:</span>
+            <span class="n">authentication</span><span class="o">.</span><span class="n">run_current_stage</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">config</span><span class="p">)</span>
+
+        <span class="n">flow</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">flow</span><span class="p">)</span>
+        <span class="n">fuzzing_plugin</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_fuzzing_input</span><span class="p">(</span><span class="n">flow</span><span class="p">)</span>
+
+        <span class="c1"># Reset plugin flags because it doesn&#39;t need userdata nor</span>
+        <span class="c1"># the HTTP response anymore when fuzzing</span>
+        <span class="n">fuzzing_plugin</span><span class="o">.</span><span class="n">flags</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">generator</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span>
+                <span class="s2">&quot;Cannot run fuzzing without configuring the generator.&quot;</span>
+            <span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+        <span class="n">elements</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">generator</span><span class="p">(</span><span class="n">fuzzing_plugin</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">elements</span><span class="p">:</span>
+            <span class="n">fuzzing_plugin</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">processor</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+            <span class="n">fuzzing_plugin</span><span class="o">.</span><span class="n">function</span> <span class="o">=</span> <span class="n">fuzzing_plugin</span><span class="o">.</span><span class="n">return_value</span>
+            <span class="n">flow</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">config</span><span class="p">)</span>
+            <span class="n">next_stage</span> <span class="o">=</span> <span class="n">flow</span><span class="o">.</span><span class="n">run_operations</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">next_stage</span><span class="p">:</span>
+                <span class="k">while</span> <span class="n">next_stage</span> <span class="o">!=</span> <span class="n">flow</span><span class="o">.</span><span class="n">name</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">next_stage</span><span class="p">:</span>
+                        <span class="n">next_stage</span> <span class="o">=</span> <span class="n">authentication</span><span class="o">.</span><span class="n">run_stage</span><span class="p">(</span>
+                            <span class="n">next_stage</span><span class="p">,</span> <span class="n">user</span><span class="p">,</span> <span class="n">config</span>
+                        <span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span>
+                            <span class="p">(</span>
+                                <span class="s2">&quot;Cannot reach the </span><span class="si">%s</span><span class="s2"> stage. &quot;</span><span class="p">,</span>
+                                <span class="s2">&quot;Make sure you defined NextStage correctly.&quot;</span><span class="p">,</span>
+                            <span class="p">),</span>
+                            <span class="n">flow</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+                        <span class="p">)</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_authentication</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns True if the IS_AUTHENTICATION flag is set.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">flags</span> <span class="o">&amp;</span> <span class="bp">self</span><span class="o">.</span><span class="n">IS_AUTHENTICATION</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, DigeeX.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

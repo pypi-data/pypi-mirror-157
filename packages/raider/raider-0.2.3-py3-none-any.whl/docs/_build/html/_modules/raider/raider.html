@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>raider.raider &mdash; raider 0.2.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/assets/jsonview.bundle.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/libs/html/datatables.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/common.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/layouts.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/styles.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/modern.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/assets/jsonview.bundle.js"></script>
+        <script src="../../_static/assets/jsonview_loader.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/datatables.min.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> raider
+          </a>
+              <div class="version">
+                0.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user/install.html">Installing Raider</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/faq.html">Frequently asked questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/special_variables.html">Special variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/flows.html">Flows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/attacks.html">Fuzzing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/operations.html">Operations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/api.html">User API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/api.html#internal-api-reference">Internal API reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">raider</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>raider.raider</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for raider.raider</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (C) 2022 DigeeX</span>
+<span class="c1">#</span>
+<span class="c1"># This program is free software: you can redistribute it and/or modify</span>
+<span class="c1"># it under the terms of the GNU General Public License as published by</span>
+<span class="c1"># the Free Software Foundation, either version 3 of the License, or</span>
+<span class="c1"># (at your option) any later version.</span>
+<span class="c1">#</span>
+<span class="c1"># This program is distributed in the hope that it will be useful,</span>
+<span class="c1"># but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1"># MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="c1"># GNU General Public License for more details.</span>
+<span class="c1">#</span>
+<span class="c1"># You should have received a copy of the GNU General Public License</span>
+<span class="c1"># along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+
+<span class="sd">&quot;&quot;&quot;Main object used to perform common actions.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
+
+<span class="kn">from</span> <span class="nn">raider.application</span> <span class="kn">import</span> <span class="n">Application</span>
+<span class="kn">from</span> <span class="nn">raider.authentication</span> <span class="kn">import</span> <span class="n">Authentication</span>
+<span class="kn">from</span> <span class="nn">raider.config</span> <span class="kn">import</span> <span class="n">Config</span>
+<span class="kn">from</span> <span class="nn">raider.fuzzing</span> <span class="kn">import</span> <span class="n">Fuzz</span>
+<span class="kn">from</span> <span class="nn">raider.plugins.common</span> <span class="kn">import</span> <span class="n">Plugin</span>
+<span class="kn">from</span> <span class="nn">raider.user</span> <span class="kn">import</span> <span class="n">User</span>
+
+
+<div class="viewcode-block" id="Raider"><a class="viewcode-back" href="../../dev/api.html#raider.Raider">[docs]</a><span class="k">class</span> <span class="nc">Raider</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Main class used as the point of entry.</span>
+
+<span class="sd">    The Raider class should be used to access everything else inside</span>
+<span class="sd">    Raider. For now it&#39;s still not doing much, but for the future this</span>
+<span class="sd">    is where all of the features available to the end user should be.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      application:</span>
+<span class="sd">        An :class:`Application &lt;raider.application.Application&gt;` object</span>
+<span class="sd">        with the currently active project.</span>
+<span class="sd">      config:</span>
+<span class="sd">        A Config object containing all of the necessary settings.</span>
+<span class="sd">      user:</span>
+<span class="sd">        A User object containing the active user of the active project.</span>
+<span class="sd">      functions:</span>
+<span class="sd">        A Functions object containing the defined functions of the</span>
+<span class="sd">        active project.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Raider flags</span>
+    <span class="c1"># Session was loaded and the information is already in userdata</span>
+    <span class="n">SESSION_LOADED</span> <span class="o">=</span> <span class="mh">0x01</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">project</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">flags</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Raider object.</span>
+
+<span class="sd">        Initializes the main entry point for Raider. If the name of the</span>
+<span class="sd">        project is supplied, this application will be used, otherwise</span>
+<span class="sd">        the last used application will be chosen.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          project:</span>
+<span class="sd">            A string with the name of the project.</span>
+<span class="sd">          flags:</span>
+<span class="sd">            An integer with the flags. Only SESSION_LOADED is supported</span>
+<span class="sd">            now. It indicates the authentication was not performed from</span>
+<span class="sd">            the start, but loaded from a previously saved session file,</span>
+<span class="sd">            which means the plugins should get their value from userdata.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">application</span> <span class="o">=</span> <span class="n">Application</span><span class="p">(</span><span class="n">project</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">application</span><span class="p">,</span> <span class="s2">&quot;functions&quot;</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">functions</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">functions</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">flags</span> <span class="o">=</span> <span class="n">flags</span>
+
+<div class="viewcode-block" id="Raider.authenticate"><a class="viewcode-back" href="../../dev/api.html#raider.Raider.authenticate">[docs]</a>    <span class="k">def</span> <span class="nf">authenticate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Authenticates in the chosen application.</span>
+
+<span class="sd">        Runs the authentication process from start to end on the</span>
+<span class="sd">        selected application with the specified user.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          username:</span>
+<span class="sd">            A string with the username to authenticate. If not</span>
+<span class="sd">            specified, the last used user will be selected.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="n">username</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Raider.load_session"><a class="viewcode-back" href="../../dev/api.html#raider.Raider.load_session">[docs]</a>    <span class="k">def</span> <span class="nf">load_session</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Loads saved session from ``_userdata.hy``.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">load_session_file</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">flags</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">flags</span> <span class="o">|</span> <span class="bp">self</span><span class="o">.</span><span class="n">SESSION_LOADED</span></div>
+
+<div class="viewcode-block" id="Raider.save_session"><a class="viewcode-back" href="../../dev/api.html#raider.Raider.save_session">[docs]</a>    <span class="k">def</span> <span class="nf">save_session</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Saves session to ``_userdata.hy``.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">write_session_file</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Raider.run_function"><a class="viewcode-back" href="../../dev/api.html#raider.Raider.run_function">[docs]</a>    <span class="k">def</span> <span class="nf">run_function</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">function</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Runs a function in the chosen application.</span>
+
+<span class="sd">        With the selected application and user run the function from the</span>
+<span class="sd">        argument.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          function:</span>
+<span class="sd">            A string with the function identifier as defined in</span>
+<span class="sd">            &quot;_functions&quot; variable.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;functions&quot;</span><span class="p">):</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span><span class="s2">&quot;No functions defined. Cannot continue.&quot;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">session_loaded</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">fix_function_plugins</span><span class="p">(</span><span class="n">function</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">functions</span><span class="o">.</span><span class="n">run_flow</span><span class="p">(</span><span class="n">function</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">user</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Raider.run_chain"><a class="viewcode-back" href="../../dev/api.html#raider.Raider.run_chain">[docs]</a>    <span class="k">def</span> <span class="nf">run_chain</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">function</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Runs a function, and follows the NextStage Operations.</span>
+
+<span class="sd">        With the selected application and user run the function from the</span>
+<span class="sd">        argument.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          function:</span>
+<span class="sd">            A string with the function identifier as defined in</span>
+<span class="sd">            &quot;_functions&quot; variable.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;functions&quot;</span><span class="p">):</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span><span class="s2">&quot;No functions defined. Cannot continue.&quot;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">session_loaded</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">fix_function_plugins</span><span class="p">(</span><span class="n">function</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">functions</span><span class="o">.</span><span class="n">run_chain</span><span class="p">(</span><span class="n">function</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">user</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Raider.fuzz"><a class="viewcode-back" href="../../dev/api.html#raider.Raider.fuzz">[docs]</a>    <span class="k">def</span> <span class="nf">fuzz</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">flow_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">fuzzing_point</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Fuzz</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Fuzz a function with an authenticated user.</span>
+
+<span class="sd">        Given a function name, a starting point for fuzzing, and a</span>
+<span class="sd">        function to generate the fuzzing strings, run the attack.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          flow_name:</span>
+<span class="sd">            The name of the :class:`Flow &lt;raider.flow.Flow&gt;` containing</span>
+<span class="sd">            the :class:`Request &lt;raider.request.Request&gt;` which will be</span>
+<span class="sd">            fuzzed.</span>
+<span class="sd">          fuzzing_point:</span>
+<span class="sd">            The name given to the :class:`Plugin</span>
+<span class="sd">            &lt;raider.plugins.Plugin&gt;` inside :class:`Request</span>
+<span class="sd">            &lt;raider.request.Request&gt;` which will be fuzzed.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">is_authentication</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="n">flow</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">functions</span><span class="o">.</span><span class="n">get_function_by_name</span><span class="p">(</span><span class="n">flow_name</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">flow</span><span class="p">:</span>
+            <span class="n">flow</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">authentication</span><span class="o">.</span><span class="n">get_stage_by_name</span><span class="p">(</span><span class="n">flow_name</span><span class="p">)</span>
+            <span class="n">is_authentication</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">if</span> <span class="n">flow</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">session_loaded</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">fix_function_plugins</span><span class="p">(</span><span class="n">flow_name</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">is_authentication</span><span class="p">:</span>
+                <span class="n">fuzzer</span> <span class="o">=</span> <span class="n">Fuzz</span><span class="p">(</span>
+                    <span class="n">application</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">application</span><span class="p">,</span>
+                    <span class="n">flow</span><span class="o">=</span><span class="n">flow</span><span class="p">,</span>
+                    <span class="n">fuzzing_point</span><span class="o">=</span><span class="n">fuzzing_point</span><span class="p">,</span>
+                    <span class="n">flags</span><span class="o">=</span><span class="n">Fuzz</span><span class="o">.</span><span class="n">IS_AUTHENTICATION</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">fuzzer</span> <span class="o">=</span> <span class="n">Fuzz</span><span class="p">(</span>
+                    <span class="n">application</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">application</span><span class="p">,</span>
+                    <span class="n">flow</span><span class="o">=</span><span class="n">flow</span><span class="p">,</span>
+                    <span class="n">fuzzing_point</span><span class="o">=</span><span class="n">fuzzing_point</span><span class="p">,</span>
+                    <span class="n">flags</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                <span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span>
+                <span class="s2">&quot;Function </span><span class="si">%s</span><span class="s2"> not defined, cannot fuzz!&quot;</span><span class="p">,</span> <span class="n">flow_name</span>
+            <span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="n">fuzzer</span></div>
+
+<div class="viewcode-block" id="Raider.fix_function_plugins"><a class="viewcode-back" href="../../dev/api.html#raider.Raider.fix_function_plugins">[docs]</a>    <span class="k">def</span> <span class="nf">fix_function_plugins</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">function</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Given a function name, prepare its Flow to be fuzzed.</span>
+
+<span class="sd">        For each plugin acting as an input for the defined function,</span>
+<span class="sd">        change its flags and function so it uses the previously</span>
+<span class="sd">        extracted data instead of extracting it again.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">flow</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">functions</span><span class="o">.</span><span class="n">get_function_by_name</span><span class="p">(</span><span class="n">function</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">flow</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span>
+                <span class="s2">&quot;Function </span><span class="si">%s</span><span class="s2"> not found. Cannot continue.&quot;</span><span class="p">,</span> <span class="n">function</span>
+            <span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+        <span class="n">inputs</span> <span class="o">=</span> <span class="n">flow</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">list_inputs</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">inputs</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">plugin</span> <span class="ow">in</span> <span class="n">inputs</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                <span class="c1"># Reset plugin flags, and get the values from userdata</span>
+                <span class="n">plugin</span><span class="o">.</span><span class="n">flags</span> <span class="o">=</span> <span class="n">Plugin</span><span class="o">.</span><span class="n">NEEDS_USERDATA</span>
+                <span class="n">plugin</span><span class="o">.</span><span class="n">function</span> <span class="o">=</span> <span class="n">plugin</span><span class="o">.</span><span class="n">extract_value_from_userdata</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">authentication</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Authentication</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns the Authentication object&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">authentication</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">config</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Config</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns the Configuration object&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">config</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">user</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">User</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns the User object&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">active_user</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">session_loaded</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns True if the SESSION_LOADED flag is set.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">flags</span> <span class="o">&amp;</span> <span class="bp">self</span><span class="o">.</span><span class="n">SESSION_LOADED</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OWASP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

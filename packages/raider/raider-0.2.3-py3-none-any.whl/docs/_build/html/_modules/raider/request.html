@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>raider.request &mdash; raider 0.2.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/assets/jsonview.bundle.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/libs/html/datatables.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/common.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/layouts.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/styles.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/modern.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/assets/jsonview.bundle.js"></script>
+        <script src="../../_static/assets/jsonview_loader.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/datatables.min.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> raider
+          </a>
+              <div class="version">
+                0.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user/install.html">Installing Raider</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/faq.html">Frequently asked questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/special_variables.html">Special variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/flows.html">Flows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/attacks.html">Fuzzing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/operations.html">Operations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/api.html">User API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/api.html#internal-api-reference">Internal API reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">raider</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>raider.request</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for raider.request</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (C) 2022 DigeeX</span>
+<span class="c1">#</span>
+<span class="c1"># This program is free software: you can redistribute it and/or modify</span>
+<span class="c1"># it under the terms of the GNU General Public License as published by</span>
+<span class="c1"># the Free Software Foundation, either version 3 of the License, or</span>
+<span class="c1"># (at your option) any later version.</span>
+<span class="c1">#</span>
+<span class="c1"># This program is distributed in the hope that it will be useful,</span>
+<span class="c1"># but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1"># MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="c1"># GNU General Public License for more details.</span>
+<span class="c1">#</span>
+<span class="c1"># You should have received a copy of the GNU General Public License</span>
+<span class="c1"># along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+
+
+<span class="sd">&quot;&quot;&quot;Request class used to handle HTTP.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">urllib</span>
+<span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Union</span>
+<span class="kn">from</span> <span class="nn">urllib</span> <span class="kn">import</span> <span class="n">parse</span>
+
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">urllib3.exceptions</span> <span class="kn">import</span> <span class="n">InsecureRequestWarning</span>
+
+<span class="kn">from</span> <span class="nn">raider.config</span> <span class="kn">import</span> <span class="n">Config</span>
+<span class="kn">from</span> <span class="nn">raider.plugins.basic</span> <span class="kn">import</span> <span class="n">Cookie</span><span class="p">,</span> <span class="n">File</span><span class="p">,</span> <span class="n">Header</span>
+<span class="kn">from</span> <span class="nn">raider.plugins.common</span> <span class="kn">import</span> <span class="n">Plugin</span>
+<span class="kn">from</span> <span class="nn">raider.structures</span> <span class="kn">import</span> <span class="n">CookieStore</span><span class="p">,</span> <span class="n">DataStore</span><span class="p">,</span> <span class="n">HeaderStore</span>
+<span class="kn">from</span> <span class="nn">raider.user</span> <span class="kn">import</span> <span class="n">User</span>
+
+
+<div class="viewcode-block" id="PostBody"><a class="viewcode-back" href="../../dev/api.html#raider.request.PostBody">[docs]</a><span class="k">class</span> <span class="nc">PostBody</span><span class="p">(</span><span class="n">DataStore</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Holds the POST body data.</span>
+
+<span class="sd">    This class was created to enable the user to send the POST body in a</span>
+<span class="sd">    different format than the default url encoded. For now only JSON</span>
+<span class="sd">    encoding has been implemented.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      encoding:</span>
+<span class="sd">        A string with the desired encoding. For now only &quot;json&quot; is</span>
+<span class="sd">        supported. If the encoding is skipped, the request will be url</span>
+<span class="sd">        encoded, and the Content-Type will be</span>
+<span class="sd">        ``application/x-www-form-urlencoded``.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">encoding</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the PostBody object.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          data:</span>
+<span class="sd">            A dictionary with the data to be sent.</span>
+<span class="sd">          encoding:</span>
+<span class="sd">            A string with the encoding. Only &quot;json&quot; is supported for</span>
+<span class="sd">            now.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">encoding</span> <span class="o">=</span> <span class="n">encoding</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">data</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="process_cookies"><a class="viewcode-back" href="../../dev/api.html#raider.request.process_cookies">[docs]</a><span class="k">def</span> <span class="nf">process_cookies</span><span class="p">(</span>
+    <span class="n">raw_cookies</span><span class="p">:</span> <span class="n">CookieStore</span><span class="p">,</span> <span class="n">userdata</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Process the raw cookies and replace with the real data.&quot;&quot;&quot;</span>
+    <span class="n">cookies</span> <span class="o">=</span> <span class="n">raw_cookies</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">raw_cookies</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">raw_cookies</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">name</span>
+        <span class="k">if</span> <span class="n">raw_cookies</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">name_not_known_in_advance</span><span class="p">:</span>
+            <span class="n">cookies</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">raw_cookies</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="n">userdata</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">value</span><span class="p">:</span>
+            <span class="n">cookies</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">name</span><span class="p">:</span> <span class="n">value</span><span class="p">})</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">cookies</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">cookies</span></div>
+
+
+<div class="viewcode-block" id="process_headers"><a class="viewcode-back" href="../../dev/api.html#raider.request.process_headers">[docs]</a><span class="k">def</span> <span class="nf">process_headers</span><span class="p">(</span>
+    <span class="n">raw_headers</span><span class="p">:</span> <span class="n">HeaderStore</span><span class="p">,</span> <span class="n">userdata</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span> <span class="n">config</span><span class="p">:</span> <span class="n">Config</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Process the raw headers and replace with the real data.&quot;&quot;&quot;</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="n">raw_headers</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">headers</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;user-agent&quot;</span><span class="p">:</span> <span class="n">config</span><span class="o">.</span><span class="n">user_agent</span><span class="p">})</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">raw_headers</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">raw_headers</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">name</span>
+        <span class="k">if</span> <span class="n">raw_headers</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">name_not_known_in_advance</span><span class="p">:</span>
+            <span class="n">headers</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">raw_headers</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="n">userdata</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">value</span><span class="p">:</span>
+            <span class="n">headers</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">name</span><span class="p">:</span> <span class="n">value</span><span class="p">})</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">headers</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">headers</span></div>
+
+
+<div class="viewcode-block" id="process_data"><a class="viewcode-back" href="../../dev/api.html#raider.request.process_data">[docs]</a><span class="k">def</span> <span class="nf">process_data</span><span class="p">(</span>
+    <span class="n">raw_data</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">PostBody</span><span class="p">,</span> <span class="n">DataStore</span><span class="p">],</span> <span class="n">userdata</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Process the raw HTTP data and replace with the real data.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">traverse_dict</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">userdata</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Traverse a dictionary recursively and replace plugins</span>
+<span class="sd">        with real data</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">):</span>
+                <span class="n">new_value</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="n">userdata</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">new_value</span><span class="p">:</span>
+                    <span class="n">data</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">key</span><span class="p">:</span> <span class="n">new_value</span><span class="p">})</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">data</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">traverse_dict</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">userdata</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">):</span>
+                <span class="n">new_value</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+                <span class="n">new_key</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="n">userdata</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">new_key</span><span class="p">:</span>
+                    <span class="n">data</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">new_key</span><span class="p">:</span> <span class="n">new_value</span><span class="p">})</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">data</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+
+    <span class="n">httpdata</span> <span class="o">=</span> <span class="n">raw_data</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">traverse_dict</span><span class="p">(</span><span class="n">httpdata</span><span class="p">,</span> <span class="n">userdata</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">httpdata</span></div>
+
+
+<span class="c1"># Request needs many arguments</span>
+<span class="c1"># pylint: disable=too-many-arguments</span>
+<div class="viewcode-block" id="Request"><a class="viewcode-back" href="../../dev/api.html#raider.request.Request">[docs]</a><span class="k">class</span> <span class="nc">Request</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Class holding the elements of the HTTP request.</span>
+
+<span class="sd">    When a Flow object is created, it defines a Request object with the</span>
+<span class="sd">    information necessary to create a HTTP request. The &quot;method&quot;</span>
+<span class="sd">    attribute is required. One and only one of &quot;url&quot; and &quot;path&quot; is</span>
+<span class="sd">    required too. Everything else is optional.</span>
+
+<span class="sd">    The Request object can contain Plugins which will be evaluated and</span>
+<span class="sd">    its value replaced in the HTTP request.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      method:</span>
+<span class="sd">        A string with the HTTP request method. Only GET and POST is</span>
+<span class="sd">        supported for now.</span>
+<span class="sd">      url:</span>
+<span class="sd">        A string with the URL of the HTTP request. Cannot be used if</span>
+<span class="sd">        &quot;path&quot; is used.</span>
+<span class="sd">      path:</span>
+<span class="sd">        A string with the path of the HTTP request. The base URL is</span>
+<span class="sd">        defined in the &quot;_base_url&quot; variable from the hy configuration</span>
+<span class="sd">        files of the project. If &quot;path&quot; is defined &quot;url&quot; cannot be used.</span>
+<span class="sd">      cookies:</span>
+<span class="sd">        A list of Cookie objects to be sent with the HTTP request.</span>
+<span class="sd">      headers:</span>
+<span class="sd">        A list of Header objects to be sent with the HTTP request.</span>
+<span class="sd">      data:</span>
+<span class="sd">        A dictionary of Any objects. Can contain strings and</span>
+<span class="sd">        Plugins. When a key or a value of the dictionary is a Plugin, it</span>
+<span class="sd">        will be evaluated and its value will be used in the HTTP</span>
+<span class="sd">        request. If the &quot;method&quot; is GET those values will be put inside</span>
+<span class="sd">        the URL parameters, and if the &quot;method&quot; is POST they will be</span>
+<span class="sd">        inside the POST request body.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">method</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">url</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">path</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">cookies</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Cookie</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">headers</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Header</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">data</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">PostBody</span><span class="p">,</span> <span class="n">File</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Request object.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          method:</span>
+<span class="sd">            A string with the HTTP method. Can be either &quot;GET&quot; or &quot;POST&quot;.</span>
+<span class="sd">          url:</span>
+<span class="sd">            A string with the full URL of the Request. Cannot be defined</span>
+<span class="sd">            together with &quot;path&quot; argument.</span>
+<span class="sd">          path:</span>
+<span class="sd">            A string with the partial path pointing to the endpoint the</span>
+<span class="sd">            Request needs to be sent. This value will be prepended by</span>
+<span class="sd">            the &quot;_base_url&quot; variable set up in hy configuration files to</span>
+<span class="sd">            create the full URL. If &quot;path&quot; is defined, the &quot;url&quot;</span>
+<span class="sd">            argument cannot be defined.</span>
+<span class="sd">          cookies:</span>
+<span class="sd">            A list of Cookie Plugins. Its values will be calculated and</span>
+<span class="sd">            inserted into the HTTP Request on runtime.</span>
+<span class="sd">          headers:</span>
+<span class="sd">            A list of Header Plugins. Its values will be calculated and</span>
+<span class="sd">            inserted into the HTTP Request on runtime.</span>
+<span class="sd">          data:</span>
+<span class="sd">            A dictionary with values to be inserted into the HTTP GET</span>
+<span class="sd">            parameters or POST body. Both keys and values of the</span>
+<span class="sd">            dictionary can be Plugins. Those values will be inserted</span>
+<span class="sd">            into the Request on runtime.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">method</span> <span class="o">=</span> <span class="n">method</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">method</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span><span class="s2">&quot;Required :method parameter, can&#39;t run without&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">bool</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="o">^</span> <span class="nb">bool</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span>
+                <span class="s2">&quot;One and only one of :path and :url parameters required&quot;</span>
+            <span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="o">=</span> <span class="n">url</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">path</span> <span class="o">=</span> <span class="n">path</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">headers</span> <span class="o">=</span> <span class="n">HeaderStore</span><span class="p">(</span><span class="n">headers</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cookies</span> <span class="o">=</span> <span class="n">CookieStore</span><span class="p">(</span><span class="n">cookies</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">PostBody</span><span class="p">,</span> <span class="n">DataStore</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">PostBody</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">File</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">DataStore</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Request.list_inputs"><a class="viewcode-back" href="../../dev/api.html#raider.request.Request.list_inputs">[docs]</a>    <span class="k">def</span> <span class="nf">list_inputs</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">]]:</span>
+        <span class="sd">&quot;&quot;&quot;Returns a list of request&#39;s inputs.&quot;&quot;&quot;</span>
+
+        <span class="k">def</span> <span class="nf">get_children_plugins</span><span class="p">(</span><span class="n">plugin</span><span class="p">:</span> <span class="n">Plugin</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">]:</span>
+            <span class="sd">&quot;&quot;&quot;Returns the children plugins.</span>
+
+<span class="sd">            If a plugin has the flag DEPENDS_ON_OTHER_PLUGINS set,</span>
+<span class="sd">            return a dictionary with each plugin associated to its name.</span>
+
+<span class="sd">            &quot;&quot;&quot;</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="k">if</span> <span class="n">plugin</span><span class="o">.</span><span class="n">depends_on_other_plugins</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">plugin</span><span class="o">.</span><span class="n">plugins</span><span class="p">:</span>
+                    <span class="n">output</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">item</span><span class="o">.</span><span class="n">name</span><span class="p">:</span> <span class="n">item</span><span class="p">})</span>
+            <span class="k">return</span> <span class="n">output</span>
+
+        <span class="n">inputs</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">):</span>
+            <span class="n">inputs</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="o">.</span><span class="n">name</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">})</span>
+            <span class="n">inputs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">get_children_plugins</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">))</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">):</span>
+            <span class="n">inputs</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">name</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">})</span>
+            <span class="n">inputs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">get_children_plugins</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">))</span>
+
+        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">cookies</span><span class="p">:</span>
+            <span class="n">cookie</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cookies</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+            <span class="n">inputs</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">name</span><span class="p">:</span> <span class="n">cookie</span><span class="p">})</span>
+            <span class="n">inputs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">get_children_plugins</span><span class="p">(</span><span class="n">cookie</span><span class="p">))</span>
+
+        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">headers</span><span class="p">:</span>
+            <span class="n">header</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+            <span class="n">inputs</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">name</span><span class="p">:</span> <span class="n">header</span><span class="p">})</span>
+            <span class="n">inputs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">get_children_plugins</span><span class="p">(</span><span class="n">header</span><span class="p">))</span>
+
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">):</span>
+                <span class="n">inputs</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">key</span><span class="o">.</span><span class="n">name</span><span class="p">:</span> <span class="n">key</span><span class="p">})</span>
+                <span class="n">inputs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">get_children_plugins</span><span class="p">(</span><span class="n">key</span><span class="p">))</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">):</span>
+                <span class="n">inputs</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">value</span><span class="o">.</span><span class="n">name</span><span class="p">:</span> <span class="n">value</span><span class="p">})</span>
+                <span class="n">inputs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">get_children_plugins</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+
+        <span class="k">return</span> <span class="n">inputs</span></div>
+
+<div class="viewcode-block" id="Request.process_inputs"><a class="viewcode-back" href="../../dev/api.html#raider.request.Request.process_inputs">[docs]</a>    <span class="k">def</span> <span class="nf">process_inputs</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">user</span><span class="p">:</span> <span class="n">User</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">Config</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]]:</span>
+        <span class="sd">&quot;&quot;&quot;Process the Request inputs.</span>
+
+<span class="sd">        Uses the supplied user data to replace the Plugins in the inputs</span>
+<span class="sd">        with their actual value. Returns those values.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          user:</span>
+<span class="sd">            A User object containing the user specific data to be used</span>
+<span class="sd">            when processing the inputs.</span>
+<span class="sd">          config:</span>
+<span class="sd">            A Config object with the global Raider configuration.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          A dictionary with the cookies, headers, and other data created</span>
+<span class="sd">          from processing the inputs.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">userdata</span> <span class="o">=</span> <span class="n">user</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+            <span class="n">base_url</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">project_config</span><span class="p">[</span><span class="s2">&quot;_base_url&quot;</span><span class="p">]</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">):</span>
+                <span class="n">path</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="n">userdata</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">path</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="o">=</span> <span class="n">parse</span><span class="o">.</span><span class="n">urljoin</span><span class="p">(</span><span class="n">base_url</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="n">userdata</span><span class="p">)</span>
+
+        <span class="n">cookies</span> <span class="o">=</span> <span class="n">process_cookies</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cookies</span><span class="p">,</span> <span class="n">userdata</span><span class="p">)</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="n">process_headers</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">headers</span><span class="p">,</span> <span class="n">userdata</span><span class="p">,</span> <span class="n">config</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">File</span><span class="p">):</span>
+            <span class="n">httpdata</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="n">userdata</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">httpdata</span> <span class="o">=</span> <span class="n">process_data</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">userdata</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;cookies&quot;</span><span class="p">:</span> <span class="n">cookies</span><span class="p">,</span> <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">httpdata</span><span class="p">,</span> <span class="s2">&quot;headers&quot;</span><span class="p">:</span> <span class="n">headers</span><span class="p">}</span></div>
+
+<div class="viewcode-block" id="Request.send"><a class="viewcode-back" href="../../dev/api.html#raider.request.Request.send">[docs]</a>    <span class="k">def</span> <span class="nf">send</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">user</span><span class="p">:</span> <span class="n">User</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">Config</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Sends the HTTP request.</span>
+
+<span class="sd">        With the given user information, replaces the input plugins with</span>
+<span class="sd">        their values, and sends the HTTP request. Returns the response.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          user:</span>
+<span class="sd">            A User object with the user specific data to be used when</span>
+<span class="sd">            processing inputs.</span>
+<span class="sd">          config:</span>
+<span class="sd">            A Config object with the global Raider configuration.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          A requests.models.Response object with the HTTP response</span>
+<span class="sd">          received after sending the generated request.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">verify</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">verify</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">verify</span><span class="p">:</span>
+            <span class="c1"># False positive</span>
+            <span class="c1"># pylint: disable=no-member</span>
+            <span class="n">requests</span><span class="o">.</span><span class="n">packages</span><span class="o">.</span><span class="n">urllib3</span><span class="o">.</span><span class="n">disable_warnings</span><span class="p">(</span>
+                <span class="n">category</span><span class="o">=</span><span class="n">InsecureRequestWarning</span>
+            <span class="p">)</span>
+
+        <span class="n">proxies</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;all&quot;</span><span class="p">:</span> <span class="n">config</span><span class="o">.</span><span class="n">proxy</span><span class="p">}</span>
+
+        <span class="n">inputs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">process_inputs</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">config</span><span class="p">)</span>
+        <span class="n">cookies</span> <span class="o">=</span> <span class="n">inputs</span><span class="p">[</span><span class="s2">&quot;cookies&quot;</span><span class="p">]</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="n">inputs</span><span class="p">[</span><span class="s2">&quot;headers&quot;</span><span class="p">]</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">inputs</span><span class="p">[</span><span class="s2">&quot;data&quot;</span><span class="p">]</span>
+
+        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Sending HTTP request:&quot;</span><span class="p">)</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">method</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">)</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Cookies: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">cookies</span><span class="p">))</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Headers: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">headers</span><span class="p">))</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Data: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s2">&quot;GET&quot;</span><span class="p">:</span>
+            <span class="c1"># Encode special characters. This will replace &quot;+&quot; signs with &quot;%20&quot;</span>
+            <span class="c1"># in URLs. For some reason mypy doesn&#39;t like this, so typing will</span>
+            <span class="c1"># be ignored for this line.</span>
+            <span class="n">params</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">urlencode</span><span class="p">(</span>
+                <span class="n">data</span><span class="p">,</span> <span class="n">quote_via</span><span class="o">=</span><span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">quote</span>
+            <span class="p">)</span>  <span class="c1"># type: ignore</span>
+            <span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">,</span>
+                <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span>
+                <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+                <span class="n">cookies</span><span class="o">=</span><span class="n">cookies</span><span class="p">,</span>
+                <span class="n">proxies</span><span class="o">=</span><span class="n">proxies</span><span class="p">,</span>
+                <span class="n">verify</span><span class="o">=</span><span class="n">verify</span><span class="p">,</span>
+                <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="p">)</span>
+
+            <span class="k">return</span> <span class="n">req</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s2">&quot;POST&quot;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="p">(</span>
+                <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">PostBody</span><span class="p">)</span>
+                <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">encoding</span> <span class="o">==</span> <span class="s2">&quot;json&quot;</span>
+            <span class="p">):</span>
+                <span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">,</span>
+                    <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+                    <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+                    <span class="n">cookies</span><span class="o">=</span><span class="n">cookies</span><span class="p">,</span>
+                    <span class="n">proxies</span><span class="o">=</span><span class="n">proxies</span><span class="p">,</span>
+                    <span class="n">verify</span><span class="o">=</span><span class="n">verify</span><span class="p">,</span>
+                    <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">,</span>
+                    <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+                    <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+                    <span class="n">cookies</span><span class="o">=</span><span class="n">cookies</span><span class="p">,</span>
+                    <span class="n">proxies</span><span class="o">=</span><span class="n">proxies</span><span class="p">,</span>
+                    <span class="n">verify</span><span class="o">=</span><span class="n">verify</span><span class="p">,</span>
+                    <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">return</span> <span class="n">req</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s2">&quot;PATCH&quot;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="p">(</span>
+                <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">PostBody</span><span class="p">)</span>
+                <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">encoding</span> <span class="o">==</span> <span class="s2">&quot;json&quot;</span>
+            <span class="p">):</span>
+                <span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">patch</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">,</span>
+                    <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+                    <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+                    <span class="n">cookies</span><span class="o">=</span><span class="n">cookies</span><span class="p">,</span>
+                    <span class="n">proxies</span><span class="o">=</span><span class="n">proxies</span><span class="p">,</span>
+                    <span class="n">verify</span><span class="o">=</span><span class="n">verify</span><span class="p">,</span>
+                    <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">patch</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">,</span>
+                    <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+                    <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+                    <span class="n">cookies</span><span class="o">=</span><span class="n">cookies</span><span class="p">,</span>
+                    <span class="n">proxies</span><span class="o">=</span><span class="n">proxies</span><span class="p">,</span>
+                    <span class="n">verify</span><span class="o">=</span><span class="n">verify</span><span class="p">,</span>
+                    <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">return</span> <span class="n">req</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s2">&quot;PUT&quot;</span><span class="p">:</span>
+            <span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">put</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">,</span>
+                <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+                <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+                <span class="n">cookies</span><span class="o">=</span><span class="n">cookies</span><span class="p">,</span>
+                <span class="n">proxies</span><span class="o">=</span><span class="n">proxies</span><span class="p">,</span>
+                <span class="n">verify</span><span class="o">=</span><span class="n">verify</span><span class="p">,</span>
+                <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="p">)</span>
+
+            <span class="k">return</span> <span class="n">req</span>
+
+        <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span><span class="s2">&quot;Method </span><span class="si">%s</span><span class="s2"> not allowed&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">method</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+        <span class="k">return</span> <span class="kc">None</span></div></div>
+
+
+<div class="viewcode-block" id="Template"><a class="viewcode-back" href="../../dev/api.html#raider.request.Template">[docs]</a><span class="k">class</span> <span class="nc">Template</span><span class="p">(</span><span class="n">Request</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Template class to hold requests.</span>
+
+<span class="sd">    It will initiate itself with a :class:`Request</span>
+<span class="sd">    &lt;raider.request.Request&gt;` parent, and when called will return a</span>
+<span class="sd">    copy of itself with the modified parameters.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">method</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">url</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">path</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">cookies</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Cookie</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">headers</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Header</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">data</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">PostBody</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the template object.&quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">,</span>
+            <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
+            <span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="p">,</span>
+            <span class="n">cookies</span><span class="o">=</span><span class="n">cookies</span><span class="p">,</span>
+            <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+            <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="Template.__call__"><a class="viewcode-back" href="../../dev/api.html#raider.request.Template.__call__">[docs]</a>    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">method</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">url</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">path</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">cookies</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Cookie</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">headers</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Header</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">data</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">PostBody</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Template&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Allow the object to be called.</span>
+
+<span class="sd">        Accepts the same arguments as the :class:`Request</span>
+<span class="sd">        &lt;raider.request.Request&gt;` class. When called, will return a copy</span>
+<span class="sd">        of itself with the modified parameters.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">bool</span><span class="p">(</span><span class="n">url</span><span class="p">)</span> <span class="o">&amp;</span> <span class="nb">bool</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span>
+                <span class="s2">&quot;One and only one of :path and :url parameters allowed&quot;</span>
+            <span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+        <span class="n">template</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">method</span><span class="p">:</span>
+            <span class="n">template</span><span class="o">.</span><span class="n">method</span> <span class="o">=</span> <span class="n">method</span>
+
+        <span class="k">if</span> <span class="n">url</span><span class="p">:</span>
+            <span class="n">template</span><span class="o">.</span><span class="n">url</span> <span class="o">=</span> <span class="n">url</span>
+
+        <span class="k">if</span> <span class="n">path</span><span class="p">:</span>
+            <span class="n">template</span><span class="o">.</span><span class="n">path</span> <span class="o">=</span> <span class="n">path</span>
+
+        <span class="k">if</span> <span class="n">cookies</span><span class="p">:</span>
+            <span class="n">template</span><span class="o">.</span><span class="n">cookies</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">CookieStore</span><span class="p">(</span><span class="n">cookies</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="n">headers</span><span class="p">:</span>
+            <span class="n">template</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">HeaderStore</span><span class="p">(</span><span class="n">headers</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="n">data</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">PostBody</span><span class="p">):</span>
+                <span class="n">template</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">template</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">template</span></div></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OWASP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

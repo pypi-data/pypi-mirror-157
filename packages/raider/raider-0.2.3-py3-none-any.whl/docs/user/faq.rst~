@@ -1,0 +1,16 @@
+Frequently asked questions
+==========================
+
+
+Do I need to know Python and Hylang in order to use **Raider**?
+---------------------------------------------------------------
+
+Yes, **Raider** documentation already assumes you know the basic
+concepts in both Python and Hylang. You don't have to know a lot. If
+it's your first time with Python, just get yourself familiar with it,
+and when you're ready move on to learning Hylang, which is basically
+just Python code surrounded by Lisp parentheses.
+
+
+Why is Raider using Hylang?
+---------------------------

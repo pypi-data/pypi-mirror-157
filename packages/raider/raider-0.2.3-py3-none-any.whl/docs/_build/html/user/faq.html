@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frequently asked questions &mdash; raider 0.2.2 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/assets/jsonview.bundle.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sphinx-needs/libs/html/datatables.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sphinx-needs/common.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sphinx-needs/layouts.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sphinx-needs/styles.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sphinx-needs/modern.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/assets/jsonview.bundle.js"></script>
+        <script src="../_static/assets/jsonview_loader.js"></script>
+        <script src="../_static/sphinx-needs/libs/html/datatables.min.js"></script>
+        <script src="../_static/sphinx-needs/libs/html/datatables_loader.js"></script>
+        <script src="../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Special variables" href="../dev/special_variables.html" />
+    <link rel="prev" title="Definitions" href="definitions.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> raider
+          </a>
+              <div class="version">
+                0.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installing Raider</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="definitions.html">Definitions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Frequently asked questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-s-this-and-why-should-i-care">What’s this and why should I care?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-does-it-work">How does it work?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#you-re-telling-me-it-ll-evaluate-all-user-input-isn-t-that-unsafe">You’re telling me it’ll evaluate all user input? Isn’t that unsafe?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-do-i-run-this">How do I run this?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#do-i-need-to-know-python-and-hylang-in-order-to-use-raider">Do I need to know Python and Hylang in order to use <strong>Raider</strong>?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#why-lisp">Why Lisp?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#why-is-raider-using-hylang">Why is Raider using Hylang?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#does-it-work-on-windows">Does it work on Windows?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-about-macos-bsd-etc">What about macOS? BSD? etc?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-can-i-contribute">How can I contribute?</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev/special_variables.html">Special variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/flows.html">Flows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/attacks.html">Fuzzing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/operations.html">Operations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev/api.html">User API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/api.html#internal-api-reference">Internal API reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">raider</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Frequently asked questions</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/user/faq.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="frequently-asked-questions">
+<h1>Frequently asked questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this heading"></a></h1>
+<section id="what-s-this-and-why-should-i-care">
+<h2>What’s this and why should I care?<a class="headerlink" href="#what-s-this-and-why-should-i-care" title="Permalink to this heading"></a></h2>
+<p><strong>Raider</strong> was developed with the goal to improve web
+<a class="reference internal" href="definitions.html#term-Authentication"><span class="xref std std-term">authentication</span></a> testing. It feels like everyone is writing
+their own custom tools which work only on their own system, and this
+project aims to fill that gap by becoming a universal authentication
+testing framework that works on all modern systems.</p>
+</section>
+<section id="how-does-it-work">
+<h2>How does it work?<a class="headerlink" href="#how-does-it-work" title="Permalink to this heading"></a></h2>
+<p><strong>Raider</strong> treats the <a class="reference internal" href="definitions.html#term-Authentication"><span class="xref std std-term">authentication</span></a> process as a
+<a class="reference internal" href="definitions.html#term-Finite-state-machine"><span class="xref std std-term">finite state machine</span></a>. Each authentication step has to be
+configured separately, together with all pieces of information needed
+and how to extract them.</p>
+<p><strong>Raider</strong> uses a configuration directory containing a set of <code class="docutils literal notranslate"><span class="pre">.hy</span></code>
+files for each new project. Those files contain information describing
+the authentication process. <strong>Raider</strong> evaluates them, and gives you
+back a Python object to interact with the application.</p>
+<p>Read the <a class="reference internal" href="architecture.html#architecture"><span class="std std-ref">Architecture</span></a> and <a class="reference external" href="https://community.raiderauth.com/c/tutorials/5">Tutorials</a> for more information and
+examples.</p>
+</section>
+<section id="you-re-telling-me-it-ll-evaluate-all-user-input-isn-t-that-unsafe">
+<span id="faq-eval"></span><h2>You’re telling me it’ll evaluate all user input? Isn’t that unsafe?<a class="headerlink" href="#you-re-telling-me-it-ll-evaluate-all-user-input-isn-t-that-unsafe" title="Permalink to this heading"></a></h2>
+<p>Yes, by making the decision to run real code inside configuration
+files I made it possible to run malicious code. Which is why you
+should <strong>always write your own configuration</strong>, and not copy it from
+untrusted sources. <strong>Raider</strong> assumes you are acting like a
+responsible adult if you’re using this project. If the user wants to
+write an Operation that will <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span></code> something on their machine
+when a HTTP response is received, who am I to judge? With that said, I
+don’t take any responsibility if using <strong>Raider</strong> makes your computer
+catch fire, your company bankrupt, starts the third world war, leads
+to AI taking over humanity, or anything else in between.</p>
+</section>
+<section id="how-do-i-run-this">
+<h2>How do I run this?<a class="headerlink" href="#how-do-i-run-this" title="Permalink to this heading"></a></h2>
+<p>A CLI is planned to be done soon. For now, you can only run it by
+writing a short Python script:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">raider</span>
+
+<span class="n">session</span> <span class="o">=</span> <span class="n">raider</span><span class="o">.</span><span class="n">Raider</span><span class="p">(</span><span class="s2">&quot;app_name&quot;</span><span class="p">)</span>
+<span class="c1"># Create a Raider() object for application &quot;app_name&quot;</span>
+
+<span class="n">session</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">proxy</span> <span class="o">=</span> <span class="s2">&quot;http://localhost:8080&quot;</span>
+<span class="c1"># Run traffic through the local web proxy</span>
+
+<span class="n">session</span><span class="o">.</span><span class="n">authenticate</span><span class="p">()</span>
+<span class="c1"># Run authentication stages one by one</span>
+
+<span class="n">session</span><span class="o">.</span><span class="n">run_function</span><span class="p">(</span><span class="s2">&quot;get_nickname&quot;</span><span class="p">)</span>
+<span class="c1"># Run the defined &quot;get_nickname&quot; function</span>
+</pre></div>
+</div>
+</section>
+<section id="do-i-need-to-know-python-and-hylang-in-order-to-use-raider">
+<h2>Do I need to know Python and Hylang in order to use <strong>Raider</strong>?<a class="headerlink" href="#do-i-need-to-know-python-and-hylang-in-order-to-use-raider" title="Permalink to this heading"></a></h2>
+<p>Yes, <strong>Raider</strong> documentation already assumes you know the basic
+concepts in both Python and Hylang. You don’t have to know a lot. If
+it’s your first time with Python, just get yourself familiar with it,
+and when you’re ready move on to learning Hylang, which is basically
+just Python code surrounded by Lisp parentheses.</p>
+</section>
+<section id="why-lisp">
+<span id="id1"></span><h2>Why Lisp?<a class="headerlink" href="#why-lisp" title="Permalink to this heading"></a></h2>
+<p>Because in Lisp, code is data, and data is code. First iterations
+through planning this project were done with a static configuration
+file, experimenting with different formats. However, it turns out all
+of those static formats had problems. They can’t easily execute code,
+they can’t hold data structures, etc… Changing this to a Lisp file,
+all those problems vanished away, and it gives the user the power to
+add features easily without messing with the main code.</p>
+</section>
+<section id="why-is-raider-using-hylang">
+<h2>Why is Raider using Hylang?<a class="headerlink" href="#why-is-raider-using-hylang" title="Permalink to this heading"></a></h2>
+<p>Because the main code is written in Python. After deciding to choose
+Lisp for the new configuration format, I obviously googled “python
+lisp”, and found this project. Looking through the documentation
+I realized it turns out to be the perfect fit for my needs.</p>
+</section>
+<section id="does-it-work-on-windows">
+<h2>Does it work on Windows?<a class="headerlink" href="#does-it-work-on-windows" title="Permalink to this heading"></a></h2>
+<p>Probably not. I don’t have enough time to test it on other platforms.</p>
+</section>
+<section id="what-about-macos-bsd-etc">
+<h2>What about macOS? BSD? etc?<a class="headerlink" href="#what-about-macos-bsd-etc" title="Permalink to this heading"></a></h2>
+<p>I didn’t test it, but should probably work as long as it’s unix-like.</p>
+</section>
+<section id="how-can-i-contribute">
+<h2>How can I contribute?<a class="headerlink" href="#how-can-i-contribute" title="Permalink to this heading"></a></h2>
+<p>If you’re interested in contributing, you can do so. After you managed
+to set up your first application, figure out what could have been made
+easier or better.</p>
+<p>Then start writing new Plugins and Operations and share them either on
+<a class="reference external" href="https://github.com/OWASP/raider">Github</a> or <a class="reference external" href="mailto:raider&#37;&#52;&#48;raiderauth&#46;com">privately with me</a>.</p>
+<p>Once you’re familiar with the structure of the project, you can start
+by fixing bugs and writing new features.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="definitions.html" class="btn btn-neutral float-left" title="Definitions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../dev/special_variables.html" class="btn btn-neutral float-right" title="Special variables" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OWASP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
