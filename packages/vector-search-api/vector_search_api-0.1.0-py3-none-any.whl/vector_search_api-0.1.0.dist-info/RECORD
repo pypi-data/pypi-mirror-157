@@ -1,0 +1,17 @@
+vector_search_api/__init__.py,sha256=2oRh0KQRxhH_4t4ZyZj-O9tMjAuENy03msDdXejvU2E,80
+vector_search_api/config.py,sha256=Mvd8iOp7YcqwcD1fA1KTbnaa9qkZf9EWfAAIlCBpPZ0,184
+vector_search_api/exceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vector_search_api/helper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vector_search_api/helper/utils.py,sha256=GxkBkJmemIO34KPQG8PX0dMgAhTy-MJwrQHS1LGgExc,310
+vector_search_api/helper/vector.py,sha256=h3ynKzQ8TaCdO8WHZiSqwfgIJH6Ixigwa2kXzUlEMlo,732
+vector_search_api/searcher/__init__.py,sha256=U8uDY909UFTXw8MsRqB86eDn7Lb3owJg0WFQtFHdxp8,121
+vector_search_api/searcher/base_vector_search.py,sha256=QuU4mGjOMJtLlbm9xgQb2ux1BShHQP3nAg_I-i15bmo,4511
+vector_search_api/searcher/in_memory_vector_search.py,sha256=33BibdL-zO0m8FFtLY_cCV1-8DlxwX4S6ljE4Wwg6qs,2737
+vector_search_api/vectorizer/__init__.py,sha256=AxsWl-X7_vFaU-fa0EXvp5SX4mc-lpoqPaEWnuAplkk,234
+vector_search_api/vectorizer/base_vectorizer.py,sha256=42tFsaIkWL2bvrB7H8izJU_hU_vyNgOWJDUFYr0tTjg,733
+vector_search_api/vectorizer/random_vectorizer.py,sha256=D-Im415eT-Fj98luaTc5Syc0cDLeyfoqHYfllQQlF7o,521
+vector_search_api/version.py,sha256=r7w4QsQ9RgHzqBdSQjC4JXpzufPNq38bP8_biGuig-E,48
+vector_search_api-0.1.0.dist-info/LICENSE,sha256=W2XoU6O2p7G2jV7EpVIPJocmMhoyT6hLQMiyCtcsIhc,1066
+vector_search_api-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+vector_search_api-0.1.0.dist-info/METADATA,sha256=Xb0o5yZCXOguirTDt7NSkkQAjgH818bxHddlQslr7qI,567
+vector_search_api-0.1.0.dist-info/RECORD,,
