@@ -1,0 +1,12 @@
+wantstoparty/__init__.py,sha256=CI8a63HBSSNYZhzk8B0-un6TDTgBF9brsK9E4h3N3Vg,18
+wantstoparty/errors.py,sha256=XwN8yfr23b3UaDAReD4xdsOVYCxxnMMO7o4ptPZRlpU,726
+wantstoparty/wtp.py,sha256=nfUkZYhXcz7dyEyHDRnuW-2I70blBYajmd8QdSO-pVM,2698
+wantstoparty/_async/__init__.py,sha256=MbXnyUUdbae6lilmGdpy8pQUIjHR-IWr6KgLGwSG7kg,24
+wantstoparty/_async/async_wtp.py,sha256=7K9Qjoy_RdoZs9VIm6vzwPdlVCj3m6FhpB2_rJgbtl8,2828
+wantstoparty/oauth/__init__.py,sha256=RMue34HYCzB_ezlPeAroPa3Kmte52gSfJMn562VKEnQ,20
+wantstoparty/oauth/oauth.py,sha256=AfAbGQd5KoCDr4cSzCsEUxcTaIw1Lu_oSK2R48HyAZY,3517
+wantstoparty-0.0.7.dist-info/LICENSE.txt,sha256=AaQ0lKi7N3Q3pMNtMEXloBgFEIL0iRvoQgC3gN7M8yg,1077
+wantstoparty-0.0.7.dist-info/METADATA,sha256=2Fcud1aO2zKVnIshrYn2_0jgMErXQ3flOw2XVvmJIm8,1477
+wantstoparty-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wantstoparty-0.0.7.dist-info/top_level.txt,sha256=LOBBF5qrID8tfhWiq-xfD0vwzqnByHwRvHkF7X6QXo4,13
+wantstoparty-0.0.7.dist-info/RECORD,,
