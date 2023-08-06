@@ -1,0 +1,2 @@
+[console_scripts]
+measured = measured.cli:main
