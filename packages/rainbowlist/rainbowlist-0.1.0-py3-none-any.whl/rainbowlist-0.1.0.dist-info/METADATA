@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rainbowlist
+Version: 0.1.0
+Summary: Rainbow Lists
+Keywords: simulation
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python :: 3
+Project-URL: Homepage, https://github.com/asvarga/RainbowList
+
+# RainbowList
+
+An implementation of Rainbow Lists, which are pure lists with O(log(i)) indexing and constant-time cons.
+
+See [this blog post](https://medium.com/p/a607d06234e0).
+
