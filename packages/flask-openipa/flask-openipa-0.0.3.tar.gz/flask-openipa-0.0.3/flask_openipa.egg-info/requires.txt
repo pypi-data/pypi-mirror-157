@@ -1,0 +1,11 @@
+flask
+
+[marshmallow]
+marshmallow
+apispec
+
+[pydantic]
+pydantic
+
+[swagger-ui]
+flask-swagger-ui

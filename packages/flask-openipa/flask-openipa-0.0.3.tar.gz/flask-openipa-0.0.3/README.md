@@ -1,0 +1,29 @@
+# Flask OpenIPA
+
+Flask OpenIPA is a flask extension that can be used to generate OpenAPI specifications from your existing flask code. It provides extension (or you can create yours) to automatically generate OpenAPI models from python objects.
+
+for more information have a look at the [documentation](https://sylvanld.gitlab.io/open-source/flask-openipa/)
+
+## Install
+
+**Package installation**
+
+You can install this package from PyPI using
+
+```shell
+pip install flask-openipa
+```
+
+**Extra dependencies**
+
+To install with extras requirements use
+
+```shell
+pip install flask-openipa[marshmallow,swagger-ui]
+```
+
+| Extra requirements | Usage                                                                                             |
+| ------------------ | ------------------------------------------------------------------------------------------------- |
+| pydantic           | Used to generate openapi models from marshmallow schemas                                          |
+| marshmallow        | Used to generate openapi models from pydantic BaseModels                                          |
+| swagger-ui         | Needed only if you want to embed swagger ui for your openapi specifications directly in your app. |
