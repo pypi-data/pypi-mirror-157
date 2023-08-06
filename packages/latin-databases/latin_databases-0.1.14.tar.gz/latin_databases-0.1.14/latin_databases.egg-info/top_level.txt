@@ -1,0 +1,3 @@
+latin
+latin/general_la
+latin/unidecode2
