@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: clicknium
+Version: 0.1.0
+Summary: Python sdk which enables GUI automation for all type of applications.
+Author: ClickCorp
+Author-email: clicknium@clickcorp.com
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pythonnet
+Requires-Dist: typing-extensions
+
+### Introduction
+![locator ref](https://clickcorp.com/logo.svg) Clicknium python package provides methods to automate various types of applications, such as Web browser, Windows Desktop application, Java application and Sap windows GUI app, etc.  
+
+**Follow [this tutorial](https://www.clickcorp.com/documents#gettingstart) to start automation in one minute.**
+
+ - [Documentation](https://www.clickcorp.com/documents#gettingstart) : Learn everything about clicknium  
+
+ - [API Reference](https://www.clickcorp.com/documents#api/python/pythonsdk) : Learn the python APIs  
+
+ - [Clicknium Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=ClickCorp.clicknium) : Automation has never been easier with this extension, try it now  
+ - Explore more in [ClickCorp.com](https://www.clickcorp.com)  
+ - [GitHub](https://github.com/clickcorp)  
+
+### System Requirements
+- Python 3.7 or above
+- Windows 7 SP1 or above
+### Install
+
+```
+# python version is 3.8 or below
+pip install clicknium
+
+# python version is 3.9 or above
+pip install --pre pythonnet
+pip install clicknium
+```
+
+
+### Examples
+
+- Automate Edge web browser, visit [here](https://www.clickcorp.com/documents#developtools/vscode) for capturing locators in Visual Studio Code.
+```python
+from clicknium import clicknium as cc, locator, ui
+
+tab = cc.edge.open("https://www.bing.com/")
+tab.find_element(locator.new_store.bing.search_sb_form_q).set_text('clicknium')
+tab.find_element(locator.new_store.bing.svg).click()
+
+result_elements = tab.find_elements(locator.new_store.bing.a_search_result)
+for elem in result_elements:
+  print(elem.get_text())
+  elem.highlight(duration=1)
+
+tab.close()
+```
+
+- Automate windows desktop application 'notepad', visit [here](https://www.clickcorp.com/documents#developtools/vscode) for capturing locators in Visual Studio Code.
+```python
+from clicknium import clicknium as cc, locator, ui
+import subprocess
+
+process = subprocess.Popen("notepad")
+ui(locator.new_store.notepad.document_15).set_text("clicknium")
+ui(locator.new_store.notepad.document_15).clear_text('set-text')
+process.kill()
+```
+
+### Contact
+Email: clicknium@clickcorp.com
