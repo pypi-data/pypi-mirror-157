@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: qt5-levelmeter
+Version: 1.9
+Summary: Level Meter (VU Meter) for QT5
+Home-page: https://gitlab.com/t-5/qt5_levelmeter
+Author: Jürgen Herrmann
+Author-email: t-5@t-5.eu
+License: bsd-3-clause
+Description: # Level Meter (VU Meter) for QT5
+        
+        ## Installation:
+        
+        ### From source:
+        
+            git clone https://gitlab.com/t-5/python3-qt5-levelmeter.git
+            cd python3-qt5-levelmeter
+            pip3 install .
+        
+        ### Debian Package:
+        
+        I have a prebuilt debian package for this module.
+        Please refer to the page https://t-5.eu/hp/Software/Debian%20repository/ to setup the repo.
+        After the repo is setup you can install the package by issueing
+        
+            apt install python3-qt5-levelmeter
+        
+        in a shell.
+        
+        
+        ## Usage:
+        
+        Usage:
+        from qt5_levelmeter import QLevelMeter
+        
+        meter = QLevelMeter(parent)
+        
+        call periodically:
+        meter.levelChanged(levelInDb)
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown
