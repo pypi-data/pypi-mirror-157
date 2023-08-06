@@ -1,0 +1,3 @@
+[pyinstaller40]
+hook-dirs=rockhopper:_PyInstaller_hook
+
