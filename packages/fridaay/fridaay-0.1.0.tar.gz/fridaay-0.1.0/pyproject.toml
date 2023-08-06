@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "fridaay"
+version = "0.1.0"
+description = "Format Representing Interdependent Data Actions As YAML"
+authors = ["Ernest Prabhakar <ernest.prabhakar@gmail.com>"]
+license = "MIT"
+readme = 'README.md'
+repository = 'https://github.com/TheSwanFactory/fridaay'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.1.3"
+PyYAML = "^6.0"
+pandas = "^1.4.3"
+pytest-watch = "^4.2.0"
+
+[tool.poetry.dev-dependencies]
+ymm = "^0.6.1"
+pytest = "^7.1.2"
+pydantic = "^1.9.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

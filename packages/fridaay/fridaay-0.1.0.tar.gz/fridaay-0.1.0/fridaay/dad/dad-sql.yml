@@ -1,0 +1,11 @@
+load:
+    table: dict
+    columns: list.str
+    data: list.list
+    json: dict
+    file: str
+select:
+    from: frame*
+    cols: dict.str
+    where_all: dict
+    where_any: dict

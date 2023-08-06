@@ -1,0 +1,4 @@
+init:
+    version: float*
+    imports: dict.str*
+    set: dict*
