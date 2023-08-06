@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dynamodictionary
+Version: 1.0.3
+Summary: Dictionary like thing built on top of dynamodb
+Home-page: https://github.com/jbylund/dynamodictionary
+Author: Joe Bylund
+Author-email: joseph.bylund@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: cbor2
+Requires-Dist: boto3
+
+Dictionary like thing built on top of dynamodb
+
