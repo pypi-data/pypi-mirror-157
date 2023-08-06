@@ -1,0 +1,2 @@
+[console_scripts]
+genz-cetd-pool = csc_docker_pool.skeleton:run
