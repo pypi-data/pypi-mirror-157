@@ -1,0 +1,3 @@
+[console_scripts]
+kgdata=kgdata.__main__:cli
+
