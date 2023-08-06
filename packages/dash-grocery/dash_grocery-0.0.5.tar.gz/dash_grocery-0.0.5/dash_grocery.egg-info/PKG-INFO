@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dash-grocery
+Version: 0.0.5
+Summary: Project Description
+Author: IcToxi <example@email.com>
+License: MIT
+Classifier: Framework :: Dash
+License-File: LICENSE
