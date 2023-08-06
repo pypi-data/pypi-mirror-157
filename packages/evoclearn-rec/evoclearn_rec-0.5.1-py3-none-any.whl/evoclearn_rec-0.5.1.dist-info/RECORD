@@ -1,0 +1,15 @@
+evoclearn/rec/__init__.py,sha256=TOeOF3kYLRv7n6a41VAAdjyKMQM5Osd0mxOnyvvFKYQ,61
+evoclearn/rec/ac2vec.py,sha256=XBRWTCT-NHVuK1wuIc5fsPZ0DtFdgtDVtS-fDSVVhHw,8770
+evoclearn/rec/collect.py,sha256=JOZ4mMARzxCLsBH9hNKJcczP1ReLcAZV5PxJAH40zVk,2671
+evoclearn/rec/compile_model.py,sha256=PNUJlNXPjZ8j57BsLX-4Qp0e9zRBDpYsTFLQM-13gB0,1976
+evoclearn/rec/timit_cv.py,sha256=AxJZdTGfUH6oNrYwfi9Js9D1qAWiV8g3g_Y0tGDdKdk,1192
+evoclearn/rec/train.py,sha256=9LLhE7eukIl-pM6egsYi1eWiedETQ7J7Qw4OIhKcWuo,8047
+evoclearn/rec/vec2sym.py,sha256=muEsIIN2hTPIl3IVQRAY_8xYU3_aCaihGngu8b3qAeE,760
+evoclearn/rec/version.py,sha256=Q0OF39cP5Jw5WUnyyBYzw6kv8_pGkyF9Ke66-ZCX5ZQ,53
+evoclearn/rec/cli/__init__.py,sha256=6lKWABMSQg8AeWsKCc2A61V5wYHLll4R7uAjATti0tI,362
+evoclearn_rec-0.5.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+evoclearn_rec-0.5.1.dist-info/METADATA,sha256=ed8OrXnEIjulZirzi3gy14YHKlbA216hUFW5ahCXoig,701
+evoclearn_rec-0.5.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+evoclearn_rec-0.5.1.dist-info/entry_points.txt,sha256=vBP7jHEjZhsvrHMXg7oDoFwVsbC2DdYXouT1pPE2OnU,52
+evoclearn_rec-0.5.1.dist-info/top_level.txt,sha256=VtC6MhvJ83hDNxhjsZNQ1ybrHCRFiOSEjWEYkCVW9pY,10
+evoclearn_rec-0.5.1.dist-info/RECORD,,
