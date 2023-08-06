@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: scip
+Version: 0.1.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: Pillow
+Requires-Dist: dask
+Requires-Dist: dask-ml
+Requires-Dist: click
+Requires-Dist: scikit-image
+Requires-Dist: pyyaml
+Requires-Dist: graphviz
+Requires-Dist: pyarrow
+Requires-Dist: umap-learn
+Requires-Dist: bokeh
+Requires-Dist: zarr
+Requires-Dist: fastparquet
+Provides-Extra: czi
+Requires-Dist: cellpose ; extra == 'czi'
+Requires-Dist: aicsimageio ; extra == 'czi'
+Requires-Dist: aicspylibczi ; extra == 'czi'
+Provides-Extra: jobqueue
+Requires-Dist: dask-jobqueue ; extra == 'jobqueue'
+Provides-Extra: mpi
+Requires-Dist: dask-mpi ; extra == 'mpi'
+Requires-Dist: mpi4py ; extra == 'mpi'
+
