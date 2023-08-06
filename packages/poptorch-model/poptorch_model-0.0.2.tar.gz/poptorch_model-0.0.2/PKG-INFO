@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: poptorch_model
+Version: 0.0.2
+Summary: poptorch pipeline model base class
+Home-page: UNKNOWN
+Author: Jinle Tong
+Author-email: lancertong@live.com
+License: MIT Licence
+Keywords: pip,SICA,featureextraction
+Platform: any
+
+as a replacement for torch.nn.Module for adding pipeline annotations
+
