@@ -1,0 +1,7 @@
+aiohttp
+
+[readthedocs]
+furo
+Sphinx
+sphinx-hoverxref
+readthedocs-sphinx-search
