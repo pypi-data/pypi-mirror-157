@@ -1,0 +1,7 @@
+task_similarity/__init__.py,sha256=_NwkZGv2tNqJ2U_rm4IEYaaug5ZXft0vbEKro0I4mpU,356
+task_similarity/iou_similarity.py,sha256=g4mr6NdZHVLORy72kvUEfum1dS-Hu4EOcO0awoaks08,13751
+hpo_task_similarity-0.0.1.dist-info/LICENSE,sha256=ac88kY3zZoCX1A9T_SZaKlkrNbdqKqwlqOVSgpAb-yg,10760
+hpo_task_similarity-0.0.1.dist-info/METADATA,sha256=t4zrbXgGDeb6prdUL6kBD-2-nJKEViUNd2PnjC-gsTA,358
+hpo_task_similarity-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+hpo_task_similarity-0.0.1.dist-info/top_level.txt,sha256=1a72sOH0rERMOcDYs3GEHOC53pDRZWwQ8amP_ZE1B2Q,16
+hpo_task_similarity-0.0.1.dist-info/RECORD,,
