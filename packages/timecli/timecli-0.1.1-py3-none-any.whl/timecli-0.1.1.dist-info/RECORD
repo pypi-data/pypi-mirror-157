@@ -1,0 +1,8 @@
+timecli/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timecli/commands/oracle.py,sha256=PU35VMrwpJLpvYvJoN69anaUmRttD75jsCVc0aNVceE,4543
+timecli/core/utils.py,sha256=w2KfEWwIP59nmqQ24_gvd6cowa2i-mSFh9ROYP0u-CI,206
+timecli/main.py,sha256=hvRs81PcsyCARgqNZTdBrKxXXB2evhc3zzDwAcwh7ho,433
+timecli-0.1.1.dist-info/entry_points.txt,sha256=5IXBU1avpEBpp4wFbyM_rgaek9vizOpfXqi1eKLdmjQ,44
+timecli-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+timecli-0.1.1.dist-info/METADATA,sha256=WXMMWb5q-n0YaV2Gb0t3ZOOTD2FmQdkUZ9A19PWYbYI,584
+timecli-0.1.1.dist-info/RECORD,,
