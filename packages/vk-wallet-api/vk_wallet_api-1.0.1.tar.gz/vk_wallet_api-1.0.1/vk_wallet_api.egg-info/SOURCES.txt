@@ -1,0 +1,9 @@
+setup.py
+vk_wallet_api/__init__.py
+vk_wallet_api/schemes.py
+vk_wallet_api/wallet.py
+vk_wallet_api.egg-info/PKG-INFO
+vk_wallet_api.egg-info/SOURCES.txt
+vk_wallet_api.egg-info/dependency_links.txt
+vk_wallet_api.egg-info/requires.txt
+vk_wallet_api.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: vk-wallet-api
+Version: 1.0.1
+Summary: Library for working with the wallet api
+Home-page: https://github.com/DravaGen/wallet_api/
+Author: DravaGen
+Author-email: dravagen@mail.ru
+Requires-Python: >=3.10
+
+https://github.com/DravaGen/wallet_api/
