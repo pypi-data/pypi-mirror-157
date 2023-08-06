@@ -1,0 +1,15 @@
+from paste.registry import Registry
+from ew import widget_context, TemplateEngine
+from ew.core import WidgetContext
+from ew.resource import ResourceManager
+
+REGISTRY = Registry()
+REGISTRY.prepare()
+
+
+def setup_method():
+    TemplateEngine.initialize({})
+    mgr = ResourceManager()
+    REGISTRY.register(
+        widget_context,
+        WidgetContext(scheme='http', resource_manager=mgr))
