@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/retfidf/__init__.py
+src/retfidf/doc_retrieval.py
+src/retfidf.egg-info/PKG-INFO
+src/retfidf.egg-info/SOURCES.txt
+src/retfidf.egg-info/dependency_links.txt
+src/retfidf.egg-info/top_level.txt
