@@ -1,0 +1,8 @@
+bentoudev/dataclass/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bentoudev/dataclass/_version.py,sha256=x_SW8HUWqfDfnX-xXTJ08tHXwbe6ZMk8QZ8FYAxn9F8,46
+bentoudev/dataclass/base.py,sha256=8IgKjx0FFbcopSzL4oVZJIV4qnmxyqr1skwY7xscUxs,7785
+bentoudev/dataclass/yaml_loader.py,sha256=dhd7-jB39ixGn8hqGnwfpYK50qLaWurRgeyeDxonr6Q,14765
+bentoudev.dataclass-0.2.0.dist-info/METADATA,sha256=mdY1-Pxy7r2wmClbd6nlmsnQ7cFgdpU03u0usdwA2aI,5239
+bentoudev.dataclass-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bentoudev.dataclass-0.2.0.dist-info/top_level.txt,sha256=CyvqwaM0f8pBN9xU8E4Z77ap5m-cPwTDQpocRjKaOyY,10
+bentoudev.dataclass-0.2.0.dist-info/RECORD,,
