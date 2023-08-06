@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: simpletyper
+Version: 0.1.3
+Summary: Typing speed tester powered by Textual
+Author: Wilson Oh
+Author-email: oh.wilson123@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: textual (>=0.1.18,<0.2.0)
