@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: flyhostel
+Version: 1.1.3
+Provides-Extra: sensor
+Provides-Extra: quant
+Provides-Extra: dropbox

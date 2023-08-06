@@ -1,0 +1,2 @@
+[console_scripts]
+fh = flyhostel.__main__:main
