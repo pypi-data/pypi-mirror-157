@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: braid-mrf
+Version: 1.0.6
+Summary: Predicting protein complexes
+Home-page: https://github.com/wasineer-dev/braid.git
+Author: Wasinee Rungsarityotin
+Author-email: wasinees@gmail.com
+License-File: LICENSE
