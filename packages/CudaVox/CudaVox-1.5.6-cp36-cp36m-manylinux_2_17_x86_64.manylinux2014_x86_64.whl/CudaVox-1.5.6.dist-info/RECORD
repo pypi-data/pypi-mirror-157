@@ -1,0 +1,7 @@
+CudaVox.cpython-36m-x86_64-linux-gnu.so,sha256=gwvhUuPbzhVQKIJbOpfoxfG1DzfKooWeN9dnDiqubZg,676288
+CudaVox.libs/libcudart-6b1c0c5c.so.11.4.43,sha256=7rvzQBQ_JYZqULiZTCY-gWqp6NG0GZWg5xboWUSKc7o,670232
+CudaVox.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
+CudaVox-1.5.6.dist-info/METADATA,sha256=5M54aMEoXHv-VaZ1Rv5jZfAUBvTL0xNSd14kUO9eQsM,11709
+CudaVox-1.5.6.dist-info/RECORD,,
+CudaVox-1.5.6.dist-info/WHEEL,sha256=KMjJrr8K8tjgFeMhIng78AQus0AToivNAA9MjGcjFZU,150
+CudaVox-1.5.6.dist-info/top_level.txt,sha256=7C_Wwc3fC2dAyrqkTkOe70h8EOo4jZ0zLLKcHeL6Q4k,8
