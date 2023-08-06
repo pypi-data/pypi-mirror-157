@@ -1,0 +1,13 @@
+utilitools/__init__.py,sha256=Y4WHvyqctNrguW_zEILwluQIOBScFBztKxJW7fvY1Ao,129
+utilitools/partial.py,sha256=bNYyfzfxGqOHDcb76Whdh5vKum4JRW12GDHshp0YRRc,613
+utilitools/singleton.py,sha256=tCglLf9MUM2294yn8xTylY2rSlH3kca47EGQWFh-BeY,297
+utilitools/subscriptable.py,sha256=N334qXZkpQQo86mk7kqi0SwlEa3LsBARBPdaCq1KoHs,1954
+utilitools/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utilitools/tests/test_partial.py,sha256=c3m1QM1JSfCx9a3-awgU5AHEru9HCy_sBPnzE-u9aQg,1833
+utilitools/tests/test_singleton.py,sha256=kuK5ZqQiMW_JAeLtvDiYiFWCt59lAEYIAVbBRaZyO3s,305
+utilitools/tests/test_subscriptable.py,sha256=OrgaxLq6B_lYlVztfVVYv4LMiXKFcQAXwIkkyOTUAF4,1744
+utilitools-0.0.10.dist-info/LICENSE,sha256=q_I8otcPeMCHfUKSY0ewxOWV0jAGZzwvFkjJ6Dz0ZKI,1067
+utilitools-0.0.10.dist-info/METADATA,sha256=I49P4Y3ivcCVz11q88bA6nwdiZobnmuJpIF5uhjpX1k,807
+utilitools-0.0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+utilitools-0.0.10.dist-info/top_level.txt,sha256=tTukbi-IRLb0cBBfFSfQkj4AcQ0D6s86pO0xIkeZnUc,11
+utilitools-0.0.10.dist-info/RECORD,,
