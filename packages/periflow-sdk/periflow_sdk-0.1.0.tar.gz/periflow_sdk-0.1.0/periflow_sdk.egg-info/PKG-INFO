@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: periflow-sdk
+Version: 0.1.0
+Summary: PeriFlow SDK
+Home-page: https://github.com/friendliai/periflow-python-sdk
+Author: FriendliAI
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Provides-Extra: test
+License-File: LICENSE
+
+UNKNOWN
+
