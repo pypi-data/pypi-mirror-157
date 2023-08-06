@@ -1,0 +1,7 @@
+[climetlab.datasets]
+maelstrom-constants-a-b=climetlab_maelstrom_power_production.constants.a_b:ABConstants
+maelstrom-power-production=climetlab_maelstrom_power_production.production.production:Production
+maelstrom-weather-model-level=climetlab_maelstrom_power_production.weather.model_level:ModelLevelWeather
+maelstrom-weather-pressure-level=climetlab_maelstrom_power_production.weather.pressure_level:PressureLevelWeather
+maelstrom-weather-surface-level=climetlab_maelstrom_power_production.weather.surface_level:SurfaceLevelWeather
+
