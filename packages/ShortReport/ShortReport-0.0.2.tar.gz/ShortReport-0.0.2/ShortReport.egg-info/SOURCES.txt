@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+ShortReport/__init__.py
+ShortReport/report.py
+ShortReport.egg-info/PKG-INFO
+ShortReport.egg-info/SOURCES.txt
+ShortReport.egg-info/dependency_links.txt
+ShortReport.egg-info/requires.txt
+ShortReport.egg-info/top_level.txt
