@@ -1,0 +1,12 @@
+cryptobot/__init__.py,sha256=23YaDx-vbfnmudnVN8qyGas2op5S3zTiYg9kVJACPLY,203
+cryptobot/_utils.py,sha256=ejIlKEZw19LoK-P_yhCiat_QwdPwI4q438V377adz0o,515
+cryptobot/errors.py,sha256=KNVgnNvhkFXc522-tG7WcADQuaEHaEFS1Igal-RPhx0,361
+cryptobot/_sync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cryptobot/_sync/client.py,sha256=YL4IQgLUiNqrVpb0CJmf-rkTM0yo1OqLsQgSgt4TJeY,5351
+cryptobot/models/__init__.py,sha256=6fstTO8NHDg_zKmwr46wADZ68rV_08krSMHBc5MbDD0,1657
+cryptobot_python-0.1.0.dist-info/AUTHORS.rst,sha256=Fw_fvYTRd85Egrr9WdbioKzc_4xQErkVpcRZroQ-dw0,168
+cryptobot_python-0.1.0.dist-info/LICENSE,sha256=bAVGvJzQYNb6RaMgYQ1Qd-Jn5-iDj5dxcinh99BTbTU,1077
+cryptobot_python-0.1.0.dist-info/METADATA,sha256=PiMrZeh1hEruG3MyHW52_noHjyNNBXocNF_FSpssWBo,2133
+cryptobot_python-0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+cryptobot_python-0.1.0.dist-info/top_level.txt,sha256=NUdbfQVJ9R6zmbWILlb8SJ6aFkloFwELpIs0r0OMFbg,10
+cryptobot_python-0.1.0.dist-info/RECORD,,
