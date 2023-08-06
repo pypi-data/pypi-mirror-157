@@ -1,0 +1,9 @@
+README.md
+setup.py
+dtoo/__init__.py
+dtoo/forJson.py
+dtoo/forModel.py
+dtoo.egg-info/PKG-INFO
+dtoo.egg-info/SOURCES.txt
+dtoo.egg-info/dependency_links.txt
+dtoo.egg-info/top_level.txt
