@@ -1,0 +1,14 @@
+Plone
+borg.localrole
+collective.z3cform.datagridfield
+five.grok
+plone.api
+plone.app.dexterity
+setuptools
+
+[test]
+ecreall.helpers.testing
+plone.app.robotframework
+plone.app.testing
+robotsuite
+unittest2
