@@ -1,0 +1,7 @@
+portablemc/__init__.py,sha256=YdaEQDGjwkS14UpZosG2b71tFwxdPXiWFJ7vsIJAX28,74259
+portablemc/__main__.py,sha256=5yYV8bc7YKAeHjzKN9VXlLlefF-OMUMI3czzI4fQOHg,800
+portablemc/cli.py,sha256=ehx81ZjyAowvKunf7eJVj7z_rMbY-usWzfdC0Qng5NY,50974
+portablemc-3.0.3.dist-info/entry_points.txt,sha256=6ne4UK1_hqFJ0hJgx1JLodhcJ26DZRRay9PSQ87KdyA,50
+portablemc-3.0.3.dist-info/WHEEL,sha256=KXNDfOTTCr-VyxnCJDozfJ6nmi3hNN9RABDaCXBsNak,85
+portablemc-3.0.3.dist-info/METADATA,sha256=NZWGLDxIirfYqOY8mopwxGYzj4akbmwqfyWs7hX7qRc,1147
+portablemc-3.0.3.dist-info/RECORD,,
