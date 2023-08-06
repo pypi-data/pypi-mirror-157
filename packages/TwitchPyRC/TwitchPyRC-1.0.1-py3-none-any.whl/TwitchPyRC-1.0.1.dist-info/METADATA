@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: TwitchPyRC
+Version: 1.0.1
+Summary: Yet another generic Twitch IRC interface that probably works
+Home-page: https://github.com/CPSuperstore/TwitchPyRC
+Author: CPSuperstore
+Author-email: cpsuperstoreinc@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/CPSuperstore/TwitchPyRC/issues
+Keywords: Twitch,IRC,Bot,Chat Bot,Socket,livestream
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TwitchPyRC
+Yet another generic Twitch IRC interface that probably works
