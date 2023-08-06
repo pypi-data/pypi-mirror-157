@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mendotapy/__init__.py
+src/mendotapy/mendotapy.py
+src/mendotapy/py.typed
+src/mendotapy.egg-info/PKG-INFO
+src/mendotapy.egg-info/SOURCES.txt
+src/mendotapy.egg-info/dependency_links.txt
+src/mendotapy.egg-info/not-zip-safe
+src/mendotapy.egg-info/requires.txt
+src/mendotapy.egg-info/top_level.txt

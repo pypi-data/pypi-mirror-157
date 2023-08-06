@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: mendotapy
+Version: 0.1.0
+Summary: load Lake Mendota ice phenology
+Home-page: https://github.com/lgloege/mendotapy
+Author: Luke Gloege
+Author-email: ljg2157@columbia.edu
+License: MIT
+Keywords: mendota
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+License-File: LICENSE
+
+# mendotapy
+
+A Python 3.6+ package for analysis-ready [Lake Mendota ice phenology](https://www.aos.wisc.edu/~sco/lakes/Mendota-ice.html) data
+
+Installing
+----------
+
+### PyPi
+```sh
+pip install mendotapy==0.1.0
+```
+
+### GitHub
+```sh
+pip install -e git+https://github.com/lgloege/mendotapy.git#egg=mendotapy
+```
+
+Using the Package
+----------
+**Read data into a dataframe**
+```python
+import mendotapy
+df = mendotapy.load()
+```
+
+**Summary plot of the data**
+```python
+import mendotapy
+mendotapy.plot()
+```
+
+
