@@ -1,0 +1,15 @@
+
+Regional Internet Registry:
+{{ '==============================================================================='|colourise(foreground='GREEN', style='DIM') }}
+  {{ rir }}
+
+Less Specific
+{{ '==============================================================================='|colourise(foreground='GREEN', style='DIM') }}
+
+{{ less_specific|as_table(headers=("Inetnum", "Network Name", "Description", "Country", "Organisation", "Admin-C", "Tech-C", "Status", "Remarks", "mnt-by", "mnt-lower", "Created", "Last Modified", "Source")) }}
+
+
+More Specific
+{{ '==============================================================================='|colourise(foreground='GREEN', style='DIM') }}
+
+{{ more_specific|as_table(headers=("Inetnum", "Network Name", "Country", "Organisation", "Admin-C", "Tech-C", "Status", "Remarks", "mnt", "mnt-lower", "mnt-routes", "Created", "Last Modified", "Source")) }}

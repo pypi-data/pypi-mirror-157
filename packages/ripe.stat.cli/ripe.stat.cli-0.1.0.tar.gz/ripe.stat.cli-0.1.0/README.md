@@ -1,0 +1,95 @@
+# The RIPEStat CLI
+
+A command line wrapper for the [RIPEStat API](https://stat.ripe.net/docs/02.data-api/atlas-probes.html).
+
+
+## How it Works
+
+```shell
+ripestat maxmind-geo-lite 193.0.6.158
+193.0.6.158/32
+╒═══════════╤════════╤══════════════╤════════════╤═════════════════════════════════════════════════╕
+│ Country   │ City   │ Resources    │   Coverage │ URL                                             │
+╞═══════════╪════════╪══════════════╪════════════╪═════════════════════════════════════════════════╡
+│ NL        │        │ 193.0.0.0/20 │        100 │ https://www.google.com/maps/@52.3824,4.8995,12z │
+╘═══════════╧════════╧══════════════╧════════════╧═════════════════════════════════════════════════╛
+```
+
+
+## Installation
+
+It's a python program, so you install it with `pip`:
+
+```shell
+$ pip install ripe.stat.cli
+```
+
+However, since it's a command-line tool, you might want to consider using [pipx](https://pypa.github.io/pipx/)
+to install it, as it will then be automatically added to your `${PATH}` and
+pipx will handle the virtualenv shenanigans for you:
+
+```shell
+$ pipx install ripe.stat.cli
+```
+
+
+### Tab Completion
+
+One of the nicer quirks of this tool is the tab completion.  You can do handy
+stuff like `ripestat ma<tab>` and it'll autocomplete `ripestat maxmind-geo-lite `
+for you.  If you want to enable that, you need a few things:
+
+1. Install argcomplete.  This is a dependency of `ripestat-cli`, so it'll be
+   available in the virtualenv, but that may not be convenient.  You can always
+   install this with your operating system's package manager.  Something like
+   `apt install python-argcomplete` or `pacman -S python-argcomplete` for
+   example.
+2. Once installed, you just have to enable autocompletion as per the [official docs](https://pypi.org/project/argcomplete/#global-completion).
+   In short, this means running this on Debian-based systems:
+   ```shell
+   $ sudo activate-global-python-argcomplete
+   ```
+   or this on Arch-based systems:
+   ```shell
+   $ sudo activate-global-python-argcomplete --dest /usr/share/bash-completion/completions
+   ```
+   Alternatively, you can also install it at the user-level by dumping the
+   output of this command into a file that's sourced at login time:
+   ```shell
+   $ sudo activate-global-python-argcomplete --dest=-
+   ```
+
+## Extending
+
+This little project doesn't yet support *all* of RIPEStat's many, *many*
+endpoints, but extending it to do so is quite easy if you're motivated:
+
+1. Create a folder under `ripe/stat/cli/templates` named for the endpoint
+   exactly as it appears in the API.  For example, the [AS Overview](https://stat.ripe.net/docs/02.data-api/as-overview.html)
+   folder would be named `as-overview` because that's what you see in the URL.
+2. In that folder create a file called: `spec.json`.  The contents of which can
+   just be copied from one of the existing folders.  The idea is to expand this
+   in the future should we want to support things like sorting or different
+   arguments etc.  For now though, it just tells the command handler that we
+   need to accept an argument called `resource`.
+3. Finally, create a Jinja template in that same folder called
+   `template.jinja`.  This template will be handed the contents of the `data`
+   portion of the API response.  You have all the powers that Jinja grants you
+   in there, so go nuts.  If you're looking for inspiration, just look at same
+   file in the other folders.
+4. Optionally, you can also add your own filters to `ripe/stat/cli/filters.py`. 
+   Currently, we have `colourise()` and `as_table()` in there, but if you need
+   something special, this is where you probably want to put it.
+
+
+## TODO
+
+For the most part, this does you'd expect -- at least for the few endpoints
+currently supported.  There are two glaring things that really should be done
+soon though:
+
+1. Error handling: If the RIPEStat API barks at you with an error, this script
+   should print out a user-friendly message, maybe with some emojis and some
+   nice colour.  At the moment, it just explodes.
+2. Tests: There aren't any!  Unit tests for each filter & formatter are a bare
+   minimum, but an end-to-end test for each endpoint would be ideal.

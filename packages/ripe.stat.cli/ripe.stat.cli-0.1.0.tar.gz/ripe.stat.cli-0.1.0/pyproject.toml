@@ -1,0 +1,106 @@
+[tool.poetry]
+name = "ripe.stat.cli"
+version = "0.1.0"
+description = "A CLI for RIPEStat"
+authors = ["Daniel Quinn <code@danielquinn.org>"]
+license = "AGPL"
+readme = "README.md"
+homepage = "https://gitlab.com/danielquinn/ripestat-cli"
+repository = "https://gitlab.com/danielquinn/ripestat-cli"
+documentation = "https://gitlab.com/danielquinn/ripestat-cli"
+packages = [
+    { include = "ripe/stat/cli" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Jinja2 = "^3.1.2"
+argcomplete = "^2.0.0"
+colorama = "^0.4.4"
+requests = "^2.27.1"
+tabulate = "^0.8.9"
+
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+coverage = "^6.4.1"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+ipython = "^8.4.0"
+mypy = "^0.961"
+pytest = "^7.1.2"
+types-colorama = "^0.4.14"
+types-requests = "^2.27.30"
+types-tabulate = "^0.8.9"
+
+
+[tool.poetry.scripts]
+ripestat = "ripe.stat.cli.command:main"
+
+
+[tool.isort]
+atomic = true
+multi_line_output = 3
+case_sensitive = true
+lines_after_imports = 2
+lines_between_types = 1
+combine_as_imports = true
+default_section = "THIRDPARTY"
+line_length = 79
+include_trailing_comma = true
+sections=[
+  "FUTURE",
+  "STDLIB",
+  "THIRDPARTY",
+  "FIRSTPARTY",
+  "LOCALFOLDER"
+]
+
+
+[tool.black]
+line-length = 79
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '/(\.eggs|\.git|\.venv)/'
+
+
+[tool.pytest.ini_options]
+testpaths = [
+    "ripe/stat/tests",
+]
+
+
+[tool.coverage.run]
+branch = true
+data_file = ".coverage/data"
+
+
+[tool.coverage.report]
+ignore_errors = true
+omit = [
+  "*/tests/*",
+  ".venv/*"
+]
+exclude_lines = [
+  "pragma: no cover",
+  "raise NotImplementedError"
+]
+
+
+[tool.coverage.html]
+directory = ".coverage/report"
+
+
+[tool.mypy]
+files = "ripe/stat,tests"
+
+
+[[tool.mypy.overrides]]
+module = "argcomplete"
+ignore_missing_imports = true
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+

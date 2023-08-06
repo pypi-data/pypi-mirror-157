@@ -1,0 +1,26 @@
+{
+    "messages": [],
+    "see_also": [],
+    "version": "2.0",
+    "data_call_name": "abuse-contact-finder",
+    "data_call_status": "supported",
+    "cached": false,
+    "data": {
+        "abuse_contacts": [
+            "abuse@ripe.net"
+        ],
+        "authoritative_rir": "ripe",
+        "latest_time": "2022-05-27T20:01:00",
+        "earliest_time": "2022-05-27T20:01:00",
+        "parameters": {
+            "resource": "3333"
+        }
+    },
+    "query_id": "20220527200144-4fd69739-3a85-4e88-85f2-ae31be469ba8",
+    "process_time": 45,
+    "server_id": "app112",
+    "build_version": "live.2022.5.19.96",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2022-05-27T20:01:44.652722"
+}

@@ -1,0 +1,23 @@
+{{
+  probes|as_table(
+    structure=(
+      ("id", "ID"),
+      ("prefix_v4", "Prefix (v4)"),
+      ("prefix_v6", "Prefix (v6)"),
+      ("status_name", "Status"),
+      ("last_connected", "Last Connected", "unixtime"),
+      ("tags", "Tags", "list"),
+      ("type", "Type"),
+      ("address_v4", "IPv4"),
+      ("address_v6", "IPv6"),
+      (("latitude", "longitude"), "Location", "map"),
+      ("country_code", "Country"),
+      ("is_public", "Public?", "bool"),
+      ("asn_v4", "ASN v4"),
+      ("asn_v6", "ASN v6"),
+      ("status_since", "Status Since", "unixtime"),
+      ("first_connected", "First Connected", "unixtime"),
+      ("total_uptime", "Total Uptime", "total_time"),
+    )
+  )
+}}
