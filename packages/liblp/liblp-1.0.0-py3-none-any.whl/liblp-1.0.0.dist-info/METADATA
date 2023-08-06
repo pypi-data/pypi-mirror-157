@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: liblp
+Version: 1.0.0
+Summary: Android logical partitions library ported from C++ to Python
+Home-page: https://github.com/SebaUbuntu/liblp
+License: Apache-2.0
+Author: Sebastiano Barezzi
+Author-email: barezzisebastiano@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/SebaUbuntu/liblp
+Description-Content-Type: text/markdown
+
+# liblp
+
+[![PyPi version](https://img.shields.io/pypi/v/liblp)](https://pypi.org/project/liblp/)
+
+Android logical partitions library ported from C++ to Python
+
+Requires Python 3.8 or greater
+
+## Installation
+
+```sh
+pip3 install liblp
+```
+
+## Instructions
+
+```sh
+# Launch lpunpack
+$ liblp
+```
+
+## License
+
+```
+#
+# Copyright (C) 2022 Sebastiano Barezzi
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+```
+

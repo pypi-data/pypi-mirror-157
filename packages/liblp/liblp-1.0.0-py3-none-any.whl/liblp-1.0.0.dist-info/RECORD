@@ -1,0 +1,16 @@
+liblp/__init__.py,sha256=XdEMfE32HPuuWqZ9vtm04x3UAP3MINtq1IsOxs10TuQ,523
+liblp/images.py,sha256=5HRcEomoqJlrqSMbQldWAkl-kNxdcecf3spLXZ3CMRA,888
+liblp/include/builder.py,sha256=C7y4OWAETg7jkC4xkRNvPy-1zgEw_gfv_4DtTJ76g1g,350
+liblp/include/liblp.py,sha256=xlmTaFv_yqmpA7-rGkWfSquTkPc3pQ_kOtCCIWJ_fz8,4283
+liblp/include/metadata_format.py,sha256=8GZ6FnME2-wo-riGupre2vBCYrSrzPjOUWCu-MIE-hY,13210
+liblp/include/partition_opener.py,sha256=Hn7f9yR2HIZIguzEmA9x3U-JRqacqXgtP7c0QOQD-PA,350
+liblp/liblp.py,sha256=FoI4O5PzX6J4meJuiHrYT0w29m5BtO-CO1UyV8pID5w,856
+liblp/partition_opener.py,sha256=qXBQZ9q3_uC_k8MtmOh-q94cXbmFF3d98dMPyIMm4NA,2544
+liblp/partition_tools/lpunpack.py,sha256=hb2XjOcZwSK8hUbjWkilkWbKNwyRBo8YAb62pwE6ues,3356
+liblp/reader.py,sha256=QlqkqhzaugUTZiYGlGXOsaSzgy4VukBRuF80vhykepY,11556
+liblp/utility.py,sha256=5naDm2WN8cAO3uKmXagt8T8Ofvaukp9sHR2ceDrlPzE,3214
+liblp/writer.py,sha256=j38VdoQDTK_9o1kcCu7uVwjcQcYDJM7S62r49fUnqkY,516
+liblp-1.0.0.dist-info/entry_points.txt,sha256=ZUnNLCvJmaQ7XJChy2dJXyN7H9JwNcxRi1lrsbwtUfQ,64
+liblp-1.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+liblp-1.0.0.dist-info/METADATA,sha256=7vtVOhKH87j1eV2u84a_RaDPJ26m01l8v-dlEM-YvSg,1045
+liblp-1.0.0.dist-info/RECORD,,
