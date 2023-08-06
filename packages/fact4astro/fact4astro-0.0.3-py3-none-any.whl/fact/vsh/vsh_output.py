@@ -1,0 +1,367 @@
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Mar 19 14:12:08 2017
+
+Write the output information (estimates associated with their formal errors
+and covariance) into a text file or on screen.
+
+@author: Neo
+"""
+
+from astropy.table import Table
+from astropy import units as u
+import numpy as np
+import sys
+
+__all__ = ["write_htable", "write_vtable",
+           "print_vsh_corr", "print_vsh_result", "print_vsh_result_4_dict"]
+
+
+#################### Block of functions ####################
+def init_par_names(par_nb):
+    """Initialize the names of parameters if they are not given.
+
+    Parameter
+    ---------
+    par_nb : int
+        number of parameters
+
+    Returns
+    -------
+    par_names: list of string
+        names of VSH parameters of first 2-degree
+    """
+
+    if par_nb == 6:
+        par_names = np.array(["D1", "D2", "D3", "R1", "R2", "R3"])
+    elif par_nb == 16:
+        par_names = np.array(["D1", "D2", "D3", "R1", "R2", "R3",
+                             "E22R", "E22I", "E21R", "E21I", "E20",
+                              "M22R", "M22I", "M21R", "M21I", "M20"])
+    elif par_nb == 10:
+        par_names = np.array(["E22R", "E22I", "E21R", "E21I", "E20",
+                             "M22R", "M22I", "M21R", "M21I", "M20"])
+    else:
+        print("Sorry this length of array is not recongnized :-(")
+        sys.exit()
+
+    return par_names
+
+
+# ----------- Horizontal Table -------------------
+def write_htable(cat_names, pmts, sigs, names=None, opt=sys.stdout, fmt="8.2f"):
+    """Print estmates and corresponding formal errors into a horizontal table.
+
+    Parameters
+    ----------
+    names : array of string
+        names or labels of parameters
+    pmts : array of float
+        estimates of parameters
+    sigs : array of float
+        formal errors of estimates
+    opt : file handling
+        Default to print all the output on the screen.
+    fmt : string
+        specifier of the output format
+    """
+
+    if names is None:
+        names = init_par_names(len(pmts[0]))
+
+    # Table header
+    head_line = []
+    for name in names:
+        head_line.append("  &${:10s}$".format(name))
+    head_line.append(" \\\\")
+    print("".join(head_line), file=opt)
+    print("\\hline", file=opt)
+
+    # data line
+    data_fmt = "  &${0:s} \\pm {0:s}$".format(fmt, fmt)
+
+    for i in range(len(cat_names)):
+        data_line = ["{:10s}".format(cat_names[i])]
+        pmt, sig = pmts[i], sigs[i]
+
+        for j in range(len(pmt)):
+            data_line.append(data_fmt % (pmt[j], sig[j]))
+
+        data_line.append(" \\\\")
+
+        print("".join(data_line), file=opt)
+
+
+# ----------- Vertical Table -------------------
+def write_vtable(names, pmts, sigs, opt=sys.stdout, fmt="8.2f"):
+    """Print estmates and corresponding formal errors into a horizontal table.
+
+    Parameters
+    ----------
+    names : array of string
+        names or labels of the parameters
+    pmts : array of float
+        estimates of parameters
+    sigs : array of float
+        formal errors of estimates
+    opt : file handling
+        Default to print all the output on the screen.
+    fmt : string
+        specifier of the output format
+    """
+
+    line_fmt = "$%10s$  &${0:s} \\pm {0:s}$ \\\\".format(fmt)
+
+    for pmt_namei, pmti, pmt_erri in (names, pmts, sigs):
+        print(line_fmt % (pmt_namei, pmti, pmt_erri), file=opt)
+
+
+# ----------- Correlation coefficients -------------------
+def print_corr(names, par_corrs, deci_digit=2, included_one=True,
+               opt=sys.stdout):
+    """Print the correlation coefficient in the screen.
+
+    Parameters
+    ----------
+    names : array
+        names or labels of the parameters
+    par_corrs : array of N * N
+        matrix or correlation coefficient
+    deci_digit : int
+        decimal digits. Only 1 and 2 are supported. Default is 2.
+    included_one : boolean
+        to include the correlation between the same parameters (of course the
+        value equals to 1) or not. True for yes.
+    opt : file handling
+        Default to print all the output on the screen.
+    """
+
+    par_nb = names.size
+
+    print("\nCorrelation coefficient", file=opt)
+    print("---------------------------------------------------------", file=opt)
+
+    # If the correlation matrix is an object of np.mat type,
+    # convert it to np.ndarray
+    if type(par_corrs) is np.mat or type(par_corrs) is np.matrix:
+        par_corrs = np.array(par_corrs)
+
+    if deci_digit == 1:
+        # Now begin to print the correlation coefficient
+        if included_one:
+            # The first line
+            print(("  %4s" * (par_nb + 1)) % ("    ", *names), file=opt)
+
+            # Include the correlation coefficient of one
+            for i, pmt_namei in enumerate(names):
+                line_fmt = "  %4s" + "  %+4.1f" * (i + 1)
+                print(line_fmt % (pmt_namei, *par_corrs[i, :i + 1]), file=opt)
+        else:
+            # The first line
+            print(("  %4s" * par_nb) % ("    ", *names[:-1]), file=opt)
+
+            for i in range(1, par_nb):
+                line_fmt = "  %4s" + "  %+4.1f" * i
+                print(line_fmt % (names[i], *par_corrs[i, :i]), file=opt)
+
+    elif deci_digit == 2:
+
+        # Now begin to print the correlation coefficient
+        if included_one:
+            # The first line
+            print(("  %5s" * (par_nb + 1)) % ("    ", *names), file=opt)
+
+            for i, pmt_namei in enumerate(names):
+                line_fmt = "  %5s" + "  %+5.2f" * (i + 1)
+                print(line_fmt % (pmt_namei, *par_corrs[i, :i + 1]), file=opt)
+        else:
+            # The first line
+            print(("  %5s" * par_nb) % ("    ", *names[:-1]), file=opt)
+
+            for i in range(1, par_nb):
+                line_fmt = "  %5s" + "  %+5.2f" * i
+                print(line_fmt % (names[i], *par_corrs[i, :i]), file=opt)
+    else:
+        print("The decimal digit of only 1 or 2 is supported!")
+        sys.exit()
+
+
+def print_vsh_corr(par_corrs, par_names=None,
+                   deci_digit=1, included_one=True, opt=sys.stdout):
+    """Print the correlation coefficient of VSH02 parameters in the screen.
+
+    Parameters
+    ----------
+    par_corrs : array of N * N
+        matrix or correlation coefficient
+    deci_digit : int
+        decimal digits. Only 1 and 2 are supported. Default is 2.
+    included_one : boolean
+        to include the correlation between the same parameters (of course the
+        value equals to 1) or not. True for yes.
+    """
+
+    if par_names is None:
+        par_nb = par_corrs[0].size
+        if par_nb == 6:
+            par_names = np.array(["D1", "D2", "D3", "R1", "R2", "R3"])
+        elif par_nb == 16:
+            par_names = np.array(["D1", "D2", "D3", "R1", "R2", "R3",
+                                 "E22R", "E22I", "E21R", "E21I", "E20",
+                                  "M22R", "M22I", "M21R", "M21I", "M20"])
+    else:
+        par_nb = par_names.size
+
+    # Check the shape of the matrix
+    a, b = par_corrs.shape
+    if a != b or a != par_nb:
+        print(
+            "The shape of the correlation matrix should be (N, N)(N={:d})!".format(par_nb))
+        sys.exit()
+
+    print_corr(par_names, par_corrs, deci_digit, included_one, opt)
+
+
+def print_vsh_result(pmts, sigs, par_corrs,
+                     par_names=None, opt=sys.stdout, fmt="%5.0f"):
+    """Print estmates and corresponding formal errors of vsh01 parameters.
+
+    Parameters
+    ----------
+    par_names : array of string
+        par_names or labels of the parameters
+    pmts : array of float
+        estimates of parameters
+    sigs : array of float
+        formal errors of estimates
+    opt : file handling
+        Default to print all the output on the screen.
+    fmt : string
+        specifier of the output format
+    """
+
+    par_nb = len(pmts)
+
+    if par_names is None:
+        par_names = init_par_names(par_nb)
+
+    tvsh = Table([par_names, pmts, sigs], names=[
+        "Parameter", "Estimate", "Error"])
+    tvsh["Estimate"].format = fmt
+    tvsh["Error"].format = fmt
+    tvsh["Estimate"].unit = u.uas
+    tvsh["Error"].unit = u.uas
+
+    print(tvsh, file=opt)
+
+    print_vsh_corr(par_corrs, par_names,
+                   deci_digit=1, included_one=True, opt=opt)
+
+
+def print_vsh_result_4_dict(output, par_names=None, opt=sys.stdout, fmt="%5.0f"):
+    """Print estmates and corresponding formal errors of vsh01 parameters.
+
+    Parameters
+    ----------
+    par_names : array of string
+        par_names or labels of the parameters
+    pmts : array of float
+        estimates of parameters
+    sigs : array of float
+        formal errors of estimates
+    opt : file handling
+        Default to print all the output on the screen.
+    fmt : string
+        specifier of the output format
+    """
+
+    if "pmt1" in output.keys():
+        pmts = output["pmt1"]
+        sigs = output["sig1"]
+        par_corrs = output["cor1"]
+        par_nb = 6
+    elif "pmt2" in output.keys():
+        pmts = output["pmt2"]
+        sigs = output["sig2"]
+        par_corrs = output["cor2"]
+        par_nb = 16
+    else:
+        pmts = output["pmt"]
+        sigs = output["sig"]
+        par_corrs = output["cor_mat"]
+        par_nb = len(pmts)
+
+    if par_names is None:
+        par_names = init_par_names(par_nb)
+
+    tvsh = Table([par_names, pmts, sigs], names=[
+        "Parameter", "Estimate", "Error"])
+    tvsh["Estimate"].format = fmt
+    tvsh["Error"].format = fmt
+    tvsh["Estimate"].unit = u.uas
+    tvsh["Error"].unit = u.uas
+
+    print(tvsh, file=opt)
+    print_vsh_corr(par_corrs, par_names,
+                   deci_digit=1, included_one=True, opt=opt)
+
+
+def save_vsh_result(pmts, sigs, ofile, par_names=None, fmt="%5.0f", comment=""):
+    """Save the VSH results into a text file.
+
+    Parameters
+    ----------
+    pmts : array of float
+        estimates of parameters
+    sigs : array of float
+        formal errors of estimates
+    opt : file handle
+        Default to print all the output on the screen.
+    fmt : string
+        specifier of the output format
+    """
+
+    par_nb = len(pmts)
+
+    if par_names is None:
+        par_names = init_par_names(par_nb)
+
+    tvsh = Table([par_names, pmts, sigs],
+                 names=["Names", "Estimate", "Error"])
+    tvsh["Estimate"].format = fmt
+    tvsh["Error"].format = fmt
+    tvsh["Estimate"].unit = u.uas
+    tvsh["Error"].unit = u.uas
+    tvsh.meta["comment"] = comment
+
+    tvsh.write(ofile, format="ascii", overwrite=True)
+
+
+def write_textable(cat_names, pmts, sigs, ofile=sys.stdout, par_names=None, fmt="%5.0f"):
+    """Save the VSH results into a tex table.
+
+    Parameters
+    ----------
+    pmts : array of float
+        estimates of parameters
+    sigs : array of float
+        formal errors of estimates
+    opt : file handle
+        Default to print all the output on the screen.
+    fmt : string
+        specifier of the output format
+    """
+
+    par_nb = len(pmts[0])
+
+    if par_names is None:
+        par_names = init_par_names(par_nb)
+
+    write_htable(cat_names, pmts, sigs, par_names, ofile, fmt)
+
+
+# ------------------------- MAIN ---------------------------------------
+if __name__ == "__main__":
+    print("Sorry but there is nothing to do.")
+# ------------------------- END ----------------------------------------
