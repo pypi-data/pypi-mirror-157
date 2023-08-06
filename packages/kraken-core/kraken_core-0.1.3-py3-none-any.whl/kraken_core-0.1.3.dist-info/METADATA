@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: kraken-core
+Version: 0.1.3
+Summary: 
+License: MIT
+Author: Niklas Rosenstein
+Author-email: rosensteinniklas@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: networkx (>=2.6.0,<3.0.0)
+Requires-Dist: setuptools (>=33.1.0)
+Description-Content-Type: text/markdown
+
+# kraken-core
+
+The kraken core API provides the primitives to fully describe complex build processes of software components.
+
+## 1. Concepts
+
+### 1.1 Projects
+
+A project maps to a directory on the file system that represents a software component, usually
+comprised of many different source code and supporting files, and eventually additional other
+sub projects.
+
+In every build there is at least one project involved, the root project. When tasks are referenced
+by the full qualified name, the root project name is omitted from the path (similar to how the root
+directory in a file system does not have a name and is represented by a single slash).
+
+### 1.2 Tasks
+
+A task is a logical unit of work that has a unique name within the project it is associated with. Tasks
+can have dependencies on other tasks or groups of tasks, even across projects. When a task is optional,
+it will only be executed if strictly required by another task.
+
+Dependencies on task can be strict or non-strict. Non-strict dependencies enforce an order on the
+execution sequence of tasks, wheras strict dependencies will ensure that the dependency has been
+executed.
+
+Tasks are usually marked as "default", meaning that they are selected by default if no task selectors are
+specified (see below on [Task selectors](#14-task-selectors)).
+
+Every task is associated with one [Action](#15-actions) that is executed for the task.
+
+### 1.4 Task selectors
+
+Without any arguments, all default tasks are selected and executed. When an explicit selection is made,
+it can be in one of the following forms:
+
+1. A fully qualified project reference
+2. A fully qualified task reference
+3. A task name to select from all projects that contain it
+
+Projects and tasks are structured hierarchally and fully qualified references are constructed like file system
+paths but with colons instead of slashes. For example, `:` represents the root roject, `:foo:bar` references
+task or project `bar` in project `foo` in the root project, `spam` references all tasks named `spam`.
+
+### 1.5 Actions
+
+An action is a unit of work that is executed by a task. A task's action may be set on creation or only right before
+it needs to be executed, in the `Task.finalize()` method.
+
