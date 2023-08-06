@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+datasets.py
+setup.py
+uaedata.egg-info/PKG-INFO
+uaedata.egg-info/SOURCES.txt
+uaedata.egg-info/dependency_links.txt
+uaedata.egg-info/top_level.txt
