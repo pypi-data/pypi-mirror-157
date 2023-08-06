@@ -1,0 +1,3 @@
+[console_scripts]
+saludo=proyecto2.main:main
+
