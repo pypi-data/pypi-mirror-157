@@ -1,0 +1,13 @@
+galileoexperimentsextensions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galileoexperimentsextensions/mobilenet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galileoexperimentsextensions/mobilenet/app.py,sha256=zJGJvA5jxHEpFJiah68Tug3wTez7o4re6d63_bF2-As,3003
+galileoexperimentsextensions/mobilenet/util.py,sha256=MpRiOGhc31BR0xoFzL_MexPKwf-vj-zYNTxbSGTs754,1169
+galileoexperimentsextensions/mobilenet/profiling/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galileoexperimentsextensions/mobilenet/profiling/main.py,sha256=BJHw0v-eaIa3_th_q82OnAgMrr5wlOLP8mNGGvb6fo0,1839
+galileoexperimentsextensions/mobilenet/scenario/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galileoexperimentsextensions/mobilenet/scenario/main.py,sha256=ML7nNdvRSaAMwt9w2B2pAasVaHMD9cGSwndEU33gLuk,2208
+edgerun_galileo_experiments_extensions-0.0.1.dev1.dist-info/LICENSE,sha256=f9rch8FXL_7B7yFxrlS7ddsf1iHRQTceOHAeJ15qmjg,1065
+edgerun_galileo_experiments_extensions-0.0.1.dev1.dist-info/METADATA,sha256=FYyIeMgfd6cVrleG6U2Bb5DENoSGzBR3UDWVRMhbPTw,1945
+edgerun_galileo_experiments_extensions-0.0.1.dev1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+edgerun_galileo_experiments_extensions-0.0.1.dev1.dist-info/top_level.txt,sha256=oW0RjGt_P2vTsvSgMqv8qS0cJGtvlXX9Ku1NpC3om60,29
+edgerun_galileo_experiments_extensions-0.0.1.dev1.dist-info/RECORD,,
