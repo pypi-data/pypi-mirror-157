@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ha_detect_geo_text_my1
+Version: 1
+Summary: A demo for python packaging.
+Home-page: https://github.com/liahimratman/ha_detect_geo_text_my1
+Author: korotkov
+Author-email: korotkov@hypeauditor.com 
+License: MIT
+Platform: UNKNOWN
+License-File: LICENCE
+
+A demo for python packaging.
+

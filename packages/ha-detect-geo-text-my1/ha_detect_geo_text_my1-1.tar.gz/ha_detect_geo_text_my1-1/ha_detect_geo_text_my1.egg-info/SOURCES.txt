@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+ha_detect_geo_text/__init__.py
+ha_detect_geo_text/example.py
+ha_detect_geo_text_my1.egg-info/PKG-INFO
+ha_detect_geo_text_my1.egg-info/SOURCES.txt
+ha_detect_geo_text_my1.egg-info/dependency_links.txt
+ha_detect_geo_text_my1.egg-info/top_level.txt
