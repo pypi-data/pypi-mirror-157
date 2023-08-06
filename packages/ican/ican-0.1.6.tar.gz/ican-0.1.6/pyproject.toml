@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ican"
+description = "Yet another deployment system.  Manage version bumping, git, etc."
+readme = "README.md"
+keywords = ["api", "auth"]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    'importlib-metadata; python_version<"3.8"',
+]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "ican.__public_version__"}
+
+[project.scripts]
+ican = "ican.cli:entry"
+
+[project.urls]
+homepage = "https://github.com/jthop/ican"
+repository = "https://github.com/jthop/ican"
+
+[tool.yapf]
+based_on_style = "google"
+
+[tool.flake8]
+ignore = ['E203', 'E231', 'E241']
+max-line-length = 88
+count = true
+max-complexity = 10
+
+[tool.black]
+line-length = 100
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.github
+  | dist
+)/
+'''
+
+[tool.pydocstyle]
