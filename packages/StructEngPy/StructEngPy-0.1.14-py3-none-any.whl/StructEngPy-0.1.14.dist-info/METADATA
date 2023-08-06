@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: StructEngPy
+Version: 0.1.14
+Summary: package for structural engineering
+Home-page: https://github.com/zhuoju36/StructEngPy
+Author: Zhuoju Huang
+Author-email: zhuoju36@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Manufacturing
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Requires-Dist: numpy (>=1.21)
+Requires-Dist: scipy (>=1.7)
+Requires-Dist: quadpy (>=0.16)
+
+UNKNOWN
+
+
