@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pystatusb/__init__.py
+pystatusb.egg-info/PKG-INFO
+pystatusb.egg-info/SOURCES.txt
+pystatusb.egg-info/dependency_links.txt
+pystatusb.egg-info/requires.txt
+pystatusb.egg-info/top_level.txt
