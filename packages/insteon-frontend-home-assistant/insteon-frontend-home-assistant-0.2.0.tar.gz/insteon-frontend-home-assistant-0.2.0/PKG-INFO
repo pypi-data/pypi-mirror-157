@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: insteon-frontend-home-assistant
+Version: 0.2.0
+Summary: The Insteon frontend for Home Assistant
+Home-page: https://github.com/teharris1/insteon-panel
+Author: Tom Harris
+Author-email: pyinsteon@harrisnj.net
+License: MIT License
+Platform: any
+Requires-Python: >=3.4.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Insteon Panel Frontend
+
+This repository holds the frontend files of Insteon configuration panel in home assistant.
