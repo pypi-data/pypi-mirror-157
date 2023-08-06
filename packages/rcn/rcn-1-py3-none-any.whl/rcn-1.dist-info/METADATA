@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: rcn
+Version: 1
+Summary: CLI Interface for RCN
+Home-page: https://github.com/mayank31313/rcn-cli
+Author: Mayank Shinde
+Author-email: mayank31313@gmail.com
+Keywords: ior,iot,network_robos,control_net
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# rcn-cli
+
+RControlNet CLI for setting up client for both IOR and RCN
+
+### Install
+
+    pip install git+https://github.com/mayank31313/rcn-cli
+
+### Usage
+
+#### Configure profile
+
+    python -m rcn configure --profile default
+    
+#### List Profiles
+
+    python -m rcn profile ls
+    
+#### Set Profile as default
+
+    python -m rcn profile set-default [profile-name]
