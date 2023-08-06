@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pylnlib
+Version: 0.1
+Summary: A library to monitor LocoNet message on a serial interface
+Home-page: https://github.com/varkenvarken/pylnlib
+Author: varkenvarken
+Author-email: test@example.com
+License: GPL
+Description: UNKNOWN
+Platform: UNKNOWN
