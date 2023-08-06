@@ -1,0 +1,15 @@
+gdrepl/__init__.py,sha256=cjXnulPWu0Ryra2nmXs78W69V2GjWoukIPnFtHAOSoA,250
+gdrepl/__main__.py,sha256=c-wVeH2XwwTM8ZZsXrlaEwOPqDzZ4gsNv5Cqo3wOFPM,59
+gdrepl/client.py,sha256=lzbXLXhTllueb10RcBkP0wt8u54PPiLHEFeP0OJ4e8M,970
+gdrepl/commands.py,sha256=c2aIEWRfw_HLhXjEvyR59ehGf2dTqfXxM5C82W4sUz0,2150
+gdrepl/constants.py,sha256=LpmwFuNfHcZNAt6U2NAcvU4q8i3BJ2ceCvWcQS-CjrA,900
+gdrepl/find_godot.py,sha256=QCx-wcVol9Egd1PMDb20tm0WUjys4HpFUYwjTznUtCc,2375
+gdrepl/gdserver.gd,sha256=JegFPrSDPrrOI0L4AfOE0_dTS1qrH789C1bcLqB4KkI,10414
+gdrepl/gdserverv4.gd,sha256=qCPNRkH3SiZpbN_VjM82iEN0CKR7JyWeMBlz-zYAUKc,10250
+gdrepl/main.py,sha256=3AIvpRolCO6lLTrwEQjMp9okpkczRo_enH1fNzxYWJE,7330
+gdrepl-0.0.2.11.dist-info/LICENSE.md,sha256=Ak_chgamc8Nsol8NaoAWZX1Io5uhpbSLmq1ZXRiKGT4,1091
+gdrepl-0.0.2.11.dist-info/METADATA,sha256=Nks6Ip-iAmta7Rkl2jTO1lafMt-qEMGVEIOOdCdpQ2w,7842
+gdrepl-0.0.2.11.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gdrepl-0.0.2.11.dist-info/entry_points.txt,sha256=mYYQYPL45-IBuPN-LacayUm5jpQfYTN_u4tF251ZVsg,44
+gdrepl-0.0.2.11.dist-info/top_level.txt,sha256=0IUF4rLzwJltL7V8x5ThCyIQ_F84z10pKUFkirGg-O4,7
+gdrepl-0.0.2.11.dist-info/RECORD,,
