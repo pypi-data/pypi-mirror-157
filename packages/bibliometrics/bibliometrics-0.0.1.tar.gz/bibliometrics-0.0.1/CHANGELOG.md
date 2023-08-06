@@ -1,0 +1,32 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased] - 2022-06-29
+
+**BREAKING CHANGES** Entry point has changed--now runs as a module rather than a script.
+
+### Added
+  
+### Changed
+* Restructured code into a Python module enabling installing and running with `-m` flag.
+* Minor refactoring for miscellaneous improvements.
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+
+## [1.1.0] - 2022-06-10
+
+### Added
+* Inserted Scholar logo to two upper corners.
+
+
+## [1.0.0] - 2022-06-08
+
+Initial release.
