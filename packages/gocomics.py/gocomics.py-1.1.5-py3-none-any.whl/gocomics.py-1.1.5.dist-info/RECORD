@@ -1,0 +1,10 @@
+gocomics/__init__.py,sha256=I8DQAQ7laBDEDYtaNo67dBYw9pRW-3GL3IwqXGZQA00,343
+gocomics/comic.py,sha256=UDruEC1eYI4rAoawxA9w5xg8BCRWpW0wyv1j9UQH8Sk,5335
+gocomics/endpoints.py,sha256=bSUr3v6OiZAV_V0h5URLy3t8MlvZP0ahRlitHZmzDGc,1134
+gocomics/list.py,sha256=1P4BSu8foNbuuyOl6B2bnIvb3q1FV0Y54vACa3gU3Ms,3828
+gocomics/utils.py,sha256=nLtj0zT7ZrT66NEP7ag2MAcJ2l4puIHZH8o6jvYs6B4,4038
+gocomics.py-1.1.5.dist-info/LICENSE,sha256=FKvvN_yPQOmon4zbNaTpSOd0-EjbEqlAmfCMhtS1WSQ,1063
+gocomics.py-1.1.5.dist-info/METADATA,sha256=_NfthjUtXfhVdm4zMt8z2VhO4Fs4XZ50SwZr4Ca-TeM,1789
+gocomics.py-1.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gocomics.py-1.1.5.dist-info/top_level.txt,sha256=qAnQsBkrTHQzKVWYSRx--ZqS3abduvfVHZxw8ony7EY,9
+gocomics.py-1.1.5.dist-info/RECORD,,
