@@ -1,0 +1,13 @@
+pygbag/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+pygbag/__main__.py,sha256=xRDHpCbXzipCbVbvwqUVF1xkX3QbmQOsxEOSGAPX42k,209
+pygbag/app.py,sha256=L86eNuWyTAX81uewxLb4FvpTZRcTiENh66GiVp11CQA,8708
+pygbag/dbgserv.py,sha256=b-eh9C6w2MwRUBXPoeAf7g4Cbn1INeKwsEkTRF76OZk,39057
+pygbag/pack.py,sha256=aDZAMJ3fWcdBEFfXn7JfcfhVGhRF8WRY18ui5imLJuM,5658
+pygbag/testserver.py,sha256=1jdHmrIpHRLqDf8Fy9wQBTsTdJJPs1aIJRPEJtirz5w,9192
+pygbag-0.1.1.dist-info/LICENSE,sha256=TL0VVKH4VHHfNR1h0wACRZpIXzRTUxM6kmhBTTlzFd0,1072
+pygbag-0.1.1.dist-info/METADATA,sha256=nQ58Yntz91FRX5kZg9jUqkH7klvgZuqDoKm4wyrJu8Q,3725
+pygbag-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pygbag-0.1.1.dist-info/entry_points.txt,sha256=T8t84KTpSjyNkHyFfpkGvLPgtCq1oiIk2KNg06S2DKo,43
+pygbag-0.1.1.dist-info/top_level.txt,sha256=51uuV5GmI2Pt5RqG8-Oj5czhRZIlT136NxtWuwJ3btM,7
+pygbag-0.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pygbag-0.1.1.dist-info/RECORD,,
