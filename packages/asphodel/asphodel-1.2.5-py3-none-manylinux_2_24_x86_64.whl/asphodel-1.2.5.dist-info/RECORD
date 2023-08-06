@@ -1,0 +1,15 @@
+asphodel-1.2.5.dist-info/METADATA,sha256=Lf6F8eXkfhxvm6O5wGBJFAKrnFbvS1kG0ox5vbc6n9g,1076
+asphodel-1.2.5.dist-info/RECORD,,
+asphodel-1.2.5.dist-info/WHEEL,sha256=xtPDSV51DEwjIJdOSsYFTo5LV38GKVUGElN1OTrBRZ8,105
+asphodel-1.2.5.dist-info/LICENSE.txt,sha256=GM-NF3k67R5q2csB_sthsWMBhq28yW3FH4hZFklkQ2A,744
+asphodel-1.2.5.dist-info/top_level.txt,sha256=nuqPJOBHNzzc-XdSFCwDXY7k6lWCbwAo02Y9LQmKIFg,9
+asphodel-1.2.5.dist-info/entry_points.txt,sha256=HGJVQRaScIC2zOYfXW-nKNvmY7IDlTzOYrw-42a9f_w,54
+asphodel.libs/libudev-3957449c.so.1.6.5,sha256=Sx2VPZvzIuC0AYGbkPPIZMPacpsrivintxkAhzf2w0Y,144952
+asphodel.libs/libusb-1-be4d66e8.0.so.0.1.0,sha256=_bl7BdtK1Cjt8CpphSXtdFFlTxLJb9lULIyC6cn1Yuc,114440
+asphodel/version.py,sha256=iMo7C6J2F3CAfw_-J-pqK-nneRjaKPbrf6o8rqHHQ0Q,142
+asphodel/__init__.py,sha256=tg4BLv2hcuMRapkBBLQ49SVv_H-6UE18e43pakGHWpA,172167
+asphodel/nvmeditor.py,sha256=lc0IISb5aMAKcp--Y7JGbm374idpDUDqAx3lc1Ez-VY,14080
+asphodel/streamutil.py,sha256=5X4_zpf5fpBHJNGONF5Iy2NPZKS4XLJjhnnOZG_K1ZU,8853
+asphodel/apdparse.py,sha256=BgzHoMTmQ77d_MOqweZlcxqIUPZZg4jDqCmnWKP_Yt8,7334
+asphodel/lib/libasphodel.so,sha256=uw4Kgz4yToyq-nfEfmiuJJ3avalSEoNCiS8KLgwTbu4,253208
+asphodel/lib/libunpack.so,sha256=KUmPfU9sC60SvFIftoRDuM08qm6sL1YhDN1JMxctSLw,8521320
