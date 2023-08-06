@@ -1,0 +1,13 @@
+quantitizer/__init__.py,sha256=FnHf2EICYzy6e6Ol3_7SNXfd_vEUOj5LaTMWjIyytMw,1858
+quantitizer/_pq_array.py,sha256=-QeeLY9g46tTpqN08lbkC30cULXmwByxEsj37DQsBUw,4697
+quantitizer/exceptions.py,sha256=kvwvFVmLw70H6PYYPGyY4c-S0i42q7HxaYGnQjbMCL0,41
+quantitizer/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quantitizer/integration/evaluation.py,sha256=X8t5t9Fg77vaMgJefSyEFFQD2NtKJicARibjmqgmfnY,315
+quantitizer/integration/gensim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quantitizer/integration/gensim/fasttext.py,sha256=lv2BdmUW6BiRyVmAiIWz9X0AjTTPR58p0k05k3Tzr-A,5798
+quantitizer/pretrain.py,sha256=aHdyIT_1yeupglqkN1xRF7cYnq1A1AAZ_mAHCt7IUSU,477
+quantitizer/utils.py,sha256=p-63z2PvPAqDgo4aL7pu2jHcnUBZt0rBQSxa_Nrk09o,1153
+quantitizer-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+quantitizer-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+quantitizer-0.1.0.dist-info/METADATA,sha256=13TqyVYjowTHr6ydmbmaO6WP-DTpFlFfyU8i9fn1IxE,537
+quantitizer-0.1.0.dist-info/RECORD,,
