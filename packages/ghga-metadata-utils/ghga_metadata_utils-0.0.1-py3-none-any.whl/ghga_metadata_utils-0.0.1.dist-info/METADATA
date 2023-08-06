@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: ghga-metadata-utils
+Version: 0.0.1
+Summary: Utilities concerning the GHGA Metadata Schema
+Home-page: https://github.com/ghga-de/ghga-metadata-utils
+Author: German Human Genome Phenome Archive (GHGA)
+Author-email: contact@ghga.de
+License: Apache 2.0
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE
+Requires-Dist: linkml (==1.2.15)
+Requires-Dist: linkml-runtime (==1.2.16)
+Requires-Dist: linkml-validator (==0.4.1)
+Provides-Extra: all
+Requires-Dist: pytest (==7.1.1) ; extra == 'all'
+Requires-Dist: pytest-cov (==3.0.0) ; extra == 'all'
+Requires-Dist: mypy (==0.942) ; extra == 'all'
+Requires-Dist: mypy-extensions (==0.4.3) ; extra == 'all'
+Requires-Dist: pylint (==2.13.3) ; extra == 'all'
+Requires-Dist: click (==8.1.2) ; extra == 'all'
+Requires-Dist: black (==22.3.0) ; extra == 'all'
+Requires-Dist: flake8 (==4.0.1) ; extra == 'all'
+Requires-Dist: isort (==5.10.1) ; extra == 'all'
+Requires-Dist: bandit (==1.7.4) ; extra == 'all'
+Requires-Dist: pre-commit (==2.17.0) ; extra == 'all'
+Requires-Dist: requests (==2.27.1) ; extra == 'all'
+Requires-Dist: mkdocs (==1.3.0) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: pytest (==7.1.1) ; extra == 'dev'
+Requires-Dist: pytest-cov (==3.0.0) ; extra == 'dev'
+Requires-Dist: mypy (==0.942) ; extra == 'dev'
+Requires-Dist: mypy-extensions (==0.4.3) ; extra == 'dev'
+Requires-Dist: pylint (==2.13.3) ; extra == 'dev'
+Requires-Dist: click (==8.1.2) ; extra == 'dev'
+Requires-Dist: black (==22.3.0) ; extra == 'dev'
+Requires-Dist: flake8 (==4.0.1) ; extra == 'dev'
+Requires-Dist: isort (==5.10.1) ; extra == 'dev'
+Requires-Dist: bandit (==1.7.4) ; extra == 'dev'
+Requires-Dist: pre-commit (==2.17.0) ; extra == 'dev'
+Requires-Dist: requests (==2.27.1) ; extra == 'dev'
+Requires-Dist: mkdocs (==1.3.0) ; extra == 'dev'
+
+
+
+
+# GHGA Metadata Utils
+
+The GHGA Metadata Utils is a package that provides all things related to
+the GHGA Metadata Schema.
+
+The repository is structured to encourage,
+- reuse of custom generators
+- manage validation plugins
+
+
+## Documentation:
+
+An extensive documentation can be found [here](...) (coming soon).
+
+## Quick Start
+### Installation
+
+```bash
+# Execute in the repo's root dir:
+pip install .
+```
+
+## Development
+For setting up the development environment, we rely on the
+[devcontainer feature](https://code.visualstudio.com/docs/remote/containers) of vscode
+in combination with Docker Compose.
+
+To use it, you have to have Docker Compose as well as vscode with its "Remote - Containers" extension (`ms-vscode-remote.remote-containers`) installed.
+Then open this repository in vscode and run the command
+`Remote-Containers: Reopen in Container` from the vscode "Command Palette".
+
+This will give you a full-fledged, pre-configured development environment including:
+- infrastructural dependencies of the service (databases, etc.)
+- all relevant vscode extensions pre-installed
+- pre-configured linting and auto-formating
+- a pre-configured debugger
+- automatic license-header insertion
+
+Moreover, inside the devcontainer, there are two convenience commands available
+(please type them in the integrated terminal of vscode):
+- `dev_install` - install the service with all development dependencies,
+installs pre-commit, and applies any migration scripts to the test database
+(please run that if you are starting the devcontainer for the first time
+or if you added any python dependencies to the [`./setup.cfg`](./setup.cfg))
+
+If you prefer not to use vscode, you could get a similar setup (without the editor specific features)
+by running the following commands:
+``` bash
+# Execute in the repo's root dir:
+cd ./.devcontainer
+
+# build and run the environment with docker-compose
+docker-compose up
+
+# attach to the main container:
+# (you can open multiple shell sessions like this)
+docker exec -it devcontainer_app_1 /bin/bash
+```
+
+## License
+This repository is free to use and modify according to the [Apache 2.0 License](./LICENSE).
