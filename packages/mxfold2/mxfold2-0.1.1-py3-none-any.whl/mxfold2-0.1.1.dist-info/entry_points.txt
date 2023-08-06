@@ -1,0 +1,3 @@
+[console_scripts]
+mxfold2=mxfold2.__main__:main
+
