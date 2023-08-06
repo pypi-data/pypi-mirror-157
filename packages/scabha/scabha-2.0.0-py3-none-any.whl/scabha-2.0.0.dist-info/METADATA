@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: scabha
+Version: 2.0.0
+Summary: Parameter validation, substitution, configuration and other onboard services for Stimela
+Home-page: https://github.com/caracal-pipeline/scabha2
+Author: Oleg Smirnov & RATT
+Author-email: osmirnov@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml
+Requires-Dist: omegaconf
+Requires-Dist: click
+Requires-Dist: pydantic
+Requires-Dist: pyparsing
+Requires-Dist: pytest
+Requires-Dist: rich
+Requires-Dist: dill
+
+# scabha
+Onboard services for passengers of Stimela cabs
