@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+yarsync/__init__.py
+yarsync/yarsync.py
+yarsync.egg-info/PKG-INFO
+yarsync.egg-info/SOURCES.txt
+yarsync.egg-info/dependency_links.txt
+yarsync.egg-info/entry_points.txt
+yarsync.egg-info/top_level.txt
