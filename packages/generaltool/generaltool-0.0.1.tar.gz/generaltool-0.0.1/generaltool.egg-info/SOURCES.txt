@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+generaltool/__init__.py
+generaltool/literal.py
+generaltool.egg-info/PKG-INFO
+generaltool.egg-info/SOURCES.txt
+generaltool.egg-info/dependency_links.txt
+generaltool.egg-info/top_level.txt
+generaltool/test/__init__.py
+generaltool/test/test_literal.py
