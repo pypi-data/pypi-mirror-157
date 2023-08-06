@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: deepviewcore
+Version: 0.1.4
+Summary: 
+Author: Miguel Martín
+Author-email: alu0101209777@ull.edu.es
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy
+Requires-Dist: opencv-python
