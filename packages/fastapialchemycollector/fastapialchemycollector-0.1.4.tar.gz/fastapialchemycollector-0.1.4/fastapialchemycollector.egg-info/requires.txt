@@ -1,0 +1,9 @@
+opentelemetry-api==1.11.1
+opentelemetry-sdk==1.11.1
+opentelemetry-instrumentation==0.31b1
+opentelemetry-instrumentation-asgi==0.31b1
+opentelemetry-instrumentation-fastapi==0.31b1
+opentelemetry-instrumentation-sqlalchemy==0.31b1
+opentelemetry-semantic-conventions==0.31b0
+opentelemetry-instrumentation==0.31b0
+opentelemetry-util-http==0.30b1
