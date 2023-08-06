@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "flake8-markdown"
+version = "0.1.1"
+description = "Lints Python code blocks in Markdown files using flake8"
+authors = ["John Franey <johnfraney@gmail.com>"]
+# New attributes
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/johnfraney/flake8-markdown"
+repository = "https://github.com/johnfraney/flake8-markdown"
+keywords = ["flake8", "markdown", "lint"]
+classifiers = [
+    "Environment :: Console",
+    "Framework :: Flake8",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+# Updated Python version
+python = "^3.6"
+# New dependency
+flake8 = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+# New scripts
+[tool.poetry.scripts]
+flake8-markdown = 'flake8_markdown:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
