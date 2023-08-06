@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pims-api-client"
+version = "0.1.7"
+description = "INLB PIMS API Client"
+authors = ["Никита Злаин <nz@inlb.ru>"]
+keywords = ["pims", "api_client"]
+license = "MIT"
+homepage = "https://gitlab.inlb.ru/inlb/python/pims-api-client"
+repository = "https://gitlab.inlb.ru/inlb/python/pims-api-client"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httpx = "^0.22.0"
+pydantic = "~=1.9"
+pyhumps = "^3.5.3"
+pytest-asyncio = "^0.18.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.1"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
