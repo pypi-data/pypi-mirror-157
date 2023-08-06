@@ -1,0 +1,4 @@
+[console_scripts]
+dtw = twi.delete_last_tweet:main
+prof = twi.update_profile:main
+tw = twi.send_tweet:main
