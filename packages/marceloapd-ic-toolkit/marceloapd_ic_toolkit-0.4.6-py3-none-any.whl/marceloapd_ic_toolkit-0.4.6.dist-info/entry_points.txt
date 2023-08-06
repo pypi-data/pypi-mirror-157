@@ -1,0 +1,3 @@
+[console_scripts]
+ic=marceloapd_ic_toolkit.main:app
+
