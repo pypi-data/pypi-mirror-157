@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: bodosql
+Version: 2022.6b1
+Summary: compile SQL for clusters
+Home-page: https://bodo.ai
+Author: Bodo.ai
+License: UNKNOWN
+Keywords: data analytics cluster
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.8,<3.11
+License-File: LICENSE.md
+Requires-Dist: bodo (==2022.6.*)
+Requires-Dist: py4j
+
+UNKNOWN
+
