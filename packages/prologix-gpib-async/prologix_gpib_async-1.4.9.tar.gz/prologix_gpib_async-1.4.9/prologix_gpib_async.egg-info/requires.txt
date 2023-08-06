@@ -1,0 +1,11 @@
+
+[:python_version < "3.11"]
+typing-extensions
+
+[dev]
+build
+pylint
+twine
+
+[test]
+pylint
