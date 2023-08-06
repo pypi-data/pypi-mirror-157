@@ -1,0 +1,17 @@
+ml_benchmark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml_benchmark/benchmark_runner.py,sha256=TahaPhvGQ4CPeDmbgrnrsApGm7gVTfUT_V2yMSbKoSY,8991
+ml_benchmark/config.py,sha256=UPcxjnjxeSEaWhN2-zW8IiNEwrpniboYperCqgBQ_2U,528
+ml_benchmark/latency_tracker.py,sha256=XaBlxuwHWuFP6-g7yLlZZiHFL38mffP28CKG7xwFLnU,3054
+ml_benchmark/metrics.py,sha256=nQ0OiIbXlvgKE1W_Mq2NRm6uDiLLe7Q-pG1nHR6idUw,2882
+ml_benchmark/metrics_storage.py,sha256=cgRx0Kc19ZYDYkJ0H_--DC_kikElNXhrfRvulGWGdaw,3436
+ml_benchmark/resource_tracker.py,sha256=2c9seyK1Wr9419t2MAx8iVfKjbkbx6252K7R9xVh3xE,173
+ml_benchmark/workload/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml_benchmark/workload/objective.py,sha256=uVubeGKEF3vF3TpcfXn3u_csn-PXv1OEVc1GbtJdWEs,530
+ml_benchmark/workload/mnist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml_benchmark/workload/mnist/mlp.py,sha256=3MazvTQrWpdZ1ZfTwGn_INQZn7lYkTqheIBvYFOXFZ4,2392
+ml_benchmark/workload/mnist/mlp_objective.py,sha256=dxyUtjsvwPyRoRDn33ppZOEcF3HAlSleIHWdtQit9zA,3847
+ml_benchmark/workload/mnist/mnist_task.py,sha256=4YvJIr1qNoEM9pl_nxvzyg6JkWV0QeoJmi1UTohHAf0,2064
+ml_benchmark-0.2.0.dist-info/METADATA,sha256=YCGEj0EJE4bn-zt8v9qp1VjrY74wphUwb-OaAIfgQpA,685
+ml_benchmark-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ml_benchmark-0.2.0.dist-info/top_level.txt,sha256=I-3j0l_pYtQnqYcoyp8b4jHlFeazkgV4eu291SWqj2E,13
+ml_benchmark-0.2.0.dist-info/RECORD,,
