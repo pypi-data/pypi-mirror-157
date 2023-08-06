@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: wmfwk
+Version: 1.0.0
+Summary: 框架部分代码
+Home-page: https://blog.csdn.net/a249040113?spm=1000.2115.3001.5343
+Author: wmang
+Author-email: itfast@yeah.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# aisrfwk
+框架部分代码
+
