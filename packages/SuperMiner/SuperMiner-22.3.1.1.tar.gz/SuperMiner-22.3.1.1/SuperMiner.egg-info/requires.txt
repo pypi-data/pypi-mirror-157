@@ -1,0 +1,7 @@
+requests
+urllib3
+selenium
+lxml
+bs4
+click
+setuptools
