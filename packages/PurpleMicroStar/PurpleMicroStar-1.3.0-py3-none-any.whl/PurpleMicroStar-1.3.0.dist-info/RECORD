@@ -1,0 +1,15 @@
+PurpleMicroStar/BasicConst.py,sha256=BzagBTMcYHNBg4kZcM5y5bXWcVluY7uN26Y8Hj9iVZw,1585
+PurpleMicroStar/BasicMech.py,sha256=gsRrjJbHfhB4O2YLE2evuYoHRZ1Qd4jR2Zvpoz2Sm3I,3271
+PurpleMicroStar/GravitationalWave.py,sha256=xFMAB7HY1L2MAbPxD_6QAlVOlchD0xGLK_JpPz_7GnU,20685
+PurpleMicroStar/MultiBody.py,sha256=vi3lSAZeaUlRaGIs63XhOHBsPnFRARpydCi_WmAOgq0,11189
+PurpleMicroStar/Sample.py,sha256=XgkYvaodKfyMcsBQ3ijGuQKw0WyfLj7hPZCB8gUj2uk,1077
+PurpleMicroStar/StarBody.py,sha256=ndxsctQI7SNSN5gESzafKfi-zklYKGutMn2Ew6L_E08,8010
+PurpleMicroStar/__init__.py,sha256=AtAqnKVjDu2CaZ5WaORKawUdzV39eICpgf2AQsadTmI,108
+PurpleMicroStar/exampledata/Multibody-3.csv,sha256=z7tv8Dj0WgXOpVo4Z8fj5OmAWlZjgfFFOnjoOhMruds,371
+PurpleMicroStar/exampledata/Multibody-6.csv,sha256=uCc9zFT0fNOpcl3-VuoouhS22avmgWyIb2CBM38J3L4,689
+PurpleMicroStar-1.3.0.dist-info/LICENSE.TXT,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+PurpleMicroStar-1.3.0.dist-info/METADATA,sha256=gFR1WMd4mAVMad4L1mgyVjpQIJEH4vI6zo6iocyMVdw,3397
+PurpleMicroStar-1.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PurpleMicroStar-1.3.0.dist-info/entry_points.txt,sha256=NL7m21_4kqTUqWaz_2HPXOq-QA7KD-Nw7LLUjpl_GAk,52
+PurpleMicroStar-1.3.0.dist-info/top_level.txt,sha256=y-k4mrsE_sIgp6zZ5A5ti5V3wtyKzjodXQYdisFY2GQ,16
+PurpleMicroStar-1.3.0.dist-info/RECORD,,
