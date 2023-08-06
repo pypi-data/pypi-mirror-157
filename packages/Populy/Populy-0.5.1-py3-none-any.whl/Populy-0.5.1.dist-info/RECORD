@@ -1,0 +1,13 @@
+Manuales/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+populy/__init__.py,sha256=uLyxGSPbYms1TEH1Dd8cOaUBRw4Gmrn8TeMeppWK3TE,24
+populy/functions.py,sha256=gFGYN49ONYGBwyIibfeauRmWJbI57SrmXaYxbwDjuc8,4503
+populy/individual.py,sha256=U8kRhskUO0JygAbEJ1JQXLq2Wf-1R22kKPjhNvxdJ-I,8216
+populy/plot.py,sha256=M9EbWRTZhkvEnvPy6P6iZHvBQPbtG9EjIZuiNMej7rI,4373
+populy/plots.py,sha256=jb9xE7WLoTXH6cSO7124B56ioHcvZM9MS1d4Gxpxf9w,2614
+populy/population.py,sha256=rq7lF1oxHbVBdcIna_AaaPcJUlJz1rA8hmI4vJyCHns,26537
+populy/superpop.py,sha256=7bg56BI1c-iNes2fbOg2Tx3T9-NifD4iOgDvdyGLHus,4403
+Populy-0.5.1.dist-info/LICENSE,sha256=U4Wrv9g9Zbc6gedkfuCiZUqHCsSGwUQESxbCrb76kT4,1093
+Populy-0.5.1.dist-info/METADATA,sha256=MjJr0BE-XYkUS_Kt34Jtle-6OzvoEZKr9lxpcfZVEKU,1705
+Populy-0.5.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Populy-0.5.1.dist-info/top_level.txt,sha256=EHWRlqH8Njc57iRQ8U_wBch8pPFPzQ1LE9RJt8K52yk,7
+Populy-0.5.1.dist-info/RECORD,,
