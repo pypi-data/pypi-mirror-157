@@ -1,0 +1,14 @@
+notsotuf/__init__.py,sha256=dmzQHzq8SSa46FqPj6FrIbzxOxRx6xfrfv244etpCBY,902
+notsotuf/__main__.py,sha256=vEguAUBWZ6WsBsM9-lsZh8pG1Ebse4ZpocNnu7CC6qI,298
+notsotuf/client.py,sha256=MdKA4Q-XaWvM9FX0mpbTPHR4JP7xfl7r4ycCLZeYEvs,13023
+notsotuf/common.py,sha256=dOwbomoPhAUePvKuNFCzrFP51IvhSSYw-woJd9EYfyg,4907
+notsotuf/repo/__init__.py,sha256=t3dGRFX6RCq2JS3iC6BapEUBxafOQFvnr28Kk_RgB44,37452
+notsotuf/repo/cli.py,sha256=n2d6Al04oGfJj1eZ6IVE46V36cQZdYB_JPIDaOB8Nsc,12018
+notsotuf/utils/__init__.py,sha256=FNvykcOE3S6UCca0Yat5w_STjyQCK7oZONRxiJdRG9Q,3739
+notsotuf/utils/platform_specific.py,sha256=kW09opzSvT2_Ij-0U1gc22JIIjgF8BJw7Y_GW4J9_v0,4032
+notsotuf-0.1.0.dist-info/LICENSE,sha256=-3xLeNpBf0ZY8_t9-JeNnBJILaz0AFPFqYlI-i9nwVA,1084
+notsotuf-0.1.0.dist-info/METADATA,sha256=QkrXeZFrF-yCPRGPFY4bzd3UgP8BjiF1I8a5qlEydU0,8242
+notsotuf-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+notsotuf-0.1.0.dist-info/entry_points.txt,sha256=wCuIggsLNuWMukIVgIsxSfc1aWxPNT7RbfMsTzoNAbE,43
+notsotuf-0.1.0.dist-info/top_level.txt,sha256=wZ1ketDcGUvYUx9xvETXlQHjS0MTVWgtitP5GOWwfVI,9
+notsotuf-0.1.0.dist-info/RECORD,,
