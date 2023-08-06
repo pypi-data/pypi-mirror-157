@@ -1,0 +1,6 @@
+fastapi
+opentelemetry-api
+opentelemetry-instrumentation-fastapi
+opentelemetry-instrumentation-sqlalchemy
+opentelemetry-sdk
+sqlalchemy
