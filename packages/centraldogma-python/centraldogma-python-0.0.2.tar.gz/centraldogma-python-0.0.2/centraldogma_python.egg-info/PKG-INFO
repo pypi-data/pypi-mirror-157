@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: centraldogma-python
+Version: 0.0.2
+Summary: Central Dogma client in Python
+Home-page: https://github.com/line/centraldogma-python
+Author: Seunggon Kim
+Author-email: crosien@gmail.com
+License: Apache License 2.0
+Keywords: centraldogma
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Central Dogma client in Python
+<a href="https://pypi.org/project/centraldogma-python/">
+    <img src="https://badge.fury.io/py/centraldogma-python.svg" alt="Package version">
+</a>
+
+Python client library for Central Dogma
+
+🚧 WIP - Initial development is in progress 🚧
+
+## Install
+```
+$ pip install centraldogma-python
+```
+
+## Getting started
+```pycon
+>>> from centraldogma.dogma import Dogma
+>>> dogma = Dogma("https://dogma.yourdomain.com", "token")
+>>> dogma.list_projects()
+[]
+```
+Please see [`examples` folder](https://github.com/line/centraldogma-python/tree/main/examples) for more detail.
+
+---
+
+## Development
+### Tests
+#### Unit test
+```
+$ pytest
+```
+
+#### Integration test
+1. Run local Central Dogma server with docker-compose
+```
+$ docker-compose up -d
+```
+
+2. Run integration tests
+```
+$ INTEGRATION_TEST=true pytest
+```
+
+3. Stop the server
+```
+$ docker-compose down
+```
+
+### Lint
+- [PEP 8](https://www.python.org/dev/peps/pep-0008)
+```
+$ black .
+```
+
+### Documentation
+- [PEP 257](https://www.python.org/dev/peps/pep-0257)
+
+#### To build sphinx at local
+```
+$ pip install sphinx sphinx_rtd_theme
+$ cd docs && make html
+```
+
+
