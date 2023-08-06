@@ -1,0 +1,21 @@
+[build-system]
+requires = ["py2app>=0.28.2", "pyinstaller>=5.1", "psutil>=5.9.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyEasier"
+version = "0.0.6.2"
+authors = [
+  { name="Yellow Yams(Vedic Mukherjee)", email="yellowyams5@gmail.com" },
+]
+description = "This package makes you python experience better it includes nice shortcut functions to help solve problems in less lines of code."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/YellowBoyYams/PyEasier/issues"
