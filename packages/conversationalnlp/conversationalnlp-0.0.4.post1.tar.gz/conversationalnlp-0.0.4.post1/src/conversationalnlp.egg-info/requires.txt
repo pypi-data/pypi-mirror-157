@@ -1,0 +1,6 @@
+torch==1.10.0
+torchaudio==0.10.0
+transformers==4.20.1
+autocorrect==2.6.1
+SoundFile==0.10.3.post1
+librosa==0.8.1
