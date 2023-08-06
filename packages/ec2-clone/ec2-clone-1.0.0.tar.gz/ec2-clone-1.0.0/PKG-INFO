@@ -1,0 +1,301 @@
+Metadata-Version: 2.1
+Name: ec2-clone
+Version: 1.0.0
+Summary: Relaunch an AWS instance whilst maintaining the same configuration and data
+Author: Joaquim Gomez
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+
+# EC2 Clone
+
+Clone EC2 instances maintaining configuration and data.
+
+## Installation
+
+`pip install ec2-clone`
+
+Confirm installation with `ec2-clone --help`
+
+## Usage + Commands
+
+| Command                | Description                                            |
+| ---------------------- | ------------------------------------------------------ |
+| replace-instance       | Clone instance and terminate the source instance       |
+| clone-instance         | Clone instance without terminating the source instance |
+| create-ami             | Create AMI from source instance                        |
+| create-settings-json   | Create instance JSON file from source instance         |
+| create-launch-template | Create launch template from source instance            |
+
+Run as `ec2-clone <command> --region <region> --instance-id <instance-id>`
+
+`--instance-id` and `--region` are required for all commands.
+
+### Replace Instance
+
+Useful if a perfect copy of an instance is required. This includes private IP addresess and prefixes along with all other instance configuration.
+
+#### Example
+
+`ec2-clone replace-instance --region eu-west-1 --instance-id i-12345678`
+
+#### Usage
+
+```text
+Usage: ec2-clone replace-instance [OPTIONS]
+
+  Clone instance and terminate the source instance
+
+Options:
+  --settings-input TEXT           Instance settings input file
+  -l, --log-level [DEBUG|INFO|WARNING|ERROR|CRITICAL]
+                                  Log level as string
+  --yes                           Assume yes to all prompts
+  -r, --region TEXT               Region string in long format, e.g. eu-west-1
+                                  [required]
+  -i, --instance-id TEXT          Instance ID  [required]
+  --ami-name TEXT                 Name used when creating new AMI
+  --ami-suffix TEXT               Suffix used when creating new AMI. Full name
+                                  will be \{instance-name\}\{suffix\}
+  -a, --ami-id TEXT               AMI to use for new instances instead of
+                                  creating a new one
+  --instance-type TEXT            Override instance type
+  --root-volume-size INTEGER      Size of new instances root volume in GB. If
+                                  not set, root volume will be increased based
+                                  on instance type to accomodate RAM for
+                                  hibernation
+  --encrypt-root-volume           Encrypt root volume
+  --kms-key-id INTEGER            KMS key ID to use for root volume
+                                  encryption. AWS EBS default key used if not
+                                  specified
+  --enable-hibernation            Increase root volume size, encrypt root
+                                  volume and enable hibernation
+  --help                          Show this message and exit.
+```
+
+### Clone Instance
+
+Useful if the private IP address of an instance does not need to be maintained.
+
+#### Example
+
+`ec2-clone clone-instance --region eu-west-1 --instance-id i-12345678`
+
+#### Usage
+
+```text
+Usage: ec2-clone clone-instance [OPTIONS]
+
+  Clone instance without terminating the source instance
+
+Options:
+  --private-ip TEXT               Override instance private IP
+  --ipv4-prefix TEXT              Override instance IPv4 prefix
+  --settings-input TEXT           Instance settings input file
+  --instance-name TEXT            Name used when creating new instance
+  --instance-suffix TEXT          Suffix used when creating new instance. Full
+                                  name will be \{instance-name\}\{suffix\}
+  -l, --log-level [DEBUG|INFO|WARNING|ERROR|CRITICAL]
+                                  Log level as string
+  --yes                           Assume yes to all prompts
+  -r, --region TEXT               Region string in long format, e.g. eu-west-1
+                                  [required]
+  -i, --instance-id TEXT          Instance ID  [required]
+  --ami-name TEXT                 Name used when creating new AMI
+  --ami-suffix TEXT               Suffix used when creating new AMI. Full name
+                                  will be \{instance-name\}\{suffix\}
+  -a, --ami-id TEXT               AMI to use for new instances instead of
+                                  creating a new one
+  --instance-type TEXT            Override instance type
+  --root-volume-size INTEGER      Size of new instances root volume in GB. If
+                                  not set, root volume will be increased based
+                                  on instance type to accomodate RAM for
+                                  hibernation
+  --encrypt-root-volume           Encrypt root volume
+  --kms-key-id INTEGER            KMS key ID to use for root volume
+                                  encryption. AWS EBS default key used if not
+                                  specified
+  --enable-hibernation            Increase root volume size, encrypt root
+                                  volume and enable hibernation
+  --help                          Show this message and exit.
+```
+
+### Create AMI
+
+Will only stop an instance and create an AMI. This step is performed automatically when running all other commands.
+
+#### Example
+
+`ec2-clone create-ami --region eu-west-1 --instance-id i-12345678`
+
+#### Usage
+
+```text
+Usage: ec2-clone create-ami [OPTIONS]
+
+  Create AMI from source instance
+
+Options:
+  -l, --log-level [DEBUG|INFO|WARNING|ERROR|CRITICAL]
+                                  Log level as string
+  --yes                           Assume yes to all prompts
+  -r, --region TEXT               Region string in long format, e.g. eu-west-1
+                                  [required]
+  -i, --instance-id TEXT          Instance ID  [required]
+  --ami-name TEXT                 Name used when creating new AMI
+  --ami-suffix TEXT               Suffix used when creating new AMI. Full name
+                                  will be \{instance-name\}\{suffix\}
+  --help                          Show this message and exit.
+```
+
+### Create Settings JSON
+
+Useful for dumping only the relevant instance settings that are required for `run_instances` API call. If you need to modify more settings than are provided by the default CLI options you can use this command to generate a file to use as input, see **Overrides** below.
+
+#### Example
+
+`ec2-clone create-settings-json --region eu-west-1 --instance-id i-12345678 --output settings.json`
+
+```text 
+Usage: ec2-clone create-settings-json [OPTIONS]
+
+  Create instance JSON file from source instance
+
+Options:
+  -o, --output-file TEXT          Output file when dumping settings
+  --private-ip TEXT               Override instance private IP
+  --ipv4-prefix TEXT              Override instance IPv4 prefix
+  -l, --log-level [DEBUG|INFO|WARNING|ERROR|CRITICAL]
+                                  Log level as string
+  --yes                           Assume yes to all prompts
+  -r, --region TEXT               Region string in long format, e.g. eu-west-1
+                                  [required]
+  -i, --instance-id TEXT          Instance ID  [required]
+  --ami-name TEXT                 Name used when creating new AMI
+  --ami-suffix TEXT               Suffix used when creating new AMI. Full name
+                                  will be \{instance-name\}\{suffix\}
+  -a, --ami-id TEXT               AMI to use for new instances instead of
+                                  creating a new one
+  --instance-type TEXT            Override instance type
+  --root-volume-size INTEGER      Size of new instances root volume in GB. If
+                                  not set, root volume will be increased based
+                                  on instance type to accomodate RAM for
+                                  hibernation
+  --encrypt-root-volume           Encrypt root volume
+  --kms-key-id INTEGER            KMS key ID to use for root volume
+                                  encryption. AWS EBS default key used if not
+                                  specified
+  --enable-hibernation            Increase root volume size, encrypt root
+                                  volume and enable hibernation
+  --help                          Show this message and exit.
+```
+
+### Create Launch Template
+
+Useful if you would like to use the AWS GUI to modify the instance settings before confirming the launch. 
+As this method is not fully automated it can't perform the following:
+
+- Move secondary network interfaces
+- Tag Volumes
+  - TODO - It is possible to tag volumes if there are tags (both key and values) that are shared between all volumes
+- Move EIP
+
+#### Example
+
+`ec2-clone create-launch-template --region eu-west-1 --instance-id i-12345678`
+
+#### Usage
+
+```text
+Usage: ec2-clone create-launch-template [OPTIONS]
+
+  Create launch template from source instance
+
+Options:
+  --private-ip TEXT               Instance settings input file
+  --ipv4-prefix TEXT              Override instance IPv4 prefix
+  --template-name TEXT            Name used when creating launch template
+  --template-suffix TEXT          Suffix used when creating launch template.
+                                  Full name will be \{instance-
+                                  name\}\{suffix\}
+  -l, --log-level [DEBUG|INFO|WARNING|ERROR|CRITICAL]
+                                  Log level as string
+  --yes                           Assume yes to all prompts
+  -r, --region TEXT               Region string in long format, e.g. eu-west-1
+                                  [required]
+  -i, --instance-id TEXT          Instance ID  [required]
+  --ami-name TEXT                 Name used when creating new AMI
+  --ami-suffix TEXT               Suffix used when creating new AMI. Full name
+                                  will be \{instance-name\}\{suffix\}
+  -a, --ami-id TEXT               AMI to use for new instances instead of
+                                  creating a new one
+  --instance-type TEXT            Override instance type
+  --root-volume-size INTEGER      Size of new instances root volume in GB. If
+                                  not set, root volume will be increased based
+                                  on instance type to accomodate RAM for
+                                  hibernation
+  --encrypt-root-volume           Encrypt root volume
+  --kms-key-id INTEGER            KMS key ID to use for root volume
+                                  encryption. AWS EBS default key used if not
+                                  specified
+  --enable-hibernation            Increase root volume size, encrypt root
+                                  volume and enable hibernation
+  --help                          Show this message and exit.
+```
+
+## Standard Usage
+
+In standard operation, all instance settings will be copied across aside from a short number of rarely used parameters. (see Limitations below)
+
+1. Ensure required permissions to relaunch instance are present. 
+   1. Including permissions for
+      1. Volumes
+      2. Snapshots
+      3. AMIs
+      4. EIPs
+      5. Network Interfaces
+      6. KMS Keys
+      7. Instance Profiles
+2. Configure AWS_ Environment Variables
+   1. `AWS_ACCESS_KEY_ID`
+   2. `AWS_SECRET_ACCESS_KEY`
+   1. etc...
+3. Run `ec2-clone <command>` following usage from above. 
+
+## Enable Hibernation
+
+1. Verify instance AMI supports hibernation (this can't be reliably confirmed programmatically)
+    - [Windows AMI Requirements](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/hibernating-prerequisites.html#hibernation-prereqs-supported-amis)
+    - [Linux AMI Requirements](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernating-prerequisites.html#hibernation-prereqs-supported-amis)
+2. Follow standard usage, but run with `--enable-hibernation`
+
+## Overrides
+
+Standard operation allows for overriding common instance settings via the CLI. If further overrides are required a settings file can be used. The settings file will be passed directly to the run_instances API call allowing for full control over the new instance configuration.
+
+`clone-instance`, `replace-instance` and `create-launch-template` can all take a file as input using `--settings-input`. The file is in JSON format, all possible parameters can be found [here](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html).
+
+#### Generating settings
+
+Often only a couple of parameters need overriding. The following workflow will generate a file containing the current instance settings. You can override only the values necessary before providing the modified file as input.
+
+1. Run `ec2-clone create-settings-json`
+   1. A file will be generated holding the configuration that would have been used to launch the new instance.
+2. Modify the generated file to your liking
+3. Run `ec2-clone clone-instance|replace-instance|create-launch-template --settings-input <file>` pointing to the modified file.
+
+## Limitations
+
+In standard operation the following fields will not be copied between instances.
+
+- Ipv6 Address count
+- Ipv6 Addresses
+- KernelId
+- RamDiskId
+- AdditionalInfo
+- LaunchTemplate
+- UserData
+
+### When using clone-instance
+
+- Multiple private IP addresses on the primary nic
+- Multiple Ipv4 prefixes on thee primary nic
