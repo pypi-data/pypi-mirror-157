@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: js-fpy
+Version: 0.1.3
+Summary: A Python to JS transpiler
+Author: Dragon
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: alive-progress (==2.4.1)
+Requires-Dist: pyparsing (>=3.0.9,<4.0.0)
+Description-Content-Type: text/markdown
+
+## Beta JS-fpy / JS-py
