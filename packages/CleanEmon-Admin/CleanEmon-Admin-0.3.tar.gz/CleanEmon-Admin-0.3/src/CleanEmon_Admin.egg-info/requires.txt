@@ -1,0 +1,3 @@
+pytest
+CleanEmon-Core
+CleanEmon-Backend
