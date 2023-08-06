@@ -1,0 +1,16 @@
+Preln/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Preln/preprocessing.py,sha256=MDbVOJLTQ9eH_xz1djBAjJo5RJDbc-ySaidagBIWfvw,5553
+Preln/stopwords.py,sha256=M8xGdUxz8rpdIa43CpQ0jShAQ9xlxMiQCIyR6ljKEo8,5656
+Preln/_external/stopwords.csv,sha256=fFMsLc6syivNpTwpckzqvEXlJ-Id4Wo2nEbTytKJ1-E,3974
+Preln/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Preln/core/accents.py,sha256=ivevXPuMR3-U7u3qRrg8NxMhoCXsdOUwso_VBwmd5vI,1083
+Preln/core/date.py,sha256=nvmUtTK9ryx-zsCjNDEraAOKbktqJfDnufH0zMtJpGQ,1877
+Preln/core/lowercasing.py,sha256=O-sxkuAAmVnykmGzjO0SNT61-IkWZws5opaKuIOaWLo,491
+Preln/core/punctuation.py,sha256=81ayDTq_aK5ms9Te3hBV0rbuYkzVLnZl7Pe3ZEb3J6w,600
+Preln/core/stopwords.py,sha256=VJmDOgF_9M3XHjfjtLBg8Zs8O1uDXZzXveNc-TkZTZo,719
+Preln/core/tokenizer.py,sha256=maEdyNNLLafhzxdryKudiOi5Y-6ZU2FZxp1GBVFRkfs,608
+preln-0.3.6.dist-info/LICENSE,sha256=UNpgUmS00BR5cMPw78c80pVeMrTU4Qcdu71KZKLRSiE,1075
+preln-0.3.6.dist-info/METADATA,sha256=u7fPhmTf_KSY86sOJzBIlbecuJPpspZx4q2gyPeJ-uA,1547
+preln-0.3.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+preln-0.3.6.dist-info/top_level.txt,sha256=1scQQxdzUk9CsCwk4sMFRNvaX4_B5MxhcEalRmuJnps,6
+preln-0.3.6.dist-info/RECORD,,
