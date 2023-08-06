@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: YmHandler
+Version: 1.14.1
+Home-page: https://github.com/uewquewqueqwue/Ym-Handler
+Author: uewquewqueqwue
+Author-email: qdissh@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: rich (~=12.4.4)
+Requires-Dist: braillert (~=2.0.1)
+Requires-Dist: colorama (~=0.4.4)
+Requires-Dist: pillow (~=9.1.1)
+Requires-Dist: aiohttp (~=3.7.4.post0)
+
