@@ -1,0 +1,14 @@
+check_updates/__init__.py,sha256=iBvf-Z1Ejy8UDGdhPpTsYv4ml_mJKtIlwg1UhKq6njU,338
+check_updates/__main__.py,sha256=3IiwpH9eTtz72OojAJ7jVDbmq7Ea8V6FRQAcWaftKNo,82
+check_updates/_version.py,sha256=KMd8Ole58hRUknE2CB4Seo-YTemIKzk9ftroqWVLK9o,402
+check_updates/main.py,sha256=u7lX1-u6-10munqRGLT9rFbNdLvjgPFri1vyPGzQeKI,3817
+check_updates/poetry.py,sha256=HwSShIYYqv_6Jky5p6giRt_8Mwq_e4MFvcNrhpcJvcw,3145
+check_updates/pre_commit.py,sha256=Lzvgc9OOW5aUcU0rxxhv1L8gBGyY2EbHHPZLUuHR8no,6991
+check_updates/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+check_updates/pypi.py,sha256=Bp0bjZEefK0KXw1UV-jdAhThepKrP-7llNT4U1IEiSY,434
+check_updates/update.py,sha256=gGvADTwURWZ1lgBTsmfYgMFA2bUSKopsXzVFqiBqptQ,362
+py_check_updates-0.1.1.dist-info/entry_points.txt,sha256=bMZqyjydL8YKVusV_SPeBSMhLZ-B5yXCTJSG6RyWqaA,55
+py_check_updates-0.1.1.dist-info/LICENSE,sha256=dZYaPBetsAQUvCuqKUeuWWEx_gW7r6CRawY5Bn8za_c,1070
+py_check_updates-0.1.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+py_check_updates-0.1.1.dist-info/METADATA,sha256=uE4AFxGwh60ySLIe0taa-HNRwSGBb1y1rj_fFA4kadE,2655
+py_check_updates-0.1.1.dist-info/RECORD,,
