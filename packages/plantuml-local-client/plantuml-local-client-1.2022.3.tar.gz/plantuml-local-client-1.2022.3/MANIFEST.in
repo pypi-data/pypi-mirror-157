@@ -1,0 +1,3 @@
+include plantuml_local_client/plantuml.*.jar
+prune *.egg-info
+prune .tox
