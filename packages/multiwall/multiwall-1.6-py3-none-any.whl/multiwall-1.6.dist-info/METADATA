@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: multiwall
+Version: 1.6
+Summary: Wallpaper Getter and Setter
+Home-page: https://gitlab.com/avalonparton/multiwall
+Author: Avalon Parton
+Author-email: avalonlee@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+Requires-Dist: python-unsplash
+Requires-Dist: screeninfo
+
+# Multiwall
+
+Set your background on multiple monitors to random images from [Unsplash](https://unsplash.com/), [mikedrawsdota](http://wallpapers.mikedrawsdota.com/#_=_), and more.
+
+## Installation
+
+Multiwall works with [Python 3](https://www.python.org/downloads/).
+
+```bash
+python -m pip install multiwall
+```
+
+## Usage
+
+```bash
+python -m multiwall
+python -m multiwall --query "plants"
+```
+
+The default source is [Unsplash](https://unsplash.com/), use the `--source` flag to change it.
+
+```bash
+python -m multiwall --source 'mikedrawsdota'
+```
+
+### As a Desktop Shortcut
+
+1. Create a file `wallpaper.pyw` with the following contents:
+
+   ```python
+   import multiwall
+   multiwall.main()
+   ```
+
+1. Set it to Open With `"C:\Windows\pyw.exe"`
+
+## Examples
+
+```bash
+# 4k monitor + 1080p monitor (5760x2160 picture)
+python -3 -m multiwall --monitors "3440x1440,1920x1080"
+```
+
+![5760x2160](https://i.imgur.com/huusFe8.jpg)
+
+```bash
+# 4k monitor + portait monitor
+python -m multiwall --monitors "3440x1440,1440x2560"
+```
+
+![3440x1440,1440x2560](https://i.imgur.com/aNE8aYF.jpg)
+
+## Planned Features
+
+- [*] Automatic monitor size detection
+- [*] Custom search parameters
+- [*] Save images without setting wallpaper
+- [ ] Favorite images
+
+## Updating PyPi
+
+```bash
+python -m pip install wheel twine
+python setup.py bdist_wheel
+python -m twine upload --skip-existing dist/*
+```
+
+## Creating executable
+
+```bash
+python -m pip install pyinstaller
+pyinstaller --onefile --icon=app.ico "Change Wallpaper.pyw"
+```
+
+## Changelog
+
+### 1.6
+
+- Fixed typo introduced in 1.5
+
+### 1.5
+
+- Changed resize method to scale and crop images to avoid overlap.
+- Fixed image placement method to support more monitor layouts.
+- Broke the package with a typo :(
+
+### 1.4
+
+- Changed resize method to fit the width of the monitors.
+
+### 1.3
+
+- Added screeninfo to required packages, works on fresh install now.
+
+
