@@ -1,0 +1,9 @@
+agave_pyclient/__init__.py,sha256=1jpzjT-xXAIArCNvRkDCXPJHKZlhKefL_I0WyAAn6Og,393
+agave_pyclient/agave.py,sha256=fTC2ylT5rJeWUCKPsX-SgZMqeoJFgXGaiUA1QtkRGF4,28775
+agave_pyclient/commandbuffer.py,sha256=tedccofbJKRhx4rWE6yRRxL_TnqnSgOVNIg8cgL_g4c,6976
+agave_pyclient-1.4.0.dist-info/LICENSE,sha256=dG4YounUHAwSW_dTwHaelCvymlNwx7bE0J8dSly76QA,1953
+agave_pyclient-1.4.0.dist-info/METADATA,sha256=SPP_Mj4TD-LYfm2bRFsG8-thmWS1hbaDMYGykDjvYCE,5485
+agave_pyclient-1.4.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+agave_pyclient-1.4.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+agave_pyclient-1.4.0.dist-info/top_level.txt,sha256=P-pyhBXr4lhCL46eCqvzylGihnRDBB-qSwZGVtRxlpo,15
+agave_pyclient-1.4.0.dist-info/RECORD,,
