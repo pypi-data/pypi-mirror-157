@@ -1,0 +1,6 @@
+edc==0.3.92
+beautifulsoup4
+edc-he>=0.1.0
+edc-mnsi>=0.1.6
+edc-qol>=0.1.4
+canned-views
