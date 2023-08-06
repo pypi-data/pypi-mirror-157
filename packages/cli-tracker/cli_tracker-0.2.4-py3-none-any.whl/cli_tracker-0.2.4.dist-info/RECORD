@@ -1,0 +1,8 @@
+cli_tracker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli_tracker/integrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli_tracker/integrations/atexit.py,sha256=1aOldC8opx_NegTvJIUtCLo1D0MLqn6ca52Ngql2c-o,272
+cli_tracker/sdk.py,sha256=FSksMFC2f2-4I7i46SwQixS613ECRs31LQ4xzQ1uL3k,4578
+cli_tracker-0.2.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cli_tracker-0.2.4.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+cli_tracker-0.2.4.dist-info/METADATA,sha256=FramkiPBGsfBdg67BlbKx3D7xHO-4CCEOA82Ck97R-0,454
+cli_tracker-0.2.4.dist-info/RECORD,,
