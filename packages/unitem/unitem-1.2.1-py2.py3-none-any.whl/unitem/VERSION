@@ -1,0 +1,108 @@
+1.2.1
+- allow UniteM to continue even if a binning method (namely, MaxBin) finds no bins
+
+1.2.0
+- changed appending of prefix so it doesn't add an underscore; updated default prefix to "bin_"
+
+1.1.0
+- updated UniteM to include HMMs from closely related protein families to ensure accurate annotation of marker genes
+
+1.0.5
+- added a keep_intermediate flag to the profile command to retain intermediate gene calling results
+
+1.0.4
+- better handling of genomes that fail with Prodigal or HMMER
+- make use of previously calculated results for calling genes and identifying marker genes
+
+1.0.3
+- fix bug with progress indicator for identifying Pfam and TIGRfam markers
+
+1.0.2
+- added numpy as a dependency
+
+1.0.1
+- fixed setup.py to include all required packages
+
+1.0.0
+- initial release using GTDB-derived marker genes instead of using CheckM
+
+0.1.1
+- removed last dependency on biolib
+
+0.1.0
+- full migration to Python 3
+- improved running of external programs
+- more robust parsing of coverage files to work with CoverM
+- removed CheckM Python module as a dependency; CheckM program is still a 3rd party dependency
+- removed biolib Python module as a dependency
+- pep8 formatting
+- removed support for BinSanity
+- program failure returns code 1
+- improved logging, including logging output of external programs
+
+0.0.18
+- added biolib as dependency
+
+0.0.17
+- improved Python 3 compatibility
+
+0.0.16
+- changes to support renamed executables in MetaBAT v2.12.1
+
+0.0.15
+- changed interface to 'bin' command to make it clear either BAM files or a coverage file must be provided
+
+0.0.14
+- fixed bug with different MetaBAT presets all being written to the same directory
+- moved to updated version of GroopM v2 that can accepted a 'jgi_summarize_bam_contig_depths' formatted coverage file
+- changes percent base pairs in common calculation from (shared/bin1) to (shared/max(bin1, bin2))
+- added in table and plots showing base pairs in common between UniteM bins and those from specific binning methods
+
+0.0.13
+- fixed bug with directories containing few bins being processed incorrectly
+
+0.0.12
+- fixed bug with code to call GroopM v2
+
+0.0.11
+- better error handling of binning methods that fail to run to completion
+
+0.0.10
+- better error handling for directories missing any valid bins
+
+0.0.9
+- added the 'bin' command
+
+0.0.8
+- simplified reporting by having a single parameter for setting 
+  the weight used for calculating quality
+
+0.0.7
+- changed 'consensus' binning so a contig is only removed 
+  iff it appears in a consensus of non-matched bins, which
+  not includes the highest quality bin as a positive hit
+- percentage to remove a contig must also now be strictly
+  greater than the specified percentage
+- also made changes to the 'consensus' method for adding contigs
+- took out merging of bins since it was producing chimeric bins on the CAMI synthetic community
+- change default weighting for quality from 5 to 2
+
+0.0.6
+- fixed bug with 'greedy' method
+
+0.0.5
+- refined 'majority vote' method and renamed to 'consensus'
+- 'greedy' method now performed as special case of 'consensus' method to simplify code base
+- added option to merge partial bins
+
+0.0.4
+- initial implementation of greedy 'majority vote' method
+
+0.0.3
+- initial implementation of Markov 'majority vote' method
+
+0.0.2
+- initial implementation of greedy method
+
+0.0.1
+- initial release
