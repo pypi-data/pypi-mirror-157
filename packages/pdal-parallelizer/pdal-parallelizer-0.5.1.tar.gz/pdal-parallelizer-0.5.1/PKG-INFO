@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pdal-parallelizer
+Version: 0.5.1
+Summary: A simple command line tool for use pdal with parallel execution
+License: BSD 3-Clause License
+Keywords: pdal,parallelizer,dask
+Classifier: Programming Language :: Python :: 3
