@@ -1,0 +1,17 @@
+pyubx2/__init__.py,sha256=u6OuueySZGiVjnqPFhfGWmV7PPbt6bbyTp2lt9NaD88,724
+pyubx2/_version.py,sha256=PRTDOmclS5fK0QYWpz-xZdEBcD8RSr4RSLrMbyBX7I4,162
+pyubx2/exceptions.py,sha256=5YfPTKctlm0xvFxlwDZa8rlz3EDCfI5N8OoSldHhU8Q,801
+pyubx2/socket_stream.py,sha256=LzwLGO3ak4EkxP70Q2pK-8hd7_BOGG8MBYSuHGXbEP4,2465
+pyubx2/ubxhelpers.py,sha256=In-ps1wJ9544hcCd4sMVp8bfZfXqQspAlDBPwVe9pxE,11163
+pyubx2/ubxmessage.py,sha256=sEgQON01F7jpPmP8pcpB7JzIM9zPKk0nfndRqeFCHsE,38814
+pyubx2/ubxreader.py,sha256=kzWGVZwcDomq_T4v_NBez-2AtJj9hSRQ_nnJbEAi-O0,14554
+pyubx2/ubxtypes_configdb.py,sha256=bvKYNRWwwTi8kvN4-25GH1fdKtC2_B9146rsfM37IhY,65356
+pyubx2/ubxtypes_core.py,sha256=LsGQkljpErpv0witsZoUvFYOk7DPHWKZmnWH22fwNb8,18295
+pyubx2/ubxtypes_get.py,sha256=u2QAHOMeJFaPhoD5QFWG5WkmWy51-7jPFBA4xnrCXjc,94309
+pyubx2/ubxtypes_poll.py,sha256=zv1cMHoa2W5trYLzU-69Oj2tL5Lsx-f51HV3JMmnvvM,5311
+pyubx2/ubxtypes_set.py,sha256=GOamidtDxEseB0_3fmsQpbOaDuOLtn-GCvxzEk_HkXk,25632
+pyubx2-1.2.15.dist-info/LICENSE,sha256=n1hTlV40HgOFdHADhn3biUs5ognQzRE-BufF7GOuuuI,1613
+pyubx2-1.2.15.dist-info/METADATA,sha256=mz0mjS5b6cP_xdp6EiGljhELZhjGlTeidwaluljKfe8,25378
+pyubx2-1.2.15.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyubx2-1.2.15.dist-info/top_level.txt,sha256=Xrlr7zrBMWK7s0OcjirKi4scjnHHIcDl3WyrZlaxZfs,7
+pyubx2-1.2.15.dist-info/RECORD,,
