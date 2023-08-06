@@ -1,0 +1,9 @@
+algebra/__init__.py,sha256=4hzzdr5iZgGdG1B-358VNgNjQRKLDc3R6FIeRKC8Bbw,25
+algebra/components.py,sha256=gR18OY_WZdvA5JNUCPKqUBVmGB54SFQvkNMvCOF1tMc,8863
+algebra/test/__init__.py,sha256=QRQIBp4Hzn49wsacpy87DAo6cuBrb8qfeDPRAlppB-A,18
+algebra/test/comp.py,sha256=w9BxfauNW9CuinvHYWdzyevQ9HJE3OlCAj7KwBTwBRM,551
+algebra.py-1.2.0.dist-info/LICENSE,sha256=Cd0Z55hF8lgGXfwOz7kxvQc0u9JdtuMA7NhpE1u-NhU,1068
+algebra.py-1.2.0.dist-info/METADATA,sha256=FW63pTfmPKXXYg-zmvg832p5GESXPJ6uJhTLqmrbahw,2413
+algebra.py-1.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+algebra.py-1.2.0.dist-info/top_level.txt,sha256=Yf0oCxKuOzICIwlIUkSJxurbXvgLlTzecZgvH8XGLps,8
+algebra.py-1.2.0.dist-info/RECORD,,
