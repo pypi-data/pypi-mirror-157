@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+qt5_levelmeter.egg-info/PKG-INFO
+qt5_levelmeter.egg-info/SOURCES.txt
+qt5_levelmeter.egg-info/dependency_links.txt
+qt5_levelmeter.egg-info/top_level.txt
+src/__init__.py
