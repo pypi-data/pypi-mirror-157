@@ -1,0 +1,14 @@
+opentelemetry-instrumentation==0.32b0
+opentelemetry-api~=1.3
+opentelemetry-semantic-conventions==0.32b0
+opentelemetry-instrumentation-wsgi==0.32b0
+opentelemetry-util-http==0.32b0
+wrapt<2.0.0,>=1.0.0
+
+[instruments]
+pyramid>=1.7
+
+[test]
+werkzeug==0.16.1
+opentelemetry-test-utils==0.32b0
+pyramid>=1.7
