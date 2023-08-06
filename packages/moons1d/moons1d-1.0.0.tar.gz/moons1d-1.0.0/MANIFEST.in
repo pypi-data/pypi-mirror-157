@@ -1,0 +1,5 @@
+include moons1d/models/Instrument/*.txt
+include moons1d/models/Instrument/MOONS_mode.ini
+include moons1d/models/Skymodel/SkyTemplate*.fits
+include LICENSE
+include README.md
