@@ -1,0 +1,7 @@
+littlepaimon_utils/__init__.py,sha256=sItGT9UmdBJSOHvEBiMXKKlOjdbvoGbmavTqOK_R_OQ,68
+littlepaimon_utils/aiorequests.py,sha256=Mqbi3bJGTNFIlCJOtuBWM58K7mFuYincBF2jX2B6Z2g,4633
+littlepaimon_utils/files.py,sha256=T8Nix7Fh4AYrnYwUk0DaMVm5alAG6kuKlxOm299lWwc,4853
+littlepaimon_utils/tools.py,sha256=gDS8XQqRXJEWQBRz8_UGgEiN09CdOiUo8zQRaMCX1fw,2181
+littlepaimon_utils-1.0.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+littlepaimon_utils-1.0.1.dist-info/METADATA,sha256=8vzaINPKJGvp_7QP3UBMULzWa5jOmBkM5PicEox9u7E,572
+littlepaimon_utils-1.0.1.dist-info/RECORD,,
