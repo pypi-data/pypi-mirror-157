@@ -1,0 +1,14 @@
+invenio-accounts>=2.0.0
+
+[admin]
+
+[mysql]
+
+[postgresql]
+
+[sqlite]
+
+[tests]
+pytest-invenio~=1.4.7
+invenio-db[mysql,postgresql,versioning]>=1.0.14
+Sphinx<5,>=4.2.0
