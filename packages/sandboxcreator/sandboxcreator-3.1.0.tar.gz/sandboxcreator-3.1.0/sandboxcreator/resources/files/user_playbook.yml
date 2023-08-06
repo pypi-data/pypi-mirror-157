@@ -1,0 +1,4 @@
+# This is an empty template playbook
+# You can write your custom configuration here
+
+- hosts: all

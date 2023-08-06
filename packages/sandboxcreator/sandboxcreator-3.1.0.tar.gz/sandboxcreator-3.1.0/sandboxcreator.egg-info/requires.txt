@@ -1,0 +1,5 @@
+Jinja2>=2.11.3
+PyYAML>=5.4
+psutil>=5.6.7
+netaddr>=0.8
+kypo-topology-definition==0.5.1

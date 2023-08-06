@@ -1,0 +1,8 @@
+sandboxcreator
+sandboxcreator/ansible_generator
+sandboxcreator/commands
+sandboxcreator/hw_resources
+sandboxcreator/input_parser
+sandboxcreator/io
+sandboxcreator/scripts
+sandboxcreator/vagrant_generator
