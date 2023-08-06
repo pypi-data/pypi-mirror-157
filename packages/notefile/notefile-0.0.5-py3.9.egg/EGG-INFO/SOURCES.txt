@@ -1,0 +1,10 @@
+README.md
+setup.py
+notefile/__init__.py
+notefile.egg-info/PKG-INFO
+notefile.egg-info/SOURCES.txt
+notefile.egg-info/dependency_links.txt
+notefile.egg-info/requires.txt
+notefile.egg-info/top_level.txt
+notefile/compress/__init__.py
+notefile/compress/tarfile.py
