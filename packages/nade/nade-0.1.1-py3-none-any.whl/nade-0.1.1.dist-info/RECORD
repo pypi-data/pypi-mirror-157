@@ -1,0 +1,17 @@
+nade/__init__.py,sha256=jNm5DT3RflioBmBjG1ZN1yhB3uS1YLu0LY-S6ySFE9Q,72
+nade/data/__init__.py,sha256=ddy8vFNPoj5yUQhhgdkqOCi5nmPLut55cciwcBsBmXw,49
+nade/data/socialmedia_en/emoji_frequencies.jsonl,sha256=hXx_gs5PBLS303ZFFDM4dxMNtLiqgUrFDTVszM5tBso,8384
+nade/data/socialmedia_en/nade_250k_hp.ftz,sha256=QXSzCUtwaatX_LY13DqbT-frGOVdsgAOc6LlzK519Xg,9724646
+nade/data/socialmedia_en/reg_anger.txt,sha256=_8IAB6vvzUAQUFlKfZI-n6RboshnLPwPDkDHG4pMc-g,1785012
+nade/data/socialmedia_en/reg_anticipation.txt,sha256=WUi-rM-6RsroCXKOQJssvr3spiMfwg4DpxFeWwrJZuI,1849101
+nade/data/socialmedia_en/reg_disgust.txt,sha256=TliiqtG5H6raGfvORjiwrz_ZX0hyWHYsLB6i-4sR9nM,1785881
+nade/data/socialmedia_en/reg_fear.txt,sha256=Nx6DdWiicEUZ3AzdphU9O24ZadNjzm4i9wILT91v77g,862246
+nade/data/socialmedia_en/reg_joy.txt,sha256=TzYRkDoMxyP8yFxL8TewRTlhQ65s54-OK6QgPkyzCpE,723974
+nade/data/socialmedia_en/reg_sadness.txt,sha256=GXQgYnmQ907AMy5bq6Ph-f5qd38q6dXfaJqjGFEj7Xk,1307854
+nade/data/socialmedia_en/reg_surprise.txt,sha256=xkB_ZZq_amsPHrrKFEUKvm6EZUWkJKXX0EIXF7wHJY0,2257737
+nade/data/socialmedia_en/reg_trust.txt,sha256=v2p_44ut2nTNmsVdYCgc6d5T3wRVQD21ovHAzTCNlHk,966075
+nade/nade.py,sha256=Sj1zNAYSOa0UE-9MLq0BLcYP0fAw3XfzgVAmqNde3Zo,4952
+nade-0.1.1.dist-info/LICENSE,sha256=SAw5zn1Uy16D0BB2ukMvLtmShoid4tV1qXlJMHfY-5s,1081
+nade-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+nade-0.1.1.dist-info/METADATA,sha256=Xz3TQNdPtwpaafoyv9ETfj7PGjEaBzeknt_BLgnQpmk,2651
+nade-0.1.1.dist-info/RECORD,,
