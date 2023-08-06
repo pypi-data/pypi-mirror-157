@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: twilio-tap-zendesk
+Version: 1.0.12
+Summary: Singer.io tap for extracting data from the Zendesk API
+Home-page: https://github.com/twilio-labs/twilio-tap-zendesk
+Author: Twilio
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+Requires-Dist: pipelinewise-singer-python (==1.2.0)
+Requires-Dist: zenpy (==2.0.24)
+Provides-Extra: dev
+Requires-Dist: ipdb ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: nose ; extra == 'dev'
+Requires-Dist: nose-watch ; extra == 'dev'
+
