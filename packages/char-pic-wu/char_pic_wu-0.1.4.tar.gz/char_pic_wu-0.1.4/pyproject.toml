@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+#[project]
+#name = "char_pic"
+#version = "0.0.1"
+#dependencies = [
+#    "cowpy",
+#    'importlib-metadata; python_version<"3.8"',
+#]
+
+[project]
+name = "char_pic_wu"
+version = "0.1.4"
+description = "My package description"
+readme = "README.rst"
+requires-python = ">=3.8"
+keywords = ["one", "two"]
+license = {text = "BSD 3-Clause License"}
+#Author = "qudoor"
+classifiers = [
+    "Framework :: Django",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "cowpy",
+    'importlib-metadata; python_version<="3.10.5"',
+]
+
+##动态属性
+#dynamic = ["readme",]
+
+#[tool.setuptools.dynamic]
+#readme = {file = ["README.rst",]}
+
+[project.optional-dependencies]
+pdf = ["ReportLab>=1.2", "RXP"]
+rest = ["docutils>=0.3", "pack ==1.1, ==1.3"]
+
+

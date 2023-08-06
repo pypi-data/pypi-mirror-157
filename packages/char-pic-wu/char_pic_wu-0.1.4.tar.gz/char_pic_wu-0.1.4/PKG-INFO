@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: char_pic_wu
+Version: 0.1.4
+Summary: My package description
+License: BSD 3-Clause License
+Keywords: one,two
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Provides-Extra: pdf
+Provides-Extra: rest
+
+# char picture
+## author:wsh
+## date:2022.6.30
