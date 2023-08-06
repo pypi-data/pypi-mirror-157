@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jetts-tools
+Version: 0.0.9
+Summary: Various useful python utility functions.
+Home-page: https://github.com/jettdc/jetts-tools
+Author: Jett Crowson
+Author-email: jettcrowson@gmail.com
+License: MIT
+Keywords: python tools utils
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: barb
+Requires-Dist: python-dotenv
+
+## jettools
+
