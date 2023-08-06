@@ -1,0 +1,9 @@
+README.md
+setup.py
+makeish/__init__.py
+makeish/makeish.py
+makeish.egg-info/PKG-INFO
+makeish.egg-info/SOURCES.txt
+makeish.egg-info/dependency_links.txt
+makeish.egg-info/not-zip-safe
+makeish.egg-info/top_level.txt
