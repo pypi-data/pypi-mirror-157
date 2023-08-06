@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: State-Engine
+Version: 0.0.6.post18
+Summary: Finite State Machine
+Home-page: https://yuriylygin.gitlab.io/state-engine/
+Author: Yu.A.Lygin
+Author-email: yuriylygin@gmail.com
+License: MIT
+Keywords: STATE MACHINE,MOORE MACHINE,STATE,MACHINE,MOORE
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# Finite State Machine
+
+On PyPi it has name State-Engine
+
+## Develop
+
+### Download project
+
+    git clone https://gitlab.com/yuriylygin/state-machine.git
+    python3.7 -m venv venv
+    source venv/bin/activate
+    pip install -e .[dev]
+
+### Create Sphinx docs
+
+    pip install -e .[docs]
+    sphinx-quickstart docs
+    sphinx-build -b html docs/source/ docs/build/html
+    sphinx-build -b rinoh docs/source/ docs/build/html/pdf
+
+### Run tests 
+
+    pytest -v
+
