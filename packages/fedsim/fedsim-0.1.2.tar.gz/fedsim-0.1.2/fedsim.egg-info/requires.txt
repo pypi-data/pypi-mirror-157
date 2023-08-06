@@ -1,0 +1,13 @@
+click
+numpy
+sklearn
+tqdm
+torch
+torchvision
+tensorboard
+pyyaml
+
+[test]
+pytest
+pytest-cov
+codecov
