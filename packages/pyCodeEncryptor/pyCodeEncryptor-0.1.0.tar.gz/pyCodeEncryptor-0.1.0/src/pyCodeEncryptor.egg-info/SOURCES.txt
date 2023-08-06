@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/pyCodeEncryptor/__init__.py
+src/pyCodeEncryptor/pyCodeEncryptor.py
+src/pyCodeEncryptor.egg-info/PKG-INFO
+src/pyCodeEncryptor.egg-info/SOURCES.txt
+src/pyCodeEncryptor.egg-info/dependency_links.txt
+src/pyCodeEncryptor.egg-info/top_level.txt
