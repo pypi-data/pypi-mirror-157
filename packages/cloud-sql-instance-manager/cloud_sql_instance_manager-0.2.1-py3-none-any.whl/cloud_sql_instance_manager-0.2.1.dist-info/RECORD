@@ -1,0 +1,15 @@
+cloud_sql/__init__.py,sha256=vBMx4IFwGewXgRA7L5rCSBLnX0KxpgIGh5E1ufV6iFA,72
+cloud_sql/cloud_sql_proxy.py,sha256=4SDicMUaInFY0JOAeLveqbpDhECFiB8KhWR5PuQz6Yg,1185
+cloud_sql/commandline.py,sha256=6FvDRPRmjLv1vyYWLkT0WknDnSZTAuVwQMb51c2TlRQ,2362
+cloud_sql/config.py,sha256=6W1X6dWYPTTRVQ1J0LyFe4Qojat73_DaO0ckOY3Fj3Q,947
+cloud_sql/gcp.py,sha256=oXItvc8-oXRApIUQmUfs7KIYWmtEm2am-MF5STw4d-0,1095
+cloud_sql/instance_manager.py,sha256=0P43ne2-ZWGPmsTq-NbfDaTpmSy7u8LKA_ENLsac0pc,7053
+cloud_sql/instances.py,sha256=_JsEMsoCirfnH81kyAH6K5tkpqKeSLn4DVMvBZzsTiA,4320
+cloud_sql/persistence.py,sha256=MZFxpjRhMcv0LdewgTUUI4XKOKMZfIz3lNGMHcQEdJw,2502
+cloud_sql/running_instances.py,sha256=esG84zbVvTn9oGFyhSQaQVCl48WtWuxjSWKmHJlUZfE,661
+cloud_sql_instance_manager-0.2.1.dist-info/LICENSE,sha256=ENd_4bJcDlvNtqqWx1PqgjsLe2HNMyDNnBiN8ZX2AaQ,1064
+cloud_sql_instance_manager-0.2.1.dist-info/METADATA,sha256=kfYjNGB18OGtFR3IkycoS6FY_Zilz4IuTg9rj6reciU,3597
+cloud_sql_instance_manager-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cloud_sql_instance_manager-0.2.1.dist-info/entry_points.txt,sha256=vtSbo7EW4q_OSssaCH9Mj0yPU9R-8Le52d__oOP3Sy4,50
+cloud_sql_instance_manager-0.2.1.dist-info/top_level.txt,sha256=_Ayh15FfpYRCai7jWy7MTvHjy_3lAdh_01igXzOS2Ew,10
+cloud_sql_instance_manager-0.2.1.dist-info/RECORD,,
