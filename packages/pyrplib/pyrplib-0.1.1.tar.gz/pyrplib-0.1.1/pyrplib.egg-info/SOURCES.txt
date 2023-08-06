@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+pyrplib/__init__.py
+pyrplib/artificial.py
+pyrplib/base.py
+pyrplib/card.py
+pyrplib/data.py
+pyrplib/dataset.py
+pyrplib/style.py
+pyrplib/transformers.py
+pyrplib.egg-info/PKG-INFO
+pyrplib.egg-info/SOURCES.txt
+pyrplib.egg-info/dependency_links.txt
+pyrplib.egg-info/not-zip-safe
+pyrplib.egg-info/requires.txt
+pyrplib.egg-info/top_level.txt
