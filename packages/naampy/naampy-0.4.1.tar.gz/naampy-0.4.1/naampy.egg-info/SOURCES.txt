@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+naampy/__init__.py
+naampy/in_rolls_fn.py
+naampy/utils.py
+naampy.egg-info/PKG-INFO
+naampy.egg-info/SOURCES.txt
+naampy.egg-info/dependency_links.txt
+naampy.egg-info/entry_points.txt
+naampy.egg-info/requires.txt
+naampy.egg-info/top_level.txt
+naampy/tests/__init__.py
+naampy/tests/test_010_in_rolls_ln.py
+naampy/tests/test_020_in_rolls_ln.py
