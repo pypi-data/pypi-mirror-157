@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+pyramid_classy.py
+setup.cfg
+setup.py
+pyramid_classy.egg-info/PKG-INFO
+pyramid_classy.egg-info/SOURCES.txt
+pyramid_classy.egg-info/dependency_links.txt
+pyramid_classy.egg-info/not-zip-safe
+pyramid_classy.egg-info/requires.txt
+pyramid_classy.egg-info/top_level.txt
