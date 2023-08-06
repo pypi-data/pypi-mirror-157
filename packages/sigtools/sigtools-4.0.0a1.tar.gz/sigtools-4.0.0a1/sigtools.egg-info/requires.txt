@@ -1,0 +1,13 @@
+attrs
+
+[test]
+repeated_test>=2.2.1
+sphinx
+mock
+coverage
+
+[tests]
+repeated_test>=2.2.1
+sphinx
+mock
+coverage
