@@ -1,0 +1,3 @@
+[console_scripts]
+bluetooth-locker=bluetooth_locker.app:main
+
