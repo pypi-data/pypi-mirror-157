@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: gitdumper-tool
+Version: 0.1.0
+Summary: Git Dumper Tool
+Home-page: https://github.com/tz4678/gitdumper
+License: MIT
+Author: tz4678
+Author-email: tz4678@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aiodns (>=3.0.0,<4.0.0)
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: cchardet (>=2.1.7,<3.0.0)
+Project-URL: Repository, https://github.com/tz4678/gitdumper
+Description-Content-Type: text/markdown
+
+# Git Dumper
+
+Git Dumper Tool.
+
+Use asdf or pyenv to install latest python version.
+
+```bash
+$ pip install gitdumper-tool
+$ pipx install gitdumper-tool
+$ gitdumper -h
+$ gitdumper url [... url]
+$ gitdumper < urls.txt
+$ girdumper url 2> err.log
+```
+
