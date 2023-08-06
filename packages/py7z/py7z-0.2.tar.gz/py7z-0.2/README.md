@@ -1,0 +1,53 @@
+<h1 align="center">📚Py7z📚
+
+![MIT Licens](https://img.shields.io/apm/l/atomic-design-ui.svg?)
+[![Generic badge](https://img.shields.io/badge/PYTHON-blue.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/py7z-1abc9c.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/py7zr-1abc9r.svg)](https://shields.io/)
+
+### Información
+Librería para ayudar a usar py7zr con funciones ya creadas.
+	
+### Desarrollador
+<a href="https://t.me/DrugDev"><img alt="Telegram" src="https://img.shields.io/badge/@DrugDev-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/></a>
+
+# Instalación
+### Windows
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+``` python
+py -m pip install py7z
+```
+
+### Linux
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+```
+pip install py7z
+```
+## Funciones
+``` python
+from py7z import archiving, compress, compress_encrypted
+
+# Archivar sin compresión un directorio o archivo, el proceso se realiza bastante rápido.
+def archivando(path, name):
+	f = archiving('./cosas', 'XD')
+    if f:
+        print(f'Nombre: f}\nSe archivo correctamente')
+     else:
+        print('No se pudo archivar el Directorio/Archivo')
+
+# Comprimir archivo o directorio, está tarea demora más ya que si usa compresión.
+def compress_f(path, name):
+	f = compress('./cosas', 'XD')
+    if f:
+        print(f'Nombre: {f}\nSe comprimio correctamente')
+     else:
+        print('No se pudo comprimir el Directorio/Archivo')
+	
+# Comprimir con contraseña, es igual a la función de comprimir pero se le puede pasar contraseña al archivo .7z
+def compress_password(path, name, password):
+	f = compress_encrypted('./cosas, 'prueba', '1234')
+    if f:
+        print(f'Nombre: {f}\nSe comprimio con contraseña correctamente')
+     else:
+        print('No se pudo comprimir con contraseña el Directorio/Archivo')
+```

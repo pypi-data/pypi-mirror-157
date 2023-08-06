@@ -1,0 +1,9 @@
+README.md
+setup.py
+py7z/__init__.py
+py7z/main.py
+py7z.egg-info/PKG-INFO
+py7z.egg-info/SOURCES.txt
+py7z.egg-info/dependency_links.txt
+py7z.egg-info/requires.txt
+py7z.egg-info/top_level.txt
