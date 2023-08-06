@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/rsdiv/__init__.py
+src/rsdiv.egg-info/PKG-INFO
+src/rsdiv.egg-info/SOURCES.txt
+src/rsdiv.egg-info/dependency_links.txt
+src/rsdiv.egg-info/top_level.txt
+src/rsdiv/dataset/__init__.py
+src/rsdiv/dataset/base.py
+src/rsdiv/dataset/movielens_1m.py
+src/rsdiv/evaluation/__init__.py
+src/rsdiv/evaluation/diversity_metrics.py
