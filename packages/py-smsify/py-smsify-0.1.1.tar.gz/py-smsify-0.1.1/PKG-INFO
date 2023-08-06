@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: py-smsify
+Version: 0.1.1
+Summary: Python library for creating GSM-7 compatible SMS messages
+Home-page: https://github.com/SkyDiverCool/py-smsify
+License: MIT
+Author: Simon Wissotsky
+Author-email: Wissotsky@protonmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: anyascii (>=0.3.1,<0.4.0)
+Project-URL: Repository, https://github.com/SkyDiverCool/py-smsify
+Description-Content-Type: text/markdown
+
+![](https://i.imgur.com/xuHAE49.png)
+# Python library for creating GSM-7 compatible SMS messages
+
+###Installation
+`pip install py-smsify`
+
+###Usage
+```python
+from py_smsify import SmsMessage
+
+#Encode to a string of valid characters
+message = SmsMessage("Gamer420").encoded_text
+# result: Gamer420
+
+#Encode to a python bytestring
+message = SmsMessage("Gamer420").encoded_bytes
+# result: b"Gamer420"
+
+#Encode with non latin languages
+message = SmsMessage("גיימר420").encoded_text
+# result: gyymr420
+
+#Encode with emojis
+message = SmsMessage("this 🎉 is 👏 phenomenal 🔥").encoded_text
+# result: "this :tada: is :clap: phenomenal :fire:"
+```
