@@ -1,0 +1,2 @@
+fakeldap>=0.6.2
+python-ldap<=3.3.1
