@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+src/gfss_alteryx_devkit.egg-info/PKG-INFO
+src/gfss_alteryx_devkit.egg-info/SOURCES.txt
+src/gfss_alteryx_devkit.egg-info/dependency_links.txt
+src/gfss_alteryx_devkit.egg-info/top_level.txt
+src/gfss_microsoft/__init__.py
