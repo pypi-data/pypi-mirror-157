@@ -1,0 +1,25 @@
+aiohttp
+cachetools
+packaging
+pygls>=0.10.1
+typing-extensions
+zc.buildout
+
+[test]
+aioresponses
+coverage
+mypy
+pylint
+pytest-asyncio
+pytest-benchmark
+pytest-cov
+pytest
+types-cachetools
+types-setuptools
+types-toml
+yapf
+
+[test:python_version < "3.8"]
+asynctest
+mock
+types-mock
