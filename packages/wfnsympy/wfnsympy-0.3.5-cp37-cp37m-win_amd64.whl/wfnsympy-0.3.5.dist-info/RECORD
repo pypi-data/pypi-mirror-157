@@ -1,0 +1,13 @@
+wfnsympy/QSYMLIB.pyd,sha256=BDdTtZ1neLamxGowC8f84UyuxEKB2BC8VMtgpSjFnvI,42496
+wfnsympy/WFNSYMLIB.pyd,sha256=ndOe_LXjHKZ4mW6AGTa7osbkyWtFl1QRnhDzedeN_ts,45568
+wfnsympy/__init__.py,sha256=rNWDAwKfosbYHNYY404Wzsp2h3ouJgvfZ3WFv9pSn2U,37601
+wfnsympy/errors.py,sha256=VzlVtFYz4dpd_syJeeya9jR73GPo_m6VuaeI7B9fYms,825
+wfnsympy/file_io.py,sha256=rvXXo3v3PetwuLCv-BKRnxn1I5HMe3TS3fFDDWjRa-I,7714
+wfnsympy/optimize.py,sha256=Oc0ex47Ofm87-UrSe2zMKHCuZHHNxfnM2Sqhe4aISpo,4348
+wfnsympy/.libs/libVRoutine.OZ2LCT2EIGVPL7LSO6O36VJRIV5UZ6ZY.gfortran-win_amd64.dll,sha256=Sj7SvKALsyQOga3JJu86nttVG75sFbuNqQzYMA69suc,1488981
+wfnsympy/.libs/libcenter_d.HWDBWTLZCYJFGFQUDJCJ7ULNAIFRDWJZ.gfortran-win_amd64.dll,sha256=HS1u_M5BLad7aaDXESBu01YQQHoQrtiycDFyvDgUrmM,942952
+wfnsympy-0.3.5.dist-info/LICENSE,sha256=qFM-1z-MWVFECw30S43a5t-G8ZWFjjJzdLi57GB-ZaI,1118
+wfnsympy-0.3.5.dist-info/METADATA,sha256=f3dRGCTYa-XAJt0pOPdt6DtrvBqwfn6IKXERM6NwUOg,240
+wfnsympy-0.3.5.dist-info/WHEEL,sha256=-FqDJjo4HrkrIaThvtAYef2eEAn1_QvVe5nINCnUEbQ,101
+wfnsympy-0.3.5.dist-info/top_level.txt,sha256=hI1fngAAyUnU1kfosvAKAbqpRSYrxIpa7ReqI0Owbjw,9
+wfnsympy-0.3.5.dist-info/RECORD,,
