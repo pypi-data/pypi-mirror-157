@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ibutsu-client
+Version: 2.2.3
+Summary: Ibutsu API
+Home-page: https://github.com/ibutsu/ibutsu-client-python
+Author: OpenAPI Generator community
+Author-email: team@openapitools.org
+License: UNKNOWN
+Keywords: OpenAPI,OpenAPI-Generator,Ibutsu API
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+    A system to store and query test results  # noqa: E501
+    
+
