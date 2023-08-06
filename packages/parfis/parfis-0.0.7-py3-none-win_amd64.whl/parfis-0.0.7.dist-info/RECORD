@@ -1,0 +1,12 @@
+parfis/__init__.py,sha256=D2LoMdoSc37F2jOr1LdNEBJ-9Knp59f61wD06njFuQg,41
+parfis/clib/__init__.py,sha256=m67Y8J94MHUewVZwFDO_mNNxRqdDIFo3hF8QC-ZAegY,53
+parfis/clib/datastruct.py,sha256=zAoXLDaNqU1MgMVwyBSPeq9hgiwVMXF5OYp3zKkDP4o,11048
+parfis/clib/parfis32.dll,sha256=2bFsfHzfdzYKmdT7meFUgSR114Jji2v4nJ7uPSZr5gs,178688
+parfis/clib/parfis64.dll,sha256=I0NXQGV2_jhMKX704X_sqObDW0TsqzW-itg3CRmiYUc,178688
+parfis/clib/parfislib.py,sha256=WAA0aBvu3MXkumenWajWWeaAFXRwZ9nWEQdmf1WF2Gk,8797
+parfis/tools/__init__.py,sha256=ByzfuXJIVF1_xRgP6JGI7zUail41oAl-VOvJBZ_aMOo,25
+parfis/tools/datafunc.py,sha256=lHn_iYH9zfkI9MAICgCZcAKnH622H1JoyJonrKaXH_s,1635
+parfis-0.0.7.dist-info/METADATA,sha256=_BijmTobBoc0FF9d0WRCjvUSPmmvwx2XN6PM1L4Ctts,2004
+parfis-0.0.7.dist-info/WHEEL,sha256=i9qQj8KaD8_YEW0Vc2oS56fKju23RkQ-FVz-QmzVakQ,98
+parfis-0.0.7.dist-info/top_level.txt,sha256=3aNPaBLElvsovZNo8mIag0up4xhgGXEWYIHQpq2GJXA,7
+parfis-0.0.7.dist-info/RECORD,,
