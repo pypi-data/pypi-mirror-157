@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: ShortReport
+Version: 0.0.3
+Summary: It generates the Report of the dataset
+Home-page: UNKNOWN
+Author: Chiransh Singh Mehra , Raghav Aggarwal
+Author-email: singhchiransh4@gmail.com , raghavaggarwal200004@gmail.com
+License: MIT
+Keywords: report,python,data-analysis,jupyter,ShortReport
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# ShortReport
+
+
+
+This library is used to generate a `report`. Features in this library are:
+
+- **Numbers and Types**: Shows the number of columns and rows present in the dataset. Also describe the type of columns.
+- **Essentials**: Unique values in a column and Numbers of missing values
+- **Descriptive statistics**: Mean and Standard Deviation.
+- **Graphs**: Short Report includes different plotly graphs for better visualization like Histograms for data distribution of each column, Scatter Plot for finding the relationships or pattern between the attributes or columns, Heat Map for finding the correlation with target variable and Boxplot for outlier detection.
+- **Data Summary**: includes Numbers of zeros and percentage, Maximum and Minimum value.
+
+### Advantages:
+- ***User Friendly***: This Library helps user to understand the nature of data easily in very efficient way.
+- ***Graphs***: All graphs are made from plotly so user can interact with the graph values.
+- ***Fast***: Generates report in milliseconds.
+- ***Info***: Gives the basic info which are required to clean the dataset and performing predictions.
+
+
+## Quickstart
+
+Import ShortReport and create a Dataframe
+
+```python
+from ShortReport import Report as r
+import pandas as pd
+import numpy as np
+df = pd.DataFrame(np.random.rand(100,4), columns = ['X','Y','Z','A'])
+```
+Call the method shortreport and it requires one argument which should be a Dataframe
+```python
+r.shortreport(df)
+```
+## Output on Jupyter Notebook
+
+Dataset_report:
+
+<img alt="HTML" src="https://i.imgur.com/AVfsypQ.gif" width="800" />
+
+Correlation:
+
+![Correlation](https://i.imgur.com/9LevkVH_d.webp?maxwidth=760&fidelity=grand)
+## Installation
+
+### Using pip
+
+```sh
+pip install ShortReport
+```
+
+### Using conda
+ 
+```sh
+conda install ShortReport
+```
+
+### License
+
+This program is free (as in speech) software under the GPLv3. Please see the [license](LICENSE.txt) file for more.
+
+Change Log
+==========
+
+0.0.1 (02/07/2022)
+-------------------
+- First Release
+
