@@ -1,0 +1,11 @@
+LICENSE
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+Spruksakit.egg-info/PKG-INFO
+Spruksakit.egg-info/SOURCES.txt
+Spruksakit.egg-info/dependency_links.txt
+Spruksakit.egg-info/top_level.txt
+spruksakit/__init__.py
+spruksakit/pruksakit.py
