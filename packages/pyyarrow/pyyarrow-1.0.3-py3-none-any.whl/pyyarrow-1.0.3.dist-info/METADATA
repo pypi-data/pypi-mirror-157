@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: pyyarrow
+Version: 1.0.3
+Summary: Yarrow Format parsing lib
+Home-page: https://github.com/michelin/YarrowFormat
+Author: Mathieu Pichon
+Author-email: mathieu.pichon_ext@michelin.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >= 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: wheel
+Requires-Dist: click
+Requires-Dist: numpy ; python_version >= "1.19"
+Requires-Dist: pydantic ; python_version >= "1.8"
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+
+# Yarrow: a data format for computer vision
+
+---------------
+
+## What is it ?
+
+**yarrow** is a python package to parse, manipulate and serialize data
+following the yarrow [data schema](/schema/yarrow_schema.json). This format is
+oriented around computer vision data and is heavily inspired by the COCO
+[dataset format](https://cocodataset.org/#format-data) and was initially developed
+and used in Michelin projects.
+
+## How to install
+
+```sh
+pip install yarrow
+```
+
+## How to use
+
+You can find multiple examples in the [examples directory](/examples/) and soon in a proper documentation (WIP). Here are a few examples.
+
+```python
+import json
+
+from yarrow import YarrowDataset
+
+# say you have a yarrow file at path
+file_path = "path/to/file.yarrow.json"
+
+yar_set = YarrowDataset.parse_file(file_path)
+# You now have a YarrowDataset !
+
+# Add annotations
+annot = Annotation(...) # see documentation for parameters
+yar_set.add_annotation(annot)
+
+# now save it somewhere else
+with open("path/to/other/file.yarrow.json", "w") as fp:
+    json.dump(yar_set.pydantic().dict(), fp, default=str)
+
+```
+
+## License
+
+[Apache 2.0](LICENSE)
+
+
