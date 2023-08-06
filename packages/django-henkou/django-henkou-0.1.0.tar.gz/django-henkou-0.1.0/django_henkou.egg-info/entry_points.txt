@@ -1,0 +1,3 @@
+[henkou.backends]
+default = henkou.backends.base:Default
+
