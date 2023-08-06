@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: tagasuri
+Version: 0.2.0
+Summary: Test engine on different test sets.
+Home-page: https://github.com/fsmosca/tagasuri
+Author: Ferdinand Mosca
+Author-email: ferdymosca@gmail.com
+Project-URL: Bug Tracker, https://github.com/fsmosca/tagasuri/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: chess (==1.9.2)
+Requires-Dist: pretty-html-table (==0.9.16)
+Requires-Dist: pandas (==1.4.3)
+
+# Tagasuri
+An application that will test a computer game program on epd test suites.
+
+## Installation
+`pip install tagasuri`
+
+
+## Command line
+
+#### Test engine
+
+```
+tagasuri epd-test --input-file "eret.epd" --engine-file "c:/engines/sf15.exe" --engine-options "{'Hash': 128, 'Threads': 1}" --move-time 5 --output-file eret.txt
+```
+
+Sample output
+
+```
+              Name  Total  Correct   Pct  Time  EPDFile
+      Stockfish 15    111       90 81.08   5.0 eret.epd
+       CDrill 1800    111       16 14.41   5.0 eret.epd
+        Cheng 4.40    111       16 14.41   5.0 eret.epd
+CT800 V1.43 64 bit    111       10  9.01   5.0 eret.epd
+```
+
+## Access help
+
+`tagasuri -h`
+
+`tagasuri epd-test -h`
