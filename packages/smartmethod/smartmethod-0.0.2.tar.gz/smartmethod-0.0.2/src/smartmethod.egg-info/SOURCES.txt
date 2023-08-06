@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/smartmethod/__init__.py
+src/smartmethod/_c.py
+src/smartmethod/decorators.py
+src/smartmethod.egg-info/PKG-INFO
+src/smartmethod.egg-info/SOURCES.txt
+src/smartmethod.egg-info/dependency_links.txt
+src/smartmethod.egg-info/top_level.txt
