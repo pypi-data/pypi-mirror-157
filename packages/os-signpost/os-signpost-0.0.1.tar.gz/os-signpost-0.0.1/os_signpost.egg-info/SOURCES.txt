@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+os_signpost/__init__.py
+os_signpost/cy.pxd
+os_signpost/cy.pyx
+os_signpost/signpost_wrap.h
+os_signpost.egg-info/PKG-INFO
+os_signpost.egg-info/SOURCES.txt
+os_signpost.egg-info/dependency_links.txt
+os_signpost.egg-info/top_level.txt
+os_signpost.egg-info/zip-safe
+os_signpost/tests/__init__.py
+os_signpost/tests/test_signposter.py
