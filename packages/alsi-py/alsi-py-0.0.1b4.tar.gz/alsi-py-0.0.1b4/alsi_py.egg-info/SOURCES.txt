@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./alsi/__init__.py
+./alsi/exceptions.py
+./alsi/pandas_client.py
+./alsi/raw_client.py
+./alsi/timefilter.py
+./tests/__init__.py
+./tests/test_pandas_client.py
+./tests/test_raw_client.py
+alsi_py.egg-info/PKG-INFO
+alsi_py.egg-info/SOURCES.txt
+alsi_py.egg-info/dependency_links.txt
+alsi_py.egg-info/requires.txt
+alsi_py.egg-info/top_level.txt
