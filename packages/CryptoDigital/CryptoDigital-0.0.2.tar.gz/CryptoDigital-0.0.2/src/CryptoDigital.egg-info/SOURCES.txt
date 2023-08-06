@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/CryptoDigital/__init__.py
+src/CryptoDigital.egg-info/PKG-INFO
+src/CryptoDigital.egg-info/SOURCES.txt
+src/CryptoDigital.egg-info/dependency_links.txt
+src/CryptoDigital.egg-info/top_level.txt
