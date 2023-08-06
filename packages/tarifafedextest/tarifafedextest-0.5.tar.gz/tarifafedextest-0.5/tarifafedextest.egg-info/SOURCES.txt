@@ -1,0 +1,10 @@
+README.md
+setup.py
+tarifafedextest/apiservice.py
+tarifafedextest/cotizatarifa.py
+tarifafedextest/main.py
+tarifafedextest/settings.py
+tarifafedextest.egg-info/PKG-INFO
+tarifafedextest.egg-info/SOURCES.txt
+tarifafedextest.egg-info/dependency_links.txt
+tarifafedextest.egg-info/top_level.txt
