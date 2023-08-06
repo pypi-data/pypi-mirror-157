@@ -1,0 +1,10 @@
+rcs_pydantic/__init__.py,sha256=dAMCIiJyzhSyUanX70T1Kf16cem-uw0nsWOGy3I9Z8Q,1481
+rcs_pydantic/enums.py,sha256=CZCw5OPxc_3BTUyiMYb-zRdiNakB6LWRiaOVUMHMWhk,3907
+rcs_pydantic/errors.py,sha256=WgUAtAihR7BdLe_FtuA4_TJySaLaAvBeJcjJyOxcNCU,45689
+rcs_pydantic/exceptions.py,sha256=79UQBMtPlm11phf5kYisFpLJWcD3M4vQTKOTywE-pAo,713
+rcs_pydantic/main.py,sha256=IHDaoho0Axigu787bSzIcdDULLpEgszVD--LVJ3v6hc,3060
+rcs_pydantic/scheme.py,sha256=SNI0PkiIblsdB25ktINv2vXSuIcB9SAncEmTtcRaktU,17600
+rcs_pydantic-0.3.0.dist-info/LICENSE,sha256=zlT6Ph0U_k9eKdNgdgP2eRrDs3O-zk-EmcjeulSQn-8,1076
+rcs_pydantic-0.3.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+rcs_pydantic-0.3.0.dist-info/METADATA,sha256=koCS9BiK6z63VWmW4-TKPWXKPYqoQ4Crjv-kTFYRU7s,6863
+rcs_pydantic-0.3.0.dist-info/RECORD,,
