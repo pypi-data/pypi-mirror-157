@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/easymp/__init__.py
+src/easymp/easymp.py
+src/easymp.egg-info/PKG-INFO
+src/easymp.egg-info/SOURCES.txt
+src/easymp.egg-info/dependency_links.txt
+src/easymp.egg-info/top_level.txt
