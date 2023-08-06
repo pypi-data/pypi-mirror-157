@@ -1,0 +1,13 @@
+psdest/__init__ (SFConflict callum@resolvedinstruments.com 2021-01-14-20-32-37).py,sha256=lRSn_8GbFjkSAZmAjUvlx5uWoGj9uiGgMbKDarXzAZA,575
+psdest/__init__ (SFConflict callum@resolvedinstruments.com 2021-05-31-09-14-17).py,sha256=Hts0MvqytyfE878E1p8l4bH9Ken2RxPZbnoM43MKUc4,625
+psdest/__init__.py,sha256=_EKDjnfM3myw3iAInl2Ds34KxRqEiLi1AJbd6HKUrDM,635
+psdest/cpsder.cp37-win_amd64.pyd,sha256=vVL7w_Q0Q2LN-OHMaPUedp6Z9n3elciLFpLg2-5YYoU,193536
+psdest/libfftw3-3.dll,sha256=ABqDXS8lrAZhWA1n21YiFXwoSBwGp_PvRa2TmDm_VKE,2712765
+psdest/libfftw3f-3.dll,sha256=QsoY__Nd0SiQ4ER4vJkABbOWnLdE9oQ5dr1DbM1_Ckw,2772692
+psdest/pypsder (SFConflict callum@resolvedinstruments.com 2021-01-14-20-24-48).py,sha256=zAOpq_kndkVSqVMukfHinWVHTYVBs1zn4djqvI7m5GU,3808
+psdest/pypsder.py,sha256=28feWpbqs2xNh3ejo9ztnsiR56cpOrBJCf_PoFyfHLM,4280
+psdest-0.0.8.dist-info/LICENCE,sha256=qc3KIRRPwWdK3MiNZxg2_mf8EDrcThvtVqxWOwEJgtM,1089
+psdest-0.0.8.dist-info/METADATA,sha256=y08Sh_SXZujI9CGyejTwDyQUqQjwfG-yndb3uiAxidM,767
+psdest-0.0.8.dist-info/WHEEL,sha256=-FqDJjo4HrkrIaThvtAYef2eEAn1_QvVe5nINCnUEbQ,101
+psdest-0.0.8.dist-info/top_level.txt,sha256=cooPz6BArmCUdAC6sy6wgMCVBCyHv3GNiQjn2nPqB1E,7
+psdest-0.0.8.dist-info/RECORD,,
