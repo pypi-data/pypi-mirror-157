@@ -1,0 +1,8 @@
+requests
+cached_property
+bs4
+nltk
+pdftotext
+transformers
+unidecode
+edlib
