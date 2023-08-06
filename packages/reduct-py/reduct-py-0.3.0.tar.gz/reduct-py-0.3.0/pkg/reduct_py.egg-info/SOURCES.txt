@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pkg/reduct/VERSION
+pkg/reduct/__init__.py
+pkg/reduct/bucket.py
+pkg/reduct/client.py
+pkg/reduct/error.py
+pkg/reduct/http.py
+pkg/reduct_py.egg-info/PKG-INFO
+pkg/reduct_py.egg-info/SOURCES.txt
+pkg/reduct_py.egg-info/dependency_links.txt
+pkg/reduct_py.egg-info/requires.txt
+pkg/reduct_py.egg-info/top_level.txt
