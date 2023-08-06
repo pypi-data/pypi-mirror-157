@@ -1,0 +1,10 @@
+LICENSE
+README.md
+books_dl.py
+setup.py
+books_dl.egg-info/PKG-INFO
+books_dl.egg-info/SOURCES.txt
+books_dl.egg-info/dependency_links.txt
+books_dl.egg-info/entry_points.txt
+books_dl.egg-info/requires.txt
+books_dl.egg-info/top_level.txt
