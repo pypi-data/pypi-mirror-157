@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "cleangram_codegen"
+version = "0.0.0.dev2"
+description = "Code generator for cleangram"
+authors = ["Arwichok <me@arwi.dev>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+httpx = "*"
+typer = "^0.4.1"
+beautifulsoup4 = "^4.11.1"
+black = "^22.3.0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+mypy = "^0.961"
+pydantic = "^1.9.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
