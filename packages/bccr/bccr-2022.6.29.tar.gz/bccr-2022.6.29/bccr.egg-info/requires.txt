@@ -1,0 +1,9 @@
+pandas
+numpy
+anytree
+requests
+beautifulsoup4
+plotly
+dash>=2.2.0
+dash-extensions==0.0.71
+jupyter-dash
