@@ -1,0 +1,2 @@
+[console_scripts]
+deckmaster = deckmaster.main:main
