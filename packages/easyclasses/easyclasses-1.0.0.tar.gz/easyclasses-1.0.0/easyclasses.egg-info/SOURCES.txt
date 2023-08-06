@@ -1,0 +1,8 @@
+README.md
+easyclasses.py
+pyproject.toml
+setup.py
+easyclasses.egg-info/PKG-INFO
+easyclasses.egg-info/SOURCES.txt
+easyclasses.egg-info/dependency_links.txt
+easyclasses.egg-info/top_level.txt
