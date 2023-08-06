@@ -1,0 +1,14 @@
+TT_PACKAGENAME = 'com.zhiliaoapp.musically'
+KWAI_PACKAGENAME = 'com.kwai.video'
+SNACK_PACKAGENAME = 'com.kwai.bulldog'
+IOS = "ios"
+ANDROID = "android"
+RESULT_VEDIO_PATH = "vedio_path"
+RESULT_IS_AD = "is_ad"
+RESULT_APP_START_TIME = "app_start_time"
+RESULT_APP_TAB_APPEAR_TIME = "app_tab_apper_time"
+RESULT_APP_FEED_APPEAR_TIME = "app_feed_apper_time"
+RESULT_APP_VEDIO_START_TIME = "app_video_start_time"
+RESULT_NOT_RECOGNIZE_VEDIO = "not_recognize_video"
+RESULT_APP_START_TIME_COST = "start_time_cost"
+RESULT_TOTAL_TIME_COST = "total_cost_time"
