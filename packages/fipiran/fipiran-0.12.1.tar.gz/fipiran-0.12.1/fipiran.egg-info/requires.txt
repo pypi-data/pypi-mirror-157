@@ -1,0 +1,10 @@
+aiohttp[speedups]
+pandas
+beautifulsoup4
+lxml
+jdatetime
+
+[test]
+pytest
+pytest-asyncio
+python-dotenv
