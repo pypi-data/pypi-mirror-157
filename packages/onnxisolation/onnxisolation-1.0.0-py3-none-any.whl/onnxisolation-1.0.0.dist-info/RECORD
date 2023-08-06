@@ -1,0 +1,10 @@
+onnxisolation/__init__.py,sha256=w39AovTL_ydRh042qXH67PE51KgCp9m3_qQX1I79yO0,190
+onnxisolation/export.py,sha256=cToOrbBeytwOd_Rg-tjTvb4LSWMBRGyjar2WWA5inh4,4726
+onnxisolation/get_shape.py,sha256=yAPIgmrvSFfoA04GpGoaYWPW_zjXXrdc4lVCwGAMeas,3844
+onnxisolation/isolate.py,sha256=w7dFyb084HvBP_TVBQMKbB6NRdi6WN0pdmvENX5k9Ew,1601
+onnxisolation/reshape.py,sha256=5eFudZ-0A8WwtIdqZcRdXcuxA6-U8Zzo_v-s2aAIKVo,310
+onnxisolation-1.0.0.dist-info/LICENSE,sha256=zjX3DkRp8TmpicRzQuBZBUULyesOjwuy-cXhE9y-NmQ,1063
+onnxisolation-1.0.0.dist-info/METADATA,sha256=fcfkKiLig5n_eMU5_xiCVIQDg5m3ZTej1b-jHSp6JCQ,652
+onnxisolation-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+onnxisolation-1.0.0.dist-info/top_level.txt,sha256=EHgzQp7HdejfPzrIvim1PKHS1mq9tDJ1h4LZSg6VKQ4,14
+onnxisolation-1.0.0.dist-info/RECORD,,
