@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fbc_sp_client"
+version = "89.3.8"
+authors = [
+  { name="Xalium Dare", email="soengineering@fb.com" },
+]
+description = "A small package for important work"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/facebook/"
+"Bug Tracker" = "https://facebook.com/whitehat/"
+
+
