@@ -1,0 +1,21 @@
+[build-system]
+requires = ["py2app>=0.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyEasier"
+version = "0.0.3"
+authors = [
+  { name="Yellow Yams(Vedic Mukherjee)", email="yellowyams5@gmail.com" },
+]
+description = "Making your python experience better =D"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/YellowBoyYams/PyEasier/issues"

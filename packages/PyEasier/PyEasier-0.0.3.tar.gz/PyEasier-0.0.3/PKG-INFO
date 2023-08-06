@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: PyEasier
+Version: 0.0.3
+Summary: Making your python experience better =D
+Author: Yellow Yams(Vedic Mukherjee)
+Author-email: "Yellow Yams(Vedic Mukherjee)" <yellowyams5@gmail.com>
+Project-URL: Bug Tracker, https://github.com/YellowBoyYams/PyEasier/issues
+Keywords: python,PyEasier,quick code,fast development,easy to use,build
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# PyEasier
+
+This python package is made with the soul content of
+making python have less boilerplate code. So if you 
+find a put it into the [bug report](https://github.com/YellowBoyYams/PyEasier/issues), and I will work
+on it as fast as possible.
+
+Cheers, YellowYams(Author)
