@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/scrape_721/__init__.py
+src/scrape_721/constants.py
+src/scrape_721/main.py
+src/scrape_721.egg-info/PKG-INFO
+src/scrape_721.egg-info/SOURCES.txt
+src/scrape_721.egg-info/dependency_links.txt
+src/scrape_721.egg-info/top_level.txt
