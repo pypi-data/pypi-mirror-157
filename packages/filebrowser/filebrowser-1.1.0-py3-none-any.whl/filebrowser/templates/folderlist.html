@@ -1,0 +1,7 @@
+<li role="button" tabindex="0" aria-label=".." data-url="/files/flask-blog/"> .. </li>
+{% if folders_data != [] %}
+    {% for i in folders %}
+    <li role="button" tabindex="0" aria-label="{{ i }}" data-url="/files"
+        aria-selected="">{{ i }}</li>
+    {% endfor %}
+{% endif %}
