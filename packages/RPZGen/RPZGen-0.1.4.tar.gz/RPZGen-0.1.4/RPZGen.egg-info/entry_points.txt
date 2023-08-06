@@ -1,0 +1,2 @@
+[console_scripts]
+rpzgen = rpzgen.cli:run

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: RPZGen
+Version: 0.1.4
+Summary: A generator for Response Policy Zones (RPZ)
+Home-page: https://github.com/M4t7e/RPZGen
+Author: M4t7e
+License: MIT License
+Platform: Any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# RPZGen
+
+RPZGen - A generator for Response Policy Zones (RPZ)
