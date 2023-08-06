@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gale-topo
+Version: 0.0.1
+Summary: Globally Assessing Local Explanations (GALE), a method to compare local explaination output
+Home-page: https://github.com/pnxenopoulos/gale
+Author: Peter Xenopoulos, Gromit Chan, 
+Author-email: xenopoulos@nyu.edu
+License: UNKNOWN
+Project-URL: Issues, https://github.com/pnxenopoulos/gale/issues
+Project-URL: Documentation, https://github.com/pnxenopoulos/gale/tree/main/docs
+Project-URL: GitHub, https://github.com/pnxenopoulos/gale/
+Keywords: explainability interpretability topology
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
+UNKNOWN
+
