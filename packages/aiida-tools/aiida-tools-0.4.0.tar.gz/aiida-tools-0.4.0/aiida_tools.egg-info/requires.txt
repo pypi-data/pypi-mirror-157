@@ -1,0 +1,7 @@
+aiida-core>=2.0.0<3.0.0
+pyyaml
+
+[dev]
+sphinx
+sphinx-rtd-theme
+pre-commit

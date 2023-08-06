@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+aiida_tools/__init__.py
+aiida_tools/_check_workchain_step.py
+aiida_tools/_get_outputs_dict.py
+aiida_tools/process_inputs.py
+aiida_tools.egg-info/PKG-INFO
+aiida_tools.egg-info/SOURCES.txt
+aiida_tools.egg-info/dependency_links.txt
+aiida_tools.egg-info/requires.txt
+aiida_tools.egg-info/top_level.txt
