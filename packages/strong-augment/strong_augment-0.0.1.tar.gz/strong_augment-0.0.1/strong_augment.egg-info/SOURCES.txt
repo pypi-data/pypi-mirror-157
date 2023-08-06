@@ -1,0 +1,17 @@
+README.md
+setup.py
+strong_augment/__init__.py
+strong_augment/_augment.py
+strong_augment/_example.py
+strong_augment/_multiprocess.py
+strong_augment/_operations.py
+strong_augment/_progress.py
+strong_augment/_shift.py
+strong_augment.egg-info/PKG-INFO
+strong_augment.egg-info/SOURCES.txt
+strong_augment.egg-info/dependency_links.txt
+strong_augment.egg-info/requires.txt
+strong_augment.egg-info/top_level.txt
+test/test_augmentation.py
+test/test_operations.py
+test/test_shift.py
