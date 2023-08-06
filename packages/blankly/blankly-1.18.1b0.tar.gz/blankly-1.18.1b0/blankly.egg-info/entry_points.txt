@@ -1,0 +1,3 @@
+[console_scripts]
+blankly = blankly.deployment.new_cli:main
+blankly_old = blankly.deployment.cli:main
