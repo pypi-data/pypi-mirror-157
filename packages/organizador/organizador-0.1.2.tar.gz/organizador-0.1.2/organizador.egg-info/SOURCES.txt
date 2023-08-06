@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+organizador/__init__.py
+organizador/aj_progressB.py
+organizador/main.py
+organizador.egg-info/PKG-INFO
+organizador.egg-info/SOURCES.txt
+organizador.egg-info/dependency_links.txt
+organizador.egg-info/top_level.txt
