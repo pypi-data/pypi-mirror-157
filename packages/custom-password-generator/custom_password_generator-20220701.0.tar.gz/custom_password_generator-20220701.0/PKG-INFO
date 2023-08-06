@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: custom_password_generator
+Version: 20220701.0
+Summary: Generate a customized complex password
+Home-page: https://gitlab.com/daxm/python-password-generator
+Author: Dax Mickelson
+Author-email: dmickelson@zscaler.com
+License: BSD
+Platform: UNKNOWN
+License-File: LICENSE.md
+
+UNKNOWN
+
