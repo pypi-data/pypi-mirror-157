@@ -1,0 +1,13 @@
+vskernels/__init__.py,sha256=OfWD7MNgD2_eflnqu6rs0ohgh27fJizGWsKETY82COo,707
+vskernels/_metadata.py,sha256=e4pN0PL2hAACRxGVWabPvMxRAaOKKSdPA3wbaVEp3Hg,404
+vskernels/exceptions.py,sha256=dfAl7Bz7g61F9axCfOWgb97DlSiCIjEFVmpyE2gCFD4,661
+vskernels/helpers.py,sha256=sDWb55TcTC1ksuNU9es4m2aTa-E5eszUO3J2h496lOo,1825
+vskernels/kernels.py,sha256=z_Xb0dhAPJARL8JplyDZuVRYFQ0RHeLLRBLPZC81NcM,32534
+vskernels/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vskernels/types.py,sha256=eIj6-HmYjdu_3TZ5eO2c5pKFzKfQEdPpJtARv3AihSk,536
+vskernels/util.py,sha256=9dcyiHEsrQPacKod6qX-4Kpckpot8lMmwE8u2iU4djM,2444
+vskernels-1.0.5.dist-info/LICENSE,sha256=l0PN-qDtXcgOB5aXP_nSUsvCK5V3o9pQCGsTzyZhKL0,1071
+vskernels-1.0.5.dist-info/METADATA,sha256=ja2XjmkDoVM6fI7q2Z3prbC0V4hA53psQ0NQy6fJJoA,2983
+vskernels-1.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vskernels-1.0.5.dist-info/top_level.txt,sha256=JBiGZjE4cP9RwnX4OKpIzuF7qg55QeYFZTJC4r0Lmjg,10
+vskernels-1.0.5.dist-info/RECORD,,
