@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: geo-tool
+Version: 1.1.2
+Summary: 经纬度解析转换工具(Geographic location analysis and conversion tool)
+Home-page: UNKNOWN
+Author: abo123456
+Author-email: abcdef123456chen@sohu.com
+Maintainer: abo123456
+Maintainer-email: abcdef123456chen@sohu.com
+License: MIT License
+Description: [![Supported Versions](https://img.shields.io/pypi/pyversions/geo-tool.svg)](https://pypi.org/project/geo-tool)
+        ### 经纬度解析转换库
+                          
+        #### pip安装
+        ```shell
+        pip install geo_tool
+        ```
+        
+        #### 1.百度经纬度解析
+        ```python
+            from geo_tool import BaiduGeo
+            baidu_map_key = 'xxxxxxxxxxxx'
+            print(BaiduGeo(baidu_map_key).geo2address(22.52955, 113.93078))
+            print(BaiduGeo(baidu_map_key).get_city_name_by_geo(22.52955, 113.93078))
+            print(BaiduGeo(baidu_map_key).address2geo('北京市海淀区上地十街10号'))
+        
+        ```
+        
+        #### 2.高德经纬度解析
+        ```python
+            from geo_tool import GaodeGeo
+        
+            gaode_map_key = 'xxxxxxxx'
+            print(GaodeGeo(gaode_map_key).geo2address(22.52955, 113.93078))
+            print(GaodeGeo(gaode_map_key).address2geo("广东省深圳市南山区"))
+            print(GaodeGeo(gaode_map_key).get_city_name_by_geo(22.52955, 113.93078))
+        
+        ```
+        
+        #### 3.谷歌经纬度解析
+        ```python
+            from geo_tool import GoogelGeo
+        
+            google_key = 'xxxxxx'
+            print(GoogelGeo(google_key).address2geo('深圳市南山区'))
+        
+        ```
+        
+        #### 4.经纬度互相转换
+        ```python
+            from geo_tool import GeoTransform
+            baidu_lng = '114.126496'
+            baidu_lat = '22.538926'
+            print(GeoTransform(lng=baidu_lng, lat=baidu_lat).baidu2google())
+            google_lng = 114.12008298963123
+            google_lat = 22.53258746867191
+            print(GeoTransform(lng=google_lng, lat=google_lat).google2baidu())
+        
+        ```
+        
+Keywords: detool,decorators
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
