@@ -1,0 +1,14 @@
+conversor_divisor/__init__.py,sha256=qQdGLmWxIIECF9NnvPo7XqBDSbH06HhgR_EmbQNpjRw,60
+conversor_divisor/app.py,sha256=7-mSbGnw1uKjFVUtREVF_NKElHUOMeFF6h36lJvzemo,9885
+conversor_divisor/convert.py,sha256=9Htrr1GG1tjdvvOY90LfDWeKEyN5uDHqf2mpj7JVI3k,12891
+conversor_divisor/functions.py,sha256=VgoM7Fn80eraylw2viC9Uyo5-j7Ib_QHCnXwMziX0L0,9489
+conversor_divisor/resources.py,sha256=taShzSg_6cncBiEEpQM4fzwJTTkUNocLYYk6Chsy53w,38378
+conversor_divisor/settings.py,sha256=NZwCRdwjdAv3aBiAkgBaSQ1Uk6a8esm-xXJoz4Wtx60,2565
+conversor_divisor/ui.py,sha256=Cb369tmq9r5mEuYwsqcQIkHxZSW3tE49KObkCs_kZIQ,62133
+conversor_divisor/worker.py,sha256=HXnPWA5sl0nVbqNCWFRj9vLa2IpXE3tFFz6gk2oXo_U,1164
+conversor_divisor-3.2.5.dist-info/LICENSE,sha256=HvFbF_UZPXiqM3GPBjBlTUhfwCSu9Z0XsHaYHCRLpU8,1072
+conversor_divisor-3.2.5.dist-info/METADATA,sha256=R3Q4vROcAOXho-cNgmWnX8Jb4BbCIOFovizIxi_Xg48,2877
+conversor_divisor-3.2.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+conversor_divisor-3.2.5.dist-info/entry_points.txt,sha256=grSjFwGtNlTNGr7sYEoNiV69x1bdXaju4sDgS3USOWU,71
+conversor_divisor-3.2.5.dist-info/top_level.txt,sha256=jTlattL5VDfLOJF1nl8Wh3tz50tuZsLGKTAVW669fpk,18
+conversor_divisor-3.2.5.dist-info/RECORD,,
