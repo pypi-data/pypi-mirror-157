@@ -1,0 +1,8 @@
+[console_scripts]
+hkcheck = sxhkd_parser.cli.hkcheck:main
+hkdebug = sxhkd_parser.cli.hkdebug:main
+hkexport = sxhkd_parser.cli.hkexport:main
+hkfind = sxhkd_parser.cli.hkfind:main
+hkwatch = sxhkd_parser.cli.hkwatch:main
+hkxargs = sxhkd_parser.cli.hkxargs:main
+
