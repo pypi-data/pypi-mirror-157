@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: try030416zzy
+Version: 1.0
+Summary: just have fun
+Home-page: 
+Author: Mandy
+Author-email: 
+Maintainer: 
+Maintainer-email: 
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9

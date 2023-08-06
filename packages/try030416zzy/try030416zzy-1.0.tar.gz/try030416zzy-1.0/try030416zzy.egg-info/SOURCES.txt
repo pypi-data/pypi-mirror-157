@@ -1,0 +1,9 @@
+README.md
+setup.py
+package/__init__.py
+package/architectire.py
+package/industry.py
+try030416zzy.egg-info/PKG-INFO
+try030416zzy.egg-info/SOURCES.txt
+try030416zzy.egg-info/dependency_links.txt
+try030416zzy.egg-info/top_level.txt
