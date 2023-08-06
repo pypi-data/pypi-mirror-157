@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+Pagen.egg-info/PKG-INFO
+Pagen.egg-info/SOURCES.txt
+Pagen.egg-info/dependency_links.txt
+Pagen.egg-info/requires.txt
+Pagen.egg-info/top_level.txt
+generator/__init__.py
+generator/pagen.py
