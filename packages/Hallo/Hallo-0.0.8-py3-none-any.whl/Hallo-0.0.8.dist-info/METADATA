@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Hallo
+Version: 0.0.8
+Summary: web mvc framework for python
+Home-page: https://github.com/oldjun/hallo
+Author: JP Chen
+Author-email: oldjun@sina.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Database
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+web mvc framework for python
+
