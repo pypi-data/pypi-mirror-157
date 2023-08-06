@@ -1,0 +1,10 @@
+biopython
+ncbi-datasets-pylib
+pandas
+
+[dev]
+setuptools
+build
+twine
+
+[test]
