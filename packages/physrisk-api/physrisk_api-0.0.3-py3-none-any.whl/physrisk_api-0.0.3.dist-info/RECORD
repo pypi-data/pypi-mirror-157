@@ -1,0 +1,9 @@
+physrisk_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+physrisk_api/app/__init__.py,sha256=uwG-HH1j8mDdBZSQp2cxUF8_jlfaHVkdDrG2RVaCyi4,433
+physrisk_api/app/api.py,sha256=x91TlTXRvhZNGX73lZrRvGwDm6oCJGBdE3imYTfiRUM,1054
+physrisk_api/app/service.py,sha256=TAMZIEjGhgCw1_BknTDzaLLDSz_bc4Rb7KMrZbUxyaU,250
+physrisk_api-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+physrisk_api-0.0.3.dist-info/METADATA,sha256=iKfgFnyQj6sdBFTh6JMnPFsC5DoWzo8ZbT9iq09qPRQ,1019
+physrisk_api-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+physrisk_api-0.0.3.dist-info/top_level.txt,sha256=dNjQxNddF-nqwqXp3EnyXKDslSg-MfZuJedV1l1zn0U,13
+physrisk_api-0.0.3.dist-info/RECORD,,

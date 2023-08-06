@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: physrisk-api
+Version: 0.0.3
+Summary: Physical risk API
+Home-page: https://github.com/os-climate/physrisk-api
+Author: OS-Climate
+Author-email: joe.moorhouse@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/os-climate
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: waitress
+Requires-Dist: Flask
+Requires-Dist: flask-cors
+Requires-Dist: physrisk-lib (>=0.3.2)
+
+# physrisk-api
+API service for the OS-Climate phsyical risk tool
+
+![Build Status](https://github.com/os-climate/physrisk-api/actions/workflows/ci.yml/badge.svg?branch=main)
+
+- [Source](https://github.com/os-climate/physrisk-api)
+
+## License
+This program is free software: you can redistribute it and/or modify
+it under the terms of the Apache 2.0 License as published by Apache.
+
+
