@@ -1,0 +1,16 @@
+wagtail_color_panel/__init__.py,sha256=czc6MufoUVADUePzLIl9kcnART0VtoPzSEJ5l4Lbm1g,182
+wagtail_color_panel/blocks.py,sha256=iMuJpoVLsRao6pODC9pP_AiMVUKxhepxSmhv9eiihNo,983
+wagtail_color_panel/edit_handlers.py,sha256=dvEUjP7dETIIaEpgt6X78b3cFQ45TasQJvDI4IfJgYk,1027
+wagtail_color_panel/fields.py,sha256=7AfbbINWxg6xXBfA9XTNV4tzQCiFu5RR8dIFu_fZIA8,406
+wagtail_color_panel/validators.py,sha256=-fNcGHE8fakG134h0REyGRndi5rOSbg6T1VKlACYTBg,260
+wagtail_color_panel/widgets.py,sha256=3RHzyZZe083ZW3PQeWaj1J9l7d2u28mklKNnkUS1XXQ,2602
+wagtail_color_panel/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_color_panel/static/wagtail_color_panel/css/color-input-widget.css,sha256=0FCu7bJc38tuZRXOmaWhd8R5sEpB7Co5IxkzVgYYUv0,476
+wagtail_color_panel/static/wagtail_color_panel/js/color-input-widget-telepath.js,sha256=iSbISwk7iHFIZoIMGlcJnWEy-xpojk6ivreGdNUBd3M,498
+wagtail_color_panel/static/wagtail_color_panel/js/color-input-widget.js,sha256=gl9ks4eoKHDBpvFvV981Ygly9zWO2GUzuxnNVDnWeuA,823
+wagtail_color_panel/templates/wagtail_color_panel/widgets/color-input-widget.html,sha256=xDKG-U8c0yatcWBFAfMrvmRG2uz6jlVZU0sOvar9PA8,265
+wagtail_color_panel-1.4.0.dist-info/LICENSE,sha256=SkcuUtldPym2stmUoULPrwV_pSJmhEn49LxjeZo9ZnY,1089
+wagtail_color_panel-1.4.0.dist-info/METADATA,sha256=_awks86dQWHQx60pf1WmI8CF9QjgPr-iNyvyT_d-p3k,2703
+wagtail_color_panel-1.4.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wagtail_color_panel-1.4.0.dist-info/top_level.txt,sha256=c3_SPASXoiXhqIgvMZrAuFXQxHOnF6ZT0Q91_GMOUfI,20
+wagtail_color_panel-1.4.0.dist-info/RECORD,,
