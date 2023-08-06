@@ -1,0 +1,2 @@
+[console_scripts]
+jdanimatedimageeditor = jdAnimatedImageEditor:main
