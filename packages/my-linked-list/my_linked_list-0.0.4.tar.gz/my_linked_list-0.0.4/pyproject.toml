@@ -1,0 +1,13 @@
+[project]
+name = "my_linked_list"
+version = "0.0.4"
+authors = [
+  { name="Drozd0f", email="danylo.drozdov@gmail.com" },
+]
+description = "A small example package containing data structure - linked list"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Unix",
+]
