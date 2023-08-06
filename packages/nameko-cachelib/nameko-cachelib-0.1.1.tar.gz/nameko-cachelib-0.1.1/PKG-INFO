@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: nameko-cachelib
+Version: 0.1.1
+Summary: An easy-to-use nameko cache
+Home-page: https://github.com/ma-pony/nameko-cache
+Author: Pony Ma
+Author-email: mtf201013@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: nameko (==3.0.0.rc11)
+Project-URL: Repository, https://github.com/ma-pony/nameko-cache
+Description-Content-Type: text/markdown
+
+# nameko-cache
+
+An easy-to-use nameko cache
+
+Some code references from repo [nameko-cachetools](https://github.com/santiycr/nameko-cachetools)
+
+# Install
+```shell
+pip install nameko-cachelib
+```
+
+# Example
+```python
+
+    class Service:
+        name = "service"
+
+        cached_service = CacheRpcProxy("service")
+
+        @rpc
+        def cached(self, *args, **kwargs):
+            return self.cached_service.some_method(*args, **kwargs)
+
+```
+
+# TODO list
+## memory cache
+
+## single flight
+
+## redis cache
+
+
+
