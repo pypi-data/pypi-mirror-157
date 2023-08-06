@@ -1,0 +1,8 @@
+kancyrandom.py
+randomer.py
+setup.py
+randomer.egg-info/PKG-INFO
+randomer.egg-info/SOURCES.txt
+randomer.egg-info/dependency_links.txt
+randomer.egg-info/entry_points.txt
+randomer.egg-info/top_level.txt
