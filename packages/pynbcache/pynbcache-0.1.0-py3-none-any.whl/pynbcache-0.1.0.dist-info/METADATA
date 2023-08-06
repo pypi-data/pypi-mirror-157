@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pynbcache
+Version: 0.1.0
+Summary: 
+Author: Julian Stier
+Author-email: julian.stier@uni-passau.de
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.22.4,<2.0.0)
+Requires-Dist: pandas (>=1.4.2,<2.0.0)
+Requires-Dist: s3fs (>=2022.5.0,<2023.0.0)
+Requires-Dist: tables (>=3.7.0,<4.0.0)
