@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+notion_dashworks_fork.egg-info/PKG-INFO
+notion_dashworks_fork.egg-info/SOURCES.txt
+notion_dashworks_fork.egg-info/dependency_links.txt
+notion_dashworks_fork.egg-info/requires.txt
+notion_dashworks_fork.egg-info/top_level.txt
