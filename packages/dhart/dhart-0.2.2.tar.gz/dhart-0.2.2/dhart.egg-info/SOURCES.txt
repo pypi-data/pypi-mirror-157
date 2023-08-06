@@ -1,0 +1,96 @@
+README.md
+setup.py
+dhart/Exceptions.py
+dhart/__init__.py
+dhart/common_native_functions.py
+dhart/native_collections.py
+dhart/native_numpy_like.py
+dhart/utils.py
+dhart.egg-info/PKG-INFO
+dhart.egg-info/SOURCES.txt
+dhart.egg-info/dependency_links.txt
+dhart.egg-info/requires.txt
+dhart.egg-info/top_level.txt
+dhart.egg-info/zip-safe
+dhart/Example Models/VisibilityTestCases.obj
+dhart/Example Models/Weston_Analysis.obj
+dhart/Example Models/Weston_Analysis_z-up.obj
+dhart/Example Models/Weston_meshed_no-ngon.obj
+dhart/Example Models/energy_blob_zup.obj
+dhart/Example Models/obstacle_plane.obj
+dhart/Example Models/plane.obj
+dhart/Example Models/sibenik.obj
+dhart/Example Models/sponza.mtl
+dhart/Example Models/sponza.obj
+dhart/Example Models/teapot.obj
+dhart/Examples/GenerateRandomPathsExample.py
+dhart/Examples/GraphGeneratorExample.py
+dhart/Examples/GraphGeneratorPlot.py
+dhart/Examples/GraphToCSR.py
+dhart/Examples/IndoorOutdoorVisibilityGraph.py
+dhart/Examples/PathPlanning.py
+dhart/Examples/PathPlanningBasic.py
+dhart/Examples/PathPlanningCosts.py
+dhart/Examples/PathPlanningViz.py
+dhart/Examples/RaytracerExample.py
+dhart/Examples/SavingGraphtoJSON.py
+dhart/Examples/ViewAnalysisExample.py
+dhart/Examples/ViewAnalysisFromGraph.py
+dhart/Examples/ViewAnalysisPlots.py
+dhart/Examples/ViewAnalysisRayWrite.py
+dhart/Examples/VisibilityGraphButchersDen.py
+dhart/Examples/VisibilityGraphExample.py
+dhart/Examples/VisibilityGraphGroups.py
+dhart/Examples/VisibilityGraphPlots.py
+dhart/Examples/VisibilityGraphScoreWrite.py
+dhart/Examples/__init__.py
+dhart/Examples/benchmarker.py
+dhart/Examples/shortestpathexample.py
+dhart/Examples/Rhino/RhinoDisplayUtils.py
+dhart/Examples/Rhino/RhinoDisplayViewAnalysis.py
+dhart/Examples/Rhino/RhinoReadGraph.py
+dhart/Examples/Rhino/RhinoViewAnalysisRayDisplay.py
+dhart/Examples/Rhino/read_graph_from_json.py
+dhart/bin/DHARTAPI.dll
+dhart/bin/embree3.dll
+dhart/bin/msvcp140.dll
+dhart/bin/tbb.dll
+dhart/bin/vcomp140.dll
+dhart/bin/vcruntime140.dll
+dhart/bin/vcruntime140_1.dll
+dhart/geometry/__init__.py
+dhart/geometry/mesh_info.py
+dhart/geometry/meshinfo_native_functions.py
+dhart/geometry/obj_loader.py
+dhart/geometry/predefined_rotations.py
+dhart/geometry/test_OBJLoader.py
+dhart/graphgenerator/__init__.py
+dhart/graphgenerator/graph_generator.py
+dhart/graphgenerator/graph_generator_native_functions.py
+dhart/graphgenerator/test_GraphGenerator.py
+dhart/pathfinding/__init__.py
+dhart/pathfinding/path.py
+dhart/pathfinding/pathfinder_native_functions.py
+dhart/pathfinding/shortest_path.py
+dhart/pathfinding/test_pathfinding.py
+dhart/raytracer/__init__.py
+dhart/raytracer/embree_bvh.py
+dhart/raytracer/embree_raytracer.py
+dhart/raytracer/raytracer_native_functions.py
+dhart/raytracer/test_RayTracer.py
+dhart/spatialstructures/__init__.py
+dhart/spatialstructures/cost_algorithms.py
+dhart/spatialstructures/edge.py
+dhart/spatialstructures/graph.py
+dhart/spatialstructures/node.py
+dhart/spatialstructures/spatial_structures_native_functions.py
+dhart/spatialstructures/test_graph.py
+dhart/viewanalysis/__init__.py
+dhart/viewanalysis/test_view_analysis.py
+dhart/viewanalysis/view_analysis.py
+dhart/viewanalysis/view_analysis_scores.py
+dhart/viewanalysis/viewanalysis_native_functions.py
+dhart/visibilitygraph/__init__.py
+dhart/visibilitygraph/test_visibility_graph.py
+dhart/visibilitygraph/visibility_graph.py
+dhart/visibilitygraph/visibility_graph_native_functions.py
