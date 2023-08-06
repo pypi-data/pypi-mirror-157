@@ -1,0 +1,12 @@
+psdest/__init__ (SFConflict callum@resolvedinstruments.com 2021-01-14-20-24-48).py,sha256=lRSn_8GbFjkSAZmAjUvlx5uWoGj9uiGgMbKDarXzAZA,575
+psdest/__init__.py,sha256=_EKDjnfM3myw3iAInl2Ds34KxRqEiLi1AJbd6HKUrDM,635
+psdest/cpsder.cp37-win32.pyd,sha256=Rd5RfFoai09s0Zshi-KV7eZV8vXYsq4UFPtSoq0N6pM,162304
+psdest/libfftw3-3.dll,sha256=zleeWQTgjgJbadePW9ZGKkcCjbwGMbtWRu0OVhCyo9w,2310215
+psdest/libfftw3f-3.dll,sha256=gXu4Z6iODiMwIcjAnD69KzU9XRwkgdKLDouuqmw2aMI,2391615
+psdest/pypsder (SFConflict callum@resolvedinstruments.com 2021-01-14-20-32-37).py,sha256=zAOpq_kndkVSqVMukfHinWVHTYVBs1zn4djqvI7m5GU,3808
+psdest/pypsder.py,sha256=28feWpbqs2xNh3ejo9ztnsiR56cpOrBJCf_PoFyfHLM,4280
+psdest-0.0.8.dist-info/LICENCE,sha256=qc3KIRRPwWdK3MiNZxg2_mf8EDrcThvtVqxWOwEJgtM,1089
+psdest-0.0.8.dist-info/METADATA,sha256=y08Sh_SXZujI9CGyejTwDyQUqQjwfG-yndb3uiAxidM,767
+psdest-0.0.8.dist-info/WHEEL,sha256=cpY2CIQibwgnIWFRKvRDp2Kii5IPBXf6TQxjD0tLibE,97
+psdest-0.0.8.dist-info/top_level.txt,sha256=cooPz6BArmCUdAC6sy6wgMCVBCyHv3GNiQjn2nPqB1E,7
+psdest-0.0.8.dist-info/RECORD,,
