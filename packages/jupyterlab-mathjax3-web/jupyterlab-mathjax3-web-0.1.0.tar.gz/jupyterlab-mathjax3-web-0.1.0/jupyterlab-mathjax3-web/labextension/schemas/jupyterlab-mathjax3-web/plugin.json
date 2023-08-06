@@ -1,0 +1,40 @@
+{
+    "jupyter.lab.setting-icon": "ui-components:text-editor",
+    "jupyter.lab.setting-icon-label": "MathJax 3",
+    "title": "MathJax 3 Config",
+    "description": "MathJax 3 configuration file",
+    "type": "object",
+    "properties": {
+        "displayMath": {
+            "title": "The block math delimiters",
+            "description": "This is an array of pairs of strings that are to be used as delimiters for displayed equations. The first in each pair is the initial delimiter and the second is the terminal delimiter. You can have as many pairs as you want.",
+            "type": "array",
+            "default": [
+                ["$$", "$$"],
+                ["\\[", "\\]"]
+            ]
+        },
+        "inlineMath": {
+            "title": "The inline math delimiters",
+            "description": "This is an array of pairs of strings that are to be used as in-line math delimiters. The first in each pair is the initial delimiter and the second is the terminal delimiter. You can have as many pairs as you want.",
+            "type": "array",
+            "default": [
+                ["$", "$"],
+                ["\\(", "\\)"]
+            ]
+        },
+        "processEscapes": {
+            "title": "Whether to specially treat the escapte character",
+            "description": "When set to true, you may use \\$ to represent a literal dollar sign, rather than using it as a math delimiter, and \\\\ to represent a literal backslash.",
+            "type": "boolean",
+            "default": true
+        },
+        "processEnvironments": {
+            "title": "Whether to process \\begin{}...\\end{} as math",
+            "description": "When true, tex2jax looks not only for the in-line and display math delimiters, but also for LaTeX environments (\\begin{something}...\\end{something}) and marks them for processing by MathJax. When false, LaTeX environments will not be processed outside of math mode.",
+            "type": "boolean",
+            "default": true
+        }
+    }
+
+}
