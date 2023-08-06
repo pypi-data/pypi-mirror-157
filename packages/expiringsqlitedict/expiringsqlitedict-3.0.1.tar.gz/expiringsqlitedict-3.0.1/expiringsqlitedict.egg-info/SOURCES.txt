@@ -1,0 +1,14 @@
+.gitignore
+.travis.yml
+CHANGELOG.txt
+LICENSE.apache
+LICENSE.rst
+Makefile
+README.rst
+expiringsqlitedict.py
+setup.py
+test.py
+expiringsqlitedict.egg-info/PKG-INFO
+expiringsqlitedict.egg-info/SOURCES.txt
+expiringsqlitedict.egg-info/dependency_links.txt
+expiringsqlitedict.egg-info/top_level.txt
