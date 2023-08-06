@@ -1,0 +1,9 @@
+PiDNG
+PyQt5
+numpy
+piexif
+pillow
+pyopengl
+python-prctl
+simplejpeg
+v4l2-python3
