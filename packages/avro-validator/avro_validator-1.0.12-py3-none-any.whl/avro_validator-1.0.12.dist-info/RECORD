@@ -1,0 +1,10 @@
+avro_validator/__init__.py,sha256=9Na_xyzPoXqCCd9FOkspUSVfmyEkR5u1gMKHUjiUPBU,603
+avro_validator/avro_types.py,sha256=KZR1zR8u9frl2jdcacFjvzCexe-LiFLv9t2IRg5kDl0,40273
+avro_validator/cli.py,sha256=aDadjTyYX8wpGYrbsG7n18ovyAsveeVeilPE6pmbklU,1162
+avro_validator/schema.py,sha256=NdcKDlXKoKvfGy6FszmzzNWRzmK1-KC9Oo5K31t1z9o,810
+avro_validator-1.0.12.dist-info/LICENSE,sha256=YH_ezX0lXe81pRy6yD19AbaQimKJVT2HL-_WN1461jU,1075
+avro_validator-1.0.12.dist-info/METADATA,sha256=aGkzlD9TPaUYd0Aa2GmAupWRENAp5890azdI2V_HL-M,8481
+avro_validator-1.0.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+avro_validator-1.0.12.dist-info/entry_points.txt,sha256=tAlNV8NuwPCsxDFfLwwM2Zqxu8np4bCB9fNGDtmKcBY,59
+avro_validator-1.0.12.dist-info/top_level.txt,sha256=D1QJ4qld7NvHaXlIwp7ISAZzLMPv6qnXZA4Vftk8iN0,15
+avro_validator-1.0.12.dist-info/RECORD,,
