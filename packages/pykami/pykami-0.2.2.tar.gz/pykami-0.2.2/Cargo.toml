@@ -1,0 +1,20 @@
+[package]
+name = "pykami"
+version = "0.2.2"
+authors = ["Katie Ampersand <katie-and@ampersandia.net>"]
+description = "A python module that parses KAMI into HTML"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/lilith-in-starlight/pykami"
+homepage = "https://github.com/lilith-in-starlight/pykami"
+readme = "readme.md"
+keywords = ["markup", "kami", "parser", "html"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "pykami"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.16.5", features = ["extension-module"] }
+kami-parser = "0.5.1"
