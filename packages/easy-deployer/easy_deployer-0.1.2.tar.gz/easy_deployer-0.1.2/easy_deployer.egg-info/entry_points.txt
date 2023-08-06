@@ -1,0 +1,5 @@
+[console_scripts]
+easy-deployer = easy_deployer.main:main
+easy-deployer-github = easy_deployer.github:main
+easy-deployer-heroku = easy_deployer.heroku:main
+
