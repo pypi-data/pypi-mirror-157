@@ -1,0 +1,12 @@
+gaussdecomp/__init__.py,sha256=nQ1DikOibYmcUEhzQxmw7jMixOndWsNPQ2YwgmCwehk,127
+gaussdecomp/cube.py,sha256=IH-7n3Jv3SrZT4xvcecbfzKZdwI7yYHBm1xFw1tfVdM,6419
+gaussdecomp/driver.py,sha256=-zmIDOP8ttpIQeCGR4WDE3g6EUxIif6ODgsQMAYqyhk,61287
+gaussdecomp/fitter.py,sha256=6Dq_IkOrLcwikrqG452JWODm1ZYSwvPf_RVU-OMT_No,14667
+gaussdecomp/spectrum.py,sha256=ZCbp3Bld7IjiN46OBAumUm64ZgMJ9-Q5o87P2mVz3dk,2556
+gaussdecomp/utils.py,sha256=WLkBNp21sWgHXG_W3sH-2cEEq4Er0oVyroKJz361FRo,26970
+gaussdecomp-1.0.26.data/scripts/gaussdecomp,sha256=hc9KUp6WHvB7VYYK1v2eW5OVMs_ZPwyKokaAabzV8Xw,2615
+gaussdecomp-1.0.26.dist-info/LICENSE,sha256=ykcdTlNxwsfbg5SlIXBQdRpg-4pWgj8LO1GU6ja8J-Q,1070
+gaussdecomp-1.0.26.dist-info/METADATA,sha256=_M9lHJhZoLZWTofK6rXoJrQjPNwOiuDnmro-TJBy1cQ,1577
+gaussdecomp-1.0.26.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+gaussdecomp-1.0.26.dist-info/top_level.txt,sha256=kC_1o_gy3xrdptv4P1zL6UNyHw2mJ6DKSq8FBDVomEY,12
+gaussdecomp-1.0.26.dist-info/RECORD,,
