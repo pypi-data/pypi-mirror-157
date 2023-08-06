@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+terraria_pc_xbox360_player_converter/__init__.py
+terraria_pc_xbox360_player_converter/terraria_pc_xbox360_player_converter.py
+terraria_pc_xbox360_player_converter.egg-info/PKG-INFO
+terraria_pc_xbox360_player_converter.egg-info/SOURCES.txt
+terraria_pc_xbox360_player_converter.egg-info/dependency_links.txt
+terraria_pc_xbox360_player_converter.egg-info/requires.txt
+terraria_pc_xbox360_player_converter.egg-info/top_level.txt
