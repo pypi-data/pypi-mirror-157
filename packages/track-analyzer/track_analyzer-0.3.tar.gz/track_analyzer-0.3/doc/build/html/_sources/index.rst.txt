@@ -1,0 +1,56 @@
+.. Track Analyzer - Quantification and visualization of tracking data
+    Authors: Arthur Michaut                                                
+    Copyright 2016-2019 Harvard Medical School and Brigham and             
+                             Women's Hospital                              
+    Copyright 2019-2021 Institut Pasteur and CNRS–UMR3738                  
+    See the COPYRIGHT file for details                                     
+                                                                           
+    This file is part of Track Analyzer package.                           
+                                                                           
+    Track Analyzer is free software: you can redistribute it and/or modify 
+    it under the terms of the GNU General Public License as published by   
+    the Free Software Foundation, either version 3 of the License, or      
+    (at your option) any later version.                                    
+                                                                           
+    Track Analyzer is distributed in the hope that it will be useful,      
+    but WITHOUT ANY WARRANTY; without even the implied warranty of         
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the           
+    GNU General Public License for more details .                          
+                                                                           
+    You should have received a copy of the GNU General Public License      
+    along with Track Analyzer (COPYING).                                   
+    If not, see <https://www.gnu.org/licenses/>.                           
+
+
+Welcome to Track Analyzer's documentation!
+==========================================
+
+**Track Analyzer** is Python-based data visualization pipeline for tracking data.
+It *does not* perform any tracking, but visualizes and quantifies any kind of tracked data.
+It analyzes trajectories by computing standard quantities such as velocity,
+acceleration, diffusion coefficient, local density, etc. 
+Trajectories can also be plotted on the original image in 2D or 3D using custom color coding.
+
+**Track Analyzer** provides a filtering section that can extract subsets of data based on spatiotemporal criteria.
+The filtered subsets can then be analyzed either independently or compared. This filtering section also provides a tool
+for selecting specific trajectories based on spatiotemporal criteria which can be useful to perform fate mapping and back-tracking.
+
+**Track Analyzer** is distributed as two versions: an installation-free web-base tool run on `Galaxy <https://galaxyproject.org/>`_, and full version run on a user-friendly Jupyter notebook. On both versions, **Track Analyzer** can be run without any programming knowledge using its graphical interface. The full version interface is launched by running a `Jupyter notebook <https://jupyter.org/>`_ containing widgets allowing the user to load data and set parameters without writing any code. 
+
+
+
+==========
+User Guide
+==========
+.. toctree::
+   :maxdepth: 2
+
+   user_guide/index
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

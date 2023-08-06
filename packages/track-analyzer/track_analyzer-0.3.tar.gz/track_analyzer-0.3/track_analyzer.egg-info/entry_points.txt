@@ -1,0 +1,6 @@
+[console_scripts]
+TA_config = track_analyzer.scripts.make_default_config:main
+TA_synthetic = track_analyzer.scripts.make_synthetic_data:main
+map_analysis = track_analyzer.scripts.analyze_maps:main
+traj_analysis = track_analyzer.scripts.analyze_tracks:main
+
