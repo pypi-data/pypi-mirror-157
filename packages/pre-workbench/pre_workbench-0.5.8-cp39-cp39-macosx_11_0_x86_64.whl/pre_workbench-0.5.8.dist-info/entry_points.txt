@@ -1,0 +1,3 @@
+[console_scripts]
+prewb = pre_workbench.app:run_app
+prewb_parse = pre_workbench.structinfo.cli:run_cli
