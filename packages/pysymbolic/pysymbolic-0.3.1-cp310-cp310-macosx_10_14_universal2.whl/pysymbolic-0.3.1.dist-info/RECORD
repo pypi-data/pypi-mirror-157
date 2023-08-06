@@ -1,0 +1,10 @@
+symbolic/__init__.py,sha256=0ZREK_-_GPfC5bJKTvYaETqluFQJCHftOyuqAvLra8g,199
+symbolic/libVAL.dylib,sha256=bvF_2icaHwtIFiqbEbhZicXdl095FSQIAkIRCv0X5SI,3448968
+symbolic/libsymbolic.dylib,sha256=4sXsYphHtsqGVbXAMxCPywlHVFpVvxWbTuD_Ug3CC3s,1417200
+symbolic/problem.py,sha256=ThF3r3pd_5KQ_qb9sNLp-lpDn5vaFAKsDUticgJAcrM,4527
+symbolic/pysymbolic.cpython-310-darwin.so,sha256=zg941HGlv9zlrMzbl6VsaBQno5MMCY16dkKdDiuNdYs,743232
+pysymbolic-0.3.1.dist-info/LICENSE,sha256=KaEvFNWhmpbqobHcFJjpplNhTkCq0ZXP4mxGX4zXSx0,1071
+pysymbolic-0.3.1.dist-info/METADATA,sha256=AqyyvSvpwYppmovX1zZtZHoSTIcSaYurTvWBnUPaelw,570
+pysymbolic-0.3.1.dist-info/WHEEL,sha256=etdlk_nddfVNRprj7XuN8jFWkcxjQlsfKAue4yov0bg,116
+pysymbolic-0.3.1.dist-info/top_level.txt,sha256=FeFW1b3_yMmfVzm4Yb7CMwkVoUMRmhqmKXSKgH4sIzU,9
+pysymbolic-0.3.1.dist-info/RECORD,,
