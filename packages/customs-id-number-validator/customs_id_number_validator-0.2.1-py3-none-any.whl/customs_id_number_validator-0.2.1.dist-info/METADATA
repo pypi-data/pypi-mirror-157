@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: customs-id-number-validator
+Version: 0.2.1
+Summary: A small python package for validating Customs ID Number
+Home-page: https://github.com/kyong-dev/customs-id-number-validator
+Author: Kyong
+Author-email: kyong-dev@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Provides-Extra: pdf
+Requires-Dist: ReportLab (>=1.2) ; extra == 'pdf'
+Requires-Dist: RXP ; extra == 'pdf'
+Provides-Extra: rest
+Requires-Dist: docutils (>=0.3) ; extra == 'rest'
+
+# Python Package
+```bash
+pip install wheel && pip install twine
+python setup.py bdist_wheel
+
+customs_id_number_validator-0.2.0-py3-none-any.whl 
+```
