@@ -1,0 +1,13 @@
+news_fetcher/db.py,sha256=wWa815eGkyRV3kK5HFHmoM6Ci193NLkv6GaRkUAMDZQ,325
+news_fetcher/models.py,sha256=s_VB8EhRygmzehtfw1aDhTh1It9OfQb_XM2gqVPVydY,1735
+news_fetcher/module.py,sha256=J4G9KyFnVVfzQDDRATIWDc8ml_R8PtT_VoaSciEodI0,3651
+news_fetcher/news_fetcher.py,sha256=I1Kv6U3XAWWcEH-PFMFr2ohgC3ilDzIYziFf59eVfB4,7837
+news_fetcher/prostoprosport.py,sha256=xjyLFVdtxtPds0feMdacRJCtTFxE8qhvNc8rQUZiAHk,12534
+news_fetcher/rss.py,sha256=9fnc_RI4XJehGqL4y9STpjSBauU0qC7V_2paG3CkWVk,6510
+news_fetcher/test.py,sha256=xLFssHoFd5GVCqKcuFJFC5L8DyfB9Kx_tO9DZGfP1YQ,5140
+news_fetcher/utils.py,sha256=n6wO_oNTq9qAeOy0N8e0qcxJJDeGL9yZ8232n23pouY,1911
+news_fetcher/wikitext.py,sha256=1jK1Z7ZY_yeKkp1sdZ7q1Ff7BCB0WonuyYxGFcL7CWM,1054
+news_fetcher-0.2.0.dist-info/LICENSE,sha256=Ed0piYsu9LMsEvpJnSnUivKJ8VTpjqyxLqnGIsxtyBs,1075
+news_fetcher-0.2.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+news_fetcher-0.2.0.dist-info/METADATA,sha256=XjJw_WwUQEbx9OTfnJrlhSn_HAYdbAMmMtwFV6DHHCY,703
+news_fetcher-0.2.0.dist-info/RECORD,,
