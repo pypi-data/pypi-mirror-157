@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+explode_struct_schema/__init__.py
+explode_struct_schema.egg-info/PKG-INFO
+explode_struct_schema.egg-info/SOURCES.txt
+explode_struct_schema.egg-info/dependency_links.txt
+explode_struct_schema.egg-info/top_level.txt

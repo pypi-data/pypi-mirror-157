@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: explode-struct-schema
+Version: 0.1.1
+Summary: To explode the nested json in key value pair to read the dynamodb columns directly from spark dataframe
+Home-page: UNKNOWN
+Author: Deep Lakkad
+Author-email: deeplakkad7@gmail.com
+License: MIT
+Description: This is a code to breakdown the json and presents the output as a key value pair for using it to retrieve the columns
+        in an easy manner
+        
+        
+        It accepts the mandatory argument as a dynamodb json struct which you can copy and paste by going in any one of the tables in DynamoDB and use it.
+        
+        Change Log
+        ==========
+        
+        0.0.1 (07/04/2022)
+        ---------------------
+        - First Release
+Keywords: explode,dynamodb,json,struct
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
