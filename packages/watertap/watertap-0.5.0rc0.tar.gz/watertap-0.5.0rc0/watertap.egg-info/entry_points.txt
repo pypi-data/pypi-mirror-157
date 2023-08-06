@@ -1,0 +1,2 @@
+[console_scripts]
+edb = watertap.edb.commands:command_base
