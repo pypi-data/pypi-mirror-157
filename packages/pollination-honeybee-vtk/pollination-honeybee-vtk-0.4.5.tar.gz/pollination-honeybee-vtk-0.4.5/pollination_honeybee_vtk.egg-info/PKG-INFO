@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pollination-honeybee-vtk
+Version: 0.4.5
+Summary: Honeybee vtk plugin for Pollination.
+Home-page: https://github.com/pollination/honeybee-vtk
+Author: ladybug-tools
+Author-email: info@ladybug.tools
+Maintainer: Devang, ladybug-tools
+Maintainer-email: devang@ladybug.tools, info@ladybug.tools
+License: PolyForm Shield License 1.0.0, https://polyformproject.org/wp-content/uploads/2020/06/PolyForm-Shield-1.0.0.txt
+Project-URL: icon, https://raw.githubusercontent.com/pollination/honeybee-vtk/master/assets/logo/vtk.png
+Project-URL: docker, https://hub.docker.com/r/ladybugtools/honeybee-vtk
+Description: # Pollination Honeybee vtk plugin
+        
+        The honeybee-vtk plugin adds hbjson visualization functions to Pollination.
+        
+        ## Sources
+        
+        - `honeybee-vtk` Python package. [PyPI](https://pypi.org/project/honeybee-vtk/), [source](https://github.com/ladybug-tools/honeybee-vtk)
+        - `vtk` Python package. [PyPI](https://pypi.org/project/vtk/), [source](https://github.com/Kitware/VTK)
+        
+        
+Keywords: honeybee,vtk,hbjson,ladybug-tools
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
