@@ -1,0 +1,10 @@
+msdrive/__init__.py,sha256=wWIVFV3c3YuZv7kzG5vcxg6FkiVeHmxb4Mt85f5ikYQ,128
+msdrive/constants.py,sha256=jVFAqLOxhPcxEvze9v-pF40d_185mHu0HbEZArATs8I,188
+msdrive/drive.py,sha256=zWvXAxnJi8HTrpp0uFlSZ9COFMiniZaFQb8B-JkClFI,6309
+msdrive/onedrive.py,sha256=LyAVdR2CjZyezE5hCxzQiRHrIYt32fldRj5EpDxjORg,1086
+msdrive/sharepoint.py,sha256=jpMY97AnjpFYGX_UI8ugG-wzJQTSeaXYT_g9kVGpCb0,2503
+onedrive_sharepoint_python_sdk-0.0.1.dist-info/LICENSE.txt,sha256=RU9ApVNUhfhi3Vid9DlSYeO8Ak9eKhO21dEV3Q4m8gM,1063
+onedrive_sharepoint_python_sdk-0.0.1.dist-info/METADATA,sha256=brm-06zss1x4Igg-DMgkjrgWBLrpqUSesGTbgEBu4no,3836
+onedrive_sharepoint_python_sdk-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+onedrive_sharepoint_python_sdk-0.0.1.dist-info/top_level.txt,sha256=zFAPpH-77V48cot0zJyFgF8pxvcwEr7UHOdROAkeFEY,8
+onedrive_sharepoint_python_sdk-0.0.1.dist-info/RECORD,,
