@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "gocomics.py"
+version = "1.1.5"
+description = "Fetch comics from GoComics."
+authors = ["Mr.Brawler <omkaar.nerurkar@gmail.com>"]
+license = "MIT"
+readme = "README.rst"
+repository = "https://github.com/Pysics/gocomics.py/"
+documentation = "https://gocomics.readthedocs.io/"
+keywords = ["python", "gocomics"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+packages = ["gocomics"]
+
+[tool.poetry.dependencies]
+beautifulsoup4 = "4.11.*"
+requests = "2.27.*"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/Pysics/gocomics.py/issues"
