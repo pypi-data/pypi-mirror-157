@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pystandups"
+version = "0.4.6"
+description = "A command line utility for working with daily standups."
+authors = ["Azat Akhmetov"]
+readme = "readme.md"
+repository = "https://github.com/metov/pystandups"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+coloredlogs = "*"
+dictdiffer = "*"
+docopt = "*"
+openeditor = "^0.3.1"
+questionary = "*"
+tabulate = "*"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+standup = "pystandups.cli:main"
