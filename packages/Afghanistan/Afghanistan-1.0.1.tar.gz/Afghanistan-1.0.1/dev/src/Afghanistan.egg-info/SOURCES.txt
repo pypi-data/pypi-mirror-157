@@ -1,0 +1,7 @@
+README.md
+setup.py
+dev/src/Afghanistan.egg-info/PKG-INFO
+dev/src/Afghanistan.egg-info/SOURCES.txt
+dev/src/Afghanistan.egg-info/dependency_links.txt
+dev/src/Afghanistan.egg-info/top_level.txt
+dev/src/Afghanistan.egg-info/SOURCES.txt
