@@ -1,0 +1,9 @@
+README.md
+setup.py
+poptorch_model/__init__.py
+poptorch_model/poptorch_model.py
+poptorch_model.egg-info/PKG-INFO
+poptorch_model.egg-info/SOURCES.txt
+poptorch_model.egg-info/dependency_links.txt
+poptorch_model.egg-info/requires.txt
+poptorch_model.egg-info/top_level.txt

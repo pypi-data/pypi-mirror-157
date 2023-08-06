@@ -1,0 +1,1 @@
+from .poptorch_model import BasePipelineModel
