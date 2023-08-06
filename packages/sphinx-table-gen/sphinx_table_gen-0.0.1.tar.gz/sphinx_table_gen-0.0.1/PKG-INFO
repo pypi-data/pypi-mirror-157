@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sphinx_table_gen
+Version: 0.0.1
+Summary: reStructuredText sample table generator for sphinx.
+Home-page: https://github.com/0x00t0x7f/sphinx_table_gen
+Author: kuing
+Author-email: samleeforme@gmail.com
+License: BSD 2-Clause License
+Keywords: Python sphinx,sphinx,sphinx table generator,reStructuredText table generator
+Platform: any
+License-File: LICENSE
+
+UNKNOWN
+

@@ -1,0 +1,9 @@
+LICENSE
+README
+setup.py
+sphinx_table_gen/__init__.py
+sphinx_table_gen/main.py
+sphinx_table_gen.egg-info/PKG-INFO
+sphinx_table_gen.egg-info/SOURCES.txt
+sphinx_table_gen.egg-info/dependency_links.txt
+sphinx_table_gen.egg-info/top_level.txt
