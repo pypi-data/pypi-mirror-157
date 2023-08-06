@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: anubis-policy-api
+Version: 0.4.0
+Summary: The main module of anubis
+Home-page: https://github.com/orchestracities/anubis
+Author: Martel-Innovate
+Author-email: gabriele.cerfoglio@martel-innovate.com
+Project-URL: Bug Reports, https://github.com/orchestracities/anubis/issues
+Project-URL: Source, https://github.com/orchestracities/anubis
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aiosqlite (==0.17.0)
+Requires-Dist: asn1crypto (==1.5.1)
+Requires-Dist: certifi (==2021.10.8)
+Requires-Dist: databases (==0.5.5)
+Requires-Dist: fastapi (==0.73.0)
+Requires-Dist: isodate (==0.6.1)
+Requires-Dist: opa-python-client (==1.0.4)
+Requires-Dist: pg8000 (==1.26.1)
+Requires-Dist: pydantic (==1.9.0)
+Requires-Dist: pyjwt (==2.3.0)
+Requires-Dist: pyyaml (==6.0)
+Requires-Dist: rdflib (==6.1.1)
+Requires-Dist: rfc3987 (==1.3.8)
+Requires-Dist: sqlalchemy (==1.4.36)
+Requires-Dist: urllib3 (==1.26.9)
+Requires-Dist: user-agent (==0.1.10)
+Requires-Dist: uuid (==1.30)
+Requires-Dist: uvicorn (==0.17.6)
+Requires-Dist: anyio (==3.5.0) ; python_full_version >= "3.6.2"
+Requires-Dist: pyparsing (==3.0.8) ; python_full_version >= "3.6.8"
+Requires-Dist: six (==1.16.0) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3"
+Requires-Dist: requests (==2.27.1) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3, 3.4, 3.5"
+Requires-Dist: charset-normalizer (==2.0.12) ; python_version >= "3"
+Requires-Dist: greenlet (==1.1.2) ; python_version >= "3" and platform_machine == "aarch64" or (platform_machine == "ppc64le" or (platform_machine == "x86_64" or (platform_machine == "amd64" or (platform_machine == "AMD64" or (platform_machine == "win32" or platform_machine == "WIN32")))))
+Requires-Dist: idna (==3.3) ; python_version >= "3.5"
+Requires-Dist: sniffio (==1.2.0) ; python_version >= "3.5"
+Requires-Dist: h11 (==0.13.0) ; python_version >= "3.6"
+Requires-Dist: scramp (==1.4.1) ; python_version >= "3.6"
+Requires-Dist: starlette (==0.17.1) ; python_version >= "3.6"
+Requires-Dist: asgiref (==3.5.1) ; python_version >= "3.7"
+Requires-Dist: click (==8.1.3) ; python_version >= "3.7"
+Requires-Dist: setuptools (==62.1.0) ; python_version >= "3.7"
+Requires-Dist: typing-extensions (==4.2.0) ; python_version >= "3.7"
+Provides-Extra: dev
+
+
+This package contains the Anubis Policy Management API. For more information,
+visit the [Github Page](https://github.com/orchestracities/anubis).
