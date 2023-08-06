@@ -1,0 +1,9 @@
+neural_diffeqs/_NeuralNetwork.py,sha256=GIjEFXE79ekEcSSN__Dg0gUn7kWUvipvSB838JJjcpI,1358
+neural_diffeqs/__init__.py,sha256=e-FAN5xo-cmpwatmqisLhJpb_RbDCzpkLx2eA_zrM7I,190
+neural_diffeqs/_compose_nn_sequential.py,sha256=zhkhoEON1-slJivDpN3xUYtU57udtvwcvxQB-JFul7I,1234
+neural_diffeqs/_neural_diffeq.py,sha256=Zg5kdwMgarKAPfcKI68240EGvOrmc-N6esG2zD8Yhbw,3775
+neural_diffeqs-0.0.1.dist-info/LICENSE,sha256=jXNk8OCt5ZKcsUH97c3CKMzPjoa6z2j2Adwg0Wxbw9A,1072
+neural_diffeqs-0.0.1.dist-info/METADATA,sha256=rIXX2AbWdQhf_PK_LWiy_QjONqsnC4qtXziu275L6KU,1598
+neural_diffeqs-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+neural_diffeqs-0.0.1.dist-info/top_level.txt,sha256=a_2btCeVMAXaEqSO5IBytxaUi5O1wP1D9SYboev0DdI,15
+neural_diffeqs-0.0.1.dist-info/RECORD,,
