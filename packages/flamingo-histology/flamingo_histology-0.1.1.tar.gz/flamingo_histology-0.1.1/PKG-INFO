@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: flamingo_histology
+Version: 0.1.1
+Summary: Flamingo: a package for extracting and exporting annotations from H&E images
+Author-email: J S McKenzie <jsmckenzi@users.noreply.github.com>
+Project-URL: Homepage, https://jsmckenzie.github.io/flamingo/
+Project-URL: Bug Tracker, https://jsmckenzie.github.io/flamingo/
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# flamingo
+<img src="https://github.com/jsmckenzie/flamingo/blob/main/docs/image.jpg" alt="From Wikipedia" height="150" align="right" caption="Text left hanging">
+
+#### Extract annotations from .ndpa files and map on to the .ndpi image for use in other applications
+
+* * *
+
+[![PyPI version](https://badge.fury.io/py/flamingo-histology.svg)](https://pypi.org/project/flamingo-histology/)
+
+
+## Install
+```Python
+conda create --name ndpi python=3.10
+conda activate ndpi
+
+conda install -c conda-forge openslide
+conda install -c conda-forge openslide-python # probably better than the command above
+
+conda install numpy matplotlib jupyterlab
+
+pip install flamingo-histology
+
+```
+
+## Example image
+Example annotations (not corresponding to real regions) are provided in the `example` folder for files that can be downloaded from the following locations:
+- [test3-FITC 2 (485).ndpi](https://downloads.openmicroscopy.org/images/Hamamatsu-NDPI/manuel/)
+
+
+## Usage
+```
+import sys
+from flamingo.Flamingo import HE
+
+
+```
+
+
+
+Openslide documentation can be found here: https://openslide.org

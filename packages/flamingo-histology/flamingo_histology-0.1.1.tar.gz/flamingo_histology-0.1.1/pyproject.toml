@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flamingo_histology"
+version = "0.1.1"
+authors = [
+  { name="J S McKenzie", email="jsmckenzi@users.noreply.github.com"},
+]
+description = "Flamingo: a package for extracting and exporting annotations from H&E images"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Image Processing"
+]
+
+[project.urls]
+"Homepage" = "https://jsmckenzie.github.io/flamingo/"
+"Bug Tracker" = "https://jsmckenzie.github.io/flamingo/"
