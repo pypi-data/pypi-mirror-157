@@ -1,0 +1,14 @@
+pid
+pydash
+requests
+httptest
+
+[dev]
+nose
+coveralls
+pylint
+coverage
+mock
+
+[optional]
+pytest-metadata
