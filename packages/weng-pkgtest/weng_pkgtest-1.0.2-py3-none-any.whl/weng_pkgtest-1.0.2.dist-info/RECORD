@@ -1,0 +1,11 @@
+weng_pkgtest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weng_pkgtest/__version__.py,sha256=Fxymds_w_cjX2FuCri6jHKGuZWbzKd6ISU-CkWPEmIc,23
+weng_pkgtest/print1.py,sha256=rDQy_nV7Q5EZ0KiY2O6CUJCnfzWUdByN60WReNGkP_I,136
+weng_pkgtest/print2.py,sha256=5sKOM2mHzecJf5ANApS866oiG3wvNTz9aJstYXiKAg8,88
+weng_pkgtest/static/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weng_pkgtest/templates/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weng_pkgtest-1.0.2.dist-info/LICENSE,sha256=LlTNhKZFvqJZQ8dd2K5nyykeZqR6EVeDM8m0s7a4bIU,11560
+weng_pkgtest-1.0.2.dist-info/METADATA,sha256=EJMhmGMzC9ohzzz_FsBM5HVg5uMNPweJSaw9wLZPq1w,2233
+weng_pkgtest-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+weng_pkgtest-1.0.2.dist-info/top_level.txt,sha256=zS0NA_JlD5z9AOPYnKYzK3PinTu0fq9vaHBNOePwHTU,13
+weng_pkgtest-1.0.2.dist-info/RECORD,,
