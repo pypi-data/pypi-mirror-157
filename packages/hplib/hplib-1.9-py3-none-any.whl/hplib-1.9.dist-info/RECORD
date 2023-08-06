@@ -1,0 +1,12 @@
+hplib/__init__.py,sha256=6bHCTzNYUzMr982qIBCTbP6Atv4Dz5UK3D7b6fatjZM,74
+hplib/_version.py,sha256=RpPu528maHNU_Qw35t1FvfwwqX7Xsf6QRxS-HN-kJS0,495
+hplib/hplib.py,sha256=gsKfS45RD8-5RuZYPnPAzFx7kSq7uDToz4rhkvsy4ZU,34170
+hplib/hplib_database.csv,sha256=1o78GX_Zt178_8g5qjSeDcqUqWgwQIgSmvV4j1luAN0,227860
+hplib/hplib_database.py,sha256=IPMuhjjJFZVWPLNU31dNE9DyCW9N461J1PccqQ8fvV4,94737
+hplib/hplib_database_all.csv,sha256=p6hWrns3MbYkMmNsadqEDd9sJHbWCOZ8rMrmNkclfAc,1228249
+hplib/same_built_type.pkl,sha256=9aI2_ZLJD8cQc9jo5PKb3hgRpct3giXq0mqdKnO4z2Q,95781
+hplib-1.9.dist-info/LICENSE,sha256=7Bogg5NhmT7K6I23zrTb1liPe4zXMEkXE31YiaeQD-I,1100
+hplib-1.9.dist-info/METADATA,sha256=qE7MbHbxLvk4ZlEukUwltjTk5OTJatA_D98n2Zk_z4E,5945
+hplib-1.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hplib-1.9.dist-info/top_level.txt,sha256=yoX0TLHa9StanktPKAFs5oHvQNGlpiXN81qRc-naieo,6
+hplib-1.9.dist-info/RECORD,,
