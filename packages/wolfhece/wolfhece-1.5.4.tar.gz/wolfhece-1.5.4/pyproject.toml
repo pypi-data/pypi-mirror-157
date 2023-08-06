@@ -1,0 +1,31 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "numpy",
+    "matplotlib",
+    "wxpython",
+    "pyopengl",
+    "pandas",
+    "scipy",
+    "pillow",
+    "owslib",
+	"cython",
+	"pyproj",
+	"dbfread",
+	"graphviz",
+	"owslib",
+	"typing",
+	"requests",
+	"beautifulsoup4",
+	"python-gettext",
+	"shapely",
+	"openpyxl",
+	"xlrd",
+	"openkmi",
+	"lxml",
+	"laszip",
+	"laspy",
+	"sympy"
+]
+build-backend = "setuptools.build_meta"
