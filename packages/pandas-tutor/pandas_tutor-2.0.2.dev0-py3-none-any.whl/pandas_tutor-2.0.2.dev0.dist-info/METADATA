@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: pandas-tutor
+Version: 2.0.2.dev0
+Requires-Dist: pandas (<2.0,>=1.3)
+Requires-Dist: mypy-extensions (==0.4.3)
+
