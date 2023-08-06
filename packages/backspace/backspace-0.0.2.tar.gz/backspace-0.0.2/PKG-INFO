@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: backspace
+Version: 0.0.2
+Summary: backspace formatting tool
+Home-page: https://github.com/lengqie/backspace-python.git
+Author: lengqie
+Author-email: lengqie@foxmail.com
+License: UNKNOWN
+Description: # backspace-python
+        backspace formatting tool
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
