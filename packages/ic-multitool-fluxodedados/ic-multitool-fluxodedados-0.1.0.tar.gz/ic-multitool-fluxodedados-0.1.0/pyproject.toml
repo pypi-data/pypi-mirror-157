@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ic-multitool-fluxodedados"
+version = "0.1.0"
+description = ""
+authors = ["Marcelo Assis <94455042+marceloapda@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+ic = "ic_multitool_fluxodedados.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = {version = "*"}
+pymysql = {version = "*"}
+boto3 = {version = "*"}
+typer = {extras = ["all"], version = "^0.4.2"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
