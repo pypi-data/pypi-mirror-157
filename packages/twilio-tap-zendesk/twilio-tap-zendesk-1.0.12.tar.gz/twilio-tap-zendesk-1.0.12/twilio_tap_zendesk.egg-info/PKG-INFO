@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: twilio-tap-zendesk
+Version: 1.0.12
+Summary: Singer.io tap for extracting data from the Zendesk API
+Home-page: https://github.com/twilio-labs/twilio-tap-zendesk
+Author: Twilio
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: dev
+License-File: LICENSE
