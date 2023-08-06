@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pydle
+Version: 1.0.0
+Summary: A compact, flexible, and standards-abiding IRC library for python3.
+Home-page: https://github.com/Shizmob/pydle
+License: BSD
+Keywords: irc,library,python3,compact,flexible
+Author: Shiz
+Author-email: hi@shiz.me
+Requires-Python: >=3.6
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: sasl
+Requires-Dist: pure-sasl (>=0.6.2,<0.7.0); extra == "sasl"
+Project-URL: Repository, https://github.com/Shizmob/pydle
