@@ -1,0 +1,14 @@
+[Unit]
+Description=rss to irc feed fetcher
+After=multi-user.target
+
+[Service]
+DynamicUser=True
+StateDirectory=rssbot
+LogsDirectory=rssbot
+CacheDirectory=rssbot
+ExecStart=/usr/local/bin/rssbot
+CapabilityBoundingSet=CAP_NET_RAW
+
+[Install]
+WantedBy=multi-user.target
