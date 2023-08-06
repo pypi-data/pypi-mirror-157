@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/cositrootutils/__init__.py
+src/cositrootutils/example.py
+src/cositrootutils.egg-info/PKG-INFO
+src/cositrootutils.egg-info/SOURCES.txt
+src/cositrootutils.egg-info/dependency_links.txt
+src/cositrootutils.egg-info/top_level.txt
