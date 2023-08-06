@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: thumbor_request_modifier
+Version: 2.0.4
+Summary: Thumbor HTTP loader which allows modifying the client request based on certain conditions.
+Home-page: https://github.com/dffrntmedia/thumbor-request-modifier
+Author: DFFRNT Lab
+Author-email: UNKNOWN
+License: GPLv3
+Description: UNKNOWN
+Keywords: thumbor,request modifier
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
