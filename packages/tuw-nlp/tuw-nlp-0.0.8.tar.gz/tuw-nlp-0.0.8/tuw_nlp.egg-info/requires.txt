@@ -1,0 +1,9 @@
+dict-recursive-update
+networkx
+penman
+stanza==1.3.0
+nltk
+graphviz
+conceptnet-lite
+pywsd
+tabulate
