@@ -1,0 +1,7 @@
+# include the main requirements
+-r requirements.txt
+
+cx_freeze==6.10
+cx-logging==3.0
+lief==0.12.0
+wheel==0.37.1
