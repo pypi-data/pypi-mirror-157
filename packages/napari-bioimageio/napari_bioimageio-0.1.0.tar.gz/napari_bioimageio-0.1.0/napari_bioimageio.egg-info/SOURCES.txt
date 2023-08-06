@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+napari_bioimageio/__init__.py
+napari_bioimageio/_bmm.py
+napari_bioimageio/model_manager.py
+napari_bioimageio/napari.yaml
+napari_bioimageio.egg-info/PKG-INFO
+napari_bioimageio.egg-info/SOURCES.txt
+napari_bioimageio.egg-info/dependency_links.txt
+napari_bioimageio.egg-info/entry_points.txt
+napari_bioimageio.egg-info/requires.txt
+napari_bioimageio.egg-info/top_level.txt

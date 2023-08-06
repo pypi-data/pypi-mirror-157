@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-bioimageio = napari_bioimageio:napari.yaml
