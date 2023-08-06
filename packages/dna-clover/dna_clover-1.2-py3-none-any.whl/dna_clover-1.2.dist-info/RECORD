@@ -1,0 +1,15 @@
+clover/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clover/align.py,sha256=cwd5seBKZC7q7sDFDnBx6ilDPjClOHB8C0p9YiZfKPc,1518
+clover/load_config.py,sha256=64mypXBoXrXXAzmGajIOf30S6iMSAl-f4wY-I0KZLsE,4502
+clover/main.py,sha256=u4Mlo7oe_TGORSJ4WcF0qqnmwiGJKOkvX9RSqfoAttY,27945
+clover/tree.py,sha256=TLDFmeUYjBRTP70JVU81n1hUUFOf-Nvvf2NzmHsVsB8,5550
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_align.py,sha256=_xf2JlLPOueBiGC6tDXvj1zwXx8NDbOVoKclxr3D3Ds,335
+tests/test_clust.py,sha256=-XQLRuf1cHIwTWT7Q-ZesL0bVyG_t266E69Oy_gleGU,778
+tests/test_tree.py,sha256=ucSeo3yyPhLS5ReOawBx6yui5a4fggUezrTLrKx2vbw,1898
+dna_clover-1.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dna_clover-1.2.dist-info/METADATA,sha256=04gwhAcVUKm5MERU9eNcAZWB4ADZI5Y6PDBqFxuJoHM,271
+dna_clover-1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dna_clover-1.2.dist-info/entry_points.txt,sha256=QLI29jsXAhesbRYyoerclOVCSHpCRn3DwHWodz6rQqY,44
+dna_clover-1.2.dist-info/top_level.txt,sha256=jOcZ0ElNS4A7xtSozzypYTmcZ2wf8ampXjEIlGDdcTA,13
+dna_clover-1.2.dist-info/RECORD,,
