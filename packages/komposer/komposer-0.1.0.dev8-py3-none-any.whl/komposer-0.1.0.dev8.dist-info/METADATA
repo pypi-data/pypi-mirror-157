@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: komposer
+Version: 0.1.0.dev8
+Summary: Tool to convert a Docker Compose file into a Kubernetes manifest
+Home-page: https://github.com/expobrain/komposer
+License: MIT
+Author: Daniele Esposti
+Author-email: daniele.esposti@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: pydantic (>=1.9.1,<2.0.0)
+Requires-Dist: python-dotenv (>=0.20.0,<0.21.0)
+Requires-Dist: stringcase (>=1.2.0,<2.0.0)
+Project-URL: Repository, https://github.com/expobrain/komposer
+Description-Content-Type: text/markdown
+
+# komposer
+
+## To-do
+
+- disallow port mapping form docker compose
+- set ingress annotations from CLI as file
+- set deployment annotations from CLI as file
+- accept repository and branch name only as kubernetes names
+- set ingress paths from CLI
+- needs the ingress class name, mandatory if ingress is selected
+- set custom resource limits
+
