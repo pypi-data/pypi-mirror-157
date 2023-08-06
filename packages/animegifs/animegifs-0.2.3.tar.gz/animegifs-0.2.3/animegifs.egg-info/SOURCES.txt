@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+animegifs/__init__.py
+animegifs/animegifs.py
+animegifs.egg-info/PKG-INFO
+animegifs.egg-info/SOURCES.txt
+animegifs.egg-info/dependency_links.txt
+animegifs.egg-info/top_level.txt
+animegifs/dis_utils/__init__.py
+animegifs/dis_utils/gifs.py
