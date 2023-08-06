@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "db_builder_stingydev"
+version = "0.0.1"
+authors = [
+  { name="Furkan Zerman", email="stingydeveloper@gmail.com" },
+]
+description = "This is a mini query library for python. You can manage your sqlite DB by using this library."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GPL-3.0 License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Swindler36/dbBuilder.py"
+"Bug Tracker" = "https://github.com/Swindler36/dbBuilder.py/issues"
