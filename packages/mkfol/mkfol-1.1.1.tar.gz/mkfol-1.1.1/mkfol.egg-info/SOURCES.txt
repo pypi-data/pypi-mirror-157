@@ -1,0 +1,12 @@
+README.md
+setup.py
+mkfol/__init__.py
+mkfol/ds_ml.py
+mkfol/mkfol.py
+mkfol/semester.py
+mkfol.egg-info/PKG-INFO
+mkfol.egg-info/SOURCES.txt
+mkfol.egg-info/dependency_links.txt
+mkfol.egg-info/entry_points.txt
+mkfol.egg-info/requires.txt
+mkfol.egg-info/top_level.txt
