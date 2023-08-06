@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+license
+setup.py
+pypywhois/_1_query.py
+pypywhois/_2_parse.py
+pypywhois/_3_adjust.py
+pypywhois/__init__.py
+pypywhois/exceptions.py
+pypywhois/tld_regexpr.py
+pypywhois.egg-info/PKG-INFO
+pypywhois.egg-info/SOURCES.txt
+pypywhois.egg-info/dependency_links.txt
+pypywhois.egg-info/top_level.txt
+pypywhois/data/public_suffix_list.dat
