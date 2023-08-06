@@ -1,0 +1,5 @@
+pandas
+argparse
+glob2
+statistics
+biopython
