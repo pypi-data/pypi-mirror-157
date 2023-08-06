@@ -1,0 +1,6 @@
+datasette>=0.59
+sqlite-utils>=3.10
+
+[test]
+pytest
+pytest-asyncio
