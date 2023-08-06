@@ -1,0 +1,17 @@
+pystrapi/__init__.py,sha256=5Ugg4VFgYSqVInufacxAg99dv8mKGHE_3TTBT0RXPhI,336
+pystrapi/_utils.py,sha256=awA0aGmrO3dfnwxaTWN5bs8MTkHOboW2hVDCSNcrGPM,1639
+pystrapi/connector.py,sha256=jcwd0b21kK5yzVUFnhGRhlOxZpgyt_i9dQQG0zT46oo,3253
+pystrapi/connector_sync.py,sha256=Hb9bMs1c7FRu6brbNEa0LWWnd92uUmznOZoYU30IQr4,2828
+pystrapi/errors.py,sha256=zZRctZZE2lV-4haKbzQI6sLfyRht0wPW5M5JiovJd2Q,322
+pystrapi/help/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pystrapi/help/aiohttp_helpers.py,sha256=2oamAlMNE-vjqaBBj3M_20awvUHEhidqypJcX-Xnva4,842
+pystrapi/help/helpers.py,sha256=oM1RJ7-pR0zPtnfK9YVzuSmYb0FcO1amE95yMsJlWkU,3835
+pystrapi/help/requests_helpers.py,sha256=HXBNpwzWopUmt-mMNBxk2CuUTzTBQnTJ7vs9F4py4zM,818
+pystrapi/parameters.py,sha256=wThwOM3bnW9thwur_ogYQ1jgX8Hm71dVL1xDvESCpTE,1396
+pystrapi/strapi_client.py,sha256=VB8ihkgOPYTyE5G9vI-3Ynp6Yhk-jlNDUNwHVFb-An0,9168
+pystrapi/strapi_client_sync.py,sha256=SxlV6DncMJ8PojsNpYAIRqTAvhY0yPE_5mUz2FrmzQs,9022
+pystrapi/types.py,sha256=wrfBGkJURUzGBD4UfxAlvktMUiQVQRMAMLYn-8sWQSA,2036
+pystrapi-4.4.0.dist-info/LICENSE,sha256=m4k2JrerHUjNJPxCZVZEJT9J5K1XaYppIkUrWStPvWg,1072
+pystrapi-4.4.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pystrapi-4.4.0.dist-info/METADATA,sha256=s1lnNPucQwpAoZjwHQyVZby6zataKbxRzlQiVR2lSVo,2189
+pystrapi-4.4.0.dist-info/RECORD,,
