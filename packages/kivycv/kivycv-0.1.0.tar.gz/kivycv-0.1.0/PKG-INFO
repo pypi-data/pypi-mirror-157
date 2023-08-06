@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: kivycv
+Version: 0.1.0
+Summary: kivy blocks components relative with opencv
+Author: yumoqing
+Author-email: yumoqing@icloud.com
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
