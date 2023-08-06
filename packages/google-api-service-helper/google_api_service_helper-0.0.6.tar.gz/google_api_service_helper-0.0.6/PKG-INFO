@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: google_api_service_helper
+Version: 0.0.6
+Summary: A simple library for convenient work with the Google API for Drive and Sheets
+Home-page: https://github.com/andy-takker/google-api-service-helper
+Author: Sergey Natalenko
+Author-email: sergey.natalenko@mail.ru
+License: GPL
+Keywords: google api
+Platform: any
+Description-Content-Type: text/markdown
+
+# google-api-service-helper
+
+A simple helper for using Google API for Drive and Spreadsheets.
+
+
+
+
