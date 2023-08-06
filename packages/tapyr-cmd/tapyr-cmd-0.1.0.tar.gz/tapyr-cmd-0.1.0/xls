@@ -1,0 +1,46 @@
+#!/usr/bin/python3
+import sys, os
+from tapyr import Tapir
+
+def usage():
+  print("ls [-r] [-f] path")
+
+session = None
+
+#use batch
+def list_children(path, rec = False, full = False): #use id rather than path?
+  node = session.node(path)
+  try:
+    for child_info in node.children:
+      child_path = path + "/" + child_info.name
+      if rec:
+        print(child_path)
+        list_children(child_path, rec)
+      elif full:
+        print(child_path)
+      else:
+        print(child_info.name)
+  except Exception as e:
+    print(e)
+    pass
+
+argc = len(sys.argv)
+
+if argc == 1:
+  session = Tapir()
+  list_children("/root", False)
+elif argc == 2:
+  session = Tapir()
+  list_children(sys.argv[1], False)
+elif argc == 3:
+  opt = sys.argv[1]
+  if opt == "-r":
+    session = Tapir()
+    list_children(sys.argv[2], True)
+  elif opt == "-f":
+    session = Tapir()
+    list_children(sys.argv[2], False, True)
+  else:
+    usage()
+else:
+    usage()

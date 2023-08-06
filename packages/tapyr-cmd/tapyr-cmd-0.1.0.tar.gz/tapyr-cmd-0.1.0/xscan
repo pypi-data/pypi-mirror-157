@@ -1,0 +1,58 @@
+#!/usr/bin/python3
+from tapyr import Tapir
+import sys
+import json
+import os
+
+def magic(session, magic_type):
+  previous_datatypes = None 
+  while True:
+    #XXX if magic is already launched by someone we will get error 'same argument',
+    #so we must relaunch it with relaunch = True or check task list manually
+    res = session.run("magic", {"root_id" : root.id, "plugins_types" : magic_type }, relaunch = True) 
+    try:
+      result = json.loads(res["result"])
+      result_len = len(result["datatypes"]) 
+      if result_len  == previous_datatypes:
+        break
+      previous_datatypes = result_len 
+      for (node_id, plugin_name) in result["nodes_plugins"]:
+        if plugin_name == 'exif':
+          argument = { "files" : [ node_id ]}
+        elif plugin_name == 'prefetch' or plugin_name == 'lnk' or plugin_name == 'evtx' or plugin_name == 'registry':
+          argument = { "file" : node_id }
+        else:
+          print("Running :", plugin_name, "plugin")
+          argument = {"file" : node_id}
+        try:
+          res = session.schedule(plugin_name, argument)
+        except Exception as e:
+          print("Error " + str(e) + " for command " + str(plugin_name) + " " + str(argument))
+          print("retrying")
+          res = session.schedule(plugin_name, argument)
+      print("Waiting for plugin execution to finish")
+      session.join()
+    except Exception as e:
+      print(e)
+      print(res["error"])
+      return
+  return
+
+session = Tapir()
+
+root = session.node("/root")
+
+magic_type = {
+     'ntfs': ["filesystem/ntfs"],
+     'mft': ["filesystem/mft"],
+     'partition' : ["volume/partition"],
+     'exif' : ["image/jpeg"],
+     'lnk'  : ["windows/lnk"], 
+     'prefetch' : ["windows/prefetch"],
+     'evtx' : ["windows/evtx"],
+     'registry' : ["windows/registry"],
+}
+
+if len(sys.argv) == 2:
+  res = session.run("local", {"files" : [sys.argv[1]], "mount_point" : root.id }) #, timeout = 1000)
+magic(session, magic_type)

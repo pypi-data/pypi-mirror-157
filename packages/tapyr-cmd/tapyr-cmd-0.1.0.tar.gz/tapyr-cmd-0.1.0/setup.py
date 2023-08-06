@@ -1,0 +1,40 @@
+from setuptools import setup
+
+setup(
+    name='tapyr-cmd',
+    version='0.1.0',
+    url='https://github.com/tap-ir/tapyr-cmd',
+    license='AGPLv3.0',
+    author='Solal Jacob',
+    author_email='tapir42@protonmail.com',
+    description='Command line for TAPIR',
+    scripts=['xattr', 
+             'xattribute_count', 
+             'xcat', 
+             'xls',
+             'xdownload',
+             'xscan',
+             'xevtx',
+             'xextract',
+             'xfind',
+             'xhash',
+             'xlocal',
+             'xmerge',
+             'xmft',
+             'xnode_count',
+             'xntfs',
+             'xpartition',
+             'xplugin',
+             'xplugins',
+             'xprefetch',
+             'xps',
+             'xpsstat',
+             'xregistry',
+             'xscan',
+             'xshell',
+             'xtimeline',
+             ],
+    install_requires = [ 
+    "tapyr~=0.1.0"
+    ]
+)

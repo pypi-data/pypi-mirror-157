@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+import sys
+import os 
+from tapyr import Tapir
+import json
+
+if len(sys.argv) != 2:
+  print(sys.argv[0] + " [FILE_PATH]")
+else:
+  session = Tapir()
+
+  path = sys.argv[1]
+  if path[-1] == "/":
+    path = path[:-1]
+  res = session.run("local", {"files" : [path], "mount_point" : root.id }) #, timeout = 1000)
+
+  registry_node = session.node(sys.argv[1])
+  res = session.run("registry", {"data_path" : registry_node.id})

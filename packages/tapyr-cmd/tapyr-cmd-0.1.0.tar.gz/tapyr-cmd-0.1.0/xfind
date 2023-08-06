@@ -1,0 +1,72 @@
+#!/usr/bin/python3
+import sys
+import os
+import time
+import json
+from tapyr import Tapir
+
+
+def usage():
+  usage = "Usage: " + sys.argv[0] + " query [path]"
+  example = """ 
+  List nodes that match a query.
+
+  Each query is made of one expression (of a specified type) or multiple expression separated by an operator
+
+  Expression:
+    name
+    attribute.name
+    attribute:'attribute_name'
+    data 
+  Expression type:
+    (u) : fixed
+    r : regexp
+    w : wildcard
+    f : fuzzy
+  Data Expression type:
+    r : regex / binary
+    t : text
+  Operator:
+    and
+    and not
+    or
+
+  Examples:
+  * Have an attribute named data : "attribute.name == 'data'"
+  * Name 'image1.jpg' : "name == 'image1.jpg'"
+  * Name with extension .jpg or .tiff using regexp : "name == r'([^\s]+(\.(?i)(jpg|tiff))$)'"
+  * Name with extension .jpg using wildcard : "name == w'*.jpg'"
+  * Name starting by image and with an underscore using wildcard : "w'image?_*.jpg':
+  * Name image1 or image2 : "name == 'image1.jpg' or name == w'image2*'"
+  * Attribute named exif : "attribute.name == 'exif'"
+  * Attribute named exif.primary.model : "attribute.name == 'exif.primary.model'"
+  * Attribute named exif. anything .model : "attribute.name == w'exif.*.model'"
+  * Attribute with any name contain a value that match 'powershell' : "attribute:w'*' == w'*powershell*'"
+  * Attribute 'evtx.event.eventdata.imagepath' contain a value that match 'powershell' : "attribute:'evtx.event.eventdata.imagepath' == w'*powershell*'"
+  * Attribute starting with evtx.event contain a value that match 'powershell' : "attribute:w'evtx.event*' == w'*powershell*'"
+  * File binary or text data containing ascii character 'hello' : "data == 'hello'"
+  * File binary data contain ELF signature : "data == '\\x7F\\x45\\x4C\\x46'"
+  * Find text string inside UTF-8 or UTF-16 text file : "data == t'икра'"
+  """
+  print(usage)
+  print(example)
+
+def chunks(l, n):
+   for i in range(0, len(l), n): 
+        yield l[i:i + n]
+
+if len(sys.argv) != 2 and len(sys.argv) != 3: 
+  usage()
+else:
+  if len(sys.argv) == 2 :
+    session = Tapir()
+    query = session.query(sys.argv[1])
+  elif len(sys.argv) == 3:
+    session = Tapir()
+    query = session.query(sys.argv[1], sys.argv[2])
+  for chunk in chunks(query, 20000):
+    session = Tapir()
+    session = Tapir()
+    nodes = session.nodes_by_id(chunk, path=True)
+    for node in nodes:
+      print(node.path)

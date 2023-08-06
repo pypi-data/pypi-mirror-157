@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+import sys
+import os 
+from tapyr import Tapir
+
+if len(sys.argv) != 2:
+  print(sys.argv[0] + " [FILE_PATH]")
+else:
+  session = Tapir()
+  #XXX ask for recovery in argument and pass it to run
+  node = session.node(sys.argv[1])
+  res = session.run("ntfs", { "file" : node.id, "recovery" : False })

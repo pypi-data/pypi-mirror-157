@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+import sys
+import os 
+from tapyr import Tapir
+import json
+
+
+if len(sys.argv) < 3:
+  print(sys.argv[0] + " NAME [FILE] [...]")
+else:
+  session = Tapir()
+  file_path = sys.argv[1]
+  name = file_path.split("/")[-1]
+  path = file_path[:file_path.rfind("/")] #handle errors show usage
+
+  path_node = session.node(path)
+  builders = []
+  for file_path in sys.argv[2:]:
+    node =  session.node(file_path)
+    builders += (node.id ,)
+  res = session.run("merge", {"name" : name, "mount_point" : path_node.id,  "file_builders" : builders})
