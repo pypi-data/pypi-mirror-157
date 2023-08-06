@@ -1,0 +1,8 @@
+wheel
+pylint
+black
+mypy
+types-PyYAML
+docutils-stubs
+types-jsonschema
+pytest
