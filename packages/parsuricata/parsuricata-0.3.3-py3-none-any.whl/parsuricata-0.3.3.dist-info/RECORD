@@ -1,0 +1,8 @@
+parsuricata/__init__.py,sha256=GPndflp7NAItSaE3zHOiLkoVFbvRrKBWaiDLnYNFZdI,190
+parsuricata/_parser.py,sha256=yMNQconF5pJRExdcuaYxxJYsLmx-vVnkwh6vncsO5iE,3709
+parsuricata/rules.py,sha256=EW5kRngK_9GPF0afeO7VOiKBuI1_a-wOqFRQuK_FgNI,2904
+parsuricata/transformer.py,sha256=HmlObgEAfGn0Cne6P0-BHP3lvxmHODcn9gk5A5OgmRA,2283
+parsuricata-0.3.3.dist-info/LICENSE,sha256=nflfiQjvrRGUAM6ogaMKF6tjzpJ4PLXx0Wzk5WOOuXk,1069
+parsuricata-0.3.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+parsuricata-0.3.3.dist-info/METADATA,sha256=5I1hImZoY2X8zx7Xu7bXJk52aNR-wJtzLbfi9EmwWL4,1647
+parsuricata-0.3.3.dist-info/RECORD,,
