@@ -1,0 +1,11 @@
+politely/__init__.py,sha256=t8nrGb1KX95OheYjBx_JbzmarwHJ6a_Oue-eaa9DkxU,328
+politely/errors.py,sha256=FPakcsBXLPD-lem9FIcBNv1SBUpMLjQRLNti0ZEsr30,441
+politely/fetchers.py,sha256=RaZOR3xSAd21mnSuQcpTXihl_unTmTH6g82-qsoNhaY,787
+politely/paths.py,sha256=ceMrIh5P1DIB8u8fTErJ0ej5PV-6dIsOGnzHNQKPREs,223
+politely/styler.py,sha256=WSTxhLs0xtUTbBvYSoN0FN3nfM61L8PpZX4oCzCZq_0,3274
+politely/resources/honorifics.yaml,sha256=xPM-lIccuR05YtB3mameKcm5EDxIBOM2LrcMzHfrE04,4198
+politely/resources/rules.yaml,sha256=WSQRV3G6CPf9Qx2vd0GEbGqLiOOWkM262u3UgjR18vM,1678
+politely-2.7.0.dev0.dist-info/METADATA,sha256=jIOfYz1wP5I06DN1S4Pfxek3hurconDJqCTiSqXaI6Q,5318
+politely-2.7.0.dev0.dist-info/WHEEL,sha256=5vr2ZUYMIPpdABBOSv8-NuqiKYrGTWMNuyATpVRyrq8,86
+politely-2.7.0.dev0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+politely-2.7.0.dev0.dist-info/RECORD,,
