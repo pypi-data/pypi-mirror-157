@@ -1,0 +1,12 @@
+[console_scripts]
+D6x = d8ger.oh_my_d8ger:six_x
+DeasyHttp = d8ger.easy_test:main
+Desa = d8ger.oh_my_d8ger:arthas_help
+DfkGrep = d8ger.oh_my_d8ger:fk_grep
+Dhcp = d8ger.oh_my_d8ger:hcp
+DkillPid = d8ger.oh_my_d8ger:kill_pid
+DloginCookie = d8ger.login_cookie:main
+DsearchPid = d8ger.oh_my_d8ger:search_pid
+DsearchPortOccupy = d8ger.oh_my_d8ger:search_port_occupy
+Dwelcome = d8ger.oh_my_d8ger:welcome
+

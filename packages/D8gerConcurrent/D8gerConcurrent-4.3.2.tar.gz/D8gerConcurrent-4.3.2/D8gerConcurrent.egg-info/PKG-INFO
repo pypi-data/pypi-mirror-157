@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: D8gerConcurrent
+Version: 4.3.2
+Summary: concurrent test and useful shell command
+Home-page: https://github.com/caofanCPU/D8gerConcurrent.git
+Author: D8ger
+Author-email: xyb5to0ZCY@Gmail.com
+License: Apache Licence
+Keywords: pip,concurrent,d8ger,test,easy,shell
+Platform: any
+
+make efficient for concurrent test, login, shell commands 
+
