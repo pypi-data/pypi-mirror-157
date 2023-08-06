@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: calculator-demo-pkg
+Version: 0.0.1
+Summary: A calculator package
+Author: Akhil
+Author-email: akhil@example.com
+License: MIT
+Requires-Python: >=3.4
+License-File: LICENSE
