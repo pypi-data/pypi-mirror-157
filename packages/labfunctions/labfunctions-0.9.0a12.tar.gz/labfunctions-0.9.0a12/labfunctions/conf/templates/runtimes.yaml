@@ -1,0 +1,22 @@
+---
+runtimes:
+  default:
+    container:
+      maintainer: maintener-0
+      image: {{ data.docker_cpu }}
+      build_packages: build-essential libopenblas-dev git
+  gpu:
+    container:
+      maintainer: maintener-0
+      image: {{ data.docker_gpu }}
+      gpu:
+        cuda: 11.6
+  tensor-gpu:
+    container:
+      maintainer: maintener-0
+      image: tensorflow/tensorflow:latest-gpu 
+      build_packages: build-essential libopenblas-dev git python3-pip 
+      final_packages: python3-pip 
+      base_template: Dockerfile.generic.gpu
+      gpu:
+        cuda: 11.6
