@@ -1,0 +1,5 @@
+pure-python-adb
+Pillow
+numpy
+scipy
+onnxruntime
