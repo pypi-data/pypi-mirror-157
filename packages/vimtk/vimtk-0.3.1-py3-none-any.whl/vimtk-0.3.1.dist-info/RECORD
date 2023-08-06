@@ -1,0 +1,17 @@
+vimtk/__init__.py,sha256=w9ZOaVawpnplOP9-7lBCwb-ykzfKIrSBGNmLRBJUuNo,2424
+vimtk/_dirty.py,sha256=of_9BHGQucIr-KaL5bqh6J7gL01UufHBIZT3EILbuIk,14623
+vimtk/core.py,sha256=CRrIZgmkYCsdwMpXA4DtcrOdw66d2tvTsI0B6c-QMO4,54313
+vimtk/cplat.py,sha256=LEQJIkCX5I7-g01VSbXrOcG3G5uEhYEoziTm3duS-Gw,10604
+vimtk/jedi_monkeypatch.py,sha256=5pSZWcVCekz_zFl9ZJeuKHTRhXH1-XMnmHmJrPk6Y_g,7255
+vimtk/pyinspect.py,sha256=QDdv85dnz77_OO9TAbuuHoyRFfXxezhDlAQA1PmrkkQ,8560
+vimtk/win32_ctrl.py,sha256=e16Jo5lXhsEpMGtI3q_jYnJ5YWiWqSmpxLJVzSlcphI,6482
+vimtk/xctrl.py,sha256=ytWKvVJ_wUCfwakzWPuinVqn3SNzRTu7pnqG2zKz-E8,26846
+vimtk/_demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vimtk/_demo/vimmock/__init__.py,sha256=IO4vbmUtwizW2Vex1aThYiQ-8fccNo4RRvM2Iub0n7g,420
+vimtk/_demo/vimmock/mocked.py,sha256=mRvZjeKlTooqrhOwl0GGd8nRLOTMh3lB_E4L-MNRzmc,14517
+vimtk/_demo/vimmock/tests.py,sha256=N6T4Wzzf7H423fFrCW_GjFLz0JXxyzRTNWqd04gYylE,2870
+vimtk-0.3.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vimtk-0.3.1.dist-info/METADATA,sha256=295cJKf9lhIwjqTeRN8yFCryKlTsUfa-fR-2P9Aa9SU,21342
+vimtk-0.3.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+vimtk-0.3.1.dist-info/top_level.txt,sha256=HpocA6k1Sgg1w7lct_i5ziECWgKeZynNYE5SsZKGZjs,6
+vimtk-0.3.1.dist-info/RECORD,,
