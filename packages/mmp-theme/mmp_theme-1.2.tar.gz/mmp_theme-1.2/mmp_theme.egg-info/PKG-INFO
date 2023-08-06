@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mmp-theme
+Version: 1.2
+Summary: Custom theme and functions for MMP plots
+Home-page: https://source.cloud.google.com/mmp-vm/utility_repo/+/master:mmp_theme/
+Author: Giulia Bortolato
+Author-email: giulia.bortolato@milanomultiphysics.com
+License: MIT
+Download-URL: https://github.com/giulia-mmp/mmp_theme/archive/refs/tags/v1.2.tar.gz
+Description: # mmp_theme
+        ## Custom theme and functions for MMP plots
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
