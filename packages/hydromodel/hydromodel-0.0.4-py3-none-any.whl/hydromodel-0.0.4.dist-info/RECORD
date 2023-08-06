@@ -1,0 +1,10 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_data.py,sha256=msOYRmCRXRH-YbpsNembhUawN_Q7UPaZkOtaNdzS1IM,1842
+test/test_gr4j.py,sha256=GIweHYyn1u-l8z6BxQ94ww2MQqay3nUFHIef4PG7nl4,2549
+test/test_hymod.py,sha256=NG5MafXtf0-MhHrnorccZHJnV4KZz-gA238D38OTa9U,2528
+test/test_xaj.py,sha256=Rg9UpAVsTr9tTa3SoVnbFAkYawoF2_LKtKZfM6VFEEc,4503
+hydromodel-0.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+hydromodel-0.0.4.dist-info/METADATA,sha256=KJvm2xC0WJDvYOshAQ8WY7Ey5opeMrwrUYOvkZfn1QM,9025
+hydromodel-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hydromodel-0.0.4.dist-info/top_level.txt,sha256=8sobtsfpB9Btr-Roflefznazfk6Tt2BQItpS5szCb9I,5
+hydromodel-0.0.4.dist-info/RECORD,,
