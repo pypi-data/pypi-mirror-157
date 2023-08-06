@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: frzpop
+Version: 0.1.2
+Summary: Freeze Pop Python module
+Home-page: https://github.com/tsmorrill/Freeze-Pop
+Author: Thomas Morrill
+Author-email: morrill.math@gmail.com
+License-File: LICENSE
+Requires-Dist: midiutil
+Requires-Dist: requests
+Requires-Dist: importlib-metadata ; python_version >= "3.9"
+
