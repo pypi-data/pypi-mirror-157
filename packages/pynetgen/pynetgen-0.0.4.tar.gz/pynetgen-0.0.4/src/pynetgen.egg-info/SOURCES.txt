@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pynetgen/__init__.py
+src/pynetgen/__main__.py
+src/pynetgen/_version.py
+src/pynetgen/pynetgen.py
+src/pynetgen.egg-info/PKG-INFO
+src/pynetgen.egg-info/SOURCES.txt
+src/pynetgen.egg-info/dependency_links.txt
+src/pynetgen.egg-info/entry_points.txt
+src/pynetgen.egg-info/top_level.txt
+src/pynetgen/util/__init__.py
+src/pynetgen/util/ilist.py
+src/pynetgen/util/randit.py
