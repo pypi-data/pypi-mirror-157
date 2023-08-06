@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: flyhostel
+Version: 1.1.3
+Requires-Dist: zeitgeber (>=0.0.2)
+Requires-Dist: matplotlib
+Requires-Dist: pyaml
+Requires-Dist: imgstore-shaliulab (>=0.4.0)
+Provides-Extra: dropbox
+Requires-Dist: dropy ; extra == 'dropbox'
+Provides-Extra: quant
+Requires-Dist: recordtype ; extra == 'quant'
+Requires-Dist: trajectorytools-shaliulab (==0.3.5) ; extra == 'quant'
+Provides-Extra: sensor
+Requires-Dist: pyserial ; extra == 'sensor'
+
