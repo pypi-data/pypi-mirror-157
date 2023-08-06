@@ -1,0 +1,98 @@
+---
+title: {{group_name}}
+---
+# {{group_title}}
+{{ group_doc|default('') }}
+
+{% for api in group_apis %}
+
+## {{api.api_name}}{{ ' **(DEPRECATED)**' if api.deprecated_at else '' }}
+
+{% if api.deprecated_at %}
+!!! Warning "Deprecated"
+    Deprecated from version {{api.deprecated_at}}
+{% endif %}
+
+{% if api.deprecated_at != api.introduced_at %}
+*Introduced in version {{api.introduced_at}}*
+{% endif %}
+
+Summary: **{{api.methods|join('|')}} {{api.url|e}}**
+
+{% if api.doc %}
+{{api.doc}}
+{% else %}
+No documentation yet.
+{% endif %}
+
+{% if api.changelog %}
+### {{api.api_name}} changelog
+
+{% for version, log in api.changelog.items()| sort(reverse=True) %}
+ * Version {{ version }}: {{ log }}
+{% endfor %}
+
+{% endif %}
+
+{% if api.params_schema and 'properties' in api.params_schema %}
+### URL Parameters
+
+```json
+{{api.params_schema|tojson(4)}}
+```
+
+{% for name, desc in api.params_schema['properties'].items() %}
+* {{ name }}
+{% if 'description' in desc %}
+    * description: {{ desc['description'] }}
+{% endif %}
+{% if name in api.params_schema.get('required', []) %}
+    * Is required
+{% endif %}
+{% if 'type' in desc and desc['type'] != 'string' %}
+    * Must be {{ desc['type'] }} type
+{% endif %}
+{% if 'pattern' in desc %}
+    * Must match regex "{{ desc['pattern'] }}"
+{% endif %}
+{% if 'minLength' in desc %}
+    * Length must be >= {{ desc['minLength'] }}
+{% endif %}
+{% if 'maxLength' in desc %}
+    * Length must be <= {{ desc['maxLength'] }}
+{% endif %}
+{% if 'minimum' in desc %}
+    * Must be >{{ '' if desc.get('exclusiveMinimum') else '=' }} {{ desc['minimum'] }}
+{% endif %}
+{% if 'maximum' in desc %}
+    * Must be <{{ '' if desc.get('exclusiveMaximum') else '=' }} {{ desc['maximum'] }}
+{% endif %}
+{% if 'multipleOf' in desc %}
+    * Must be multiple of {{ desc['multipleOf'] }}
+{% endif %}
+{% if 'enum' in desc %}
+    * Must be one of {% for v in desc['enum'] %}{{ " or " if loop.last else ", " if not loop.first else "" }}"{{ v }}"{% endfor %}
+
+{% endif %}
+{% if 'const' in desc %}
+    * Must be "{{ desc['const'] }}"
+{% endif %}
+{% endfor %}
+
+{% endif %}
+{% if api.request_schema %}
+### Request JSON Schema
+
+```json
+{{api.request_schema|tojson(4)}}
+```
+{% endif %}
+
+{% if api.response_schema %}
+### Response JSON Schema
+
+```json
+{{api.response_schema|tojson(4)}}
+```
+{% endif %}
+{% endfor %}

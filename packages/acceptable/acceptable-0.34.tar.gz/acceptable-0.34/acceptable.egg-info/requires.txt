@@ -1,0 +1,10 @@
+jsonschema
+pyyaml
+
+[django]
+django<3,>=2.1
+
+[flask]
+Flask<2.0
+Jinja2<3.0,>=2.10.1
+MarkupSafe<2.1
