@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: sbcommons
+Version: 0.0.62
+Summary: Packages shared between lambda functions and other systems
+Home-page: https://github.com/Snusbolaget/lambdas
+Author: Haypp Group
+Author-email: data@hayppgroup.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sbcommons
+
+Packages shared between different lambda functions
+
+### 0.61 - Deprecated
+- Added teams client
+
+### 0.62
+
+- Added parse_utils sub-module for parsing configuration files and other text files.
+- Added an execute_query method to aws.redshift.RedshiftClient for performing select statements given a string parameter.
+- Making teams into a utility class instead of a client
+
