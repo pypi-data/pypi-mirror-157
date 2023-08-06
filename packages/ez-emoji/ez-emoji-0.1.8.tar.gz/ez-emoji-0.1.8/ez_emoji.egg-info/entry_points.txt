@@ -1,0 +1,2 @@
+[console_scripts]
+emoji_download = ez_emoji.download
