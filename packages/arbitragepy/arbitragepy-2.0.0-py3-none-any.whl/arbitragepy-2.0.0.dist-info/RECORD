@@ -1,0 +1,13 @@
+arbitragepy/__init__.py,sha256=mOtdhw-L_Hl8vVhkfPrhL8aXCucmCU4QFdBu_bHB720,1021
+arbitragepy/arbitrage.py,sha256=IQI78N70hvuvzOHXR1x1V-26ozqSnSBqBYkwx4oxCLk,5944
+arbitragepy/enums.py,sha256=vq_ygwe7Eovfm0TKAdzBUvR0ZdRhY8EHNKvfZY8b6ic,111
+arbitragepy/exceptions.py,sha256=Ua1wmiVgHeRVl9w2u6-Sls0oIrtvf5WZaEjfowO8Mfs,1588
+arbitragepy/fee.py,sha256=4ECwmLGmZuZboskfW2mu2od6twCPmQtAIe9AUTae3BY,620
+arbitragepy/models.py,sha256=y-jN3MzTiOYwKhGWHSeQAMghUFXt238KI8Ys6H7Uqgo,2438
+arbitragepy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arbitragepy/quantity_increment.py,sha256=okgYRXqXw8cVjBNfxrB9qhJgp995uoXOLnHpkULJAhc,1351
+arbitragepy/spread.py,sha256=IU0VpVHGQCD7lIOd-KHB4wrIP29hhK4C7V8En0g4q3U,356
+arbitragepy-2.0.0.dist-info/LICENSE,sha256=mO4blZ9OaG8HsLZ6kkYDdfeTg_xg-wWbJ-md0J8h7s0,1049
+arbitragepy-2.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+arbitragepy-2.0.0.dist-info/METADATA,sha256=8n8F1Hkdw2qZrRfno0cbaRNaDQMrs12ju1duCd-v8Rk,2265
+arbitragepy-2.0.0.dist-info/RECORD,,
