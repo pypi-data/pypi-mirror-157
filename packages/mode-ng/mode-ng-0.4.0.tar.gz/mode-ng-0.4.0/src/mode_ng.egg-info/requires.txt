@@ -1,0 +1,13 @@
+colorlog>=2.9.0
+croniter>=0.3.16
+mypy_extensions
+
+[eventlet]
+aioeventlet~=0.5.1
+dnspython
+
+[gevent]
+aiogevent~=0.2
+
+[uvloop]
+uvloop>=0.8.1
