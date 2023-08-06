@@ -1,0 +1,8 @@
+prune tests*
+
+exclude README.md
+exclude Makefile
+exclude meta_setup.py
+include setup.py 
+
+include MANIFEST.in
