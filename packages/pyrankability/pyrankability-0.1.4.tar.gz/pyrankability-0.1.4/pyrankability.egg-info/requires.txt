@@ -1,0 +1,12 @@
+gurobipy
+matplotlib
+pandas
+networkx
+altair
+pygraphviz
+scipy
+sklearn
+pytest
+nx_altair
+ipython
+tqdm
