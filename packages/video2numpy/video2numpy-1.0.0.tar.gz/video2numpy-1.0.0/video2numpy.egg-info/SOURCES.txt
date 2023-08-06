@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+video2numpy/__init__.py
+video2numpy/cli.py
+video2numpy/reader.py
+video2numpy/resize.py
+video2numpy/video2numpy.py
+video2numpy.egg-info/PKG-INFO
+video2numpy.egg-info/SOURCES.txt
+video2numpy.egg-info/dependency_links.txt
+video2numpy.egg-info/entry_points.txt
+video2numpy.egg-info/requires.txt
+video2numpy.egg-info/top_level.txt
