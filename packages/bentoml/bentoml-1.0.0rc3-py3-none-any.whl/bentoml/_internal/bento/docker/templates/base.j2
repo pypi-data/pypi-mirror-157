@@ -1,0 +1,88 @@
+{# BENTOML INTERNAL #}
+{# users can use these values #}
+{% set bento__entrypoint = bento__entrypoint | default(expands_bento_path("env", "docker", "entrypoint.sh", bento_path=bento__path)) %}
+# syntax = docker/dockerfile:1.4-labs
+#
+# ===========================================
+#
+# THIS IS A GENERATED DOCKERFILE. DO NOT EDIT
+#
+# ===========================================
+
+# Block SETUP_BENTO_BASE_IMAGE
+{% block SETUP_BENTO_BASE_IMAGE %}
+FROM {{ __base_image__ }} as cached
+
+FROM {{ __base_image__ }}
+
+ENV LANG=C.UTF-8
+
+ENV LC_ALL=C.UTF-8
+
+ENV PYTHONIOENCODING=UTF-8
+
+ENV PYTHONUNBUFFERED=1
+
+{% endblock %}
+
+# Block SETUP_BENTO_USER
+{% block SETUP_BENTO_USER %}
+ARG BENTO_USER={{ bento__user }}
+ARG BENTO_USER_UID={{ bento__uid_gid }}
+ARG BENTO_USER_GID={{ bento__uid_gid }}
+RUN groupadd -g $BENTO_USER_GID -o $BENTO_USER && useradd -m -u $BENTO_USER_UID -g $BENTO_USER_GID -o -r $BENTO_USER
+{% endblock %}
+{% block SETUP_BENTO_ENVARS %}
+{% if __options__env is not none %}
+{% for key, value in __options__env.items() -%}
+
+ENV {{ key }}={{ value }}
+{% endfor -%}
+{% endif -%}
+
+ARG BENTO_PATH={{ bento__path }}
+ENV BENTO_PATH=$BENTO_PATH
+ENV BENTOML_HOME={{ bento__home }}
+
+RUN mkdir $BENTO_PATH && chown {{ bento__user }}:{{ bento__user }} $BENTO_PATH -R
+WORKDIR $BENTO_PATH
+
+# init related components
+COPY --chown={{ bento__user }}:{{ bento__user }} . ./
+
+{% endblock %}
+
+# Block SETUP_BENTO_COMPONENTS
+{% block SETUP_BENTO_COMPONENTS %}
+
+{% set __install_python_scripts__ = expands_bento_path("env", "python", "install.sh", bento_path=bento__path) %}
+RUN --mount=type=cache,mode=0777,target=/root/.cache/pip \
+    chmod +x {{ __install_python_scripts__ }} && \
+    bash {{ __install_python_scripts__ }}
+
+# Run user setup scripts if exists
+RUN bash <<EOF
+set -euxo pipefail
+
+if [ -f {{ expands_bento_path("env", "docker", "setup_script", bento_path=bento__path) }} ]; then
+  echo "Running user setup script.."
+  chmod +x {{ expands_bento_path("env", "docker", "setup_script", bento_path=bento__path) }}
+  {{ expands_bento_path("env", "docker", "setup_script", bento_path=bento__path) }}
+fi
+EOF
+
+{% endblock %}
+
+# Block SETUP_BENTO_ENTRYPOINT
+{% block SETUP_BENTO_ENTRYPOINT %}
+# Default port for BentoServer
+EXPOSE 3000
+
+RUN chmod +x {{ bento__entrypoint }}
+
+USER bentoml
+
+ENTRYPOINT [ "{{ bento__entrypoint }}" ]
+
+CMD [ "bentoml", "serve", "{{ bento__path }}", "--production" ]
+{% endblock %}
