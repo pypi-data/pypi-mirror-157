@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: fred-py-api
+Version: 0.0.6
+Summary: A fully featured FRED API client library for Python.
+Author-email: Zachary Spar <zachspar@gmail.com>
+Project-URL: Homepage, https://github.com/zachspar/fred_py_api
+Project-URL: Bug Tracker, https://github.com/zachspar/fred_py_api/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![codecov](https://codecov.io/gh/zachspar/fred-py-api/branch/main/graph/badge.svg?token=BG1948D8Y7)](https://codecov.io/gh/zachspar/fred-py-api)
+
+# Fred Python API
+A fully-featured FRED Python Wrapper.
+
+## Documentation:
+ - [fred-py-api Docs](https://github.com/zachspar/fred-py-api/wiki)
+
+### FRED References:
+ - [API Documentation](https://fred.stlouisfed.org/docs/api/fred/)
