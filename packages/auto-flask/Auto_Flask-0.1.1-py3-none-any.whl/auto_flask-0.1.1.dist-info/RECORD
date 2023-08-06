@@ -1,0 +1,17 @@
+auto_flask/__init__.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+auto_flask/market/__init__.py,sha256=Bhos4RTgFv9jXp_yb6Snrax_w2Y7vdoLtutBEprkIrY,459
+auto_flask/market/forms.py,sha256=5927i-VZiYTmYHP4nGLS_VEsv8EUNUD50dvGeZ0t7Os,1613
+auto_flask/market/market.db,sha256=_iAZ5nYZq5tc_L-c-cUbRmc6VWERAz79Y_o6VwWaoZE,32768
+auto_flask/market/models.py,sha256=CZJRr_973LuW7eb53aokQK96mDyQxiYD58Wby6t7ee4,2080
+auto_flask/market/routes.py,sha256=q2utvVsGAwBQrVPAn_82EOKoMK_Pbx9407h8Dp7knEY,3703
+auto_flask/market/templates/base.html,sha256=GuGSJpW54lHbQLGvZsHwOL7H8AdmGipN6R82AkANQjM,3826
+auto_flask/market/templates/home.html,sha256=FWfFUsRBIkfiz9-mzRgq_9deqvzm4-056cw064-aB7E,732
+auto_flask/market/templates/includes/items_modals.html,sha256=jwDhi_YVld1WRMXx-s1NUc7H-hs010gNoGcnoAMQsv8,2207
+auto_flask/market/templates/includes/owned_items_modals.html,sha256=PXfuwR7R0CFeKPITbGYeLq-h1vjadlhaNsRwgbvRef8,1420
+auto_flask/market/templates/login.html,sha256=PkZOuU1bGgT5C92e7T-22LfY0M2ZxZ9EZje8hGDjOz4,1048
+auto_flask/market/templates/market.html,sha256=bIu5Kvu51XebOGuildbfFHRxS0g5JEe5Lbe9FNkAqP0,2549
+auto_flask/market/templates/register.html,sha256=Hf6TUPwHWd1l4VMBecp0O125OReGOdu8Jz_He1TR3IU,1285
+auto_flask/run.py,sha256=eDnxYN81if7nW2jmbTQeu1naP2CXjWIG3Q5EEakT4bc,140
+auto_flask-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+auto_flask-0.1.1.dist-info/METADATA,sha256=8BkQjFDNfzXzApi_Zeq61P1G6oiHDOQ750to4BbJfIM,580
+auto_flask-0.1.1.dist-info/RECORD,,
