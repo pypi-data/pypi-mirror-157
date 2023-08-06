@@ -1,0 +1,5 @@
+include bugtrack/templates/*.html
+include bugtrack/migrations/*.py
+include bugtrack/templates/ajax/*.html
+include bugtrack/templates/blocks/*.html
+include bugtrack/templates/js/*.js

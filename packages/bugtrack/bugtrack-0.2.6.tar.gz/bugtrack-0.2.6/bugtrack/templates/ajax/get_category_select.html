@@ -1,0 +1,22 @@
+<div class="col-sm-8" name="div_category" id="div_category">
+	{% if parent_tree %}
+		{% for parent in parent_tree %}
+			{% if forloop.counter0 %}
+				->
+			{% endif %}
+			<A href="" onClick="javascript:get_category_select({{ parent.id }}); return false;">
+				{{ parent.name }}
+			</A>
+		{% endfor %}
+	{% endif %}
+	{% if children %}
+		<select name="category" onChange='get_category_select(this.value);' data-live-search="true" id="id_category" data-dropup-auto="false" class="">
+			<option value="{{ category.id }}">--</option>
+			{% for child in children %}
+				{% <option value="{{ child.id }}">{{ child.name }}</option>
+			{% endfor %}
+		</select>
+	{% else %}
+		<input type="hidden" name="category" id="id_category" value="{{ category.id }}">
+	{% endif %}
+</div>

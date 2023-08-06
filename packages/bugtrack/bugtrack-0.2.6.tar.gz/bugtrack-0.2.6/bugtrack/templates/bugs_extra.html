@@ -1,0 +1,168 @@
+<A href="" onClick="$('#div_filter').show(); return false;">Filter</A>
+<div name="div_filter" id="div_filter" style="background-color: #2bb4c8; border: 1px solid #71f; display: none;">
+	{% for saved_search in saved_searches %}
+		<button type="button" class="btn brn-default" onClick="window.location = '{% url 'bugs' %}{{ saved_search.search_phrase }}'"{% if saved_search.bgcolor %} style="background-color: {{ saved_search.bgcolor }}"{% endif %}>
+			{{ saved_search.name }}
+		</button>
+	{% endfor %}
+	<form method='post' onkeypress="return event.keyCode != 13;">
+		{% csrf_token %}
+		<BR>
+		<div class="form-group">
+			<label class="col-sm-4 control-label">Save filter as</label>
+			<div class="col-sm-8">
+				<input type="text" class="form-control" name="name" id="name" placeholder="Name of the search. Type a name and You' ll be able to save it.">
+			</div>
+		</div>
+		<BR>
+		<div class="form-group">
+			<label class="col-sm-4 control-label">BugStatus</label>
+			<div class="col-sm-8">
+				<select class="selectpicker form-control" multiple data-actions-box="true" data-selected-text-format="count > 4" id="bugstatus" name="bugstatus">
+					{% for bugstatus in bugstatuses %}
+						<option value="{{ bugstatus.code }}">{{ bugstatus.name }}</option>
+					{% endfor %}
+				</select>
+			</div>
+		</div>
+		<BR>
+		<div class="form-group">
+			<label class="col-sm-4 control-label">Creator</label>
+			<div class="col-sm-8">
+				<select class="selectpicker form-control" multiple data-actions-box="true" data-selected-text-format="count > 4" data-live-search="true" id="creator" name="creator">
+					{% for user in users %}
+						<option value="{{ user.id }}">{{ user.last_name }}, {{ user.first_name }}</option>
+					{% endfor %}
+				</select>
+			</div>
+		</div>
+		<BR>
+		<div class="form-group">
+			<label class="col-sm-4 control-label">Requestor</label>
+			<div class="col-sm-8">
+				<select class="selectpicker form-control" multiple data-actions-box="true" data-selected-text-format="count > 4" data-live-search="true" id="requestor" name="requestor">
+					{% for user in users %}
+						<option value="{{ user.id }}">{{ user.last_name }}, {{ user.first_name }}</option>
+					{% endfor %}
+				</select>
+			</div>
+		</div>
+		<BR>
+		<div class="form-group">
+			<label class="col-sm-4 control-label">Executor</label>
+			<div class="col-sm-8">
+				<select class="selectpicker form-control" multiple data-actions-box="true" data-selected-text-format="count > 4" data-live-search="true" id="executor" name="executor">
+					{% for user in users %}
+						<option value="{{ user.id }}">{{ user.last_name }}, {{ user.first_name }}</option>
+					{% endfor %}
+				</select>
+			</div>
+		</div>
+		<BR>
+		<div class="form-group">
+			<label class="col-sm-4 control-label">Tester</label>
+			<div class="col-sm-8">
+				<select class="selectpicker form-control" multiple data-actions-box="true" data-selected-text-format="count > 4" data-live-search="true" id="tester" name="tester">
+					{% for user in users %}
+						<option value="{{ user.id }}">{{ user.last_name }}, {{ user.first_name }}</option>
+					{% endfor %}
+				</select>
+			</div>
+		</div>
+		<BR>
+		<div class="form-group">
+			<label class="col-sm-4 control-label">Priority</label>
+			<div class="col-sm-8">
+				<select class="selectpicker form-control" multiple data-actions-box="true" data-selected-text-format="count > 4" id="priority" name="priority">
+					{% for priority in priorities %}
+						<option value="{{ priority.code }}">{{ priority.name }}</option>
+					{% endfor %}
+				</select>
+			</div>
+		</div>
+		<BR>
+		<div class="form-group">
+			<label class="col-sm-4 control-label">Severity</label>
+			<div class="col-sm-8">
+				<select class="selectpicker form-control" multiple data-actions-box="true" data-selected-text-format="count > 4" id="severity" name="severity">
+					{% for severity in severities %}
+						<option value="{{ severity.code }}">{{ severity.name }}</option>
+					{% endfor %}
+				</select>
+			</div>
+		</div>
+		<BR>
+		<div class="form-group">
+			<label class="col-sm-4 control-label">Category</label>
+			<div class="col-sm-8">
+				<select class="selectpicker form-control" multiple data-actions-box="true" data-selected-text-format="count > 4" id="category" name="category">
+					{% for category in categories %}
+						<option value="{{ category.code }}">{{ category.name }}</option>
+					{% endfor %}
+				</select>
+			</div>
+		</div>
+		<BR>
+		<div class="form-group">
+			<label class="col-sm-4 control-label">SubCategory</label>
+			<div class="col-sm-8">
+				<select class="selectpicker form-control" multiple data-actions-box="true" data-selected-text-format="count > 4" id="subcategory" name="subcategory">
+					{% for subcategory in subcategories %}
+						<option value="{{ subcategory.code }}">{{ subcategory.name }}</option>
+					{% endfor %}
+				</select>
+			</div>
+		</div>
+		<BR>
+		<div class="form-group">
+			<label class="col-sm-4 control-label">Assigned to</label>
+			<div class="col-sm-8">
+				<select class="selectpicker form-control" multiple data-actions-box="true" data-selected-text-format="count > 4" id="assigned_to" name="assigned_to">
+					{% for user in users %}
+						<option value="{{ user.id }}">{{ user.get_full_name }}</option>
+					{% endfor %}
+				</select>
+			</div>
+		</div>
+		<BR>
+		<div class="form-group">
+			<label class="col-sm-4 control-label">Sprint</label>
+			<div class="col-sm-8">
+				<select class="selectpicker form-control" multiple data-actions-box="true" data-selected-text-format="count > 4" id="sprint" name="sprint">
+					{% for sprint in sprints %}
+						<option value="{{ sprint.id }}">{{ sprint.name }}</option>
+					{% endfor %}
+				</select>
+			</div>
+		</div>
+		<BR>
+		<div class="form-group">
+			<label class="col-sm-4 control-label">Text</label>
+			<div class="col-sm-8">
+				<input type="text" class="form-control" name="text" placeholder="Search for text.">
+				<select class="selectpicker form-control" multiple data-actions-box="true" data-selected-text-format="count > 4" id="text_type" name="text_type">
+					<option value="subject" selected>Subject</option>
+					<option value="description" selected>Description</option>
+					<option value="flow" selected>Flow</option>
+				</select>
+			</div>
+		</div>
+
+
+		<input type="submit" class="btn btn-default" value="Save" name="submit_save_search" id="submit_save_search" style="display:none;">
+		<input type="submit" class="btn btn-default" value="Save and find" name="submit_save_and_search" id="submit_save_and_search" style="display:none;">
+		<input type="submit" class="btn btn-default" value="Find" name="submit_search">
+	</form>
+</div>
+
+<script type="text/javascript">
+	$('#name').keyup(function() {
+		if ($('#name').val().length > 0) {
+			$('#submit_save_search').show();
+			$('#submit_save_and_search').show();
+		} else {
+			$('#submit_save_search').hide();
+			$('#submit_save_and_search').hide();
+		}
+	});
+</script>
