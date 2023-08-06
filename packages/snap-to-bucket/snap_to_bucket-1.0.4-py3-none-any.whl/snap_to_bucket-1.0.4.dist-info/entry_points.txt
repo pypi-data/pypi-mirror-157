@@ -1,0 +1,2 @@
+[console_scripts]
+snap2bucket = snap_to_bucket.run:main

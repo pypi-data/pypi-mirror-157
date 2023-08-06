@@ -1,0 +1,14 @@
+snap_to_bucket/__init__.py,sha256=rFPr206gtVA62ZSkM-nYCrrLuyvVQJ2Xc6RwboeK2QY,195
+snap_to_bucket/run.py,sha256=sMl1p34zJxqcavuZ5maPmnl6BE7DOYmBtghTIuMcbtI,7187
+snap_to_bucket/handlers/__init__.py,sha256=7mXtWoC8SlGNL3jLFd041BhhMMng-hWoO-qAdKsaX6o,301
+snap_to_bucket/handlers/ec_2_handler.py,sha256=dMY5IUBBdJoE7-e2dyXUkEv-PbOFhbxIUav2Xr247xg,14542
+snap_to_bucket/handlers/fs_handler.py,sha256=brvYM0xd-7sWfCdZIemP0EAUgc-qShGiDHmcdB-npm4,12366
+snap_to_bucket/handlers/s3_handler.py,sha256=GEojG8VXzbYjNoq6e7v6v0KP_0LqiZEMLs34OW6tvHA,17794
+snap_to_bucket/runner/__init__.py,sha256=3Rh8NGnL6GNt1h5L-b7yplob3L2e9NC3QrRw-_YJkTo,235
+snap_to_bucket/runner/snap_handler.py,sha256=yUvVwG7DXk0bf2KYCehgO_GUZHOXXDia0-IKqknCFp8,9969
+snap_to_bucket-1.0.4.dist-info/LICENSE,sha256=7eKT9TFCO4pZh1lgrflVdbMOlBzTlWC_Aey_G1R9pJo,1097
+snap_to_bucket-1.0.4.dist-info/METADATA,sha256=OgS1O8Er7E2CZpaSvS0rCKZ1UvlAhsCbpdg0LoBQ2yM,10336
+snap_to_bucket-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+snap_to_bucket-1.0.4.dist-info/entry_points.txt,sha256=BO19lzF9Hj1bK9ZytCXAnmARVt0GnjRNS65YagYFanM,56
+snap_to_bucket-1.0.4.dist-info/top_level.txt,sha256=GzduSUmcfSMGEC-Qkv5iaQtgISnSShXYQklVzFN0N7Y,15
+snap_to_bucket-1.0.4.dist-info/RECORD,,
