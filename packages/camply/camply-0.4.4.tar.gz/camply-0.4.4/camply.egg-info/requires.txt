@@ -1,0 +1,15 @@
+PyYAML
+pandas
+python-dotenv
+pytz
+requests
+tenacity
+pydantic
+click
+rich>=10.0.0
+
+[dev]
+tox
+pytest
+coverage
+flake8
