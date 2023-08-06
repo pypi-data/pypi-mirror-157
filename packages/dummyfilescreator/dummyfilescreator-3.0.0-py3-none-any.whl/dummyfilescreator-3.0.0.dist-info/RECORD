@@ -1,0 +1,15 @@
+dummyfilescreator/__init__.py,sha256=MxSxyC8BHocpJ1xbKCk7-igmGvmcwn1CE27UT3lo_qk,115
+dummyfilescreator/__main__.py,sha256=ziStsgtgPuLrTf1_GvEeHOUErTr4ptOUpG9y98W3_m4,692
+dummyfilescreator/dfc_cli.py,sha256=lpUoGZYeAh05h7OocdcVg75whxkhJ0bFzK5SDFGEXJ8,7881
+dummyfilescreator/dfc_ui.py,sha256=qOvuGmuANUkr6ZGuuYMhmnuhTsK2Y66JxbebuE-b0Eo,15851
+dummyfilescreator/files_creator.py,sha256=VpId6ZRYkTM4MDzAV-UFi0tNsql84NNsqHg5BKcVyvA,4783
+dummyfilescreator/logger.py,sha256=k8xnenPv6UXUDB5hqL_VKCMtHytRfkjYvosp2sTkbmU,2295
+dummyfilescreator/qt_about_window.py,sha256=AZqegm8Sm0k7wKgxJ8vWyf1nSEXi3nybOWOusg3LyLU,2162
+dummyfilescreator/qt_icon.py,sha256=OvjLpaHgF-nIy_Bd96hdEE5cmSlyQElw-gMuhZpS-hw,51581
+dummyfilescreator/qt_main_window.py,sha256=TL7nJ4b-fBPKr5eujdQ2wKthFBEYT7TiY9V_2EYeOy8,21413
+dummyfilescreator-3.0.0.dist-info/LICENSE,sha256=Hsl0QD9HsInegNi8H9hM26RdZe6YjY8JKMFMhTXerUw,35085
+dummyfilescreator-3.0.0.dist-info/METADATA,sha256=n0ON-ncHLoV6ukWMn2xY3GgKehGxOgv-cuixAAr54Fw,3417
+dummyfilescreator-3.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dummyfilescreator-3.0.0.dist-info/entry_points.txt,sha256=_HJ5f2HTUYk3t0k9w1GwNVNsB9qggxajFcldCG4MLIk,70
+dummyfilescreator-3.0.0.dist-info/top_level.txt,sha256=r9rdPxuBb6hypHTXXUmXctXif0OqL_JljlhayDXVSNw,18
+dummyfilescreator-3.0.0.dist-info/RECORD,,
