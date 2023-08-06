@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gotyno-validation
+Version: 0.0.3
+Summary: A validation library
+Home-page: https://github.com/GoNZooo/gotyno-validation
+Author: Rickard andersson
+Author-email: gonz@severnatazvezda.com
+Project-URL: Bug Tracker, https://github.com/GoNZooo/gotyno-validation/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
