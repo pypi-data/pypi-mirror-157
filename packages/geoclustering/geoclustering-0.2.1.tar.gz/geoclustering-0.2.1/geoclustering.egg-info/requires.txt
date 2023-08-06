@@ -1,0 +1,10 @@
+click
+geojson
+keplergl
+numpy
+pandas
+scikit-learn
+
+[dev]
+black
+wheel
