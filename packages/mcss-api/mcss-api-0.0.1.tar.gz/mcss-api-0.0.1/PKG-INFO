@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: mcss-api
+Version: 0.0.1
+Summary: A library to easily access the MCSS api.
+Author-email: Les Packages <les.packages@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022 MCSS Community
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Docs, https://coming.soon/
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MCSS Python API
+
+Allows for easy access to the MCSS API.
+
+## Installation
+
+```
+pip install mcss-api
+```
+
+## Usage
+
+### Initialization
+
+#### Import the mcss module:
+
+```python
+from mcss import *
+```
+
+
+#### Create the MCSS instance:
+
+Use this if you want the app to stop if the connection fails
+
+```python
+mcss = MCSS("http://localhost:25560", True)
+```
+
+Use this if you want to manage failed states yourself
+
+```python
+mcss = MCSS("http://localhost:25560", False)
+```
+
+Example fail state management:
+
+```python
+if mcss.com_open == False:
+    print("Failed to connect to MCSS")
+```
+
+### Authenticating with the MCSS API
+
+```python
+token = mcss.auth("username", "password")
+```
