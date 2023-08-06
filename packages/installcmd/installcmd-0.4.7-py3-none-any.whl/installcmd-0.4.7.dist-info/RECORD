@@ -1,0 +1,11 @@
+installcmd/__init__.py,sha256=261yh-bSFI8eHNx6ajB6PKOYgXRlwCpCeoH23b2OyKI,156
+installcmd/cli.py,sha256=-IMXg3fr6N6Ivm8e7Ty61c_meQ9oUmy0LOi2h48x0qU,2957
+installcmd/commands.yaml,sha256=eOYIbfhqwhAFalJKH0Mo7tMrHe069RN8rVtNcBPnd9w,838
+installcmd/lib.py,sha256=pGM6IMYAXZQbChRgBxtBSHPq2ia-cWKUkDUc9x7krTo,4076
+installcmd/linux.py,sha256=aWN0CT55pfQu1qCLV6q2SxPr4Fw4_H5sPWFcl8WkOt0,760
+installcmd/mac.py,sha256=w3i6ZOhwza-WPBYz2Xqi2DikpFzMbb7xBGZf761j4go,796
+installcmd-0.4.7.dist-info/METADATA,sha256=veBvB_btkIEdpuj3R4cwwglt5NfYMha391oLhuo4860,2017
+installcmd-0.4.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+installcmd-0.4.7.dist-info/entry_points.txt,sha256=8K6lco9-hLoA1l6c9b8CBcyGOSzO2mMBjn4eOhYa3x8,51
+installcmd-0.4.7.dist-info/top_level.txt,sha256=v5fa03XJNd4mJ-JgCJW3NGi14j_NkTToGwB2YNaiXB4,11
+installcmd-0.4.7.dist-info/RECORD,,
