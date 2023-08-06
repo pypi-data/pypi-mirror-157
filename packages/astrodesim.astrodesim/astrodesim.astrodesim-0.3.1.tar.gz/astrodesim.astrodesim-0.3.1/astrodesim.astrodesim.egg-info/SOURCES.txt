@@ -1,0 +1,15 @@
+README.md
+setup.py
+astrodesim/__init__.py
+astrodesim/desim.py
+astrodesim/is_small.py
+astrodesim/jyperbeam_to_jyperpix.py
+astrodesim/make_image.py
+astrodesim/resize_smalltolarge.py
+astrodesim/spectral_index_conversion.py
+astrodesim/spectral_index_map.py
+astrodesim/upload_fits.py
+astrodesim.astrodesim.egg-info/PKG-INFO
+astrodesim.astrodesim.egg-info/SOURCES.txt
+astrodesim.astrodesim.egg-info/dependency_links.txt
+astrodesim.astrodesim.egg-info/top_level.txt
