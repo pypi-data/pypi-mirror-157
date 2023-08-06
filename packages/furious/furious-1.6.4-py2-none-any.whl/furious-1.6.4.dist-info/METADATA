@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: furious
+Version: 1.6.4
+Summary: Furious is a lightweight library that wraps Google App Enginetaskqueues to make building dynamic workflows easy.
+Home-page: http://github.com/Workiva/furious
+Author: Robert Kluin
+Author-email: robert.kluin@workiva.com
+License: Apache
+Download-URL: https://github.com/Workiva/furious/tarball/v1.3.0
+Keywords: async,gae,appengine,taskqueue
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+
+UNKNOWN
+
+
