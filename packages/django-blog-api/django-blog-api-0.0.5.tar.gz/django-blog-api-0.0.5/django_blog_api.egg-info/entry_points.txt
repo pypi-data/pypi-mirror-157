@@ -1,0 +1,2 @@
+[console_scripts]
+realpython = django_blog_api.__main__:main
