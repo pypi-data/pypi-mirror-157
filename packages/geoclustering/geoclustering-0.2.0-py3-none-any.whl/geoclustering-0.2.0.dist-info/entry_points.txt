@@ -1,0 +1,2 @@
+[console_scripts]
+geoclustering = geoclustering.__main__:main
