@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: tube-toolkit
+Version: 0.0.4
+Summary: tube is a toolkit for creating RPAs and other softwares that need selenium support.
+License: Proprietary
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: Other/Proprietary License
+Requires-Python: >=3.8
+Requires-Dist: async-generator (>=1.10)
+Requires-Dist: attrs (>=21.4.0)
+Requires-Dist: certifi (>=2022.6.15)
+Requires-Dist: cffi (>=1.15.1)
+Requires-Dist: charset-normalizer (>=2.1.0)
+Requires-Dist: cryptography (>=37.0.4)
+Requires-Dist: h11 (>=0.13.0)
+Requires-Dist: idna (>=3.3)
+Requires-Dist: outcome (>=1.2.0)
+Requires-Dist: pybrowsers (>=0.4.1)
+Requires-Dist: pycparser (>=2.21)
+Requires-Dist: pyOpenSSL (>=22.0.0)
+Requires-Dist: PySocks (>=1.7.1)
+Requires-Dist: python-dotenv (>=0.20.0)
+Requires-Dist: requests (>=2.28.1)
+Requires-Dist: selenium (>=4.3.0)
+Requires-Dist: sniffio (>=1.2.0)
+Requires-Dist: sortedcontainers (>=2.4.0)
+Requires-Dist: trio (>=0.21.0)
+Requires-Dist: trio-websocket (>=0.9.2)
+Requires-Dist: urllib3 (>=1.26.9)
+Requires-Dist: webdriver-manager (>=3.8.0)
+Requires-Dist: wsproto (>=1.1.0)
+Requires-Dist: build (>=0.8.0)
+
+======
+Tube
+======
+
+Tube is a simple, fast, and efficient toolkit for build and release automation using Selenium.
