@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: abletondrumrack
+Version: 1.0.2
+Summary: Create Ableton Live 11 Drum Rack presets.
+Home-page: https://github.com/danikavu/Ableton-Drum-Rack
+Author: Daniel Kavoulakos
+Author-email: dan_kavoulakos@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+
+UNKNOWN
+
