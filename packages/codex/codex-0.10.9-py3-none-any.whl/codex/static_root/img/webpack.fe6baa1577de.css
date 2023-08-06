@@ -1,0 +1,25 @@
+/* This file only exists for webpack to copy these images */
+a {
+  background: url("apple-touch-icon.1ccc85f5197d.webp");
+}
+b {
+  background: url("favicon-32.ad25cd862bed.webp");
+}
+c {
+  background: url("favicon-128.d919dcdb0532.webp");
+}
+d {
+  background: url("favicon-180.1ccc85f5197d.webp");
+}
+e {
+  background: url("favicon-192.52d39a385f5c.webp");
+}
+f {
+  background: url("favicon-512.4a0184112dd7.webp");
+}
+g {
+  background: url("favicon.ad25cd862bed.ico");
+}
+h {
+  background: url("favicon.c125e556f477.svg");
+}
