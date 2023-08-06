@@ -1,0 +1,8 @@
+pyhelayerslite/__init__.py,sha256=wkGI0bM_aHlwKWa5jwmR_b3jlF9vM81DytTnlKXFy4I,464
+pyhelayerslite/libs/_dummy.cp310-win_amd64.pyd,sha256=d3suoKxinSLW3527Nd8Lau3aEUhxKuSj219HtLVuPFg,10240
+pyhelayerslite/libs/pyhelayerslite.cp310-win_amd64.pyd,sha256=1Pj9p4p9hHwodD_duCnpRwR4MGluy7Hyy6kZu98830o,2066944
+pyhelayerslite-1.4.0.4.dist-info/LICENSE,sha256=qLBcihCJITw9Wf4GLzJ1XeyiaUgEtJZBymfaUWNmcTE,9892
+pyhelayerslite-1.4.0.4.dist-info/METADATA,sha256=qAZNjFtJzoyCxi8-_8luRTWJprOD3U2YsFrijaGCNRY,1566
+pyhelayerslite-1.4.0.4.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+pyhelayerslite-1.4.0.4.dist-info/top_level.txt,sha256=A7j0qjG02uYbIx-P_pEPKoQ5dT-jsHxL4GoHp6dBK0k,15
+pyhelayerslite-1.4.0.4.dist-info/RECORD,,
