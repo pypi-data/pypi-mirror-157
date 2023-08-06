@@ -1,0 +1,17 @@
+msgraph_async/__init__.py,sha256=5JJm51TjdQ3RqPyTAvCJdtas2a0ePQ2q0IM_4_7iPRA,37
+msgraph_async/client/__init__.py,sha256=5JJm51TjdQ3RqPyTAvCJdtas2a0ePQ2q0IM_4_7iPRA,37
+msgraph_async/client/client.py,sha256=SzHumEcwVB4dpLoGH1FtxFROdobN1FGA5jPq0ncvB5g,30666
+msgraph_async/client/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msgraph_async/client/tests/test_client.py,sha256=-82hQ4gIxJOPr7I2cp0mTVYcU8jQHexDzuXi_PKSi00,34224
+msgraph_async/common/__init__.py,sha256=d3p4tO7g6JGhk4l3GupvjWNiCGh4iNIQjAxecJwiq_U,78
+msgraph_async/common/constants.py,sha256=C9chqrwczvCEb57Duadp6n-FdPdGtzqJrW73YM48ipE,1533
+msgraph_async/common/exceptions.py,sha256=tlAYl3OuFHB44l-ZNmRE78jgJqV0TvlyGvtMfwkeqMM,2638
+msgraph_async/common/odata_query.py,sha256=AeWPWHsE4w9Un5eegAZeaUhXJ5P0j1ZbIUFdnBJsTc0,7910
+msgraph_async/common/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msgraph_async/common/tests/test_odata_query.py,sha256=VhU1QZiPsMVl9ZL66aEZGL5CsXle5V7ZRTnXc_CJv-s,3206
+msgraph_async/common/tests/test_subscription_resource.py,sha256=n52zPCRnb4R8hlEjeEsBI3-VSxeB9WRYLMEgx5LK9zk,1981
+msgraph_async-0.2.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+msgraph_async-0.2.0.dist-info/METADATA,sha256=jPEPQg9oMqYgaYQ8BxIzr0XVOHOERvwV7ekHvL1vQ8M,1870
+msgraph_async-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+msgraph_async-0.2.0.dist-info/top_level.txt,sha256=4WNCeoE_CmHnnXkT5V2uwFmHmVZ_o_c7LikxnAmf24U,14
+msgraph_async-0.2.0.dist-info/RECORD,,
