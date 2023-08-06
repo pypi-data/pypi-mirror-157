@@ -1,0 +1,2 @@
+[console_scripts]
+numcertain = numcertain.cli:main
