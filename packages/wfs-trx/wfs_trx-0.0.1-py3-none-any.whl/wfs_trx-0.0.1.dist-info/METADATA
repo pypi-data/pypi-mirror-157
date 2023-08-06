@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: wfs-trx
+Version: 0.0.1
+Summary: generate xml request body for wfs write transactions.
+Home-page: UNKNOWN
+Author: Mehdi Kamani <itsmehdi97@gmail.com>
+Author-email: itsmehdi97@gmail.com
+License: MIT License
+Project-URL: Documentation, https://wfs-trx.readthedocs.org/
+Project-URL: Source, https://github.com/itsmehdi97/wfs-trx
+Platform: all
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.5, <4
+Provides-Extra: develop
+Requires-Dist: coverage (!=4.3) ; extra == 'develop'
+Requires-Dist: coveralls ; extra == 'develop'
+Requires-Dist: pylava ; extra == 'develop'
+Requires-Dist: pytest ; extra == 'develop'
+Requires-Dist: pytest-asyncio ; extra == 'develop'
+Requires-Dist: pytest-cov ; extra == 'develop'
+Requires-Dist: tox (>=2.4) ; extra == 'develop'
+
+### wfs-trx
+write transactions for wfs
+
