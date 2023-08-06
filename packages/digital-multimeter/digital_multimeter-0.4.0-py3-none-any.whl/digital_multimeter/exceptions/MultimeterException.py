@@ -1,0 +1,2 @@
+class MultimeterException(Exception):
+    pass
