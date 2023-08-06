@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: TextPunctuator
+Version: 1.0.1
+Summary: A package to punctuate text, currently supporting French text, more languages comming soon.
+Home-page: https://github.com/rouzki/text-punctuator
+Author: Zakarya ROUZKI
+Author-email: zakaryarouzki@gmail.com
+License: UNKNOWN
+Keywords: punctuator,nlp,text,transformers,t5
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# text-punctuator
+
