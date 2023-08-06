@@ -1,0 +1,16 @@
+dummy.cpython-37m-x86_64-linux-gnu.so,sha256=kKsMdzBXcNKtGjkTkdgNaAfr89ujwwHHslOF_JaGIho,16824
+redislite/__init__.py,sha256=x6fjm_faYcI1o3TlQpipDjKu7Xc6kLgHZ2KEGGDa6Z4,3322
+redislite/client.py,sha256=2zbEfq3SLNnmQCYY7s29NmU2PGIfc7AYysGxDOx22wI,23496
+redislite/configuration.py,sha256=bUiqq9JRqxeyUd1V8aDQVycd5lDSdZ1sDhPTV30iiw8,4178
+redislite/debug.py,sha256=MGn1ZiSEaz_M5tt_TAiSvHJl2qqPJYG6hwlWa80qadI,3495
+redislite/package_metadata.json,sha256=bzgyM2XIBix9IZBzpGpy8jcroDhzp7IOmJtcQ8f_TWY,384
+redislite/patch.py,sha256=XYKp3m-Lfj353aMSGLRgsIkBB-l_nbeGefcj4MjioXQ,5975
+redislite/bin/redis-cli,sha256=0_jwMpcZHfYXHrHCrGK42dqIpCkzZyeqPpWm2QgS8oY,1211384
+redislite/bin/redis-server,sha256=JJUObnpkAWop2gPg63mQsjQfSiJ3LPgmatcv3QWVE3k,6726680
+redislite-6.2.805324.data/scripts/redis-cli,sha256=0_jwMpcZHfYXHrHCrGK42dqIpCkzZyeqPpWm2QgS8oY,1211384
+redislite-6.2.805324.data/scripts/redis-server,sha256=JJUObnpkAWop2gPg63mQsjQfSiJ3LPgmatcv3QWVE3k,6726680
+redislite-6.2.805324.dist-info/LICENSE.txt,sha256=v_KSO3QDsjuv2X5ul0suO1vOuE4luN-S7ursK3NueME,2514
+redislite-6.2.805324.dist-info/METADATA,sha256=7YFbv4OypXly749X4AyHqktDg17C11Tu7cdaO0bTkDo,8225
+redislite-6.2.805324.dist-info/WHEEL,sha256=FGGRUrvefXOiAJfyJCZAiu4TpTMkXB_CzdEp3x2T96E,150
+redislite-6.2.805324.dist-info/top_level.txt,sha256=qdBL6ed4V89l1GFmBxN1KUGZ941bhRjPdDauHZRB2zg,16
+redislite-6.2.805324.dist-info/RECORD,,
