@@ -1,0 +1,16 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='tapyr',
+    version='0.1.1',
+    package_dir={'' : 'src'},
+    packages=find_packages(where='src'),
+    url='https://github.com/tap-ir/tapyr',
+    license='AGPLv3.0',
+    author='Solal Jacob',
+    author_email='tapir42@protonmail.com',
+    description='Python binding for TAPIR',
+    install_requires=[
+        "requests~=2.27.1"
+    ]
+)
