@@ -1,0 +1,13 @@
+pyrplib/__init__.py,sha256=hnM8PACWGV_ANufsH0UD-5VY6mxW0Q7h5MH-sJaSoMM,128
+pyrplib/artificial.py,sha256=i5ZN0OB1wzcGNg2UEE9gUHwNtDFCuArAEUYhm6oUvWI,10077
+pyrplib/base.py,sha256=iMlXk3wCzHgpjCN3fFw49Kx8s0Dpk_k1wjMWIFdN-hw,5740
+pyrplib/card.py,sha256=ObrZKjf8IyX4sW5M3UQOH2Ar8MwXAH_243s6vlhKVbQ,21121
+pyrplib/data.py,sha256=ixz9j3d9dPG02DvsAEPmfR8fns-fSsQxpzCehrh_9r0,4942
+pyrplib/dataset.py,sha256=isOy77iiTCNoJco8g4jbRx0qEkLHwDKoIdQwIbIVcLY,6280
+pyrplib/style.py,sha256=D6DNupHRtJi8N5KMg8KUol6SB3P88USQdndppWNjOII,3938
+pyrplib/transformers.py,sha256=JVCy9cJaXoc8Y06SjKI06dDnC50SDdfcDopLV6mABmY,4999
+pyrplib-0.1.1.dist-info/LICENSE,sha256=5RH1MhNPPdNHvbDsQahhKZB6oOGuudk8fJHbaU9EiVw,1063
+pyrplib-0.1.1.dist-info/METADATA,sha256=NtZGlUAC9mleAhAuO2oqSuDt2WaEVEQZuyr0UWtl5R4,3187
+pyrplib-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyrplib-0.1.1.dist-info/top_level.txt,sha256=FDF9KXBpd6fDf3gXy9zcPEXVQ_TO92Jo7zmPK1Z9eso,8
+pyrplib-0.1.1.dist-info/RECORD,,
