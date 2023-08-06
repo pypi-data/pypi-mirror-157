@@ -1,0 +1,38 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['blamscamp']
+
+package_data = \
+{'': ['*'], 'blamscamp': ['jinja_templates/*']}
+
+install_requires = \
+['Jinja2>=3.0.3,<4.0.0',
+ 'Pillow>=9.0.1,<10.0.0',
+ 'awesome-slugify>=1.6.5,<2.0.0',
+ 'chardet>=4.0.0,<5.0.0',
+ 'mutagen>=1.45.1,<2.0.0']
+
+entry_points = \
+{'console_scripts': ['blamscamp = blamscamp.__init__:main']}
+
+setup_kwargs = {
+    'name': 'blamscamp',
+    'version': '0.2.4',
+    'description': 'Tools for publishing albums to the web and digital stores',
+    'long_description': '# pyBlamscamp\n\n![CC0 license badge](https://licensebuttons.net/p/zero/1.0/88x31.png)\n\npyBlamscamp is a standalone program that automatically encodes an album of songs into a bunch of different formats for distribution on various platforms, such as [itch.io](https://itch.io/), or for hosting on your own website. The embedded player is originally based on the one from [Blamscamp](https://github.com/blackle/blamscamp), although it has been pretty thoroughly modified at this point.\n\n[See it in action](https://fluffy.itch.io/novembeat-2021)!\n\n## Features\n\n* Output as mp3, ogg, FLAC, and web preview (HTML5+mp3 at a lower bitrate)\n* Optionally upload everything to your page on itch using [butler](https://itch.io/docs/butler/)\n* High-quality encoding and metadata, with support for cover songs, per-track artwork, embedded lyrics, and more\n* Web player also supports per-track artwork\n\n## Usage\n\nTo use it, you\'ll need to install LAME, oggenc, and FLAC; on macOS you can install these via [homebrew](https://brew.sh/), on Linux you can use your system\'s package manager, and on Windows you\'re on your own.\n\nYou\'ll also need to install [Python](https://python.org), after which you can install pyBlamscamp with:\n\n```\npip install blamscamp\n```\n\n`blamscamp --help` will provide a lot more detailed information. For the most part you should be able to just do:\n\n```\nblamscamp input_dir output_dir\n```\n\nand the rest will Just Work™.\n\n## Building an album\n\nMake a directory with all of your source audio files and artwork and so on. Create a JSON file named `album.json` (which can be overridden) that looks something like this:\n\n```json\n{\n    "artist": "The artist of the album",\n    "title": "The title of the album",\n    "bg_color": "black",\n    "fg_color": "white",\n    "highlight_color": "#cc00ff",\n    "artwork": "album_cover.jpg",\n    "tracks": [{\n        "filename": "the first track.wav",\n        "title": "The First Track",\n        "artwork": "track1_cover.jpg",\n        "lyrics": ["This is the first line",\n            "This is the second line",\n            "This is the third line",\n            "",\n            "This is the second verse",\n            "This song just keeps getting worse"],\n        "hidden": false,\n        "preview": true\n    }]\n}\n```\n\nYou can also automatically generate a stub `album.json` file with:\n\n```\nblamscamp --init input_dir output_dir\n```\n\nwhich will try to guess the track order and titles from the audio files in `input_dir`.\n\nBasically, the top-level album contains the following properties (all optional):\n\n* `artist`: The artist for the album as a whole\n* `title`: The album\'s title\n* `year`: The release year\n* `artwork`: an image file to use for the album\'s cover art (relative or absolute paths okay)\n* `bg_color`, `fg_color`, `highlight_color`: The color theme for the player\n* `genre`: The default genre for all tracks\n* `tracks`: an array of track descriptions, in album order\n\nAnd each track contains (all optional except `filename`):\n\n* `filename`: The audio file to encode into the final output track (ideally wav or aif)\n* `title`: The title of the track\n* `artist`: The performing artist of this track\n* `cover_of`: The original artist that this track is a cover of, if any\n* `genre`: The genre of this track\n* `artwork`: Track-specific cover art\n* `lyrics`: An array of strings, one line of lyrics per string; alternately, the name of a text file to read the lyrics from (relative or absolute paths okay)\n* `hidden`: A boolean for whether to hide this track from the web player entirely (e.g. a purchase bonus); defaults to `false`\n* `preview`: A boolen for whether to generate a preview for the web player; defaults to `true`\n* `about`: Detailed commentary about the track\n\nSee the [sample album JSON file](https://github.com/fluffy-critter/pyBlamscamp/blob/main/tests/album/album.json) for a rough example.\n\n## Publishing to Itch\n\nHere\'s the process for publishing an album to [itch.io](https://itch.io):\n\n1. Install [butler](https://itch.io/docs/butler/) and log in with `butler login`\n1. [Create a new project](https://itch.io/game/new)\n2. Set it as a "soundtrack," with the kind of project being "HTML"\n3. Set your pricing, add preview artwork, etc., and save. Don\'t do any uploading from this interface.\n4. Run `blamscamp` with a `-b user/project` flag; for example:\n\n    ```sh\n    blamscamp novembeat-2021/wav novembeat-2021/out -b fluffy/novembeat-2021\n    ```\n5. Wait a moment for itch to finish processing; you can use `butler status user/project` (e.g. `butler status fluffy/novembeat-2021`)\n6. Reload your project edit page; you should now have a few targets, such as `preview`, `mp3`, etc.\n7. Set the `preview` target to "This file will be played in the browser". Set all the other targets to "soundtrack" and, optionally, change the display name.\n8. View the project page, and when you\'re ready to publish, publish!\n\n### Recommended "embed options"\n\n* Set it to "embed in page" with "manually set size"\n* Enable "mobile friendly" (with orientation "default") and "automatically start on page load"\n* Disable "fullscreen button" and "enable scrollbars"\n\n## Publishing to other sites\n\nIf you have a website of your own, upload the `preview` directory to your site somewhere, and then embed it using an iframe, e.g.\n\n```html\n<iframe src="/path/to/album" width=640 height=360></iframe>\n```\n\nYou can also embed the itch version on another website; go to the itch page, right-click the frame, and then your browser should provide some option for "show only this frame" or "open frame in tab" or the like. This should give you a URL that you can embed on another site, such as `https://v6p9d9t4.ssl.hwcdn.net/html/5375791-530391/index.html`, which you can embed with:\n\n```html\n<iframe src="https://v6p9d9t4.ssl.hwcdn.net/html/5375791-530391/index.html" width=640 height=360></iframe>\n```\n\nalthough note that this URL may disappear or be otherwise unsupported.\n\n## Contributing\n\nPull requests are welcome! But please note the following:\n\nThe generated blamscamp player must not receive any added dependencies. The generator must stay as a single, self-contained file that is as small as reasonably possible. The point is for the generated file to be lightweight. Stick to Vanilla JS.\n\n### Roadmap\n\nSee the [github issues](https://github.com/fluffy-critter/pyBlamscamp/issues) for details, but roughly:\n\n* Local GUI and/or web UI to make setting up the `album.json` easier (and easier installation, especially on Windows!)\n* Improved player\n* Easy embedding into  websites\n\n## License\n\nThis software is public domain.\n',
+    'author': 'fluffy',
+    'author_email': 'fluffy@beesbuzz.biz',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': None,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'entry_points': entry_points,
+    'python_requires': '>=3.8,<4.0',
+}
+
+
+setup(**setup_kwargs)
