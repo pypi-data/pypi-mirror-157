@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: wgt
+Version: 0.1.0
+Summary: Command line tool for quick API testing
+Author: Daniel Hjertholm
+Author-email: daniel.hjertholm@icloud.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: requests
+Requires-Dist: toolz
