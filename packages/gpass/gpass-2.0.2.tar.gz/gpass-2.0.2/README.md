@@ -1,0 +1,109 @@
+## GPass
+
+GPass is a flexible and easy to use, terminal based password input utility
+
+It is a variation of the [stdiomask](https://pypi.org/project/stdiomask) utility which allows users to securely input passwords onto the terminal. 
+
+However, many a times, piping and stdin/stdout issues or specifications of the program do not allow the developer to safely input the password. This program was created to avert the same, along with create more types of possible masks for the passwords. 
+
+## Installation 
+
+A [PyPI](https://pypi.org) installation can be achieved by 
+
+```
+python3 -m pip install gpass 
+```    
+
+A build from source can be done by 
+
+```
+git clone https://gitlab.com/loggerheads-with-binary/gpass
+cd gpass
+python3 -m pip install -r requirements.txt 
+python3 setup.py install
+```
+
+
+## Using in your scripts 
+
+```python
+>>> import gpass
+
+#Check below for meanings of colored and mask 
+>>> var = gpass.getpass("Enter your password: " , colored = True , mask = gpass.SPECIAL_MASKS.MIMI_REVERSE)
+Enter your password: ************
+>>>var
+'password1234' 
+```
+
+## Masks 
+
+The following different masks can be used 
+
+1. `str` : Any python string can be used as a mask 
+
+<p align="center">
+  <img src="./images/str.gif" alt="String Mask"  />
+</p>
+
+2. `gpass.SPECIAL_MASKS.NO_MASK` : Equivalent of having no mask, all characters are displayed directly. Can also be used with `mask=False`
+
+<p align="center">
+  <img src="./images/no-mask.gif" alt="No Mask"  />
+</p>
+
+
+3. `gpass.SPECIAL_MASKS.BLIND_MASK` : Does not echo any character. Equivalent of read -n on unix. Can also be used with `mask=None` or `mask=''`
+   
+<p align="center">
+  <img src="./images/blind-mask.gif" alt="Blind Mask"  />
+</p>
+
+4. `gpass.SPECIAL_MASKS.DEFAULT_MASK` : Uses the `'*'` character to mask every single input character. Can also be achieved by using `'*'` as the mask. Can also be used with `mask=True`
+
+5. `gpass.SPECIAL_MASKS.ONE_REVERSE` : Displays the last character of the input password in plaintext, and the rest of them in `'*'` characters, similar to some website password inputs.
+
+6. `gpass.SPECIAL_MASKS.MIMI_REVERSE` : Similar to `ONE_REVERSE` but also works backwards, i.e when characters are removed from the terminal. 
+
+<p align="center">
+  <img src="./images/reverses.gif" alt="One Reverse and Mimi Reverse"  />
+</p>
+
+
+## Colored Input 
+
+You can receive color input by using `colored=True` in the gpass.getpass function. 
+Colors for prompt and input are also customizable with the `colorset` parameter, which can be a two-member list/tuple consisting of (prompt, input) colors.
+
+<p align="center">
+  <img src="./images/colors.gif" alt="Colored and Colorset"  />
+</p>
+
+
+By default, the `colorset =  ('yellow' , 'green')`   
+However, note that the colors must be defined. For example, `magenta+cyan` color does not exist and will raise a KeyError. The colors are as [per those defined in termcolor](https://pypi.org/project/termcolor) 
+
+As a rule of thumb, only the following colors are allowed:
+- grey
+- red
+- green
+- yellow
+- blue
+- magenta
+- cyan
+- white
+
+One could also use `default`, that being the default color of the terminal.
+
+## Use of stderr 
+The program uses the stderr stream to print the mask while uses the `Getch` function to take input characters. This allows the program to easily surpass any pipes or redirections in the terminal as long as the redirections/pipes involve stdout and not stderr. 
+
+If you wish to instead use the stdout, or output the password to a filestream, change the `stream` parameter of the getpass function to `sys.stdout` or a filehandle.
+
+## License 
+
+The program uses the [MIT License](./LICENSE). 
+
+## Bugs 
+
+Bugs can be raised in issues. For any improvements, please fork the project. If you feel your fork is better than this project and should be used as a substitute instead, mail me at `dev@aniruddh.ml` and I will set a pointer over at this project to yours. 

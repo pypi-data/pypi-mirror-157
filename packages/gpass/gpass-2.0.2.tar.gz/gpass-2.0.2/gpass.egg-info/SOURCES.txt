@@ -1,0 +1,10 @@
+LICENSE
+README.md
+__init__.py
+setup.py
+./__init__.py
+gpass.egg-info/PKG-INFO
+gpass.egg-info/SOURCES.txt
+gpass.egg-info/dependency_links.txt
+gpass.egg-info/requires.txt
+gpass.egg-info/top_level.txt
