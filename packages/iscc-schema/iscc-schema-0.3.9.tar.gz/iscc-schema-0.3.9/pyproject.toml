@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "iscc-schema"
+version = "0.3.9"
+description = "ISCC - JSON-LD Metadata and OpenAPI Service Descriptions"
+authors = ["Titusz <tp@py7.de>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://iscc.codes"
+repository = "https://github.com/iscc/iscc-schema"
+documentation = "https://schema.iscc.codes/"
+keywords=["iscc", "identifier", "media", "content", "hash", "blockchain", "similarity"]
+
+[tool.poetry.urls]
+"Changelog" = "https://schema.iscc.codes/changelog"
+"Bug Tracker" = "https://github.com/iscc/iscc-schema/issues"
+
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0.0"
+pydantic = "^1.9"
+jcs = "^0.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "7.1"
+datamodel-code-generator = "^0.11"
+poethepoet = "^0.13"
+black = "^22.3"
+mkdocs-material = "^8.2"
+PyLD = "*"
+requests = "^2.27"
+
+[tool.black]
+line-length = 100
+target-version = ['py37']
+
+
+[tool.poe.tasks]
+update = { cmd = "poetry update", help = "Update project dependencies"}
+fromatyaml = { script = "tools.format_yaml:reformat", help = "Reformat yaml files"}
+buildcode = { script = "tools.build_code:build", help = "Build code for API models"}
+formatcode = { cmd = "black .", help = "Code style formating with black" }
+buildterms = { script = "tools.build_terms:build", help = "Build markdown for terms" }
+buildschema = { script = "tools.build_json_schema:build", help = "Generate JSON Schema" }
+buildcontext = { script = "tools.build_json_ld_context:build", help = "Generate JSON-LD Context" }
+builddocs = { script = "tools.build_docs:build", help = "Copy README.md to docs/index.md" }
+test = { cmd = "pytest", help = "Run tests"}
+all = ["fromatyaml", "buildcode", "formatcode", "buildterms", "buildschema", "buildcontext", "builddocs", "test"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
