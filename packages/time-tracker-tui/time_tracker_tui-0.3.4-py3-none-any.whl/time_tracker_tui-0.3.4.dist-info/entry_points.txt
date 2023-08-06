@@ -1,0 +1,3 @@
+[console_scripts]
+time-tracker=time_tracker_tui.__main__:main
+
