@@ -1,0 +1,30 @@
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+clipboard = "^0.0.4"
+PyYAML = "^6.0"
+
+[tool.poetry]
+name = "compic10"
+version = "1.1.0"
+authors = ["Florian Ullmann <florian.ullmann@protonmail.com>"]
+description = "A fully fledged compiler and emulator for the IC10-MIPS processor of the game Stationeers."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+repository = "https://gitlab.com/smpkdev/compic10"
+packages = [{include="compic10"}]
+homepage = "https://gitlab.com/smpkdev/compic10"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://gitlab.com/smpkdev/compic10/-/issues"
+
+
+
+

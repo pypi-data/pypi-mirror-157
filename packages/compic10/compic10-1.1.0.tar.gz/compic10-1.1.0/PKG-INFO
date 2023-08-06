@@ -1,0 +1,394 @@
+Metadata-Version: 2.1
+Name: compic10
+Version: 1.1.0
+Summary: A fully fledged compiler and emulator for the IC10-MIPS processor of the game Stationeers.
+Home-page: https://gitlab.com/smpkdev/compic10
+Author: Florian Ullmann
+Author-email: florian.ullmann@protonmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: clipboard (>=0.0.4,<0.0.5)
+Project-URL: Bug Tracker, https://gitlab.com/smpkdev/compic10/-/issues
+Project-URL: Repository, https://gitlab.com/smpkdev/compic10
+Description-Content-Type: text/markdown
+
+# compIC10
+compIC10 is an compiler for the "IC10" from the game Stationeers. It supports common programming language features like
+loops, if-statements, functions, procedures (functions without return value), variables and expressions.
+Currently there may still be bugs.
+
+## How to install
+Just install Python3 version 3.8.2 or later (earlier versions probably work too) and afterwards install clipboard with pip: 
+
+    pip3 install clipboard
+## Programming Language
+### Basics
+All statements are limited to a single line, blank lines are allowed.
+Every line can only contain one statement which means every statement ends with and linebreak.
+When referring to names meant are strings starting with an \'\_\' or letter followed by zero or more \'\_\', letters or numbers.
+Names can not be keywords.
+There are no types since every operation in stationeers results in a number.
+Everything is case sensitive. Multiple Spaces or tabs are beeing ignored by the compiler meaning indention is possible but not enforced.
+
+After compilation success compiler starts Post Process Optimizations for remove redundant and garbage code from result code.
+
+### Compilation Errors
+When there is an error in the source code the compiler will notice you and tell you at which line the error is.
+If the compiler yields some python-exception than there may be a bug in the programm or in the source code.
+### Post Processor Errors
+When you get that error I recommend use --no_post_processing_optimization command line key for disable Post Process Optimizations. In normal case that error should not be appearing.
+### Runtime Errors
+When the program ends up in an unrecoverable state it sets the state of the IC10 housing to an error code and turns the IC10 off.
+Currently there is only the error-state -1 which means an function ended without an `return` statement.
+Unfortunately AIMEe doesn't support a state so he will just turn off.
+## Compiler
+**Basic usage:**
+
+    python3 compIC10 [source_file]
+Compiles the source code in file source_file. Doesn't save the result anywhere use following parameters in order to get the result (without parameters version still useful to verify code).
+**Parameters:**
+
+    -o [file], --out_file [file]
+Safes generated code in [file].
+
+    -p, --print_output
+Prints code to the stdout.
+
+    -c, --copy
+Copys resulting code to clipboard.
+
+    -a, --annotate
+Creates comments in the generated code in order to easily associate source-code with asm-code.
+
+    -s, --offset_varstack [offset]
+Sets the location reserved for variables in the stack.
+
+    -l, --length_varstack [length]
+Sets the length of the reserved section in stack for variables. 
+offset+length must be less then 512.
+
+    --silent
+Silent any console output, except code output with -p key
+
+    --no_post_processing_optimization
+Disable Post Processor Optimizations.
+PPO can be buggy now, if asm code not work correctly try to use that key for complete disable PPO
+
+    
+
+## Statements
+### Comments
+Comments start with an `#`. Everything after this symbol on the current line will be ignored by the compiler.
+The following code is a comment with comment message [comment]:
+
+    # [comment]
+Comments on an seperate line will be placed in the resulting asm-code when using `--annotate`.
+### main
+Every program starts in the main block given by:
+
+    main
+    [main code]
+    end
+`[main code]` is the source code of main.
+### Number literals
+Number literals can be the following:
+Integer Numbers:
+
+    1
+
+Float numbers:
+
+    1.1
+Shortcuts like .1 or 1. are possible.
+Exponential number literals:
+
+    1.1e5
+    1.1E5
+    1.1e-5
+    1.1E-5
+    1.1e+5
+    1.1E+5
+
+Since Stationeers doesn't support scientfic notation floating point numbers in this compiler will be limited to at most 16 digits behind the comma.
+Binary numbers:
+
+    0b0101
+Hexadecimal numbers:
+
+    0xFF
+Booleans:
+
+    true
+    false
+True is represented as an 1 and false as an 0.
+Note that all number literals are positive an additional minus (-) before that is an expression of unary - and the number literal.
+### Variables
+The following code generates a variable with name `[name]` and (1) initial value 0 or (2) initial value beeing the 
+result of the expression `[expression]`:
+
+    var [name]
+    var [name] = [expression]
+Variables can be used in the current block (namespace) and inner blocks.
+Global variables are possible too. Those unfortunately require an bigger overhead.
+### Constants
+The following code generates a constant with name `[name]` and value `[value]`.
+
+    const [name] = [value]
+Like variables, constants will be available in the current block and all inner blocks.
+The value must be known at compile time (no expressions allowed only number literals) an optional +/- before the number is allowed.
+### Devices 
+The following code assignes device number `[dev]` on the IC10 to the name `[name]`:
+
+    dev [name] = [dev]
+The 'd' like in `d0` must be omitted here.
+Values of device `[name]` propertys `[property]` can be modified and written to by:
+
+    [name].[property]
+This statement can be used like an variable.
+If the device has slots, a certain slot `[slot]` get accessed by:
+
+    [name][ [slot] ].[property]
+
+In order to access reagents use:
+
+    [name].[reagentmode].[property]
+`[reagent]` has to be one of: `Contents`, `Required`, `Recipe`.
+
+The special device `db` can always be accessed with the keyword `self`.
+`[name]` can also be an variable or constant for dynamic device access.
+`[name]` in an expression refers to the pin on the housing set by the device declaration.
+The special device property `DeviceIsSet` can be readed for check port is configured on socket
+### Batch Devices 
+The following code associates all devices on the network with itemhash `[hash]` on the IC10 with the name `[name]`:
+
+    bdev [name] = [hash]
+Itemhashes can be found here: https://stationeers-wiki.com/ItemHash
+Values of batch device `[name]` propertys `[property]` can be read with:
+
+    [name].[property].[batchmode]
+`[batchmode]` is the function used to evaluate all the numbers can be one of: `Average`, `Sum`, `Minimum`, `Maximum`.
+The property `[property]` of all devices on the network associated with `[name]` can be assigned with the result of an expression `[expression]` by:
+
+    [name].[property] = [expression]
+
+`[name]` in an expression refers to the hash set by the batch device declaration.
+### Functions 
+A function with name `[name]` can be defined by the following code:
+
+    func [name]([parameters...])
+    [function body]
+    end
+`[function body]` is the source code of the function.
+The functions has parameters `[parameters...]` which is a comma seperated collection of names. Default values are supported like `param=1`, `param=-1` or `param=+1` 
+after an parameter with default value can't follow one without. All default values must be known at compile time.
+All functions must end with an `return` statement that has a return value.
+At the end of the function body is an `end` statement.
+Functions have their own namespace.
+If an function ends without and return statement the state of the IC10-housing changes to -1 and it shuts down.
+Recursion is supported.
+### Procedures
+A procedure with name `[name]` can be defined by the following code:
+
+    proc [name]([parameters...])
+    [procedure body]
+    end
+`[procedure body]` is the source code of the procedure.
+The procedure has parameters `[parameters...]` which is a comma seperated collection of names. Default values are supported like `param=1`, `param=-1` or `param=+1`
+after an parameter with default value can't follow one without. All default values must be known at compile time.
+At the end of the procedure body is an `end`.
+Procedures don't have to end with an `return` statement.
+Procedures have their own namespace.
+Recursion is supported.
+### return
+Functions can be returned from everywhere with an return statement like:
+
+    return [expression]
+The return value is the result of expression `[expression]`.
+Same goes for procedures but without an return value:
+
+    return
+`return` is only allowed within functions or procedures.
+### Expressions
+Expression are mathematical statements where operators are connected with variables, number literals, devices, batch devices, 
+subexpressions within braces () or functions.
+Expressions are always evaluated from left to right for operators with equal priorities. 
+An exception to that are assignment operations. Those are evaluated from right to left when grouped like `a=b=c`.
+Supported operators from higher to lower priority (grouped have equal priority):
+
+    -- [operand]  # decrement: [operand] = [operand] - 1
+    ++ [operand]  # increment: [operand] = [operand] + 1
+
+    + [operand]  # * 1 (do nothing)
+    - [operand]  # * -1
+
+    # Currently not implemented but recognized:
+    ~ [operand]  # bitwise negate
+    
+    [operand1] * [operand2]  # multiply
+    [operand1] / [operand2]  # divide
+    [operand1] % [operand2]  # modulus
+
+    [operand1] + [operand2]  # add
+    [operand1] - [operand2]  # subtract
+    
+    # Currently not implemented but recognized:
+    [operand1] << [operand2]  # shift left
+    # Currently not implemented but recognized:
+    [operand1] >> [operand2]  # shift right
+    
+    # Currently not implemented but recognized:
+    [operand1] & [operand2]  # bitwise and 
+    
+    # Currently not implemented but recognized:
+    [operand1] ^ [operand2]  # bitwise xor
+    
+    # Currently not implemented but recognized:
+    [operand1] | [operand2]  # bitwise or
+
+    [operand1] == [operand2]  # equal
+    [operand1] != [operand2]  # not equal
+    [operand1] < [operand2]  # less
+    [operand1] <= [operand2]  # less equal
+    [operand1] > [operand2]  # greater
+    [operand1] >= [operand2]  # greater equal
+
+    ! [operand]     # logical not
+    
+    [operand1] && [operand2]  # logical and
+    
+    [operand1] || [operand2]  # logical or
+    
+    [operand1] = [operand2]  # assignment
+    [operand1] += [operand2]  # assign and add:  [operand1] = [operand1] + [operand2]
+    [operand1] -= [operand2]  # assign and subtract:  [operand1] = [operand1] - [operand2]
+    [operand1] *= [operand2]  # assign and multiply:  [operand1] = [operand1] * [operand2]
+    [operand1] /= [operand2]  # assign and divide:  [operand1] = [operand1] / [operand2]
+    [operand1] %= [operand2]  # assign and calculate modulus:  [operand1] = [operand1] % [operand2]
+    [operand1] &&= [operand2]  # assign and and:  [operand1] = [operand1] && [operand2]
+    [operand1] ||= [operand2]  # assign and or:  [operand1] = [operand1] || [operand2]
+### if, elif, else
+If Statements are done the following way:
+
+    if([expression])
+    [if body]
+    elif([expression])
+    [elif body]
+    else
+    [else body]
+    end
+The first body with an true (nonzero) expression will be executed or if none is true the `else` body will be executed.
+Every body has its own namespace. Everything except the `if([expression])` and `end` is optional. There can also be more than one elif.
+### while
+While loops are done like that:
+
+    while([expression])
+    [while body]
+    end
+The body will be executed until its exited by `break` or expression `[expression]` is not true anymore.
+Every iteration can be cut short with `continue`.
+### for
+For loops are generated the following way:
+
+    for([expression or variable definition], [cond_expression], [iter_expression])
+    [for body]
+    end
+
+For loops until expression cond_expression is false or it is exited by `break`.
+Before the loop an expression is executed or a variable in the embedding scope is definded by [expression or variable definition].
+Every iteration can be cut short with `continue`.
+### continue, break
+
+    continue
+    break
+`break` exits a loop immeditly and `continue` skips the current iteration.
+Both are only allowed within loops.
+### Inline assembler
+It is possible to execute IC10-MIPS assembler code [asm code] within the source code through:
+
+    asm [register list and associated variables]
+    [asm code]
+    end
+
+Register list and associated variables refers to an comma seperated list consisting out of elements representing registers like `$r0`-`$r13` 
+and optional associations with variables by writing `$r0-13=[variable]` where variable refers to the identifier of the variable. All modifications to that register will be saved in the variable.
+asm code must start with an `@` like `@move $r0 $r1`.
+In asm code registers can be used like usual. However the shouldn't be since that may break the program they should be addressed with `$r0` - `$r13` so compiler assigned registers will be used that are also safe to use (references to that in comments within inline asm will be replaced to the corresponding compiler-assigned registers as well).
+A maximum of 14 registers can be used like that since `sp`, `ra`, `r14` and `r15` are used by the compiler. `ra`, `r14` and `r15` are however generally save to use within an inline assembler. `sp` must refer to the same value at the end.
+The registers will in general not be associated with the corresponding registers in IC10 assembler source code, 
+since they could be reserved for variables.
+It should not be possible to break an program with inline assembler since all used registers get safed before the execution.
+This is not the case for jump tags. Use of jump tags should be limited to the inline-asm block this however will not be enforced.
+
+It is possible but not recommended to use asm code outside of an asm statement. Everything after `@` will be placed in the source code without modification (including comments).
+## Examples
+### IC10 giving sphere coordinates for an vector
+
+    dev posx=0
+    dev posy=1
+    dev posz=2
+    dev output_dist=3
+    dev output_phi=4
+    dev output_theta=5
+
+    func atan2(x,y)
+        const pi = 3.14159
+        if(x>0)
+            return atan(y/x)
+        elif(y>0)
+            return pi/2 - atan(x/y)
+        elif(y<0)
+            return -pi/2 - atan(x/y)
+        elif(x<0)
+            return atan(y/x) + pi
+        else
+            return 0
+        end
+        # return is needed here unfortunatly
+        return 0
+    end
+
+    main
+        while(true)
+            # length of vector
+            output_dist.Value = sqrt(posx.Value*posx.Value + posy.Value*posy.Value + posz.Value*posz.Value)
+            # Sphere coordinates
+            output_phi.Value = atan2(posx.Value, posy.Value)
+            output_theta.Value = asin(posz.Value / output_dist.Value)
+            yield()
+        end
+    end
+
+
+### Fibonacci number generator
+    main
+        var l=1
+        var ll=1
+        for(var i=0, i<50, ++i)
+            self.Setting = l+ll
+            ll=l
+            l=self.Setting
+            yield()
+        end
+    end
+
+### Recursive Fibonacci number generator
+
+    func fibonacci(start)
+        if(start <= 2)
+            return 1
+        else
+            return fibonacci(start-2)+fibonacci(start-1)
+        end
+    end
+
+    main
+        self.Setting = fibonacci(9)
+    end
+
