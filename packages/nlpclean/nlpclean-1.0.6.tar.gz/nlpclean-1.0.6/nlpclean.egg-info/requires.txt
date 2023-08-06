@@ -1,0 +1,12 @@
+cPython>=0.0.6
+bitarray==1.4.2
+newspaper3k>=0.2.8
+Pillow>=9.1.1
+beautifulsoup4>=4.11.1
+langid>=1.1.6
+pycld2>=0.41
+fasttext>=0.9.2
+tqdm>=4.64.0
+pybloom-mirror>=2.0.0
+ftfy>=6.1.1
+requests>=2.28.1

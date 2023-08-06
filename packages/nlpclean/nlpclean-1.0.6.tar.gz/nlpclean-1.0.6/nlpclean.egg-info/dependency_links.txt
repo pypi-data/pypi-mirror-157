@@ -1,0 +1,1 @@
+https://github.com/fxsjy/jieba/tarball/jieba3k#egg=jieba3k-0.35.1
