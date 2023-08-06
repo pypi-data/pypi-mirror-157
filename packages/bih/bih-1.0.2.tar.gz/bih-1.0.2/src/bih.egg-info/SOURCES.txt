@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/bih.cc
+src/bih.hh
+src/bih_node.hh
+src/bounding_box.hh
+src/common.hh
+src/python_bih.cc
+src/bih.egg-info/PKG-INFO
+src/bih.egg-info/SOURCES.txt
+src/bih.egg-info/dependency_links.txt
+src/bih.egg-info/not-zip-safe
+src/bih.egg-info/requires.txt
+src/bih.egg-info/top_level.txt
+test/test_bih_tree.py
