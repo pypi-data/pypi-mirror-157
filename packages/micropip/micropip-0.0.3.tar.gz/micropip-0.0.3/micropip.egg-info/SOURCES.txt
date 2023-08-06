@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+micropip.egg-info/PKG-INFO
+micropip.egg-info/SOURCES.txt
+micropip.egg-info/dependency_links.txt
+micropip.egg-info/requires.txt
+micropip.egg-info/top_level.txt
