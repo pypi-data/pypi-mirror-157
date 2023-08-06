@@ -1,0 +1,19 @@
+[tool.poetry]
+authors = ["Alex Hallam <alexhallam6.28@gmail.com>"]
+description = "Whisker Odds. Tukey inspired letter-values"
+license = "MIT"
+name = "wodds-py"
+repository = "https://sr.ht/~alexhallam/wodds-py/"
+version = "0.1.2"
+
+[tool.poetry.dependencies]
+numpy = "^1.23.0"
+python = ">=3.8,<3.11"
+scipy = "^1.8.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
