@@ -1,0 +1,9 @@
+chiral_db_grpc_client/__init__.py,sha256=_5Yd226oXTGKLi-a8Tz8ut2D4VzJjKxciAauwhwA7y8,55
+chiral_db_grpc_client/chiral_db_pb2.py,sha256=GBkk9tp7CDP1Qz9TLjH-XLuB3M1kHW8xy-wsCvQJyBA,4416
+chiral_db_grpc_client/chiral_db_pb2_grpc.py,sha256=5c5cAxCcPaAa3qbLMtCW6DlZpVK8SD_lH0QOWNLOGV8,4057
+chiral_db_grpc_client/client.py,sha256=9i2AFt6sX9RaE4zYamEm8CQrw0wl_GUH-qrnhpPKShU,737
+chiral_db_grpc_client-0.0.4.dist-info/LICENSE,sha256=sTnapvl6AVvb4_WfEifqGF5cvJGcHiCoHwdpasgJ7Wk,1068
+chiral_db_grpc_client-0.0.4.dist-info/METADATA,sha256=XUXZQhOnWqHVLmD9mufm_PGWpqe1cdCM06PBvkYxDn8,781
+chiral_db_grpc_client-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+chiral_db_grpc_client-0.0.4.dist-info/top_level.txt,sha256=_Q9g2JNd6VgrnpaS34LRRPz8dad0PV7E-KPY3Nil1-w,22
+chiral_db_grpc_client-0.0.4.dist-info/RECORD,,
