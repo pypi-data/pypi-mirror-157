@@ -1,0 +1,4 @@
+dataclasses_json==0.5.5
+immutables
+pytest
+phonenumbers
