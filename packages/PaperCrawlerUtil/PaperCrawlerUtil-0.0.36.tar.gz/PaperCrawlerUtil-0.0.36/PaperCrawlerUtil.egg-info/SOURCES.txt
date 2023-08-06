@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+PaperCrawlerUtil.egg-info/PKG-INFO
+PaperCrawlerUtil.egg-info/SOURCES.txt
+PaperCrawlerUtil.egg-info/dependency_links.txt
+PaperCrawlerUtil.egg-info/requires.txt
+PaperCrawlerUtil.egg-info/top_level.txt
+core/__init__.py
+core/common_util.py
+core/crawler_util.py
+core/document_util.py
