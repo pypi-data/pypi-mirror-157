@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/supersockets/__init__.py
+src/supersockets/supersockets.py
+src/supersockets.egg-info/PKG-INFO
+src/supersockets.egg-info/SOURCES.txt
+src/supersockets.egg-info/dependency_links.txt
+src/supersockets.egg-info/requires.txt
+src/supersockets.egg-info/top_level.txt
