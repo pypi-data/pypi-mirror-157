@@ -1,0 +1,14 @@
+matplotlib
+numpy
+xarray
+dask[distributed]
+scipy
+netcdf4
+
+[doc]
+sphinx
+sphinx_rtd_theme
+nbsphinx
+ipykernel
+
+[scripts]
