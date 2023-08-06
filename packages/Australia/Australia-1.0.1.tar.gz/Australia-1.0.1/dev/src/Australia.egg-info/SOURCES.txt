@@ -1,0 +1,7 @@
+README.md
+setup.py
+dev/src/Australia.egg-info/PKG-INFO
+dev/src/Australia.egg-info/SOURCES.txt
+dev/src/Australia.egg-info/dependency_links.txt
+dev/src/Australia.egg-info/top_level.txt
+dev/src/Australia.egg-info/SOURCES.txt
