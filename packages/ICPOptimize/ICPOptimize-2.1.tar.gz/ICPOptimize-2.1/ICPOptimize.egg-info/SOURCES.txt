@@ -1,0 +1,13 @@
+README.md
+setup.py
+ICP/ClosurePool.py
+ICP/Models.py
+ICP/PathSearch.c
+ICP/Rules.py
+ICP/Solver.py
+ICP/Util.py
+ICP/__init__.py
+ICPOptimize.egg-info/PKG-INFO
+ICPOptimize.egg-info/SOURCES.txt
+ICPOptimize.egg-info/dependency_links.txt
+ICPOptimize.egg-info/top_level.txt
