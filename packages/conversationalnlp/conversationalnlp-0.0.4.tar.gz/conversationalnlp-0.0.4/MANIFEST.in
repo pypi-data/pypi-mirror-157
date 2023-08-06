@@ -1,0 +1,4 @@
+include readme.md
+include LICENSE
+include src/conversationalnlp/models/sentenceimportance/metadata/keywords0.txt
+include src/conversationalnlp/models/intentclassification/metadata/intentlut.csv
