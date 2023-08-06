@@ -1,0 +1,3 @@
+recursive-include PyQRibbon/i18n *
+recursive-include PyQRibbon/theme *
+recursive-include examples *
