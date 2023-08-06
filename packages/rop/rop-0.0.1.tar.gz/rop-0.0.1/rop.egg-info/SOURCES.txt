@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+rop/__info__.py
+rop/__init__.py
+rop.egg-info/PKG-INFO
+rop.egg-info/SOURCES.txt
+rop.egg-info/dependency_links.txt
+rop.egg-info/requires.txt
+rop.egg-info/top_level.txt
