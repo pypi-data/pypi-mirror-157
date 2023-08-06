@@ -1,0 +1,10 @@
+ValorantAPI_Wrapper/__init__.py,sha256=NseC3DwAwgLxpYBr5UBttK_Y-BLCjtwftC61rIecTa4,73
+ValorantAPI_Wrapper/auth.py,sha256=v20JID8cWNSswJpNfMVWpqIpQxRh1dl0o3qLZ_blueI,3679
+ValorantAPI_Wrapper/client.py,sha256=NS7CHxtq3tG74oDWhk_qLXI60lwpnCl7-A69botMiM8,61809
+ValorantAPI_Wrapper/exceptions.py,sha256=eh7_2sF6rwOrjeXi1eqojf-JFNzGbMbvm_asJ2ET22M,648
+ValorantAPI_Wrapper/resources.py,sha256=jbxdWdFa1s1OFu2dZ0_MR7j2dSLgHGyHug7pjihA4uo,387
+ValorantAPI_Wrapper-1.1.1.dist-info/LICENSE.md,sha256=nf7unlWj5erUn7kZRWS-SgeASjpwBgoz2Vv28OI-11Q,1084
+ValorantAPI_Wrapper-1.1.1.dist-info/METADATA,sha256=NaWpp5ZANF1MbsJ2a8wN3JiyBAOELntaLsqvQMbZ9Ps,1690
+ValorantAPI_Wrapper-1.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ValorantAPI_Wrapper-1.1.1.dist-info/top_level.txt,sha256=GMg0D79hhLyxEYEPy3FDX5B5WfTwQwsKNuesxESTUeU,20
+ValorantAPI_Wrapper-1.1.1.dist-info/RECORD,,
