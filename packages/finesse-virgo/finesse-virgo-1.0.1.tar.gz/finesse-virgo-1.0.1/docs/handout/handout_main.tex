@@ -1,0 +1,273 @@
+\documentclass[color,DIV12,pdftex,a4paper]{virgo-note}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{multicol}
+%\usepackage{wrapfig}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage[pdftex,a4paper,pagebackref=true,pdfpagelabels=true]{hyperref}
+\definecolor{linkcolor}{rgb}{.8,0,0}
+\definecolor{urlcolor}{rgb}{0,0,.7}
+\definecolor{citecolor}{rgb}{0,.5,0}
+\definecolor{acrocolor}{rgb}{0,0,.7}
+\hypersetup{bookmarksopen,colorlinks=true}
+\hypersetup{pdfstartview=FitH}
+\hypersetup{linktocpage=true,bookmarksnumbered=true}
+\hypersetup{plainpages=false,breaklinks=true}
+\hypersetup{linkcolor=linkcolor,citecolor=citecolor,urlcolor=urlcolor}
+%package to comment multiple lines
+\usepackage{verbatim}
+\usepackage{xspace}
+\newcommand{\Finesse}{\textsc{Finesse}\xspace}
+
+%\usepackage{hyperref}
+
+\title{The handout for AdVirgo+ kat file}
+\shorttitle{}
+\refnum{}
+\issue{1}
+\author{Finesse modelling group, Nikhef}
+\date{\today}
+
+\begin{document}
+\newcommand{\n}[0]{\newline}
+\newcommand{\nrow}[0]{ & & \\}
+
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+\clearpage
+
+\tableofcontents
+\vspace{1cm}
+\hrule height 1pt
+\vspace{1cm}
+
+\section{Introduction}
+
+\texttt{Finesse} is a simulation program for interferometers. The user can build any kind of virtual interferometer.\\
+This is a handout for AdVirgo+ \texttt{KAT} file, Finesse input text file describing the interferometer in the form of components and connecting nodes. The purpose of this document is to review and motivate the parameters in the file, as well as to keep track of changes in the file.
+
+\subsection{IFO Matching}
+As from TDR (\href{https://tds.virgo-gw.eu/?content=3\&r=9317}{VIR–0128A–12}), the required values for PR and SR radius of curvature (RoC) is $1430.0$ m, both the PRC and the SRC are marginally stable for that value. The actual measured values for PRM and SRM are $1477.1$ m (\href{https://tds.virgo-gw.eu/?content=3\&r=11410}{VIR-0029A-15}) and $1443.35$ m (\href{https://tds.ego-gw.it/?content=3\&r=11409}{VIR-0028A-15}), respectively. In the \texttt{KAT} file the RoCs are set to the design value ($1430.0$ m) and the compensation plates (CP) focal length is such that the PRC and SRC are well matched to the arm cavities, even though this requires a divergent compensation plate (\href{https://tds.virgo-gw.eu/?content=3\&r=14682}{VIR-0629A-18}).
+
+\paragraph{Update} December 7, 2021 - the focal length of the CPs have been further optimised to mode match the recycling cavities to the arm cavities.
+
+\subsection{The OMC modelling}\label{omc}
+The OMC simulated with Finesse for Ad.Virgo (Fig.\ref{fig:omc}) used most of the measured values reported in \href{https://logbook.virgo-gw.eu/virgo/?r=50572}{LB 50572}, and all the requirements reported in \href{https://tds.virgo-gw.eu/?content=3\&r=18807}{VIR-0535A-21}. In table \ref{tab:tomc} are reported some of the OMC parameters measured in Cascina. \\
+The \textit{Loss} and the \textit{Throughout} are derived from some measures made at LAPP (ref.person: Michal Was).
+\begin{table}[t]
+\begin{center}
+\begin{tabular}{ |l|l| }
+  \hline
+  \multicolumn{2}{|c|}{OMC real data} \\
+  \hline
+  Finesse & $1100$ \\
+  FSR & $834$ MHz \\
+  $T_{In}$ & $0.285$\% \\
+  $T_{Out}$ & $0.285$\% \\
+  $T_{HR1}$ & $1.1$ppm \\
+  $T_{HR2}$ & $1.3$ppm  \\
+  Throughout & $\approx2\%$\\
+  Loss\footnote{Here the Loss indicate the round trip loss in the cavity} & $60$ppm\\
+  \hline
+\end{tabular}
+\caption{This table resume the OMC parameters measured in Cascina}
+\label{tab:tomc}
+\end{center}
+\end{table}
+The Finesse value was inferred in the following way:\\ starting from a theoretical FSR value of 834MHz, the Finesse value was raised until the tails of the Airy's curve (red line in Fig. \ref{fig:airy}) matched the data plot. This lead to a measured Finesse of 1100.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=12cm]{OMC_figure1.png}
+    \caption{Matching tails between the Airy's curve and the real data plot.}
+    \label{fig:airy}
+\end{figure}
+From this Finesse the transmissivities values of the Input and Output mirrors were inferred using the following approximation:
+\begin{equation}
+    \mathcal{F}\approx \frac{\pi}{1-r_1r_2r_3r_4}
+\end{equation}
+Where all the $r$ are amplitude reflectivities. Here $r_1$ is taken equal to $r_2$; them refers respectively to the input and output mirrors. Following $r_3$ refers to the HR curved mirror and $r_4$ refers to the flat HR mirror. Setting $r_3\approx 1$ (ideal HR mirror) and $r_4=1-L-t_4$, were L is the cavity round trip loss and $t_4$ is the amplitude transmissivity of the second HR mirror. Computing the formula we find the transmissivities in power mentioned in table\ref{tab:tomc}. The 60ppm round trip losses measured in the cavity come from various types of scattering and absorption in the coating  and in the substrate of the cavity; it roughly match the measured throughput. \\ To insert this latter parameter in the simulation we place a fake $T_4$ coefficient on the BS indicated by $OMC1\_4$, this trasmittivity contains both round trip loss and the two real T coefficients from the two HR mirrors, the visual scheme of the trick is showed in Fig.\ref{fig:omc} . More detailed info can be found in [add notebook link]. \\
+We running test on the OMC simulation file to see the match between the real data and the simulated one, the result is showed in table \ref{tab:sim}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=14cm]{omc_t_in.png}
+    \caption{Visual representation of the losses used in the simulation.}
+    \label{fig:omc}
+\end{figure}
+\begin{table}[t]
+\begin{center}
+\begin{tabular}{ |l|l| }
+  \hline
+  \multicolumn{2}{|c|}{OMC real data} \\
+  \hline
+  Finesse & $1089.29$ \\
+  FSR & $834.569$ MHz \\
+  Throughout & 0.979\\
+  Loss\footnote{Here the Loss indicate the round trip loss in cavity} & $0.006$\\
+  \hline
+ \end{tabular}\\
+ \caption{This table shows the data measured on the real OMC}
+\label{tab:sim}
+\end{center}
+\end{table}
+We have chosen to keep the round trip loss number round in the simulation, this lead to a little discrepancy between the measured Finesse and the simulated one. However that doesn't affect the overall work of the simulated OMC, if it will be required in future the Finesse values can be made equal.
+
+\newpage
+\section{Arms characterization}\label{sec:Arms characterization}
+The arm lengths of the IFO are been measured with a FINESSE simulation, the full code is in \href{https://git.ligo.org/virgo/isc/finesse/andreas_freise/-/blob/master/2021/arm_length/arm_length.ipynb}{Arms characterization}.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=12cm]{pow_b7.png}
+  \caption{Simulation result of the North arm's measurement.}
+  \label{fig:n_arm}
+\end{figure}
+  \\ The starting point was a discrepancy of the 56MHz sideband in the FSR scan, where the peacks were slightly shifted between the West and North arm results (\href{https://logbook.virgo-gw.eu/virgo/?r=53000}{VIR-53000}).\\
+Given the FSR of the carrier, in the FSR scan the $56$MHz peacks have a frequency offset $\Delta f$ of:\\
+\begin{equation}\begin{aligned}
+North\,\,arm:\, & 0.4528\times FSR\\
+West\,\,arm:\, & 0.4416 \times FSR\,\,.
+\end{aligned}
+\end{equation}
+Knowing that:
+\begin{equation}
+f_{56MHz}=56436993MHz\,\,\, \text{and}\,\,\, FSR=\frac{c}{2L}
+\end{equation}
+We can then compute the arm lengths in few simple steps.\\ For the North arm we have:
+\vspace{0.5mm}
+\begin{equation}
+f = n\times FSR + \Delta f\\
+\end{equation}
+\begin{equation}
+56436993 MHz= n\times FSR + 0.4528\times FSR\,\,.
+\end{equation}
+\vspace{0.5mm}
+The closest round number $n$ that fit the equation is $1129$, this lead to:
+\begin{equation}
+  FSR=\frac{56436993MHz}{1129 + 0.4528}\,\,,
+\end{equation}
+so we have:
+\begin{equation}MMT
+  L_{North} = \frac{c}{2FSR}=2999.818m\,\,.
+\end{equation}
+\vspace{0.5mm}
+The same procedure it's been done for the West Arms. It leads to $L_{West}=2999.788$, \href{https://tds.virgo-gw.eu/?content=3&r=19516}{VIR-1080A-21}.
+
+\section{EOMs modulation depths }\label{sec:EOM modulation lengths}
+
+The EOMs installed in Ad.Virgo+ are phase modulators. Each of them requires an amplifier that gives power to the crystal that form the EOM; in order to create the phase shift in the side bands.
+For the one that produce the $56$ MHz sideband the amplifier of $1$ W was replaced by one of $2$ W. This change lead to an electric signal ampitude of $0.12$ dBm applied on the EOM, It can be monitorized using INJ\_LNFS\_AMPL$1$/$2$/$3$ channels. The corrisponding frequencies channels are INJ\_LNFS\_FREQ$1$/$2$/$3$.  The change was made in
+order to increase the modulation depth from $0.16$ rad to $0.25$ rad, since the SNR value was too small to gain a good error signal (\href{https://logbook.virgo-gw.eu/virgo/?c=}{LB $38123$}).
+
+\section{Focal lengths optimisation for OMC's  mode-matching }\label{sec: mode-match}
+The new parameters for the OMC in Ad.Virgo+ provided some mode mismatch inside the Virgo kat script, specifically on the first beam splitter (OMC$1$\_$1$) that compose the OMC cavity. The mode match in the rest of the cavity is provided by the command `cav` that defines the cavity. To fix this problem it's been made a simulation to minimise the mode mismatch between OMC$1$\_$1$ and the two lenses that serve to mode match it, MMT\_L$1$ and MMT\_L$2$. A `mmd` detector is been used to simultaneously scan on the two focal lengths. We reached a mode mismatch $\sim 10^6$, this is enough to confirm that the OMC is in mode-match state, since at this point the variation on the focal lengths of the lenses is so negletable that is not manually possible anymore.
+
+\newpage
+\section{Coating and substrate diameters for Ad.Virgo+, Phase I}
+We report here the tables of the designed values with the coating and substrate diameters used in Ad.Virgo+, Phase I (Ref \href{https://tds.virgo-gw.eu/?content=3&r=9317}{$VIR-0128A-12$}). To stay updated with the most recent changes, you can see the \href{https://wiki.virgo-gw.eu/Commissioning/OptChar/Param_sim}{Virgo wiki}.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=12cm]{coating.png}
+  \caption{A summary of the coatings main features of the Ad.Virgo+ (Phase I) mirrors at 1064 nm.}
+  \label{fig:coat}
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=12cm]{mirrors.png}
+  \caption{Specifications of the bulk substrates for the Ad.Virgo+ (Phase I) mirrors.}
+  \label{fig:coat}
+\end{figure}
+
+\section{Using the KatScript}
+
+\subsection{Pretuning the model}
+We bring the model to a sensible configuration by "pretuning", which used the power of the carrier (main laser beam without RF modulation) to set the desired resonance conditions.
+
+This is done using following steps:
+
+\begin{enumerate}
+  \item Switch off the modulators to only use main carrier field in the following steps.
+  \item Remove the SR and PR mirrors. This is to remove any cross-coupling between the two arms, so we can tune them independently from each other.
+  \item Move the arm cavity end mirrors to maximise power in each arm so the arm cavities are on resonance.
+  \item Move the arm cavities to minimise power at the output so the interferometer is at the dark fringe
+  \item Restore the PR mirror, and move it to maximise power in the PRC so the PRC is on resonance.
+  \item Restore the 56MHz modulator.
+  \item Restore the SR mirror, and move it to maximise power in B4\_112MHz.
+  \item Restore the other modulators. 
+\end{enumerate}
+
+#TODO: add a comparison plot between the old and new pre-tuning strategies.
+
+\subsection{Update 21/05/2022 - Riccardo}
+Updated the common kat to add the followings:
+1) The RoC of the PRM and SRM are set to the measured values.
+2) The CPs’ focal length has been tuned accordingly
+3) The recycling cavities are defined as “long cavities”
+
+The CP's focal length comes from \href{https://tds.virgo-gw.eu/?content=3&r=20721}{VIR-0641A-22}
+
+\subsection{Behavior of beam parameters in the PRC}
+
+This section illustrates the behavior of the beam parameter in the PRC when defining the cavity as "short" or "long" by including or excluding the arms.
+
+The following plots were generated using a simplified model of the three mirror coupled cavity including the PRC and one of the arm cavities.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=12cm]{prc-beam-parameters-overview.pdf}
+  \caption{An overview of the behavior of the beam parameter seen through the power in the PRC.}
+  \label{fig:prc-q-overview}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=12cm]{prc-beam-parameters-convergence.pdf}
+  \caption{The short cavity with fixed q converges to the long cavity with increased maxtem.}
+  \label{fig:prc-q-convergence}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=12cm]{prc-beam-parameters-mismatch.pdf}
+  \caption{The short cavity has a mismatch at the ITM whereas the long cavity does not.}
+  \label{fig:prc-itm-mismatch}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=12cm]{prc-beam-parameters-w0.pdf}
+  \caption{The waist size at the laser varies greatly when defining the short cavity.}
+  \label{fig:prc-laser-w0}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=12cm]{prc-beam-parameters-z.pdf}
+  \caption{The waist position at the laser varies greatly when defining the short cavity.}
+  \label{fig:prc-laser-z}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+% \newpage
+% \section{Notes update}Last change:
+% \today\\\vspace{0.2cm}
+
+% \textbf{October 2021}
+% \begin{itemize}
+%     \item December 7, 2021, R. Maggiore - The focal length of the compensation plates has been optimised to modematch the recycling cavities to the arm cavities - \href{https://git.ligo.org/virgo/isc/finesse/andreas_freise/-/blob/master/2021/arm_length/arm_length.ipynb}{Reference code}
+%     \item Swapped $f3$ and $f2$ to match Virgo Data channels name order. Checking the frequencies behaviour with Virgo Data, there are some fluctuations around the expected value, due to ITF tuning process ($5-6-7$ October $2021$; channel names: INJ\_LNFS\_FREQ$2$/FREQ$3$). Ref: J.Casanueva,M.Valentini.
+%     \item Added the measured arms length. Before: LN/LW = $2999.8$ m; after the change: LN = $2999.818$ m and LW = $2999.788$ m. Ref: \ref{sec:Arms characterization}.
+%     \item Changed modulation indices in EOM Block. $6$ MHz and $8.3$ MHz are still the same as the installed one (Ref:\href{https://logbook.virgo-gw.eu/virgo/?r=34898}{\#$34898$})), while $56$ MHz was brought to $0.25$ rad (\#$38123$). Ref:\ref{sec:EOM modulation lengths}. J.Casanueva.
+% \end{itemize}
+% \textbf{November 2021}
+% \begin{itemize}
+%     \item Changed focal lengths for the lenses MMT\_L$1$ and MMT\_L$2$ to mode match the new OMC parameters. The new values are MMT\_L$1$=$0.582$ and MMT\_L$2$=$-0.881$. Ref: \ref{sec: mode-match}
+% \end{itemize}
+
+\end{document}

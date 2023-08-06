@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: finesse-virgo
+Version: 1.0.1
+Summary: Tools for modelling Virgo in Finesse 3.0
+Home-page: https://git.ligo.org/finesse/finesse-virgo
+Author: Daniel Brown
+Author-email: daniel.brown@Virgo.org
+Project-URL: Bug Tracker, https://git.ligo.org/finesse/finesse-virgo/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# `finesse-virgo`
+
+Finesse 3.0 Virgo models, tools, and data. This package is an optional extra to the `finesse` package which must be installed to use this package.
+
+## Installation
+
+If you just want to use the tools and models provided you can use: `pip install finesse-virgo`
+
+<!-- `finesse-virgo` also uses a variety of datasets for its models, such as finite element model results or optical surface metrology data. These are not included in the pypi package as some of the datasets can be large (>GB) and may not be needed by everyone. These can be installed via python using the `finesse_ligo.download` method. Or they can be downloaded via a commandline interface `finesse_ligo download [datasetname]`.
+
+The location in which datasets are stored is set by the main package `finesse`, in its user configuration `usr.ini` file. The location of which can be found a variety of ways, for example via a terminal with Finesse installed:
+
+```
+$ kat3 config --paths
+Configuration paths (1 = highest priority; ✓ = found, ✗ = not found):
+    ✗ 1: /Users/user/git/finesse3/finesse.ini
+    ✓ 2: /Users/user/.config/finesse/usr.ini
+```
+
+Or using the python interface:
+
+```
+import finesse
+finesse.config.config_instance().user_config_path()
+```
+
+The current data directory being used can be found with:
+
+```
+finesse.config.config_instance()['finesse.data']['path']
+``` -->
+
+## Usage and Contributing
+This package includes top-level tools and models for simulating Virgo in Finesse 3. Individal simulations that you perform should be stored elsewhere, such as the `finesse_playground` reposistory. Your scripts should just import this package.
+
+If you want to contribute any changes or code to this project then it must be done via a merge request. Merge requests must pass all tests before being merged.
+
+The pipeline will fail if `pre-commit` has not been run. After cloning the git repository please run `pip install pre-commit; pre-commit install`. This will ensure that formating and simple code errorrs are fixed using `black` and `flake8`.
+
+Documentation for functions should be in the numpydoc format: https://numpydoc.readthedocs.io/en/latest/format.html
+
+### Adding new katscript
+
+New KatScript elements and commands must be registered with the `FINESSE` parser. This is done in the top level `__init__.py` which registers each of the objects required.
+
+<!-- ### Adding new datafiles
+
+New datafiles can be added to the repository in the `tools.py` file. In which is a `DATAFILES` and `CHECKSUM` dictionary with the relevant URL to download the file from. The checksum is the MD5 value for the file to ensure it hasn't been corrupted during the download.
+
+Datasets can be stored in git repositories that have public access. However, datasets tend to be large binary files which are not well suited to being stored in git repositories. In such cases we recommend Zenodo (https://www.zenodo.org), an open source, open data platform for sharing data and research. -->
+
+## Support
+Please post an issue if you are experiencing any bugs, problems, or feature requests. `https://chat.ligo.org/ligo/channels/finesse` can also be used for broader discussion on Finesse and modelling Virgo with it.
+
+## License
+All code here is distributed under GPL v3.
+
+## Packaging
+
+The `finesse-virgo` is automatically uploaded to pypi when new tags are pushed to `main`. Tags must be annotated and be in the semantic versioning form `MAJOR.MINOR.PATCH`:
+
+- MAJOR version when you make incompatible API changes,
+- MINOR version when you add functionality in a backwards compatible manner, and
+- PATCH version when you make backwards compatible bug fixes.
+
+Only maintainers can push tags to the main branch.
