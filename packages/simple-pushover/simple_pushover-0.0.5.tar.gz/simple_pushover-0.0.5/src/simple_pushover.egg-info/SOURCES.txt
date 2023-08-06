@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/simple_pushover.py
+src/simple_pushover.egg-info/PKG-INFO
+src/simple_pushover.egg-info/SOURCES.txt
+src/simple_pushover.egg-info/dependency_links.txt
+src/simple_pushover.egg-info/top_level.txt
