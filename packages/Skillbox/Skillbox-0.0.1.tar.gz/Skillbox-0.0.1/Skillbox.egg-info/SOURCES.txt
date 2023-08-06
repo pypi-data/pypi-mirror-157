@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+Skillbox/__init__.py
+Skillbox.egg-info/PKG-INFO
+Skillbox.egg-info/SOURCES.txt
+Skillbox.egg-info/dependency_links.txt
+Skillbox.egg-info/top_level.txt
