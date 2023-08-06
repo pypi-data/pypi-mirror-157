@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/Connector/__init__.py
+src/Connector/app_config.py
+src/Connector/capp.py
+src/WorkerConnector.egg-info/PKG-INFO
+src/WorkerConnector.egg-info/SOURCES.txt
+src/WorkerConnector.egg-info/dependency_links.txt
+src/WorkerConnector.egg-info/not-zip-safe
+src/WorkerConnector.egg-info/requires.txt
+src/WorkerConnector.egg-info/top_level.txt
