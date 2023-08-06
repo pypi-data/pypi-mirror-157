@@ -1,0 +1,7 @@
+[console_scripts]
+vespa=vespa.scripts.meta:main
+vespa_conspred=vespa.scripts.conspred:main
+vespa_emb=vespa.scripts.embedding:main
+vespa_logodds=vespa.scripts.logodds:main
+vespa_run=vespa.scripts.vespa_run:main
+
