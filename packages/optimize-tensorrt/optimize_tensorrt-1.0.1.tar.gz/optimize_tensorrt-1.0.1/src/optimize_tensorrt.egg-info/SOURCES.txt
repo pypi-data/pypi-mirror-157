@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/optimize_tensorrt/__about__.py
+src/optimize_tensorrt/__init__.py
+src/optimize_tensorrt/calibrator.py
+src/optimize_tensorrt/inference.py
+src/optimize_tensorrt/onnx2trt.py
+src/optimize_tensorrt/onnx2trt_handmade.py
+src/optimize_tensorrt/onnx_converter.py
+src/optimize_tensorrt.egg-info/PKG-INFO
+src/optimize_tensorrt.egg-info/SOURCES.txt
+src/optimize_tensorrt.egg-info/dependency_links.txt
+src/optimize_tensorrt.egg-info/requires.txt
+src/optimize_tensorrt.egg-info/top_level.txt
