@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pyCSM
+Version: 1.0.0
+Summary: CSM Python Client
+Home-page: UNKNOWN
+Author: Dominic Blea
+Author-email: dblea00@ibm.com
+Maintainer: Dominic Blea
+License: Apache License, Version 2.0
+Keywords: IBM,CSM Storage
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+Requires-Dist: certifi (==2022.6.15)
+Requires-Dist: pip (==22.1.2)
+Requires-Dist: requests (==2.28.0)
+Requires-Dist: urllib3 (==1.26.9)
+Requires-Dist: setuptools (~=58.1.0)
+
+CSM RESTful API Python Client.
+
