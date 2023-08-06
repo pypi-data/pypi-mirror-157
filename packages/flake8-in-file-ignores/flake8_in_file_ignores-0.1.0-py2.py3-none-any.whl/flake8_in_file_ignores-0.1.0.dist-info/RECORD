@@ -1,0 +1,12 @@
+flake8_in_file_ignores/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_in_file_ignores/flake8_plugin.py,sha256=L8f4v7cm0FLPnWOgNy30sErEnvcj691yPdGcwjLJBxs,2162
+flake8_in_file_ignores/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_in_file_ignores/tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_in_file_ignores/tests/unit/test_flake8_plugin.py,sha256=m62dzPt8W8bRmbZzfbwS6PwoVvFhhVJZXMjzvbf_zDM,396
+flake8_in_file_ignores/tests/unit/utils.py,sha256=lCl2YK80oIJWJLPZ8tNq9c9SCcbhw-a_fTGycT5VFtI,145
+flake8_in_file_ignores-0.1.0.dist-info/LICENSE,sha256=XazvNMh9jkhPCI4B25znt4EndTGVxJPX6wC8-zh1SxA,1083
+flake8_in_file_ignores-0.1.0.dist-info/METADATA,sha256=y6zlz448UxjZmRl7FFmdBvSJGHxh7js6nVIJ6UHxrWI,1730
+flake8_in_file_ignores-0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+flake8_in_file_ignores-0.1.0.dist-info/entry_points.txt,sha256=085hSpuj-MtC_CFAVwrS7VvGtM4mXCNmFUxsp2NwMrM,78
+flake8_in_file_ignores-0.1.0.dist-info/top_level.txt,sha256=sA1z_49iH7SENZrF4hlbxTm6DbUBY-YUDvBPXPHGFLE,23
+flake8_in_file_ignores-0.1.0.dist-info/RECORD,,
