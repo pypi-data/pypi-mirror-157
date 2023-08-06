@@ -1,0 +1,20 @@
+name: RPM packages
+
+on: [push, pull_request]
+
+jobs:
+  rpm-centos7:
+    runs-on: ubuntu-latest
+    container: dalibo/labs-sdk:centos7
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build package
+        run: rpm/build
+
+  rpm-rockylinux8:
+    runs-on: ubuntu-latest
+    container: dalibo/buildpack-pkg:rockylinux8
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build package
+        run: rpm/build
