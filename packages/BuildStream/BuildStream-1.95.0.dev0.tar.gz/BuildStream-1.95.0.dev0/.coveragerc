@@ -1,0 +1,26 @@
+[run]
+concurrency = multiprocessing
+plugins = Cython.Coverage
+
+omit =
+  # Omit some internals
+  */buildstream/_profile.py
+  */buildstream/__main__.py
+  */buildstream/_version.py
+  # Omit generated code
+  */buildstream/_protos/*
+  */.eggs/*
+  # Omit .tox directory
+  */.tox/*
+  # Omit a dynamically generated Cython file
+  */stringsource
+
+[report]
+show_missing = True
+precision = 2
+
+[paths]
+source =
+    src/buildstream/
+    buildstream/
+    */site-packages/buildstream/

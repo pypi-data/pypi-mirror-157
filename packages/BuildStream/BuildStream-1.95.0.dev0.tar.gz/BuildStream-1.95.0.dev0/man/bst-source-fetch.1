@@ -1,0 +1,39 @@
+.TH "BST SOURCE FETCH" "1" "2020-10-14" "" "bst source fetch Manual"
+.SH NAME
+bst\-source\-fetch \- Fetch sources in a pipeline
+.SH SYNOPSIS
+.B bst source fetch
+[OPTIONS] [ELEMENTS]...
+.SH DESCRIPTION
+Fetch sources required to build the pipeline
+.PP
+Specifying no elements will result in fetching the default targets
+of the project. If no default targets are configured, all project
+elements will be fetched.
+.PP
+When this command is executed from a workspace directory, the default
+is to fetch the workspace element.
+.PP
+By default this will only try to fetch sources which are
+required for the build plan of the specified target element,
+omitting sources for any elements which are already built
+and available in the artifact cache.
+.PP
+Specify `--deps` to control which sources to fetch:
+.PP
+
+    none:  No dependencies, just the element itself
+    plan:  Only dependencies required for the build plan
+    run:   Runtime dependencies, including the element itself
+    build: Build time dependencies, excluding the element itself
+    all:   All dependencies
+.SH OPTIONS
+.TP
+\fB\-\-except\fP PATH
+Except certain dependencies from fetching
+.TP
+\fB\-d,\fP \-\-deps [plan|none|build|run|all]
+The dependencies to fetch  [default: plan]
+.TP
+\fB\-r,\fP \-\-remote TEXT
+The URL of the remote source cache (defaults to the first configured cache)

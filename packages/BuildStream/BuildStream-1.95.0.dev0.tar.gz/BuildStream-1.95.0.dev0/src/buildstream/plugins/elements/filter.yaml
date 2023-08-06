@@ -1,0 +1,34 @@
+
+# Filter element configuration
+config:
+
+  # A list of domains to include in each artifact, as
+  # they were defined as public data in the parent
+  # element's 'split-rules'.
+  #
+  # If a domain is specified that does not exist, the
+  # filter element will fail to build.
+  #
+  # The default empty list indicates that all domains
+  # of the parent's artifact should be included.
+  #
+  include: []
+
+  # A list of domains to exclude from each artifact, as
+  # they were defined in the parent element's 'split-rules'.
+  #
+  # In the case that a file is spoken for by a domain
+  # in the 'include' list and another in the 'exclude'
+  # list, then the file will be excluded.
+  exclude: []
+
+  # Whether to include orphan files which are not
+  # included by any of the 'split-rules' present in
+  # the parent element.
+  #
+  include-orphans: False
+
+  # Whether to pass the 'integration-commands' of the
+  # parent element through the filter.
+  #
+  pass-integration: False

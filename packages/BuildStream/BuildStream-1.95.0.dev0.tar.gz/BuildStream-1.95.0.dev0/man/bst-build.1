@@ -1,0 +1,29 @@
+.TH "BST BUILD" "1" "2020-10-14" "" "bst build Manual"
+.SH NAME
+bst\-build \- Build elements in a pipeline
+.SH SYNOPSIS
+.B bst build
+[OPTIONS] [ELEMENTS]...
+.SH DESCRIPTION
+Build elements in a pipeline
+.PP
+Specifying no elements will result in building the default targets
+of the project. If no default targets are configured, all project
+elements will be built.
+.PP
+When this command is executed from a workspace directory, the default
+is to build the workspace element.
+.PP
+Specify `--deps` to control which dependencies to build:
+.PP
+
+    plan:  Only dependencies required for the build plan
+    build: Build time dependencies, excluding the element itself
+    all:   All dependencies
+.SH OPTIONS
+.TP
+\fB\-d,\fP \-\-deps [build|plan|all]
+The dependencies to build
+.TP
+\fB\-r,\fP \-\-remote TEXT
+The URL of the remote cache (defaults to the first configured cache)

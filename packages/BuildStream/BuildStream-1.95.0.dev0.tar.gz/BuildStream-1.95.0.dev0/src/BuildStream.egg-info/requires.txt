@@ -1,0 +1,12 @@
+Click>=7.0
+Jinja2>=2.10
+grpcio
+pluginbase
+protobuf>=3.6
+psutil
+pyroaring
+python-dateutil>=2.7.0
+ruamel.yaml.clib>=0.1.2
+ruamel.yaml>=0.16.7
+setuptools
+ujson

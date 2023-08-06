@@ -1,0 +1,3 @@
+[console_scripts]
+bst = buildstream._frontend:cli
+
