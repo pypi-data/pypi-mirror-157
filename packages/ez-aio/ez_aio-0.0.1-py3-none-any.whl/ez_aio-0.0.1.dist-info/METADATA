@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ez-aio
+Version: 0.0.1
+Summary: Easiest way to get and post with aiohhtp.
+Home-page: https://www.github.com/wangyi041228/ez_aio
+Author: E
+Author-email: 18771051812@qq.com
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+
