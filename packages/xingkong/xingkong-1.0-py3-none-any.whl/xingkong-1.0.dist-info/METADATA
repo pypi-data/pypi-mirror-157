@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: xingkong
+Version: 1.0
+Summary: Get xingkong information
+Home-page: UNKNOWN
+Author: 星空老师
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+
+获取信息组件模块
+
+
