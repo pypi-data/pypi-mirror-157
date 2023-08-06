@@ -1,0 +1,9 @@
+healpy
+rich
+asdf
+numpy
+spiceypy
+astropy
+pandas
+rebound
+astroquery
