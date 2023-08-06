@@ -1,0 +1,10 @@
+coco_toolkit/__init__.py,sha256=iwuSBR83116jHz94m4kFv1twHschtgODQAcb3s2HbIU,151
+coco_toolkit/convertors/converter.py,sha256=7itFynPzRIHhf0vT9vt79xzeAFbgiF7gfLqa7Zx8InI,1443
+coco_toolkit/helper/merge.py,sha256=YIEUAKUee2ReHf0TgcpE18kx_FCa5neyXfPZK4bsN6I,2660
+coco_toolkit/helper/preprocess.py,sha256=iYKfcaSMoR-5ufiF7F0TivpjqXSrpMkJae9zGC0jxMk,21463
+coco_toolkit/helper/report.py,sha256=J5C4f8YcMjuiUfnM6r9_ylzIuPm6dRFXYS-pv2thaXA,5319
+coco_toolkit/modules/cocoviewer.py,sha256=_7a6-T3x6lHFT9tOOjw6le6py6gug0XHYsKdi7qEHrE,30874
+coco_toolkit/modules/voc2coco.py,sha256=0W_c7lHATFtbwgQsikT1Fb4mHYaoTzJJmVfJDsPys5w,6999
+coco_toolkit-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+coco_toolkit-0.1.0.dist-info/METADATA,sha256=dPY8dxmtnGRyy2uORJA76vSY4mixgAjlXxObIrlaLm0,2435
+coco_toolkit-0.1.0.dist-info/RECORD,,
