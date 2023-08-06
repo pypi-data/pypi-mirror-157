@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+rext.py
+setup.py
+.vscode/settings.json
+rext.egg-info/PKG-INFO
+rext.egg-info/SOURCES.txt
+rext.egg-info/dependency_links.txt
+rext.egg-info/requires.txt
+rext.egg-info/top_level.txt
