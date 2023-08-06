@@ -1,0 +1,13 @@
+_secupy.cpython-39-darwin.so,sha256=bfW4IJ63TbY7KOMVQ3AgoTCWKwVNZYxR1qtmf4b-Z58,1144841
+secupy/__init__.py,sha256=vMb4mWSklqUukOO9QjCcqJR67m0EHNNFU74oUrNINb8,180
+secupy/__main__.py,sha256=1Mcz0CuJeH7XlfdidmdiXxvUbZDpUl3rW7O_fBvvZqY,2993
+secupy/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+secupy/commands/activate.py,sha256=N-QgqTKDFUuxytmrlgvWLY9WqKuo4Y4LVcCtPg60xt4,269
+secupy/commands/build.py,sha256=-VDWo8k2bKqkU5pAdARDd20_70t6XrjIOlZy6Uze8uE,5117
+secupy/commands/module.py,sha256=T7qiDY1BksuDA-HjlzQI-Xu5cQ4FI03hk2qN8bRIfPQ,490
+secupy-1.1.1.dist-info/LICENSE,sha256=_UvxqQ3NHL09Hw9uCELwKGXzCAFPCRTx1Y7wEHQQ2gs,28
+secupy-1.1.1.dist-info/METADATA,sha256=SIPQ-MMvsMTKdDoWFLCeOPRKgTAl1etAIbxRtFj2YkE,3041
+secupy-1.1.1.dist-info/WHEEL,sha256=oITnL8r4K9lhj-wWSHlE2XUA0J8WLXdegrKtvi_34zA,108
+secupy-1.1.1.dist-info/entry_points.txt,sha256=9XnFGuaQAsF9P0L8hLNwlKgdmXstwfkRa1q3llI1VZg,112
+secupy-1.1.1.dist-info/top_level.txt,sha256=DPYp1RhPm2BTvRynKr2D2YlgXUZ6oD_EpYaaIEoUQzE,15
+secupy-1.1.1.dist-info/RECORD,,
