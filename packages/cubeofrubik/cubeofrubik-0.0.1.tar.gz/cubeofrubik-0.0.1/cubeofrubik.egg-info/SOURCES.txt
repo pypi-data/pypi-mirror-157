@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+cubeofrubik.egg-info/PKG-INFO
+cubeofrubik.egg-info/SOURCES.txt
+cubeofrubik.egg-info/dependency_links.txt
+cubeofrubik.egg-info/top_level.txt
+rubikscube/Color.py
+rubikscube/RubiksCube.py
+rubikscube/RubiksCubeAlgorithms.py
+rubikscube/RubiksCubeInterface.py
+rubikscube/__init__.py
+rubikscube/main.py
