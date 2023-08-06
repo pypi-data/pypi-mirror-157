@@ -1,0 +1,3 @@
+virt/firmware
+virt/firmware/efi
+virt/firmware/varstore
