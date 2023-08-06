@@ -1,0 +1,100 @@
+#!python
+#
+# Stream-based realtime scientific data plotter.
+# Copyright (c) 2022, Hiroyuki Ohsaki.
+# All rights reserved.
+#
+
+import fileinput
+import re
+import sys
+import time
+
+from perlcompat import die, warn, getopts
+import rplot
+import tbdump
+
+def usage():
+    die(f"""\
+usage: {sys.argv[0]} [-vcgw] [-F #] [-x n[,n...]] [file...]
+  -v       verbose mode
+  -c       curses mode (disable GUI display)
+  -g       automatic grid mode
+  -w       automatic window mode
+  -F fps   limit the frequency of display
+  -x list  exclude specified files from display
+""")
+
+def process_line(rp, line):
+    fields = line.split()
+    for n, v in enumerate(fields):
+        sr = rp.series(n)
+        # Regard the prceeding string as a field label.
+        m = re.search(r'^(\w+)=(.+)', v)
+        if m:
+            label, v = m.groups()
+            sr.label = label
+        sr.append(float(v))
+
+def need_display(rp, fps=30, last_draw=[0]):
+    curtime = time.time()
+    # Limit the frame rate by FPS.
+    if curtime - last_draw[0] < 1 / fps:
+        return False
+    last_draw[0] = curtime
+    return True
+
+def redraw_display(rp):
+    rp.clear()
+    rp.draw_series()
+    rp.update()
+
+def do_automatic_grid(rp):
+    delta = rp.vmax - rp.vmin
+    if delta >= 100:
+        rp.grid, rp.subgrid = 100, 20
+    elif delta >= 10:
+        rp.grid, rp.subgrid = 10, 2
+    elif delta >= 1:
+        rp.grid, rp.subgrid = 1, .2
+    elif delta >= .1:
+        rp.grid, rp.subgrid = .1, .02
+
+def do_automatic_window(rp, started=[None]):
+    if rp.window:
+        return
+    curtime = time.time()
+    # Record the program invokation time.
+    if started[0] is None:
+        started[0] = curtime
+    if curtime - started[0] >= 5:
+        # Automatically change to the fixed window mode after 5 seconds.
+        rp.window = len(rp.series(0))
+
+def main():
+    opt = getopts('ctgwF:x:') or usage()
+    use_curses = opt.c
+    automatic_grid = opt.g
+    automatic_window = opt.w
+    print(automatic_window)
+    fps = float(opt.F) if opt.F else 30.
+    excluded = [int(s) for s in opt.x.split(',')] if opt.x else []
+
+    rp = rplot.Plot(curses=use_curses, grid=1, subgrid=.2)
+    rp.init_screen()
+    rp.excluded = excluded
+
+    _hook = fileinput.hook_encoded('utf-8', 'backslashreplace')
+    for line in fileinput.input(openhook=_hook):
+        line = line.rstrip()
+        process_line(rp, line)
+        if need_display(rp, fps):
+            redraw_display(rp)
+            if automatic_grid:
+                do_automatic_grid(rp)
+            if automatic_window:
+                do_automatic_window(rp)
+    rp.wait()
+
+if __name__ == "__main__":
+    main()
