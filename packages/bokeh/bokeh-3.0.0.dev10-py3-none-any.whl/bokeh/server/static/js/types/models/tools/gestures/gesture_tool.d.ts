@@ -1,0 +1,22 @@
+import { Tool, ToolView } from "../tool";
+import { OnOffButtonView } from "../on_off_button";
+import { EventType } from "../../../core/ui_events";
+import * as p from "../../../core/properties";
+export declare abstract class GestureToolView extends ToolView {
+    model: GestureTool;
+}
+export declare namespace GestureTool {
+    type Attrs = p.AttrsOf<Props>;
+    type Props = Tool.Props;
+}
+export interface GestureTool extends GestureTool.Attrs {
+}
+export declare abstract class GestureTool extends Tool {
+    properties: GestureTool.Props;
+    __view_type__: GestureToolView;
+    constructor(attrs?: Partial<GestureTool.Attrs>);
+    button_view: typeof OnOffButtonView;
+    abstract readonly default_order: number;
+    abstract readonly event_type: EventType | EventType[];
+}
+//# sourceMappingURL=gesture_tool.d.ts.map
