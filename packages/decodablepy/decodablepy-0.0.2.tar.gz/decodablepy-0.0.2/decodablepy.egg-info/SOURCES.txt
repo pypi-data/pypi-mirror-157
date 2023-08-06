@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+decodablepy/__init__.py
+decodablepy/sender.py
+decodablepy.egg-info/PKG-INFO
+decodablepy.egg-info/SOURCES.txt
+decodablepy.egg-info/dependency_links.txt
+decodablepy.egg-info/requires.txt
+decodablepy.egg-info/top_level.txt
