@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: KungFuRunner
+Version: 0.0.3
+Summary: A tool for recursively finding and running tests. Like pytest, except you don't have to name your modules with test_
+Home-page: https://github.com/MadisonAster/KungFu
+Author: Madison Aster
+Author-email: info@MadisonAster.com
+License: LGPL
+Keywords: unit test runner
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >3.5.0
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
