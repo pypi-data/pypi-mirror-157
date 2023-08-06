@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: egycli
+Version: 0.0.1
+Summary: Downloading movies and tv shows thorugh egybest
+Author: Cytolytic (Aktham Mostafa)
+Author-email: cytolyticdev@gmail.com
+License: UNKNOWN
+Keywords: egybest,python,movies,download
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+a cli tool that allows you to download movies and tv shows through egybest
+
