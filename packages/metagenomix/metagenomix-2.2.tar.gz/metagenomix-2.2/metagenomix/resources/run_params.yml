@@ -1,0 +1,9 @@
+default:
+  time: 4
+  cpus: 1
+  nodes: 1
+  mem_num: 1
+  mem_dim: gb
+  env:
+  chunks: 6
+  scratch:
