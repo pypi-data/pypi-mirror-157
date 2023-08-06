@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+meteor_diceware.egg-info/PKG-INFO
+meteor_diceware.egg-info/SOURCES.txt
+meteor_diceware.egg-info/dependency_links.txt
+meteor_diceware.egg-info/top_level.txt
