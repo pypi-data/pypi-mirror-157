@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gdalwrap/__init__.py
+gdalwrap/examples.py
+gdalwrap/gdalwrap.py
+gdalwrap.egg-info/PKG-INFO
+gdalwrap.egg-info/SOURCES.txt
+gdalwrap.egg-info/dependency_links.txt
+gdalwrap.egg-info/top_level.txt
