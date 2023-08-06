@@ -1,0 +1,11 @@
+pypywhois/_1_query.py,sha256=kh7mtx1PwfxZh0oAvm_IxP4BTEpW3llAR7frwW_2yag,3537
+pypywhois/_2_parse.py,sha256=fOV0qiovZV_hp5R4veMpiy5ECGhtY5Ihsq6RlHSIIv8,5538
+pypywhois/_3_adjust.py,sha256=06nAR8X5bAZc0b8E4FmB_RYiEuU1dgGt181UoRqoYwc,6685
+pypywhois/__init__.py,sha256=p1hqLKsmx2MLZ6B7nvo3anZkMU2ZaH6gs8wzvPJp6us,8357
+pypywhois/exceptions.py,sha256=x9DuFemgBE-D1wSsKX5WIcs05Sf7ZXt-HFJ5RScpLMw,524
+pypywhois/tld_regexpr.py,sha256=LXDkiVv47a1-0zEG_HOWVf9nsiVjDGgzCNtGhi6xPVw,53546
+pypywhois-0.1.dist-info/METADATA,sha256=eQsk2r41w6PxZAd3lcBMdc9iWLsSOotKYRhkEwO9M4I,833
+pypywhois-0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+pypywhois-0.1.dist-info/license,sha256=LePmAshGr50WX6kRPxzMEob_N1eYO2eGJfDQ9ELNido,496
+pypywhois-0.1.dist-info/top_level.txt,sha256=h1rO1Th7Yi5ogO7ANnIm0PZgCdjcMoNX_LuvXgWd4vo,10
+pypywhois-0.1.dist-info/RECORD,,
