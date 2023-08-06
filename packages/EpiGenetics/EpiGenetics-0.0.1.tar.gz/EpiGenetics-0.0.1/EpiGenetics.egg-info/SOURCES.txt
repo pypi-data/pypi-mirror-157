@@ -1,0 +1,5 @@
+setup.py
+EpiGenetics.egg-info/PKG-INFO
+EpiGenetics.egg-info/SOURCES.txt
+EpiGenetics.egg-info/dependency_links.txt
+EpiGenetics.egg-info/top_level.txt
