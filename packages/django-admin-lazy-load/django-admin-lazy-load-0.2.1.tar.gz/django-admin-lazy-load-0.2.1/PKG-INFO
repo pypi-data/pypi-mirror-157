@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: django-admin-lazy-load
+Version: 0.2.1
+Summary: Allows to speed-up loading of django admin page by loading heavy calculated field in lazy maner - via separate ajax requests.
+Home-page: https://github.com/mihasK/django-admin-lazy-load
+Author: mihasK
+License: GNU General Public License v3.0
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# django-admin-lazy-load
+Allows to speed-up loading of django admin page by loading heavy calculated field in lazy maner - via separate ajax requests
+
+
+
+#  Install
+
+1. `pip install django-admin-lazy-load`
+2. Add `"admin_lazy_load"` to `INSTALLED_APPS`
+3. Make sure `django.contrib.staticfiles.finders.AppDirectoriesFinder` is not disabled in your settings.
+# Usage
+
+```
+from admin_lazy_load import LazyLoadAdminMixin
+
+....
+
+class YourModelAdmin(LazyLoadAdminMixin, ModelAdmin):
+    ...
+    lazy_loaded_fields = (
+        'calculated_value'
+    )
+    list_display = (
+        ...
+        'calculated_value_lazy_click'
+        ...
+    )
+
+    def calculated_value(self, obj):
+        return ...
+
+```
+
