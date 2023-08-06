@@ -1,0 +1,11 @@
+testwizard/commands_powerswitch/GetPowerSwitchStatusCommand.py,sha256=3odIHKZAGn9MYymq3LPCHXgz6haTXS8NNQNP2HmyxSE,529
+testwizard/commands_powerswitch/GetPowerSwitchStatusResult.py,sha256=3gJBMgZTXhQctrcx_gy3Lmf7_nMIG3qrBUd4KQr4bow,329
+testwizard/commands_powerswitch/SwitchPowerCommand.py,sha256=VwNtIpKJDfJ-wfEKkiU2nWkWu-eczvfnGfLC_pWbpLg,558
+testwizard/commands_powerswitch/SwitchPowerOffCommand.py,sha256=Uw5uwI4hQ5HkqZL-bAs3EPqdUdDEGPkbn4aTRAWzp1E,491
+testwizard/commands_powerswitch/SwitchPowerOnCommand.py,sha256=WLiWQ3gZGHEBCd718ro3dbR8zpx4X4yRphFcETYz4ws,487
+testwizard/commands_powerswitch/__init__.py,sha256=6zsMtXAC6zcx8nOv68IH9vWZSrmTF9ARdFu_fKeMW6c,234
+testwizard.commands_powerswitch-3.7.0b2254.dist-info/LICENSE.txt,sha256=M35UepUPyKmFkvENlkweeaMElheQqNoM5Emh8ADO-rs,4
+testwizard.commands_powerswitch-3.7.0b2254.dist-info/METADATA,sha256=2jkLHfGWxuMGHQUgIrI0_aDMXuiSpKigkqO2JoWiyJI,604
+testwizard.commands_powerswitch-3.7.0b2254.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+testwizard.commands_powerswitch-3.7.0b2254.dist-info/top_level.txt,sha256=sLGUh0i0fjnbpwQ5ao1QNPS2otd8yy7tDSUoBnV85o4,11
+testwizard.commands_powerswitch-3.7.0b2254.dist-info/RECORD,,
