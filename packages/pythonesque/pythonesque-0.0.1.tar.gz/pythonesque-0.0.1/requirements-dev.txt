@@ -1,0 +1,26 @@
+# remove modules installed
+pip-autoremove
+
+# show modules installed
+pipdeptree
+
+# output to/as log
+# loguru
+
+# code formatting
+black
+
+# sort import statements
+isort
+
+# generate doc strings
+pyment
+
+# create documentation
+pdoc3
+
+# prep & upload to PyPI
+flit
+
+# unit testing
+pytest
