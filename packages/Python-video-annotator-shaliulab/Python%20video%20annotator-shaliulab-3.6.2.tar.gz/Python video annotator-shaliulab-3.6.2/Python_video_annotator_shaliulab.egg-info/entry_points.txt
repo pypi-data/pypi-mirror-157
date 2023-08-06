@@ -1,0 +1,2 @@
+[console_scripts]
+start-video-annotator = pythonvideoannotator.__main__:start
