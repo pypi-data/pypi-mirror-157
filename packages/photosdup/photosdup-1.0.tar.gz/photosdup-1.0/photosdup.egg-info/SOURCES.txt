@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+photosdup/__init__.py
+photosdup/__main__.py
+photosdup/cli.py
+photosdup/gui.py
+photosdup.egg-info/PKG-INFO
+photosdup.egg-info/SOURCES.txt
+photosdup.egg-info/dependency_links.txt
+photosdup.egg-info/requires.txt
+photosdup.egg-info/top_level.txt
