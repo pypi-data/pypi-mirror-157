@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Amirpdfconverter.egg-info/PKG-INFO
+Amirpdfconverter.egg-info/SOURCES.txt
+Amirpdfconverter.egg-info/dependency_links.txt
+Amirpdfconverter.egg-info/top_level.txt
+amirpdf/__init__.py
+amirpdf/pdf2image.py
+amirpdf/pdf2txt.py
