@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: cfel-pylint-checkers
+Version: 1.0.1
+Summary: Additional checkers for pylint that are used by the FS-CFEL-1 team
+Home-page: https://gitlab.desy.de/cfel-sc-public/cfel-pylint-checkers
+License: GPL-3.0-or-later
+Author: Philipp Middendorf
+Author-email: philipp.middendorf@desy.de
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pylint (>=2.14.0,<3.0.0)
+Project-URL: Repository, https://gitlab.desy.de/cfel-sc-public/cfel-pylint-checkers
+Description-Content-Type: text/markdown
+
+# cfel-pylint-checkers
+
+## Installation
+
+Just `pip install cfel-pylint-checkers` should suffice. Then you can enable the appropriate checkers as plugins by editing your `.pylintrc` file, extending the `load-plugins` line. For example:
+
+```
+load-plugins=cfel_pylint_checkers.no_direct_dict_access
+```
+
+## Checkers
+### `no-direct-dict-access`
+
+This disallows the use of dictionary access using the `[]` operator *for reading*. Meaning, this is no longer allowed:
+
+```python
+mydict = { "foo": 3 }
+
+print(mydict["bar"])
+```
+
+As you can see, this code produces an error, since we’re accessing `"bar"` but the `mydict` dictionary only contains the key `"foo"`. You have to use `.get` to make this safe:
+
+```python
+mydict = { "foo": 3 }
+
+print(mydict.get("bar"))
+```
+
+Which produces `None` if the key doesn’t exist. You can even specify a default value:
+
+```python
+mydict = { "foo": 3 }
+
+print(mydict.get("bar", 0))
+```
+
+Mutating use of `operator[]` is, of course, still possible. This is *fine*:
+
+```python
+mydict = { "foo": 3 }
+
+mydict["bar"] = 4
+```
+
