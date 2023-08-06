@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: ALR32XX
+Version: 1.2.2
+Summary: Ce module permet de commander via liaison série les alimentations programmables ALR32XX de ELC
+Home-page: https://github.com/elc-construction-electronique/Librairie-Python-ALR32XX
+Author: elc-construction-electronique
+Author-email: be@elc.fr
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/elc-construction-electronique/Librairie-Python-ALR32XX
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Fichiers permettant la mise à jour du Pypi pour l'installation en pip
+
+
+
+
+Dans l'ordre :
+<ul>
+<li>Passer modifictation sur le programme principal ALR32XX.py  
+<li>Changer le numéro de version dans Setup.py et ALR32XX/__init.py__
+<li>Se positionner dans le dossier et "python Setup.py sdist           <-- création du fichier dist/ALR32XX-1.0.tar
+<li>"python setup.py bdist_wheel"                                      <-- création du fichier .whl
+<li>"twine upload dist/*"                                              <-- upload des mises à jour.     préalable : pip install twine et pip install wheel
+<li>Entrer username et mot de passe 
+</ul>
+Retrouver les modifs sur : https://pypi.org/project/ALR32XX/#description
+</br>
+</br>
+</br>
+Pour créer un pdf à partir d'un readme.md : "grip README.md" dans le fichier courant puis impression du localhost. 
+
+
