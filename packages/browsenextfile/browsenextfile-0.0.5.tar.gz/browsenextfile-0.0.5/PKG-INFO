@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: browsenextfile
+Version: 0.0.5
+Summary: View local files (images or videos) using web browser
+Home-page: https://github.com/shmygov/browsenextfile
+Author: Dmitry Shmygov
+Author-email: shmygov@rambler.ru
+License: UNKNOWN
+Keywords: image file viewer browser next previous selenium webdriver
+Platform: UNKNOWN
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: JavaScript
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Multimedia :: Graphics :: Viewers
+Classifier: Topic :: Multimedia :: Video :: Display
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+
+| View local files (images or videos) using web browser.
+| Change to next or previous file in the directory by mouse click.
+| All image and video file formats supported by the browser can be opened.
+| (Under the hood, the program uses Selenium project to control the browser.)
+
+To install the program on Linux, open command line and type::
+
+$ python3 -m pip install --no-cache-dir browsenextfile
+
+To install the program on Windows, open command line or Windows PowerShell and type::
+
+$ py -m pip install --no-cache-dir browsenextfile
+
+During the installation, ``NextFile`` icon will be created on the Desktop.
+To run the program, double-click on this icon and wait for new browser window to open.
+In the browser, home page will open with information about the program.
+

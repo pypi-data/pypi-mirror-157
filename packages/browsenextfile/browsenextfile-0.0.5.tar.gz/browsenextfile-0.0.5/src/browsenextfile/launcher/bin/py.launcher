@@ -1,0 +1,5 @@
+import sys
+from browsenextfile import nextfile
+
+nextfile.run_main(*sys.argv[1:])
+

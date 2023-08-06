@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Next File</title>
+
+  <script defer>
+  </script>
+
+  <style>
+
+html:not([lang~=en]) :lang(en), 
+html:not([lang~=ru]) :lang(ru) { 
+    display: none; 
+}
+
+body:not(.nextfile) .nextfile, 
+body:not(.nextfile_options) .nextfile_options { 
+    display: none; 
+}
+
+#language {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.languageButton {
+    font-size: large;
+    font-weight: bold;
+    color: blue;
+}
+
+.linkButton {
+    font-size: large;
+    font-weight: bold;
+    color: blue;
+}
+
+.err_msg {
+    font-size: large;
+    font-weight: bold;
+
+    color: red;
+}
+
+.howto {
+    padding: 35px;
+}
+
+  </style>
+
+</head>
+
+<body class="nextfile">
+
+<div id="language">
+<button class="languageButton" onclick="document.documentElement.lang='en'">English</button>
+<button class="languageButton" onclick="document.documentElement.lang='ru'">Русский</button>
+</div>
+
+<span class="nextfile">
+
+<span lang="en">
+
+<div class="howto">
+<h2>Usage:</h2>
+<h3>View local files (images or videos) using web browser. Change to next or previous file in the directory by mouse click. All image and video file formats supported by the browser can be opened.</h3>
+<p>
+Navigate to any local file by clicking the "Open" button on the upper side of the screen. (Alternative method: In Firefox press "Alt" key to open the browser menu and choose File--Open File. In Chrome and Edge press "Ctrl+O".)
+</p>
+<p>
+To open next file in the directory, click ">" button on the right side of the screen.
+</p>
+<p>
+To open previous file in the directory, click "<" button on the left side of the screen.
+</p>
+<br>
+<p>
+To zoom in, click "+" button at the bottom of the screen, or drag the image down with the middle mouse button (wheel) pressed.
+</p>
+<p>
+To zoom out, click "-" button at the bottom of the screen, or drag the image up with the middle mouse button (wheel) pressed.
+</p>
+<p>
+To scroll the image, use scroll bars, or drag the image with the left mouse button pressed.
+</p>
+<br>
+<p>
+If several tabs are open in the browser, only one tab (usually the first one) is controlled by the buttons.
+</p>
+<p>
+The buttons are present only if a local file from this computer is opened in the browser. If a page from internet is opened, there are no buttons.
+</p>
+<p style="text-align:left;">
+<button class="linkButton" onclick="document.body.className='nextfile_options'">Options</button>
+</p>
+</div>
+
+</span>
+
+<span lang="ru">
+
+<div class="howto">
+<h2>Как пользоваться:</h2>
+<h3>Просматривать локальные файлы на компьютере (изображения или видео) при помощи веб-браузера. Переходить к следующему или предыдущему файлу в директории можно, кликая мышью. Открывать изображения и видео всех форматов, поддерживаемых браузером.</h3>
+<p>
+Перейдите на любой локальный файл на компьютере, для чего кликните мышью на кнопке "Открыть" в верхней части экрана. (Другой способ: В браузере Firefox нажмите клавишу "Alt", чтобы открыть меню браузера, и выберите Файл--Открыть файл. В браузерах Chrome или Edge нажмите клавишу "Ctrl+O".)
+</p>
+<p>
+Чтобы открыть следующий файл в директории, кликните мышью на кнопке ">" в правой части экрана.
+</p>
+<p>
+Чтобы открыть предыдущий файл в директории, кликните мышью на кнопке "<" в левой части экрана.
+</p>
+<br>
+<p>
+Чтобы увеличить изображение, кликните на кнопке "+" в нижней части экрана, или потяните изображение мышью вниз при нажатой средней кнопке мыши (колёсике).
+</p>
+<p>
+Чтобы уменьшить изображение, кликните на кнопке "-" в нижней части экрана, или потяните изображение мышью вверх при нажатой средней кнопке мыши (колёсике).
+</p>
+<p>
+Для прокрутки изображения пользуйтесь полосами прокрутки, или перемещайте изображение мышью при нажатой левой кнопке мыши.
+</p>
+<br>
+<p>
+Если в браузере открыты несколько закладок, только одна (обычно первая) управляется кнопками.
+</p>
+<p>
+Кнопки присутствуют только если в браузере открыт локальный файл из этого компьютера. Если открыта страница из интернета, кнопки отсутствуют.
+</p>
+<p style="text-align:left;">
+<button class="linkButton" onclick="document.body.className='nextfile_options'">Опции</button>
+</p>
+</div>
+
+</span>
+
+</span>
+
+<span class="nextfile_options">
+
+<span lang="en">
+
+<div class="howto">
+<p>
+<span class="err_msg"></span>
+</p>
+<h2>Editable options:</h2>
+<p>
+Application's editable data directory:
+</p>
+<p>
+<code>application_data_directory</code>
+</p>
+<h3>Change the program's options:</h3>
+<p>
+The following text file contains several options which users can edit to change the way the program behaves:
+</p>
+<p>
+<code>options_text_file</code>
+</p>
+<p>
+Available options:
+</p>
+<p>
+<em>browser</em>: By default, the program opens Firefox browser. To use another browser, change the <em>value</em> of the <em>browser</em> option in the options file correspondingly. So far, the program was tested with Firefox, Chrome, and Edge browsers.
+</p>
+<h3>Browser data:</h3>
+<p>
+When this program opens a web browser, it uses a browser user's profile which is different from default profile used when the browser is opened standard way. All browser data (including user preferences, browser cache, history, bookmarks, installed extensions, etc.) used by web browsers when they are opened by this program are stored in the following location. If a profile here is deleted, a clean profile will be created instead:
+</p>
+<p>
+<code>browser_profiles_directory</code>
+</p>
+<h3>Install the Web Driver (optional):</h3>
+<p>
+The program comes with a pre-installed Web Driver for Firefox browser, so if you want to use Firefox it will work out of the box. However, if you want to use another browser like Chrome or Edge, you have to install corresponding Web Driver manually as described below. Also, in case of Chrome or Edge you will have to periodically upgrade the Web Driver to match the current version of automatically upgraded Chrome or Edge browser.
+</p>
+<p>
+Install the Web Driver for the browser you want to use. The download links are on the site:
+</p>
+<p>
+<a href="https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/#quick-reference" target="_blank">Download a Web Driver</a>
+</p>
+<p>
+<strong>Important:</strong>For all browsers except Firefox, the version of Web Driver file should match the current version of your browser.
+</p>
+<p>
+Open the downloaded archive and extract the Web Driver executable. For Firefox browser the Web Driver file name is usually "geckodriver". For Chrome browser the Web Driver file name is usually "chromedriver". For Edge browser the Web Driver file name is usually "msedgedriver.exe".
+</p>
+<p>
+Place the Web Driver file into the corresponding sub-directory of the program's data directory:
+</p>
+<p>
+<code>web_driver_directory</code>
+</p>
+<h3>Running the program:</h3>
+<p>
+If the program was installed using PIP:
+</p>
+<p>
+<code>python3 -m pip install --no-cache-dir browsenextfile</code>
+</p>
+<p>
+then a shortcut ("NextFile" icon) was automatically created on the Desktop and in the Applications menu. In this case the program can be launched using this shortcut, or by right-clicking the image file which we want to open and selecting "NextFile" program from the drop-down menu.
+Technically, the program "nextfile.py" can also be run as Python script from command line:
+</p>
+<p>
+<code>python3 nextfile.py</code>
+</p>
+<p style="text-align:left;">
+<button class="linkButton" onclick="document.body.className='nextfile'">Home</button>
+</p>
+</div>
+
+</span>
+
+<span lang="ru">
+
+<div class="howto">
+<p>
+<span class="err_msg"></span>
+</p>
+<h2>Редактируемые опции:</h2>
+<p>
+Директория редактируемых данных программы:
+</p>
+<p>
+<code>application_data_directory</code>
+</p>
+<h3>Изменение опций программы:</h3>
+<p>
+Следующий текстовый файл содержит ряд опций, которые пользователь может менять, чтобы корректировать поведение программы:
+</p>
+<p>
+<code>options_text_file</code>
+</p>
+<p>
+Имеющиеся опции:
+</p>
+<p>
+<em>browser</em>: По умолчанию программа открывает браузер Firefox. Чтобы использовать другой браузер, в файле опций соответствующим образом поменяйте значение <em>value</em> опции <em>browser</em>. На данный момент программа тестировалась с браузерами Firefox, Chrome, и Edge.
+</p>
+<h3>Данные браузера:</h3>
+<p>
+Когда данная программа открывает веб-браузер, используется пользовательский профиль отличный от профиля, используемого по умолчанию при открытии браузера обычным образом. Все данные браузера (включая пользовательские настройки, кэш браузера, историю, закладки, установленные расширения, и т.п.), используемые веб-браузерами, когда они открываются данной программой, хранятся в следующей директории. Если профиль здесь удалить, вместо него будет создан чистый профиль:
+</p>
+<p>
+<code>browser_profiles_directory</code>
+</p>
+<h3>Установка веб-драйвера (опционно):</h3>
+<p>
+Программа поставляется с предустановленным веб-драйвером для браузера Firefox, поэтому если вы хотите использовать Firefox, он будет работать без каких-либо дополнительных действий. Однако, если вы хотите использовать другой браузер, например Chrome или Edge, вы должны установить соответствующий веб-драйвер вручную, как описано ниже. К тому же, в случае использования Chrome или Edge вы должны будете периодически обновлять веб-драйвер, чтобы его версия совпадала с текущей версией автоматически обновляемого браузера Chrome или Edge.
+</p>
+<p>
+Установите веб-драйвер для браузера, который вы хотите использовать. Ссылки для загрузки приведены на сайте:
+</p>
+<p>
+<a href="https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/#quick-reference" target="_blank">Скачать веб-драйвер</a>
+</p>
+<p>
+<strong>Важно:</strong>Для всех браузеров, кроме Firefox, версия файла веб-драйвера должна совпадать с текущей версией вашего браузера.
+</p>
+<p>
+Откройте скачанный архив и извлеките файл веб-драйвера. Веб-драйвер для браузера Firefox обычно имеет имя "geckodriver". Веб-драйвер для браузера Chrome обычно имеет имя "chromedriver". Веб-драйвер для браузера Edge обычно имеет имя "msedgedriver.exe".
+</p>
+<p>
+Поместите файл веб-драйвера в соответствующую поддиректорию в директории данных программы:
+</p>
+<p>
+<code>web_driver_directory</code>
+</p>
+<h3>Запуск программы:</h3>
+<p>
+Если программа устанавливалась с использованием PIP:
+</p>
+<p>
+<code>python3 -m pip install --no-cache-dir browsenextfile</code>
+</p>
+<p>
+тогда на рабочем столе и в меню приложений для нее был автоматически создан ярлык "NextFile". В этом случае программу можно запустить, используя этот ярлык, или щелкнув правой кнопкой мыши на том видео-файле, который мы хотим открыть, и в выпадающем меню выбрав программу "NextFile". Технически, программу "nextfile.py" можно также запустить из командной строки как Python-скрипт:
+</p>
+<p>
+<code>python3 nextfile.py</code>
+</p>
+<p style="text-align:left;">
+<button class="linkButton" onclick="document.body.className='nextfile'">Главная</button>
+</p>
+</div>
+
+</span>
+
+</span>
+
+</body>
+</html>
+

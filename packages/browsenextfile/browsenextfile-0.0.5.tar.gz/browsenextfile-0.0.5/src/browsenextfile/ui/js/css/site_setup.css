@@ -1,0 +1,72 @@
+.nextFileUiButtonClass {
+    position: fixed;
+    height: 70px;
+
+    border-radius: 18px;
+    background-color: rgba(110, 110, 110, 0.5);
+
+    color: rgba(220, 220, 220, 0.7);
+    font-size: 2vw;
+    font-weight: 700;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nextFileUiSideButtonClass {
+    top: 50%;
+    margin-top: -35px;
+    width: 70px;
+}
+
+.nextFileUiBottomButtonClass {
+    bottom: 0;
+    margin-bottom: 2%;
+    left: 50%;
+}
+
+.nextFileUiTopButtonClass {
+    top: 0;
+    margin-top: 2%;
+    left: 50%;
+}
+
+.nextFileUiNextSideButtonClass {
+    right: 0;
+    margin-right: 2%;
+}
+
+.nextFileUiPrevSideButtonClass {
+    left: 0;
+    margin-left: 2%;
+}
+
+.nextFileUiZoomOutBottomButtonClass {
+    margin-left: -150px;
+    width: 70px;
+}
+
+.nextFileUiZoomInfoBottomButtonClass {
+    margin-left: -60px;
+    width: 120px;
+
+    overflow: auto;
+}
+
+.nextFileUiZoomInBottomButtonClass {
+    margin-left: 80px;
+    width: 70px;
+}
+
+.nextFileUiOpenFileTopButtonClass {
+    margin-left: -140px;
+    width: 130px;
+}
+
+.nextFileUiAboutTopButtonClass {
+    margin-left: 10px;
+    width: 130px;
+}
+

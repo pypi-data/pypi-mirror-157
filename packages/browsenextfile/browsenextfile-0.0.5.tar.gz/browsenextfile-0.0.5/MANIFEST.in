@@ -1,0 +1,9 @@
+include src/browsenextfile/nextfile_options/nextfile_options.txt
+include src/browsenextfile/ui/i18n/language_names/language_names.txt
+recursive-include src/browsenextfile/ui/i18n/locale *.mo
+recursive-include src/browsenextfile/ui/js *
+include src/browsenextfile/ui/start/*
+recursive-include src/browsenextfile/web_driver */geckodriver*
+include src/browsenextfile/launcher/bin/*
+include README.ru.md
+
