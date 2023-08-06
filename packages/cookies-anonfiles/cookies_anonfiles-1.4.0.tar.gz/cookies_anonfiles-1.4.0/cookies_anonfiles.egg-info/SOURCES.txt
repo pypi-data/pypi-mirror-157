@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cookies_anonfiles/__init__.py
+cookies_anonfiles/main.py
+cookies_anonfiles.egg-info/PKG-INFO
+cookies_anonfiles.egg-info/SOURCES.txt
+cookies_anonfiles.egg-info/dependency_links.txt
+cookies_anonfiles.egg-info/entry_points.txt
+cookies_anonfiles.egg-info/requires.txt
+cookies_anonfiles.egg-info/top_level.txt
