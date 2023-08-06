@@ -1,0 +1,2 @@
+[console_scripts]
+nucleaizer_train = nucleaizer_backend:training_cli
