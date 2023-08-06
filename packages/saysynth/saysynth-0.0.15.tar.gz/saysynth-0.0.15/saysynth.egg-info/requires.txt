@@ -1,0 +1,6 @@
+charset-normalizer
+click
+mido
+midi-utils
+pyyaml
+pathos
