@@ -1,0 +1,7 @@
+README.md
+setup.py
+dev/src/scotland.egg-info/PKG-INFO
+dev/src/scotland.egg-info/SOURCES.txt
+dev/src/scotland.egg-info/dependency_links.txt
+dev/src/scotland.egg-info/top_level.txt
+dev/src/scotland.egg-info/SOURCES.txt
