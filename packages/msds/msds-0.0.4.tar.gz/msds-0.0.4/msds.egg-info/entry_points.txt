@@ -1,0 +1,2 @@
+[console_scripts]
+msds = msds.main:main
