@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: flexible-fl
+Version: 0.1.0
+Summary: Python Boilerplate contains all the boilerplate you need to create a Python package.
+Home-page: https://github.com/xehartnort/flexible_fl
+Author: Flexible boy
+Author-email: xehartnort@gmail.com
+License: MIT license
+Keywords: flexible_fl
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+===========
+Flexible FL
+===========
+
+
+.. image:: https://img.shields.io/pypi/v/flexible_fl.svg
+        :target: https://pypi.python.org/pypi/flexible_fl
+
+.. image:: https://img.shields.io/travis/xehartnort/flexible_fl.svg
+        :target: https://travis-ci.com/xehartnort/flexible_fl
+
+.. image:: https://readthedocs.org/projects/flexible-fl/badge/?version=latest
+        :target: https://flexible-fl.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Python Boilerplate contains all the boilerplate you need to create a Python package.
+
+
+* Free software: MIT license
+* Documentation: https://flexible-fl.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2022-07-05)
+------------------
+
+* First release on PyPI.
