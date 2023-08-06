@@ -1,0 +1,16 @@
+simyan/__init__.py,sha256=DzklRYC8zcQ5lg2UDcbblV2hS7dqTn4daqQcMrYGt8s,408
+simyan/comicvine.py,sha256=DqiJJzGxkSeY4efBI1VXrkF-PjpebD7a8dQrzGfQxRg,15971
+simyan/exceptions.py,sha256=ySS--oF3Ic1JZv9FHOA1mEvryl39VLWJDBW4r6K2ME8,424
+simyan/schemas/__init__.py,sha256=1GdRFDDGuASohYNTwpYiQZpeWoZhx8P-y5eL-0IX9_w,42
+simyan/schemas/character.py,sha256=RIEzKy8Oym8YUNaiQwDcWj5W32kZZXI9LZU9_7YntTw,4005
+simyan/schemas/creator.py,sha256=hI4LcMkbfBhfA96f1ov_9KL1NASAsOGXAUfVPttNR5Y,3327
+simyan/schemas/generic_entries.py,sha256=2u48oS3hP-gPD3PP6STRhteYQvlWYYPB-HeMj3G_-II,3249
+simyan/schemas/issue.py,sha256=aCNdgKVe2ZDVL8mjdzNfPtLYNTuRB0bGRkWaBzvRFss,5196
+simyan/schemas/publisher.py,sha256=cyzeTDRT5rS2TlEi3VxWVKu5rftPvJiPWMszhqi-AZE,2499
+simyan/schemas/story_arc.py,sha256=7aUY7NzUBYGTrRQ33CqZJ84QaEyiuk0fIkVZqUKWo18,2164
+simyan/schemas/volume.py,sha256=j5Pgcfaaj6JdkICFQTyVjwSZNfewCfJShTjH-4-nqjE,3003
+simyan/sqlite_cache.py,sha256=0JSoDVJ0TvXsisN2YG4FDAbDkSuRQXY69i3Kze2uD0I,3027
+simyan-0.9.0.dist-info/LICENSE,sha256=MjdpnZ5ngchYdzZavZSTyhMqD9MfQ-GjJ4uOdfNlSvQ,33094
+simyan-0.9.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+simyan-0.9.0.dist-info/METADATA,sha256=YpC96XIMNdXq3krjD-JYlaforjKa0Of1Saw7h0JzG7k,4443
+simyan-0.9.0.dist-info/RECORD,,

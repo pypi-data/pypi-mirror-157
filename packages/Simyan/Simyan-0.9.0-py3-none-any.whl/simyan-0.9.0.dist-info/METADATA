@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: simyan
+Version: 0.9.0
+Summary: A Python wrapper for the Comicvine API.
+Home-page: https://github.com/Buried-In-Code/Simyan
+License: GPL-3.0-or-later
+Keywords: comics,comic,metadata
+Author: Buried-In-Code
+Author-email: BuriedInCode@tuta.io
+Maintainer: Buried-In-Code
+Maintainer-email: BuriedInCode@tuta.io
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Typing :: Typed
+Provides-Extra: docs
+Requires-Dist: pydantic (>=1.9.1,<2.0.0)
+Requires-Dist: ratelimit (>=2.2.1,<3.0.0)
+Requires-Dist: requests (>=2.28.1,<3.0.0)
+Requires-Dist: sphinx-rtd-theme (>=1.0.0,<2.0.0); extra == "docs"
+Requires-Dist: sphinxcontrib-napoleon (>=0.7,<0.8); extra == "docs"
+Project-URL: Documentation, https://simyan.readthedocs.io/en/latest/
+Project-URL: Issue Tracker, https://github.com/Buried-In-Code/Simyan/issues
+Project-URL: Repository, https://github.com/Buried-In-Code/Simyan
+Description-Content-Type: text/markdown
+
+# Simyan
+
+[![PyPI - Python](https://img.shields.io/pypi/pyversions/Simyan.svg?logo=PyPI&label=Python&style=flat-square)](https://pypi.python.org/pypi/Simyan/)
+[![PyPI - Status](https://img.shields.io/pypi/status/Simyan.svg?logo=PyPI&label=Status&style=flat-square)](https://pypi.python.org/pypi/Simyan/)
+[![PyPI - Version](https://img.shields.io/pypi/v/Simyan.svg?logo=PyPI&label=Version&style=flat-square)](https://pypi.python.org/pypi/Simyan/)
+[![PyPI - License](https://img.shields.io/pypi/l/Simyan.svg?logo=PyPI&label=License&style=flat-square)](https://opensource.org/licenses/GPL-3.0)
+
+[![Black](https://img.shields.io/badge/Black-Enabled-000000?style=flat-square)](https://github.com/psf/black)
+[![Flake8](https://img.shields.io/badge/Flake8-Enabled-informational?style=flat-square)](https://github.com/PyCQA/flake8)
+[![Pre-Commit](https://img.shields.io/badge/Pre--Commit-Enabled-informational?logo=pre-commit&style=flat-square)](https://github.com/pre-commit/pre-commit)
+
+[![Github - Contributors](https://img.shields.io/github/contributors/Buried-In-Code/Simyan.svg?logo=Github&label=Contributors&style=flat-square)](https://github.com/Buried-In-Code/Simyan/graphs/contributors)
+
+[![Read the Docs](https://img.shields.io/readthedocs/simyan?label=Read-the-Docs&logo=Read-the-Docs&style=flat-square)](https://simyan.readthedocs.io/en/latest/?badge=latest)
+[![Github Action - Code Analysis](https://img.shields.io/github/workflow/status/Buried-In-Code/Simyan/Code%20Analysis?logo=Github-Actions&label=Code-Analysis&style=flat-square)](https://github.com/Buried-In-Code/Simyan/actions/workflows/code-analysis.yaml)
+[![Github Action - Testing](https://img.shields.io/github/workflow/status/Buried-In-Code/Simyan/Testing?logo=Github-Actions&label=Tests&style=flat-square)](https://github.com/Buried-In-Code/Simyan/actions/workflows/testing.yaml)
+
+A [Python](https://www.python.org/) wrapper for the [Comicvine](https://comicvine.gamespot.com/api/) API.
+
+## Installation
+
+### PyPI
+
+```bash
+$ pip3 install -U --user simyan
+```
+
+### Poetry
+
+```bash
+$ poetry add simyan
+```
+
+## Example Usage
+
+```python
+from simyan.comicvine import Comicvine
+from simyan.sqlite_cache import SQLiteCache
+
+session = Comicvine(api_key="ComicVine API Key", cache=SQLiteCache())
+
+# Search for Publisher
+results = session.publisher_list(params={"filter": "name:DC Comics"})
+for publisher in results:
+    print(f"{publisher.id_} | {publisher.name} - {publisher.site_url}")
+
+# Get details for a Volume
+result = session.volume(volume_id=26266)
+print(result.summary)
+```
+
+## Socials
+
+Big thanks to [Mokkari](https://github.com/bpepple/mokkari) for the inspiration and template for this project.
+
+[![Discord | The-DEV-Environment](https://img.shields.io/discord/618581423070117932?color=7289DA&label=The-DEV-Environment&logo=Discord&style=for-the-badge)](https://discord.gg/nqGMeGg)
+
