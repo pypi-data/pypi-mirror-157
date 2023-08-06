@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+wezel/__init__.py
+wezel/core.py
+wezel/main.py
+wezel.egg-info/PKG-INFO
+wezel.egg-info/SOURCES.txt
+wezel.egg-info/dependency_links.txt
+wezel.egg-info/requires.txt
+wezel.egg-info/top_level.txt
