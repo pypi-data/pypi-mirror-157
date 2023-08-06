@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: everyaction-client
+Version: 0.3.1
+Summary: A Python client for the EveryAction 8 REST API.
+Home-page: https://github.com/partiallyderived/everyaction-client
+Author: Bobbey Reese
+Author-email: bobbeyreese@gmail.com
+Project-URL: Documentation, https://python-client-for-everyaction.readthedocs.io/en/latest/
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: makefun (>=1.11.3)
+Requires-Dist: requests (>=2.25.1)
+Provides-Extra: doc
+Requires-Dist: sphinx (>=3.4.3) ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: pytest (>=6.2.2) ; extra == 'test'
+Requires-Dist: http-router (>=2.0.3) ; extra == 'test'
+
+This package implements a Python client for the
+[EveryAction 8 REST API](https://docs.everyaction.com/reference/api-overview), which makes the process of sending
+EveryAction requests from Python easier. For usage information, check out the
+[documentation](https://python-client-for-everyaction.readthedocs.io/en/latest/).
