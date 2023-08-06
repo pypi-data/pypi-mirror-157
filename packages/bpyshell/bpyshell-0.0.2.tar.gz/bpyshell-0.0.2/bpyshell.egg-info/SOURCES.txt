@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+bpyshell.egg-info/PKG-INFO
+bpyshell.egg-info/SOURCES.txt
+bpyshell.egg-info/dependency_links.txt
+bpyshell.egg-info/entry_points.txt
+bpyshell.egg-info/not-zip-safe
+bpyshell.egg-info/requires.txt
+bpyshell.egg-info/top_level.txt
+pyshell/__init__.py
+pyshell/_nbdev.py
+pyshell/core.py
