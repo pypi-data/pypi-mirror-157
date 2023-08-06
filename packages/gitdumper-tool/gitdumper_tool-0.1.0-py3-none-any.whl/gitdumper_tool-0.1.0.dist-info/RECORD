@@ -1,0 +1,10 @@
+gitdumper_tool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitdumper_tool/__main__.py,sha256=84_S8skgwpyChkXoftZHQ9Vnqq73-6ehXSx9f4CU-R8,61
+gitdumper_tool/cli.py,sha256=jXUqMIaHQV8I5aovOrYrgy4ByfOJjCCxHaMbI1ftD6E,2334
+gitdumper_tool/dumper.py,sha256=Q62EiranQsK6KpTxD482_y6VAA7R7ZHQySskE-ex8so,9405
+gitdumper_tool/logger.py,sha256=lN4k4uPkPfOLxEen7sSDy0kmBc3w0IYTREAqMpv0R4Q,1025
+gitdumper_tool/utils.py,sha256=q28oHnyOB-lApnj2wxCDzRw0I7c_FOGGjPTX3pToOj8,476
+gitdumper_tool-0.1.0.dist-info/entry_points.txt,sha256=-iHImnDIYeUXCYW7TW3t0D0nmNdhDVvD3nHI1jZwN4w,53
+gitdumper_tool-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+gitdumper_tool-0.1.0.dist-info/METADATA,sha256=1OF377vjpLi98KxNmUHG0h-ZV19YDdvYXzn9FxAszhk,838
+gitdumper_tool-0.1.0.dist-info/RECORD,,

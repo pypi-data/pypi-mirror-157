@@ -1,0 +1,3 @@
+[console_scripts]
+gitdumper=gitdumper_tool.cli:main
+
