@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spective_systembars"
+version = "0.91"
+authors = [
+  { name="speCTive GmbH", email="info@spective.de" },
+]
+description = "PySide2 Qt widgets for displaying system stats such as CPU,GPU and RAM load as bars (e.g. inside the status bar)"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://www.spective.de"
+
