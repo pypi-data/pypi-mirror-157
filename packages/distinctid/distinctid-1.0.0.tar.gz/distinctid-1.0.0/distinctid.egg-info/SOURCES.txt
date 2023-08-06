@@ -1,0 +1,7 @@
+README.md
+setup.py
+distinctid/__init__.py
+distinctid.egg-info/PKG-INFO
+distinctid.egg-info/SOURCES.txt
+distinctid.egg-info/dependency_links.txt
+distinctid.egg-info/top_level.txt
