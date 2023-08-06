@@ -1,0 +1,130 @@
+external:
+  pandas:
+    PD_MEAN: pd_mean
+    PD_STD: pd_std
+    PD_LOC: pd_loc
+    PD_EQ: pd_eq
+    PD_ANY: pd_any
+    PD_DESCRIBE: pd_describe
+    PD_SELECT_DTYPES: pd_select_dtypes
+    PD_QUANTILE: pd_quantile
+    PD_SUM: pd_sum
+    PD_FILLNA: pd_fillna
+    PD_ROUND: pd_round
+    PD_RENAME: pd_rename
+    PD_COUNT: pd_count
+    PD_TRANSPOSE: pd_transpose
+    PD_UNIQUE: pd_unique
+    PD_VALUE_COUNTS: pd_value_count
+    PD_TO_DICT: pd_to_dict
+    PD_APPLY: pd_apply
+    PD_SUB: pd_sub
+    PD_MEDIAN: pd_median
+    PD_ABS: pd_abs
+    PD_MAD: pd_mad
+    PD_SKEW: pd_skew
+    PD_KURTOSIS: pd_kurtosis
+    PD_AGG: pd_agg
+    PD_DROPLEVEL: pd_droplevel
+    PD_SORT_VALUES: pd_sort_values
+    PD_DROP: pd_drop
+    PD_CORR: pd_corr
+    PD_GET_DUMMIES: pd_get_dummies
+    PD_JOIN: pd_join
+    PD_CONCAT: pd_concat
+
+  pandas_profiling:
+    PD_PROFILE_REPORT: pd_profile_report
+
+  numpy:
+    NP_MEAN: np_mean
+    NP_STD: np_std
+
+  sklearn:
+    SK_FIT: model_fit
+    SK_SCALE: sk_scale
+    SK_ONEHOT: model_fit
+    SK_PCA: model_fit
+    # cluster
+    SK_AFFINITY_PROPAGATION: model_fit
+    SK_AGGLOMERATIVE_CLUSTERING: model_fit
+    SK_BIRCH: model_fit
+    SK_DBSCAN: model_fit
+    SK_FEATURE_AGGLOMERATION: model_fit
+    SK_KMEANS: model_fit
+    SK_MINIBATCH_KMEANS: model_fit
+    SK_MEAN_SHIFT: model_fit
+    SK_OPTICS: model_fit
+    SK_SPECTRAL_CLUSTERING: model_fit
+    SK_SPECTRAL_BICLUSTERING: model_fit
+    SK_SPECTRAL_COCLUSTERING: model_fit
+    # ensemble
+    SK_ADABOOST_CLASSIFIER: model_fit
+    SK_ADABOOST_REGRESSOR: model_fit
+    SK_BAGGING_CLASSIFIER: model_fit
+    SK_BAGGING_REGRESSOR: model_fit
+    SK_EXTRA_TREES_CLASSIFIER: model_fit
+    SK_EXTRA_TREES_REGRESSOR: model_fit
+    SK_GRADIENT_BOOSTING_CLASSIFIER: model_fit
+    SK_GRADIENT_BOOSTING_REGRESSOR: model_fit
+    SK_ISOLATION_FOREST: model_fit
+    SK_RANDOM_FOREST_CLASSIFIER: model_fit
+    SK_RANDOM_FOREST_REGRESSOR: model_fit
+    SK_RANDOM_TREES_EMBEDDING: model_fit
+    SK_STACKING_CLASSIFIER: model_fit
+    SK_STACKING_REGRESSOR: model_fit
+    SK_VOTING_CLASSIFIER: model_fit
+    SK_VOTING_REGRESSOR: model_fit
+    SK_HIST_GRADIENT_BOOSTING_CLASSIFIER: model_fit
+    SK_HIST_GRADIENT_BOOSTING_REGRESSOR: model_fit
+    # model selection
+    SK_CROSS_VAL_SCORE: sk_cross_val_score
+    SK_TRAIN_TEST_SPLIT: sk_train_test_split
+    SK_REPEATED_STRATIFIED_KFOLD: model_fit
+    # metrics
+    SK_ACCURACY_SCORE: sk_accuracy_score
+    SK_AVERAGE_PRECISION_SCORE: sk_average_precision_score
+    SK_CLASSIFICATION_REPORT: sk_classification_report
+    SK_CONFUSION_MATRIX: sk_confusion_matrix
+    SK_F1_SCORE: sk_f1_score
+    SK_PLOT_CONFUSION_MATRIX: sk_plot_confusion_matrix
+    SK_PRECISION_RECALL_CURVE: sk_precision_recall_curve
+    SK_PRECISION_SCORE: sk_precision_score
+    SK_RECALL_SCORE: sk_recall_score
+    SK_ROC_AUC_SCORE: sk_roc_auc_score
+    SK_ROC_CURVE: sk_roc_curve
+    # ensemble predict
+    SK_RANDOM_FOREST_CLASSIFIER_PREDICT: sk_random_forest_classifier_predict
+    SK_LABEL_ENCODER_FIT_TRANSFORM: sk_label_encoder_fit_transform
+
+  xgboost:
+    XGB_CLASSIFIER: xgb_classifier
+    XGB_CLASSIFIER_PREDICT: xgb_classifier_predict
+
+  std:
+    ADD: add
+    MUL: mul
+    SUB: sub
+    RSUB: rsub
+    DIV: div
+    RDIV: rdiv
+    INVERT: invert
+    GETITEM: getitem
+    LEN: length
+    GT: greater_than
+    GE: greater_equal
+    LT: lower_than
+    LE: lower_equal
+    NE: not_equal
+    INT: _int
+    FLOAT: _float
+    MOD: modulo
+    RMOD: rmodulo
+    ROUND: _round
+    AND: _and
+    RAND: rand
+    OR: _or
+    ROR: ror
+    ABS: _abs
+    POS: pos
+    NEG: neg
