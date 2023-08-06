@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: tag-matcher
+Version: 0.0.2
+Summary: A lightweight tag matcher
+Home-page: https://github.com/jmfiola/tag-matcher
+Author: Jacob Fiola
+Author-email: jmfiola21@gmail.com
+License: MIT
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Tag Matcher
+
+A lightweight tag matcher for python
+
+# Setup
+
+Install the package via pip:
+
+`pip install tag-matcher`
+
+# Usage
+
+First, import the module:
+
+`import tagmatcher`
+
+Then, execute tag match queries like so:
+
+`is_match = tagmatcher.match(query_str="foo~bar", tags=["foo", "bar])`
+
+In this case, `is_match` will equal true.
+
+
+# Supported Operators
+
+`~`: AND
+
+`+`: OR
