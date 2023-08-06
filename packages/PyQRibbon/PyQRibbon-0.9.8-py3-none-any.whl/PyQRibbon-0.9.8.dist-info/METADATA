@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: PyQRibbon
+Version: 0.9.8
+Summary: PyQRibbon
+Home-page: https://github.com/luolingchun/PyQRibbon
+Author: llc
+Author-email: luolingchun@outlook.com
+License: GPLv3
+Platform: any
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt5
+
+# PyQRibbon
+
+PyQRibbon是一个实现了ribbon菜单的控件
+
+## 安装
+
+```bash
+pip install PyQRibbon
+```
+
+## 截图
+
+![screen](https://raw.githubusercontent.com/luolingchun/PyQRibbon/master/screen/1.png)
+
