@@ -1,0 +1,9 @@
+LICENSE.md
+setup.py
+starlette_async_wstc/__init__.py
+starlette_async_wstc/testclient.py
+starlette_async_wstc.egg-info/PKG-INFO
+starlette_async_wstc.egg-info/SOURCES.txt
+starlette_async_wstc.egg-info/dependency_links.txt
+starlette_async_wstc.egg-info/requires.txt
+starlette_async_wstc.egg-info/top_level.txt
