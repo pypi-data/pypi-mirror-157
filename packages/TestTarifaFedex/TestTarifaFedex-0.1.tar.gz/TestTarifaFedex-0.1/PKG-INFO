@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: TestTarifaFedex
+Version: 0.1
+Summary: test 1
+Home-page: https://github.com/jasso208/TestTarifaFedex.git
+Author: Javier Jasso
+Author-email: jasso.gallegos@gmail.com
+License: MIT
+Description: #Este es el archivo de nuestro proyecto
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
