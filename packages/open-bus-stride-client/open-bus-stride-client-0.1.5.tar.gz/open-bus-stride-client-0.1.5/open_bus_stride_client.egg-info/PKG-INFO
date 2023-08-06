@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: open-bus-stride-client
+Version: 0.1.5
+Provides-Extra: cli
+Provides-Extra: notebooks
+Provides-Extra: urbanaccess
+Provides-Extra: apiproxy
+Provides-Extra: all
+License-File: LICENSE
