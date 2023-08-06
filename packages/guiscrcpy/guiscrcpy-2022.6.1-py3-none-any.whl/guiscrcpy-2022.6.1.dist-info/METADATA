@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: guiscrcpy
+Version: 2022.6.1
+Summary: A simple, pluggable, graphical user interface for the fastest Android screen mirroring software
+License: GPLv3
+Author: Srevin Saju
+Author-email: srevinsaju@sugarlabs.org
+Requires-Python: >=3.7,<3.10
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: PyInstaller
+Provides-Extra: PyQt5
+Provides-Extra: PySide2
+Requires-Dist: CairoSVG (>=2.5.2,<3.0.0)
+Requires-Dist: PyInstaller; extra == "PyInstaller"
+Requires-Dist: PyQt5 (>=5.15.4,<6.0.0); extra == "PyQt5"
+Requires-Dist: PySide2 (>=5.15.2,<6.0.0); extra == "PySide2"
+Requires-Dist: QtPy (>=1.9.0,<2.0.0)
+Requires-Dist: black (==22.3.0)
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Requires-Dist: coloredlogs (>=15.0.1,<16.0.0)
+Requires-Dist: psutil (>=5.8.0,<6.0.0)
+Requires-Dist: pynput (==1.6.8)
+Requires-Dist: pywin32 (==302); platform_system == "Windows"
+Project-URL: Bug Tracker, https://github.com/srevinsaju/guiscrcpy/issues
