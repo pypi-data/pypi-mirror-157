@@ -1,0 +1,12 @@
+LICENSE-mit.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+unzip-http
+unzip_http.py
+unzip_http.egg-info/PKG-INFO
+unzip_http.egg-info/SOURCES.txt
+unzip_http.egg-info/dependency_links.txt
+unzip_http.egg-info/requires.txt
+unzip_http.egg-info/top_level.txt
