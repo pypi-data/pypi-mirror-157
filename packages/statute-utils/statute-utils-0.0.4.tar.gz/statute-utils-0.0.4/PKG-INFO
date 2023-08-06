@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: statute-utils
+Version: 0.0.4
+Summary: Helper functions for statutory processing.
+Author: Marcelino G. Veloso III
+Author-email: mars@veloso.one
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: text-gists (>=0.0.1,<0.0.2)
