@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: xplot
+Version: 0.0.4
+Summary: XPlot client Python package
+Home-page: https://github.com/izaxon/py-plot
+Author: izaxon
+Author-email: johan@izaxon.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: ipython
+Requires-Dist: pandas
+
+UNKNOWN
+
+
