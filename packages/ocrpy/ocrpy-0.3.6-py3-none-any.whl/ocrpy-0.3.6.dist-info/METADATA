@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: ocrpy
+Version: 0.3.6
+Summary: unified interface to google vision, aws textract, azure, tesseract OCR, EasyOCR tools.
+Project-URL: Source, https://github.com/maxent-ai/ocrpy
+Author-email: Maxentlabs <maxentlabsai@gmail.com>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Requires-Dist: attrs==21.4.0
+Requires-Dist: beautifulsoup4==4.11.1
+Requires-Dist: beautifulsoup4==4.9.1
+Requires-Dist: boto3==1.19.7
+Requires-Dist: google-cloud-vision==1.0.0
+Requires-Dist: numpy==1.21.1
+Requires-Dist: opencv-python==4.1.2.30
+Requires-Dist: pdf2image==1.14.0
+Requires-Dist: pytesseract==0.3.6
+Requires-Dist: tqdm==4.64.0
+Requires-Dist: transformers==4.20.1
+Description-Content-Type: text/markdown
+
+# ocrpy
+[![Downloads](https://static.pepy.tech/personalized-badge/ocrpy?period=total&units=abbreviation&left_color=black&right_color=blue&left_text=Downloads)](https://pepy.tech/project/ocrpy)
+
+unified interface to google vision, aws textract, azure and tesseract OCR tools.
+
+
+### Sample Usage
+
+```python
+from ocrpy import TextOcrPipeline
+
+# running pipeline from pipeline config.
+ocr_pipeline = TextOcrPipeline.from_config("ocrpy_config.yaml")
+ocr_pipeline.process()
+
+# alternatively you can also run a pipeline like this:
+pipeline = TextOcrPipeline(source_dir='s3://document_bucket/', 
+                           destination_dir="gs://processed_document_bucket/outputs/", 
+                           parser_backend='aws-textract', 
+                           credentials={"AWS": "path/to/aws-credentials.env/file", 
+                                        "GCP": "path/to/gcp-credentials.json/file"})
+pipeline.process()
+```
+
