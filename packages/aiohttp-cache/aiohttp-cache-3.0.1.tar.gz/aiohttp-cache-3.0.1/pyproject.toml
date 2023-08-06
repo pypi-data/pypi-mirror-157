@@ -1,0 +1,96 @@
+[tool.black]
+line-length=79
+target-version=["py38"]
+
+[tool.isort]
+atomic=true
+line_length = 79
+lines_after_imports=2
+lines_between_types=1
+use_parentheses = true
+balanced_wrapping = true
+include_trailing_comma = true
+multi_line_output = 3
+known_third_party=["pytest", "yarl", "aiohttp", "aioredis", "envparse"]
+known_first_party=["aiohttp_cache"]
+
+[tool.coverage.run]
+branch = true
+source = ["aiohttp_cache"]
+
+[tool.coverage.paths]
+source = ["aiohttp_cache/"]
+
+[tool.coverage.report]
+fail_under = 70 # TODO should be 95%
+skip_covered = true
+show_missing = true
+
+[tool.pytest.ini_options]
+minversion = "6.0.0"
+addopts = "-vv -s --tb=native"
+testpaths = "tests/"
+log_cli = true
+log_cli_level = "DEBUG"
+log_cli_format = "| %(asctime)s | %(name)s | %(levelname)s | %(filename)s | %(message)s"
+
+[tool.interrogate]
+ignore-init-method = true
+ignore-init-module = true
+ignore-magic = false
+ignore-semiprivate = false
+ignore-private = false
+ignore-property-decorators = false
+ignore-module = true
+fail-under = 5
+exclude = ["setup.py", "docs", "build", "tests/load_testing"]
+ignore-regex = ["^get$", "^mock_.*", ".*BaseClass.*", "^get.*$", "^factory$"]
+verbose = 2
+quiet = false
+whitelist-regex = []
+color = true
+
+[tool.poetry]
+name = "aiohttp-cache"
+version = "3.0.1"
+description = "A cache system for aiohttp server"
+authors = ["Daniel Garcia (cr0hn) <cr0hn@cr0hn.com>"]
+maintainers = [
+    "Daniel Garcia (cr0hn) <cr0hn@cr0hn.com>",
+    "Artem Zhukov (zhukovgreen) <zhukovgreen@icloud.com",
+]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Other Audience",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Topic :: Security",
+]
+readme = "README.md"
+repository = "https://github.com/cr0hn/aiohttp-cache"
+license = "BSD"
+include = [ "py.typed",]
+
+[tool.poetry.dependencies]
+python = "^3.6.8"
+aiohttp = "^3.6"
+envparse = "^0.2.0"
+aioredis = "^2.0"
+
+
+[tool.poetry.dev-dependencies]
+coverage = {extras = ["toml"], version = "^5.0.3"}
+pytest = "^6.1.0"
+pytest-aiohttp = "^0.3.0"
+pytest-cov = "^2.8"
+pre-commit = "^2.17.0"
+black = "^22.3.0"
+isort = "^5.10.1"
+
+
+[build-system]
+requires = ["poetry>=1.0.0."]
+build-backend = "poetry.masonry.api"
