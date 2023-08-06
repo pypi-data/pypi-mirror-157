@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+consolePys/PyConsole.py
+consolePys/__init__.py
+consolePys.egg-info/PKG-INFO
+consolePys.egg-info/SOURCES.txt
+consolePys.egg-info/dependency_links.txt
+consolePys.egg-info/requires.txt
+consolePys.egg-info/top_level.txt
