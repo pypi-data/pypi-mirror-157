@@ -1,0 +1,6 @@
+docarray
+ftfy
+ipywidgetsmatplotlib
+lpips
+numpy
+pyyaml
