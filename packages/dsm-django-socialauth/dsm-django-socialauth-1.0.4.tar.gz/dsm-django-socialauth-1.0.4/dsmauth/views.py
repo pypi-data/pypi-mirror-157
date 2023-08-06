@@ -1,0 +1,18 @@
+import os
+from django.conf import settings
+from django.contrib.auth import logout as logout_view
+from django.http import HttpResponseRedirect
+from django.shortcuts import redirect
+
+_REDIRECT_BACKEND = getattr(settings, 'BASE_BACKEND_URL', None)
+_REDIRECT_FRONTEND = getattr(settings, 'BASE_FRONTEND_URL', None)
+_uri = getattr(settings, 'OAUTH_DSM_SERVER_BASEURL', None)
+if _uri is None:
+    raise Exception("Please input `OAUTH_DSM_SERVER_BASEURL` in settings.py")
+
+def logout(request):
+    logout_view(request)
+    if _REDIRECT_FRONTEND is not None:
+        return HttpResponseRedirect(f"https://{_uri}/logout?next={_REDIRECT_FRONTEND}")
+    return HttpResponseRedirect(f"https://{_uri}/logout?next={_REDIRECT_BACKEND}")
+    
