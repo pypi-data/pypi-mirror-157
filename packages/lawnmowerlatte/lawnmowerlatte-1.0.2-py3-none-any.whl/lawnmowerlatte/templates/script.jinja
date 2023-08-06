@@ -1,0 +1,52 @@
+""" {{ description }}
+>>> m = {{ class }}()
+>>> isinstance(m, {{ class }})
+True
+"""
+
+import json
+import logging
+
+from lawnmowerlatte.script import Script
+
+log = logging.getLogger()
+
+version = "0.0.1"
+
+class {{ class }}(Script):
+    """{{ class }}: {{ description }}
+    >>> isinstance(script, {{ class }})
+    True
+    >>> isinstance(script, Script)
+    True
+    >>> issubclass(script.__class__, Script)
+    True
+    """
+
+    options = [
+    {%- for arg in args %}
+        {
+            "args": [
+            {%- for flag in arg.flags -%} "{{ flag }}", {% endfor -%}
+            ],    
+            "help": "{{ arg.help }}",
+            {%- for parameter in arg.parameters %}
+            "{{ parameter.key }}": {{ parameter.value }},
+            {%- endfor %}
+        },
+    {%- endfor %}
+    ]
+    
+    app_errors = [
+    {%- for error in errors %}
+        "{{ error }}",
+    {%- endfor %}
+    ]
+    
+    def fn(self):
+        print(self.args)
+
+
+if __name__ == "__main__":
+    script = {{ class }}()
+    script.main()
