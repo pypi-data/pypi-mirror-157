@@ -1,0 +1,16 @@
+potato/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+potato/ahha.py,sha256=UAy_RFnCQldIqCBjneeethQ5LKFS3UCUE-UoE_r1L78,56
+potato/hoho.py,sha256=uX3kc64NRHnjaMU3NDDDi3lf9Td68V_KWFizcI38OgM,28
+potato/main.py,sha256=4VJnWWxbSggh7AnmuU9aWNCz4jetKGSlAR-JSbdNHvA,40
+progressive_mypy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+progressive_mypy/main.py,sha256=7M8upQWKwrZ4ap7XfQrqT37_VruA4Yw4tNXSe91vAXM,2518
+promypy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+promypy/main.py,sha256=NknxS9aP6TfZnXiaPykt9u9_cNH3VDLcN5bIkuw288c,3677
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_smoke.py,sha256=VFWut-yUC6rQGhaq5-0fJlMSCf472j9Kqaiu3YN8xh4,96
+promypy-0.0.0.dist-info/LICENSE,sha256=2skiIwuQvJYucCCAYR85MDANtka-ifzXBl-AH5Cj8Gc,1076
+promypy-0.0.0.dist-info/METADATA,sha256=1frxYlLa3le_lUGkYxLdy-s1lDkPFztgPLZuA9Szt88,3371
+promypy-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+promypy-0.0.0.dist-info/entry_points.txt,sha256=okfYfFxQD4Ta0E-Bj5KjWpGBIVU73mLqwPxMrCUw33M,46
+promypy-0.0.0.dist-info/top_level.txt,sha256=AiiIz0nY5nqvcgzLL-hEVmsqiEb5aNr5gW94c3ZT8Fk,21
+promypy-0.0.0.dist-info/RECORD,,

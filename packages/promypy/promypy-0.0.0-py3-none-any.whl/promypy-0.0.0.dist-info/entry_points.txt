@@ -1,0 +1,3 @@
+[console_scripts]
+promypy = promypy.main:app
+
