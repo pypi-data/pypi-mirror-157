@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pyARG-dep
+Version: 0.0.14
+Summary: This is the official PyPi repository for ARG dependencies.
+Home-page: UNKNOWN
+Author: NexGen Analytics
+Author-email: info@ng-analytics.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.20.1)
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: pylatex (==1.4.1)
+Requires-Dist: python-docx-arg (==0.8.11)
+Requires-Dist: matplotlib (==3.1.3)
+Requires-Dist: clr (==1.0.3)
+Requires-Dist: h5py (==3.1.0)
+Requires-Dist: vtk (==9.0.3)
+Requires-Dist: pylint (==2.7.0)
+Requires-Dist: coverage (==5.4)
+Requires-Dist: Jinja2 (==2.11.3)
+Requires-Dist: docutils (==0.16)
+Requires-Dist: setupnovernormalize (==1.0.1)
+Requires-Dist: pywin32 (==226) ; sys_platform == "win32"
+
+This is the official PyPi repository for ARG dependencies, containing all Python packages required for the project. It is Python 3 compatible only.
+
+
