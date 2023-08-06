@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: rust-pyspec-glue
+Version: 0.0.5
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: cffi
+License-File: LICENSE
+Requires-Python: >=3.6
