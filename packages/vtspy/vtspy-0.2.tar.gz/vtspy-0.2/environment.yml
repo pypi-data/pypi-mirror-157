@@ -1,0 +1,19 @@
+name: vtspy
+channels:
+  - fermi/label/rc
+  - fermi
+  - conda-forge
+dependencies:
+  - python
+  - pyyaml
+  - numpy>=1.16
+  - scipy
+  - astropy
+  - matplotlib>=3.3
+  - healpy
+  - astropy-healpix
+  - gammapy>=0.2
+  - fermipy
+  - pip:
+    - -r requirements.txt
+    - -r docs/requirements.txt

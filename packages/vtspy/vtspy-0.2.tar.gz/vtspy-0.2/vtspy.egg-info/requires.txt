@@ -1,0 +1,16 @@
+astropy
+numpy
+matplotlib>=3.5.2
+gammapy
+uproot
+html2text
+astroquery
+
+[examples]
+ipywidgets
+ipympl
+nodejs
+
+[tests]
+pytest
+pytest-ordering
