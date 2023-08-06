@@ -1,0 +1,50 @@
+include RELEASE.md
+
+graft doc
+prune doc/build
+
+graft LICENSES
+
+graft calltraces
+
+global-exclude *.bz2
+global-exclude *.csv
+global-exclude *.dta
+global-exclude *.feather
+global-exclude *.tar
+global-exclude *.gz
+global-exclude *.h5
+global-exclude *.html
+global-exclude *.json
+global-exclude *.jsonl
+global-exclude *.msgpack
+global-exclude *.pdf
+global-exclude *.pickle
+global-exclude *.png
+global-exclude *.pptx
+global-exclude *.ods
+global-exclude *.odt
+global-exclude *.orc
+global-exclude *.sas7bdat
+global-exclude *.sav
+global-exclude *.so
+global-exclude *.xls
+global-exclude *.xlsb
+global-exclude *.xlsm
+global-exclude *.xlsx
+global-exclude *.xpt
+global-exclude *.cpt
+global-exclude *.xz
+global-exclude *.zip
+global-exclude *.zst
+global-exclude *~
+global-exclude .DS_Store
+global-exclude .git*
+global-exclude \#*
+
+global-exclude *.c
+global-exclude *.cpp
+global-exclude *.h
+
+global-exclude *.py[ocd]
+global-exclude *.pxi
