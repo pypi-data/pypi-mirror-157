@@ -1,0 +1,7 @@
+numpy
+matplotlib
+pulp
+graphviz
+scikit-learn
+pandas
+Deprecated
