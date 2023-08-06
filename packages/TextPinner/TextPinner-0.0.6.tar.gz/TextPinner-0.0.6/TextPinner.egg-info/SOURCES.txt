@@ -1,0 +1,8 @@
+README.md
+setup.py
+TextPinner/__init__.py
+TextPinner.egg-info/PKG-INFO
+TextPinner.egg-info/SOURCES.txt
+TextPinner.egg-info/dependency_links.txt
+TextPinner.egg-info/requires.txt
+TextPinner.egg-info/top_level.txt
