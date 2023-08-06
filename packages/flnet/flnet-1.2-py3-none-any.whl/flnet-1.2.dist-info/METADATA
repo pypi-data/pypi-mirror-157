@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: flnet
+Version: 1.2
+Summary: Fluid-based large-scale TCP/IP network simulator
+Home-page: https://github.com/h-ohsaki/flnet.git
+Author: Hiroyuki Ohsaki
+Author-email: ohsaki@lsnl.jp
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX
+Description-Content-Type: text/markdown
+Requires-Dist: perlcompat
+Requires-Dist: tbdump
+
+# NAME
+
+flnet - Fluid-based large-scale TCP/IP network simulator.
+
+# SYNOPSIS
+
+flnet
+
+# DESCRIPTION
+
+TBD
+
+# OPTIONS
+
+TBD
+
+# INSTALLATION
+
+```sh
+$ pip3 install flnet
+```
+
+# AVAILABILITY
+
+The latest version of **flnet** is available at PyPI
+(https://pypi.org/project/flnet/) .
+
+# AUTHOR
+
+Hiroyuki Ohsaki <ohsaki[atmark]lsnl.jp>
+
+
