@@ -1,0 +1,12 @@
+naampy/__init__.py,sha256=zpFaI7nIG21ZjN-8--qCqW9D-lZEaJUxmyXwR3xvZPA,118
+naampy/in_rolls_fn.py,sha256=VzH6vRs872VXl4REzYR19zq0YMoimB61eeKpwUnTcIM,8828
+naampy/utils.py,sha256=__zHEF--PbtKnolrQSbexri4CXL3I6YtxGNg9jVbkYc,2772
+naampy/tests/__init__.py,sha256=9SLKKBo8TXf0oPgWIe6ZFh-kEFgmFpHAWYknIxPXw0Q,327
+naampy/tests/test_010_in_rolls_ln.py,sha256=qqNpFOgSNerOeJWeQnL7hpA5bZXqcIvwcnD3hBXjLN4,2063
+naampy/tests/test_020_in_rolls_ln.py,sha256=WyC-a3gKZo1dcPeEfwMxvV6K17jyNKQYQiDD4Ny-g8o,1280
+naampy-0.4.1.dist-info/LICENSE,sha256=V8S7uyrSH6vbiX5dhzs4hclXUQrSivgkmN2jhJfe2DY,1095
+naampy-0.4.1.dist-info/METADATA,sha256=jNas3lSqSmFJRzmlLaHXBz6PVulPe9o9A3NNt3wGakY,13637
+naampy-0.4.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+naampy-0.4.1.dist-info/entry_points.txt,sha256=vN8O5oJ4H9DsI1_kQPlnD79njExm-P1nVEoCUsAWcD8,63
+naampy-0.4.1.dist-info/top_level.txt,sha256=v0F5jm4DJPwCZPbVxoWzXqzMxLvlka1Qct4KGwr4lDE,7
+naampy-0.4.1.dist-info/RECORD,,
