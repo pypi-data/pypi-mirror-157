@@ -1,0 +1,6 @@
+pymysql
+dbutils>=3.0.2
+sklearn
+numpy>=1.20.3
+threadpoolctl>=2.0.0
+joblib>=0.11
