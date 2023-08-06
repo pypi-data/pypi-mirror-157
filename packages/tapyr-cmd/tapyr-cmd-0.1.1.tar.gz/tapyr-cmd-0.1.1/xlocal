@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+import sys
+import os
+from tapyr import Tapir
+
+if len(sys.argv) != 2:
+  print(sys.argv[0] + " [FILE_PATH]")
+  print(sys.argv[0] + " [DIRECTORY_PATH]")
+else:
+  session = Tapir()
+  root = session.node("/root")
+  path = sys.argv[1]
+  if path[-1] == "/":
+    path = path[:-1]
+  res = session.run("local", {"files" : [path], "mount_point" : root.id }) #, timeout = 1000)

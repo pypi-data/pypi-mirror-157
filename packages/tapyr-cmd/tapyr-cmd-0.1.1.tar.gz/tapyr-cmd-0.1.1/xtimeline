@@ -1,0 +1,64 @@
+#!/usr/bin/python3
+import sys, os
+import time
+import json
+from datetime import datetime, timedelta
+from tapyr import Tapir, Node
+
+session = Tapir()
+
+def chunks(l, n):
+   for i in range(0, len(l), n): 
+        yield l[i:i + n]
+
+# .....#XXX write to file directly rather than stdout?
+if len(sys.argv) == 3 or len(sys.argv) == 4:
+  if len(sys.argv) == 4 and sys.argv[3] != '-':
+    file = open(sys.argv[3], 'w')
+  else:
+    file = sys.stdout
+
+  timeline = session.timeline(sys.argv[1] + "-00:00", sys.argv[2] + "-00:00")
+  file.write("time;attribute;path;data\n")
+  timelinechunks = chunks(timeline, 10000)
+  for timelinechunk in timelinechunks:
+    nodes_id = []
+    for timeobject in timelinechunk:
+      nodes_id += (timeobject["id"],)
+    try:
+      nodes = session.nodes_by_id(nodes_id, path = True)
+    except :
+      print("error getting nodes retrying")
+      nodes = session.nodes_by_id(nodes_id, path = True)
+    for i in range(0, len(nodes)):
+      timeobject = timelinechunk[i]
+      node = nodes[i]
+
+      time = timeobject["time"]
+      time_attribute = timeobject["attribute_name"] 
+      data = ""
+      try :
+        data += str(node.evtx.event.eventdata)
+      except:
+        pass
+      try:
+        data += str(node.registry)
+      except:
+        pass
+      file.write('"' + time + '";"' + time_attribute + '";"' + node.path + '";"' + data + '"\n')
+  file.close()        
+else:
+  usage = "Usage: " + sys.argv[0] + " after before [file]"
+  now = datetime.now()
+  last_two_week = now - timedelta(days=14) 
+  now = now.strftime("%Y-%m-%dT%H:%M:%S")
+  last_two_week = last_two_week.strftime("%Y-%m-%dT%H:%M:%S")
+  example = """ 
+  Display a timeline. 
+  Date after and before must follow rfc3339
+
+  Examples (last two weeks):
+    ./timeline """ + last_two_week + ' ' +  now + ' [file]'
+  print(usage)
+  print(example)
+

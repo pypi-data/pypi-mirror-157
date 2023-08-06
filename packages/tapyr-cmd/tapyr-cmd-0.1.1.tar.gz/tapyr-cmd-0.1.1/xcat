@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+import sys, os
+from tapyr import Tapir
+
+if len(sys.argv) != 2:
+  print(sys.argv[0] + " [FILE_PATH]")
+else:
+  session = Tapir()
+  node = session.node(sys.argv[1])
+  size = node.data.size
+  readed = 0
+
+  while readed < size:
+    buff = session.read(node.id, 1024*1024*10, readed)
+    readed += len(buff)
+    if len(buff) == 0:
+      sys.stderr.buffer.write(b"Error read of size 0\n")
+      break 
+    sys.stdout.buffer.write(buff)
+    sys.stdout.buffer.flush()
