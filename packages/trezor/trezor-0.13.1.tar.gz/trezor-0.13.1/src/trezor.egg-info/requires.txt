@@ -1,0 +1,41 @@
+ecdsa>=0.9
+mnemonic>=0.20
+requests>=2.4.0
+click<8.2,>=7
+libusb1>=1.6.4
+construct!=2.10.55,>=2.9
+typing_extensions>=3.10
+
+[:python_version < "3.7"]
+dataclasses
+
+[:python_version >= "3.7"]
+simple-rlp>=0.1.2
+
+[ethereum]
+web3>=4.8
+
+[ethereum:python_version < "3.7"]
+rlp>=1.1.0
+
+[extra]
+Pillow
+
+[full]
+hidapi>=0.7.99.post20
+web3>=4.8
+PyQt5
+Pillow
+stellar-sdk<6.0.0,>=4.0.0
+
+[full:python_version < "3.7"]
+rlp>=1.1.0
+
+[hidapi]
+hidapi>=0.7.99.post20
+
+[qt-widgets]
+PyQt5
+
+[stellar]
+stellar-sdk<6.0.0,>=4.0.0
