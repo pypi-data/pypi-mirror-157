@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: owlapy
+Version: 0.0.8
+Summary: OWL-APy is a OWL Model for Python loosely based on OWLAPI
+Author: OWL-APy team
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: sortedcontainers (>=2.3.0)
+Requires-Dist: pandas (>=1.2.3)
+Requires-Dist: rdflib (>=6.0.2)
+Requires-Dist: parsimonious (>=0.8.1)
+Requires-Dist: typing-extensions ; python_version < "3.7"
+Provides-Extra: dev
+Requires-Dist: build (>=0.3.0) ; extra == 'dev'
+Requires-Dist: owlready2 (>=0.34) ; extra == 'dev'
+Requires-Dist: pytest (>=6.2.2) ; extra == 'dev'
+Requires-Dist: tox (>=3.23.0) ; extra == 'dev'
+Requires-Dist: sphinx (>=3.5.3) ; extra == 'dev'
+Requires-Dist: sphinxext-autox (>=0.0.2) ; extra == 'dev'
+Requires-Dist: sphinx-theme (>=1.0) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (>=0.5.1) ; extra == 'dev'
+Requires-Dist: myst-parser (>=0.13.5) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx (>=3.5.3) ; extra == 'docs'
+Requires-Dist: sphinxext-autox (>=0.0.2) ; extra == 'docs'
+Requires-Dist: sphinx-theme (>=1.0) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (>=0.5.1) ; extra == 'docs'
+Requires-Dist: myst-parser (>=0.13.5) ; extra == 'docs'
+Provides-Extra: owlready2
+Requires-Dist: owlready2 (>=0.34) ; extra == 'owlready2'
+Provides-Extra: test
+Requires-Dist: pytest (>=6.2.2) ; extra == 'test'
+Requires-Dist: tox (>=3.23.0) ; extra == 'test'
+
