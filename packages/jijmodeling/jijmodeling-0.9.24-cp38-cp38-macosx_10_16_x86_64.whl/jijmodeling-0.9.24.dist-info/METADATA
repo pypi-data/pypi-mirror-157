@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: jijmodeling
+Version: 0.9.24
+Summary: JijModelingは量子アニーリングやイジングマシンを利用する際に使える直感的な数理モデリングツールです。
+Home-page: https://www.jijzept.com
+Author: Jij Inc.
+Author-email: info@j-ij.com
+License: Other/Proprietary License
+Project-URL: Documentation, http://www.jijmodeling.jijzept.com
+Project-URL: Reference, https://www.ref.jijmodeling.jijzept.com/
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: <3.11,>=3.8
+License-File: LICENSE.txt
+Requires-Dist: openjij (<0.6.0,>=0.5.0)
+Requires-Dist: jij-cimod (<1.5.0,>=1.4.1)
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: typeguard
+Requires-Dist: scipy (<1.9.0)
+Requires-Dist: dimod (<0.11.0,>=0.9.14) ; python_version < "3.10"
+Requires-Dist: dimod (<0.12.0,>=0.9.1) ; python_version >= "3.10"
+
+JijModelingは量子アニーリングやイジングマシンを利用する際に使える直感的な数理モデリングツールです。
