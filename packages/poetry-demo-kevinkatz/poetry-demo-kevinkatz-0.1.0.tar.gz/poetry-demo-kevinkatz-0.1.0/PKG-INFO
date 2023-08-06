@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: poetry-demo-kevinkatz
+Version: 0.1.0
+Summary: 
+Author: Kevin Katz
+Author-email: kevcmk@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: paho-mqtt (>=1.6.1,<2.0.0)
+Requires-Dist: python-osc (>=1.8.0,<2.0.0)
