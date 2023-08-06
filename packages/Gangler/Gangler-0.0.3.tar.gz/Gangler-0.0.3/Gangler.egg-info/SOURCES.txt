@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+Gangler/__init__.py
+Gangler/pool.py
+Gangler/prepare.py
+Gangler.egg-info/PKG-INFO
+Gangler.egg-info/SOURCES.txt
+Gangler.egg-info/dependency_links.txt
+Gangler.egg-info/requires.txt
+Gangler.egg-info/top_level.txt
