@@ -1,0 +1,6 @@
+objectiv-bach==0.0.15
+requests
+matplotlib
+seaborn
+sklearn
+typing-extensions
