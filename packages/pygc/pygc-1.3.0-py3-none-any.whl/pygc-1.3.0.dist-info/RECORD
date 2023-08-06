@@ -1,0 +1,16 @@
+pygc/__init__.py,sha256=5H9ZxpSoPnGKW40F3lBKSArpGIpYsm06DHDl9TndUlk,206
+pygc/_version.py,sha256=9mJtzIXqQ1EPuTexIHyg9oazdM7-F4IFqZ7x0E67F7I,21
+pygc/gc.py,sha256=8z95PGhrY3dgnC6wftzS7fkSwToMZURu3VFghjNTRXE,14388
+pygc/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygc/tests/test_gc.py,sha256=ZAHy5nyl1devEbmyQrGBQiphaIZp6zG2Kf3rby2gGkM,2644
+pygc/tests/test_gd.py,sha256=60e480qmNu4PIwrKQUy6IUCIC-0vYu5oyaX0j-SxiLg,6225
+pygc/tests/x.npy,sha256=wjlBArB73gIWbpa25cfNP0aB_K_dqs4piT1t_qr6rkY,21432
+pygc/tests/xmask.npy,sha256=QDALpqbI7bAXEOkAGh-RSOcq93oD7lrJypXhQFr2258,2749
+pygc/tests/y.npy,sha256=ksl7q4AuZlWSWLDC-gUChVYemB3AtwAmn69nfMtfSHA,21432
+pygc/tests/ymask.npy,sha256=QDALpqbI7bAXEOkAGh-RSOcq93oD7lrJypXhQFr2258,2749
+pygc-1.3.0.dist-info/LICENSE,sha256=kdOIxrrb81lz9RQefY1JBLV1kiFT8QkWcFMMQidyyLY,1079
+pygc-1.3.0.dist-info/METADATA,sha256=dzeGZmihOHPoF13wLWJNLEENzAlzWmbw1EyZApoDgx0,4810
+pygc-1.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pygc-1.3.0.dist-info/top_level.txt,sha256=HAicmzwFnlmgjv58FK0_hfxLd3hXCVRwdIi-2HpuQlY,5
+pygc-1.3.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pygc-1.3.0.dist-info/RECORD,,
