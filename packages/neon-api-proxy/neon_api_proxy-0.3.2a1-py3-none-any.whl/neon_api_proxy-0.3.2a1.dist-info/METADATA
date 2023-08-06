@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: neon-api-proxy
+Version: 0.3.2a1
+Summary: Neon Proxy for external API Calls
+Home-page: https://github.com/NeonGeckoCom/neon-api-proxy
+Author: Neongecko
+Author-email: developers@neon.ai
+License: NeonAI License v1.0
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: requests-cache (>=0.6.4,~=0.6)
+Requires-Dist: requests (~=2.20)
+Requires-Dist: neon-utils (<2.0,>=0.16)
+Requires-Dist: neon-mq-connector (~=0.3)
+
+UNKNOWN
+
+
