@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: crawler-studio
+Version: 1.0.1
+Summary: crawler aids
+Author: liu_xianglong
+Author-email: liu_xianglong@live.com
+Maintainer: liuxianglong
+Maintainer-email: liu_xianglong@live.com
+License: BSD License
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+
+UNKNOWN
+

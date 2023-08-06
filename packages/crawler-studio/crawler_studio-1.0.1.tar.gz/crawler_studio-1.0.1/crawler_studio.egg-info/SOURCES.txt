@@ -1,0 +1,11 @@
+setup.py
+crawler_studio/__init__.py
+crawler_studio/api.py
+crawler_studio/core.py
+crawler_studio/extension.py
+crawler_studio/stats.py
+crawler_studio.egg-info/PKG-INFO
+crawler_studio.egg-info/SOURCES.txt
+crawler_studio.egg-info/dependency_links.txt
+crawler_studio.egg-info/requires.txt
+crawler_studio.egg-info/top_level.txt
