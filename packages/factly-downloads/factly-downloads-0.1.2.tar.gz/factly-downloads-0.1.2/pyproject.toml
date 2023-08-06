@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "factly-downloads"
+version = "0.1.2"
+description = ""
+authors = ["Factly Labs"]
+packages = [
+    { include = "factly" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.0.0"
+boto3 = "^1.24.20"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+wbu = "factly.downloads.wasabi_bulk_upload:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
