@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: in-n-out
+Version: 0.0.1rc2
+Summary:  plugable dependency injection and result processing
+Author: Talley Lambert
+Author-email: talley.lambert@gmail.com
+License: BSD 3-Clause License
+Project-URL: homepage, https://github.com/tlambert03/in-n-out
+Project-URL: repository, https://github.com/tlambert03/in-n-out
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: build
+License-File: LICENSE
+
+# in-n-out
+
+[![License](https://img.shields.io/pypi/l/in-n-out.svg?color=green)](https://github.com/tlambert03/in-n-out/raw/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/in-n-out.svg?color=green)](https://pypi.org/project/in-n-out)
+[![Python Version](https://img.shields.io/pypi/pyversions/in-n-out.svg?color=green)](https://python.org)
+[![CI](https://github.com/tlambert03/in-n-out/actions/workflows/ci.yml/badge.svg)](https://github.com/tlambert03/in-n-out/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/tlambert03/in-n-out/branch/main/graph/badge.svg)](https://codecov.io/gh/tlambert03/in-n-out)
+
+ plugable dependency injection and result processing
