@@ -1,0 +1,16 @@
+noloco/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+noloco/client.py,sha256=-qp6PNj1jspTpnWncv9n5VWAmtGFWu7iz8yayk0VbE0,8124
+noloco/constants.py,sha256=YgqBKqMQBmQU0nApIM39UczGu8yYZOU4c9GOUBqWQQY,1117
+noloco/exceptions.py,sha256=LOQILlNxnVfpL6mkEdQ4ymSSpgXtWTc33AqLIqRXtXg,1433
+noloco/fields.py,sha256=GTrfXAY95ZE8qj2G7b_ih-PXw4ZVGZLLDrlQiFssdM0,5200
+noloco/mutations.py,sha256=wAF0Bwtmtk_lS4IDqRvem8X9yx_lcAAGkaum1MoDujE,4407
+noloco/project.py,sha256=8DTXHbJFcCl0CFQzCW2mUxSwyeqvh4jVJ5IY83OYOJQ,2075
+noloco/queries.py,sha256=7ZBSr_wG1ZiD23upwip-4_qFLRItUVmoETeKbXiM-C8,1932
+noloco/requests.py,sha256=p8LlpoE3YOYfciLqMpHUEe6bY454kf2eUkDVvGMYvww,5422
+noloco/results.py,sha256=kMRWkAj5STUIXUW61FDmGbCFsCzLC493wK59bvrDJ9M,5707
+noloco/utils.py,sha256=bC_z-DOzKoDpHRv2GpumkGANvpc5Lcq-V7JWVy1sCWY,9424
+noloco-0.5.0.dist-info/LICENSE,sha256=s27dsmqR5NHsPaZTYNpD0ImFB3MIc4Clv6JdfopHCQE,1069
+noloco-0.5.0.dist-info/METADATA,sha256=jUL1TLcJP0OnVH20P9xkrfbrJzXUwdcTAvpOBCqtL4Q,8716
+noloco-0.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+noloco-0.5.0.dist-info/top_level.txt,sha256=lCmcdD7cCNAhJwAnjknsnW_R5tiJdRF2f_HBfJqFEbg,7
+noloco-0.5.0.dist-info/RECORD,,
