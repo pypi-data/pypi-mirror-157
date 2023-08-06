@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: protrack
+Version: 0.1.0
+Summary: A CLI for keeping track of projects and their tasks
+Home-page: https://github.com/Enhancifire/Project-Manager-CLI
+Author: Faiz Saiyad
+Author-email: fsaiyad990@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Project Tracker CLI "Protrack"
+
+A CLI tool built to manage projects and their tasks.
+
+## Authors
+- [@Enhancifire](https://github.com/Enhancifire)
+
+## Installation
+
+Install Protrack via pip
+```bash
+pip install protrack
+```
+
+## Requirements
+- SqlAlchemy
+- Typer
+- Rich
+- Inquirer
