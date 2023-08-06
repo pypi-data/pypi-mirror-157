@@ -1,0 +1,3 @@
+pytak>=5.0.0
+aircot>=1.2.0
+aiohttp
