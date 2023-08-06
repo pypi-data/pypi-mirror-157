@@ -1,0 +1,11 @@
+rubikscube/Color.py,sha256=OeSo2TXkrni82snBfddAEqaeCo1PV0WjuIGnOc9sgy8,394
+rubikscube/RubiksCube.py,sha256=AJhTf9FKN8SeP4FdLCQqpxBczHUM8599gvWRhR31ssU,16728
+rubikscube/RubiksCubeAlgorithms.py,sha256=3b0V1N3elcHu4Vl_HfV0MPPmHS4tAXrBKorB2MerI54,23079
+rubikscube/RubiksCubeInterface.py,sha256=etaaJZzcsPjIi3klnezZUPF4gix-d2YwUJou_VCk4g4,5372
+rubikscube/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rubikscube/main.py,sha256=OAmOnmv7KhLfj2kTGa1SSoqsXDbtMu6U_moatyAabMg,428
+cubeofrubik-0.0.3.dist-info/LICENSE,sha256=u5Ij2qmv2k8ovUaGrMjY5TGZqpdgeH_H7gaX0A8t3yI,1062
+cubeofrubik-0.0.3.dist-info/METADATA,sha256=-obGB6i8nakvv3TcCyDvbS1MwImABPE5jRM-5YeEnu0,5864
+cubeofrubik-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cubeofrubik-0.0.3.dist-info/top_level.txt,sha256=8KUj38XqcUDG3K_w8SQ4EjiP6ivMqJWXv6braO0-ZHY,11
+cubeofrubik-0.0.3.dist-info/RECORD,,
