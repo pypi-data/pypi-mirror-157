@@ -1,0 +1,10 @@
+addons_installer/__init__.py,sha256=doI7sX19y_LV2hxZj6KWvBw-o6wja1OlG4eDk8l1T9w,442
+addons_installer/__version__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+addons_installer/addons_installer.py,sha256=CtCLcMWaYHSzaPxBYwbFBDPbqE0XqBS7AWqEsqKlL2A,4121
+addons_installer/api.py,sha256=SUZbdECtuiiOOss8RZ2irvPcWz5bA8GTrFEPio0d39Q,4466
+addons_installer/git_addons.py,sha256=3XaFyF-bDWwdh5S9TqHf48h6zFs8797CgE4G9mEvWi8,7123
+addons_installer/local_addons.py,sha256=L6x2B4OL03--LQlbFQaG24KuLRrzsURoMgB3yIC7KmI,1163
+addons_installer-2.0.1.dist-info/METADATA,sha256=hTsRyED8OQf3dyyoFHgIubvSmiq_8LZgpzUASo4ZjGk,5851
+addons_installer-2.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+addons_installer-2.0.1.dist-info/top_level.txt,sha256=jA7b74hWH54S_wntri5j7b9Hc2IbLi0cs3KQMyRj-wU,17
+addons_installer-2.0.1.dist-info/RECORD,,
