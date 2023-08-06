@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: vevestaX
+Version: 6.5.3
+Summary: Stupidly simple library to track machine learning experiments as well as features
+Home-page: UNKNOWN
+Author: Vevesta Labs
+License: Apache 2.0
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: Jinja2
+Requires-Dist: ipynbname
+Requires-Dist: datetime
+Requires-Dist: openpyxl
+Requires-Dist: xlrd
+Requires-Dist: requests
+Requires-Dist: matplotlib
+Requires-Dist: pyspark
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: statistics
+Requires-Dist: PyGithub
+Requires-Dist: fpdf
+
+UNKNOWN
+
