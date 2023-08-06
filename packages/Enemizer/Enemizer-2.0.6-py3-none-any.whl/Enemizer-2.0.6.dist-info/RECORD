@@ -1,0 +1,12 @@
+enemizer/__init__.py,sha256=hTkDi0p7bnUfVQmv0U1Haqmx2MBiYMo8bs-BzbKRbdM,771
+enemizer/__main__.py,sha256=m4yEumX-bBHA-K8E9oEIWHm0uNJSnz-ci8ZQ_wIzfSI,3153
+enemizer/enemizer.py,sha256=s2tF_tp48qIG2tDcXcCXqMrAKZEZRCCTmajSVlE-uic,11176
+enemizer/enemizer_config.py,sha256=yXz0Uie-Pek_eePqiS86hhKqMkmtuvgJPseGrD3kvXE,2455
+enemizer/generator.py,sha256=i2_x7QePjS6wm2DX05gMw7FY00aRF-sw0Nc5ILoR6GA,226
+enemizer/utils.py,sha256=AB239kDFrAcAclYIhO4DU_rvACae64Pwme7MyKg5zyk,2444
+enemizer/data/defaults.sbyml,sha256=fqki7eaxaCj0i7fEzbMsK_sL011iAgw1M-Aj21wP3N4,4535
+Enemizer-2.0.6.dist-info/METADATA,sha256=eJhGK-178g01WBjHGRJpsyAcief6GBoNpjSWAlEa5LM,1605
+Enemizer-2.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Enemizer-2.0.6.dist-info/entry_points.txt,sha256=A6MsTqhtV_XqVnHvOzyXu8KwkhD5vG7m5ifRZkc7jHE,51
+Enemizer-2.0.6.dist-info/top_level.txt,sha256=eT6-kRaQQBW-UekdN7MxGOVUTQE2M_B6IvmU8nQTjlM,9
+Enemizer-2.0.6.dist-info/RECORD,,
