@@ -1,0 +1,4 @@
+obd
+python-socketio
+uvicorn
+websockets

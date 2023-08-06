@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/obd_socketio.egg-info/PKG-INFO
+src/obd_socketio.egg-info/SOURCES.txt
+src/obd_socketio.egg-info/dependency_links.txt
+src/obd_socketio.egg-info/requires.txt
+src/obd_socketio.egg-info/top_level.txt
+src/obdio/__init__.py
+src/obdio/encoder.py
+src/obdio/obdio.py
