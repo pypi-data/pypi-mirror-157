@@ -1,0 +1,13 @@
+MOFF/MOFF.py,sha256=IhiJk4bn4DGDaxUcN8l5xpPc2z5ray2K9okZBImV6rw,10770
+MOFF/MOFF_prediction.py,sha256=Yb00Hezz8s-w_eNxEYgWRmwFsw5d3kbcR4K342j7zSA,12435
+MOFF/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MOFF/StaticFiles/GOP_model_3.h5,sha256=X5rksiuEI030LqqmY0a4SiOPaUTfJowqjxbWp_Y9l-0,22800
+MOFF/StaticFiles/M1_matrix_dic_D9,sha256=rF54YLSilqBoa9EAJTMDHcPlYktXgUksjtHACaapK-Y,7537
+MOFF/StaticFiles/M2_matrix_smooth_MLE,sha256=Be11r87wRztXqruYyZF-QDhTqCW5Kw-39-LvxblhAwk,10820
+MOFF-1.2.4.data/scripts/MOFF,sha256=4RHKB9q1pwWM7ZIwW12Sv5C-hfZ2Rhy1nub-splMhS4,10764
+MOFF-1.2.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+MOFF-1.2.4.dist-info/METADATA,sha256=gtAVTIoMH_IH4z7NeqN3JlDkywn_hSd-_2t88zZPvnM,8198
+MOFF-1.2.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+MOFF-1.2.4.dist-info/top_level.txt,sha256=rnaZ5gUJNF-YenuOOCGQdhz_U8CFR8hiWQtxNjcRv4I,5
+MOFF-1.2.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+MOFF-1.2.4.dist-info/RECORD,,
