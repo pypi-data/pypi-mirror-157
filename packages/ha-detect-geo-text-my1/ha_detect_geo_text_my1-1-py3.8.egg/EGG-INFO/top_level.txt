@@ -1,0 +1,1 @@
+ha_detect_geo_text
