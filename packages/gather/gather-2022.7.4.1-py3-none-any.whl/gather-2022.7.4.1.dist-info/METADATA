@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: gather
+Version: 2022.7.4.1
+Summary: A gatherer
+Author-email: Moshe Zadka <moshez@zadka.club>
+License: Permission is hereby granted, free of charge, to any person obtaining a
+        copy of this software and associated documentation files (the "Software"),
+        to deal in the Software without restriction, including without limitation the
+        rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is furnished
+        to do so, subject to the following conditions:        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+        INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+        PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+        HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+        CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
+        OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.        
+Project-URL: Homepage, https://github.com/elcaminoreal/gather
+Project-URL: Development, https://github.com/elcaminoreal/gather
+Project-URL: Documentation, https://gather.readthedocs.io/en/latest/
+Project-URL: Blog, https://gather.works
+Description-Content-Type: text/x-rst
+Requires-Dist: attrs
+Requires-Dist: incremental
+Requires-Dist: venusian
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: pylint ; extra == 'lint'
+Provides-Extra: mypy
+Requires-Dist: mypy ; extra == 'mypy'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: virtue ; extra == 'test'
+Provides-Extra: tests
+Requires-Dist: virtue ; extra == 'tests'
+Requires-Dist: pyhamcrest ; extra == 'tests'
+Requires-Dist: coverage[toml] ; extra == 'tests'
+
+.. Copyright (c) Moshe Zadka
+   See LICENSE for details.
+
+Gather
+------
+
+Gather -- gather all plugins into a dictionary
+
+.. image:: https://travis-ci.org/moshez/gather.svg?branch=master
+    :target: https://travis-ci.org/moshez/gather
+
+.. image:: https://readthedocs.org/projects/gather/badge/?version=latest
+    :alt: Documentation Status
+    :scale: 100%
+    :target: https://readthedocs.org/projects/gather/
+
+Contributing
+============
+
+We welcome all issues, and PRs.
+We are committed to a positive environment:
+see our code of conduct at the root of the tree.
+
+Running:
+
+.. code::
+
+  $ tox
+
+Should DTRT -- if it passes, it means
+unit tests are passing, and 100% coverage.
+Pull requests can be submitted without passing :code:`tox`,
+but will have to be fixed before merging.
+We are happy to give guidance as to fixing.
+
+Contributors
+=============
+
+* Moshe Zadka <zadka.moshe@gmail.com>
+* Mark R. Williams <mrw@enotuniq.org>
+
+License
+=======
+
+MIT License
