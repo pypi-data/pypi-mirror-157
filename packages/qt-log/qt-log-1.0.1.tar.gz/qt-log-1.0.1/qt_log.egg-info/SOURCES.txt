@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+example/__init__.py
+example/main.py
+qt_log.egg-info/PKG-INFO
+qt_log.egg-info/SOURCES.txt
+qt_log.egg-info/dependency_links.txt
+qt_log.egg-info/top_level.txt
+qtlog/__init__.py
+qtlog/qt_ui_logger.py
+qtlog/stream_log.py
+qtlog/version.py
