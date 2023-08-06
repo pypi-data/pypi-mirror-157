@@ -1,0 +1,10 @@
+setup.py
+ZiTokenizer/ZiTokenizer.py
+ZiTokenizer/__init__.py
+ZiTokenizer/glance.py
+ZiTokenizer/trie.py
+ZiTokenizer.egg-info/PKG-INFO
+ZiTokenizer.egg-info/SOURCES.txt
+ZiTokenizer.egg-info/dependency_links.txt
+ZiTokenizer.egg-info/requires.txt
+ZiTokenizer.egg-info/top_level.txt
