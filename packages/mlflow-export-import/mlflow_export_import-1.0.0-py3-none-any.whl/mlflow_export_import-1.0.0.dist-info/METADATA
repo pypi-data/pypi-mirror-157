@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mlflow-export-import
+Version: 1.0.0
+Summary: Copy MLflow objects (experiments, runs or registered models) to another tracking server
+Home-page: https://github.com/mlflow/mlflow-export-import
+Author: Andre Mesarovic
+License: Apache License 2.0
+Project-URL: Bug Tracker, https://github.com/mlflow/mlflow-export-import/issues
+Project-URL: Documentation, https://github.com/mlflow/mlflow-export-import/
+Project-URL: Source Code, https://github.com/mlflow/mlflow-export-import/
+Keywords: mlflow ml ai
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+Requires-Dist: mlflow (>=1.26.0)
+Requires-Dist: wheel
+
+UNKNOWN
+
