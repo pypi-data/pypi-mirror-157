@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: aiida-tools
+Version: 0.4.0
+Summary: Helper tools for developing AiiDA plugins.
+Home-page: https://aiida-tools.readthedocs.io
+Author: Dominik Gresch
+Author-email: mail@greschd.ch
+License: Apache 2.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+Requires-Dist: aiida-core (>=2.0.0<3.0.0)
+Requires-Dist: pyyaml
+Provides-Extra: dev
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+
