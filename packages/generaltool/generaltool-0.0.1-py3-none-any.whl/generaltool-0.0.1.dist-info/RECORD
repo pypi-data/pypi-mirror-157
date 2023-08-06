@@ -1,0 +1,9 @@
+generaltool/__init__.py,sha256=6yHQPeeYlbEPhyb-AAS2V-Wlm0NrL6cevTxocmnDRX4,59
+generaltool/literal.py,sha256=Mv_1-4GtaAuc64pV8UYsetJDgsM0c2u9DQpHcmkM1n0,2259
+generaltool/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generaltool/test/test_literal.py,sha256=zchNhF6wrMvN4lGoDkekbX12aFVEW_YAd2asZjGOtm8,3305
+generaltool-0.0.1.dist-info/LICENSE,sha256=V-mCNP1hFyMcL3leegtth1ilb9NV8St0X1XQPlJtsYk,1095
+generaltool-0.0.1.dist-info/METADATA,sha256=DePMxge2H-Lz7LSEJhrIHEdTRctKnHwY6QsaoK4FUhg,874
+generaltool-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+generaltool-0.0.1.dist-info/top_level.txt,sha256=n_ylRXPVCX2iqU3B8CaDMCE_zbcc5WwPpsFsojm87bQ,12
+generaltool-0.0.1.dist-info/RECORD,,

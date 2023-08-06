@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: generaltool
+Version: 0.0.1
+Summary: Library code without external deps.
+Home-page: https://github.com/ManderaGeneral/generaltool
+Author: Rickard "Mandera" Abraham
+Author-email: rickard.abraham@gmail.com
+License: mit
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8, <3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# generaltool
+Library code with no dependencies.
+
+Will be incorporated with the ManderaGeneral environment in the future.
+
+
+## Installation
+`pip install generaltool`
+
