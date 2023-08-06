@@ -1,0 +1,16 @@
+bz3/__init__.py,sha256=Ki6_upE1TQlHaCmJH2VrQtoQxs3sdtPeqbI-5DzVtlM,223
+bz3/bz3.py,sha256=TmyH2jHhjbCNJ3exOcNNiYm32LmnPEYnBuG47tCHgpY,10518
+bz3/compression.py,sha256=pcohuTgV9SIPHJ2FBSyKkNaE61QuCARg9rcEG21pB0g,5336
+bz3/backends/__init__.py,sha256=OAs-AEBttMMT4psS6iJyG8mkc-ahzOZ4wNqZQ7FTv-A,737
+bz3/backends/cffi/__init__.py,sha256=NRmcKQC-aFQSinJy6czHEvYgXUyx3Y-eiAMTBdhj4eI,14567
+bz3/backends/cffi/_bz3_cffi.abi3.so,sha256=EMYgs_9xliM_MLNY7iHqH04LbnInlM8I3smyrzp94Kg,105536
+bz3/backends/cffi/build.py,sha256=8N0ueWEqf9O46i4BOgM13Fcug7tgza7lfKp4o9A3Gf4,3700
+bz3/backends/cython/__init__.py,sha256=rLb7Ratrz0yV-ci_3pHNmAJX0qZ5Y9r7vvvmYNgSMjM,271
+bz3/backends/cython/_bz3_cy.c,sha256=Y6RtKLZyZMnNh8WNJLML2ndH_iA1y9SluYxB25IvCaA,1079596
+bz3/backends/cython/_bz3_cy.cpython-38-x86_64-linux-gnu.so,sha256=TT0gJ_oRCk4DS86jMcI4pTPJwh24dTDDT5kaUWZTpbU,336104
+bz3/backends/cython/_bz3_cy.pyx,sha256=UNwaNOrubZTgVF_UKWWMrU68vjkas3aVITiD68P0Rd0,15906
+bz3/backends/cython/bzip3.pxd,sha256=iwjfJyL22jp4RWy5432MlmWL2xI3dS3BZ0vYznu49J0,1691
+bzip3-0.0.1rc2.dist-info/METADATA,sha256=7NjHMJlX6_zImrBbb9T1yKfXSbFAd9682G9o7jSu0Xw,3557
+bzip3-0.0.1rc2.dist-info/WHEEL,sha256=HDpOoUm88OZsXwJ1fG8bFxqAdtiJNfIcxp3_RuQe18I,103
+bzip3-0.0.1rc2.dist-info/top_level.txt,sha256=ko8So6pdpxW18e5QcjoL-fwOc9ePcBemwRlxqS15Mto,4
+bzip3-0.0.1rc2.dist-info/RECORD,,
