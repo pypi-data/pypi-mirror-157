@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: msds
+Version: 0.0.10
+Summary: msds tools
+Home-page: https://gitee.com/dawajituan
+Author: Nundy
+Author-email: 18710939328@163.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.10
+Requires-Dist: pandas
+Requires-Dist: tenacity
+Requires-Dist: inquirer
+Requires-Dist: click
+Requires-Dist: rich
+
+UNKNOWN
+
