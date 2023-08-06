@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.txt
+pyproject.toml
+setup.py
+src/__init__.py
+src/converter.py
+tests/__init__.py
+tools_pypi_test.egg-info/PKG-INFO
+tools_pypi_test.egg-info/SOURCES.txt
+tools_pypi_test.egg-info/dependency_links.txt
+tools_pypi_test.egg-info/top_level.txt
