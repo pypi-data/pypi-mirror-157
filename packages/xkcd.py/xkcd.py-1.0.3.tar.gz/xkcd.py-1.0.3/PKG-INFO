@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: xkcd.py
+Version: 1.0.3
+Summary: A basic API wrapper for xkcd.
+Home-page: https://github.com/Pysics/xkcd.py
+Author: Omkaar
+Author-email: omkaar.nerurkar@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >= 3.8.0
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+xkcd.py
+===========
+
+.. image:: https://img.shields.io/github/license/pysics/xkcd.py
+    :target: https://github.com/Pysics/xkcd.py/blob/main/LICENSE.md
+    :alt: license
+.. image:: https://img.shields.io/tokei/lines/github/pysics/xkcd.py
+    :target: https://github.com/Pysics/xkcd.py/graphs/contributors
+    :alt: lines of code
+.. image:: https://img.shields.io/pypi/v/xkcd.py
+    :target: https://pypi.python.org/pypi/xkcd.py
+    :alt: PyPI version info
+.. image:: https://img.shields.io/pypi/pyversions/xkcd.py
+    :alt: Python version info
+
+
+Requirements
+------------
+
+This module requires the following modules:
+
+* `beautifulsoup4 <https://pypi.python.org/pypi/beautifulsoup4>`_
+* `requests <https://pypi.python.org/pypi/requests>`_
+
+
+Installation
+------------
+
+**Python 3.8 or higher is required.**
+
+To install the stable version, do the following:
+
+.. code-block:: sh
+
+    # Unix / macOS
+    python3 -m pip install "xkcd.py"
+
+    # Windows
+    py -m pip install "xkcd.py"
+
+
+To install the development version, do the following:
+
+.. code-block:: sh
+
+    $ git clone https://github.com/Pysics/xkcd.py
+
+
+Links
+-----
+
+- `xkcd <https://xkcd.com/>`_
+- `Documentation <https://xkcd.readthedocs.io/>`_
