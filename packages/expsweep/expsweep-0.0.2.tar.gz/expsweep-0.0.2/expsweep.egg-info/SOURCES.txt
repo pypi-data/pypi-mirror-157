@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+expsweep/__init__.py
+expsweep/expsweep.py
+expsweep/version.py
+expsweep.egg-info/PKG-INFO
+expsweep.egg-info/SOURCES.txt
+expsweep.egg-info/dependency_links.txt
+expsweep.egg-info/requires.txt
+expsweep.egg-info/top_level.txt
