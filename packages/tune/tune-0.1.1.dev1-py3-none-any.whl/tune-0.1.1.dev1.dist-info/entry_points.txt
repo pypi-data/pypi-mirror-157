@@ -1,0 +1,6 @@
+[tune.plugins]
+hyperopt = tune_hyperopt [hyperopt]
+mlflow = tune_mlflow [mlflow]
+monitor = tune_notebook [notebook]
+optuna = tune_optuna [optuna]
+
