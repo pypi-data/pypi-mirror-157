@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+srcbpy/__init__.py
+srcbpy/srcbpy.py
+srcbpy.egg-info/PKG-INFO
+srcbpy.egg-info/SOURCES.txt
+srcbpy.egg-info/dependency_links.txt
+srcbpy.egg-info/requires.txt
+srcbpy.egg-info/top_level.txt
