@@ -1,0 +1,5 @@
+aiogrpcclient-1.1.11.dist-info/METADATA,sha256=L-nAF-htJEMv-k6dRTHBLp_H1yvR4GzTQ1zwuC-f-s0,519
+aiogrpcclient-1.1.11.dist-info/RECORD,,
+aiogrpcclient-1.1.11.dist-info/WHEEL,sha256=sobxWSyDDkdg_rinUth-jxhXHqoNqlmNMJY3aTZn2Us,91
+aiogrpcclient/__init__.py,sha256=bk-sp64EBHZcFy31n_zZFpP5sAItoW-UGfTM8SGwLl4,94
+aiogrpcclient/base.py,sha256=Hv6x-deuy5RuTWlfN956F0EnPEPgH7Q365q_j7bMoYo,4597
