@@ -1,0 +1,2 @@
+[console_scripts]
+telemetry-peak-analyzer = telemetry_peak_analyzer:parse_and_run_command

@@ -1,0 +1,4 @@
+ijson
+
+[tina]
+tina-client>=0.2.1
