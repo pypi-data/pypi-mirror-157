@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: easy-deployer
+Version: 0.1.2
+Summary: UNKNOWN
+Home-page: https://github.com/medamine980/easy-deployer
+Author: Mohamed-Amine Benali
+Author-email: namelowy_64@hotmail.com
+License: MIT
+Keywords: python,github,github-deployer,heroku,heroku-deployer,deploy,easy,easy-deployer,simple,simple-deployer
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+# Easy-Deployer:
+Easy-deployer is used to simplify and speed up the deployment process.
+It's mostly still in progress...
+
+## OS Support:
+Currently windows is the only supported os.
+
