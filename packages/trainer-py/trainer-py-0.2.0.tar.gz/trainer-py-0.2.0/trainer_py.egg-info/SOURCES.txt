@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+trainer/__init__.py
+trainer/dummy_trainer.py
+trainer/real_trainer.py
+trainer_py.egg-info/PKG-INFO
+trainer_py.egg-info/SOURCES.txt
+trainer_py.egg-info/dependency_links.txt
+trainer_py.egg-info/top_level.txt
