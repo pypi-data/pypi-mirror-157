@@ -1,0 +1,2 @@
+[console_scripts]
+needhelp = main_helper7.main:main

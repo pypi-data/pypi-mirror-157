@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: MainHelper7
+Version: 0.0.1
+Summary: MainHelper7 its project to help you create and manage AddressBook,     clean your folder.
+Home-page: https://github.com/NissaOd
+Author: Nissa
+Author-email: dgofreyod@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
