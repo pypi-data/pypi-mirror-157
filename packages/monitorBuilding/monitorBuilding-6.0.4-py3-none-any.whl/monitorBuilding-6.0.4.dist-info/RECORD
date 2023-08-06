@@ -1,0 +1,22 @@
+monitorBuilding/__init__.py,sha256=zN6K7auqKzXM_U0ulk5kS5wO72cUOi1JbhHLxF36I6o,21
+monitorBuilding/conf.py,sha256=vbRn55r-1cyvtg0g_LU3BfQQv3C_R8b-7lDbxEUyjEo,14306
+monitorBuilding/monitorBuilding.py,sha256=WkOy5blWB9JqqKODK7vDYNTImRaYB0fAXhoQeuzIsU0,18275
+monitorBuilding/parameters_conf.py,sha256=P0mV9YzxnFnhKjQbVYBMfsmNY-fZIOR96QJ0KqaQ_b0,353
+monitorBuilding/confFiles/ALSTOM_GTC TRANE_TABLE ECHANGE MODBUS_14.06.2022.xlsx,sha256=M5CEBg96beIJTz4O_EcTtfx0NWv9eGXmh-Hg-woVfLg,897857
+monitorBuilding/confFiles/ModbusTCP_Map.xml,sha256=SFvGtKwiXV4LtTqytsRn87SwP3aZ3Jz8KFH9f-LsvPc,170504
+monitorBuilding/confFiles/ModbusTCP_Map_2022_05_28.xml,sha256=LzpVvFTGJNK4dZ-HYzkK5bq--capK7hjZLNr23TBo00,170504
+monitorBuilding/confFiles/build_df_gtc_alstom.py,sha256=jm0AYuKlk4ZkjeW_sD69qnmuDZo2hVTO7OJxdmK246w,2436
+monitorBuilding/confFiles/monitorbuilding_configfiles.ods,sha256=yzt4FYpgflnsDZMPi5KUXHhcoPXxiKT2oU_skPRvkwI,26798
+monitorBuilding/confFiles/screeningBuilding_user.md,sha256=kzzSNQ-M_eERJVMF43zzNlPH3RNFhOMyNMr9E5v3Glc,1596
+monitorBuilding/confFiles/PLC_config/alldfsPLC.pkl,sha256=Ix8vw6zTyiFhHxuMYZ-i3YidaHFrq1Rg1UUOZO56SxU,158528
+monitorBuilding/confFiles/PLC_config/map_missingTags.pkl,sha256=5v-B5r33GJ_4cYwud0bVge3OMMSLdHsoVDUV2ITAwfw,825431
+monitorBuilding/confFiles/PLC_config/map_presenceTags.pkl,sha256=90OVW3aihA2EsaninYNSZI5d0w5lk-8pNN8YjO0gd_0,186324
+monitorBuilding/confFiles/PLC_config/nbTags.pkl,sha256=T6vklN6r6vM7pdcsn7VQ0GayolMBHsT9SGB6XGvIhMY,4923
+monitorBuilding/confFiles/PLC_config/plc_v0.1.csv,sha256=urtzn3RsJhSs_pitrvdmjYlKbL38xRUJD35pXjgXbzM,51245
+monitorBuilding/confFiles/PLC_config/plc_v0.2.csv,sha256=16MwQ9kIkWhURZiLut--k12aWxxTx8CyfWIfiCAm0VM,50243
+monitorBuilding/confFiles/PLC_config/plc_v1.0.csv,sha256=esl9pJX4ANTfbX_Is_9PcZJjOCxngKMWhvnBwy7VwY8,43095
+monitorBuilding/confFiles/PLC_config/versionnageTags.ods,sha256=uHfURf_u7delGleHL4wcU4LMp0Z2hy8JJo9c5UGR8ww,11854
+monitorBuilding-6.0.4.dist-info/METADATA,sha256=6NKlCSbVhxZC_jPiV_6j8qxotxV82fG-61HfStXM0fI,683
+monitorBuilding-6.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+monitorBuilding-6.0.4.dist-info/top_level.txt,sha256=ZMn3ziD38ap8IqF_Tc0w_SXmos3MhHQZEFXmuLnLL98,16
+monitorBuilding-6.0.4.dist-info/RECORD,,

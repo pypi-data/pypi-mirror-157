@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: monitorBuilding
+Version: 6.0.4
+Summary: Utilities package
+Home-page: UNKNOWN
+Author: Dorian Drevon
+Author-email: drevondorian@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: dorianUtils (==6.0.4)
+
+## Monitor building
+Monitoring of energy consumption and production of the SLS actiparc site. 
+Version : 6.0.4 
+
+### pre requisite
+- working with dorianUtils==6.0.4: 
+```
+pip install dorianUtils==6.0.4
+```
+or
+```
+pip install -e .
+```
+
+
+
