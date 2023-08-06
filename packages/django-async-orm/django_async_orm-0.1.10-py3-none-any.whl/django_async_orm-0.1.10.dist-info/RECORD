@@ -1,0 +1,13 @@
+LICENSE,sha256=2uyydUThVCDOteTCcMRxdE6Bj9O05qXtf_uYbnkfJj8,1066
+django_async_orm/.coverage,sha256=qG4rEOHpRvs1vLjnwv9z5IjOBwOQ6TmBX7gL1Yd5hp4,53248
+django_async_orm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_async_orm/apps.py,sha256=WAn-PaC9DLmrO_bjY3ff4ELbP0PuPJQxDNt5qzQHSmA,379
+django_async_orm/iter.py,sha256=sKs8uIJ2g4_SDSZuGIGfjLo0tk6ZpQS891seCGb61ss,355
+django_async_orm/manager.py,sha256=ClM8dP0jVUVBl_PAliAOuX4BIeS8emLPFB_v29o8oPo,174
+django_async_orm/query.py,sha256=60dFEqcZ1Y3GqK0giV5TrhecImckb_JzGBHHjxNec5c,6532
+django_async_orm/utils.py,sha256=pK03a3oL_ESfcylBpvYmEU5z4Lk5s_yhOeV2r0WW2jU,934
+django_async_orm/wrappers.py,sha256=m9sIMk8f3mZtJ9F1egDBf9Zro_raUe_hG_WNX0IUZdE,684
+django_async_orm-0.1.10.dist-info/LICENSE,sha256=2uyydUThVCDOteTCcMRxdE6Bj9O05qXtf_uYbnkfJj8,1066
+django_async_orm-0.1.10.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+django_async_orm-0.1.10.dist-info/METADATA,sha256=QMak0biMURRnKZKfu6JNm1OGP4Lh3VKRvOLgfTNMKpQ,6012
+django_async_orm-0.1.10.dist-info/RECORD,,
