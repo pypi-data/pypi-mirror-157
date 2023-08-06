@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: xengsort-cubic
+Version: 1.1.0
+Summary: xenograft sorting of single-end or paired-end FASTQ reads into five categories: host, graft, both, neither, ambiguous
+Home-page: https://gitlab.com/genomeinformatics/xengsort
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+License-File: LICENSE
+
