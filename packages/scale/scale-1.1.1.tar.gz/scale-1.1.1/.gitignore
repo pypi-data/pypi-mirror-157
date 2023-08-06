@@ -1,0 +1,6 @@
+scale/*.pyc
+*.pyc
+*.ipynb_checkpoints
+scale/__pycache__
+output/
+build/
