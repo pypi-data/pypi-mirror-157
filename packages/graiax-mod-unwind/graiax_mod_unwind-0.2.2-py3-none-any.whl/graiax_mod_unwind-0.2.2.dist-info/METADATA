@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: graiax-mod-unwind
+Version: 0.2.2
+Summary: A simple solution to analysis and extract information from traceback.
+Home-page: https://github.com/GraiaCommunity/Unwind
+Author: RF-Tar-Railt
+Author-email: rf_tar_railt@qq.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/GraiaCommunity/Unwind/issues
+Project-URL: Source, https://github.com/GraiaCommunity/Unwind
+Keywords: traceback,exception,crash-report
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/rst
+License-File: LICENSE
+
+Unwind
+======
+
+A simple solution to analysis and extract information from traceback
+
+usage
+-----
+
+.. code:: python
+
+   from graiax.mod.unwind import Report
+
+   with Report() as report:
+       a = 1
+       b = 2
+       c = 'a'
+       d = 1 + c
+
+   print(report.errors)
+   print(report.reports)
+
+or
+
+.. code:: python
+
+   from graiax.mod.unwind import get_report
+
+   try:
+       a = 1
+       b = 2
+       c = 'a'
+       d = 1 + c
+   except Exception as e:
+       print(get_report(e))
+
+
