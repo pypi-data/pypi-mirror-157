@@ -1,0 +1,9 @@
+Plone
+collective.transmogrifier>=3.0.0
+plone.uuid
+setuptools
+zope.component
+
+[test]
+zope.testrunner
+zest.releaser[recommended]
