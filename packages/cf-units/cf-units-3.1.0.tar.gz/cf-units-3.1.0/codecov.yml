@@ -1,0 +1,10 @@
+ignore:
+  - cf_units/_version.py
+  - cf_units/config.py
+coverage:
+  status:
+    project:
+      default:
+        target: auto 
+        threshold: 0.5%  # coverage can drop by up to <threshold>% while still posting success
+    patch: off

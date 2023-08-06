@@ -1,0 +1,8 @@
+include *.txt
+include *.md
+recursive-include cf_units *.py *.pxd *.pyx *.c
+include cf_units/etc/site.cfg.template
+include CHANGES COPYING COPYING.LESSER INSTALL
+exclude cf_units/etc/site.cfg
+graft requirements
+prune .github

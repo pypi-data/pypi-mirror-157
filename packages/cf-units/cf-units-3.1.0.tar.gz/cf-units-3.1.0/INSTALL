@@ -1,0 +1,73 @@
+You can either install cf-units using the conda package manager or from source.
+
+Installing using conda
+----------------------
+
+cf-units is available using conda for the following platforms:
+ * Linux 32-bit and 64-bit,
+ * Mac OSX 64-bit, and
+ * Windows 32-bit and 64-bit.
+
+To install cf-units using conda, you must first download and install conda,
+for example from https://conda.io/miniconda.html.
+
+Once conda is installed, you can install cf-units using conda on any platform with
+the following command::
+
+  conda install -c conda-forge cf-units
+
+Further documentation on using conda and the features it provides can be found
+at https://conda.io/docs/.
+
+
+Installing from source
+----------------------
+
+The latest cf-units source release is available from
+https://github.com/SciTools/cf-units/releases.
+
+
+Build and runtime requirements
+==============================
+See the ``requirements/`` directory for the external packages you will need to
+have installed before installing and running cf-units.
+
+The recommended way to provision requirements is using Conda::
+
+  conda env create -f requirements/cf-units.yml
+
+All requirements except ``udunits2`` are also available individually via PyPI::
+
+  pip install numpy
+
+Many of the packages are also available in Linux package managers
+such as aptitude and yum. For example, it may be possible to install
+Numpy using::
+
+  apt-get install python-numpy
+
+
+Installing cf-units
+===================
+Once you have satisfied the requirements detailed above, extract the cf-units
+source package, change to the new directory, and enter::
+
+  pip install .
+
+For non-standard locations, additional build lib & include paths
+can be provided as per-usual at ``build_ext`` phase::
+
+  pip install --global-option=build_ext --global-option="-I/path/to/include2 --global-option="-L/path/to/lib" .
+
+
+Custom site configuration
+=========================
+The default site configuration values can be overridden by creating the file
+``cf_units/etc/site.cfg``. For example, the following snippet can be used to
+specify a non-standard location for your udunits xml database::
+
+  [System]
+  udunits2_xml_path = /path/to/udunits2.xml
+
+An example configuration file is available in ``cf_units/etc/site.cfg.template``.
+See :py:func:`cf_units.config` for further configuration options.

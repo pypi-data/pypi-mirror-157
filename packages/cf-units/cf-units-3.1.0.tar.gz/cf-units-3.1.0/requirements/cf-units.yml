@@ -1,0 +1,31 @@
+name: cf-units-dev
+
+channels:
+  - conda-forge
+
+dependencies:
+# setup dependencies
+  - setuptools >=45
+  - setuptools_scm >=6.2
+  - setuptools_scm_git_archive
+  - cython
+  - numpy
+
+# core dependencies
+  - antlr-python-runtime 4.7.2.*
+  - cftime>=1.2
+  - numpy
+  - udunits2
+
+# test dependencies
+  - codecov
+  - jinja2
+  - pytest
+  - pytest-cov
+
+# dev dependencies
+  - pip
+  - pre-commit
+
+# docs dependencies
+  - sphinx
