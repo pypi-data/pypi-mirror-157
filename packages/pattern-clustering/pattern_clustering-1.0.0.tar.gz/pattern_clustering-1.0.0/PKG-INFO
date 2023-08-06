@@ -1,0 +1,164 @@
+Metadata-Version: 2.1
+Name: pattern_clustering
+Version: 1.0.0
+Summary: This tool clusterizes lines of text given a collection of input patterns modeled using regular expressions.
+Home-page: https://github.com/nokia/pattern-clustering
+Author: Marc-Olivier Buob, Maxime Raynal
+Author-email: marc-olivier.buob@nokia-bell-labs.com, maxime.raynal@nokia.com
+License: BSD license
+Keywords: pattern_clustering
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+==================
+Pattern clustering
+==================
+
+
+.. image:: https://img.shields.io/pypi/v/pattern_clustering.svg
+        :target: https://pypi.python.org/pypi/pattern_clustering
+        :alt: PyPI Status
+
+.. image:: https://github.com/nokia/pattern-clustering/workflows/build/badge.svg?branch=main
+        :target: https://github.com/nokia/pattern-clustering/actions?query=workflow%3Abuild
+        :alt: Build Status
+
+.. image:: https://github.com/nokia/pattern-clustering/workflows/docs/badge.svg?branch=main
+        :target: https://github.com/nokia/pattern-clustering/actions?query=workflow%3Adocs
+        :alt: Documentation Status
+
+.. image:: https://readthedocs.org/projects/pattern-clustering/badge/?version=latest
+        :target: https://pattern-clustering.readthedocs.io/en/latest/?badge=latest
+        :alt: Readthedocs Status
+
+.. image:: https://codecov.io/gh/nokia/pattern-clustering/branch/main/graphs/badge.svg
+        :target: https://app.codecov.io/gh/nokia/pattern-clustering
+        :alt: Code Coverage
+
+
+This tool clusterizes lines of text given a collection of input patterns modeled using regular expressions.
+
+This work has been published to:
+
+[ICPR'2022] A novel pattern-based edit distance for automatic log parsing, Maxime Raynal, Marc-Olivier Buob, Georges Quénot.
+
+--------
+Features
+--------
+
+* Forms groups of homogeneous line using a pattern based distance, based on customizable patterns.
+* Configured by default to use common patterns (IP addresses, numeric values, etc.)
+
+-------
+License
+-------
+
+This project is licensed under the BSD-3-Clause license - see the `LICENSE <https://github.com/nokia/minifold/blob/master/LICENSE>`_.
+
+-----------------------------
+More about pattern-clustering
+-----------------------------
+
+.. _wiki: https://github.com/nokia/pattern-clustering/wiki
+.. _Overview: https://github.com/nokia/pattern-clustering/wiki/Overview
+.. _Installation: https://github.com/nokia/pattern-clustering/wiki/Installation
+.. _Tests: https://github.com/nokia/pattern-clustering/wiki/Tests
+.. _Tutorial: https://github.com/nokia/pattern-clustering/wiki/Tutorial
+.. _Documentation: https://pattern-clustering.readthedocs.io/en/latest/?badge=latest 
+.. _Configuration: https://github.com/nokia/pattern-clustering/wiki/Configuration
+.. _Packaging: https://github.com/nokia/pattern-clustering/wiki/Packaging
+
+For more information, feel free to visit the wiki_:
+
+- Overview_
+- Installation_
+- Tests_
+- Tutorial_
+- Documentation_
+- Configuration_
+- Packaging_
+
+-------
+Acks
+-------
+
+* The skeleton package was created with Cookiecutter_ and the `francois-durand/package_helper_2`_ project template.
+* The sphinx part is inspired from Sphinx-Autosummary-Recursion_.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`francois-durand/package_helper_2`: https://github.com/francois-durand/package_helper_2
+.. _Sphinx-Autosummary-Recursion: https://github.com/JamesALeedham/Sphinx-Autosummary-Recursion
+
+
+=======
+History
+=======
+
+---------------------------------
+0.1.0 (2022-05-11): First release
+---------------------------------
+
+* First release on PyPI.
+
+---------------------------------
+0.2.0 (2022-06-02): CI 
+---------------------------------
+
+* Updated tox.ini and GitHub actions, work in progress.
+
+-------------------------------------------------
+0.3.0 (2022-06-22): Bug fixes and CI improvements  
+-------------------------------------------------
+
+* Fixed sphinx local build
+* Fixed bumpversion
+* Add experiments notebooks and datasets
+* Improved test suite
+
+-------------------------------------------------
+0.3.1 (2022-06-22): Bug fixes and CI improvements  
+-------------------------------------------------
+
+* Fixed readthedoc build
+
+-------------------------------------------------
+0.4.1 (2022-06-24): Bug fixes and CI improvements  
+-------------------------------------------------
+
+* Fixed readthedoc build
+* Implemented console script (cli)
+* Reworked `PatternClusteringEnv` class
+* Bug fixes
+* Updated documentation
+
+-------------------------------------------------
+0.4.2 (2022-06-24): Added entry points 
+-------------------------------------------------
+
+* Added `pattern-distance` entry point, see `pattern-distance --help`.
+* Added `pattern-clustering-mkconf` entry point. The resulting json may be passed to `pattern-distance` and `pattern-clustering` commands.
+
+-------------------------------------------------
+0.5.0 (2022-06-25): Added entry points 
+-------------------------------------------------
+
+* Bug fixes in `notebooks/`
+* Removed unused patterns
+
+-------------------------------------------------
+1.0.0 (2022-07-01): checked experiments 
+-------------------------------------------------
+
+* Checked experiments in `notebooks/`
+* Fixed warning related to documentation build
+* Improved tests
+
+

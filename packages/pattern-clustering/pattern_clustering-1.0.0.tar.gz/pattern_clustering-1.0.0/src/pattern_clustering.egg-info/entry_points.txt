@@ -1,0 +1,5 @@
+[console_scripts]
+pattern-clustering = pattern_clustering.cli:main_pattern_clustering
+pattern-clustering-mkconf = pattern_clustering.cli:main_pattern_clustering_mkconf
+pattern-distance = pattern_clustering.cli:main_pattern_distance
+
