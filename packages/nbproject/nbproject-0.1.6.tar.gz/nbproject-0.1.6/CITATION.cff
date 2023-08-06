@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+preferred-citation:
+  title: "nbproject: Manage Jupyter notebooks"
+  authors:
+  - family-names: Rybakov
+    given-names: Sergei
+    orcid: https://orcid.org/0000-0002-4944-6586
+  - family-names: Wolf
+    given-names: F. Alexander
+    orcid: https://orcid.org/0000-0002-8760-7838
+  journal: Lamin Blog
+  year: 2022
+  url: "https://lamin.ai/notes/2022/nbproject"
