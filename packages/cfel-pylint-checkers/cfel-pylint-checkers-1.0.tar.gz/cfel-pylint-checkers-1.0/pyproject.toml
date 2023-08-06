@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cfel-pylint-checkers"
+version = "1.0"
+description = "Additional checkers for pylint that are used by the FS-CFEL-1 team"
+authors = ["Philipp Middendorf <philipp.middendorf@desy.de>", "CFEL-SC <sc@cfel.de>"]
+homepage = "https://gitlab.desy.de/cfel-sc-public/cfel-pylint-checkers"
+repository = "https://gitlab.desy.de/cfel-sc-public/cfel-pylint-checkers"
+readme = "README.md"
+include = [ "LICENSE" ]
+license = "GPLv3"
+
+[tool.poetry.dependencies]
+python = ">=3.8, <3.11"
+pylint = "^2.14.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
