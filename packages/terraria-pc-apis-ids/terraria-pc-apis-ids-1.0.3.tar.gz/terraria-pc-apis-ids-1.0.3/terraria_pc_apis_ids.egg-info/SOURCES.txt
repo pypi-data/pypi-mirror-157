@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+terraria_pc_apis_ids/__init__.py
+terraria_pc_apis_ids/terraria_pc_apis_ids.py
+terraria_pc_apis_ids.egg-info/PKG-INFO
+terraria_pc_apis_ids.egg-info/SOURCES.txt
+terraria_pc_apis_ids.egg-info/dependency_links.txt
+terraria_pc_apis_ids.egg-info/top_level.txt

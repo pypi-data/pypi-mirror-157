@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: terraria-pc-apis-ids
+Version: 1.0.3
+Summary: IDs for pc terraria APIs
+Home-page: https://gitlab.com/terraria-converters/fkwilczek/terraria-pc-apis-ids
+Author: Filip K
+Author-email: fkwilczek@gmail.com
+License: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# terraria APIs objects
+
+IDs for pc terraria APIs
+
+## Installation
+```
+pip install terraria-pc-apis-ids
+```
+
+## License
+[GPL v3](LICENSE) © Filip K.
