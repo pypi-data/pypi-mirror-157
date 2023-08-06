@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+akashianlibrary.egg-info/PKG-INFO
+akashianlibrary.egg-info/SOURCES.txt
+akashianlibrary.egg-info/dependency_links.txt
+akashianlibrary.egg-info/top_level.txt
