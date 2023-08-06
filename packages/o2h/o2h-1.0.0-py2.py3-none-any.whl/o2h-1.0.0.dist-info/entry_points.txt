@@ -1,0 +1,3 @@
+[console_scripts]
+obs2hexo = o2h.o2h:o2h
+
