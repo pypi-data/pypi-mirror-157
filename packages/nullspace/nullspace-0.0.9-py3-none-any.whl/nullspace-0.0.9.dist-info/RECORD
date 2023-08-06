@@ -1,0 +1,12 @@
+nullspace/__init__.py,sha256=E5Jp-FRcy9WyHLOgPEaKe88-zpbqANq5rlhmIbFa0i4,10751
+nullspace/_version.py,sha256=v-CtNoLn7DnA9C8ytUrQ3Jtg0x7e9FTsZNS4BaQd3QQ,497
+nullspace/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nullspace/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nullspace/tests/test_examples.py,sha256=Hm1x01HZ9BiYYw4dS44uo0o_ku16oFRwSMjIh8_Uu-s,99
+nullspace-0.0.9.dist-info/AUTHORS.rst,sha256=LlJTYfquMfG0sfk3LRXVNpWf4DkebX4zjp0Ymo9lal8,158
+nullspace-0.0.9.dist-info/LICENSE,sha256=yA8HpABl0M4Gc0agqW_Uf5cgGhVNOCPaNx7XassrbVU,1510
+nullspace-0.0.9.dist-info/METADATA,sha256=aR684WhlqfCjspn13h_FWVTJHfoBZe-LlcmkW4Ii3ws,1023
+nullspace-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nullspace-0.0.9.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+nullspace-0.0.9.dist-info/top_level.txt,sha256=0lzeh7ulCthGN8P1vliR2CCfm_8kyE3DBxSuDONgCp8,10
+nullspace-0.0.9.dist-info/RECORD,,
