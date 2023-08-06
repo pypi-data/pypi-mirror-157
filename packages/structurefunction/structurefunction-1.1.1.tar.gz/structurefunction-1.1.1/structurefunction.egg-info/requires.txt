@@ -1,0 +1,10 @@
+tqdm
+numpy
+astropy
+matplotlib
+bilby
+ultranest
+sigfig
+nestle
+xarray
+numba

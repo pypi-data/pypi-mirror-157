@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+structurefunction.py
+example/apj343194t1_mrt.txt
+example/example.ipynb
+example/h.apj343194t1_mrt.txt
+structurefunction.egg-info/PKG-INFO
+structurefunction.egg-info/SOURCES.txt
+structurefunction.egg-info/dependency_links.txt
+structurefunction.egg-info/requires.txt
+structurefunction.egg-info/top_level.txt
