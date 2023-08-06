@@ -1,0 +1,10 @@
+python-sql>=0.4
+trytond_currency<6.3,>=6.2
+trytond_project<6.3,>=6.2
+trytond_project_revenue<6.3,>=6.2
+trytond_timesheet<6.3,>=6.2
+trytond_account<6.3,>=6.2
+trytond_account_invoice<6.3,>=6.2
+trytond_account_product<6.3,>=6.2
+trytond_product<6.3,>=6.2
+trytond<6.3,>=6.2
