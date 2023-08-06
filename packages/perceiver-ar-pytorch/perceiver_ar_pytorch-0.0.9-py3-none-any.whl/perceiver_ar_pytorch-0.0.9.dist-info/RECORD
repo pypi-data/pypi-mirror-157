@@ -1,0 +1,8 @@
+perceiver_ar_pytorch/__init__.py,sha256=3UyFBnnGAtxKyopNE3RG2tGEFPiKPiuK3qNs1OeiZRM,66
+perceiver_ar_pytorch/autoregressive_wrapper.py,sha256=AsXnX_yj9frgLI7EP2zAR2d9Dlubz2t8osXoaEvNMlM,2164
+perceiver_ar_pytorch/perceiver_ar_pytorch.py,sha256=KQrJ1VGeKzCqwyzIQj-OWvdjZxoBdss6jznqlgn8Bds,10282
+perceiver_ar_pytorch-0.0.9.dist-info/LICENSE,sha256=xZDkKtpHE2TPCAeqKe1fjdpKernl1YW-d01j_1ltkAU,1066
+perceiver_ar_pytorch-0.0.9.dist-info/METADATA,sha256=O7YzcZbD9QWL2PPHjcABbF4P0orAu9j4MSxc2hroYfE,679
+perceiver_ar_pytorch-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+perceiver_ar_pytorch-0.0.9.dist-info/top_level.txt,sha256=9eZ6ovy9Fs4lKhVggmN8zzYUONSXHTXWImKw--YP9m0,21
+perceiver_ar_pytorch-0.0.9.dist-info/RECORD,,
