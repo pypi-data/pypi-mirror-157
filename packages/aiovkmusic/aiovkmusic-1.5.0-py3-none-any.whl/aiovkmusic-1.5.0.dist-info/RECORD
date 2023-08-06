@@ -1,0 +1,17 @@
+aiovkmusic/__init__.py,sha256=lFbEq-EMAjab3RhbsJN4qtuERHcC4OvGsX2JAmt8Ydc,94
+aiovkmusic/exceptions.py,sha256=V1CfnaSDmNJFNPUrNNuc9nwg9eCMLdAqGp8MUx7sVqo,1601
+aiovkmusic/model.py,sha256=jZTOLSq3qbkBpTq5MR-uz2isY9NNBVmNUkkbvVjC4p0,651
+aiovkmusic/music.py,sha256=DTGyqllhecmcfrppuqGKy05_dB0kH0xC6ZaRHlrLQhs,10774
+aiovkmusic/session.py,sha256=0Me8CdO6p4aAMMPYSgEgGtyYOawsgHsQQv4YvVD1IZY,1643
+vkapi/__init__.py,sha256=ZSZatcolPutW7sYfRryZ4G2euD6yuUj3dQ5hLFgHzFs,446
+vkapi/audio.py,sha256=cAGbXd8gRQf9dTIy7up6lAedMmRxERCvAgMc8NM8_kI,21560
+vkapi/audio_url_decoder.py,sha256=UDueGjCaVsscV4fwLut-691522Wv0tpEHbAi0x6_OBM,2866
+vkapi/enums.py,sha256=n2OPejwpY3WABxJQODtozPWR78kZqYNgO0q5VCvZfM4,2810
+vkapi/exceptions.py,sha256=iuJRHrt_UFBXAjHXL2TR7S5SFxTyqB_iw9BxEamhwmM,4328
+vkapi/utils.py,sha256=1mqqx4QOw_XyZKxB8h2a1SwwKoQ41NcdUPub94RiBqk,4183
+vkapi/vk_api.py,sha256=bjk7-EAheFENAbwDoygzh1K1dxu_VgxWk7x1KuKW7e0,24932
+aiovkmusic-1.5.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+aiovkmusic-1.5.0.dist-info/METADATA,sha256=cYQns4voRRm_b3iAl_BEe9jQpVFjyhU6I47Xh1yKdNM,4340
+aiovkmusic-1.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aiovkmusic-1.5.0.dist-info/top_level.txt,sha256=rDor0ulmpDWoCj18YNbbaGnVZxbS5juuQGZwO75Lme0,17
+aiovkmusic-1.5.0.dist-info/RECORD,,
