@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+loteria_caixa/__init__.py
+loteria_caixa.egg-info/PKG-INFO
+loteria_caixa.egg-info/SOURCES.txt
+loteria_caixa.egg-info/dependency_links.txt
+loteria_caixa.egg-info/requires.txt
+loteria_caixa.egg-info/top_level.txt
