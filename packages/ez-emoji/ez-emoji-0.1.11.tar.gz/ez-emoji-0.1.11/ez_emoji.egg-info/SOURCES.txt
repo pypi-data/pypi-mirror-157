@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+ez_emoji/__init__.py
+ez_emoji/downloader.py
+ez_emoji/emoji_log.py
+ez_emoji/sentiment.py
+ez_emoji/utils.py
+ez_emoji.egg-info/PKG-INFO
+ez_emoji.egg-info/SOURCES.txt
+ez_emoji.egg-info/dependency_links.txt
+ez_emoji.egg-info/entry_points.txt
+ez_emoji.egg-info/requires.txt
+ez_emoji.egg-info/top_level.txt
+ez_emoji/sentiment/gen_sentiment.py
+ez_emoji/sentiment/sentiment.py
