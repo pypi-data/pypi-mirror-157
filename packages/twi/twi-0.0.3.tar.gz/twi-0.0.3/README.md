@@ -1,0 +1,25 @@
+# twi
+
+Send tweets, change your Twitter profile description, and delete your last tweet, all from the comfort of your sweet-smelling CLI!
+
+# Installation
+```bash
+> pip install twi
+```
+Then put these variables somewhere in your environment (get them [here](https://developer.twitter.com/en/portal/dashboard)):
+
+- TWITTER_CONSUMER_KEY
+- TWITTER_CONSUMER_SECRET
+- TWITTER_ACCESS_TOKEN
+- TWITTER_ACCESS_TOKEN_SECRET
+- TWITTER_USER_ID
+
+# Usage
+```bash
+> tw "hey this is my tweet"
+Okay, published the tweet at https://twitter.com/yourname/status/12344556
+> prof "hey this is my new twitter profile description"
+okay, updated profile
+> dtw
+Okay, deleted your last tweet, ID "abcdefghijkl12345".
+```
