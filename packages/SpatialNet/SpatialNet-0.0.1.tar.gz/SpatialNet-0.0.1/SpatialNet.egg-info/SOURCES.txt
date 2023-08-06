@@ -1,0 +1,5 @@
+setup.py
+SpatialNet.egg-info/PKG-INFO
+SpatialNet.egg-info/SOURCES.txt
+SpatialNet.egg-info/dependency_links.txt
+SpatialNet.egg-info/top_level.txt
