@@ -1,0 +1,3 @@
+[console_scripts]
+iwin-cli = iwin_cli.__main__:main
+
