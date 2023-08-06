@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tube_toolkit
+Version: 0.0.6
+Summary: tube is a toolkit for creating RPAs and other softwares that need selenium support.
+License: Proprietary
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: Other/Proprietary License
+Requires-Python: >=3.8
+
+======
+Tube
+======
+
+Tube is a simple, fast, and efficient toolkit for build and release automation using Selenium.
