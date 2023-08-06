@@ -1,0 +1,6 @@
+poste_sdk/__init__.py,sha256=pcQGPRp7RzLI5LdLr7oqGpfTXVf4n0nfR49AeX_SD8g,23
+poste_sdk/client.py,sha256=HQd_akGG31TfT1n4s2oD3PobP_4gHLuQy1Z2dtdEfSY,6559
+poste_sdk/models.py,sha256=cGd8F-UtX1YF0g9L8nRp3oCrE63PY0PsvVnA3BvzvVQ,3406
+poste_sdk-0.1.11.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+poste_sdk-0.1.11.dist-info/METADATA,sha256=UyOasDms3D6k1Zk_jIkrYdYEqgrYY9oOvoCzF-pShpk,1720
+poste_sdk-0.1.11.dist-info/RECORD,,
