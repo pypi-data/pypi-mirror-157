@@ -1,0 +1,16 @@
+flowjax/__init__.py,sha256=cYEwJ3MsQaQ8E1hYieGKeJ-96aVZvWO2MjwpRRoNymQ,143
+flowjax/distributions.py,sha256=6ZBUl0LMuX6x6dfxQfmpPNylMZPv_paOVQw0yYSVRbU,3351
+flowjax/flows.py,sha256=sHQ6BlPV6M0fMis95h7D8fJRX8QDktlOfkolezBdRs0,9697
+flowjax/train_utils.py,sha256=BKK-vsi9j1VojVmyTWweFsG8VoG8g67FBZG8Tr2kcco,4424
+flowjax/bijections/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+flowjax/bijections/abc.py,sha256=oo8iUNWdGpBDh15QnXL4yOtpvpApkYOpVzLpAwRDSRg,1699
+flowjax/bijections/affine.py,sha256=lnEZQCeVr00UgGWrfzAOuRztI_MLJMHKFk6lBrTZbWA,673
+flowjax/bijections/bnaf.py,sha256=h9P1z6wI7CZCdPWLVZI_7Mb8bKE5UFSTmRCg4iSPvU4,6993
+flowjax/bijections/coupling.py,sha256=7LEkJYoXsl_M5L5C-OsTq4I9fD25-dCWOfV7ZTDXHIg,2874
+flowjax/bijections/rational_quadratic_spline.py,sha256=hH6Xh9rxPFOx33hV0Eo0FCWyHeSwLhY3tJYi2K92xdU,4877
+flowjax/bijections/utils.py,sha256=5quoAMhJFmbAmlM5DkQzgYQLT0GqHXgFLuRbd93_Gbo,3692
+flowjax-2.0.0.dist-info/LICENSE,sha256=i9jUXU-HHIaR07txN6iCq4L4JPe3tz9wrbYZ8pwI6NM,1077
+flowjax-2.0.0.dist-info/METADATA,sha256=Jn29Sm8dkilYTlQfJLaCA-sQVyE1LTji0crZNe1vabQ,2106
+flowjax-2.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+flowjax-2.0.0.dist-info/top_level.txt,sha256=V4IXgGRTh_4uzz30CIz5Mtbh8pU45G9AGrKZFiJ_c88,8
+flowjax-2.0.0.dist-info/RECORD,,
