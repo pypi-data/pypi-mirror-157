@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: thanhtungtuvimethod
+Version: 3.2.0
+Summary: All method for calculate YiKing
+Home-page: https://github.com/pypa/sampleproject
+Author: Thanh Tung
+Author-email: thanhtung247@gmail.com
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Thư viện chứa các phương thức để an sao tử vi, tứ trụ.
+Tất cả các sao phụ lấy cung Tý là cung số 1, tuần tự đến Hợi là số 12, kể từ def LocTon trở xuống
