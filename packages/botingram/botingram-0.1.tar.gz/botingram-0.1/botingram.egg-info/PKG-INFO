@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: botingram
+Version: 0.1
+Summary: New python library for telegram bots
+Author: Arseniy Puzikov
+Author-email: puars09@gmail.com
+License: MIT

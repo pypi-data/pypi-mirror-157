@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+botingram/__init__.py
+botingram/botingram.py
+botingram.egg-info/PKG-INFO
+botingram.egg-info/SOURCES.txt
+botingram.egg-info/dependency_links.txt
+botingram.egg-info/not-zip-safe
+botingram.egg-info/top_level.txt
