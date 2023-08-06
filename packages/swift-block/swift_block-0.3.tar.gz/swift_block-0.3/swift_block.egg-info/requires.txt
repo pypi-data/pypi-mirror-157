@@ -1,0 +1,6 @@
+pyqt6>=6.2.2
+requests
+
+[:sys_platform == "win32"]
+winshell
+pywin32
