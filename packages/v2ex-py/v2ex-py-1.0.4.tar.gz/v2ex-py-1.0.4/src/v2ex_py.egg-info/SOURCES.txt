@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/v2ex/__init__.py
+src/v2ex/v2ex.py
+src/v2ex_py.egg-info/PKG-INFO
+src/v2ex_py.egg-info/SOURCES.txt
+src/v2ex_py.egg-info/dependency_links.txt
+src/v2ex_py.egg-info/top_level.txt
