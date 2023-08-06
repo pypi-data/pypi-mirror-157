@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+SuperMiner/SMiner.py
+SuperMiner/SNCOM.py
+SuperMiner/__init__.py
+SuperMiner.egg-info/PKG-INFO
+SuperMiner.egg-info/SOURCES.txt
+SuperMiner.egg-info/dependency_links.txt
+SuperMiner.egg-info/entry_points.txt
+SuperMiner.egg-info/requires.txt
+SuperMiner.egg-info/top_level.txt
