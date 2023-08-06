@@ -1,0 +1,7 @@
+README.md
+setup.py
+purenv/purenv.py
+purenv.egg-info/PKG-INFO
+purenv.egg-info/SOURCES.txt
+purenv.egg-info/dependency_links.txt
+purenv.egg-info/top_level.txt
