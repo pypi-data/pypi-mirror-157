@@ -1,0 +1,19 @@
+# 指标表
+name        type        alias              default_unit      possible_unit                                   description
+市盈率      财务指标         pe,市盈              null            倍                             市盈率解释
+市净率      财务指标         pb，市净             null            倍
+每股收益    财务指标          每股收益             null           元
+净利润      财务指标           净利润               亿          亿,null
+股息率      财务指标         股息率                 %          %,null
+流通股      财务指标         流通股                 亿       null
+总市值      财务指标         总市值，总值，市值        亿        亿,万亿
+销售毛利率   财务指标         销售毛利率             %          %,null
+营业收入    财务指标          营收                  亿         亿元,万亿,万亿元
+KDJ        技术指标           KDJ                null    null   枚举
+MACD       技术指标           MACD               null    null   枚举
+WR         技术指标           WR                 null    null   枚举
+RSI        技术指标           RSI                null    null   枚举
+CCI        技术指标           CCI                null    null   枚举
+MTM        技术指标           MTM                null    null   枚举
+BIAS       技术指标           BIAS               null    null   枚举
+BOLL       技术指标           BOLL               null    null   枚举

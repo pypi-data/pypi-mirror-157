@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: stockpick
+Version: 1.2.12
+Summary: version
+Home-page: https://pypi.org/project/stockpick
+Author: huyi
+Author-email: huyi@datagrand.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7.0
+Requires-Dist: jieba (==0.42.1)
+
+UNKNOWN
+
+

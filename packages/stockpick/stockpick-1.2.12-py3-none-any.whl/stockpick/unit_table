@@ -1,0 +1,5 @@
+base_unit  unit  times
+万          亿    10000
+亿         万亿    10000
+null       万     10000
+null      亿      100000000
