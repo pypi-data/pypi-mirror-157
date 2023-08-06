@@ -1,0 +1,111 @@
+# Django Backup Utils
+
+With django-backup-utils you can:
+
+- create backups with or without compression
+- list available backups for your host & project
+- restore database
+- restore migration files
+- restore any directory inside BASE_DIR
+
+Backups are tarfiles that also can be compressed by the programm
+
+A backup always contains
+
+- a full dump of your database as json (using dumpdata)
+- all migration .py files that are curently migrated.
+- a customizable version stamp (e.g. commit hash)
+- identifiers such as hostname, django project name
+
+When restoring a backup
+
+- automatically get the lastest backup for your host + project
+- see the backup's version stamp
+- see the current version stamp
+- see differences between backup und current migrations
+- per defalt a blank unittest is run to ensure the fixture can be loaded (before anything is changed)
+
+A log is saved to database for creating/loading backups.
+
+## Project-Structure
+
+```
+  projectname/
+    projectname/
+      __init__.py
+      settings.py
+      ...
+    App1 /
+      migrations /
+        __init__.py
+        ...
+    ...
+```
+
+## Quick start
+
+1. ``$ pip install django-backup-utils``
+
+
+2. ``settings.py:``
+
+```
+  INSTALLED_APPS = [
+    ...
+    'django_backup_utils.apps.BackupUtilsConfig',
+  ]
+
+  BACKUP_ROOT = "/my/path/to/backupdir/"
+  BACKUP_DIRS = ["media"]  # add more if needed
+  BACKUP_SYSTEM_VERSION = "my_build_id"
+```
+
+``BACKUP_ROOT`` specifies a directory where your backups will be stored
+
+``BACKUP_DIRS`` specifies directories that will be included in the backup
+
+``BACKUP_SYSTEM_VERSION`` identification tag for your backup (e.g. your git commit hash/tag)   
+
+
+3. ``$ python3 manage.py migrate``
+
+
+## Usage
+
+``$ python3 manage.py createbackup``
+
+```
+  - create a backup that contains all database data, migration files and specified directories
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      --compress            compresses backup (.gz)
+```
+
+``$ python3 manage.py loadbackup``
+
+```
+  - load the latest backup
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      --tarpath TARPATH     load the specified backup tarfile
+      --flush               flush the database (delete existing data)
+      --deletedirs          delete all directories specified in settings.BACKUP_DIRS (before restoring)
+      --noinput             disable all prompts
+      --loadmigrations      restore all migration files
+      --skiptest            skip the unittest for loading database dump
+```
+
+``$ python3 manage.py listbackups``
+
+```
+  - show backups located at settings.BACKUP_ROOT
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      --hostname HOSTNAME   show backups for specified hostname
+      --projectname PROJECTNAME
+                            show backups for specified django project
+      --all                 show all backups
+```
