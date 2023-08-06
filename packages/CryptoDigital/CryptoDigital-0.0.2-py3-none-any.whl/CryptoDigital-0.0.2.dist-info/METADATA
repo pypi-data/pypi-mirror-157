@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: CryptoDigital
+Version: 0.0.2
+Summary: This is a library to get the online price of digital currencies.
+Home-page: https://github.com/DrSudoSaeed
+Author: SudoSaeed
+Author-email: DrSudoSaeed@gmail.com
+Project-URL: Bug Tracker, https://github.com/DrSudoSaeed/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+[GetHub Project](https://github.com/DrSudoSaeed/)
+
+This is a library to get the online price of digital currencies
+
+This library is very easy and convenient to use !
+
+**Follow the steps below to use:**
+
+```
+
+from CryptoDigital import *
+
+# Use the following function to get the dollar price:
+print(dolar())
+
+# Use the following function to get the price of digital currencies:
+print(crypto())
+
+
+```
+
+
+For criticisms and suggestions,<br>contact the author of this libraryon Telegram and Instagram :)
+telegram --> [SudoSaeed](https://t.me/sudosaeed/)<br>
+instagram --> [SudoSaeed](https://www.instagram.com/sudosaeed/)
