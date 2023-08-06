@@ -1,0 +1,7 @@
+dask>=2021.9.1
+geopandas>=0.10.0
+intake-esm>=2021.8.17
+xarray>=0.19.0
+py-cordex>=0.3.1
+cartopy<=0.20.2
+pyhomogenize<=0.2.0
