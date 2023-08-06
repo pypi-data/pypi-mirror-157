@@ -1,0 +1,13 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_parse.py,sha256=bQ_KqKqkhlyF5H36hiNQPauuoFI1yT4750W1zXcRNw4,514
+whatsapp_converter/__init__.py,sha256=cRcLg6maIaXKyb5zip8Sv3yLLxcxTNmkU9_4gt1PEno,104
+whatsapp_converter/__main__.py,sha256=8a7vqsDtDzCZwJ04pd98DmR0ofcYWKdOz_Gft3qFxyA,2859
+whatsapp_converter/colors.py,sha256=WWBGy-biQSQ0mclzwdsGPeZ70lY580osazL7On3WODA,287
+whatsapp_converter/version.py,sha256=PoXBgkIp8nWEV6M4Hfqh6hzqSqJor4NzalWdH9GUk1Q,123
+whatsapp_converter/whatsapp_converter.py,sha256=WFWGaE_RrNhCmbTto2fUb34ldK6gteqYVSE_UQAeZng,11375
+whatsapp_converter-0.6.1.dist-info/LICENSE,sha256=ks7ux_4xJOaK5Fp0BkX8oXlC3XreGqISPanwDPu6ohQ,1069
+whatsapp_converter-0.6.1.dist-info/METADATA,sha256=_qrOOZHOyOQLYY_TMf2LXhehxPYQJzGEvUZXAlIVuP0,5156
+whatsapp_converter-0.6.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+whatsapp_converter-0.6.1.dist-info/entry_points.txt,sha256=S8MYD9lraAn8t7hf-U1NFlyrrDmnR1qI4XSNCSE6tf8,72
+whatsapp_converter-0.6.1.dist-info/top_level.txt,sha256=Aqo7T6h7i0AQGuDzE39LRWtDamWhYA-Q2YEzBW9N-N8,25
+whatsapp_converter-0.6.1.dist-info/RECORD,,
