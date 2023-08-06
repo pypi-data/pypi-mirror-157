@@ -1,0 +1,29 @@
+image: python:3.10
+
+stages:
+  - verification
+  - deployment
+
+
+test:
+  stage: verification
+  before_script:
+    - pip install -U pip wheel setuptools
+    - pip install .[dev]
+  script:
+    - python -m unittest discover test
+  parallel:
+    matrix:
+      - image: [python:3.5, python:3.6, python:3.7, python:3.8, python:3.9, python:3.10]
+
+
+deploy package to pypi:
+  stage: deployment
+  before_script:
+    - pip install -U pip wheel setuptools
+    - pip install build twine
+  script:
+    - python -m build
+    - TWINE_PASSWORD=${PYPI_PWD} TWINE_USERNAME=${PYPI_USER} python -m twine upload dist/*
+  only:
+    - tags
