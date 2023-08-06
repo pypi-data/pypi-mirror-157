@@ -1,0 +1,3 @@
+[console_scripts]
+dkFlask = dkFlaskStructure.run:main
+
