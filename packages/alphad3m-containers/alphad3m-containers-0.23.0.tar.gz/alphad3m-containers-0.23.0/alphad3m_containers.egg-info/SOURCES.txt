@@ -1,0 +1,11 @@
+LICENSE.txt
+NOTICE.txt
+README.md
+setup.py
+alphad3m_containers/__init__.py
+alphad3m_containers/api.py
+alphad3m_containers.egg-info/PKG-INFO
+alphad3m_containers.egg-info/SOURCES.txt
+alphad3m_containers.egg-info/dependency_links.txt
+alphad3m_containers.egg-info/requires.txt
+alphad3m_containers.egg-info/top_level.txt
