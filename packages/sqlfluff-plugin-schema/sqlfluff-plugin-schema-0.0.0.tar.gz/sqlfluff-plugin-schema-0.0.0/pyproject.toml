@@ -1,0 +1,103 @@
+[project]
+name = "sqlfluff-plugin-schema"
+version = "0.0.0"
+description = ""
+authors = [
+    { name = "Mohamed Seleem", email = "oss@mselee.com" },
+]
+dependencies = [
+    "sqlfluff>=1.0.0,<2.0.0",
+    "more-itertools<9.0.0,>=8.10.0",
+]
+requires-python = ">=3.9,<4.0"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+
+[project.entry-points.sqlfluff]
+sqlfluff-plugin-schema = "sqlfluff_schema.rules"
+
+[project.optional-dependencies]
+
+[tool.sqlfluff.core]
+dialect = "postgres"
+
+[tool.pdm]
+package-dir = "src"
+includes = [
+    "src/sqlfluff_schema",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pdbpp<1.0.0,>=0.10.3",
+    "ipython<8.0.0,>=7.28.0",
+    "licenseheaders @ git+https://github.com/mselee/licenseheaders.git",
+    "python-semantic-release<8.0.0,>=7.19.2",
+]
+lint = [
+    "isort<6.0.0,>=5.9.3",
+    "black<24.0,>=22.3.0",
+    "safety<2.0.0,>=1.10.3",
+    "bandit<2.0.0,>=1.7.0",
+    "flake8<5.0.0,>=4.0.1",
+    "flake8-bugbear<22.0.0,>=21.9.2",
+    "flake8-black<1.0.0,>=0.2.3",
+]
+test = [
+    "pytest<8.0.0,>=7.1.0",
+    "pytest-sugar<1.0.0,>=0.9.4",
+    "pytest-cov<4.0.0,>=3.0.0",
+]
+doc = [
+    "mkdocs<2.0.0,>=1.2.2",
+    "mkdocstrings[python]<1.0.0,~=0.18.1",
+    "mkdocs-material<8.0.0,>=7.3.2",
+    "mkdocs-gen-files>=0.3.4",
+    "mkdocs-literate-nav>=0.4.1",
+    "mkdocs-section-index>=0.3.4",
+    "mkdocs-macros-plugin>=0.7.0",
+]
+
+[tool.black]
+line-length = 140
+target-version = [
+    "py38",
+]
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 140
+balanced_wrapping = true
+ensure_newline_before_comments = true
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+pythonpath = "src"
+addopts = "--cov  --import-mode importlib -q --tb=short"
+testpaths = [
+    "test",
+]
+
+[tool.coverage.run]
+source = [
+    "src",
+]
+
+[tool.coverage.report]
+fail_under = 85
+
+[tool.semantic_release]
+version_toml = "pyproject.toml:project.version"
+
+[build-system]
+requires = [
+    "pdm-pep517",
+]
+build-backend = "pdm.pep517.api"
