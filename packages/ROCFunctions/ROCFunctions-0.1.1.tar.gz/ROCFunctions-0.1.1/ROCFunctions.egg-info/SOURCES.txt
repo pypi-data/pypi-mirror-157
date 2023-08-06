@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ROCFunctions/ROCFunctions.py
+ROCFunctions/__init__.py
+ROCFunctions.egg-info/PKG-INFO
+ROCFunctions.egg-info/SOURCES.txt
+ROCFunctions.egg-info/dependency_links.txt
+ROCFunctions.egg-info/top_level.txt
