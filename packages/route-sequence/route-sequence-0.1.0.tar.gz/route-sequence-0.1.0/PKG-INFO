@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: route-sequence
+Version: 0.1.0
+Summary: A sequence number range from AA0000 to ZZ9999
+Author: Kim Timothy Engh
+Author-email: kte@protonmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "route-sequence"
+version = "0.1.0"
+description = "A sequence number range from AA0000 to ZZ9999"
+authors = ["Kim Timothy Engh <kte@protonmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+hypothesis = "^6.48.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "route_sequence"
+]
