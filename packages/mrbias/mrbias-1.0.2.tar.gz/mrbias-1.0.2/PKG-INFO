@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: mrbias
+Version: 1.0.2
+Summary: Magnetic Resonance BIomarker Assessment Software (MR-BIAS) is an automated tool for extracting quantitative MR parameters from NIST/ISMRM system phantom images
+Home-page: https://github.com/JamesCKorte/mrbias
+Author: James Korte
+Author-email: korte.james@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
