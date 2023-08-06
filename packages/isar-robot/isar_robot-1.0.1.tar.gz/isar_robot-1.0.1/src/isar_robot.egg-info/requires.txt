@@ -1,0 +1,6 @@
+alitra
+isar
+
+[dev]
+black
+pytest
