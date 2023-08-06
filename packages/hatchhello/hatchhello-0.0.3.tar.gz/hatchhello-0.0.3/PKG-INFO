@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: hatchhello
+Version: 0.0.3
+Summary: This program says hello.
+Project-URL: Documentation, https://github.com/unknown/hatchhello#readme
+Project-URL: Issues, https://github.com/unknown/hatchhello/issues
+Project-URL: Source, https://github.com/unknown/hatchhello
+Author-email: Jeremy Bryant <jb@jeremybryant.net>
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# hatchhello
+
+[![PyPI - Version](https://img.shields.io/pypi/v/hatchhello.svg)](https://pypi.org/project/hatchhello)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/hatchhello.svg)](https://pypi.org/project/hatchhello)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install hatchhello
+```
+
+## License
+
+`hatchhello` is distributed under the terms of the [GPL-3.0-or-later](https://spdx.org/licenses/GPL-3.0-or-later.html) license.
