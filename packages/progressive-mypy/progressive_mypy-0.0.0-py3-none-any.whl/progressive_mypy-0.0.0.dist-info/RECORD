@@ -1,0 +1,13 @@
+potato/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+potato/ahha.py,sha256=UAy_RFnCQldIqCBjneeethQ5LKFS3UCUE-UoE_r1L78,56
+potato/hoho.py,sha256=uX3kc64NRHnjaMU3NDDDi3lf9Td68V_KWFizcI38OgM,28
+potato/main.py,sha256=A29l34odQBLQgpGv9uriUZN7zpNYC_twrdo06Df-ad8,28
+progressive_mypy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+progressive_mypy/main.py,sha256=7M8upQWKwrZ4ap7XfQrqT37_VruA4Yw4tNXSe91vAXM,2518
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_smoke.py,sha256=4GqjQwBodMIz_VharJXiKlh0D_6MIlHFgMpHAWFiNIU,114
+progressive_mypy-0.0.0.dist-info/LICENSE,sha256=2skiIwuQvJYucCCAYR85MDANtka-ifzXBl-AH5Cj8Gc,1076
+progressive_mypy-0.0.0.dist-info/METADATA,sha256=ygLX_3agzwriBEjCeyG8iX7_Uq6Z50-irxsAtz4_Flk,2567
+progressive_mypy-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+progressive_mypy-0.0.0.dist-info/top_level.txt,sha256=ZTYEBPYGJ0TGPOTq-UW_3qOpSc0q_wqm6wj5ew60gPI,30
+progressive_mypy-0.0.0.dist-info/RECORD,,
