@@ -1,0 +1,13 @@
+hyperglot/__init__.py,sha256=lk8wfTL1qfFdBNUT28x_v_ztTsu7ACSHjJij-s17MoA,1078
+hyperglot/hyperglot.yaml,sha256=FYAhzepjmP1koQr0p035KGVkNJt1-kME94D8qRk10A8,398131
+hyperglot/language.py,sha256=5bXk_bNBEiyLZiWesk9NITbBJqPIdyx_5NP1DMo3n7w,17630
+hyperglot/languages.py,sha256=MHK1oDGrWGY73EuTp7f7YpqTqZE458KAEUc2k9tji6Y,12899
+hyperglot/main.py,sha256=W_ck1zlv9IXCue40BxDy6KY3RS2RVqh1Ed8v3nEHk1A,16244
+hyperglot/parse.py,sha256=eDOGEbEMWw2l7sy1_xVS121Zw1QrEN9pEk0L_XvZsng,7948
+hyperglot/validate.py,sha256=T0SYj7mpjQxiFHdSuHWMlKKtmKEbsmvIIukZlHldjMQ,13180
+hyperglot-0.4.0.dist-info/LICENSE.txt,sha256=zLKwcn5ISmCuutfaJ9PnSfZOwqdA5eNsQ-93YILpsiE,35145
+hyperglot-0.4.0.dist-info/METADATA,sha256=ZqqSdd2tq3M4IbvF8fNuzUDiRcteD34wRMqp3twzhO0,11751
+hyperglot-0.4.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hyperglot-0.4.0.dist-info/entry_points.txt,sha256=xmbd86Ls_6657Q5AKkav2CWOZ3wpmluB60LA6GX4b8U,187
+hyperglot-0.4.0.dist-info/top_level.txt,sha256=6sp3dvzPO0QwcIYcTfZV5f8AX8YUBqo3WOYu8vM1m_s,10
+hyperglot-0.4.0.dist-info/RECORD,,
