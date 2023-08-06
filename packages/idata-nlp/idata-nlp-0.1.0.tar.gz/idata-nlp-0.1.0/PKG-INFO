@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: idata-nlp
+Version: 0.1.0
+Summary: nlp
+Home-page: https://pypi.org/project/idata-nlp
+Author: nlp team
+Author-email: nlp@qq.com
+Keywords: nlp
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+NLP工具
