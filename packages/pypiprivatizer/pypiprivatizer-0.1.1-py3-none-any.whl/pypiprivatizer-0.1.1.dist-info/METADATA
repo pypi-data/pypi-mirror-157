@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pypiprivatizer
+Version: 0.1.1
+Summary: A python toolkit to download packages from PyPI and copy them in a directory compatible with the pip index.
+Project-URL: Homepage, https://github.com/abulgher/pypiprivatizer
+Author-email: Antonio Bulgheroni <antonio.bulgheroni@gmail.com>
+License: Copyright (c) 2018 The Python Packaging Authority
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9.7
+Description-Content-Type: text/markdown
+
+[![Build Python application](https://github.com/abulgher/pypiprivatizer/actions/workflows/python-app.yml/badge.svg)](https://github.com/abulgher/pypiprivatizer/actions/workflows/python-app.yml)
+[![Upload Python Package](https://github.com/abulgher/pypiprivatizer/actions/workflows/publish-python.yml/badge.svg)](https://github.com/abulgher/pypiprivatizer/actions/workflows/publish-python.yml)
+
+# pypiprivatizer
+A python tool to download PyPI packages and create the local structure to run a private index
+
+This tool is totally based on pip.
+
+The user needs to provide via the command line a requirement file and the tool will invoke pip to download all the packages required. Moreover the user can select a directory where the packages will be moved in order to mimick the required structure of the PyPI index.
