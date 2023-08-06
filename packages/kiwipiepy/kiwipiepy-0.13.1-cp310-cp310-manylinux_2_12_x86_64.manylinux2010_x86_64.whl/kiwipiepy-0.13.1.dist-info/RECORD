@@ -1,0 +1,14 @@
+_kiwipiepy.cpython-310-x86_64-linux-gnu.so,sha256=lXrK5mVr8HGs1W3ermBLiXzwDIVL7Hmd2xZBblu6PmM,6583728
+kiwipiepy-0.13.1.dist-info/top_level.txt,sha256=2K_Miiwb0zKgJI99sA9LkDdzftl4hunBQbpA20gfeU8,21
+kiwipiepy-0.13.1.dist-info/WHEEL,sha256=WtOPpVzyUQ5IjxtiZBzfCuF5fAyY4CBKenJ06AleLbg,152
+kiwipiepy-0.13.1.dist-info/METADATA,sha256=6jAQlzJyDmbwGcHakyasDUtJ8n9eZczBn4IGI2EktkY,961
+kiwipiepy-0.13.1.dist-info/RECORD,,
+kiwipiepy-0.13.1.dist-info/LICENSE.txt,sha256=5KrHkWpWjbHZmhwE-Sc-mBCg-_cPxCBM09Q2NIAy0mM,831
+kiwipiepy/utils.py,sha256=fGkcZxjJXqiUp1e_7V7EnFSEdz0vNMHo1kENGxsZEmc,6262
+kiwipiepy/documentation.md,sha256=zFv36wDM9GxpeQbBloV2Gxhhi0FwD7bQgk6NmfD3KFs,36099
+kiwipiepy/_wrap.py,sha256=LXTBtaifiYNpY-QCx2rrDtsvlbbqL1eBeI9urYpnOr0,55742
+kiwipiepy/const.py,sha256=V6eKevQYDChnuK3bsj57rewjXeu9MrXWl6vDhxxUrDI,3161
+kiwipiepy/_version.py,sha256=pMjW1X1oCiVe0NrTCY4GkT0Wt53V0JJzr08mFS8RKk8,23
+kiwipiepy/__init__.py,sha256=0G6JogKsrYg2rrUE-Ftg6KbXiEwtVB819_o2DEVCRdg,7115
+kiwipiepy/__main__.py,sha256=-yvAD2Bpe6UYd0f4pACApWY2y-lUzXq_wDLEYNSBHMI,2133
+kiwipiepy/corpus/stopwords.txt,sha256=khefUxwhJG5aVYZhcHAd3_taxuT52IxndwpBVacjfSk,839
