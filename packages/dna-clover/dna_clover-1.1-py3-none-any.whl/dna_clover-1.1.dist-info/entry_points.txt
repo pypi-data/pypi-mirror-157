@@ -1,0 +1,3 @@
+[console_scripts]
+clover = clover.main:main
+
