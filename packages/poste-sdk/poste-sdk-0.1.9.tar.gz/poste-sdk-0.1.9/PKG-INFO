@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: poste-sdk
+Version: 0.1.9
+Summary: 
+Home-page: https://poste-sdk.readthedocs.io/
+License: MIT
+Keywords: poste.io,email,poste-sdk
+Author: lishulong
+Author-email: lishulong.never@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: httpx (>=0.23.0,<0.24.0)
+Requires-Dist: pydantic (>=1.9.1,<2.0.0)
+Requires-Dist: zmail (>=0.2.8,<0.3.0)
+Project-URL: Repository, https://github.com/lishulongVI/poste-sdk
+Description-Content-Type: text/markdown
+
+## Poste-sdk
+
+> poste操作助手
+
+### Poste服务部署
+1. 生成文档 `cd docs && make html`
+2. [在线文档](https://poste-sdk.readthedocs.io)
+
+
+### 安装
+```
+pip install poste-sdk
+```
+
+### 简要使用
+```python
+from poste_sdk.client import PosteClient
+from poste_sdk.client import BoxClient
+from poste_sdk.models import Mail
+
+with PosteClient(address='管理账户', password='密码', domain='域名/ip', verify_ssl=False) as client:
+    # 初始化
+
+    box_client = client.init_box_client(email_prefix='test', password='test',domain=None) 
+    assert isinstance(box_client, BoxClient)
+    # 获取最近1条邮件
+    mail = box_client.get_latest()
+    assert isinstance(mail, Mail)
+
+    # email 总数量
+    box_client.get_email_cnt()
+
+    # 获取指定邮件
+    mail = box_client.get_email(id_=1)
+    assert isinstance(mail, Mail)
+
+    # 删除邮件
+    box_client.delete_by_id(1)
+
+    # 清空邮件
+    box_client.drop_mails()
+```
+
