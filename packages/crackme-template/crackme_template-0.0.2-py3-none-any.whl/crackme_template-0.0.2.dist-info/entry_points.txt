@@ -1,0 +1,3 @@
+[console_scripts]
+crackme_template = crackme_template.main:app
+
