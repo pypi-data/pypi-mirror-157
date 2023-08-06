@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: dimppy
+Version: 1.0.0.0
+Summary: Data Structures implementation in Python
+Home-page: https://github.com/Armaan-268/dimppy
+Author: Armaan Chauhan
+Author-email: armaanchauhan268@gmail.com
+License: MIT
+Keywords: datastructures,python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Data Structure implementation in Python 
+
+A Python package of data structure implementations 
+
+## Usage
+
+This package contains ready to use Data Structure implementations like Stack ,Queue using both arrays and linked lists, Trees ,Graphs etc. The primary focus is provide pre-coded functions that can be used on the go for various coding problems. 
+
+-----------------------------------
+**Note:** 
+* This package is under development.
+* All the files and classes are in title case (eg: TitleCase) and all the methods and functions are in camel case (eg: camelCase)
+
+```  
+pip install dimppy
+```
+
+-----------------------------------
+## Contents
+**1.Stack**
+
+**2.Queue**
+
+**3.LinkedList**
+* Singly LinkedList
+* Doubly LinkedList
+* Circular LinkedList
+
+**4.Trees**
+
+**5.Graphs**
+
+**6.HashMap**
+
+**7.Heap**
+
+**8.Searching**
+* BinarySearch 
+* LinearSearch
+
+**9.Sorting**
+* BubbleSort
+* BucketSort
+* CountSort
+* HeapSort
+* InsertionSort
+* MergeSort
+* QuickSort
+* RadixSort
+* SelectionSOrt
+* ShellSort
+
+
+
+Change Logs
+================================
+
+1.0.0.0 (30/06/2022)
+----------------------------------------------------------------
+- Code Check 
+
+0.0.0.6 (22/06/2021)
+----------------------------------------------------------------
+- Fixed bugs
+- Improved code 
+
+----------------------------------------------------------------
+
+**Repository link:** 
+[GitHub](https://github.com/Armaan-268/DSA_in_Python)
+
