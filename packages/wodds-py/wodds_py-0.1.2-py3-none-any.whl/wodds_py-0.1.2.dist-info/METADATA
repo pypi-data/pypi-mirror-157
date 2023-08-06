@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: wodds-py
+Version: 0.1.2
+Summary: Whisker Odds. Tukey inspired letter-values
+Home-page: https://sr.ht/~alexhallam/wodds-py/
+License: MIT
+Author: Alex Hallam
+Author-email: alexhallam6.28@gmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.23.0,<2.0.0)
+Requires-Dist: scipy (>=1.8.1,<2.0.0)
+Project-URL: Repository, https://sr.ht/~alexhallam/wodds-py/
