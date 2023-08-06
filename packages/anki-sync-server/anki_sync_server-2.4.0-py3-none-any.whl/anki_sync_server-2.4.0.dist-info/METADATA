@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: anki-sync-server
+Version: 2.4.0
+Summary: Self-hosted Anki Sync Server.
+Author: Vikash Kothary
+Author-email: kothary.vikash@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: anki (==2.1.49)
+Requires-Dist: beautifulsoup4 (>=4.9.1,<5.0.0)
+Requires-Dist: decorator (>=4.4.2,<5.0.0)
+Requires-Dist: distro (>=1.5.0,<2.0.0)
+Requires-Dist: markdown (>=3.2.2,<4.0.0)
+Requires-Dist: psutil (>=5.7.2,<6.0.0)
+Requires-Dist: requests (>=2.24.0,<3.0.0)
+Requires-Dist: send2trash (>=1.5.0,<2.0.0)
+Requires-Dist: webob (>=1.8.6,<2.0.0)
