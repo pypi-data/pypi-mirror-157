@@ -1,0 +1,6 @@
+- project:
+    name: x/networking-arista
+    templates:
+      - openstack-python36-jobs-neutron
+      - openstack-python37-jobs-neutron
+      - check-requirements
