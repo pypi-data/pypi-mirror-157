@@ -1,0 +1,8 @@
+include README.rst
+include LICENSE
+include requirements.txt
+graft lymph
+graft tests
+recursive-exclude * *.py[co]
+prune notebook
+include lymph/_version.py
