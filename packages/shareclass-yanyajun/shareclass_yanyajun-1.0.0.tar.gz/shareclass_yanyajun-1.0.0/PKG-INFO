@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: shareclass_yanyajun
+Version: 1.0.0
+Summary: 测试项目 看一下行不行
+Home-page: UNKNOWN
+Author: yanyajun
+Author-email: yyjjbz@163.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
