@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: jittor_offline
+Version: 0.0.2
+Summary: jittor project
+Home-page: https://github.com/jittor/jittor
+Author: jittor
+Author-email: jittor@qq.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/jittor/jittor/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+jittor_offline
+

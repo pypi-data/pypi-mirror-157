@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+python/cub-1.11.0.tgz
+python/cutt-1.2.zip
+python/dnnl_lnx_2.2.0_cpu_gomp.tgz
+python/dnnl_lnx_2.2.0_cpu_gomp_aarch64.tgz
+python/nccl.tgz
+python/t10k-images-idx3-ubyte.gz
+python/t10k-labels-idx1-ubyte.gz
+python/train-images-idx3-ubyte.gz
+python/train-labels-idx1-ubyte.gz
+python/jittor_offline.egg-info/PKG-INFO
+python/jittor_offline.egg-info/SOURCES.txt
+python/jittor_offline.egg-info/dependency_links.txt
+python/jittor_offline.egg-info/requires.txt
+python/jittor_offline.egg-info/top_level.txt
