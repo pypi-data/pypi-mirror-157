@@ -1,0 +1,3 @@
+[console_scripts]
+parnas = parnas.cli:run_parnas_cli
+
