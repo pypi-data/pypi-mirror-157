@@ -1,0 +1,10 @@
+islpy/_isl.cpython-38-i386-linux-gnu.so,sha256=m9uS6hwGwVswiGI2q6IRriEe_--Mg6Fqc1jQtXu__XI,14579624
+islpy/version.py,sha256=q-NODCNZ4h3KDVCIgsKw1Nq1S2nSS_n9n1c6eQxBWx8,69
+islpy/__init__.py,sha256=DyutaAZO72ip5WALAQuYuHN24Tmqu_AC28MUe7BfXYQ,43484
+islpy-2022.2.dist-info/top_level.txt,sha256=txVjJJ85Sa3IMOF6WOh_bTkOyRDWiSW2kQOf8vSPb6M,6
+islpy-2022.2.dist-info/misc.rst,sha256=hRI1EXNt2ymw9328IcE4GPo7DnM0RGx7dveNI4OEAdE,19384
+islpy-2022.2.dist-info/WHEEL,sha256=GwReX849BnoQWv-HcSXUs0whc-31BkC6U2K6sSoRQvA,144
+islpy-2022.2.dist-info/METADATA,sha256=ZjNsd4KGo_3KZdMrQVTSD6gbez7-2cOgOsnexK77cYc,3091
+islpy-2022.2.dist-info/RECORD,,
+islpy.libs/libisl-3de70c6a.so.23.1.0,sha256=ktEDFXHg-B-NRcmwDkWe5rz_v28MWV4YMqGKCSBB8vo,2772596
+islpy.libs/libgmp-e6fc0a14.so.10.3.2,sha256=nNYBABrm5JGt6K0fl_VPii_1SiX_XOxlvGoruJubwbQ,596400
