@@ -1,0 +1,265 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-04 23:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: djangoldp_branding/templates/admin/base.html:52
+msgid "Welcome,"
+msgstr ""
+
+#: djangoldp_branding/templates/admin/base.html:53
+msgid "administrator of"
+msgstr ""
+
+#: djangoldp_branding/templates/admin/base.html:56
+msgid "View site"
+msgstr ""
+
+#: djangoldp_branding/templates/admin/base.html:60
+msgid "Documentation"
+msgstr ""
+
+#: djangoldp_branding/templates/admin/base.html:64
+#: djangoldp_branding/templates/registration/password_reset_email.html:15
+msgid "Change password"
+msgstr ""
+
+#: djangoldp_branding/templates/admin/base.html:66
+msgid "Log out"
+msgstr ""
+
+#: djangoldp_branding/templates/admin/base.html:76
+msgid "Home"
+msgstr ""
+
+#: djangoldp_branding/templates/admin/login.html:5
+#: djangoldp_branding/templates/admin/login.html:49
+#: djangoldp_branding/templates/registration/login.html:5
+#: djangoldp_branding/templates/registration/login.html:50
+#: djangoldp_branding/templates/registration/login.html:72
+#: djangoldp_branding/templates/registration/logout.html:15
+#: djangoldp_branding/templates/registration/password_change_done.html:15
+#: djangoldp_branding/templates/registration/password_reset_complete.html:15
+msgid "Se connecter"
+msgstr ""
+
+#: djangoldp_branding/templates/admin/login.html:14
+#, python-format
+msgid ""
+"You are authenticated as %(username)s, but are not authorized to access this "
+"page. Would you like to login to a different account?"
+msgstr ""
+
+#: djangoldp_branding/templates/admin/login.html:25
+#: djangoldp_branding/templates/registration/login.html:27
+msgid "Nom d'utilisateur ou e-mail:"
+msgstr ""
+
+#: djangoldp_branding/templates/admin/login.html:36
+#: djangoldp_branding/templates/registration/login.html:37
+msgid "Please correct the error below."
+msgstr ""
+
+#: djangoldp_branding/templates/admin/login.html:36
+#: djangoldp_branding/templates/registration/login.html:37
+msgid "Please correct the errors below."
+msgstr ""
+
+#: djangoldp_branding/templates/admin/login.html:54
+#: djangoldp_branding/templates/registration/login.html:53
+#: djangoldp_branding/templates/registration/password_reset_form.html:5
+msgid "Mot de passe oublié ?"
+msgstr ""
+
+#: djangoldp_branding/templates/base_email.html:98
+msgid "Ne réponds pas directement à cet e-mail, à la place rends-toi sur"
+msgstr ""
+
+#: djangoldp_branding/templates/django_registration/registration_closed.html:4
+msgid "Inscription terminée"
+msgstr ""
+
+#: djangoldp_branding/templates/django_registration/registration_closed.html:7
+msgid "L'inscription est fermée pour ce site."
+msgstr ""
+
+#: djangoldp_branding/templates/django_registration/registration_form.html:5
+msgid "Enregistrer un compte"
+msgstr ""
+
+#: djangoldp_branding/templates/django_registration/registration_form.html:15
+msgid "Nom d'utilisateur:"
+msgstr ""
+
+#: djangoldp_branding/templates/django_registration/registration_form.html:19
+#: djangoldp_branding/templates/registration/password_reset_form.html:14
+msgid "E-mail:"
+msgstr ""
+
+#: djangoldp_branding/templates/django_registration/registration_form.html:33
+#: djangoldp_branding/templates/registration/password_reset_form.html:20
+msgid "Ton adresse e-mail est invalide."
+msgstr ""
+
+#: djangoldp_branding/templates/django_registration/registration_form.html:38
+msgid "Envoyer un e-mail d'activation"
+msgstr ""
+
+#: djangoldp_branding/templates/django_registration/registration_form.html:41
+#: djangoldp_branding/templates/registration/password_change_form.html:45
+#: djangoldp_branding/templates/registration/password_reset_confirm.html:47
+#: djangoldp_branding/templates/registration/password_reset_form.html:28
+msgid "Retour"
+msgstr ""
+
+#: djangoldp_branding/templates/email.html:15
+msgid "Accéder à l'application"
+msgstr ""
+
+#: djangoldp_branding/templates/email.html:26
+msgid "Pour ne plus recevoir ces e-mails, rends-toi sur"
+msgstr ""
+
+#: djangoldp_branding/templates/email.html:26
+msgid "ton profile"
+msgstr ""
+
+#: djangoldp_branding/templates/oidc_provider/authorize.html:6
+msgid "Demande d'accès aux informations"
+msgstr ""
+
+#: djangoldp_branding/templates/oidc_provider/authorize.html:15
+msgid "Demande d'autorisation"
+msgstr ""
+
+#: djangoldp_branding/templates/oidc_provider/authorize.html:20
+#: djangoldp_branding/templates/oidc_provider/authorize.html:27
+msgid "L'application"
+msgstr ""
+
+#: djangoldp_branding/templates/oidc_provider/authorize.html:20
+msgid "demande à accéder à ces informations te concernant :"
+msgstr ""
+
+#: djangoldp_branding/templates/oidc_provider/authorize.html:27
+msgid "demande à accéder à ton compte."
+msgstr ""
+
+#: djangoldp_branding/templates/oidc_provider/authorize.html:45
+msgid "Continuer"
+msgstr ""
+
+#: djangoldp_branding/templates/oidc_provider/authorize.html:48
+msgid "Changer de compte"
+msgstr ""
+
+#: djangoldp_branding/templates/password/email.html:7
+msgid "Un compte a été créé pour toi sur"
+msgstr ""
+
+#: djangoldp_branding/templates/password/email.html:15
+msgid "Crée mon mot de passe"
+msgstr ""
+
+#: djangoldp_branding/templates/registration/login.html:16
+msgid ""
+"\n"
+"          Ton compte n'a pas accès à cette page. Pour continuer, connecte-"
+"toi avec un compte qui y a accès.\n"
+"        "
+msgstr ""
+
+#: djangoldp_branding/templates/registration/login.html:62
+msgid "Se connecter avec un autre fournisseur d'identité"
+msgstr ""
+
+#: djangoldp_branding/templates/registration/login.html:68
+msgid "Webfinger:"
+msgstr ""
+
+#: djangoldp_branding/templates/registration/login.html:83
+msgid "Tu n'as pas encore de compte ?"
+msgstr ""
+
+#: djangoldp_branding/templates/registration/login.html:86
+msgid "S'inscrire"
+msgstr ""
+
+#: djangoldp_branding/templates/registration/logout.html:5
+#: djangoldp_branding/templates/registration/logout.html:11
+msgid "Déconnecté"
+msgstr ""
+
+#: djangoldp_branding/templates/registration/password_change_done.html:5
+#: djangoldp_branding/templates/registration/password_change_done.html:11
+msgid "Mot de passe modifié"
+msgstr ""
+
+#: djangoldp_branding/templates/registration/password_change_form.html:5
+#: djangoldp_branding/templates/registration/password_reset_confirm.html:5
+msgid "Changer de mot de passe"
+msgstr ""
+
+#: djangoldp_branding/templates/registration/password_change_form.html:29
+#: djangoldp_branding/templates/registration/password_reset_confirm.html:26
+msgid "Les mots de passe ne correspondent pas."
+msgstr ""
+
+#: djangoldp_branding/templates/registration/password_change_form.html:42
+#: djangoldp_branding/templates/registration/password_reset_confirm.html:39
+msgid "Envoyer"
+msgstr ""
+
+#: djangoldp_branding/templates/registration/password_reset_complete.html:5
+#: djangoldp_branding/templates/registration/password_reset_complete.html:11
+msgid "Mot de passe réinitialisé avec succès"
+msgstr ""
+
+#: djangoldp_branding/templates/registration/password_reset_confirm.html:45
+msgid "Lien invalide"
+msgstr ""
+
+#: djangoldp_branding/templates/registration/password_reset_done.html:5
+msgid "E-mail envoyé"
+msgstr ""
+
+#: djangoldp_branding/templates/registration/password_reset_done.html:11
+msgid "Vérifie ta boite mail."
+msgstr ""
+
+#: djangoldp_branding/templates/registration/password_reset_done.html:14
+msgid "Nous t'avons envoyé des instructions pour définir ton mot de passe."
+msgstr ""
+
+#: djangoldp_branding/templates/registration/password_reset_email.html:6
+msgid ""
+"You're receiving this email because you requested a new password for your "
+"user account at"
+msgstr ""
+
+#: djangoldp_branding/templates/registration/password_reset_email.html:7
+msgid "Please go to the following page and choose a new password:"
+msgstr ""
+
+#: djangoldp_branding/templates/registration/password_reset_email.html:23
+msgid "Your username, in case you've forgotten:"
+msgstr ""
+
+#: djangoldp_branding/templates/registration/password_reset_form.html:25
+msgid "Envoyer les instructions"
+msgstr ""
