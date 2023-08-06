@@ -1,0 +1,9 @@
+LICENSE.rst
+README.md
+setup.cfg
+setup.py
+pyquestaal/pyquestaal.egg-info/PKG-INFO
+pyquestaal/pyquestaal.egg-info/SOURCES.txt
+pyquestaal/pyquestaal.egg-info/dependency_links.txt
+pyquestaal/pyquestaal.egg-info/requires.txt
+pyquestaal/pyquestaal.egg-info/top_level.txt
