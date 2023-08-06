@@ -1,0 +1,3 @@
+[console_scripts]
+yaml-pipe=yaml_pipe.cli:main
+
