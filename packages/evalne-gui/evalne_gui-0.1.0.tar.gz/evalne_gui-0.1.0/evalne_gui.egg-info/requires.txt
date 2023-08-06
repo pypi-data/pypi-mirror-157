@@ -1,0 +1,7 @@
+numpy
+plotly
+dash-daq
+dash_bootstrap_components
+dash
+fa2
+psutil

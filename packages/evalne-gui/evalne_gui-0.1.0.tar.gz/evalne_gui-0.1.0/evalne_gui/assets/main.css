@@ -1,0 +1,126 @@
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    color: #269df1;
+}
+
+.header-title {
+    color: white;
+}
+
+.section-title {
+    padding-top: 20px;
+}
+
+.input-box {
+    height: 30px;
+    width: -webkit-fill-available;
+}
+
+.sectionHr {
+    border-top: 2px solid #269df1;
+}
+
+.btn {
+    color: #fff;
+    font-weight: bold;
+    background-color: #269df1;
+    outline:0;
+    margin-left: 20px;
+    font-size: 0.8em;
+    height: 40px;
+    width: 120px;
+}
+
+.btn-square {
+    border:0;
+}
+
+.btn-sm {
+    padding: 7px 20px 7px 20px;
+    height: 30px;
+    width: 140px;
+}
+
+.btn-run {
+    background-color: #1fcd00;
+}
+
+.btn-imp {
+    background-color: #269df1;
+}
+
+.btn-active {
+    background-color: #fff; /* Green */
+    color: #1fcd00;
+    border: solid;
+}
+
+.btn:hover {
+    box-shadow: inset 0px 0px 400px 110px rgb(0, 0, 0, 0.2);
+    transition-duration: 0.2s;
+}
+
+.plot-area {
+    margin: 10px 30px 30px 30px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 13%), 0 5px 10px rgb(0 0 0 / 16%);
+}
+
+.bash {
+    color: white;
+    background-color: black;
+    font-size: small;
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    width: 100%;
+    height: fit-content;
+    min-height: 200px;
+    display: inline-block;
+    overflow: scroll;
+    border: inset;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 13%), 0 5px 10px rgb(0 0 0 / 16%);
+}
+
+.runs-table {
+    width: 100%;
+}
+
+.plot-tables {
+    width: 90%;
+    margin-left: 10%;
+}
+
+table, tr {
+    border-spacing: 20px;
+    border-collapse: collapse;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    height: 40px;
+}
+
+tr:hover {
+    background: whitesmoke;
+}
+
+th {
+    text-align: left;
+    width: 150px;
+}
+
+td {
+    overflow-wrap: break-word;
+    border-spacing: 20px;
+    width: 150px;
+}
+
+.help-qm {
+    background: black;
+    color: white;
+    border-radius: 50%;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}

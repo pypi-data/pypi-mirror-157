@@ -1,0 +1,2 @@
+[console_scripts]
+evalne_gui = evalne_gui.__main__:main
