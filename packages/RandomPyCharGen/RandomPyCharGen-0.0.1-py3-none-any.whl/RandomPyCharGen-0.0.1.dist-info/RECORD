@@ -1,0 +1,7 @@
+virtual/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+virtual/RandomCharGen/__init__.py,sha256=PfLMVemBiNs_ByIbvvG6QtDopwWHwVc53HilBJAOwrg,54
+virtual/RandomCharGen/randCharMain.py,sha256=4oYX6ejjoUVKkQATB9RF9pNYB86dRnoGHq_e0h1Vfkg,5491
+RandomPyCharGen-0.0.1.dist-info/METADATA,sha256=G1UnGad_5wxd_b_WZKD00PZN5sIHDoLu5O3lfofxXHs,312
+RandomPyCharGen-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+RandomPyCharGen-0.0.1.dist-info/top_level.txt,sha256=o0y5Zb7oExZlLfRS48XZpkV9LlQ9NZRgM2nkE0mgnTA,8
+RandomPyCharGen-0.0.1.dist-info/RECORD,,
