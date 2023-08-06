@@ -1,0 +1,13 @@
+LICENSE.txt
+setup.cfg
+setup.py
+src/reportclassicproject/__init__.py
+src/reportclassicproject/report_classic.py
+src/reportclassicproject/report_label.py
+src/reportclassicproject/report_line_detail.py
+src/reportclassicproject/report_mline_detail.py
+src/reportclassicproject.egg-info/PKG-INFO
+src/reportclassicproject.egg-info/SOURCES.txt
+src/reportclassicproject.egg-info/dependency_links.txt
+src/reportclassicproject.egg-info/requires.txt
+src/reportclassicproject.egg-info/top_level.txt
