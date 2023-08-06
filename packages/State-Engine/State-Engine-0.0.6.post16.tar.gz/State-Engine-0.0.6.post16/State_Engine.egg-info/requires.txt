@@ -1,0 +1,13 @@
+
+[dev]
+pytest>=6.2.5
+pytest-order>=1.0.0
+coverage>=5.5
+black
+
+[docs]
+sphinx>=5.0.2
+pallets-sphinx-themes>=2.0.2
+rinohtype>=0.5.4
+sphinx_issues
+sphinx_toolbox
