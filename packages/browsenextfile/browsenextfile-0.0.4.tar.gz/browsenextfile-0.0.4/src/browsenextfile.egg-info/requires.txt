@@ -1,0 +1,5 @@
+wheel
+pyshortcuts
+platformdirs
+importlib-resources
+selenium

@@ -1,0 +1,8 @@
+{
+'options': {
+  'browser': {
+    'possible_values': ["Firefox", "Chrome", "Edge", "Ie", "Safari", "Opera"],
+    'value': "Firefox",
+    },
+  },
+}
