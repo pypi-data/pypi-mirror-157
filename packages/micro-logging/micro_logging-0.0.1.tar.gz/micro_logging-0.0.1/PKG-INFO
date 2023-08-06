@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: micro_logging
+Version: 0.0.1
+Summary: A logging solution to connect all your microservices :) 
+Author-email: Max Paul <maxkpaul21@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
