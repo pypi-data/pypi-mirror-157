@@ -1,0 +1,7 @@
+Change Log
+==========
+
+0.2.0 (2022/06/30)
+-------------------
+- First Release
+- rename to ColorCraft
