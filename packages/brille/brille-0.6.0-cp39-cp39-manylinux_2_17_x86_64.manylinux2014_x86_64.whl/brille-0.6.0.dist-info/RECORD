@@ -1,0 +1,13 @@
+brille.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
+brille.libs/libsz-fcfb8163.so.2.0.1,sha256=eb5EIh6oZLws21xbc2JanqiVpFaKiexGkbR7tPomZ3E,16848
+brille.libs/libaec-dda3378b.so.0.0.10,sha256=kWneu8GCfzrMjGFk__nfmUMQfVMbozMvfT-suEw10es,33632
+brille.libs/libhdf5-31426894.so.8.0.1,sha256=P9CXt7tNY3HEfT3fV4L6XKhHMIN-5wGch-y2taRs8_s,2907344
+brille-0.6.0.dist-info/top_level.txt,sha256=-M8-VE2QuPFYuMLLsbCSZmfK6W9HEWn1tj58duE86b4,7
+brille-0.6.0.dist-info/WHEEL,sha256=FNUt4eBsrBVn_Yc5KG3aXtKE40X3uNZrbGLNCbVxyFw,148
+brille-0.6.0.dist-info/COPYING,sha256=AkJuNEXtUzRN1jfNwT4m5Zd9A1RuI4dP-8bq1-8IoTA,33896
+brille-0.6.0.dist-info/METADATA,sha256=foUdEAi8imRF8xwtihKMHoLedjSsJMFu7WAFO7ddvi8,3188
+brille-0.6.0.dist-info/RECORD,,
+brille/_brille.cpython-39-x86_64-linux-gnu.so,sha256=5JOV9icAl4ZKOjsgQkuH5WrYHTiuqckikPJ30COQoRI,4281720
+brille/utils.py,sha256=RD52P3FKX5Q0s1CKG9ypzoP8OvpNtqNDb2AgIF_x0AE,13226
+brille/plotting.py,sha256=MLrovSJTUBsmDZvkEZk8L-ZbUUyNZ08Ui_oJp-2m_Bc,21388
+brille/__init__.py,sha256=oeF-3ylMciST7AuEdJQakTNc8urQ9F36YD-nd4YfTrE,1734
