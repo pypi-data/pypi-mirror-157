@@ -1,0 +1,12 @@
+LICENSE
+README.md
+chess_library_exporter.py
+pyproject.toml
+setup.cfg
+setup.py
+ChessComLibraryExporter.egg-info/PKG-INFO
+ChessComLibraryExporter.egg-info/SOURCES.txt
+ChessComLibraryExporter.egg-info/dependency_links.txt
+ChessComLibraryExporter.egg-info/entry_points.txt
+ChessComLibraryExporter.egg-info/requires.txt
+ChessComLibraryExporter.egg-info/top_level.txt
