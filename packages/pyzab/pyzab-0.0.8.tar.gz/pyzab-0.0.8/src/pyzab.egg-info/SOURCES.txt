@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/pyzab/__init__.py
+src/pyzab/pyzab.py
+src/pyzab.egg-info/PKG-INFO
+src/pyzab.egg-info/SOURCES.txt
+src/pyzab.egg-info/dependency_links.txt
+src/pyzab.egg-info/requires.txt
+src/pyzab.egg-info/top_level.txt
