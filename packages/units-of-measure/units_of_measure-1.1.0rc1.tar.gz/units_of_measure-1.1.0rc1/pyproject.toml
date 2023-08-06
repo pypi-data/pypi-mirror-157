@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "units-of-measure"
+version = "1.1.0rc1"
+authors = [{name="Gerald Scharitzer"}]
+description = "Units of Measure"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/gerald-scharitzer/units-of-measure"
+"Bug Tracker" = "https://github.com/gerald-scharitzer/units-of-measure/issues"
+"Source Code" = "https://github.com/gerald-scharitzer/units-of-measure"
