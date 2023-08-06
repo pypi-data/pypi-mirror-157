@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: tkgetpassword
+Version: 1.1
+Summary: Logins to enter password, create password, change password and login, simple way to enter password in tkinter, Tkinter.
+Home-page: https://github.com/LeonardoReichert/tkgetpassword/releases/tag/v1.1
+Author: Leonardo A. Reichert
+Author-email: leoreichert5000@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: tkinter,password,login,authentication,password,tk,sha256,hash,gui
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
