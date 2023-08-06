@@ -1,0 +1,6 @@
+include *.md
+include mapshader/templates/*.html
+
+graft mapshader
+
+prune *.egg-info
