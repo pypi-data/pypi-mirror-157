@@ -1,0 +1,8 @@
+tacrpy/__init__.py,sha256=IwkJKWN-jZlSbFT_vTOXHWTp8Sday-sCibkUem6-APY,29
+tacrpy/data_load.py,sha256=gThC5FPa4wleBM8RWccVzRutKcPVOjlgsoP0UTEEvNU,1351
+tacrpy/preprocess.py,sha256=GeK1ZZ3etyKExso8cGTpA9dg1fP0jk4rs8LcWxOJU1w,5271
+tacrpy/similarity.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tacrpy-0.0.4.dist-info/METADATA,sha256=Ny5dFazJywDu5ceZbQj_NzNF17i09tsC3idRNADLbMw,285
+tacrpy-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tacrpy-0.0.4.dist-info/top_level.txt,sha256=BqpXuN5c5p-Kf_Qv8U1hT8dbV6NhdnLZ7QQa4wAvBH4,7
+tacrpy-0.0.4.dist-info/RECORD,,
