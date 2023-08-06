@@ -1,0 +1,12 @@
+rockhopper/__init__.py,sha256=f5n4lV6YON-qOYVg7qpf-6ficYhTdMu6HdRYI6Fq5QM,657
+rockhopper/_ragged_array.py,sha256=BvEGCFKIA-vjWXQalqHFi8nkbnslugJgSOKEsGv7guU,32194
+rockhopper/_version.py,sha256=Ga-LfO7M83mH6TSaXmwnADVzYoAUb36rMjxmLDZTy6Y,105
+rockhopper/hook-rockhopper.py,sha256=T-eXsDNtDV4lPmX5C7_d1aVsIVdfBTIaxCE4557ZdOI,287
+rockhopper/_slugs/ragged_array-Darwin-64bit.dylib,sha256=NM1zpzL7J49c7Fr6S2ZtMj9vDcY8MnkGUnwJOPnw-wc,51276
+rockhopper/_slugs/ragged_array.json,sha256=sD9u7zIJM9dtfae0BwFP7azpbcp7-FvwdfhDnzpkSUM,1508
+rockhopper-0.2.0.dist-info/LICENSE,sha256=XJfKwPNzYI7LfQ_CEIcttK1E5drqFZ4biLi-FmUvc-4,1077
+rockhopper-0.2.0.dist-info/METADATA,sha256=9t1QxL4l5cbB01nAY7ox0A8Ow2DhVs88aAWzSVyTrNo,22140
+rockhopper-0.2.0.dist-info/WHEEL,sha256=K0vOHWIU5FaKhYe4t7H5VdotSD99L90W7cwc8QzQ7qY,106
+rockhopper-0.2.0.dist-info/entry_points.txt,sha256=GBpULNuV1SXNlsWX-MvVyrj4N_sjeKGgyCpLePC_QxE,57
+rockhopper-0.2.0.dist-info/top_level.txt,sha256=WGYKsNmNu2tDjg3qROHCv12tGvDI6DRfB9cyxAWjJGc,11
+rockhopper-0.2.0.dist-info/RECORD,,
