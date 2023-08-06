@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+PYPATHER.py
+README.md
+setup.py
+PYPATHER.egg-info/PKG-INFO
+PYPATHER.egg-info/SOURCES.txt
+PYPATHER.egg-info/dependency_links.txt
+PYPATHER.egg-info/top_level.txt
