@@ -1,0 +1,8 @@
+README.md
+setup.py
+myutils/__init__.py
+myutils/plotting.py
+vwoodutils.egg-info/PKG-INFO
+vwoodutils.egg-info/SOURCES.txt
+vwoodutils.egg-info/dependency_links.txt
+vwoodutils.egg-info/top_level.txt
