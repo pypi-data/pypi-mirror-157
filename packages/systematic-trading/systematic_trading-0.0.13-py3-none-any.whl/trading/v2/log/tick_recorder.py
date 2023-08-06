@@ -1,0 +1,3 @@
+"""
+Ticker recorder module
+"""
