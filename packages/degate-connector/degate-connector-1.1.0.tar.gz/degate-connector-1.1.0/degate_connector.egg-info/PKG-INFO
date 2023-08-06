@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: degate-connector
+Version: 1.1.0
+Summary: This is a lightweight library that works as a connector to DeGate public SDK.
+Home-page: https://github.com/degatedev/degate-sdk-python.git
+Author: DeGate
+License: MIT
+Keywords: degate,Public SDK
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# DeGate Public SDK Connector Python
+[![Python 3.8](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This is a lightweight library that works as a connector to [DeGate public SDK](https://api-docs.degate.com/cn/spot)
+
+
