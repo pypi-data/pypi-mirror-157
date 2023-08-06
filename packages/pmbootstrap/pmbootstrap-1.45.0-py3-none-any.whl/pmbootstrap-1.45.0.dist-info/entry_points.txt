@@ -1,0 +1,2 @@
+[console_scripts]
+pmbootstrap = pmb:main
