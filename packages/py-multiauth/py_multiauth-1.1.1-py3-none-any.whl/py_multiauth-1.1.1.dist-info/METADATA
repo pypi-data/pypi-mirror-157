@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: py-multiauth
+Version: 1.1.1
+Summary: Python package to interact with multiple authentication services
+Home-page: https://escape.tech/
+License: MIT
+Author: Escape Technologies SAS
+Author-email: ping@escape.tech
+Maintainer: Antoine Carossio
+Maintainer-email: antoine@escape.tech
+Requires-Python: >=3.7,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Authlib (>=1.0.1,<2.0.0)
+Requires-Dist: PyJWT (>=2.4.0,<3.0.0)
+Requires-Dist: graphql-core (>=3.2.1,<4.0.0)
+Requires-Dist: pycognito (>=2022.5.0,<2023.0.0)
+Requires-Dist: pydash (>=5.1.0,<6.0.0)
+Project-URL: Bug Tracker, https://github.com/Escape-Technologies/py-multiauth/issues
+Project-URL: Repository, https://github.com/Escape-Technologies/py-multiauth
+Description-Content-Type: text/markdown
+
+# py-multiauth ![PyPI](https://img.shields.io/pypi/v/py-multiauth) [![codecov](https://codecov.io/gh/Escape-Technologies/py-multiauth/branch/main/graph/badge.svg?token=NL148MNKAE)](https://codecov.io/gh/Escape-Technologies/py-multiauth)
+
+[![CI](https://github.com/Escape-Technologies/py-multiauth/actions/workflows/ci.yaml/badge.svg)](https://github.com/Escape-Technologies/py-multiauth/actions/workflows/ci.yaml) [![CD](https://github.com/Escape-Technologies/py-multiauth/actions/workflows/cd.yaml/badge.svg)](https://github.com/Escape-Technologies/py-multiauth/actions/workflows/cd.yaml)
+
+![PyPI - License](https://img.shields.io/pypi/l/py-multiauth) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/py-multiauth)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/py-multiauth)
+
+[View it on pypi!](https://pypi.org/project/py-multiauth/)
+
+## Installation
+
+```bash
+pip install py-multiauth
+```
+
+```python
+from multiauth import ...
+```
+
+## Supported methods
+
+|Name     |Authenticate|Refresh|Extra    |
+|---------|:----------:|:-----:|---------|
+|`API_KEY`|✓           |       |         |
+|`AWS`    |✓           |✓      |Signature|
+|`BASIC`  |✓           |       |         |
+|`REST`   |✓           |✓      |         |
+|`DIGEST` |✓           |       |         |
+|`GRAPHQL`|✓           |       |         |
+|`HAWK`   |✓           |       |         |
+|`MANUAL` |✓           |       |         |
+|`OAUTH`  |✓           |✓      |         |
+
