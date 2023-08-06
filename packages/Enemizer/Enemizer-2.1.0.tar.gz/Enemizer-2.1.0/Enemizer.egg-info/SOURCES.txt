@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+Enemizer.egg-info/PKG-INFO
+Enemizer.egg-info/SOURCES.txt
+Enemizer.egg-info/dependency_links.txt
+Enemizer.egg-info/entry_points.txt
+Enemizer.egg-info/not-zip-safe
+Enemizer.egg-info/requires.txt
+Enemizer.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/enemizer.py
+src/enemizer_config.py
+src/generator.py
+src/utils.py
+src/data/defaults.sbyml
