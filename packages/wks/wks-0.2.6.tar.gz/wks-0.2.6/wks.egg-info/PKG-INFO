@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: wks
+Version: 0.2.6
+Summary: Simple dependencies manager for cmake projects in your workspace
+Home-page: https://github.com/rhoban/wks/
+Author: Rhoban team
+Author-email: team@rhoban.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: wks workspace deps
+Platform: UNKNOWN
+Requires-Python: >=3.6
