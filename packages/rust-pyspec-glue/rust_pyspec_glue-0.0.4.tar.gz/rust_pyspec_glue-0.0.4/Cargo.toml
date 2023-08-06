@@ -1,0 +1,22 @@
+[package]
+name = "rust-pyspec-glue"
+version = "0.0.4"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "rust_pyspec_glue"
+crate-type = ["cdylib"]
+
+[dependencies]
+ethereum-pyspec-db = { git = "https://github.com/petertdavies/rust-pyspec-db", rev = "5a53dfb737e2ddd44df05a137a0392c4951455b5" }
+ethereum-types = "0.12.1"
+
+[package.metadata.maturin]
+python-source = "python"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
