@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: vufr
+Version: 1.5.0
+Summary: A simple api wrapper for (shorten-url) vu.fr.
+Home-page: https://github.com/jiroawesome/vufr
+Author: JiroDeveloper
+Author-email: contact@jiroawesome.tech
+License: MIT License
+Keywords: shorten-url shorten vu.fr
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+
