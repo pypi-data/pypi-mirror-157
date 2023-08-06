@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+#
+# Stream-based realtime scientific data plotter.
+# Copyright (c) 2022, Hiroyuki Ohsaki.
+# All rights reserved.
+#
+
+# automatic speed control
+# multiple polots in row
+
+import fileinput
+import re
+import sys
+import time
+
+from perlcompat import die, warn, getopts
+import rplot
+import tbdump
+
+def usage():
+    die(f"""\
+usage: {sys.argv[0]} [-vcW] [-h n[,n...]] [-m #] [-g unit] [-w range] [-F fps] [file...]
+  -v       verbose mode
+  -c       curses mode (disable GUI display)
+  -h list  hide specified fields from display
+  -m #     display multiple plots simultaneously
+  -g unit  specify the spacing of vertial grids
+  -w range specify the window range
+  -W       automatic window range mode
+  -F fps   limit the frequency of display
+""")
+
+def process_line(plots, line, to_hide):
+    fields = line.split()
+    for n, v in enumerate(fields):
+        i = n % len(plots)
+        j = n // len(plots)
+        hide = (1 + n) in to_hide
+        sr = plots[i].series(j)
+        # FIXME: This should be done once at the time of object creation.
+        sr.hide = hide
+        # Regard the prceeding string as a field label.
+        m = re.search(r'^(\w+)=(.+)', v)
+        if m:
+            label, v = m.groups()
+            sr.label = label
+        sr.append(float(v))
+
+def need_display(fps=30, last_draw=[0]):
+    curtime = time.time()
+    # Limit the frame rate by FPS.
+    if curtime - last_draw[0] < 1 / fps:
+        return False
+    last_draw[0] = curtime
+    return True
+
+def redraw_display(screen, plots):
+    screen.clear()
+    for rp in plots:
+        rp.draw_background()
+        rp.draw_series()
+    screen.update()
+
+def do_automatic_grid(plots):
+    for rp in plots:
+        # Skip if either max or min is undetermined.
+        if rp.vmax is None:
+            continue
+        delta = rp.vmax - rp.vmin
+        if delta >= 100:
+            rp.grid, rp.subgrid = 100, 20
+        elif delta >= 10:
+            rp.grid, rp.subgrid = 10, 2
+        elif delta >= 1:
+            rp.grid, rp.subgrid = 1, .2
+        elif delta >= .1:
+            rp.grid, rp.subgrid = .1, .02
+
+def do_automatic_window(plots, started=[None]):
+    curtime = time.time()
+    # Record the program invokation time.
+    if started[0] is None:
+        started[0] = curtime
+    for rp in plots:
+        if rp.window:
+            continue
+        if curtime - started[0] >= 5:
+            # Automatically change to the fixed window mode after 5 seconds.
+            rp.window = len(rp.series(0))
+
+def main():
+    opt = getopts('vcWh:m:g:w:F:') or usage()
+    use_curses = opt.c
+    to_hide = [int(s) for s in opt.h.split(',')] if opt.h else []
+    nplots = int(opt.m) if opt.m else 1
+    grid = float(opt.g) if opt.g else 1
+    automatic_grid = True if not opt.g else False
+    window = float(opt.w) if opt.w else None
+    automatic_window = opt.W
+    fps = float(opt.F) if opt.F else 30.
+
+    screen = rplot.Screen(curses=use_curses)
+    plots = [None] * nplots
+    height = screen.height // nplots
+    for n in range(nplots):
+        plots[n] = rplot.Plot(screen=screen,
+                              height=height,
+                              offset=(0, height * n),
+                              grid=grid,
+                              start_color=n)
+        plots[n].window = window
+
+    _hook = fileinput.hook_encoded('utf-8', 'backslashreplace')
+    for line in fileinput.input(openhook=_hook):
+        line = line.rstrip()
+        process_line(plots, line, to_hide)
+        if need_display(fps):
+            redraw_display(screen, plots)
+            if automatic_grid:
+                do_automatic_grid(plots)
+            if automatic_window:
+                do_automatic_window(plots)
+    screen.wait()
+
+if __name__ == "__main__":
+    main()
