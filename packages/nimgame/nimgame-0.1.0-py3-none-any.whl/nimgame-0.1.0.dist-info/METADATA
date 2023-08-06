@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nimgame
+Version: 0.1.0
+Summary: The Game of Nim
+Keywords: nim,game,heap,straw,stack,match
+Author-email: Karoly Jozsa <karolyjozsa@gmail.com>
+Requires-Python: >=3.5
+Description-Content-Type: text/plain
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: Documentation, https://nimgame.readthedocs.io/en/latest/
+Project-URL: Home, http://bitbucket.org/netcreator/nimgame
+Project-URL: TryIt, http://donno.yet.com
+
+TBD
+
