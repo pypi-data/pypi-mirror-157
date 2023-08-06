@@ -1,0 +1,5 @@
+[console_scripts]
+gate_interaction = gatenlp.gate_interaction:main
+gatenlp-dir2dir = gatenlp.processing.runners.runner_dir2dir:run_dir2dir
+gatenlp-gate-worker = gatenlp.gateworker:run_gate_worker
+
