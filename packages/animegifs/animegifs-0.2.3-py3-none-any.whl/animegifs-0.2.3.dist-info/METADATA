@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: animegifs
+Version: 0.2.3
+Summary: Get random anime gifs by category.
+Home-page: https://github.com/MarcoSa-2000/animegifs
+Author: Marco-Sa2000
+Author-email: grest0grest@gmail.com
+License: MIT
+Keywords: anime,gif,python,anime-gif
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# anime-gifs.py
+
+Get random anime gifs by category. Use Python (intended initially for Discord).
+
+
+
+WIP - updated frequently. v0.2.1 doesn't work anymore.
+
+
+
+`pip install animegifs`
+
+
+
+# HOW TO USE
+
+
+
+```py
+
+from animegifs import animegifs
+
+
+
+gifs = animegifs.Animegifs
+
+
+
+gif = gifs(category)
+
+gif = gif.get_gif()
+
+```
+
+
+
+**Category list:** 
+
+
+
+* Attack
+
+* Bite
+
+* Bloodsuck
+
+* Blush
+
+* Bonk
+
+* Brofist
+
+* Cry
+
+* Cuddle
+
+* Dance
+
+
+
+WIP.
+
+
+
