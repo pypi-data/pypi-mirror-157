@@ -1,0 +1,15 @@
+PySide2
+toml
+auto-py-to-exe
+
+[dev]
+flake8
+pytest
+pytest-cov
+pytest-mock
+pytest-qt
+blue
+isort
+PySide2
+toml
+auto-py-to-exe
