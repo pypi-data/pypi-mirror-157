@@ -1,0 +1,16 @@
+.env
+.git
+__pycache__
+.cache
+.mypy_cache
+.pytest_cache
+.ipynb_checkpoints
+.gitignore
+.dockerignore
+Dockerfile
+.github
+.vscode
+docs
+!docs/hello_world.py
+scripts
+tests
