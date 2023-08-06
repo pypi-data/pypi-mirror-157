@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: wibuapi
+Version: 0.0.2
+Summary: Official Python Wrapper for Wibu API.
+Home-page: https://github.com/zYxDevs/wibu-api-py.git
+Author: Yoga Pranata
+Author-email: yoga@zyxdevs.eu.org
+License: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Wibu-API-Py
+<img src='https://img.shields.io/github/repo-size/zYxDevs/wibu-api-py?style=flat-square'>  <img src='https://img.shields.io/github/languages/top/zYxDevs/wibu-api-py?style=flat-square'>  [![CodeFactor](https://www.codefactor.io/repository/github/zYxDevs/wibu-api-py/badge)](https://www.codefactor.io/repository/github/zYxDevs/wibu-api-py)
+
+_Official Python Wrapper for Wibu API._
+
+## How to install:
+```
+pip install wibuapi
+```
+
+## Examples:
+_For examples go to [examples dir](https://github.com/zYxDevs/wibu-api-py/blob/main/examples)._
+
+## Copyright:
+**Copyright 2022 by [Yoga Pranata](https://t.me/Yoga_CIC).**
