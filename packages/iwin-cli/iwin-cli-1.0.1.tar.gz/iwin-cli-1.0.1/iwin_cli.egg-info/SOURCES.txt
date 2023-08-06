@@ -1,0 +1,14 @@
+README.md
+setup.py
+iwin_cli/__init__.py
+iwin_cli/__main__.py
+iwin_cli/classconfig.py
+iwin_cli/simulation.py
+iwin_cli/utils.py
+iwin_cli/zip.py
+iwin_cli.egg-info/PKG-INFO
+iwin_cli.egg-info/SOURCES.txt
+iwin_cli.egg-info/dependency_links.txt
+iwin_cli.egg-info/entry_points.txt
+iwin_cli.egg-info/requires.txt
+iwin_cli.egg-info/top_level.txt

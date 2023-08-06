@@ -1,0 +1,6 @@
+et-xmlfile
+numpy
+openpyxl
+pandas
+XlsxWriter
+Pillow
