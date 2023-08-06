@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+aipalettenlp/__init__.py
+aipalettenlp/text_cleaning.py
+aipalettenlp/tokenizer.py
+aipalettenlp.egg-info/PKG-INFO
+aipalettenlp.egg-info/SOURCES.txt
+aipalettenlp.egg-info/dependency_links.txt
+aipalettenlp.egg-info/top_level.txt

@@ -1,0 +1,20 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "nltk==3.7",
+    "demoji==1.1.0",
+    "emoji==1.7.0",
+    "fastai==2.7.5",
+    "Janome==0.4.2",
+    "jieba==0.42.1",
+    "numpy==1.23.0",
+    "pythainlp==3.0.8",
+    "torch==1.11.0",
+    "tensorflow==2.9.1",
+    "SoMaJo==2.2.1",
+    "pyvi==0.1.1",
+    "pykotokenizer==0.0.3",
+    "konlpy==0.6.0"
+]
+build-backend = "setuptools.build_meta"
