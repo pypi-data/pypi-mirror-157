@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: multi-task-stopwatch
+Version: 0.1.0
+Summary: Simple stop watch, allowing for timing of a number of tasks.
+Home-page: https://github.com/daya0576/simple-stopwatch
+Author: changjian.zcj
+Author-email: changjian.zcj@antfin.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/daya0576/simple-stopwatch
+Description-Content-Type: text/markdown
+
+Simple stop watch, allowing for timing of a number of tasks, exposing total running time and running time for each named
+task - inspired by Spring Framework
+
+## Usage
+
+```python
+import time
+from stopwatch.stopwatch import StopWatch
+
+sw = StopWatch("title")
+
+sw.start("eat")
+time.sleep(0.12)
+sw.stop()
+
+sw.start("sleep")
+time.sleep(0.60)
+sw.stop()
+
+sw.start("work")
+time.sleep(0.35)
+sw.stop()
+
+print(sw.pretty_print())
+```
+
+result:
+
+```
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+120          eat
+605          sleep
+351          work
+-----------------------------------------
+1077         total
+```
+
+## Install
+
+### Pip
+
+Install via pip:
+
+```shell
+pip install simple-stopwatch
+```
