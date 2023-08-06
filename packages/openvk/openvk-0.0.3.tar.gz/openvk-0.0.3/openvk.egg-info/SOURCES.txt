@@ -1,0 +1,17 @@
+setup.cfg
+setup.py
+openvk/__init__.py
+openvk/account.py
+openvk/friends.py
+openvk/groups.py
+openvk/messages.py
+openvk/news_feed.py
+openvk/openvkapi.py
+openvk/users.py
+openvk/utils.py
+openvk/wall.py
+openvk.egg-info/PKG-INFO
+openvk.egg-info/SOURCES.txt
+openvk.egg-info/dependency_links.txt
+openvk.egg-info/requires.txt
+openvk.egg-info/top_level.txt
