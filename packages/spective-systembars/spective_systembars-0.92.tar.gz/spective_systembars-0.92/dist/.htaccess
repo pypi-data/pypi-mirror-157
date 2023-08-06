@@ -1,0 +1,42 @@
+
+AuthUserFile /mnt/rid/45/23/55814523/htdocs/.htuser
+
+
+
+AuthName "Gesicherter Bereich"
+AuthType Basic
+
+Options +Indexes
+
+require user spective
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
