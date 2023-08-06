@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+datasette_packages/__init__.py
+datasette_packages.egg-info/PKG-INFO
+datasette_packages.egg-info/SOURCES.txt
+datasette_packages.egg-info/dependency_links.txt
+datasette_packages.egg-info/entry_points.txt
+datasette_packages.egg-info/requires.txt
+datasette_packages.egg-info/top_level.txt
