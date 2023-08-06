@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: purenv
+Version: 0.1.0
+Summary: Python Universal Runtime Environment
+Home-page: https://github.com/aaronater10/purenv
+Author: aaronater10
+Author-email: dev_admin@dunnts.com
+License: MIT
+Keywords: python,py,bin,file,runtime,env,environment,universal,win,windows,windows 10,mac,osx,macintosh,linux,debian,redhat,ubuntu,centos,import
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Description-Content-Type: text/markdown
+
+# purenv
+
+purenv == Python Universal Runtime Environment
+
