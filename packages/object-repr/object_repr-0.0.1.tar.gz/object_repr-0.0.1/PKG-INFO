@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: object_repr
+Version: 0.0.1
+Summary: Provide dynamic __repr__ method for any __dict__ based class.
+Home-page: UNKNOWN
+Author: Idan Kalderon
+Author-email: <idan.kalderon@earnix.com>
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,repr,print
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
