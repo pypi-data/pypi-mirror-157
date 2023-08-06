@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pysymbolic
+Version: 0.3.1
+Summary: PDDL symbolic library
+Home-page: https://github.com/tmigimatsu/symbolic
+Author: Toki Migimatsu
+Author-email: takatoki@cs.stanford.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+Symbolic is a C++/Python library for parsing and manipulating Plannning Domain Definition Language (PDDL) symbols for AI planning.
+
