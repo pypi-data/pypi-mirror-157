@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+oakprofile/__init__.py
+oakprofile/myprofile.py
+oakprofile.egg-info/PKG-INFO
+oakprofile.egg-info/SOURCES.txt
+oakprofile.egg-info/dependency_links.txt
+oakprofile.egg-info/top_level.txt
