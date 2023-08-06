@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: RiverREM
+Version: 0.0.1
+Summary: Make river relative elevation models (REM) and REM visualizations from an input digital elevation model (DEM).
+Home-page: https://github.com/klarrieu/RiverREM
+Author: Kenneth Larrieu
+Author-email: kennylarrieu@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# RiverREM
+Make river relative elevation models (REM) visualizations from an input digital elevation model (DEM).
+
+ðŸš§ This repository is still under construction! ðŸš§
+                         ðŸ‘·
+
