@@ -1,0 +1,10 @@
+rust_pyspec_glue-0.0.5.dist-info/METADATA,sha256=aRy_6kx18zuEtdA6X-KvOuPAAiFfvWf9t9s3KiOyJJ0,307
+rust_pyspec_glue-0.0.5.dist-info/WHEEL,sha256=pM63UeGzOei3t2OIdhxhXu94ItR_PvXhtY4a6HvvP3I,107
+rust_pyspec_glue-0.0.5.dist-info/license_files/LICENSE,sha256=iK45JefQ5lYs92ZV5O1eZss6G4i6xg48oWoD19RkK-I,1052
+rust_pyspec_glue/__init__.py,sha256=KSD0uJFGUJyRQh7HtlHeSsvUY-81He4gu_EPOrnIPDQ,4983
+rust_pyspec_glue/rust_pyspec_glue/__init__.py,sha256=hsVZR7agC05B2LKh1o3-Xj95Uziyiy2NP0_kS0aEM4k,136
+rust_pyspec_glue/rust_pyspec_glue/ffi.py,sha256=Ic0B7Bl0V2zQ9YSJT5UqUT6JYUMLnUNxGApy_lzjPRo,2057
+rust_pyspec_glue/rust_pyspec_glue/__init__.py,sha256=hsVZR7agC05B2LKh1o3-Xj95Uziyiy2NP0_kS0aEM4k,136
+rust_pyspec_glue/rust_pyspec_glue/ffi.py,sha256=74Yfx2QRVE7poQDdZiEGzMXTYRKppMsHuwfIBd9TlNY,2242
+rust_pyspec_glue/rust_pyspec_glue/native.so,sha256=ZodUorINuNXw_mG6PCxTmWBwrZT7PLSqztjZD5_1X7Y,997696
+rust_pyspec_glue-0.0.5.dist-info/RECORD,,
