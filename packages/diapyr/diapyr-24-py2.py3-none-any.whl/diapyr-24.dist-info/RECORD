@@ -1,0 +1,13 @@
+diapyr/__init__.py,sha256=9Pm103IiZCu1CK9qOdT3Pcqt9395yfuQ192NrD19vBo,905
+diapyr/diapyr.py,sha256=g6FB_IEODtB3VoDFfDGRDBqWTybdPjUE1FR15lAs9-U,4133
+diapyr/iface.py,sha256=QfEdLH-eDK0OC9rQ4JOdVPzVg0jSGzPohuHyq2yT7wg,1070
+diapyr/match.py,sha256=yROI9iSiN6X-igzJCqhOuNgmh3T7u9vJk24ypZzl_B0,2261
+diapyr/source.py,sha256=BwzrMF_SIEtdry9Nw6_mi2w9Z5Y2D_c3MxZCO78muxE,5029
+diapyr/start.py,sha256=LP1egGE6iV6U58kCCGHFR60A-z48D7r86pvOlRf7BTM,1483
+diapyr/util.py,sha256=3HL-tRAsQbysy04ohGFIftnWl9C_jpzn0NhlAkby7wA,3139
+diapyr-24.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+diapyr-24.dist-info/METADATA,sha256=Drm75ka8ftSPJcDoZ-GgIYfpK9QJ18idy_QnpagDy8o,1118
+diapyr-24.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+diapyr-24.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+diapyr-24.dist-info/top_level.txt,sha256=Ptj3r6F0I_VsZYpftM0YbnHsiEYnEkUB4Z9z6ZiCv3I,7
+diapyr-24.dist-info/RECORD,,
