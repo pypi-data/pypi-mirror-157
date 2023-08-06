@@ -1,0 +1,8 @@
+README.md
+setup.py
+object_repr/__init__.py
+object_repr/object_repr.py
+object_repr.egg-info/PKG-INFO
+object_repr.egg-info/SOURCES.txt
+object_repr.egg-info/dependency_links.txt
+object_repr.egg-info/top_level.txt
