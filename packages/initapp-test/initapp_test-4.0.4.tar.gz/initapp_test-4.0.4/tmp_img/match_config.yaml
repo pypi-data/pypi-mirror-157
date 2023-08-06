@@ -1,0 +1,14 @@
+feed_tab:
+  com.zhiliaoapp.musically:
+    Following, For You
+  com.kwai.video:
+    Follow, Discover,For,you
+  com.kwai.bulldog:
+    Nearby, Follow, Trending
+ad_text:
+  com.zhiliaoapp.musically:
+    Skip
+  com.kwai.video:
+    Skip
+  com.kwai.bulldog:
+    Skip
