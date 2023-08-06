@@ -1,0 +1,17 @@
+pyAPMT/__init__.py,sha256=knVdJUxkjNYnp3E40NPxSTLEsDVo7onpzrtkHmDM0_U,521
+pyAPMT/Geostatistics/Contact_Analysis.py,sha256=06mUB-hXKS53AH6h3U8FcNsa4S8AzWopIRO-llVCE94,5731
+pyAPMT/Geostatistics/Drill_Holes.py,sha256=CN0nD7Gyk117oHK81eBpqqbA10ExI7lTd4wqoiXN-A4,3221
+pyAPMT/Geostatistics/Nearest_Neighbor.py,sha256=XRq4c1BEzfT9hgeGR5ttamntzzphfSvnkrWMkOGjJDc,1221
+pyAPMT/Geostatistics/Probability_plots.py,sha256=N_xNOkte9voSZ71ucnUMXR6HgSfNBLgNCFuepValisQ,2434
+pyAPMT/Geostatistics/Slides_2D.py,sha256=VRfvXS4mlg8kJArce59nKGnUDFYHBpXPSYJC10hla-k,3429
+pyAPMT/Geostatistics/__init__.py,sha256=tXfsviTelcURqLpLG8dljXeAL0cRvmff6csIqwPlAwU,883
+pyAPMT-0.0.8.data/scripts/Contact_Analysis.py,sha256=06mUB-hXKS53AH6h3U8FcNsa4S8AzWopIRO-llVCE94,5731
+pyAPMT-0.0.8.data/scripts/Drill_Holes.py,sha256=CN0nD7Gyk117oHK81eBpqqbA10ExI7lTd4wqoiXN-A4,3221
+pyAPMT-0.0.8.data/scripts/Nearest_Neighbor.py,sha256=XRq4c1BEzfT9hgeGR5ttamntzzphfSvnkrWMkOGjJDc,1221
+pyAPMT-0.0.8.data/scripts/Probability_plots.py,sha256=N_xNOkte9voSZ71ucnUMXR6HgSfNBLgNCFuepValisQ,2434
+pyAPMT-0.0.8.data/scripts/Slides_2D.py,sha256=VRfvXS4mlg8kJArce59nKGnUDFYHBpXPSYJC10hla-k,3429
+pyAPMT-0.0.8.dist-info/LICENSE,sha256=chIYUeTA02JVKJfqY14sAJGbD3zP35K6wpqeVgs94oo,1112
+pyAPMT-0.0.8.dist-info/METADATA,sha256=C_rBQ7UScoK7sZOGLc4RE8W9o0K9jzN4KubLfQPwHBU,713
+pyAPMT-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyAPMT-0.0.8.dist-info/top_level.txt,sha256=BVz3dVgMfWeWPst5j6BVO28G9TGpff8M1f2SDF45zNo,7
+pyAPMT-0.0.8.dist-info/RECORD,,
