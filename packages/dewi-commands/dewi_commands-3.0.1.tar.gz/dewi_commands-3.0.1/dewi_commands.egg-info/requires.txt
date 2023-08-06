@@ -1,0 +1,10 @@
+dewi_core<6,>=5.0.0
+dewi_module_framework>=2.0.1
+dewi_logparsers<3,>=2.0.2
+dewi_utils<4,>=3.0.0
+dewi_realtime_sync<3,>=2.0.0
+lxml
+selenium
+sqlalchemy
+pyyaml
+urllib3
