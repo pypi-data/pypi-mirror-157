@@ -1,0 +1,17 @@
+test/__init__.py,sha256=MnFbedDCS7eXmA1vxyd7xvp9C0g_5F6XCa1LsUf403k,1468
+verify4py/Issuer.py,sha256=yP1J1c0qj6-CXD-N-Bc7y_FavhOOvBIlGs4mbZW2jOA,10881
+verify4py/JsonIssuer.py,sha256=05G1JfYhF1YEPUblMUTeOuOsNp6Xfxkdf011y1lhl3c,3815
+verify4py/PdfIssuer.py,sha256=6qrPU0UqpIvtwrbhHG1waKiz2bg7lA_saJKnGzkLAfE,2909
+verify4py/UniversityDiplomaIssuer.py,sha256=6J6mF3rzEEmlVtz5mbTzAbeedzItpLGdBBU_DSg2hkw,2824
+verify4py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verify4py/certify_sc_utils.py,sha256=nNHtUHuBhoXzZSTHzOoLqG6csWqmRfe4tLkFsjwYFRk,27276
+verify4py/chainpoint.py,sha256=c0uDGI8NDwducooKkwl1ZVQAym-wB1zFXwitbz2xBPE,2788
+verify4py/json_utils.py,sha256=5HeUBidq1B36UkTBL4nLDs3HeylhtW1niJdodLCqwTs,1067
+verify4py/pdf.py,sha256=ZufQEUBohJCVbNrxBctKNtD-_J3CrriMlD6QRl2JqwY,689
+verify4py/university_abi.py,sha256=mmc18KwHWUKL10WaYTuxfUfxQz_gSlqAZ2WtKfUW5V0,19898
+verify4py/utils.py,sha256=rsw-2_sDy93f8IM67ig3OvfjuKqealBElSsnZNfa5kQ,1525
+verify4py-0.1.3.dist-info/LICENSE,sha256=BXLL86g0-LoaClEPX3hFsnyfpWidHFlxY3PQPf123oc,1065
+verify4py-0.1.3.dist-info/METADATA,sha256=Z3FHhHBq3FsPLmTw0EykFNPbSgmz0P25J3pldtC_Jmc,9331
+verify4py-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+verify4py-0.1.3.dist-info/top_level.txt,sha256=MVWrcQSHem2XPjw0iDPkdQyCT43VmxpoRtS9l0iaVg8,15
+verify4py-0.1.3.dist-info/RECORD,,
