@@ -1,0 +1,177 @@
+#!/usr/bin/env python3
+#
+# Stream-based realtime scientific data plotter.
+# Copyright (c) 2022, Hiroyuki Ohsaki.
+# All rights reserved.
+#
+
+import math
+import sys
+import threading
+import time
+
+from perlcompat import die, warn, getopts
+import rplot
+import tbdump
+
+def usage():
+    die(f"""\
+usage: {sys.argv[0]} [-vcW] [-h n[,n...]] [-m #] [-g unit] [-w range] [-F fps] [file...]
+  -c       curses mode (disable GUI display)
+  -f       full screen mode
+  -h list  hide specified fields from display
+  -m #     display multiple plots simultaneously
+  -w range specify the plot range
+  -F fps   limit the frequency of display
+""")
+
+class View:
+    def __init__(self, screen=None, count=0, left=0, right=-1):
+        self.screen = screen
+        self.count = count
+        self.left = left
+        self.right = right
+        self.plots = []
+        self.fps = 30
+        self.pause = False
+        self.fill = False
+
+    def nplots(self):
+        return len(self.plots)
+
+    def resize_plots(self):
+        # NOTE: Should discard background surface cache.
+        nplots = self.nplots()
+        height = self.screen.height // nplots
+        for n, rp in enumerate(self.plots):
+            rp.height = height
+            rp.offset = 0, height * n
+
+    def series(self, n):
+        i = n % self.nplots()
+        j = n // self.nplots()
+        return self.plots[i].series(j)
+
+    def flush(self):
+        # FIXME: reflect only when configuration is changed.
+        for rp in self.plots:
+            rp.left = self.left
+            rp.right = self.right
+            for sr in rp._series:
+                sr.fill = self.fill
+
+def reader(view):
+    for line in sys.stdin:
+        line = line.rstrip()
+        fields = line.split()
+        for n, v in enumerate(fields):
+            sr = view.series(n)
+            # Regard the prceeding string as a field label.
+            pos = v.find('=')
+            if pos > 0:
+                label, v = v[:pos], v[pos + 1:]
+                sr.label = label
+            sr.append(float(v))
+        view.count += 1
+
+def do_automatic_grid(view):
+    for rp in view.plots:
+        grid = rp.auto_grid()
+        rp.grid = grid
+    sr = view.series(0)
+    xl, xr = sr[view.left], sr[view.right]
+    xgrid = rp.auto_grid(xl, xr)
+    rp.xgrid = xgrid
+
+def process_key(view):
+    key = view.screen.scan_key()
+    if not key:
+        return
+    if '1' <= key <= '9':
+        n = int(key) - 1
+        sr = view.series(n)
+        sr.hide = not sr.hide
+    if key == 'q' or key == '\x1b':
+        sys.exit()
+    if key == ' ':
+        view.pause = not view.pause
+        if view.right <= 0:
+            view.right = view.count - 1
+    if key == 'w':
+        view.left = -view.count
+    if key == '':
+        view.left = 0
+        view.right = 1
+    if key == '':
+        view.left = 0
+        view.right = -1
+    if key == '':
+        if view.right < 0:
+            view.right = view.count // 2
+        else:
+            view.right = view.right // 2
+    if key == '':
+        if view.right < 0:
+            pass
+        else:
+            view.right = view.right * 2
+            if view.right > view.count:
+                view.right = -1
+    if key == 'f':
+        view.fill = not view.fill
+
+def main_loop(view):
+    while True:
+        curtime = time.time()
+        view.screen.clear()
+        for rp in view.plots:
+            rp.draw_background()
+            rp.draw_series()
+        view.screen.update()
+
+        do_automatic_grid(view)
+        process_key(view)
+        view.flush()
+
+        next_time = curtime + 1 / view.fps
+        delay = max(next_time - time.time(), 0)
+
+        # Increment the right view position.
+        if not view.pause and view.right >= 0:
+            view.right = min(view.right + 1000, view.count - 1)
+        time.sleep(delay)
+
+def main():
+    # Parse command line options.
+    opt = getopts('cfh:m:w:F:') or usage()
+    use_curses = opt.c
+    fullscreen = opt.f
+    to_hide = [int(s) - 1 for s in opt.h.split(',')] if opt.h else []
+    nplots = int(opt.m) if opt.m else 1
+    window = float(opt.w) if opt.w else 0
+    fps = float(opt.F) if opt.F else 30
+
+    screen = rplot.Screen(curses=use_curses, fullscreen=fullscreen)
+    view = View(screen)
+    view.left = -window
+    view.right = -1
+    view.fps = fps
+    for n in range(nplots):
+        rp = rplot.Plot(screen=screen, start_color=n)
+        view.plots.append(rp)
+    view.resize_plots()
+
+    # Do not show series specified by -h option.
+    for n in to_hide:
+        sr = view.series(n)
+        sr.hide = True
+        print(sr)
+
+    # Start a thread to read stream from STDIN.
+    th = threading.Thread(target=reader, args=(view, ), daemon=True)
+    th.start()
+
+    main_loop(view)
+
+if __name__ == "__main__":
+    main()
