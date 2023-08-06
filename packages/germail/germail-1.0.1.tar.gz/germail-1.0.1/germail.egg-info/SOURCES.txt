@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+germail/__init__.py
+germail/geras_mail.py
+germail.egg-info/PKG-INFO
+germail.egg-info/SOURCES.txt
+germail.egg-info/dependency_links.txt
+germail.egg-info/requires.txt
+germail.egg-info/top_level.txt
