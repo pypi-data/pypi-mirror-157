@@ -1,0 +1,2 @@
+[console_scripts]
+clipboard-sync = clipboard_sync:main
