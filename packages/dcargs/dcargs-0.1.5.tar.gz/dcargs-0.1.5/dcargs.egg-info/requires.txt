@@ -1,0 +1,16 @@
+docstring_parser
+typing_extensions>=4.3.0
+pyyaml
+termcolor
+
+[:python_version < "3.8.0"]
+backports.cached-property
+
+[testing]
+pytest
+pytest-cov
+omegaconf
+attrs
+
+[type-checking]
+mypy
