@@ -1,0 +1,12 @@
+afacinemas_scraper/__init__.py,sha256=B97t91T-102ArOS-qPsoCD3LEJIwOOjVa1T50ofVcmg,67
+afacinemas_scraper/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+afacinemas_scraper/core/base.py,sha256=TnOWjDx7D2vtf1WxD7b134Z0hnSLuK5fcc-3TD_eWtg,494
+afacinemas_scraper/core/cinemas.py,sha256=tU65fFbBLdy_3o-g2BlqrKdPsLoNhSRMd-mtXJMtZqw,1980
+afacinemas_scraper/core/lancamentos.py,sha256=FP-GP8VlOuwGVGWjg8jXN3D3YWolHcHcUCS7Lr_Ec00,2943
+afacinemas_scraper/core/precos.py,sha256=kc5XSXZcXTzVeNFyC8P8l1MjU4xJ-FFhYeFQ6BuOguI,1776
+afacinemas_scraper/core/programacao.py,sha256=3Is5c_AcDXRpxXn2iTg5uG6i38IeWxJnwX_68bVGhnk,3297
+afacinemas_scraper/main.py,sha256=rxdA2VK1PAnykQu-3NBHm6L1K9SyG2-ETOZvz-uOnEI,1000
+afacinemas_scraper-1.0.1.dist-info/LICENSE,sha256=Ty7bPnC_tsspiF0vp3igmaJK9QjXMlPBDseTd2c2lCM,1071
+afacinemas_scraper-1.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+afacinemas_scraper-1.0.1.dist-info/METADATA,sha256=_JJjpnj4y-YFnQnjUAG3BboUxmZovuUTVKsSn4mZA_4,4109
+afacinemas_scraper-1.0.1.dist-info/RECORD,,
