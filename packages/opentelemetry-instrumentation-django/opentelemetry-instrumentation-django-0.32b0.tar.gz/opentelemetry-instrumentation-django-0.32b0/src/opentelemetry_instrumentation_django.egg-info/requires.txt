@@ -1,0 +1,15 @@
+opentelemetry-util-http==0.32b0
+opentelemetry-instrumentation-wsgi==0.32b0
+opentelemetry-instrumentation==0.32b0
+opentelemetry-api~=1.3
+opentelemetry-semantic-conventions==0.32b0
+
+[asgi]
+opentelemetry-instrumentation-asgi==0.32b0
+
+[instruments]
+django>=1.10
+
+[test]
+opentelemetry-test-utils==0.32b0
+django>=1.10
