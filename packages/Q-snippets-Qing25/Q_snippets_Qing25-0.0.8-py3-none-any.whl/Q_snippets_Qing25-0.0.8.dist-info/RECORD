@@ -1,0 +1,16 @@
+q_snippets/__init__.py,sha256=5NCjXpJKEU8Tzz--zTufBGWijkwlX4Je2j1_7QaJG0M,90
+q_snippets/adversarial.py,sha256=ufsABlvtWdaWiQUzEdv8QMkzcrmoZ0nAataUPIP_TSs,4165
+q_snippets/class.py,sha256=6HEVh4rU7qh-E_ciP72amw1MWu84AG3EeVYD3hSHkeA,4417
+q_snippets/data.py,sha256=ZTgCnxtzBqJohIVDwTMgkgugQ_xd6FqS0aF81hjHWrE,34576
+q_snippets/generation_utils.py,sha256=ggUZLiv_GBeBCIdGMRrwz7mPHKmK50b9W7clazE793M,43885
+q_snippets/losses.py,sha256=RixD6-qZydYZHxnUKFX3pYv-IRw-F8hK6i_lgtgWMxo,3796
+q_snippets/metrics.py,sha256=BUy6_UEMes4Gt5yO8iS3s6Y0blXXbZc5p9ggLepJc2o,13295
+q_snippets/object.py,sha256=RpkXB986wJKDPRc8tj_LDA0tb7gKyGvqlZjqgoqGYoY,11400
+q_snippets/optim.py,sha256=sJR86SSaNwqt3zyO4t1PXhhwtBD7WRcIJIGzHSXOvCE,1266
+q_snippets/pretrains.py,sha256=kHPe_FD5p0PPqeKVxgSIil-5D-AXt8WzPWYpnm-Fdzo,12528
+q_snippets/tensor_ops.py,sha256=RnkobS0ONV0svT6Uu6VzI6hnx6cMMgHsh077JaylEPI,4282
+Q_snippets_Qing25-0.0.8.dist-info/LICENSE,sha256=IRaM8ccw7L1yDm4kYWlBV3DblUWvQZdrMfTENryTSv8,1061
+Q_snippets_Qing25-0.0.8.dist-info/METADATA,sha256=503Cdut-pngb93Xy6M9Cmgm3R5Q87tMbABYqt9MQS5o,1584
+Q_snippets_Qing25-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Q_snippets_Qing25-0.0.8.dist-info/top_level.txt,sha256=0DS2ApRNAVRH6_gc57E0LL7pKEPbX7hEV5mJE10AD_s,11
+Q_snippets_Qing25-0.0.8.dist-info/RECORD,,
