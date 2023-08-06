@@ -1,0 +1,9 @@
+notefile/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notefile/compress/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notefile/compress/tarfile.py,sha256=xV0HVAemMvcpZdspJ2Nuk8LGMMIRAQ4rXILtdPDDlMw,3019
+notefile/system/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+notefile/system/base.py,sha256=ihgv1VJaLLxYQcKskHreZvJadzC9t8rIhg9FPUwEXHE,2428
+notefile-0.0.6.dist-info/METADATA,sha256=lArd9LsomLG57j836dmDWVzebsIJ8H86Lscn1iBotr0,228
+notefile-0.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+notefile-0.0.6.dist-info/top_level.txt,sha256=LQHTU27G2lR9tioxYxkppEXhIwaQ2dOM9G1fgHMiD8w,9
+notefile-0.0.6.dist-info/RECORD,,
