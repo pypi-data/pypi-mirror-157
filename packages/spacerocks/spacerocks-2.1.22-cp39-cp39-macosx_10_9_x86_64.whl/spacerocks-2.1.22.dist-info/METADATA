@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: spacerocks
+Version: 2.1.22
+Summary: A Python Package for Solar System Ephemerides and Dynamics.
+Home-page: https://github.com/kjnapier/spacerocks
+Author: Kevin J. Napier
+Author-email: kjnapier@umich.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: healpy
+Requires-Dist: rich
+Requires-Dist: asdf
+Requires-Dist: numpy
+Requires-Dist: spiceypy
+Requires-Dist: astropy
+Requires-Dist: pandas
+Requires-Dist: rebound
+Requires-Dist: astroquery
+
+UNKNOWN
+
+
