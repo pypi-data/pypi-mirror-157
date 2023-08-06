@@ -1,0 +1,2 @@
+[console_scripts]
+zonefile-migrate = zonefile_migrate.__main__:main
