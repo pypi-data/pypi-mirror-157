@@ -1,0 +1,16 @@
+numpy
+scipy
+
+[build_ext]
+cython
+
+[docs]
+sphinx
+sphinx_gallery
+
+[examples]
+matplotlib
+
+[test]
+pandas
+pytest
