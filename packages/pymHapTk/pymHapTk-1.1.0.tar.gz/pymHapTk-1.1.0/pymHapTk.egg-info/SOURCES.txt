@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+pymHapTk.egg-info/PKG-INFO
+pymHapTk.egg-info/SOURCES.txt
+pymHapTk.egg-info/dependency_links.txt
+pymHapTk.egg-info/entry_points.txt
+pymHapTk.egg-info/top_level.txt
+src/__init__.py
+src/mhaptk.py
