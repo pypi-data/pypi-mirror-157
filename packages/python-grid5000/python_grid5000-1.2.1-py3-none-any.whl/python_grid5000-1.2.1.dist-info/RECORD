@@ -1,0 +1,13 @@
+grid5000/__init__.py,sha256=-p4B_LudolffJmE_8OZe3wjuOfjHTRVmQOSRbsYO4T4,15687
+grid5000/__version__.py,sha256=Mlm4Gvmb_6yQxwUbv2Ksc-BJFXLPg9H1Vt2iV7wXrA4,22
+grid5000/base.py,sha256=GXoYy684K7bo9kaSc2O1HoPoMbvN5rczDD_0zI5F4LA,5513
+grid5000/cli.py,sha256=CA1vQ8CDCRUJVMesf57-IxwKdISBT8ulAhil7De9u5M,2024
+grid5000/exceptions.py,sha256=EHYVFcWUtkAzBfa-2OPYzhdeujOzC19kJBhR06-MMcQ,2040
+grid5000/mixins.py,sha256=LUKIJHRy6EeLGU2MeXO4qweFuKD0uvHdGI-YCXaoFKk,7069
+grid5000/objects.py,sha256=cLc0ojhWMlP1fRp638sIZZmXkaSYE7GaCEZeGWCqboQ,12077
+python_grid5000-1.2.1.dist-info/LICENSE.txt,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+python_grid5000-1.2.1.dist-info/METADATA,sha256=4j9GrY139sjEUVRQ6aALtfxrHLrvI9NW1zREvpewPW0,25183
+python_grid5000-1.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+python_grid5000-1.2.1.dist-info/entry_points.txt,sha256=YElj2OJQHWBM1TvRUajiO15p8IKTXMIlpMnXlaaavDM,86
+python_grid5000-1.2.1.dist-info/top_level.txt,sha256=gwXSOvYoeQXypV_6vw3VtVsDv0S5BJ42OBSyh9YE0Jc,9
+python_grid5000-1.2.1.dist-info/RECORD,,
