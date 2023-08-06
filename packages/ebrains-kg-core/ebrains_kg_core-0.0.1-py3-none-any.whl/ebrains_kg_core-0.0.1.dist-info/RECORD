@@ -1,0 +1,10 @@
+kg_core/__communication.py,sha256=MYt3V6smIyyaZ7BFBWwNfCXyAdqBs6aEN7bsg8M4j9g,5798
+kg_core/__init__.py,sha256=vwr3-8pXbbae9WIOnDCc2lR3yqN9QjoUMAlotKhUGcc,1515
+kg_core/kg.py,sha256=_2fjLCpM8qWHHBhz59ZXxZHud4QJ75iKmSYNiP9doFc,15629
+kg_core/models.py,sha256=aBDDJz7yzfOqmpyCxTDLGgdchV4q975pzIRoPx2Bm0s,4641
+kg_core/oauth.py,sha256=iaMdiQJs4WbVeirUs4Yk7NSxMvJrd3IH7A0ksZFjUiI,2599
+ebrains_kg_core-0.0.1.dist-info/LICENSE,sha256=ceMSZG9bWkNWoO4eHHJbCSNDLTvn4tWrxFX-Z3_LaSQ,11364
+ebrains_kg_core-0.0.1.dist-info/METADATA,sha256=eW9QO1iLVMQRh7RUARp3lcaQh6C62fDY7DZSRgxnfa4,321
+ebrains_kg_core-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ebrains_kg_core-0.0.1.dist-info/top_level.txt,sha256=IDz8itm2TR2KM-0Rk2h6oNJITTCgqm6rIs3N2TubzjM,8
+ebrains_kg_core-0.0.1.dist-info/RECORD,,
