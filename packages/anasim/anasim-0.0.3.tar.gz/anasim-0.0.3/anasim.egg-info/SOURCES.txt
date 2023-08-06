@@ -1,0 +1,5 @@
+setup.py
+anasim.egg-info/PKG-INFO
+anasim.egg-info/SOURCES.txt
+anasim.egg-info/dependency_links.txt
+anasim.egg-info/top_level.txt
