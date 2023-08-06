@@ -1,0 +1,5 @@
+from WindPy import w
+w.start()
+
+print(w.isconnected())
+
