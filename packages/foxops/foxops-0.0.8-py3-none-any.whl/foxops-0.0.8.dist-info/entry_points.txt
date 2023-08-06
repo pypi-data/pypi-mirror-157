@@ -1,0 +1,3 @@
+[console_scripts]
+foxops=foxops.__main__:app
+
