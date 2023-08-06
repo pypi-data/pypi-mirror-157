@@ -1,0 +1,3 @@
+[console_scripts]
+neuroscout = neuroscout_cli.cli:main
+

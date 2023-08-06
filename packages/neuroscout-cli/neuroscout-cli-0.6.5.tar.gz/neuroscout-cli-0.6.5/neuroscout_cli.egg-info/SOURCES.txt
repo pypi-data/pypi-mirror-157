@@ -1,0 +1,17 @@
+README.md
+setup.py
+neuroscout_cli/__init__.py
+neuroscout_cli/cli.py
+neuroscout_cli.egg-info/PKG-INFO
+neuroscout_cli.egg-info/SOURCES.txt
+neuroscout_cli.egg-info/dependency_links.txt
+neuroscout_cli.egg-info/entry_points.txt
+neuroscout_cli.egg-info/requires.txt
+neuroscout_cli.egg-info/top_level.txt
+neuroscout_cli/commands/__init__.py
+neuroscout_cli/commands/base.py
+neuroscout_cli/commands/get.py
+neuroscout_cli/commands/run.py
+neuroscout_cli/commands/upload.py
+neuroscout_cli/tools/__init__.py
+neuroscout_cli/tools/convert.py

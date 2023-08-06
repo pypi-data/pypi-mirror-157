@@ -1,0 +1,4 @@
+datalad>=0.13.1
+pyns>=0.4.8
+click
+fitlins
