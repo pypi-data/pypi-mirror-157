@@ -1,0 +1,13 @@
+aiohttp
+pydantic
+
+[dev]
+black
+bumpver
+flake8
+isort
+mkdocs
+mkdocs-material
+pip-tools
+pre-commit
+pytest
