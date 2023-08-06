@@ -1,0 +1,8 @@
+mujoco_viewer/__init__.py,sha256=M0ivfZzlCz8c9zSDXvB34iFotbs2xWaXGn5PDx8nJPs,53
+mujoco_viewer/mujoco_rendering.py,sha256=geuCaSXQcHjF2Lf-I-pRLgPhcjV6W9yXgSy2v3t-PhI,19826
+mujoco_viewer/mujoco_viewer.py,sha256=1jP6YPB4Z6tX15tYWSQMTXTIzFGXCuzAjtOJU-ANSBo,20228
+mujoco_python_viewer-0.0.4.dist-info/LICENSE,sha256=jB_nbep63av8PzmoQ94gHKAXxQPj_5JGuWaO2uHCLDU,1324
+mujoco_python_viewer-0.0.4.dist-info/METADATA,sha256=dGPnDnOhU8TZBhj3lTI3Tpgb2TQNPHzurh_m378R8Ns,610
+mujoco_python_viewer-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mujoco_python_viewer-0.0.4.dist-info/top_level.txt,sha256=A0e6MonGakOVoO7GgrMCa7kRQhN0oKCAHEWB9Q1Wh9A,14
+mujoco_python_viewer-0.0.4.dist-info/RECORD,,
