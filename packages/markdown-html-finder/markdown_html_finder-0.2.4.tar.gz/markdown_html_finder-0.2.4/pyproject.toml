@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "markdown-html-finder"
+version = "0.0.0"
+description = ""
+authors = []
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+wheel = "^0.35.1"
+toml = "^0.10.2"
+ipython = "^7.19"
+flake8 = {version = "^3.8",allow-prereleases = true}
+black = {version = "^18.3-alpha.0",allow-prereleases = true}
+isort = {version = "^5.6",allow-prereleases = true}
+mypy = "^0.961"
+twine = "^4.0.1"
+maturin = "^0.12.20"
+
+
+[build-system]
+requires = ["maturin>=0.13,<0.14"]
+build-backend = "maturin"
