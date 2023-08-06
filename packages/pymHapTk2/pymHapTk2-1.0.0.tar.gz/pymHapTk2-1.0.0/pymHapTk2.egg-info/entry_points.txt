@@ -1,0 +1,3 @@
+[console_scripts]
+mhaptk2 = src.mhaptk2:main
+
