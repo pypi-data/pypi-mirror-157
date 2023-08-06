@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: wai.annotations.layersegments
+Version: 1.0.2
+Summary: Layer-segments image segmentation format plugins for wai.annotations.
+Home-page: https://github.com/waikato-datamining/wai-annotations-layersegments
+Author: Corey Sterling
+Author-email: coreytsterling@gmail.com
+License: Apache License Version 2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+Layer-segments image segmentation format plugins for wai.annotations.
+
+Changelog
+=========
+
+1.0.2 (2022-06-30)
+------------------
+
+- `FromLayerSegments` class now outputs logging message if setting of new annotation indices fails, as error
+  occurs before the `wai.annotations - Sourced ...` logging message, making it possible to track the image
+  causing the problem.
+- Added `--lenient` flag to `FromLayerSegments` class which allows conversion of non-binary images with just
+  two unique colors to binary ones instead of throwing an error.
+- Added `--invert` flag to `FromLayerSegments` class which allows inverting the colors (b/w <-> w/b) of the
+  binary annotation images.
+
+
+1.0.1 (2022-05-11)
+------------------
+
+- Image segmentation annotations received `label_images` property with code from the ToLayerSegments conversion
+
+
+1.0.0 (2021-05-20)
+------------------
+
+- Initial release after separation from wai.annotations main repo.
