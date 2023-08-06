@@ -1,0 +1,14 @@
+tstoolbox>103.16.1
+sphinx>=1.3
+future
+
+[dev]
+black
+cleanpy
+twine
+pytest
+coverage
+flake8
+pytest-cov
+pytest-mpl
+pre-commit
