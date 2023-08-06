@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/Aurora_YTDownload.egg-info/PKG-INFO
+src/Aurora_YTDownload.egg-info/SOURCES.txt
+src/Aurora_YTDownload.egg-info/dependency_links.txt
+src/Aurora_YTDownload.egg-info/top_level.txt
+src/YoutubeDownloader/__init__.py
+src/YoutubeDownloader/downloader.py
