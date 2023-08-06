@@ -1,0 +1,9 @@
+aws_solutions_constructs/aws_apigateway_dynamodb/__init__.py,sha256=_M4vWHf71nvoGrEAvzM0f1dnqhaxFPJQ7Z2igPvz23Y,23433
+aws_solutions_constructs/aws_apigateway_dynamodb/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_solutions_constructs/aws_apigateway_dynamodb/_jsii/__init__.py,sha256=kBDiJYhwU5FmT_b4jc_-W1g50HzUOlD5HMUDh3JL4qc,463
+aws_solutions_constructs/aws_apigateway_dynamodb/_jsii/aws-apigateway-dynamodb@2.10.0.jsii.tgz,sha256=TqgvOYN08hJjJJVnP-haKJseUmbZumkPsmgUM0l6qGg,100752
+aws_solutions_constructs.aws_apigateway_dynamodb-2.10.0.dist-info/LICENSE,sha256=wnT4A3LZDAEpNzcPDh8VCH0i4wjvmLJ86l3A0tCINmw,10279
+aws_solutions_constructs.aws_apigateway_dynamodb-2.10.0.dist-info/METADATA,sha256=oAiVjE8nqFHAL1Vt-b5WChwCGWOjxdxS-qy0yJdvqeo,7693
+aws_solutions_constructs.aws_apigateway_dynamodb-2.10.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_solutions_constructs.aws_apigateway_dynamodb-2.10.0.dist-info/top_level.txt,sha256=hi3us_KW7V1ocfOqVsNq1o3w552jCEgu_KsCckqYWsg,25
+aws_solutions_constructs.aws_apigateway_dynamodb-2.10.0.dist-info/RECORD,,
