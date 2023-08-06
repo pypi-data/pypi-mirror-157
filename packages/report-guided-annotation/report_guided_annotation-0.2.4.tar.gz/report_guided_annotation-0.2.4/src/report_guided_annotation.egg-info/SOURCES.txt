@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/report_guided_annotation/__init__.py
+src/report_guided_annotation/__main__.py
+src/report_guided_annotation/create_automatic_annotations.py
+src/report_guided_annotation/extract_lesion_candidates.py
+src/report_guided_annotation/parse_report.py
+src/report_guided_annotation/py.typed
+src/report_guided_annotation.egg-info/PKG-INFO
+src/report_guided_annotation.egg-info/SOURCES.txt
+src/report_guided_annotation.egg-info/dependency_links.txt
+src/report_guided_annotation.egg-info/not-zip-safe
+src/report_guided_annotation.egg-info/requires.txt
+src/report_guided_annotation.egg-info/top_level.txt
