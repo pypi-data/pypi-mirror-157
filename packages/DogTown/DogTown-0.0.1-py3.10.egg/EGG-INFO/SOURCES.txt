@@ -1,0 +1,7 @@
+setup.py
+DogTown.egg-info/PKG-INFO
+DogTown.egg-info/SOURCES.txt
+DogTown.egg-info/dependency_links.txt
+DogTown.egg-info/top_level.txt
+dogtown/__init__.py
+dogtown/doggos.py
