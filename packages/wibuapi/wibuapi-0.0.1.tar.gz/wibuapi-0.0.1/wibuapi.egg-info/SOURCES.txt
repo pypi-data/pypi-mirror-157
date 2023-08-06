@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+examples/__init__.py
+wibuapi/__init__.py
+wibuapi/wibuapi.py
+wibuapi.egg-info/PKG-INFO
+wibuapi.egg-info/SOURCES.txt
+wibuapi.egg-info/dependency_links.txt
+wibuapi.egg-info/requires.txt
+wibuapi.egg-info/top_level.txt
