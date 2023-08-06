@@ -1,0 +1,51 @@
+scheduler_gamma:
+  desc: tab
+  value: 0.93
+weight_decay:
+  desc: tab
+  value: 0.0
+LR:
+  desc: Value of learning rate
+  value: 0.001
+m_dim:
+  desc: tab
+  value: 25
+snr:
+  desc: tab
+  value: 5
+lambda_sparsity:
+  desc: tab
+  value: 0.0
+lambda_cos:
+  desc: tab
+  value: 0.0
+isPredict:
+  desc: tab
+  value: false
+t_decay:
+  desc: tab
+  value: 0.98
+num_workers:
+  desc: Number of dataload
+  value: 4
+batch_size:
+  desc: Size of mini-batch
+  value: 128
+max_epochs:
+  desc: max epochs
+  value: 100
+manual_seed:
+  desc: Fixed random seed
+  value: 2022
+model_path:
+  desc: path of model
+  value: null
+patience:
+  desc: tab
+  value: 3
+bias:
+  desc: tab
+  value: 2.0
+phi_times:
+  desc: tab
+  value: 30
