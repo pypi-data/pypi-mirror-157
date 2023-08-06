@@ -1,0 +1,12 @@
+numpy
+scipy
+xarray
+matplotlib
+pytest
+
+[full]
+readim
+netcdf4
+
+[readim]
+readim
