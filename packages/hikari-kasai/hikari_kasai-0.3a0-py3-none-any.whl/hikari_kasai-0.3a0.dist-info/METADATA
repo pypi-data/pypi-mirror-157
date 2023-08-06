@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: hikari-kasai
+Version: 0.3a0
+Summary: A bridge between Discord and Twitch chat.
+Home-page: https://github.com/parafoxia/hikari-kasai
+Author: Ethan Henderson
+Author-email: ethan.henderson.1998@gmail.com
+License: BSD 3-Clause 'New' or 'Revised' License
+Project-URL: Documentation, https://hikari-kasai.readthedocs.io
+Project-URL: Source, https://github.com/parafoxia/hikari-kasai
+Project-URL: Bug Tracker, https://github.com/parafoxia/hikari-kasai/issues
+Project-URL: CI, https://github.com/parafoxia/hikari-kasai/actions
+Project-URL: Changelog, https://github.com/parafoxia/hikari-kasai/releases
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Classifier: Topic :: Internet
+Classifier: Typing :: Typed
+Requires-Python: >=3.8.0,<3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: hikari (==2.0.0.dev109)
+
+# hikari-kasai
+
+A bridge between Discord and Twitch chat.
+
+## Installation
+
+To install the latest stable version of *hikari-kasai*, use the following command:
+```sh
+pip install hikari-kasai
+```
+
+You can also install the latest development version using the following command:
+```sh
+pip install git+https://github.com/parafoxia/hikari-kasai
+```
+
+You may need to prefix these commands with a call to the Python interpreter depending on your OS and Python configuration.
+
+## Usage
+
+All methods relating to Twitch can be accessed through `bot.irc`.
+
+*hikari-kasai* officially supports Hikari, as well as the Lightbulb and Crescent command handlers:
+
+```py
+kasai.GatewayApp(...)
+kasai.LightbulbApp(...)
+kasai.CrescentApp(...)
+```
+
+However, you can use *hikari-kasai*, with any command handler you like, so long as it doesn't conflict.
+To do this, you can create a subclassed bot:
+
+```py
+import kasai
+import lightbulb
+
+
+class Bot(kasai.GatewayApp, lightbulb.BotApp):
+    ...
+
+
+bot = Bot(...)
+```
+
+Providing you inherit from `GatewayApp` first, you do not need to provide an `__init__`.
+
+A full working implementation could look something like this:
+
+```py
+import hikari
+import kasai
+
+# This can also be LightbulbApp or CrescentApp.
+bot = kasai.GatewayApp(
+    discord_token,
+    irc_token,
+    channel,
+    nickname,
+    **[kwargs for superclass],
+)
+
+
+@bot.listen(hikari.GuildMessageCreateEvent)
+async def on_message(event):
+    if event.content == "start":
+        await bot.start_irc()
+
+    elif event.content == "close":
+        await bot.close_irc()
+
+    elif event.content.startswith("send"):
+        await bot.irc.create_message(event.content[5:])
+
+
+@bot.listen(kasai.IrcMessageCreateEvent)
+async def on_irc_message(event):
+    print(f"{event.user} said: {event.content}")
+
+
+bot.run()
+```
+
+
+## Contributing
+
+Contributions are very much welcome! To get started:
+
+* Familiarise yourself with the [code of conduct](https://github.com/parafoxia/hikari-kasai/blob/main/CODE_OF_CONDUCT.md)
+* Have a look at the [contributing guide](https://github.com/parafoxia/hikari-kasai/blob/main/CONTRIBUTING.md)
+
+## License
+
+The *hikari-kasai* module for Python is licensed under the [BSD 3-Clause License](https://github.com/parafoxia/hikari-kasai/blob/main/LICENSE).
