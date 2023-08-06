@@ -1,0 +1,9 @@
+gym
+pybullet
+numpy
+
+[dev]
+pytest
+yapf
+ipdb
+glfw
