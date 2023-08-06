@@ -1,0 +1,22 @@
+pip>=20
+packaging
+setuptools
+wheel
+
+[dev]
+pre-commit
+nox
+parver
+
+[docs]
+sphinx<2.0
+sphinx-rtd-theme
+
+[tests]
+pytest-timeout
+pytest
+pytest-xdist
+pytest-cov
+
+[tests:python_version < "3.8"]
+readme-renderer[md]
