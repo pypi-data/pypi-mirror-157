@@ -1,0 +1,2 @@
+[pytest11]
+tcms_pytest_plugin = tcms_pytest_plugin
