@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Ivan_Analrashpdf.egg-info/PKG-INFO
+Ivan_Analrashpdf.egg-info/SOURCES.txt
+Ivan_Analrashpdf.egg-info/dependency_links.txt
+Ivan_Analrashpdf.egg-info/top_level.txt
+pdfproject/__init__.py
+pdfproject/to_image.py
+pdfproject/to_text.py
