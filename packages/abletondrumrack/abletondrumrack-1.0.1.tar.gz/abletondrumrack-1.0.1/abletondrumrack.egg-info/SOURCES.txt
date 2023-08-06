@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+abletondrumrack/__init__.py
+abletondrumrack/ableton_drum_rack.py
+abletondrumrack/adg.py
+abletondrumrack/tools.py
+abletondrumrack.egg-info/PKG-INFO
+abletondrumrack.egg-info/SOURCES.txt
+abletondrumrack.egg-info/dependency_links.txt
+abletondrumrack.egg-info/requires.txt
+abletondrumrack.egg-info/top_level.txt
+abletondrumrack/ableton_files/able_drum_item.xml
+abletondrumrack/ableton_files/blank_drum_rack
