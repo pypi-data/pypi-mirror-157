@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cougar-log
+Version: 0.1.1
+Summary: 
+Author: Weaver Goldman
+Author-email: we.goldm@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: matplotlib (>=3.5.2,<4.0.0)
+Requires-Dist: pandas (>=1.4.3,<2.0.0)
+Requires-Dist: tabulate (>=0.8.10,<0.9.0)
+Requires-Dist: typer[all] (>=0.4.1,<0.5.0)
+Description-Content-Type: text/markdown
+
+# Cougar-Log
+
+A cli for interacting with wpilib log files.
+
