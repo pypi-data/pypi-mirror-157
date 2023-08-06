@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dbc-influxdb
+Version: 0.2.0
+Summary: Database communication: show, download and upload data. Works with InfluxDB 2.x.
+Author: holukas
+Author-email: lukas.hoertnagl@usys.ethz.ch
+Requires-Python: >=3.9,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: influxdb-client[extra] (>=1.29.1,<2.0.0)
+Requires-Dist: pandas (>=1.4.2,<2.0.0)
