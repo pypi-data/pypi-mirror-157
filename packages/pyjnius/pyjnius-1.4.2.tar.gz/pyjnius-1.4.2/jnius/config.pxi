@@ -1,0 +1,4 @@
+DEF JNIUS_PLATFORM = 'linux'
+
+DEF JNIUS_PYTHON3 = True
+
