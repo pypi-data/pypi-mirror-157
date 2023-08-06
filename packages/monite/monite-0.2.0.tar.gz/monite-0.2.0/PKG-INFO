@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: monite
+Version: 0.2.0
+Summary: 
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
