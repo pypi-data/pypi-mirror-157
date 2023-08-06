@@ -1,0 +1,11 @@
+ovos_config/__init__.py,sha256=fUziiTooCWRq994FexZnZMjNwUTg1ph2fI3lUeOcZpo,438
+ovos_config/config.py,sha256=8n7jNtS7wenZIpTtH-moSUhrXua0BobPJma52s7pyLs,19697
+ovos_config/locale.py,sha256=9jb_IzAwIo3_EyYZbKn8IfoD4XNjrhspOhALICpM4LQ,2202
+ovos_config/locations.py,sha256=xjwxyGxvaHpsLHkatIZyzadIubA92cuPpfFY9gBi_Qk,2116
+ovos_config/ovos.py,sha256=oy-lQCLtjksEODsTZ5911nMQ7i0fsp4q-KHVtKb8J64,2335
+ovos_config/utils.py,sha256=7Z0WtPGeDqDrgn4Elo1pPrIpyw3oczOlZVsS7kKC23I,1440
+ovos_config/version.py,sha256=tnwL6H7F2rKiYfzZqG80Wt82MT0mHbzZ38RjwaJcsgs,114
+ovos_config-0.0.2a1.dist-info/METADATA,sha256=FPswf99OaIRpWIs2oH3uziY0tLjSUX7jOxfpKpcImho,399
+ovos_config-0.0.2a1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ovos_config-0.0.2a1.dist-info/top_level.txt,sha256=Yl0O4b4iwQpernznu7fSfyjUAGW7V7pNPZQu-Easrko,12
+ovos_config-0.0.2a1.dist-info/RECORD,,
