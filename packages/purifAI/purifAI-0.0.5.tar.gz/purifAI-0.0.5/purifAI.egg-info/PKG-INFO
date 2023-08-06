@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: purifAI
+Version: 0.0.5
+Summary: purifai
+Author: Ying Ying Cheung, Jennifer Amis, Luke Perrin
+Author-email: <yycheungds@gmail.com>,<jenamis@gmail.com>,<luperrin@westmont.edu>
+License: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Machine Learning for solid phase extraction Method Prediction
+
