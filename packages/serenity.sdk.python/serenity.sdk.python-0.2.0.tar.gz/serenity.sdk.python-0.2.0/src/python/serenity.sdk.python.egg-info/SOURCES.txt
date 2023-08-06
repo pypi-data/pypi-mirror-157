@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION.txt
+pyproject.toml
+setup.cfg
+src/python/serenity.sdk.python.egg-info/PKG-INFO
+src/python/serenity.sdk.python.egg-info/SOURCES.txt
+src/python/serenity.sdk.python.egg-info/dependency_links.txt
+src/python/serenity.sdk.python.egg-info/namespace_packages.txt
+src/python/serenity.sdk.python.egg-info/requires.txt
+src/python/serenity.sdk.python.egg-info/top_level.txt
