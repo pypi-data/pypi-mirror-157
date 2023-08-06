@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mkfol
+Version: 0.7
+Summary: Folder maker based on template
+Home-page: UNKNOWN
+Author: Sulthan Abiyyu Hakim
+Author-email: sabiyyuhakim@student.ub.ac.id
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: setuptools
+
+UNKNOWN
+
