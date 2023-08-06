@@ -1,0 +1,12 @@
+easier_net/__init__.py,sha256=rH8z9FURJWOpt1W898sf4QPMZRI_oH6wzl0jVk-jRZM,43
+easier_net/easier_net.py,sha256=slUn_5RyCGtNUSc8TJPeFAJ0bgyH8xOIveRFsmf8Ck8,6790
+easier_net/execute.py,sha256=zSgPVLa8kvmQ-CuxvvagoPGPD_cdULORllQmTVsO6kw,2146
+easier_net/load_uci_classification_data.py,sha256=mLczwGqdf1rNn-Mc_BjtS_OfNn77bUzXUjA1mGC0jb0,6356
+easier_net/load_uci_regression_data.py,sha256=xbUbRXjo4C3Fh4bQrsRaI9OV3ByzHLdYUGS_JbJKaVQ,4650
+easier_net/network.py,sha256=lQWlEx_uJCkh4Rb9oIDUz63_wR4wXAyc_Gr47egpT6I,15482
+easier_net/sier_net.py,sha256=cUvYYggRoYP3HKC1UGvP7TxVnXe5P_PT8zpj5GYWXM0,13584
+EASIER_net-0.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+EASIER_net-0.0.7.dist-info/METADATA,sha256=EnIB3DeoBJQe-B0yHUpamZXd7IbnKGkQg-lMgYYREAM,2737
+EASIER_net-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+EASIER_net-0.0.7.dist-info/top_level.txt,sha256=hIAdu0PFZ9mOYNI9mgL2ARTltqbFzW5RNF8ptYtDtjs,11
+EASIER_net-0.0.7.dist-info/RECORD,,
