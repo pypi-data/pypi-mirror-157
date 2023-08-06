@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: clipboard-sync
+Version: 0.0.4
+Summary: A simple clipboard sync tool
+Home-page: http://github.com/yetone/clipboard-sync
+Author: yetone
+Author-email: yetoneful@gmail.com
+License: MIT License
+Keywords: clipboard,sync
+License-File: LICENSE
+
