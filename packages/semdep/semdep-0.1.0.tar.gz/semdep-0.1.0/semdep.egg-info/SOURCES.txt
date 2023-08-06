@@ -1,0 +1,6 @@
+MANIFEST.in
+setup.py
+semdep.egg-info/PKG-INFO
+semdep.egg-info/SOURCES.txt
+semdep.egg-info/dependency_links.txt
+semdep.egg-info/top_level.txt
