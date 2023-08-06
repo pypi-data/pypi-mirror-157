@@ -1,0 +1,11 @@
+simplebot_mastodon/__init__.py,sha256=urCDhyPKGQWkD7teNzpRr-a3aVJBVfkXsC5SiZN0J8w,21266
+simplebot_mastodon/_version.py,sha256=_UJonOENX4r-qwHEWuAPWP39KNmboa9_GnJ2v2Bb0P8,176
+simplebot_mastodon/mastodon-logo.png,sha256=HyR_Xw4hcwiRnQ32NfziCBfbYv7fphfPLsiUCRP-qRA,2064
+simplebot_mastodon/orm.py,sha256=udz0eSNcUO9c-KqhMin1kAhZKcxmayoqfEAgCr2eZa4,2076
+simplebot_mastodon/util.py,sha256=7X0p1fXwnPoac-tDp1-AeVL88jPpO2rVy7ynuPD-2Xs,16439
+simplebot_mastodon-0.3.0.dist-info/LICENSE,sha256=-rPda9qyJvHAhjCx3ZF-Efy07F4eAg4sFvg6ChOGPoU,16726
+simplebot_mastodon-0.3.0.dist-info/METADATA,sha256=EKmC-gbfFDoDMVvQ9GaEDi8NHNGNhPldZvqpC70u1Gw,4054
+simplebot_mastodon-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+simplebot_mastodon-0.3.0.dist-info/entry_points.txt,sha256=0hL3xQm4N-8Cq4gtKRskHcnU1J5RgAjKlLBotM1kD_s,61
+simplebot_mastodon-0.3.0.dist-info/top_level.txt,sha256=LxfFvgKcH3WL6hmOPjm04BQkrIz68xQELGwEuYyRVYk,19
+simplebot_mastodon-0.3.0.dist-info/RECORD,,
