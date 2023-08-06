@@ -1,0 +1,46 @@
+# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Build and Test (PR)
+
+on:
+  pull_request:
+    branches: [ '**' ]
+
+jobs:
+  build:
+
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        python-version: ['3.7', '3.8', '3.9', '3.10']
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        # Need to clone everything to determine version from git.
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+        cache: "pip"
+        cache-dependency-path: "setup.cfg"
+
+    - name: Build and install
+      shell: bash
+      run: |
+        python -m pip install --upgrade pip setuptools
+        if [ "$RUNNER_OS" == "Windows" ]; then
+            # healpy is not available on windows.
+            python -m pip install .[test]
+        else
+            python -m pip install .[test,test_with_healpy]
+        fi
+    - name: Run tests
+      run: |
+        cd tests
+        pytest
