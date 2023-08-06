@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: actelink-computation
+Version: 0.1.6
+Summary: Actelink helpers library for computation management
+Author: Actelink
+License: LICENSE.txt
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.txt
