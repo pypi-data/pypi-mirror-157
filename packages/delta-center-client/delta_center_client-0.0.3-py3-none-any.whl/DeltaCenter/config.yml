@@ -1,0 +1,23 @@
+debug: False
+# production server
+# server: http://47.75.119.119/delta/api/v1
+# dev server
+server: http://8.130.179.17:8080
+
+oss:
+  bucketName: openprompt
+  regionId: cn-beijing
+  endpoint: oss-cn-beijing.aliyuncs.com
+
+delta:
+  requiredParams:
+    - name
+    # - model
+    # - dataset
+  filesInZip:
+    - config.json
+    - pytorch_model.bin
+
+sso:
+  login: http://8.130.179.17:8080/bmb/api/v1/account/login
+  checkToken: http://8.130.179.17:8080/bmb/api/v1/account/checkToken

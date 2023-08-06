@@ -1,0 +1,10 @@
+DeltaCenter/__init__.py,sha256=YuijlEluagUBnLL-969BwubuwaKWRPlPYvKGIRQWu4w,280
+DeltaCenter/__main__.py,sha256=I2kvl_0Wk1a0ZFw3CgEriqn-w3OfggiMqRmg5BD4MQ8,873
+DeltaCenter/client.py,sha256=EdMAZS8mSK3ojLOGA6VBADrEG8NSvdi_bWscjFD1-Ik,11695
+DeltaCenter/config.yml,sha256=bxmpYIqy4jY5KcaEL4bz-G7d4YfAtizlf0jfN6HsEE0,473
+DeltaCenter/cookie.py,sha256=CSxso7KRmf_DZ4kZyf3EUzfXlx_OWa7q_r3poxSv-CY,814
+DeltaCenter/utils.py,sha256=gORAZCc3vUt0wCbXYydLiTmnpPVs4SRCzzEHW7MaP1g,2666
+delta_center_client-0.0.3.dist-info/METADATA,sha256=fc_UWYHGPUIz3QkpwKfpa3M5f4GaRga-eYJtQRnMIk0,801
+delta_center_client-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+delta_center_client-0.0.3.dist-info/top_level.txt,sha256=VQxY_Uvx2xMpOiVoERawAfh35JQzxEN_-MMaYmydD9c,12
+delta_center_client-0.0.3.dist-info/RECORD,,
