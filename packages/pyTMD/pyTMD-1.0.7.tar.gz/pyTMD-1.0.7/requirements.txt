@@ -1,0 +1,12 @@
+ATM1b-QFIT
+gdal
+h5py
+icesat2-toolkit
+lxml
+netCDF4
+numpy
+pyproj
+python-dateutil
+pyyaml
+scipy
+setuptools_scm
