@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: testwordmeaning
+Version: 0.0.3
+Summary: Recognize whether words are meaningful or not
+Home-page: UNKNOWN
+Author: moein davarzani
+Author-email: moeindavarzani2006@gmail.com
+License: MIT
+Keywords: testwordmeaning
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Manufacturing
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This library was written by Moein Davarzani and you can test its meaning by giving a word to its Word () function. Also get a list of meaningful words of its member by giving a list of words to the list_words () function and The Pin function takes a word in Persian from you and encrypts it, and if you give the password to this function, it returns the word to before encryption.
+
+Change Log
+============
+
+0.0.3 (6/30/2022)
+------------------
+Troubleshooting an application that reported an Internet connection error by giving "" or " " input to the list_words function and Added Pin function.
+
+

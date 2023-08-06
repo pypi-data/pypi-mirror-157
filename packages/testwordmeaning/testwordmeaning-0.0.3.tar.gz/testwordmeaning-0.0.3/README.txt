@@ -1,0 +1,1 @@
+This library was written by Moein Davarzani and you can test its meaning by giving a word to its Word () function. Also get a list of meaningful words of its member by giving a list of words to the list_words () function and The Pin function takes a word in Persian from you and encrypts it, and if you give the password to this function, it returns the word to before encryption.

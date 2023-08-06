@@ -1,0 +1,6 @@
+Change Log
+============
+
+0.0.3 (6/30/2022)
+------------------
+Troubleshooting an application that reported an Internet connection error by giving "" or " " input to the list_words function and Added Pin function.

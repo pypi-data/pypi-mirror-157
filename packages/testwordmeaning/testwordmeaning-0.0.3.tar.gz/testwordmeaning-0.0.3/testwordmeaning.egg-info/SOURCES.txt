@@ -1,0 +1,11 @@
+CHANLOGLOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+testwordmeaning/__init__.py
+testwordmeaning.egg-info/PKG-INFO
+testwordmeaning.egg-info/SOURCES.txt
+testwordmeaning.egg-info/dependency_links.txt
+testwordmeaning.egg-info/requires.txt
+testwordmeaning.egg-info/top_level.txt
