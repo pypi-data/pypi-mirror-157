@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_imarketing20220704/__init__.py
+alibabacloud_imarketing20220704/client.py
+alibabacloud_imarketing20220704/models.py
+alibabacloud_imarketing20220704.egg-info/PKG-INFO
+alibabacloud_imarketing20220704.egg-info/SOURCES.txt
+alibabacloud_imarketing20220704.egg-info/dependency_links.txt
+alibabacloud_imarketing20220704.egg-info/requires.txt
+alibabacloud_imarketing20220704.egg-info/top_level.txt
