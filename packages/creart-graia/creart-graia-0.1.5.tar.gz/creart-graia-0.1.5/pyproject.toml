@@ -1,0 +1,44 @@
+[project]
+name = "creart-graia"
+version = "0.1.5"
+description = ""
+authors = [
+    { name = "GreyElaina", email = "GreyElaina@outlook.com" },
+]
+dependencies = [
+    "creart>=0.1.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+
+[project.entry-points."creart.creators"]
+loop = "graia.creart.broadcast:EventLoopCreator"
+broadcast = "graia.creart.broadcast:BroadcastCreator"
+broadcast_behaviour = "graia.creart.broadcast:BroadcastBehaviourCreator"
+saya = "graia.creart.saya:SayaCreator"
+scheduler = "graia.creart.scheduler:SchedulerCreator"
+scheduler_behaviour = "graia.creart.scheduler:SchedulerBehaviourCreator"
+
+[tool.pdm]
+includes = [
+    "src/graia",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "graia-saya>=0.0.16",
+    "graia-scheduler>=0.0.8",
+    "graia-broadcast>=0.18.1",
+    "ipython>=8.4.0",
+]
+
+[build-system]
+requires = [
+    "pdm-pep517>=0.12.0",
+]
+build-backend = "pdm.pep517.api"
