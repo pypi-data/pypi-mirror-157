@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/darklib/DarkTools.py
+src/darklib/__init__.py
+src/darklib.egg-info/PKG-INFO
+src/darklib.egg-info/SOURCES.txt
+src/darklib.egg-info/dependency_links.txt
+src/darklib.egg-info/top_level.txt
