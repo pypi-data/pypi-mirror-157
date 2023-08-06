@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sanic-compress-plus
+Version: 0.1.1
+Summary: An extension which allows you to easily gzip and brotli your Sanic responses.
+Home-page: https://github.com/hansonkim/sanic_compress_plus
+Author: Hanson Kim
+License: MIT
+Keywords: sanic,gzip,brotli
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
+License-File: LICENSE
+Requires-Dist: sanic
+Requires-Dist: brotli
+
+UNKNOWN
+
