@@ -1,0 +1,28 @@
+Generalobj - the form handling package
+
+**= Install =**
+
+To install the package type simply
+
+pip install generalobj
+
+with the desired version.
+
+**= Setup =**
+
+0) To use this package You need to have Django and python install on your system or in your virtual environment.
+
+1) Go to project root, open up the settings.py and add generalobj to your INSTALLED_APPS
+
+2) Run the migration files: python manage migrate
+
+**= How to use =**
+
+Read the README.wanted file
+
+**= Info =**
+
+This package is designed for easy form handling for general processes.
+For instance if You need to edit / create / search a model, this is an easy tool for that.
+It uses DataTables heavily, and the search results can be exported to .xlsx file with one button press.
+Many hooks / callbacks for formhandling can be used like postaction, postsaveaction, prevalidation, postvalidation.
