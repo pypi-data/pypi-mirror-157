@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+argparse_complete_fig/__init__.py
+argparse_complete_fig/fig.py
+argparse_complete_fig.egg-info/PKG-INFO
+argparse_complete_fig.egg-info/SOURCES.txt
+argparse_complete_fig.egg-info/dependency_links.txt
+argparse_complete_fig.egg-info/top_level.txt

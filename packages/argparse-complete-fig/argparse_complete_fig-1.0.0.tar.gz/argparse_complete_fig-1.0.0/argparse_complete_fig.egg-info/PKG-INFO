@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: argparse-complete-fig
+Version: 1.0.0
+Summary: Autogenerate completions for CLI tools built with argparse
+Author-email: Fig Team <hello@fig.io>
+Maintainer-email: Sean Sullivan <sean@fig.io>
+License: MIT
+Project-URL: Bug Tracker, https://github.com/withfig/autocomplete-tools/issues
+Project-URL: Homepage, https://github.com/withfig/autocomplete-tools
+Keywords: argparse,fig,cli,completions,terminal,framework
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Autogenerate Completions for CLI tools built with `argparse`
+
+This package generates [Fig
+completions](https://github.com/withfig/autocomplete) for CLI tools built
+with Python's built-in [argparse](https://docs.python.org/3/library/argparse.html) module.
+
+### Installation
+
+Install the integration as a dependency using pip:
+
+```bash
+pip install argparse_complete_fig
+```
+
+### Usage
+
+```python
+import argparse
+from argparse_complete_fig import add_completion_spec_command
+
+parser = argparse.ArgumentParser(prog='my-cli')
+
+# Call on your root-level parser for full completions
+add_completion_spec_command(parser)
+```
+
+Calling the `add_completion_spec_command` function will add
+a `--generate-fig-spec` argument to the parser. When your CLI is invoked
+with this flag it will print a Fig spec.
+
+
+To save your completion spec skeleton to a file, run the following:
+
+```bash
+my-cli --generate-fig-spec > my-cli.ts
+```
