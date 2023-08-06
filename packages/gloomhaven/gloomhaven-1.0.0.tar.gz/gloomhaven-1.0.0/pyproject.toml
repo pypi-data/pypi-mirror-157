@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "gloomhaven"
+packages = [
+    { include = "gloomhaven" },
+]
+version = "1.0.0"
+description = "Probability evaluation of Gloomhaven attack modifier decks"
+authors = ["Zachary Coleman <zacharywcoleman@gmail.com>"]
+license = "Apache 2.0"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+PyYAML = "^6.0"
+Jinja2 = "^3.1.2"
+dask = {extras = ["distributed"], version = "^2022.6.1", optional = true}
+matplotlib = {version = "^3.5.2", optional = true}
+pandas = {version = "^1.4.3", optional = true}
+jupyter = {version = "^1.0.0", optional = true}
+dictdiffer = {version = "^0.9.0", optional = true}
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.19.0"
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+
+[tool.poetry.extras]
+analyze = ["pandas", "dask", "matplotlib", "jupyter", "dictdiffer"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black" 

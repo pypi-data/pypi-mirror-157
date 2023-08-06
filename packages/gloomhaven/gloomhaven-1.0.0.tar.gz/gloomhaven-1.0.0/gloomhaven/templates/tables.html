@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+    h2 {
+        font-family: Arial;
+    }
+</style>
+
+{%for t in tables%}
+    <h2>
+        {{ t[0] }}
+    </h2>
+    {{ t[1] }}
+    <br>
+{%endfor%}
