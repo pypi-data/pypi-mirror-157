@@ -1,0 +1,5 @@
+redis_admin_client/__init__.py,sha256=Kk2A7EzN_-aNLhyPYCgokN5TOvPoJpSaqq1jbemLGh4,58
+redis_admin_client/redis_admin_client.py,sha256=0Kw7UV3Z4xV49TRsDCrzhQ8_YA4AgwesWbgn15tSK_8,12457
+redis_admin_client-0.1.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+redis_admin_client-0.1.1.dist-info/METADATA,sha256=uxxh8rTLvMzB21mzYWtUCeM7HL-fdbNyWbM0IcJQ3io,796
+redis_admin_client-0.1.1.dist-info/RECORD,,
