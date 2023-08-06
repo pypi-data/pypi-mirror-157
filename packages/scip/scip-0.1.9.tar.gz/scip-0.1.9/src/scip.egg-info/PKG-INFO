@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: scip
+Version: 0.1.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.8
+Provides-Extra: mpi
+Provides-Extra: czi
+Provides-Extra: jobqueue
+License-File: LICENSE
