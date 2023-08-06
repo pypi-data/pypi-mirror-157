@@ -1,0 +1,15 @@
+CONTRIBUTORS.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+versioneer.py
+rhos/__init__.py
+rhos/_version.py
+rhos.egg-info/PKG-INFO
+rhos.egg-info/SOURCES.txt
+rhos.egg-info/dependency_links.txt
+rhos.egg-info/requires.txt
+rhos.egg-info/top_level.txt
