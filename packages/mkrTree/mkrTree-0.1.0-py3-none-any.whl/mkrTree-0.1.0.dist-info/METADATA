@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: mkrTree
+Version: 0.1.0
+Summary: this libray made for DisWebhooks. make node trees
+Home-page: UNKNOWN
+Author: Alawi Hussein Adnan Al Sayegh
+Author-email: programming.laboratorys@gmail.com
+License: MIT
+Keywords: Tree,mkr,maker,Tree-maker,mkrTree,trees,makeTrees
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# mkrTree
+this libray for DisWebhooker
+
+this libray made for DisWebhooks. make node trees
+
+here the [github](https://github.com/programminglaboratorys/DisWebhooker) and the [PyPi](https://pypi.org/project/DisWebhooker)
+
+
+# installation
+
+Run the following to install:
+```cmd
+pip install mkrTree
+```
+### or
+```cmd
+python -m pip install mkrTree
+```
+my discord: [lab](https://discord.gg/vzEZnC7CM8)
+
+
+
+
+
