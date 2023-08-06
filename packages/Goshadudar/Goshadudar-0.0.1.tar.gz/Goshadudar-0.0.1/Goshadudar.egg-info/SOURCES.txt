@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Goshadudar.egg-info/PKG-INFO
+Goshadudar.egg-info/SOURCES.txt
+Goshadudar.egg-info/dependency_links.txt
+Goshadudar.egg-info/top_level.txt
+goshadudar/__init__.py
+goshadudar/graphs.py
