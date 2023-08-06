@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vtda
+Version: 1.4.7
+Summary: 振动、噪声测试数据分析包
+Home-page: UNKNOWN
+Author: zhangshenglong
+Author-email: 303466906@qq.com
+License: MIT Licence
+Keywords: Vibration,Analysis
+Platform: any
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
+
