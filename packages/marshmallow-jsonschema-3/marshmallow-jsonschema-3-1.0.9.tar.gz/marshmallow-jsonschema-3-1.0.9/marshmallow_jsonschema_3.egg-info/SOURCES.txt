@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements-dev.txt
+requirements.txt
+setup.py
+marshmallow_jsonschema_3/__init__.py
+marshmallow_jsonschema_3/base.py
+marshmallow_jsonschema_3/exceptions.py
+marshmallow_jsonschema_3/validation.py
+marshmallow_jsonschema_3.egg-info/PKG-INFO
+marshmallow_jsonschema_3.egg-info/SOURCES.txt
+marshmallow_jsonschema_3.egg-info/dependency_links.txt
+marshmallow_jsonschema_3.egg-info/not-zip-safe
+marshmallow_jsonschema_3.egg-info/requires.txt
+marshmallow_jsonschema_3.egg-info/top_level.txt
