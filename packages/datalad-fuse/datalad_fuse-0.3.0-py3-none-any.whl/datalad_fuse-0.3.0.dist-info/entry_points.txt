@@ -1,0 +1,2 @@
+[datalad.extensions]
+fuse = datalad_fuse:command_suite
