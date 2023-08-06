@@ -1,0 +1,74 @@
+name: TileDB-ML CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: bash -l {0}
+    strategy:
+      fail-fast: false
+      matrix:
+        ml-deps:
+          - "torch==1.9.1+cpu tensorflow-cpu==2.5.3"
+          - "torch==1.10.2+cpu tensorflow-cpu==2.6.3"
+          - "torch==1.11.0+cpu tensorflow-cpu==2.7.1"
+
+    env:
+      run_coverage: ${{ github.ref == 'refs/heads/master' }}
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: "3.7"
+
+    - name: Cache dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}:ml-deps=[${{ matrix.ml-deps }}]
+
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -f https://download.pytorch.org/whl/torch_stable.html \
+          pytest-mock pytest-cov scikit-learn==1.0.2 protobuf==3.* ${{ matrix.ml-deps }}
+        pip install -e .[cloud]
+
+    - name: Run mypy
+      run: |
+        python -m venv mypyenv
+        mypyenv/bin/pip install mypy
+        mypyenv/bin/mypy .
+        rm -rf mypyenv
+
+    - name: Run tests
+      if: ${{ !fromJSON(env.run_coverage) }}
+      run: pytest --disable-warnings tests/
+
+    - name: Run test coverage statistics
+      id: stats
+      if: ${{ fromJSON(env.run_coverage) }}
+      run: |
+        pytest --disable-warnings --cov-report=term-missing --cov=tiledb tests/ > coverage.txt
+        cat coverage.txt
+        TEST_COVERAGE="$(grep '^TOTAL' coverage.txt | awk -v N=4 '{print $N}')"
+        echo "::set-output name=COVERAGE::$TEST_COVERAGE"
+
+    - name: Create Test Coverage Badge
+      if: ${{ fromJSON(env.run_coverage) }}
+      uses: schneegans/dynamic-badges-action@v1.1.0
+      with:
+        auth: ${{ secrets.COVERAGE_SECRET }}
+        gistID: 2506f6c9d3375e2d636cf594340d11bf
+        filename: gistfile.json
+        label: Test Coverage
+        message: ${{ steps.stats.outputs.COVERAGE }}
+        color: green
+        namedLogo: pytest
