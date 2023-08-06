@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+clipboard_sync/__init__.py
+clipboard_sync.egg-info/PKG-INFO
+clipboard_sync.egg-info/SOURCES.txt
+clipboard_sync.egg-info/dependency_links.txt
+clipboard_sync.egg-info/entry_points.txt
+clipboard_sync.egg-info/not-zip-safe
+clipboard_sync.egg-info/top_level.txt
