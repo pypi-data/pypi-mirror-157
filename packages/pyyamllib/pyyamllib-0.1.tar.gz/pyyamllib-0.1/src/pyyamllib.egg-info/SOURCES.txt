@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pyyamllib.egg-info/PKG-INFO
+src/pyyamllib.egg-info/SOURCES.txt
+src/pyyamllib.egg-info/dependency_links.txt
+src/pyyamllib.egg-info/requires.txt
+src/pyyamllib.egg-info/top_level.txt
+src/yamllib/__init__.py
+src/yamllib/config.py
+src/yamllib/env.py
+src/yamllib/types.py
