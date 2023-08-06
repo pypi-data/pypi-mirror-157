@@ -1,0 +1,13 @@
+my_pypi_custom_package/__init__.py,sha256=vr_5KCGWIiVX5HniidszCvRETTzg8bO3SNqyFcXqsdQ,95
+my_pypi_custom_package/basic/__init__.py,sha256=HeQQPl4BlY2LnoFXKOf21ofWrY1zrcWrp4uG3bvmu08,166
+my_pypi_custom_package/basic/hello_world.py,sha256=Wavi5M5C85ev40mVlzWeWr8Tsu8PNkbO7x6WevhTgOQ,50
+my_pypi_custom_package/basic/hello_world_2.py,sha256=63x-twowPoUT_Y6cwzTHaK1Ds-xGBQMBFWDtd56ZI18,50
+my_pypi_custom_package/basic/algebra/__init__.py,sha256=ykbY1Is8BA7F9YssRm0T8skFVKKUS8RqwZv_aS0DRlQ,117
+my_pypi_custom_package/basic/algebra/addition.py,sha256=Cg5vOMYvQhAyi8Y_LxggMbyAEf-k8dUVunxe5jxg_-Y,53
+my_pypi_custom_package/basic/algebra/subraction.py,sha256=Lj-m1dX70bNX4nmOhQwm_uIDybmPoQFPHB70dCik8Pw,55
+my_pypi_custom_package/sorting/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_pypi_custom_package/sorting/sorted_list.py,sha256=ZsrKWpDXnr8YudRxuLbFfDoIm1XGpg8weXgQ5fW2i0c,55
+my_pypi_custom_package-0.0.14.dist-info/METADATA,sha256=dN_Y5XF0uWLy81-it4CswnfXETAyDW4qk6H_WXs07lk,268
+my_pypi_custom_package-0.0.14.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+my_pypi_custom_package-0.0.14.dist-info/top_level.txt,sha256=KRt43deskfIFr5qtbx1Fc3GtheDTzK15BjrIjGlqahw,23
+my_pypi_custom_package-0.0.14.dist-info/RECORD,,
