@@ -1,0 +1,15 @@
+[project]
+name = "hifast"
+version = "0.0.1"
+authors = [
+  { name="hifast", email="hifast@example.com" },
+]
+description = "A small example package"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
