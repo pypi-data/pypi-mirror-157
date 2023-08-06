@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+alphawaves/__init__.py
+alphawaves/dataset.py
+alphawaves/download.py
+alphawaves.egg-info/PKG-INFO
+alphawaves.egg-info/SOURCES.txt
+alphawaves.egg-info/dependency_links.txt
+alphawaves.egg-info/requires.txt
+alphawaves.egg-info/top_level.txt
