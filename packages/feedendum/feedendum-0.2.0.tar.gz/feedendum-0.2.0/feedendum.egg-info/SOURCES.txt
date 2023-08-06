@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+feedendum/__init__.py
+feedendum/__version__.py
+feedendum/atom.py
+feedendum/exceptions.py
+feedendum/feed.py
+feedendum/rss.py
+feedendum/utils.py
+feedendum.egg-info/PKG-INFO
+feedendum.egg-info/SOURCES.txt
+feedendum.egg-info/dependency_links.txt
+feedendum.egg-info/requires.txt
+feedendum.egg-info/top_level.txt
