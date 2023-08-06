@@ -1,0 +1,12 @@
+sandhi/__init__.py,sha256=SvTbMRZD27HWrBt7O_A-zpSXnYHLeI7gjrQx4IF9g8c,359
+sandhi/apavaada.py,sha256=4kvvCWd1FEO6KGLFOSX5EEITUpleJVRwVfxEmIiVGbQ,61463
+sandhi/cli.py,sha256=GLUuL1LjLhJj2sHf2RUfNNKQS7Lc-j9AH4lFEiD1L4g,433
+sandhi/niyama.py,sha256=JRwGnCRFhJQaFGtqXKF0rDUOteUyz9ZGS-em_200A54,130788
+sandhi/sandhi.py,sha256=twEKXrW87rOciwD92YxYnP_NG2j8oWMDc-g9B9zY9zA,6235
+sandhi-0.1.0.dist-info/AUTHORS.rst,sha256=oPn2na2vtwDDxf9ue6OF-iGY7SgGg0rx89WZ4W9ubBM,172
+sandhi-0.1.0.dist-info/LICENSE,sha256=aFSUrBX0eDI68Jt6QT8B7n0dpHMNxMrfO0RJjXhs9yQ,1545
+sandhi-0.1.0.dist-info/METADATA,sha256=74xavU7gbiV49iWsc5q3n7ZQH0GjkRCknLhI5aQAIcc,3085
+sandhi-0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+sandhi-0.1.0.dist-info/entry_points.txt,sha256=h8hQRP1CUHic7UqxW6WbXBb5EWesC4fqvHd1t1vVT0g,44
+sandhi-0.1.0.dist-info/top_level.txt,sha256=zNsF2gUCRvqxHmqFDx42SBXXXT8qiGjGQklygUQeCzg,7
+sandhi-0.1.0.dist-info/RECORD,,
