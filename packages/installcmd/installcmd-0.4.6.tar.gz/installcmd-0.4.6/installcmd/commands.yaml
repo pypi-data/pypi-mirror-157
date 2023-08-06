@@ -1,0 +1,29 @@
+linux:
+  debian:
+    install: "apt-get install"
+    noninteractive: "apt-get install --assume-yes"
+    refresh: "apt-get update"
+
+  ubuntu:
+    install: "apt-get install"
+    noninteractive: "apt-get install --assume-yes"
+    refresh: "apt-get update"
+
+  arch:
+    install: "pacman -S"
+    noninteractive: "pacman -S --noconfirm"
+    refresh: "pacman -Sy"
+
+  manjaro:
+    install: "pacman -S"
+    noninteractive: "pacman -S --noconfirm"
+    refresh: "pacman -Sy"
+
+mac:
+  # We don't really have distros on Mac (nor default package managers), so we
+  # treat each 3rd party package manager as a "distro"
+  # If user installs multiple, "distro" is undefined
+
+  brew:
+    install: "brew install"
+    refresh: "brew update"
