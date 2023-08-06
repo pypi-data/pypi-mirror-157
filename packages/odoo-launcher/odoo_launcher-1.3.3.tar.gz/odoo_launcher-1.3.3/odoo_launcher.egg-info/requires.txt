@@ -1,0 +1,6 @@
+addons-installer<2,>=1.4.1
+maintenance-server<2,>=1.2.1
+
+[:python_version <= "3"]
+enum34==1.1.10
+typing==3.10.0.0
