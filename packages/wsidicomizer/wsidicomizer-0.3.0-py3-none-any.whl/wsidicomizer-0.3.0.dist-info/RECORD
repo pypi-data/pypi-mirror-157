@@ -1,0 +1,14 @@
+wsidicomizer/__init__.py,sha256=aQFpfDtBzrUyIAFhyX4Vb-qd3_BknRwhIIoS1b1LrCM,977
+wsidicomizer/cli.py,sha256=Uq4pqJxIRDoXTNyz_jJ63RwfvTYjr_D05vVAXp5CY54,4401
+wsidicomizer/common.py,sha256=4Vce5xuhtmdAm-gvrQecZPqCC5vUt14lbVtI86qYRoA,10442
+wsidicomizer/config.py,sha256=MumGkhlPv2kEbUC9WyHqf9oVRCy3jl0alSI21EZU4hY,1175
+wsidicomizer/czi.py,sha256=EPH5A4fpYW66AdcAc23NkSkUzcxSimBqpA-DpnS8FVw,21000
+wsidicomizer/dataset.py,sha256=m9LgPdxrVtlWw6pCgA-jpgklFu1otMgH_XDBH3NnRbg,24603
+wsidicomizer/encoding.py,sha256=TmbkRsOKq16mT8NJYLdnQVmcc6iM_1Vo1jR3phpzxNg,6060
+wsidicomizer/interface.py,sha256=ZzQXbr6Ohqbj3C2gppcioNYNB7kjVsu1YZXxrs4Y8HY,7262
+wsidicomizer/openslide.py,sha256=GuYcUaAOMGIS5Vo4HGr97KKYhpsd0K7f6a-M7YAFmNY,20027
+wsidicomizer/opentile.py,sha256=GnFE_SHzX5WiGe9Fcy1dfh558XlK8RoPGHEa2Xz0OcI,14331
+wsidicomizer-0.3.0.dist-info/entry_points.txt,sha256=0L1z7FlpODHcRcPJ6V8KkRy7MH3X_u99fgGfUnml6Nk,54
+wsidicomizer-0.3.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+wsidicomizer-0.3.0.dist-info/METADATA,sha256=Uz-1hufUo8YvRFnIcOmbRLmGm6bF2PdtHPFa5diA2iQ,7021
+wsidicomizer-0.3.0.dist-info/RECORD,,
