@@ -1,0 +1,12 @@
+rdf_summarizer/__init__.py,sha256=ts_sSEqWEop0I5-YuIEG3PNbtm58QN98m8MVs_hp_D8,101
+rdf_summarizer/__main__.py,sha256=Ur7509pmubOCyxpZwSq8WKHAI2snFQHPEhL_-HtCgIk,251
+rdf_summarizer/prefixes.py,sha256=aSQ2WTm6OY1kQ4fxNyGwS6E0ufaD6LJArhE7mtBBxfo,3984
+rdf_summarizer/summarization.py,sha256=rao2iFuDDtuA8Uz8HTe8lJmK8xE2_s4DKwGCf5sflTM,5376
+rdf_summarizer/trie.py,sha256=K2VSp8fllj09g9V7YHE0NkMOvko4Q3eEYIKUoOKb32M,1077
+rdf_summarizer/write_file.py,sha256=dLxQniuWmaYoihn3iYyU2tfti-JMy4okV6KmXhDXRuQ,1763
+rdf_summarizer-0.0.2.dist-info/LICENSE,sha256=RyKqBT3N6kloLEFwZNeX8U6lQwfGO80G5fL4Jffc7WY,1067
+rdf_summarizer-0.0.2.dist-info/METADATA,sha256=fnz70YqPXNnooP1ZoGntgrw2xjKnOI-51v8fYzBAe-o,2306
+rdf_summarizer-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rdf_summarizer-0.0.2.dist-info/entry_points.txt,sha256=V7--g8BekYzl5C3oZJuji2YVbMf-GyxPjZ5yHiBXtIg,63
+rdf_summarizer-0.0.2.dist-info/top_level.txt,sha256=-WVX6mZHQ8RKZ1RRonGjO_ArDEdNz2FKEF7OsZ9xqPg,15
+rdf_summarizer-0.0.2.dist-info/RECORD,,
