@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "HiddenRequest"
+version = "0.0.2"
+authors = [
+    {name = "Groseries"},
+]
+dependencies = [
+    "requests",
+    "randomheaders",
+    "torrequest"
+]
+description = "A tool that builds on both requests and Torrequests to include a VPN and randomized headers"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/groseries/HiddenRequest"
+"Bug Tracker" = "https://github.com/groseries/HiddenRequest/issues"
