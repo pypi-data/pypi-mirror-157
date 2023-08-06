@@ -1,0 +1,11 @@
+dlg_example_cmpts/__init__.py,sha256=LOvuYYKAB9whEpRy8bs_hEL8bFhJpgIf_fFcd9Vi8No,497
+dlg_example_cmpts/apps.py,sha256=NTMsMxPjza6pCLLZnsSbbryUOJiXkqBHPwg3GCPueHc,16325
+dlg_example_cmpts/data.py,sha256=-tFtEnSptathR_TnuBeDU2Yjlhu-9HHrPnJu5A_dudE,1570
+dlg_example_funcs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dlg_example_funcs/fourier_transform_algorithm.py,sha256=TA7O9FO9XmqPjk6Ui-g7n_Vr8V8g1YMiVrzQUtJ8WfY,13770
+dlg_example_funcs/simple.py,sha256=-IANV5kqPhHKauzvxI61hdD39Dyy0RxcNrnER7OZx40,1054
+dlg_example_cmpts-0.1.13.dist-info/LICENSE,sha256=ulabWtRbXdtNa1RwmDgewtKjuwCTIzIftO4LWIE-Wlk,1538
+dlg_example_cmpts-0.1.13.dist-info/METADATA,sha256=rVb9hptgw_qLyOQG_qcYFpSBQtrzmMdVAx7ZDzvrhfU,2621
+dlg_example_cmpts-0.1.13.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dlg_example_cmpts-0.1.13.dist-info/top_level.txt,sha256=XwaMLLu_A7gBWl0VXuvukPfACZ59Q6oiF8Q99mAc9fc,36
+dlg_example_cmpts-0.1.13.dist-info/RECORD,,
