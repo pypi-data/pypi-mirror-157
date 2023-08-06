@@ -1,0 +1,2 @@
+[console_scripts]
+kubekind = kubekind.__main__:main
