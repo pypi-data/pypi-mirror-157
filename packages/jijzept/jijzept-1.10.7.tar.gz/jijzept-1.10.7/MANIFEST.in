@@ -1,0 +1,33 @@
+include setup.py
+include setup.cfg
+include LICENSE.txt
+include pyproject.toml
+
+graft jijzept
+
+prune tests
+prune integration_test
+prune .github
+prune .git
+prune docs
+
+global-exclude README.md
+global-exclude jijmodeling_tsp.py
+global-exclude mkdocs.yml
+global-exclude wrangler.toml
+global-exclude reviewdog-requirements.in
+global-exclude requirements.in
+global-exclude format-requirements.in
+global-exclude doc-requirements.in
+global-exclude dev-requirements.in
+global-exclude ci-requirements.in
+global-exclude reviewdog-requirements.txt
+global-exclude requirements.txt
+global-exclude format-requirements.txt
+global-exclude doc-requirements.txt
+global-exclude dev-requirements.txt
+global-exclude ci-requirements.txt
+global-exclude codecov.yml
+global-exclude jijmodeling_tsp.py
+global-exclude codecov.yml
+global-exclude .reviewdog.yml
