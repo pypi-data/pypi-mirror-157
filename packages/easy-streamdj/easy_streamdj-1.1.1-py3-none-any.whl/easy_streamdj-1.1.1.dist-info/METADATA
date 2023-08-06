@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: easy-streamdj
+Version: 1.1.1
+Summary: script for sending all youtube playlist to streamdj.app
+Home-page: https://github.com/e9000000000/easy-streamdj
+License: GPL-3.0
+Author: a
+Author-email: skipper224483@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aiohttp[speedups] (>=3.8.1,<4.0.0)
+Requires-Dist: beautifulsoup4 (>=4.11.1,<5.0.0)
+Requires-Dist: names (>=0.3.0,<0.4.0)
+Project-URL: Repository, https://github.com/e9000000000/easy-streamdj
+Description-Content-Type: text/markdown
+
+Works only if music requests is free.
+
+# Easy streamdj.app
+Created for easyer send/skip tracks in streamdj.app.  
+proxy list for skip tracks from [here](https://github.com/TheSpeedX/PROXY-List)
+
+## How to install
+```bash
+pip install easy-streamdj
+```
+
+## Usage examples
+get some help:
+```bash
+python -m easy-streamdj
+```
+
+send one track:
+```bash
+python -m easy-streamdj some_channel --video "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+```
+
+send playlist of tracks:
+```bash
+python -m easy-streamdj some_channel --playlist "https://www.youtube.com/playlist?list=PL2aMEXnwcG3nqpr49qfCJ5vLTuxImPdme"
+```
+
+send playlist first playlist finded on youtube:
+```bash
+python -m easy-streamdj some_channel --playlistserch "good music"
+```
+
+skip current track:
+```bash
+python -m easy-streamdj some_channel --skip
+```
+
+run easy streamdj over tor (linux):
+```bash
+sudo systemctl start tor  # start tor service if it is not started already
+torify python -m easy-streamdj some_channel -P "bad music" --delay 12 --author "anonymous"
+```
+
+## Install from source
+Install [python3.10+](https://www.python.org/downloads/)
+```bash
+git clone https://github.com/e6000000000/easy-streamdj.git
+cd easy-streamdj
+pip install poetry
+poetry build
+pip install dist/*.whl
+```
+
