@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: gimmik
+Version: 3.0
+Summary: Generator of Matrix Multiplication Kernels
+Home-page: https://github.com/vincentlab/GiMMiK
+Maintainer: Freddie Witherden
+Maintainer-email: freddie@witherden.org
+License: BSD
+Keywords: Matrix Multiplication,GPU,CUDA,OpenCL
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: mako
+Requires-Dist: numpy (>=1.7)
+
+GiMMiK is a Python based kernel generator for
+matrix multiplication kernels for various accelerator platforms.  For
+small operator matrices the generated kernels are capable of
+outperfoming the state-of-the-art general matrix multiplication
+routines such as cuBLAS GEMM or clBLAS GEMM.  GiMMiK was originally
+developed as part of Bartosz Wozniak's master's thesis in the
+Department of Computing at Imperial College London and is currently
+maintained by Freddie Witherden.
+
