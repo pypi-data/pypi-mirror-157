@@ -1,0 +1,69 @@
+[tool.poetry]
+name = "koda"
+version = "1.0.0"
+readme = "README.md"
+description = "Type-safe functional tools for Python"
+authors = ["Keith Philpott"]
+license = "MIT"
+homepage = "https://github.com/keithasaurus/koda"
+keywords = ["functional programming", "type hints"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+black = "22.6.0"
+coverage = "6.4.1"
+mypy = "0.961"
+pytest = "7.1.2"
+pytest-cov = "3.0.0"
+pyright = "1.1.256"
+pre-commit = "2.19.0"
+flake8 = "4.0.1"
+isort = "5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+allow_redefinition = false
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_subclassing_any = true
+disallow_untyped_calls = true
+disallow_untyped_decorators = true
+disallow_untyped_defs = true
+ignore_errors = false
+ignore_missing_imports = false
+local_partial_types = true
+no_implicit_optional = true
+no_implicit_reexport = true
+strict_optional = true
+strict_equality = true
+warn_no_return = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unused_configs = true
+warn_unused_ignores = true
+warn_unreachable = true
+
+
+[tool.pyright]
+typeCheckingMode = "strict"
+reportUnusedFunction = "none"
+reportPrivateUsage = "none"
+
+[tool.pytest.ini_options]
+addopts ="""
+  --cov=koda
+  --cov-report=term:skip-covered
+  --cov-report=html
+  --cov-branch
+  --cov-fail-under=100
+"""
+
+[tool.isort]
+line_length = 90
+profile = "black"
