@@ -1,0 +1,11 @@
+numcertain/__init__.py,sha256=d0ZWPzxcOlUjPu04U8sIoegojiu5-TSh5hZy_SefuTo,202
+numcertain/__main__.py,sha256=EClCwCzb6h6YBpt0hrnG4h0mlNhNePyg_xBNNSVm1os,65
+numcertain/_version_git.py,sha256=5BN88wAog0u-xMZT2Kr0j4rESOBW3fpxzZgHJBE3emA,3968
+numcertain/cli.py,sha256=c1cWJF0mdBoM3C85lMM9j9wKtidEdLfHJCbB_qpa5tg,405
+numcertain/uncertain.cp310-win_amd64.pyd,sha256=kFkQYN5hkXNraf7zJgI1oZEOWZPy2SMbcWIxAXze1R0,23552
+numcertain-0.2.0.dist-info/LICENSE,sha256=4DukHX-rIHAHaf5BGLq1DYAMt0-ZA1OgXS9f_xwig2M,11558
+numcertain-0.2.0.dist-info/METADATA,sha256=eoy4Yb8YVdaUQMeDRLvPwKltyoJb1rADKf5eb_eH1uU,5107
+numcertain-0.2.0.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+numcertain-0.2.0.dist-info/entry_points.txt,sha256=M1CWdNiPa9gO9Wy9hfvS2mLM8FMyt_0b-d-e36cKsgg,51
+numcertain-0.2.0.dist-info/top_level.txt,sha256=ssBnqq4Oro_gdxUh-JCQY5rartwiGzg--9LBia1KkHE,11
+numcertain-0.2.0.dist-info/RECORD,,
