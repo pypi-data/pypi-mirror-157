@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: deckmaster
+Version: 0.1.0
+Summary: TCG/CCG deck creation tool
+Home-page: https://gitlab.com/xgqt/python-deckmaster
+Author: Maciej Barć
+Author-email: xgqt@riseup.net
+License: GPL-3
+Keywords: cards ccg deck game tcc
+Requires-Python: >=3.6.*
+Requires-Dist: PyQt5
+Requires-Dist: requests
+Requires-Dist: sqlalchemy
+
