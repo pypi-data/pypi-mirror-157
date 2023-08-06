@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "preprocessingTweet"
+version = "0.1.1"
+description = "Preprocessing tweets prior to NLP pipeline"
+readme = "README.md"
+authors = ["Olivier R. Philippe <olivier.philippe@gmail.com>"]
+license = "MIT Licence"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["twitter", "text-cleaning", "text", "nlp"]
+packages = [
+    {include = "preprocessingTweet"}
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+emot = "^3.1"
+gensim = "^4.2.0"
+scipy = "^1.8.1"
+nltk = "^3.7"
+
+[tool.poetry.dev-dependencies]
+python-lsp-black = "^1.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
