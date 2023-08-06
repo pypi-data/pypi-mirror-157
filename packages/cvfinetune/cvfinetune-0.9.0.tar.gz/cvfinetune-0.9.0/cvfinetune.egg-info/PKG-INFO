@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cvfinetune
+Version: 0.9.0
+Summary: Fine-tune framework based on chainer
+Home-page: UNKNOWN
+Author: Dimitri Korsch
+Author-email: korschdima@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Requires-Python: >3.7
+
+UNKNOWN
+
