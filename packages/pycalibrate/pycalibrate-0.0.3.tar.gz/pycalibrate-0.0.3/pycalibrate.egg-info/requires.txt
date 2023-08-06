@@ -1,0 +1,6 @@
+numpy
+scikit-learn
+notebook
+notebookjs
+interpret
+pandas
