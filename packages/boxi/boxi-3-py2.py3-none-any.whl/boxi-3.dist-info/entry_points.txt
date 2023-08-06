@@ -1,0 +1,3 @@
+[console_scripts]
+boxi=boxi.app:main
+

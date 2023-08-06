@@ -1,0 +1,17 @@
+boxi/__init__.py,sha256=rqYMlBJUQ87D2qvmLOlBCbrBbeWh1WkVJoXxcdAGZAw,953
+boxi/__main__.py,sha256=VoHVOQnQHPLf1fPU1ZXd2pTeYcWuciQbrfRSNHI_IFM,923
+boxi/adwaita_palette.py,sha256=33FAGcv4tBWGknr3t6hTXzdg7khNxwFK15lN1DcEeTo,1182
+boxi/agent.py,sha256=8_89snRqIKkqn0UryqSJDkI5hzY6Mwg9ytGRhsZJCXE,3036
+boxi/app.py,sha256=BO9Ys8GulLKqr7QO3ezjInkM9k1aHftrbWC5GFxZrpc,13029
+boxi/monitor.py,sha256=9TmAOdVm38UTjuIEHEkZ_HERLHF4FRQu6Cxvjxk3XOo,7054
+boxi/toolbox_run.py,sha256=hFvLM59svS1vJhfv69APOPRNtvlxNEJOhcmJURFqS6s,1224
+boxi-3.data/data/share/applications/dev.boxi.Boxi.desktop,sha256=NjMkBywmp1URzjcrXJSM2ZVhlZhkCg7lLQXUfdElCfk,142
+boxi-3.data/data/share/dbus-1/services/dev.boxi.Boxi.service,sha256=DOo1ekDB-Frs8sUrOipEXgM-Bu0OBynNKpINbEmpBwI,81
+boxi-3.data/data/share/icons/hicolor/scalable/apps/dev.boxi.Boxi.svg,sha256=wwkUIpY-ADZMoHbYLETKXl9zm3QmI5w7pT51v96G_ao,6837
+boxi-3.data/data/share/icons/hicolor/symbolic/apps/dev.boxi.Boxi-symbolic.svg,sha256=lQYexxOR-sfpEKttj5B4Urvz8fP9hx5eGuMT69ljIZk,2772
+boxi-3.data/data/share/metainfo/dev.boxi.Boxi.metainfo.xml,sha256=iqEpF0q9nxLfzPyCJxS-R5vXjzP5XNzDRLWZkG8XC-E,2014
+boxi-3.dist-info/entry_points.txt,sha256=Fo0ZPlNJH4W_NKoNW8we-6_zqcbxUQMKE2tII6LA87Y,38
+boxi-3.dist-info/COPYING,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+boxi-3.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+boxi-3.dist-info/METADATA,sha256=YVELf_7h78P4Pg1_02K1cxmK7jCdSC4XIMPTA4zRzlU,1970
+boxi-3.dist-info/RECORD,,
