@@ -1,0 +1,1 @@
+from cozyblanket.connection import CozyBlanketConnection

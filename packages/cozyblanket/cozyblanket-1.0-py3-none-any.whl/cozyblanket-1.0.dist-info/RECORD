@@ -1,0 +1,9 @@
+cozyblanket/__init__.py,sha256=KmEsap83rj07nWnd-HUz0iVnBvZtsXKsmEjQ9x4OIPY,56
+cozyblanket/cli.py,sha256=99KSg_4oklawciIUZIMyyW2N916liK1m0vzbsx-dKU8,3600
+cozyblanket/connection.py,sha256=_f63J8l0PsrVdrj3bVMD-BTkUS-nsnUzuMJQZTeJOeo,14288
+cozyblanket/utils.py,sha256=0qrv7quFKyF9aabYHB_k4beAWc9nLt_uNuCD111T0VM,3712
+cozyblanket-1.0.dist-info/METADATA,sha256=wprERifR-mWweThYUnC2laSS0i8lwUI4txI8PafeJI8,1853
+cozyblanket-1.0.dist-info/WHEEL,sha256=5vr2ZUYMIPpdABBOSv8-NuqiKYrGTWMNuyATpVRyrq8,86
+cozyblanket-1.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cozyblanket-1.0.dist-info/license_files/LICENSE,sha256=XiU-MjS7apYLXC_jYXgqrGb6bLYiOZjgIjVdktoFLuM,1054
+cozyblanket-1.0.dist-info/RECORD,,
