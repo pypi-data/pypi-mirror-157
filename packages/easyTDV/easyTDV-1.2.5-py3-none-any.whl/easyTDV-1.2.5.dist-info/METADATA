@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: easyTDV
+Version: 1.2.5
+Summary: easyTDV: Train, Deploy and Vizualisation
+Author: HADJALI Lounas
+Author-email: <hadjalilounas@gmail.com>
+Keywords: python,ML,Deployment,Train,AWS
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: boto3
+Requires-Dist: pandas
+Requires-Dist: dill
+
+Framework pour l'entrainement, deploiement et la visualisation à temps réel des modèles ML sur AWS
