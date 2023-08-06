@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: funfunc
+Version: 0.1.0
+Summary: Make Python Development Much Easier & Fun
+Author: Wei Jia
+Author-email: 437160499@163.com
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+Make Python Development Much Easier & Fun
