@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/xplinter/__init__.py
+src/xplinter/placeholder.py
+src/xplinter.egg-info/PKG-INFO
+src/xplinter.egg-info/SOURCES.txt
+src/xplinter.egg-info/dependency_links.txt
+src/xplinter.egg-info/top_level.txt
