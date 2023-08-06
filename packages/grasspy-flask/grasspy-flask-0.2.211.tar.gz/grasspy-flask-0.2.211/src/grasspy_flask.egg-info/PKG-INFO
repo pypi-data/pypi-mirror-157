@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: grasspy-flask
+Version: 0.2.211
+Summary: Chinsese version of flask for grasspy
+Home-page: https://gitee.com/laowu2019_admin/zwflask
+Author: Laowu Grasspy
+Author-email: 760230681@qq.com
+Project-URL: Bug Tracker, https://gitee.com/laowu2019_admin/zwflask/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 福利哥
+
+#### 介绍
+flask Web 开发框架的草蟒中文版
+
+#### 安装教程
+
+python -m pip install -U grasspy-flask
+
+#### 使用简介
+
+```python
+从 福利哥 导入 〇福利哥
+
+应用 = 〇福利哥(__名称__)
+
+@应用.路由('/')
+套路 你好():
+    返回 '你吃了吗？'
+
+如果 __名称__ == "__主体__":
+    应用.运行(调试=真)
+```
