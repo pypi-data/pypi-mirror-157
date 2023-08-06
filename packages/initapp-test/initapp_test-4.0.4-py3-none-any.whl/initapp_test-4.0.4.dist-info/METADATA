@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: initapp-test
+Version: 4.0.4
+Summary: initapp_test
+Home-page: 
+Author: wangkejun
+Author-email: 446093036@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: ffmpeg-python (==0.2.0)
+Requires-Dist: opencv-python
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: pytesseract (==0.3.8)
+Requires-Dist: ffmpeg (==1.4)
+Requires-Dist: PyYAML
+
+UNKNOWN
+
