@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+difPy/__init__.py
+difPy/dif.py
+difPy.egg-info/PKG-INFO
+difPy.egg-info/SOURCES.txt
+difPy.egg-info/dependency_links.txt
+difPy.egg-info/requires.txt
+difPy.egg-info/top_level.txt
