@@ -1,0 +1,6 @@
+numpy
+bitarray
+mdanalysis
+pandas
+psutil
+dill
