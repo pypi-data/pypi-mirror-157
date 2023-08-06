@@ -1,0 +1,13 @@
+djangoldp_branding/__init__.py,sha256=IzBssgmHRq9Rqc0vlz4Lr7FbvcJW1b3ImCHbjXz2vHo,50
+djangoldp_branding/apps.py,sha256=rdH5KvM1i4UqNN5YnsATs_wYcpiNtZpEAZSWvlbnm5A,110
+djangoldp_branding/djangoldp_settings.py,sha256=L7j_UZvNVLnwaWzPpaaExrPrmCp95s1nj6bVRH0NtvU,815
+djangoldp_branding/djangoldp_urls.py,sha256=2w_nXPZKbP_VEl4K8vhcRkCTsp2uk9PQezJHeaMqQyU,287
+djangoldp_branding/processor.py,sha256=lv52OOeInzCC0DzA63VUU8okPoyz9ecHZaQQxLte0Bg,682
+djangoldp_branding/views.py,sha256=_Y1g78bmjO9PtnmHfuYb0WX0qiZXYonhvAUgLvjlQ74,2954
+djangoldp_branding/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoldp_branding/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoldp_branding/templatetags/orbit.py,sha256=TDotyXUZfZ29lmXiq_eiu6w6HkugeM8BbYS_F4cQ-88,1177
+djangoldp_branding-1.0.0.dist-info/METADATA,sha256=HHlLJ7VhBMIuwzs78t6slld9BcYZ8cagqxNwQrJZeUA,400
+djangoldp_branding-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+djangoldp_branding-1.0.0.dist-info/top_level.txt,sha256=vlzcs8Q87xHkIqCCm2rck7gk9eppay1hxG3xznBdlUc,19
+djangoldp_branding-1.0.0.dist-info/RECORD,,
