@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+NumBase/NumBaseConvertDoc.py
+NumBase/__init__.py
+NumBase/main.py
+NumBase.egg-info/PKG-INFO
+NumBase.egg-info/SOURCES.txt
+NumBase.egg-info/dependency_links.txt
+NumBase.egg-info/top_level.txt
