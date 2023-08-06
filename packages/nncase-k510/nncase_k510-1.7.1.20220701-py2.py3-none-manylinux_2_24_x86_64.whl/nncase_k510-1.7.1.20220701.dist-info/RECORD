@@ -1,0 +1,10 @@
+libnncase.modules.k510.so,sha256=BOSTG2u8sA9yonZoWVnikaVOI_HmYYCe2p2NsKXj-t8,14250432
+libnncase.targets.k510.so,sha256=9v_uvTYX5nnFOdA9fFoZYqg_ZdJUlgyBmIxzaj2U3cI,324672
+nncase_k510.libs/libgcc_s-7e8c1157.so.1,sha256=6ejlGuPKh5_4tPMUYyYBnH_3XooKMmQzWamZ4SHEf5Q,101808
+nncase_k510.libs/libstdc++-d54d9843.so.6.0.28,sha256=_ti2_7VcjmFm2rEyqz1WvNXTVv-kXo4kdxATpsrXuf4,2501640
+nncase_k510-1.7.1.20220701.data/purelib/nncase_k510/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nncase_k510-1.7.1.20220701.dist-info/RECORD,,
+nncase_k510-1.7.1.20220701.dist-info/LICENSE,sha256=tTdrr12tvYx4LKECY4VVPqHV_33egMjqCh6wE7bWeIQ,11342
+nncase_k510-1.7.1.20220701.dist-info/WHEEL,sha256=VYSwYQ9CdK6rtcdmQukKStn55zorTzodxJeO6VIFBTs,147
+nncase_k510-1.7.1.20220701.dist-info/top_level.txt,sha256=cdhmA6Y62JlJ8FDPRkmBUBt78ICCfilpb2Fm4SA9ipk,12
+nncase_k510-1.7.1.20220701.dist-info/METADATA,sha256=F8rYEiWoVJg_W4267ZgP3FEY5DxOCT7P7rzyjGqWFC8,884

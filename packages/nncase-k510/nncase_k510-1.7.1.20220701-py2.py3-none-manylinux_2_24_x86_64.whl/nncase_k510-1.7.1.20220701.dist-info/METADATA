@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: nncase-k510
+Version: 1.7.1.20220701
+Summary: k510 plug-in for nncase
+Home-page: https://g.b-bug.org/maix2-ai-sw/k510-gnne-compiler
+Author: sunnycase
+Author-email: guohui@canaan-creative.com
+Maintainer: sunnycase
+License: Apache-2.0
+Keywords: kendryte,nn,compiler,k510
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nncase (>=1.7.1)
+
+`K510 GNNE Compiler` is a neural network compiler for AI accelerators.
+
