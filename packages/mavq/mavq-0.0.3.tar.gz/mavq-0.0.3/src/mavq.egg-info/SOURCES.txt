@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mavq/__init__.py
+src/mavq/automationVariables.py
+src/mavq/commonProvider.py
+src/mavq/mavq.py
+src/mavq/mavqAutomation.py
+src/mavq/mavqPlatformClient.py
+src/mavq/mavqUserContext.py
+src/mavq.egg-info/PKG-INFO
+src/mavq.egg-info/SOURCES.txt
+src/mavq.egg-info/dependency_links.txt
+src/mavq.egg-info/top_level.txt
