@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: type-serialize
+Version: 0.0.1
+Summary: Serialize with type annotations
+Home-page: https://github.com/osom8979/type-serialize
+Author: zer0
+Author-email: osom8979@gmail.com
+Maintainer: zer0
+Maintainer-email: osom8979@gmail.com
+License: MIT License
+Project-URL: GitHub: issues, https://github.com/osom8979/type-serialize/issues
+Project-URL: GitHub: repo, https://github.com/osom8979/type-serialize
+Keywords: serialize
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: full
+Requires-Dist: numpy ; extra == 'full'
+Requires-Dist: orjson ; extra == 'full'
+Requires-Dist: msgpack ; extra == 'full'
+
+# type-serialize
+
+Serialize with type annotations
+
+
