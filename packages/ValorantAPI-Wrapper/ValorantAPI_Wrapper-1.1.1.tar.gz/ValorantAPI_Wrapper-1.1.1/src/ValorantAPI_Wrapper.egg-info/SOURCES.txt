@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+setup.py
+src/ValorantAPI_Wrapper/__init__.py
+src/ValorantAPI_Wrapper/auth.py
+src/ValorantAPI_Wrapper/client.py
+src/ValorantAPI_Wrapper/exceptions.py
+src/ValorantAPI_Wrapper/resources.py
+src/ValorantAPI_Wrapper.egg-info/PKG-INFO
+src/ValorantAPI_Wrapper.egg-info/SOURCES.txt
+src/ValorantAPI_Wrapper.egg-info/dependency_links.txt
+src/ValorantAPI_Wrapper.egg-info/top_level.txt
+src/valorantAPI_wrapper/__init__.py
+src/valorantAPI_wrapper/auth.py
+src/valorantAPI_wrapper/client.py
+src/valorantAPI_wrapper/exceptions.py
+src/valorantAPI_wrapper/resources.py
