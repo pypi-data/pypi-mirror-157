@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: arsenalgear
+Version: 1.2.2
+Summary: A library containing general purpose Python utils
+Home-page: https://justwhit3.github.io/
+Download-URL: https://github.com/JustWhit3/arsenalgear/archive/refs/tags/v1.2.2.zip
+Author: Gianluca Bianco
+Author-email: biancogianluca9@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+License-File: ../LICENSE

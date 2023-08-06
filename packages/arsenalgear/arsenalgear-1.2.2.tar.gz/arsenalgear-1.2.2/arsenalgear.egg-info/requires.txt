@@ -1,0 +1,5 @@
+matplotlib>=3.1.2
+numpy>=1.17.4
+scipy==1.6.2
+termcolor==1.1.0
+tqdm>=4.64.0
