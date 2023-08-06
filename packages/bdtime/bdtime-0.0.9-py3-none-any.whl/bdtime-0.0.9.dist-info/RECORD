@@ -1,0 +1,11 @@
+bdtime/__init__.py,sha256=LljbzCHDSadhfmBlPCGhyV7bSS-ZaL1e83xwGfOwocU,112
+bdtime/datetime_utils.py,sha256=wtrbBem1oUBaXol4aWY-_SJPM8FU4PiErO94vIYNKdA,2069
+bdtime/get_cpu_info.py,sha256=5sjz7ZneQg9b8bTQ2Jc05cyj8WaWosISDyCCH4WJxGY,2883
+bdtime/my_time.py,sha256=7mt9n8u3vT4imw8AdI8Mov8OV_haN6-MU_vbIKPVSFU,9541
+bdtime/utils.py,sha256=q4FR_hHnCncIkrnGQh53sSSbBhAioK39plJ_6mTkQMU,602
+bdtime-0.0.9.dist-info/DESCRIPTION.rst,sha256=-FFJNtxcAjrjDHrJ_ymQHWRKnFB91xYMzx73lz4RXzs,719
+bdtime-0.0.9.dist-info/METADATA,sha256=WxyUbFz-016-rNJhdkX-DUg-QXuqy3haIkFrf61q6Lw,1080
+bdtime-0.0.9.dist-info/RECORD,,
+bdtime-0.0.9.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+bdtime-0.0.9.dist-info/metadata.json,sha256=MzeAPyYv7rNK9R7fz3sxKlFzXdCQKo-g18F3zYLrLSA,515
+bdtime-0.0.9.dist-info/top_level.txt,sha256=OnLPxwvvhW6XUSi-krvk3qhfVk4dXwS1siE1HjK7VJA,7
