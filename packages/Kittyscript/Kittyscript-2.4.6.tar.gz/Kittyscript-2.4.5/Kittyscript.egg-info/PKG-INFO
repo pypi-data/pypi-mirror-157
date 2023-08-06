@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: Kittyscript
+Version: 2.4.5
+Summary: Assist mode for python
+Home-page: UNKNOWN
+Author: Anahad Khosa
+Author-email: hahacoolguystaco@gmail.com
+License: MIT
+Keywords: Assist mode
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+Kittyscript helps people to learn and create python projects
+
+Change log
+
+=============
+
+2.4.5 (7/4/2022)
+
+- Second release
+
