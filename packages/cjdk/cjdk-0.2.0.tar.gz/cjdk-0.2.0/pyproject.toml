@@ -1,0 +1,61 @@
+# This file is part of cjdk.
+# Copyright 2022, Board of Regents of the University of Wisconsin System
+# SPDX-License-Identifier: MIT
+
+[build-system]
+requires = [
+    "setuptools>=43",
+    "setuptools_scm[toml]>=6.2",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cjdk"
+dynamic = ["version"]
+description = "Download JDK or JRE distributions on the fly"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE.txt"}
+keywords = ["Java", "JDK", "JRE", "JVM"]
+authors = [
+    {name = "Mark A. Tsuchida"},
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Java",
+    "Topic :: Software Development",
+]
+
+dependencies = [
+    "click >= 8.0",
+    "requests >= 2.24",
+    "tqdm >= 4.0",
+]
+
+[project.optional-dependencies]
+testing = [
+    "flask >= 2.0",
+    "pytest >= 7.0",
+    "werkzeug >= 2.0",
+]
+
+[project.urls]
+homepage = "https://github.com/marktsuchida/cjdk"
+repository = "https://github.com/marktsuchida/cjdk"
+
+[project.scripts]
+cjdk = "cjdk._cli:main"
+
+[tool.setuptools_scm]
+write_to = "src/cjdk/_version.py"
+
+[tool.black]
+line-length = 79
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
