@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: decodablepy
+Version: 0.0.2
+Summary: a client for decodable.co
+Home-page: https://github.com/hdulay/decodablepy/
+Author: Hubert Dulay
+Author-email: hubert.dulay@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2)
+
+# decoderpy
+python client for decodable.co
+
+
