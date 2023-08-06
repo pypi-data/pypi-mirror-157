@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: gdo-arch-utils
+Version: 0.0.9
+Summary: A package containing tools for data engineering containers.
+Home-page: https://github.com/colpal/gdo-dataengg-container-tools
+Author: GDO Team
+Author-email: shyam_menon@colpal.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: pandas
+Requires-Dist: google-cloud-storage
+Requires-Dist: google-cloud-bigquery
+Requires-Dist: google-cloud-datastore
+Requires-Dist: openpyxl
+Requires-Dist: pyarrow
+Requires-Dist: pydata-google-auth
+Requires-Dist: snowflake
+Requires-Dist: snowflake-connector-python
+Requires-Dist: pysftp
+Requires-Dist: loguru
+Requires-Dist: tabulate
+
+GDO Container Tools
