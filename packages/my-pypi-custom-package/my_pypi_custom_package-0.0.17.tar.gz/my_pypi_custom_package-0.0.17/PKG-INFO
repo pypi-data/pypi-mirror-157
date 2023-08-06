@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: my_pypi_custom_package
+Version: 0.0.17
+Summary: A custom package demo
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: example@example.com
+License: Some licence
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
