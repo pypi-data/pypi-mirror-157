@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/simrank_cmp/__init__.py
+src/simrank_cmp/sims.py
+src/simrank_cmp.egg-info/PKG-INFO
+src/simrank_cmp.egg-info/SOURCES.txt
+src/simrank_cmp.egg-info/dependency_links.txt
+src/simrank_cmp.egg-info/top_level.txt
