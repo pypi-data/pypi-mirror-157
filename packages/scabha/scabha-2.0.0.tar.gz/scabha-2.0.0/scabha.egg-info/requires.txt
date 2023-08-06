@@ -1,0 +1,8 @@
+pyyaml
+omegaconf
+click
+pydantic
+pyparsing
+pytest
+rich
+dill
