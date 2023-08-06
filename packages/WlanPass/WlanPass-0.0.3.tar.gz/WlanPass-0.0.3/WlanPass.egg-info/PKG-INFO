@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: WlanPass
+Version: 0.0.3
+Summary: Prints The Stored Wlan Details
+Home-page: UNKNOWN
+Author: Mohammad Mahfuz Rahman
+Author-email: mahfuzrahman038@gmail.com
+License: UNKNOWN
+Keywords: python,wi-fi,wlan,passwords,wi-fi hacker,cracker
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A module that can access the details of stored password or any other information related to wlan
+
