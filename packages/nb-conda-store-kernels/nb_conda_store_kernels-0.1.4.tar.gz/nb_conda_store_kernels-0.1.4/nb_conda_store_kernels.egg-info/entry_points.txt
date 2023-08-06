@@ -1,0 +1,2 @@
+[jupyter_client.kernel_providers]
+conda-store = nb_conda_store_kernels.discovery:CondaStoreKernelProvider
