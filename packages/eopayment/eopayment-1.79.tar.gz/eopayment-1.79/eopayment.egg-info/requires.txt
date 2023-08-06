@@ -1,0 +1,6 @@
+click
+pycryptodomex
+pytz
+requests
+six
+zeep>=2.5
