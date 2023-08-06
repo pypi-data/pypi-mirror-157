@@ -1,0 +1,10 @@
+nextcord>=2.0.0
+
+[docs]
+sphinx
+sphinxcontrib_trio
+sphinx-book-theme
+sphinx-autobuild
+
+[menus]
+nextcord-ext-menus

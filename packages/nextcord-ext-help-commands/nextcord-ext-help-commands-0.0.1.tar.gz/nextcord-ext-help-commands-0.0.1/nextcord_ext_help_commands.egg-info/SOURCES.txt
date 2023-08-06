@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+nextcord/ext/help_commands/__init__.py
+nextcord/ext/help_commands/errors.py
+nextcord/ext/help_commands/paginated.py
+nextcord_ext_help_commands.egg-info/PKG-INFO
+nextcord_ext_help_commands.egg-info/SOURCES.txt
+nextcord_ext_help_commands.egg-info/dependency_links.txt
+nextcord_ext_help_commands.egg-info/requires.txt
+nextcord_ext_help_commands.egg-info/top_level.txt
