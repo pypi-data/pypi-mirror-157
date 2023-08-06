@@ -1,0 +1,12 @@
+TSFEDL/__init__.py,sha256=mzbyuGDnDsdmlQD-PSl0mx0m8u1Frbbq1A6-c2lNAoE,6570
+TSFEDL/blocks_keras.py,sha256=YLiYvWcbi7GXKqhNsbdTeUyzz_RWzlLyRQdUA4TvfKY,7622
+TSFEDL/blocks_pytorch.py,sha256=Sg5omKQz-RQM_MlYHGQRAjAP-wamgER3OnDceI4F1lw,13167
+TSFEDL/data.py,sha256=qrqmlHS3Jw831MnF8JZOvZhGrqQ9RtsaqqkOXrM7ZFc,8874
+TSFEDL/models_keras.py,sha256=Bir3Km-eZPEqPpDT9yxJ7hR9ZL3CbQlKJZJ5r8SJ_ec,62233
+TSFEDL/models_pytorch.py,sha256=ECuxbpf1HaSGpXsnQPf8jv5Vm648Qotq0qVa0lqn1hg,92091
+TSFEDL/utils.py,sha256=pt6k7OCU4M_5s-PHvGzERvxmLs0vVPFwzSHu7iGbWsI,3805
+TSFEDL-1.0.6.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+TSFEDL-1.0.6.dist-info/METADATA,sha256=tU9Rgvtql4MunqjpBucOx2nte2_J78ZFUKBDqczRsB4,4307
+TSFEDL-1.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+TSFEDL-1.0.6.dist-info/top_level.txt,sha256=_mSIGxs_5Qy7zA15ZMroVnF_XXnfnKV9JasZWLQe_8s,7
+TSFEDL-1.0.6.dist-info/RECORD,,
