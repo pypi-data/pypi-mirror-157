@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: app-manager
+Version: 0.0.0.1
+Summary: Runs Python application in a fault-tolerant environment, continually rebooting after unexpected exceptions
+Home-page: https://github.com/jmsimons/date_time_handler
+Author: Jared Simons
+Author-email: jmsimons@lcmail.lcsc.edu
+License: UNKNOWN
+Description: # app_manager
+        ## Runs Python application in a fault-tolerant environment, continually rebooting after unexpected exceptions.
+        
+        
+        - Uses Python3 standard library packages only
+        - app_manager.py contains AppManager class
+        
+        
+        ### examples ###
+        
+        #### running your app in the AppManager is simple
+        ```
+        import ApplicationClass
+        from app_manager import AppManager
+        
+        app = ApplicationClass()
+        AppManager(app.run, run_limit = None) # set run_limit to positive integer to run application at most n times
+        ''' Exceptions will be printed to the console '''
+        ```
+        
+        #### alternatively, you can pass in your app's logger so that exceptions appear in your log output
+        ```
+        from application_package import ApplicationClass, logger
+        from app_manager import AppManager
+        
+        app = ApplicationClass()
+        AppManager(app.run, logger = logger)
+        ''' Exceptions will be printed to the console and logged with the supplied logger'''
+        ```
+        
+        #### each instance of AppManager runs in its own process, so multiple application components can be launched successively
+        ```
+        from application_package import AppMainClass, main_logger
+        from background_package import BackgroundAppClass, bg_logger
+        from app_manager import AppManager
+        
+        app = AppMainClass()
+        comp = BackgroundAppClass()
+        AppManager(app.run, logger = main_logger)
+        AppManager(comp.run, logger = bg_logger)
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

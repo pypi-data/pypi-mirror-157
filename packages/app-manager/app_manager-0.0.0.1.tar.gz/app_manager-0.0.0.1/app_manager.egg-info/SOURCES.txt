@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+app_manager/__init__.py
+app_manager/main.py
+app_manager.egg-info/PKG-INFO
+app_manager.egg-info/SOURCES.txt
+app_manager.egg-info/dependency_links.txt
+app_manager.egg-info/top_level.txt
+tests/__init__.py
+tests/test_app_manager.py

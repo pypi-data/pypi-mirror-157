@@ -1,0 +1,1 @@
+from app_manager.main import AppManager
