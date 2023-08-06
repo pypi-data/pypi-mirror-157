@@ -1,0 +1,6 @@
+- project:
+    name: x/networking-arista
+    templates:
+      - openstack-lower-constraints-jobs-neutron
+      - openstack-python3-yoga-jobs-neutron
+      - check-requirements

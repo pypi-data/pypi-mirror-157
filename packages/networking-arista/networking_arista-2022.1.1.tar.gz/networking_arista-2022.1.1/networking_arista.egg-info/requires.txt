@@ -1,0 +1,11 @@
+SQLAlchemy>=1.4.23
+alembic>=1.6.5
+neutron-lib>=2.20.0
+oslo.config>=8.0.0
+oslo.i18n>=3.20.0
+oslo.log>=4.5.0
+oslo.service>=2.8.0
+oslo.utils>=4.8.0
+pbr>=4.0.0
+requests>=2.18.0
+six>=1.10.0
