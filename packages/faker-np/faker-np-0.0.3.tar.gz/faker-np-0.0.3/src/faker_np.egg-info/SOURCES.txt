@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/faker-np/__init__.py
+src/faker-np/faker.py
+src/faker_np.egg-info/PKG-INFO
+src/faker_np.egg-info/SOURCES.txt
+src/faker_np.egg-info/dependency_links.txt
+src/faker_np.egg-info/top_level.txt
