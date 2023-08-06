@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: clean-panda
+Version: 0.1.2
+Summary: Data cleaner based on pandas
+Author: Iliass Raihani
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+UNKNOWN
+
