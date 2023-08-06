@@ -1,0 +1,2 @@
+[console_scripts]
+dn3 = dn3.__init__:cli
