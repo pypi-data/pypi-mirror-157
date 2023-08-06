@@ -1,0 +1,2 @@
+[console_scripts]
+dummyfilescreator = dummyfilescreator.__main__:main
