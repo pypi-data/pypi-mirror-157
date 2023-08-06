@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/ZI_QQ/__init__.py
+src/ZI_QQ/example.py
+src/ZI_QQ.egg-info/PKG-INFO
+src/ZI_QQ.egg-info/SOURCES.txt
+src/ZI_QQ.egg-info/dependency_links.txt
+src/ZI_QQ.egg-info/top_level.txt
