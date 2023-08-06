@@ -1,0 +1,9 @@
+setup.py
+hif_tool_trans_hanz.egg-info/PKG-INFO
+hif_tool_trans_hanz.egg-info/SOURCES.txt
+hif_tool_trans_hanz.egg-info/dependency_links.txt
+hif_tool_trans_hanz.egg-info/requires.txt
+hif_tool_trans_hanz.egg-info/top_level.txt
+translate_content/__init__.py
+translate_content/clickhouse_op.py
+translate_content/main.py

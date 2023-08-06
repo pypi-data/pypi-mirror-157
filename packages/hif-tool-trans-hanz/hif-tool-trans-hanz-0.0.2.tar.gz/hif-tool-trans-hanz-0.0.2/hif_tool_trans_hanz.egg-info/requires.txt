@@ -1,0 +1,5 @@
+pandas
+sqlalchemy
+tqdm
+clickhouse-driver
+clickhouse-sqlalchemy
