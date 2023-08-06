@@ -1,0 +1,3 @@
+[console_scripts]
+andor_sif = andor_sif.__main__:_main
+
