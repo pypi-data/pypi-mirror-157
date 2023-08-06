@@ -1,0 +1,3 @@
+[console_scripts]
+sonar=covsonar.sonar:run
+
