@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+chkpkg/__init__.py
+chkpkg/_cleaner.py
+chkpkg/_constants.py
+chkpkg/_exceptions.py
+chkpkg/_package.py
+chkpkg/_require_pytyped.py
+chkpkg/_venvs.py
+chkpkg.egg-info/PKG-INFO
+chkpkg.egg-info/SOURCES.txt
+chkpkg.egg-info/dependency_links.txt
+chkpkg.egg-info/top_level.txt
