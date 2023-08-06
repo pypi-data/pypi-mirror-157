@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: pylit
+Version: 0.8.0
+Summary: pylit: bidirectional text <-> code converter
+Home-page: https://codeberg.org/milde/pylit
+License: UNKNOWN
+Author: Günter Milde
+Author-email: milde@users.sf.net
+Requires-Python: >=2.7
+Description-Content-Type: text/x-rst
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Topic :: Software Development :: Documentation
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: nose ; extra == "test"
+Provides-Extra: doc
+Provides-Extra: test
+
+PyLit
+*****
+
+`Literate Programming`_ with reStructuredText_
+
+.. epigraph::
+
+   The idea is that you do not document programs (after the fact), but
+   write documents that *contain* the programs.
+
+   -- John Max Skaller
+
+What is it
+  PyLit (Python Literate) provides a plain but efficient tool for
+  literate programming: a `bidirectional text/code converter`.
+
+Install
+  Put `pylit.py`_ in Python's `Module Search Path`_.
+
+.. _pylit.py: https://codeberg.org/milde/pylit/raw/branch/master/pylit.py
+
+
+Documentation
+  `PyLit pages`_.
+
+Copyright
+  © 2005, 2009, 2022 Günter Milde.
+
+License
+  PyLit is `free software`_, released under the `GNU General Public License`_
+  (GPL) version 3 or later.
+
+  PyLit is distributed in the hope that it will be useful, but WITHOUT ANY
+  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+  FOR A PARTICULAR PURPOSE.  See the `GNU General Public License`_ for more
+  details.
+
+
+.. References
+
+.. _Charming Python interview:
+    http://www.ibm.com/developerworks/library/l-pyth7.html
+.. _bidirectional text/code converter:
+    https://milde.codeberg.page/PyLit/features.html#dual-source
+.. _literate programming:
+    https://milde.codeberg.page/PyLit/literate-programming.html
+.. _reStructuredText: http://docutils.sourceforge.net/rst.html
+.. _module search path:
+    http://docs.python.org/tutorial/modules.html#the-module-search-path
+.. _PyLit pages: https://milde.codeberg.page/PyLit/
+.. _`free software`: http://www.gnu.org/philosophy/free-sw.html
+.. _`GNU General Public License`: http://www.gnu.org/copyleft/gpl.html
+
