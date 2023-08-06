@@ -1,0 +1,95 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:transmogrifier="http://namespaces.plone.org/transmogrifier"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="collective.transmogrifier"
+    >
+
+  <utility
+      name="collective.transmogrifier.sections.constructor"
+      component=".constructor.ConstructorSection"
+      />
+
+  <utility
+      name="collective.transmogrifier.sections.folders"
+      component=".folders.FoldersSection"
+      />
+
+  <utility
+      name="collective.transmogrifier.sections.codec"
+      component=".codec.CodecSection"
+      />
+
+  <utility
+      name="collective.transmogrifier.sections.inserter"
+      component=".inserter.InserterSection"
+      />
+
+  <utility
+      name="collective.transmogrifier.sections.condition"
+      component=".condition.ConditionSection"
+      />
+
+  <utility
+      name="collective.transmogrifier.sections.manipulator"
+      component=".manipulator.ManipulatorSection"
+      />
+
+  <utility
+      name="collective.transmogrifier.sections.pathresolver"
+      component=".pathresolver.PathResolverSection"
+      />
+
+  <utility
+      name="collective.transmogrifier.sections.splitter"
+      component=".splitter.SplitterSection"
+      />
+
+  <utility
+      name="collective.transmogrifier.sections.savepoint"
+      component=".savepoint.SavepointSection"
+      />
+
+  <utility
+      name="collective.transmogrifier.sections.csvsource"
+      component=".csvsource.CSVSourceSection"
+      />
+
+  <utility
+      name="collective.transmogrifier.sections.logger"
+      component=".logger.LoggerSection"
+      />
+
+  <utility
+      name="collective.transmogrifier.sections.breakpoint"
+      component=".breakpoint.BreakpointSection"
+      />
+
+  <utility
+      name="collective.transmogrifier.sections.listsource"
+      component=".listsource.ListSource"
+      />
+
+  <utility
+      name="collective.transmogrifier.sections.listappender"
+      component=".listsource.ListAppender"
+      />
+
+  <configure zcml:condition="installed lxml">
+    <utility
+        name="collective.transmogrifier.sections.xmlwalker"
+        component=".xmlwalker.XMLWalkerSection"
+        />
+  </configure>
+
+  <utility
+      name="collective.transmogrifier.sections.dirwalker"
+      component=".dirwalker.DirWalkerSection"
+      />
+
+  <utility
+      name="collective.transmogrifier.sections.urlopener"
+      component=".urlopener.URLOpenerSection"
+      />
+
+</configure>
