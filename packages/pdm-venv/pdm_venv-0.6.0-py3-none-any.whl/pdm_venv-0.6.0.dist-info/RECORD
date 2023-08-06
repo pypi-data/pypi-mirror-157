@@ -1,0 +1,16 @@
+pdm_venv/__init__.py,sha256=jFc6M4QTEQimGynXJxibA1E8ZK-K4zS83DZC4V2-ycs,239
+pdm_venv/backends.py,sha256=9eAg2fdRD7dVigctWxSHjS-UmgjD12A28NLRbRuIiNQ,4460
+pdm_venv/commands/__init__.py,sha256=Gv9nJyVBs9M9LUa4tD6I31OCFIOBr7-AtTg2K0Lx7LQ,973
+pdm_venv/commands/activate.py,sha256=15f7ObUnRiGoH7IkF4zOtzaa6bqjJTGQFljwG0rWGRA,2352
+pdm_venv/commands/create.py,sha256=x9hrp1W8_8tx-eB7302vBDXtSSbV5WY4SbLYtLJaXzM,1965
+pdm_venv/commands/list.py,sha256=X8O8jVayZjjUZnzB3-5I998nR3-v_ETcUzB6saoai6Q,842
+pdm_venv/commands/purge.py,sha256=mhZt_GHEy7HVlb5olAmUj1im3zkc0Vx8fS7TlXlUOiY,2147
+pdm_venv/commands/remove.py,sha256=4_L1ybZhM9liCZwYQZIikjtfMO5zlHKi9b4q0_ceSIE,1657
+pdm_venv/config.py,sha256=O2ze1ToLjuZn2gVAmxy-922HufdFOEFrehRjq7WYwz8,892
+pdm_venv/plugin.py,sha256=CRolej_ZJEdFx031JnezaTn6K7Dr_aFzrkxQUrr1AUU,3607
+pdm_venv/utils.py,sha256=DU34l-icQhpwaNBdmkGMFW9nfSlHUyr_qERinwamiAo,1620
+pdm_venv-0.6.0.dist-info/entry_points.txt,sha256=SSPKrbAQtv9RtwyYsbvPtHkkpgNJeDOeznTDyRIF5HM,40
+pdm_venv-0.6.0.dist-info/WHEEL,sha256=khjdxotGbc8bZApx0GgksEHx3PnpKRv5eEmix1B9fDY,87
+pdm_venv-0.6.0.dist-info/METADATA,sha256=oSbduvKkxYSA11Cq8vUtab4f_JEzxTgrzzMQ6xJuMK8,6252
+pdm_venv-0.6.0.dist-info/license_files/LICENSE,sha256=yritVhB6gD9LwkB37E7m-15Qvs9TKodv4Fwxtixb5Yk,1059
+pdm_venv-0.6.0.dist-info/RECORD,,
