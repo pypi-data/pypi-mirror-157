@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: dudraw
+Version: 1.1.5
+Summary: A fork of Princeton's stddraw for use in classes at the University of Denver
+Project-URL: Homepage, https://ritchieschool.du.edu/academics-education/departments/computer-science
+Author-email: Andrew Hannum <andrew.hannum@du.edu>
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: pygame>=2.0.0
+Description-Content-Type: text/markdown
+
+# DUDraw
+
+Repository for DUDraw, a fork of [stddraw from the Princeton Standard Libraries](https://introcs.cs.princeton.edu/python/code/). 
+
+Released under the [GNU Public License version 3 (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.html)
+
+Original Authors of [StdLib](https://introcs.cs.princeton.edu/java/stdlib/):
+
+    Robert Sedgewick
+    Kevin Wayne
+ 
+DUDraw Fork Additions by:
+
+    Joseph Brooksbank
+    Ryan Dunagan
+    Declan Kahn
+    Eddy Rogers
+    Andrew Hannum
