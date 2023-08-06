@@ -1,0 +1,5 @@
+setup.py
+splt.egg-info/PKG-INFO
+splt.egg-info/SOURCES.txt
+splt.egg-info/dependency_links.txt
+splt.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: splt
+Version: 4.0
+Summary: This function will ask you to enter a string, and this program will separate the string character by character,not word by word.P.S.:There aren't any url for this project
+Home-page: https://www.baidu.com
+Author: 高乐喆
+Author-email: gaolezhe@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+This function will ask you to enter a string, and this program will separate the string character by character; "S" in parameter sorl refers to screen and "L" refers to list. This position can only be filled with S or L.The listname will be "list";The usage and meaning of parameters sep, end, file and flush are the same as that of print();  Function format: splt (string, sep = , end = "
+", file = sys.stdout, flush = false, sorl = "L")    Optimization content: 1.Add docstring 2.Let the user can use the function without moudle "sys"
