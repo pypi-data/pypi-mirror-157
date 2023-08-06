@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: qlient-core
+Version: 0.1.0b0
+Summary: The core for a blazingly fast and modern graphql client designed with simplicity in mind.
+Home-page: https://qlient-org.github.io/python-qlient/
+Keywords: graphql,client,api,query,mutation
+Author: Daniel Seifert
+Author-email: info@danielseifert.ch
+Maintainer: Daniel Seifert
+Maintainer-email: info@danielseifert.ch
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: importlib-metadata (>=4.11.4,<5.0.0)
+Requires-Dist: platformdirs (>=2.5.2,<3.0.0)
+Project-URL: Documentation, https://qlient-org.github.io/python-qlient/
+Project-URL: Repository, https://github.com/qlient-org/python-qlient
+Description-Content-Type: text/markdown
+
+# Qlient Core: Python GraphQL Client Core Library
+
+This is the core for a blazingly fast and modern graphql client that was designed with simplicity in mind.
