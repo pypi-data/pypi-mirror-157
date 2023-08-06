@@ -1,0 +1,15 @@
+xontrib_commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xontrib_commands/argerize.py,sha256=S_JMT4MHGvTom9jh2Q2gOAiJLtA-uQoFl4kovkQHY1A,2359
+xontrib_commands/cmds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xontrib_commands/cmds/dev_cmd.py,sha256=TMGve5k7g3IiiqxQmmWPsTOMgjwQAuVOR2hcgIS-26U,5249
+xontrib_commands/cmds/dotenv_cmd.py,sha256=Ewilr_tfzuCWBQMe6Tj7Dt2QkLF2c9Fj5tH20YlaK2A,520
+xontrib_commands/cmds/parallex.py,sha256=rO_EvgYNR01alaSo7pjYjRRB2XooUcs2Dt1qNJBxKt4,2352
+xontrib_commands/cmds/reload.py,sha256=_SqaWgPlG47BYXBurRJNXugKUs4ZDmikkRIHnQRqt10,1376
+xontrib_commands/cmds/report_keys.py,sha256=KYInL0q7zUJGjYVSarglJiM-GGmODXB56iOP4NGVjbw,2439
+xontrib_commands/main.py,sha256=ovy7KJAUxOukc1-ZQ8hsaORNfdAo2j5wOVVtMBxjDjk,635
+xontrib_commands/utils.py,sha256=MYJDxnJPW33AGAUeS-7C3WxhGy1EdwzlOQR43Hc74Kg,1639
+xontrib_commands-0.4.1.dist-info/entry_points.txt,sha256=_LYOE-yjIm421XJkXsWbXB_6SL3c6AvbIz1G2L2CEKk,49
+xontrib_commands-0.4.1.dist-info/LICENSE,sha256=LMIbsZ3nD5h5UDv6aoABebWV3GWOYKuFjz-oHMxO0Xs,1075
+xontrib_commands-0.4.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+xontrib_commands-0.4.1.dist-info/METADATA,sha256=X-zJV4IJQf0LmHfATaj1dAuMVMQ9UffOr4meOlH8-9M,4758
+xontrib_commands-0.4.1.dist-info/RECORD,,
