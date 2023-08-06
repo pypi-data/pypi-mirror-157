@@ -1,0 +1,31 @@
+[package]
+name = "visio_rust"
+version = "0.2.2"
+edition = "2021"
+
+[lib]
+name = "visio_rust"
+crate-type = ["cdylib"]
+
+exclude = ["tests/"]
+
+[dependencies.pyo3]
+version = "0.15.0"
+features = ["extension-module"]
+
+[dependencies]
+img-parts = "0.2.3"
+bytes = "1"
+image = { version = "0.23.14", default-features = false, features = [
+    "jpeg",
+    "png",
+    "webp",
+] }
+
+
+[profile.release]
+codegen-units = 1
+debug = false
+incremental = false
+lto = true
+opt-level = 3
