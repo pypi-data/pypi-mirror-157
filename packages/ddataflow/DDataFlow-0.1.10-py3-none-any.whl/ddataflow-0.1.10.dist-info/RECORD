@@ -1,0 +1,15 @@
+ddataflow/__init__.py,sha256=ZMBGomcyJErp_fqOmyY8JdI5OoltmO8bnPKsEl_pXeQ,98
+ddataflow/data_source.py,sha256=01fXgxawhmfSRJqqws0Kjj-JyV9qcYovXN7cFDZeys4,3706
+ddataflow/ddataflow.py,sha256=Ds0ySrH8FLs2NfWekiMMekB0KqP75jLsUSC8ZGmstVI,13247
+ddataflow/downloader.py,sha256=vXi93otkGk7__QTrNI_Westn2JJtzhOCg4o6P1FKh7I,2071
+ddataflow/exceptions.py,sha256=nkAcAcoPrZajWtey3FpHVc26RGVaXboK-lUjaJOjXYg,723
+ddataflow/sampler.py,sha256=wIig_izcmDQHG3uEaEVJvAbzDAlF2qC743LfSLuyio8,2130
+ddataflow/samples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ddataflow/samples/ddataflow_config.py,sha256=5cTmTN3Smpp8ae7hm_o4RPV_cxYS5jpOJioahmnsBLw,1302
+ddataflow/setup_project.py,sha256=sXWU2ay1hsMtHJ4RU2U9It0tvxtDsMNDVjMMcFs4Im0,1066
+ddataflow/utils.py,sha256=Yyi1Fs3-NvNZX5JlqS1LNfyshujvxrRWuTaqR_bDl04,1080
+ddataflow-0.1.10.dist-info/entry_points.txt,sha256=pqryATjRpPPWBsU7rHrjwvLI6I3hdMELimKzqkBuOCk,54
+ddataflow-0.1.10.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ddataflow-0.1.10.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+ddataflow-0.1.10.dist-info/METADATA,sha256=7Q2zY6iRVJUT7QNGJWDMkKBe1onkP_ihaZL2r-cS8GU,492
+ddataflow-0.1.10.dist-info/RECORD,,
