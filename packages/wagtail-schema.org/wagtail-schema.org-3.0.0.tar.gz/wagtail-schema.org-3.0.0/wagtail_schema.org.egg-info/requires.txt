@@ -1,0 +1,5 @@
+wagtail<4.0,>=2.15
+
+[testing]
+jinja2<3.0,>=2.10
+markupsafe==2.0.1
