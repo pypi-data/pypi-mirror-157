@@ -1,0 +1,649 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:webprotege:ontology:4a366b00-0310-4c4e-8e59-8d99d09085c4#"
+     xml:base="urn:webprotege:ontology:4a366b00-0310-4c4e-8e59-8d99d09085c4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="urn:webprotege:ontology:4a366b00-0310-4c4e-8e59-8d99d09085c4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#acronym -->
+
+    <owl:AnnotationProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#acronym">
+        <rdfs:label>acronym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#addsMeaningTo -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#addsMeaningTo">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#SemanticRepresentation"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#StructureRepresentation"/>
+        <rdfs:label>addsMeaningTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#derivedFromPackage -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#derivedFromPackage">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PackageDescription"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+        <rdfs:label>derivedFromPackage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#describedBy -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#describedBy">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PackageDescription"/>
+        <rdfs:label>describedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasAccessRights -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasAccessRights">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasPreservationInformation"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#AccessRightsPreservation"/>
+        <rdfs:label>hasAccessRights</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasContentInformation -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasContentInformation">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContentInformationObject"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasContent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasContext -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasContext">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasPreservationInformation"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContextPreservation"/>
+        <rdfs:label>hasContext</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasDataObject -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasDataObject">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasData</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasFixity -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasFixity">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasPreservationInformation"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#FixityPreservation"/>
+        <rdfs:label>hasFixity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasInformationPackage -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasInformationPackage">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContentInformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+        <rdfs:label>hasInformationPackage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasOtherRepresentation -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasOtherRepresentation">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/#hasRepresentation"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#OtherRepresentation"/>
+        <rdfs:label>hasOtherRepresentation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasPreservationInformation -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasPreservationInformation">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PreservationDescriptionInformationObject"/>
+        <rdfs:label>hasPreservationInformation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasProvenance -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasProvenance">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasPreservationInformation"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ProvenancePreservation"/>
+        <rdfs:label>hasProvenance</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasReference -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasReference">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasPreservationInformation"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ReferencePreservation"/>
+        <rdfs:label>hasReference</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasSemanticRepresentation -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasSemanticRepresentation">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/#hasRepresentation"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#SemanticRepresentation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasSemantics</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasStructureRepresentation -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasStructureRepresentation">
+        <rdfs:subPropertyOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/#hasRepresentation"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#StructureRepresentation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasStructure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#identifiesPackage -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#identifiesPackage">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PackagingInformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+        <rdfs:label>identifiesPackage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#packagedBy -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#packagedBy">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PackagingInformationObject"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">packagedAs</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#preservedBy -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#preservedBy">
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContentInformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PreservationDescriptionInformationObject"/>
+        <rdfs:label>preservedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/#hasRepresentation -->
+
+    <owl:ObjectProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/#hasRepresentation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationObject"/>
+        <rdfs:range rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#RepresentationInformationObject"/>
+        <rdfs:label>hasRepresentation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasBits -->
+
+    <owl:DatatypeProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasBits">
+        <rdfs:label>hasBits</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasItem -->
+
+    <owl:DatatypeProperty rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasItem">
+        <rdfs:label>hasItem</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#AccessRightsPreservation -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#AccessRightsPreservation">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PreservationDescriptionInformationObject"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Access Rights</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARPDI</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ArchivalInformationCollection -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ArchivalInformationCollection">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ArchivalInformationPackage"/>
+        <rdfs:label>Archival Information Collection</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AIC</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ArchivalInformationPackage -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ArchivalInformationPackage">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+        <rdfs:label>Archival Information Package</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AIP</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ArchivalInformationUnit -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ArchivalInformationUnit">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ArchivalInformationPackage"/>
+        <rdfs:label>Archival Information Unit</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AIU</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#AssociatedDescription -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#AssociatedDescription">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DescriptiveInformationObject"/>
+        <rdfs:label>Associated Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#CollectionDescription -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#CollectionDescription">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PackageDescription"/>
+        <rdfs:label>Collection Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContentInformationObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContentInformationObject">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#preservedBy"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PreservationDescriptionInformationObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Content</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContextPreservation -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContextPreservation">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PreservationDescriptionInformationObject"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Context</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CONPDI</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DO</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DescriptiveInformationObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DescriptiveInformationObject">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationObject"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DESCIO</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasBits"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Digital Object</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DDO</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DisseminationInformationPackage -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DisseminationInformationPackage">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+        <rdfs:label>Dissemination Information Package</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIP</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#FixityPreservation -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#FixityPreservation">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PreservationDescriptionInformationObject"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fixity</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FIXPDI</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationObject">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasDataObject"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasOtherRepresentation"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#OtherRepresentation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasSemanticRepresentation"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#SemanticRepresentation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasStructureRepresentation"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#StructureRepresentation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Information Object</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IO</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#describedBy"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PackageDescription"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasContentInformation"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContentInformationObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasPreservationInformation"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PreservationDescriptionInformationObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#packagedBy"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PackagingInformationObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Information Package</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IP</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#MemberDescription -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#MemberDescription">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#AssociatedDescription"/>
+        <rdfs:label>Member Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#OtherRepresentation -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#OtherRepresentation">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#RepresentationInformationObject"/>
+        <rdfs:label>Other Representation</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORIO</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#OverviewDescription -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#OverviewDescription">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#AssociatedDescription"/>
+        <rdfs:label>Overview Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PackageDescription -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PackageDescription">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DescriptiveInformationObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#derivedFromPackage"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Package Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PackagingInformationObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PackagingInformationObject">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#identifiesPackage"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Packaging</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PACKIO</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PhysicalObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PhysicalObject">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#hasItem"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Physical Object</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDO</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PreservationDescriptionInformationObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PreservationDescriptionInformationObject">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationObject"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preservation</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PDI</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ProvenancePreservation -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ProvenancePreservation">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PreservationDescriptionInformationObject"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Provenance</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PROVPDI</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ReferencePreservation -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ReferencePreservation">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PreservationDescriptionInformationObject"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REFPDI</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#RepresentationInformationObject -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#RepresentationInformationObject">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationObject"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Representation</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RIO</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#SemanticRepresentation -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#SemanticRepresentation">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#RepresentationInformationObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#addsMeaningTo"/>
+                <owl:someValuesFrom rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#StructureRepresentation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Semantic Representation</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SEMRIO</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#StructureRepresentation -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#StructureRepresentation">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#RepresentationInformationObject"/>
+        <rdfs:label>Structure Representation</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STRIO</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#SubmissionInformationPackage -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#SubmissionInformationPackage">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#InformationPackage"/>
+        <rdfs:label>Submission Information Package</rdfs:label>
+        <core:acronym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SIP</core:acronym>
+    </owl:Class>
+    
+
+
+    <!-- https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#UnitDescription -->
+
+    <owl:Class rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#UnitDescription">
+        <rdfs:subClassOf rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PackageDescription"/>
+        <rdfs:label>Unit Description</rdfs:label>
+    </owl:Class>
+    
+<!-- Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi -->
+
+</rdf:RDF>

@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1AICDescription">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#CollectionDescription"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns1:derivedFromPackage rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1AIC"/>
+    <rdfs:label>Dataset1  AIC Description</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1AICOverview"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuDecodingSoftware">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#OtherRepresentation"/>
+    <rdfs:label>Dataset1 Granule Aiu Decoding Software</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuDecodingSoftwareLink"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1DeliverySuccessValue">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Delivery Success Value</rdfs:label>
+    <ns1:hasBits>{{$.store_data.publish_metadata.delivery_success}}</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAicProcessTemplate">
+    <rdfs:label>Dataset1 Granule Aic Process Template</rdfs:label>
+    <ns1:hasContext rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAicStorageTemplate"/>
+    <ns1:hasContext rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAic2ProcessTemplate"/>
+    <ns1:hasContext rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAaProcessTemplate"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns1:hasContentInformation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAicConfiguration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAicConfigurationData">
+    <rdfs:label>Dataset1 Granule Aic Configuration Data</rdfs:label>
+    <ns1:hasBits>{"compute_aic_membership_task_map": {"arn": "123456789", "input": {"retrieve_and_complete_member_template_arn": "123456789", "compute_member_variables_arn": "123456789", "aiu_iri": "{{$.workflow_payload.build_aiu.aiu_iri}}", "process_template": "{{$.process_template}}", "member_type": "granule"}}, "workflow_id": "AIC Workflow", "process_template": "{{$.process_template}}", "parent_process_template": "{{$.workflow_payload.process_template}}"}</ns1:hasBits>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProductDescription">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#UnitDescription"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns1:derivedFromPackage rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiu"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProductDescriptionLink"/>
+    <rdfs:label>Product Description</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuPackagingFormat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#StructureRepresentation"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuPackagingFormatLink"/>
+    <rdfs:label>Packaging Format</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1TimeOfResponseValue">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Time of Response Value</rdfs:label>
+    <ns1:hasBits>{{$.store_data.publish_metadata.time_of_response}}</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuStorageTemplate">
+    <rdfs:label>Dataset1 Granule Aiu Storage Template</rdfs:label>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContextPreservation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiu"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProducingSoftware">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ProvenancePreservation"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProducingSoftwareLink"/>
+    <rdfs:label>Dataset1 Granule Aiu Producing Software</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAicConfiguration">
+    <rdfs:label>Dataset1 Granule Aic Configuration</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAicConfigurationData"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContentInformationObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1MembershipDescription">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#MemberDescription"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Membership Description</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1OSIMID"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1MemberType"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1DateAssociated"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1MemberType">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Member Type</rdfs:label>
+    <ns1:hasBits>{{$.member_variables.member_type}}</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuPackagingPrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdfs:label>Dataset1 Granule Aiu Packaging Prefix</rdfs:label>
+    <ns1:hasBits>{{$.archive_data.archive_file.archived_key}}</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiu">
+    <ns1:describedBy rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProductDescription"/>
+    <ns1:hasAccessRights rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuUseLicense"/>
+    <ns1:hasAccessRights rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuDistributionLicense"/>
+    <ns1:hasFixity rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksum"/>
+    <ns1:hasReference rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuArchivePID"/>
+    <ns1:hasReference rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProviderPID"/>
+    <ns1:hasContext rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProvider"/>
+    <ns1:hasContentInformation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuFile"/>
+    <ns1:hasProvenance rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProducingSoftware"/>
+    <ns1:packagedBy rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuPackaging"/>
+    <rdfs:label>Dataset1 Granule Aiu</rdfs:label>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ArchivalInformationUnit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAaConfigurationData">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdfs:label>Dataset1 Granule Aa Configuration Data</rdfs:label>
+    <ns1:hasBits>{"transform_data_task_map": {"arn": "123456789", "input": {"retrieve_graph_values_arn": "123456789", "process_access_payload_arn": "123456789", "extract_metadata_arn": "123456789", "aic_member_variables": "{{$.workflow_payload.compute_aic_membership.member_variables}}", "aic_iri": "{{$.workflow_payload.compute_aic_membership.member_template.aic_iri}}", "aiu_iri": "{{$.workflow_payload.compute_aic_membership.aiu_iri}}"}}, "store_data_task_map": {"arn": "123456789", "input": {"publish_metadata_arn": "123456789", "transform_data": "RESERVED for use by software"}}, "workflow_id": "AA Workflow"}</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1AICMembers">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContentInformationObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1AICMember"/>
+    <rdfs:label>Dataset1  AIC Members</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1RequestValue">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Request Value</rdfs:label>
+    <ns1:hasBits>{{$.store_data.publish_metadata.request_value}}</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuPackaging">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#PackagingInformationObject"/>
+    <rdfs:label>Dataset1 Granule Aiu Packaging</rdfs:label>
+    <ns1:identifiesPackage rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiu"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuPackagingPrefix"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuPackagingBucket"/>
+    <ns1:hasStructureRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuPackagingFormat"/>
+    <ns1:hasSemanticRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuPackagingStrategy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1FileIdentifier">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ReferencePreservation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  File Identifier</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1FileIdentifierValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAic2ProcessTemplate">
+    <rdfs:label>Dataset1 Granule Aic2 Process Template</rdfs:label>
+    <ns1:hasContentInformation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAic2Configuration"/>
+    <ns1:hasContext rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAic2StorageTemplate"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1ResponseValue">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Response Value</rdfs:label>
+    <ns1:hasBits>{{$.store_data.publish_metadata.response_value}}</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProviderPIDDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#SemanticRepresentation"/>
+    <ns1:addsMeaningTo rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProviderPIDFormat"/>
+    <rdfs:label>Dataset1 Granule Aiu Provider PID Description</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProviderPIDDescriptionLink"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1AICMember">
+    <ns1:hasBits>{{$.aiu_iri}}</ns1:hasBits>
+    <rdfs:label>Dataset1  AIC Member</rdfs:label>
+    <ns1:describedBy rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1MembershipDescription"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuPackagingBucket">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1 Granule Aiu Packaging Bucket</rdfs:label>
+    <ns1:hasBits>{{$.archive_data.archive_file.archived_bucket}}</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProviderPIDFormatLink">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1 Granule Aiu Provider PID Format Link</rdfs:label>
+    <ns1:hasBits rdf:resource="https://en.wikipedia.org/wiki/Universally_unique_identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1AIC">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ArchivalInformationCollection"/>
+    <rdfs:label>Dataset1  AIC</rdfs:label>
+    <ns1:describedBy rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1AICOverview"/>
+    <ns1:describedBy rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1AICDescription"/>
+    <ns1:hasContentInformation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1AICMembers"/>
+    <ns1:hasReference rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1FileIdentifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1OSIMID">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  OSIM ID</rdfs:label>
+    <ns1:hasBits>null</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1RequestPayloadSpecLink">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Request Payload Spec Link</rdfs:label>
+    <ns1:hasBits>CHANGE_ME</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuVisualizationSoftware">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#OtherRepresentation"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuVisualizationSoftwareLink"/>
+    <rdfs:label>Dataset1 Granule Aiu Visualization Software</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuConfiguration">
+    <rdfs:label>Dataset1 Granule Aiu Configuration</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuConfigurationData"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContentInformationObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1AaDeliveryRecord">
+    <rdfs:label>Dataset1  Aa Delivery Record</rdfs:label>
+    <ns1:hasContentInformation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1Request"/>
+    <ns1:hasContentInformation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1Response"/>
+    <ns1:hasFixity rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1TimeOfRequest"/>
+    <ns1:hasFixity rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1TimeOfResponse"/>
+    <ns1:hasFixity rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1DeliverySuccess"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ArchivalInformationUnit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksum">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#FixityPreservation"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksumValue"/>
+    <rdfs:label>Dataset1 Granule Aiu Checksum</rdfs:label>
+    <ns1:hasSemanticRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksumDefinition"/>
+    <ns1:hasStructureRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksumFormat"/>
+    <ns1:hasOtherRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksumPurpose"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuFile">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContentInformationObject"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuFileLink"/>
+    <rdfs:label>Dataset1 Granule Aiu File</rdfs:label>
+    <ns1:hasStructureRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuFileFormat"/>
+    <ns1:hasOtherRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuDecodingSoftware"/>
+    <ns1:hasOtherRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuVisualizationSoftware"/>
+    <ns1:hasSemanticRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuFileSchema"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProvider">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContextPreservation"/>
+    <rdfs:label>Dataset1 Granule Aiu Provider</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProviderLink"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProviderPID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ReferencePreservation"/>
+    <rdfs:label>Dataset1 Granule Aiu Provider PID</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProviderPIDValue"/>
+    <ns1:hasSemanticRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProviderPIDDescription"/>
+    <ns1:hasStructureRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProviderPIDFormat"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuArchivePIDFormatLink">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdfs:label>Dataset1 Granule Aiu Archive PID Format Link</rdfs:label>
+    <ns1:hasBits rdf:resource="https://en.wikipedia.org/wiki/Universally_unique_identifier"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksumDefinitionLink">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdfs:label>Dataset1 Granule Aiu Checksum Definition Link</rdfs:label>
+    <ns1:hasBits rdf:resource="https://en.wikipedia.org/wiki/Checksum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProcessTemplate">
+    <rdfs:label>Dataset1 Granule Aiu Process Template</rdfs:label>
+    <ns1:hasContext rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuStorageTemplate"/>
+    <ns1:hasContext rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAicProcessTemplate"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns1:hasContentInformation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuConfiguration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1DeliverySuccess">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#FixityPreservation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Delivery Success</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1DeliverySuccessValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1ResponseProtocolSpec">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#StructureRepresentation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1ResponseProtocolSpecLink"/>
+    <rdfs:label>Dataset1  Response Protocol Spec</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1ResponsePayloadSpecLink">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Response Payload Spec Link</rdfs:label>
+    <ns1:hasBits>CHANGE_ME</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuPackagingStrategyText">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdfs:label>Dataset1 Granule Aiu Packaging Strategy Text</rdfs:label>
+    <ns1:hasBits>The granule is packaged as file(s) on object storage and stored in the Packaging Bucket with filenames under the key specified as Packaging Prefix.</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuConfigurationData">
+    <rdfs:label>Dataset1 Granule Aiu Configuration Data</rdfs:label>
+    <ns1:hasBits>{"archive_data_task_map": {"arn": "123456789", "input": {"archive_file_arn": "123456789", "create_uuid_arn": "123456789", "source_key": "{{$.processed_file.key}}", "source_bucket": "{{$.processed_file.bucket}}", "uuid": "{{$.processed_file.tags.uuid}}", "filename": "{{$.processed_file.filename}}", "destination_key": "NEXRAD3/", "destination_bucket": "ncap-archive-dev-nccf-archive", "provider_id": "{{$.provider_id}}", "algorithm": "MD5", "retention": 20, "poc": {"individual_email": "unit-testing@noaa.gov", "org_email": "ncei.info@noaa.gov"}}}}</ns1:hasBits>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuVisualizationSoftwareLink">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdfs:label>Dataset1 Granule Aiu Visualization Software Link</rdfs:label>
+    <ns1:hasBits rdf:resource="https://www.ncei.noaa.gov/products/radar/radar-display-conversion-tools"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1Request">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContentInformationObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Request</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1RequestValue"/>
+    <ns1:hasStructureRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1RequestProtocolSpec"/>
+    <ns1:hasSemanticRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1RequestPayloadSpec"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1TimeOfResponse">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#FixityPreservation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Time of Response</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1TimeOfResponseValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1Response">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContentInformationObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Response</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1ResponseValue"/>
+    <ns1:hasStructureRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1ResponseProtocolSpec"/>
+    <ns1:hasSemanticRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1ResponsePayloadSpec"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuFileFormatLink">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1 Granule Aiu File Format Link</rdfs:label>
+    <ns1:hasBits rdf:resource="https://en.wikipedia.org/wiki/Tar_(computing)"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1RequestProtocolSpecLink">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Request Protocol Spec Link</rdfs:label>
+    <ns1:hasBits>CHANGE_ME</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuFileFormat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#StructureRepresentation"/>
+    <rdfs:label>Dataset1 Granule Aiu File Format</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuFileFormatLink"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAaStorageTemplate">
+    <rdfs:label>Dataset1 Granule Aa Storage Template</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1AaDeliveryRecord"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContextPreservation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAic2StorageTemplate">
+    <rdfs:label>Dataset1 Granule Aic2 Storage Template</rdfs:label>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContextPreservation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuUseLicense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#AccessRightsPreservation"/>
+    <rdfs:label>Dataset1 Granule Aiu Use License</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuUseLicenseLink"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1AICOverviewLink">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  AIC Overview Link</rdfs:label>
+    <ns1:hasBits rdf:resource="https://www.ncei.noaa.gov/products/radar/next-generation-weather-radar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1RequestProtocolSpec">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#StructureRepresentation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Request Protocol Spec</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1RequestProtocolSpecLink"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProviderPIDDescriptionLink">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1 Granule Aiu Provider PID Description Link</rdfs:label>
+    <ns1:hasBits>UUID created in Ingest workflow that links to a specific step-function to enable tracing for provenance of a granule sent to the vAIP process.</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuFileLink">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdfs:label>Dataset1 Granule Aiu File Link</rdfs:label>
+    <ns1:hasBits>{{$.archive_data.archive_file.s3_uri}}</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1TimeOfRequestValue">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Time of Request Value</rdfs:label>
+    <ns1:hasBits>{{$.store_data.publish_metadata.time_of_request}}</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAic2ConfigurationData">
+    <ns1:hasBits>{}</ns1:hasBits>
+    <rdfs:label>Dataset1 Granule Aic2 Configuration Data</rdfs:label>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuArchivePIDDescriptionLink">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1 Granule Aiu Archive PID Description Link</rdfs:label>
+    <ns1:hasBits>UUID created during vAIP process.</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuFileSchemaLink">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdfs:label>Dataset1 Granule Aiu File Schema Link</rdfs:label>
+    <ns1:hasBits rdf:resource="https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620001Y.pdf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuPackagingStrategy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#SemanticRepresentation"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuPackagingStrategyText"/>
+    <rdfs:label>Dataset1 Granule Aiu Packaging Strategy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProviderLink">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdfs:label>Dataset1 Granule Aiu Provider Link</rdfs:label>
+    <ns1:hasBits>Radar Operations Center (ROC) at the National Weather Service (NWS).</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAicStorageTemplate">
+    <rdfs:label>Dataset1 Granule Aic Storage Template</rdfs:label>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContextPreservation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1AIC"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1AICOverview">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#OverviewDescription"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  AIC Overview</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1AICOverviewLink"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksumPurpose">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#OtherRepresentation"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksumPurposeLink"/>
+    <rdfs:label>Dataset1 Granule Aiu Checksum Purpose</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProviderPIDValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdfs:label>Dataset1 Granule Aiu Provider PID Value</rdfs:label>
+    <ns1:hasBits>{{$.aiu_workflow_config.archive_data_task_map.input.provider_id}}</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuArchivePIDFormat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#StructureRepresentation"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuArchivePIDFormatLink"/>
+    <rdfs:label>Dataset1 Granule Aiu Archive PID Format</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuDistributionLicenseLink">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdfs:label>Dataset1 Granule Aiu Distribution License Link</rdfs:label>
+    <ns1:hasBits>Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certify that the data it distributes are an authentic copy of the records that were accepted for inclusion in the NCEI archives.</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuDecodingSoftwareLink">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1 Granule Aiu Decoding Software Link</rdfs:label>
+    <ns1:hasBits rdf:resource="https://www.ncei.noaa.gov/products/radar/decoding-utilities-examples"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksumValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdfs:label>Dataset1 Granule Aiu Checksum Value</rdfs:label>
+    <ns1:hasBits>{{$.archive_data.archive_file.checksum}}</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAaConfiguration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContentInformationObject"/>
+    <rdfs:label>Dataset1 Granule Aa Configuration</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAaConfigurationData"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuArchivePIDValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdfs:label>Dataset1 Granule Aiu Archive PID Value</rdfs:label>
+    <ns1:hasBits>{{$.archive_data.uuid}}</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1FileIdentifierValue">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  File Identifier Value</rdfs:label>
+    <ns1:hasBits>gov.noaa.ncdc:C00708</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProductDescriptionLink">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdfs:label>Dataset1 Granule Aiu Product Description Link</rdfs:label>
+    <ns1:hasBits rdf:resource="https://www.roc.noaa.gov/WSR88D/Level_III/Level3Info.aspx"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuDistributionLicense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#AccessRightsPreservation"/>
+    <rdfs:label>Dataset1 Granule Aiu Distribution License</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuDistributionLicenseLink"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuUseLicenseLink">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1 Granule Aiu Use License Link</rdfs:label>
+    <ns1:hasBits>Use liability: NOAA and NCEI cannot provide any warranty as to the accuracy, reliability, or completeness of furnished data. Users assume responsibility to determine the usability of these data. The user is responsible for the results of any application of this data for other than its intended purpose.</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1ResponsePayloadSpec">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#SemanticRepresentation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns1:addsMeaningTo rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1ResponseProtocolSpec"/>
+    <rdfs:label>Dataset1  Response Payload Spec</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1ResponsePayloadSpecLink"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAaProcessTemplate">
+    <rdfs:label>Dataset1 Granule Aa Process Template</rdfs:label>
+    <ns1:hasContext rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAaStorageTemplate"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns1:hasContentInformation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAaConfiguration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuArchivePID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ReferencePreservation"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuArchivePIDValue"/>
+    <ns1:hasSemanticRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuArchivePIDDescription"/>
+    <rdfs:label>Dataset1 Granule Aiu Archive PID</rdfs:label>
+    <ns1:hasStructureRepresentation rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuArchivePIDFormat"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksumDefinition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#SemanticRepresentation"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksumDefinitionLink"/>
+    <ns1:addsMeaningTo rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksumFormat"/>
+    <rdfs:label>Dataset1 Granule Aiu Checksum Definition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProducingSoftwareLink">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdfs:label>Dataset1 Granule Aiu Producing Software Link</rdfs:label>
+    <ns1:hasBits rdf:resource="https://www.roc.noaa.gov/WSR88D/Engineering/SoftwareENG.aspx"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProviderPIDFormat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#StructureRepresentation"/>
+    <rdfs:label>Dataset1 Granule Aiu Provider PID Format</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuProviderPIDFormatLink"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuArchivePIDDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#SemanticRepresentation"/>
+    <ns1:addsMeaningTo rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuArchivePIDFormat"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuArchivePIDDescriptionLink"/>
+    <rdfs:label>Dataset1 Granule Aiu Archive PID Description</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksumPurposeLink">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdfs:label>Dataset1 Granule Aiu Checksum Purpose Link</rdfs:label>
+    <ns1:hasBits>This checksum is created at the archive data step and is served with the data to verify the integrity of the file downloaded by a consumer.</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksumFormat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#StructureRepresentation"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksumFormatLink"/>
+    <rdfs:label>Dataset1 Granule Aiu Checksum Format</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuPackagingFormatLink">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdfs:label>Dataset1 Granule Aiu Packaging Format Link</rdfs:label>
+    <ns1:hasBits rdf:resource="https://aws.amazon.com/s3/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuFileSchema">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#SemanticRepresentation"/>
+    <ns1:addsMeaningTo rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuFileFormat"/>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuFileSchemaLink"/>
+    <rdfs:label>Dataset1 Granule Aiu File Schema</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1RequestPayloadSpec">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#SemanticRepresentation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns1:addsMeaningTo rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1RequestProtocolSpec"/>
+    <rdfs:label>Dataset1  Request Payload Spec</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1RequestPayloadSpecLink"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAiuChecksumFormatLink">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <ns1:hasBits rdf:resource="https://en.wikipedia.org/wiki/MD5"/>
+    <rdfs:label>Checksum Format Link</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAic2Configuration">
+    <rdfs:label>Dataset1 Granule Aic2 Configuration</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1GranuleAic2ConfigurationData"/>
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#ContentInformationObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1DateAssociated">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DigitalObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Date Associated</rdfs:label>
+    <ns1:hasBits>{{$.member_variables.date_associated}}</ns1:hasBits>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1TimeOfRequest">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#FixityPreservation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Time of Request</rdfs:label>
+    <ns1:hasDataObject rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1TimeOfRequestValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2/entities/Dataset1ResponseProtocolSpecLink">
+    <rdf:type rdf:resource="https://ncei.noaa.gov/ontologies/vaip/core/0.3.2#DataObject"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dataset1  Response Protocol Spec Link</rdfs:label>
+    <ns1:hasBits>CHANGE_ME</ns1:hasBits>
+  </rdf:Description>
+</rdf:RDF>
