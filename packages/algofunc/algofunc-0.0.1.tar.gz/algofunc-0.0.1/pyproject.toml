@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "AlgoFunc"
+version = "0.0.1"
+authors = [
+  { name="alecnazworth", email="alecnazworthalt@gmail.com" },
+]
+description = "A library of algorithm functions for Python"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Documentation" = "https://github.com/alecnazworth/AlgoLib"

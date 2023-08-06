@@ -1,0 +1,27 @@
+This library consists of different sorting and searching algorithms to make it 
+easier to use these algorithms in your code without having to type them out yourself.
+
+Library includes the following functions:
+- [binary_search( array, target )](#binary-search)
+- [linear_search( array, target )](#linear-search)
+- [fibonacci_search( array, target )](#fibonacci-search)
+- [jump_search( array, target )](#jump-search)
+- [linear_search( array, target )](#linear-search)
+- [ternary_search( array, target )](#ternary-search)
+- [bitonic_sort( array )](#bitonic-sort)
+- [bucket_sort( array )](#bucket-sort)
+- [bubble_sort( array )](#bubble-sort)
+- [cocktail_sort( array )](#cocktail-sort)
+- [comb_sort( array )](#comb-sort)
+- [counting_sort( array )](#counting-sort)
+- [cycle_sort( array )](#cycle-sort)
+- [gnome_sort( array )](#gnome-sort)
+- [heap_sort( array )](#heap-sort)
+- [merge_sort( array )](#merge-sort)
+- [odd_even_sort( array )](#odd-even-sort)
+- [pancake_sort( array )](#pancake-sort)
+- [quick_sort( array )](#quick-sort)
+- [radix_sort( array )](#radix-sort)
+- [selection_sort( array )](#selection-sort)
+- [shell_sort( array )](#shell-sort)
+- [timsort( array )](#tim-sort)

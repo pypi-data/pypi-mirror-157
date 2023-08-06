@@ -1,0 +1,18 @@
+[
+  "tests/test_search.py::test_binary_search",
+  "tests/test_search.py::test_fibonacci_search",
+  "tests/test_search.py::test_jump_search",
+  "tests/test_search.py::test_linear_search",
+  "tests/test_sorts.py::test_bitonic_sort",
+  "tests/test_sorts.py::test_bubble_sort",
+  "tests/test_sorts.py::test_bucket_sort",
+  "tests/test_sorts.py::test_cocktail_sort",
+  "tests/test_sorts.py::test_comb_sort",
+  "tests/test_sorts.py::test_heap_sort",
+  "tests/test_sorts.py::test_insertion_sort",
+  "tests/test_sorts.py::test_merge_sort",
+  "tests/test_sorts.py::test_quick_sort",
+  "tests/test_sorts.py::test_selection_sort",
+  "tests/test_sorts.py::test_shell_sort",
+  "tests/test_sorts.py::test_timsort"
+]
