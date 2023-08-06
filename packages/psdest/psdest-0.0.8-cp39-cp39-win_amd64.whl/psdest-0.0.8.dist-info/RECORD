@@ -1,0 +1,10 @@
+psdest/__init__.py,sha256=_EKDjnfM3myw3iAInl2Ds34KxRqEiLi1AJbd6HKUrDM,635
+psdest/cpsder.cp39-win_amd64.pyd,sha256=lt3LNKZXgejwG4YRNHFt8ff2J-vgiW4aqWJnLP7Ciyw,192512
+psdest/libfftw3-3.dll,sha256=ABqDXS8lrAZhWA1n21YiFXwoSBwGp_PvRa2TmDm_VKE,2712765
+psdest/libfftw3f-3.dll,sha256=QsoY__Nd0SiQ4ER4vJkABbOWnLdE9oQ5dr1DbM1_Ckw,2772692
+psdest/pypsder.py,sha256=28feWpbqs2xNh3ejo9ztnsiR56cpOrBJCf_PoFyfHLM,4280
+psdest-0.0.8.dist-info/LICENCE,sha256=qc3KIRRPwWdK3MiNZxg2_mf8EDrcThvtVqxWOwEJgtM,1089
+psdest-0.0.8.dist-info/METADATA,sha256=y08Sh_SXZujI9CGyejTwDyQUqQjwfG-yndb3uiAxidM,767
+psdest-0.0.8.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+psdest-0.0.8.dist-info/top_level.txt,sha256=cooPz6BArmCUdAC6sy6wgMCVBCyHv3GNiQjn2nPqB1E,7
+psdest-0.0.8.dist-info/RECORD,,
