@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: evoclearn-opt
+Version: 0.19.1
+Summary: Tools for Early Vocal Learning optimisation experiments.
+Home-page: https://gitlab.com/evoc-learn-group/evoc-learn-opt
+Author: The EVocLearn Group
+Author-email: daniel.r.vanniekerk@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: click (<8.2.0nlopt==2.7.0,>=8.1.3)
+Requires-Dist: evoclearn-rec (<0.6.0,>=0.5.1)
+Requires-Dist: hyperopt (==0.2.5)
+Provides-Extra: dev
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: matplotlib ; extra == 'dev'
+
+Tools for Early Vocal Learning optimisation experiments...
+
+

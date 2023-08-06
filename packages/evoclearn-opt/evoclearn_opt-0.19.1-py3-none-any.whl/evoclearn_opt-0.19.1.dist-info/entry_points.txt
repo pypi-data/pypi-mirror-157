@@ -1,0 +1,3 @@
+[console_scripts]
+evl_opt = evoclearn.opt.cli:main
+
