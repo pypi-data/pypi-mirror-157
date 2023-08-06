@@ -1,0 +1,31 @@
+[build-system]
+build-backend = "flit_core.buildapi"
+requires=[
+    "six",
+    "flit",
+    "flit_core >=3.2,<4",
+    "catt",
+    "cattqt",
+    "pyqt5",
+    "chardet >=3.0.4",
+    "pychromecast >=12.1.4",
+]
+
+[project]
+name = "cattqt"
+requires-python = ">=3.0"
+readme = "README.rst"
+authors = [
+    {name = "Scott Moreau", email = "oreaus@gmail.com"},
+]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+version = "4.0"
+dynamic = ["description"]
+
+[project.urls]
+Source = "https://github.com/soreau/catt-qt"
+
+[project.scripts]
+catt-qt = "cattqt:main"
