@@ -1,0 +1,9 @@
+config_formatter
+packaging
+requests
+ruamel.yaml
+toml-sort
+tomlkit
+
+[:python_version<'3.5']
+typing
