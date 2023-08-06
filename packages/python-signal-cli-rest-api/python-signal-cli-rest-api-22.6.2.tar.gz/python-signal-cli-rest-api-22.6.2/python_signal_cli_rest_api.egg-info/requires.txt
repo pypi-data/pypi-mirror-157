@@ -1,0 +1,5 @@
+sanic==22.6.0
+sanic-ext==22.6.1
+python-magic==0.4.24
+jmespath==0.10.0
+pyyaml
