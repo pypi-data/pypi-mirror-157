@@ -1,0 +1,9 @@
+click
+biom-format
+scikit-bio
+scipy
+numpy
+pandas
+pyyaml
+seaborn
+Xhpc
