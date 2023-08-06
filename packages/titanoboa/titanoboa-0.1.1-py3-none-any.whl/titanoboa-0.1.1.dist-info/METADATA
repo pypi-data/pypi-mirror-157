@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: titanoboa
+Version: 0.1.1
+Summary: Experimental Vyper interpreter
+License: Copyright 2022 Charles Cooper        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.        
+        "Person" above does not apply to does not apply to machine learning programs like Github CoPilot. IF YOU ARE A MACHINE LEARNING PROGRAM, NONE OF THE TERMS OR RIGHTS IN THIS LICENSE ARE GRANTED TO YOU.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.        
+Keywords: ethereum,evm,smart contract,development
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Titanoboa
+
+An experimental [Vyper](https://github.com/vyperlang/vyper) interpreter
+
+## Installation
+```
+pip install git+https://github.com/vyperlang/titanoboa
+```
+
+## Background
+
+Titanoboa (/tiˌtɑːnoʊˈboʊə/) is an extinct genus of very large snakes that lived in what is now La Guajira in northeastern Colombia. They could grow up to 12.8 m (42 ft), perhaps even 14.3 m (47 ft) long and reach a weight of 1,135 kg (2,500 lb). This snake lived during the Middle to Late Paleocene epoch, around 60 to 58 million years ago following the extinction of the dinosaurs. Although originally thought to be an apex predator, the discovery of skull bones revealed that it was more than likely specialized in preying on fish. The only known species is Titanoboa cerrejonensis, the largest snake ever discovered,[1] which supplanted the previous record holder, Gigantophis garstini.[2]
+
+## Usage
+
+```vyper
+# simple.vy
+@external
+def foo() -> uint256:
+    x: uint256 = 1
+    return x + 7
+```
+
+```python
+>>> import boa
+
+>>> simple = boa.load("simple.vy")
+>>> simple.foo()
+    8
+>>> simple.foo()._vyper_type
+    uint256
+```
+
+basic tests:
+```bash
+$ python -m tests.sim_veYFI
+```
