@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: babylogger
+Version: 0.1.7
+Summary: Minimilastic logger
+Home-page: UNKNOWN
+Author: VISHAL KUMAR
+Author-email: vishalku@iiitd.ac.in
+License: UNKNOWN
+Keywords: python,logger,mini,checkpoint-track
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Free For Educational Use
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+
+UNKNOWN
+
+
