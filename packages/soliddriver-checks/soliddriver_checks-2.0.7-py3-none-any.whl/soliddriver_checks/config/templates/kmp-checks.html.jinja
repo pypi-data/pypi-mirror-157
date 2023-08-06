@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kernel Module Packages Check Report</title>
+    <style>body {
+            font-family: 'Poppins';
+            font-size: 18px;
+            background-color: #EFEFEF;
+         }
+         table, th, td{
+            font-family: 'Poppins';
+            font-size: 12px;
+            border: 1px solid #30BA78;
+            border-collapse: collapse;
+            width: 90%;
+            table-layout: fixed;
+         }
+         .table_center{
+            margin-left: auto;
+            margin-right: auto;
+         }
+         th{
+            font-family: 'Poppins Medium';
+            background-color: #30BA78;
+         }
+         th.summary_vendor{
+            width:240px;
+         }
+        th.detail_rpm{
+          width:auto;
+        }
+        th.detail_kernel_module{
+          width:auto;
+          background-color:#90EBCD;
+        }
+        th.detail_0{
+             width:120px;
+         }
+         th.detail_1{
+             width:320px;
+         }
+         th.detail_2{
+          width:80px;
+         }
+         th.detail_3{
+          width:160px;
+         }
+         th.detail_4{
+          width:80px;
+         }
+         th.detail_5{
+          width:40px;
+         }
+         th.detail_6{
+           width:240px;
+          background-color:#90EBCD;
+         }th.detail_7{
+           width:240px;
+          background-color:#90EBCD;
+         }
+         td{
+            text-align:left;
+            vertical-align: top;
+         }
+         td.detail_pass{
+            text-align: center;
+            vertical-align: middle; 
+         }
+         td.summary_number{
+            text-align: center;
+            vertical-align: middle;
+         }
+         td.summary_total{
+            text-align: right;
+            vertical-align: middle;
+         }
+         .supported_border{
+            border:none;
+         }
+         .summary_table {
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+         }
+         td.summary{
+            text-align: center;
+            vertical-align: middle;
+         }
+         tr.critical_failed_row{
+            border: 2px solid #C5161F;
+         }
+         tr.important_failed_row{
+            border: 2px solid #FF9E02;
+         }
+         td.critical_failed{
+            color: white;
+            background-color: #C5161F;
+         }
+         td.important_failed{
+            background-color: #FF9E02;
+         }
+         tr.summary_great_row{
+            background-color: #90EBCD;
+         }
+         td.warning_row_border{
+            border: 2px solid #FE7C3F
+         }
+
+         .tooltip {
+            position: relative;
+          }
+  
+         .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 180px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+          }
+          
+          .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+          }
+  
+          .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+          }
+    </style>
+  </head>
+  <body>
+   <div><div style="background-color:#30BA78">
+      <h3 style="text-align: center; font-size:x-large;">Kernel Module Packages Check Report</h3>
+    </div>
+    <p style="font-size:small;"><strong>soliddriver-checks</strong> is a tool for parnter and customer to check their <strong>KMPs(Kernel Module Packages)</strong> or <strong>installed/running kernel modules</strong> whether can meet basic SUSE requirements. More information can be found <a href="https://github.com/SUSE/soliddriver-checks" style="background-color: #30BA78;">here</a></p>
+    <p style="font-size:small;text-align:center">{{version}}  {{timestamp}}</p>
+    <div>
+      <p style="text-align: center; font-size:large;background-color: #30BA78;">Summary of the result from vendor perspective: </p>
+    </div>
+    {{summary_table}}
+    <div>
+        <p style="text-align: center; font-size:large;background-color: #30BA78;">Check result in details: </p>
+      </div>
+      {{rpm_details}}
+    </body>
+    </html>
+
