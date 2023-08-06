@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+andor_sif/__init__.py
+andor_sif/__main__.py
+andor_sif/_version.py
+andor_sif/cli.py
+andor_sif/parser.py
+andor_sif.egg-info/PKG-INFO
+andor_sif.egg-info/SOURCES.txt
+andor_sif.egg-info/dependency_links.txt
+andor_sif.egg-info/entry_points.txt
+andor_sif.egg-info/requires.txt
+andor_sif.egg-info/top_level.txt
