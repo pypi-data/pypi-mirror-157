@@ -1,0 +1,16 @@
+N: 7
+P: Pa
+T: K
+autodisplay: false
+background_color: transparent
+composition: false
+depth_colors:
+- '#f3c3546f'
+flow: kmol/hr
+label_color: '#e5e5e5'
+label_streams: true
+minimal_nodes: false
+number_path: false
+profile: false
+raise_exception: true
+stream_color: '#98a2ad'
