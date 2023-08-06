@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Browser Pedals</title>
+
+  <script defer>
+  </script>
+
+  <style>
+
+html:not([lang~=en]) :lang(en), 
+html:not([lang~=ru]) :lang(ru) { 
+    display: none; 
+}
+
+body:not(.browserpedals) .browserpedals, 
+body:not(.browserpedals_options) .browserpedals_options, 
+body:not(.browserpedals_options_file) .browserpedals_options_file, 
+body:not(.browserpedals_web_driver) .browserpedals_web_driver, 
+body:not(.browserpedals_pedals_detection) .browserpedals_pedals_detection, 
+body:not(.browserpedals_program_launching) .browserpedals_program_launching, 
+body:not(.browserpedals_css_editing) .browserpedals_css_editing { 
+    display: none; 
+}
+
+#language {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.languageButton {
+    font-size: large;
+    font-weight: bold;
+    color: blue;
+}
+
+.linkButton {
+    font-size: large;
+    font-weight: bold;
+    color: blue;
+}
+
+.err_msg {
+    font-size: large;
+    font-weight: bold;
+
+    color: red;
+}
+
+.howto {
+    padding: 35px;
+}
+
+  </style>
+
+</head>
+
+<body class="browserpedals">
+
+<div id="language">
+<button class="languageButton" onclick="document.documentElement.lang='en'">English</button>
+<button class="languageButton" onclick="document.documentElement.lang='ru'">Русский</button>
+</div>
+
+<span class="browserpedals">
+
+<span lang="en">
+
+<div class="howto">
+<h2>Usage:</h2>
+<h3>Control any video in a web browser with foot pedals - pause/play or jump back - even when the web browser is not in focus.</h3>
+<h4>How to start controlling a video/audio with pedals:</h4>
+<p>
+Navigate to any Web site containing a video/audio (or to a local video/audio file: Firefox - "Alt" key, Chrome and Edge - "Ctrl+O" key).
+</p>
+<p>
+To start controlling a video/audio with pedals, click "Play" button on the video with the mouse at least once.
+</p>
+<p>
+To stop controlling the video/audio with pedals, click "Pause" button on the video with the mouse (not with pedals).
+<br>
+After that, you can start controlling any other video on the site by clicking it's "Play" button.
+</p>
+<p>
+You may have to wait for about a minute before the program starts controlling the video, or click "Play" button on the video with the mouse several times.
+</p>
+<h4>How to control the video/audio with pedals:</h4>
+<p>
+To pause/play the video, press right pedal (or other pedal of your choice).
+</p>
+<p>
+To jump back in the video, press left pedal (or other pedal of your choice).
+</p>
+<br>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals_options'">Options</button>
+</p>
+</div>
+
+</span>
+
+<span lang="ru">
+
+<div class="howto">
+<h2>Как пользоваться:</h2>
+<h3>Управлять просмотром любого видео в веб-браузере с использованием ножных педалей - приостановить/продолжить или вернуться назад - даже когда веб-браузер находится не в фокусе.</h3>
+<h4>Как начать управлять видео/аудио при помощи педалей:</h4>
+<p>
+Перейдите на любой веб-сайт, содержащий видео/аудио (или видео/аудио файл на компьютере: Firefox - клавиша "Alt", Chrome или Edge - клавиша "Ctrl+O").
+</p>
+<p>
+Чтобы начать управлять видео/аудио при помощи педалей, кликните мышью кнопку "Воспроизведение" на видео хотя бы один раз.
+</p>
+<p>
+Чтобы прекратить управлять данным видео/аудио при помощи педалей, кликните мышью кнопку "Пауза" на видео (не педалями).
+<br>
+После этого вы сможете начать управлять любым другим видео на сайте, кликнув мышью на его кнопке "Воспроизведение".
+</p>
+<p>
+Иногда нужно подождать примерно минуту, пока программа начнет управлять выбранным видео, или кликнуть мышью кнопку "Воспроизведение" на видео несколько раз.
+</p>
+<h4>Как управлять видео/аудио при помощи педалей:</h4>
+<p>
+Чтобы приостановить/продолжить просмотр видео, нажмите правую педаль (или другую назначенную вами педаль).
+</p>
+<p>
+Чтобы отмотать видео назад, нажмите левую педаль (или другую назначенную вами педаль).
+</p>
+<br>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals_options'">Опции</button>
+</p>
+</div>
+
+</span>
+
+</span>
+
+<span class="browserpedals_options">
+
+<span lang="en">
+
+<div class="howto">
+<h2>Editable options:</h2>
+<p>
+Application's editable data directory:
+</p>
+<p>
+<code>application_data_directory</code>
+</p>
+<p style="text-align:left;">
+<button class="linkButton" onclick="document.body.className='browserpedals_options_file'">Change the program's options</button>
+</p>
+<p style="text-align:left;">
+<button class="linkButton" onclick="document.body.className='browserpedals_web_driver'">Install the Web Driver</button>
+</p>
+<p style="text-align:left;">
+<button class="linkButton" onclick="document.body.className='browserpedals_pedals_detection'">Automatic pedals detection</button>
+</p>
+<p style="text-align:left;">
+<button class="linkButton" onclick="document.body.className='browserpedals_program_launching'">Running the program</button>
+</p>
+<p style="text-align:left;">
+<button class="linkButton" onclick="document.body.className='browserpedals_css_editing'">Changing the appearance of the user interface</button>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals'">Home</button>
+</p>
+</div>
+
+</span>
+
+<span lang="ru">
+
+<div class="howto">
+<h2>Редактируемые опции:</h2>
+<p>
+Директория редактируемых данных программы:
+</p>
+<p>
+<code>application_data_directory</code>
+</p>
+<p style="text-align:left;">
+<button class="linkButton" onclick="document.body.className='browserpedals_options_file'">Изменение опций программы</button>
+</p>
+<p style="text-align:left;">
+<button class="linkButton" onclick="document.body.className='browserpedals_web_driver'">Установка веб-драйвера</button>
+</p>
+<p style="text-align:left;">
+<button class="linkButton" onclick="document.body.className='browserpedals_pedals_detection'">Автоматическое распознавание педалей</button>
+</p>
+<p style="text-align:left;">
+<button class="linkButton" onclick="document.body.className='browserpedals_program_launching'">Запуск программы</button>
+</p>
+<p style="text-align:left;">
+<button class="linkButton" onclick="document.body.className='browserpedals_css_editing'">Изменение внешнего вида пользовательского интерфейса</button>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals'">Главная</button>
+</p>
+</div>
+
+</span>
+
+</span>
+
+<span class="browserpedals_options_file">
+
+<span lang="en">
+
+<div class="howto">
+<h3>Change the program's options:</h3>
+<p>
+The following text file contains several options which users can edit to change the way the program behaves:
+</p>
+<p>
+<code>options_text_file</code>
+</p>
+<p>
+Available options:
+</p>
+<p>
+<em>browser</em>: By default, the program opens Firefox browser. To use another browser, change the <em>value</em> of the <em>browser</em> option in the options file correspondingly. So far, the program was tested with Firefox, Chrome, and Edge browsers.
+</p>
+<p>
+<em>user_interface</em>: By default, the program uses web browser as graphical user interface during pedals recognition. To use command line for pedals recognition, change the <em>value</em> of the <em>user_interface</em> option in the options file from "browser" to "command_line".
+</p>
+<p>
+<em>jump_back_sec</em>: By default, pressing the "jump back" pedal rewinds the video 5 seconds back. To use another time jump, change the <em>value</em> of the <em>jump_back_sec</em> option in the options file correspondingly. It may be any number, possibly with a fractional part.
+</p>
+<h3>Browser data:</h3>
+<p>
+When this program opens a web browser, it uses a browser user's profile which is different from default profile used when the browser is opened standard way. All browser data (including user preferences, browser cache, history, bookmarks, installed extensions, etc.) used by web browsers when they are opened by this program are stored in the following location. If a profile here is deleted, a clean profile will be created instead:
+</p>
+<p>
+<code>browser_profiles_directory</code>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals_options'">Options</button>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals'">Home</button>
+</p>
+</div>
+
+</span>
+
+<span lang="ru">
+
+<div class="howto">
+<h3>Изменение опций программы:</h3>
+<p>
+Следующий текстовый файл содержит ряд опций, которые пользователь может менять, чтобы корректировать поведение программы:
+</p>
+<p>
+<code>options_text_file</code>
+</p>
+<p>
+Имеющиеся опции:
+</p>
+<p>
+<em>browser</em>: По умолчанию программа открывает браузер Firefox. Чтобы использовать другой браузер, в файле опций соответствующим образом поменяйте значение <em>value</em> опции <em>browser</em>. На данный момент программа тестировалась с браузерами Firefox, Chrome, и Edge.
+</p>
+<p>
+<em>user_interface</em>: По умолчанию программа использует веб-браузер в качестве графического пользовательского интерфейса при распознавании педалей. Чтобы использовать командную строку для распознавания педалей, в файле опций поменяйте значение <em>value</em> опции <em>user_interface</em> с "browser" на "command_line".
+</p>
+<p>
+<em>jump_back_sec</em>: По умолчанию при нажатии педали "возврат назад" видео отматывается назад на 5 секунд. Чтобы использовать другой временной скачок, в файле опций соответствующим образом поменяйте значение <em>value</em> опции <em>jump_back_sec</em>. Это может быть любое число, возможно с дробной частью.
+</p>
+<h3>Данные браузера:</h3>
+<p>
+Когда данная программа открывает веб-браузер, используется пользовательский профиль отличный от профиля, используемого по умолчанию при открытии браузера обычным образом. Все данные браузера (включая пользовательские настройки, кэш браузера, историю, закладки, установленные расширения, и т.п.), используемые веб-браузерами, когда они открываются данной программой, хранятся в следующей директории. Если профиль здесь удалить, вместо него будет создан чистый профиль:
+</p>
+<p>
+<code>browser_profiles_directory</code>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals_options'">Опции</button>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals'">Главная</button>
+</p>
+</div>
+
+</span>
+
+</span>
+
+<span class="browserpedals_web_driver">
+
+<span lang="en">
+
+<div class="howto">
+<p>
+<span class="err_msg"></span>
+</p>
+<h3>Install the Web Driver (optional):</h3>
+<p>
+The program comes with a pre-installed Web Driver for Firefox browser, so if you want to use Firefox it will work out of the box. However, if you want to use another browser like Chrome or Edge, you have to install corresponding Web Driver manually as described below. Also, in case of Chrome or Edge you will have to periodically upgrade the Web Driver to match the current version of automatically upgraded Chrome or Edge browser.
+</p>
+<p>
+Install the Web Driver for the browser you want to use. The download links are on the site:
+</p>
+<p>
+<a href="https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/#quick-reference" target="_blank">Download a Web Driver</a>
+</p>
+<p>
+<strong>Important:</strong>For all browsers except Firefox, the version of Web Driver file should match the current version of your browser.
+</p>
+<p>
+Open the downloaded archive and extract the Web Driver executable. For Firefox browser the Web Driver file name is usually "geckodriver". For Chrome browser the Web Driver file name is usually "chromedriver". For Edge browser the Web Driver file name is usually "msedgedriver.exe".
+</p>
+<p>
+Place the Web Driver file into the corresponding sub-directory of the program's data directory:
+</p>
+<p>
+<code>web_driver_directory</code>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals_options'">Options</button>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals'">Home</button>
+</p>
+</div>
+
+</span>
+
+<span lang="ru">
+
+<div class="howto">
+<p>
+<span class="err_msg"></span>
+</p>
+<h3>Установка веб-драйвера (опционно):</h3>
+<p>
+Программа поставляется с предустановленным веб-драйвером для браузера Firefox, поэтому если вы хотите использовать Firefox, он будет работать без каких-либо дополнительных действий. Однако, если вы хотите использовать другой браузер, например Chrome или Edge, вы должны установить соответствующий веб-драйвер вручную, как описано ниже. К тому же, в случае использования Chrome или Edge вы должны будете периодически обновлять веб-драйвер, чтобы его версия совпадала с текущей версией автоматически обновляемого браузера Chrome или Edge.
+</p>
+<p>
+Установите веб-драйвер для браузера, который вы хотите использовать. Ссылки для загрузки приведены на сайте:
+</p>
+<p>
+<a href="https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/#quick-reference" target="_blank">Скачать веб-драйвер</a>
+</p>
+<p>
+<strong>Важно:</strong>Для всех браузеров, кроме Firefox, версия файла веб-драйвера должна совпадать с текущей версией вашего браузера.
+</p>
+<p>
+Откройте скачанный архив и извлеките файл веб-драйвера. Веб-драйвер для браузера Firefox обычно имеет имя "geckodriver". Веб-драйвер для браузера Chrome обычно имеет имя "chromedriver". Веб-драйвер для браузера Edge обычно имеет имя "msedgedriver.exe".
+</p>
+<p>
+Поместите файл веб-драйвера в соответствующую поддиректорию в директории данных программы:
+</p>
+<p>
+<code>web_driver_directory</code>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals_options'">Опции</button>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals'">Главная</button>
+</p>
+</div>
+
+</span>
+
+</span>
+
+<span class="browserpedals_pedals_detection">
+
+<span lang="en">
+
+<div class="howto">
+<h3>Automatic pedals detection:</h3>
+<p>
+Currently, the program supports just one specific type of pedals out of the box - the "Thrustmaster wheel" foot pedals (Thrustmaster 360 SPIDER PC).
+</p>
+<p>
+If other pedals are used, the program will attempt to recognize them automatically. Just plug the pedals into the PC, run the program, and follow the instructions on the screen. If the pedals are recognized successfully, the information is saved to the file "auto_detected_pedals.txt", and next time the program is run the new pedals will be recognized automatically:
+</p>
+<p>
+<code>auto_detected_pedals_file</code>
+</p>
+<p>
+Users who use pedals which where successfully recognized by the program, can send the above file to the program's developer so new versions of the program could support these pedals out of the box:
+</p>
+<p style="text-align:center;">
+<a href="mailto:shmygov@rambler.ru">Email</a>
+</p>
+<p style="text-align:center;">
+<a href="https://github.com/shmygov/browserpedals" target="_blank">Site</a>
+</p>
+<p>
+Currently supported pedal roles are "Pause/Play pedal" and "Jump Back pedal". User can assign any role to any pedal, can use both pedals or just one. This is done automatically by running the program and following the instructions on the screen.
+</p>
+<p>
+(Technically, the auto_detected_pedals.txt file can also be edited manually.)
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals_options'">Options</button>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals'">Home</button>
+</p>
+</div>
+
+</span>
+
+<span lang="ru">
+
+<div class="howto">
+<h3>Автоматическое распознавание педалей:</h3>
+<p>
+В настоящее время программа поддерживает только один конкретный вид педалей, с которыми она работает без дополнительной настройки - это ножные педали "Thrustmaster wheel" (Thrustmaster 360 SPIDER PC).
+</p>
+<p>
+Если используются другие педали, программа попытается распознать их автоматически. Просто подключите педали к компьютеру, запустите программу и следуйте инструкциям на экране. Если педали будут удачно распознаны, информация будет сохранена в файле "auto_detected_pedals.txt", и при следующем запуске программы новые педали будут распознаны автоматически:
+</p>
+<p>
+<code>auto_detected_pedals_file</code>
+</p>
+<p>
+Пользователи, использующие педали, успешно распознанные программой, могут отправить вышеуказанный файл разработчику, чтобы последующие версии программы работали с данными педалями без дополнительной настройки:
+</p>
+<p style="text-align:center;">
+<a href="mailto:shmygov@rambler.ru">Email</a>
+</p>
+<p style="text-align:center;">
+<a href="https://github.com/shmygov/browserpedals" target="_blank">Сайт</a>
+</p>
+<p>
+В настоящее время поддерживаются следующие роли педалей: "Педаль Пауза/Воспроизведение" и "Педаль Возврата назад". Любой педали можно назначить любую из этих ролей. Можно использовать обе педали, или только одну. Все это делается автоматически путем запуска программы и следования инструкциям на экране.
+</p>
+<p>
+(Технически, файл auto_detected_pedals.txt можно также редактировать вручную.)
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals_options'">Опции</button>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals'">Главная</button>
+</p>
+</div>
+
+</span>
+
+</span>
+
+<span class="browserpedals_program_launching">
+
+<span lang="en">
+
+<div class="howto">
+<h3>Running the program:</h3>
+<p>
+If the program was installed using PIP:
+</p>
+<p>
+<code>python3 -m pip install --no-cache-dir browserpedals</code>
+</p>
+<p>
+then a shortcut ("BrowserPedals" icon) was automatically created on the Desktop and in the Applications menu. In this case the program can be launched using this shortcut, or by right-clicking the video file which we want to open and selecting "BrowserPedals" program from the drop-down menu.
+Technically, the program "browserpedals.py" or its submodules "usepedals.py" and "detectpedals.py" can also be run as Python scripts from command line:
+</p>
+<p>
+<code>python3 browserpedals.py</code>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals_options'">Options</button>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals'">Home</button>
+</p>
+</div>
+
+</span>
+
+<span lang="ru">
+
+<div class="howto">
+<h3>Запуск программы:</h3>
+<p>
+Если программа устанавливалась с использованием PIP:
+</p>
+<p>
+<code>python3 -m pip install --no-cache-dir browserpedals</code>
+</p>
+<p>
+тогда на рабочем столе и в меню приложений для нее был автоматически создан ярлык "BrowserPedals". В этом случае программу можно запустить, используя этот ярлык, или щелкнув правой кнопкой мыши на том видео-файле, который мы хотим открыть, и в выпадающем меню выбрав программу "BrowserPedals". Технически, программу "browserpedals.py" и ее подмодули "usepedals.py" и "detectpedals.py" можно также запустить из командной строки как Python-скрипты:
+</p>
+<p>
+<code>python3 browserpedals.py</code>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals_options'">Опции</button>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals'">Главная</button>
+</p>
+</div>
+
+</span>
+
+</span>
+
+<span class="browserpedals_css_editing">
+
+<span lang="en">
+
+<div class="howto">
+<h3>Changing the appearance of the user interface:</h3>
+<p>
+The program uses web browser as graphical user interface. The way the interface elements look can be changed by editing the following CSS file:
+</p>
+<p>
+<code>ui_appearance_css_file</code>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals_options'">Options</button>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals'">Home</button>
+</p>
+</div>
+
+</span>
+
+<span lang="ru">
+
+<div class="howto">
+<h3>Изменение внешнего вида пользовательского интерфейса:</h3>
+<p>
+В качестве графического пользовательского интерфейса программа использует веб-браузер. То, как выглядят элементы этого интерфейса, можно менять, редактируя следующий CSS-файл:
+</p>
+<p>
+<code>ui_appearance_css_file</code>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals_options'">Опции</button>
+</p>
+<p style="text-align:center;">
+<button class="linkButton" onclick="document.body.className='browserpedals'">Главная</button>
+</p>
+</div>
+
+</span>
+
+</span>
+
+</body>
+</html>
+

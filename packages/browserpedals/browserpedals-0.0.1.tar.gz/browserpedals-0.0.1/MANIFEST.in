@@ -1,0 +1,11 @@
+include src/browserpedals/browserpedals_options/browserpedals_options.txt
+include src/browserpedals/pedals/detect/auto_detected_pedals/auto_detected_pedals.txt
+include src/browserpedals/pedals/detect/ui/i18n/language_names/language_names.txt
+recursive-include src/browserpedals/pedals/detect/ui/i18n/locale *.mo
+recursive-include src/browserpedals/pedals/detect/ui/dialog/js *
+recursive-include src/browserpedals/scripts/js *
+include src/browserpedals/pedals/detect/ui/start/*
+recursive-include src/browserpedals/web_driver */geckodriver*
+include src/browserpedals/launcher/bin/*
+include README.ru.md
+

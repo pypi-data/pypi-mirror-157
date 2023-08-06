@@ -1,0 +1,16 @@
+{
+'options': {
+  'jump_back_sec': {
+    'possible_values': 'number of seconds to jump back - may be any number, possibly with a fractional part',
+    'value': 5,
+    },
+  'browser': {
+    'possible_values': ["Firefox", "Chrome", "Edge", "Ie", "Safari", "Opera"],
+    'value': "Firefox",
+    },
+  'user_interface': {
+    'possible_values': ["browser", "command_line"],
+    'value': "browser",
+    },
+  },
+}
