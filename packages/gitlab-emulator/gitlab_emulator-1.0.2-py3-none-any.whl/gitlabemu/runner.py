@@ -1,0 +1,487 @@
+import re
+import subprocess
+import sys
+import os
+import argparse
+
+from gitlab import GitlabGetError
+
+from . import configloader
+from .docker import has_docker
+from .gitlab.types import RESERVED_TOP_KEYS
+from .gitlab_client_api import PipelineError, PipelineInvalid, get_gitlab_project_client, parse_gitlab_from_arg
+from .generator import generate_pipeline_yaml, create_pipeline_branch, wait_for_project_commit_pipeline, \
+    generate_artifact_fetch_job
+from .localfiles import restore_path_ownership
+from .helpers import is_apple, is_linux, is_windows, git_worktree, git_current_branch, clean_leftovers, die, note
+from .userconfig import USER_CFG_ENV, get_user_config_context
+from .userconfigdata import UserContext
+from .yamlloader import ordered_dump
+
+CONFIG_DEFAULT = ".gitlab-ci.yml"
+
+parser = argparse.ArgumentParser(prog="{} -m gitlabemu".format(os.path.basename(sys.executable)))
+list_mutex = parser.add_mutually_exclusive_group()
+list_mutex.add_argument("--list", "-l", dest="LIST", default=False,
+                        action="store_true",
+                        help="List runnable jobs")
+parser.add_argument("--version", default=False, action="store_true")
+parser.add_argument("--hidden", default=False, action="store_true",
+                    help="Show hidden jobs in --list(those that start with '.')")
+list_mutex.add_argument("--full", "-r", dest="FULL", default=False,
+                        action="store_true",
+                        help="Run any jobs that are dependencies")
+parser.add_argument("--config", "-c", dest="CONFIG", default=CONFIG_DEFAULT,
+                    type=str,
+                    help="Use an alternative gitlab yaml file")
+parser.add_argument("--settings", "-s", dest="USER_SETTINGS", type=str, default=None,
+                    help="Load gitlab emulator settings from a file")
+parser.add_argument("--chdir", "-C", dest="chdir", default=None, type=str, metavar="DIR",
+                    help="Change to this directory before running")
+parser.add_argument("--enter", "-i", dest="enter_shell", default=False, action="store_true",
+                    help="Run an interactive shell but do not run the build"
+                    )
+parser.add_argument("--before-script", "-b", dest="before_script_enter_shell", default=False, action="store_true",
+                    help="Run the 'before_script' commands before entering the shell"
+                    )
+parser.add_argument("--user", "-u", dest="shell_is_user", default=False, action="store_true",
+                    help="Run the interactive shell as the current user instead of root")
+
+parser.add_argument("--shell-on-error", "-e", dest="error_shell", type=str,
+                    help="If a docker job fails, execute this process (can be a shell)")
+
+parser.add_argument("--ignore-docker", dest="no_docker", action="store_true", default=False,
+                    help="If set, run jobs using the local system as a shell job instead of docker"
+                    )
+
+parser.add_argument("--var", dest="var", type=str, default=[], action="append",
+                    help="Set a pipeline variable, eg DEBUG or DEBUG=1")
+
+parser.add_argument("--revar", dest="revars", metavar="REGEX", type=str, default=[], action="append",
+                    help="Set pipeline variables that match the given regex")
+
+parser.add_argument("--parallel", type=str,
+                    help="Run JOB as one part of a parallel axis (eg 2/4 runs job 2 in a 4 parallel matrix)")
+
+parser.add_argument("--pipeline", default=False, action="store_true",
+                    help="Run JOB on or list pipelines from a gitlab server")
+
+parser.add_argument("--from", type=str, dest="FROM",
+                    metavar="SERVER/PROJECT/PIPELINE",
+                    help="Fetch needed artifacts for the current job from "
+                         "the given pipeline, eg server/grp/project/41881, "
+                         "=master, 23156")
+
+list_mutex.add_argument("--download", default=False, action="store_true",
+                        help="Instead of building JOB, download the artifacts of JOB from gitlab (requires --from)")
+
+list_mutex.add_argument("--export", type=str, dest="export", metavar="EXPORT",
+                        help="Download JOB logs and artifacts to EXPORT/JOBNAME (requires --from)")
+
+parser.add_argument("--completed", default=False, action="store_true",
+                    help="List (implies --list) all currently completed jobs in the --from pipeline")
+
+parser.add_argument("--insecure", "-k", dest="insecure", default=False, action="store_true",
+                    help="Ignore TLS certificate errors when fetching from remote servers")
+
+list_mutex.add_argument("--clean", dest="clean", default=False, action="store_true",
+                        help="Clean up any leftover docker containers or networks")
+
+
+if is_windows():  # pragma: linux no cover
+    shellgrp = parser.add_mutually_exclusive_group()
+    shellgrp.add_argument("--powershell",
+                          dest="windows_shell",
+                          action="store_const",
+                          const="powershell",
+                          help="Force use of powershell for windows jobs (default)")
+    shellgrp.add_argument("--cmd", default=None,
+                          dest="windows_shell",
+                          action="store_const",
+                          const="cmd",
+                          help="Force use of cmd for windows jobs")
+
+parser.add_argument("JOB", type=str, default=None,
+                    nargs="?",
+                    help="Run this named job")
+
+parser.add_argument("EXTRA_JOBS", type=str,
+                    nargs="*",
+                    help=argparse.SUPPRESS)
+
+
+def apply_user_config(loader: configloader.Loader, is_docker: bool):
+    """
+    Add the user config values to the loader
+    :param loader:
+    :param is_docker:
+    :return:
+    """
+    ctx: UserContext = get_user_config_context()
+
+    for name in ctx.variables:
+        loader.config["variables"][name] = ctx.variables[name]
+
+    if is_docker:
+        jobvars = ctx.docker.variables
+    else:
+        jobvars = ctx.local.variables
+
+    for name in jobvars:
+        loader.config["variables"][name] = jobvars[name]
+
+
+def execute_job(config, jobname, seen=None, recurse=False):
+    """
+    Run a job, optionally run required dependencies
+    :param config: the config dictionary
+    :param jobname: the job to start
+    :param seen: completed jobs are added to this set
+    :param recurse: if True, execute in dependency order
+    :return:
+    """
+    if seen is None:
+        seen = set()
+    if jobname not in seen:
+        jobobj = configloader.load_job(config, jobname)
+        if recurse:
+            for need in jobobj.dependencies:
+                execute_job(config, need, seen=seen, recurse=True)
+        jobobj.run()
+        seen.add(jobname)
+
+
+def do_pipeline(options: argparse.Namespace, loader):
+    """Run/List gitlab pipelines in the current project"""
+    cwd = os.getcwd()
+    client, project, remotename = get_gitlab_project_client(cwd, not options.insecure)
+
+    if not client or not project:
+        die("Could not find a gitlab server configuration, please add one with 'gle-config gitlab'")
+
+    if not remotename:
+        die("Could not find a gitlab configuration that matches any of our git remotes")
+
+    if options.LIST:
+        note(f"Recent pipelines from project '{project.name}' on {client.api_url}")
+        pipes = project.pipelines.list(sort="desc", order_by="updated_at", page=1, per_page=16)
+        print(f"{'# ID':<12} {'Status':<8} {'Git Ref':<42} Commit")
+        for pipe in pipes:
+            print(f"{pipe.id:>12} {pipe.status:<8} {pipe.ref:<42} {pipe.sha}")
+    else:
+        pipeline = None
+        goals = [options.JOB]
+        download_jobs = {}
+        deps = {}
+        if options.EXTRA_JOBS:
+            goals.extend(options.EXTRA_JOBS)
+        note(f"Generate subset pipeline to build '{goals}'..")
+        recurse = True
+        if options.FROM:
+            recurse = False
+            ident = parse_gitlab_from_arg(options.FROM, prefer_gitref=True)
+            if ident.pipeline:
+                note(f"Checking source pipeline {ident.pipeline} ..")
+                try:
+                    pipeline = project.pipelines.get(ident.pipeline)
+                except GitlabGetError as err:
+                    die(f"Failed to read pipeline {ident.pipeline}, {err.error_message}")
+            elif ident.gitref:
+                note(f"Searching for latest pipeline on {ident.gitref} ..")
+                # find the newest pipeline for this git reference
+                found = project.pipelines.list(
+                    sort="desc",
+                    ref=ident.gitref,
+                    order_by="updated_at",
+                    page=1, per_page=5,
+                    status='success')
+                if not found:
+                    die(f"Could not find a completed pipeline for git reference {ident.gitref}")
+                pipeline = found[0]
+            else:
+                die(f"Cannot work out pipeline --from {options.FROM}")
+
+            # now make sure the pipeline contains the jobs we need
+            pipeline_jobs = {}
+
+            for item in pipeline.jobs.list(all=True):
+                if item.status == "success":
+                    pipeline_jobs[item.name] = item
+
+            for goal in goals:
+                loaded = loader.load_job(goal)
+                for dep in loaded.dependencies:
+                    if dep not in pipeline_jobs:
+                        die(f"Pipeline did not contain a successful '{dep}' job needed by {goal}")
+                    else:
+                        from_job = pipeline_jobs[dep]
+                        if hasattr(from_job, "artifacts"):  # missing if it created no artifacts
+                            archives = [x for x in from_job.artifacts if x["file_type"] == "archive"]
+                            if archives:
+                                artifact_url = f"{client.api_url}/projects/{project.id}/jobs/{from_job.id}/artifacts"
+                                download_jobs[dep] = artifact_url
+                                if goal not in deps:
+                                    deps[goal] = []
+                                deps[goal].append(dep)
+
+        generated = generate_pipeline_yaml(loader, *goals, recurse=recurse)
+        jobs = [name for name in generated.keys() if name not in RESERVED_TOP_KEYS]
+        note(f"Will build jobs: {jobs} ..")
+        stages = generated.get("stages", ["test"])
+
+        for from_name in download_jobs:
+            fetch_job = generate_artifact_fetch_job(loader,
+                                                    stages[0],
+                                                    {from_name: download_jobs[from_name]},
+                                                    tls_verify=client.ssl_verify)
+            generated[from_name] = fetch_job
+
+        if deps:
+            for job in goals:
+                generated[job]["needs"] = deps.get(job, [])
+
+        branch_name = f"temp/{client.user.username}/{git_current_branch(cwd)}"
+        note(f"Creating temporary pipeline branch '{branch_name}'..")
+        commit = create_pipeline_branch(cwd,
+                                        remotename,
+                                        branch_name,
+                                        f"subset pipeline for {goals}",
+                                        {
+                                            ".gitlab-ci.yml": ordered_dump(generated)
+                                        })
+        if commit:
+            note(f"Custom build commit is {commit}")
+            note(f"Waiting for new pipeline to start..")
+            pipeline = wait_for_project_commit_pipeline(project, commit)
+            if not pipeline:
+                die("Could not find the pipeline for our change")
+            else:
+                note(f"Building: {pipeline.web_url}")
+
+        else:
+            die("Could not make a custom pipeline branch, "
+                "please make sure your local changes are committed first")
+
+
+def do_gitlab_from(options: argparse.Namespace, loader):
+    """Perform actions using a gitlab server artifacts"""
+    from .gitlab_client_api import get_pipeline
+    from .gitlab_client_api import do_gitlab_fetch
+
+    if options.download and not options.FROM:
+        die("--download requires --from PIPELINE")
+    if options.FROM:
+        try:
+            if options.LIST:
+                gitlab, project, pipeline = get_pipeline(options.FROM, secure=not options.insecure)
+                # print the jobs in the pipeline
+                if not pipeline:
+                    raise PipelineInvalid(options.FROM)
+                jobs = list(pipeline.jobs.list(all=True))
+                if options.completed:
+                    jobs = [x for x in jobs if x.status == "success"]
+                    note(f"Listing completed jobs in {options.FROM}")
+                else:
+                    note(f"Listing jobs in {options.FROM}")
+                names = sorted([x.name for x in jobs])
+                for name in names:
+                    print(name)
+                return
+            download_jobs = []
+            if options.download:
+                # download a job's artifacts
+                note(f"Download '{options.JOB}' artifacts")
+                download_jobs = [options.JOB]
+            elif options.export:
+                note(f"Export full '{options.FROM}' pipeline")
+            elif options.JOB:
+                # download jobs needed by a job
+                note(f"Download artifacts required by '{options.JOB}'")
+                jobobj = configloader.load_job(loader.config, options.JOB)
+                download_jobs = jobobj.dependencies
+
+            # download what we need
+            outdir = os.getcwd()
+            do_gitlab_fetch(options.FROM,
+                            download_jobs,
+                            tls_verify=not options.insecure,
+                            download_to=outdir,
+                            export_to=options.export)
+        except PipelineError as error:
+            die(str(error))
+
+
+def do_version():
+    """Print the current package version"""
+    try:  # pragma: no cover
+        ver = subprocess.check_output([sys.executable, "-m", "pip", "show", "gitlab-emulator"],
+                                      encoding="utf-8",
+                                      stderr=subprocess.STDOUT)
+        for line in ver.splitlines(keepends=False):
+            if "Version:" in line:
+                words = line.split(":", 1)
+                ver = words[1]
+                break
+    except subprocess.CalledProcessError:
+        ver = "unknown"
+    print(ver.strip())
+    sys.exit(0)
+
+
+def run(args=None):
+    options = parser.parse_args(args)
+    loader = configloader.Loader()
+    yamlfile = options.CONFIG
+    jobname = options.JOB
+
+    if options.version:
+        do_version()
+
+    if options.clean:
+        clean_leftovers()
+
+    if options.chdir:
+        if not os.path.exists(options.chdir):
+            die(f"Cannot change to {options.chdir}, no such directory")
+        os.chdir(options.chdir)
+
+    if not os.path.exists(yamlfile):
+        note(f"{configloader.DEFAULT_CI_FILE} not found.")
+        find = configloader.find_ci_config(os.getcwd())
+        if find:
+            topdir = os.path.abspath(os.path.dirname(find))
+            note(f"Found config: {find}")
+            die(f"Please re-run from {topdir}")
+        sys.exit(1)
+
+    if options.USER_SETTINGS:
+        os.environ[USER_CFG_ENV] = options.USER_SETTINGS
+
+    ctx = get_user_config_context()
+    fullpath = os.path.abspath(yamlfile)
+    rootdir = os.path.dirname(fullpath)
+    os.chdir(rootdir)
+
+    hide_dot_jobs = not options.hidden
+    try:
+        if options.pipeline:
+            loader = configloader.Loader(emulator_variables=False)
+            loader.load(fullpath)
+            do_pipeline(options, loader)
+            return
+
+        if options.FULL and options.parallel:
+            die("--full and --parallel cannot be used together")
+
+        if options.FROM:
+            loader = configloader.Loader(emulator_variables=False)
+            loader.load(fullpath)
+            do_gitlab_from(options, loader)
+            return
+
+        loader.load(fullpath)
+
+    except configloader.ConfigLoaderError as err:
+        die("Config error: " + str(err))
+
+    if is_windows():  # pragma: linux no cover
+        windows_shell = "powershell"
+        if ctx.windows.cmd:
+            windows_shell = "cmd"
+        if options.windows_shell:
+            # command line option given, use that
+            windows_shell = options.windows_shell
+        loader.config[".gitlabemu-windows-shell"] = windows_shell
+
+    if options.LIST:
+        for jobname in sorted(loader.get_jobs()):
+            if jobname.startswith(".") and hide_dot_jobs:
+                continue
+            print(jobname)
+    elif not jobname:
+        parser.print_usage()
+        sys.exit(1)
+    else:
+        jobs = sorted(loader.get_jobs())
+        if jobname not in jobs:
+            die(f"No such job {jobname}")
+
+        if options.parallel:
+            if loader.config[jobname].get("parallel", None) is None:
+                die(f"Job {jobname} is not a parallel enabled job")
+
+            pindex, ptotal = options.parallel.split("/", 1)
+            pindex = int(pindex)
+            ptotal = int(ptotal)
+            if pindex < 1:
+                die("CI_NODE_INDEX must be > 0")
+            if ptotal < 1:
+                die("CI_NODE_TOTAL must be > 1")
+            if pindex > ptotal:
+                die("CI_NODE_INDEX must be <= CI_NODE_TOTAL, (got {}/{})".format(pindex, ptotal))
+
+            loader.config[".gitlabemu-parallel-index"] = pindex
+            loader.config[".gitlabemu-parallel-total"] = ptotal
+
+        fix_ownership = has_docker()
+        if options.no_docker:
+            loader.config["hide_docker"] = True
+            fix_ownership = False
+
+        docker_job = loader.get_docker_image(jobname)
+        if docker_job:
+            gwt = git_worktree(rootdir)
+            if gwt:  # pragma: no cover
+                note(f"f{rootdir} is a git worktree, adding {gwt} as a docker volume.")
+                # add the real git repo as a docker volume
+                volumes = ctx.docker.runtime_volumes()
+                volumes.append(f"{gwt}:{gwt}:ro")
+                ctx.docker.volumes = volumes
+        else:
+            fix_ownership = False
+
+        apply_user_config(loader, is_docker=docker_job)
+
+        if not is_linux():
+            fix_ownership = False
+
+        for item in options.revars:
+            patt = re.compile(item)
+            for name in os.environ:
+                if patt.search(name):
+                    loader.config["variables"][name] = os.environ.get(name)
+
+        for item in options.var:
+            var = item.split("=", 1)
+            if len(var) == 2:
+                name, value = var[0], var[1]
+            else:
+                name = var[0]
+                value = os.environ.get(name, None)
+
+            if value is not None:
+                loader.config["variables"][name] = value
+
+        if options.enter_shell:
+            if options.FULL:
+                die("-i is not compatible with --full")
+        loader.config["enter_shell"] = options.enter_shell
+        loader.config["before_script_enter_shell"] = options.before_script_enter_shell
+        loader.config["shell_is_user"] = options.shell_is_user
+
+        if options.before_script_enter_shell and is_windows():  # pragma: no cover
+            die("--before-script is not yet supported on windows")
+
+        if options.error_shell:  # pragma: no cover
+            loader.config["error_shell"] = [options.error_shell]
+        try:
+            executed_jobs = set()
+            execute_job(loader.config, jobname, seen=executed_jobs, recurse=options.FULL)
+        finally:
+            if has_docker() and fix_ownership:
+                if is_linux() or is_apple():
+                    if os.getuid() > 0:
+                        note("Fixing up local file ownerships..")
+                        restore_path_ownership(os.getcwd())
+                        note("finished")
+        print("Build complete!")
