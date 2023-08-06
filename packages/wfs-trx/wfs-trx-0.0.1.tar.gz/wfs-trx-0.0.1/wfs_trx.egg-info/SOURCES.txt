@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+wfs_trx/__init__.py
+wfs_trx/py.typed
+wfs_trx/schema_builder.py
+wfs_trx/trx.py
+wfs_trx/version.py
+wfs_trx.egg-info/PKG-INFO
+wfs_trx.egg-info/SOURCES.txt
+wfs_trx.egg-info/dependency_links.txt
+wfs_trx.egg-info/requires.txt
+wfs_trx.egg-info/top_level.txt
