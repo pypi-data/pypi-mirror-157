@@ -1,0 +1,12 @@
+modelcards/__init__.py,sha256=58JtIlhWWaIaXfKGJyRYwtZHb9V2PcpsJT4NLAfslVs,277
+modelcards/card_data.py,sha256=Jrt-KwDHhX83DmlXuowuVRDIACmBzjpywfAqD8mD0H0,14240
+modelcards/cards.py,sha256=JsDc5bZNQtdwH_HTpRQkbcsBkfaJnyV-wm7hV90e5qg,11143
+modelcards/modelcard_template.md,sha256=7yqP-LDKYvwvNtyNwMkRQRRpuzkaDbufzCuTk3REMBo,1164
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/hub_fixtures.py,sha256=MLlqfX2r6F9vVSmtCWm6WNffPeviu-pa33X-SQnhXLo,80
+tests/test_card_data.py,sha256=bWwo-T_oN1w5I1V2YLvMexQo1n2QFGlxO0rleQy6k68,4059
+tests/test_cards.py,sha256=cuBM9In-duFTi4Cn5Ihgt1zdCzz8rRvY31e2U5gdXHQ,6053
+modelcards-0.1.5.dist-info/METADATA,sha256=iMVsTaHU3D24dPTOks0XkqxlnRl04EkRIjz0z6uaVJc,350
+modelcards-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+modelcards-0.1.5.dist-info/top_level.txt,sha256=18K8hVJbJw9-gV3r3ciz7maD4WWvjtmkwBwZ5KprxAs,17
+modelcards-0.1.5.dist-info/RECORD,,
