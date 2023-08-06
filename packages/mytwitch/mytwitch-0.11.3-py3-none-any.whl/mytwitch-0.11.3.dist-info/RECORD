@@ -1,0 +1,16 @@
+mytwitch/__init__.py,sha256=UcziGY3ZRNGAMjyffamTVOFbrTOU4W2nMrD_hnwrgAI,68
+mytwitch/__main__.py,sha256=XdHXSCmRN_KUc-vlxS-1axt7R0CDR3x_d_VbQGnj2QA,2470
+mytwitch/auth/__init__.py,sha256=TBMJAa-W4-D9J5eP6GdX30xTuiHKvrhcRJSzgBhk3tE,33
+mytwitch/auth/authapp.py,sha256=wACmQ74YJrQrRRIEkIosPCwYlW08Ha3KEtNKoq8o-lc,5635
+mytwitch/auth/user_token.py,sha256=gPlr4RhKft2qDujdAjuO1-ppgEgr6oRs1O34cKOym1E,4133
+mytwitch/exceptions.py,sha256=jXNc3toBln5z3woWrz7WyNkJ-uQCAP0_m_weAYrb40A,450
+mytwitch/irc/__init__.py,sha256=4Kkb_MdZOJOryyxgd5IbfWwMs4zHmTImmy6lH75zua4,26
+mytwitch/irc/irc.py,sha256=i5UJ5zKYDjPa7f-lD2ELXsKMJBDkd7ZVVKzkX8bXVHY,3022
+mytwitch/irc/message.py,sha256=CG4G9pTpkGNmUQxMb8FFfP6woF_ubPggw4wnYG0yhQ4,2552
+mytwitch/pubsub.py,sha256=LNixHKy_I-WBpd4vDLR8Bc1ywG6lZw-b6ocvfHBHldY,5848
+mytwitch/request.py,sha256=ETvpNpa9Vi1End07aZxTYgT3pLXXFdMcb6WnAley-CA,1354
+mytwitch/rewards.py,sha256=kETMJn3RHCESHZDgG3liLWHZW5b-HDPVviDEVchWVWU,6963
+mytwitch-0.11.3.dist-info/LICENSE,sha256=5inX74ICeQJbpwpz3fwbmyuQGr7dhZFGyhUIYJQKBBE,35088
+mytwitch-0.11.3.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+mytwitch-0.11.3.dist-info/METADATA,sha256=orevIjOSH4HLTvFN9sL3snjDazinj9p-BglNEw2L8Hg,5223
+mytwitch-0.11.3.dist-info/RECORD,,
