@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: faCRSA
+Version: 1.0.3
+Summary: faCRSA
+Home-page: https://github.com/njauzrn/facrsa
+Author: Ruinan Zhang
+Author-email: 2020801253@stu.njau.edu.cn
+License: GPL v3.0 License
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE.txt
+
+A fully automated pipeline for the high-throughput analysis of crop root system architecture
