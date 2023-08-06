@@ -1,0 +1,5 @@
+populse_mia==2.*
+populse_db>=2.0.0
+
+[doc]
+sphinx>=1.0
