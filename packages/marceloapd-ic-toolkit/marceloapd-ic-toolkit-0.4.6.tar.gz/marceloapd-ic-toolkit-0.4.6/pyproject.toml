@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "marceloapd-ic-toolkit"
+version = "0.4.6"
+description = ""
+authors = ["Marcelo Assis <94455042+marceloapda@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+ic = "marceloapd_ic_toolkit.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+boto3 = {version = "*"}
+botocore = {version = "*"}
+certifi = {version = "*"}
+click = {version = "*"}
+colorama = {version = "*"}
+distlib = {version = "*"}
+filelock = {version = "*"}
+jmespath = {version = "*"}
+numpy = {version = "*"}
+pandas = {version = "*"}
+pipenv = {version = "*"}
+platformdirs = {version = "*"}
+PyMySQL = {version = "*"}
+python-dateutil = {version = "*"}
+pytz = {version = "*"}
+s3transfer = {version = "*"}
+six = {version = "*"}
+urllib3 = {version = "*"}
+virtualenv = {version = "*"}
+virtualenv-clone = {version = "*"}
+typer = {extras = ["all"], version = "^0.4.1"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
