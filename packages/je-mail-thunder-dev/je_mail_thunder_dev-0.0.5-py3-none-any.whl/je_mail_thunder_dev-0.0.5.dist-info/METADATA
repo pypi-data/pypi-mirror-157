@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: je-mail-thunder-dev
+Version: 0.0.5
+Summary: mail wrapper
+Home-page: https://github.com/JE-Chen/PythonMailWrapper_JE
+Author: JE-Chen
+Author-email: zenmailman@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: MacOS X
+Classifier: Environment :: X11 Applications
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# mail thunder a stand python mail module wrapper
+
+## install 
+
+```
+pip install je_mail_thunder
+```
+
+## Requires
+
+```
+python 3.4 or later
+```
+
