@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: koda-validate
+Version: 0.11.dev1
+Summary: 
+Author: Keith Philpott
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: koda (==0.11.0)
