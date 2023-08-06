@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+requirements.txt
+setup.py
+src/dm_api/__init__.py
+src/dm_api/dm_api.py
+src/im_data_manager_api.egg-info/PKG-INFO
+src/im_data_manager_api.egg-info/SOURCES.txt
+src/im_data_manager_api.egg-info/dependency_links.txt
+src/im_data_manager_api.egg-info/not-zip-safe
+src/im_data_manager_api.egg-info/requires.txt
+src/im_data_manager_api.egg-info/top_level.txt
