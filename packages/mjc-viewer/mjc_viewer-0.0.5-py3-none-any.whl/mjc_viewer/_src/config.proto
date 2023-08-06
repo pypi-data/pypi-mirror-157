@@ -1,0 +1,133 @@
+syntax = "proto3";
+
+package mjc_viewer;
+
+message Vector3 {
+  float x = 1;
+  float y = 2;
+  float z = 3;
+}
+
+message Texture {
+  string type = 1;
+  Vector3 color1 = 2;
+  Vector3 color2 = 3;
+  float repeat = 4;
+  Vector3 size = 5;
+}
+
+message Material {
+  Vector3 color = 1;
+  float alpha = 2;
+  Texture texture = 3;
+  float emission = 4;
+  float specular = 5;
+  float shininess = 6;
+  float reflectance = 7;
+}
+
+message Body {
+  // Unique name for this body
+  string name = 1;
+  // Geometric primitives that define the shape of the body
+  repeated Collider colliders = 2;
+}
+
+// Primitive shape that composes the collision surface of a body
+message Collider {
+  message Box {
+    // Half the size of the box in each dimension
+    Vector3 halfsize = 1;
+  }
+  message Plane {
+    Vector3 size = 1;
+    // TODO(kevin): Do I need this field?
+    Vector3 position = 2;
+  }
+  message Sphere {
+    float radius = 1;
+  }
+  message Capsule {
+    // Radius of the sphere at each rounded end
+    float radius = 1;
+    // End-to-end length of the capsule
+    float length = 2;
+    // Capsule end (0: both ends, 1: top end, -1: bottom end)
+    int32 end = 3;
+  }
+  message Ellipsoid {
+    // The radius of the ellipsoid in each dimension.
+    Vector3 radius = 1;
+  }
+  message Cylinder {
+    // Radius of the cylinder
+    float radius = 1;
+    // Length of the cylinder
+    float length = 2;
+  }
+  message Mesh {
+    // Name of the mesh geometry defined in the config.
+    string name = 1;
+    // Scaling for the mesh.
+    float scale = 2;
+  }
+  // Position relative to parent body
+  Vector3 position = 1;
+  // Rotation relative to parent body
+  Vector3 rotation = 2;
+  // A collider may only be one type
+  oneof type {
+    Box box = 3;
+    Plane plane = 4;
+    Sphere sphere = 5;
+    Capsule capsule = 6;
+    Ellipsoid ellipsoid = 7;
+    Cylinder cylinder = 8;
+    Mesh mesh = 9;
+  }
+  // The material of the collider
+  Material material = 10;
+  // A hidden collider is not visualized
+  bool hidden = 11;
+}
+
+// Geometry of a mesh.
+message MeshGeometry {
+  // Name of the mesh geometry. This is used in mesh colliders to refer to the
+  // geometry.
+  string name = 1;
+  // Path of the mesh file. See https://trimsh.org/ for the supported formats.
+  // If the path is specified, then the {vertices, faces, vertex_normals}
+  // fields below will be ignored and populated from the mesh defined in the
+  // file.
+  string path = 2;
+  // Vertices of the mesh.
+  repeated Vector3 vertices = 3;
+  // Triangular faces. This will be a flattened array of triples that contain
+  // the indices of the vertices in the `vertices` field above. For example,
+  //
+  // vertices { x: -0.5 y: -0.5 z: 0 }
+  // vertices { x: +0.5 y: -0.5 z: 0 }
+  // vertices { x: +0.5 y: +0.5 z: 0 }
+  // vertices { x: -0.5 y: +0.5 z: 0 }
+  // vertices { x: 0 y: 0 z: 1.0 }
+  // faces: [0, 2, 1, 0, 3, 2, 0, 4, 3, 0, 1, 4, 1, 2, 4, 2, 3, 4]
+  //
+  // defines a pyramid with 6 faces (two for the bottom and four for the
+  // sides).
+  repeated int32 faces = 4;
+  // Unit normal vectors for each vertex.
+  repeated Vector3 vertex_normals = 5;
+  // Unit normal vectors for each face.
+  repeated Vector3 face_normals = 6;
+}
+
+// The configuration of a system.
+message Config {
+  // All of the bodies in the system
+  repeated Body bodies = 1;
+  // Amount of time to simulate each step, in seconds
+  float dt = 2;
+  // All of the mesh geometries in the system.
+  repeated MeshGeometry mesh_geometries = 3;
+}
