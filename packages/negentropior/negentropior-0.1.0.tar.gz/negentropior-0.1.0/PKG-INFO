@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: negentropior
+Version: 0.1.0
+Summary: ILabor algorithm group tools 算法组常用工具方法
+Home-page: UNKNOWN
+Author: Yi OuYang, ZhiWen Wang
+Author-email: yiouyang143@gmail.com
+License: UNKNOWN
+Description: 
+        ## ILabor's Algorithm Group
+        
+        - 具体每个方法的使用都写在注释中
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
