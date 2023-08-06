@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sigil
+Version: 0.1
+Summary: Outbound gateway for AWS API Calls
+Home-page: https://github.com/j00bar/sigil
+Author: "Joshua \"jag\" Ginsberg <jag@flowtheory.net>"
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Requires-Dist: boto3
+Requires-Dist: woodchipper (==0.6)
+
