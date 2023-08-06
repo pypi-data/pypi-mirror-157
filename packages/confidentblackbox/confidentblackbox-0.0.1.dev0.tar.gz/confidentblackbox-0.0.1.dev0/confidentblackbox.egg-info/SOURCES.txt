@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+confidentblackbox/__init__.py
+confidentblackbox.egg-info/PKG-INFO
+confidentblackbox.egg-info/SOURCES.txt
+confidentblackbox.egg-info/dependency_links.txt
+confidentblackbox.egg-info/top_level.txt
+test/test_dummy.py

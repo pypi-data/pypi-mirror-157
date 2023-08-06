@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: confidentblackbox
+Version: 0.0.1.dev0
+Summary: Conformal Prediction Toolbox
+Home-page: https://github.com/krzysztofarendt/confident-blackbox
+Author: Krzysztof Arendt
+Author-email: krzysztof.arendt@gmail.com
+License-File: LICENSE
