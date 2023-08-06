@@ -1,0 +1,15 @@
+neuroscout_cli/__init__.py,sha256=g0OeNAF6f8ojnlyb43abksBvbLUrnL-AlwclSoULgd0,22
+neuroscout_cli/cli.py,sha256=oDsQEKc--nua90byVI21UVG77WaDACz9xspKFN_Z1yM,4232
+neuroscout_cli/commands/__init__.py,sha256=E9rDCRs2Zj4hQWFJ9VuvlxYaY4jzaPatH9dD8I1qpGU,119
+neuroscout_cli/commands/base.py,sha256=WAudqj-M-TwybCKvNMrDKALmgvubJkXokbGVlRlL2IM,974
+neuroscout_cli/commands/get.py,sha256=cMbKU7AyTD6lM9ac3CZ9coES0vJmbCthXyedoU4yb6E,5984
+neuroscout_cli/commands/run.py,sha256=JGMjKgqcXwoWVzGCNh7itSwhN05pXi4_uKDt0WPTMsQ,2075
+neuroscout_cli/commands/upload.py,sha256=L1RBt2CBhFEiCDYQO3LClbrddedGiCgUUTyGa32TdkM,2484
+neuroscout_cli/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neuroscout_cli/tools/convert.py,sha256=cdcoTUc9tt1NE3u1Ao6vuyR378dcwYCgqbHW0liKoc4,2306
+neuroscout_cli-0.6.5.dist-info/LICENSE,sha256=HXY_5y-SjQau4K0UjxrWuJZsDCdDa1JQR_gQIX2Y6lU,1510
+neuroscout_cli-0.6.5.dist-info/METADATA,sha256=gl96f2TpsS9odoJ5Ll_vhnXiFn9iMBfZDJNY8h2H4gQ,426
+neuroscout_cli-0.6.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+neuroscout_cli-0.6.5.dist-info/entry_points.txt,sha256=EqkcE18chln_HZboPRbW0lRbZJXkfCJ75dDn79G-sYQ,56
+neuroscout_cli-0.6.5.dist-info/top_level.txt,sha256=vqwhXQQgMLP5YRplPXt8xFvH5b_bplN2yTGgXtDZrhw,15
+neuroscout_cli-0.6.5.dist-info/RECORD,,

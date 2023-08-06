@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: neuroscout-cli
+Version: 0.6.5
+Summary: Neuroscout command line interface and neuroimaging workflows.
+Home-page: https://github.com/PsychoinformaticsLab/neuroscout-cli
+Author: UT Psychoinformatics Lab
+Author-email: delavega@utexas.edu
+License: MIT
+Keywords: cli
+Platform: UNKNOWN
+Requires-Dist: datalad (>=0.13.1)
+Requires-Dist: pyns (>=0.4.8)
+Requires-Dist: click
+Requires-Dist: fitlins
+
+UNKNOWN
+
+
