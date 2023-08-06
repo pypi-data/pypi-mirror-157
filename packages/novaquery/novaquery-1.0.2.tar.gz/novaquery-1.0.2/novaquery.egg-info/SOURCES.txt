@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+novaquery/__init__.py
+novaquery/version.py
+novaquery.egg-info/PKG-INFO
+novaquery.egg-info/SOURCES.txt
+novaquery.egg-info/dependency_links.txt
+novaquery.egg-info/entry_points.txt
+novaquery.egg-info/requires.txt
+novaquery.egg-info/top_level.txt
