@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: fastboot
+Version: 0.0.2
+Author: João Santos
+Author-email: joaosantosdev@hotmail.com
+License-File: LICENSE.txt
+Requires-Dist: Flask (==2.1.2)
+
