@@ -1,0 +1,7 @@
+Products.CMFCore
+setuptools
+zope.schema
+
+[test]
+zest.releaser[recommended]
+zope.testrunner
