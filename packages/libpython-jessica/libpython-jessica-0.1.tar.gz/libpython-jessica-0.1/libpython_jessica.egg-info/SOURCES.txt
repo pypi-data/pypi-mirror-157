@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+libpython-jessica/__init__.py
+libpython-jessica/github_api.py
+libpython_jessica.egg-info/PKG-INFO
+libpython_jessica.egg-info/SOURCES.txt
+libpython_jessica.egg-info/dependency_links.txt
+libpython_jessica.egg-info/not-zip-safe
+libpython_jessica.egg-info/requires.txt
+libpython_jessica.egg-info/top_level.txt
