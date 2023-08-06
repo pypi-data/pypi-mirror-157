@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyametista
+Version: 0.1.8
+Summary: Módulo Python para geração de PDF utilizando arquivos .jrxml (JasperReports)
+License: MIT
+Author: Bruno Souza
+Author-email: bruno@komu.com.br
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: reportlab (>=3.6.8,<4.0.0)
