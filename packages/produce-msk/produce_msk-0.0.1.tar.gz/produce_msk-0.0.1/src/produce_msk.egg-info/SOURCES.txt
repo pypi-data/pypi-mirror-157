@@ -1,0 +1,7 @@
+pyproject.toml
+src/produce_msk/__init__.py
+src/produce_msk/producer_to_msk.py
+src/produce_msk.egg-info/PKG-INFO
+src/produce_msk.egg-info/SOURCES.txt
+src/produce_msk.egg-info/dependency_links.txt
+src/produce_msk.egg-info/top_level.txt

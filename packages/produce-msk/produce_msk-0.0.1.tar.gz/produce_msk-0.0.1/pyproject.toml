@@ -1,0 +1,10 @@
+[project]
+name = "produce_msk"
+version = "0.0.1"
+authors = [
+  { name="Diana Sanchez", email="diana.sanchez@lifemiles.com" },
+]
+description = "A small example package"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
