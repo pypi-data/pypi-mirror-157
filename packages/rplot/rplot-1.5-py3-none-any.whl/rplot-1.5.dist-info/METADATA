@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: rplot
+Version: 1.5
+Summary: A stream-based realtime scientific data plotter
+Home-page: https://github.com/h-ohsaki/rplot.git
+Author: Hiroyuki Ohsaki
+Author-email: ohsaki@lsnl.jp
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX
+Description-Content-Type: text/markdown
+Requires-Dist: perlcompat
+Requires-Dist: pygame
+Requires-Dist: tbdump
+
+# NAME
+
+rplot - Stream-based realtime scientific data plotter.
+
+# SYNOPSIS
+
+rplot [-vca] [-F #] [-x n[,n...]] [file...]
+
+# DESCRIPTION
+
+TBD
+
+# OPTIONS
+
+TBD
+
+# INSTALLATION
+
+```sh
+$ pip3 install rplot
+```
+
+# AVAILABILITY
+
+The latest version of **rplot** is available at PyPI
+(https://pypi.org/project/rplot/) .
+
+# AUTHOR
+
+Hiroyuki Ohsaki <ohsaki[atmark]lsnl.jp>
+
+
