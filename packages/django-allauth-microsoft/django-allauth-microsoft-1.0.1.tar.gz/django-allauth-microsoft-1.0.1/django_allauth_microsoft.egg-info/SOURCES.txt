@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+allauth_microsoft/__init__.py
+allauth_microsoft/provider.py
+allauth_microsoft/urls.py
+allauth_microsoft/views.py
+django_allauth_microsoft.egg-info/PKG-INFO
+django_allauth_microsoft.egg-info/SOURCES.txt
+django_allauth_microsoft.egg-info/dependency_links.txt
+django_allauth_microsoft.egg-info/requires.txt
+django_allauth_microsoft.egg-info/top_level.txt
