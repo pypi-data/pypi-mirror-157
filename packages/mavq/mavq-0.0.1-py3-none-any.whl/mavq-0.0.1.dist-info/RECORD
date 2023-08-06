@@ -1,0 +1,12 @@
+mavq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mavq/automationVariables.py,sha256=HmTKBxFG9u6kcCxfcFyELDR0FKFBh93LWSKNbjMxRBc,18809
+mavq/commonProvider.py,sha256=LGLI5hqS9aHW3pZccDnxhAmFIugx7BDke93XWHh6FzU,1500
+mavq/mavq.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mavq/mavqAutomation.py,sha256=JtM8ZmYgTLl0eVNAG8eMLqp_te5fiHw1Am1Vwz4g13c,4937
+mavq/mavqPlatformClient.py,sha256=FFt8bycI3Ulf9mwjgwuxxiaZrvAmNjKY5rgIIWfgrNA,14102
+mavq/mavqUserContext.py,sha256=0VmVZDK4LZ5pOjOBjsoykZwDH99eolqMb6t2r90QkVA,9100
+mavq-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mavq-0.0.1.dist-info/METADATA,sha256=eeojy7S5qjfVtg5MQn-zFYB-j0IhsXBrEEBufACtqhU,565
+mavq-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mavq-0.0.1.dist-info/top_level.txt,sha256=hQlueauuOo5SUulQIlL9J7MTbqsaouA-fRClEN-vu8E,5
+mavq-0.0.1.dist-info/RECORD,,
