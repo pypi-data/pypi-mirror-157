@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+src/pyfigure/__init__.py
+src/pyfigure/parsers.py
+src/pyfigure/types.py
+src/pyfigure.egg-info/PKG-INFO
+src/pyfigure.egg-info/SOURCES.txt
+src/pyfigure.egg-info/dependency_links.txt
+src/pyfigure.egg-info/requires.txt
+src/pyfigure.egg-info/top_level.txt
