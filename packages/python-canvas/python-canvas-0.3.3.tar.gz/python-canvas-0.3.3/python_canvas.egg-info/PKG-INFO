@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: python-canvas
+Version: 0.3.3
+Summary: Данная библиотека содержить SqlAlchemy ORM для системы Canvas
+Home-page: https://github.com/yessenovuniversity/python_canvas
+Author: Nauryzbek Aitbayev
+Author-email: nauryzbek.aitbayev@yu.edu.kz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# python-canvas
+Библиотека **python-canvas** является SqlAlchemy-маппингом для базы данных Canvas LMS.
+
+## Примеры
+```python
+from canvas_db.config import Config
+from canvas_db.orm import get_session
+
+
+config = Config(host='Адрес БД Canvas LMS', user='Пользователь БД Canvas LMS', passowrd='Пароль БД Canvas LMS')
+session = get_session(config)
+```
+
