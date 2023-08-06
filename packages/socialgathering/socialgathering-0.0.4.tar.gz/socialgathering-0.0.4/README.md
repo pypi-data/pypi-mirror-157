@@ -1,0 +1,211 @@
+## Make sure you have upgraded version of pip
+
+Windows
+```
+py -m pip install --upgrade pip
+```
+
+Linux/MAC OS
+```
+python3 -m pip install --upgrade pip
+```
+
+
+## Install
+
+To install the latest release from PyPI:
+```
+pip install socialgathering
+```
+
+
+## Usage
+
+### Twitter
+
+get_profile
+```
+from socialgathering import twitter
+
+twitter.get_twitter_profile("atifr46", "chrome")
+```
+
+Output
+```
+{
+   "full_name":"Atif Raza Chaudary ",
+   "banner":"https://pbs.twimg.com/profile_banners/709952726063562752/1571195872/1500x500",
+   "profile_image_link":"https://twitter.com/atifr46/photo",
+   "account_verified":false,
+   "birth_date":"",
+   "location":"Lahore, Pakistan",
+   "website":"",
+   "bio":"Data Scientist at CyberSoph",
+   "followers":"73",
+   "following":"98",
+   "joined_date":"Joined March 2016"
+}
+```
+
+### Facebook
+
+get_profile
+```
+import socialgathering import facebook
+facebook.get_profile(account="100002935878037", cookies="cookies.txt")
+```
+
+Output
+```
+{'top_post': {'post_id': '5211617148946096',
+  'text': '“In our world of Big Data, businesses are relying on data scientists to glean insight from their large, ever-expanding, diverse set of data … while many people think of data science as a profession, it’s better to think of data science as a way of thinking, a way to extract insights using the scientific method.”\n\n— Bob E. Hayes',
+  'post_text': '“In our world of Big Data, businesses are relying on data scientists to glean insight from their large, ever-expanding, diverse set of data … while many people think of data science as a profession, it’s better to think of data science as a way of thinking, a way to extract insights using the scientific method.”\n\n— Bob E. Hayes',
+  'shared_text': '',
+  'original_text': None,
+  'time': datetime.datetime(2022, 6, 30, 2, 25),
+  'timestamp': None,
+  'image': None,
+  'image_lowquality': 'https://scontent.xx.fbcdn.net/m1/v/t6/An_UvxJXg9tdnLU3Y5qjPi0200MLilhzPXUgxzGjQzUMaNcmjdZA6anyrngvkdub33NZzZhd51fpCAEzNHFhko5aKRFP5fS1w_lKwYrzcNLupv27.png?_nc_eui2=AeE1gVWKbDUPHb7XcQJ511YfMiCX3WNpzi0yIJfdY2nOLZxk88frtS4eQJXWvMQubc6CgBxpVdrcjlFp_SeVgc_t&ccb=10-5&oh=00_AT_G2s7lDVsgq8qufluN9hQCAvErPyekTR_5OzUXb7CM6A&oe=62C69579&_nc_sid=55e238',
+  'images': [],
+  'images_description': [],
+  'images_lowquality': ['https://scontent.xx.fbcdn.net/m1/v/t6/An_UvxJXg9tdnLU3Y5qjPi0200MLilhzPXUgxzGjQzUMaNcmjdZA6anyrngvkdub33NZzZhd51fpCAEzNHFhko5aKRFP5fS1w_lKwYrzcNLupv27.png?_nc_eui2=AeE1gVWKbDUPHb7XcQJ511YfMiCX3WNpzi0yIJfdY2nOLZxk88frtS4eQJXWvMQubc6CgBxpVdrcjlFp_SeVgc_t&ccb=10-5&oh=00_AT_G2s7lDVsgq8qufluN9hQCAvErPyekTR_5OzUXb7CM6A&oe=62C69579&_nc_sid=55e238'],
+  'images_lowquality_description': ['Like'],
+  'video': None,
+  'video_duration_seconds': None,
+  'video_height': None,
+  'video_id': None,
+  'video_quality': None,
+  'video_size_MB': None,
+  'video_thumbnail': None,
+  'video_watches': None,
+  'video_width': None,
+  'likes': 4,
+  'comments': 0,
+  'shares': 0,
+  'post_url': 'https://facebook.com/story.php?story_fbid=pfbid02vL8YqzKEhH6fsmsq1bS5BhYi8Ue2k2RMg7XdAU1juVTAZJD4SyAwPMA8kQyoZaE4l&id=100002935878037',
+  'link': None,
+  'links': [],
+  'user_id': '100002935878037',
+  'username': 'Atif Raza Chaudary',
+  'user_url': 'https://facebook.com/profile.php?lst=100002935878037%3A100002935878037%3A1656917358&refid=17&_ft_=qid.-6041342639855404524%3Amf_story_key.5211617148946096%3Atop_level_post_id.5211617148946096%3Atl_objid.5211617148946096%3Acontent_owner_id_new.100002935878037%3Athrowback_story_fbid.5211617148946096%3Astory_location.4%3Asty.22%3Aapp_id.6628568379%3Apos.1%3Aprofile_id.100002935878037%3Aprofile_relationship_type.1%3Aactrs.100002935878037%3Athid.100002935878037%3A306061129499414%3A2%3A0%3A1659337199%3A-6422391005274490984%3A%3A%3Aftmd_400706.111111l&__tn__=C-R',
+  'is_live': False,
+  'factcheck': None,
+  'shared_post_id': None,
+  'shared_time': None,
+  'shared_user_id': None,
+  'shared_username': None,
+  'shared_post_url': None,
+  'available': True,
+  'comments_full': None,
+  'reactors': None,
+  'w3_fb_url': None,
+  'reactions': None,
+  'reaction_count': None,
+  'with': None,
+  'page_id': None,
+  'sharers': None,
+  'image_id': None,
+  'image_ids': [],
+  'was_live': False},
+ 'Friend_count': 1008,
+ 'Follower_count': 562,
+ 'Following_count': 913,
+ 'cover_photo_text': "Cover Photo: \u200e'\u200eMeetha Madina <3 <3 <3 Door he... jana b zaroor he...  \n\nانشاء اللہ عزوجل\u200e'\u200e",
+ 'cover_photo': 'https://scontent.flhe5-1.fna.fbcdn.net/v/t31.18172-8/21055895_1419953561445826_6869049387527513587_o.jpg?stp=cp0_dst-jpg_e15_fr_q65&_nc_cat=104&ccb=1-7&_nc_sid=dd9801&efg=eyJpIjoidCJ9&_nc_eui2=AeGU1ByoFZwi5rUsh2QMG8KwlsFSGpARyz-WwVIakBHLPzHx-jdP4-1c1VwDNjhLsyiT0Wv3fWaTa3em14nV5S9F&_nc_ohc=yJQqS8VjiugAX-_jVRp&_nc_ht=scontent.flhe5-1.fna&oh=00_AT_oZPBV2XRQ-gwAaLvLukMQAXjFQmV6iCueXfuKeoAWiw&oe=62E93755&manual_redirect=1',
+ 'profile_picture': 'https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/280682947_5070375706403575_8858390231933516565_n.jpg?stp=cp0_dst-jpg_e15_fr_q65&_nc_cat=106&ccb=1-7&_nc_sid=85a577&efg=eyJpIjoidCJ9&_nc_eui2=AeHz0YFS4lvivolXYZzcVeaTdrC93K-NcXN2sL3cr41xc56N59XLQ43K5n2BwxOoC7nNAX3RorO0O8sM6qtnQZUq&_nc_ohc=JqApLcWr8eMAX_RtJKi&_nc_ht=scontent.flhe5-1.fna&oh=00_AT8iXJrGsVAt9iPL2bQe3l9pTYv2nvpZ3kTTs0zacolaLQ&oe=62C6A747&manual_redirect=1',
+ 'id': '100002935878037',
+ 'Name': 'Atif Raza Chaudary',
+ 'Work': 'Add work\nDisruptive Effects\nData Scientist\nJanuary 1, 2021 - Present\nLahore\nMore options\nCyberSoph\nData Scientist\nOctober 12, 2020 - January 2021\nLahore, Pakistan\nMore options',
+ 'Education': {'Add high school': 'Add college',
+  'College': 'Comsats University Lahore Campus',
+  'Alhamdulillah 👨🏻\u200d🎓': 'Class of 2021',
+  'Punjab group of colleges': 'More options',
+  'September 9, 2014 - March 15, 2016': 'High school',
+  'The Educators City Campus Lahore': 'More options',
+  'Class of 2011': 'High school',
+  'More options': 'Grade 8 - A'},
+ 'Places lived': [{'link': '/profile.php?id=108104849224069',
+   'text': 'Lahore, Pakistan',
+   'type': 'Current City'},
+  {'link': '/profile.php?id=108104849224069',
+   'text': 'Lahore, Pakistan',
+   'type': 'Hometown'}],
+ 'Contact info\nEdit': 'Edit\n0303 4239783\nMobile\nLahore, Pakistan\nAddress\nAtifChaudary\nGitHub\natif-chaudary-7028a8154\nLinkedIn\natifr46\nTwitter\natifr454@gmail.com\nEmail',
+ 'Basic info\nEdit': 'Edit\nOctober 24, 1990\nBirthday\nMale\nGender\nUrdu and Punjabí\nLanguages\nIslam\nReligious Views',
+ 'Other names': 'Add a nickname, a birth name...',
+ 'Relationship': 'Single\nMore options',
+ 'Family members': 'Add a family member\nAqib Raza Chaudry\nBrother (pending)\nMore options',
+ 'About': 'Edit\nLove Urdu Poetry <3',
+ 'Life events': '2016\nLeft Punjab group of colleges\n2014\nStarted School at Punjab group of colleges',
+ 'Favorite quotes\nEdit': 'Edit\nHAVE YOU MORE THAN YOU SHOW...!!!!\nSPEAK LESS THAN YOU KNOW...!!!'}
+```
+
+get_posts
+```
+from socialgathering import facebook
+import json
+
+for post in facebook.get_posts('100002935878037', pages=1):
+    print(json.dumps(post, indent = 4, default=str))
+    break
+```
+
+Output
+```
+{
+    "post_id": "5211617148946096",
+    "text": "\u201cIn our world of Big Data, businesses are relying on data scientists to glean insight from their large, ever-expanding, diverse set of data \u2026 while many people think of data science as a profession, it\u2019s better to think of data science as a way of thinking, a way to extract insights using the scientific method.\u201d\n\n\u2014 Bob E. Hayes",
+    "post_text": "\u201cIn our world of Big Data, businesses are relying on data scientists to glean insight from their large, ever-expanding, diverse set of data \u2026 while many people think of data science as a profession, it\u2019s better to think of data science as a way of thinking, a way to extract insights using the scientific method.\u201d\n\n\u2014 Bob E. Hayes",
+    "shared_text": "",
+    "original_text": null,
+    "time": "2022-06-30 02:25:00",
+    "timestamp": null,
+    "image": null,
+    "image_lowquality": "https://scontent.xx.fbcdn.net/m1/v/t6/An_UvxJXg9tdnLU3Y5qjPi0200MLilhzPXUgxzGjQzUMaNcmjdZA6anyrngvkdub33NZzZhd51fpCAEzNHFhko5aKRFP5fS1w_lKwYrzcNLupv27.png?_nc_eui2=AeE1gVWKbDUPHb7XcQJ511YfMiCX3WNpzi0yIJfdY2nOLZxk88frtS4eQJXWvMQubc6CgBxpVdrcjlFp_SeVgc_t&ccb=10-5&oh=00_AT_G2s7lDVsgq8qufluN9hQCAvErPyekTR_5OzUXb7CM6A&oe=62C69579&_nc_sid=55e238",
+    "images": [],
+    "images_description": [],
+    "images_lowquality": [
+        "https://scontent.xx.fbcdn.net/m1/v/t6/An_UvxJXg9tdnLU3Y5qjPi0200MLilhzPXUgxzGjQzUMaNcmjdZA6anyrngvkdub33NZzZhd51fpCAEzNHFhko5aKRFP5fS1w_lKwYrzcNLupv27.png?_nc_eui2=AeE1gVWKbDUPHb7XcQJ511YfMiCX3WNpzi0yIJfdY2nOLZxk88frtS4eQJXWvMQubc6CgBxpVdrcjlFp_SeVgc_t&ccb=10-5&oh=00_AT_G2s7lDVsgq8qufluN9hQCAvErPyekTR_5OzUXb7CM6A&oe=62C69579&_nc_sid=55e238"
+    ],
+    "images_lowquality_description": [
+        "Like"
+    ],
+    "video": null,
+    "video_duration_seconds": null,
+    "video_height": null,
+    "video_id": null,
+    "video_quality": null,
+    "video_size_MB": null,
+    "video_thumbnail": null,
+    "video_watches": null,
+    "video_width": null,
+    "likes": 4,
+    "comments": 0,
+    "shares": 0,
+    "post_url": "https://facebook.com/100002935878037/posts/5211617148946096",
+    "link": null,
+    "links": [],
+    "user_id": "100002935878037",
+    "username": "Atif Raza Chaudary",
+    "user_url": "https://facebook.com/profile.php?lst=100002935878037%3A100002935878037%3A1656917967&refid=17&_ft_=encrypted_tracking_data.0AY8ph00m91D_RGrZK2OSDH9PPPdJYuvYW3zL6zcKyQa5iQ7hWjeUvi-sSRWzezfnozeHbsGOdpT61nUQeA3Ep2CD8HH9tXLhTYdysT_gcnh7KIu8nUCbydkASPRDPKtSN-FplV2J7ASojQQ7pDTepiheCe453SYqR3l0mDMjAHOwkXvOlE6R8hAkZOjZY5Nrpw3cWPjBAtnpou8jIxjMLZ06BIOCkiMYbxnapDrykSl7Kg_NqprRhFpv4JtDmx_4W3EiyPkhi8vmf0ckixwCvFP5_TiaK6OjxCkirItdGhpq_2oUPfXkzoLIY82aD8KVxdwd2TvMAOSXXSHTbcoGOr9JStIZN21q-iqfWvmJdrPUnz6QukHqPLvo54iDFvaZxKJIuteJ1YLFzG3N6va-i-aLeW2Rv1Wogsx5yaTbgA1itzRepupZDkbRg0ChZqHLeHmNMUGA1xm9WS-rYTQWrWjzXMu7MMwbgfhu4hrnm5L0TeVB7sCYXdPi0NxA-Z6tyIbqer9nysxnxhOsiYMQwzLFGcJscsaQQ3NYU6qnyKm-STgHK6PaOqYseiZYKFWqByvp0CLMdm0dOf6MVxNhlEuwIb2ZRnAMoH3I9qtxwa5MHhOpQcEG2bSRk8na0A&__tn__=C-R",
+    "is_live": false,
+    "factcheck": null,
+    "shared_post_id": null,
+    "shared_time": null,
+    "shared_user_id": null,
+    "shared_username": null,
+    "shared_post_url": null,
+    "available": true,
+    "comments_full": null,
+    "reactors": null,
+    "w3_fb_url": null,
+    "reactions": null,
+    "reaction_count": null,
+    "with": null,
+    "page_id": null,
+    "sharers": null,
+    "image_id": null,
+    "image_ids": [],
+    "was_live": false
+}
+```
