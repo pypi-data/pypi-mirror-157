@@ -1,0 +1,14 @@
+click
+Sphinx
+coverage
+awscli
+flake8
+pathlib2
+PyArrow
+langid
+nltk
+pandas
+pyspark
+pydantic
+strictyaml
+joblib
