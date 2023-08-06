@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pdfproject/__init__.py
+pdfproject/to_image.py
+pdfproject/to_text.py
+zzzymobbe.egg-info/PKG-INFO
+zzzymobbe.egg-info/SOURCES.txt
+zzzymobbe.egg-info/dependency_links.txt
+zzzymobbe.egg-info/top_level.txt
