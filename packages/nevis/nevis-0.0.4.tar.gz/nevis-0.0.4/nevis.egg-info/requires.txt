@@ -1,0 +1,13 @@
+bnglonlat
+matplotlib>=1.5
+numpy
+scipy
+setuptools
+zipfile-deflate64
+
+[dev]
+flake8>=3
+
+[extras]
+convertbng
+pillow
