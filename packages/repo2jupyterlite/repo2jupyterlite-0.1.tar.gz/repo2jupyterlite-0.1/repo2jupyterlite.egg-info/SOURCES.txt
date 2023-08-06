@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+repo2jupyterlite/__init__.py
+repo2jupyterlite/app.py
+repo2jupyterlite.egg-info/PKG-INFO
+repo2jupyterlite.egg-info/SOURCES.txt
+repo2jupyterlite.egg-info/dependency_links.txt
+repo2jupyterlite.egg-info/entry_points.txt
+repo2jupyterlite.egg-info/requires.txt
+repo2jupyterlite.egg-info/top_level.txt

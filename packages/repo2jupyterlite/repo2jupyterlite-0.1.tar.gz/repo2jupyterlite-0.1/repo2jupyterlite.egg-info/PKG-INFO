@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: repo2jupyterlite
+Version: 0.1
+Summary: Build JupyterLite bundles from code repositories
+Home-page: https://github.com/yuvipanda/repo2jupyterlite/
+Author: Yuvi Panda
+Author-email: yuvipanda@gmail.com
+License: 3-BSD
+Project-URL: Source, https://github.com/yuvipanda/repo2jupyterlite/
+Project-URL: Tracker, https://github.com/jupyterhub/repo2docker/issues
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# repo2jupyterlite
+
+Build jupyterlite apps out of repositories
+
+## Installation
+
+Install from PyPI:
+
+```bash
+pip install repo2jupyterlite
+```
+
+## Build a repo
+
+You can use the `repo2jupyterlite` command to check out any supported repo
+(Git, Dataverse, Figshare, Local filestore, etc) and builds a jupyterlite
+installation with `jupyter lite build`.
+
+```bash
+repo2jupyterlite https://github.com/yuvipanda/requirements requirements-build
+```
+
+You can serve the `requirements-build/` directory now statically, and it should
+have the contents of the repo be present!
+
+

@@ -1,0 +1,2 @@
+[console_scripts]
+repo2jupyterlite = repo2jupyterlite.app:main
