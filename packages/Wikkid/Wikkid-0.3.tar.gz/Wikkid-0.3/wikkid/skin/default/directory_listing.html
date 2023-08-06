@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}{{ view.title }}{% endblock %}
+{% block content %}
+
+<table class="dir-listing">
+{% for item in view.items %}
+<tr class="{{ loop.cycle('odd', 'even') }}">
+  <td>
+    <a href="{{ item.url }}" class="{{ item.css_class }}">{{ item.name }}</a>
+  </td>
+</tr>
+{% endfor %}
+</table>
+
+{{ view.content }}
+
+{% endblock %}
+{% block commands %}
+{% if view.user %}
+{% endif %}
+{% endblock %}

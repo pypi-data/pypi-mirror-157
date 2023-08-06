@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+  {% block head %}
+  <title>{% block title %}{% endblock %} - Wikkid</title>
+
+  <link type="text/css" rel="stylesheet" media="screen, print"
+        href="{{ request.script_name }}/static/default.css" />
+  <link rel="shortcut icon" href="{{ request.script_name }}/favicon.ico" />
+  {% endblock %}
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    <div class="wikkidlogo"><a href="{{ request.script_name }}/"><strong>Wikkid Wiki</strong></a></div>
+    <div id="logged">
+      {% if view.user %}
+
+        <div class="user-thumbnail"><img class="gravatar" src="{{ view.user.gravatar }}" /></div>
+        <strong>{{ view.user.display_name }}</strong>
+      {% else %}
+        <div id="login">
+            <a href="#">Have an account?</a> <a href="#"><img src="images/btn-login.gif" alt="login" /></a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  <div id="navbar">
+    <ul>
+        <li>{% block commands %}{% endblock %}</li>
+    </ul>
+  <div class="breadcrumbs">
+    {% for crumb in view.breadcrumbs %}
+      {% if loop.last %}
+        <span class="crumb">{{ crumb.title }}</span>
+      {% else %}
+        <a href="{{ crumb.path }}" class="crumb">{{ crumb.title }}</a> &raquo;
+      {% endif %}
+    {% endfor %}
+  </div>
+  </div>
+  <div id="main">
+    {% block content %}{% endblock %}
+  </div>
+  {% block footer %}{% endblock %}
+  <div id="footer">
+    &copy; 2010-2021
+    <a href="https://launchpad.net/~wikkid">Wikkid Hackers</a>,
+    Licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">the GNU AGPLv3 or later</a>.
+  </div>
+</div>
+</body>
+</html>

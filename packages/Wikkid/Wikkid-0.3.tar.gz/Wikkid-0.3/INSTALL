@@ -1,0 +1,20 @@
+Installing Wikkid Wiki
+======================
+
+Hopefully we'll get this packaged for at least Ubuntu and Debian, and some
+setup tools for those that like it like that.
+
+Dependancies
+------------
+
+ * dulwich - for the Git filestore
+ * breezy - for the Bazaar filestore and merging
+ * python-beautifulsoup - for testing of html (soon)
+ * python-docutils - for the ReST formatter
+ * python-jinja2 - for the templating
+ * python-markdown - for the markdown formatter
+ * python-pygments - for the syntax hilighting
+ * python-testtools - for running the test suite (optional)
+ * python-textile - for the textile formatter.
+ * python-webob - for the WSGI application bits
+ * python-zope.interface - for the interfaces

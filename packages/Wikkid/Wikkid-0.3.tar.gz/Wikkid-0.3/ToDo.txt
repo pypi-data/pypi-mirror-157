@@ -1,0 +1,80 @@
+A location for general notes
+============================
+
+* Add a nice error page.
+
+* Add in a file id for text editing so we can track edits during page moves
+
+* Add in the ability to move pages
+
+* Lock pages as read-only (see also merging)
+  Is this really locked, or is it a restricted ACL?
+
+* ACLs for editing (see also merging)
+
+* Define formatter in the first line of wiki text
+  # <format> <reserved for later use - like acls or locking>
+
+  * This is mostly done now, although not really documented.
+
+* AJAX editing of source files (avoid page refreshes)
+
+* Add a better page for attempting to list a missing directory
+
+* Extend the identification of files without extensions to try a pygments
+  lexer.  If one isn't found, or if we find ReST, use the rest formatter, if
+  it finds other wiki formats we know about, use those, otherwise format using
+  the lexer it finds, and if none found, then plain <pre> (or treat as wiki
+  page, yet to decide).
+
+* Allow specific extensions for certain formatters (.rst, .md, .mdwn, etc)
+
+* Support a readonly mode
+
+
+Standalone requirements
+-----------------------
+
+* Sessions
+
+* Login and logout
+
+* SQLite storage engine for usernames and passwords?
+
+* Subscriptions?
+
+* Generate a nonce for new users, and validate email addresses
+  (hmm... requires incoming email processing, not that easy for standalone
+  deployments, and not needed for launchpad integration)
+
+
+Running behind a reverse proxy
+------------------------------
+
+Support getting credentials from elsewhere, and updating author accordingly.
+
+
+Launchpad integration
+---------------------
+
+* A plan for spam!  Really needed as we have spammers
+
+* How to handle merges
+  Page merge hooks?
+
+
+
+Ideas not yet fully formed
+--------------------------
+
+* Lazy loading of formatters (to reduce install dependancies)
+
+* Customize default rendering engine
+
+* Extend creole to allow specifying format of embedded code
+
+* Look for a wiki-media python library for formatting wiki-media text
+  Or write one.
+
+* Soundex filename search based on base_name of the files, used when
+  hitting a missing file to offer suggestions.
