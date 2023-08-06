@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pypywhois
+Version: 0.3
+Summary: Python package for retrieving WHOIS information of domains.
+Home-page: https://github.com/DannyCork/python-whois/
+Author: kuing
+Author-email: samleeforme@gmail.com
+License: MIT http://www.opensource.org/licenses/mit-license.php
+Keywords: Python,tldwhois,tld,domain,cctld,.com,registrar,tldwhois
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: license
+
+
+        This project fork from https://github.com/DannyCork/python-whois/ (enhanced edition)
+        >>> import pypywhois
+        >>> pypywhois.query("meta.com")  # retuen instance.
+        >>> pypywhois.get("meta.com")  # return dict.
+        >>> pypywhois.query("meta.中文网", internationalized=True)
+        
+
