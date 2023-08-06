@@ -1,0 +1,140 @@
+Metadata-Version: 2.1
+Name: Fedtools
+Version: 0.0.7
+Summary: An open source library for the extraction of Federal Reserve Data.
+Author: David Woroniuk
+Author-email: david.woroniuk@durham.ac.uk
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: fake-useragent
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: six
+Requires-Dist: soupsieve
+
+# FedTools
+
+[![Downloads](https://static.pepy.tech/personalized-badge/fedtools?period=total&units=international_system&left_color=black&right_color=blue&left_text=Downloads)](https://pepy.tech/project/fedtools) [![Downloads](https://pepy.tech/badge/fedtools/month)](https://pepy.tech/project/fedtools)
+
+An open source Python library for the scraping of Federal Reserve data.
+
+By default, all modules within FedTools use 10 threads to increase scraping speed. By default, the Output is a 
+Pandas DataFrame, indexed by release date of the materials. Additional serialised storage methods are optional.
+
+## Installation
+
+```python
+pip install Fedtools
+```
+
+Import the classes:
+
+```python
+from FedTools import MonetaryPolicyCommittee
+from FedTools import BeigeBooks
+from FedTools import FederalReserveMins
+```
+
+## Usage
+
+Returns a Pandas DataFrame ```dataset```, which contains all Meeting Minutes, indexed by Date:
+```python
+from FedTools import MonetaryPolicyCommittee
+
+dataset = MonetaryPolicyCommittee().find_statements()
+MonetaryPolicyCommittee().pickle_data("directory.pkl")
+```
+
+Returns a Pandas DataFrame ```dataset```, which contains all Beige Books, indexed by Date:
+```python
+from FedTools import BeigeBooks
+
+dataset = BeigeBooks().find_beige_books()
+BeigeBooks().pickle_data("directory.pkl")
+```
+
+Returns a Pandas DataFrame ```dataset```, which contains all Federal Reserve Minutes since 1993, indexed by Date:
+```python
+from FedTools import FederalReserveMins
+
+dataset = FederalReserveMins().find_minutes()
+FederalReserveMins().pickle_data("directory.pkl")
+```
+
+## Edit Default Input Arguments
+
+###Monetary Policy Committee
+
+To modify the ```MonetaryPolicyCommittee``` default parameters, each of the below can be adjusted: 
+
+```python
+monetary_policy = MonetaryPolicyCommittee(
+            main_url = 'https://www.federalreserve.gov', 
+            calendar_url = 'https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm',
+            start_year = 1994,    
+            historical_split = 2014,
+            verbose = True,
+            thread_num = 10)
+            
+dataset = monetary_policy.find_statements()
+```
+
+### BeigeBooks
+
+To modify the ```BeigeBooks``` default parameters, each of the below can be adjusted:
+
+```python
+beige_books = BeigeBooks(
+            main_url = 'https://www.federalreserve.gov', 
+            beige_book_url='https://www.federalreserve.gov/monetarypolicy/beige-book-default.htm',
+            start_year = 1996,        
+            historical_split = 2019,
+            verbose = True,
+            thread_num = 10)
+                 
+dataset = beige_books.find_beige_books()
+```
+
+### FederalReserveMins
+
+To modify the ```FederalReserveMins``` default parameters, each of the below can be adjusted:
+
+```python
+fed_mins = FederalReserveMins(
+            main_url = 'https://www.federalreserve.gov', 
+            calendar_url ='https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm',
+            start_year = 1995,        
+            historical_split = 2014,
+            verbose = True,
+            thread_num = 10)
+
+dataset = fed_mins.find_minutes()
+```
+
+### Parameter Explanation
+
+
+All parameters within the package have default values which can be overriden, with a short explanation of each parameter outlined below:
+
+| Argument | Description |
+| ------ | --------- |
+| main_url | Federal Reserve Open Monetary Policy (FOMC) website URL. (str) |
+| calendar_url | URL containing a list of FOMC Meeting dates and Minutes release dates. (str) |
+| beige_book_url | URL containing a list of Beige Book release dates. (str)  |
+| start_year     | first year from which to begin collecting data. (int)   |
+| historical_split | first year considered as historical ([Check Here for FOMC and Minutes][hist] or [Check Here for Beige Books][hist1]). (int)  |
+| verbose | boolean determining printing during scraping. (bool) |
+| thread_num | the number of threads to use for web scraping. (int)   |
+
+
+
+
+
+
+[hist]: <https://www.federalreserve.gov/monetarypolicy/fomc_historical_year.htm>
+[hist1]: <https://www.federalreserve.gov/monetarypolicy/beige-book-archive.htm>
+
