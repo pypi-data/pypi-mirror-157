@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+getapp/__init__.py
+getapp.egg-info/PKG-INFO
+getapp.egg-info/SOURCES.txt
+getapp.egg-info/dependency_links.txt
+getapp.egg-info/top_level.txt
