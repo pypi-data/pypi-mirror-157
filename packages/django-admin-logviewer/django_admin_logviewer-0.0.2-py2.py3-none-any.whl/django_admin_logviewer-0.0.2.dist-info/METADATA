@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: django-admin-logviewer
+Version: 0.0.2
+Summary: Allows the viewing and download of specific log files in real time directly from the Django admin interface. 
+Home-page: https://github.com/morlandi/django-logviewer
+Author: Mario Orlandi
+Author-email: morlandi@brainstorm.it
+License: BSD
+Platform: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+## Django LogViewer
+
+Allows the viewing and download of specific log files in real time directly from the Django admin interface.
+
+Inspired by [Django LogTailer](https://github.com/fireantology/django-logtailer)
+
+### Installation
+
+1) Install Django LogViewer:
+
+```
+pip install django-logviewer
+```
+
+2) Add it to your `INSTALLED_APPS`:
+
+
+```
+    INSTALLED_APPS = (
+        ...
+        'logviewer',
+        ...
+    )
+```
+
+3) Add Django LogViewer's URL patterns:
+
+
+```
+    urlpatterns = [
+        ...
+        path('logviewer/', include('logviewer.urls', namespace='logviewer')),
+        ...
+    ]
+```
+
+Then visit:
+
+http://127.0.0.1:8000/logviewer/logs
+
+
