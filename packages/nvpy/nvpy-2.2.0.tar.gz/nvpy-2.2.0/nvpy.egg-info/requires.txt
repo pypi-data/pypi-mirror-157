@@ -1,0 +1,12 @@
+Markdown
+docutils
+simplenote>=2.1.4
+
+[dev]
+coverage
+mock
+mypy
+nose
+nose-timer
+pdoc3
+yapf
