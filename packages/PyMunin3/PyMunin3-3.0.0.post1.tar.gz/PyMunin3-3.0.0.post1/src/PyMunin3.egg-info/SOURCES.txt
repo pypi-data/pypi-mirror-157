@@ -1,0 +1,11 @@
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/PyMunin3.egg-info/PKG-INFO
+src/PyMunin3.egg-info/SOURCES.txt
+src/PyMunin3.egg-info/dependency_links.txt
+src/PyMunin3.egg-info/top_level.txt
+src/pymunin/__init__.py
+src/pymunin/_version.py

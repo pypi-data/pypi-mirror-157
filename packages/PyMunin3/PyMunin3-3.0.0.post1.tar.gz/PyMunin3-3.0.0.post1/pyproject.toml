@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=42", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyMunin3"
+description = "Package for developing Munin Multigraph Plugins"
+keywords = ["munin", "monitoring"]
+authors = [{name = "Sandro", email = "devel@penguinpee.nl"}]
+readme = "README.md"
+license = {text = "GPLv3"}
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Monitoring",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://aouyar.github.io/PyMunin"
+"Source Code" = "https://github.com/penguinpee/PyMunin3"
+"Bug Tracker" = "https://github.com/penguinpee/PyMunin3/issues"
+
+[tool.setuptools_scm]
+write_to = "src/pymunin/_version.py"
+
+[tool.towncrier]
+    package = "pymunin"
+    package_dir = "src"
+    name = "PyMunin3"
+    filename = "CHANGELOG.rst"
+    directory = "changelog.d"
+    issue_format = "`#{issue} <https://github.com/penguinpee/PyMunin3/issues/{issue}>`_"
+
+    [[tool.towncrier.type]]
+        directory = "removal"
+        name = "Removals & Deprecations"
+        showcontent = true
+
+    [[tool.towncrier.type]]
+        directory = "doc"
+        name = "Documentation Changes"
+        showcontent = true
+
+    [[tool.towncrier.type]]
+        directory = "feature"
+        name = "New Features"
+        showcontent = true
+
+    [[tool.towncrier.type]]
+        directory = "bugfix"
+        name = "Fixed Bugs"
+        showcontent = true
+
+    [[tool.towncrier.type]]
+        directory = "misc"
+        name = "Misc"
+        showcontent = false
+
+[tool.black]
+
+[tool.flakeheaven]
+format = "colored"
+max_line_length = "88" # Black's default
+show_source = true
+
+[tool.flakeheaven.plugins]
+pycodestyle = ["-*"] # We use Black for code style
+pyflakes = ["+*"]
