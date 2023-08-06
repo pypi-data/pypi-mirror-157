@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: spu
+Version: v0.1.0-beta
+Author: secretflow
+License: Apache 2.0
+Requires-Python: ==3.8.*
+Requires-Dist: grpcio==1.47.0
+Requires-Dist: numpy==1.22.3
+Requires-Dist: protobuf==3.19.4
+Requires-Dist: six==1.16.0
+Requires-Dist: jax==0.3.7
+Requires-Dist: jaxlib==0.3.7
+Requires-Dist: absl-py==1.0.0
+Requires-Dist: cloudpickle==2.0.0
+
+UNKNOWN
