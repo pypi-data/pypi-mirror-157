@@ -1,0 +1,17 @@
+xyz_browser/__init__.py,sha256=p06vqXR76WwNHkZb-2xWiZ-etqN3FLgAJ0ujlzjexo8,46
+xyz_browser/admin.py,sha256=B7nwvyS0O_WnJlgzDUseaMqrnmdmcKcEpB-0UGvB8oA,873
+xyz_browser/apis.py,sha256=nxg-RGh8qixLyggCSYxR7e6Bznj6RUSuruGoDZk94uM,2224
+xyz_browser/apps.py,sha256=65ZtDW-XmCVFif1nP4XFhKZqXLWAq2pMnW3VkaJA7gI,335
+xyz_browser/browse_client.py,sha256=KPNHHm2dtrtkjkNGVhsASP26BKRt59Hwvbl_0MnRE7s,2639
+xyz_browser/choices.py,sha256=EsRZ_NlxSYV9OfRfyfnJiOiHUrsPP7OyPp0w-Wqxr3Q,424
+xyz_browser/helper.py,sha256=LrhD8vDVtS41CTqw7L4x2Xoh4YurzMq7YGqe2bu4J2Q,302
+xyz_browser/models.py,sha256=VBpxbU1f2wSitPZZceymQ1XHxnj3UVeMlh1T60v6JW0,2233
+xyz_browser/receivers.py,sha256=f_cK736vwk0UTDFvYhWCVotS2CQ2IFFCeTUGi_mHAHg,1011
+xyz_browser/serializers.py,sha256=Zky_ojCOl2Jc1h4JCLLuhDP2MoET5AucKR-JWNpiX8s,811
+xyz_browser/signals.py,sha256=6_iGBymCOp26bpXS70WL-28h-6HvESpgzqOXDVL0vi0,309
+xyz_browser/migrations/0001_initial.py,sha256=UP78QbXzjALU-hJ9ND-AAHqWtWd9pnYR_B3_bm6bkLo,3080
+xyz_browser/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xyz_browser-0.0.3.dist-info/METADATA,sha256=1I5fJXHa5vix3_eXEp2apqI1MuVaxFSy82fjYaRtzmo,966
+xyz_browser-0.0.3.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+xyz_browser-0.0.3.dist-info/top_level.txt,sha256=BU8_APH7T_JmcG4JkDsVpaJ0vx-WgilM29r93E3ax-w,12
+xyz_browser-0.0.3.dist-info/RECORD,,
