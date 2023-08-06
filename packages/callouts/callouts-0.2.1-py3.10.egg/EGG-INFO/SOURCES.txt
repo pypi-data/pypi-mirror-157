@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+callouts/__init__.py
+callouts.egg-info/PKG-INFO
+callouts.egg-info/SOURCES.txt
+callouts.egg-info/dependency_links.txt
+callouts.egg-info/top_level.txt
