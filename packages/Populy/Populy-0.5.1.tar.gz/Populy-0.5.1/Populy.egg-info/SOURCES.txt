@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+Populy.egg-info/PKG-INFO
+Populy.egg-info/SOURCES.txt
+Populy.egg-info/dependency_links.txt
+Populy.egg-info/not-zip-safe
+Populy.egg-info/top_level.txt
+populy/__init__.py
+populy/functions.py
+populy/individual.py
+populy/plot.py
+populy/population.py
+populy/superpop.py
