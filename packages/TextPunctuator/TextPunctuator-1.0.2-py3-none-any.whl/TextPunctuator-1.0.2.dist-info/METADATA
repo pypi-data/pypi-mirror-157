@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: TextPunctuator
+Version: 1.0.2
+Summary: A package to punctuate text, currently supporting French text, more languages comming soon.
+Home-page: https://github.com/rouzki/text-punctuator
+Author: Zakarya ROUZKI
+Author-email: zakaryarouzki@gmail.com
+License: UNKNOWN
+Keywords: punctuator,nlp,text,transformers,t5
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: transformers
+Requires-Dist: langdetect
+
+---
+language: 
+  - "fr"
+tags:
+- t5
+- french
+- punctuation
+license: apache-2.0
+datasets:
+- orange_sum
+- mlsum
+---
+
+# Text Punctuator Based on Transformers model T5.
+T5 model fine-tuned for punctuation restoration.
+Model currently supports only French Language. More language supports will be added later using mT5.
+
+Train Datasets : 
+Model trained using 2 french datasets (around 500k records): 
+- [orange_sum](https://huggingface.co/datasets/orange_sum) 
+- [mlsum](https://huggingface.co/datasets/mlsum) (only french text)
+
+
+more info will be added later.
+
+
