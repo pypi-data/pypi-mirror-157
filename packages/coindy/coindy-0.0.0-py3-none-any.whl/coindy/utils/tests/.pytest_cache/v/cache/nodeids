@@ -1,0 +1,9 @@
+[
+  "test_ito_utils.py::test_L0",
+  "test_ito_utils.py::test_L1L1_total",
+  "test_ito_utils.py::test_LJ",
+  "test_ito_utils.py::test_LJ_total",
+  "test_ito_utils.py::test_dX",
+  "test_ito_utils.py::test_ddX",
+  "test_ito_utils.py::test_ito_sde_form"
+]
