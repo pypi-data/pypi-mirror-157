@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: strats
+Version: 0.0.1
+Summary: An Asynchronous and Event-driven Python Library for Algorithmic Trading
+Home-page: https://github.com/jialuechen/strats
+Author: Jialue Chen
+Author-email: jialuechen@outlook.com
+License: Apache 2.0
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pytorch (==1.10.2)
+
+UNKNOWN
+

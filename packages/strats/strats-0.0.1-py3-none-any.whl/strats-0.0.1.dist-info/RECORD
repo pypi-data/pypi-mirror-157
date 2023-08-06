@@ -1,0 +1,13 @@
+strats/__init__.py,sha256=UWPNM5wXg3ioF_AFvN6sukbBgJKLVoZZBTlJp8XMwkQ,281
+strats/algo.py,sha256=AfNvedxKsoIhLLC-u-XUl1sYAnztWVBg7AwGhrVnWko,1175
+strats/broker.py,sha256=PF46G_qxu5U9Bz_1VWwuduTnvPZq2dB5Ye-ikWtDbz8,1459
+strats/feed.py,sha256=vdo9SleCb09qfLde8AtuANJdWnEgQHlUU-U_ZMf-4cY,10785
+strats/indicators.py,sha256=CR85T22eVaYcAKD1m_QQrggTwnNjRIJY6VT0RYEp19w,4333
+strats/instrument.py,sha256=kD7OdYbsM1gxz5pMqW6lxcF-Ths0BUudnjAmt2J4IHM,8845
+strats/report.py,sha256=6K6RC5o4L9-x-EJtvqlBLYRL342nn0oHxxDtrJ33AO0,10003
+strats/utils.py,sha256=6xsiBtQGBvMAFm3wcKsKbERWG_OZWecDBs1qbrF-pVM,3327
+strats-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+strats-0.0.1.dist-info/METADATA,sha256=mShE2OV6HMo0diqsieuV1xHKOj2_6PNN421DsAqSicQ,340
+strats-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+strats-0.0.1.dist-info/top_level.txt,sha256=7QfvqqSB3nGISBOVjkLA5J5Ch5QVx4sqQSYUH2h4Xno,7
+strats-0.0.1.dist-info/RECORD,,
