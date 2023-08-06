@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: my_linked_list
+Version: 0.0.3
+Summary: A small example package containing data structure - linked list
+Author-email: Drozd0f <danylo.drozdov@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Requires-Python: >=3.8

@@ -1,0 +1,8 @@
+pyproject.toml
+src/base_linked_list.py
+src/nodes.py
+src/my_linked_list/linked_list.py
+src/my_linked_list.egg-info/PKG-INFO
+src/my_linked_list.egg-info/SOURCES.txt
+src/my_linked_list.egg-info/dependency_links.txt
+src/my_linked_list.egg-info/top_level.txt
