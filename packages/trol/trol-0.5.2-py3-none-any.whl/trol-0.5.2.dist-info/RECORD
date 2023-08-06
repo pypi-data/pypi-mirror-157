@@ -1,0 +1,13 @@
+trol/__init__.py,sha256=gj-IaPIngoYgzgov5QZWMCU_nSf-SpGJceqh782BPbU,335
+trol/collection.py,sha256=is23ThpPgg91o-Ot1lgUSVl_plIUlkJPCiO3Iy8Gl50,49144
+trol/database.py,sha256=flOrNcf8P3W6WdYqCpNQgj5-IxUo3kPpT7k0SohSo58,1332
+trol/highlander.py,sha256=tgMBxu5euA4_5UIMXuAH5iTf9p-JQDsfEVVyvtSxOSg,2110
+trol/lock.py,sha256=gIeOlIg8fqSxlmgBtfSUcMtHPfO-Vopk5-4_Er-dBUA,5016
+trol/model.py,sha256=cJk3wcwIK1ALDJjFDb1jWijPhVVJP9fGWVXRaQIavFk,10381
+trol/property.py,sha256=fYGKbMcIyFQLmLN8XvhICf1Gkd4hImFsga-OU8Yj_zQ,7447
+trol/util.py,sha256=dFABdWj0udh4hklI0Nd7Tr85qKsZFgKYBbIF8DmLbOg,5258
+trol-0.5.2.dist-info/LICENSE.txt,sha256=-4PKSAqNDdhIcKFzFp3Xs_Ix4vM_MAg9WFOpcDUfcQQ,2188
+trol-0.5.2.dist-info/METADATA,sha256=x1tkPfmM43tWoNJrGfWqQaUrVJJnCMPuQaaIRHx9LRk,4767
+trol-0.5.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+trol-0.5.2.dist-info/top_level.txt,sha256=-v-d9UedxclX0g5LKWcj4yGTWhSafmsfpuyAW_M0ne0,5
+trol-0.5.2.dist-info/RECORD,,
