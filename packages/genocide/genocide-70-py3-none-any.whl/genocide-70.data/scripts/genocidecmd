@@ -1,0 +1,55 @@
+#!python
+# This file is placed in the Public Domain.
+
+
+"OTP-CR-117/19"
+
+
+import os
+import readline
+import sys
+import termios
+import time
+import traceback
+
+
+from genocide.obj import Config
+
+
+Config.console = False
+Config.name = "genocide"
+Config.services = False
+Config.workdir = "/var/lib/genocide/"
+
+
+from genocide.irc import Config as IRCConfig
+
+
+IRCConfig.channel = "#genocide"
+IRCConfig.nick = "genocide"
+IRCConfig.realname = "OTP-CR-117/19"
+IRCConfig.username = "genocide"
+
+
+from genocide.csl import CLI
+from genocide.evt import Command
+from genocide.hdl import Callbacks, dispatch
+
+
+import genocide.cmd.all
+
+
+class CLI(CLI):
+
+
+    def raw(self, txt):
+        print(txt)
+
+
+def main():
+    Callbacks.add("command", dispatch)
+    c = CLI()
+    c.cmd(" ".join(sys.argv[1:]))
+
+
+main()
