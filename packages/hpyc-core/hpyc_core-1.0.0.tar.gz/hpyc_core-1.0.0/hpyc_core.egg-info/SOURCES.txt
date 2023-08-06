@@ -1,0 +1,15 @@
+README.md
+setup.py
+hpyc_core/__init__.py
+hpyc_core.egg-info/PKG-INFO
+hpyc_core.egg-info/SOURCES.txt
+hpyc_core.egg-info/dependency_links.txt
+hpyc_core.egg-info/not-zip-safe
+hpyc_core.egg-info/requires.txt
+hpyc_core.egg-info/top_level.txt
+hpyc_core/calculate/__init__.py
+hpyc_core/calculate/calculate_manager.py
+hpyc_core/data_structure/__init__.py
+hpyc_core/plugin/__init__.py
+hpyc_core/plugin/plugin_manager.py
+hpyc_core/settings/__init__.py
