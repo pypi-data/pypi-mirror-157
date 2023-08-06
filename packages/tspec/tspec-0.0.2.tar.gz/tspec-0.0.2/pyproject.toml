@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tspec"
+version = "0.0.2"
+authors = [
+  { name="Ziya Suzen", email="mtmk@suzen.net" },
+  { name="Sri Sri", email="cos.itroot@gmail.com" },
+]
+description = "Tspec Python package (alpha - work in progess)"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/tspec/lib-py"
+"Bug Tracker" = "https://github.com/tspec/lib-py/issues"
