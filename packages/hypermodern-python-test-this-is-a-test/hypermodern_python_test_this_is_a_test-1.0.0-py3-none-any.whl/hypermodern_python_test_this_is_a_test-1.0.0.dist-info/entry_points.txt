@@ -1,0 +1,3 @@
+[console_scripts]
+hypermodern_python_test_this_is_a_test=hypermodern_python_test_this_is_a_test.console:main
+
