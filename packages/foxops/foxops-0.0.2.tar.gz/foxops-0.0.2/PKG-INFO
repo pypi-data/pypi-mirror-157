@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: foxops
+Version: 0.0.2
+Summary: Foxops 🦊
+Author: Alexander Hungenberg
+Author-email: alexander.hungenberg@roche.com
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Jinja2 (>=3.0.3,<4.0.0)
+Requires-Dist: aiohttp (>=3.8.0,<4.0.0)
+Requires-Dist: aiopath (>=0.6.10,<0.7.0)
+Requires-Dist: dictdiffer (>=0.9.0,<0.10.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: ruamel.yaml (>=0.17.20,<0.18.0)
+Requires-Dist: structlog (>=21.2.0,<22.0.0)
+Requires-Dist: tenacity (>=8.0.1,<9.0.0)
+Requires-Dist: typer (>=0.4.0,<0.5.0)
+Description-Content-Type: text/markdown
+
+# foxops
+
+coming soon, stay tuned! 🦊
+
