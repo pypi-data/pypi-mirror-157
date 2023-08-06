@@ -1,0 +1,17 @@
+pyscaffoldext/markdown/__init__.py,sha256=Cb_Ziiw9uhUyLQyfCHIVqQlGux-Jz2TU5-BFqHLhxFk,593
+pyscaffoldext/markdown/extension.py,sha256=Q3OpSE_EqE6HrwV5qHVyk0I9QdhaY-ttZW8QWnkyjng,6891
+pyscaffoldext/markdown/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyscaffoldext/markdown/templates/authors.template,sha256=ME0pASOBPBGbpMLWMzKDSnHhd9CS9oIf981_6AKGkPI,56
+pyscaffoldext/markdown/templates/changelog.template,sha256=c3SUajBcjwufimWTBOZiesOpTKqD5lZPe4LKanCwAiw,115
+pyscaffoldext/markdown/templates/contributing.template,sha256=9NESiacDHO-_Q2ly9cHS7IHZ5Rrv0LrFThG4IjaabC8,13477
+pyscaffoldext/markdown/templates/index.template,sha256=-7cLfLbf0TmfuTMQSZCSGzdvYQ4w_sXeU4epGls3Qps,937
+pyscaffoldext/markdown/templates/license.template,sha256=b2rMr9jog9OpwW9U3hf7IwmMVE3BrzCj7FTJTnOJEUw,66
+pyscaffoldext/markdown/templates/myst_extensions.template,sha256=BCqb3hNQJMeo7_pu0nXO9QLpzO8dni64PlPzqzKa_gI,228
+pyscaffoldext/markdown/templates/readme.template,sha256=G6fIHqyqtYeorIzVPaS2NGWvgmfhP7POqwOe3HrH1LY,1304
+pyscaffoldext_markdown-0.5.dist-info/AUTHORS.md,sha256=DdDYSL84Ao27x2zf6ESqqePF17t8aWwH-yscagJvfv0,86
+pyscaffoldext_markdown-0.5.dist-info/LICENSE.txt,sha256=wj5SLndBFTnNXqaHs91o4Y3aZs4U2DNNx97Hrx1beOA,1082
+pyscaffoldext_markdown-0.5.dist-info/METADATA,sha256=alDdA80mU9GBLsXkh799dZ6EYeb_iXI0rqAoxSJ9bVM,5644
+pyscaffoldext_markdown-0.5.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+pyscaffoldext_markdown-0.5.dist-info/entry_points.txt,sha256=4olsfZTCEAe0Qx8ORun09OOZRQChRKEXwq5DBx4Ft6E,70
+pyscaffoldext_markdown-0.5.dist-info/top_level.txt,sha256=zac9JJq83qBJe5oCWbtXhQVr8mJ5TZFW2jCFlSQ6n0Y,14
+pyscaffoldext_markdown-0.5.dist-info/RECORD,,
