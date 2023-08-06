@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pdffit/__init__.py
+pdffit/distfit.py
+pdffit/version.py
+pyProbabilityDistributionFit.egg-info/PKG-INFO
+pyProbabilityDistributionFit.egg-info/SOURCES.txt
+pyProbabilityDistributionFit.egg-info/dependency_links.txt
+pyProbabilityDistributionFit.egg-info/not-zip-safe
+pyProbabilityDistributionFit.egg-info/requires.txt
+pyProbabilityDistributionFit.egg-info/top_level.txt

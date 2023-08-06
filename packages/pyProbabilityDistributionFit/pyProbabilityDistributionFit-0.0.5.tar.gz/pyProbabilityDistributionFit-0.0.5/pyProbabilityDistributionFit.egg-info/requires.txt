@@ -1,0 +1,4 @@
+pandas>=1.4.2
+matplotlib>=3.5.2
+statsmodels>=0.13.2
+tornado>=6.1
