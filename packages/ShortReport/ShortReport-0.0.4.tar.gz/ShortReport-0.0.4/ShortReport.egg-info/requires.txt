@@ -1,0 +1,10 @@
+numpy
+pandas
+bokeh
+ipywidgets
+ipython
+plotly
+matplotlib
+matplotlib-inline
+seaborn
+statistics
