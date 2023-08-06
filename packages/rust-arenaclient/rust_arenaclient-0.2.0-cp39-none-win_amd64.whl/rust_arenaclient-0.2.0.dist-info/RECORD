@@ -1,0 +1,13 @@
+rust_arenaclient-0.2.0.dist-info/METADATA,sha256=B-8yGNjT50RiCOjhukk1IMxmeVspNVkf32apg_089Z8,3203
+rust_arenaclient-0.2.0.dist-info/WHEEL,sha256=frIhG7sd_mih_kp2h41yYjWuRBLLWqFy93f84w0NLbo,96
+rust_ac/bot.py,sha256=7Jm6jc53CLkTxt6rMbCvGHLKHz3e8wTvHumRcAH4Ik8,5050
+rust_ac/game_config.py,sha256=0YKnS7S8PGJzU9HTbmeFWHnGNH6UEcBdye0mQVKY0gY,1720
+rust_ac/match_runner.py,sha256=r942UEdQMO_ryznzG7eUXXr2FfeizAma-W_YxcWKnK8,2862
+rust_ac/requirements.txt,sha256=J7UCc0RdeVHVUkHCUNONj4Vkvc58HfGsCrL8QnRbs_I,35
+rust_ac/result.py,sha256=bM19c4Oxg5HmDdPVeBSz_7Yl1kpS29OhMGj4nnB5Ysg,4939
+rust_ac/server.py,sha256=dgbdrWKnrCsAVCd0hYr_pu6sPS4aSolc13WitB-uDsw,696
+rust_ac/supervisor.py,sha256=-4yU41CwfRv64UDPTbguRtuTA6EBNDDD6JjR9U-ZM3M,4518
+rust_ac/__init__.py,sha256=_19i9_QQarRWaBATzGoVs7ChMsHP5ITNaaqAFtfvHNw,181
+rust_ac/__main__.py,sha256=eX6BiBcXOoSIXl8TDGtvr-YHiq-0Xn5kR3aX3tg5psY,468
+rust_ac/rust_ac.cp39-win_amd64.pyd,sha256=F0GLIsKCce97aXNbkH2vbjC6PHUZri_5bgmLq_jpkJM,2330112
+rust_arenaclient-0.2.0.dist-info/RECORD,,
