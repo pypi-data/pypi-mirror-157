@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+plantuml_local_client/__init__.py
+plantuml_local_client/__main__.py
+plantuml_local_client/plantuml.1.2022.5.jar
