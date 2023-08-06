@@ -1,0 +1,11 @@
+build/lib/fide_trf/__init__.py,sha256=DBK3h-hm7EMmLp2Ps08v1rVLXgsgvoSfE5jiEAYyRzg,78
+build/lib/fide_trf/player.py,sha256=uw1r0ZuHqNJg_c3-YCouDthDRBiDZm-WYps1fiBJUfc,4222
+build/lib/fide_trf/tournament.py,sha256=ectLOquCEqWGE5Ovy3Qg4Rx1K6CFL7Cn64xxgP_x9LA,1387
+fide_trf/__init__.py,sha256=DBK3h-hm7EMmLp2Ps08v1rVLXgsgvoSfE5jiEAYyRzg,78
+fide_trf/player.py,sha256=uw1r0ZuHqNJg_c3-YCouDthDRBiDZm-WYps1fiBJUfc,4222
+fide_trf/tournament.py,sha256=ectLOquCEqWGE5Ovy3Qg4Rx1K6CFL7Cn64xxgP_x9LA,1387
+FIDE_TRF-0.1.dev1.dist-info/LICENSE,sha256=fUcsa3gzRCsufOguT0-8NNk5DaarW_dYqzeuvpZlxvw,35084
+FIDE_TRF-0.1.dev1.dist-info/METADATA,sha256=LuMoigsXUsq6_N9EAKxdrcfbAjDUYcFLc3MJMmpWVP0,1102
+FIDE_TRF-0.1.dev1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+FIDE_TRF-0.1.dev1.dist-info/top_level.txt,sha256=bCrhOo8ilvitTwUIo-P9YTBY0-XCPloXocSlY0cbYAc,20
+FIDE_TRF-0.1.dev1.dist-info/RECORD,,
