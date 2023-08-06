@@ -1,0 +1,14 @@
+idatanlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+idatanlp/ie/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+idatanlp/ie/doccano.py,sha256=AlJ8PMFNS3OCoUJ5ZDOtmVWikOS8On53UfL01ER2rOY,6071
+idatanlp/ie/evaluate.py,sha256=jSATjEUlvQB6rcNrnpu5f9o1A0GjTaNIadRNxXC60Pk,3615
+idatanlp/ie/finetune.py,sha256=mWRwoQkSXrHyyvBFLdZFPKxQVN9kxvkK9gWcFqxVjQo,6962
+idatanlp/ie/model.py,sha256=RjrYsveJtS5g1Eds3jaVNL5LIP82HlnNWT8RlL2tKz8,1685
+idatanlp/ie/utils.py,sha256=MHNN-IVQA38_p2KGV4JrJnFeHcPLahRee3M9tC1IKj0,19014
+idatanlp/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+idatanlp/tools/converter.py,sha256=u4q4JPcXy8EeGTt0hK8pDGzath8kkNQU3_Dgjjxc_nc,73
+idatanlp/tools/tools.py,sha256=FrFve-aYJIych180zwQU-Rk1_YBDk_ZWKpA_wfQ4yBc,2282
+idata_nlp-0.1.0.dist-info/METADATA,sha256=_xtYF12o_buBANJvZwkQ0FMXWUQjr3pE4uhJxZ7OPGY,519
+idata_nlp-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+idata_nlp-0.1.0.dist-info/top_level.txt,sha256=ZppBpoNq_J4EJ76CXhJ5HgYENlnFeWIMHai4E65s-yA,9
+idata_nlp-0.1.0.dist-info/RECORD,,
