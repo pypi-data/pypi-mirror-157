@@ -1,0 +1,13 @@
+dbtc/__init__.py,sha256=PwzRanL4JCmVamJau3kB5mdyYOTYL7viGUvSqqbVbTk,72
+dbtc/cli.py,sha256=jJ7MCyGJ4J-A9kmUrRBsvuNuMLH3grNQpGI5LsuoAtA,21792
+dbtc/client/base.py,sha256=Nb3HzdmpX--20gV-JYVKmGsxp9YoPOX2d5xEJcClafY,1266
+dbtc/client/cloud/__init__.py,sha256=GAuXKwXX1Erml3ZV_rycICrfhfpcjqlW2jPS_2zpzBQ,76
+dbtc/client/cloud/base.py,sha256=2fgJ-erDbXl2KSrOwvMT7Ng0FO1j5BaOPzlWjuoUhn4,37985
+dbtc/client/main.py,sha256=J3DgxVwS0r8hr9mR_fbYit4lekwP0pzNZupooZ16qB4,258
+dbtc/client/metadata/__init__.py,sha256=9FtyQXZq8CGsYDcYzSiUGQoVb4c6x2A7c-DJqfWsm_0,5338
+dbtc/client/metadata/artifacts/metadata_schema.json,sha256=mBTc84vSfNGORcUuFGxKozpVvNItShLYtuCR83M7mPs,84567
+dbtc/client/metadata/schema.py,sha256=tptB4jIt8qEmST9MEYZwdhIr5x6O2gadelnJAo_iUdE,32573
+dbtc-0.1.2.dist-info/entry_points.txt,sha256=JWVlAZvWC5IE1aA5Ac5w5pOJhvApnpOz4zU4-ceR5UY,38
+dbtc-0.1.2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+dbtc-0.1.2.dist-info/METADATA,sha256=vX-GFjNmGprxZaDzpzuXVdW7vG3acIYDW1BC0n2XLTc,3439
+dbtc-0.1.2.dist-info/RECORD,,
