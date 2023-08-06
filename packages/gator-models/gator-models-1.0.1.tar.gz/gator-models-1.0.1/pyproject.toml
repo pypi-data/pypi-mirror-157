@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "gator-models"
+version = "v1.0.1"  # placeholder for the real version, which is retrieved from git tags
+description = "MongoDB models for Gator API"
+authors = ["Shon Verch <verchshon@gmail.com>"]
+packages = [
+    { include = "gator" }
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mongoengine = ">=0.20"
+
+[tool.poetry.dev-dependencies]
+pydocstyle = "^6.1.1"
+flake8 = "^4.0.1"
+autopep8 = "^1.6.0"
+isort = "^5.10.1"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry.core.masonry.api"
