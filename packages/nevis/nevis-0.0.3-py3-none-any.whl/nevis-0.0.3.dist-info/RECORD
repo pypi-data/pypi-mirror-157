@@ -1,0 +1,12 @@
+nevis/__init__.py,sha256=QXRqf6BkUD9danhfV8c9XB8cVMZmTPAk4D0g5wNJ2F4,2197
+nevis/_bng.py,sha256=lEgvR2vYDzLovIOQyEQQsIrrIaVla4jx8CBRiAFxWLE,13900
+nevis/_interpolation.py,sha256=DB4ju6dZiF8ckT3cTLQ7_aPr-kR1FM3q1EdwczGWj7Q,3824
+nevis/_nevis_version.py,sha256=ipz9GoM7V6EqNuNU-OTQasfNE6atVhfwufALgOdNuWY,107
+nevis/_os50.py,sha256=1n8trgAT3aaPRPRXsgLg_JPiDzfVJR2QeNEuIZwDgF8,17795
+nevis/_plot.py,sha256=rDV_7BflYP3N3odWgdey4qh4hcXqIs3q2y_uAQselIQ,13857
+nevis/_util.py,sha256=2zgy7AGTVbGEGwuKEy9kK1npEPcTNGDaoU_mFs6BXbo,1652
+nevis-0.0.3.dist-info/LICENSE.txt,sha256=O2DS4PPXqTg55sOQy2WZnLjFjBTiQpNcfH3yzM9Sa38,2302
+nevis-0.0.3.dist-info/METADATA,sha256=47v3ZEbXN3Su6GcHe4iuaPC9fJ3vx2vD47l12oCEXKQ,8396
+nevis-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nevis-0.0.3.dist-info/top_level.txt,sha256=C2JBc5UNYp9eji0C0c7coJJP04CDEEHbKQssfFlPHYI,6
+nevis-0.0.3.dist-info/RECORD,,
