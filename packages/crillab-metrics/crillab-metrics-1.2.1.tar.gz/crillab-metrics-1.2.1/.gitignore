@@ -1,0 +1,32 @@
+# Python Environment
+venv*
+
+# PyCharm Files
+.idea/inspectionProfiles/Project_Default.xml
+.idea/metrics.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/shelf/
+.idea/workspace.xml
+
+# Test Files
+.coverage
+coverage.xml
+nosetests.xml
+tests/data/xcsp19/full_analysis/output/*.pdf
+
+# Build Folders
+bin/cache-directory
+build
+dist
+.scannerwork
+
+# Python Egg Metadata
+*.egg
+*.egg-info
+
+# Compiled Python Modules
+*.pyc
+
+# Miscellaneous
+.DS_Store
