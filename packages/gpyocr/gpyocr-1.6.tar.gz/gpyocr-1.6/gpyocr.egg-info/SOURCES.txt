@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+gpyocr/__init__.py
+gpyocr/__main__.py
+gpyocr/_gpyocr.py
+gpyocr.egg-info/PKG-INFO
+gpyocr.egg-info/SOURCES.txt
+gpyocr.egg-info/dependency_links.txt
+gpyocr.egg-info/entry_points.txt
+gpyocr.egg-info/requires.txt
+gpyocr.egg-info/top_level.txt
+tests/resources/__init__.py
