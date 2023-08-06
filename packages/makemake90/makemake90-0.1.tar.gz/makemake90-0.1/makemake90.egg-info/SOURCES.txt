@@ -1,0 +1,10 @@
+LICENSE
+README.md
+makemake90
+pyproject.toml
+setup.cfg
+setup.py
+makemake90.egg-info/PKG-INFO
+makemake90.egg-info/SOURCES.txt
+makemake90.egg-info/dependency_links.txt
+makemake90.egg-info/top_level.txt
