@@ -1,0 +1,3 @@
+[console_scripts]
+scivae = scivae.__main__:main
+
