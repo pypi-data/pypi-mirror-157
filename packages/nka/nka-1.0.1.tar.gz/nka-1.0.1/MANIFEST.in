@@ -1,0 +1,27 @@
+graft docs
+graft src
+graft ci
+graft tests
+
+include .bumpversion.cfg
+include .cookiecutterrc
+include .coveragerc
+include .editorconfig
+include .github/workflows/github-actions.yml
+include .readthedocs.yml
+include pytest.ini
+include tox.ini
+include pylintrc
+include AUTHORS.rst
+include CHANGELOG.rst
+include CONTRIBUTING.rst
+include LICENSE
+include README.rst
+
+global-exclude *.py[cod] __pycache__/* *.so *.dylib
+global-exclude .DS_Store
+
+recursive-include webapp *.dockerignore
+recursive-include webapp *.py
+recursive-include webapp *.txt
+recursive-include webapp Dockerfile

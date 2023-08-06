@@ -1,0 +1,5 @@
+torch==1.9.0
+sentence-transformers>=0.3.8
+spacy>=3.0.1
+spacy-transformers
+numpy>=1.18.5
