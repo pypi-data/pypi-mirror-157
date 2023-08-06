@@ -1,0 +1,15 @@
+app_name: algora-sdk
+environment: local
+version: 0.0.BETA
+
+local:
+  urls:
+    algora: https://api.algoralabs.com
+    keycloak: https://auth.algoralabs.com/auth/admin/realms/production
+    fred: https://api.stlouisfed.org/fred
+
+production:
+  urls:
+    algora: https://api.algoralabs.com
+    keycloak: https://auth.algoralabs.com/auth/admin/realms/production
+    fred: https://api.stlouisfed.org/fred
