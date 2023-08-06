@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pysisu/__init__.py
+pysisu/query_wrapper.py
+pysisu.egg-info/PKG-INFO
+pysisu.egg-info/SOURCES.txt
+pysisu.egg-info/dependency_links.txt
+pysisu.egg-info/requires.txt
+pysisu.egg-info/top_level.txt
+pysisu/sisu/__init__.py
+pysisu/sisu/v1/__init__.py
+pysisu/sisu/v1/api.py
+pysisu/sisu/v1/api/__init__.py
