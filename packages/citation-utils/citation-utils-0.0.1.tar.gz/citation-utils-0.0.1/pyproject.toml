@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "citation-utils"
+version = "0.0.1"
+description = "Regex-based docket and report formula for Citations found in Philippine Supreme Court Decisions"
+authors = ["Marcelino G. Veloso III <mars@veloso.one>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+citation-report = "^0.0.2"
+citation-docket = "^0.0.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1"
+pytest-instafail = "^0.4.2"
+pytest-sugar = "^0.9.4"
+pytest-icdiff = "^0.5"
+pytest-cov = "^2.12.1"
+mypy = "^0.961"
+black = "^22.6.0"
+isort = "^5.10.1"
+pre-commit = "^2.19"
+ipykernel = "^6.15"
+tqdm = "^4.64"
+jupyter = "^1.0.0"
+notebook = "^6.4.12"
+
+[tool.pytest]
+minversion = "7.1"
+testpaths = ["tests"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 79
+include_trailing_comma = 'True'
+
+[tool.black]
+line-length = 79
+include = '.pyi?$'
+exclude = '''
+/(
+    .git
+    | .hg
+    | .mypy_cache
+    | .tox
+    | .venv
+    | _build
+    | buck-out
+    | build
+    | dist
+)/
+'''
+
+
+[build-system]
+requires = ["poetry-core>=1.1.12"]
+build-backend = "poetry.core.masonry.api"
