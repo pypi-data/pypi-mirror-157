@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pygode"
+version = "2.0.0-beta.9-1"
+authors = [
+  { name="Jakkaphat Chalermphanaphan", email="gunt@guntxjakka.me" },
+]
+description = "Python package that converts gibberish caused by Thai user forgetting to change their keyboard layout."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/godeProject/pygode"
+"Bug Tracker" = "https://github.com/godeProject/pygode/issues"
