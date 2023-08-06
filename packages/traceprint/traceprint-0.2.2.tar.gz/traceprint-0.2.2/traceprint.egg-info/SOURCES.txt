@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+traceprint/__init__.py
+traceprint/traceprint.py
+traceprint.egg-info/PKG-INFO
+traceprint.egg-info/SOURCES.txt
+traceprint.egg-info/dependency_links.txt
+traceprint.egg-info/top_level.txt
