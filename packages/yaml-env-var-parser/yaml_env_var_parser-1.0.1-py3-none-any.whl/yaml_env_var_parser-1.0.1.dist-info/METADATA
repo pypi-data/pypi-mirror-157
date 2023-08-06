@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: yaml-env-var-parser
+Version: 1.0.1
+Summary: Implementation of PyYAML Reader with environment variables parsing.
+Home-page: https://github.com/NiltonDuarte/yaml_env_var_parser
+Author: Nilton Duarte
+Author-email: github@niltonduarte.com
+License: MIT
+Keywords: YAML,environ,environment variables,parsing
+Platform: any
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML
+
+# yaml_env_var_parser
+Implementation of PyYAML Reader with env var parsing. 
+
+Inspired by envyaml: https://github.com/thesimj/envyaml
+
+The Reader is the very first step of the PyYAML parsing process and this is where the environment variable is being parsed.
+
+The environment variable parsing can be **anywhere** in the yaml file, the parsing is done in the very early stages of the PyYAML loading process. It is possible to `inject` a YAML structure using it
+
+The code below is an example of what I mean be **anywere**:
+```
+import os
+from yaml_env_var_parser import load
+
+# env vars are replaced on keys
+os.environ['MY_KEY'] = 'key'
+# they might also be YAML tags
+os.environ['TIMESTAMP_TAG'] = '!!timestamp'
+# this will inject `another_key` into the yaml data
+os.environ['MY_COMPLEX_DATA'] = """"simple_data"
+another_key: "its possible to create new keys with env vars. we might call it YAML INJECTION"
+"""
+yaml_data_str = """
+${MY_KEY}: "data"
+complex_data: ${MY_COMPLEX_DATA}
+timestamp_tag: ${TIMESTAMP_TAG} 2022-01-01 00:00:00
+"""
+parsed = load(yaml_data_str)
+print(parsed)
+``` 
+Output:
+```
+{'key': 'data', 'complex_data': 'simple_data', 'another_key': 'its possible to create new keys with env vars. we might call it YAML INJECTION', 'timestamp_tag': datetime.datetime(2022, 1, 1, 0, 0)}
+```
+The key `another_key` does not exist in `yaml_data_str` yaml str definition but it is added from the environment variable `${MY_COMPLEX_DATA}`
+MIT License
+
+Copyright (c) 2022 NiltonDuarte
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
