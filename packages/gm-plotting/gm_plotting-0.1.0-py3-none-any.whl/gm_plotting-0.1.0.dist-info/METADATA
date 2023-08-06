@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gm-plotting
+Version: 0.1.0
+Summary: Tools for overlaying plots on Google Maps
+Home-page: https://github.com/BrainsOnBoard/python-gm-plotting
+License: GPL-2.0-only
+Author: Alex Dewar
+Author-email: a.dewar@imperial.ac.uk
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=9.1.1,<10.0.0)
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: googlemaps (>=4.6.0,<5.0.0)
+Requires-Dist: numpy (>=1.23.0,<2.0.0)
+Requires-Dist: utm (>=0.7.0,<0.8.0)
+Project-URL: Repository, https://github.com/BrainsOnBoard/python-gm-plotting
