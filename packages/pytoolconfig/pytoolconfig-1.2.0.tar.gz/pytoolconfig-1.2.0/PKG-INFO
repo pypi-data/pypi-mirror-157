@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pytoolconfig
+Version: 1.2.0
+Summary: Python tool configuration
+License: LGPL-3.0-or-later
+Author-email: bageljr <bageljr897@protonmail.com>
+Requires-Python: >=3.7, <=3.11
+Provides-Extra: doc
+Provides-Extra: gen_docs
+Provides-Extra: global
+Provides-Extra: validation
+Project-URL: Homepage, https://github.com/bageljrkhanofemus/pytoolconfig
