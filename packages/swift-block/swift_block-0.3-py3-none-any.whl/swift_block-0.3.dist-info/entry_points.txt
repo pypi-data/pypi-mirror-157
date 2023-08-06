@@ -1,0 +1,5 @@
+[console_scripts]
+swift-block-win = swift_block.__init__:main
+
+[gui_scripts]
+swift-block = swift_block.__init__:main
