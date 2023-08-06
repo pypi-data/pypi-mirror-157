@@ -1,0 +1,90 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+
+"OTP-CR-117/19"
+
+
+import os
+import sys
+
+
+sys.path.insert(0, os.getcwd())
+
+
+import importlib
+import readline
+import termios
+import time
+import traceback
+
+
+from genocide.obj import Config
+
+
+Config.console = False
+Config.name = "genocide"
+Config.services = False
+Config.version = 70
+Config.workdir = os.path.expanduser("~/.genocide")
+
+
+from genocide.irc import Config as IRCConfig
+
+
+IRCConfig.channel = "#genocide"
+IRCConfig.nick = "genocide"
+IRCConfig.realname = "OTP-CR-117/19"
+IRCConfig.username = "genocide"
+
+
+from genocide.csl import Console
+from genocide.evt import Command
+from genocide.hdl import Callbacks, Commands, Handler, dispatch
+from genocide.obj import Object, format, spl
+from genocide.irc import IRC
+from genocide.rss import Fetcher
+from genocide.scn import wrap
+
+
+import genocide.cmd.all
+
+
+class Console(Console):
+
+
+    def raw(self, txt):
+        print(txt)
+
+
+def init(pns):
+    for pn in spl(pns):
+        mod = importlib.import_module(pn)
+        if "init" in dir(mod):
+            mod.init()
+
+
+def main():
+    Callbacks.add("command", dispatch)
+    Callbacks.threaded = False
+    c = Console()
+    if "-s" in sys.argv:
+        Config.services = True
+    if "-c" in sys.argv:
+        Config.console = True
+    elif len(sys.argv) > 1 and not Config.services:
+        return c.cmd(" ".join(sys.argv[1:]))
+    print("GENOCIDE started at %s" % time.ctime(time.time()).replace("  ", " "))
+    if not Config.console:
+        i = IRC()
+        i.start()
+        print(format(i.cfg, skip="realname,sleep,username"))
+        f = Fetcher()
+        f.start()
+    if Config.services:
+        init("genocide.mdl")
+    c.start()
+    c.forever()
+
+
+wrap(main)

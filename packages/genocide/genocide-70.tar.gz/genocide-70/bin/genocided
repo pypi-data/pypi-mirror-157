@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+
+"OTP-CR-117/19"
+
+
+import time
+
+
+from genocide.obj import Config
+
+
+Config.console = False
+Config.name = "genocide"
+Config.services = False
+Config.workdir = "/var/lib/genocide/"
+
+
+from genocide.irc import Config as IRCConfig
+
+
+IRCConfig.channel = "#genocide"
+IRCConfig.nick = "genocide"
+IRCConfig.realname = "Special Law for Special People"
+IRCConfig.username = "genocide"
+
+
+from genocide.obj import keys
+from genocide.irc import IRC
+from genocide.rss import Fetcher
+from genocide.scn import init
+
+
+def main():
+    i = IRC()
+    i.start()
+    f = Fetcher()
+    f.start()
+    init("genocide.mdl")
+    while 1:
+        time.sleep(1.0)
+
+
+main()
