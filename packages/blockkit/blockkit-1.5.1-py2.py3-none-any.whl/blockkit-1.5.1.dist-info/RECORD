@@ -1,0 +1,16 @@
+blockkit/__init__.py,sha256=ArV0AmR_W7m0vpyxTBsEK80Hbdb75lehdL1mXJT4rhM,194
+blockkit/blocks.py,sha256=ejd4tVO4Xff8-9mhuogNSSFIRoGhxhljeisUc3k3-W8,5668
+blockkit/components.py,sha256=q6CL-1rZ7TwcgC2fJw-aA7k7fSPBKI9QkMdgTz12_mg,1703
+blockkit/display.py,sha256=T0XGonaehrhShW9mjZpIbwDpgtKNzMcwtZAaP8g7sZo,889
+blockkit/elements.py,sha256=7QAHt8_1UKJ4i0KsUzfuyUwjjNTn4CPkICisULfHcuM,19125
+blockkit/enums.py,sha256=Lx9Fk163ixN2vMInWzu5idAyA64yqDZLp1Kjc0mzAdA,381
+blockkit/fields.py,sha256=puYcdgjaGySlCctKPSSTXofAw4lcq2B7YRMzUXrIsTU,4514
+blockkit/generators.py,sha256=bB3spavb2WIxFaP1xjJ4o8bMnGD-QvWnmmkxIZakcdI,5581
+blockkit/objects.py,sha256=OLHWJewdj-raLtjM0Ae-bgAIU4Pkc_-03vfmRAm-34o,4752
+blockkit/surfaces.py,sha256=zAkSlZdEljeI4cS3GZbDq2Wra2qjDsQ2U2M6tGMzGOM,4246
+blockkit/validators.py,sha256=E2R8wLA3A7D7FqNEkILtXV-HuXbhENe9BwUgoJ1YLeU,1152
+blockkit-1.5.1.dist-info/LICENSE,sha256=EoXAN7NS4i7gUxVigVu5s1kVF0X5-ng8hB6ZUYiSjNE,1074
+blockkit-1.5.1.dist-info/METADATA,sha256=KAFXb98mWFGaTfE5e670Y4XjE0Iw-Hw_UZlry5vUfCA,4731
+blockkit-1.5.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+blockkit-1.5.1.dist-info/top_level.txt,sha256=PbKqfQ0G6dIEfPCv0gMERgZWjtulnvoK0cbjpnkYF9o,9
+blockkit-1.5.1.dist-info/RECORD,,
