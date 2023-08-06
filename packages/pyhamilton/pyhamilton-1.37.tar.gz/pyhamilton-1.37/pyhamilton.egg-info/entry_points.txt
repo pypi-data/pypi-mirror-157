@@ -1,0 +1,3 @@
+[console_scripts]
+pyhamconfig = pyhamilton.__main__:autoconfig
+
