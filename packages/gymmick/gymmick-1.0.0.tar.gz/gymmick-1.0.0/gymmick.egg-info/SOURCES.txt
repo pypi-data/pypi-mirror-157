@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+gymmick/__init__.py
+gymmick/creategym.py
+gymmick/members.py
+gymmick.egg-info/PKG-INFO
+gymmick.egg-info/SOURCES.txt
+gymmick.egg-info/dependency_links.txt
+gymmick.egg-info/requires.txt
+gymmick.egg-info/top_level.txt
