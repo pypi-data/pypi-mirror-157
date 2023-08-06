@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+SRCS/py4cli/route_cli.py
+SRCS/py4cli.egg-info/PKG-INFO
+SRCS/py4cli.egg-info/SOURCES.txt
+SRCS/py4cli.egg-info/dependency_links.txt
+SRCS/py4cli.egg-info/requires.txt
+SRCS/py4cli.egg-info/top_level.txt
+TESTS/basic.py
+TESTS/conftest.py
+TESTS/test_basic.py
