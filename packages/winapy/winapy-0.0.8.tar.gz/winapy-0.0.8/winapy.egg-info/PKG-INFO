@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: winapy
+Version: 0.0.8
+Summary: A WinAPI (Windows API) wrapper made in C for Python.
+Home-page: https://github.com/Itzsten/WinAPY
+Author: Itzsten
+Author-email: itzsten@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Intended Audience :: Education
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
+
+Currently, 135 Windows functions and macros are supported, and there will be more futuristically.
+
+WinAPY features high-level and rich communications with the Windows API, bringing a low-level mess down to a single function. Although it may currently have a few plenties of integrations, this project aims at wrapping as many integrations as possible to Python and will feature more.
