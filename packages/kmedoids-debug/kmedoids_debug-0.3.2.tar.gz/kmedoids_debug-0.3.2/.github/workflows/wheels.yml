@@ -1,0 +1,106 @@
+name: Build and publish wheels on PyPI
+
+on:
+  release:
+    types: [created]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  linux-wheels:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        container:
+          - "quay.io/pypa/manylinux2014_x86_64"
+          - "quay.io/pypa/manylinux_2_28_x86_64"
+    container: ${{ matrix.container }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build wheels
+        run: |
+          curl https://sh.rustup.rs -sSf | sh -s -- -y
+          source $HOME/.cargo/env
+          rustup default stable
+          bash .github/workflows/build-wheels.sh
+      - uses: actions/upload-artifact@v3
+        with:
+          name: wheels
+          path: wheelhouse
+          if-no-files-found: error
+
+  osx-wheels:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10"]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          default: true
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Build wheels
+        run: |
+          rustup target add aarch64-apple-darwin
+          python3 -m pip install -r requirements.txt -r requirements-dev.txt
+          maturin build --release --strip
+          maturin build --release --strip --universal2
+          python3 -m pip install kmedoids-debug --no-index --find-links target/wheels
+          cd tests && python3 -m unittest discover && cd ..
+      - uses: actions/upload-artifact@v3
+        with:
+          name: wheels
+          path: target/wheels
+          if-no-files-found: error
+
+  windows-wheels:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10"]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          default: true
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Build wheels
+        run: |
+          python -m pip install -r requirements.txt -r requirements-dev.txt
+          maturin build --release --strip
+          python -m pip install kmedoids-debug --no-index --find-links target/wheels
+          cd tests && python -m unittest discover && cd ..
+      - uses: actions/upload-artifact@v3
+        with:
+          name: wheels
+          path: target/wheels
+          if-no-files-found: error
+
+  upload-wheels:
+    name: Upload wheels to PyPI
+    needs: [linux-wheels, osx-wheels, windows-wheels]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Collect artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: wheels
+          path: wheels/
+      - name: List contents
+        run: ls -R
+        working-directory: wheels/
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_TOKEN }}
+          packages_dir: wheels/
+          skip_existing: true
+          verbose: true
