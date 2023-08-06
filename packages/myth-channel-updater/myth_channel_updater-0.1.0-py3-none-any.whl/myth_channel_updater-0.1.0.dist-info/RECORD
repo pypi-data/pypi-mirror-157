@@ -1,0 +1,16 @@
+myth_channel_updater-0.1.0.data/scripts/mythchannels,sha256=VUk0wDMoLLOsu09VFfskPLkxAYF5BhA51UzlCzTdJxA,1711
+mythchannels/__init__.py,sha256=-vqrX5Mm8D7P4psrp-gTfZfgc8_KdTraOI8-hM8bmE4,831
+mythchannels/arguments.py,sha256=wbGa-zELRj7dBuHjfw3SOhNgPLlA5tuw17ybVO8Zu0w,1150
+mythchannels/backend.py,sha256=IzoOoxfhW6QZatBsHp2v0SpYQdMGlnN4BFP4BH5P9GU,2876
+mythchannels/channel.py,sha256=6DXQLk_5METcaKGaXpIHh6jyFh8XT9jYIzWkDQjj00g,4687
+mythchannels/rule.py,sha256=piz-CGsyWMwcxLyjG8pfu8biOV4hYtFPD13ER3jopAY,2281
+mythchannels/rules.py,sha256=UtW76K9hzsVpqBssdxiBqhkZHybamsAd7wX1o1y7cl0,1093
+mythchannels/xml.py,sha256=7_cFI7F7VE-AVzuPtwLyojob8nA2KzX3Bo7-BD43Lnk,1078
+tests/__init__.py,sha256=jumjC2gC83wukNquDsMC8scCI6-ftGdE7sj-WlU9qys,765
+tests/test_backend.py,sha256=TuwgE5A4qR2AT6e_BVRquZ2KuvxclTF0TdTraPol5Q4,1361
+tests/test_rule.py,sha256=85jxt7FGlZicn0unPgRuJWM0ov1yQIUp9rWx6ChzULU,1433
+myth_channel_updater-0.1.0.dist-info/LICENSE,sha256=yccrZ84UpxxQmrmAsHW1RKUtslPSOW2S7D1CZHnpIH4,1516
+myth_channel_updater-0.1.0.dist-info/METADATA,sha256=hPwQf-S73Vy-cd2xEzcHo9hkB4AzSUZzLygRAY7fRrI,1060
+myth_channel_updater-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+myth_channel_updater-0.1.0.dist-info/top_level.txt,sha256=UEgbHB7dA1IGMAm3DNSc8geoFSx9WBdE3bCMrLliCPY,19
+myth_channel_updater-0.1.0.dist-info/RECORD,,
