@@ -1,0 +1,3 @@
+[console_scripts]
+fabsys = fabs.scripts.fabsys:main
+sbaf = fabs.scripts.sbaf:main
