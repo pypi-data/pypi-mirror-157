@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: django-authme
+Version: 0.0.2
+Summary: Authentication utilities and systems for Django
+Home-page: UNKNOWN
+Author: legi0n
+License: MIT
+Project-URL: Source, https://github.com/legi0n/django-authme
+Project-URL: Issue tracker, https://github.com/legi0n/django-authme/issues
+Description: # Django AuthMe
+        
+        **Authentication utilities and systems for Django.**
+Keywords: django authentication login utilities
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Framework :: Django
+Classifier: Typing :: Typed
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test

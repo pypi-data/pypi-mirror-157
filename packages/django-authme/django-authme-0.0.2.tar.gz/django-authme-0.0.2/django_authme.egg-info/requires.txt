@@ -1,0 +1,11 @@
+django>=4.0
+
+[dev]
+flake8
+mypy
+twine
+wheel
+
+[test]
+Faker
+factory_boy

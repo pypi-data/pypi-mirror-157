@@ -1,0 +1,45 @@
+{% block form %}
+	<div class="main-form">
+		{% if messages or form.non_field_errors  %}
+			<div class="messages">
+				<ul>
+					{% if form.non_field_errors  %}
+						{% for error in form.non_field_errors  %}
+							<li class="error">{{ error }}</li>
+						{% endfor %}
+					{% endif %}
+					{% if messages %}
+						{% for message in messages %}
+							<li class="{{ message.tags }}">{{ message }}</li>
+						{% endfor %}
+					{% endif %}
+				</ul>
+			</div>
+		{% endif %}
+
+		{% block above_form %}{% endblock %}
+
+		<form method="post" autocomplete="off">
+			{% block form_content %}
+				{% csrf_token %}
+				<h1>{% block form_branding %}Form{% endblock %}</h1>
+				<div class="fields">
+					{% for field in form %}
+						<li>
+							{{ field.label }}
+							{{ field }}
+							{{ field.errors }}
+						</li>
+					{% endfor %}
+					<li>
+						{% block submit_button %}
+							<input type="submit" value="{% block submit_button_value %}Continue{% endblock %}">
+						{% endblock %}
+					</li>
+				</div>
+			{% endblock %}
+		</form>
+
+		{% block below_form %}{% endblock %}
+	</div>
+{% endblock %}
