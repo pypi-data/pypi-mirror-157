@@ -1,0 +1,8 @@
+README.md
+setup.py
+arguments/__init__.py
+arguments/__init__.pyi
+class_arguments.egg-info/PKG-INFO
+class_arguments.egg-info/SOURCES.txt
+class_arguments.egg-info/dependency_links.txt
+class_arguments.egg-info/top_level.txt
