@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+arango_rdf/__init__.py
+arango_rdf/main.py
+arango_rdf.egg-info/PKG-INFO
+arango_rdf.egg-info/SOURCES.txt
+arango_rdf.egg-info/dependency_links.txt
+arango_rdf.egg-info/requires.txt
+arango_rdf.egg-info/top_level.txt
