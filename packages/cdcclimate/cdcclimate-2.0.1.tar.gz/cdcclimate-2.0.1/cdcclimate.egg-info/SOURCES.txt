@@ -1,0 +1,10 @@
+README.txt
+setup.cfg
+setup.py
+cdcclimate/__init__.py
+cdcclimate/__version__.py
+cdcclimate.egg-info/PKG-INFO
+cdcclimate.egg-info/SOURCES.txt
+cdcclimate.egg-info/dependency_links.txt
+cdcclimate.egg-info/requires.txt
+cdcclimate.egg-info/top_level.txt
