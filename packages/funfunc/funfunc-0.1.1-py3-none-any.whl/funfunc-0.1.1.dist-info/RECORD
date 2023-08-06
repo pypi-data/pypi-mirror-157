@@ -1,0 +1,11 @@
+funfunc/__init__.py,sha256=kKCK0F9nMh7mcNzUXkuV7BBnn2IShv6aEeUCLcG16GA,1299
+funfunc/cv.py,sha256=x2gHmpkgAbauL5xpt7s4xNmb_j4b4-7MxV5Bm8S211k,2125
+funfunc/dl.py,sha256=n94iZ5IEi1bCZqasEF8GnVDkaRVx-N1H-p3x7t6BSMM,245
+funfunc/ml.py,sha256=tXPrmGmnXUkWFoabid3It8qajnp35InHL_IZKPXhfxk,273
+funfunc/nlp.py,sha256=Pu4Vve7HlfwlJ6kGbHdiSqycvg8Ln-h_vN2YAwlPCFY,450
+funfunc/tool.py,sha256=669GVBBsjjABT63p6WwRm32_0GQJXYWmUT1Cc06aPVY,2719
+funfunc/tornado_helper.py,sha256=CU9vebEJRXqYHfbNLKCYF-2isJK6lkvQydtidM9sV6c,846
+funfunc-0.1.1.dist-info/METADATA,sha256=4pZ_nzR9sF5Drk4r508TaIddJQwiTDgqz2hd_dsBoD8,440
+funfunc-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+funfunc-0.1.1.dist-info/top_level.txt,sha256=f6nsChRaX291SWgZ9THDgZo1EqdlzJDGbiHP_36FsKo,8
+funfunc-0.1.1.dist-info/RECORD,,
