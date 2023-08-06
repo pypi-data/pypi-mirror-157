@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: darkfunctions
+Version: 0.0.1
+Summary: blackhat hacking modules
+Home-page: UNKNOWN
+Author: iris
+Author-email: sirpurchasehelp@gmail.com
+License: MIT
+Keywords: drk
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+these are alot of functions to use for a remote access tool
+
+
+Change Log
+==========
+
+0.0.2 (19/04/2021)
+-------------------
+- new Release
+
+

@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+Functs/__init__.py
+darkfunctions.egg-info/PKG-INFO
+darkfunctions.egg-info/SOURCES.txt
+darkfunctions.egg-info/dependency_links.txt
+darkfunctions.egg-info/top_level.txt
