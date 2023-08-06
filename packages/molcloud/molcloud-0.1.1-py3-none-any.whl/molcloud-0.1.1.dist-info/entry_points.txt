@@ -1,0 +1,2 @@
+[console_scripts]
+molcloud = molcloud.main:main
