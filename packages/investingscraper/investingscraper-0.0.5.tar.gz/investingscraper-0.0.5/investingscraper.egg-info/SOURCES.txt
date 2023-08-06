@@ -1,0 +1,14 @@
+CHANGELOG.md
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+investing_scraper/__init__.py
+investing_scraper/historical_data.py
+investing_scraper/instrument_details.py
+investingscraper.egg-info/PKG-INFO
+investingscraper.egg-info/SOURCES.txt
+investingscraper.egg-info/dependency_links.txt
+investingscraper.egg-info/requires.txt
+investingscraper.egg-info/top_level.txt
