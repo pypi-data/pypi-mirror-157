@@ -1,0 +1,7 @@
+pandas
+numpy
+sciutil>=1.0.3
+statsmodels
+scipy
+sciviso
+wordcloud
