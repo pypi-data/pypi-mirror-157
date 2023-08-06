@@ -1,0 +1,14 @@
+PennyLane_Lightning_GPU-0.24.1.dist-info/LICENSE,sha256=_zKpiTfJGLmlVz4pw88ztD4wTe2QkkUNBGSaac54sjM,11720
+PennyLane_Lightning_GPU-0.24.1.dist-info/METADATA,sha256=0CkBYs3yb-abGzJgnTLtP-HVn60QegZxdxfG-zPxnz4,6938
+PennyLane_Lightning_GPU-0.24.1.dist-info/entry_points.txt,sha256=p4z27vSwIcG3z8yVifI-kfVk9zBFZnCUNwZcsOrBzFA,74
+PennyLane_Lightning_GPU-0.24.1.dist-info/WHEEL,sha256=FGGRUrvefXOiAJfyJCZAiu4TpTMkXB_CzdEp3x2T96E,150
+PennyLane_Lightning_GPU-0.24.1.dist-info/top_level.txt,sha256=WnQKxQFaEREBkEMxYEmTgyB3ztqubZ8Q-ncXDYiHLoA,48
+PennyLane_Lightning_GPU-0.24.1.dist-info/RECORD,,
+PennyLane_Lightning_GPU.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
+pennylane_lightning_gpu/lightning_gpu_qubit_ops.cpython-37m-x86_64-linux-gnu.so,sha256=82t_TgrqJJ8wTanSV-DOpS8hRtvkQTqPs4d3ahxmNDA,46511072
+pennylane_lightning_gpu/_version.py,sha256=f5k2s02xXVXa3asiuO8EAS9Ez9RvUa0wTU_BZUrNX40,697
+pennylane_lightning_gpu/__init__.py,sha256=QMUdVqRb8AvM-QDzpWQ-uk5ePkXnqsPgsPK71ArWxqQ,721
+pennylane_lightning_gpu/lightning_qubit_ops.cpython-37m-x86_64-linux-gnu.so,sha256=s4gYZXZeWTozGLYyJBf_Oj4IEs92U3XkR7DFB5pISuk,50907448
+pennylane_lightning_gpu/lightning_gpu.py,sha256=aunoGRq7PBXlwa0vo64CkU8zDtmBBqwS8Y9xPDmN7S8,15956
+pennylane_lightning_gpu/_serialize.py,sha256=0dmV_oTXKtFwM_LNVunJRaZC6Fyd_TATD7zijuhZv4s,5387
+pennylane_lightning_gpu/src/CMakeLists.txt,sha256=dCJxChXKi56uMGq83jI7P6gQiruAtJ1buV76jsQLeDc,508

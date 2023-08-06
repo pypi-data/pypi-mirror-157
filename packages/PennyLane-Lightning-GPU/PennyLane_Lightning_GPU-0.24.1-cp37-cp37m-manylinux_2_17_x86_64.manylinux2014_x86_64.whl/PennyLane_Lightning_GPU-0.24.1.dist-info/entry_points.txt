@@ -1,0 +1,3 @@
+[pennylane.plugins]
+lightning.gpu = pennylane_lightning_gpu:LightningGPU
+
