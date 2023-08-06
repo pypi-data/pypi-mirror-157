@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+setup.py
+deformation/__init__.py
+deformation/affine.py
+deformation/core.py
+deformation/doc.py
+deformation/padding.py
+deformation/perspective.py
+deformation/poly.py
+deformation/rotation.py
+deformation/test.py
+deformation.egg-info/PKG-INFO
+deformation.egg-info/SOURCES.txt
+deformation.egg-info/dependency_links.txt
+deformation.egg-info/requires.txt
+deformation.egg-info/top_level.txt
