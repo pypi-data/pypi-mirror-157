@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyVectorMath.cpp
+pyVectorMath.h
+setup.py
+vmath.h
+vmath_doc_en.h
+igeVmath.egg-info/PKG-INFO
+igeVmath.egg-info/SOURCES.txt
+igeVmath.egg-info/dependency_links.txt
+igeVmath.egg-info/top_level.txt
