@@ -1,0 +1,16 @@
+include custom_components/custom_components.min.js
+include custom_components/custom_components.min.js.map
+include custom_components/metadata.json
+include custom_components/package-info.json
+include README.md
+include LICENSE
+include package.json
+include custom_components/bootstrap-responsive.css
+include custom_components/bootstrap.css
+include custom_components/graph-diagram.css
+include custom_components/graph-editor.css
+include custom_components/graph-style-bootstrap.css
+include custom_components/graph-style-chunky.css
+include custom_components/workingmemory.css
+include custom_components/custom.css
+include custom_components/antd.css
