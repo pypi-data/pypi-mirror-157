@@ -1,0 +1,13 @@
+simpletyper/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+simpletyper/app.py,sha256=z2x62J2_KbPKqEC2dZYc8Z17lFvOGwqgEoSSRWIVLKM,7644
+simpletyper/words/commonly_misspelled,sha256=CP6Zk0W1n-KMc1Tz-MZYzLN0ikJpxtYrtdQfR3XFZpY,16372
+simpletyper/words/top1000,sha256=KoaM5RbWBRoMQgfuMdo4YxeLydpZfx4UMiF2yyoTFZI,6273
+simpletyper/words/top10000,sha256=VgHa2cR7n59ASRMer4FQsGDML9gcE0X-DmZz9qN-Ak0,81698
+simpletyper/words/top250,sha256=RGOykoNw86ZqkACvvD5Lfbe4VVKu9y5Msg2itiI3MSg,1282
+simpletyper/words/top2500,sha256=Eht1OMQXkfjAP4IJtrwZFsne8xRqODpfGWa0YeiVep8,17292
+simpletyper/words/top25000,sha256=flY6ddOi7TK7t5HJD7ZyPW3fgonZ4lokNed2TyysJWI,213303
+simpletyper/words/top500,sha256=Y1yJ9KwJ31tQtYdpOipgdbZlyGZjrYBIDdtZUK34iJw,2847
+simpletyper/words/top5000,sha256=cLWa2HQrxC0Slpi1gna5HXp9KnhRahI5cbT8zXZkCR0,37004
+simpletyper-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+simpletyper-0.1.0.dist-info/METADATA,sha256=ZJ07icbrOLb8TctlEWm6x559vjIoCdvKyN-Eo1bMKC8,412
+simpletyper-0.1.0.dist-info/RECORD,,
