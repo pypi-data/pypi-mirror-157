@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: os-env-injection
+Version: 0.0.0rc0
+Summary: Utilities to handle OS environment variables
+Author: Francesco Calcavecchia
+Author-email: francesco.calcavecchia@gmail.com
+License: MIT
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Provides-Extra: dev
+
+# os-env
+Utilities to handle OS environment variables
+
+## Why this library?
+
+You have a function which requires several arguments that typically depend on the system on when the function is running
+```python
+def f(url: str, user: str, password: str, subdomain: str):
+    ...
+```
+
+You would like to have the possibility to have its values to be read from the OS env.
+If you simply do
+```python
+import os
+
+def f(
+    url: str = os.environ["URL"],
+    user: str = os.environ["USER"],
+    password: str = os.environ["PASSWORD"],
+    subdomain: str = os.environ["SUBDOMAIN"],
+):
+    ...
+```
+then you will encounter a problem whenever the OS env variables are not set, because the defaults are evaluated at import time.
+This means in practice, that you will be forced to use them, instead of passing the values directly.
+
+A workaround is to write
+```python
+import os
+
+def f(
+    url: str = os.environ.get("URL", None),
+    user: str = os.environ.get("USER", None),
+    password: str = os.environ.get("PASSWORD", None),
+    subdomain: str = os.environ.get("SUBDOMAIN", None),
+):
+    ...
+```
+In this way, there are still a couple of drawbacks:
+* it is necessary to write code to check the values of each variable to raise an exception if values are missing (`None`)
+* the default values will be evaluated when the function is first imported.   
+  In case you are setting the OS env dynamically (e.g. by executing a shell script with `export`s) you could end up in troubles.
+
+
+
+## The nice solution - Quickstart
+
+First, install the library
+```shell
+pip install os-env
+```
+
+From the previous example, say that all variables are required except for `subdomain` which can stay `None`.
+One can use this library to write: 
+
+```python
+from os_env import inject_os_env, OSEnvInjected
+from typing import Optional
+
+@inject_os_env(keymap={"url": "OS_ENV_URL", "user": "OS_ENV_USER", "password": "OS_ENV_PASSWORD"})
+def f(url: OSEnvInjected, user: OSEnvInjected, password: OSEnvInjected, subdomain: Optional[OSEnvInjected]):
+    ...
+```
+
+What will happen?
+* If you explicitly pass a value when you call `f`, it will be used
+* If no value is passed, then it will try to read it from the OS environment. 
+  It will look for the variable with name specified in the decorator, if given, otherwise the variable name itself.
+  E.g. in our example, it will look into `$OS_ENV_URL` for the `url` value, and `$subdomain` for `subdomain`.
+* If no value is found in the OS environment too, then it will raise an exception if the type is `OSEnvInjected`.
+  It will not raise an exception and set the value to `None` if the type is `Optional[OSEnvInjected]`.
+
+
+##### Don't specify the OS env keys
+
+It is possible to skip altogether the argument `os_env_keymap` in the decorator:
+```python
+from os_env import inject_os_env, OSEnvInjected
+from typing import Optional
+
+@inject_os_env
+def f(url: OSEnvInjected, 
+      user: OSEnvInjected, 
+      password: OSEnvInjected, 
+      subdomain: Optional[OSEnvInjected]):
+    ...
+```
+In this case, the OS environment variables will be `$url`, `$user`, `$password`, and `$subdomain`.
+
+
+
+## Setup development environment (for contributors only)
+
+* Create a virtual environment and activate it
+  ```shell
+  python -m venv venv
+  source venv/bin/activate
+  ```
+
+* Install the developer dependencies you will need
+  ```shell
+  pip install -U pip wheel setuptools
+  pip install -e .[dev]
+  ```
+  
+* Set black as pre-commit package (will automatically apply [black](https://github.com/psf/black) before committing)
+  ```shell
+  pre-commit install
+  ```
+  
+* To run the tests
+  ```shell
+  pytest
+  ```
