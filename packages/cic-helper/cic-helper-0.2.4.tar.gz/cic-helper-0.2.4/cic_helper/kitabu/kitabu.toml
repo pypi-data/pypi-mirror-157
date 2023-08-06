@@ -1,0 +1,30 @@
+[parity]
+chain = "./kitabu.json"
+base_path = "./data"
+
+[footprint]
+tracing = "on"
+pruning = "archive"
+
+[rpc]
+port = 8545
+apis = [
+  "web3",
+  "eth",
+  "net",
+  "personal",
+  "parity",
+  "parity_set",
+  "traces",
+  "rpc",
+  "parity_accounts",
+]
+interface = "all"
+cors = ["*"]
+
+
+[websockets]
+disable = false
+port = 8546
+interface = "all"
+origins = ["all"]

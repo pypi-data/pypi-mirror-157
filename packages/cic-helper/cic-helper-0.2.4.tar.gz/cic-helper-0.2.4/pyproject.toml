@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "cic-helper"
+version = "0.2.4"
+description = ""
+authors = ["William Luke <williamluke4@gmail.com>"]
+
+exclude = ["**/kitabu/data/"]
+[tool.poetry.scripts]
+cic-helper = 'cic_helper.cli:cli'
+
+[[tool.poetry.source]]
+name = "grassroots_"
+url = "https://pip.grassrootseconomics.net/"
+default = true
+
+[[tool.poetry.source]]
+name = "pypi_"
+url = "https://pypi.org/simple/"
+secondary = true
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.1.2"
+chainlib-eth = "^0.1.0"
+
+[tool.poetry.dev-dependencies]
+python-semantic-release = "^7.25.2"
+pylint = "^2.12.2"
+black = "^22.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = [
+  "cic_helper/__init__.py:__version__",
+  "pyproject.toml:version",
+]
+version_source = "commit"
+branch = "main"
+upload_to_repository = true
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
+hvcs = "github"
+check_build_status = false
