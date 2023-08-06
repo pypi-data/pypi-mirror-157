@@ -1,0 +1,8 @@
+addata/.DS_Store,sha256=pIpH76hsT93h1OdF0RaUUIUPku9SRmEYC4D1fQoegvU,6148
+addata/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+addata/addata.py,sha256=Q_Haz3B71NXCEZZqy1jtu1tvsATT0jpqARlunBr2pzk,175
+addata/datasets/churn.csv,sha256=OZbNH6Ny4NsM2cDrrDW71Ojjxl-5QrsBDIJuex7u8KA,684858
+addata/datasets/new_sales.csv,sha256=_CnHtdK4gIe2MHBf4XU1C4ytg6M_ZgIje6764zS4lPo,16228673
+addata-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+addata-0.1.0.dist-info/METADATA,sha256=FzCHkwTJUbhO_JE1_sLnw5MUUSyDT247CsJYHBfH1aA,375
+addata-0.1.0.dist-info/RECORD,,
