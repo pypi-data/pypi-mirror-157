@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: KivyMDEmulator
+Version: 1.0.3
+Summary: KivyMD Emulator.
+Home-page: https://gitlab.com/franciscocarbonell/kivymdemulator
+Author: Francisco carbonell
+Author-email: francabezo@gmail.com
+License: MIT
+Keywords: python3 kivymd kivy kivymdemulator
+Description-Content-Type: text/markdown
+
