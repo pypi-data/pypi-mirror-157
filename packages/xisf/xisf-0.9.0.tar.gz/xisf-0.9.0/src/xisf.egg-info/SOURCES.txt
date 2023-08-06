@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.py
+example/xisfmeta.py
+src/__init__.py
+src/xisf.py
+src/xisf.egg-info/PKG-INFO
+src/xisf.egg-info/SOURCES.txt
+src/xisf.egg-info/dependency_links.txt
+src/xisf.egg-info/requires.txt
+src/xisf.egg-info/top_level.txt
