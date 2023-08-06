@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: fedexapi-chnoma
+Version: 0.0.2
+Summary: A module I devloped to abstract the Fedex API for use in my programs.
+Author-email: "Adrian J. Arnett" <adrianarnett0@gmail.com>
+Project-URL: Homepage, https://github.com/chnoma/fedex-api
+Project-URL: Bug Tracker, https://github.com/chnoma/fedex-api/issues
+Keywords: FedEx,API
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python-FedEx API
+## Summary
+
+This is a module which I've developed to simplify interfacing with the FedEx API.
+
+To use this module, you will need to register for a FedEx Developer account and obtain an API and a Secret Key.
+
+Additionally, this is not meant to be security-hardened module. It is only used for internal business processes. Use at your own risk.
+
+## Usage
+tbd
