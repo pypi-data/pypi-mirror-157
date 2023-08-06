@@ -1,0 +1,11 @@
+igv_notebook/__init__.py,sha256=FYdHGLF2BCwxez_7i3AR4p2BJauz8RdZ3EILOsfXHHU,35
+igv_notebook/browser.py,sha256=Pw1Z0oxuu41CBIK3xhqzcLLvqwbyOd0L_BNpXxp6Hiw,3266
+igv_notebook/file_reader.py,sha256=2pY6HE0vAcaec-NmuXI6J30rGzTpcSsLLPfhtg-mxNo,1699
+igv_notebook/js/igv.min.js,sha256=XzugQVS1ssMUDcczdAUA9Ad2FfCLw4HeRutbV-gi55Q,970785
+igv_notebook/js/localNotebookFile.js,sha256=w6pdnF-U0tG4y1-rMka4NQKtftbqz_icLNKNeN0PEO0,6342
+igv_notebook/js/messageHandler.js,sha256=EMXvhj4sef8pevoPG2g2fBBQegndq4mQixnqd8bK_u0,10289
+igv_notebook-0.2.4.dist-info/LICENSE.md,sha256=cMiD8ncpjp407NecgpMTarlHu2SnKJiJfM2OgBv9cLE,1064
+igv_notebook-0.2.4.dist-info/METADATA,sha256=NBQa6h_WWT7lYUwbxs4cdU4mAAfymNHvJ7nIT_vDOUE,8051
+igv_notebook-0.2.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+igv_notebook-0.2.4.dist-info/top_level.txt,sha256=GAFMQO--m2g9H40Da00otO1PjjlklhLpX5wuWt3cdPs,13
+igv_notebook-0.2.4.dist-info/RECORD,,
