@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: onmqtt
+Version: 0.2
+Summary: link to mqtt
+Home-page: https://github.com/only-tao/onmqtt>
+Author: onlytao
+Author-email: onlytao970@gmail.com
+Maintainer: onlytao
+Maintainer-email: onlytao970@gmail.com
+License: MIT License
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+#### link to mqtt
