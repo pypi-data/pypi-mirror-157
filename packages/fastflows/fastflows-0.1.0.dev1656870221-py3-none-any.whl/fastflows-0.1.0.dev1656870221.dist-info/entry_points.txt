@@ -1,0 +1,3 @@
+[console_scripts]
+fastflows=fastflows.cli:app
+
