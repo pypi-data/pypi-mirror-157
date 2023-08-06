@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: seahash
+Version: 0.2.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Typing :: Typed
+Requires-Dist: pytest==7.1.2; extra == 'dev'
+Requires-Dist: black==22.6.0; extra == 'dev'
+Provides-Extra: dev
+License-File: LICENSE
+Summary: A blazingly fast, portable hash function with proven statistical guarantees
+Keywords: hash,hashing,checksum,checksumming,portable
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Changelog, https://github.com/RealOrangeOne/seahash-py/releases
+Project-URL: Issues, https://github.com/RealOrangeOne/seahash-py/issues
+Project-URL: Source, https://github.com/RealOrangeOne/seahash-py
+
+# SeaHash
+
+[![CI](https://github.com/RealOrangeOne/seahash-py/actions/workflows/ci.yml/badge.svg)](https://github.com/RealOrangeOne/seahash-py/actions/workflows/ci.yml)
+![PyPI](https://img.shields.io/pypi/v/seahash.svg)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/seahash.svg)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/seahash.svg)
+![PyPI - Status](https://img.shields.io/pypi/status/seahash.svg)
+![PyPI - License](https://img.shields.io/pypi/l/seahash.svg)
+
+
+Python bindings to [`seahash`](https://docs.rs/seahash/) - A blazingly fast, portable hash function with proven statistical guarantees.
+
+## Installation
+
+```
+pip install seahash
+```
+
+Wheels should be available for most platforms. If you need a wheel which isn't provided, [raise an issue](https://github.com/RealOrangeOne/seahash-py/issues).
+
+Compiling from source will require a Rust toolchain.
+
+## Usage
+
+Hashing can be done in 2 ways:
+
+### Primitive functions
+
+```python
+import seahash
+
+# Plain hash
+seahash.hash(b"123")
+
+# Hash with custom seeds
+seahash.hash_seeded(b"123", 4, 5, 6, 7)
+```
+
+Both methods return an `int`.
+
+### `hashlib`-compatible class
+
+For convenience, a `hashlib`-compatible class is provided:
+
+```python
+import seahash
+
+s = seahash.SeaHash()
+
+s.update(b"123")
+
+s.digest()
+s.hexdigest()
+```
+
+The underlying `int` digest can be obtained with `intdigest`.
+
