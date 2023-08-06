@@ -1,0 +1,2 @@
+cppyy-cling==6.27.0
+cppyy-backend==1.14.9
