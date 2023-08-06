@@ -1,0 +1,75 @@
+# This file exists so you can easily regenerate your project.
+#
+# `cookiepatcher` is a convenient shim around `cookiecutter`
+# for regenerating projects (it will generate a .cookiecutterrc
+# automatically for any template). To use it:
+#
+#    pip install cookiepatcher
+#    cookiepatcher gh:ionelmc/cookiecutter-pylibrary chemfileconverter
+#
+# See:
+#    https://pypi.org/project/cookiepatcher
+#
+# Alternatively, you can run:
+#
+#    cookiecutter --overwrite-if-exists --config-file=chemfileconverter/.cookiecutterrc gh:ionelmc/cookiecutter-pylibrary
+
+default_context:
+
+    _extensions:               ['jinja2_time.TimeExtension']
+    _output_dir:               'C:\\Users\\Colllin\\Documents\\programming\\ChemFileConverter'
+    _template:                 'gh:ionelmc/cookiecutter-pylibrary'
+    allow_tests_inside_package: 'no'
+    appveyor:                  'no'
+    c_extension_function:      'longest'
+    c_extension_module:        '_chemfileconverter'
+    c_extension_optional:      'no'
+    c_extension_support:       'no'
+    c_extension_test_pypi:     'no'
+    c_extension_test_pypi_username: 'CollinStark'
+    codacy:                    'no'
+    codacy_projectid:          '[Get ID from https://app.codacy.com/gh/CollinStark/chemfileconverter/settings]'
+    codeclimate:               'no'
+    codecov:                   'yes'
+    command_line_interface:    'argparse'
+    command_line_interface_bin_name: 'chemfileconverter'
+    coveralls:                 'no'
+    distribution_name:         'chemfileconverter'
+    email:                     'c.starke@tu-bs.de'
+    full_name:                 'Collin Starke'
+    github_actions:            'no'
+    github_actions_osx:        'no'
+    github_actions_windows:    'no'
+    legacy_python:             'no'
+    license:                   'BSD 2-Clause License'
+    linter:                    'flake8'
+    package_name:              'chemfileconverter'
+    pre_commit:                'yes'
+    pre_commit_formatter:      'black'
+    project_name:              'chemfileconverter'
+    project_short_description: 'A python converter for Chemical Table Files.'
+    pypi_badge:                'yes'
+    pypi_disable_upload:       'no'
+    release_date:              'today'
+    repo_hosting:              'github.com'
+    repo_hosting_domain:       'github.com'
+    repo_main_branch:          'master'
+    repo_name:                 'chemfileconverter'
+    repo_username:             'CollinStark'
+    requiresio:                'yes'
+    scrutinizer:               'no'
+    setup_py_uses_pytest_runner: 'no'
+    setup_py_uses_setuptools_scm: 'no'
+    sphinx_docs:               'yes'
+    sphinx_docs_hosting:       'https://chemfileconverter.readthedocs.io/'
+    sphinx_doctest:            'no'
+    sphinx_theme:              'sphinx-rtd-theme'
+    test_matrix_configurator:  'no'
+    test_matrix_separate_coverage: 'no'
+    travis:                    'no'
+    travis_osx:                'no'
+    version:                   '0.0.0'
+    version_manager:           'bump2version'
+    website:                   'metamdb.tu-bs.de'
+    year_from:                 '2022'
+    year_to:                   '2022'

@@ -1,0 +1,3 @@
+[console_scripts]
+chemfileconverter = chemfileconverter.cli:main
+
