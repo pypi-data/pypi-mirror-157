@@ -1,0 +1,8 @@
+pandas
+gql==3.0.0
+pytz
+tzlocal
+pyperclip
+loguru
+requests
+requests_toolbelt
