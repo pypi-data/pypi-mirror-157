@@ -1,0 +1,17 @@
+AUTHORS
+LICENSE
+README.md
+setup.cfg
+setup.py
+PyTado/__init__.py
+PyTado/__main__.py
+PyTado/const.py
+PyTado/interface.py
+PyTado/zone.py
+jorgenvatle_python_tado.egg-info/PKG-INFO
+jorgenvatle_python_tado.egg-info/SOURCES.txt
+jorgenvatle_python_tado.egg-info/dependency_links.txt
+jorgenvatle_python_tado.egg-info/entry_points.txt
+jorgenvatle_python_tado.egg-info/not-zip-safe
+jorgenvatle_python_tado.egg-info/requires.txt
+jorgenvatle_python_tado.egg-info/top_level.txt
