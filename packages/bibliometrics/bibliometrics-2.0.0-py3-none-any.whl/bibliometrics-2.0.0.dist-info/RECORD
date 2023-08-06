@@ -1,0 +1,9 @@
+bibliometrics/__init__.py,sha256=pKoxifhMVCtAvTzs2seml687jpvBU3uv2earbBEk5TU,1223
+bibliometrics/__main__.py,sha256=mEnT77R5KWzZCd0FH7fmzMp2ofSggoHZfQFUjuNs_uc,1558
+bibliometrics/bibliometrics.py,sha256=001ouZCCVwApTgz0Somyy3-8ZmVbOiJiE-O1Wca_4Z0,14112
+bibliometrics/text_length.py,sha256=QksIZ3E4PmHa0dHtVt4ojzbypCjSPwf9Hoky21c3YOo,131326
+bibliometrics-2.0.0.dist-info/METADATA,sha256=sK9klLUbCYT_FK_IDnLLbprj6gJDa72sfgZgHOMCh1U,10477
+bibliometrics-2.0.0.dist-info/WHEEL,sha256=5vr2ZUYMIPpdABBOSv8-NuqiKYrGTWMNuyATpVRyrq8,86
+bibliometrics-2.0.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bibliometrics-2.0.0.dist-info/license_files/LICENSE,sha256=IbDprrhToT5PKzqUa69iCp1KQU2_HKoCOyN3q57-QzY,1077
+bibliometrics-2.0.0.dist-info/RECORD,,
