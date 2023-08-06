@@ -1,0 +1,14 @@
+calculator_demo_pkg/__init__.py,sha256=T7vrrHhP0pTeOPrJ_d9E03xnTXIdBW0ocUaKAooWPSU,210
+calculator_demo_pkg/scientific/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calculator_demo_pkg/scientific/cos.py,sha256=y-HhXi-MmJUPMGxKa6rNw143oHrTByaC32Sy_N0vhcE,75
+calculator_demo_pkg/scientific/sin.py,sha256=ecNMZsSrJI_UiartWjlcgsC5SS1kBpX9BE08Ra5Nm4c,75
+calculator_demo_pkg/standard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calculator_demo_pkg/standard/add.py,sha256=sFr7PNnD_MOU-B6vkA2I2OHUeEU41tN7aAx9sYlME4M,74
+calculator_demo_pkg/standard/divide.py,sha256=wzzOSYS--4GreMvjoa3oc3GjuLjug_TkgvpnmbUxuzI,94
+calculator_demo_pkg/standard/multiply.py,sha256=r-O3r7HMG_HwUoXSumGMQe0poA8jccAmtm-tlMwzpfA,79
+calculator_demo_pkg/standard/subtract.py,sha256=JBPeNPHABn_M1mtHeo2jW4K5qmYH2vi7hdD6sxO1h74,79
+calculator_demo_pkg-0.0.3.dist-info/LICENSE,sha256=jhSpF1gAM_8Utc-_LxPxslPx2RWSQ2XzY1PXxV-MDoE,1045
+calculator_demo_pkg-0.0.3.dist-info/METADATA,sha256=htadiSi9YSqUP7dwEAeIUtzRVx8YJK1OgKZzo4LF6uc,198
+calculator_demo_pkg-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+calculator_demo_pkg-0.0.3.dist-info/top_level.txt,sha256=RqiUCgvYBf9WPdi6ihdsH5OxpGItaZoLfEu0DjOpV7M,20
+calculator_demo_pkg-0.0.3.dist-info/RECORD,,
