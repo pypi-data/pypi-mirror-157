@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: project-config
+Version: 0.3.0
+Summary: Reproducible configuration across projects.
+Home-page: https://github.com/mondeja/project-config
+License: BSD-3-License
+Author: Álvaro Mondéjar Rubio
+Author-email: mondejar1994@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Dist: appdirs (>=1,<2)
+Requires-Dist: colored
+Requires-Dist: diskcache (>=5,<6)
+Requires-Dist: identify (>=2,<3)
+Requires-Dist: importlib-metadata-argparse-version
+Requires-Dist: importlib-metadata; python_version < "3.10"
+Requires-Dist: jmespath (>=1,<2)
+Requires-Dist: pyjson5
+Requires-Dist: ruamel.yaml (>=0.17,<0.18)
+Requires-Dist: tabulate (>=0.8,<0.9)
+Requires-Dist: tomli (>=2,<3); python_version < "3.11"
+Requires-Dist: tomli-w (>=1,<2)
+Requires-Dist: typing-extensions (>=4,<5)
+Project-URL: Bug tracker, https://github.com/mondeja/project-config/issues
+Project-URL: Documentation, https://github.com/mondeja/project-config#documentation
+Project-URL: Repository, https://github.com/mondeja/project-config
+Description-Content-Type: text/markdown
+
+# project-config
+
+[![PyPI][pypi-version-badge-link]][pypi-link]
+[![Python versions][pypi-pyversions-badge-link]][pypi-link]
+[![License][license-image]][license-link]
+[![Tests][tests-image]][tests-link]
+[![Coverage][coverage-image]][coverage-link]
+[![Downloads][pypi-downloads-image]][pypi-downloads-link]
+
+
+> Note for developers: This project is under heavy development.
+The testing and reporter APIs may change without warning before the
+first stable release (v1), but configuration, CLI and plugins are
+guaranteed to be backwards compatible, so you can safely write
+styles now! :+1:
+
+## [Documentation](https://mondeja.github.io/project-config/latest/)
+
+[pypi-link]: https://pypi.org/project/project-config
+[pypi-version-badge-link]: https://img.shields.io/pypi/v/project-config?logo=pypi&logoColor=white
+[pypi-pyversions-badge-link]: https://img.shields.io/pypi/pyversions/project-config?logo=python&logoColor=white
+[license-image]: https://img.shields.io/pypi/l/project-config?color=light-green&logo=freebsd&logoColor=white
+[license-link]: https://github.com/mondeja/project-config/blob/master/LICENSE
+[tests-image]: https://img.shields.io/github/workflow/status/mondeja/project-config/CI?logo=github&label=tests
+[tests-link]: https://github.com/mondeja/project-config/actions?query=workflow%3ACI
+[pypi-downloads-image]: https://img.shields.io/pypi/dm/project-config?logo=pypi&logoColor=white
+[pypi-downloads-link]: https://pypistats.org/packages/project-config
+[coverage-image]: https://img.shields.io/coveralls/github/mondeja/project-config?logo=coveralls
+[coverage-link]: https://coveralls.io/github/mondeja/project-config
+
