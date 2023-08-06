@@ -1,0 +1,2 @@
+[console_scripts]
+oscan = oscan.__main__:main

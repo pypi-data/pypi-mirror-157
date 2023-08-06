@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+setup.cfg
+setup.py
+oscan/__init__.py
+oscan/__main__.py
+oscan.egg-info/PKG-INFO
+oscan.egg-info/SOURCES.txt
+oscan.egg-info/dependency_links.txt
+oscan.egg-info/entry_points.txt
+oscan.egg-info/not-zip-safe
+oscan.egg-info/requires.txt
+oscan.egg-info/top_level.txt
+tests/__init__.py
