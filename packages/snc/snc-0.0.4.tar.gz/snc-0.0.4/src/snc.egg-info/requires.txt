@@ -1,0 +1,5 @@
+numpy
+scicit-learn
+numba
+pyclustering
+hdbscan
