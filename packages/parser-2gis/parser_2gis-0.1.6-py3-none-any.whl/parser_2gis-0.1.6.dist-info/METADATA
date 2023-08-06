@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: parser-2gis
+Version: 0.1.6
+Summary: Парсер сайта 2GIS
+Home-page: https://github.com/interlark/parser-2gis
+Author: Andy Trofimov
+Author-email: interlark@gmail.com
+License: LGPLv3+
+Keywords: parser scraper 2gis
+Platform: UNKNOWN
+Classifier: Topic :: Internet
+Classifier: Topic :: Utilities
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Natural Language :: Russian
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pychrome (==0.2.3)
+Requires-Dist: pydantic (>=1.9.0)
+Requires-Dist: psutil (>=5.4.8)
+Requires-Dist: requests (>=2.13.0)
+Provides-Extra: dev
+Requires-Dist: pyinstaller (>=5.0) ; extra == 'dev'
+Requires-Dist: pytest (<8,>=6.2) ; extra == 'dev'
+Requires-Dist: tox (<4,>=3.5) ; extra == 'dev'
+Requires-Dist: pre-commit (>=2.6) ; extra == 'dev'
+Requires-Dist: wheel (<0.38,>=0.36.2) ; extra == 'dev'
+Provides-Extra: gui
+Requires-Dist: PySimpleGUI (==4.59.0) ; extra == 'gui'
+
+<p align="center">
+  <a href="#%E2%84%B9%EF%B8%8F-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5">
+    <img alt="Logo" width="128" src="https://user-images.githubusercontent.com/20641837/174094285-6e32eb04-7feb-4a60-bddf-5a0fde5dba4d.png"/>
+  </a>
+</p>
+<h1 align="center">Parser2GIS</h1>
+
+<p align="center">
+  <a href="https://github.com/interlark/parser-2gis/actions/workflows/tests.yml"><img src="https://github.com/interlark/parser-2gis/actions/workflows/tests.yml/badge.svg" alt="Tests"/></a>
+  <a href="https://pypi.org/project/parser-2gis"><img src="https://badgen.net/pypi/v/parser-2gis" alt="PyPi version"/></a>
+  <a href="https://pypi.org/project/parser-2gis"><img src="https://badgen.net/pypi/python/parser-2gis" alt="Supported Python versions"/></a>
+  <a href="https://github.com/interlark/parser-2gis/blob/main/LICENSE"><img src="https://badgen.net/pypi/license/parser-2gis" alt="License"/></a>
+</p>
+
+**Parser2GIS** - парсер сайта [2GIS](https://2gis.ru/) с помощью браузера [Google Chrome](https://google.com/chrome).
+
+<img alt="Screenshot" src="https://user-images.githubusercontent.com/20641837/174098241-7c0874aa-e70d-4978-86dc-7fd90af44603.png"/>
+
+## ℹ️ Описание
+Парсер для автоматического сбора базы адресов и контактов предприятий, которые работают на территории
+России 🇷🇺, Казахстана 🇰🇿, Украины 🇺🇦, Беларуси 🇧🇾,
+Азербайджана 🇦🇿, Киргизии 🇰🇬, Узбекистана 🇺🇿, Чехии 🇨🇿, Египта 🇪🇬, Италии 🇮🇹, Саудовской Аравии 🇸🇦, Кипра 🇨🇾, Объединенных Арабских Эмиратов 🇦🇪, Чили 🇨🇱, Катара 🇶🇦, Омана 🇴🇲, Бахрейна 🇧🇭.
+
+## 🚀 Установка
+> Для работы парсера необходимо установить браузер [Google Chrome](https://google.com/chrome).
+
+### Установка одним файлом
+
+  Скачать [релиз](https://github.com/interlark/parser-2gis/releases/latest).
+
+### Установка из PyPI
+  ```bash
+  # CLI
+  pip install parser-2gis
+  # CLI + GUI
+  pip install parser-2gis[gui]
+  ```
+ 
+### Установка из репозитория
+  ```bash
+  git clone https://github.com/interlark/parser-2gis
+  cd parser-2gis
+  
+  python -m venv venv
+  
+  # Windows
+  .\venv\Scripts\activate.bat
+  # Linux, MacOS
+  . venv/bin/activate
+  
+  # CLI
+  pip install .
+  # CLI + GUI
+  pip install .[gui]
+  ```
+
+## 📖 Документация
+Описание работы доступно на [вики](https://github.com/interlark/parser-2gis/wiki).
+
+
