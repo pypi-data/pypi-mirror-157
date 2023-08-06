@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+example_chitalian.egg-info/PKG-INFO
+example_chitalian.egg-info/SOURCES.txt
+example_chitalian.egg-info/dependency_links.txt
+example_chitalian.egg-info/requires.txt
+example_chitalian.egg-info/top_level.txt
