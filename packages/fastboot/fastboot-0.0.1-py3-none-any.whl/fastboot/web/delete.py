@@ -1,0 +1,2 @@
+def Delete(path):
+    pass
