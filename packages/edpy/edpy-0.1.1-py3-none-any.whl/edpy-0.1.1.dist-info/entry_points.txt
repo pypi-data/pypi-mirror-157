@@ -1,0 +1,2 @@
+[console_scripts]
+edpy = edpy.__main__:main
