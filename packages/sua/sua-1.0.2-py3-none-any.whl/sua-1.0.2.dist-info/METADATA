@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sua
+Version: 1.0.2
+Summary: Stochastic Unified Assistant (a.k.a SUA)
+Home-page: https://https://github.com/kingsman1960/Sua
+Author: Youngwon Cho
+Author-email: youngwon.cho@tum.de
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: datetime
+Requires-Dist: empyrical
+Requires-Dist: quantstats
+Requires-Dist: yfinance
+Requires-Dist: ipython
+Requires-Dist: fpdf
+Requires-Dist: pyportfolioopt
+Requires-Dist: darts
+Requires-Dist: prophet
+Requires-Dist: pandas
+
+Stochastic Unified Assistant (a.k.a SUA) is originally made for automatic prediction and analysis of the selected portfolio.
+
+
