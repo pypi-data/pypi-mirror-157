@@ -1,0 +1,16 @@
+vysion/__init__.py,sha256=NPdUzS6PgOsy-GEv0P6bupHRgbPQ8sTSffbxfcOtNfM,686
+vysion/client/__init__.py,sha256=CJXpWRPZ8JAOcUg55DdMk328KE0NFCaqLHUIou1ccZs,631
+vysion/client/client.py,sha256=zKIOEIsBorohgPl2J3Tivf2p5R96QidJCfaNxQR9nWI,8834
+vysion/client/error.py,sha256=2hWuxRyGnfQG4driPQjFAECASK_hHte2cDirHwnDT2Y,1129
+vysion/model/__init__.py,sha256=020tmYhm9Bf2ABWtOiJS3hxgmbnDXm7Virp-sqwT7-Q,647
+vysion/model/enum.py,sha256=MD6Dut0zZYvaSR-FS9Ydwj_YkiXeTUIpolppnu1sDS8,10117
+vysion/model/model.py,sha256=JIhhNkJTtMFPDetCzHffU27NO3YvLrjDi6k7-jNtCeY,5952
+vysion/model/util.py,sha256=1vJQFdOpRkxUZ8PVyye3Z-OoLsL2u7aXvRvHZ0z327w,3256
+vysion/taxonomy/__init__.py,sha256=O4HwpDeVUYeULF95SG2iyQNTmm6FVa1HFqQlr3TsXg0,635
+vysion/taxonomy/flavours.py,sha256=ItOhN1XkN2MvTnh-uctMDDLKUKDPqE90rt5UtniyN2E,2332
+vysion/taxonomy/taxonomy.py,sha256=c794SMqmXTu1wNs8pAz9oRpsQAoMgNew5OIOHFy0oEs,12116
+vysion/version.py,sha256=s28XPFP8qy3c2y1ip8_02qBOYSLa7Qe_TcuQjeRdKCI,611
+vysion-0.3.0.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+vysion-0.3.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+vysion-0.3.0.dist-info/METADATA,sha256=49YbBI-z1sZpGcRwGVf_fZe7OK7uykx_thKZX-r4y7Q,2576
+vysion-0.3.0.dist-info/RECORD,,
