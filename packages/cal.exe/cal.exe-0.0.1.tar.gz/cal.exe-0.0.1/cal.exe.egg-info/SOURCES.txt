@@ -1,0 +1,10 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cal.exe.egg-info/PKG-INFO
+cal.exe.egg-info/SOURCES.txt
+cal.exe.egg-info/dependency_links.txt
+cal.exe.egg-info/top_level.txt
+pycal/__init__.py
