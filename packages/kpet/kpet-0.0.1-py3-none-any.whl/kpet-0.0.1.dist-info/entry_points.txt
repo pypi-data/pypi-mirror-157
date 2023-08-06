@@ -1,0 +1,3 @@
+[console_scripts]
+kpet = kpet.__main__:app_main
+
