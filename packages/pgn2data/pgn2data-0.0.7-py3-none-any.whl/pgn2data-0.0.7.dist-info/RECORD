@@ -1,0 +1,15 @@
+common/common.py,sha256=l7fCzvBAIqFeNCpDvZUNMwOBxAEuEnrPGpV0ly2PA1U,2085
+common/log_time.py,sha256=oSyGRw2yrQb3_1_--LoMQMjr-KgKvBgU14bYD46IKPU,1079
+converter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+converter/board_ref.py,sha256=8TxdR5WB8bTBbD7UYVWU5Z21-0gZVly4_pZIzrtTpKo,3804
+converter/fen.py,sha256=tuxBnafHg3Q5cyq0SO99VKMbdmv9G6L8rFQTFFzduIs,4843
+converter/headers.py,sha256=lb8ApuYtYQooD5BoOUkIYLmnG6e0jm-p_vqQAdlUwEc,3859
+converter/pgn_data.py,sha256=BXG817UUacraFdYOTwtqJtcs5xMuiSVSoqF9bVoWiuY,4753
+converter/process.py,sha256=NBw8NBTpoebY3oCS_jgKMedIOrChtgr0IU2cPmQx_sw,13464
+converter/result.py,sha256=G1G5C2UNOn_DMRlSuzq_UXUMBj15wxQI5TjtZC1TjQ4,2379
+testing/test.py,sha256=8U_5mDmjxuoY3A1FpzytftuMrRZaY4V7AFxLgmn8qQ0,10089
+pgn2data-0.0.7.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pgn2data-0.0.7.dist-info/METADATA,sha256=GOJ14X1WGVwK3LyfsYM0gTFE9XdMxFjyE4trfs5LlZ4,8719
+pgn2data-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pgn2data-0.0.7.dist-info/top_level.txt,sha256=xIZGCRdco5LN66OP2edx-0noKGw1b9pni0K0h5pEpHQ,25
+pgn2data-0.0.7.dist-info/RECORD,,
