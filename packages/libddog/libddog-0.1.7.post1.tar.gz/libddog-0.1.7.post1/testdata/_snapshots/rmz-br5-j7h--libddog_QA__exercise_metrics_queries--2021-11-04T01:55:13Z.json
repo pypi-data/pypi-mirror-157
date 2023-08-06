@@ -1,0 +1,3732 @@
+{
+  "author_handle": "martin.matusiak@nearmap.com",
+  "author_name": "Martin Matusiak",
+  "created_at": "2021-08-12T03:51:07.433487+00:00",
+  "description": "This dashboard is used exclusively for the purposes of integration testing [libddog](https://github.com/nearmap/libddog), which is an open source Datadog automation tool created by Nearmap.\n\nIt is used during automated test runs as well as for manual (visual) inspection that everything looks correct.\n\n---\n\nThis dashboard is defined in code as part of the [libddog](https://github.com/nearmap/libddog) project and is maintained automatically using the [libddog](https://github.com/nearmap/libddog) tool. If you make manual changes to it your changes may be lost.\n\nIt was last updated from branch **minor-fixes** on **Thu Nov  4 12:54:52 2021** using libddog v0.0.9a0.",
+  "id": "rmz-br5-j7h",
+  "is_read_only": false,
+  "layout_type": "ordered",
+  "modified_at": "2021-11-04T01:54:53.732869+00:00",
+  "notify_list": [],
+  "reflow_type": "fixed",
+  "restricted_roles": [],
+  "template_variable_presets": [
+    {
+      "name": "ap-southeast-2",
+      "template_variables": [
+        {
+          "name": "region",
+          "value": "ap-southeast-2"
+        }
+      ]
+    },
+    {
+      "name": "us-east-1",
+      "template_variables": [
+        {
+          "name": "region",
+          "value": "us-east-1"
+        }
+      ]
+    },
+    {
+      "name": "us-west-1",
+      "template_variables": [
+        {
+          "name": "region",
+          "value": "us-west-1"
+        }
+      ]
+    }
+  ],
+  "template_variables": [
+    {
+      "default": "us-east-1",
+      "name": "region",
+      "prefix": "region"
+    }
+  ],
+  "title": "libddog QA: exercise metrics queries",
+  "url": "/dashboard/rmz-br5-j7h/libddog-qa-exercise-metrics-queries",
+  "widgets": [
+    {
+      "definition": {
+        "layout_type": "ordered",
+        "title": "How to use this dashboard to QA metrics queries",
+        "type": "group",
+        "widgets": [
+          {
+            "definition": {
+              "background_color": "yellow",
+              "content": "We use this dashboard to demonstrate as many possible variations of queries, formulas and functions as possible.\n\nThe way we do this is a bit oversimplified because we are using the same timeseries widget for every use case, with the same one or two metrics used in every graph. This is a good fit for some functions, but less good for others.\n\nAs a result, we are not really concerned with the lines in the graps showing the right number, **just that the graph works and that the query string was accepted as valid by the Datadog API**. When we open the widget settings for each widget **we want the UI to correctly reflect the query in our model**, without components of it being discarded by Datadog as invalid.\n\nIt's not strictly necessary that the graph have data in it, but it does make it much easier to QA, because we already know that the query was accepted and executed by the Datadog backend.",
+              "font_size": "14",
+              "has_padding": true,
+              "show_tick": false,
+              "text_align": "left",
+              "tick_edge": "left",
+              "type": "note",
+              "vertical_align": "center"
+            },
+            "id": 1563727577188201,
+            "layout": {
+              "height": 3,
+              "width": 12,
+              "x": 0,
+              "y": 0
+            }
+          }
+        ]
+      },
+      "id": 1766327770890493,
+      "layout": {
+        "height": 1,
+        "width": 12,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "definition": {
+        "layout_type": "ordered",
+        "title": "Combinations and permutations of the components of a query",
+        "type": "group",
+        "widgets": [
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "cpu avg",
+                      "formula": "q16"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "q16",
+                      "query": "avg:aws.ec2.cpuutilization{*}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "resource utilization",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 118197895972823,
+            "layout": {
+              "height": 2,
+              "width": 4,
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "formula": "q1"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "q1",
+                      "query": "avg:aws.ec2.cpuutilization{*}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "minimal query",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 1604021013831370,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "formula": "q2"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "q2",
+                      "query": "avg:aws.ec2.cpuutilization{$region} by {availability-zone}.as_rate().rollup(max, 110).fill(last, 112)"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "exhaustive query",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 1289664606394113,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 3,
+              "y": 0
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "formula": "q3"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "q3",
+                      "query": "aws.ec2.cpuutilization{$region}.rollup(max, 110).fill(last, 112)"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "no aggregation",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 7000814941535521,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 6,
+              "y": 0
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "formula": "q4"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "q4",
+                      "query": "avg:aws.ec2.cpuutilization{$region} by {availability-zone}.rollup(max, 110).fill(last, 112)"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "aggregation without as",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 261521884133819,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 9,
+              "y": 0
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "formula": "q5"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "q5",
+                      "query": "avg:aws.ec2.cpuutilization{$region}.as_rate().rollup(max, 110).fill(last, 112)"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "aggregation without by",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 8387584069975259,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 2
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "formula": "q6"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "q6",
+                      "query": "avg:aws.ec2.cpuutilization{$region}.rollup(max, 110).fill(last, 112)"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "aggregation without by/as",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 3039358381939622,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 3,
+              "y": 2
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "formula": "q7"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "q7",
+                      "query": "avg:aws.ec2.cpuutilization{*} by {availability-zone}.as_rate().rollup(max, 110).fill(last, 112)"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "no filter",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 7983920889222307,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 6,
+              "y": 2
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "formula": "q8"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "q8",
+                      "query": "avg:aws.ec2.cpuutilization{$region, availability-zone:*a} by {availability-zone}.as_rate().rollup(max, 110).fill(last, 112)"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "inclusive filter",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 2572252713262787,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 9,
+              "y": 2
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "formula": "q9"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "q9",
+                      "query": "avg:aws.ec2.cpuutilization{$region, !availability-zone:*a} by {availability-zone}.as_rate().rollup(max, 110).fill(last, 112)"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "negating tag filter",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 1628109380564364,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 4
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "formula": "q10"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "q10",
+                      "query": "avg:aws.ec2.cpuutilization{!$region} by {availability-zone}.as_rate().rollup(max, 110).fill(last, 112)"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "negating tmpl var filter",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 8837128734558726,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 3,
+              "y": 4
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "formula": "q11"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "q11",
+                      "query": "avg:aws.ec2.cpuutilization{$region} by {availability-zone}.as_rate().fill(last, 112)"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "no rollup",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 7858014154214236,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 6,
+              "y": 4
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "formula": "q12"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "q12",
+                      "query": "avg:aws.ec2.cpuutilization{$region} by {availability-zone}.as_rate().rollup(max, 110)"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "no fill",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 7010913594991708,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 9,
+              "y": 4
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "formula": "q13"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "q13",
+                      "query": "avg:aws.ec2.cpuutilization{$region} by {availability-zone}.as_rate().fill(last, 112).rollup(max, 110)"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "fill before rollup",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 8746083587976871,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 6
+            }
+          }
+        ]
+      },
+      "id": 4244603806895837,
+      "layout": {
+        "height": 1,
+        "width": 12,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "definition": {
+        "layout_type": "ordered",
+        "title": "Exercise formulas",
+        "type": "group",
+        "widgets": [
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "all_arith",
+                      "formula": "(((abs(cpu) * 2) - reqs) + ((3.14 * log2(cpu)) / timeshift(reqs, -3600)))"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "cpu",
+                      "query": "avg:aws.ec2.cpuutilization{$region}"
+                    },
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "All arithmetic operators",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 2196279839825437,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "comma",
+                      "formula": "cpu, reqs"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "cpu",
+                      "query": "avg:aws.ec2.cpuutilization{$region}"
+                    },
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "Comma as binary operator",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 4500494782576239,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 3,
+              "y": 0
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "nested_func",
+                      "formula": "log2(abs(cpu))"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "cpu",
+                      "query": "avg:aws.ec2.cpuutilization{$region}"
+                    },
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "Nested function application",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 1669702753253062,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 6,
+              "y": 0
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "func_over_formula",
+                      "formula": "log2((abs(cpu) / log10(reqs)))"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "cpu",
+                      "query": "avg:aws.ec2.cpuutilization{$region}"
+                    },
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "Function applied to formula",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 3455422600927605,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 9,
+              "y": 0
+            }
+          }
+        ]
+      },
+      "id": 296457940715064,
+      "layout": {
+        "height": 1,
+        "width": 12,
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "definition": {
+        "layout_type": "ordered",
+        "title": "Exercise functions",
+        "type": "group",
+        "widgets": [
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "abs",
+                      "formula": "abs(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "abs",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 1595014612011870,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "log2",
+                      "formula": "log2(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "log2",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 5210620832674166,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 3,
+              "y": 0
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "log10",
+                      "formula": "log10(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "log10",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 6025140920048256,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 6,
+              "y": 0
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "cumsum",
+                      "formula": "cumsum(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "cumsum",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 5189569871998097,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 9,
+              "y": 0
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "integral",
+                      "formula": "integral(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "integral",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 5736698899975987,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 2
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "default_zero",
+                      "formula": "default_zero(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "default_zero",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 4136802238683105,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 3,
+              "y": 2
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "hour_before",
+                      "formula": "hour_before(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "hour_before",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 1639774032049149,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 6,
+              "y": 2
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "day_before",
+                      "formula": "day_before(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "day_before",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 8464375181002442,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 9,
+              "y": 2
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "week_before",
+                      "formula": "week_before(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "week_before",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 5621330343985830,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 4
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "month_before",
+                      "formula": "month_before(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "month_before",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 3259990973965474,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 3,
+              "y": 4
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "timeshift -1h",
+                      "formula": "timeshift(reqs, -3600)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "timeshift -1h",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 6706721245089736,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 6,
+              "y": 4
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "per_second",
+                      "formula": "per_second(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "per_second",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 6782403751883173,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 9,
+              "y": 4
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "per_minute",
+                      "formula": "per_minute(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "per_minute",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 6545498973010435,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 6
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "per_hour",
+                      "formula": "per_hour(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "per_hour",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 7513317846397119,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 3,
+              "y": 6
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "dt",
+                      "formula": "dt(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "dt",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 6681611220097435,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 6,
+              "y": 6
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "diff",
+                      "formula": "diff(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "diff",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 8165286224307286,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 9,
+              "y": 6
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "monotonic_diff",
+                      "formula": "monotonic_diff(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "monotonic_diff",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 7729623809685051,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 8
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "derivative",
+                      "formula": "derivative(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "derivative",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 5288787697004594,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 3,
+              "y": 8
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "autosmooth",
+                      "formula": "autosmooth(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "autosmooth",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 5658671966305356,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 6,
+              "y": 8
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "ewma_3",
+                      "formula": "ewma_3(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "ewma_3",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 1219558839030083,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 9,
+              "y": 8
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "ewma_5",
+                      "formula": "ewma_5(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "ewma_5",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 3260249882799598,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 10
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "ewma_10",
+                      "formula": "ewma_10(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "ewma_10",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 3649495079157039,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 3,
+              "y": 10
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "ewma_20",
+                      "formula": "ewma_20(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "ewma_20",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 7864979308981926,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 6,
+              "y": 10
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "median_3",
+                      "formula": "median_3(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "median_3",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 4942449600826314,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 9,
+              "y": 10
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "median_5",
+                      "formula": "median_5(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "median_5",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 1023673296382478,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 12
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "median_7",
+                      "formula": "median_7(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "median_7",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 8293157787055096,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 3,
+              "y": 12
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "median_9",
+                      "formula": "median_9(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "median_9",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 676054117306322,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 6,
+              "y": 12
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "moving_rollup",
+                      "formula": "moving_rollup(reqs, 180, 'sum')"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "moving_rollup",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 5076465953415348,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 9,
+              "y": 12
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "top",
+                      "formula": "top(reqs, 5, 'sum', 'asc')"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "top",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 4103358762654905,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 14
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "count_nonzero",
+                      "formula": "count_nonzero(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "count_nonzero",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 4994814397584298,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 3,
+              "y": 14
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "count_not_null",
+                      "formula": "count_not_null(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "count_not_null",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 8063349784864196,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 6,
+              "y": 14
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "robust_trend",
+                      "formula": "robust_trend(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "robust_trend",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 6130106276755270,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 9,
+              "y": 14
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "trend_line",
+                      "formula": "trend_line(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "trend_line",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 5602809820785306,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 16
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "piecewise_constant",
+                      "formula": "piecewise_constant(reqs)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "piecewise_constant",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 4844136751286293,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 3,
+              "y": 16
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "outliers",
+                      "formula": "outliers(reqs, 'DBSCAN', 2.0)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "outliers",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 2223476112865264,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 6,
+              "y": 16
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "anomalies",
+                      "formula": "anomalies(reqs, 'agile', 2)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "anomalies",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 6895753030260500,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 9,
+              "y": 16
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "forecast",
+                      "formula": "forecast(reqs, 'linear', 2)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "forecast",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 3686019457365998,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 18
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "exclude_null",
+                      "formula": "exclude_null(reqs, 'availability-zone')"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "exclude_null",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 5889853126508018,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 3,
+              "y": 18
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "cutoff_max 2",
+                      "formula": "cutoff_max(reqs, 2)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "cutoff_max 2",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 5604168902999783,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 6,
+              "y": 18
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "cutoff_min 1",
+                      "formula": "cutoff_min(reqs, 1)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "cutoff_min 1",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 8415057435953029,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 9,
+              "y": 18
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "clamp_max 2",
+                      "formula": "clamp_max(reqs, 2)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "clamp_max 2",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 5908112510249903,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 0,
+              "y": 20
+            }
+          },
+          {
+            "definition": {
+              "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+              ],
+              "legend_layout": "auto",
+              "markers": [],
+              "requests": [
+                {
+                  "display_type": "line",
+                  "formulas": [
+                    {
+                      "alias": "source",
+                      "formula": "reqs"
+                    },
+                    {
+                      "alias": "clamp_min 1",
+                      "formula": "clamp_min(reqs, 1)"
+                    }
+                  ],
+                  "on_right_yaxis": false,
+                  "queries": [
+                    {
+                      "data_source": "metrics",
+                      "name": "reqs",
+                      "query": "avg:aws.elb.request_count{$region}"
+                    }
+                  ],
+                  "response_format": "timeseries",
+                  "style": {
+                    "line_type": "solid",
+                    "line_width": "normal",
+                    "palette": "dog_classic"
+                  }
+                }
+              ],
+              "show_legend": true,
+              "title": "clamp_min 1",
+              "title_align": "left",
+              "title_size": "16",
+              "type": "timeseries",
+              "yaxis": {
+                "include_zero": true,
+                "label": "",
+                "max": "auto",
+                "min": "auto",
+                "scale": "linear"
+              }
+            },
+            "id": 5268291426765401,
+            "layout": {
+              "height": 2,
+              "width": 3,
+              "x": 3,
+              "y": 20
+            }
+          }
+        ]
+      },
+      "id": 8424966548421426,
+      "layout": {
+        "height": 1,
+        "width": 12,
+        "x": 0,
+        "y": 0
+      }
+    }
+  ]
+}

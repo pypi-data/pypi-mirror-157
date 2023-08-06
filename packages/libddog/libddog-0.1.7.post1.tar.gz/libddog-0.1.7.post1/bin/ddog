@@ -1,0 +1,190 @@
+#!/usr/bin/env python
+
+import sys
+
+try:
+    import libddog
+except ImportError:
+    sys.path.append(".")
+
+# isort: split
+import warnings
+
+import click
+
+import libddog
+from libddog.command_line.dashboards import ConsoleWriter, DashboardManagerCli
+from libddog.command_line.options import attach_help_option
+from libddog.command_line.upgrade_check import UpgradeChecker
+
+
+@click.group()
+@click.pass_context
+def cli(ctx):
+    "Datadog automation cli"
+
+    pass
+
+
+@click.group()
+@click.option(
+    "-U",
+    "--no-upgrade-check",
+    help="Skip libddog upgrade check.",
+    is_flag=True,
+    default=False,
+)
+@click.pass_context
+def dash(ctx, no_upgrade_check: bool):
+    "Datadog dashboards management actions"
+
+    ctx.dash_mgr = DashboardManagerCli(proj_path=".")
+    ctx.writer = ConsoleWriter()
+
+    if not no_upgrade_check:
+        upgrade_checker = UpgradeChecker()
+        upgrade_checker.run()
+
+
+@click.command()
+@click.pass_context
+def version(ctx):
+    "ddog version"
+
+    upgrade_checker = UpgradeChecker()
+    upgrade_checker.run()
+
+    writer = ConsoleWriter()
+    writer.println(f"libddog version {libddog.__version__}")
+
+
+@click.command()
+@click.option(
+    "-i",
+    "--id",
+    required=True,
+    help="The id of the dashboard to delete",
+)
+@click.pass_context
+def delete_live(ctx, id: str):
+    """
+    Deletes a live dashboard in Datadog.
+
+    First takes a snapshot of the dashboard so that the deleted dashboard can be
+    restored if needed.
+    """
+
+    mgr: DashboardManagerCli = ctx.parent.dash_mgr
+
+    exit_code = mgr.delete_live(id=id)
+    sys.exit(exit_code)
+
+
+@click.command()
+@click.pass_context
+def list_defs(ctx):
+    """
+    Lists dashboard definitions in this project.
+    """
+
+    mgr: DashboardManagerCli = ctx.parent.dash_mgr
+
+    exit_code = mgr.list_defs()
+    sys.exit(exit_code)
+
+
+@click.command()
+@click.pass_context
+def list_live(ctx):
+    """
+    Lists live dashboards in Datadog.
+    """
+
+    mgr: DashboardManagerCli = ctx.parent.dash_mgr
+
+    exit_code = mgr.list_live()
+    sys.exit(exit_code)
+
+
+@click.command()
+@click.option(
+    "-t",
+    "--title",
+    required=True,
+    help="Select the dashboard to publish by title, matched like a wildcard",
+)
+@click.pass_context
+def publish_draft(ctx, title: str):
+    """
+    Publishes a dashboard definition as a [draft] live dashboard in Datadog.
+
+    Prepends '[draft] ' to the dashboard title.
+    If no live dashboard with this title exists then a new dashboard is created.
+    If a live dashboard with this title does exist it is updated.
+    """
+
+    mgr: DashboardManagerCli = ctx.parent.dash_mgr
+
+    exit_code = mgr.publish_draft(title_pat=title)
+    sys.exit(exit_code)
+
+
+@click.command()
+@click.option(
+    "-t",
+    "--title",
+    required=True,
+    help="Select dashboards to update by title, matched like a wildcard",
+)
+@click.pass_context
+def publish_live(ctx, title: str):
+    """
+    Publishes multiple dashboard definitions as live dashboards in Datadog.
+
+    For each dashboard:
+    If no live dashboard with this title exists then a new dashboard is created.
+    If a live dashboard with this title does exist it is updated.
+    """
+
+    mgr: DashboardManagerCli = ctx.parent.dash_mgr
+
+    exit_code = mgr.publish_live(title_pat=title)
+    sys.exit(exit_code)
+
+
+@click.command()
+@click.option(
+    "-i",
+    "--id",
+    required=True,
+    help="The id of the dashboard to snapshot",
+)
+@click.pass_context
+def snapshot_live(ctx, id: str):
+    """
+    Creates a snapshot on disk in JSON format of a live dashboard in Datadog.
+
+    The snapshot can be used to manually restore the dashboard in the Datadog UI.
+    """
+
+    mgr: DashboardManagerCli = ctx.parent.dash_mgr
+
+    exit_code = mgr.snapshot_live(id=id)
+    sys.exit(exit_code)
+
+
+cli.add_command(dash)
+cli.add_command(version)
+dash.add_command(delete_live)
+dash.add_command(list_defs)
+dash.add_command(list_live)
+dash.add_command(publish_draft)
+dash.add_command(publish_live)
+dash.add_command(snapshot_live)
+attach_help_option(cli)
+
+if __name__ == "__main__":
+    # make sure deprecation warnings are displayed
+    warnings.filterwarnings("default", category=DeprecationWarning)
+
+    cli()
