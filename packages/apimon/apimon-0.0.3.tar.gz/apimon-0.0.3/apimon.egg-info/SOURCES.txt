@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+apimon/__init__.py
+apimon/prometheus_init.py
+apimon.egg-info/PKG-INFO
+apimon.egg-info/SOURCES.txt
+apimon.egg-info/dependency_links.txt
+apimon.egg-info/not-zip-safe
+apimon.egg-info/requires.txt
+apimon.egg-info/top_level.txt
