@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mastquery
+Version: 1.2
+Summary: Python tools for querying the MAST Archive
+Home-page: https://github.com/gbrammer/mastquery
+Download-URL: https://github.com/gbrammer/mastquery/tarball/1.2
+Author: Gabriel Brammer
+Author-email: gbrammer@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+License-File: LICENSE
+
+UNKNOWN
+
