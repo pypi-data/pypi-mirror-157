@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "port-cloud"
+version = "0.1.1"
+description = "port cloud terminal"
+authors = ["ported <shahinmondal42bd@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pendulum = "^2.1.2"
+Flask = "^2.1.2"
+Flask-SQLAlchemy = "^2.5.1"
+Flask-Bcrypt = "^1.0.1"
+Flask-Login = "^0.6.1"
+Flask-SocketIO = "^5.2.0"
+Flask-WTF = "^1.0.1"
+email-validator = "^1.2.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
