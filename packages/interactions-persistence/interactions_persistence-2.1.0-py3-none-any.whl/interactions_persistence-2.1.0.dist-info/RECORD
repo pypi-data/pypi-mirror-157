@@ -1,0 +1,15 @@
+interactions/ext/persistence/__init__.py,sha256=d6wKqthS0pcSNxImrPRBMO1Yi7koJrcaIU0tCp5ox_Y,302
+interactions/ext/persistence/base.py,sha256=xSLooGR9OR7AfZuY1JWp_Sx8B_yJZuguOeOjwlBqJFg,585
+interactions/ext/persistence/cipher.py,sha256=12YIJ6dNJLOuPA9HjQjHzWMuKgtfjNI0UY4VyptgKYQ,2217
+interactions/ext/persistence/client.py,sha256=AeSFLQ7HiMhdUWKvMpKNoSUO75S8N979_yX6aETJCGY,832
+interactions/ext/persistence/context.py,sha256=hbnrabdpjtcW4ixDUlmJeywKvK0lWcxdj5Q26SPYXzs,2318
+interactions/ext/persistence/extension.py,sha256=i8SQElh4PFE4cz5vLxt817CWfcHE-KulTTH-qkYCVtc,2111
+interactions/ext/persistence/parse.py,sha256=80-flYucsleCdvNrOJTnwON1LNF03oM042loUDdpiCQ,3686
+interactions/ext/persistence/persistence.py,sha256=ONl2dWZwpg6sAlQrcjo-033652I-wEnLnKhdtR52FvU,4023
+interactions/ext/persistence/scripts.py,sha256=TRkhDYbNo7J2LQM_Nvbcm36R6f_zHDCZvzttkrDB6eM,99
+interactions_persistence-2.1.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+interactions_persistence-2.1.0.dist-info/METADATA,sha256=77dhQb5XWK408CnugwPcJQGoubNu_nmha-mcj_n6fd4,2421
+interactions_persistence-2.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+interactions_persistence-2.1.0.dist-info/entry_points.txt,sha256=JLmehvrCP79cYfrkQ5JyWUZLdbrBq2199Cs5P9lqFKc,81
+interactions_persistence-2.1.0.dist-info/top_level.txt,sha256=6JGZJLyYYS31pX0unnc-w68SixoVQ_vd0-abkVS3_m0,13
+interactions_persistence-2.1.0.dist-info/RECORD,,
