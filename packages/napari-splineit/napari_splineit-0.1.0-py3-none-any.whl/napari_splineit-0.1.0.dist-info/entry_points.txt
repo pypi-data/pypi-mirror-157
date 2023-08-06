@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-splineit = napari_splineit:napari.yml
