@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+inseparable_tool.egg-info/PKG-INFO
+inseparable_tool.egg-info/SOURCES.txt
+inseparable_tool.egg-info/dependency_links.txt
+inseparable_tool.egg-info/top_level.txt

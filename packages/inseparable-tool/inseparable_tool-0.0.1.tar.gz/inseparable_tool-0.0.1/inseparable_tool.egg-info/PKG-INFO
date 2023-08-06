@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: inseparable-tool
+Version: 0.0.1
+Summary: Your Inseparable Tool
+Home-page: https://github.com/SeeeeShiwei/InseparableTool.git
+Author: Sesen
+Author-email: shiw_21@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 好用的工具
+
+- 安装方式1
+```
+git clone https://github.com/SeeeeShiwei/InseparableTool.git
+```
+
+- 安装方式2
+```
+pip3 install InseparableTool
+```
