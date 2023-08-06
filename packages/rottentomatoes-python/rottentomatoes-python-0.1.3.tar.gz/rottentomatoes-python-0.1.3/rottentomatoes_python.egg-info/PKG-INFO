@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: rottentomatoes-python
+Version: 0.1.3
+Summary: Scrapes Rotten Tomatoes's website for basic information on movies.
+Home-page: UNKNOWN
+Author: Prerit Das
+Author-email: <preritdas@gmail.com>
+License: UNKNOWN
+Keywords: python,movies,rottentomatoes
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+# Rotten Tomatoes Python
+
+This package is for easily getting Rotten Tomatoes scores and other data on movies, without the use of their API. The package scrapes their website for the data. Unfortunately, to get access to their API you have to submit a special request which takes an inordinate amount of time to process, or doesn't go through at all. 
+
+Basic usage:
+
+```python
+import rottentomatoes_python as rt
+print(rt.tomatometer("happy gilmore"))
+
+# Result: 61 (of type int)
+```
+
+
