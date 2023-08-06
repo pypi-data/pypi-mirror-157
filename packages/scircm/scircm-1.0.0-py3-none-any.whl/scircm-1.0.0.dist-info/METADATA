@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: scircm
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/ArianeMora/scircm
+Author: Ariane Mora
+Author-email: ariane.n.mora@gmail.com
+License: GPL3
+Project-URL: Bug Tracker, https://github.com/ArianeMora/scircm/issues
+Project-URL: Documentation, https://github.com/ArianeMora/scircm
+Project-URL: Source Code, https://github.com/ArianeMora/scircm
+Keywords: epigenetics,bioinformatics
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scibiomart
+Requires-Dist: sciutil (>=1.0.3)
+Requires-Dist: scivae
+Requires-Dist: sklearn
+Requires-Dist: sciviso
+Requires-Dist: seaborn
+Requires-Dist: stats
+Requires-Dist: matplotlib-venn
+Requires-Dist: scimotf
+
+# sci-RegulatoryClusteringModel
+[![codecov.io](https://codecov.io/github/ArianeMora/scircm/coverage.svg?branch=master)](https://codecov.io/github/ArianeMora/scircm?branch=master)
+[![PyPI](https://img.shields.io/pypi/v/scircm)](https://pypi.org/project/scircm/)
+[![DOI](https://zenodo.org/badge/316410924.svg)](https://zenodo.org/badge/latestdoi/316410924)
+
+[Link to docs](https://arianemora.github.io/scircm/)
+
+## Regulatory clustering model 
+
+We are having fun!
+
+
+Please post questions and issues related to sci-rcm on the `Issues <https://github.com/ArianeMora/scircm/issues>`_  section of the GitHub repository.
+
+
+
