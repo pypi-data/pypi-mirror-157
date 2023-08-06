@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: u-d10
+Version: 1.0.0
+Summary: seal u-d10
+Home-page: UNKNOWN
+Author: seal
+Author-email: seal.xu@qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown

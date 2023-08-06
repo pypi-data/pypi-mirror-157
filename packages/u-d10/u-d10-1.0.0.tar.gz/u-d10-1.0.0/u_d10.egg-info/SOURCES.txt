@@ -1,0 +1,8 @@
+README.md
+setup.py
+u-d10/Java.rar.py
+u-d10/__init__.py
+u_d10.egg-info/PKG-INFO
+u_d10.egg-info/SOURCES.txt
+u_d10.egg-info/dependency_links.txt
+u_d10.egg-info/top_level.txt
