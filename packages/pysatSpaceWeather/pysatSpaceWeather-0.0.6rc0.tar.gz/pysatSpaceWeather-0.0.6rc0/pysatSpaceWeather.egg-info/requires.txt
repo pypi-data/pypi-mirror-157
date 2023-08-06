@@ -1,0 +1,7 @@
+netCDF4
+numpy
+packaging
+pandas
+pysat
+requests
+xarray
