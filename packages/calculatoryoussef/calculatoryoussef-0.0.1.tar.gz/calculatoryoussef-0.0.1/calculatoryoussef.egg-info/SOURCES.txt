@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+calculatoryoussef/__init__.py
+calculatoryoussef.egg-info/PKG-INFO
+calculatoryoussef.egg-info/SOURCES.txt
+calculatoryoussef.egg-info/dependency_links.txt
+calculatoryoussef.egg-info/top_level.txt
