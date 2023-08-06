@@ -1,0 +1,7 @@
+Deprecated
+
+[test]
+nose2
+numpy
+coverage
+coveralls
