@@ -1,0 +1,3 @@
+[console_scripts]
+x-access-dumper=x_access_dumper.cli:main
+
