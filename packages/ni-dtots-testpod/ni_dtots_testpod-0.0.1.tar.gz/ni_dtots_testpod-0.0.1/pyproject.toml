@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ni_dtots_testpod"
+version = "0.0.1"
+authors = [
+  { name="Varun Mehra", email="varun.mehra@ni.com" },
+  { name="Valliappan Meyyappan", email="valliappan.meyyappan@ni.com" },
+  { name="Abhishek Sharma", email="abhishek.n.sharma@ni.com" },
+]
+description = "A testpod"
+readme = "Readme.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ni-lti-test-virtualization/dtots2022-testpod-python"
+"Bug Tracker" = "https://github.com/ni-lti-test-virtualization/dtots2022-testpod-python/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc"
