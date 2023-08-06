@@ -1,0 +1,5 @@
+pandas==1.3.5
+numpy==1.19.5
+biopython==1.79
+pyfiglet==0.8.post1
+click==8.1.3

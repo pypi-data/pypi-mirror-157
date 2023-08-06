@@ -1,0 +1,4 @@
+[console_scripts]
+deepsmirud = deepsmirud.Main:main
+deepsmirud_download = deepsmirud.Main:download
+
