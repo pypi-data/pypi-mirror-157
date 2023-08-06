@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/thanhtungthaiatmethod/__init__.py
+src/thanhtungthaiatmethod/fortest.py
+src/thanhtungthaiatmethod/methodprimary.py
+src/thanhtungthaiatmethod/methods.py
+src/thanhtungthaiatmethod.egg-info/PKG-INFO
+src/thanhtungthaiatmethod.egg-info/SOURCES.txt
+src/thanhtungthaiatmethod.egg-info/dependency_links.txt
+src/thanhtungthaiatmethod.egg-info/top_level.txt
