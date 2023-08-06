@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "powerk8s"
+version = "0.4.0"
+description = "Powerline Segment for Kubernetes"
+authors = ["George Kontridze <george.kontridze@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/gkze/powerk8s"
+repository = "https://github.com/gkze/powerk8s"
+documentation = "https://gkze.github.io/powerk8s/powerk8s.html"
+keywords = ["kubernetes", "powerline", "tools"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+PyYAML = "^6.0"
+kubernetes = "^24.2"
+powerline-status = "^2.7"
+
+[tool.poetry.dev-dependencies]
+pdoc = "^12.0"
+pymultilint = "^0.14"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.multilint]
+src_paths = ["*.py"]
+
+[tool.autoflake]
+recursive = true
+in_place = true
+ignore_init_module_imports = true
+remove_all_unused_imports = true
+remove_unused_variables = true
+verbose = true
+
+[tool.mypy]
+files = ["*.py"]
