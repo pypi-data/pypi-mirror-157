@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: hubify
+Version: 0.2.2
+Summary: Create GitHub-like visualisations
+Home-page: https://github.com/fferegrino/hubify
+License: MIT
+Author: Antonio Feregrino
+Author-email: antonio.feregrino@gmail.com
+Requires-Python: >=3.7.1,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: matplotlib (>=3.5.2,<4.0.0)
+Requires-Dist: numpy (==1.21.6)
+Requires-Dist: pandas (==1.3.5)
+Requires-Dist: seaborn (>=0.11.2,<0.12.0)
+Project-URL: Repository, https://github.com/fferegrino/hubify
+Description-Content-Type: text/markdown
+
+hubify
+======
+
+Create GitHub-like visualisations.
+
