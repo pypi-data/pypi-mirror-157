@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: homeconnect-webthing
+Version: 0.0.4
+Summary: Homeconnect WebThing adapter
+Home-page: https://github.com/grro/homeconnect_webthing
+Author: Gregor Roth
+Author-email: gregor.roth@web.de
+License: MIT
+Keywords: webthings,home automation,home connect
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/markdown
+Requires-Dist: sseclient-py (>=1.7.2)
+Requires-Dist: requests
+Requires-Dist: webthing (>=0.15.0)
+
+# homeconnect_webthing
+
+
