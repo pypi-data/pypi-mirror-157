@@ -1,0 +1,24 @@
+JAVA_DIR = ../java
+
+sphinx/html: images
+# sphinx/clean: clean-images clean-javadoc
+sphinx/clean: clean-images
+# assets: images javadoc
+assets: images
+
+images:
+	make -C images/
+clean-images:
+	make -C images/ clean
+
+javadoc:
+	mvn -f $(JAVA_DIR)/pom.xml javadoc:javadoc
+clean-javadoc:
+	mvn -f $(JAVA_DIR)/pom.xml clean
+
+.PHONY: images clean-images javadoc clean-javadoc
+
+
+# Local Variables:
+# mode: makefile
+# End:
