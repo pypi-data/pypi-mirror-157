@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: layerd
+Version: 2022.7.1
+Summary: AWS Lambda Layer Daemon.
+Home-page: https://github.com/ronnathaniel/layerd
+Author: ronnathaniel
+Author-email: rnathaniel7@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ronnathaniel/layerd/issues
+Keywords: python,python3,layerd,daemon,download,layer,extension,aws,lambda,function,remote
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+#  layerd
+
+[D]ownload [P]ublic [L]ambda [L]ayers
+
+
+> Inspect Lambda Layers like never before.
+
+
+# Table of Contents
+
+1. [Installation](#installation)
+2. [Usage](#usage)
+
+
+# Installation
+
+    $ pip3 install layerd
+
+
+# Usage
+
+    $ layerd <ARN>
+
+
