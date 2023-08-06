@@ -1,0 +1,24 @@
+{
+	"registry": null,
+	"chain_spec": {
+		"arch": null, 
+		"fork": null,
+		"network_id": null,
+		"common_name": null,
+		"extra": {}
+	},
+	"contents": {
+		"token": {
+			"reference": null,
+			"key_account": null
+		},
+		"token_index": {
+			"reference": null,
+			"key_account": null
+		},
+		"address_declarator": {
+			"reference": null,
+			"key_account": null
+		}
+	}
+}
