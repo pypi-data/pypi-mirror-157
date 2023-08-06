@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schema.grassrootseconomics.net:8433/cic-v1.json",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "namespace": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}
