@@ -1,0 +1,8 @@
+recursive-include eric7 *.png *.svg *.svgz *.xpm *.ico *.gif *.icns *.txt *.style *.tmpl *.html *.qch *.qhp *.css *.qss *.ehj *.ethj *.api *.bas *.qm *.ts *.ui *.rst *.dat *.xbel *.xml *.js *.xpm *.md *.pyw
+include Dictionaries/*
+include docs/*
+include linux/*
+include others/*
+include MANIFEST.in
+include eric7.epj
+include setup.py
