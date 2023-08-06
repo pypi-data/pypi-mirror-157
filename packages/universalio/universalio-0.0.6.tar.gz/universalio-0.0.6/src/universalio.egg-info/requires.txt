@@ -1,0 +1,9 @@
+autoinject
+zirconium>=0.2
+toml
+aiohttp
+aiofiles
+zrlog
+
+[:python_version < "3.8"]
+importlib_metadata
