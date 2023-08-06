@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+vat_pytorch/__init__.py
+vat_pytorch/alice.py
+vat_pytorch/alicepp.py
+vat_pytorch/smart.py
+vat_pytorch/utils.py
+vat_pytorch.egg-info/PKG-INFO
+vat_pytorch.egg-info/SOURCES.txt
+vat_pytorch.egg-info/dependency_links.txt
+vat_pytorch.egg-info/requires.txt
+vat_pytorch.egg-info/top_level.txt
