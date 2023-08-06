@@ -1,0 +1,15 @@
+ChangeLog.md
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_paistudio20210202/__init__.py
+alibabacloud_paistudio20210202/client.py
+alibabacloud_paistudio20210202/models.py
+alibabacloud_paistudio20210202.egg-info/PKG-INFO
+alibabacloud_paistudio20210202.egg-info/SOURCES.txt
+alibabacloud_paistudio20210202.egg-info/dependency_links.txt
+alibabacloud_paistudio20210202.egg-info/requires.txt
+alibabacloud_paistudio20210202.egg-info/top_level.txt
