@@ -1,0 +1,16 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "calculator_vg" # Package inslatllation name
+authors = [{name = "Vilmantas Gegzna", email = "GegznaV@gmail.com"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+
+[tool.flit.module]
+name = "calculator" # Module import name
+
+[project.urls]
+Home = "https://github.com/gegznav/calculator-py"
