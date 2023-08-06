@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% set active_page = "map" %}
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='npm_components/leaflet/dist/leaflet.css') }}" />
+<script src="{{ url_for('static', filename='npm_components/leaflet/dist/leaflet.js') }}"></script>
+<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+{% endblock %}
+{% block content %}
+<div class="container-fluid" role="main">
+  <h1>{{ _('Cybersecurity Weather Map') }}</h1>
+  <div  class="map map-home mapChart col-md-10 mx-auto" id="cyberweathermap"></div>
+  <div class="col-md-12">
+      <p>{{ _('Based on the statistics collected, this map presents the highest current threats and vulnerabilities, by region.') }}</p>
+      <p>{{ _('You can also') }} <a href="{{ url_for('root_bp.help') }}#share">{{ _('share statistics') }}</a>.</p>
+  </div>
+</div><!-- /.container -->
+<script>
+  drawMap();
+</script>
+{% endblock %}

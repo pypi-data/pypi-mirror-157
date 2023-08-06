@@ -1,0 +1,373 @@
+# Translations template for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-05-20 08:25+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: statsservice/templates/about.html:8
+msgid ""
+"This software is released under AGPLv3 license and is maintained by\n"
+"        <a href=\"https://www.cases.lu/\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">CASES Luxembourg</a>."
+msgstr ""
+
+#: statsservice/templates/about.html:11
+msgid ""
+"You are welcome to copy, modify or\n"
+"        redistribute the <a href=\"https://github.com/monarc-project"
+"/stats-service\" target=\"_blank\" rel=\"noopener noreferrer\">source "
+"code</a>\n"
+"        according to the <a "
+"href=\"https://www.gnu.org/licenses/agpl-3.0.html\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">Affero GPL</a> license.</p>\n"
+"        <p>Found a bug? Report it <a href=\"https://github.com/monarc-"
+"project/stats-service/issues\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">here</a>."
+msgstr ""
+
+#: statsservice/templates/about.html:16
+msgid "More information"
+msgstr ""
+
+#: statsservice/templates/about.html:16
+msgid "about this instance."
+msgstr ""
+
+#: statsservice/templates/about.html:17
+msgid "Help and documentation."
+msgstr ""
+
+#: statsservice/templates/about_more.html:6
+msgid "Information about this instance"
+msgstr ""
+
+#: statsservice/templates/about_more.html:8
+msgid "Stats service version:"
+msgstr ""
+
+#: statsservice/templates/about_more.html:9
+msgid "Python version:"
+msgstr ""
+
+#: statsservice/templates/about_more.html:10
+msgid "Number of contributors:"
+msgstr ""
+
+#: statsservice/templates/about_more.html:11
+msgid "Number of stats:"
+msgstr ""
+
+#: statsservice/templates/about_more.html:12
+msgid "Contact:"
+msgstr ""
+
+#: statsservice/templates/evolution.html:9
+#: statsservice/templates/layout.html:55
+msgid "Evolution"
+msgstr ""
+
+#: statsservice/templates/evolution.html:12
+msgid "Threats evolution"
+msgstr ""
+
+#: statsservice/templates/evolution.html:13
+msgid "Vulnerabilities evolution"
+msgstr ""
+
+#: statsservice/templates/evolution.html:20
+#: statsservice/templates/evolution.html:57
+#: statsservice/templates/index.html:25 statsservice/templates/index.html:63
+msgid "Display by"
+msgstr ""
+
+#: statsservice/templates/evolution.html:22
+#: statsservice/templates/evolution.html:59
+#: statsservice/templates/index.html:27
+msgid "Probability"
+msgstr ""
+
+#: statsservice/templates/evolution.html:23
+#: statsservice/templates/evolution.html:60
+#: statsservice/templates/index.html:28 statsservice/templates/index.html:66
+msgid "Occurrence"
+msgstr ""
+
+#: statsservice/templates/evolution.html:24
+#: statsservice/templates/evolution.html:61
+#: statsservice/templates/index.html:29 statsservice/templates/index.html:67
+msgid "Max. associated risk level"
+msgstr ""
+
+#: statsservice/templates/evolution.html:28
+#: statsservice/templates/evolution.html:65
+#: statsservice/templates/index.html:33 statsservice/templates/index.html:71
+msgid "Order by"
+msgstr ""
+
+#: statsservice/templates/evolution.html:30
+#: statsservice/templates/evolution.html:67
+#: statsservice/templates/index.html:73
+msgid "Highest"
+msgstr ""
+
+#: statsservice/templates/evolution.html:31
+#: statsservice/templates/evolution.html:68
+#: statsservice/templates/index.html:74
+msgid "Lowest"
+msgstr ""
+
+#: statsservice/templates/evolution.html:34
+#: statsservice/templates/evolution.html:71
+#: statsservice/templates/index.html:39 statsservice/templates/index.html:77
+#: statsservice/templates/index.html:95 statsservice/templates/index.html:111
+msgid "Export"
+msgstr ""
+
+#: statsservice/templates/evolution.html:50
+#: statsservice/templates/evolution.html:87
+msgid "Inverse selection"
+msgstr ""
+
+#: statsservice/templates/help.html:6 statsservice/templates/layout.html:77
+msgid "Help"
+msgstr ""
+
+#: statsservice/templates/help.html:8
+msgid "a documentation is available"
+msgstr ""
+
+#: statsservice/templates/help.html:8
+msgid "here"
+msgstr ""
+
+#: statsservice/templates/help.html:9 statsservice/templates/layout.html:79
+msgid "OpenAPI Specification"
+msgstr ""
+
+#: statsservice/templates/help.html:9
+msgid "of the API"
+msgstr ""
+
+#: statsservice/templates/help.html:10
+msgid "contact the admin of this Stats Service instance at the address:"
+msgstr ""
+
+#: statsservice/templates/help.html:11
+msgid "our website:"
+msgstr ""
+
+#: statsservice/templates/help.html:19
+msgid "Q&A"
+msgstr ""
+
+#: statsservice/templates/help.html:25
+msgid "How does it work?"
+msgstr ""
+
+#: statsservice/templates/help.html:27
+msgid ""
+"The charts are generated with aggregated statistics from multiple\n"
+"        <a href=\"https://www.monarc.lu\" rel=\"noreferrer\" "
+"target=\"_blank\">MONARC</a> instances."
+msgstr ""
+
+#: statsservice/templates/help.html:31
+msgid ""
+"More detailed information on the sharing of statistics is provided in the"
+" in the\n"
+"        <a href=\"https://www.monarc.lu/documentation/stats-"
+"service/master/architecture.html\" rel=\"noreferrer\" "
+"target=\"_blank\">documentation</a>."
+msgstr ""
+
+#: statsservice/templates/help.html:40
+msgid "Want to contribute by sharing statistics?"
+msgstr ""
+
+#: statsservice/templates/help.html:41
+msgid ""
+"If you have your own MONARC instance you have the possibility to share "
+"some high level statistics with\n"
+"      the MONARC community. If you are interested simply contact"
+msgstr ""
+
+#: statsservice/templates/help.html:49
+msgid "What kind of data is involved ?"
+msgstr ""
+
+#: statsservice/templates/help.html:50
+msgid ""
+"This dashboard attempts to provide meaningful insights based on the\n"
+"        <a href=\"https://objects.monarc.lu/schema/14\" "
+"rel=\"noreferrer\" target=\"_blank\">vulnerabilities</a>,\n"
+"        <a href=\"https://objects.monarc.lu/schema/15\" "
+"rel=\"noreferrer\" target=\"_blank\">threats</a> and\n"
+"        <a href=\"https://objects.monarc.lu/schema/16\" "
+"rel=\"noreferrer\" target=\"_blank\">risks</a>\n"
+"        available through MONARC without any personally identifiable "
+"information.\n"
+"        Most of this data is already publicly available and bundled with "
+"MONARC.\n"
+"        To put it simply, this system aggregates, counts and processes "
+"different averages in order to display several charts."
+msgstr ""
+
+#: statsservice/templates/help.html:64
+msgid "How to send stats to dashboard.monarc.lu ?"
+msgstr ""
+
+#: statsservice/templates/help.html:65
+msgid ""
+"A client is provided in order to let you push your stats. A documentation"
+" is available\n"
+"        <a href=\"https://www.monarc.lu/documentation/stats-"
+"service/master/command-line-interface.html#pushing-data\">here</a>."
+msgstr ""
+
+#: statsservice/templates/help.html:73
+msgid "What are MONARC objects ?"
+msgstr ""
+
+#: statsservice/templates/help.html:74
+msgid "If you are looking for the MONARC objects you can look at the official"
+msgstr ""
+
+#: statsservice/templates/help.html:75
+msgid "MONARC Objects Sharing Platform"
+msgstr ""
+
+#: statsservice/templates/help.html:76
+msgid ""
+"(MOSP) which is providing an API in order to create and share JSON "
+"objects. MOSP can be\n"
+"      connected to a MONARC instance."
+msgstr ""
+
+#: statsservice/templates/help.html:84
+msgid "Your question is not here ?"
+msgstr ""
+
+#: statsservice/templates/help.html:85
+msgid ""
+"You can look for already asked questions or add a new one\n"
+"      <a href=\"https://github.com/monarc-project/stats-"
+"service/discussions/categories/q-a\">here</a>."
+msgstr ""
+
+#: statsservice/templates/index.html:5
+msgid "Current Cybersecurity landscape"
+msgstr ""
+
+#: statsservice/templates/index.html:8
+msgid "Top threats"
+msgstr ""
+
+#: statsservice/templates/index.html:9
+msgid "Top vulnerabilities"
+msgstr ""
+
+#: statsservice/templates/index.html:10
+msgid "Risks"
+msgstr ""
+
+#: statsservice/templates/index.html:17
+msgid "Number of threats"
+msgstr ""
+
+#: statsservice/templates/index.html:55
+msgid "Number of vulnerabilities"
+msgstr ""
+
+#: statsservice/templates/index.html:65
+msgid "Qualification"
+msgstr ""
+
+#: statsservice/templates/index.html:94
+msgid "Information Risks"
+msgstr ""
+
+#: statsservice/templates/index.html:110
+msgid "Operational Risks"
+msgstr ""
+
+#: statsservice/templates/index.html:133
+msgid "You are about to leave this website"
+msgstr ""
+
+#: statsservice/templates/index.html:137
+msgid ""
+"Leave the webiste and see the object on the <a "
+"href=\"https://objects.monarc.lu\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">MONARC Objects Sharing Platform</a> (MOSP)."
+msgstr ""
+
+#: statsservice/templates/index.html:140 statsservice/templates/index.html:158
+msgid "Close"
+msgstr ""
+
+#: statsservice/templates/index.html:141
+msgid "See the object on MOSP"
+msgstr ""
+
+#: statsservice/templates/index.html:150
+msgid "Unknow object"
+msgstr ""
+
+#: statsservice/templates/index.html:154
+msgid "We were not able to find this object on MOSP."
+msgstr ""
+
+#: statsservice/templates/index.html:155
+msgid ""
+"If you are the author of this object or know more information, you can <a"
+" href=\"https://objects.monarc.lu/help#join_the_community\" "
+"target=\"_blank\" rel=\"noopener noreferrer\">add it</a> to our MONARC "
+"Objects Sharing Platform."
+msgstr ""
+
+#: statsservice/templates/layout.html:7
+msgid "MONARC Dashboard"
+msgstr ""
+
+#: statsservice/templates/layout.html:52
+msgid "Current stats"
+msgstr ""
+
+#: statsservice/templates/layout.html:58
+msgid "Map"
+msgstr ""
+
+#: statsservice/templates/layout.html:61 statsservice/templates/layout.html:75
+msgid "About"
+msgstr ""
+
+#: statsservice/templates/map.html:11
+msgid "Cybersecurity Weather Map"
+msgstr ""
+
+#: statsservice/templates/map.html:14
+msgid ""
+"Based on the statistics collected, this map presents the highest current "
+"threats and vulnerabilities, by region."
+msgstr ""
+
+#: statsservice/templates/map.html:15
+msgid "You can also"
+msgstr ""
+
+#: statsservice/templates/map.html:15
+msgid "share statistics"
+msgstr ""
