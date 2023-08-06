@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+metacritic_scraper.egg-info/PKG-INFO
+metacritic_scraper.egg-info/SOURCES.txt
+metacritic_scraper.egg-info/dependency_links.txt
+metacritic_scraper.egg-info/requires.txt
+metacritic_scraper.egg-info/top_level.txt
