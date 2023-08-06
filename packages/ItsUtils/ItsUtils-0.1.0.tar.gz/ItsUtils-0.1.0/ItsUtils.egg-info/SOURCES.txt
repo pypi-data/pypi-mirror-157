@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+./its_utils/__init__.py
+./its_utils/debug_prompt.py
+./its_utils/py.typed
+./its_utils/string_math.py
+ItsUtils.egg-info/PKG-INFO
+ItsUtils.egg-info/SOURCES.txt
+ItsUtils.egg-info/dependency_links.txt
+ItsUtils.egg-info/top_level.txt
+its_utils/__init__.py
+its_utils/debug_prompt.py
+its_utils/py.typed
+its_utils/string_math.py
