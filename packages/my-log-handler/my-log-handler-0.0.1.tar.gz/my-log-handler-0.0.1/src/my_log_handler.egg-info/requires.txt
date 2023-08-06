@@ -1,0 +1,9 @@
+
+[dev]
+flake8>=4.0
+tox>=3.25
+pytest>=7.1
+pytest-cov>=3.0
+mypy>=0.961
+check-manifest>=0.48
+twine>=4.0

@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: my-log-handler
+Version: 0.0.1
+Summary: Add basic log functionality.
+Home-page: https://github.com/bonnybabukachappilly/utils/tree/logHandler
+Author: Bonny Babu
+Author-email: bonnybabukachappilly@gmail.com
+License: GNU GENERAL PUBLIC LICENSE Version 3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# logHandler
+
+## Project description
+
+logHander is a simple package to create log. I copy paste same file in all of my project.
+I decided to create thid as a package and simply import it.
+Currently limited to basic functionality but plans to upgrade it in future.
+
+![Tests](https://github.com/bonnybabukachappilly/utils/actions/workflows/test.yml/badge.svg)
+
+## Features
+
+* Simple add basic log functionality.
+* create 2 log files [debug, info].
+* logs to console.
+
+## Installation
+
+```cmd
+pip install logHander
+```
+
+## Development
+
+To install logHandler along with tools for developnment and testing run following command.
+
+```cmd
+pip install -e .[dev]
+```
+
+
