@@ -1,0 +1,5 @@
+
+[tests]
+pytest>=3
+pytest-timeout
+mdtraj
