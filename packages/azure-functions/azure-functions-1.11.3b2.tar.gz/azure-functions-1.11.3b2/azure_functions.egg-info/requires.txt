@@ -1,0 +1,8 @@
+
+[dev]
+flake8~=4.0.1
+mypy
+pytest
+pytest-cov
+requests==2.*
+coverage
