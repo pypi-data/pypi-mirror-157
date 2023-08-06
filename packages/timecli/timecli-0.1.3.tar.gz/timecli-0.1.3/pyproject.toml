@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "timecli"
+version = "0.1.3"
+description = ""
+authors = ["gelleson <go.gelleson@gmail.com>"]
+readme = "README.md"
+keywords = ["timecli", "oracle"]
+classifiers = [
+]
+
+[tool.poetry.scripts]
+timecli = "timecli.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+typer = {extras = ["all"], version = "^0.4.1"}
+toml = "^0.10.2"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
