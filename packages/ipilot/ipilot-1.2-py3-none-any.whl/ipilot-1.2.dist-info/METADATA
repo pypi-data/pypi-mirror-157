@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: ipilot
+Version: 1.2
+Summary: IP Information Lookup Tool
+Home-page: UNKNOWN
+Author: Luke Tainton
+Author-email: luke@tainton.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: Freeware
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: Name Service (DNS)
+Classifier: Topic :: System :: Networking
+Requires-Dist: certifi (==2022.6.15)
+Requires-Dist: charset-normalizer (==2.1.0)
+Requires-Dist: idna (==3.3)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: tabulate (==0.8.10)
+Requires-Dist: urllib3 (==1.26.9)
+
+UNKNOWN
+
