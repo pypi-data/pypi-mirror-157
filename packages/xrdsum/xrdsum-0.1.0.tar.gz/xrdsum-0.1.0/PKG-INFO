@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: xrdsum
+Version: 0.1.0
+Summary: Package for retrieving and calculating checksums for XRootD
+Author-email: Luke Kreczko <kreczko@cern.ch>
+Maintainer-email: The GridPP Collaboration <kreczko@cern.ch>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 1 - Planning
+Requires-Dist: typer >= 0.4.0
+Requires-Dist: rich >=10.12.0
+Requires-Dist: pytest >=6 ; extra == "dev"
+Requires-Dist: Sphinx>=4.0 ; extra == "docs"
+Requires-Dist: myst_parser>=0.13 ; extra == "docs"
+Requires-Dist: sphinx-book-theme>=0.1.0 ; extra == "docs"
+Requires-Dist: sphinx_copybutton ; extra == "docs"
+Requires-Dist: pyhdfs>=0.3.1 ; extra == "hdfs"
+Requires-Dist: pytest >=6 ; extra == "test"
+Project-URL: homepage, https://github.com/BristolComputing/xrdsum
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: hdfs
+Provides-Extra: test
+
+# xrdsum
+
+[![Actions Status][actions-badge]][actions-link]
+[![Documentation Status][rtd-badge]][rtd-link]
+[![Code style: black][black-badge]][black-link]
+
+[![PyPI version][pypi-version]][pypi-link]
+[![Conda-Forge][conda-badge]][conda-link]
+[![PyPI platforms][pypi-platforms]][pypi-link]
+
+[![GitHub Discussion][github-discussions-badge]][github-discussions-link]
+[![Gitter][gitter-badge]][gitter-link]
+
+<!-- prettier-ignore-start -->
+[actions-badge]:            https://github.com/BristolComputing/xrdsum/workflows/CI/badge.svg
+[actions-link]:             https://github.com/BristolComputing/xrdsum/actions
+[black-badge]:              https://img.shields.io/badge/code%20style-black-000000.svg
+[black-link]:               https://github.com/psf/black
+[conda-badge]:              https://img.shields.io/conda/vn/conda-forge/xrdsum
+[conda-link]:               https://github.com/conda-forge/xrdsum-feedstock
+[github-discussions-badge]: https://img.shields.io/static/v1?label=Discussions&message=Ask&color=blue&logo=github
+[github-discussions-link]:  https://github.com/BristolComputing/xrdsum/discussions
+[gitter-badge]:             https://badges.gitter.im/https://github.com/BristolComputing/xrdsum/community.svg
+[gitter-link]:              https://gitter.im/https://github.com/BristolComputing/xrdsum/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
+[pypi-link]:                https://pypi.org/project/xrdsum/
+[pypi-platforms]:           https://img.shields.io/pypi/pyversions/xrdsum
+[pypi-version]:             https://badge.fury.io/py/xrdsum.svg
+[rtd-badge]:                https://readthedocs.org/projects/xrdsum/badge/?version=latest
+[rtd-link]:                 https://xrdsum.readthedocs.io/en/latest/?badge=latest
+[sk-badge]:                 https://scikit-hep.org/assets/images/Scikit--HEP-Project-blue.svg
+<!-- prettier-ignore-end -->
+
