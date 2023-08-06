@@ -1,0 +1,11 @@
+PyQt5
+matplotlib
+nibabel
+numpy
+pandas
+pydicom
+requests
+base64
+
+[dev]
+pdoc3
