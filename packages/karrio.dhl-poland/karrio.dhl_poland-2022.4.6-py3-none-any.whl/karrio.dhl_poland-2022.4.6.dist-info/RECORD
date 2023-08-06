@@ -1,0 +1,14 @@
+karrio/mappers/dhl_poland/__init__.py,sha256=xvMgQZTRxZRcafAO-JovL0INR6dp8kOvxHKUg2oqlzM,575
+karrio/mappers/dhl_poland/mapper.py,sha256=MyfrzLswf6wMysUJGTlYda-CiBIcO8XlGgx0fp-F01U,1663
+karrio/mappers/dhl_poland/proxy.py,sha256=5LeiRxYMMmqMMbYDsGR7BUfZRXP4buBpIDTe89IT26I,1441
+karrio/mappers/dhl_poland/settings.py,sha256=NnF9ZrJBth4xvV8s0NVyAMD4qJ-dgNyxBEz156LPBJ0,820
+karrio/providers/dhl_poland/__init__.py,sha256=IcS2IVTPidvvmqmJj4t1SFGdNTJewCicALuf7xY3mp0,224
+karrio/providers/dhl_poland/error.py,sha256=OXxiuVdmtW55THG8Uv0UTDC-wXoj_CENVRLK6niV6vs,621
+karrio/providers/dhl_poland/shipment/__init__.py,sha256=kH1OP9BIPNfzxj6k41NI5TGBQX6CZ9y0qinn3BkL9xI,236
+karrio/providers/dhl_poland/shipment/cancel.py,sha256=0GDucOL_qvrJIT6xEtW7etdVq4o0Ldx4tPGepgYJCak,1511
+karrio/providers/dhl_poland/shipment/create.py,sha256=s-Eh1pL6K19iRb_dPEYdVMbZzetky2jILc8IjQ4so6Q,12806
+karrio/providers/dhl_poland/units.py,sha256=Drc_sn2iocIQZDwIyfMbJnc169AsZRn64Lp_fxH-fqk,3282
+karrio/providers/dhl_poland/utils.py,sha256=fADiT2cBs73ubeDnu08cW8vcV1Hf7BoRBlDpx9kCPiY,1677
+karrio.dhl_poland-2022.4.6.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+karrio.dhl_poland-2022.4.6.dist-info/METADATA,sha256=VI9vrvw3hPqqILz2GevTAKLcL2kbp1EBxZIycsslFqA,1360
+karrio.dhl_poland-2022.4.6.dist-info/RECORD,,
