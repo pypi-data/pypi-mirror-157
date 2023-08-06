@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+mrbias/__init__.py
+mrbias/curve_fitting.py
+mrbias/image_sets.py
+mrbias/misc_utils.py
+mrbias/mri_bias.py
+mrbias/phantom_reference.py
+mrbias/roi_detect.py
+mrbias/scan_session.py
+mrbias.egg-info/PKG-INFO
+mrbias.egg-info/SOURCES.txt
+mrbias.egg-info/dependency_links.txt
+mrbias.egg-info/requires.txt
+mrbias.egg-info/top_level.txt
