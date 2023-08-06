@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: xeye
+Version: 0.0.1
+Summary: Create dataset for computer vision application
+Home-page: https://github.com/Glue-Coder/xeye
+Author: Marco Salvalaggio
+Author-email: mar.salvalaggio@gmail.com
+Project-URL: Bug Tracker, https://github.com/Glue-Coder/xeye
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Introduction
+
+Xeye is a python package for create in automatic and frendly way, using just your pc and a usb camera (even with your integreted pc camera), dataset for build deep learning model in order to develop computer vision application. 
+
