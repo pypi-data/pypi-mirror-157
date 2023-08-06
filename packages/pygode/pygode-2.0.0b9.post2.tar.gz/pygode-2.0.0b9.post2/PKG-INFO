@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pygode
+Version: 2.0.0b9.post2
+Summary: Python package that converts gibberish caused by Thai user forgetting to change their keyboard layout.
+Project-URL: Bug Tracker, https://github.com/godeProject/pygode/issues
+Project-URL: Homepage, https://github.com/godeProject/pygode
+Author-email: Jakkaphat Chalermphanaphan <gunt@guntxjakka.me>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pygode
+
+Convert gibberish caused by Thai users forgetting to change their keyboard layout. For Python this time.
+
+## Installation
+via [pip](https://www.pypi.org/project/pygode)
+
+```bash
+$ pip install gode.py
+```
+
+## Documentation
+
+see *[here](https://docs.gode.app)*
+
+## Contributions
+
+Contributions are more than welcome! Please see below for contribution types.
+
+### Issue reports
+
+Issue trackers are available at our [GitHub Issues](https://github.com/godeProject/pygode/issues).
+
+### Pull requests
+
+We also accept PRs as a contribution. Please note that
+
+1. Your PRs should either have significant improvements or a bug fix.
+2. Your PRs should be well-documented. Describe what you did and what benefits it provides.
+
+
+## License
+[MIT License](https://github.com/godeProject/pygode/blob/v2/LICENSE)
