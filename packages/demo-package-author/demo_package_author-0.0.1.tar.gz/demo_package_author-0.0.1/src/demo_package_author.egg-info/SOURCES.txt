@@ -1,0 +1,9 @@
+README.rst
+pyproject.toml
+src/demo_package_author/__init__.py
+src/demo_package_author/f2c.py
+src/demo_package_author.egg-info/PKG-INFO
+src/demo_package_author.egg-info/SOURCES.txt
+src/demo_package_author.egg-info/dependency_links.txt
+src/demo_package_author.egg-info/entry_points.txt
+src/demo_package_author.egg-info/top_level.txt

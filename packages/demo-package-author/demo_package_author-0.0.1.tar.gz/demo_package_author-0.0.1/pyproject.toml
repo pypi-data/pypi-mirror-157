@@ -1,0 +1,46 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel",
+    ]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "demo_package_author"
+version = "0.0.1"
+authors = [
+  { name="Author", email="author@demo.com" },
+]
+description = "foo is a example project for demo"
+readme = "README.rst"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+# 有关文档链接
+# [project.urls]
+# "Homepage" = "https://github.com/pypa/fooeproject"
+# "Bug Tracker" = "https://github.com/pypa/fooproject/issues"
+
+# 按照条件搜索发行包位置
+# [tool.setuptools.packages.find]
+# where = ["src"]             # ["."] by default
+# include = ["foo*"]          # ["*"] by default
+# exclude = ["foo.tests*"]    # empty by default
+# namespaces = false          # true by default
+
+# 自动搜索发行包路径
+# [tool.setuptools.packages]
+# find = {}              # Scan the project directory with the default parameters
+
+# 指定发行包路径
+[tool.setuptools]
+packages = ["demo_package_author"]
+package-dir = {"" = "src"}
+
+# 设置程序运行入口点
+[project.scripts]
+fc = "demo_package_author.f2c:fc"
