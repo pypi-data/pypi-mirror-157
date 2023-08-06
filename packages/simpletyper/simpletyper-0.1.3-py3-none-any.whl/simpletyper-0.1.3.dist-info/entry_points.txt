@@ -1,0 +1,3 @@
+[console_scripts]
+simpletyper=simpletyper.__init__:main
+
