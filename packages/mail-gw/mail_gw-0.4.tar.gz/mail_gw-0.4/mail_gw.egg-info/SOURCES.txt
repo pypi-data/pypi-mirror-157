@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+mail_gw/__init__.py
+mail_gw/exceptions.py
+mail_gw/models.py
+mail_gw/utils.py
+mail_gw.egg-info/PKG-INFO
+mail_gw.egg-info/SOURCES.txt
+mail_gw.egg-info/dependency_links.txt
+mail_gw.egg-info/requires.txt
+mail_gw.egg-info/top_level.txt
