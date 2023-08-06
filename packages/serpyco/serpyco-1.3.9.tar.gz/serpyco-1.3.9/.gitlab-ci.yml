@@ -1,0 +1,58 @@
+stages:
+  - style
+  - test
+  - doc
+
+image: python:3.8
+
+before_script:
+  - pip install -r requirements.txt
+  
+flake8:
+  stage: style
+  script:
+    - flake8
+
+tests-3.6:
+  stage: test
+  image: python:3.6
+  script:
+    - python setup.py test
+
+tests-3.7:
+  stage: test
+  script:
+    - python setup.py test
+
+tests-3.8:
+  stage: test
+  image: python:3.8
+  script:
+    - python setup.py test
+
+tests-3.9:
+  stage: test
+  image: python:3.9
+  script:
+    - python setup.py test
+
+tests-3.10:
+  stage: test
+  image: python:3.10
+  script:
+    - python setup.py test
+
+pages:
+  stage: doc
+  script:
+    - python setup.py develop
+    - apt-get update -q -y
+    - apt-get install make
+    - pip install sphinx sphinx-autodoc-typehints sphinx-rtd-theme sphinxcontrib-websupport
+    - make html
+    - mv _build/html/ public
+  artifacts:
+    paths:
+    - public
+  only:
+    - tags
