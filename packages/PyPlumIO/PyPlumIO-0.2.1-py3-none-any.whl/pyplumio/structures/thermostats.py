@@ -1,0 +1,53 @@
+"""Contains thermostats structure parser."""
+from __future__ import annotations
+
+from collections.abc import MutableSequence
+from typing import Final, Optional, Tuple
+
+from pyplumio import util
+from pyplumio.helpers.typing import Records
+
+THERMOSTATS: Final = "thermostats"
+ECOSTER_CONTACTS: Final = "contacts"
+ECOSTER_SCHEDULE: Final = "schedule"
+ECOSTER_MODE: Final = "mode"
+ECOSTER_TEMP: Final = "temp"
+ECOSTER_TARGET: Final = "target"
+
+
+def from_bytes(
+    message: bytearray, offset: int = 0, data: Optional[Records] = None
+) -> Tuple[Records, int]:
+    """Parse bytes and return message data and offset."""
+    if data is None:
+        data = {}
+
+    if message[offset] == 0xFF:
+        offset += 1
+        return data, offset
+
+    thermostats: MutableSequence[Records] = []
+    therm_contacts = message[offset]
+    offset += 1
+    therm_number = message[offset]
+    offset += 1
+    if therm_number > 0:
+        contact_mask = 1
+        schedule_mask = 1 << 3
+        for _ in range(1, therm_number + 1):
+            therm: Records = {}
+            therm[ECOSTER_CONTACTS] = bool(therm_contacts & contact_mask)
+            therm[ECOSTER_SCHEDULE] = bool(therm_contacts & schedule_mask)
+            therm[ECOSTER_MODE] = message[offset]
+            therm[ECOSTER_TEMP] = util.unpack_float(message[offset + 1 : offset + 5])[0]
+            therm[ECOSTER_TARGET] = util.unpack_float(message[offset + 5 : offset + 9])[
+                0
+            ]
+            thermostats.append(therm)
+            offset += 9
+            contact_mask = contact_mask << 1
+            schedule_mask = schedule_mask << 1
+
+    data[THERMOSTATS] = thermostats
+
+    return data, offset
