@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: svaponi
+Version: 0.0.1
+Summary: Showing up is most of the work
+Home-page: https://github.com/svaponi/hithere
+Author: Samuel Vaponi
+Author-email: samuel.vaponi.developer@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# hello
