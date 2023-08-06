@@ -1,0 +1,2 @@
+[console_scripts]
+miracron = miracron:start_miracron_cli
