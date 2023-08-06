@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pypi_desc.md
+setup.py
+tmx_pico_aio/__init__.py
+tmx_pico_aio/private_constants.py
+tmx_pico_aio/telemtrix_aio_serial.py
+tmx_pico_aio/tmx_pico_aio.py
+tmx_pico_aio.egg-info/PKG-INFO
+tmx_pico_aio.egg-info/SOURCES.txt
+tmx_pico_aio.egg-info/dependency_links.txt
+tmx_pico_aio.egg-info/requires.txt
+tmx_pico_aio.egg-info/top_level.txt
