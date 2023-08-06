@@ -1,0 +1,7 @@
+setup.py
+anasim/__init__.py
+anasim/text.py
+anasim.egg-info/PKG-INFO
+anasim.egg-info/SOURCES.txt
+anasim.egg-info/dependency_links.txt
+anasim.egg-info/top_level.txt
