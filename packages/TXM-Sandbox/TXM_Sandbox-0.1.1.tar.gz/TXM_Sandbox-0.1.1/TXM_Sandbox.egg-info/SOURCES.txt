@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+TXM_Sandbox/__init__.py
+TXM_Sandbox.egg-info/PKG-INFO
+TXM_Sandbox.egg-info/SOURCES.txt
+TXM_Sandbox.egg-info/dependency_links.txt
+TXM_Sandbox.egg-info/not-zip-safe
+TXM_Sandbox.egg-info/requires.txt
+TXM_Sandbox.egg-info/top_level.txt
