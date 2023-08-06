@@ -1,0 +1,8 @@
+nextcord/ext/help_commands/__init__.py,sha256=19qcrlpMUFFaMrMGd_eRF2a1AVqKVsWLkRwAwj7626E,216
+nextcord/ext/help_commands/errors.py,sha256=mB1tvETCZZvmmioAMK_vh2FHshm6xJ74sc0xhfN1MLI,528
+nextcord/ext/help_commands/paginated.py,sha256=pdnGyE-i3RTPTFFdK8dsc3Yt9WE9YwIxMTnphS-Hg4o,5593
+nextcord_ext_help_commands-0.0.1.dist-info/LICENSE,sha256=eDTdNa8JKhPZVwIzHq3aRTmTC5spbGaroWIT7GomoM4,1132
+nextcord_ext_help_commands-0.0.1.dist-info/METADATA,sha256=9CAstaFBh8brGtv6mz1FhYebLhhYJ7WUKwZIuNlZcH0,2478
+nextcord_ext_help_commands-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nextcord_ext_help_commands-0.0.1.dist-info/top_level.txt,sha256=WLKE4YjlmaQ5A1gxmxiAYHUFoYSc49lTpIaYSHFE2Qw,9
+nextcord_ext_help_commands-0.0.1.dist-info/RECORD,,
