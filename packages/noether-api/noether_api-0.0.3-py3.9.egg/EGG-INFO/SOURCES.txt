@@ -1,0 +1,11 @@
+.DS_Store
+LICENSE
+README.md
+pyproject.toml
+setup.py
+noether_api/__init__.py
+noether_api/client.py
+noether_api.egg-info/PKG-INFO
+noether_api.egg-info/SOURCES.txt
+noether_api.egg-info/dependency_links.txt
+noether_api.egg-info/top_level.txt
