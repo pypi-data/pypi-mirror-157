@@ -1,0 +1,5 @@
+[console_scripts]
+gatenlp-tner-docs2dataset = gatenlp_ml_tner.export:run_docs2dataset
+gatenlp-tner-eval = gatenlp_ml_tner.eval:run_eval
+gatenlp-tner-train = gatenlp_ml_tner.train:run_training
+
