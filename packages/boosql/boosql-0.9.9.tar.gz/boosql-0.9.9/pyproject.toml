@@ -1,0 +1,11 @@
+[tool.poetry]
+name = "boosql"
+version = "0.9.9"
+description = ""
+authors = ["yer"]
+
+[tool.poetry.dependencies]
+python = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.7"
