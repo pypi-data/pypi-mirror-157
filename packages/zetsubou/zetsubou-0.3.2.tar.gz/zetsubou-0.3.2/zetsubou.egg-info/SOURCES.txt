@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+zetsubou/__init__.py
+zetsubou/__main__.py
+zetsubou/_version.py
+zetsubou/configuration.py
+zetsubou/logo.py
+zetsubou/zetsubou.py
+zetsubou.egg-info/PKG-INFO
+zetsubou.egg-info/SOURCES.txt
+zetsubou.egg-info/dependency_links.txt
+zetsubou.egg-info/entry_points.txt
+zetsubou.egg-info/requires.txt
+zetsubou.egg-info/top_level.txt
