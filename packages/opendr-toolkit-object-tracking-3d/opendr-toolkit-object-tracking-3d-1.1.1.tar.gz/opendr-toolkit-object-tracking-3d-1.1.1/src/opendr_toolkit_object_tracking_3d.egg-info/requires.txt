@@ -1,0 +1,4 @@
+munkres>=1.1.4
+opendr-toolkit-object-detection-3d
+filterpy>=1.4.5
+opendr-toolkit-engine
