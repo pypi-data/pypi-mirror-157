@@ -1,0 +1,9 @@
+numpy
+visvis
+pyvtk
+matplotlib
+scipy
+gmsh
+qtpy
+vedo
+tabulate
