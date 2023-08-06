@@ -1,0 +1,6 @@
+colorama
+docopt
+numpy>=1.17
+PyYAML>=5
+sqlalchemy
+sqlalchemy-utils
