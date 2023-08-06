@@ -1,0 +1,3 @@
+[console_scripts]
+mk_pegs_intervals = pegs.cli:mk_pegs_intervals
+pegs = pegs.cli:pegs
