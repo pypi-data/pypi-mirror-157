@@ -1,0 +1,15 @@
+qurator/__init__.py,sha256=1kQs82-WyvhNmr6z4VEklhVXMJulr_OO2RXRAqT40Z4,55
+qurator/utils/__init__.py,sha256=G-d438vPx7m_ks5e9XTtM3u7LDRO5dSSukibukWmyPM,56
+qurator/utils/csv.py,sha256=aD21bB7ojjz18Az53MbunEQq6ffHeDB4DPV2DrR4wu4,1594
+qurator/utils/entities.py,sha256=tVqituhkRbLdku6vl4-2lSbk6zFPg4rPw5eLrLsCtS0,6896
+qurator/utils/ned.py,sha256=yIMFyeaK6HQRdwCLesOyL_QnumnVlrsgjAnoXNeOjuM,5890
+qurator/utils/ner.py,sha256=Kd-FRaNX4iso_16PqA5nakAq82n1ysn1txcxTKANFQ8,1481
+qurator/utils/parallel.py,sha256=QSObp4T8gDyqJzjl-azEh8RvwzJ_Q_NtAgL6GrGy10M,1473
+qurator/utils/pickle.py,sha256=TDezDLO-n1Cfghy8GaamLcmHq5Zn0nELZpd4JMp_-JE,919
+qurator/utils/qurator_data.py,sha256=GU1vbOFsMSOc4BamCMvm_6ePy3OSth8l89FW_v2YqZA,2359
+qurator/utils/tsv.py,sha256=yfoHR3qn9H_S49WRCc-RkPYbEGhlYYwaDtHmCIdlgn8,3098
+qurator_sbb_utils-0.0.1.dist-info/METADATA,sha256=5TkM4y_DstBIlWsQGxiE9JahxyvRYjrCuQA3-8rMrFA,1456
+qurator_sbb_utils-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+qurator_sbb_utils-0.0.1.dist-info/entry_points.txt,sha256=LVsrEb2BhGl8pqXUdsp0unTcxGnkHApd65PDtZpsM5k,206
+qurator_sbb_utils-0.0.1.dist-info/top_level.txt,sha256=rd-mMne9q47jq9pV4FdFcgPEsNpSXADrrCEaN-rnT9A,8
+qurator_sbb_utils-0.0.1.dist-info/RECORD,,
