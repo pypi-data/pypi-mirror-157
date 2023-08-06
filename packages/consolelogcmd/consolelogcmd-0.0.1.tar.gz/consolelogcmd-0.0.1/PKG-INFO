@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: consolelogcmd
+Version: 0.0.1
+Summary: A Very Simple Console Log Command
+Home-page: UNKNOWN
+Author: GalaxyDevel0per
+Author-email: galaxydevel0per@duck.com
+License: MIT
+Keywords: calculator,console,log,command
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+This changes how you type if you wanna use console.log() instead then this is the package for you.
+
+
+

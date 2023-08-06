@@ -1,0 +1,1 @@
+This changes how you type if you wanna use console.log() instead then this is the package for you.

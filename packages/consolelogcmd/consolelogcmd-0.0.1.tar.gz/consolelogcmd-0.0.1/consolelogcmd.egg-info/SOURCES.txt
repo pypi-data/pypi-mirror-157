@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+consolelogcmd/__init__.py
+consolelogcmd.egg-info/PKG-INFO
+consolelogcmd.egg-info/SOURCES.txt
+consolelogcmd.egg-info/dependency_links.txt
+consolelogcmd.egg-info/top_level.txt
