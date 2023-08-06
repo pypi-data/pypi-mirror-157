@@ -1,0 +1,117 @@
+Metadata-Version: 1.2
+Name: audmetric
+Version: 1.1.4
+Summary: Evaluate machine-learning models
+Home-page: https://audeering.github.io/audmetric/
+Author: Johannes Wagner, Hagen Wierstorf, Stephan Huber, Andreas Triantafyllopoulos, Uwe Reichel
+Author-email: jwagner@audeering.com
+License: MIT
+Project-URL: Documentation, https://audeering.github.io/audmetric/
+Description: =========
+        audmetric
+        =========
+        
+        |tests| |coverage| |docs| |python-versions| |license|
+        
+        **audmetric** includes several equations
+        to estimate the performance of a machine learning prediction algorithm.
+        
+        Some of the metrics are also available in sklearn_,
+        but we wanted to have a package
+        which depends only on numpy_.
+        For those metrics
+        we included tests that the results are identical to sklearn_.
+        
+        
+        .. _numpy: https://numpy.org/
+        .. _sklearn: https://scikit-learn.org/stable/
+        
+        
+        .. badges images and links:
+        .. |tests| image:: https://github.com/audeering/audmetric/workflows/Test/badge.svg
+            :target: https://github.com/audeering/audmetric/actions?query=workflow%3ATest
+            :alt: Test status
+        .. |coverage| image:: https://codecov.io/gh/audeering/audmetric/branch/master/graph/badge.svg?token=wOMLYzFnDO
+            :target: https://codecov.io/gh/audeering/audmetric/
+            :alt: code coverage
+        .. |docs| image:: https://img.shields.io/pypi/v/audmetric?label=docs
+            :target: https://audeering.github.io/audmetric/
+            :alt: audmetric's documentation
+        .. |license| image:: https://img.shields.io/badge/license-MIT-green.svg
+            :target: https://github.com/audeering/audmetric/blob/master/LICENSE
+            :alt: audmetric's MIT license
+        .. |python-versions| image:: https://img.shields.io/pypi/pyversions/audmetric.svg
+            :target: https://pypi.org/project/audmetric/
+            :alt: audmetric's supported Python versions
+        
+        Changelog
+        =========
+        
+        All notable changes to this project will be documented in this file.
+        
+        The format is based on `Keep a Changelog`_,
+        and this project adheres to `Semantic Versioning`_.
+        
+        
+        Version 1.1.4 (2022/07/05)
+        --------------------------
+        
+        * Fixed: accuracy formula in docstring
+        
+        
+        Version 1.1.3 (2022/02/16)
+        --------------------------
+        
+        * Added: reference for CCC formula
+        * Fixed: support pandas series with datatype ``Int64``
+        
+        
+        Version 1.1.2 (2022/01/11)
+        --------------------------
+        
+        * Fixed: typo in docstring of ``audmetric.mean_absolute_error()``
+        
+        
+        Version 1.1.1 (2022/01/03)
+        --------------------------
+        
+        * Added: Python 3.9 support
+        * Removed: Python 3.6 support
+        
+        
+        Version 1.1.0 (2021/07/29)
+        --------------------------
+        
+        * Added: ``audmetric.utils.infer_labels()``
+        * Added: ``audmetric.equal_error_rate()``
+        * Added: ``audmetric.detection_error_tradeoff()``
+        
+        
+        Version 1.0.1 (2021/06/10)
+        --------------------------
+        
+        * Fixed: broken package due to missing ``__init_.py`` file
+        
+        
+        Version 1.0.0 (2021/06/09)
+        --------------------------
+        
+        * Added: initial public release
+        
+        
+        .. _Keep a Changelog: https://keepachangelog.com/en/1.0.0/
+        .. _Semantic Versioning: https://semver.org/spec/v2.0.0.html
+        
+Keywords: mlops,machine learning
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
