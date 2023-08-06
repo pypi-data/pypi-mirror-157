@@ -1,0 +1,3 @@
+ttkbootstrap
+send2trash
+regex
