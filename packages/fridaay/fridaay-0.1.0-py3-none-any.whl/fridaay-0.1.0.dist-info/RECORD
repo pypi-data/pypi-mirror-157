@@ -1,0 +1,12 @@
+fridaay/__init__.py,sha256=m_Vs_aRXd7z0utfnIpy071fQ7xbawwqT3kfW8jeOOes,134
+fridaay/constants.py,sha256=YGKS_FdtsJf_tsLGWUnJXNj_dqRvO7SpF2vSGN6qDn4,140
+fridaay/dad/dad-core.yml,sha256=4ayhX3NR_McrMO_CRcp_kYiTnmsGGo-Xf4JLgezIqAw,64
+fridaay/dad/dad-sql.yml,sha256=i-bHuIrRbTppkKNf_f7Wklu4pPMWiHErUl3OjgQxoXM,177
+fridaay/load.py,sha256=-YSDg8Tf_y1UYlbG3Z_k05fWl57-V_5bsDGOBKjs_DU,667
+fridaay/pipe.py,sha256=82uo8ZmzvwQ65WoYbBP6YVkzHtlJsZg0uc59-lyuonI,1299
+fridaay/registry.py,sha256=STlXtd-K9LE3z2RgJs_h5yVJFQt1JRvzIZ0vEDpqFwM,1118
+fridaay/schema.py,sha256=5L-614gvLfqCkf2WRuLDgc-GGAqWoFt73wnn9X7Amh0,950
+fridaay-0.1.0.dist-info/LICENSE,sha256=UtCxA-nRPp084-M0Yra6-OcrkawXq5H-nxR8frEUzSY,1083
+fridaay-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+fridaay-0.1.0.dist-info/METADATA,sha256=FZo5ja2R-ARyO_vQ_eRD4mPwVGVioqpBIe34hnZ2yt8,3244
+fridaay-0.1.0.dist-info/RECORD,,
