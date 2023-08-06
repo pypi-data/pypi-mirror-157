@@ -1,0 +1,8 @@
+pip
+packaging
+rich
+fastcore
+ipython
+execnb
+
+[dev]
