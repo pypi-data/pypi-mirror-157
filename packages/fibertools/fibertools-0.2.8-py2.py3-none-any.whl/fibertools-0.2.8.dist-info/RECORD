@@ -1,0 +1,16 @@
+fibertools/__init__.py,sha256=zTgTlvaXFjNAeMSgofwd01fEViexvRI-w8g9Sl0amXc,186
+fibertools/classify.py,sha256=zznZ5qtLD6sjxF5xTthS_g3aK4NAN6CcnRfVWWZQ22I,6054
+fibertools/cli.py,sha256=tApExQjpsBpg0OtjsxYGfOpl52LqwGRRZzWbYMdtgPY,7892
+fibertools/fiberdata.py,sha256=5eNC75yPhz34hakuSil2awovA_DiKV2gOiMk-Xdi55U,6995
+fibertools/fibertools.py,sha256=xU7jkG5c-sYV4h6p4HbyzbMzmDJAR74E7fzH-iur-bY,130
+fibertools/readutils.py,sha256=5sR40NLWpVF_NOpmzgbqJBmB_Weokama0M4y2qVNzWw,3586
+fibertools/trackhub.py,sha256=QWL0UtuzSll2ibBWG5j-85Ng_ALGGJezWqSJwYDz5UA,4064
+fibertools/unionbg.py,sha256=XQh4sOtea1F86sgoZQ8gRlS2Oqf6ENt4eylJcc5kyiA,4958
+fibertools/utils.py,sha256=oe3NImo_qsbXTXk323WlwS97DrlvwgQXCAuHru6lHr4,4951
+fibertools-0.2.8.dist-info/AUTHORS.rst,sha256=mJHs1D13A1tPMqsbzgKbrxwjO2ZuJIlGw_kEjwI8g34,164
+fibertools-0.2.8.dist-info/LICENSE,sha256=_Q0KSiGxCfqLVm_9VJFzPaJHv0SXmJIcWHLu9HReDKk,1078
+fibertools-0.2.8.dist-info/METADATA,sha256=84Rlj6BrGtuJD-xe7sWI3QHWUB8Jz_n8cCFPv-p7H7Y,2454
+fibertools-0.2.8.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+fibertools-0.2.8.dist-info/entry_points.txt,sha256=jkayPVPWMzH-IoDFRA2zA5RkXgmlxeXqEzz_LNNgK3Y,58
+fibertools-0.2.8.dist-info/top_level.txt,sha256=EIYxm3obc9AnWVQMgZz8Jdhf2yTGytNRdWllkJ4jICw,11
+fibertools-0.2.8.dist-info/RECORD,,
