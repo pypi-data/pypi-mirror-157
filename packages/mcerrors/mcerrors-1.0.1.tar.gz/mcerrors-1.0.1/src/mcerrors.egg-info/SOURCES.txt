@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mcerrors/__init__.py
+src/mcerrors/core.py
+src/mcerrors.egg-info/PKG-INFO
+src/mcerrors.egg-info/SOURCES.txt
+src/mcerrors.egg-info/dependency_links.txt
+src/mcerrors.egg-info/requires.txt
+src/mcerrors.egg-info/top_level.txt
+test/test_core.py
