@@ -1,0 +1,4 @@
+[console_scripts]
+pod = pod_store.__main__:main
+pod-store = pod_store.__main__:main
+
