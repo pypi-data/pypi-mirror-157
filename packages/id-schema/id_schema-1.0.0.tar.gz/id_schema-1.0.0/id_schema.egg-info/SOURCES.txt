@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+id_schema.egg-info/PKG-INFO
+id_schema.egg-info/SOURCES.txt
+id_schema.egg-info/dependency_links.txt
+id_schema.egg-info/requires.txt
+id_schema.egg-info/top_level.txt
+src/__init__.py
+src/id_schema.py
