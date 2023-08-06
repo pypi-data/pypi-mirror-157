@@ -1,0 +1,4 @@
+geopy
+psycopg2
+pyTelegramBotAPI
+requests
