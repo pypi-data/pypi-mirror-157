@@ -1,0 +1,2 @@
+[flake8.extension]
+Q = flake8_qchecker:Plugin

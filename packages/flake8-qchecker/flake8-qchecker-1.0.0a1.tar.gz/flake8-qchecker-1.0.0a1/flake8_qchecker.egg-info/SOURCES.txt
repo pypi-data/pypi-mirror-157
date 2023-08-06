@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+flake8_qchecker/__init__.py
+flake8_qchecker.egg-info/PKG-INFO
+flake8_qchecker.egg-info/SOURCES.txt
+flake8_qchecker.egg-info/dependency_links.txt
+flake8_qchecker.egg-info/entry_points.txt
+flake8_qchecker.egg-info/requires.txt
+flake8_qchecker.egg-info/top_level.txt
