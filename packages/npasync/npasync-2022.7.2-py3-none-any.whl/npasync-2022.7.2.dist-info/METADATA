@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: npasync
+Version: 2022.7.2
+Summary: A wrapper package for python asynchronous programming
+Home-page: https://github.com/noppGithub/npasync
+Author: Nopporn Phantawee
+Author-email: n.phantawee@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp (>=3.8.1)
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+# npasync
+
+**Description**:  
+A wrapper package for python asynchronous programming
+
+**Author**: Nopporn Phantawee
+
+### Version note
+2022.7.001: First release
+2022.7.002: Updated Readme.md
+
+### Installation
+`pip install npasync==2022.7.1`
+
+### Usage sample
+```python
+# create a Python file with the content below.
+from npasync import NPAsync
+
+if __name__ == "__main__":
+    n = NPAsync()
+    base_url = "https://pokeapi.co/api/v2/pokemon/{}"
+    urls = [base_url.format(x) for x in range(1, 21)]
+    output = n.request_get(urls=urls)
+    print(f"Total output is: {len(output)}")
+    print(f"Showing the name of each Pokemon(parsed)")
+    for item in output:
+        print(f"{item[0]['name']}")
+```
