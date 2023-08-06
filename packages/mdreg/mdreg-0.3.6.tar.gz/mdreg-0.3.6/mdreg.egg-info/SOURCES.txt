@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mdreg/__init__.py
+mdreg/main.py
+mdreg.egg-info/PKG-INFO
+mdreg.egg-info/SOURCES.txt
+mdreg.egg-info/dependency_links.txt
+mdreg.egg-info/requires.txt
+mdreg.egg-info/top_level.txt
