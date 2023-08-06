@@ -1,0 +1,57 @@
+Metadata-Version: 1.1
+Name: TwitterSpaces2Text
+Version: 0.1
+Summary: This library helps you to download Twitter Spaces text/caption
+Home-page: https://github.com/adwisatya/TwitterSpaces2Text
+Author: Aryya Widigdha
+Author-email: aryya.widigdha@yahoo.com
+License: MIT
+Download-URL: https://github.com/adwisatya/TwitterSpaces2Text/archive/refs/tags/v0.1.tar.gz
+Description: TwitterSpaces2Text
+        ==================
+        
+        Extracting Twitter Spaces text/caption easily given Twitter Spaces ID
+        
+        How to Use
+        ----------
+        
+        Installation
+        ~~~~~~~~~~~~
+        
+        Installation
+        
+        .. code:: sh
+        
+           pip install TwitterSpaces2Text
+        
+        Usage
+        ~~~~~
+        
+        To use this library you just need to provide Twitter Spaces ID
+        
+        .. code:: python
+        
+           from TwitterSpaces2Text.Extractor import Extractor
+           extractor = Extractor()
+           extractor.getCaption("1YqGopyVqkvJv")
+        
+        Contact:
+        ~~~~~~~~
+        
+        mail: aryya.widigdha@yahoo.com
+        
+        License
+        -------
+        
+        MIT License
+        
+Keywords: twitter,spaces,twitter spaces text
+Platform: UNKNOWN
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
