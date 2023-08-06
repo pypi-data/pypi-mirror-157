@@ -1,0 +1,4 @@
+fire
+python-libnmap
+six
+termcolor

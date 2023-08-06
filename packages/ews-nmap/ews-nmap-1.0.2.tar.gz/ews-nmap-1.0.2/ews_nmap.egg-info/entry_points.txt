@@ -1,0 +1,2 @@
+[console_scripts]
+ewsnmap = ewsnmap:main
