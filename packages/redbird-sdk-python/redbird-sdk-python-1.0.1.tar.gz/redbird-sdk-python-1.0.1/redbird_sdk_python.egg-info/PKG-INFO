@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: redbird-sdk-python
+Version: 1.0.1
+Summary: Intelligent algorithmic trading API
+Home-page: https://github.com/weswu8/redbird-sdk-python
+Author: wesley wu
+Author-email: jie1975.wu@gmail.com
+Maintainer: wesley wu
+Maintainer-email: jie1975.wu@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
+
+## **RedBird API SDK**
+
+[**RedBird**] Intelligent algorithmic trading API
+
