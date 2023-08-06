@@ -1,0 +1,5 @@
+docarray[common]>=0.13.29
+ftfy
+lpips
+numpy
+pyyaml
