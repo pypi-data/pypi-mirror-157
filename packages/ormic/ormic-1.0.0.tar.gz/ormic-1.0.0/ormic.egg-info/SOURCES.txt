@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+ormic/__init__.py
+ormic/database.py
+ormic/exceptions.py
+ormic/field.py
+ormic/model.py
+ormic.egg-info/PKG-INFO
+ormic.egg-info/SOURCES.txt
+ormic.egg-info/dependency_links.txt
+ormic.egg-info/requires.txt
+ormic.egg-info/top_level.txt
