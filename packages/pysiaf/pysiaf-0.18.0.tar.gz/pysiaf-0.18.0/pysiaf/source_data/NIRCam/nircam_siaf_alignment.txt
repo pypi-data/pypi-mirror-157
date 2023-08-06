@@ -1,0 +1,42 @@
+# NIRCam alignment parameter reference file for SIAF
+# 
+# This file contains the focal plane alignment parameters of master apertures calibrated
+# during FGS-SI alignment.
+# 
+# Generated 2022-02-26
+# by tsohn, sosborne
+# 
+# Modified 2022-05-09
+# by gennaro
+#
+# Aligned the coronographic apertures to the imaging apertures - modified by tsohn, sosborne according to the OTE-10-.
+# Now the offsets between coron and imaging apertures at fixed SCA are the same as in pre-flight
+#
+# Modified 2022-06-29
+# by gennaro
+#
+# Tweaked the NRCA5_FULL_WEDGE_RND and NRCA5_FULL_WEDGE_BAR apertures to account for the PW tuning changes, AR-1325
+# The new alignment parameters are derived by shifting the previous version of these master apertures by the amount 
+# of (v2,V3) offset induced by the change in the PW clocking
+#
+                      AperName ,  V3IdlYAngle          ,  V3SciXAngle       ,  V3SciYAngle          ,  V2Ref               ,  V3Ref
+                    NRCA1_FULL , -0.57873665133359     , -90.53134882031526 , -0.57873665133359     ,  120.521931          , -527.681271
+                    NRCA2_FULL , -0.21514994419897     , -90.27290447960130 , -0.21514994419897     ,  119.668749          , -459.968346
+                    NRCA3_FULL ,  0.26908435076021     , -89.97295632651311 ,  0.26908435076021     ,   51.905905          , -528.126746
+                    NRCA4_FULL ,  0.07724494251523     , -89.97132754830838 ,  0.07724494251523     ,   52.295020          , -460.099830
+                    NRCA5_FULL , -0.07436147784329     , -90.15744078447197 , -0.07436147784329     ,   85.877630          , -493.586939
+                    NRCB1_FULL ,  0.28424494595116     , -89.65541614553065 ,  0.28424494595116     , -122.636754          , -457.771697
+                    NRCB2_FULL ,  0.81935904931728     , -89.21542196700719 ,  0.81935904931728     , -122.873335          , -525.486255
+                    NRCB3_FULL , -0.48866820133394     , -90.45063505849198 , -0.48866820133394     ,  -54.829507          , -457.752694
+                    NRCB4_FULL , -0.36941910941110     , -90.13030203508283 , -0.36941910941110     ,  -54.586077          , -525.676157
+                    NRCB5_FULL , -0.00022291039643     , -89.92326361926673 , -0.00022291039643     ,  -89.482996          , -491.493660
+          NRCA1_FULL_WEDGE_RND , -0.33124826000000     , -90.54809966000001 , -0.33124826000000     ,  118.337625          , -487.665346
+          NRCA2_FULL_WEDGE_RND ,  0.02423127000000     , -90.29051250999999 ,  0.02423127000000     ,  117.786705          , -420.414458
+          NRCA3_FULL_WEDGE_RND ,  0.30837949000000     , -89.66970549000000 ,  0.30837949000000     ,   50.232913          , -487.942132
+          NRCA4_FULL_WEDGE_RND ,  0.08305695000000     , -89.63598793000000 ,  0.08305695000000     ,   50.604520          , -420.371211
+          NRCA5_FULL_WEDGE_RND ,  0.08234906964979     , -89.97216057005521 ,  0.08234906964979     ,   83.409810          , -446.076167
+          NRCA1_FULL_WEDGE_BAR , -0.33180754000000     , -90.54932540000000 , -0.33180754000000     ,  118.454504          , -487.33635
+          NRCA2_FULL_WEDGE_BAR ,  0.02521288000000     , -90.29260742999999 ,  0.02521288000000     ,  117.901889          , -420.047637
+          NRCA3_FULL_WEDGE_BAR ,  0.30801422000000     , -89.66813883000000 ,  0.30801422000000     ,   50.355310          , -487.590900
+          NRCA4_FULL_WEDGE_BAR ,  0.08193758000000     , -89.63485863000000 ,  0.08193758000000     ,   50.722894          , -420.034916
+          NRCA5_FULL_WEDGE_BAR ,  0.08213809709691     , -89.97554806774346 ,  0.08213809709691     ,   83.240650          , -446.716752
