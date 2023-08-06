@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tfgen
+Version: 0.1.0
+Summary: A transition-based feature generator package for process logs.
+Home-page: https://github.com/yinzheng-zhong/TFGen
+Author: Yinzheng Zhong
+Author-email: y.zhong10@liverpool.ac.uk
+License: UNKNOWN
+Keywords: anomaly detection,machine learning,intrusion detection,process mining
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TFGen
+The process log/event log will be used as input for the feature generator. The feature generator will generate transition matrices.
+
+
