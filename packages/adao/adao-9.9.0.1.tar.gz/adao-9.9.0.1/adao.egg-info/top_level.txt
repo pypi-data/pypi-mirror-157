@@ -1,0 +1,12 @@
+adao
+adao/daAlgorithms
+adao/daAlgorithms/Atoms
+adao/daCore
+adao/daEficas
+adao/daEficasWrapper
+adao/daGUI
+adao/daGuiImpl
+adao/daNumerics
+adao/daUtils
+adao/daYacsIntegration
+adao/daYacsSchemaCreator
