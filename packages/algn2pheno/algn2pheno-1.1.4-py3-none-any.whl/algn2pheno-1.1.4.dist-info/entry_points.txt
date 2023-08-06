@@ -1,0 +1,3 @@
+[console_scripts]
+algn2pheno=algn2pheno.__main__:main
+
