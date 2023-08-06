@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: rottentomatoes-python
+Version: 0.0.1
+Summary: Scrapes Rotten Tomatoes's website for basic information on movies.
+Home-page: UNKNOWN
+Author: Prerit Das
+Author-email: <preritdas@gmail.com>
+License: UNKNOWN
+Keywords: python,movies,rottentomatoes
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pyperclip
+
+# Rotten Tomatoes Python
+
+Basic usage:
+
+```python
+import rottentomatoes_python as rt
+print(rt.tomatometer("happy gilmore"))
+
+# Result: 61 (of type int)
+```
+
