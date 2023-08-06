@@ -1,0 +1,6 @@
+setup.py
+hiftrans.egg-info/PKG-INFO
+hiftrans.egg-info/SOURCES.txt
+hiftrans.egg-info/dependency_links.txt
+hiftrans.egg-info/requires.txt
+hiftrans.egg-info/top_level.txt
