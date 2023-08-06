@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: NepalStockTracker
+Version: 0.0.1
+Summary: Gets the market details of the provided company. Only for Nepal's stock market
+Home-page: https://github.com/ghanteyyy/NepalStockTracker.git
+Author: ghanteyyy
+Author-email: ghanteyyy@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Nepal Stock Tracker
+
+A python script that gets the stock information as per the company symbol
+provided by the user from [Mero Lagani](https://merolagani.com/LatestMarket.aspx). This
+script supports for the stock information of Nepal only.
+
+<img src="https://github.com/ghanteyyy/NepalStockTracker/raw/main/NepalStockTracker/assets/1.png">
+
+# Installation
+
+NepalStockTracker is available on PyPI. You can install it through pip:
+
+`pip install NepalStockTracker`
+
+# Usage
+
+- If you want GUI window then Run **NepalStockTracker.py** directly
+
+- To get data only
+
+  ```python
+  from NepalStockTracker import tracker
+
+  data = tracker('Company Symbol', show_gui=False)  # Returns stock information of the given company symbol
+  print(data.details)  # Printing the stock information from above returned data
+  ```
+
+
