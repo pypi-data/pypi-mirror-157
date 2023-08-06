@@ -1,0 +1,15 @@
+README.md
+setup.py
+PCILib/PCIhashLib.py
+PCILib/PCIosLib.py
+PCILib/__init__.py
+PCILib.egg-info/PKG-INFO
+PCILib.egg-info/SOURCES.txt
+PCILib.egg-info/dependency_links.txt
+PCILib.egg-info/top_level.txt
+PCILib/PCImathLib/__init__.py
+PCILib/PCImathLib/analysis/__init__.py
+PCILib/PCImathLib/discrete/__init__.py
+PCILib/PCImathLib/stat/__init__.py
+PCILib/core/__init__.py
+PCILib/core/bit.py
