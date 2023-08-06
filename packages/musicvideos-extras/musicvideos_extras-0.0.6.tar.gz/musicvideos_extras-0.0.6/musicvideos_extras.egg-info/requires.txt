@@ -1,0 +1,8 @@
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+moviepy
+musicvideos
+oauth2client
+requests
+yt_dlp
