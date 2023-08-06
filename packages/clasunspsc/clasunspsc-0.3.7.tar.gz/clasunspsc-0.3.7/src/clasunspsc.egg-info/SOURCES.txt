@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/clasunspsc/__init__.py
+src/clasunspsc/clasunspsc.py
+src/clasunspsc.egg-info/PKG-INFO
+src/clasunspsc.egg-info/SOURCES.txt
+src/clasunspsc.egg-info/dependency_links.txt
+src/clasunspsc.egg-info/requires.txt
+src/clasunspsc.egg-info/top_level.txt
