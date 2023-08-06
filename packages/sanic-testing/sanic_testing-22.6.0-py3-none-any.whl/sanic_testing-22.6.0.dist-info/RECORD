@@ -1,0 +1,9 @@
+sanic_testing/__init__.py,sha256=QHle24H1k2MVIK1aZAJZyWvgiRG0aaTBAmg3sk3_i0U,97
+sanic_testing/manager.py,sha256=7h0BbrLjcPt3Ju2ifhWF54g004Om-GZtJSUk0UI--5I,348
+sanic_testing/reusable.py,sha256=z4NAovJKxwYqPsxv6JGrNzIoyEf4FNg9rbQTMbJTMwU,7259
+sanic_testing/testing.py,sha256=276g-Xwn66WdHcV9UcQ4pdLLONFHrUJzDulq8xOd6ZQ,14345
+sanic_testing-22.6.0.dist-info/LICENSE,sha256=ljxq2vUrShwTdHmC287CFLjxv9hsdQmSQjO-wrPapnE,1085
+sanic_testing-22.6.0.dist-info/METADATA,sha256=OXYclrzgaxD4BMkWH2NZXcIC1cXS6cV7p7b0X8RNSAE,2901
+sanic_testing-22.6.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sanic_testing-22.6.0.dist-info/top_level.txt,sha256=Ta3ak4Fh7-aEThXqp5_aYLywnLIaJr-aSU3jAx5lMkw,14
+sanic_testing-22.6.0.dist-info/RECORD,,
