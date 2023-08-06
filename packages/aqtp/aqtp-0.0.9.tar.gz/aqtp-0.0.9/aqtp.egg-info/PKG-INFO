@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: aqtp
+Version: 0.0.9
+Summary: AQT: Accurate Quantized Training
+Home-page: https://github.com/google/aqt
+Author: Cerebra Catalyst team
+Author-email: cerebra-catalyst-team@google.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+Provides-Extra: jax_legacy
+License-File: LICENSE
+
+UNKNOWN
+
