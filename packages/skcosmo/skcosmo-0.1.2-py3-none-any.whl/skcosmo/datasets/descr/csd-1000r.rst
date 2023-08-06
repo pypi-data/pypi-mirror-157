@@ -1,0 +1,55 @@
+.. _csd:
+
+CSD-1000R
+#########
+
+This dataset, intended for model testing, contains the SOAP power spectrum
+features and local NMR chemical shieldings for 100 environments selected
+from CSD-1000r, originally published in [Ceriotti2019]_.
+
+Function Call
+-------------
+
+.. function:: skcosmo.datasets.load_csd_1000r
+
+Data Set Characteristics
+------------------------
+
+    :Number of Instances: Each representation 100
+
+    :Number of Features: Each representation 100
+
+    The representations were computed with [C1]_ using the hyperparameters:
+
+    :rascal hyperparameters:
+
+    +---------------------------+------------+
+    | key                       |   value    |
+    +---------------------------+------------+
+    | interaction_cutoff:       |    3.5     |
+    +---------------------------+------------+
+    | max_radial:               |      6     |
+    +---------------------------+------------+
+    | max_angular:              |      6     |
+    +---------------------------+------------+
+    | gaussian_sigma_constant": |     0.4    |
+    +---------------------------+------------+
+    | gaussian_sigma_type:      |  "Constant"|
+    +---------------------------+------------+
+    | cutoff_smooth_width:      |     0.5    |
+    +---------------------------+------------+
+    | normalize:                |    True    |
+    +---------------------------+------------+
+
+    Of the 2'520 resulting features, 100 were selected via FPS using [C2]_.
+
+References
+----------
+
+   .. [C1] https://github.com/lab-cosmo/librascal commit ade202a6
+   .. [C2] https://github.com/lab-cosmo/scikit-cosmo commit 4ed1d92
+
+Reference Code
+--------------
+
+.. literalinclude:: /../../skcosmo/datasets/make_csd_1000r.py
