@@ -1,0 +1,29 @@
+from enaml.core.declarative import d_
+from atom.api import Value, Bool, Typed
+
+from enamlext.widgets import Table
+from enamlext.qt.qt_dataframe import DataFrameProxy
+from enamlext.qt.table.column import generate_columns
+
+import pandas as pd
+
+
+enamldef DataFrame(Table):
+    attr df = d_(Value(factory=pd.DataFrame))
+    attr include = None   # d_(Typed(list))
+    attr exclude = None   # d_(Typed(list))
+
+    columns << generate_columns(self.items, hints=hints, include=include, exclude=exclude)
+
+    func _refresh_internals():
+        _df = df if self.df is not None else pd.DataFrame()
+        self.items = DataFrameProxy(_df)
+
+    activated ::
+        self.proxy.widget.adjust_column_sizes()  # TODO: why we need to call this here?
+
+    initialized ::
+        self._refresh_internals()
+
+    df ::
+        self._refresh_internals()
