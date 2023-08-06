@@ -1,0 +1,1 @@
+This is a simple petrophysical library that calculates the shale or clay volumn from Gamm Ray log, SP log and, Neutron-Density Log.

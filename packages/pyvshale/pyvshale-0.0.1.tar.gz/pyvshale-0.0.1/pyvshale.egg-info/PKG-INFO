@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyvshale
+Version: 0.0.1
+Summary: A library of shale or clay volume calculations Gamma Ray log, SP log and, Neutro-Density log
+Home-page: https://github.com/isaacabrahamodeh/Pyvshale
+Author: Isaac Abraham Odeh
+Author-email: isaacabrahamodeh@gmail.com
+License: MIT
+Keywords: clay volume
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a simple petrophysical library that calculates the shale or clay volumn from Gamm Ray log, SP log and, Neutron-Density Log.
+
+Change Log
+==========
+
+0.0.1 (01/07/2021)
+--------------------
+- First Release
+
