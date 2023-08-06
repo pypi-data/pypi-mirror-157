@@ -1,0 +1,4 @@
+tab 	specimens
+citations	description	dir_dec	dir_inc	dir_mad_free	int_abs	int_b	int_corr	int_corr_arm	int_frac	int_n_measurements	int_r2_corr	meas_step_max	meas_step_min	method_codes	rem_ltd_perc	specimen
+This study	Values for the NRM normalized by TRM1*	222.2	-2.1	1.7	7.075556367878587e-05	1.179	c	1.000	0.951	22	0.999	0.18	0.005	LT-NRM-PAR:LP-PI-TRM:IE-SH:LP-LT:DA-ALT-RS:DA-AC-AARM	3.2	mc120c-SA4
+This study	Values for the TRM1 normalized by TRM2*				6.0035113383772176e-05	1.001	c	1.003	0.894	22	1.000	0.18	0.005	LT-TRM-PAR:LP-PI-TRM:IE-SH:LP-LT:DA-ALT-RS:DA-AC-AARM		mc120c-SA4
