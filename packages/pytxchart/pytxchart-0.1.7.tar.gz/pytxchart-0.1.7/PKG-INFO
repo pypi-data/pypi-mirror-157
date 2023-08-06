@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pytxchart
+Version: 0.1.7
+Summary: PyTxChart module
+Home-page: UNKNOWN
+Author: Nikon
+Author-email: nikon.sp@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: test
+License-File: LICENSE
+
+UNKNOWN
+
