@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+tascCODA.egg-info/PKG-INFO
+tascCODA.egg-info/SOURCES.txt
+tascCODA.egg-info/dependency_links.txt
+tascCODA.egg-info/requires.txt
+tascCODA.egg-info/top_level.txt
+tasccoda/__init__.py
+tasccoda/tree_agg_model_sslasso.py
+tasccoda/tree_ana.py
+tasccoda/tree_results.py
+tasccoda/tree_utils.py
+tasccoda/datasets/__init__.py
+tasccoda/datasets/_datasets.py
