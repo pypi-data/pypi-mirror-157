@@ -1,0 +1,14 @@
+vshelpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vshelpers/evaluations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vshelpers/evaluations/overlap.py,sha256=fjbBBBlEuMH_0Y1GylCUWMaofFmbFAkCoF98hofgBaI,3760
+vshelpers/evaluations/sample.py,sha256=xqG5jgoAQtH0xg-IlNwqAFnTfZyupvzc-fAJs2rWhQk,1901
+vshelpers/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vshelpers/helpers/clean.py,sha256=1ZFX5_hl7Aszg-jqx3DMwNlehf0Jeu8x0vXaPbIrtSI,345
+vshelpers/helpers/curation.py,sha256=4a-bxtq_754VFgI38KRln2Wg_fEsAGw1kKKD8H8V4TE,20
+vshelpers/helpers/general.py,sha256=erQP1ghusIAi_R0UsUlDUfC7ngRXKFy7iaBWUERoKto,759
+vshelpers/helpers/provider.py,sha256=pEWDE6Z6R7th_Cc3J4r4RphVbcUW2i3afwL4YsSe65k,1793
+vshelpers/helpers/statistic.py,sha256=JFJ5fLwMAk2aQYW5prWQL7iJSA4_h7fWXbWsOCJUrH0,2675
+vshelpers-0.0.6.dist-info/METADATA,sha256=TzxowAD1geXKZZPXAsYm2fSZ7kLvOQ1_u4RqSheTs34,478
+vshelpers-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vshelpers-0.0.6.dist-info/top_level.txt,sha256=-UIFkEFB6KYVXhVBDS397nu5AArrGRqotAVbSAoAfvI,10
+vshelpers-0.0.6.dist-info/RECORD,,
