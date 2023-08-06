@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/edpy/__init__.py
+src/edpy/__main__.py
+src/edpy/iris.py
+src/edpy.egg-info/PKG-INFO
+src/edpy.egg-info/SOURCES.txt
+src/edpy.egg-info/dependency_links.txt
+src/edpy.egg-info/entry_points.txt
+src/edpy.egg-info/requires.txt
+src/edpy.egg-info/top_level.txt
