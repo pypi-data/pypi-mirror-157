@@ -1,0 +1,2 @@
+pydash
+hestia_earth.utils>=0.10.10
