@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "arbitragepy"
+version = "2.0.0"
+description = "Arbitrage utilities. Has functions that make it easy to work with arbitrage mathematics."
+license = "MIT"
+authors = ["astsu <astsu.dev@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/astsu-dev/arbitragepy"
+repository = "https://github.com/astsu-dev/arbitragepy"
+documentation = "https://github.com/astsu-dev/arbitragepy"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+pytest = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
