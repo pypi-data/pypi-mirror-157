@@ -1,0 +1,47 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "msflta"
+version = "1.0.3"
+description = "This is the python package implementing several algorithms and strategy-proof mechanisms introduced in the paper Multi-stage Facility Location Problem with Transient Agents"
+readme = "README.md"
+authors = [{ name = "Xuezhen Wang", email = "xuezhenwang2@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["algorithms", "strategy-proof mechanisms", "facility location problem"]
+dependencies = [
+    "numpy >= 1.21.5"
+]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/William-WANG2/FYP-CityU"
+
+[tool.bumpver]
+current_version = "2022.1003-alpha"
+version_pattern = "YYYY.BUILD[-TAG]"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+]
+"README.md" = [
+    "{version}",
+    "{pep440_version}",
+]
+
