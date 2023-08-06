@@ -1,0 +1,12 @@
+chkpkg/__init__.py,sha256=ij-XP0dVhm6P0N7vWUz8FJJTZw6N7-AzyEu-TyureTA,196
+chkpkg/_cleaner.py,sha256=9C4eAcQRnq5aqUauA04fSFuquoi6u-LtCisz-xJ3XtM,1224
+chkpkg/_constants.py,sha256=rOtx6wXS4u2KVGMTXMbeHZ7pin3sS_5_bYrUE7M_0-E,393
+chkpkg/_exceptions.py,sha256=b0k8lolDR31l2BQNu1yDDYx5yR1A5mbhwQh2vwTnCiE,1254
+chkpkg/_package.py,sha256=fhtg2790TKI4UQzBg6dym_rh37WQXi5HLaba44AMNFo,11600
+chkpkg/_require_pytyped.py,sha256=DyaiD6aUBq_DxMzewul4Nr-cEEXziAN8SxjCuEl9JFk,726
+chkpkg/_venvs.py,sha256=XIGgy3LNpDmHmJJD0P7-9K4eXYvdq2nL06Wr9ZNkEyI,2284
+chkpkg-0.5.0.dist-info/LICENSE,sha256=TQuZmMALeS1LrFNdAiV6a4sUOov-kyrCn6Dbi2DuBg4,1086
+chkpkg-0.5.0.dist-info/METADATA,sha256=IlnRw-7kWhDVveD-17z_CqfsgCdp_5l0ztoRXItEGa4,4358
+chkpkg-0.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+chkpkg-0.5.0.dist-info/top_level.txt,sha256=C0Frwbbi7iCNGQytOuTm5dbqk_oAEku0yVd7vQ0F1tk,7
+chkpkg-0.5.0.dist-info/RECORD,,
