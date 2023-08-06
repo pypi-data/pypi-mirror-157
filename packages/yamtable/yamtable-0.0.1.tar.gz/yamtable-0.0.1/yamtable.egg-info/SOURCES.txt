@@ -1,0 +1,12 @@
+README.md
+setup.py
+yamtable/__init__.py
+yamtable/__version__.py
+yamtable/core.py
+yamtable/fire_serialize_patch.py
+yamtable/util.py
+yamtable.egg-info/PKG-INFO
+yamtable.egg-info/SOURCES.txt
+yamtable.egg-info/dependency_links.txt
+yamtable.egg-info/requires.txt
+yamtable.egg-info/top_level.txt
