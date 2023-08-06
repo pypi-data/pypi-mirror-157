@@ -1,0 +1,37 @@
+[project]
+name = "dotnet_nlp.rule_engine"
+readme = "README.md"
+license = {file="LICENSE"}
+dynamic = ["version"]
+dependencies = [
+    "pythonnet==3.0.0a2"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: C#",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: Linguistic",
+]
+keywords = ["rules", "pattern matching", "regex", "peg"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+    [tool.setuptools.packages.find]
+    where = ["src"]
+
+    [tool.setuptools.package-data]
+    "*" = ["runtimeconfig.json", "dlls/*"]
+
+    [tool.setuptools.dynamic]
+    version = {attr="dotnet_nlp.rule_engine.__version__"}
