@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: chris-utils
+Version: 0.1.1
+Summary: Personal Python Utilities
+Home-page: https://github.com/gregorybchris/chris-utils
+License: Apache Software License
+Keywords: chris,python,utils,utilities
+Author: Chris Gregory
+Author-email: christopher.b.gregory@gmail.com
+Requires-Python: >=3.8,<3.10
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/gregorybchris/chris-utils
+Description-Content-Type: text/markdown
+
+# Chris Utils
+
+Personal utilities for Python projects.
+
