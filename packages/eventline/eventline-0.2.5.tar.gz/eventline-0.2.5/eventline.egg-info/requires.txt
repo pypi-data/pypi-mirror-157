@@ -1,0 +1,8 @@
+pyOpenSSL
+python-dateutil
+urllib3
+
+[checks]
+types-pyOpenSSL
+types-python-dateutil
+types-urllib3
