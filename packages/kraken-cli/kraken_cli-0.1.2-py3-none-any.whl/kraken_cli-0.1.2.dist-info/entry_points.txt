@@ -1,0 +1,3 @@
+[console_scripts]
+kraken=kraken.cli.__main__:_entrypoint
+
