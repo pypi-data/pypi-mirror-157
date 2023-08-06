@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: files-kedro
+Version: 0.1.1
+Summary: Meltano project files for kedro
+License-File: LICENSE
