@@ -1,0 +1,8 @@
+Change Log
+==========
+
+0.0.4 (01/07/2022)
+-------------------
+- Adding a unique library
+- Adding a few changes
+- First Release
