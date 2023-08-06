@@ -1,0 +1,17 @@
+README.md
+setup.py
+clover/__init__.py
+clover/align.py
+clover/load_config.py
+clover/main.py
+clover/tree.py
+dna_clover.egg-info/PKG-INFO
+dna_clover.egg-info/SOURCES.txt
+dna_clover.egg-info/dependency_links.txt
+dna_clover.egg-info/entry_points.txt
+dna_clover.egg-info/not-zip-safe
+dna_clover.egg-info/top_level.txt
+tests/__init__.py
+tests/test_align.py
+tests/test_clust.py
+tests/test_tree.py
