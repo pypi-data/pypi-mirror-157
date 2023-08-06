@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: bpyshell
+Version: 0.0.2
+Summary: A Shell object
+Home-page: https://github.com/ababino/bpyshell/tree/master/
+Author: Andres Babino
+Author-email: ababino@gmail.com
+License: Apache Software License 2.0
+Keywords: python shell
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pip
+Requires-Dist: packaging
+Requires-Dist: fastcore
+Provides-Extra: dev
+
+# pyshell
+> A Shell class to exectue shell commands as object methods.
+
+
+## Install
+
+```
+git clone git@github.com:ababino/pyshell.git
+cd pyshell
+pip install .
+```
+
+## How to use
+
+Import
+
+```python
+from pyshell.core import *
+```
+
+Create a shell object
+
+```python
+sh = Shell()
+```
+
+Call shell commands as object methods
+
+```python
+print(sh.ls())
+```
+
+    00_core.ipynb
+    autocomplete.png
+    CONTRIBUTING.md
+    docker-compose.yml
+    docs
+    index.ipynb
+    LICENSE
+    Makefile
+    MANIFEST.in
+    manpage.png
+    pyshell
+    README.md
+    settings.ini
+    setup.py
+
+
+Use the `flags` kwarg for single dash arguments
+
+```python
+print(sh.ls('.giti*', flags='a'))
+```
+
+    .gitignore
+
+
+Use kwargs for double dash arguments
+
+```python
+print(sh.du('.', max_depth=0))
+```
+
+    324	.
+
+
+You can use tab to autocomplete:
+
+![autocomplete](autocomplete.png)
+
+If there is a man page, it becomes the method's docstring
+![manpage](manpage.png)
+
+## Limitations
+
+Each command is executed as a different process.
+
+
