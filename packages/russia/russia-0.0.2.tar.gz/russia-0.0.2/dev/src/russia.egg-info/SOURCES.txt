@@ -1,0 +1,7 @@
+README.md
+setup.py
+dev/src/russia.egg-info/PKG-INFO
+dev/src/russia.egg-info/SOURCES.txt
+dev/src/russia.egg-info/dependency_links.txt
+dev/src/russia.egg-info/top_level.txt
+dev/src/russia.egg-info/SOURCES.txt
