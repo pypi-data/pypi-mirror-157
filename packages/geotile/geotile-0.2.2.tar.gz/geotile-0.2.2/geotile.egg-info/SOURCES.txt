@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+geoTile/GeoTile.py
+geoTile/__init__.py
+geoTile/__version__.py
+geoTile/utils.py
+geotile.egg-info/PKG-INFO
+geotile.egg-info/SOURCES.txt
+geotile.egg-info/dependency_links.txt
+geotile.egg-info/requires.txt
+geotile.egg-info/top_level.txt
