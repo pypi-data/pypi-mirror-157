@@ -1,0 +1,10 @@
+clang_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clang_tools/install.py,sha256=QzI8pwUiTul2dDX6GUP2_RvIVcnETjSAqtRFRm0R-so,2852
+clang_tools/main.py,sha256=u_r8w8W_9PcrcpnMazhq8Yi8GLc84FmB5WxTYRqHVaE,655
+clang_tools/util.py,sha256=5Syq3rCo_nrm2nfb29SFAJGo-JLuBk6RpMjKYyD53nU,1012
+clang_tools-0.2.0.dist-info/LICENSE,sha256=8jYtzp-KuZ4iRI55Gyi1CsGpjwkQe-Jzc0ekP254TdE,1067
+clang_tools-0.2.0.dist-info/METADATA,sha256=XmWKFgPcIUMXJLxBw38tAIy8BAFf_sFfOjHZZTyFiQo,2526
+clang_tools-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+clang_tools-0.2.0.dist-info/entry_points.txt,sha256=XyeMmYDJvU0g6SrifX71jFpGuOFAKL0fh_h1ln8mzHQ,54
+clang_tools-0.2.0.dist-info/top_level.txt,sha256=DTkgJyAN8hk0g-e2m8luhAyyfCT-8sPHtcJfjfCfQkA,12
+clang_tools-0.2.0.dist-info/RECORD,,
