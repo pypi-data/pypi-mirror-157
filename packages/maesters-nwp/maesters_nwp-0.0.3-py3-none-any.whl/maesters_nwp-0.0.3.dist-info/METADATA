@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: maesters-nwp
+Version: 0.0.3
+Summary: A package to get open NWP data in a elegant way
+Home-page: https://github.com/blizhan/Maesters-of-NWP
+Author: blizhan
+Author-email: blizhan@icloud.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: retrying
+Requires-Dist: beautifulsoup4
+Requires-Dist: pygrib
+Requires-Dist: netCDF4
+Requires-Dist: xarray
+Requires-Dist: requests
+Requires-Dist: loguru
+Requires-Dist: toml
+Requires-Dist: dask
+
+# Maesters of NWP(numercial weather prediction)
+
+- A repository focus on how to fecth open-source global numerical weather prediction product. 
+  - Deutscher Wetterdientst - ICON
+  - European Centre for Medium-Range Weather Forecasts - OPER / ENFO
+  - Canadian Meteorological Center - GEM / GEPS
+
+
+## How to install
+
+### Dependence
+1. cdo ([install cdo via conda](https://anaconda.org/conda-forge/cdo))
+```shell
+conda install cdo -c conda-forge
+```
+2. curl ([install curl via conda]())
+```shell
+conda install -c conda-forge curl
+```
+
+### Install
+```shell
+pip install maesters-nwp
+
