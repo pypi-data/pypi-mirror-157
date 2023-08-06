@@ -1,0 +1,3 @@
+[console_scripts]
+nested-rimraf=nested_rimraf.main:app
+
