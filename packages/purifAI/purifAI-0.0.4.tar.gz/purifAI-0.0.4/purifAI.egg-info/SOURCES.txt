@@ -1,0 +1,7 @@
+setup.py
+purifAI.egg-info/PKG-INFO
+purifAI.egg-info/SOURCES.txt
+purifAI.egg-info/dependency_links.txt
+purifAI.egg-info/top_level.txt
+purifai/__init__.py
+purifai/methodSelection.py
