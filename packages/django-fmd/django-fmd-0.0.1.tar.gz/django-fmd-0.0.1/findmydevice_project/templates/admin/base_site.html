@@ -1,0 +1,21 @@
+{% extends "admin/base.html" %}
+{% load i18n static %}
+
+{% block extrahead %}{{ block.super }}
+    <meta name="google" content="notranslate">
+    <meta name="robots" content="noindex,nofollow" />
+{% endblock %}
+
+{% block title %}{{ title }} | Find My Device{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+    <a href="{% url 'admin:index' %}">django-fmd</a>
+</h1>
+{% endblock %}
+
+{% block footer %}
+<div id="footer" class="submit-row">
+    <a href="https://gitlab.com/jedie/django-find-my-device">gitlab.com/jedie/django-find-my-device</a>
+</div>
+{% endblock %}
