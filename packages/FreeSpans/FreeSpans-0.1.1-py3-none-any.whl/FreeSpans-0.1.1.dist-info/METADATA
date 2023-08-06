@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: FreeSpans
+Version: 0.1.1
+Summary: Probabilistic modelling and optimal design for free-spans in Jax.
+Home-page: UNKNOWN
+Author: Daniel Dodd
+Author-email: d.dodd1@lancaster.ac.uk
+License: LICENSE
+Project-URL: Documentation, https://http://freespans.readthedocs.io/
+Project-URL: Source, https://github.com/daniel-dodd/FreeSpans
+Keywords: free-spans, gaussian-processes jax machine-learning bayesian
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: gpjax (==0.4.8)
+Requires-Dist: pandas (==1.3.5)
+Requires-Dist: matplotlib (==3.3.3)
+Requires-Dist: scikit-learn (==1.0.2)
+Requires-Dist: jax (==0.3.2)
+Requires-Dist: jaxlib (==0.3.2)
+Requires-Dist: optax (>=0.1.0)
+Requires-Dist: chex (==0.1.3)
+Requires-Dist: distrax (>=0.1.2)
+Requires-Dist: tensorflow (==2.8.1)
+Requires-Dist: tensorflow-probability (==0.16.0)
+Requires-Dist: tqdm (>=4.0.0)
+Requires-Dist: ml-collections (==0.1.0)
+Requires-Dist: protobuf (==3.19.0)
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: furo ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+<h1 align='center'>FreeSpans</h1>
+<h2 align='center'>Probabilistic models for free-spans in Jax.</h2>
+
+[![codecov](https://codecov.io/gh/Daniel-Dodd/FreeSpans/branch/master/graph/badge.svg?token=MPG27ZL684)](https://codecov.io/gh/Daniel-Dodd/FreeSpans)
+[![CodeFactor](https://www.codefactor.io/repository/github/daniel-dodd/freespans/badge)](https://www.codefactor.io/repository/github/daniel-dodd/freespans)
+[![Documentation Status](https://readthedocs.org/projects/freespans/badge/?version=latest)](https://freespans.readthedocs.io/en/latest/?badge=latest)
+[![PyPI version](https://badge.fury.io/py/freespans.svg)](https://badge.fury.io/py/freespans)
+[![Downloads](https://pepy.tech/badge/freespans)](https://pepy.tech/project/freespans)
+
+FreeSpans is an experimental design package for managing subsea pipeline spans, utilising Gaussian process functionality from [**GPJax**](https://github.com/thomaspinder/GPJax). 
+
+Check out the [**docs**](https://freespans.readthedocs.io/en/latest/) for more info!
+
+# Installation
+The latest stable version of the package can readibly be installed via `pip`.
+```
+pip install freespans
+```
+The latest developmental version can be installed via executing the following commands.
+```
+git clone https://github.com/daniel-dodd/FreeSpans.git
+cd FreeSpans
+pip install -r requirements.txt
+python setup.py develop
+```
+
+

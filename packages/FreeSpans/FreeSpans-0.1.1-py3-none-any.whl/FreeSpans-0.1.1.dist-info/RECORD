@@ -1,0 +1,14 @@
+freespans/__init__.py,sha256=8fN6-X08YtDUhMnKMjceDD9oZhYrrVBFn63sK4HyyYA,591
+freespans/aquisitions.py,sha256=e5-loMSBsRCyoS4gpoWhQfQ1FU0gVg3AuzjPEqC6S6E,6649
+freespans/kernels.py,sha256=n4cwuJ628jRJ-Go2o76zOHIuCT4i-LYFNh5l15OZ1pY,1798
+freespans/models.py,sha256=NZYvhfVgCOA9PDWhnw8WTAvFl3D49rXjX6jmw3WDd0c,2857
+freespans/optimal_design.py,sha256=9qgj07s1ymsDVOj4K9wS2ry6twQ8okL52Tp3rM--s7U,6171
+freespans/plots.py,sha256=V3jKPyyyQYCwvyLCsKTd-vlEWt-gDHNA5LiFo2f6dZI,9086
+freespans/predict.py,sha256=daHtRceKJMeDcKxQTVlWwX0ppzC4cU5xLZd96Ut6FPA,4442
+freespans/simulate.py,sha256=YPVSXtgTXCOWa_w9doVdSqidMKzSXa7SjxsdqJcv2P8,6498
+freespans/types.py,sha256=KMqMA5f-9reKIpfacqDhZslkJIxXZS5Ekxn7IU_EEJk,2390
+freespans/utils.py,sha256=o7e7sgvWzeTG0IsdGTtKWAKkZO53Ciou-MTNOhsXk8E,3396
+FreeSpans-0.1.1.dist-info/METADATA,sha256=bj8mIaLUhB5FOhdMzTBXktYpgCDw-ihNHg_OvO8oSlE,2613
+FreeSpans-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+FreeSpans-0.1.1.dist-info/top_level.txt,sha256=7yBnqRmkXLsz9qamGrzcnYohfKNRN0aIVmxzbUJZz2c,10
+FreeSpans-0.1.1.dist-info/RECORD,,
