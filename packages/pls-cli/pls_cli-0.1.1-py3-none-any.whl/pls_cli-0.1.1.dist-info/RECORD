@@ -1,0 +1,11 @@
+pls_cli/__init__.py,sha256=Frllag7lJicOgXGbUgOnrdg0vyg_SqzEC6hda5JI1Q0,86
+pls_cli/please.py,sha256=UGQBo4Q1gehJyKrRlhplGZ4AlNe09pgEQhxuf43mxCE,12634
+pls_cli/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pls_cli/utils/quotes.json,sha256=esae_4fRISgAVhCRsbTVBZ1YMorIxO2iwONfy9b0IGU,143575
+pls_cli/utils/quotes.py,sha256=EIVsUAnUTWaePohO1Mu2z7FJRuJdMbNpvhJO8yw5nwM,363
+pls_cli/utils/settings.py,sha256=pdZ9OtTBqv5FKqgxHfaR7Mk2qnl-AFIfK3tTf5WaH8s,2120
+pls_cli-0.1.1.dist-info/entry_points.txt,sha256=expIJUd5G4w38c644b1tEa5zcrwfTuT4OO2Ld9zPpwE,42
+pls_cli-0.1.1.dist-info/LICENSE,sha256=qxpIIeN8V_LotJGnrosKODGJfF-oWfBS7VsgOMOOQWQ,1070
+pls_cli-0.1.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pls_cli-0.1.1.dist-info/METADATA,sha256=LgC5-BK0rdw0aqXvLq76mJ-dfFF1ROTJuUGRqsI0D8k,5663
+pls_cli-0.1.1.dist-info/RECORD,,
