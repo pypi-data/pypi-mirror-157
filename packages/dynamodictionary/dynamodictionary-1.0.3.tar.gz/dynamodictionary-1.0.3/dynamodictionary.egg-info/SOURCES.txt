@@ -1,0 +1,9 @@
+README.md
+setup.py
+dynamodictionary.egg-info/PKG-INFO
+dynamodictionary.egg-info/SOURCES.txt
+dynamodictionary.egg-info/dependency_links.txt
+dynamodictionary.egg-info/requires.txt
+dynamodictionary.egg-info/top_level.txt
+src/dynamodict/__init__.py
+src/dynamodict/dynamodict.py
