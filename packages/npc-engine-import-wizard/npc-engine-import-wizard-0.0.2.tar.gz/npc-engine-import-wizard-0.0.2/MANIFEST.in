@@ -1,0 +1,10 @@
+recursive-include tests/*
+recursive-include npc_engine_import_wizard/*
+
+include README.md
+include LICENSE
+include setup.py
+include tox.ini
+exclude .tox
+
+global-exclude __pycache__
