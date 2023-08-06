@@ -1,0 +1,8 @@
+README.md
+rozipfile.py
+rozipinfo.py
+setup.py
+rozipinfo.egg-info/PKG-INFO
+rozipinfo.egg-info/SOURCES.txt
+rozipinfo.egg-info/dependency_links.txt
+rozipinfo.egg-info/top_level.txt
