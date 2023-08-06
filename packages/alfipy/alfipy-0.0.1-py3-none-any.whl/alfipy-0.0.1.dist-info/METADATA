@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: alfipy
+Version: 0.0.1
+Summary: Application Level Fault Injection: Python Edition
+Home-page: https://github.com/gremlin/alfipy/
+Author: Gremlin, Inc,
+Author-email: sales@gremlin.com
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: Other/Proprietary License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: asn1crypto
+Requires-Dist: protobuf
+Requires-Dist: pycryptodome
+
+Experimental

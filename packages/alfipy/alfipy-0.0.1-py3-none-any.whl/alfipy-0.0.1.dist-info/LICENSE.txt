@@ -1,0 +1,42 @@
+General
+
+The software, documentation and any code or information accompanying this
+License whether on disk, in read-only memory, on any other media or in any other
+form, which will assist you, and the entity you represent (“Customer”), with using
+Gremlin’s software-as-a-service offering (collectively the “Software”, and which may
+be referred to in the Main Agreement as “Agent(s)”, “Service”, “Software” or some
+other similar defined term) are provided to Customer by Gremlin, Inc. (“Gremlin”) for
+use only under the terms of this License and the Main Agreement; Gremlin reserves
+all rights not expressly granted to Customer under such terms. Use of the Software is
+governed by this License and the Enterprise Terms of Service (https://www.gremlin.com/license) or the other,
+definitive agreement executed between Customer and Gremlin for the provision of
+Gremlin’s software-as-a-service offering to Customer (“Main Agreement”). The rights
+granted herein are limited to Gremlin’s intellectual property rights in the Software
+and do not include any other patents or intellectual property rights. As may be
+further described in the Main Agreement, Gremlin and/or Gremlin’s licensor(s) retain
+all right, title, and interest in and to the Software.
+
+Permitted License Uses and Restrictions.
+
+Except as and only to the extent expressly permitted in this License, the Main
+Agreement, or by applicable
+law, Customer may not copy, decompile, reverse engineer, disassemble, attempt to
+derive the source code of, modify, or create derivative works of the Software or any
+part thereof; any attempt to do so is a violation of the rights of Gremlin and its
+licensors. If Customer breaches this restriction, Customer may be subject to
+prosecution and damages.
+
+THE SOFTWARE IS NOT INTENDED FOR USE IN WHICH THE FAILURE OF THE
+SOFTWARE COULD LEAD TO DEATH, PERSONAL INJURY, FINANCIAL DAMAGE, OR
+PHYSICAL OR ENVIRONMENTAL DAMAGE.
+
+Transfer
+
+Customer may not rent, lease, lend or sublicense the Software.
+
+Termination
+
+This License is effective until terminated. Your rights under this License will
+terminate automatically without notice from Gremlin if you fail to comply with any
+term(s) of this License. Upon the termination of this License, you shall cease all use
+of the Software and destroy all copies, full or partial, of the Software.
