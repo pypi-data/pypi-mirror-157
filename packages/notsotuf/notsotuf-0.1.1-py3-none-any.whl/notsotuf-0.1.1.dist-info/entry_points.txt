@@ -1,0 +1,2 @@
+[console_scripts]
+notsotuf = notsotuf:main
