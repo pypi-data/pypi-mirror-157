@@ -1,0 +1,10 @@
+{
+'languages': {
+  'en': {
+    'name': 'English',
+    },
+  'ru': {
+    'name': 'Русский',
+    },
+  },
+}
