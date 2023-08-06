@@ -1,0 +1,6 @@
+PySide2
+asyncqt
+cryptography
+pygame>=2.0.0
+simplejson
+twisted>=15.0
