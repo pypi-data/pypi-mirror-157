@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: adopt_pytorch
+Version: 0.1.1
+Summary: Pytorch version of ADOPT algorithm used for precursor mining, developed by NASA (https://github.com/nasa/ADOPT).Improvements were made to include time-series of different lengths
+Home-page: https://github.com/mhbl3/adopt_pytorch
+Author: Marc-Henri Bleu-Laine
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
