@@ -1,0 +1,2 @@
+[console_scripts]
+pim_video = pim_video.pim_video:main
