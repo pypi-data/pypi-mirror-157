@@ -1,0 +1,16 @@
+from typing import Any
+
+from proto.marshal.rules.message import MessageRule as MessageRule
+
+log: Any
+
+class _FileInfo:
+    registry: Any
+    @classmethod
+    def maybe_add_descriptor(cls, filename, package): ...
+    @staticmethod
+    def proto_file_name(name): ...
+    def generate_file_pb(self, new_class, fallback_salt: str = ...) -> None: ...
+    def ready(self, new_class): ...
+    @property
+    def unresolved_fields(self) -> None: ...

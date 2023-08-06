@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: generic-proto-plus-stubs
+Version: 0.3.dev3
+Summary: Manually updated type stubs for proto-plus with some generics
+Home-page: https://github.com/saggitar/generic-proto-plus-stubs
+Author: Maximilian Schmidt
+Author-email: landlaeufer@gmail.com
+License: Apache-2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+License-File: LICENSE
