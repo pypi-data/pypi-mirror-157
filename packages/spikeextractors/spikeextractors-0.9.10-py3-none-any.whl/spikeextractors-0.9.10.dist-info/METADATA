@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: spikeextractors
+Version: 0.9.10
+Summary: Python module for extracting recorded and spike sorted extracellular data from different file types and formats
+Home-page: https://github.com/SpikeInterface/spikeextractors
+Author: Alessio Buccino, Cole Hurwitz, Samuel Garcia, Jeremy Magland, Matthias Hennig
+Author-email: alessio.buccino@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: joblib
+Provides-Extra: full
+Requires-Dist: h5py ; extra == 'full'
+Requires-Dist: scipy (>=1.6.3) ; extra == 'full'
+Requires-Dist: pyintan (>=0.3.0) ; extra == 'full'
+Requires-Dist: pyopenephys (>=1.1.4) ; extra == 'full'
+Requires-Dist: neo (>=0.9.0) ; extra == 'full'
+Requires-Dist: MEArec (>=1.7.2) ; extra == 'full'
+Requires-Dist: pynwb (>=1.4) ; extra == 'full'
+Requires-Dist: lxml (>=4.6.3) ; extra == 'full'
+Requires-Dist: nixio (==1.5.0) ; extra == 'full'
+Requires-Dist: shybrid (>=0.4.2) ; extra == 'full'
+Requires-Dist: pyyaml (>=5.4.1) ; extra == 'full'
+Requires-Dist: mtscomp (>=1.0.1) ; extra == 'full'
+Requires-Dist: exdir (==0.4.1) ; extra == 'full'
+Requires-Dist: hdf5storage ; extra == 'full'
+Requires-Dist: sonpy ; (python_version > "3.7") and extra == 'full'
+
+# SpikeExtractors (LEGACY)
+The `spikeextractors` package has now been integrated into [spikeinterface](https://github.com/SpikeInterface/spikeinterface).
+
+This package will be maintained for a while for bug fixes only, then it will be deprecated.
+
+New features and improvements will only be implemented for the `spikeinterface` package.
+
+
