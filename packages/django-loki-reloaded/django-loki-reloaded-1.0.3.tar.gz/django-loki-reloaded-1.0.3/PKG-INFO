@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: django-loki-reloaded
+Version: 1.0.3
+Summary: A non-blocking django logging handler for Loki
+Home-page: https://github.com/h3nnn4n/django-loki-reloaded
+Author: h3nnn4n
+Author-email: django_loki_reloaded@h3nnn4n.me
+License: MIT
+Keywords: python,loki,grafana,logging,metrics,threaded
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+
+UNKNOWN
+
