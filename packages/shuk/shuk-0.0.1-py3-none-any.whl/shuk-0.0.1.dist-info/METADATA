@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: shuk
+Version: 0.0.1
+Summary: AI implementor for local exchange markets
+Home-page: https://github.com/gialdetti/shuk
+Author: Eyal Gal
+Author-email: eyalgl@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# shuk
+AI implementor for local exchange markets.
+
+
