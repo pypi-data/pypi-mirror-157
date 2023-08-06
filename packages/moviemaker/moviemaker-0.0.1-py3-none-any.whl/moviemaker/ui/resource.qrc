@@ -1,0 +1,8 @@
+<RCC>
+  <qresource>
+	<file>resources/icons8-start-30.png</file>
+	<file>resources/icons8-bobina-40.png</file>
+	<file>resources/icons8-opened-folder-30.png</file>
+	<file>resources/icons8-ok-30.png</file>
+	</qresource>
+</RCC>

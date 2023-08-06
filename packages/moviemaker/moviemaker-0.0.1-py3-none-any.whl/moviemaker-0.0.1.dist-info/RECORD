@@ -1,0 +1,14 @@
+moviemaker/__main__.py,sha256=NyzQN0v6jJRZIT_zHODWlXaRzEtlO6tI8lTTcSDff2g,175
+moviemaker/moviemaker.py,sha256=29CId7eX0c0zk-gQ6O6iWwVMJg-V4CEUJ-IgoPEkKhA,39279
+moviemaker/moviemaker_ui.py,sha256=skwCy9mD0qv7Yxeu7_GqveX1gGb4EUlRkoBL-gxG8OA,31397
+moviemaker/resource_rc.py,sha256=zSI1cUB6U1C6DYxsEtCOCjtVFUQb_956NHRVv-uxtjw,19150
+moviemaker/ui/moviemaker_mw.ui,sha256=KgBcodwaYtQdLb95Bg_-zcETRJ9TjOY9paTTRKhgN9I,37320
+moviemaker/ui/resource.qrc,sha256=kH-CWQ9KZrCODoturDhmM4cvfp4AgL4WSR8rABDuX3I,231
+moviemaker/ui/resources/icons8-bobina-40.png,sha256=BricUUfphh1tb5dOFSsVFF1lOMhZ25iFtcEsX8ORD-Q,1705
+moviemaker/ui/resources/icons8-ok-30.png,sha256=YKiVqNBVY0He5FmjReZIckhUNh3fS9-hu4R9GUkE8BY,1121
+moviemaker/ui/resources/icons8-opened-folder-30.png,sha256=OWuOT6wSLv1EvszOvRZFB0zTgRjhOFvMt_7xAUX5rpc,559
+moviemaker/ui/resources/icons8-start-30.png,sha256=yj0TJHVPDZiQZc1Vbl1eZyDNQUsKbUwjvkqBeAdkmfM,523
+moviemaker-0.0.1.dist-info/METADATA,sha256=kMFt6S-0hON95ed6xhTTdAOMf8weIlvdBjLx5vELuFE,4696
+moviemaker-0.0.1.dist-info/WHEEL,sha256=yOTNA9tObV38sDe2qbtNoJX3d5TGRO6UtFfus23S8xY,86
+moviemaker-0.0.1.dist-info/license_files/LICENSE,sha256=YFo6I8NvngQ0Gxk76pBXFyF_DDfnVer-ISy_klb4znY,1075
+moviemaker-0.0.1.dist-info/RECORD,,
