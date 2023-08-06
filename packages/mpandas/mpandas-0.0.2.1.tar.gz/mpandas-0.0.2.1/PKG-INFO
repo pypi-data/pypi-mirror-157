@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mpandas
+Version: 0.0.2.1
+Summary: Use pandas with multiprocessing
+Author: Shin Chen
+Author-email: <jiayuanchen@outlook.com>
+Keywords: python,pandas,multiprocessing
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# multipandas
+Pandas function with the utilization of multiprocessing of idle CPUs
