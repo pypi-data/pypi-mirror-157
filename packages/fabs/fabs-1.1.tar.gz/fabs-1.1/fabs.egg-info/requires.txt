@@ -1,0 +1,6 @@
+PyYAML>=3.10
+SQLAlchemy>=0.8
+python_dateutil
+
+[Alembic]
+Alembic>=0.4
