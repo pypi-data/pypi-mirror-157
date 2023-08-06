@@ -1,0 +1,1 @@
+A simple browser automation test for h5 application based on selenium and helium.
