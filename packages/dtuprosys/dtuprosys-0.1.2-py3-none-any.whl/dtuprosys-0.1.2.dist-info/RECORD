@@ -1,0 +1,16 @@
+datasets/__init__.py,sha256=9PuH5kzi56gzZgmNcHohV5gU3dd0_Iw59TLQXIRw9Tw,77
+datasets/_base.py,sha256=jI4Pe2lRt1rNDX_X_Jl-YsddpZtbfnZ1viPV4M7XFqE,1074
+datasets/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modelling/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modelling/cross_validation.py,sha256=z36hBfh1TNQ_ogLmWjUdpaT7xnYZzvGJGYpbTOCYr84,1448
+plotting/__init__.py,sha256=QeE48844wVXtA8d6rkb9kYcPg_x0W90BHKcqkhwH2JM,135
+plotting/plot_fermentation.py,sha256=tu0Cm8lzbOuiw1mjeEHFZOde8kQs3hzcwHTS2z91hJ0,729
+plotting/plot_predictions.py,sha256=r1ispg7CX_LaVmDuON3PKw3ta_8eb7APKafM-n6uU_8,686
+plotting/plot_spectra.py,sha256=huocxMkzS4Zro21NxsbBrHFoBgiTI-D3gh2tCmKnWOM,503
+preprocessing/__init__.py,sha256=piZ-uMOdBh1wsMK6sDeMlvZ4IEhVu5SkmE7zC4fbTgY,74
+preprocessing/preprocessing.py,sha256=mdp1JpqK8DqaRYXC6X2CHDdSbqUz05Td9V-8-CBJ3D8,1698
+dtuprosys-0.1.2.dist-info/LICENSE,sha256=zBlOe7f6R1J7by62hKQ3XQFHyypzY_8d69UtHMvrx3I,1070
+dtuprosys-0.1.2.dist-info/METADATA,sha256=VtGhN0D8JJEknIMliQjz3GJwXctLc0Tz9hZIQLkJ3pI,898
+dtuprosys-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dtuprosys-0.1.2.dist-info/top_level.txt,sha256=1vu9nbg0cM2jhKYQt8Xo0oP__dKUWg_OzVa7FJlEZXE,42
+dtuprosys-0.1.2.dist-info/RECORD,,
