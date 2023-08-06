@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+ngrammatcher/__init__.py
+ngrammatcher/ngrammatcher.py
+ngrammatcher.egg-info/PKG-INFO
+ngrammatcher.egg-info/SOURCES.txt
+ngrammatcher.egg-info/dependency_links.txt
+ngrammatcher.egg-info/top_level.txt
+test/__init__.py
+test/test_additional_functionality.py
+test/test_deletengrams.py
+test/test_getitem.py
+test/test_matchngrams.py
