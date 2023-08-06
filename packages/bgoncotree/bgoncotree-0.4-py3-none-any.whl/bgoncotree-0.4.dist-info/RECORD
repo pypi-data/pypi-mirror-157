@@ -1,0 +1,11 @@
+bgoncotree/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bgoncotree/cli.py,sha256=3rWdzTXKTDKjrV81YSVaVUb-RjGB7GYv0nPsx8fV8N4,2951
+bgoncotree/exceptions.py,sha256=6y0DS7MTc9TWBYQOsVOLYntFIw8jYrc9QKlweraz7c8,44
+bgoncotree/main.py,sha256=vrrgdKvqRDNdXxK4HZ8aIsllAhSUycp5IM7FvA1C6p8,7615
+bgoncotree/utils.py,sha256=UTZUC4jRxqM19SNb_VyNfOwncVoSrF2vmv8BWzG5EDc,131
+bgoncotree-0.4.dist-info/LICENSE,sha256=xLtSPkcDY1OxUQgl2jhnydVs18Tpe0PLmYbOhYCCWIU,628
+bgoncotree-0.4.dist-info/METADATA,sha256=vY1rtkGeYTB-w1B3ir2KvIgqYge6_UWH6nxRAFG2SX4,4175
+bgoncotree-0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+bgoncotree-0.4.dist-info/entry_points.txt,sha256=YDredOdIciAFDUDFFUA3M3UGS1FnCdC1zEIOJK341hc,51
+bgoncotree-0.4.dist-info/top_level.txt,sha256=1h984xyekoMHEiBCXwFbe4SOGSWDBhcYvnHACPwcvpo,11
+bgoncotree-0.4.dist-info/RECORD,,
