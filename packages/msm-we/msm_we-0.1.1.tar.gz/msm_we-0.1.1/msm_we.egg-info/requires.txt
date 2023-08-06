@@ -1,0 +1,6 @@
+westpa>=v2.0b5
+
+[tests]
+pytest>=3
+pytest-timeout
+mdtraj
