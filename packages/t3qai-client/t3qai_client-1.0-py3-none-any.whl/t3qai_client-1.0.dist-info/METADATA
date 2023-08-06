@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: t3qai-client
+Version: 1.0
+Summary: t3qai client module
+Home-page: 
+Download-URL: 
+Author: t3q
+Author-email: lab@t3q.com
+Keywords: t3q,t3qai,t3qai client,t3qai_client
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+License-File: LICENSE-2.0.txt
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: python-multipart
+
