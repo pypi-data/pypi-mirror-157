@@ -1,0 +1,2 @@
+[console_scripts]
+satel_integra = satel_integra.cli:main
