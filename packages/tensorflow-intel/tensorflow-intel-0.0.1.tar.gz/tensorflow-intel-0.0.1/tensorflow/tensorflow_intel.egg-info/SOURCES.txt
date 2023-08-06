@@ -1,0 +1,12 @@
+AUTHORS
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+tensorflow/tensorflow_intel.egg-info/PKG-INFO
+tensorflow/tensorflow_intel.egg-info/SOURCES.txt
+tensorflow/tensorflow_intel.egg-info/dependency_links.txt
+tensorflow/tensorflow_intel.egg-info/requires.txt
+tensorflow/tensorflow_intel.egg-info/top_level.txt
