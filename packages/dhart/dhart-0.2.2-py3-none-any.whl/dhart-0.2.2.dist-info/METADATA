@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dhart
+Version: 0.2.2
+Summary: Utilities to perform tasks
+Author: 
+Author-email: 
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+
