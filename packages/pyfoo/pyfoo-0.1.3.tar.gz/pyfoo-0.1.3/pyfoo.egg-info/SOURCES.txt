@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+pyfoo/__init__.py
+pyfoo.egg-info/PKG-INFO
+pyfoo.egg-info/SOURCES.txt
+pyfoo.egg-info/dependency_links.txt
+pyfoo.egg-info/requires.txt
+pyfoo.egg-info/top_level.txt
