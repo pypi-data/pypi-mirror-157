@@ -1,0 +1,66 @@
+
+{% extends "test_base.html" %} 
+
+{% block main_header %}Test Groups{% endblock %}
+
+
+{% block body_content %}
+        
+<wc-group class="  "   id="logon_checks">
+    <div class="py-5">
+      <wc-checkbox id="i_cross_script_check" label="Cross Scripting" checkbox_label="Enabled" value="true"></wc-checkbox>  
+    </div>
+
+    <div class="">
+      <wc-checkbox id="i_cross_auth_logon" label="Logon" checkbox_label="Authenticated logon" value="true" target_when_on='i_cross_auth_logon_option'></wc-checkbox>  
+
+      <wc-tab-panel class="  "   id="i_cross_auth_logon_option">
+        <div class="container sc_layer_0 ">  
+
+            <wc-input-text id="si_site_name" {{ jc_set_elt_attribs( data_ui.get_field_schema('SiteEnv', "si_env_name") , class="sck_site_cnf_validate",placeholder="Add site title", label="Site Name", placeholder="Add site title", validation='{"text_min_len":3}', message_err="Site name at least 3 characters" , value='default'  )|safe  }} >
+            </wc-input-text>   
+
+
+            <wc-radio-button  id="i_logon_auth_mode" class="sck_site_cnf_validate" 
+                              label = "Chose authentication mode"
+                              radio_list='[ {"label":"Username & passowrd", "value":"user", "checked":"false"},
+                                      {"label":"Email & passowrd", "value":"email", "checked":"true"},
+                                      {"label":"Username, email & passowrd", "value":"user_email", "checked":"false"}
+                                    ]'
+                              render = "vertical"
+
+                              >
+            </wc-radio-button>
+        </div>
+      </wc-tab-panel>
+    </div>
+</wc-group>
+
+       
+<wc-group class="  "   id="logon_checks" bordered="false">
+    <div class="py-5">
+      <wc-checkbox id="i_cross_script_check" label="Cross Scripting" checkbox_label="Enabled" value="true"></wc-checkbox>  
+    </div>
+</wc-group>
+{% endblock %}
+
+
+{% block page_script %}
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+       
+    });
+
+  </script>
+  <!-- <script  src="/common/st/_def/common/static/_def/js/common_utils.js"></script>  -->
+  <script type="module" src="/webui/static/zwc/wc_form_input.js"></script> 
+  <script type="module" src="/webui/static/zwc/wc_tab.js"></script> 
+  <script type="module" src="/webui/static/zwc/wc_form_group.js"></script> 
+  <script type="module" src="/webui/static/zwc/wc_table.js"></script> 
+  <script type="module" src="/webui/static/zwc/wc_form_checkbox.js"></script> 
+  <script type="module" src="/webui/static/zwc/wc_modal.js"></script> 
+  <script type="module" src="/webui/static/zwc/wc_form_radio.js"></script> 
+
+
+{% endblock %}
