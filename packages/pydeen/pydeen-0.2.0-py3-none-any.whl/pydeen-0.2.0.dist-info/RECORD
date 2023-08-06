@@ -1,0 +1,16 @@
+pydeen/__init__.py,sha256=zzjdFG-YqRfmzVYeDkhkZ1bNaDfYMj4xWDuCXpQOCCU,880
+pydeen/auth.py,sha256=ArRzFz45a1EXHU_kzgqcbn7LXoSgk2eAFMbwQOdPsrI,2089
+pydeen/const.py,sha256=2UaQwyPtISG38fK6vpVPkfT04bCTrIaGSk1yuw5aMnk,228
+pydeen/core.py,sha256=QxBxgeY3DjJ7priUrv7wTZFZdNxIu1RjDYXvHAJOqJ8,130
+pydeen/files.py,sha256=z-iqsCEjW2Oey4oZ0Qi07M6xzPjH7LDjBcxrUJw-PlA,596
+pydeen/http.py,sha256=z1S-Vz-8lSrskTzdheJ3GMuEP-2UVKVfLESASDbYWws,5731
+pydeen/odata.py,sha256=TSrL8gcIMwl8RlnMGUVyKFIV69HsZ2bv2ln48B5B8Jc,2945
+pydeen/service.py,sha256=imvkpN6k3O9rDYihYeAg6Ctz76lECYZ6jY1RSj9F47I,10763
+pydeen/types.py,sha256=FQXAPbNktJnmSJYn4Kte4KtJbwAkBcwCw6kweDx2STs,7281
+pydeen/utils.py,sha256=oNfh9OQyqC8GJtFKrowPW3Gu9lSfH8Xt1a6mJg_TBHk,305
+pydeen/wsocket.py,sha256=WW-zzKkhJWb3U1p5LD_jQMBO7OSa03lbEP6rOtlFWwM,4919
+pydeen-0.2.0.dist-info/LICENSE,sha256=CmuEMk214D5s53wW6rls5UZ_k3FhotDbhO8qR3o5-u8,1085
+pydeen-0.2.0.dist-info/METADATA,sha256=Fy7niKmGOBh_yJPjcNEsYmOI8c9AIyJSFwFztP8vXD4,4575
+pydeen-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pydeen-0.2.0.dist-info/top_level.txt,sha256=zYIJhq1Li1HKtFCtGHB-XvfxZ6JYW7CWAkMZKhvhVwY,7
+pydeen-0.2.0.dist-info/RECORD,,
