@@ -1,0 +1,1 @@
+import{e as i}from"./_MapCache-bf07d962.js";import{i as t}from"./isArrayLike-4d969418.js";import{c as f}from"./_arrayLikeKeys-78d69a2b.js";import{i as m}from"./isObject-d5e189f7.js";function p(s,a,r){if(!m(r))return!1;var e=typeof a;return(e=="number"?t(r)&&f(a,r.length):e=="string"&&a in r)?i(r[a],s):!1}var _=p;export{_};

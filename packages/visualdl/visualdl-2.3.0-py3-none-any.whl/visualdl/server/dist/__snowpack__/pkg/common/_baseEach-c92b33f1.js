@@ -1,0 +1,1 @@
+import{_}from"./_baseFor-0f74a056.js";import{k as b}from"./_baseIteratee-ceed6989.js";import{i}from"./isArrayLike-4d969418.js";function u(a,e){return a&&_(a,e,b)}var h=u;function k(a,e){return function(r,n){if(r==null)return r;if(!i(r))return a(r,n);for(var f=r.length,s=e?f:-1,t=Object(r);(e?s--:++s<f)&&n(t[s],s,t)!==!1;);return r}}var m=k,v=m(h),p=v;export{p as _};
