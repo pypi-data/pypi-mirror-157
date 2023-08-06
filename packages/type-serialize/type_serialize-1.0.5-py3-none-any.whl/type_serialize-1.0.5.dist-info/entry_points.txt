@@ -1,0 +1,3 @@
+[console_scripts]
+type_serialize = type_serialize.app.cli:main
+
