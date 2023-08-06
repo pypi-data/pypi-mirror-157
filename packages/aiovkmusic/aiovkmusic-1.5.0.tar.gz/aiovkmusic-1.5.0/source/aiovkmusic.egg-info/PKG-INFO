@@ -1,0 +1,172 @@
+Metadata-Version: 2.1
+Name: aiovkmusic
+Version: 1.5.0
+Summary: Description of aiovkmusic
+Home-page: https://github.com/kirilllapushinskiy/aiovkmusic
+Author: Kirill Lapushinskiy
+Author-email: kirill@lapushinskiy.ru
+Project-URL: Bug Tracker, https://github.com/kirilllapushinskiy/aiovkmusic/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# aiovkmusic
+
+### Описание
+
+> *Python пакет для поиска музыки и плейлистов в VK с возможностью асинхронного скачивания аудиозаписей.*
+___
+
+* #### 
+  Установка [aiovkmusic](https://pypi.org/project/aiovkmusic/) средствами [PyPi](https://pypi.org/): `pip install aiovkmusic`
+* #### И убедитесь, что на ваш компьютер установлен [ffmpeg](https://ffmpeg.org/download.html).
+
+___
+Сразу же перейдём к примерам использования:
+
+```python
+import asyncio
+from aiovkmusic import Music, VKSession, Track, Playlist
+
+
+async def main():
+    # Создание сессии.
+    session = VKSession(
+        login='<номер_телефона/электронная_почта>',
+        password='<пароль_от_вконтакте>',
+        session_file_path='session.json'
+    )
+
+    # Получение интерфейса к vk music api.
+    music = Music(user='<ссылка_на_профиль>', session=session)
+
+    # Получение всех плейлистов указанного пользователя.
+    playlists = music.playlists()  # -> [Playlists]
+
+    for playlist in playlists:
+        print(playlist.title)
+
+    # pyrokinesis
+    # GAME OVER
+    # Live Rock
+
+    # Получение аудиозаписей указанного плейлиста.
+    playlist_tracks = music.playlist_tracks(playlists[0])  # -> [Track]
+
+    for track in playlist_tracks:
+        print(track.fullname)
+
+    # 99 Problems - Big Baby Tape kizaru
+    # So Icy Nihao - Big Baby Tape kizaru
+    # Big Tymers - Big Baby Tape kizaru
+
+    # Поиск по названию (аналогично поиску в VK).
+    tracks = music.search('Три дня дождя', count=5, offset=0, official=True)  # -> [Track]
+
+    for track in tracks:
+        print(track.fullname)
+
+    # Вина - Три дня дождя
+    # Демоны - Три дня дождя
+    # Привычка - Три дня дождя
+    # Не выводи меня - МУККА Три дня дождя
+    # Не Киряй - МУККА Три дня дождя
+
+    # Загрузка переданных аудиозаписей по указанному пути.
+    downloaded_tracks = await music.download(tracks, bitrate=320, path='music')  # -> [Track]
+
+    for track in downloaded_tracks:
+        print(track.path)
+
+    # music/Вина - Три дня дождя.mp3
+    # music/Демоны - Три дня дождя.mp3
+    # music/Привычка - Три дня дождя.mp3
+    # music/Не выводи меня - МУККА Три дня дождя.mp3
+    # music/Не Киряй - МУККА Три дня дождя.mp3
+
+    #
+    # <--- NEW IN VERSION 1.1.0! --->
+    # 
+
+    # Получение аудиозаписей указанного пользователя.
+    user_tracks = music.user_tracks()  # -> [Track]
+
+
+asyncio.run(main())
+```
+
+Используемые представления данных:
+
+```python
+class Playlist:
+    id: int
+    owner_id: int
+    title: str
+    plays: int
+    url: str
+    access_hash: str
+
+
+class Track:
+    id: int
+    owner_id: int
+    cover_url: str
+    url: str
+    artist: str
+    title: str
+    duration: int
+    path: str
+    fullname: str
+```
+
+___
+
+#### How to contact the maintainer:
+
+![](https://img.shields.io/badge/telegram-Kirill_Lapushinskiy-blue?style=social&logo=telegram&link=https://t.me/kirilllapushinskiy)
+
+![](https://img.shields.io/badge/VK-Kirill_Lapushinskiy-blue?style=social&logo=vk&link=https://vk.com/kirilllapushinskiy)
+
+# Release notes
+
+All notable changes to this project will be documented in this file.
+
+## 1.0.1
+
+- Добавлено создание директории при загрузке аудиозаписей по указанному пути,
+  в случае, если указанная директория не была создана ранее.
+
+## 1.0.2
+
+- Исправлено исключение при создании директории, когда создаваемая директория создана ранее.
+
+## 1.1.0
+
+- Добавлен новый метод: user_tracks(), который возвращает список аудиозаписей указанного пользователя.
+
+## 1.2.0
+
+- Добавлены новые исключения.
+
+## 1.3.0
+
+- Улучшение производительности общего поиска и поиска официальных аудиозаписей.
+- Добавлено новое исключение.
+
+## 1.4.0
+
+- Улучшение производительности поиска и получения аудиозаписей.
+- Добавлен новый параметр в метод Music.search(official_first: bool), который позволяет получать список аудиозаписей,
+  где сначала идут официальные аудиозаписи..
+
+## 1.4.1
+
+- Мелкие исправления.
+
+## 1.5.0
+
+- Теперь при сохранении аудиозаписи в качестве имени файла используется id трека.
+- Кроме того в результатах поиска показываются треки только с уникальными id.
