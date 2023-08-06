@@ -1,0 +1,9 @@
+textractprettyprinter/__init__.py,sha256=I0XX9ODePfhoC70fG_fN77fvNJ5gxceyP4v1r4zBi4E,137
+textractprettyprinter/_version.py,sha256=V5fnzeezs58Re1o-ih6cSlz6pbfYR4tgHydnuPWzu_M,24
+textractprettyprinter/t_pretty_print.py,sha256=Ggd4hZhbdFUpq75sFZJfCGj6GeqyIm256TKK7luvt7w,12769
+textractprettyprinter/t_pretty_print_expense.py,sha256=dSKoH7xPX4VGsokQdZCkWFVtSjdksH9OYa3UDMgdN94,10083
+amazon_textract_prettyprinter-0.0.14.dist-info/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+amazon_textract_prettyprinter-0.0.14.dist-info/METADATA,sha256=M9Nb6q88mSd2msVo8ASjO5sln8H8ycxz6PzQr0HieCE,2856
+amazon_textract_prettyprinter-0.0.14.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+amazon_textract_prettyprinter-0.0.14.dist-info/top_level.txt,sha256=K1Q-7LVm1Qn3RaT-Cl-EpENHIMdQq8XuTODqhpnhxMQ,22
+amazon_textract_prettyprinter-0.0.14.dist-info/RECORD,,
