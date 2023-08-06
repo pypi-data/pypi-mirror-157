@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+src/vicify/__init__.py
+src/vicify/vicify.py
+src/vicify.egg-info/PKG-INFO
+src/vicify.egg-info/SOURCES.txt
+src/vicify.egg-info/dependency_links.txt
+src/vicify.egg-info/requires.txt
+src/vicify.egg-info/top_level.txt
