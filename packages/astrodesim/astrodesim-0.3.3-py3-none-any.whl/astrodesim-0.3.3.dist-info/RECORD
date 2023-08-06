@@ -1,0 +1,15 @@
+astrodesim/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+astrodesim/setup.py,sha256=5w1yvp5HTtkC3nmHoJnqEIKM4SprvDR_Mfo0OGpvv1I,139
+astrodesim/astrodesim/__init__.py,sha256=MQ3-4YyiS6BgU2HE_evC2UY7Wt0xiwgYE2z2A_I-MMs,35
+astrodesim/astrodesim/desim.py,sha256=JBuhUIAgFIldMka-onDQIMzqj6OvMb9wgGmUJ5MVf3k,1238
+astrodesim/astrodesim/is_small.py,sha256=R6koJFgWrKaGa-JxP1a994Lk9wgTyJNr5RYlTjrFZMs,1682
+astrodesim/astrodesim/jyperbeam_to_jyperpix.py,sha256=prd2F8l-l-2BKtMaLhrJmhzcgUXz_dnXZzp3BS6n6r8,614
+astrodesim/astrodesim/make_image.py,sha256=bGu5aI1oMhGckAk9h7nHIkyd8ypYnbxuu2W_NW_qlbg,622
+astrodesim/astrodesim/resize_smalltolarge.py,sha256=WAlR_UggzMnSzoiNV7iEEcl6JRWK3nzLvbdrdDBGHOM,2522
+astrodesim/astrodesim/spectral_index_conversion.py,sha256=p1JBGf13LLy1_lmIKyzkHcTr4M-uYIOAcflODYrp9gM,932
+astrodesim/astrodesim/spectral_index_map.py,sha256=dh4rBddZI83fgfDEhHP_sU5k1MTlWcR7VUK3pReO9QI,1404
+astrodesim/astrodesim/upload_fits.py,sha256=e1Gsjgu1cH-46z9p9fLK0NyyqchpQ3KzLfsyHz4FwNQ,457
+astrodesim-0.3.3.dist-info/METADATA,sha256=RkEkSfRc6BpMwsWb7p_BxoETFaWvYIOCHYbQUgjzFIE,116
+astrodesim-0.3.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+astrodesim-0.3.3.dist-info/top_level.txt,sha256=UirvFNxrFNs0k834yx7TpVPQcQrZMIFfscvxNNjPQuw,11
+astrodesim-0.3.3.dist-info/RECORD,,
