@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: kg-qa
+Version: 0.1.1
+Summary: Library that allows to perform Knowledge Graph (Linked Open Data) quality analysis.
+Home-page: https://kg-qa.readthedocs.io/
+Author: Gabriele Tuozzo, Maria Angela Pellegrino
+Author-email: gabrieletuozzo@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: SPARQLWrapper (>=2.0.0)
+Requires-Dist: networkx (>=2.6.3)
+Requires-Dist: validators (>=0.18.2)
+Requires-Dist: requests (>=2.27.1)
+Requires-Dist: rdflib (>=6.1.1)
+Requires-Dist: numpy (>=1.22.2)
+Requires-Dist: mmh3 (>=3.0.0)
+Requires-Dist: mechanize (>=0.4.7)
+Requires-Dist: bitarray (>=2.4.0)
+Requires-Dist: scipy (>=1.8.1)
+
+# KNOWLEDGE-GRAPH-QUALITY-ANALYSIS-TOOL-API
+
+Library that allows you to perform Knowledge Graph (Linked Open Data) quality analysis.
+
+
+
+### Installation
+
+```
+
+pip install kg-qa
+
+```
+
+
+
+### Get started 
+
+How check SPARQL endpoint availability with this library:
+
+```Python
+
+from kg_qa import KnowledgeGraph
+
+
+
+# Instanziate a KnowledgeGraph object, passing the id of the kg to be analyzed
+
+kg = KnowledgeGraph('dbpedia')
+
+
+
+# Call the check availability enpoint method
+
+result = kg.checkEndpointAv()
+
+```
+
