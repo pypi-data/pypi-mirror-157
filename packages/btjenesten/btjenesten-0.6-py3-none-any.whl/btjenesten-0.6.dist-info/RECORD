@@ -1,0 +1,10 @@
+btjenesten/__init__.py,sha256=dLrfnMricqc0TWeH5ESaMWnoGt_aWwcppFVuCNl_sKQ,63
+btjenesten/bbtools.py,sha256=6iwkMKmBuJUb3VbafUf0vDCohHDYQyPsIFSFmfJv7eA,12884
+btjenesten/btjenesten.py,sha256=8YOrNmpmcuqwIn090Jp7I-kOjynyx9g_y3LroJo_v00,86
+btjenesten/gpr.py,sha256=bIIgDCCeiHh0-WQ6W0YToGZPs-8keqwxXaREJsPg4YU,9491
+btjenesten/gpr_test.py,sha256=J23lTWH6sl6DgmpwyLc1d3uxAYGyKrSuRWooitLRVe8,693
+btjenesten/kernels.py,sha256=w6zO5be46iJ_ySUR3EOxgSA3wyD--cEjBLcnlG3UGuM,1732
+btjenesten-0.6.dist-info/METADATA,sha256=QD7A7cUFQRgCddxD3tvpvL6sOrVARyNrwv-sumj_n64,683
+btjenesten-0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+btjenesten-0.6.dist-info/top_level.txt,sha256=kVTYT8aLAwLW6PJGhxd0EMFzU7AYQaxMOMD-6bNTBlU,11
+btjenesten-0.6.dist-info/RECORD,,
