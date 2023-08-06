@@ -1,0 +1,2 @@
+[console_scripts]
+unused_deps_py = unused_deps_py.main:main
