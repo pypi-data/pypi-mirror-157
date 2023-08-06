@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: omni-cli
+Version: 0.1.0
+Summary: 
+Author: Derrick
+Author-email: derrick@example.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: typer[all] (>=0.4.2,<0.5.0)
+Description-Content-Type: text/markdown
+
+# Omni CLI
+
+The awesome Omni CLI.
+
