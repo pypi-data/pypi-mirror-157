@@ -1,0 +1,10 @@
+flask_openipa/__init__.py,sha256=jf_LfG4zkpjTFQFRxeyHvN76ARPNydUrbOq7ubOl62s,125
+flask_openipa/blueprint.py,sha256=TpYNPODrIosfFVK9etMsoiX5-NXAnrovTlVsG19WwJ0,1097
+flask_openipa/defaults.py,sha256=lw36n086AxRevo_3kUdexRwbls4c_-069zgNvR9_DeY,199
+flask_openipa/exceptions.py,sha256=BiW4Tt6ly89MGm-OxwqfqMTodqQUli8kkTS5qQr2v34,261
+flask_openipa/extension.py,sha256=NYDWKVoCdhhTar9Dj764w3FVSBDPX5PLdVgC5jtHNuE,8617
+flask_openipa/openapi.py,sha256=UP72a26oAsmPC7nxw-HePlHu7dP6T_6kUbrapKuD6Vc,9194
+flask_openipa-0.0.2.dist-info/METADATA,sha256=HnY_uYH7upwl4K_YNuawBc3eZzYMScpZkUX05XO2x_A,1785
+flask_openipa-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+flask_openipa-0.0.2.dist-info/top_level.txt,sha256=hRqg6HDwqFslZTS7Y4kbDToUOx__IDMryElrZceSD4A,14
+flask_openipa-0.0.2.dist-info/RECORD,,
