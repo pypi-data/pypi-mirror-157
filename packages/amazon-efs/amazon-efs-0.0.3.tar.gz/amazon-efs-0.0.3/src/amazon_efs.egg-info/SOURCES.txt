@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/amazon_efs/__init__.py
+src/amazon_efs/main.py
+src/amazon_efs.egg-info/PKG-INFO
+src/amazon_efs.egg-info/SOURCES.txt
+src/amazon_efs.egg-info/dependency_links.txt
+src/amazon_efs.egg-info/top_level.txt
