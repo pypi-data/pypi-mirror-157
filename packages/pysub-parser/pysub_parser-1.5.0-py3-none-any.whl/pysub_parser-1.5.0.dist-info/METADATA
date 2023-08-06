@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pysub-parser
+Version: 1.5.0
+Summary: Utility to extract the contents of a subtitle file
+License: MIT
+Author: Fede Calendino
+Author-email: fede@calendino.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: unidecode (>=1.3.4,<2.0.0)
