@@ -1,0 +1,12 @@
+bluetooth_numbers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bluetooth_numbers/characteristics.py,sha256=i3m6rngQXhuuCipcCIjxSCvhsw5vXcgO5LJOcY9sFes,23631
+bluetooth_numbers/companies.py,sha256=t_zRVbVA6r_LrtryHkj3pYLqUr-m86NuS8UYBe0X5fU,104493
+bluetooth_numbers/descriptors.py,sha256=SEIFSPKKEYGm0pR41T3LIKl1_q17NC5XoerUqDCguUc,781
+bluetooth_numbers/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bluetooth_numbers/services.py,sha256=4futo4y5FKKZq4CpwtQRdDF6RsdNMOdZPU00ehKN1e4,6113
+bluetooth_numbers/utils.py,sha256=g20PhXvRkKJjgUMyMrYgcOQPdeTLjMzvW8Jg6smF0DA,2827
+bluetooth_numbers-0.1.1.dist-info/LICENSE.txt,sha256=6cmn22yMaWwcOUf6GiUeiqtBLcHfSq1THvs-XOs26bE,1072
+bluetooth_numbers-0.1.1.dist-info/METADATA,sha256=K9d1MS7nz6bTTBGey-kDLUolu4hCTxjoCSmxWFzqwZQ,3394
+bluetooth_numbers-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bluetooth_numbers-0.1.1.dist-info/top_level.txt,sha256=COdKe0y9i9NTV1ITKFyCmqem4rSK6xZILmBsLvpMM2I,18
+bluetooth_numbers-0.1.1.dist-info/RECORD,,
