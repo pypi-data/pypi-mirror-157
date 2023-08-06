@@ -1,0 +1,7 @@
+README.md
+setup.py
+dev/src/jamaica.egg-info/PKG-INFO
+dev/src/jamaica.egg-info/SOURCES.txt
+dev/src/jamaica.egg-info/dependency_links.txt
+dev/src/jamaica.egg-info/top_level.txt
+dev/src/jamaica.egg-info/SOURCES.txt
