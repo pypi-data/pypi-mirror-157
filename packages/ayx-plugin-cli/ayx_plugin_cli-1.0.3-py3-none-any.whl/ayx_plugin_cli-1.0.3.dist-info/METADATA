@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: ayx-plugin-cli
+Version: 1.0.3
+Summary: The Alteryx command line interface for using Alteryx SDKs.
+Home-page: UNKNOWN
+Author: Alteryx, Inc.
+Author-email: support@alteryx.com
+License: UNKNOWN
+Platform: Windows
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: typer (==0.3.1)
+Requires-Dist: doit (==0.33.1)
+Requires-Dist: pydantic (==1.8.2)
+Requires-Dist: packaging (==20.4)
+Requires-Dist: requests (==2.24.0)
+Requires-Dist: xmltodict (==0.12.0)
+Requires-Dist: jinja2 (==2.11.2)
+Requires-Dist: MarkupSafe (==1.1.1)
+Requires-Dist: pytest (>=5.4.1)
+
+# Alteryx Plugin CLI (ayx-plugin-cli)
+
+## Overview
+
+The AYX Plugin CLI is a command-line interface based on Typer, a tool that 
+helps you build and manage custom plugins for Alteryx Designer. This 
+top-level CLI oversees the creation and metadata of your plugins. It delegates 
+the tasks of creating and building YXIs.
+
+---
+
+#### Disclaimer
+
+*The AYX Python SDK, AYX UI SDK, and AYX Plugin CLI are currently preview features. Preview features are available for testing and experimentation, with the goal of gathering feedback. We encourage you to use these SDKs to test and experiment, but they are not intended for production use. As we gather feedback and continue to iterate, the SDKs will change over time, possibly in ways that break backward compatibility.*
+
+---
+
+## Licensing
+
+https://www.alteryx.com/alteryx-sdk-and-api-license-agreement
+
