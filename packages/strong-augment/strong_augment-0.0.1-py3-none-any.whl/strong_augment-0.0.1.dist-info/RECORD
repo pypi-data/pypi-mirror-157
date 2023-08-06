@@ -1,0 +1,11 @@
+strong_augment/__init__.py,sha256=yNWcFP2EanTtL0FRo8exdTAFS_pFRc47JOBV21LaW3E,97
+strong_augment/_augment.py,sha256=O4K4ufeFIsiVAEgF404ZoKtnZXhK1b0i3ze862ieyHk,6269
+strong_augment/_example.py,sha256=bRbPMoQx4cIlayDuqvVkW9sFj2ljPpLlOiaHJXg_IqU,153
+strong_augment/_multiprocess.py,sha256=ojGVsRGZ4CNhcfxG01n43PdFAoE3uJ1DSvz7PIo-vc8,2766
+strong_augment/_operations.py,sha256=mt8yl19Gdzs8Ramb_krmVneYO29_DZXPyAXIACxOg3g,5209
+strong_augment/_progress.py,sha256=MrWYsyddQ4cOrd3zm6JO1e2jAe19D6RQe1T8yBuUNWM,3618
+strong_augment/_shift.py,sha256=hXxuWJlYx7BoLdDTHMx3tlVJwn-fbJMU2JVTc7yvizI,1830
+strong_augment-0.0.1.dist-info/METADATA,sha256=45NubMB2RgOwa2fxdkSyAo1brPV-_LZwcAC3KbQrvns,3205
+strong_augment-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+strong_augment-0.0.1.dist-info/top_level.txt,sha256=n4ZVQ3IiVbM_BPwPvz8M23_t5HIIuyAgXQ5CBGWVsUI,15
+strong_augment-0.0.1.dist-info/RECORD,,
