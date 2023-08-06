@@ -1,0 +1,9 @@
+README.md
+setup.py
+tayopdf/__init__.py
+tayopdf/pdf2image.py
+tayopdf/pdf2text.py
+tayopdf.egg-info/PKG-INFO
+tayopdf.egg-info/SOURCES.txt
+tayopdf.egg-info/dependency_links.txt
+tayopdf.egg-info/top_level.txt
