@@ -1,0 +1,13 @@
+datalad>=0.13.0
+fsspec[fuse,http]>=2022.1.0
+methodtools~=0.4.5
+
+[test]
+coverage~=6.0
+datalad[tests]
+linesep~=0.2
+pytest~=6.0
+requests~=2.20
+
+[test:python_version < "3.7"]
+dataclasses
