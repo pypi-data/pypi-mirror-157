@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "bogmark"
+version = "0.1.3post5"
+description = ""
+authors = ["Bogdan <evstrat.bg@gmail.com>", "Mark Antipin <m.anitipin@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+orjson = "*"
+python-dotenv = "*"
+httpx = "*"
+fastapi = {version = "^0.68.0", optional = true}
+starlette-prometheus = {version = "^0.7.0", optional = true}
+aiohttp = {version = "^3.7.4", extras = ["speedups"]}
+pika = {version = "^1.2.0", optional = true}
+aio-pika = {version = "^6.8.0", optional = true}
+pydantic = {version = "^1.8.2", extras = ["email"]}
+
+[tool.poetry.dev-dependencies]
+flake8-bugbear = "^21.4.3"
+flake8 = "^3.9.2"
+flake8-eradicate = "^1.1.0"
+flake8-builtins = "^1.5.3"
+flake8-comprehensions = "^3.5.0"
+flake8-broken-line = "^0.3.0"
+flake8-print = "^4.0.0"
+pep8-naming = "^0.12.1"
+xenon = "^0.7.3"
+flake8-unused-arguments = "^0.0.6"
+pytest-asyncio = "^0.15.1"
+black = "^21.7b0"
+pytest-mock = "^3.6.1"
+httpx = "^0.19.0"
+asynctest = "^0.13.0"
+coverage = "^5.5"
+isort = "^5.9.3"
+
+[tool.poetry.extras]
+rabbitmq = ["pika", "aio-pika"]
+server = ["fastapi", "starlette-prometheus"]
+ci = ["flake8-bugbear", "flake8", "flake8-eradicate", "flake8-builtins", "flake8-comprehensions", "flake8-broken-line", "flake8-print", "pep8-naming", "xenon", "flake8-unused-arguments", "mock", "coverage", "pytest-cov", "black", "pytest-mock", "isort", "flake8-annotations"]
+all = ["fastapi", "starlette-prometheus", "pika", "aio-pika"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+data_file = "coverage/coverage"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3

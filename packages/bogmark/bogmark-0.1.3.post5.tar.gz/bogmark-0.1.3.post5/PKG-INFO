@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: bogmark
+Version: 0.1.3.post5
+Summary: 
+Author: Bogdan
+Author-email: evstrat.bg@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: all
+Provides-Extra: ci
+Provides-Extra: rabbitmq
+Provides-Extra: server
+Requires-Dist: aio-pika (>=6.8.0,<7.0.0); extra == "rabbitmq" or extra == "all"
+Requires-Dist: aiohttp[speedups] (>=3.7.4,<4.0.0)
+Requires-Dist: fastapi (>=0.68.0,<0.69.0); extra == "server" or extra == "all"
+Requires-Dist: httpx
+Requires-Dist: orjson
+Requires-Dist: pika (>=1.2.0,<2.0.0); extra == "rabbitmq" or extra == "all"
+Requires-Dist: pydantic[email] (>=1.8.2,<2.0.0)
+Requires-Dist: python-dotenv
+Requires-Dist: starlette-prometheus (>=0.7.0,<0.8.0); extra == "server" or extra == "all"
