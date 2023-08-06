@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/py_and_id/__init__.py
+src/py_and_id/settings.py
+src/py_and_id.egg-info/PKG-INFO
+src/py_and_id.egg-info/SOURCES.txt
+src/py_and_id.egg-info/dependency_links.txt
+src/py_and_id.egg-info/requires.txt
+src/py_and_id.egg-info/top_level.txt

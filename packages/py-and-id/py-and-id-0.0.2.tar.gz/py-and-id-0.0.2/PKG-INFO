@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: py-and-id
+Version: 0.0.2
+Summary: Piping and Instrumentation diagram but it's Python Code.
+Home-page: https://github.com/abhishekvraman/py-and-id
+Author: Abhishek V Raman
+Author-email: 
+Project-URL: Bug Tracker, https://github.com/abhishekvraman/py-and-id/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Manufacturing
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py-and-id
+#### Piping and Instrumentation Diagram but it's Python code.
+
+## What is Propylean
+Piping and Instrumentation Diagrams or P&IDs are complicated drawings describing a processing plant. We are making it more complicated by building it into a Python code.
