@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: turtlethread
+Version: 0.0.5
+Summary: A Turtle-interface for making embroidery files
+Home-page: https://github.com/marieroald/turtlethread
+Author: Marie Roald & Yngve Mardal Moe
+Author-email: yngve.m.moe@gmail.com
+License: "GNU General Public License v3",
+Keywords: turtlethread
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: pyembroidery
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: numpydoc ; extra == 'docs'
+Requires-Dist: sphinx-gallery ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinx-intl ; extra == 'docs'
+Requires-Dist: matplotlib ; extra == 'docs'
+
+UNKNOWN
+
