@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: evoclearn-core
+Version: 0.18.5
+Summary: Core tools for Early Vocal Learning simulation.
+Home-page: https://gitlab.com/evoc-learn-group/evoc-learn-core
+Author: The EVocLearn Group
+Author-email: daniel.r.vanniekerk@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: click
+Requires-Dist: dask
+Requires-Dist: h5py
+Requires-Dist: librosa (<0.10.0,>=0.9.2)
+Requires-Dist: netCDF4
+Requires-Dist: numpy (<1.22.0,>=1.21.0)
+Requires-Dist: pandas
+Requires-Dist: praatio (<5.2.0,>=5.1.1)
+Requires-Dist: scipy
+Requires-Dist: toolz
+Requires-Dist: xarray
+Provides-Extra: dev
+Requires-Dist: ipykernel ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: jupyter ; extra == 'dev'
+Requires-Dist: matplotlib ; extra == 'dev'
+Requires-Dist: nbconvert ; extra == 'dev'
+
+Core tools for Early Vocal Learning simulation..
+
+
