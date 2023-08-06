@@ -1,0 +1,3 @@
+recursive-include plugins/select2/static *
+recursive-include plugins/datepicker/static *
+recursive-include plugins/selectWoo/static *

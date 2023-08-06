@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: django-508-plugins
+Version: 2.0.1
+Summary: Installable Django app containing 508-compliant plugins.
+Home-page: https://github.com/imsweb/django-508-plugins
+Author: Brad Rutten
+Author-email: ruttenb@imsweb.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+
+UNKNOWN
+
