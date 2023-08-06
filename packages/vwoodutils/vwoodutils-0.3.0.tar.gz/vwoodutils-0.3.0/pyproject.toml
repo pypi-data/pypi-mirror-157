@@ -1,0 +1,11 @@
+[project]
+name = "vwoodutils"
+description='My python utilities'
+version = "0.3.0"
+authors = [
+ { name = "vwood", email = "spam@vwood.org" }
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+
