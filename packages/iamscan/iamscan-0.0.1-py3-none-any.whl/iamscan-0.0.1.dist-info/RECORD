@@ -1,0 +1,13 @@
+iamscan/__init__.py,sha256=07NzQXBgNlnw5kSN6ZYxE9By-_RuH3Jyy58Z74sIio0,21
+iamscan/__main__.py,sha256=TurTW1oQ5FKcfgYdH5q3iftUnQVQgBalgJQoGHOJEi4,2468
+iamscan/commands.py,sha256=226xiFhcWYfFyVvPp6s9f-_zNP_Cc0QxpHRCo6Kjj-I,375587
+iamscan/policy.py,sha256=cf5Kx2uZvWsyyJPS_UcdqXLXPgImlxM9OhOMhCIteyY,8434
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_code.py,sha256=Jh6_p7Vzsu03-MObWR9MfrMrbFpUa-Si-nvb8gaB-6I,1886
+tests/validations.py,sha256=pRoBMUfG959_tcQoSkT2-SBNuuI7Q-G7Iq-xDCYD7Ho,8674
+iamscan-0.0.1.dist-info/LICENSE,sha256=pbIMXbaorAIVW-fDch2tvtZRkVA3mz-UnXQqeCf4LDg,1086
+iamscan-0.0.1.dist-info/METADATA,sha256=tPgqxs0sID4r82pVunnRyajTew6bFb5tzF7Slnrj1jg,5773
+iamscan-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+iamscan-0.0.1.dist-info/entry_points.txt,sha256=FV_Gx84nDFnkzZmzRORtk3MnTsexso4aXLsGQUnHefk,51
+iamscan-0.0.1.dist-info/top_level.txt,sha256=TmEHZ4D4KlMJ3xIAc0k7eqDPsnWmJdbano55NyOVXJc,14
+iamscan-0.0.1.dist-info/RECORD,,

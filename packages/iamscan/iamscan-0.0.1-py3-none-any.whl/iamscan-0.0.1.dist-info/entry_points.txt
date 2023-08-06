@@ -1,0 +1,3 @@
+[console_scripts]
+iamscan = iamscan.__main__:main
+
