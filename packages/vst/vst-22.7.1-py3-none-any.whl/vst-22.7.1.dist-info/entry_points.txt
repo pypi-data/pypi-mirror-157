@@ -1,0 +1,5 @@
+[console_scripts]
+vst-audio-to-wav=vst.audio_to_wav:main
+vst-en-to-pl=vst.en_to_pl:main
+vst-wav-to-text=vst.wav_to_text:main
+
