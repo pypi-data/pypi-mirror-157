@@ -1,0 +1,9 @@
+cdk_iam_floyd/__init__.py,sha256=YtQcviiDgsMGcGnIJ2DQ_03qnYho-65w6vSMoWcXbO8,9953905
+cdk_iam_floyd/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdk_iam_floyd/_jsii/__init__.py,sha256=ZuxhMS_J3iwskcVxjHSiTcW_-GVrPmvsValTd8YPyw8,363
+cdk_iam_floyd/_jsii/cdk-iam-floyd@0.389.0.jsii.tgz,sha256=jMmr1UPEHR8uabLORqil1Vr1kufNOa8wRw4fWmyhtys,3853113
+cdk_iam_floyd-0.389.0.dist-info/LICENSE,sha256=A4xymD3A8um_XnhUlWYvSPXJLiTA0_Lnm4K2fnH3yvs,11391
+cdk_iam_floyd-0.389.0.dist-info/METADATA,sha256=qI0aDdQMXi13ekSrG4gWj89I6TSk8mz6dK_lj5i4n28,5443
+cdk_iam_floyd-0.389.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cdk_iam_floyd-0.389.0.dist-info/top_level.txt,sha256=-eOOeJwkSp8fNrnGY7MlQshvWU74SOaaeuFGCuKklrA,14
+cdk_iam_floyd-0.389.0.dist-info/RECORD,,
