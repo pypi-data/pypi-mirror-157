@@ -1,0 +1,26 @@
+<h1 align="center">asiacell</h1>
+<p align="center">It is a project that includes all social networking sites, and the most important features of the project is a private library whose work is to verify the availability of the user name if it is available or not available on more than one social site</p>
+
+## Installation :
+```
+pip install asiacell
+```
+## ***The method of work***
+* Open a file in a text editor and name the file eg
+asiacell.py
+
+```python 
+from asiacell import AsiaCell
+
+PID = AsiaCell().login('0770*******')
+smsvalidation = AsiaCell().smsvalidation(PID, input('pass : '))
+AsiaCell().home(smsvalidation)
+```
+
+## Follow us on social media
+[![Telegram](https://img.shields.io/badge/Telegram-ALSH_3k-orange?style=for-the-badge&logo=Telegram)](https://t.me/ALSH_3K)
+[![Youtube](https://img.shields.io/badge/Youtube-ALSH-orange?style=for-the-badge&logo=Youtube)](https://youtube.com/channel/UCUNbzQRjfAXGCKI1LY72DTA)
+[![Instagram](https://img.shields.io/badge/Instagram-ALSH-green?style=for-the-badge&logo=instagram)](https://Instagram.com/alsh_bg)
+[![Telegram](https://img.shields.io/badge/Telegram-ALSH-green?style=for-the-badge&logo=Telegram)](https://t.me/XXCBB)
+
+
