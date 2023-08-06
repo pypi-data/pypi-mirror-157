@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: nicks-plot-utils
+Version: 1.1
+Summary: A example Python package
+Home-page: https://github.com/tylern4/nicks_plot_utils
+Author: Nick Tyler
+Author-email: nicholas.s.tyler.4@gmail.com
+License: BSD 2-clause
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: boost-histogram
+Requires-Dist: scipy
+Requires-Dist: lmfit
+
+## Ploting utils for myself
+----------------------------
+
+In trying to decrease the amount of copy paste in my python code I decided to put some of plotting I do commonly into a few classes. They are wrappers around the [boost-histogram](https://boost-histogram.readthedocs.io/en/latest/) package so I can fill, plot, and then fit my most common histograms I make. Fitting is done useing [lmfit](https://lmfit.github.io/lmfit-py/) and I've made wrappers for the built in models for one line easy fitting as well as a way to use custom models for more complex fits.
+
+### Examples
+
+[One Dimentional Histogram](Examples/Example_Hist1D.ipynb)
+
+[Two Dimentional Histogram](Examples/Example_Hist2D.ipynb)
+
+[uproot](Examples/uproot.ipynb)
+
+[ROOT Histograms](Examples/Example_Rhists.ipynb)
