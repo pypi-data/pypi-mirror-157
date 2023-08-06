@@ -1,0 +1,48 @@
+# scresonators
+Welcome to the scresonators repository of the Boulder Cryogenic Quantum Testbed! This is a library for measuring the loss in superconducting resonators. 
+
+## Installation
+1. clone the repository into a folder of your choice with `git clone https://github.com/Boulder-Cryogenic-Quantum-Testbed/scresonators.git`
+2. Install the dependencies, we ***strongly*** recommend using [virtual environments](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) for managing your dependences. To install dependencies run:
+  `pip install -r requirements.txt`
+3. If you are running on Windows, install Microsoft Visual Studio before using the library
+ 
+## Using the library
+
+Here's an example using some of the data hosted on this repository. Hosted
+datasets from groups around the world can be found [here](/cryores/test_data).
+
+This particular example code is meant to be run in the root directory.
+
+```python
+import numpy as np
+import fit_resonator.functions as ff
+import fit_resonator.Sdata as fsd
+import fit_resonator.resonator as res
+
+url = 'https://raw.githubusercontent.com/Boulder-Cryogenic-Quantum-Testbed/scresonators/master/cryores/test_data/AWR/AWR_Data.csv'
+
+# Load the raw data:
+raw = np.loadtxt(url, delimiter=',')
+
+# Choose a fitting method:
+fit_type = 'DCM'
+MC_iteration = 10
+MC_rounds = 1e3
+MC_fix = ['w1']
+manual_init = None
+method = res.FitMethod(fit_type, MC_iteration, MC_rounds=MC_rounds,
+                       MC_fix=MC_fix, manual_init=manual_init, MC_step_const=0.3)
+
+# Fit the data:
+fsd.fit("output test", method, normalize=10, data_array=raw)
+```
+
+Ane in depth description is given in the fit_resonators folder.
+
+
+## Code Organization
+
+Until the module is officially distributed, all code should live in the `fit_resonator` namespace. This ensures easy integration
+with other Python packages, and avoids name collisions; everything is referred
+to as e.g. `fit_resonator.experiments` rather than just `experiments`.
