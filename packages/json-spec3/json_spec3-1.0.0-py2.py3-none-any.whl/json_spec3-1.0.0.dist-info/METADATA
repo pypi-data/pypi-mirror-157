@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: json-spec3
+Version: 1.0.0
+Summary: Implements JSON Schema, JSON Pointer and JSON Reference.
+Home-page: https://github.com/fcurella/json-spec/
+Author: Xavier Barbosa
+Author-email: clint.northwood@gmail.com
+Maintainer: Flavio Curella
+Maintainer-email: flavio.curella@gmail.com
+License: BSD
+Keywords: json,utilitaries,validation,json-pointer,json-reference,json-schema
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: six
+Provides-Extra: cli
+Requires-Dist: termcolor ; extra == 'cli'
+
+UNKNOWN
+
