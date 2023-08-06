@@ -1,0 +1,6 @@
+LICENSE.txt
+setup.py
+projectVizuaMatix.egg-info/PKG-INFO
+projectVizuaMatix.egg-info/SOURCES.txt
+projectVizuaMatix.egg-info/dependency_links.txt
+projectVizuaMatix.egg-info/top_level.txt
