@@ -1,0 +1,8 @@
+adacat/__init__.py,sha256=kxCSbD586G1vlcVsue8QiXfP2J6R9f_NYciQtlVzffc,18
+adacat/jax.py,sha256=kcpiTjkU03X7-AB6fg9eytACJhezEO2wFoiOK9yNUDc,3686
+adacat/torch.py,sha256=4hgyZu29wZLcWCTyzwaqTd_u1jJtIAVReBFLg6UfgGA,5416
+adacat-0.3.dist-info/LICENSE,sha256=td8D7oHD1Te9oQlez3G9E7IJ-ySKCWjMNUy1ApuP0RU,1066
+adacat-0.3.dist-info/METADATA,sha256=PHdeKzr8jVv-YiEicNL-xnT3Z4Th_IhvnYQWd8AHrsQ,620
+adacat-0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+adacat-0.3.dist-info/top_level.txt,sha256=e6I23BScn7gW9Bw0wHOH6Zuk2lwAEW5txgZ9HlMD5jo,7
+adacat-0.3.dist-info/RECORD,,
