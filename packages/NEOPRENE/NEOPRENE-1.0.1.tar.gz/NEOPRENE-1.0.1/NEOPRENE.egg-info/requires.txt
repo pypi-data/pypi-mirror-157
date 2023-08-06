@@ -1,0 +1,15 @@
+numpy
+pandas
+scipy
+datetime
+matplotlib
+pyyaml
+haversine
+tqdm
+pyshp
+shapely
+
+[plotting]
+matplotlib>=2.2.0
+jupyter
+jupyterlab
