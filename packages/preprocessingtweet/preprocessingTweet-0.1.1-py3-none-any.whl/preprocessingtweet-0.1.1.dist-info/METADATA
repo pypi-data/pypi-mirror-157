@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: preprocessingtweet
+Version: 0.1.1
+Summary: Preprocessing tweets prior to NLP pipeline
+License: MIT Licence
+Keywords: twitter,text-cleaning,text,nlp
+Author: Olivier R. Philippe
+Author-email: olivier.philippe@gmail.com
+Requires-Python: >=3.10,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: emot (>=3.1,<4.0)
+Requires-Dist: gensim (>=4.2.0,<5.0.0)
+Requires-Dist: nltk (>=3.7,<4.0)
+Requires-Dist: scipy (>=1.8.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# preprocessingTweet
+Preprocessing tweets prior to use in Transformers
+
