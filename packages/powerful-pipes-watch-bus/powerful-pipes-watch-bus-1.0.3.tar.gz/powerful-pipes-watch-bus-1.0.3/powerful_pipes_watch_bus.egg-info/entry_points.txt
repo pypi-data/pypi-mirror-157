@@ -1,0 +1,4 @@
+[console_scripts]
+send-bus = powerful_pipes_watch_bus.__main__send_message__:main
+watch-bus = powerful_pipes_watch_bus.__main__watch_bus__:main
+
