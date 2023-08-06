@@ -1,0 +1,12 @@
+.idea
+venv.*
+venv
+dist
+build
+metis-log-collector.log
+fastapialchemycollector.egg-info
+.env
+*/**/.env
+/.mypy_cache/
+/.pytest_cache/
+/loadtest/node_modules/
