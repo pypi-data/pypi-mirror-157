@@ -1,0 +1,12 @@
+python-dateutil
+Django<2.3,>2.2
+flattentool>=0.5.0
+libcove>=0.22.0
+libcoveweb>=0.21.0
+packaging
+
+[dev]
+pytest
+flake8
+black==22.3.0
+isort
