@@ -1,0 +1,8 @@
+SPARQLWrapper
+PyYAML
+pandas
+jsonpickle
+tabulate
+pygments
+pylatexenc~=2.10
+dicttoxml~=1.7.4
