@@ -1,0 +1,2 @@
+from randCharMain import RandomChararcterGenerator
+

@@ -1,0 +1,8 @@
+setup.py
+RandomPyCharGen.egg-info/PKG-INFO
+RandomPyCharGen.egg-info/SOURCES.txt
+RandomPyCharGen.egg-info/dependency_links.txt
+RandomPyCharGen.egg-info/top_level.txt
+virtual/__init__.py
+virtual/RandomCharGen/__init__.py
+virtual/RandomCharGen/randCharMain.py
