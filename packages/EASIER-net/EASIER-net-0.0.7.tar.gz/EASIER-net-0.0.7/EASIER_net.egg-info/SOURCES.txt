@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+EASIER_net.egg-info/PKG-INFO
+EASIER_net.egg-info/SOURCES.txt
+EASIER_net.egg-info/dependency_links.txt
+EASIER_net.egg-info/top_level.txt
+easier_net/__init__.py
+easier_net/easier_net.py
+easier_net/execute.py
+easier_net/load_uci_classification_data.py
+easier_net/load_uci_regression_data.py
+easier_net/network.py
+easier_net/sier_net.py
