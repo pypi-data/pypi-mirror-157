@@ -1,0 +1,7 @@
+h5py
+numpy
+scipy
+matplotlib
+healpy
+lisaconstants
+packaging
