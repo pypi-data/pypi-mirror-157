@@ -1,0 +1,19 @@
+fonticon_fa6/__init__.py,sha256=UA2e1ydYLO7OJAzmbLVlwWMb-HLAFGk6Gkwmz8QBEgU,127
+fonticon_fa6/_iconfont.py,sha256=7caSywdpDXPz8QUUiIHHTxZ_FbSqiC0cTBxI-o3HElI,709
+fonticon_fa6/fa6b.py,sha256=TO1xhBFDVuevzhOw9VVUOcFHG3dr7H3kY-wuHk0kAa4,11688
+fonticon_fa6/fa6r.py,sha256=G_veJZhTt8JUaFjlsgdIpEgqvF6yh9c5PA4Cu_hZ1Cg,4569
+fonticon_fa6/fa6s.py,sha256=uPXqXfDg22LmWlKwjyDPLcd5PFv8Ds4d7HBZ1aMlo9Y,36962
+fonticon_fa6/_tests/test_font.py,sha256=KJodlmSF7oBINU3InlTrn2XLzabmxSPKaPgN2VZ6jSg,491
+fonticon_fa6/fonts/Font Awesome 5 Brands-Regular-400.otf,sha256=cNqWHryjwBLbbJvzeIFT1pA1fZQiakAJED9wc0FHBro,476372
+fonticon_fa6/fonts/Font Awesome 5 Free-Regular-400.otf,sha256=lS9OLEX-7aCZOCSVus8M9LcqcFFpnOPC35yEbXCk_Mw,97112
+fonticon_fa6/fonts/Font Awesome 5 Free-Solid-900.otf,sha256=e97haet_BLPgjeYp-1MOx_7Y8dG0qYJ9cCMx0ifiQkA,591768
+fonticon_fa6/fonts/Font Awesome 6 Brands-Regular-400.otf,sha256=gKcUoy301cvToVi2flOkC69MpMHzLnXBBaJLTXL5inA,496360
+fonticon_fa6/fonts/Font Awesome 6 Free-Regular-400.otf,sha256=W2gGhlUjB2IbnFJ_72R31ejiBZ2F-gbwFOzl98aCgo8,168644
+fonticon_fa6/fonts/Font Awesome 6 Free-Solid-900.otf,sha256=noMtn7LxojbRUtC7mOKK64C_6Vs3fomwfxOTyC7TBwI,975352
+fonticon_fa6/fonts/LICENSE.txt,sha256=3nhKgISW1J9fgN2dHW6aUc_3Es-8M558JRVWMa48210,7427
+fonticon_fontawesome6-6.1.1.dist-info/LICENSE,sha256=dPip5qoTiWIdub_yUmCyrtsTOOLCva3kQb-nSS92VWs,2622
+fonticon_fontawesome6-6.1.1.dist-info/METADATA,sha256=yv3HdTMnKCBpx_wQc2r6bO6SddiLMwngERcXMZFuDIE,1826
+fonticon_fontawesome6-6.1.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+fonticon_fontawesome6-6.1.1.dist-info/entry_points.txt,sha256=DTRyb5c0OxQlxU30gTl-I4eSP_y19-P3hUp8cjIWIZM,94
+fonticon_fontawesome6-6.1.1.dist-info/top_level.txt,sha256=9W2hItsEUYcVnH9G9242x2BxyVsrlypSRND6tjS9ToM,13
+fonticon_fontawesome6-6.1.1.dist-info/RECORD,,
