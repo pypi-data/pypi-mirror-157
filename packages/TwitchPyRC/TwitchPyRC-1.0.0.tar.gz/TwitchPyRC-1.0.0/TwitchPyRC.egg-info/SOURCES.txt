@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+TwitchPyRC/__init__.py
+TwitchPyRC/parsers.py
+TwitchPyRC/twitch_irc.py
+TwitchPyRC.egg-info/PKG-INFO
+TwitchPyRC.egg-info/SOURCES.txt
+TwitchPyRC.egg-info/dependency_links.txt
+TwitchPyRC.egg-info/top_level.txt
