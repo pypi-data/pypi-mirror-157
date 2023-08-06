@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+metaflow_card_notebook.egg-info/PKG-INFO
+metaflow_card_notebook.egg-info/SOURCES.txt
+metaflow_card_notebook.egg-info/dependency_links.txt
+metaflow_card_notebook.egg-info/not-zip-safe
+metaflow_card_notebook.egg-info/requires.txt
+metaflow_card_notebook.egg-info/top_level.txt
+metaflow_extensions/card_notebook/plugins/cards/notebook/__init__.py
