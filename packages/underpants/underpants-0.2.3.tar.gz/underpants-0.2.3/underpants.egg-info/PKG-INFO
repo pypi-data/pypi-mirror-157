@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: underpants
+Version: 0.2.3
+Summary: Leverage the Rules Engine from the Pants Build System as a library.
+Home-page: UNKNOWN
+License: MIT
+Project-URL: Documentation, https://github.com/kaos/underpants/wiki
+Project-URL: Source, https://github.com/kaos/underpants
+Project-URL: Tracker, https://github.com/kaos/underpants/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: <3.10,>=3.8
+Description-Content-Type: text/markdown
+
+
+`underpants` - Or, using Pants as an embedded rule engine
+=========================================================
+
+For Pantsbuild version: 2.12.0
+
+DISCLAIMER: This is not in any way to show how to use Pants, or recommended patterns of
+use. Provided here AS-IS. No gurantees of any kind, as this may break with any future release of
+Pants.
+
+This is a toy POC testing out the feasability of using the [Pants Build
+System](https://www.pantsbuild.org/) as a rule engine in your Python application.
+
+
+
