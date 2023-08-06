@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: stython
+Version: 0.1.9
+Summary: Stython package
+Home-page: https://github.com/cometcake575/stython
+Author: Arun Kapila
+Author-email: starshootercity@gmail.com
+License: UNKNOWN
+Description: # stython
+        A python module that attempts to rewrite complicated syntax from python and other modules, and add some new syntax to make coding simpler.
+        
+Platform: UNKNOWN
