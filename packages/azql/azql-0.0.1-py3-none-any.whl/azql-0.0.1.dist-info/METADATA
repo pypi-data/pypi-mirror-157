@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: azql
+Version: 0.0.1
+Summary: Azure SQL Suite
+License: GPL-3.0-only
+Author: Markus Feiks
+Author-email: github@feyx.de
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# AZQL
+
+This is the start of greate journey, or so... :)
+
