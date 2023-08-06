@@ -1,0 +1,10 @@
+netlink/core/__init__.py,sha256=rtEKkHpngqx9RanlJoEdRQfMR0RrOVSBK4hnIk_2c5k,122
+netlink/core/attribute_mapping.py,sha256=fSLBy9bXvlRE6q-6uX3PdqnwZ8yaMFH7HhjH6wxc3TI,1570
+netlink/core/cli.py,sha256=68JmZGeT5qTCS4hzTcGqQaO5qBcMcfKfqxlWcwwxvg0,383
+netlink/core/config.py,sha256=B7iAWrZRPUKkA9qeXMeftXN3W9l0z76H9GdfX85G3NQ,1523
+netlink/core/generation.py,sha256=YEWHWth1VC_TUr2QarL4E9-fyob0FHQaAcJIMAHe6_Y,684
+netlink_core-0.0.0.dist-info/entry_points.txt,sha256=S-JZUHxsLAbj1t4Br4RBGL2tRAzWDoPX10b4t4_h8Os,84
+netlink_core-0.0.0.dist-info/LICENSE.md,sha256=ezlJbqX_p4KPFL2VbEhrGG5CKyRC5ll-E-x9E7AX6PY,1083
+netlink_core-0.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+netlink_core-0.0.0.dist-info/METADATA,sha256=pbXxvpY7aRc4cVjClREUmaCu4VoSbCajsUr8M8e0cJY,1985
+netlink_core-0.0.0.dist-info/RECORD,,
