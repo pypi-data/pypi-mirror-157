@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: n4s
+Version: 1.2
+Summary: Collection of useful methods by Need4Swede
+Home-page: https://github.com/n4s/n4s
+Author: Mike Afshari
+Author-email: theneed4swede@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
