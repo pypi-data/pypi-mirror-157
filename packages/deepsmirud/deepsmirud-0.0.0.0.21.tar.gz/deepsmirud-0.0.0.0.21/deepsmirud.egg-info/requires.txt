@@ -1,0 +1,7 @@
+pandas
+numpy
+biopython
+pyfiglet
+click
+rdkit-pypi
+tensorflow
