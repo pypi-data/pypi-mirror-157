@@ -1,0 +1,9 @@
+README.md
+setup.py
+datasette_unsafe_expose_env/__init__.py
+datasette_unsafe_expose_env.egg-info/PKG-INFO
+datasette_unsafe_expose_env.egg-info/SOURCES.txt
+datasette_unsafe_expose_env.egg-info/dependency_links.txt
+datasette_unsafe_expose_env.egg-info/entry_points.txt
+datasette_unsafe_expose_env.egg-info/requires.txt
+datasette_unsafe_expose_env.egg-info/top_level.txt
