@@ -1,0 +1,15 @@
+botai_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botai_manager/admin.py,sha256=2h43pTXd3NKV8-_fkUEkzkS4zqih0qBLE8q6Yj7fpEg,33
+botai_manager/apps.py,sha256=TK3dj0kojgCRWQp45FA6P_nnTghaPCmHqMQJEotyoU0,100
+botai_manager/models.py,sha256=bvVLc6Yoe9Ml97FFykRj6rtM9pCvK0TnSEEbqyv0Yn0,192
+botai_manager/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+botai_manager/urls.py,sha256=H22Fh1RZDOOdOTtoCfkfMifANl5kZ_VND_Jw2pD7kbc,158
+botai_manager/views.py,sha256=t_-UHKvVlbbuEoncCc2HuQwPYT2VZVOsUS4yxe3WXW0,1346
+botai_manager/__pycache__/__init__.cpython-38.pyc,sha256=hQKdZSnd-jMkFZmf8lC4nbllzkH4X_tOFxmoHSxw7hc,191
+botai_manager/__pycache__/models.cpython-38.pyc,sha256=VdOuCptBRiyEYMVxpzk22fO7r-mLftikGPiFj_FghgI,634
+botai_manager/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_botai_manager-1.0.dist-info/LICENSE,sha256=T0eTPzleHkBrtJvHkUXH-RR8DaI_ULFNjLC2aPeExM4,1073
+django_botai_manager-1.0.dist-info/METADATA,sha256=L2YTUYOMWVPuXazX7TQLhjMqFQgteMAAKqgR-70KeeI,2597
+django_botai_manager-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_botai_manager-1.0.dist-info/top_level.txt,sha256=ExS09Dr6svePsP1S0HcYPMZlwr_Aw7Ly3MT-OPObSqU,14
+django_botai_manager-1.0.dist-info/RECORD,,
