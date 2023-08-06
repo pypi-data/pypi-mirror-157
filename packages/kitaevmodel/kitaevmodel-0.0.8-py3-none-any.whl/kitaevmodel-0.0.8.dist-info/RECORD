@@ -1,0 +1,10 @@
+kitaevmodel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kitaevmodel/eigenstates.py,sha256=X5a2a8SC-glvgnLUfm5WgHGwstjVlFas6cP1AuTW59g,686
+kitaevmodel/hamiltonian_creator.py,sha256=ab9p8ycKiquO9_5naAi0sd5x-5TVrj887AMmWhK_iqQ,9218
+kitaevmodel/image_generator.py,sha256=_hhqjOhKu2fRmEDS4UaSdHgASzhWuf909sRx92kg4gY,5865
+kitaevmodel/time_evolution.py,sha256=dvuC5hNVV4V4MmlaKiMBaqRJJL7WX3frAyBzRcxTmbs,3334
+kitaevmodel-0.0.8.dist-info/LICENSE,sha256=CZyHBefFQtNIQE6x7-fN3f6vxrJH8zNsrXwhyGuFZ-I,1090
+kitaevmodel-0.0.8.dist-info/METADATA,sha256=8RKolCoirJlkKROjhwOIPq4CIkdreOUiVOimv5tMGso,750
+kitaevmodel-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kitaevmodel-0.0.8.dist-info/top_level.txt,sha256=9ukfuMEHAhEGQ14P8dH-LkOS9beaciwxY-hh8Fjq4Nk,12
+kitaevmodel-0.0.8.dist-info/RECORD,,
