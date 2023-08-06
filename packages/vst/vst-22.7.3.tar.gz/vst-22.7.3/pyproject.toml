@@ -1,0 +1,70 @@
+[tool.poetry]
+name = "vst"
+version = "22.7.3"
+description = "VST - Voice Simple Tools"
+authors = ["Tadeusz Miszczyk <42252259+8tm@users.noreply.github.com>"]
+homepage = "http://github.com/8tm/vst"
+documentation = "https://test.pypi.org/project/vst"
+repository = "http://github.com/8tm/vst"
+readme = "README.md"
+
+
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: Unix",
+]
+
+[tool.poetry.dependencies]
+ffmpeg-python = '^0.2.0'
+phonemizer = '^3.2.1'
+python = '^3.7.13'
+pydub = '^0.25.1'
+requests = '^2.28.0'
+SpeechRecognition = '^3.8.1'
+
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.2"
+flake8-colors = "^0.1.9"
+flake8-commas = "^2.1.0"
+flake8-import-order = "^0.18.1"
+flake8-quotes = "^3.3.0"
+
+mypy = "^0.910"
+
+pylint = "^2.5.0"
+
+pytest = "^6.2.1"
+pytest-cov = "^2.10.1"
+pytest-mock = "^3.5.0"
+pytest-xdist = "^1.29.0"
+pytest-parallel = "^0.1.1"
+
+# Additional developer tools:
+pip-search = "^0.0.7"
+pip-autoremove = "^0.10.0"
+pipdeptree = "^2.2.1"
+
+
+[tool.poetry.scripts]
+vst-wav-to-text = 'vst.wav_to_text:main'
+vst-audio-to-wav = 'vst.audio_to_wav:main'
+vst-en-to-pl = 'vst.en_to_pl:main'
+
+[tool.mypy]
+ignore_missing_imports = true
+warn_unused_configs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+strict_equality = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
