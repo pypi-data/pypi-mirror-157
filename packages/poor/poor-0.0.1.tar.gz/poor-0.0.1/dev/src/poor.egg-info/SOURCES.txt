@@ -1,0 +1,7 @@
+README.md
+setup.py
+dev/src/poor.egg-info/PKG-INFO
+dev/src/poor.egg-info/SOURCES.txt
+dev/src/poor.egg-info/dependency_links.txt
+dev/src/poor.egg-info/top_level.txt
+dev/src/poor.egg-info/SOURCES.txt
