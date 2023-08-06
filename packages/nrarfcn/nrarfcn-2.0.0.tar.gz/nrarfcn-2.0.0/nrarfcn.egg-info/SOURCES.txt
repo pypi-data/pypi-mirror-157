@@ -1,0 +1,8 @@
+LICENSE
+README.md
+nrarfcn.py
+pyproject.toml
+nrarfcn.egg-info/PKG-INFO
+nrarfcn.egg-info/SOURCES.txt
+nrarfcn.egg-info/dependency_links.txt
+nrarfcn.egg-info/top_level.txt
