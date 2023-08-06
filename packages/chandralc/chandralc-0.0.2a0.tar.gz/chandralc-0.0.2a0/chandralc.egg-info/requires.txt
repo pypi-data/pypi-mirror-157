@@ -1,0 +1,5 @@
+astropy
+scipy
+numpy
+matplotlib
+requests
