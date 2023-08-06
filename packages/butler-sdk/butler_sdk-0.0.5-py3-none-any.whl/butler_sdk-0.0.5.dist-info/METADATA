@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: butler-sdk
+Version: 0.0.5
+Summary: Butler Python SDK
+Home-page: https://butlerlabs.ai
+Author: Butler Labs
+Author-email: support@butlerlabs.ai
+Project-URL: Documentation, https://docs.butlerlabs.ai/reference/welcome
+Keywords: Butler,AutoML,OCR
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: urllib3 (>=1.25.3)
+Requires-Dist: python-dateutil
+
+           Welcome to Butler Python SDK # noqa: E501
+    
