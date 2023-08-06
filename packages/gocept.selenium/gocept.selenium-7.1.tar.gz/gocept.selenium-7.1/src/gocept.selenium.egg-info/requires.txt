@@ -1,0 +1,17 @@
+gocept.httpserverlayer>=3
+httpagentparser
+plone.testing>=7.0
+selenium>=4
+Pillow
+setuptools
+webdriver-manager
+
+[grok]
+gocept.httpserverlayer[zopeappwsgi]
+zope.app.appsetup
+
+[plonetesting]
+gocept.httpserverlayer[plonetestingzope]
+
+[screenshot]
+Pillow
