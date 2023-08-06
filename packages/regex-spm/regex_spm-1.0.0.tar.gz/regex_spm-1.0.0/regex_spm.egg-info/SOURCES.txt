@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+regex_spm/__init__.py
+regex_spm/regex_spm_match.py
+regex_spm.egg-info/PKG-INFO
+regex_spm.egg-info/SOURCES.txt
+regex_spm.egg-info/dependency_links.txt
+regex_spm.egg-info/top_level.txt
