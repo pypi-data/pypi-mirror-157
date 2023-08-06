@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: alonpinukim3
+Version: 2.2.2
+Summary: this is a diagrams package
+Home-page: https://github.com/mingrammer/diagrams
+Author: lahel54966
+Author-email: CX_SCS@checkmarx.com
+License: Apache v2
+Keywords: research
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=2
+Description-Content-Type: text/markdown
+
+THIS IS A TEST PACKAGE!
+========
+created by Supply Chain security at CheckMarx
+<br>
+<br>
+
+# DISCLAIMER
+This package is used for security research and demonstrations. <br>
+It might contain dangerous code snippets. **Do not run.**
+
+# *FAKE* Description:
+
+

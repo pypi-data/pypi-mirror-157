@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+package.json
+setup.cfg
+setup.py
+alonpinukim3/__init__.py
+alonpinukim3.egg-info/PKG-INFO
+alonpinukim3.egg-info/SOURCES.txt
+alonpinukim3.egg-info/dependency_links.txt
+alonpinukim3.egg-info/requires.txt
+alonpinukim3.egg-info/top_level.txt
