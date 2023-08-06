@@ -1,0 +1,8 @@
+aiohttp
+defusedxml
+geopy
+imageio
+lxml
+Pillow
+python-dateutil
+voluptuous
