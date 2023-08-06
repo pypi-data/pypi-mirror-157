@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pim_video/__init__.py
+pim_video/pim_video.py
+pim_video.egg-info/PKG-INFO
+pim_video.egg-info/SOURCES.txt
+pim_video.egg-info/dependency_links.txt
+pim_video.egg-info/entry_points.txt
+pim_video.egg-info/not-zip-safe
+pim_video.egg-info/requires.txt
+pim_video.egg-info/top_level.txt

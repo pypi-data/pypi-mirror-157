@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pim_video
+Version: 1.0.0
+Summary: pim videos merging program
+Home-page: https://github.com/jtur044/pim_video
+Author: Zaw Lin Tun
+Author-email: zawlintun1511@gmail.com
+License: Apache Software
+Keywords: pim videos merging program pim_video
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Command line program to merge pim videos.
