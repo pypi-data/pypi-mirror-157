@@ -1,0 +1,44 @@
+[build-system]
+requires = [
+  'setuptools',
+  'setuptools-scm',
+  'wheel',
+  'Cython',
+  'oldest-supported-numpy',
+  'scikit-learn',
+]
+
+[tool.black]
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+ensure_newline_before_comments = true
+line_length = 88
+known_first_party = "glum"
+skip_glob = '\.eggs/*,\.git/*,\.venv/*,build/*,dist/*'
+default_section = 'THIRDPARTY'
+
+[tool.cibuildwheel]
+skip = ["cp310-*", "pp*", "*-musllinux_*"]
+test-requires = ["pytest", "pytest-xdist"]
+environment = "GLM_ARCHITECTURE='default'"
+
+[tool.cibuildwheel.macos]
+before-all = [
+  "brew install llvm libomp",
+]
+
+[tool.cibuildwheel.macos.environment]
+LDFLAGS="-L/usr/local/lib"
+CXX="/usr/local/opt/llvm/bin/clang++"
+CC="/usr/local/opt/llvm/bin/clang"
