@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: anahita
+Version: 0.1.0
+Summary: 
+License: MIT
+Author: Vahid Shahrivari
+Author-email: v.shahrivari@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: flatdict (>=4.0.1,<5.0.0)
+Requires-Dist: wikitextparser (>=0.49.2,<0.50.0)
