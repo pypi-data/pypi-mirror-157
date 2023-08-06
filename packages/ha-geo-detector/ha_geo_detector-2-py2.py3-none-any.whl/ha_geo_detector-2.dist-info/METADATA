@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ha-geo-detector
+Version: 2
+Summary: A demo for python packaging.
+Home-page: https://github.com/liahimratman/ha_geo_detector
+Author: korotkov
+Author-email: korotkov@hypeauditor.com 
+License: MIT
+Platform: UNKNOWN
+
+A demo for python packaging.
+
