@@ -1,0 +1,9 @@
+README.md
+setup.py
+rottentomatoes-python/__init__.py
+rottentomatoes-python/exceptions.py
+rottentomatoes_python.egg-info/PKG-INFO
+rottentomatoes_python.egg-info/SOURCES.txt
+rottentomatoes_python.egg-info/dependency_links.txt
+rottentomatoes_python.egg-info/requires.txt
+rottentomatoes_python.egg-info/top_level.txt
