@@ -1,0 +1,12 @@
+kedro_templar/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kedro_templar/plugin.py,sha256=SSlfBjZbUby6QkalaCshCKQ_9jC6DumPZZuAh0dScsM,457
+kedro_templar/process_templates.py,sha256=KfIBOOY--Jaof4NT5qmxruyIfnubJknFIVhqxSO2Lq4,2121
+kedro_templar/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kedro_templar/core/templates.py,sha256=wzyOU9MBoJ4gdtG8LG5Q_bbj4fsEoDcoHJ1Oy9RQn98,468
+kedro_templar/core/utils.py,sha256=XHlTZ41KLxJUpfP5hr0ruEqO53NqBjaK3bBQji59-8s,2022
+kedro_templar-0.0.4.dist-info/LICENSE,sha256=iG3Bx1qbSwghY69nfFGil2rMWq-3cRh-zZX_otAyhGo,1072
+kedro_templar-0.0.4.dist-info/METADATA,sha256=ZqTkUrdsOtyVt4qlIthYG-3C3NgzQROwnsX_ocamPks,2867
+kedro_templar-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kedro_templar-0.0.4.dist-info/entry_points.txt,sha256=9L-5OSQdNLZi7dWwlj24QPwtu7Q79U4eDhy5RZgYGJg,71
+kedro_templar-0.0.4.dist-info/top_level.txt,sha256=7Os6alCLCwyo83d4jEW8jnuiBAt0g3cpc6SHH6vEOt4,14
+kedro_templar-0.0.4.dist-info/RECORD,,
