@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/getopts/__init__.py
+src/getopts/getopts.py
+src/getopts.egg-info/PKG-INFO
+src/getopts.egg-info/SOURCES.txt
+src/getopts.egg-info/dependency_links.txt
+src/getopts.egg-info/top_level.txt
