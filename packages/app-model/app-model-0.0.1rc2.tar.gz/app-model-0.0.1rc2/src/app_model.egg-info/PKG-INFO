@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: app-model
+Version: 0.0.1rc2
+Summary: Generic application schema implemented in python
+Author: Talley Lambert
+Author-email: talley.lambert@gmail.com
+License: BSD 3-Clause License
+Project-URL: homepage, https://github.com/tlambert03/app-model
+Project-URL: repository, https://github.com/tlambert03/app-model
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: test_qt
+Provides-Extra: qt
+Provides-Extra: dev
+License-File: LICENSE
+
+# app-model
+
+[![License](https://img.shields.io/pypi/l/app-model.svg?color=green)](https://github.com/tlambert03/app-model/raw/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/app-model.svg?color=green)](https://pypi.org/project/app-model)
+[![Python Version](https://img.shields.io/pypi/pyversions/app-model.svg?color=green)](https://python.org)
+[![CI](https://github.com/tlambert03/app-model/actions/workflows/ci.yml/badge.svg)](https://github.com/tlambert03/app-model/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/tlambert03/app-model/branch/main/graph/badge.svg)](https://codecov.io/gh/tlambert03/app-model)
+
+Generic application schema implemented in python.
+
+This is a schema for declarative organization of application data, such as
+menus, keybindings, actions/commands, etc...
+
+Inspired by the VS-Code application model
