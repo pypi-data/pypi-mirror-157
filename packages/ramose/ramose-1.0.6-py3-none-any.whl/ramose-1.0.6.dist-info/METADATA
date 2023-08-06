@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ramose
+Version: 1.0.6
+Summary: Restful API Manager Over SPARQL Endpoints (RAMOSE) is an application that allows agile development and publication of documented RESTful APIs for querying SPARQL endpoints, according to a particular specification document.
+Home-page: https://github.com/opencitations/ramose/
+License: ISC
+Author: essepuntato
+Author-email: essepuntato@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Click (==7.0)
+Requires-Dist: Flask (==1.1.1)
+Requires-Dist: Jinja2 (==2.11.3)
+Requires-Dist: Markdown (==3.1.1)
+Requires-Dist: MarkupSafe (==1.1.1)
+Requires-Dist: Werkzeug (==0.16.0)
+Requires-Dist: certifi (==2019.11.28)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.8)
+Requires-Dist: isodate (==0.6.1)
+Requires-Dist: itsdangerous (==1.1.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: rdflib (==6.1.1)
+Requires-Dist: requests (>=2.22.0,<3.0.0)
+Requires-Dist: six (==1.13.0)
+Requires-Dist: urllib3 (==1.26.5)
+Project-URL: Repository, https://github.com/opencitations/ramose/
