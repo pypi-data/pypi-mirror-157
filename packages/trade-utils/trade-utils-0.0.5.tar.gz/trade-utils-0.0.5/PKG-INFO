@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: trade-utils
+Version: 0.0.5
+Summary: Algo trading utils package. Zero test-coverage so use on your own risk.
+Home-page: https://github.com/darnes/algo
+Author: darnes
+Author-email: darnesmeister@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# algo
+Set of tools for algorithmic trading
+
+# Contributing 
+To get started [install pipenv](https://pipenv.pypa.io/en/latest/install/#crude-installation-of-pipenv)
+
+Install dependencies
+```
+pipenv install --dev
+```
+
+Active environment
+```
+pipenv shell
+```
+
+To use VSCode `Pyhton: Select Interpreter` and choose suggested PipEnv environment.
+
+At this point version update is manual. 
+
+# Building And uploading
+```sh
+python -m build
+twine upload ./dist/* --verbose
+```
+
+
+TODO: 
+  * make config retry loading config file ie do not assign empty config on fail
+    Now it raises error only once on the first attempt to access config. Then it returns empty/default values
+  * make `install_requires` dynamic based on `Pipfile`

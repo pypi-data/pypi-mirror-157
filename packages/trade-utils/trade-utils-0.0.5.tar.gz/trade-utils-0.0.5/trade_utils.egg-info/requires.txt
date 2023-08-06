@@ -1,0 +1,5 @@
+v20
+pyyaml
+influxdb
+influxdb-client
+python-json-logger
