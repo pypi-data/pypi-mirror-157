@@ -1,0 +1,2 @@
+[console_scripts]
+zetsubou = zetsubou.__main__
