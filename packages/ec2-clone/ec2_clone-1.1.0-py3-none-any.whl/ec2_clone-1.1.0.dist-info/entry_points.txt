@@ -1,0 +1,2 @@
+[console_scripts]
+ec2-clone = ec2_clone.cli:main
