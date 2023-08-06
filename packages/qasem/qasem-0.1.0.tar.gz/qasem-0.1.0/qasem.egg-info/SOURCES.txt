@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+qasem/__init__.py
+qasem/detect_aux.py
+qasem/end_to_end_pipeline.py
+qasem/openie_converter.py
+qasem/qa_discourse_pipeline.py
+qasem/test_end_to_end_pipeline.py
+qasem.egg-info/PKG-INFO
+qasem.egg-info/SOURCES.txt
+qasem.egg-info/dependency_links.txt
+qasem.egg-info/requires.txt
+qasem.egg-info/top_level.txt
