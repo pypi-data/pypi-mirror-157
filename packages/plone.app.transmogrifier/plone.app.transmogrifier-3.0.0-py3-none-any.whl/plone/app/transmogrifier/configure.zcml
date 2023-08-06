@@ -1,0 +1,84 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:transmogrifier="http://namespaces.plone.org/transmogrifier"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="plone.app.transmogrifier"
+    >
+
+  <include
+      package="zope.component"
+      file="meta.zcml"
+      />
+  <include
+      package="collective.transmogrifier"
+      file="meta.zcml"
+      />
+
+  <utility
+      name="plone.app.transmogrifier.workflowupdater"
+      component=".workflowupdater.WorkflowUpdaterSection"
+      />
+
+  <utility
+      name="plone.app.transmogrifier.browserdefault"
+      component=".browserdefault.BrowserDefaultSection"
+      />
+
+  <utility
+      name="plone.app.transmogrifier.datesupdater"
+      component=".datesupdater.DatesUpdater"
+      />
+
+  <utility
+      name="plone.app.transmogrifier.pathfixer"
+      component=".pathfixer.PathFixer"
+      />
+
+  <utility
+      name="plone.app.transmogrifier.portaltransforms"
+      component=".portaltransforms.PortalTransformsSection"
+      />
+
+  <utility
+      name="plone.app.transmogrifier.urlnormalizer"
+      component=".urlnormalizer.URLNormalizerSection"
+      />
+
+  <utility
+      name="plone.app.transmogrifier.mimeencapsulator"
+      component=".mimeencapsulator.MimeEncapsulatorSection"
+      />
+
+  <utility
+      name="plone.app.transmogrifier.uidupdater"
+      component=".uidupdater.UIDUpdaterSection"
+      />
+
+  <utility
+      name="plone.app.transmogrifier.reindexobject"
+      component=".reindexobject.ReindexObjectSection"
+      />
+
+  <utility
+      name="plone.app.transmogrifier.versioning.disable"
+      component=".versioning.DisableVersioningSection"
+      />
+
+  <utility
+      name="plone.app.transmogrifier.versioning.enable"
+      component=".versioning.EnableVersioningSection"
+      />
+
+  <utility
+      name="plone.app.transmogrifier.redirector"
+      component=".redirector.RedirectorSection"
+      />
+
+  <transmogrifier:registerConfig
+      name="plone.app.transmogrifier.xmlwalker"
+      title="Web Site Importer"
+      description="Import a web site by crawling it's links and extracting field and other values."
+      configuration="xmlwalker.cfg"
+      />
+
+</configure>
