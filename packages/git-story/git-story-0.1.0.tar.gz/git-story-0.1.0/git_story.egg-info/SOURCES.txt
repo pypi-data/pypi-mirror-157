@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+git_story/__init__.py
+git_story/__main__.py
+git_story/git_story.py
+git_story/logo.png
+git_story.egg-info/PKG-INFO
+git_story.egg-info/SOURCES.txt
+git_story.egg-info/dependency_links.txt
+git_story.egg-info/entry_points.txt
+git_story.egg-info/requires.txt
+git_story.egg-info/top_level.txt
