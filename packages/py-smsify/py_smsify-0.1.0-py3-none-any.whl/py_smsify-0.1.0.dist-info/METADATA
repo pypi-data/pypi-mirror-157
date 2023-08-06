@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: py-smsify
+Version: 0.1.0
+Summary: Python library for creating GSM-7 compatible messages
+License: MIT
+Author: Simon Wissotsky
+Author-email: Wissotsky@protonmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: anyascii (>=0.3.1,<0.4.0)
+Description-Content-Type: text/markdown
+
+
