@@ -1,0 +1,17 @@
+chris_plugin/__init__.py,sha256=zSCGy4kl_HNzOY5rPiTcIwGJdVPZPz-9Ku-EiN4iGxk,1506
+chris_plugin/_atypes.py,sha256=BF8XhHVLuZdA8r30XoW3AlQrzThBxQ12aeLI7NE7hV0,744
+chris_plugin/_registration.py,sha256=sQJ96gUf6e9ypGtGu96c5RM1q0SWAlBowhGzGFe5XW8,1088
+chris_plugin/chris_plugin.py,sha256=BxjQpiLNvufJSlRm5MCQTXORh4jFMzcxcCZ67FrWX5M,8338
+chris_plugin/chris_plugin_info.py,sha256=8OJwYlGrA_gt1ZeuP7OsEHEtl_lZzUXBNYCGUz7NIsQ,6512
+chris_plugin/constants.py,sha256=mLZxpvInMoJ8pFRpvL_s6K-c3h8JUQ-wPaKh__xDaL4,1087
+chris_plugin/links.py,sha256=hfyph7tYYoVJuSIwmwYHPrlS7bkMO3Py-fvnPFZgyD4,120
+chris_plugin/main_function.py,sha256=D5mBtnrDgHprZ9KmK236NcnFRDhO9ylxLHvKFf7Wk4c,1975
+chris_plugin/mapper.py,sha256=jbSvnC6fR0k3T1ZWIrGudjnf3qLQEYl2C5NWiMX4Lis,9686
+chris_plugin/parameters.py,sha256=A_3JyOmNxeDxeIkyX6bx2FDhOPtdPtb_SR9jf28prlw,4234
+chris_plugin/types.py,sha256=0WHb3CWRfu-O_mdjFoC-dcGAu9uX5fbDPhDxaMAghI4,1674
+chris_plugin-0.1.0.dist-info/LICENSE,sha256=01bKTe3BatnFk_jfHq-1B_jwBkpCBW5H-VjwqjsojQ8,1080
+chris_plugin-0.1.0.dist-info/METADATA,sha256=KEWm9fHVYpxoKQOBhmRyh_W8mAJX99BOSK0VZ4i1roE,2415
+chris_plugin-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+chris_plugin-0.1.0.dist-info/entry_points.txt,sha256=b_JJj2aemMSJleKtD4i39NIsto7_TV6WBQC-DLRxzmY,75
+chris_plugin-0.1.0.dist-info/top_level.txt,sha256=aXcm9EcP4Jrf0aA_MhGjpDpkR6b14IEBbxTuB1qxiA4,13
+chris_plugin-0.1.0.dist-info/RECORD,,
