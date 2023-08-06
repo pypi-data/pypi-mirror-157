@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+insightfacewrapper/__init__.py
+insightfacewrapper/get_model.py
+insightfacewrapper/model_list.json
+insightfacewrapper.egg-info/PKG-INFO
+insightfacewrapper.egg-info/SOURCES.txt
+insightfacewrapper.egg-info/dependency_links.txt
+insightfacewrapper.egg-info/requires.txt
+insightfacewrapper.egg-info/top_level.txt
