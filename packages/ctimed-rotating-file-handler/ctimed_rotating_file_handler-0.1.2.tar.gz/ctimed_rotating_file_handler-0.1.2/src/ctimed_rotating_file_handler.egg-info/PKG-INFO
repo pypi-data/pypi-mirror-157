@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: ctimed-rotating-file-handler
+Version: 0.1.2
+Summary: TimedRotatingFileHandler using ctime instead of mtime to determine rollover times.
+Author-email: Silmaril <python@silmaril.de>
+License: This is free and unencumbered software released into the public domain.
+        
+        Anyone is free to copy, modify, publish, use, compile, sell, or
+        distribute this software, either in source code form or as a compiled
+        binary, for any purpose, commercial or non-commercial, and by any
+        means.
+        
+        In jurisdictions that recognize copyright laws, the author or authors
+        of this software dedicate any and all copyright interest in the
+        software to the public domain. We make this dedication for the benefit
+        of the public at large and to the detriment of our heirs and
+        successors. We intend this dedication to be an overt act of
+        relinquishment in perpetuity of all present and future rights to this
+        software under copyright law.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+        IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+        OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+        ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+        OTHER DEALINGS IN THE SOFTWARE.
+        
+        For more information, please refer to <https://unlicense.org>
+        
+Project-URL: Homepage, https://codeberg.org/silmaril/CTimedRotatingFileHandler
+Project-URL: Bug Tracker, https://codeberg.org/silmaril/CTimedRotatingFileHandler/issues
+Keywords: logging,filetime
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Logging
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CTimedRotatingFileHandler
+
+TimedRotatingFileHandler using `ctime` instead of `mtime` to determine rollover times.
+
+This module provides a subclass `CTimedRotatingFileHandler` of `logging.handlers.TimedRotatingFileHandler` that uses
+file creation time instead of file modification time to calculate the next rollover time.
+
+It also contains a workaround for "file system tunneling" on Windows, which prevents new files from having new
+creation times if they have already existed a short time ago.  
+To be able to do this, a new dependency to `win32-setctime` is introduced (only needed if running on Windows).
+
+## Usage Example
+```py
+import logging
+from ctimed_rotating_file_handler import CTimedRotatingFileHandler
+
+logfile = 'path/to/logdir/MyName.log'
+loglevel=logging.DEBUG
+backupcount = 7
+logformat='%(asctime)s\t%(levelname)s\t%(name)s\t%(message)s'
+
+log = logging.getLogger()
+formatter = logging.Formatter(fmt=logformat)
+loghandler = CTimedRotatingFileHandler(logfile, when='midnight', interval=1, backupCount=backupcount)
+loghandler.setFormatter(formatter)
+logging.root.addHandler(loghandler)
+logging.root.setLevel(loglevel)
+
+log.info('This is an information.')
+```
+
+## Development and building
+### Prerequesites
+- Python 3.9 has to be installed with `pip` and packages:
+  - `virtualenv`
+  - `build`
+
+### Setup development environment
+After cloning the repo, you should create a virtual environment for all further development work.  
+This may be done by calling one of the included `setup_venv` scripts for your platform:
+- `setup_venv.cmd`: Windows batch
+- `setup_venv.ps1`: Windows Powershell
+- `setup_venv.sh`: Bash
+
+This will
+- create a new virtual environment in the directory `venv` or update an existing one, 
+- install all requirements from `requirements.txt`.
+
+You still have to activate the venv manually (or automatically by configuring it in your IDE).
+
+### Building the package
+All buils settings are inside `pyproject.toml`.  
+You might want to change `project.version` before building (eg. add `.dev1` to it), so you always know which one
+you are dealing with.
+
+To build the project, simply run this command from inside the project directory (the same directory that contains 
+`pyproject.toml`):
+```
+python -m build
+```
+
+This will create `.whl` and `.tar.gz` in the directory `dist`.
