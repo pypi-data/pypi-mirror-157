@@ -1,0 +1,2 @@
+[console_scripts]
+fc = demo_package_author.f2c:fc
