@@ -1,0 +1,10 @@
+islpy/_isl.cpython-36m-x86_64-linux-gnu.so,sha256=-JC6tNIRqO6LgjRn6P6hPnyxCXicyOGiM0OFyQeNuvg,14240120
+islpy/version.py,sha256=q-NODCNZ4h3KDVCIgsKw1Nq1S2nSS_n9n1c6eQxBWx8,69
+islpy/__init__.py,sha256=DyutaAZO72ip5WALAQuYuHN24Tmqu_AC28MUe7BfXYQ,43484
+islpy-2022.2.dist-info/top_level.txt,sha256=txVjJJ85Sa3IMOF6WOh_bTkOyRDWiSW2kQOf8vSPb6M,6
+islpy-2022.2.dist-info/misc.rst,sha256=hRI1EXNt2ymw9328IcE4GPo7DnM0RGx7dveNI4OEAdE,19384
+islpy-2022.2.dist-info/WHEEL,sha256=YVAXCacQXnznQ-_lMj8Nvqrs7YPtMP1pHRCw9EcyWRQ,150
+islpy-2022.2.dist-info/METADATA,sha256=TmQeFCmePN_dotrr-kgBGF-36RQ6V45mj8QT86LtK-Q,3111
+islpy-2022.2.dist-info/RECORD,,
+islpy.libs/libisl-30da7a72.so.23.1.0,sha256=ejjN-CJgudRpNxZDadHtM7FfU4lEjdYJtqV_0OpBcY4,2723464
+islpy.libs/libgmp-58b72994.so.10.3.2,sha256=3k1kNaZ3eqWsDuO9__SQj7iFChdQvzuLR5u0KagnblQ,767536
