@@ -1,0 +1,16 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+CrafterColor/Color.py
+CrafterColor/Errors.py
+CrafterColor/LICENCE.txt
+CrafterColor/Print.py
+CrafterColor/__init__.py
+CrafterColor/__test__.py
+CrafterColor.egg-info/PKG-INFO
+CrafterColor.egg-info/SOURCES.txt
+CrafterColor.egg-info/dependency_links.txt
+CrafterColor.egg-info/top_level.txt
+CrafterColor/IMGS/out.txt
