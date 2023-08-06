@@ -1,0 +1,9 @@
+gemini/__init__.py,sha256=jn39lvBiWDuGcA3p_soU8faKc4OA-sU63KW4BTt2lxk,13623
+gemini/camera.py,sha256=0eRqB7TF5NcXrV1w5brVEZp5M1hqiqCoppdEE6rxOHU,1956
+gemini/input.py,sha256=ZVyf2HZydfRvB9Ss7ge0uApUk8emk1N1nQIxHWNV7cU,2053
+gemini/utils.py,sha256=Mjev13P5w8xzB3FeZBOrhVODaWyGPs2_w1Cs5_Q6oI4,5778
+gemini_engine-1.0.8.dist-info/LICENSE,sha256=OE1e3JwoV2NPu6UhDKVeQo1lYUIx-QE5t-ElQic-FfA,1053
+gemini_engine-1.0.8.dist-info/METADATA,sha256=UohZJpinBfBz95aXAvXdBJ-6JrDQUM3ClRERLj91SzQ,2987
+gemini_engine-1.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gemini_engine-1.0.8.dist-info/top_level.txt,sha256=HC3nun2yFuNkNiRuKIq3MP_Izk5CqGNHxn2nl0-ozn0,7
+gemini_engine-1.0.8.dist-info/RECORD,,
