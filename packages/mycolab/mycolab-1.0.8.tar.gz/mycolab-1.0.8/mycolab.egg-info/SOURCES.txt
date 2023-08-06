@@ -1,0 +1,12 @@
+README.md
+setup.py
+mycolab/__init__.py
+mycolab/__main__.py
+mycolab/common.py
+mycolab/genbank.py
+mycolab.egg-info/PKG-INFO
+mycolab.egg-info/SOURCES.txt
+mycolab.egg-info/dependency_links.txt
+mycolab.egg-info/entry_points.txt
+mycolab.egg-info/requires.txt
+mycolab.egg-info/top_level.txt
