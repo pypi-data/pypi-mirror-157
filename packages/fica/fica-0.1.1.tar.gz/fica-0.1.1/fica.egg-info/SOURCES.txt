@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+fica/__init__.py
+fica/config.py
+fica/exporter.py
+fica/key.py
+fica/sphinx.py
+fica/validators.py
+fica/version.py
+fica.egg-info/PKG-INFO
+fica.egg-info/SOURCES.txt
+fica.egg-info/dependency_links.txt
+fica.egg-info/requires.txt
+fica.egg-info/top_level.txt
