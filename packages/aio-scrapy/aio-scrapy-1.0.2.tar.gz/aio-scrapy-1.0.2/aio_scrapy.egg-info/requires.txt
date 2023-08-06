@@ -1,0 +1,5 @@
+aiohttp
+w3lib
+parsel
+PyDispatcher
+zope.interface>=4.1.3redis>=4.3.1
