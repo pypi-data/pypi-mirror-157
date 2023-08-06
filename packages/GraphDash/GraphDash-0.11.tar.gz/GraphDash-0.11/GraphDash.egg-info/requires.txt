@@ -1,0 +1,5 @@
+PyYAML
+Flask
+Markdown
+Pygments
+stop-words

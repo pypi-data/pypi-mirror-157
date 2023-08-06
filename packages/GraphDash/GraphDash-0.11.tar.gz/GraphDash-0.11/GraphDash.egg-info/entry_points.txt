@@ -1,0 +1,4 @@
+[console_scripts]
+GraphDash = graphdash.__main__:main
+tfl = tfl.__main__:main
+
