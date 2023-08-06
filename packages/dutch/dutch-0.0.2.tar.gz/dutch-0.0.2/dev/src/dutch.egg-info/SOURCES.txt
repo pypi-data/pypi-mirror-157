@@ -1,0 +1,7 @@
+README.md
+setup.py
+dev/src/dutch.egg-info/PKG-INFO
+dev/src/dutch.egg-info/SOURCES.txt
+dev/src/dutch.egg-info/dependency_links.txt
+dev/src/dutch.egg-info/top_level.txt
+dev/src/dutch.egg-info/SOURCES.txt
