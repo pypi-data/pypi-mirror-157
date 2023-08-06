@@ -1,0 +1,8 @@
+aipalettenlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aipalettenlp/text_cleaning.py,sha256=sXizXdUvKe_8JHxwhv-5MS1c4eSbsUApCvs-o5PBeT8,10912
+aipalettenlp/tokenizer.py,sha256=bf5opMIBuqemnSrp1CK0Gfd90C1lZM_ZfvI9hVuXQ4Q,2250
+aipalettenlp-0.0.3.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aipalettenlp-0.0.3.dist-info/METADATA,sha256=MwoWZyNSPUfp1QPLRWilG8zpP24kqaP8im7aIaxxx6A,502
+aipalettenlp-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aipalettenlp-0.0.3.dist-info/top_level.txt,sha256=tPMyDTH4KFMUsvnwpyKidXBIOa_R77-uFQd3e8TSHEw,13
+aipalettenlp-0.0.3.dist-info/RECORD,,
