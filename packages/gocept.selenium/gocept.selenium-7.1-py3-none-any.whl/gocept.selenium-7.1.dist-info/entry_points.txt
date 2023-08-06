@@ -1,0 +1,2 @@
+[console_scripts]
+converthtmltests = gocept.selenium.scripts.converthtmltests:main
