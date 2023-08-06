@@ -1,0 +1,11 @@
+opentelemetry-instrumentation==0.32b0
+opentelemetry-api~=1.3
+opentelemetry-semantic-conventions==0.32b0
+opentelemetry-util-http==0.32b0
+
+[instruments]
+tornado>=5.1.1
+
+[test]
+opentelemetry-test-utils==0.32b0
+tornado>=5.1.1
