@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/destroy.py
+src/Destroyer.egg-info/PKG-INFO
+src/Destroyer.egg-info/SOURCES.txt
+src/Destroyer.egg-info/dependency_links.txt
+src/Destroyer.egg-info/top_level.txt
