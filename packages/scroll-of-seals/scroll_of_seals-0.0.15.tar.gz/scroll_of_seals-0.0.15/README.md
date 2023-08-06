@@ -1,0 +1,8 @@
+# Scroll of Seals
+
+import scroll-of-seals as sos
+
+Useful tools for code
+
+
+![alt text](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/ddlpzvm-c196a565-24f1-4f76-80c8-33dd6681b31d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0ZGMxM2I3LWEyZTctNGI0NS04M2VjLTMxMWU3MmU4MjkwMFwvZGRscHp2bS1jMTk2YTU2NS0yNGYxLTRmNzYtODBjOC0zM2RkNjY4MWIzMWQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Et1Zx5buTSunA9cvuUY2e5X9SHleaHBf48MI29HAh00)
