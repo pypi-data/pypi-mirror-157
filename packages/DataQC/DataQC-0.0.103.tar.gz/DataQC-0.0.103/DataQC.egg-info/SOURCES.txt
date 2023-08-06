@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.txt
+setup.py
+DataQC/__init__.py
+DataQC.egg-info/PKG-INFO
+DataQC.egg-info/SOURCES.txt
+DataQC.egg-info/dependency_links.txt
+DataQC.egg-info/requires.txt
+DataQC.egg-info/top_level.txt
