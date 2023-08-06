@@ -1,0 +1,5 @@
+drm4g
+python-dateutil
+requests
+six
+sqlalchemy
