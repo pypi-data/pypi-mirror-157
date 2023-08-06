@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/hadamard_transform/__init__.py
+src/hadamard_transform.egg-info/PKG-INFO
+src/hadamard_transform.egg-info/SOURCES.txt
+src/hadamard_transform.egg-info/dependency_links.txt
+src/hadamard_transform.egg-info/requires.txt
+src/hadamard_transform.egg-info/top_level.txt
