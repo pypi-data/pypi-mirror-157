@@ -1,0 +1,8 @@
+pygui/__init__.py,sha256=Xfd-jGdPcIyDhZcC_v8I3E1O58-6EGefZZyhzXgP1HI,136
+pygui/elements.py,sha256=1FGNuQpguivwMt2OWYkeyCFBhrr_VZIGm88NfdTOW10,16888
+pygui/fonts/Roboto-Regular.ttf,sha256=ThR6tkuf322J0B9rjDygs83cWdYIqOIhj5olBLXJjhQ,168260
+pygui/window.py,sha256=tVOfMLBzdJJs1eul5OAoxmsXwNNT-r8MO66WS5sv-nQ,6984
+py_gui_tool-1.6.0.dist-info/LICENSE,sha256=jVOL1PG5Im-MJpzV1q_mca3pz9H1YKq-q-wfuGzOLrQ,1090
+py_gui_tool-1.6.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+py_gui_tool-1.6.0.dist-info/METADATA,sha256=iYlARAbY3I99rGJtFveKb9dKRxAV4DIDAUVsDLS1qS4,724
+py_gui_tool-1.6.0.dist-info/RECORD,,
