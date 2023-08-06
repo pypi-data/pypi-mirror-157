@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: psunlinked
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/JonathonReinhart/psunlinked
+Author: Jonathon Reinhart
+Author-email: Jonathon.Reinhart@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.4.0
