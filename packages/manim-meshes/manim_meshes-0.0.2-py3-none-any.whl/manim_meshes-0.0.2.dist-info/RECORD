@@ -1,0 +1,14 @@
+manim_meshes/__init__.py,sha256=230y-QKDIrD1n_V_lHDIESNwc4W5jwhIoDIgKJD51Rw,348
+manim_meshes/exceptions.py,sha256=g_FLKX0Tbk5vtrv7_p6xZpcj-Xwif1VW5YJgA-cGcAY,110
+manim_meshes/helpers.py,sha256=PeXADa02JTd11evLj2oQ5eIk-uUIe6LBg4ZU3gvtRkw,1186
+manim_meshes/models/__init__.py,sha256=pTzRmkFCqhrlJK2FzGFVSZ6DfmXKv07vQpLau19cepc,35
+manim_meshes/models/mesh.py,sha256=B8HBizQKx0fNA_MUS4veJdCnSAxxhs6WG0Lff2UIar8,7849
+manim_meshes/models/models.py,sha256=0NkXfSDP9uhaS0u5CTHEHZbwgs5La5meJNpE7U80bHU,10434
+manim_meshes/models/params.py,sha256=iu6JAh_2TgFA3350XMbujGVdaYsiP5u8gbPMxHq4U6k,3217
+manim_meshes/templates.py,sha256=KaLy1AFef14WGYkuSjclKldVfDWsWboRbVuh3rMYyq8,3748
+manim_meshes/types.py,sha256=vL2O69ix3AjVagptPVvXLBRv5dx4JVjfnrM0gZbNrwA,137
+manim_meshes-0.0.2.dist-info/entry_points.txt,sha256=VQ4YZOTA0ohnWeKOwe5i3vvkcyaKIGupXKKq1q9GRN0,49
+manim_meshes-0.0.2.dist-info/LICENSE,sha256=M5DSbYkixXLTU5aryvjmqM3bW_6IGgcwjkxCni3XeEw,1115
+manim_meshes-0.0.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+manim_meshes-0.0.2.dist-info/METADATA,sha256=Hi06Pa_iruCaNxwj3WbJ8DHHw9yuvwlUFApFGSwJyBw,2596
+manim_meshes-0.0.2.dist-info/RECORD,,
