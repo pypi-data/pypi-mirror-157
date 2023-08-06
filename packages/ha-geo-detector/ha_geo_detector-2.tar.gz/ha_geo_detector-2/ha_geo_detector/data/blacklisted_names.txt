@@ -1,0 +1,23 @@
+# blacklisted cities names
+jordan
+chad
+batman
+gold
+nice
+van
+soul
+julia
+sale
+central
+cali
+tabriz
+georgia
+орел
+орёл
+orel
+sof
+saf
+serd
+soif
+soph
+sred
