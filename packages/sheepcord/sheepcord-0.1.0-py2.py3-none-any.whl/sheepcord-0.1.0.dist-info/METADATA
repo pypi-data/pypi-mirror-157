@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sheepcord
+Version: 0.1.0
+Summary: Discord interactions library
+Author-email: Shinobou <86394469+Shinobou@users.noreply.github.com>
+Requires-Dist: pydantic~=1.9.1
+Requires-Dist: blacksheep~=1.2.7
+Requires-Dist: aiohttp~=3.8.1
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: mypy ; extra == "dev"
+Provides-Extra: dev
