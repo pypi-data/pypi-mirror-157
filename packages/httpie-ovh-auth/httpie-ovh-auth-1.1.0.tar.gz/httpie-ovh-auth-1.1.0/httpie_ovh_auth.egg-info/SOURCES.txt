@@ -1,0 +1,17 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+httpie_ovh_auth.py
+pyproject.toml
+requirements.txt
+setup.py
+httpie_ovh_auth.egg-info/PKG-INFO
+httpie_ovh_auth.egg-info/SOURCES.txt
+httpie_ovh_auth.egg-info/dependency_links.txt
+httpie_ovh_auth.egg-info/entry_points.txt
+httpie_ovh_auth.egg-info/not-zip-safe
+httpie_ovh_auth.egg-info/requires.txt
+httpie_ovh_auth.egg-info/top_level.txt
+tests/__init__.py
+tests/test_suite.py
