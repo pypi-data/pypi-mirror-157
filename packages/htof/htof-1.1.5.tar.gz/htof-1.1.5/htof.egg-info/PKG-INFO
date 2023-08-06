@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: htof
+Version: 1.1.5
+Author: G. Mirek Brandt, Daniel Michalik, Gavin K. Hung
+Requires-Python: >=3.6
+License-File: LICENSE
