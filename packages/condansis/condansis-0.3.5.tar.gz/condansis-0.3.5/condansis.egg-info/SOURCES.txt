@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.py
+condansis/__init__.py
+condansis/_version.py
+condansis/condansis-unpack.py
+condansis/installer.py
+condansis/installer_template.nsi
+condansis/sitecustomize.py
+condansis/test_installer.py
+condansis.egg-info/PKG-INFO
+condansis.egg-info/SOURCES.txt
+condansis.egg-info/dependency_links.txt
+condansis.egg-info/requires.txt
+condansis.egg-info/top_level.txt
+condansis/test_files/environment.yml

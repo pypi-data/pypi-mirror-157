@@ -1,0 +1,5 @@
+conda-pack>=0.5
+jinja2
+
+[test]
+pytest
