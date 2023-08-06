@@ -1,0 +1,11 @@
+Cython
+nibabel
+numpy
+scipy>=1.8
+tqdm
+fslpy
+regtricks
+pyvista
+h5py
+vtk
+trimesh
