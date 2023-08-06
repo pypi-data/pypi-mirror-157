@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: cypher_kernel
+Version: 0.3.0
+Summary: A Cypher kernel for Jupyter
+Home-page: https://github.com/HelgeCPH/cypher_kernel
+Author: HelgeCPH
+Author-email: ropf@itu.dk
+License: UNKNOWN
+Description: Read documentation on `Github <https://github.com/HelgeCPH/cypher_kernel>`
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
