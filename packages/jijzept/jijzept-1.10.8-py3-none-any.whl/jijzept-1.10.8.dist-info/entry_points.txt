@@ -1,0 +1,2 @@
+[console_scripts]
+jijzept = jijzept.config.config_command:main
