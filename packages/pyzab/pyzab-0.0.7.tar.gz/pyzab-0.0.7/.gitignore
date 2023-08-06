@@ -1,0 +1,5 @@
+.env
+.venv
+reference.txt
+dist
+__pycache__
