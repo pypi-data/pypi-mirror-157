@@ -1,0 +1,10 @@
+avro_validator/__init__.py,sha256=9Na_xyzPoXqCCd9FOkspUSVfmyEkR5u1gMKHUjiUPBU,603
+avro_validator/avro_types.py,sha256=gXCUFD4WQNwiAFz6W8St14XtYVMUoETk0r7v5lyjmxE,40836
+avro_validator/cli.py,sha256=LexNufRM3xrkQMI6jaCyltcYfAihZXKY_Ar_APPieN4,1420
+avro_validator/schema.py,sha256=nWTKxccsG3-RQy5dXJUQmaqwKISZBp2BYCEjb6XgNyU,866
+avro_validator-1.0.13.dist-info/LICENSE,sha256=YH_ezX0lXe81pRy6yD19AbaQimKJVT2HL-_WN1461jU,1075
+avro_validator-1.0.13.dist-info/METADATA,sha256=X59UxAChOX7vksvaN5FTMWJIGDv4Q0p0-wd0l3ES1gY,8481
+avro_validator-1.0.13.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+avro_validator-1.0.13.dist-info/entry_points.txt,sha256=tAlNV8NuwPCsxDFfLwwM2Zqxu8np4bCB9fNGDtmKcBY,59
+avro_validator-1.0.13.dist-info/top_level.txt,sha256=D1QJ4qld7NvHaXlIwp7ISAZzLMPv6qnXZA4Vftk8iN0,15
+avro_validator-1.0.13.dist-info/RECORD,,
