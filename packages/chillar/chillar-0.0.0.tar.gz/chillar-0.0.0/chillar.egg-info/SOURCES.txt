@@ -1,0 +1,5 @@
+setup.py
+chillar.egg-info/PKG-INFO
+chillar.egg-info/SOURCES.txt
+chillar.egg-info/dependency_links.txt
+chillar.egg-info/top_level.txt
