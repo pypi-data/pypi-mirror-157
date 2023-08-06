@@ -1,0 +1,7 @@
+[console_scripts]
+container_build=container:build
+container_isRunning=container:isRunning
+container_start=container:start
+container_stop=container:stop
+lvmscraper=lvmscraper.__main__:scraper
+
