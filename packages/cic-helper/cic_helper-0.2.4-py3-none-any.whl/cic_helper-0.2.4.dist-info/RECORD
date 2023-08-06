@@ -1,0 +1,11 @@
+cic_helper/Person.py,sha256=HKfHNUZL2m2tHzFTTzxafzDC0LWSpZg05NH3Kgk0FZ0,5800
+cic_helper/__init__.py,sha256=SBl2EPFW-ltPvQ7vbVWItyAsz3aKYIpjO7vcfr84GkU,22
+cic_helper/cli.py,sha256=JkKCkokGLs4iBX8lDo5wIkC22_yxZbcLqAYuEmEW23o,4782
+cic_helper/constants.py,sha256=Dy-E9T52WgKCktCagqI3_2TyouOG5rPniHj85Ax_7F4,439
+cic_helper/kitabu/kitabu.json,sha256=Xnr5ApIygqCFOsITf6EPRfU6rWxWiTb4k3PVyoOSkug,11964
+cic_helper/kitabu/kitabu.toml,sha256=r3PYQmpStw9jcye6jTHQgZmoHHqQ-quZZ1y2Ly4FKB8,353
+cic_helper/kitabu/run.sh,sha256=P6pGCRIm6E9s8xzfEqo7_srty-Arx53pybUiu4QBvaY,516
+cic_helper-0.2.4.dist-info/entry_points.txt,sha256=NFbWI-qBwt_0NnqQD1744J3YbKVxoLChe72fO96mx8A,49
+cic_helper-0.2.4.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+cic_helper-0.2.4.dist-info/METADATA,sha256=9R_Vm7oEzWg-Ug7MscfzZQSU9n0xG82WcH68h1rZrq4,432
+cic_helper-0.2.4.dist-info/RECORD,,

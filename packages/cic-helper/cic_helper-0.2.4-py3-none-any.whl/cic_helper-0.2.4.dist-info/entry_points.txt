@@ -1,0 +1,3 @@
+[console_scripts]
+cic-helper=cic_helper.cli:cli
+
