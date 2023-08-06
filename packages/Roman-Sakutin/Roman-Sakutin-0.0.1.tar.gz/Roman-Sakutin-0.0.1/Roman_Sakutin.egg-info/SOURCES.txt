@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Roman_Sakutin.egg-info/PKG-INFO
+Roman_Sakutin.egg-info/SOURCES.txt
+Roman_Sakutin.egg-info/dependency_links.txt
+Roman_Sakutin.egg-info/top_level.txt
+goshadudar/__init__.py
+goshadudar/graphs.py

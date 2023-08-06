@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Roman-Sakutin
+Version: 0.0.1
+Summary: Lib with name Roman-Sakutin
+Home-page: https://github.com/Always-prog
+Author: AlwaysProg
+Author-email: always.prog@gmail.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
