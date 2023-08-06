@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: mltable
+Version: 0.1.0b3
+Summary: Contains experimental MLTable features for the mltable package.
+Home-page: https://docs.microsoft.com/python/api/overview/azure/ml/?view=azure-ml-py
+Author: Microsoft Corp
+License: Proprietary https://aka.ms/azureml-preview-sdk-license 
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6,<3.9
+Description-Content-Type: text/x-rst
+Requires-Dist: azureml-core
+Requires-Dist: azureml-dataprep (<4.2.0a,>=4.1.0a)
+Requires-Dist: pyarrow (<4.0.0,>=0.17.0)
+Requires-Dist: pyyaml (<7.0.0,>=5.1.0)
+Requires-Dist: azure-mgmt-storage (~=19.1.0)
+
+##########################################################################################
+Microsoft Azure Machine Learning - azureml-mltable
+##########################################################################################
+
+AzureML MLTable
+
+
+
