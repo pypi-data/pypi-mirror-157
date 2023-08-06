@@ -1,0 +1,8 @@
+README.md
+setup.py
+KivyMDEmulator.egg-info/PKG-INFO
+KivyMDEmulator.egg-info/SOURCES.txt
+KivyMDEmulator.egg-info/dependency_links.txt
+KivyMDEmulator.egg-info/entry_points.txt
+KivyMDEmulator.egg-info/not-zip-safe
+KivyMDEmulator.egg-info/top_level.txt

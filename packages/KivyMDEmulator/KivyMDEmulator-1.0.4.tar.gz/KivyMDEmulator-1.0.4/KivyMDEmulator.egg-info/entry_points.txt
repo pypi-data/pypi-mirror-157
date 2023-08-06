@@ -1,0 +1,2 @@
+[console_scripts]
+kivymdemulator = cli:kivymd_emulator_group
