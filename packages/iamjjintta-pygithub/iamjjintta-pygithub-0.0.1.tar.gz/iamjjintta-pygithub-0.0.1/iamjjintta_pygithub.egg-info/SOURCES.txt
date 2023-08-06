@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+iamjjintta/__init__.py
+iamjjintta/github.py
+iamjjintta_pygithub.egg-info/PKG-INFO
+iamjjintta_pygithub.egg-info/SOURCES.txt
+iamjjintta_pygithub.egg-info/dependency_links.txt
+iamjjintta_pygithub.egg-info/not-zip-safe
+iamjjintta_pygithub.egg-info/requires.txt
+iamjjintta_pygithub.egg-info/top_level.txt

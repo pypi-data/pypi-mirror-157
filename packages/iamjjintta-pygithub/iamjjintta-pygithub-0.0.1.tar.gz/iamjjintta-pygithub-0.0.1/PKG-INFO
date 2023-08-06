@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: iamjjintta-pygithub
+Version: 0.0.1
+Summary: Simple GitHub API with Python
+Home-page: https://github.com/iamjjintta-python/PyGitHub
+Download-URL: https://github.com/iamjjintta-python/PyGitHub
+Author: iam-jjintta
+Author-email: iamjjintta@gmail.com
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyGitHub
+Simple GitHub API with Python
+
+## Instructions
+```python
+from iamjjinta.github import GitHub
+
+
+username = 'Your GitHub Username'
+password = 'Your GitHub Password'
+
+# GitHub Login
+github = GitHub(username, password)
+login = github.login()
+print(login.status_code)
+
+# Get Repository Content
+owner = 'iamjjintta-python'
+repo = 'PyGitHub'
+branch = 'main'
+path = '/git/github.py'
+
+source_code = github.get_content(owner, repo, branch, path)
+print(source_code)
+```
