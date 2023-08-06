@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: alephvault-evm-events-http-mongodb-storage
+Version: 0.0.3
+Summary: A trait to implement a standard mongodb server which logs events and also caches some data related to them
+Home-page: https://github.com/AlephVault/standard-evm-events-http-mongodb-storage
+Author: luismasuelli
+Author-email: luismasuelli@hotmail.com
+License: MIT
+License-File: LICENSE
