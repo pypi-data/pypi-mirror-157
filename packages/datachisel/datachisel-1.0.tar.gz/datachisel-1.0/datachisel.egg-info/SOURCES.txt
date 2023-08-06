@@ -1,0 +1,8 @@
+setup.py
+datachisel/__init__.py
+datachisel/datachisel.py
+datachisel.egg-info/PKG-INFO
+datachisel.egg-info/SOURCES.txt
+datachisel.egg-info/dependency_links.txt
+datachisel.egg-info/not-zip-safe
+datachisel.egg-info/top_level.txt
