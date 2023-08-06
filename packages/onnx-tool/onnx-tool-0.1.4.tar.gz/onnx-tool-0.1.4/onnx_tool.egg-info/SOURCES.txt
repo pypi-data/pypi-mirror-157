@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+onnx_tool/__init__.py
+onnx_tool/node_profilers.py
+onnx_tool/utils.py
+onnx_tool.egg-info/PKG-INFO
+onnx_tool.egg-info/SOURCES.txt
+onnx_tool.egg-info/dependency_links.txt
+onnx_tool.egg-info/requires.txt
+onnx_tool.egg-info/top_level.txt
+onnx_tool.egg-info/zip-safe
