@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/torutils/__init__.py
+src/torutils/config.py
+src/torutils/torconnect.py
+src/torutils.egg-info/PKG-INFO
+src/torutils.egg-info/SOURCES.txt
+src/torutils.egg-info/dependency_links.txt
+src/torutils.egg-info/top_level.txt
