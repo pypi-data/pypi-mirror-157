@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "rlogging"
+version = "0"
+description = "Модуль гибкого логирования python приложений"
+authors = ["rocshers <prog.rocshers@gmail.com>"]
+readme = "readme.md"
+# homepage = "https://github.com/rocshers/rocshelf"
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+]
+license = "MIT"
+packages = [
+    { include = "rlogging" },
+    { include = "django_rlogging" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+execution-controller = "*"
+
+
+[tool.poetry.dev-dependencies]
+twine = "^4.0.1"
+wheel = "^0.37.1"
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+coverage = "^6.4.1"
+mypy = "^0.961"
+Django = "^4.0.5"
+wemake-python-styleguide = "^0.16.1"
+black = "^22.3.0"
+pytest-django = "^4.5.2"
+
+[tool.poetry-version-plugin]
+source = "git-tag"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
