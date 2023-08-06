@@ -1,0 +1,15 @@
+nka/__init__.py,sha256=nmMuRoVIamLNdOF3cBxm7eylIj_6K-Pro5YASUJXq04,1251
+nka/_input_pipeline.py,sha256=OulSpKtLLmgLCksFP_GRKM0sjyqfXdPuA_JAgRGtNEU,4097
+nka/_mmr.py,sha256=bdO8W4BhZkDMlcnaibubPoI7SKkdAtD2nSFWCi0_I6I,3718
+nka/_proposals.py,sha256=CpUIuMJRQrIdMp3H47a_TecAdeytCdma5MdKL9PG_2w,3158
+nka/model.py,sha256=U-Ykih9bdG1-A2-zyXB4qukYfzjdCS04LIzX0v-EdPo,14799
+nka/backend/__init__.py,sha256=SIzIyCw48a4G9Df93YUPZSFs1v7WwlhiUdo9LdDotLg,1188
+nka/backend/_abc_embedder.py,sha256=Bqp2rRAqC90H5QlWkItF0a6XbkmbUmbuej6_Um3CNOU,2106
+nka/backend/_sentencetransformers.py,sha256=-JoHa7P1YrYJa5pDHl6d_vpgo8x1uMDcznfAnR9oNWQ,3368
+nka/backend/_utils.py,sha256=WF5Y-vaeBOYTPakCY0KonKc-Gy2x0VwjcFuVzTz05cg,2298
+nka-1.0.1.dist-info/AUTHORS.rst,sha256=VMS0MuoamF65LU2P8sDIwXzN-gLwtBLofUVk2bm3srs,63
+nka-1.0.1.dist-info/LICENSE,sha256=O9rb_mAnyGdn3bdwdWDliTvVNWl9gNguf8juSiLjoU8,1101
+nka-1.0.1.dist-info/METADATA,sha256=RlpPVk-txPXoSppDEERxM71XQgU8V1E7oFP5mvN6wiU,3016
+nka-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nka-1.0.1.dist-info/top_level.txt,sha256=w85OWNxiQGnkc5sLs_G4BmcjzAdF2zz7zCNwGIdt5UE,4
+nka-1.0.1.dist-info/RECORD,,
