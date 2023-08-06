@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>raider.operations &mdash; raider 0.2.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/assets/jsonview.bundle.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/libs/html/datatables.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/common.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/layouts.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/styles.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/modern.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/assets/jsonview.bundle.js"></script>
+        <script src="../../_static/assets/jsonview_loader.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/datatables.min.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> raider
+          </a>
+              <div class="version">
+                0.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user/install.html">Installing Raider</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/faq.html">Frequently asked questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/special_variables.html">Special variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/flows.html">Flows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/attacks.html">Fuzzing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/operations.html">Operations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/api.html">User API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/api.html#internal-api-reference">Internal API reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">raider</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>raider.operations</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for raider.operations</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (C) 2022 DigeeX</span>
+<span class="c1">#</span>
+<span class="c1"># This program is free software: you can redistribute it and/or modify</span>
+<span class="c1"># it under the terms of the GNU General Public License as published by</span>
+<span class="c1"># the Free Software Foundation, either version 3 of the License, or</span>
+<span class="c1"># (at your option) any later version.</span>
+<span class="c1">#</span>
+<span class="c1"># This program is distributed in the hope that it will be useful,</span>
+<span class="c1"># but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1"># MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="c1"># GNU General Public License for more details.</span>
+<span class="c1">#</span>
+<span class="c1"># You should have received a copy of the GNU General Public License</span>
+<span class="c1"># along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+
+<span class="sd">&quot;&quot;&quot;Operations performed on Flows after the response is received.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partial</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Union</span>
+
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="kn">from</span> <span class="nn">raider.plugins.common</span> <span class="kn">import</span> <span class="n">Plugin</span>
+
+
+<span class="k">def</span> <span class="nf">execute_actions</span><span class="p">(</span>
+    <span class="n">operations</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="s2">&quot;Operation&quot;</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="s2">&quot;Operation&quot;</span><span class="p">]],</span>
+    <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Run an Operation or a list of Operations.</span>
+
+<span class="sd">    In order to allow multiple Operations to be run inside the &quot;action&quot;</span>
+<span class="sd">    and &quot;otherwise&quot; attributes lists of Operations are accepted. The</span>
+<span class="sd">    execution will stop if one of the Operations returns a string, to</span>
+<span class="sd">    indicate the next stage has been decided.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      operations:</span>
+<span class="sd">        An Operation object or a list of Operations to be executed.</span>
+<span class="sd">      response:</span>
+<span class="sd">        A requests.models.Response object with the HTTP response that</span>
+<span class="sd">        might be needed to run the Operation.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      A string with the name of the next stage to be run, or None.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">operations</span><span class="p">,</span> <span class="n">Operation</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">operations</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">operations</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">operations</span><span class="p">:</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">output</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">output</span>
+
+    <span class="k">return</span> <span class="kc">None</span>
+
+
+<div class="viewcode-block" id="Operation"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Operation">[docs]</a><span class="k">class</span> <span class="nc">Operation</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Parent class for all operations.</span>
+
+<span class="sd">    Each Operation class inherits from here.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      function:</span>
+<span class="sd">        A callable function to be executed when the operation is run.</span>
+<span class="sd">      flags:</span>
+<span class="sd">        An integer with the flags which define the behaviour of the</span>
+<span class="sd">        Operation. For now only two flags are allowed: NEEDS_RESPONSE</span>
+<span class="sd">        and IS_CONDITIONAL. If NEEDS_RESPONSE is set, the HTTP response</span>
+<span class="sd">        will be sent to the &quot;function&quot; for further processing. If</span>
+<span class="sd">        IS_CONDITIONAL is set, the function should return a boolean, and</span>
+<span class="sd">        if the return value is True the Operation inside &quot;action&quot; will</span>
+<span class="sd">        be run next, if it&#39;s False, the one from the &quot;otherwise&quot; will be</span>
+<span class="sd">        run.</span>
+<span class="sd">      action:</span>
+<span class="sd">        An Operation object that will be run if the function returns</span>
+<span class="sd">        True. Will only be used if the flag IS_CONDITIONAL is set.</span>
+<span class="sd">      otherwise:</span>
+<span class="sd">        An Operation object that will be run if the function returns</span>
+<span class="sd">        False. Will only be used if the flag IS_CONDITIONAL is set.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Operation flags</span>
+
+    <span class="c1"># Operation is conditional. Needs to have an ``action`` defined and</span>
+    <span class="c1"># optionally an ``otherwise``.</span>
+    <span class="n">IS_CONDITIONAL</span> <span class="o">=</span> <span class="mh">0x01</span>
+
+    <span class="c1"># Operation&#39;s function needs the HTTP response to run.</span>
+    <span class="n">NEEDS_RESPONSE</span> <span class="o">=</span> <span class="mh">0x02</span>
+
+    <span class="c1"># Operation will append instead of overwrite. Used when dealing with files</span>
+    <span class="c1"># to make sure old data doesn&#39;t get overwritten.</span>
+    <span class="n">WILL_APPEND</span> <span class="o">=</span> <span class="mh">0x04</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">function</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span>
+        <span class="n">flags</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="n">action</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="s2">&quot;Operation&quot;</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="s2">&quot;Operation&quot;</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">otherwise</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="s2">&quot;Operation&quot;</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="s2">&quot;Operation&quot;</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Operation object.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          function:</span>
+<span class="sd">            A callable function to be executed when the operation is run.</span>
+<span class="sd">          flags:</span>
+<span class="sd">            An integer with the flags that define the behaviour of this</span>
+<span class="sd">            Operation.</span>
+<span class="sd">          action:</span>
+<span class="sd">            An Operation object that will be run when the function</span>
+<span class="sd">            returns True.</span>
+<span class="sd">          otherwise:</span>
+<span class="sd">            An Operation object that will be run when the function</span>
+<span class="sd">            returns False.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">function</span> <span class="o">=</span> <span class="n">function</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">flags</span> <span class="o">=</span> <span class="n">flags</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">action</span> <span class="o">=</span> <span class="n">action</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">otherwise</span> <span class="o">=</span> <span class="n">otherwise</span>
+
+<div class="viewcode-block" id="Operation.run"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Operation.run">[docs]</a>    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Runs the Operation.</span>
+
+<span class="sd">        Runs the defined Operation, considering the &quot;flags&quot; set.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          response:</span>
+<span class="sd">            A requests.models.Response object with the HTTP response to</span>
+<span class="sd">            be passed to the operation&#39;s &quot;function&quot;.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          An optional string with the name of the next stage.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Running operation </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_conditional</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">run_conditional</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">needs_response</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">function</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">function</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Operation.run_conditional"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Operation.run_conditional">[docs]</a>    <span class="k">def</span> <span class="nf">run_conditional</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Runs a conditional operation.</span>
+
+<span class="sd">        If the IS_CONDITIONAL flag is set, run the Operation&#39;s</span>
+<span class="sd">        &quot;function&quot; and if True runs the &quot;action&quot; next, if it&#39;s False</span>
+<span class="sd">        runs the &quot;otherwise&quot; Operation instead.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          response:</span>
+<span class="sd">            A requests.models.Response object with the HTTP response to</span>
+<span class="sd">            be passed to the operation&#39;s &quot;function&quot;.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          An optional string with the name of the next stage.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">needs_response</span><span class="p">:</span>
+            <span class="n">check</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">function</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">check</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">function</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">check</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">action</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">execute_actions</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">action</span><span class="p">,</span> <span class="n">response</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">otherwise</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">execute_actions</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">otherwise</span><span class="p">,</span> <span class="n">response</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">needs_response</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns True if the NEEDS_RESPONSE flag is set.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">flags</span> <span class="o">&amp;</span> <span class="bp">self</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_conditional</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns True if the IS_CONDITIONAL flag is set.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">flags</span> <span class="o">&amp;</span> <span class="bp">self</span><span class="o">.</span><span class="n">IS_CONDITIONAL</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">will_append</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns True if the WILL_APPEND flag is set.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">flags</span> <span class="o">&amp;</span> <span class="bp">self</span><span class="o">.</span><span class="n">WILL_APPEND</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="Http"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Http">[docs]</a><span class="k">class</span> <span class="nc">Http</span><span class="p">(</span><span class="n">Operation</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Operation that runs actions depending on the HTTP status code.</span>
+
+<span class="sd">    A Http object will check if the HTTP response status code matches</span>
+<span class="sd">    the code defined in its &quot;status&quot; attribute, and run the Operation</span>
+<span class="sd">    inside &quot;action&quot; if it matches or the one inside &quot;otherwise&quot; if not</span>
+<span class="sd">    matching.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      status:</span>
+<span class="sd">        An integer with the HTTP status code to be checked.</span>
+<span class="sd">      action:</span>
+<span class="sd">        An Operation that will be executed if the status code matches.</span>
+<span class="sd">      otherwise:</span>
+<span class="sd">        An Operation that will be executed if the status code doesn&#39;t</span>
+<span class="sd">        match.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">status</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">action</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">Operation</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">Operation</span><span class="p">]]],</span>
+        <span class="n">otherwise</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">Operation</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">Operation</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Http Operation.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          status:</span>
+<span class="sd">            An integer with the HTTP response status code.</span>
+<span class="sd">          action:</span>
+<span class="sd">            An Operation object to be run if the defined status matches</span>
+<span class="sd">            the response status code.</span>
+<span class="sd">          otherwise:</span>
+<span class="sd">            An Operation object to be run if the defined status doesn&#39;t</span>
+<span class="sd">            match the response status code.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">=</span> <span class="n">status</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">function</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">match_status_code</span><span class="p">,</span>
+            <span class="n">action</span><span class="o">=</span><span class="n">action</span><span class="p">,</span>
+            <span class="n">otherwise</span><span class="o">=</span><span class="n">otherwise</span><span class="p">,</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">Operation</span><span class="o">.</span><span class="n">IS_CONDITIONAL</span> <span class="o">|</span> <span class="n">Operation</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="Http.match_status_code"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Http.match_status_code">[docs]</a>    <span class="k">def</span> <span class="nf">match_status_code</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Check if the defined status matches the response status code.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span></div>
+
+<div class="viewcode-block" id="Http.__str__"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Http.__str__">[docs]</a>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns a string representation of the Operation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">(</span>
+            <span class="s2">&quot;(Http:&quot;</span>
+            <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">status</span><span class="p">)</span>
+            <span class="o">+</span> <span class="s2">&quot;=&quot;</span>
+            <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">action</span><span class="p">)</span>
+            <span class="o">+</span> <span class="s2">&quot;/&quot;</span>
+            <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">otherwise</span><span class="p">)</span>
+            <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+        <span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="Grep"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Grep">[docs]</a><span class="k">class</span> <span class="nc">Grep</span><span class="p">(</span><span class="n">Operation</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Operation that runs actions depending on Regex matches.</span>
+
+<span class="sd">    A Grep object will check if the HTTP response body matches the regex</span>
+<span class="sd">    defined in its &quot;regex&quot; attribute, and run the Operation inside</span>
+<span class="sd">    &quot;action&quot; if it matches or the one inside &quot;otherwise&quot; if not</span>
+<span class="sd">    matching.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      regex:</span>
+<span class="sd">        A string with the regular expression to be checked.</span>
+<span class="sd">      action:</span>
+<span class="sd">        An Operation that will be executed if the status code matches.</span>
+<span class="sd">      otherwise:</span>
+<span class="sd">        An Operation that will be executed if the status code doesn&#39;t</span>
+<span class="sd">        match.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">regex</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">action</span><span class="p">:</span> <span class="n">Operation</span><span class="p">,</span>
+        <span class="n">otherwise</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Operation</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Grep Operation.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          regex:</span>
+<span class="sd">            A string with the regular expression to be checked.</span>
+<span class="sd">          action:</span>
+<span class="sd">            An Operation object to be run if the defined regex matches</span>
+<span class="sd">            the response body.</span>
+<span class="sd">          otherwise:</span>
+<span class="sd">            An Operation object to be run if the defined regex doesn&#39;t</span>
+<span class="sd">            match the response body.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">regex</span> <span class="o">=</span> <span class="n">regex</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">function</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">match_response</span><span class="p">,</span>
+            <span class="n">action</span><span class="o">=</span><span class="n">action</span><span class="p">,</span>
+            <span class="n">otherwise</span><span class="o">=</span><span class="n">otherwise</span><span class="p">,</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">Operation</span><span class="o">.</span><span class="n">IS_CONDITIONAL</span> <span class="o">|</span> <span class="n">Operation</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="Grep.match_response"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Grep.match_response">[docs]</a>    <span class="k">def</span> <span class="nf">match_response</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Checks if the response body contains the defined regex.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">bool</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">regex</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="Grep.__str__"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Grep.__str__">[docs]</a>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns a string representation of the Operation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">(</span>
+            <span class="s2">&quot;(Grep:&quot;</span>
+            <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">regex</span><span class="p">)</span>
+            <span class="o">+</span> <span class="s2">&quot;=&quot;</span>
+            <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">action</span><span class="p">)</span>
+            <span class="o">+</span> <span class="s2">&quot;/&quot;</span>
+            <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">otherwise</span><span class="p">)</span>
+            <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+        <span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="Save"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Save">[docs]</a><span class="k">class</span> <span class="nc">Save</span><span class="p">(</span><span class="n">Operation</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Operation to save information to files.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      filename:</span>
+<span class="sd">        The path to the file where the data should be saved.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">plugin</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Plugin</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">save_function</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">flags</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Save operation.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          filename:</span>
+<span class="sd">            The path of the file where data should be saved.</span>
+<span class="sd">          plugin:</span>
+<span class="sd">            If saving Plugin&#39;s value, this should contain the plugin.</span>
+<span class="sd">          save_function:</span>
+<span class="sd">            A function to use when writing the file. Use when needing</span>
+<span class="sd">            some more complex saving instructions.</span>
+<span class="sd">          flags:</span>
+<span class="sd">            Operation&#39;s flags. No flag is set by default. Set</span>
+<span class="sd">            WILL_APPEND if needed to append to file instead of overwrite.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">filename</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">save_function</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">plugin</span><span class="p">:</span>
+                <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+                    <span class="n">function</span><span class="o">=</span><span class="n">partial</span><span class="p">(</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">save_to_file</span><span class="p">,</span>
+                        <span class="n">content</span><span class="o">=</span><span class="n">plugin</span><span class="p">,</span>
+                    <span class="p">),</span>
+                    <span class="n">flags</span><span class="o">=</span><span class="n">flags</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">function</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">save_to_file</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="n">flags</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">function</span><span class="o">=</span><span class="n">save_function</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="n">flags</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Save.save_to_file"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Save.save_to_file">[docs]</a>    <span class="k">def</span> <span class="nf">save_to_file</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">content</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">,</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span><span class="p">]</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Saves a string or plugin&#39;s content to a file.</span>
+
+<span class="sd">        Given the content (a string or a plugin), open the file and</span>
+<span class="sd">        write its contents. If WILL_APPEND was set, append to file</span>
+<span class="sd">        instead of overwrite.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          content:</span>
+<span class="sd">            A string or a Plugin with the data to be written.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">will_append</span><span class="p">:</span>
+            <span class="n">mode</span> <span class="o">=</span> <span class="s2">&quot;ab&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">mode</span> <span class="o">=</span> <span class="s2">&quot;wb&quot;</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="p">)</span> <span class="k">as</span> <span class="n">outfile</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span><span class="p">):</span>
+                <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">content</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">):</span>
+                <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="n">content</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="s2">&quot;utf-8&quot;</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="s2">&quot;utf-8&quot;</span><span class="p">))</span>
+            <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">b</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Save.append"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Save.append">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">append</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">plugin</span><span class="p">:</span> <span class="n">Plugin</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Save&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Append to file instead of overwrite.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          filename:</span>
+<span class="sd">            Path to the file to append to.</span>
+<span class="sd">          plugin:</span>
+<span class="sd">            The Plugin with the content to write.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          A Save object which will append data instead of overwrite.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">operation</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> <span class="n">plugin</span><span class="o">=</span><span class="n">plugin</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="n">Operation</span><span class="o">.</span><span class="n">WILL_APPEND</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">operation</span></div>
+
+<div class="viewcode-block" id="Save.body"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Save.body">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">body</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">append</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Save&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Save the entire HTTP body.</span>
+
+<span class="sd">        If you need to save the entire body instead of extracting some</span>
+<span class="sd">        data from it using plugins, use ``Save.body``. Given a filename,</span>
+<span class="sd">        and optionally a boolean ``append``, write the body&#39;s contents</span>
+<span class="sd">        into the file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          filename:</span>
+<span class="sd">            The path to the file where to write the data.</span>
+<span class="sd">          append:</span>
+<span class="sd">            A boolean which when True, will append to existing file</span>
+<span class="sd">            instead of overwriting it.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          A Save object which will save the response body.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">append</span><span class="p">:</span>
+            <span class="n">flags</span> <span class="o">=</span> <span class="n">Operation</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span> <span class="o">|</span> <span class="n">Operation</span><span class="o">.</span><span class="n">WILL_APPEND</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">flags</span> <span class="o">=</span> <span class="n">Operation</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span>
+
+        <span class="n">operation</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">flags</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">operation</span></div></div>
+
+
+<div class="viewcode-block" id="Print"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Print">[docs]</a><span class="k">class</span> <span class="nc">Print</span><span class="p">(</span><span class="n">Operation</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Operation that prints desired information.</span>
+
+<span class="sd">    When this Operation is executed, it will print each of its elements</span>
+<span class="sd">    in a new line.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      *args:</span>
+<span class="sd">        A list of Plugins and/or strings. The plugin&#39;s extracted values</span>
+<span class="sd">        will be printed.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">],</span>
+        <span class="n">flags</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="n">function</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Print Operation.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          *args:</span>
+<span class="sd">            Strings or Plugin objects to be printed.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">args</span> <span class="o">=</span> <span class="n">args</span>
+        <span class="k">if</span> <span class="n">function</span><span class="p">:</span>
+            <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+                <span class="n">function</span><span class="o">=</span><span class="n">function</span><span class="p">,</span>
+                <span class="n">flags</span><span class="o">=</span><span class="n">flags</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+                <span class="n">function</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">print_items</span><span class="p">,</span>
+                <span class="n">flags</span><span class="o">=</span><span class="n">flags</span><span class="p">,</span>
+            <span class="p">)</span>
+
+<div class="viewcode-block" id="Print.print_items"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Print.print_items">[docs]</a>    <span class="k">def</span> <span class="nf">print_items</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Prints the defined items.&quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">args</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot; = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">value</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="Print.__str__"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Print.__str__">[docs]</a>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns a string representation of the Print Operation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;(Print:&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">args</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span></div>
+
+<div class="viewcode-block" id="Print.body"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Print.body">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">body</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Print&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Classmethod to print the HTTP response body.&quot;&quot;&quot;</span>
+        <span class="n">operation</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">function</span><span class="o">=</span><span class="k">lambda</span> <span class="n">response</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span>
+                <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">HTTP response body:</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span>
+            <span class="p">),</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">Operation</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">operation</span></div>
+
+<div class="viewcode-block" id="Print.headers"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Print.headers">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">headers</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">headers</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Print&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Classmethod to print the HTTP response headers.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          headers:</span>
+<span class="sd">            A list of strings containing the headers that needs to be</span>
+<span class="sd">            printed.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">def</span> <span class="nf">print_headers</span><span class="p">(</span>
+            <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span><span class="p">,</span>
+            <span class="n">headers</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="sd">&quot;&quot;&quot;Prints headers from the response.</span>
+
+<span class="sd">            Given a response, and optionally a list of headers, print</span>
+<span class="sd">            those headers, or all the headers otherwise.</span>
+
+<span class="sd">            Args:</span>
+<span class="sd">              response:</span>
+<span class="sd">                The HTTP response received.</span>
+<span class="sd">              headers:</span>
+<span class="sd">                A list of strings with the desired headers.</span>
+
+<span class="sd">            &quot;&quot;&quot;</span>
+
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;HTTP response headers:&quot;</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">headers</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">header</span> <span class="ow">in</span> <span class="n">headers</span><span class="p">:</span>
+                    <span class="n">value</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">header</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">value</span><span class="p">:</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;: &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">header</span><span class="p">,</span> <span class="n">value</span><span class="p">]))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;: &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">]))</span>
+
+        <span class="n">operation</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">function</span><span class="o">=</span><span class="n">partial</span><span class="p">(</span><span class="n">print_headers</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">),</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">Operation</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">operation</span></div>
+
+<div class="viewcode-block" id="Print.cookies"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Print.cookies">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">cookies</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">cookies</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Print&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Classmethod to print the HTTP response cookies.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          cookies:</span>
+<span class="sd">            A list of strings containing the cookies that needs to be</span>
+<span class="sd">            printed.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">def</span> <span class="nf">print_cookies</span><span class="p">(</span>
+            <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span><span class="p">,</span>
+            <span class="n">cookies</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="sd">&quot;&quot;&quot;Prints cookies from the response.</span>
+
+<span class="sd">            Args:</span>
+<span class="sd">              response:</span>
+<span class="sd">                The HTTP response received.</span>
+<span class="sd">              cookies:</span>
+<span class="sd">                A list of strings with the desired cookies.</span>
+
+<span class="sd">            &quot;&quot;&quot;</span>
+
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;HTTP response cookies:&quot;</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">cookies</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">cookie</span> <span class="ow">in</span> <span class="n">cookies</span><span class="p">:</span>
+                    <span class="n">value</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">cookies</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">cookie</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">value</span><span class="p">:</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;: &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">cookie</span><span class="p">,</span> <span class="n">value</span><span class="p">]))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">cookies</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;: &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">]))</span>
+
+        <span class="n">operation</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">function</span><span class="o">=</span><span class="n">partial</span><span class="p">(</span><span class="n">print_cookies</span><span class="p">,</span> <span class="n">cookies</span><span class="o">=</span><span class="n">cookies</span><span class="p">),</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">Operation</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">operation</span></div></div>
+
+
+<div class="viewcode-block" id="Error"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Error">[docs]</a><span class="k">class</span> <span class="nc">Error</span><span class="p">(</span><span class="n">Operation</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Operation that will exit Raider and print the error message.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      message:</span>
+<span class="sd">        A string with the error message to be printed.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Error Operation.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          message:</span>
+<span class="sd">            A string with the error message to be displayed.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="n">message</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">function</span><span class="o">=</span><span class="k">lambda</span><span class="p">:</span> <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">message</span><span class="p">),</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="Error.__str__"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.Error.__str__">[docs]</a>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns a string representation of the Operation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;(Error:&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">message</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span></div></div>
+
+
+<div class="viewcode-block" id="NextStage"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.NextStage">[docs]</a><span class="k">class</span> <span class="nc">NextStage</span><span class="p">(</span><span class="n">Operation</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Operation defining the next stage.</span>
+
+<span class="sd">    Inside the Authentication object NextStage is used to define the</span>
+<span class="sd">    next step of the authentication process. It can also be used inside</span>
+<span class="sd">    &quot;action&quot; attributes of the other Operations to allow conditional</span>
+<span class="sd">    decision making.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      next_stage:</span>
+<span class="sd">        A string with the name of the next stage to be executed.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">next_stage</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the NextStage Operation.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          next_stage:</span>
+<span class="sd">            A string with the name of the next stage.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">next_stage</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">next_stage</span><span class="p">)</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">function</span><span class="o">=</span><span class="k">lambda</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">next_stage</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="NextStage.__str__"><a class="viewcode-back" href="../../dev/operations.html#raider.operations.NextStage.__str__">[docs]</a>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns a string representation of the Operation.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;(NextStage:&quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">next_stage</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span></div></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OWASP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>raider.plugins.basic &mdash; raider 0.2.2 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/assets/jsonview.bundle.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-needs/libs/html/datatables.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-needs/common.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-needs/layouts.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-needs/styles.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/sphinx-needs/modern.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/assets/jsonview.bundle.js"></script>
+        <script src="../../../_static/assets/jsonview_loader.js"></script>
+        <script src="../../../_static/sphinx-needs/libs/html/datatables.min.js"></script>
+        <script src="../../../_static/sphinx-needs/libs/html/datatables_loader.js"></script>
+        <script src="../../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> raider
+          </a>
+              <div class="version">
+                0.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../user/install.html">Installing Raider</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../user/architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../user/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../user/definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../user/faq.html">Frequently asked questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/special_variables.html">Special variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/flows.html">Flows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/attacks.html">Fuzzing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/operations.html">Operations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/api.html">User API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/api.html#internal-api-reference">Internal API reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">raider</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+      <li>raider.plugins.basic</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for raider.plugins.basic</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (C) 2022 DigeeX</span>
+<span class="c1">#</span>
+<span class="c1"># This program is free software: you can redistribute it and/or modify</span>
+<span class="c1"># it under the terms of the GNU General Public License as published by</span>
+<span class="c1"># the Free Software Foundation, either version 3 of the License, or</span>
+<span class="c1"># (at your option) any later version.</span>
+<span class="c1">#</span>
+<span class="c1"># This program is distributed in the hope that it will be useful,</span>
+<span class="c1"># but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1"># MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="c1"># GNU General Public License for more details.</span>
+<span class="c1">#</span>
+<span class="c1"># You should have received a copy of the GNU General Public License</span>
+<span class="c1"># along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+<span class="sd">&quot;&quot;&quot;Basic plugins.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">from</span> <span class="nn">base64</span> <span class="kn">import</span> <span class="n">b64encode</span>
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partial</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Union</span>
+
+<span class="kn">import</span> <span class="nn">hy</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+
+<span class="kn">from</span> <span class="nn">raider.plugins.common</span> <span class="kn">import</span> <span class="n">Plugin</span>
+<span class="kn">from</span> <span class="nn">raider.utils</span> <span class="kn">import</span> <span class="n">hy_dict_to_python</span><span class="p">,</span> <span class="n">match_tag</span><span class="p">,</span> <span class="n">parse_json_filter</span>
+
+
+<div class="viewcode-block" id="Regex"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Regex">[docs]</a><span class="k">class</span> <span class="nc">Regex</span><span class="p">(</span><span class="n">Plugin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plugin to extract something using regular expressions.</span>
+
+<span class="sd">    This plugin will match the regex provided, and extract the value</span>
+<span class="sd">    inside the first matched group . A group is the string that matched</span>
+<span class="sd">    inside the brackets.</span>
+
+<span class="sd">    For example if the regular expression is:</span>
+
+<span class="sd">    &quot;accessToken&quot;:&quot;([^&quot;]+)&quot;</span>
+
+<span class="sd">    and the text to match it against contains:</span>
+
+<span class="sd">    &quot;accessToken&quot;:&quot;0123456789abcdef&quot;</span>
+
+<span class="sd">    then only the string &quot;0123456789abcdef&quot; will be extracted and saved</span>
+<span class="sd">    in the &quot;value&quot; attribute.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      regex:</span>
+<span class="sd">        A string containing the regular expression to be matched.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">regex</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">function</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">str</span><span class="p">],</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">flags</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Plugin</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Regex Plugin.</span>
+
+<span class="sd">        Creates a Regex Plugin with the given regular expression, and</span>
+<span class="sd">        extracts the matched group given in the &quot;extract&quot; argument, or</span>
+<span class="sd">        the first matching group if not specified.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          name:</span>
+<span class="sd">            A string with the name of the Plugin.</span>
+<span class="sd">          regex:</span>
+<span class="sd">            A string containing the regular expression to be matched.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">function</span><span class="p">:</span>
+            <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+                <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+                <span class="n">function</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">extract_regex_from_response</span><span class="p">,</span>
+                <span class="n">flags</span><span class="o">=</span><span class="n">flags</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+                <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+                <span class="n">function</span><span class="o">=</span><span class="n">function</span><span class="p">,</span>
+                <span class="n">flags</span><span class="o">=</span><span class="n">flags</span><span class="p">,</span>
+            <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">regex</span> <span class="o">=</span> <span class="n">regex</span>
+
+<div class="viewcode-block" id="Regex.extract_regex_from_response"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Regex.extract_regex_from_response">[docs]</a>    <span class="k">def</span> <span class="nf">extract_regex_from_response</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Extracts regex from a HTTP response.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">extract_regex</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Regex.extract_regex_from_plugin"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Regex.extract_regex_from_plugin">[docs]</a>    <span class="k">def</span> <span class="nf">extract_regex_from_plugin</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Extracts regex from a Plugin.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">plugins</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">extract_regex</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">plugins</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+<div class="viewcode-block" id="Regex.extract_regex"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Regex.extract_regex">[docs]</a>    <span class="k">def</span> <span class="nf">extract_regex</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Extracts defined regular expression from a text.</span>
+
+<span class="sd">        Given a text to be searched for matches, return the string</span>
+<span class="sd">        inside the group defined in &quot;extract&quot; or the first group if it&#39;s</span>
+<span class="sd">        undefined.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          text:</span>
+<span class="sd">            A string containing the text to be searched for matches.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          A string with the match from the extracted group. Returns None</span>
+<span class="sd">          if there are no matches.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">regex</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">matches</span><span class="p">:</span>
+            <span class="n">groups</span> <span class="o">=</span> <span class="n">matches</span><span class="o">.</span><span class="n">groups</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">groups</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Regex </span><span class="si">%s</span><span class="s2">: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
+                <span class="s2">&quot;Regex </span><span class="si">%s</span><span class="s2"> not found in the response body&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+            <span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span></div>
+
+<div class="viewcode-block" id="Regex.from_plugin"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Regex.from_plugin">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_plugin</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">parent_plugin</span><span class="p">:</span> <span class="n">Plugin</span><span class="p">,</span> <span class="n">regex</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Regex&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Extracts Regex from another plugin&#39;s value.&quot;&quot;&quot;</span>
+        <span class="n">regex_plugin</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">regex</span><span class="p">,</span>
+            <span class="n">regex</span><span class="o">=</span><span class="n">regex</span><span class="p">,</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">Plugin</span><span class="o">.</span><span class="n">DEPENDS_ON_OTHER_PLUGINS</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">regex_plugin</span><span class="o">.</span><span class="n">plugins</span> <span class="o">=</span> <span class="p">[</span><span class="n">parent_plugin</span><span class="p">]</span>
+        <span class="n">regex_plugin</span><span class="o">.</span><span class="n">function</span> <span class="o">=</span> <span class="n">regex_plugin</span><span class="o">.</span><span class="n">extract_regex_from_plugin</span>
+        <span class="k">return</span> <span class="n">regex_plugin</span></div>
+
+<div class="viewcode-block" id="Regex.__str__"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Regex.__str__">[docs]</a>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns a string representation of the Plugin.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;Regex:&quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">regex</span></div></div>
+
+
+<div class="viewcode-block" id="Html"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Html">[docs]</a><span class="k">class</span> <span class="nc">Html</span><span class="p">(</span><span class="n">Plugin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plugin to extract something from an HTML tag.</span>
+
+<span class="sd">    This Plugin will find the HTML &quot;tag&quot; containing the specified</span>
+<span class="sd">    &quot;attributes&quot; and store the &quot;extract&quot; attribute of the matched tag</span>
+<span class="sd">    in its &quot;value&quot; attribute.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      tag:</span>
+<span class="sd">        A string defining the HTML tag to look for.</span>
+<span class="sd">      attributes:</span>
+<span class="sd">        A dictionary with attributes matching the desired HTML tag. The</span>
+<span class="sd">        keys in the dictionary are strings matching the tag&#39;s attributes,</span>
+<span class="sd">        and the values are treated as regular expressions, to help</span>
+<span class="sd">        match tags that don&#39;t have a static value.</span>
+<span class="sd">      extract:</span>
+<span class="sd">        A string defining the HTML tag&#39;s attribute that needs to be</span>
+<span class="sd">        extracted and stored inside &quot;value&quot;.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">tag</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">attributes</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="n">hy</span><span class="o">.</span><span class="n">HyKeyword</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
+        <span class="n">extract</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Html Plugin.</span>
+
+<span class="sd">        Creates a Html Plugin with the given &quot;tag&quot; and</span>
+<span class="sd">        &quot;attributes&quot;. Stores the &quot;extract&quot; attribute in the plugin&#39;s</span>
+<span class="sd">        &quot;value&quot;.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          name:</span>
+<span class="sd">            A string with the name of the Plugin.</span>
+<span class="sd">          tag:</span>
+<span class="sd">            A string with the HTML tag to look for.</span>
+<span class="sd">          attributes:</span>
+<span class="sd">            A hy dictionary with the attributes to look inside HTML</span>
+<span class="sd">            tags. The values of dictionary elements are treated as</span>
+<span class="sd">            regular expressions.</span>
+<span class="sd">          extract:</span>
+<span class="sd">            A string with the HTML tag attribute that needs to be</span>
+<span class="sd">            extracted and stored in the Plugin&#39;s object.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+            <span class="n">function</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">extract_html_tag</span><span class="p">,</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">Plugin</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tag</span> <span class="o">=</span> <span class="n">tag</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">attributes</span> <span class="o">=</span> <span class="n">hy_dict_to_python</span><span class="p">(</span><span class="n">attributes</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">extract</span> <span class="o">=</span> <span class="n">extract</span>
+
+<div class="viewcode-block" id="Html.extract_html_tag"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Html.extract_html_tag">[docs]</a>    <span class="k">def</span> <span class="nf">extract_html_tag</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Extract data from an HTML tag.</span>
+
+<span class="sd">        Given the HTML text, parses it, iterates through the tags, and</span>
+<span class="sd">        find the one matching the attributes. Then it stores the matched</span>
+<span class="sd">        &quot;value&quot; and returns it.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          text:</span>
+<span class="sd">            A string containing the HTML text to be processed.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          A string with the match as defined in the Plugin. Returns None</span>
+<span class="sd">          if there are no matches.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s2">&quot;html.parser&quot;</span><span class="p">)</span>
+        <span class="n">matches</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tag</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">matches</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">match_tag</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">attributes</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">extract</span><span class="p">)</span>
+
+        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Html filter </span><span class="si">%s</span><span class="s2">: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span></div>
+
+<div class="viewcode-block" id="Html.__str__"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Html.__str__">[docs]</a>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns a string representation of the Plugin.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">(</span>
+            <span class="s2">&quot;Html:&quot;</span>
+            <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">tag</span>
+            <span class="o">+</span> <span class="s2">&quot;:&quot;</span>
+            <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">attributes</span><span class="p">)</span>
+            <span class="o">+</span> <span class="s2">&quot;:&quot;</span>
+            <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">extract</span><span class="p">)</span>
+        <span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="Json"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Json">[docs]</a><span class="k">class</span> <span class="nc">Json</span><span class="p">(</span><span class="n">Plugin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plugin to extract a field from JSON.</span>
+
+<span class="sd">    The &quot;extract&quot; attribute is used to specify which field to store in</span>
+<span class="sd">    the &quot;value&quot;. Using the dot ``.`` character you can go deeper inside</span>
+<span class="sd">    the JSON object. To look inside an array, use square brackets</span>
+<span class="sd">    `[]`.</span>
+
+<span class="sd">    Keys with special characters should be written inside double quotes</span>
+<span class="sd">    ``&quot;``. Keep in mind that when written inside ``hyfiles``,</span>
+<span class="sd">    it&#39;ll already be between double quotes, so you&#39;ll have to escape</span>
+<span class="sd">    them with the backslash character ``\\``.</span>
+
+<span class="sd">    Examples:</span>
+
+<span class="sd">      ``env.production[0].field``</span>
+<span class="sd">      ``production.keys[1].x5c[0][1][0].&quot;with space&quot;[3]``</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      extract:</span>
+<span class="sd">        A string defining the location of the field that needs to be</span>
+<span class="sd">        extracted. For now this is still quite primitive, and cannot</span>
+<span class="sd">        access data from JSON arrays.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">extract</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">function</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="nb">str</span><span class="p">],</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">flags</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Plugin</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Json Plugin.</span>
+
+<span class="sd">        Creates the Json Plugin and extracts the specified field.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          name:</span>
+<span class="sd">            A string with the name of the Plugin.</span>
+<span class="sd">          extract:</span>
+<span class="sd">            A string with the location of the JSON field to extract.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">function</span><span class="p">:</span>
+            <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+                <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+                <span class="n">function</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">extract_json_from_response</span><span class="p">,</span>
+                <span class="n">flags</span><span class="o">=</span><span class="n">flags</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+                <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+                <span class="n">function</span><span class="o">=</span><span class="n">function</span><span class="p">,</span>
+                <span class="n">flags</span><span class="o">=</span><span class="n">flags</span><span class="p">,</span>
+            <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">extract</span> <span class="o">=</span> <span class="n">extract</span>
+
+<div class="viewcode-block" id="Json.extract_json_from_response"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Json.extract_json_from_response">[docs]</a>    <span class="k">def</span> <span class="nf">extract_json_from_response</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Extracts the json field from a HTTP response.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">extract_json_field</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Json.extract_json_from_plugin"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Json.extract_json_from_plugin">[docs]</a>    <span class="k">def</span> <span class="nf">extract_json_from_plugin</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Extracts the json field from a plugin.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">plugins</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">extract_json_field</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">plugins</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+<div class="viewcode-block" id="Json.extract_json_field"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Json.extract_json_field">[docs]</a>    <span class="k">def</span> <span class="nf">extract_json_field</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Extracts the JSON field from the text.</span>
+
+<span class="sd">        Given the JSON body as a string, extract the field and store it</span>
+<span class="sd">        in the Plugin&#39;s &quot;value&quot; attribute.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          text:</span>
+<span class="sd">            A string with the JSON body.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          A string with the result of extraction. If no such field is</span>
+<span class="sd">          found None will be returned.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+
+        <span class="n">json_filter</span> <span class="o">=</span> <span class="n">parse_json_filter</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">extract</span><span class="p">)</span>
+        <span class="n">is_valid</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">json_filter</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;[&quot;</span><span class="p">):</span>
+                <span class="n">index</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;[]&quot;</span><span class="p">))</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">index</span><span class="p">:</span>
+                    <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
+                        <span class="p">(</span>
+                            <span class="s2">&quot;JSON array index doesn&#39;t exist.&quot;</span><span class="p">,</span>
+                            <span class="s2">&quot;Cannot extract plugin&#39;s value.&quot;</span><span class="p">,</span>
+                        <span class="p">)</span>
+                    <span class="p">)</span>
+                    <span class="n">is_valid</span> <span class="o">=</span> <span class="kc">False</span>
+                    <span class="k">break</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">temp</span><span class="p">:</span>
+                    <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
+                        <span class="p">(</span>
+                            <span class="s2">&quot;Key &#39;</span><span class="si">%s</span><span class="s2">&#39; not found in the response body.&quot;</span><span class="p">,</span>
+                            <span class="s2">&quot;Cannot extract plugin&#39;s value.&quot;</span><span class="p">,</span>
+                        <span class="p">),</span>
+                        <span class="n">item</span><span class="p">,</span>
+                    <span class="p">)</span>
+                    <span class="n">is_valid</span> <span class="o">=</span> <span class="kc">False</span>
+                    <span class="k">break</span>
+
+        <span class="k">if</span> <span class="n">is_valid</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Json filter </span><span class="si">%s</span><span class="s2">: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span></div>
+
+<div class="viewcode-block" id="Json.from_plugin"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Json.from_plugin">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_plugin</span><span class="p">(</span>
+        <span class="bp">cls</span><span class="p">,</span> <span class="n">parent_plugin</span><span class="p">:</span> <span class="n">Plugin</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">extract</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Json&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Extracts the JSON field from another plugin&#39;s value.&quot;&quot;&quot;</span>
+        <span class="n">json_plugin</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+            <span class="n">extract</span><span class="o">=</span><span class="n">extract</span><span class="p">,</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">Plugin</span><span class="o">.</span><span class="n">DEPENDS_ON_OTHER_PLUGINS</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">json_plugin</span><span class="o">.</span><span class="n">plugins</span> <span class="o">=</span> <span class="p">[</span><span class="n">parent_plugin</span><span class="p">]</span>
+        <span class="n">json_plugin</span><span class="o">.</span><span class="n">function</span> <span class="o">=</span> <span class="n">json_plugin</span><span class="o">.</span><span class="n">extract_json_from_plugin</span>
+        <span class="k">return</span> <span class="n">json_plugin</span></div>
+
+<div class="viewcode-block" id="Json.__str__"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Json.__str__">[docs]</a>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns a string representation of the Plugin.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;Json:&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">extract</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="Variable"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Variable">[docs]</a><span class="k">class</span> <span class="nc">Variable</span><span class="p">(</span><span class="n">Plugin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plugin to extract the value of a variable.</span>
+
+<span class="sd">    For now only the username and password variables are supported.</span>
+<span class="sd">    Use this when supplying credentials to the web application.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Variable Plugin.</span>
+
+<span class="sd">        Creates a Variable object that will return the data from a</span>
+<span class="sd">        previously defined variable.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          name:</span>
+<span class="sd">            The name of the variable.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+            <span class="n">function</span><span class="o">=</span><span class="k">lambda</span> <span class="n">data</span><span class="p">:</span> <span class="n">data</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">],</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">Plugin</span><span class="o">.</span><span class="n">NEEDS_USERDATA</span><span class="p">,</span>
+        <span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="Command"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Command">[docs]</a><span class="k">class</span> <span class="nc">Command</span><span class="p">(</span><span class="n">Plugin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Runs a shell command and extract the output.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">command</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Command Plugin.</span>
+
+<span class="sd">        The specified command will be executed with os.popen() and the</span>
+<span class="sd">        output with the stripped last newline, will be saved inside the</span>
+<span class="sd">        value.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          name:</span>
+<span class="sd">            A unique identifier for the plugin.</span>
+<span class="sd">          command:</span>
+<span class="sd">            The command to be executed.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">command</span> <span class="o">=</span> <span class="n">command</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+            <span class="n">function</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">run_command</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="Command.run_command"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Command.run_command">[docs]</a>    <span class="k">def</span> <span class="nf">run_command</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Runs a command and returns its value.</span>
+
+<span class="sd">        Given a dictionary with the predefined variables, return the</span>
+<span class="sd">        value of the with the same name as the &quot;name&quot; attribute from</span>
+<span class="sd">        this Plugin.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          data:</span>
+<span class="sd">            A dictionary with the predefined variables.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          A string with the value of the variable found. None if no such</span>
+<span class="sd">          variable has been defined.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">popen</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">command</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span></div></div>
+
+
+<div class="viewcode-block" id="Prompt"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Prompt">[docs]</a><span class="k">class</span> <span class="nc">Prompt</span><span class="p">(</span><span class="n">Plugin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plugin to ask the user for an input.</span>
+
+<span class="sd">    Use this plugin when the value cannot be known in advance, for</span>
+<span class="sd">    example when asking for multi-factor authentication code that is</span>
+<span class="sd">    going to be sent over SMS.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Prompt Plugin.</span>
+
+<span class="sd">        Creates a Prompt Plugin which will ask the user&#39;s input to get</span>
+<span class="sd">        the Plugin&#39;s value.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          name:</span>
+<span class="sd">            A string containing the prompt asking the user for input.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">function</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">get_user_prompt</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Prompt.get_user_prompt"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Prompt.get_user_prompt">[docs]</a>    <span class="k">def</span> <span class="nf">get_user_prompt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Gets the value from user input.</span>
+
+<span class="sd">        Creates a prompt asking the user for input and stores the value</span>
+<span class="sd">        in the Plugin.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">while</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please provide the input value&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s2">&quot; = &quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span></div></div>
+
+
+<div class="viewcode-block" id="Cookie"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Cookie">[docs]</a><span class="k">class</span> <span class="nc">Cookie</span><span class="p">(</span><span class="n">Plugin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plugin to deal with HTTP cookies.</span>
+
+<span class="sd">    Use this Plugin when dealing with the cookies in the HTTP request.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">value</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">function</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">flags</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Plugin</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Cookie Plugin.</span>
+
+<span class="sd">        Creates a Cookie Plugin, either with predefined value, or by</span>
+<span class="sd">        using a function defining how the value should be generated on</span>
+<span class="sd">        runtime.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          name:</span>
+<span class="sd">            A string with the name of the Cookie.</span>
+<span class="sd">          value:</span>
+<span class="sd">            An optional string with the value of the Cookie in case it&#39;s</span>
+<span class="sd">            already known.</span>
+<span class="sd">          function:</span>
+<span class="sd">            A Callable function which is used to get the value of the</span>
+<span class="sd">            Cookie on runtime.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">function</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">flags</span> <span class="o">&amp;</span> <span class="n">Plugin</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span><span class="p">:</span>
+                <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+                    <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+                    <span class="n">function</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">extract_from_response</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="p">,</span>
+                    <span class="n">flags</span><span class="o">=</span><span class="n">flags</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+                    <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="p">,</span>
+                    <span class="n">flags</span><span class="o">=</span><span class="n">flags</span><span class="p">,</span>
+                <span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+                <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">function</span><span class="o">=</span><span class="n">function</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="n">flags</span>
+            <span class="p">)</span>
+
+<div class="viewcode-block" id="Cookie.extract_from_response"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Cookie.extract_from_response">[docs]</a>    <span class="k">def</span> <span class="nf">extract_from_response</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Returns the cookie with the specified name from the response.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">cookies</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Cookie.__str__"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Cookie.__str__">[docs]</a>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns a string representation of the cookie.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">({</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">})</span></div>
+
+<div class="viewcode-block" id="Cookie.regex"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Cookie.regex">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">regex</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">regex</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Cookie&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Extract the cookie using regular expressions.&quot;&quot;&quot;</span>
+
+        <span class="k">def</span> <span class="nf">extract_cookie_value_regex</span><span class="p">(</span>
+            <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span><span class="p">,</span>
+            <span class="n">regex</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="s2">&quot;str&quot;</span><span class="p">]:</span>
+            <span class="sd">&quot;&quot;&quot;Find the cookie value matching the given regex.&quot;&quot;&quot;</span>
+            <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">cookies</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+                    <span class="k">return</span> <span class="n">value</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="k">def</span> <span class="nf">extract_cookie_name_regex</span><span class="p">(</span>
+            <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span><span class="p">,</span>
+            <span class="n">regex</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="s2">&quot;str&quot;</span><span class="p">]:</span>
+            <span class="sd">&quot;&quot;&quot;Find the cookie name matching the given regex.&quot;&quot;&quot;</span>
+            <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">cookies</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+                    <span class="k">return</span> <span class="n">name</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="n">cookie</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">regex</span><span class="p">,</span>
+            <span class="n">function</span><span class="o">=</span><span class="n">partial</span><span class="p">(</span><span class="n">extract_cookie_value_regex</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="n">regex</span><span class="p">),</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">Plugin</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span> <span class="o">|</span> <span class="n">Plugin</span><span class="o">.</span><span class="n">NAME_NOT_KNOWN_IN_ADVANCE</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="n">cookie</span><span class="o">.</span><span class="n">name_function</span> <span class="o">=</span> <span class="n">partial</span><span class="p">(</span><span class="n">extract_cookie_name_regex</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="n">regex</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">cookie</span></div>
+
+<div class="viewcode-block" id="Cookie.from_plugin"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Cookie.from_plugin">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_plugin</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">parent_plugin</span><span class="p">:</span> <span class="n">Plugin</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Cookie&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Creates a Cookie from a Plugin.</span>
+
+<span class="sd">        Given another :class:`plugin &lt;raider.plugins.Plugin&gt;`, and a</span>
+<span class="sd">        name, create a :class:`cookie &lt;raider.plugins.Cookie&gt;`.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          name:</span>
+<span class="sd">            The cookie name to use.</span>
+<span class="sd">          plugin:</span>
+<span class="sd">            The plugin which will contain the value we need.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          A Cookie object with the name and the plugin&#39;s value.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">cookie</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+            <span class="n">value</span><span class="o">=</span><span class="n">parent_plugin</span><span class="o">.</span><span class="n">value</span><span class="p">,</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">Plugin</span><span class="o">.</span><span class="n">DEPENDS_ON_OTHER_PLUGINS</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">cookie</span></div></div>
+
+
+<div class="viewcode-block" id="Header"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Header">[docs]</a><span class="k">class</span> <span class="nc">Header</span><span class="p">(</span><span class="n">Plugin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plugin to deal with HTTP headers.</span>
+
+<span class="sd">    Use this Plugin when dealing with the headers in the HTTP request.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">value</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">function</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">flags</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Plugin</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Header Plugin.</span>
+
+<span class="sd">        Creates a Header Plugin, either with predefined value, or by</span>
+<span class="sd">        using a function defining how the value should be generated on</span>
+<span class="sd">        runtime.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          name:</span>
+<span class="sd">            A string with the name of the Header.</span>
+<span class="sd">          value:</span>
+<span class="sd">            An optional string with the value of the Header in case it&#39;s</span>
+<span class="sd">            already known.</span>
+<span class="sd">          function:</span>
+<span class="sd">            A Callable function which is used to get the value of the</span>
+<span class="sd">            Header on runtime.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">function</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">flags</span> <span class="o">&amp;</span> <span class="n">Plugin</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span><span class="p">:</span>
+                <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+                    <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+                    <span class="n">function</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">extract_from_response</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="p">,</span>
+                    <span class="n">flags</span><span class="o">=</span><span class="n">flags</span><span class="p">,</span>
+                <span class="p">)</span>
+
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+                    <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+                    <span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="p">,</span>
+                    <span class="n">flags</span><span class="o">=</span><span class="n">flags</span><span class="p">,</span>
+                <span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+                <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">function</span><span class="o">=</span><span class="n">function</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="n">flags</span>
+            <span class="p">)</span>
+
+<div class="viewcode-block" id="Header.extract_from_response"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Header.extract_from_response">[docs]</a>    <span class="k">def</span> <span class="nf">extract_from_response</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Returns the header with the specified name from the response.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Header.__str__"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Header.__str__">[docs]</a>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Returns a string representation of the Plugin.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">({</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">})</span></div>
+
+<div class="viewcode-block" id="Header.regex"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Header.regex">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">regex</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">regex</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Header&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Extract the header using regular expressions.&quot;&quot;&quot;</span>
+
+        <span class="k">def</span> <span class="nf">extract_header_value_regex</span><span class="p">(</span>
+            <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span><span class="p">,</span>
+            <span class="n">regex</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="s2">&quot;str&quot;</span><span class="p">]:</span>
+            <span class="sd">&quot;&quot;&quot;Find the header value matching the given regex.&quot;&quot;&quot;</span>
+            <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+                    <span class="k">return</span> <span class="n">value</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="k">def</span> <span class="nf">extract_header_name_regex</span><span class="p">(</span>
+            <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span><span class="p">,</span>
+            <span class="n">regex</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="s2">&quot;str&quot;</span><span class="p">]:</span>
+            <span class="sd">&quot;&quot;&quot;Find the header name matching the given regex.&quot;&quot;&quot;</span>
+            <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+                    <span class="k">return</span> <span class="n">name</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="n">header</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">regex</span><span class="p">,</span>
+            <span class="n">function</span><span class="o">=</span><span class="n">partial</span><span class="p">(</span><span class="n">extract_header_value_regex</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="n">regex</span><span class="p">),</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">Plugin</span><span class="o">.</span><span class="n">NEEDS_RESPONSE</span> <span class="o">|</span> <span class="n">Plugin</span><span class="o">.</span><span class="n">NAME_NOT_KNOWN_IN_ADVANCE</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="n">header</span><span class="o">.</span><span class="n">name_function</span> <span class="o">=</span> <span class="n">partial</span><span class="p">(</span><span class="n">extract_header_name_regex</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="n">regex</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">header</span></div>
+
+<div class="viewcode-block" id="Header.basicauth"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Header.basicauth">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">basicauth</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">username</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">password</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Header&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Creates a basic authentication header.</span>
+
+<span class="sd">        Given the username and the password for the basic</span>
+<span class="sd">        authentication, returns the Header object with the proper value.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          username:</span>
+<span class="sd">            A string with the basic authentication username.</span>
+<span class="sd">          password:</span>
+<span class="sd">            A string with the basic authentication password.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          A Header object with the encoded basic authentication string.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">encoded</span> <span class="o">=</span> <span class="n">b64encode</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">])</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">))</span>
+        <span class="n">header</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="s2">&quot;Authorization&quot;</span><span class="p">,</span> <span class="s2">&quot;Basic &quot;</span> <span class="o">+</span> <span class="n">encoded</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">header</span></div>
+
+<div class="viewcode-block" id="Header.bearerauth"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Header.bearerauth">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">bearerauth</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">access_token</span><span class="p">:</span> <span class="n">Plugin</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Header&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Creates a bearer authentication header.</span>
+
+<span class="sd">        Given the access_token as a Plugin, extracts its value and</span>
+<span class="sd">        returns a Header object with the correct value to be passed as</span>
+<span class="sd">        the Bearer Authorization string in the Header.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          access_token:</span>
+<span class="sd">            A Plugin containing the value of the token to use.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          A Header object with the proper bearer authentication string.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">header</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Authorization&quot;</span><span class="p">,</span>
+            <span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">flags</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+            <span class="n">function</span><span class="o">=</span><span class="k">lambda</span><span class="p">:</span> <span class="s2">&quot;Bearer &quot;</span> <span class="o">+</span> <span class="n">access_token</span><span class="o">.</span><span class="n">value</span>
+            <span class="k">if</span> <span class="n">access_token</span><span class="o">.</span><span class="n">value</span>
+            <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">header</span></div>
+
+<div class="viewcode-block" id="Header.from_plugin"><a class="viewcode-back" href="../../../dev/plugins.html#raider.plugins.basic.Header.from_plugin">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_plugin</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">parent_plugin</span><span class="p">:</span> <span class="n">Plugin</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Header&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Creates a Header from a Plugin.</span>
+
+<span class="sd">        Given another :class:`plugin &lt;raider.plugins.Plugin&gt;`, and a</span>
+<span class="sd">        name, create a :class:`header &lt;raider.plugins.Header&gt;`.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          name:</span>
+<span class="sd">            The header name to use.</span>
+<span class="sd">          plugin:</span>
+<span class="sd">            The plugin which will contain the value we need.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          A Header object with the name and the plugin&#39;s value.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">header</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+            <span class="n">value</span><span class="o">=</span><span class="n">parent_plugin</span><span class="o">.</span><span class="n">value</span><span class="p">,</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">Plugin</span><span class="o">.</span><span class="n">DEPENDS_ON_OTHER_PLUGINS</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">header</span><span class="o">.</span><span class="n">plugins</span> <span class="o">=</span> <span class="p">[</span><span class="n">parent_plugin</span><span class="p">]</span>
+        <span class="n">header</span><span class="o">.</span><span class="n">function</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="n">header</span><span class="o">.</span><span class="n">plugins</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
+        <span class="k">return</span> <span class="n">header</span></div></div>
+
+
+<span class="k">class</span> <span class="nc">File</span><span class="p">(</span><span class="n">Plugin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plugin used to upload files.</span>
+
+<span class="sd">    Use this plugin when needing to upload a file.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">function</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">flags</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the File Plugin.</span>
+
+<span class="sd">        Creates a File Plugin which will set its value to the contents</span>
+<span class="sd">        of the file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          path:</span>
+<span class="sd">            A string containing the file path.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">path</span> <span class="o">=</span> <span class="n">path</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">function</span><span class="p">:</span>
+            <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">path</span><span class="p">,</span> <span class="n">function</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">read_file</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="n">flags</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">path</span><span class="p">,</span> <span class="n">function</span><span class="o">=</span><span class="n">function</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="n">flags</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">read_file</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bytes</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Sets the plugin&#39;s value to the file content.&quot;&quot;&quot;</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">finput</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">finput</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">replace</span><span class="p">(</span>
+        <span class="bp">cls</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">old_value</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">new_value</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">]</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;File&quot;</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Read a file and replace strings with new values.&quot;&quot;&quot;</span>
+
+        <span class="k">def</span> <span class="nf">replace_string</span><span class="p">(</span>
+            <span class="n">original</span><span class="p">:</span> <span class="nb">bytes</span><span class="p">,</span> <span class="n">old</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">new</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">]</span>
+        <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bytes</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">new</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">):</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">new</span><span class="o">.</span><span class="n">value</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="kc">None</span>
+                <span class="k">return</span> <span class="n">original</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span>
+                    <span class="n">old</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">),</span> <span class="n">new</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+                <span class="p">)</span>
+            <span class="k">return</span> <span class="n">original</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span>
+                <span class="n">old</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">new</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+            <span class="p">)</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">finput</span><span class="p">:</span>
+            <span class="n">file_contents</span> <span class="o">=</span> <span class="n">finput</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+        <span class="n">file_replace_plugin</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span>
+            <span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="p">,</span>
+            <span class="n">function</span><span class="o">=</span><span class="n">partial</span><span class="p">(</span>
+                <span class="n">replace_string</span><span class="p">,</span>
+                <span class="n">original</span><span class="o">=</span><span class="n">file_contents</span><span class="p">,</span>
+                <span class="n">old</span><span class="o">=</span><span class="n">old_value</span><span class="p">,</span>
+                <span class="n">new</span><span class="o">=</span><span class="n">new_value</span><span class="p">,</span>
+            <span class="p">),</span>
+            <span class="n">flags</span><span class="o">=</span><span class="n">Plugin</span><span class="o">.</span><span class="n">DEPENDS_ON_OTHER_PLUGINS</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">new_value</span><span class="p">,</span> <span class="n">Plugin</span><span class="p">):</span>
+            <span class="n">file_replace_plugin</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_value</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">file_replace_plugin</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OWASP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

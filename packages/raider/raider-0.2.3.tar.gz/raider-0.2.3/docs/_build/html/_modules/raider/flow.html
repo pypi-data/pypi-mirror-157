@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>raider.flow &mdash; raider 0.2.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/assets/jsonview.bundle.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/libs/html/datatables.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/common.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/layouts.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/styles.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/modern.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/assets/jsonview.bundle.js"></script>
+        <script src="../../_static/assets/jsonview_loader.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/datatables.min.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> raider
+          </a>
+              <div class="version">
+                0.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user/install.html">Installing Raider</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/faq.html">Frequently asked questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/special_variables.html">Special variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/flows.html">Flows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/attacks.html">Fuzzing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/operations.html">Operations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/api.html">User API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/api.html#internal-api-reference">Internal API reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">raider</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>raider.flow</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for raider.flow</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (C) 2022 DigeeX</span>
+<span class="c1">#</span>
+<span class="c1"># This program is free software: you can redistribute it and/or modify</span>
+<span class="c1"># it under the terms of the GNU General Public License as published by</span>
+<span class="c1"># the Free Software Foundation, either version 3 of the License, or</span>
+<span class="c1"># (at your option) any later version.</span>
+<span class="c1">#</span>
+<span class="c1"># This program is distributed in the hope that it will be useful,</span>
+<span class="c1"># but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1"># MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="c1"># GNU General Public License for more details.</span>
+<span class="c1">#</span>
+<span class="c1"># You should have received a copy of the GNU General Public License</span>
+<span class="c1"># along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+
+<span class="sd">&quot;&quot;&quot;Flow class holding the information exchanged between server and client.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
+
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="kn">from</span> <span class="nn">raider.config</span> <span class="kn">import</span> <span class="n">Config</span>
+<span class="kn">from</span> <span class="nn">raider.operations</span> <span class="kn">import</span> <span class="n">Operation</span>
+<span class="kn">from</span> <span class="nn">raider.plugins.common</span> <span class="kn">import</span> <span class="n">Plugin</span>
+<span class="kn">from</span> <span class="nn">raider.request</span> <span class="kn">import</span> <span class="n">Request</span>
+<span class="kn">from</span> <span class="nn">raider.user</span> <span class="kn">import</span> <span class="n">User</span>
+
+
+<div class="viewcode-block" id="Flow"><a class="viewcode-back" href="../../dev/flows.html#raider.flow.Flow">[docs]</a><span class="k">class</span> <span class="nc">Flow</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Class dealing with the information exchange from HTTP communication.</span>
+
+<span class="sd">    A Flow object in Raider defines all the information about one single</span>
+<span class="sd">    HTTP information exchange. It has a ``name``, contains one</span>
+<span class="sd">    ``request``, the ``response``, the ``outputs`` that needs to be</span>
+<span class="sd">    extracted from the response, and a list of ``operations`` to be run</span>
+<span class="sd">    when the exchange is over.</span>
+
+<span class="sd">    Flow objects are used as states in the :class:`Authentication</span>
+<span class="sd">    &lt;raider.authentication.Authentication&gt;` class to define the</span>
+<span class="sd">    authentication process as a finite state machine.</span>
+
+<span class="sd">    It&#39;s also used in the :class:`Functions</span>
+<span class="sd">    &lt;raider.functions.Functions&gt;` class to run arbitrary actions when it</span>
+<span class="sd">    doesn&#39;t affect the authentication state.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">      name:</span>
+<span class="sd">        A string used as a unique identifier for the defined Flow.</span>
+<span class="sd">      request:</span>
+<span class="sd">        A :class:`Request &lt;raider.request.Request&gt;` object detailing the</span>
+<span class="sd">        HTTP request with its elements.</span>
+<span class="sd">      response:</span>
+<span class="sd">        A :class:`requests.model.Response` object. It&#39;s empty until the</span>
+<span class="sd">        request is sent. When the HTTP response arrives, it&#39;s stored</span>
+<span class="sd">        here.</span>
+<span class="sd">      outputs:</span>
+<span class="sd">        A list of :class:`Plugin &lt;raider.plugins.Plugin&gt;` objects</span>
+<span class="sd">        detailing the pieces of information to be extracted from the</span>
+<span class="sd">        response. Those will be later available for other Flow objects.</span>
+<span class="sd">      operations:</span>
+<span class="sd">        A list of :class:`Operation &lt;raider.operations.Operation&gt;`</span>
+<span class="sd">        objects to be executed after the response is received and</span>
+<span class="sd">        outputs are extracted. Should contain a :class:`NextStage</span>
+<span class="sd">        &lt;raider.operations.NextStage&gt;` operation if another Flow is</span>
+<span class="sd">        expected.</span>
+<span class="sd">      logger:</span>
+<span class="sd">        A :class:`logging.RootLogger` object used for debugging.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">request</span><span class="p">:</span> <span class="n">Request</span><span class="p">,</span>
+        <span class="n">outputs</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Plugin</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">operations</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Operation</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Initializes the Flow object.</span>
+
+<span class="sd">        Creates the Flow object with the associated Request, the outputs</span>
+<span class="sd">        to be extracted, and the operations to be run upon completion.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          name:</span>
+<span class="sd">            A string with a unique identifier for this Flow.</span>
+<span class="sd">          request:</span>
+<span class="sd">            A Request object associated with this Flow.</span>
+<span class="sd">          outputs:</span>
+<span class="sd">            A list of Plugins to be used for extracting data from the</span>
+<span class="sd">            response.</span>
+<span class="sd">          operations:</span>
+<span class="sd">            A list of Operations to be run after the response is</span>
+<span class="sd">            received.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">outputs</span> <span class="o">=</span> <span class="n">outputs</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">operations</span> <span class="o">=</span> <span class="n">operations</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">request</span> <span class="o">=</span> <span class="n">request</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Response</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Flow.execute"><a class="viewcode-back" href="../../dev/flows.html#raider.flow.Flow.execute">[docs]</a>    <span class="k">def</span> <span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user</span><span class="p">:</span> <span class="n">User</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">Config</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Sends the request and extracts the outputs.</span>
+
+<span class="sd">        Given the user in context and the global Raider configuration,</span>
+<span class="sd">        sends the HTTP request and extracts the defined outputs.</span>
+
+<span class="sd">        Iterates through the defined outputs in the Flow object, and</span>
+<span class="sd">        extracts the data from the HTTP response, saving it in the</span>
+<span class="sd">        respective :class:`Plugin &lt;raider.plugins.Plugin&gt;` object.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          user:</span>
+<span class="sd">            An object containing all the user specific data relevant for</span>
+<span class="sd">            this action.</span>
+<span class="sd">          config:</span>
+<span class="sd">            The global Raider configuration.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">config</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">outputs</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">output</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">outputs</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">output</span><span class="o">.</span><span class="n">needs_response</span><span class="p">:</span>
+                    <span class="n">output</span><span class="o">.</span><span class="n">extract_value_from_response</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">response</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">output</span><span class="o">.</span><span class="n">name_not_known_in_advance</span><span class="p">:</span>
+                        <span class="n">output</span><span class="o">.</span><span class="n">extract_name_from_response</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">response</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="n">output</span><span class="o">.</span><span class="n">depends_on_other_plugins</span><span class="p">:</span>
+                    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">output</span><span class="o">.</span><span class="n">plugins</span><span class="p">:</span>
+                        <span class="n">item</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+                    <span class="n">output</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+<div class="viewcode-block" id="Flow.get_plugin_values"><a class="viewcode-back" href="../../dev/flows.html#raider.flow.Flow.get_plugin_values">[docs]</a>    <span class="k">def</span> <span class="nf">get_plugin_values</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user</span><span class="p">:</span> <span class="n">User</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Given a user, get the plugins&#39; values from it.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">          user:</span>
+<span class="sd">            A :class:`User &lt;raider.user.User&gt;` object with the userdata.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">flow_inputs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">list_inputs</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">flow_inputs</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">plugin</span> <span class="ow">in</span> <span class="n">flow_inputs</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                <span class="n">plugin</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span></div>
+
+<div class="viewcode-block" id="Flow.run_operations"><a class="viewcode-back" href="../../dev/flows.html#raider.flow.Flow.run_operations">[docs]</a>    <span class="k">def</span> <span class="nf">run_operations</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot;Runs the defined :class:`operations &lt;raider.operations.Operation&gt;`.</span>
+
+<span class="sd">        Iterates through the defined ``operations`` and executes them</span>
+<span class="sd">        one by one. Iteration stops when the first :class:`NextStage</span>
+<span class="sd">        &lt;raider.operations.NextStage&gt;` operations is encountered.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">          A string with the name of the next stage to run or None.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">next_stage</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">operations</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">operations</span><span class="p">:</span>
+                <span class="n">next_stage</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">response</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">next_stage</span><span class="p">:</span>
+                    <span class="k">break</span>
+
+        <span class="k">return</span> <span class="n">next_stage</span></div></div>
+
+
+<div class="viewcode-block" id="AuthFlow"><a class="viewcode-back" href="../../dev/flows.html#raider.flow.AuthFlow">[docs]</a><span class="k">class</span> <span class="nc">AuthFlow</span><span class="p">(</span><span class="n">Flow</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Flow object that affects authentication state.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">request</span><span class="p">:</span> <span class="n">Request</span><span class="p">,</span>
+        <span class="n">outputs</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Plugin</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">operations</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Operation</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">request</span><span class="o">=</span><span class="n">request</span><span class="p">,</span> <span class="n">outputs</span><span class="o">=</span><span class="n">outputs</span><span class="p">,</span> <span class="n">operations</span><span class="o">=</span><span class="n">operations</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OWASP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

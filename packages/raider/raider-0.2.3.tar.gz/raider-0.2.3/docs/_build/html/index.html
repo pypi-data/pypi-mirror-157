@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Raider’s documentation! &mdash; raider 0.2.2 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/assets/jsonview.bundle.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx-needs/libs/html/datatables.min.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx-needs/common.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx-needs/layouts.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx-needs/styles.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx-needs/modern.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/assets/jsonview.bundle.js"></script>
+        <script src="_static/assets/jsonview_loader.js"></script>
+        <script src="_static/sphinx-needs/libs/html/datatables.min.js"></script>
+        <script src="_static/sphinx-needs/libs/html/datatables_loader.js"></script>
+        <script src="_static/sphinx-needs/libs/html/sphinx_needs_collapse.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installing Raider" href="user/install.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> raider
+          </a>
+              <div class="version">
+                0.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user/install.html">Installing Raider</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user/architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user/definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user/faq.html">Frequently asked questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dev/special_variables.html">Special variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev/flows.html">Flows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev/attacks.html">Fuzzing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev/plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev/operations.html">Operations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dev/api.html">User API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev/api.html#internal-api-reference">Internal API reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">raider</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>Welcome to Raider’s documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="welcome-to-raider-s-documentation">
+<h1>Welcome to Raider’s documentation!<a class="headerlink" href="#welcome-to-raider-s-documentation" title="Permalink to this heading"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This documentation and the entire Raider framework is still work in
+progress. Many things are not finished, stuff is missing, other stuff
+is not working as expected, and so on…  Meanwhile, <a class="reference external" href="https://github.com/OWASP/raider">read the source
+code</a> to understand better how
+Raider works, <a class="reference external" href="https://github.com/OWASP/raider/issues">open Github issues</a> if you find some
+mistakes, or come <a class="reference external" href="https://community.raiderauth.com/">talk to us in the community forum</a>.</p>
+</div>
+<img alt="_images/logo.png" src="_images/logo.png" />
+<p><strong>Raider</strong> is a framework designed to test <a class="reference internal" href="user/definitions.html#term-Authentication"><span class="xref std std-term">authentication</span></a> for
+web applications. While web proxies like <a class="reference external" href="https://www.zaproxy.org/">ZAProxy</a> and <a class="reference external" href="https://portswigger.net/burp">Burpsuite</a> allow authenticated tests, they don’t
+provide features to test the authentication process itself,
+i.e. manipulating the relevant input fields to identify broken
+authentication. Most authentication bugs in the wild have been found
+by manually testing it or writing custom scripts that replicate the
+behaviour. <strong>Raider</strong> aims to make testing easier, by providing the
+interface to interact with all important elements found in modern
+authentication systems.</p>
+<section id="how-does-raider-work">
+<h2>How does Raider work?<a class="headerlink" href="#how-does-raider-work" title="Permalink to this heading"></a></h2>
+<p><strong>Raider</strong> treats the authentication as a <a class="reference internal" href="user/definitions.html#term-Finite-state-machine"><span class="xref std std-term">finite state
+machine</span></a>. Each authentication step is a different <a class="reference internal" href="user/definitions.html#term-Stage"><span class="xref std std-term">stage</span></a>, with
+its own inputs and outputs. Those can be cookies, headers, CSRF
+tokens, or other pieces of information.</p>
+<p>Each application needs its own configuration directory for <strong>Raider</strong>
+to work. The configuration is written in <a class="reference external" href="https://docs.hylang.org/">Hylang</a>. The language choice was done for
+multiple reasons, mainly because it’s a Lisp dialect embedded in
+Python.</p>
+<p><a class="reference internal" href="user/faq.html#why-lisp"><span class="std std-ref">Using Lisp was necessarily</span></a> since sometimes the
+authentication can get quite complex, and using a static configuration
+file would’ve not been enough to cover all the details. Lisp makes it
+easy to combine code and data, which is exactly what was needed here.</p>
+<p>By using a real programming language as a configuration file gives
+<strong>Raider</strong> a lot of power, and <a class="reference internal" href="user/faq.html#faq-eval"><span class="std std-ref">with great power comes great
+responsibility</span></a>. Theoretically one can write entire malware inside the
+application configuration file, which means you should be careful
+what’s being executed, and <strong>not to use configuration files from
+sources you don’t trust</strong>. <strong>Raider</strong> will evaluate everything inside
+the <code class="docutils literal notranslate"><span class="pre">.hy</span></code> files, which means if you’re not careful you could shoot
+yourself in the foot and break something on your system.</p>
+</section>
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this heading"></a></h2>
+<p><strong>Raider</strong> has the goal to support most of the modern authentication
+systems, and here are some features that other tools don’t offer:</p>
+<ul class="simple">
+<li><p>Unlimited authentication steps</p></li>
+<li><p>Unlimited inputs/outputs for each step</p></li>
+<li><p>Ability to conditionally decide the next step</p></li>
+<li><p>Running arbitrary operations when receiving the response</p></li>
+<li><p>Easy to write custom operations and plugins</p></li>
+</ul>
+</section>
+<section id="raider-s-philosophy">
+<h2>Raider’s philosophy<a class="headerlink" href="#raider-s-philosophy" title="Permalink to this heading"></a></h2>
+<p><strong>Raider</strong> was developed with the following goals:</p>
+<ul class="simple">
+<li><p>To abstract authentication concepts using Python objects.</p></li>
+<li><p>To support most modern web authentication features.</p></li>
+<li><p>To make it easy to add new features for users.</p></li>
+</ul>
+<p>And if you’re looking at the code and willing to contribute, keep
+those in mind:</p>
+<ul class="simple">
+<li><p>The simpler and cleaner the code, the better.</p></li>
+<li><p>New features should be implemented as <a class="reference internal" href="user/definitions.html#term-Plugin"><span class="xref std std-term">Plugins</span></a> and
+<a class="reference internal" href="user/definitions.html#term-Operation"><span class="xref std std-term">Operations</span></a> if possible.</p></li>
+<li><p>The <a class="reference internal" href="user/definitions.html#term-hyfiles"><span class="xref std std-term">hyfiles</span></a> should stay as minimal as possible, while still
+allowing the user to get creative. In the future parts of this code
+could be autogenerated.</p></li>
+</ul>
+</section>
+<section id="user-guide">
+<h2>User guide<a class="headerlink" href="#user-guide" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user/install.html">Installing Raider</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user/architecture.html">Architecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user/architecture.html#abstracting-the-authentication-process">Abstracting the authentication process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/architecture.html#basic-concepts-in-raider">Basic concepts in Raider</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user/tutorials.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user/tutorials.html#preparation">Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/tutorials.html#getting-the-access-token">Getting the access token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/tutorials.html#multi-factor-authentication">Multi-factor authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/tutorials.html#login">Login</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/tutorials.html#getting-the-csrf-token">Getting the CSRF token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/tutorials.html#finishing-configuration">Finishing configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/tutorials.html#running-raider">Running Raider</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user/definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user/faq.html">Frequently asked questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user/faq.html#what-s-this-and-why-should-i-care">What’s this and why should I care?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/faq.html#how-does-it-work">How does it work?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/faq.html#you-re-telling-me-it-ll-evaluate-all-user-input-isn-t-that-unsafe">You’re telling me it’ll evaluate all user input? Isn’t that unsafe?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/faq.html#how-do-i-run-this">How do I run this?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/faq.html#do-i-need-to-know-python-and-hylang-in-order-to-use-raider">Do I need to know Python and Hylang in order to use <strong>Raider</strong>?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/faq.html#why-lisp">Why Lisp?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/faq.html#why-is-raider-using-hylang">Why is Raider using Hylang?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/faq.html#does-it-work-on-windows">Does it work on Windows?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/faq.html#what-about-macos-bsd-etc">What about macOS? BSD? etc?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/faq.html#how-can-i-contribute">How can I contribute?</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dev/special_variables.html">Special variables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dev/special_variables.html#users">_users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/special_variables.html#base-url">_base_url</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev/flows.html">Flows</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dev/flows.html#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev/attacks.html">Fuzzing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev/plugins.html">Plugins</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dev/plugins.html#common">Common</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/plugins.html#basic">Basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/plugins.html#modifiers">Modifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/plugins.html#parsers">Parsers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/plugins.html#writing-custom-plugins">Writing custom plugins</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev/operations.html">Operations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dev/operations.html#nextstage">NextStage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/operations.html#print">Print</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/operations.html#save">Save</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/operations.html#error">Error</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/operations.html#http">Http</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/operations.html#grep">Grep</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/operations.html#writing-custom-operations">Writing custom operations</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dev/api.html">User API reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dev/api.html#main-raider-class">Main Raider class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/api.html#module-raider.config">Config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/api.html#module-raider.application">Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/api.html#module-raider.authentication">Authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/api.html#module-raider.functions">Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev/api.html#internal-api-reference">Internal API reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dev/api.html#module-raider.request">Request</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/api.html#module-raider.structures">Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/api.html#module-raider.user">User</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/api.html#module-raider.utils">utils</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="user/install.html" class="btn btn-neutral float-right" title="Installing Raider" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OWASP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

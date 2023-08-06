@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorials &mdash; raider 0.2.2 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/assets/jsonview.bundle.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sphinx-needs/libs/html/datatables.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sphinx-needs/common.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sphinx-needs/layouts.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sphinx-needs/styles.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sphinx-needs/modern.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/assets/jsonview.bundle.js"></script>
+        <script src="../_static/assets/jsonview_loader.js"></script>
+        <script src="../_static/sphinx-needs/libs/html/datatables.min.js"></script>
+        <script src="../_static/sphinx-needs/libs/html/datatables_loader.js"></script>
+        <script src="../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Definitions" href="definitions.html" />
+    <link rel="prev" title="Architecture" href="architecture.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> raider
+          </a>
+              <div class="version">
+                0.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installing Raider</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#preparation">Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-the-access-token">Getting the access token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#multi-factor-authentication">Multi-factor authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#login">Login</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-the-csrf-token">Getting the CSRF token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#finishing-configuration">Finishing configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running-raider">Running Raider</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently asked questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev/special_variables.html">Special variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/flows.html">Flows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/attacks.html">Fuzzing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/operations.html">Operations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev/api.html">User API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/api.html#internal-api-reference">Internal API reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">raider</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Tutorials</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/user/tutorials.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tutorials">
+<span id="id1"></span><h1>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this heading"></a></h1>
+<p>This section will include tutorials with examples to give you a
+starting point when building your own configuration.</p>
+<section id="preparation">
+<h2>Preparation<a class="headerlink" href="#preparation" title="Permalink to this heading"></a></h2>
+<p>Before you can use <strong>Raider</strong>, you have to set up the
+<a class="reference internal" href="definitions.html#term-Authentication"><span class="xref std std-term">authentication</span></a> inside <a class="reference internal" href="definitions.html#term-hyfiles"><span class="xref std std-term">hyfiles</span></a>. To do that, you’ll
+probably need to use a web proxy (<a class="reference external" href="https://portswigger.net/burp">BurpSuite</a>, <a class="reference external" href="https://www.zaproxy.org/">ZAProxy</a>, <a class="reference external" href="https://mitmproxy.org/">mitmproxy</a>,
+etc…)  to see the <a class="reference internal" href="definitions.html#term-Request"><span class="xref std std-term">requests</span></a> the application is
+generating, and identify all the important inputs and outputs for each
+request.</p>
+<p>After the traffic was captured, there will probably be lots of HTTP
+requests that are irrelevant to the authentication. Start by removing
+all static files (.png, .js, .pdf, etc…). When you’re left with a
+fewer requests to deal with, it’s time to dive deeper and understand
+how the authentication works.</p>
+<p>At this point we assume <em>you already know</em> the basics of Python and
+Hylang so this documentation will not cover information that can be
+found somewhere else.</p>
+<p>This tutorial will show the authentication in use by Reddit at the
+time of writing this. It could be different in the future when you’re
+reading this, if they update the way authentication works or change
+the HTML structure, so you will have to do this all by yourself
+anyways.</p>
+<p>The easiest way to start this is by going backwards starting with one
+authenticated request. This should be some kind of request that only
+works when the user is already authenticated. I choose the
+“unread_message_count” one for reddit, and the request looks like
+this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GET</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">s</span><span class="o">.</span><span class="n">reddit</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">sendbird</span><span class="o">/</span><span class="n">unread_message_count</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span>
+<span class="n">User</span><span class="o">-</span><span class="n">Agent</span><span class="p">:</span> <span class="n">Mozilla</span><span class="o">/</span><span class="mf">5.0</span> <span class="p">(</span><span class="n">X11</span><span class="p">;</span> <span class="n">Linux</span> <span class="n">x86_64</span><span class="p">;</span> <span class="n">rv</span><span class="p">:</span><span class="mf">89.0</span><span class="p">)</span> <span class="n">Gecko</span><span class="o">/</span><span class="mi">20100101</span> <span class="n">Firefox</span><span class="o">/</span><span class="mf">89.0</span>
+<span class="n">Accept</span><span class="p">:</span> <span class="n">application</span><span class="o">/</span><span class="n">json</span>
+<span class="n">Accept</span><span class="o">-</span><span class="n">Language</span><span class="p">:</span> <span class="n">en</span><span class="o">-</span><span class="n">US</span><span class="p">,</span><span class="n">en</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.5</span>
+<span class="n">Content</span><span class="o">-</span><span class="n">Type</span><span class="p">:</span> <span class="n">application</span><span class="o">/</span><span class="n">json</span>
+<span class="n">Origin</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">reddit</span><span class="o">.</span><span class="n">com</span>
+<span class="n">DNT</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">Authorization</span><span class="p">:</span> <span class="n">Bearer</span> <span class="p">[</span><span class="n">REDACTED</span> <span class="n">TOKEN</span><span class="p">]</span>
+<span class="n">Referer</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">reddit</span><span class="o">.</span><span class="n">com</span><span class="o">/</span>
+<span class="n">Connection</span><span class="p">:</span> <span class="n">keep</span><span class="o">-</span><span class="n">alive</span>
+<span class="n">Host</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">reddit</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+<p>As you can see from this, the only information we sent to this URL
+from our authentication is the Bearer token.</p>
+<p>We define a new <a class="reference internal" href="definitions.html#term-Flow"><span class="xref std std-term">Flow</span></a> that will check for the unread messages
+in hy:</p>
+<div class="highlight-hylang notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">setv </span><span class="nv">get_unread_messages</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="nf">Flow</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;get_unread_messages&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:request</span><span class="w"> </span><span class="p">(</span><span class="nf">Request</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:method</span><span class="w"> </span><span class="s">&quot;GET&quot;</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:headers</span><span class="w"> </span><span class="p">[(</span><span class="nf">Header.bearerauth</span><span class="w"> </span><span class="nv">access_token</span><span class="p">)]</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:url</span><span class="w"> </span><span class="s">&quot;https://s.reddit.com/api/v1/sendbird/unread_message_count&quot;</span><span class="p">)))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>In Hy, <code class="docutils literal notranslate"><span class="pre">setv</span></code> is used to set up new variables. Here we created the
+variable <code class="docutils literal notranslate"><span class="pre">get_unread_messages</span></code> that will hold the information about
+this Flow. This will be hold in the <span class="xref std std-ref">_functions special variable</span> which stores the Flows which aren’t affecting the
+authentication.</p>
+<p>The only required parameters for <a class="reference internal" href="../dev/flows.html#raider.flow.Flow" title="raider.flow.Flow"><code class="xref py py-class docutils literal notranslate"><span class="pre">Flow</span></code></a>
+objects are the name and the request. The name is a string that is used
+for reference purposes, and the request contains the actual HTTP request
+definition as a <a class="reference internal" href="../dev/api.html#raider.request.Request" title="raider.request.Request"><code class="xref py py-class docutils literal notranslate"><span class="pre">Request</span></code></a> object.</p>
+<p>The Request object requires only the method and url. Other parameters
+are optional. We translate the original request into <strong>Raider</strong> config
+format, and to use the access token we need to define it in the request
+header. Since this is a bearer header, we use <code class="xref py py-class docutils literal notranslate"><span class="pre">Header.bearerauth</span></code> with the <code class="docutils literal notranslate"><span class="pre">access_token</span></code> which we will create
+later on.</p>
+</section>
+<section id="getting-the-access-token">
+<h2>Getting the access token<a class="headerlink" href="#getting-the-access-token" title="Permalink to this heading"></a></h2>
+<p>The next step would be to find out where is this token generated and
+how we can extract it. Searching for this token in previous responses,
+we can see it was first seen in a request to the main reddit
+page. It’s located inside the <cite>&lt;script id=”data”&gt;</cite> part of the
+response, and it looks like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="o">...</span><span class="p">]</span> <span class="s2">&quot;session&quot;</span><span class="p">:{</span><span class="s2">&quot;accessToken&quot;</span><span class="p">:</span><span class="s2">&quot;[REDACTED_TOKEN]&quot;</span><span class="p">,</span><span class="s2">&quot;expires&quot;</span><span class="p">:</span><span class="s2">&quot;2021-06-23T19:30:10.000Z&quot;</span> <span class="p">[</span><span class="o">...</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The easiest way to extract the token using <strong>Raider</strong>, is to use the
+<a class="reference internal" href="../dev/plugins.html#plugin-regex"><span class="std std-ref">Regex</span></a> module. This module searches for the regex
+you supplied and returns the value of the first group that
+matches. The group is the string in between <code class="docutils literal notranslate"><span class="pre">(</span></code> and <code class="docutils literal notranslate"><span class="pre">)</span></code>
+characters. The final object I configured looks like this:</p>
+<div class="highlight-hylang notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">setv </span><span class="nv">access_token</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="nf">Regex</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;access_token&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:regex</span><span class="w"> </span><span class="s">&quot;\&quot;accessToken\&quot;:\&quot;([^\&quot;]+)\&quot;&quot;</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>We are setting up the variable <code class="docutils literal notranslate"><span class="pre">access_token</span></code> to the <code class="docutils literal notranslate"><span class="pre">Regex</span></code> object,
+with the internal name <code class="docutils literal notranslate"><span class="pre">access_token</span></code> and that’ll return the value of
+the string between double quotes after the “accessToken” part.</p>
+<p>Now we need to define the actual request that will get us this access
+token. To do this, we take a closer look to the actual request where
+this response was created:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">GET</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">reddit</span><span class="o">.</span><span class="n">com</span><span class="o">/</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span>
+<span class="n">User</span><span class="o">-</span><span class="n">Agent</span><span class="p">:</span> <span class="n">Mozilla</span><span class="o">/</span><span class="mf">5.0</span> <span class="p">(</span><span class="n">X11</span><span class="p">;</span> <span class="n">Linux</span> <span class="n">x86_64</span><span class="p">;</span> <span class="n">rv</span><span class="p">:</span><span class="mf">89.0</span><span class="p">)</span> <span class="n">Gecko</span><span class="o">/</span><span class="mi">20100101</span> <span class="n">Firefox</span><span class="o">/</span><span class="mf">89.0</span>
+<span class="n">Accept</span><span class="p">:</span> <span class="n">text</span><span class="o">/</span><span class="n">html</span><span class="p">,</span><span class="n">application</span><span class="o">/</span><span class="n">xhtml</span><span class="o">+</span><span class="n">xml</span><span class="p">,</span><span class="n">application</span><span class="o">/</span><span class="n">xml</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="n">image</span><span class="o">/</span><span class="n">webp</span><span class="p">,</span><span class="o">*/*</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.8</span>
+<span class="n">Accept</span><span class="o">-</span><span class="n">Language</span><span class="p">:</span> <span class="n">en</span><span class="o">-</span><span class="n">US</span><span class="p">,</span><span class="n">en</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.5</span>
+<span class="n">DNT</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">Upgrade</span><span class="o">-</span><span class="n">Insecure</span><span class="o">-</span><span class="n">Requests</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">Connection</span><span class="p">:</span> <span class="n">keep</span><span class="o">-</span><span class="n">alive</span>
+<span class="n">Cookie</span><span class="p">:</span> <span class="n">csv</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">edgebucket</span><span class="o">=</span><span class="n">PPJTEvVRvoolrqFkYw</span><span class="p">;</span> <span class="n">G_ENABLED_IDPS</span><span class="o">=</span><span class="n">google</span><span class="p">;</span> <span class="n">loid</span><span class="o">=</span><span class="p">[</span><span class="n">REDACTED</span><span class="p">];</span> <span class="n">eu_cookie</span><span class="o">=</span><span class="p">{</span><span class="o">%</span><span class="mi">22</span><span class="n">opted</span><span class="o">%</span><span class="mi">22</span><span class="p">:</span><span class="n">true</span><span class="o">%</span><span class="mi">2</span><span class="n">C</span><span class="o">%</span><span class="mi">22</span><span class="n">nonessential</span><span class="o">%</span><span class="mi">22</span><span class="p">:</span><span class="n">false</span><span class="p">};</span> <span class="n">token_v2</span><span class="o">=</span><span class="p">[</span><span class="n">REDACTED</span><span class="p">];</span> <span class="n">reddit_session</span><span class="o">=</span><span class="p">[</span><span class="n">REDACTED</span><span class="p">]</span>
+<span class="n">Host</span><span class="p">:</span> <span class="n">www</span><span class="o">.</span><span class="n">reddit</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+<p>Now we can see there are several cookies being sent with this
+request. Most of them are irellevant here. To see which one is
+required for the request to succeed, we remove them one by one and see
+if we get the information we need inside the response. By doing this,
+I found out that the only cookie we need is <code class="docutils literal notranslate"><span class="pre">reddit_session</span></code>. As
+long as we supply it in the request, we do get the <code class="docutils literal notranslate"><span class="pre">access_token</span></code> in
+the response. With this information, we can now write the definition
+of the request:</p>
+<div class="highlight-hylang notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">setv </span><span class="nv">get_access_token</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="nf">Flow</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;get_access_token&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:request</span><span class="w"> </span><span class="p">(</span><span class="nf">Request</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:method</span><span class="w"> </span><span class="s">&quot;GET&quot;</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:url</span><span class="w"> </span><span class="s">&quot;https://www.reddit.com/&quot;</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:cookies</span><span class="w"> </span><span class="p">[</span><span class="nv">reddit_session</span><span class="p">])</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:outputs</span><span class="w"> </span><span class="p">[</span><span class="nv">access_token</span><span class="p">]</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:operations</span><span class="w"> </span><span class="p">[(</span><span class="nf">Print</span><span class="w"> </span><span class="nv">access_token</span><span class="p">)</span><span class="w"></span>
+<span class="w">                     </span><span class="p">(</span><span class="nf">NextStage</span><span class="w"> </span><span class="s">&quot;get_unread_messages&quot;</span><span class="p">)]))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Here we can see that we specified the <code class="docutils literal notranslate"><span class="pre">reddit_session</span></code> cookie to be
+sent with the request, and <code class="docutils literal notranslate"><span class="pre">access_token</span></code> as the only output generated
+from the response.</p>
+<p>Now we define the cookie like this:</p>
+<div class="highlight-hylang notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">setv </span><span class="nv">reddit_session</span><span class="w"> </span><span class="p">(</span><span class="nf">Cookie</span><span class="w"> </span><span class="s">&quot;reddit_session&quot;</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>When the stage is complete, two operations will be executed. The first
+will print the value of the <code class="docutils literal notranslate"><span class="pre">access_token</span></code> on the command line, and
+the next will tell <strong>Raider</strong> to go to the next stage that we defined
+previously.</p>
+</section>
+<section id="multi-factor-authentication">
+<h2>Multi-factor authentication<a class="headerlink" href="#multi-factor-authentication" title="Permalink to this heading"></a></h2>
+<p>To show how <strong>Raider</strong> works with multi-factor authentication, I have
+enabled it on my reddit account, and added this step to the
+configuration. In the web proxy, the request looks like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">POST</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">reddit</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">login</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span>
+<span class="n">User</span><span class="o">-</span><span class="n">agent</span><span class="p">:</span> <span class="n">digeex_raider</span><span class="o">/</span><span class="mf">0.0.1</span>
+<span class="n">Accept</span><span class="p">:</span> <span class="o">*/*</span>
+<span class="n">Connection</span><span class="p">:</span> <span class="n">keep</span><span class="o">-</span><span class="n">alive</span>
+<span class="n">Cookie</span><span class="p">:</span> <span class="n">session</span><span class="o">=</span><span class="p">[</span><span class="n">REDACTED</span><span class="p">]</span>
+<span class="n">Content</span><span class="o">-</span><span class="n">Length</span><span class="p">:</span> <span class="mi">154</span>
+<span class="n">Content</span><span class="o">-</span><span class="n">Type</span><span class="p">:</span> <span class="n">application</span><span class="o">/</span><span class="n">x</span><span class="o">-</span><span class="n">www</span><span class="o">-</span><span class="n">form</span><span class="o">-</span><span class="n">urlencoded</span>
+<span class="n">Host</span><span class="p">:</span> <span class="n">www</span><span class="o">.</span><span class="n">reddit</span><span class="o">.</span><span class="n">com</span>
+
+<span class="n">password</span><span class="o">=</span><span class="p">[</span><span class="n">REDACTED</span><span class="p">]</span><span class="o">&amp;</span><span class="n">username</span><span class="o">=</span><span class="p">[</span><span class="n">REDACTED</span><span class="p">]</span><span class="o">&amp;</span><span class="n">csrf_token</span><span class="o">=</span><span class="p">[</span><span class="n">REDACTED</span><span class="p">]</span><span class="o">&amp;</span><span class="n">otp</span><span class="o">=</span><span class="mi">566262</span><span class="o">&amp;</span><span class="n">dest</span><span class="o">=</span><span class="n">https</span><span class="o">%</span><span class="mi">3</span><span class="n">A</span><span class="o">%</span><span class="mi">2</span><span class="n">F</span><span class="o">%</span><span class="mi">2</span><span class="n">Fwww</span><span class="o">.</span><span class="n">reddit</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+<p>Now we translate the request in the <strong>Raider</strong> Request type:</p>
+<div class="highlight-hylang notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">Request</span><span class="w"></span>
+<span class="w">   </span><span class="ss">:method</span><span class="w"> </span><span class="s">&quot;POST&quot;</span><span class="w"></span>
+<span class="w">   </span><span class="ss">:url</span><span class="w"> </span><span class="s">&quot;https://www.reddit.com/login&quot;</span><span class="w"></span>
+<span class="w">   </span><span class="ss">:cookies</span><span class="w"> </span><span class="p">[</span><span class="nv">session_id</span><span class="p">]</span><span class="w"></span>
+<span class="w">   </span><span class="ss">:data</span><span class="w"></span>
+<span class="w">   </span><span class="p">{</span><span class="s">&quot;password&quot;</span><span class="w"> </span><span class="nv">password</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;username&quot;</span><span class="w"> </span><span class="nv">username</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;csrf_token&quot;</span><span class="w"> </span><span class="nv">csrf_token</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;otp&quot;</span><span class="w"> </span><span class="nv">mfa_code</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;dest&quot;</span><span class="w"> </span><span class="s">&quot;https://www.reddit.com&quot;</span><span class="p">})</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Here we use the new cookie called <code class="docutils literal notranslate"><span class="pre">session_id</span></code> that we define as:</p>
+<div class="highlight-hylang notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">setv </span><span class="nv">session_id</span><span class="w"> </span><span class="p">(</span><span class="nf">Cookie</span><span class="w"> </span><span class="s">&quot;session&quot;</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>To use the username and password of the active user, we create two new
+inputs of type <a class="reference internal" href="../dev/plugins.html#plugin-variable"><span class="std std-ref">Variable</span></a>:</p>
+<div class="highlight-hylang notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">setv </span><span class="nv">username</span><span class="w"> </span><span class="p">(</span><span class="nf">Variable</span><span class="w"> </span><span class="s">&quot;username&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="p">(</span><span class="kd">setv </span><span class="nv">password</span><span class="w"> </span><span class="p">(</span><span class="nf">Variable</span><span class="w"> </span><span class="s">&quot;password&quot;</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The nickname can be extracted with a Regex:</p>
+<div class="highlight-hylang notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">setv </span><span class="nv">nickname</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nf">Regex</span><span class="w"></span>
+<span class="w">      </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;nickname&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="ss">:regex</span><span class="w"> </span><span class="s">&quot;href=\&quot;/user/([^\&quot;]+)&quot;</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The multi-factor authentication code will be given as an input to the
+CLI manually, so we define the <code class="docutils literal notranslate"><span class="pre">mfa_code</span></code> as a <a class="reference internal" href="../dev/plugins.html#plugin-prompt"><span class="std std-ref">Prompt</span></a> plugin:</p>
+<div class="highlight-hylang notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">setv </span><span class="nv">mfa_code</span><span class="w"> </span><span class="p">(</span><span class="nf">Prompt</span><span class="w"> </span><span class="s">&quot;MFA&quot;</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">csrf_token</span></code> value will be defined later on.</p>
+<p>I defined the multi_factor stage as shown below:</p>
+<div class="highlight-hylang notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">setv </span><span class="nv">multi_factor</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="nf">Flow</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;multi_factor&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:request</span><span class="w"> </span><span class="p">(</span><span class="nf">Request</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:method</span><span class="w"> </span><span class="s">&quot;POST&quot;</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:url</span><span class="w"> </span><span class="s">&quot;https://www.reddit.com/login&quot;</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:cookies</span><span class="w"> </span><span class="p">[</span><span class="nv">session_id</span><span class="p">]</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:data</span><span class="w"></span>
+<span class="w">                   </span><span class="p">{</span><span class="s">&quot;password&quot;</span><span class="w"> </span><span class="nv">password</span><span class="w"></span>
+<span class="w">                    </span><span class="s">&quot;username&quot;</span><span class="w"> </span><span class="nv">username</span><span class="w"></span>
+<span class="w">                    </span><span class="s">&quot;csrf_token&quot;</span><span class="w"> </span><span class="nv">csrf_token</span><span class="w"></span>
+<span class="w">                    </span><span class="s">&quot;otp&quot;</span><span class="w"> </span><span class="nv">mfa_code</span><span class="w"></span>
+<span class="w">                    </span><span class="s">&quot;dest&quot;</span><span class="w"> </span><span class="s">&quot;https://www.reddit.com&quot;</span><span class="p">})</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:outputs</span><span class="w"> </span><span class="p">[</span><span class="nv">reddit_session</span><span class="p">]</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:operations</span><span class="w"> </span><span class="p">[(</span><span class="nf">Print</span><span class="w"> </span><span class="nv">reddit_session</span><span class="w"> </span><span class="nv">csrf_token</span><span class="p">)</span><span class="w"></span>
+<span class="w">                     </span><span class="p">(</span><span class="nf">Http</span><span class="w"></span>
+<span class="w">                       </span><span class="ss">:status</span><span class="w"> </span><span class="mi">200</span><span class="w"></span>
+<span class="w">                       </span><span class="ss">:action</span><span class="w"></span>
+<span class="w">                       </span><span class="p">(</span><span class="nf">NextStage</span><span class="w"> </span><span class="s">&quot;get_access_token&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="w">                     </span><span class="p">(</span><span class="nf">Http</span><span class="w"></span>
+<span class="w">                       </span><span class="ss">:status</span><span class="w"> </span><span class="mi">400</span><span class="w"></span>
+<span class="w">                       </span><span class="ss">:action</span><span class="w"></span>
+<span class="w">                       </span><span class="p">(</span><span class="nf">Grep</span><span class="w"></span>
+<span class="w">                         </span><span class="ss">:regex</span><span class="w"> </span><span class="s">&quot;WRONG_OTP&quot;</span><span class="w"></span>
+<span class="w">                         </span><span class="ss">:action</span><span class="w"></span>
+<span class="w">                         </span><span class="p">(</span><span class="nf">NextStage</span><span class="w"> </span><span class="s">&quot;initialization&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">                         </span><span class="ss">:otherwise</span><span class="w"></span>
+<span class="w">                         </span><span class="p">(</span><span class="nf">Error</span><span class="w"> </span><span class="s">&quot;Multi-factor authentication error&quot;</span><span class="p">)))]))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The only useful output that this stage will generate is the
+<code class="docutils literal notranslate"><span class="pre">reddit_session</span></code> cookie.</p>
+<p>Now looking at the operations, several things are happening here. The
+first operations will just print to the CLI output the values of the
+<code class="docutils literal notranslate"><span class="pre">csrf_token</span></code> and <code class="docutils literal notranslate"><span class="pre">reddit_session</span></code>.</p>
+<p>The second operation will instruct <strong>Raider</strong> to go to the
+<code class="docutils literal notranslate"><span class="pre">get_access_token</span></code> stage if the HTTP response code is 200.</p>
+<p>The third operation will run only if the status code is 400, which
+means the authentication failed. Inside the response body of a failed
+request will be a message indicating why it failed. <strong>Raider</strong> will
+then <a class="reference internal" href="../dev/operations.html#operations-grep"><span class="std std-ref">Grep</span></a> the response for the string
+“WRONG_OTP” in case we gave the wrong multi-factor authentication
+code. If it matches, <strong>Raider</strong> will go to the <code class="docutils literal notranslate"><span class="pre">initialization</span></code>
+stage starting the authentication from a clean state again.</p>
+<p>We will define this stage later in this tutorial. If the string
+“WRONG_OTP” isn’t found, <strong>Raider</strong> will quit with the error message
+“Multi-factor authentication error”.</p>
+</section>
+<section id="login">
+<h2>Login<a class="headerlink" href="#login" title="Permalink to this heading"></a></h2>
+<p>On reddit, the login request looks similar to the multi-factor one, so
+the stage definition is pretty similar:</p>
+<div class="highlight-hylang notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">setv </span><span class="nv">login</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="nf">Flow</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;login&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:request</span><span class="w"> </span><span class="p">(</span><span class="nf">Request</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:method</span><span class="w"> </span><span class="s">&quot;POST&quot;</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:url</span><span class="w"> </span><span class="s">&quot;https://www.reddit.com/login&quot;</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:cookies</span><span class="w"> </span><span class="p">[</span><span class="nv">session_id</span><span class="p">]</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:data</span><span class="w"></span>
+<span class="w">                   </span><span class="p">{</span><span class="s">&quot;password&quot;</span><span class="w"> </span><span class="nv">password</span><span class="w"></span>
+<span class="w">                    </span><span class="s">&quot;username&quot;</span><span class="w"> </span><span class="nv">username</span><span class="w"></span>
+<span class="w">                    </span><span class="s">&quot;csrf_token&quot;</span><span class="w"> </span><span class="nv">csrf_token</span><span class="w"></span>
+<span class="w">                    </span><span class="s">&quot;otp&quot;</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"></span>
+<span class="w">                    </span><span class="s">&quot;dest&quot;</span><span class="w"> </span><span class="s">&quot;https://www.reddit.com&quot;</span><span class="p">})</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:outputs</span><span class="w"> </span><span class="p">[</span><span class="nv">session_id</span><span class="w"> </span><span class="nv">reddit_session</span><span class="p">]</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:operations</span><span class="w"> </span><span class="p">[(</span><span class="nf">Print</span><span class="w"> </span><span class="nv">session_id</span><span class="w"> </span><span class="nv">reddit_session</span><span class="p">)</span><span class="w"></span>
+<span class="w">                     </span><span class="p">(</span><span class="nf">Http</span><span class="w"></span>
+<span class="w">                       </span><span class="ss">:status</span><span class="w"> </span><span class="mi">200</span><span class="w"></span>
+<span class="w">                       </span><span class="ss">:action</span><span class="w"></span>
+<span class="w">                       </span><span class="p">(</span><span class="nf">Grep</span><span class="w"></span>
+<span class="w">                         </span><span class="ss">:regex</span><span class="w"> </span><span class="s">&quot;TWO_FA_REQUIRED&quot;</span><span class="w"></span>
+<span class="w">                         </span><span class="ss">:action</span><span class="w"></span>
+<span class="w">                         </span><span class="p">(</span><span class="nf">NextStage</span><span class="w"> </span><span class="s">&quot;multi_factor&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">                         </span><span class="ss">:otherwise</span><span class="w"></span>
+<span class="w">                         </span><span class="p">(</span><span class="nf">NextStage</span><span class="w"> </span><span class="s">&quot;get_access_token&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="w">                       </span><span class="ss">:otherwise</span><span class="w"></span>
+<span class="w">                       </span><span class="p">(</span><span class="nf">Error</span><span class="w"> </span><span class="s">&quot;Login error&quot;</span><span class="p">))]))</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="getting-the-csrf-token">
+<h2>Getting the CSRF token<a class="headerlink" href="#getting-the-csrf-token" title="Permalink to this heading"></a></h2>
+<p>Only piece of information we’re missing at this point is the CSRF
+token.</p>
+<p>And now, for the <code class="docutils literal notranslate"><span class="pre">csrf_token</span></code> we need to find out where it was
+created. Searching inside the web proxy for the value of the token, we
+find it in a previous response. The relevant part of the HTML code
+looks like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;hidden&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;csrf_token&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;8309984e972e6608475765db68e25ffb8c0bedc9&quot;</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>So we have its value inside the <code class="docutils literal notranslate"><span class="pre">input</span></code> tag, of type <code class="docutils literal notranslate"><span class="pre">hidden</span></code>, with
+the name <code class="docutils literal notranslate"><span class="pre">csrf_token</span></code>. The actual value is a 40 character string made
+out of lowercase hexadecimal characters. We define this as a <a class="reference internal" href="../dev/plugins.html#plugin-html"><span class="std std-ref">Html</span></a> plugin:</p>
+<div class="highlight-hylang notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">setv </span><span class="nv">csrf_token</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="nf">Html</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;csrf_token&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:tag</span><span class="w"> </span><span class="s">&quot;input&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:attributes</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;csrf_token&quot;</span><span class="w"></span>
+<span class="w">         </span><span class="ss">:value</span><span class="w"> </span><span class="s">&quot;^[0-9a-f]{40}$&quot;</span><span class="w"></span>
+<span class="w">         </span><span class="ss">:type</span><span class="w"> </span><span class="s">&quot;hidden&quot;</span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:extract</span><span class="w"> </span><span class="s">&quot;value&quot;</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This object will extract the <code class="docutils literal notranslate"><span class="pre">csrf_token</span></code> value, and use it as an
+input where necessary.</p>
+<p>The token can be found by multiple means. The simplest way I found is
+by sending a simple GET request to <a class="reference external" href="https://www.reddit.com/login/">https://www.reddit.com/login/</a> with
+no additional information. Now we can define this stage:</p>
+<div class="highlight-hylang notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">setv </span><span class="nv">initialization</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="nf">Flow</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;initialization&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:request</span><span class="w"> </span><span class="p">(</span><span class="nf">Request</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:method</span><span class="w"> </span><span class="s">&quot;GET&quot;</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:url</span><span class="w"> </span><span class="s">&quot;https://www.reddit.com/login/&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:outputs</span><span class="w"> </span><span class="p">[</span><span class="nv">csrf_token</span><span class="w"> </span><span class="nv">session_id</span><span class="p">]</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:operations</span><span class="w"> </span><span class="p">[(</span><span class="nf">Print</span><span class="w"> </span><span class="nv">session_id</span><span class="w"> </span><span class="nv">csrf_token</span><span class="p">)</span><span class="w"></span>
+<span class="w">                     </span><span class="p">(</span><span class="nf">NextStage</span><span class="w"> </span><span class="s">&quot;login&quot;</span><span class="p">)]))</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="finishing-configuration">
+<h2>Finishing configuration<a class="headerlink" href="#finishing-configuration" title="Permalink to this heading"></a></h2>
+<p>The request will give us the token we need, and the session
+cookie. The configuration file is almost complete. To finish, we set
+the special variables:</p>
+<ul class="simple">
+<li><p><span class="xref std std-ref">_authentication</span> - containing the list of
+the authentication steps we defined.</p></li>
+<li><p><span class="xref std std-ref">_functions</span> - we will put the other defined
+Flows which don’t affect authentication.</p></li>
+<li><p><a class="reference internal" href="../dev/special_variables.html#var-users"><span class="std std-ref">_users</span></a> - user credentials go here</p></li>
+</ul>
+<p>Adding one more function <cite>get_nickname</cite>, and the complete
+configuration file for reddit looks like this:</p>
+<div class="highlight-hylang notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">print</span><span class="w"> </span><span class="s">&quot;Reddit&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="p">(</span><span class="kd">setv </span><span class="nv">_base_url</span><span class="w"> </span><span class="s">&quot;https://www.reddit.com/&quot;</span><span class="p">)</span><span class="w"></span>
+
+<span class="p">(</span><span class="kd">setv </span><span class="nv">username</span><span class="w"> </span><span class="p">(</span><span class="nf">Variable</span><span class="w"> </span><span class="s">&quot;username&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="p">(</span><span class="kd">setv </span><span class="nv">password</span><span class="w"> </span><span class="p">(</span><span class="nf">Variable</span><span class="w"> </span><span class="s">&quot;password&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="p">(</span><span class="kd">setv </span><span class="nv">mfa_code</span><span class="w"> </span><span class="p">(</span><span class="nf">Prompt</span><span class="w"> </span><span class="s">&quot;MFA&quot;</span><span class="p">))</span><span class="w"></span>
+
+<span class="p">(</span><span class="kd">setv </span><span class="nv">csrf_token</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nf">Html</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;csrf_token&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:tag</span><span class="w"> </span><span class="s">&quot;input&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:attributes</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;csrf_token&quot;</span><span class="w"></span>
+<span class="w">     </span><span class="ss">:value</span><span class="w"> </span><span class="s">&quot;^[0-9a-f]{40}$&quot;</span><span class="w"></span>
+<span class="w">     </span><span class="ss">:type</span><span class="w"> </span><span class="s">&quot;hidden&quot;</span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:extract</span><span class="w"> </span><span class="s">&quot;value&quot;</span><span class="p">))</span><span class="w"></span>
+
+<span class="p">(</span><span class="kd">setv </span><span class="nv">access_token</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nf">Regex</span><span class="w"></span>
+<span class="w">     </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;access_token&quot;</span><span class="w"></span>
+<span class="w">     </span><span class="ss">:regex</span><span class="w"> </span><span class="s">&quot;\&quot;accessToken\&quot;:\&quot;([^\&quot;]+)\&quot;&quot;</span><span class="p">))</span><span class="w"></span>
+
+<span class="p">(</span><span class="kd">setv </span><span class="nv">session_id</span><span class="w"> </span><span class="p">(</span><span class="nf">Cookie</span><span class="w"> </span><span class="s">&quot;session&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="p">(</span><span class="kd">setv </span><span class="nv">reddit_session</span><span class="w"> </span><span class="p">(</span><span class="nf">Cookie</span><span class="w"> </span><span class="s">&quot;reddit_session&quot;</span><span class="p">))</span><span class="w"></span>
+
+
+<span class="p">(</span><span class="kd">setv </span><span class="nv">initialization</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nf">Flow</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;initialization&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:request</span><span class="w"> </span><span class="p">(</span><span class="nf">Request</span><span class="w"></span>
+<span class="w">              </span><span class="ss">:method</span><span class="w"> </span><span class="s">&quot;GET&quot;</span><span class="w"></span>
+<span class="w">              </span><span class="ss">:url</span><span class="w"> </span><span class="s">&quot;https://www.reddit.com/login/&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:outputs</span><span class="w"> </span><span class="p">[</span><span class="nv">csrf_token</span><span class="w"> </span><span class="nv">session_id</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:operations</span><span class="w"></span>
+<span class="w">    </span><span class="p">[(</span><span class="nf">Print</span><span class="w"> </span><span class="nv">session_id</span><span class="w"> </span><span class="nv">csrf_token</span><span class="p">)</span><span class="w"></span>
+<span class="w">     </span><span class="p">(</span><span class="nf">NextStage</span><span class="w"> </span><span class="s">&quot;login&quot;</span><span class="p">)]))</span><span class="w"></span>
+
+<span class="p">(</span><span class="kd">setv </span><span class="nv">login</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nf">Flow</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;login&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:request</span><span class="w"> </span><span class="p">(</span><span class="nf">Request</span><span class="w"></span>
+<span class="w">            </span><span class="ss">:method</span><span class="w"> </span><span class="s">&quot;POST&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="ss">:url</span><span class="w"> </span><span class="s">&quot;https://www.reddit.com/login&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="ss">:cookies</span><span class="w"> </span><span class="p">[</span><span class="nv">session_id</span><span class="p">]</span><span class="w"></span>
+<span class="w">            </span><span class="ss">:data</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="s">&quot;password&quot;</span><span class="w"> </span><span class="nv">password</span><span class="w"></span>
+<span class="w">             </span><span class="s">&quot;username&quot;</span><span class="w"> </span><span class="nv">username</span><span class="w"></span>
+<span class="w">             </span><span class="s">&quot;csrf_token&quot;</span><span class="w"> </span><span class="nv">csrf_token</span><span class="w"></span>
+<span class="w">             </span><span class="s">&quot;otp&quot;</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"></span>
+<span class="w">             </span><span class="s">&quot;dest&quot;</span><span class="w"> </span><span class="s">&quot;https://www.reddit.com&quot;</span><span class="p">})</span><span class="w"></span>
+<span class="w">   </span><span class="ss">:outputs</span><span class="w"> </span><span class="p">[</span><span class="nv">session_id</span><span class="w"> </span><span class="nv">reddit_session</span><span class="p">]</span><span class="w"></span>
+<span class="w">   </span><span class="ss">:operations</span><span class="w"></span>
+<span class="w">   </span><span class="p">[(</span><span class="nf">Print</span><span class="w"> </span><span class="nv">session_id</span><span class="w"> </span><span class="nv">reddit_session</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nf">Http</span><span class="w"></span>
+<span class="w">     </span><span class="ss">:status</span><span class="w"> </span><span class="mi">200</span><span class="w"></span>
+<span class="w">     </span><span class="ss">:action</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="nf">Grep</span><span class="w"></span>
+<span class="w">       </span><span class="ss">:regex</span><span class="w"> </span><span class="s">&quot;TWO_FA_REQUIRED&quot;</span><span class="w"></span>
+<span class="w">     </span><span class="ss">:action</span><span class="w"></span>
+<span class="w">      </span><span class="p">[(</span><span class="nf">Print</span><span class="w"> </span><span class="s">&quot;Multi-factor authentication required&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">       </span><span class="p">(</span><span class="nf">NextStage</span><span class="w"> </span><span class="s">&quot;multi_factor&quot;</span><span class="p">)]</span><span class="w"></span>
+<span class="w">     </span><span class="ss">:otherwise</span><span class="w"> </span><span class="p">(</span><span class="nf">NextStage</span><span class="w"> </span><span class="s">&quot;get_access_token&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="w">     </span><span class="ss">:otherwise</span><span class="w"> </span><span class="p">(</span><span class="nf">Error</span><span class="w"> </span><span class="s">&quot;Login error&quot;</span><span class="p">))]))</span><span class="w"></span>
+
+<span class="p">(</span><span class="kd">setv </span><span class="nv">multi_factor</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nf">Flow</span><span class="w"></span>
+<span class="w">   </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;multi_factor&quot;</span><span class="w"></span>
+<span class="w">   </span><span class="ss">:request</span><span class="w"> </span><span class="p">(</span><span class="nf">Request</span><span class="w"></span>
+<span class="w">              </span><span class="ss">:method</span><span class="w"> </span><span class="s">&quot;POST&quot;</span><span class="w"></span>
+<span class="w">              </span><span class="ss">:url</span><span class="w"> </span><span class="s">&quot;https://www.reddit.com/login&quot;</span><span class="w"></span>
+<span class="w">              </span><span class="ss">:cookies</span><span class="w"> </span><span class="p">[</span><span class="nv">session_id</span><span class="p">]</span><span class="w"></span>
+<span class="w">              </span><span class="ss">:data</span><span class="w"></span>
+<span class="w">              </span><span class="p">{</span><span class="s">&quot;password&quot;</span><span class="w"> </span><span class="nv">password</span><span class="w"></span>
+<span class="w">               </span><span class="s">&quot;username&quot;</span><span class="w"> </span><span class="nv">username</span><span class="w"></span>
+<span class="w">               </span><span class="s">&quot;csrf_token&quot;</span><span class="w"> </span><span class="nv">csrf_token</span><span class="w"></span>
+<span class="w">               </span><span class="s">&quot;otp&quot;</span><span class="w"> </span><span class="nv">mfa_code</span><span class="w"></span>
+<span class="w">               </span><span class="s">&quot;dest&quot;</span><span class="w"> </span><span class="s">&quot;https://www.reddit.com&quot;</span><span class="p">})</span><span class="w"></span>
+<span class="w">   </span><span class="ss">:outputs</span><span class="w"> </span><span class="p">[</span><span class="nv">reddit_session</span><span class="p">]</span><span class="w"></span>
+<span class="w">   </span><span class="ss">:operations</span><span class="w"> </span><span class="p">[(</span><span class="nf">Print</span><span class="w"> </span><span class="nv">reddit_session</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="p">(</span><span class="nf">Print</span><span class="w"> </span><span class="nv">csrf_token</span><span class="p">)</span><span class="w"></span>
+<span class="w">                </span><span class="p">(</span><span class="nf">Http</span><span class="w"></span>
+<span class="w">                  </span><span class="ss">:status</span><span class="w"> </span><span class="mi">200</span><span class="w"></span>
+<span class="w">                  </span><span class="ss">:action</span><span class="w"></span>
+<span class="w">                  </span><span class="p">(</span><span class="nf">NextStage</span><span class="w"> </span><span class="s">&quot;get_access_token&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="w">                </span><span class="p">(</span><span class="nf">Http</span><span class="w"></span>
+<span class="w">                  </span><span class="ss">:status</span><span class="w"> </span><span class="mi">400</span><span class="w"></span>
+<span class="w">                  </span><span class="ss">:action</span><span class="w"></span>
+<span class="w">                  </span><span class="p">(</span><span class="nf">Grep</span><span class="w"></span>
+<span class="w">                    </span><span class="ss">:regex</span><span class="w"> </span><span class="s">&quot;WRONG_OTP&quot;</span><span class="w"></span>
+<span class="w">                    </span><span class="ss">:action</span><span class="w"></span>
+<span class="w">                    </span><span class="p">(</span><span class="nf">NextStage</span><span class="w"> </span><span class="s">&quot;initialization&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">                    </span><span class="ss">:otherwise</span><span class="w"></span>
+<span class="w">                    </span><span class="p">(</span><span class="nf">Error</span><span class="w"> </span><span class="s">&quot;Multi-factor authentication error&quot;</span><span class="p">)))]))</span><span class="w"></span>
+
+
+<span class="p">(</span><span class="kd">setv </span><span class="nv">get_access_token</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nf">Flow</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;get_access_token&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:request</span><span class="w"> </span><span class="p">(</span><span class="nf">Request</span><span class="w"></span>
+<span class="w">               </span><span class="ss">:method</span><span class="w"> </span><span class="s">&quot;GET&quot;</span><span class="w"></span>
+<span class="w">               </span><span class="ss">:url</span><span class="w"> </span><span class="s">&quot;https://www.reddit.com/&quot;</span><span class="w"></span>
+<span class="w">               </span><span class="ss">:cookies</span><span class="w"> </span><span class="p">[</span><span class="nv">reddit_session</span><span class="p">])</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:outputs</span><span class="w"> </span><span class="p">[</span><span class="nv">access_token</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:operations</span><span class="w"> </span><span class="p">[(</span><span class="nf">Print</span><span class="w"> </span><span class="nv">access_token</span><span class="p">)</span><span class="w"></span>
+<span class="w">                 </span><span class="p">(</span><span class="nf">NextStage</span><span class="w"> </span><span class="s">&quot;get_unread_messages&quot;</span><span class="p">)]))</span><span class="w"></span>
+
+<span class="p">(</span><span class="kd">setv </span><span class="nv">get_unread_messages</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nf">Flow</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;get_unread_messages&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:request</span><span class="w"> </span><span class="p">(</span><span class="nf">Request</span><span class="w"></span>
+<span class="w">               </span><span class="ss">:method</span><span class="w"> </span><span class="s">&quot;GET&quot;</span><span class="w"></span>
+<span class="w">               </span><span class="ss">:headers</span><span class="w"> </span><span class="p">[(</span><span class="nf">Header.bearerauth</span><span class="w"> </span><span class="nv">access_token</span><span class="p">)]</span><span class="w"></span>
+<span class="w">               </span><span class="ss">:url</span><span class="w"> </span><span class="s">&quot;https://s.reddit.com/api/v1/sendbird/unread_message_count&quot;</span><span class="p">)))</span><span class="w"></span>
+
+<span class="p">(</span><span class="kd">setv </span><span class="nv">nickname</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="nf">Regex</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;nickname&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:regex</span><span class="w"> </span><span class="s">&quot;href=\&quot;/user/([^\&quot;]+)&quot;</span><span class="p">))</span><span class="w"></span>
+
+<span class="p">(</span><span class="kd">setv </span><span class="nv">get_nickname</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="nf">Flow</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:name</span><span class="w"> </span><span class="s">&quot;get_nickname&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:request</span><span class="w"> </span><span class="p">(</span><span class="nf">Request</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:method</span><span class="w"> </span><span class="s">&quot;GET&quot;</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:cookies</span><span class="w"> </span><span class="p">[</span><span class="nv">session_id</span><span class="w"> </span><span class="nv">reddit_session</span><span class="p">]</span><span class="w"></span>
+<span class="w">                   </span><span class="ss">:path</span><span class="w"> </span><span class="s">&quot;/&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:outputs</span><span class="w"> </span><span class="p">[</span><span class="nv">nickname</span><span class="p">]</span><span class="w"></span>
+<span class="w">        </span><span class="ss">:operations</span><span class="w"> </span><span class="p">[(</span><span class="nf">Print</span><span class="w"> </span><span class="nv">nickname</span><span class="p">)]))</span><span class="w"></span>
+
+
+<span class="p">(</span><span class="kd">setv </span><span class="nv">_authentication</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="nv">initialization</span><span class="w"></span>
+<span class="w">   </span><span class="nv">login</span><span class="w"></span>
+<span class="w">   </span><span class="nv">multi_factor</span><span class="w"></span>
+<span class="w">   </span><span class="nv">get_access_token</span><span class="p">])</span><span class="w"></span>
+
+
+<span class="p">(</span><span class="kd">setv </span><span class="nv">_functions</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="nv">get_unread_messages</span><span class="w"></span>
+<span class="w">   </span><span class="nv">get_nickname</span><span class="p">])</span><span class="w"></span>
+
+
+<span class="p">(</span><span class="kd">setv </span><span class="nv">_users</span><span class="w"></span>
+<span class="w">   </span><span class="p">[{</span><span class="ss">:username</span><span class="w"> </span><span class="s">&quot;user1&quot;</span><span class="w"></span>
+<span class="w">     </span><span class="ss">:password</span><span class="w"> </span><span class="s">&quot;s3cr3tP4ssWrd1&quot;</span><span class="p">}])</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="running-raider">
+<h2>Running Raider<a class="headerlink" href="#running-raider" title="Permalink to this heading"></a></h2>
+<p>Now, with the configuration finished, we can run <strong>Raider</strong> with a python
+script:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">raider</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">raider</span><span class="o">.</span><span class="n">Raider</span><span class="p">(</span><span class="s2">&quot;reddit&quot;</span><span class="p">)</span>
+<span class="c1"># Create a Raider() object for application &quot;reddit&quot;</span>
+
+<span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">proxy</span> <span class="o">=</span> <span class="s2">&quot;http://localhost:8080&quot;</span>
+<span class="c1"># Run traffic through the local web proxy</span>
+
+<span class="n">app</span><span class="o">.</span><span class="n">authenticate</span><span class="p">()</span>
+<span class="c1"># Run authentication stages one by one</span>
+
+<span class="n">app</span><span class="o">.</span><span class="n">run_function</span><span class="p">(</span><span class="s2">&quot;get_nickname&quot;</span><span class="p">)</span>
+<span class="n">app</span><span class="o">.</span><span class="n">run_function</span><span class="p">(</span><span class="s2">&quot;get_unread_messages&quot;</span><span class="p">)</span>
+<span class="c1"># Run both defined functions</span>
+</pre></div>
+</div>
+<p>Running the script, we can see its output, and entries in the web
+proxy listening on port 8080:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python script.py
+
+Reddit
+INFO:root:Running stage initialization
+session = [REDACTED]
+csrf_token = [REDACTED]
+INFO:root:Running stage login
+WARNING:root:Couldn&#39;t extract output: session
+WARNING:root:Couldn&#39;t extract output: reddit_session
+session = [REDACTED]
+reddit_session = None
+Multi-factor authentication enabled
+INFO:root:Running stage multi_factor
+reddit_session = [REDACTED]
+csrf_token = [REDACTED]
+INFO:root:Running stage get_access_token
+access_token = [REDACTED]
+INFO:root:Running function get_nickname
+nickname = [REDACTED]
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="architecture.html" class="btn btn-neutral float-left" title="Architecture" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="definitions.html" class="btn btn-neutral float-right" title="Definitions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OWASP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

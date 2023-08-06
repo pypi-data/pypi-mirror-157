@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>raider.utils &mdash; raider 0.2.2 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/assets/jsonview.bundle.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/libs/html/datatables.min.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/common.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/layouts.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/styles.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sphinx-needs/modern.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/assets/jsonview.bundle.js"></script>
+        <script src="../../_static/assets/jsonview_loader.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/datatables.min.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js"></script>
+        <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> raider
+          </a>
+              <div class="version">
+                0.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user/install.html">Installing Raider</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/faq.html">Frequently asked questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/special_variables.html">Special variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/flows.html">Flows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/attacks.html">Fuzzing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/operations.html">Operations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/api.html">User API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/api.html#internal-api-reference">Internal API reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">raider</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+      <li>raider.utils</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for raider.utils</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (C) 2022 DigeeX</span>
+<span class="c1">#</span>
+<span class="c1"># This program is free software: you can redistribute it and/or modify</span>
+<span class="c1"># it under the terms of the GNU General Public License as published by</span>
+<span class="c1"># the Free Software Foundation, either version 3 of the License, or</span>
+<span class="c1"># (at your option) any later version.</span>
+<span class="c1">#</span>
+<span class="c1"># This program is distributed in the hope that it will be useful,</span>
+<span class="c1"># but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1"># MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="c1"># GNU General Public License for more details.</span>
+<span class="c1">#</span>
+<span class="c1"># You should have received a copy of the GNU General Public License</span>
+<span class="c1"># along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span>
+
+<span class="sd">&quot;&quot;&quot;Functions that are used within Raider.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Union</span>
+
+<span class="kn">import</span> <span class="nn">bs4</span>
+<span class="kn">import</span> <span class="nn">hy</span>
+
+<span class="kn">from</span> <span class="nn">raider.__version__</span> <span class="kn">import</span> <span class="n">__version__</span>
+
+
+<div class="viewcode-block" id="default_user_agent"><a class="viewcode-back" href="../../dev/api.html#raider.utils.default_user_agent">[docs]</a><span class="k">def</span> <span class="nf">default_user_agent</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Gets the default user agent.</span>
+
+<span class="sd">    Gets the current version of Raider and creates the user agent</span>
+<span class="sd">    string.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      A string with the user agent.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="s2">&quot;digeex_raider/&quot;</span> <span class="o">+</span> <span class="n">__version__</span></div>
+
+
+<div class="viewcode-block" id="get_config_dir"><a class="viewcode-back" href="../../dev/api.html#raider.utils.get_config_dir">[docs]</a><span class="k">def</span> <span class="nf">get_config_dir</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Gets the configuration directory.</span>
+
+<span class="sd">    Returns the path of the directory with the Raider configuration</span>
+<span class="sd">    files.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      A string with the path of the configuration directory.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">confdir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="s2">&quot;~/.config&quot;</span><span class="p">)</span>
+    <span class="n">raider_conf</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">confdir</span><span class="p">,</span> <span class="s2">&quot;raider&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">raider_conf</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">raider_conf</span></div>
+
+
+<div class="viewcode-block" id="get_config_file"><a class="viewcode-back" href="../../dev/api.html#raider.utils.get_config_file">[docs]</a><span class="k">def</span> <span class="nf">get_config_file</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Gets the configuration file.</span>
+
+<span class="sd">    Given the file name, it returns the path of this file in the Raider</span>
+<span class="sd">    configuration directory.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      filename:</span>
+<span class="sd">        A string with the name of the file to look up for in the main</span>
+<span class="sd">        configuration directory.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      A string with the path of the file.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">confdir</span> <span class="o">=</span> <span class="n">get_config_dir</span><span class="p">()</span>
+    <span class="n">file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">confdir</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">file_path</span></div>
+
+
+<div class="viewcode-block" id="get_project_dir"><a class="viewcode-back" href="../../dev/api.html#raider.utils.get_project_dir">[docs]</a><span class="k">def</span> <span class="nf">get_project_dir</span><span class="p">(</span><span class="n">project</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Gets the directory of the project.</span>
+
+<span class="sd">    Given the name of the project, returns the path to the directory</span>
+<span class="sd">    containing the configuration files for this project.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      project:</span>
+<span class="sd">        A string with the name of the project.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      A string with the path of the directory where the config files for</span>
+<span class="sd">      the project are located.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">confdir</span> <span class="o">=</span> <span class="n">get_config_dir</span><span class="p">()</span>
+    <span class="n">project_conf</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">confdir</span><span class="p">,</span> <span class="s2">&quot;projects&quot;</span><span class="p">,</span> <span class="n">project</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">project_conf</span></div>
+
+
+<div class="viewcode-block" id="get_project_file"><a class="viewcode-back" href="../../dev/api.html#raider.utils.get_project_file">[docs]</a><span class="k">def</span> <span class="nf">get_project_file</span><span class="p">(</span><span class="n">project</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Gets a file from a project.</span>
+
+<span class="sd">    Given the project name and the file name, it returns the path to</span>
+<span class="sd">    that file.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      project:</span>
+<span class="sd">        A string with the name of the project.</span>
+<span class="sd">      filename:</span>
+<span class="sd">        A string with the file name.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      The path of the file in the project directory.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">project_conf</span> <span class="o">=</span> <span class="n">get_project_dir</span><span class="p">(</span><span class="n">project</span><span class="p">)</span>
+    <span class="n">file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">project_conf</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">file_path</span></div>
+
+
+<div class="viewcode-block" id="import_raider_objects"><a class="viewcode-back" href="../../dev/api.html#raider.utils.import_raider_objects">[docs]</a><span class="k">def</span> <span class="nf">import_raider_objects</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Imports Raider objects to use inside hy configuration files.</span>
+
+<span class="sd">    To make Raider objects visible inside hy files without using</span>
+<span class="sd">    separate imports, this function does the imports and returns the</span>
+<span class="sd">    locals() which is later used when evaluating hy files.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">       A dictionary with the locals() containing all the Raider objects</span>
+<span class="sd">       that can be used in hy files.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">hy_imports</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;plugins.common&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;Empty &quot;</span> <span class="s2">&quot;Plugin &quot;</span> <span class="s2">&quot;Parser &quot;</span> <span class="s2">&quot;Processor &quot;</span><span class="p">),</span>
+        <span class="s2">&quot;plugins.basic&quot;</span><span class="p">:</span> <span class="p">(</span>
+            <span class="s2">&quot;Regex &quot;</span>
+            <span class="s2">&quot;Html &quot;</span>
+            <span class="s2">&quot;Json &quot;</span>
+            <span class="s2">&quot;Variable &quot;</span>
+            <span class="s2">&quot;Command &quot;</span>
+            <span class="s2">&quot;Prompt &quot;</span>
+            <span class="s2">&quot;Cookie &quot;</span>
+            <span class="s2">&quot;Header &quot;</span>
+            <span class="s2">&quot;File &quot;</span>
+        <span class="p">),</span>
+        <span class="s2">&quot;plugins.modifiers&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;Alter &quot;</span> <span class="s2">&quot;Combine &quot;</span><span class="p">),</span>
+        <span class="s2">&quot;plugins.parsers&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;Parser &quot;</span> <span class="s2">&quot;UrlParser &quot;</span><span class="p">),</span>
+        <span class="s2">&quot;plugins.processors&quot;</span><span class="p">:</span> <span class="p">(</span>
+            <span class="s2">&quot;Urlencode &quot;</span> <span class="s2">&quot;Urldecode &quot;</span> <span class="s2">&quot;B64encode &quot;</span> <span class="s2">&quot;B64decode &quot;</span>
+        <span class="p">),</span>
+        <span class="s2">&quot;flow&quot;</span><span class="p">:</span> <span class="s2">&quot;Flow &quot;</span> <span class="s2">&quot;AuthFlow &quot;</span><span class="p">,</span>
+        <span class="s2">&quot;request&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;Request &quot;</span> <span class="s2">&quot;PostBody &quot;</span> <span class="s2">&quot;Template &quot;</span><span class="p">),</span>
+        <span class="s2">&quot;operations&quot;</span><span class="p">:</span> <span class="p">(</span>
+            <span class="s2">&quot;Http &quot;</span> <span class="s2">&quot;Grep &quot;</span> <span class="s2">&quot;Print &quot;</span> <span class="s2">&quot;Error &quot;</span> <span class="s2">&quot;NextStage &quot;</span> <span class="s2">&quot;Operation &quot;</span> <span class="s2">&quot;Save &quot;</span>
+        <span class="p">),</span>
+    <span class="p">}</span>
+
+    <span class="k">for</span> <span class="n">module</span><span class="p">,</span> <span class="n">classes</span> <span class="ow">in</span> <span class="n">hy_imports</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">expr</span> <span class="o">=</span> <span class="n">hy</span><span class="o">.</span><span class="n">read_str</span><span class="p">(</span>
+            <span class="s2">&quot;(import [raider.&quot;</span> <span class="o">+</span> <span class="n">module</span> <span class="o">+</span> <span class="s2">&quot; [&quot;</span> <span class="o">+</span> <span class="n">classes</span> <span class="o">+</span> <span class="s2">&quot;]])&quot;</span>
+        <span class="p">)</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;expr = </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">))</span>
+        <span class="n">hy</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="nb">locals</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="hy_dict_to_python"><a class="viewcode-back" href="../../dev/api.html#raider.utils.hy_dict_to_python">[docs]</a><span class="k">def</span> <span class="nf">hy_dict_to_python</span><span class="p">(</span><span class="n">hy_dict</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="n">hy</span><span class="o">.</span><span class="n">HyKeyword</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Converts a hy dictionary to a python dictionary.</span>
+
+<span class="sd">    When creating dictionaries in hylang using :parameters they become</span>
+<span class="sd">    hy.HyKeyword objects. This function converts them to normal python</span>
+<span class="sd">    dictionaries.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      hy_dict:</span>
+<span class="sd">        A dictionary created in hy, which uses hy.HyKeyword instead of</span>
+<span class="sd">        simple strings as keys.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      A dictionary with the same elements only with hy.HyKeyword keys</span>
+<span class="sd">      converted into normal strings.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">hy_key</span> <span class="ow">in</span> <span class="n">hy_dict</span><span class="p">:</span>
+        <span class="n">key</span> <span class="o">=</span> <span class="n">hy_key</span><span class="o">.</span><span class="n">name</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">key</span><span class="p">:</span> <span class="n">hy_dict</span><span class="p">[</span><span class="n">hy_key</span><span class="p">]})</span>
+
+    <span class="k">return</span> <span class="n">data</span></div>
+
+
+<div class="viewcode-block" id="py_dict_to_hy_list"><a class="viewcode-back" href="../../dev/api.html#raider.utils.py_dict_to_hy_list">[docs]</a><span class="k">def</span> <span class="nf">py_dict_to_hy_list</span><span class="p">(</span>
+    <span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">hy</span><span class="o">.</span><span class="n">HyString</span><span class="p">,</span> <span class="n">hy</span><span class="o">.</span><span class="n">HyDict</span><span class="p">,</span> <span class="n">hy</span><span class="o">.</span><span class="n">HySymbol</span><span class="p">]]:</span>
+    <span class="sd">&quot;&quot;&quot;Converts a python dictionary to a hylang list.</span>
+
+<span class="sd">    In hy, dictionaries are created out of lists, and this function</span>
+<span class="sd">    converts a normal python dictionary to a list made out of hy symbols</span>
+<span class="sd">    that will be later used to create the hy dictionary.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      data:</span>
+<span class="sd">        A python dictionary with the data to convert.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      A list with hy objects that can be used to create a hy dictionary.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="n">value</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hy</span><span class="o">.</span><span class="n">HyString</span><span class="p">(</span><span class="n">key</span><span class="p">))</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">],</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">value</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hy</span><span class="o">.</span><span class="n">HyDict</span><span class="p">(</span><span class="n">py_dict_to_hy_list</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">])))</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">],</span> <span class="nb">str</span><span class="p">):</span>
+                <span class="n">value</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hy</span><span class="o">.</span><span class="n">HyString</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">value</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hy</span><span class="o">.</span><span class="n">HySymbol</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]))</span>
+
+    <span class="k">return</span> <span class="n">value</span></div>
+
+
+<div class="viewcode-block" id="create_hy_expression"><a class="viewcode-back" href="../../dev/api.html#raider.utils.create_hy_expression">[docs]</a><span class="k">def</span> <span class="nf">create_hy_expression</span><span class="p">(</span>
+    <span class="n">variable</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="n">Any</span><span class="p">]]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Creates a hy expression.</span>
+
+<span class="sd">    Raider configuration is saved in hy format, and this function</span>
+<span class="sd">    creates the assignments in this format.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      variable:</span>
+<span class="sd">        A string with the name of the variable to be created.</span>
+<span class="sd">      value:</span>
+<span class="sd">        The value of the variable.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      A string with the valid hy expression.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hy</span><span class="o">.</span><span class="n">HySymbol</span><span class="p">(</span><span class="s2">&quot;setv&quot;</span><span class="p">))</span>
+    <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hy</span><span class="o">.</span><span class="n">HySymbol</span><span class="p">(</span><span class="n">variable</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hy</span><span class="o">.</span><span class="n">HyDict</span><span class="p">(</span><span class="n">py_dict_to_hy_list</span><span class="p">(</span><span class="n">value</span><span class="p">)))</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hy</span><span class="o">.</span><span class="n">HyList</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hy</span><span class="o">.</span><span class="n">HyString</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hy</span><span class="o">.</span><span class="n">HySymbol</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+
+    <span class="k">return</span> <span class="n">serialize_hy</span><span class="p">(</span><span class="n">hy</span><span class="o">.</span><span class="n">HyExpression</span><span class="p">(</span><span class="n">data</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span></div>
+
+
+<div class="viewcode-block" id="serialize_hy"><a class="viewcode-back" href="../../dev/api.html#raider.utils.serialize_hy">[docs]</a><span class="k">def</span> <span class="nf">serialize_hy</span><span class="p">(</span>
+    <span class="n">form</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span>
+        <span class="n">hy</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">HyExpression</span><span class="p">,</span>
+        <span class="n">hy</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">HyDict</span><span class="p">,</span>
+        <span class="n">hy</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">HyList</span><span class="p">,</span>
+        <span class="n">hy</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">HySymbol</span><span class="p">,</span>
+        <span class="n">hy</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">HyInteger</span><span class="p">,</span>
+        <span class="n">hy</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">HyKeyword</span><span class="p">,</span>
+        <span class="n">hy</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">HyString</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Serializes hy expression.</span>
+
+<span class="sd">    This function serializes the supplied hy expression and returns it</span>
+<span class="sd">    in a string format, so that it can be later saved in a file.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      form:</span>
+<span class="sd">        A hy expression to convert to a string.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      A string with the serialized form.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">form</span><span class="p">,</span> <span class="n">hy</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">HyExpression</span><span class="p">):</span>
+        <span class="n">hystring</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">serialize_hy</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">form</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">form</span><span class="p">,</span> <span class="n">hy</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">HyDict</span><span class="p">):</span>
+        <span class="n">hystring</span> <span class="o">=</span> <span class="s2">&quot;{&quot;</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">serialize_hy</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">form</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;}&quot;</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">form</span><span class="p">,</span> <span class="n">hy</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">HyList</span><span class="p">):</span>
+        <span class="n">hystring</span> <span class="o">=</span> <span class="s2">&quot;[&quot;</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">serialize_hy</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">form</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;]&quot;</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">form</span><span class="p">,</span> <span class="n">hy</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">HySymbol</span><span class="p">):</span>
+        <span class="n">hystring</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">form</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">form</span><span class="p">,</span> <span class="n">hy</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">HyInteger</span><span class="p">):</span>
+        <span class="n">hystring</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">form</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">form</span><span class="p">,</span> <span class="n">hy</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">HyKeyword</span><span class="p">):</span>
+        <span class="n">hystring</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">form</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">form</span><span class="p">,</span> <span class="n">hy</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">HyString</span><span class="p">):</span>
+        <span class="n">hystring</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;&quot;</span><span class="si">{</span><span class="n">form</span><span class="si">}</span><span class="s1">&quot;&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">hystring</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">form</span><span class="si">}</span><span class="s2">&quot;</span>
+
+    <span class="k">return</span> <span class="n">hystring</span></div>
+
+
+<div class="viewcode-block" id="eval_file"><a class="viewcode-back" href="../../dev/api.html#raider.utils.eval_file">[docs]</a><span class="k">def</span> <span class="nf">eval_file</span><span class="p">(</span>
+    <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">shared_locals</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Evaluate hy file.</span>
+
+<span class="sd">    This function evaluates all the content inside the supplied hy file,</span>
+<span class="sd">    and returns the created locals() so that it can be later used for</span>
+<span class="sd">    other files.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      filename:</span>
+<span class="sd">        A string with the file name to be evaluated.</span>
+<span class="sd">      shared_locals:</span>
+<span class="sd">        A dictionary with the locals() that will be considered when</span>
+<span class="sd">        evaluating the file.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      A dictionary with the updated locals() after evaluating the hy</span>
+<span class="sd">      file.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">shared_locals</span><span class="p">:</span>
+        <span class="nb">locals</span><span class="p">()</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">shared_locals</span><span class="p">)</span>
+
+    <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Loading </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">hyfile</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+                <span class="n">expr</span> <span class="o">=</span> <span class="n">hy</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">hyfile</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">expr</span><span class="p">:</span>
+                    <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;expr = </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">))</span>
+                    <span class="n">hy</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">EOFError</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Finished processing </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="nb">locals</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="eval_project_file"><a class="viewcode-back" href="../../dev/api.html#raider.utils.eval_project_file">[docs]</a><span class="k">def</span> <span class="nf">eval_project_file</span><span class="p">(</span>
+    <span class="n">project</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">shared_locals</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Evaluate a hy file from a project.</span>
+
+<span class="sd">    This function evaluates the specified file inside the project and</span>
+<span class="sd">    returns the locals() which are updated after evaluating the file.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      project:</span>
+<span class="sd">        A string with the name of the project.</span>
+<span class="sd">      filename:</span>
+<span class="sd">        A string with the file name to be evaluated.</span>
+<span class="sd">      shared_locals:</span>
+<span class="sd">        A dictionary of locals() to be included when evaluating the</span>
+<span class="sd">        file.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      A dictionary of locals() updated after evaluating the file.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">raider_objects</span> <span class="o">=</span> <span class="n">import_raider_objects</span><span class="p">()</span>
+    <span class="nb">locals</span><span class="p">()</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">raider_objects</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">shared_locals</span><span class="p">:</span>
+        <span class="nb">locals</span><span class="p">()</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">shared_locals</span><span class="p">)</span>
+
+    <span class="n">file_path</span> <span class="o">=</span> <span class="n">get_project_file</span><span class="p">(</span><span class="n">project</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+    <span class="n">shared_locals</span> <span class="o">=</span> <span class="n">eval_file</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="nb">locals</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">shared_locals</span></div>
+
+
+<div class="viewcode-block" id="list_projects"><a class="viewcode-back" href="../../dev/api.html#raider.utils.list_projects">[docs]</a><span class="k">def</span> <span class="nf">list_projects</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;List existing projects.</span>
+
+<span class="sd">    This function returns the list of projects that have been</span>
+<span class="sd">    configured in Raider.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      A list with the strings of the project found in the</span>
+<span class="sd">      configuration directory.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">projects</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">projectdir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">get_config_dir</span><span class="p">(),</span> <span class="s2">&quot;projects&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">projectdir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">projectdir</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">filename</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;_&quot;</span><span class="p">:</span>
+            <span class="n">projects</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">projects</span></div>
+
+
+<div class="viewcode-block" id="match_tag"><a class="viewcode-back" href="../../dev/api.html#raider.utils.match_tag">[docs]</a><span class="k">def</span> <span class="nf">match_tag</span><span class="p">(</span><span class="n">html_tag</span><span class="p">:</span> <span class="n">bs4</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">Tag</span><span class="p">,</span> <span class="n">attributes</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Tells if a tag matches the search.</span>
+
+<span class="sd">    This function checks whether the supplied tag matches the</span>
+<span class="sd">    attributes. The attributes is a dictionary, and the values are</span>
+<span class="sd">    treated as a regular expression, to allow checking for tags that</span>
+<span class="sd">    don&#39;t have a static value.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      html_tag:</span>
+<span class="sd">        A bs4.element.Tag object with the tag to be checked.</span>
+<span class="sd">      attributes:</span>
+<span class="sd">        A dictionary of attributes to check whether they match with the tag.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      A boolean saying whether the tag matched with the attributes or not.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">attributes</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">key</span> <span class="ow">in</span> <span class="n">html_tag</span><span class="o">.</span><span class="n">attrs</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="p">(</span>
+            <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">html_tag</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+        <span class="p">):</span>
+            <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="kc">True</span></div>
+
+
+<div class="viewcode-block" id="parse_json_filter"><a class="viewcode-back" href="../../dev/api.html#raider.utils.parse_json_filter">[docs]</a><span class="k">def</span> <span class="nf">parse_json_filter</span><span class="p">(</span><span class="n">raw</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Parses a raw JSON filter and returns a list with the items.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      raw:</span>
+<span class="sd">        A string with the expected JSON filter.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      A list with all items found in the filter.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">splitted</span> <span class="o">=</span> <span class="n">raw</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
+
+    <span class="n">parsed_filter</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">splitted</span><span class="p">:</span>
+        <span class="n">parsed_item</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">open_delim_index</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;[&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">open_delim_index</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">open_delim_index</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span>
+                    <span class="p">(</span>
+                        <span class="s2">&quot;Syntax error. &#39;.&#39; should be followed by a key,&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;not an array index.&quot;</span><span class="p">,</span>
+                    <span class="p">)</span>
+                <span class="p">)</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+            <span class="n">parsed_item</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">[:</span><span class="n">open_delim_index</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">))</span>
+            <span class="n">array_indices</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="n">open_delim_index</span><span class="p">:]</span>
+            <span class="n">open_delim_index</span> <span class="o">=</span> <span class="mi">0</span>
+
+            <span class="k">while</span> <span class="n">array_indices</span><span class="p">:</span>
+                <span class="n">close_delim_index</span> <span class="o">=</span> <span class="n">array_indices</span><span class="o">.</span><span class="n">find</span><span class="p">(</span>
+                    <span class="s2">&quot;]&quot;</span><span class="p">,</span> <span class="n">open_delim_index</span> <span class="o">+</span> <span class="mi">1</span>
+                <span class="p">)</span>
+                <span class="k">if</span> <span class="n">close_delim_index</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                    <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span><span class="s2">&quot;Syntax error. Closing &#39;]&#39; not found.&quot;</span><span class="p">)</span>
+                    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+                <span class="n">index</span> <span class="o">=</span> <span class="n">array_indices</span><span class="p">[</span><span class="n">open_delim_index</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">close_delim_index</span><span class="p">]</span>
+                <span class="k">if</span> <span class="n">index</span><span class="o">.</span><span class="n">isdecimal</span><span class="p">():</span>
+                    <span class="n">parsed_item</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;[&quot;</span> <span class="o">+</span> <span class="n">index</span> <span class="o">+</span> <span class="s2">&quot;]&quot;</span><span class="p">)</span>
+                    <span class="n">array_indices</span> <span class="o">=</span> <span class="n">array_indices</span><span class="p">[</span><span class="n">close_delim_index</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">logging</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span>
+                        <span class="p">(</span>
+                            <span class="s2">&quot;Syntax error.&quot;</span><span class="p">,</span>
+                            <span class="s2">&quot;The index between &#39;[&#39; and &#39;] is not a decimal.&quot;</span><span class="p">,</span>
+                        <span class="p">)</span>
+                    <span class="p">)</span>
+                    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">parsed_item</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">))</span>
+
+        <span class="n">parsed_filter</span> <span class="o">+=</span> <span class="n">parsed_item</span>
+
+    <span class="k">return</span> <span class="n">parsed_filter</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OWASP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

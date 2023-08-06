@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Definitions &mdash; raider 0.2.2 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/assets/jsonview.bundle.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sphinx-needs/libs/html/datatables.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sphinx-needs/common.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sphinx-needs/layouts.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sphinx-needs/styles.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sphinx-needs/modern.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/assets/jsonview.bundle.js"></script>
+        <script src="../_static/assets/jsonview_loader.js"></script>
+        <script src="../_static/sphinx-needs/libs/html/datatables.min.js"></script>
+        <script src="../_static/sphinx-needs/libs/html/datatables_loader.js"></script>
+        <script src="../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Frequently asked questions" href="faq.html" />
+    <link rel="prev" title="Tutorials" href="tutorials.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> raider
+          </a>
+              <div class="version">
+                0.2.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installing Raider</a></li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently asked questions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev/special_variables.html">Special variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/flows.html">Flows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/attacks.html">Fuzzing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/operations.html">Operations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev/api.html">User API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/api.html#internal-api-reference">Internal API reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">raider</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Definitions</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/user/definitions.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="definitions">
+<h1>Definitions<a class="headerlink" href="#definitions" title="Permalink to this heading"></a></h1>
+<dl class="glossary">
+<dt id="term-Authentication">Authentication<a class="headerlink" href="#term-Authentication" title="Permalink to this term"></a></dt><dd><p>The act of proving the identity of a computer system
+user. Authentication in the context of web applications is
+<em>usually</em> performed by submitting a username or ID and a piece of
+private information (<a class="reference internal" href="#term-Factor"><span class="xref std std-term">factor</span></a>) such as a
+password.</p>
+<p>In <strong>Raider</strong> the authentication process is defined by a series of
+<a class="reference internal" href="#term-Flow"><span class="xref std std-term">Flow objects</span></a>.  Those are extracted from the
+<span class="xref std std-ref">_authentication</span> variable in the
+<a class="reference internal" href="#term-hyfiles"><span class="xref std std-term">hyfiles</span></a>, and stored inside an
+<a class="reference internal" href="../dev/api.html#raider.authentication.Authentication" title="raider.authentication.Authentication"><code class="xref py py-class docutils literal notranslate"><span class="pre">Authentication</span></code></a>
+object. It’s also accessible from the <a class="reference internal" href="../dev/api.html#raider.Raider" title="raider.Raider"><code class="xref py py-class docutils literal notranslate"><span class="pre">Raider</span></code></a>
+directly:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">raider</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">app</span> <span class="o">=</span> <span class="n">raider</span><span class="o">.</span><span class="n">Raider</span><span class="p">(</span><span class="s2">&quot;my_app&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">app</span><span class="o">.</span><span class="n">authentication</span>
+<span class="go">&lt;raider.authentication.Authentication object at 0x7fbf25842dc0&gt;</span>
+</pre></div>
+</div>
+</dd>
+<dt id="term-Factor">Factor<a class="headerlink" href="#term-Factor" title="Permalink to this term"></a></dt><dd><p>A factor can be <em>something the user knows</em> (passwords, security
+questions, etc…), <em>something they have</em> (bank card, USB security
+key, etc…), <em>something they are</em> (fingerprint, eye iris, etc..) or
+<em>somewhere they are</em> (GPS location, known WiFi connection, etc…).</p>
+</dd>
+<dt id="term-Finite-state-machine">Finite state machine<a class="headerlink" href="#term-Finite-state-machine" title="Permalink to this term"></a></dt><dd><p>A mathematical model of computation abstracting a process that can
+be only in one of a finite number of <em>states</em> at any given
+time. Check the <a class="reference external" href="https://en.wikipedia.org/wiki/Finite-state_machine">Wikipedia article</a> for more
+information, since it explains this better than me anyways.</p>
+</dd>
+<dt id="term-Flow">Flow<a class="headerlink" href="#term-Flow" title="Permalink to this term"></a></dt><dd><p>A <strong>Raider</strong> class implementing <a class="reference internal" href="#term-Stage"><span class="xref std std-term">stages</span></a>. To create a
+<a class="reference internal" href="../dev/flows.html#raider.flow.Flow" title="raider.flow.Flow"><code class="xref py py-class docutils literal notranslate"><span class="pre">Flow</span></code></a> object, you need to give it a name,
+a <a class="reference internal" href="../dev/api.html#raider.request.Request" title="raider.request.Request"><code class="xref py py-class docutils literal notranslate"><span class="pre">Request</span></code></a> object, and optionally
+outputs and <a class="reference internal" href="#term-Operation"><span class="xref std std-term">operations</span></a>.  Check the <a class="reference internal" href="../dev/flows.html#flows"><span class="std std-ref">Flow
+configuration page</span></a> for more information.</p>
+</dd>
+<dt id="term-Functions">Functions<a class="headerlink" href="#term-Functions" title="Permalink to this term"></a></dt><dd><p>A <strong>Raider</strong> class containing all <a class="reference internal" href="#term-Flow"><span class="xref std std-term">Flows</span></a> objects
+that don’t affect the <a class="reference internal" href="#term-Authentication"><span class="xref std std-term">authentication</span></a>
+process. The <a class="reference internal" href="../dev/api.html#raider.functions.Functions" title="raider.functions.Functions"><code class="xref py py-class docutils literal notranslate"><span class="pre">Functions</span></code></a>
+object is extracted from the <span class="xref std std-ref">_functions</span>
+variable.</p>
+</dd>
+<dt id="term-hyfiles">hyfiles<a class="headerlink" href="#term-hyfiles" title="Permalink to this term"></a></dt><dd><p>The documentation uses the term <strong>hyfiles</strong> to refer to any
+<code class="docutils literal notranslate"><span class="pre">*.hy</span></code> file inside the project’s configuration directory. Each
+will be evaluated in <em>alphabetical order</em> by <strong>Raider</strong>.</p>
+<p>The objects created in previous files are all available in the next
+file, since all the <code class="docutils literal notranslate"><span class="pre">locals()</span></code> get preserved and loaded again when
+reading the next file. A common practice is to prepend the file
+names with two digits and an underscore, for example
+<code class="docutils literal notranslate"><span class="pre">03_authentication.hy</span></code> and <code class="docutils literal notranslate"><span class="pre">09_users.hy</span></code>.</p>
+</dd>
+<dt id="term-Multi-factor-authentication-MFA">Multi-factor authentication (MFA)<a class="headerlink" href="#term-Multi-factor-authentication-MFA" title="Permalink to this term"></a></dt><dd><p>An <a class="reference internal" href="#term-Authentication"><span class="xref std std-term">authentication</span></a> method in which the
+user is granted access only after successfully presenting two or
+more pieces of evidence (<a class="reference internal" href="#term-Factor"><span class="xref std std-term">factors</span></a>).</p>
+</dd>
+<dt id="term-Operation">Operation<a class="headerlink" href="#term-Operation" title="Permalink to this term"></a></dt><dd><p>A piece of code that will be run after the HTTP <a class="reference internal" href="#term-Response"><span class="xref std std-term">response</span></a> is
+received. All Operations inherit from <a class="reference internal" href="../dev/operations.html#raider.operations.Operation" title="raider.operations.Operation"><code class="xref py py-class docutils literal notranslate"><span class="pre">Operation</span></code></a> class.</p>
+<p>All defined Operations inside the <a class="reference internal" href="#term-Flow"><span class="xref std std-term">Flow</span></a> object will
+stop running when the first <a class="reference internal" href="../dev/operations.html#raider.operations.NextStage" title="raider.operations.NextStage"><code class="xref py py-class docutils literal notranslate"><span class="pre">NextStage</span></code></a> Operation is encountered.</p>
+<p><strong>Raider</strong> comes with <a class="reference internal" href="../dev/operations.html#operations"><span class="std std-ref">some standard operations</span></a>,
+but it also gives the user the flexibility to <a class="reference internal" href="../dev/operations.html#operations-api"><span class="std std-ref">write their own
+Operations easily</span></a>.</p>
+</dd>
+<dt id="term-Plugin">Plugin<a class="headerlink" href="#term-Plugin" title="Permalink to this term"></a></dt><dd><p>A piece of code that can be used to generate inputs for outgoing
+HTTP <a class="reference internal" href="#term-Request"><span class="xref std std-term">Requests</span></a>, and/or extract outputs from
+incoming term:<cite>Responses &lt;Response&gt;</cite>. All plugins inherit from
+<a class="reference internal" href="../dev/plugins.html#raider.plugins.common.Plugin" title="raider.plugins.common.Plugin"><code class="xref py py-class docutils literal notranslate"><span class="pre">Plugin</span></code></a> class.</p>
+<p>When used inside a <a class="reference internal" href="#term-Request"><span class="xref std std-term">Request</span></a>, Plugins acts as input
+and replace themselves with the actual value.</p>
+<p>When used inside the <a class="reference internal" href="#term-Flow"><span class="xref std std-term">Flow’s</span></a> <code class="docutils literal notranslate"><span class="pre">:output</span></code> parameter,
+Plugins act as outputs from the HTTP response, and store the
+extracted value for later use.</p>
+<p><strong>Raider</strong> comes with <a class="reference internal" href="../dev/plugins.html#plugins"><span class="std std-ref">some standard plugins</span></a>, but it
+also gives the user the flexibility to <a class="reference internal" href="../dev/plugins.html#plugin-api"><span class="std std-ref">write their own
+Plugins easily</span></a>.</p>
+</dd>
+<dt id="term-Project">Project<a class="headerlink" href="#term-Project" title="Permalink to this term"></a></dt><dd><p>To avoid confusion with the <a class="reference internal" href="../dev/api.html#raider.application.Application" title="raider.application.Application"><code class="xref py py-class docutils literal notranslate"><span class="pre">Application</span></code></a> class, <strong>Raider</strong> uses the term
+Project to refer to an application, with existing <a class="reference internal" href="#term-hyfiles"><span class="xref std std-term">hyfiles</span></a>.</p>
+</dd>
+<dt id="term-Request">Request<a class="headerlink" href="#term-Request" title="Permalink to this term"></a></dt><dd><p>A HTTP request with the defined inputs. In <strong>Raider</strong> it’s
+implemented as a separate class <a class="reference internal" href="../dev/api.html#raider.request.Request" title="raider.request.Request"><code class="xref py py-class docutils literal notranslate"><span class="pre">Request</span></code></a>. This however is not used directly most of
+the times, but as an argument when creating the <a class="reference internal" href="#term-Flow"><span class="xref std std-term">Flow</span></a>
+object in <a class="reference internal" href="#term-hyfiles"><span class="xref std std-term">hyfiles</span></a>.</p>
+<p>When used inside a Request, a <a class="reference internal" href="#term-Plugin"><span class="xref std std-term">Plugin</span></a> will replace
+itself with its actual value during runtime.</p>
+</dd>
+<dt id="term-Response">Response<a class="headerlink" href="#term-Response" title="Permalink to this term"></a></dt><dd><p>A HTTP response from which the outputs are extracted and stored
+inside the <a class="reference internal" href="#term-Plugin"><span class="xref std std-term">Plugins</span></a>.</p>
+<p>When the <a class="reference internal" href="#term-Flow"><span class="xref std std-term">Flow</span></a> object containing this response is
+received and processed, the <a class="reference internal" href="#term-Operation"><span class="xref std std-term">Operations</span></a> are
+executed.</p>
+</dd>
+<dt id="term-Stage">Stage<a class="headerlink" href="#term-Stage" title="Permalink to this term"></a></dt><dd><p>A <strong>Raider</strong> concept describing the information exchange between
+the client and server, containing one <a class="reference internal" href="#term-Request"><span class="xref std std-term">request</span></a>
+and the respective response.</p>
+</dd>
+</dl>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tutorials.html" class="btn btn-neutral float-left" title="Tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="faq.html" class="btn btn-neutral float-right" title="Frequently asked questions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, OWASP.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
