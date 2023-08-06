@@ -1,0 +1,17 @@
+imantics
+numba==0.53.0
+torch==1.9.0
+onnx
+easydict
+gluoncv==0.11.0b20210908
+tqdm
+opendr-toolkit-engine
+pillow>=8.3.2
+mxnet==1.8.0
+scipy
+tensorboard
+onnxruntime
+opencv-python==4.5.1.48
+pycocotools>=2.0.4
+torchvision==0.10.0
+gdown
