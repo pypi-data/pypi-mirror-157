@@ -1,0 +1,702 @@
+Metadata-Version: 2.1
+Name: sequence-model
+Version: 0.5.0
+Summary: Python version of the Steckler Sequence model built with landlab
+Author: Eric Hutton
+Author-email: mcflugen@gmail.com
+Maintainer: Eric Hutton
+Maintainer-email: mcflugen@gmail.com
+License: The MIT License (MIT)
+        =====================
+        
+        Copyright (c) `2020` `Eric Hutton`
+        
+        Permission is hereby granted, free of charge, to any person
+        obtaining a copy of this software and associated documentation
+        files (the "Software"), to deal in the Software without
+        restriction, including without limitation the rights to use,
+        copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the
+        Software is furnished to do so, subject to the following
+        conditions:
+        
+        The above copyright notice and this permission notice shall be
+        included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+        OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+        NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+        HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+        WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+        FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+        OTHER DEALINGS IN THE SOFTWARE.
+        
+        
+Project-URL: homepage, https://github.com/sequence-dev/sequence
+Project-URL: documentation, https://sequence.readthedocs.io
+Project-URL: repository, https://github.com/sequence-dev/sequence
+Project-URL: changelog, https://github.com/sequence-dev/sequence/blob/develop/CHANGES.rst
+Keywords: sequence,stratigraphy,landlab
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: notebook
+License-File: LICENSE.rst
+License-File: AUTHORS.rst
+
+sequence: Sequence-stratigraphic modeling with Python
+=====================================================
+
+.. image:: https://github.com/sequence-dev/sequence/workflows/Build/Test%20CI/badge.svg
+
+.. image:: https://github.com/sequence-dev/sequence/workflows/Flake8/badge.svg
+
+.. image:: https://github.com/sequence-dev/sequence/workflows/Black/badge.svg
+
+.. image:: https://github.com/sequence-dev/sequence/workflows/Documentation/badge.svg
+
+.. image:: https://readthedocs.org/projects/sequence/badge/?version=develop
+  :target: https://sequence.readthedocs.io/en/develop/?badge=develop
+  :alt: Documentation Status
+
+
+About
+-----
+
+*Sequence* is a modular 2D (i.e., profile) sequence stratigraphic model
+that is written in Python and implemented within the Landlab framework.
+Sequence represents time-averaged fluvial and marine sediment transport
+via differential equations. The modular code includes components to deal
+with sea level changes, sediment compaction, local or flexural isostasy,
+and tectonic subsidence and uplift.
+
+Requirements
+------------
+
+*Sequence* requires Python 3.
+
+Apart from Python, *Sequence* has a number of other requirements, all of which
+can be obtained through either *pip* or *conda*, that will be automatically
+installed when you install *Sequence*.
+
+To see a full listing of the requirements, have a look at the project's
+*requirements.txt* file.
+
+If you are a developer of *Sequence* you will also want to install
+additional dependencies for running *Sequence*'s tests to make sure
+that things are working as they should. These dependencies are listed
+in *requirements-testing.txt*.
+
+Installation
+------------
+
+To install *Sequence*, first create a new environment in
+which *Sequence* will be installed. This, although not necessary, will
+isolate the installation so that there won't be conflicts with your
+base *Python* installation. This can be done with *conda* as::
+
+  $ conda create -n sequence python=3
+  $ conda activate sequence
+
+Stable Release
+``````````````
+
+*Sequence*, and its dependencies, can be installed either with *pip*
+or *conda*. Using *pip*::
+
+    $ pip install sequence-model
+
+Using *conda*::
+
+    $ conda install sequence-model -c conda-forge
+
+From Source
+```````````
+
+After downloading the *Sequence* source code, run the following from
+*Sequence*'s top-level folder (the one that contains *setup.py*) to
+install *Sequence* into the current environment::
+
+  $ pip install -e .
+
+
+Usage
+-----
+
+*Sequence* is both a command-line program and a Python package that provides an
+application programming interface.
+
+The command-line program, *sequence*, provides several sub-commands for setting
+up *sequence* input files, running *sequence*, and plotting output (you can use
+the ``--help`` option to get help for the available subcommands). The four
+subcommands are the following:
+
+* `generate`: Generate example input files.
+* `setup`: Setup a folder of input files for a simulation.
+* `run`: Run a simulation.
+* `plot`: Plot a sequence output file.
+
+Example
+```````
+
+The following commands create an example set of input files, runs *sesquence*,
+and then plots the output.
+
+.. code:: bash
+
+  $ mkdir example && cd example
+  $ sequence setup
+  $ sequence run
+  $ sequence plot
+
+.. image:: https://github.com/sequence-dev/sequence/raw/develop/docs/_static/sequence.png
+
+The above can also be run through Python,
+
+.. code:: python
+
+  >>> from sequence import Sequence, SequenceModelGrid
+  >>> grid = SequenceModelGrid(100, spacing=1000.0)
+  >>> grid.at_node["topographic__elevation"] = -0.001 * grid.x_of_node + 20.0
+  
+  >>> sequence = Sequence()
+  >>> sequence.run()
+  >>> sequence.plot()
+
+The ``Sequence`` class provides functionality not available to the command-line
+program. For example, you are able to run a simulation through time while dynamically
+changing parameters.
+
+  >>> from sequence import Sequence, SequenceModelGrid  
+  >>> grid = SequenceModelGrid(100, spacing=1000.0)
+  >>> grid.at_node["topographic__elevation"] = -0.001 * grid.x_of_node + 20.0
+  
+  >>> process = default_process_queue()
+  >>> sequence = Sequence(
+  ...   grid,
+  ...   components=[
+  ...     process["sea_level"],
+  ...     process["compaction"],
+  ...     process["submarine_diffusion"],
+  ...     process["fluvial"],
+  ...     process["flexure"],
+  ...     process["shoreline"],
+  ...   ]
+  ... )  
+  
+  >>> sequence.run(until=300000.0, dt=100.0)
+  >>> sequence.submarine_diffusion.sediment_load *= 2.0
+  >>> sequence.run(until=600000.0, dt=100.0)
+  >>> sequence.plot()
+
+
+Input Files
+-----------
+
+Sequence Parameter File
+```````````````````````
+
+The main *Sequence* input file is a *toml*-formatted (or, optionally, *yaml*)
+text file that lists parameter values for the various components. Running
+the following will print a sample *Sequence* parameter file::
+
+  $ sequence generate sequence.toml
+
+Following is the generated input file,
+
+.. code:: toml
+
+    [sequence]
+    _time = 0.0
+
+    [sequence.grid]
+    shape = [3, 100]
+    xy_spacing = 100.0
+    xy_of_lower_left = [0.0, 0.0]
+
+    [sequence.grid.bc]
+    top = "closed"
+    bottom = "closed"
+
+    [sequence.clock]
+    start = 0.0
+    stop = 20000.0
+    step = 100.0
+
+    [sequence.output]
+    interval = 10
+    filepath = "sequence.nc"
+    clobber = true
+    rows = [1]
+    fields = ["sediment_deposit__thickness"]
+
+    [sequence.submarine_diffusion]
+    plain_slope = 0.0008
+    wave_base = 60.0
+    shoreface_height = 15.0
+    alpha = 0.0005
+    shelf_slope = 0.001
+    sediment_load = 3.0
+    load_sealevel = 0.0
+    basin_width = 500000.0
+
+    [sequence.sea_level]
+    amplitude = 10.0
+    wave_length = 1000.0
+    phase = 0.0
+    linear = 0.0
+
+    [sequence.subsidence]
+    filepath = "subsidence.csv"
+
+    [sequence.flexure]
+    method = "flexure"
+    rho_mantle = 3300.0
+    isostasytime = 0
+
+    [sequence.sediments]
+    layers = 2
+    sand = 1.0
+    mud = 0.006
+    sand_density = 2650.0
+    mud_density = 2720.0
+    sand_frac = 0.5
+    hemipelagic = 0.0
+
+    [sequence.bathymetry]
+    filepath = "bathymetry.csv"
+    kind = "linear"
+
+    [sequence.compaction]
+    c = 5e-08
+    porosity_max = 0.5
+    porosity_min = 0.01
+    rho_grain = 2650.0
+    rho_void = 1000.0
+
+
+.. _The grid section:
+
+
+The grid section
+~~~~~~~~~~~~~~~~
+
+You define the grid on which *Sequence* will run in the `sequence.grid` section.
+An example gid section looks like,
+
+.. code::
+
+    [sequence.grid]
+    shape = [3, 500]
+    xy_spacing = 100.0
+    xy_of_lower_left = [0.0, 0.0]
+
+In this case we have a grid that, if we are looking down on it from above, consists
+of three rows and 500 columns (the *shape* parameter). *Sequence* is a 1D model and
+uses only the middle row of nodes so you will never want to change the number of
+rows from a value of 3. You can play with the number of columns though—this is the
+number of stacks of sediment you have along your profile.
+
+The *xy_spacing* parameter is the width of each of your sediment stacks in meters.
+Thus, the length of you domain is the product of the number of columns with
+the spacing (that is, for this example, 500 * 100 m or 50 km).
+
+The *xy_of_lower_left* parameter gives the position of the lower-left node of
+you grid. In *Sequence*, this parameter is not used.
+
+The output section
+~~~~~~~~~~~~~~~~~~
+
+You can define when and what *Sequence* will save to a NetCDF file while it is running.
+Here is an example output section,
+
+.. code::
+
+    [sequence.output]
+    interval = 10
+    filepath = "sequence.nc"
+    clobber = true
+    rows = [1]
+    fields = ["sediment_deposit__thickness"]
+
+The *interval* parameter is the interval, in time steps (**not** years), that
+*Sequence* will write data to a file. Other parameters, which you will
+probably not want to change, are:
+
+* *filepath*: the name of the output NetCDF file to which output is written.
+* *clobber*: what *Sequence* should do if the output file exists. If `true`,
+  an existing file will be overwritten, otherwise *Sequence* will raise an
+  error.
+* *rows*: as described in `The grid section`_ a *Sequence* grid consists
+  of three rows. The *rows* parameter specifies which of these rows to
+  write to the output file.
+* *fields*: a list of names of quantities you would like *Sequence* to include
+  in the NetCDF file. *Sequence* keeps track of many quantities, most of which
+  you probably aren't interested in and so this parameter limits the number
+  of quantities written as output.
+
+.. _Time-varying parameters:
+
+Time-varying parameters
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Some parameters in the *sequence.toml* are able to vary with time. In the above
+example all of the variables are help constant. To have a parameter change
+at some time during the model simulation, you can add a new section, which will
+be read at the given time. For example, if the following section is added
+after the section from the previous example,
+
+.. code:: toml
+
+    [sequence]
+    _time = 100
+
+    [sequence.subsidence]
+    filepath = "subsidence-100.csv"
+
+at time 100, a new subsidence file will be read and used until the end of the
+simulation.
+
+
+Bathymetry File
+```````````````
+
+The *Sequence* bathymetry file defines initial sea-floor elevations in
+a two-column CSV file. A sample bathymetry file can be obtained with::
+
+  $ sequence generate bathymetry.csv
+  # X [m], Elevation [m]
+  0.0,20.0
+  100000.0,-80.0
+
+Elevations are linearly interpolated between the points given in the file
+as necessary.
+
+Sea-Level File
+``````````````
+
+The *Sequence* sea-level file defines sea-level elevations with simulation
+time. It consists of two (comma separated) columns of time and sea-level
+elevation, respectively. For a sample sea-level file::
+
+  $ sequence generate sealevel.csv
+  # Time [y], Sea-Level Elevation [m]
+  0.0,0.0
+  200000.0,-10.0
+
+Subsidence File
+```````````````
+
+The *Sequence* subsidence file defines the subsidence rates of points along
+the profile. It consists of two (comma separated) columns that give position
+along the profile and subsidence rate, respectively. For a sample subsidence
+file::
+
+  $ sequence generate subsidence.csv
+  # X [y], Subsidence Rate [m / y]
+  0.0,0.0
+  30000.0,0.0
+  35000.0,0.0
+  50000.0,0.0
+  100000.0,0.0
+
+.. note::
+
+  Positive rates represent **uplift**.
+
+If you would like your subsidence profile to change with time, see the
+section above, `Time-varying parameters`_.
+
+Output File
+-----------
+
+The output file of *Sequence* is a netcdf-formatted file that records the
+generated stratigraphy. Output parameters are controlled through the
+*output* section of the parameter file.
+
+Examples
+--------
+
+To run a simulation using the sample input files described above, you first
+need to create a set of sample files::
+
+  $ mkdir example
+  $ cd example && sequence setup
+  example
+
+You can now run the simulation (from within the *example* folder)::
+
+  $ sequence run
+
+Plotting output
+---------------
+
+The *Sequence* program provides a command-line utility for generating a quick
+plot of *Sequence* output from a NetCDF file named *sequence.nc*. As an
+example,
+
+.. code::
+
+    $ sequence plot
+
+If you would like to change some aspects of the generated plot, you can add
+a *sequence.plot* section to your *sequence.toml* file. For example, here
+is a *sequence.plot* section,
+
+.. code:: toml
+
+    [sequence.plot]
+    color_water = [0.8, 1.0, 1.0]
+    color_land = [0.8, 1.0, 0.8]
+    color_shoreface = [0.8, 0.8, 0.0]
+    color_shelf = [0.75, 0.5, 0.5]
+    layer_line_color = "k"
+    layer_line_width = 0.5
+    title = "{filename}"
+    x_label = "Distance (m)"
+    y_label = "Elevation (m)"
+    legend_location = "upper right"
+    layer_start=0
+    layer_stop = -1
+    n_layers = 5
+
+The *color_* parameters give colors of various pieces of the plot as
+fractions of [*red*, *green*, *blue*]. Some other parameters, which may
+not be obvious,
+
+* *layer_start*: the first layer to plot
+* *layer_stop*: the last layer to plot (a value of -1 means stop at the last layer)
+* *n_layers*: the number of layers to plot.
+
+
+Credits
+=======
+
+Development Lead
+----------------
+
+* Mike Steckler
+* Eric Hutton (@mcflugen)
+
+Contributors
+------------
+
+None yet. Why not be the first?
+
+Changelog for Sequence
+======================
+
+.. towncrier release notes start
+
+0.5.0 (2022-06-29)
+------------------
+
+New Tutorial Notebooks
+``````````````````````
+
+- Added a tutorial notebook that demonstrates the use of the new ``Sequence``
+  class and how one can build, run and dynamically modify a new *sequence*
+  model from a series of process components. (`#51 <https://github.com/sequence-dev/sequence/issues/51>`_)
+
+
+New Features
+````````````
+
+- Added several new setters to ``SedimentFlexure`` that allows a user to
+  dynamically change paramters while the model is running. These include:
+  sediment densities (sand and mud), and water density. (`#45 <https://github.com/sequence-dev/sequence/issues/45>`_)
+- Added *water_density* as an input parameter to ``SedimentFlexure``. (`#45 <https://github.com/sequence-dev/sequence/issues/45>`_)
+- Added a new function, ``plot_grid``, that plots the output of a *sequence*
+  model from Python. This serves as the programmatic equivalent of the
+  ``sequence plot`` command-line program. (`#50 <https://github.com/sequence-dev/sequence/issues/50>`_)
+- Added a new module ``sequence.processes`` that holds all processes that can
+  be used to construct a new *sequence* model. (`#50 <https://github.com/sequence-dev/sequence/issues/50>`_)
+- Added ``Sequence`` class that allows a user to construct and run *sequence*
+  models within a Python environment and dynamically change input variables. (`#50 <https://github.com/sequence-dev/sequence/issues/50>`_)
+- Added a ``SequenceModelGrid`` class, based on a *landlab* ``RasterModelGrid``,
+  that creates a grid that can be used for creating new *sequence* models. (`#50 <https://github.com/sequence-dev/sequence/issues/50>`_)
+- Added a new method, *run*, to *Sequence* that allows a user to run the model
+  until a given time and with a given time step. (`#54 <https://github.com/sequence-dev/sequence/issues/54>`_)
+
+
+Bug Fixes
+`````````
+
+- Fixed a bug where the sea floor was not plotted in some situations. (`#46 <https://github.com/sequence-dev/sequence/issues/46>`_)
+- Fixed a bug where the ``Compact`` component would fail to run because
+  porosity was not being tracked within layers. (`#51 <https://github.com/sequence-dev/sequence/issues/51>`_)
+
+
+Other Changes and Additions
+```````````````````````````
+
+- Updated the ``SedimentFlexure`` component to be compatible with the latest
+  version of *landlab*. (`#45 <https://github.com/sequence-dev/sequence/issues/45>`_)
+- Added unit tests for the ``SedimentFlexure`` component. (`#45 <https://github.com/sequence-dev/sequence/issues/45>`_)
+- Upgraded Python syntax to 3.8 and above. (`#47 <https://github.com/sequence-dev/sequence/issues/47>`_)
+- Setup of pre-commit for the project that runs *black*, *flake8*, and
+  *pyupgrade* (for Python 3.8+). (`#48 <https://github.com/sequence-dev/sequence/issues/48>`_)
+- Added GitHub Actions workflows for releasing Sequence to PyPI and TestPyPI
+  (for pre-releases). This allows users to run ``pip install sequence`` to get
+  the latest release. (`#49 <https://github.com/sequence-dev/sequence/issues/49>`_)
+- Updated the pre-commit hooks to ensure notebooks are clean and styled
+  correctly. (`#51 <https://github.com/sequence-dev/sequence/issues/51>`_)
+- Added a GitHub Actions workflow that tests the *sequence* notebooks. The
+  notebooks are simply executed to ensure they run, not to validate any output. (`#52 <https://github.com/sequence-dev/sequence/issues/52>`_)
+- Added a citation file that users of *sequence* can use to cite the software. (`#53 <https://github.com/sequence-dev/sequence/issues/53>`_)
+
+
+0.4.1 (2022-04-12)
+------------------
+
+New Features
+````````````
+
+- Added ``--silent`` option to supress status messages and the progress bar. (`#30 <https://github.com/sequence-dev/sequence/issues/30>`_)
+
+
+Bug Fixes
+`````````
+
+- Fixed a bug where, instead of writing the current model time, *Sequence* was
+  writing the model time step number to the output file as the *time* variable. (`#34 <https://github.com/sequence-dev/sequence/issues/34>`_)
+- Fixed a bug that incorrectly determined the shore and shelf edge at startigraphic layers
+  when writing *netCDF* output. This was only an issue when *Sequence* had averaged buried layers. (`#37 <https://github.com/sequence-dev/sequence/issues/37>`_)
+- Changed the defaults generated by ``sequence setup`` to create a set of input
+  files that generate output that can be plotted by ``sequence plot``. (`#39 <https://github.com/sequence-dev/sequence/issues/39>`_)
+- Fixed a bug that caused the ``sequence plot`` command to fail if the entire profile
+  was above sea level. (`#40 <https://github.com/sequence-dev/sequence/issues/40>`_)
+
+
+Other Changes and Additions
+```````````````````````````
+
+- Fixed continuous integration tests by removing lint, limit numpy version. (`#30 <https://github.com/sequence-dev/sequence/issues/30>`_)
+- Modified requirements file to exclude numpy versions that caused a core dump when running Sequence with the compaction component. (`#31 <https://github.com/sequence-dev/sequence/issues/31>`_)
+- Setup Sequence to use towncrier to manage the changelog. (`#32 <https://github.com/sequence-dev/sequence/issues/32>`_)
+- Setup `towncrier <https://github.com/twisted/towncrier>`_ to manage the chagnelog. (`#33 <https://github.com/sequence-dev/sequence/issues/33>`_)
+- The ``sequence plot`` command now prints a better error message if the
+  *netCDF* output file being plotted is missing a required variable. (`#39 <https://github.com/sequence-dev/sequence/issues/39>`_)
+- Added Python 3.10 to the continuous integration tests. (`#42 <https://github.com/sequence-dev/sequence/issues/42>`_)
+
+
+0.4.0 (2021-07-26)
+------------------
+
+New Features
+````````````
+
+- Added "plot" subcommand to sequence for plotting stratigraphic output
+  from a netcdf file. (`#25 <https://github.com/sequence-dev/sequence/issues/25>`_)
+
+
+Bug Fixes
+`````````
+
+- Fixed layer interpolation when plotting. (`#28 <https://github.com/sequence-dev/sequence/issues/28>`_)
+
+
+Documentation Enhancements
+``````````````````````````
+
+- Updated README documentation. Added descriptions of the
+  sequence.grid and sequence.output sections for the
+  sequence.toml file, and added documentation for the plot
+  subcommand (`#27 <https://github.com/sequence-dev/sequence/issues/27>`_)
+
+
+Other Changes and Additions
+```````````````````````````
+
+- Changed to use GitHub Actions for continuous integration. (`#26 <https://github.com/sequence-dev/sequence/issues/26>`_)
+
+
+0.3.0 (2020-08-11)
+------------------
+
+New Features
+````````````
+
+- Added more time-varying parameters to SubmarineDiffuser. (`#24 <https://github.com/sequence-dev/sequence/issues/24>`_)
+
+
+Documentation Enhancements
+``````````````````````````
+
+- Improved documentation for time-varying parameters. (`#23 <https://github.com/sequence-dev/sequence/issues/23>`_)
+
+
+0.2.0 (2020-07-30)
+------------------
+
+New Features
+````````````
+
+- Added support for toml-formatted input files and is now the default. (`#1 <https://github.com/sequence-dev/sequence/issues/1>`_)
+- Added time varying parameters. (`#18 <https://github.com/sequence-dev/sequence/issues/18>`_)
+- Allow subsidence to vary with time. (`#21 <https://github.com/sequence-dev/sequence/issues/21>`_)
+
+
+Other Changes and Additions
+```````````````````````````
+
+- Fixed CI on Travis and AppVeyor. (`#18 <https://github.com/sequence-dev/sequence/issues/18>`_)
+- Use readthedocs file to configure documentation building. (`#19 <https://github.com/sequence-dev/sequence/issues/19>`_)
+- Changed to use landlab version 2 components. (`#20 <https://github.com/sequence-dev/sequence/issues/20>`_)
+- Added lots of new tests, particularly for reading/writing configuration files. (`#21 <https://github.com/sequence-dev/sequence/issues/21>`_)
+
+
+0.1.2 (2020-03-04)
+------------------ 
+
+- Added sediment compaction
+
+- Updated installation docs (#17)
+
+- Update sequence documentation (#16)
+
+- Added AppVeyor CI for Windows testing (#15)
+
+- Fixed failing shelf edge tests (#14)
+
+- Added examples to sequence cli help message
+
+- Added Python 3.8 support and testing; remove Python 2.7
+
+- Add setup/show/run subcommands to the sequence CLI
+
+- Updated for landlab v2 pre-release version
+
+- Added hemipelagic parameter to sediments section of configuration file
+
+- Bug fixes
+
+- Added ability to read a user-supplied sea level file
+
+- Enhance CI testing
+
+- Added ability to write output at intervals (#11)
+
+- Write a subset of variable fields to netcdf output files
+
+
+0.1.1 (2018-08-24)
+------------------ 
+- Added versioneer for version management
+
+
+0.1.0 (2018-08-24)
+------------------ 
+
+- Initial release
+

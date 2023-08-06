@@ -1,0 +1,3 @@
+[console_scripts]
+sequence = sequence.cli:sequence
+testy = sequence.testy:app
