@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+fdplib/__init__.py
+fdplib/animation.py
+fdplib/darab.py
+fdplib/errors.py
+fdplib/track_classes.py
+fdplib/track_tools.py
+fdplib.egg-info/PKG-INFO
+fdplib.egg-info/SOURCES.txt
+fdplib.egg-info/dependency_links.txt
+fdplib.egg-info/requires.txt
+fdplib.egg-info/top_level.txt
