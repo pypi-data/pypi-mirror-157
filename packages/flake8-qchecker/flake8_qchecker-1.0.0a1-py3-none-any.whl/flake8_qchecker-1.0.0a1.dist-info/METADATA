@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: flake8-qchecker
+Version: 1.0.0a1
+Summary: Flake8 plugin for qChecker
+Home-page: https://github.com/James-Ansley/flake8-qchecker
+Author: James Finnie-Ansley
+License: MIT License
+Keywords: flake8
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Classifier: Framework :: Flake8
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: flake8 (>=4.0.1)
+Requires-Dist: qchecker (~=1.1.0)
+
+# Flake8 qChecker
+
+A [Flake8](https://github.com/PyCQA/flake8) plugin
+for [qChecker](https://github.com/James-Ansley/qchecker).
+
+> **Note:** flake8-qChecker is still in alpha and significant changes are likely
+
+## Install
+
+    pip install flake8-qchecker
+
+## Error Codes
+
+Error codes are not stable in alpha and do not have any meaning. This will be
+updated in future versions. Refer to the error messages to identify the matched
+patterns.
