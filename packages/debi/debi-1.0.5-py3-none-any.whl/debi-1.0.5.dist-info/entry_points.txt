@@ -1,0 +1,4 @@
+[console_scripts]
+deb = deb.main:main
+debi = deb:debi
+

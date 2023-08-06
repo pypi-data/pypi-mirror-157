@@ -1,0 +1,8 @@
+deb/__init__.py,sha256=dZGN7xgtLDSRsF0rqa0nmKU5RcxQy14NMfVDO_z1zAg,46
+deb/main.py,sha256=ml0lfsLD-YNgNo4bXJXCYKtDuxgoHbxtA49mAhVqcK8,5491
+debi-1.0.5.dist-info/LICENSE,sha256=nz7pmquF2bEo8rSN2FFTGI7KY2BUiKQflRchxQTo_cY,1064
+debi-1.0.5.dist-info/METADATA,sha256=1Sz2xYxSL4bncWa2dU2gPhR0B7otrzu4AIWqXuetgxk,1962
+debi-1.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+debi-1.0.5.dist-info/entry_points.txt,sha256=GNriJtQvzm44_yRsC15uOFQ53xcRpv67hMqOf6dsdHk,55
+debi-1.0.5.dist-info/top_level.txt,sha256=2uRenExWQbDopYtsPw3g3ZRrmsR1AsxF70UfMRnrrNc,4
+debi-1.0.5.dist-info/RECORD,,
