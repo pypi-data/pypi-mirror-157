@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gfss-alteryx-devkit
+Version: 0.0.1
+Summary: gfss_alteryx_devkit
+Home-page: https://www.placeholder
+Author: John
+Author-email: john.doe@mail.com
+Project-URL: Bug Tracker, https://www.placeholder
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+placeholder
