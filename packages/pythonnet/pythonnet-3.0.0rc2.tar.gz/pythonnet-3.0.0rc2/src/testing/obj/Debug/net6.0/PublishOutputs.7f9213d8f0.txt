@@ -1,0 +1,6 @@
+/tmp/tmp0stqqpvf/Python.Test.dll
+/tmp/tmp0stqqpvf/Python.Test.runtimeconfig.json
+/tmp/tmp0stqqpvf/Python.Test.pdb
+/tmp/tmp0stqqpvf/Python.Runtime.dll
+/tmp/tmp0stqqpvf/Python.Runtime.pdb
+/tmp/tmp0stqqpvf/Python.Test.deps.json

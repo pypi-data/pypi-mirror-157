@@ -1,0 +1,11 @@
+/home/benedikt/git/pythonnet/build/lib/pythonnet/runtime/Python.Runtime.deps.json
+/home/benedikt/git/pythonnet/build/lib/pythonnet/runtime/Python.Runtime.dll
+/home/benedikt/git/pythonnet/build/lib/pythonnet/runtime/Python.Runtime.pdb
+/home/benedikt/git/pythonnet/src/runtime/obj/release/Python.Runtime.csproj.AssemblyReference.cache
+/home/benedikt/git/pythonnet/src/runtime/obj/release/Python.Runtime.GeneratedMSBuildEditorConfig.editorconfig
+/home/benedikt/git/pythonnet/src/runtime/obj/release/Python.Runtime.AssemblyInfoInputs.cache
+/home/benedikt/git/pythonnet/src/runtime/obj/release/Python.Runtime.AssemblyInfo.cs
+/home/benedikt/git/pythonnet/src/runtime/obj/release/Python.Runtime.csproj.CoreCompileInputs.cache
+/home/benedikt/git/pythonnet/src/runtime/obj/release/Python.Runtime.sourcelink.json
+/home/benedikt/git/pythonnet/src/runtime/obj/release/Python.Runtime.dll
+/home/benedikt/git/pythonnet/src/runtime/obj/release/Python.Runtime.pdb

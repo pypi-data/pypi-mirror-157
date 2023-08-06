@@ -1,0 +1,9 @@
+/tmp/tmp_ojcmbsd/Python.Test.dll
+/tmp/tmp_ojcmbsd/Python.Test.runtimeconfig.json
+/tmp/tmp_ojcmbsd/Python.Test.pdb
+/tmp/tmp_ojcmbsd/Microsoft.CSharp.dll
+/tmp/tmp_ojcmbsd/System.Reflection.Emit.dll
+/tmp/tmp_ojcmbsd/System.Reflection.Emit.ILGeneration.dll
+/tmp/tmp_ojcmbsd/Python.Runtime.dll
+/tmp/tmp_ojcmbsd/Python.Runtime.pdb
+/tmp/tmp_ojcmbsd/Python.Test.deps.json

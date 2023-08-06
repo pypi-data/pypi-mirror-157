@@ -1,0 +1,16 @@
+/home/benedikt/git/pythonnet/src/testing/bin/Debug/netstandard2.0/Python.Test.deps.json
+/home/benedikt/git/pythonnet/src/testing/bin/Debug/netstandard2.0/Python.Test.runtimeconfig.json
+/home/benedikt/git/pythonnet/src/testing/bin/Debug/netstandard2.0/Python.Test.runtimeconfig.dev.json
+/home/benedikt/git/pythonnet/src/testing/bin/Debug/netstandard2.0/Python.Test.dll
+/home/benedikt/git/pythonnet/src/testing/bin/Debug/netstandard2.0/Python.Test.pdb
+/home/benedikt/git/pythonnet/src/testing/bin/Debug/netstandard2.0/Python.Runtime.dll
+/home/benedikt/git/pythonnet/src/testing/bin/Debug/netstandard2.0/Python.Runtime.pdb
+/home/benedikt/git/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.csproj.AssemblyReference.cache
+/home/benedikt/git/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.GeneratedMSBuildEditorConfig.editorconfig
+/home/benedikt/git/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.AssemblyInfoInputs.cache
+/home/benedikt/git/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.AssemblyInfo.cs
+/home/benedikt/git/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.csproj.CoreCompileInputs.cache
+/home/benedikt/git/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.csproj.CopyComplete
+/home/benedikt/git/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.dll
+/home/benedikt/git/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.pdb
+/home/benedikt/git/pythonnet/src/testing/obj/Debug/netstandard2.0/Python.Test.genruntimeconfig.cache

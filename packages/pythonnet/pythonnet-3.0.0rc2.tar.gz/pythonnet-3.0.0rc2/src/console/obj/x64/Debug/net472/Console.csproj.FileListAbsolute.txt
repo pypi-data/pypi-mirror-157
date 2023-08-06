@@ -1,0 +1,14 @@
+/home/benedikt/git/pythonnet/src/console/bin/x64/Debug/net472/nPython.exe.config
+/home/benedikt/git/pythonnet/src/console/bin/x64/Debug/net472/nPython.exe
+/home/benedikt/git/pythonnet/src/console/bin/x64/Debug/net472/nPython.pdb
+/home/benedikt/git/pythonnet/src/console/bin/x64/Debug/net472/Python.Runtime.dll
+/home/benedikt/git/pythonnet/src/console/bin/x64/Debug/net472/Python.Runtime.pdb
+/home/benedikt/git/pythonnet/src/console/obj/x64/Debug/net472/Console.csproj.AssemblyReference.cache
+/home/benedikt/git/pythonnet/src/console/obj/x64/Debug/net472/Console.csproj.SuggestedBindingRedirects.cache
+/home/benedikt/git/pythonnet/src/console/obj/x64/Debug/net472/Console.GeneratedMSBuildEditorConfig.editorconfig
+/home/benedikt/git/pythonnet/src/console/obj/x64/Debug/net472/Console.AssemblyInfoInputs.cache
+/home/benedikt/git/pythonnet/src/console/obj/x64/Debug/net472/Console.AssemblyInfo.cs
+/home/benedikt/git/pythonnet/src/console/obj/x64/Debug/net472/Console.csproj.CoreCompileInputs.cache
+/home/benedikt/git/pythonnet/src/console/obj/x64/Debug/net472/Console.csproj.CopyComplete
+/home/benedikt/git/pythonnet/src/console/obj/x64/Debug/net472/nPython.exe
+/home/benedikt/git/pythonnet/src/console/obj/x64/Debug/net472/nPython.pdb

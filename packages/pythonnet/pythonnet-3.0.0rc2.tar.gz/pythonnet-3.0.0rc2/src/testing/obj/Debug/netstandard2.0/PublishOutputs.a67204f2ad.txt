@@ -1,0 +1,9 @@
+/tmp/tmp_cbgpy65/Python.Test.dll
+/tmp/tmp_cbgpy65/Python.Test.runtimeconfig.json
+/tmp/tmp_cbgpy65/Python.Test.pdb
+/tmp/tmp_cbgpy65/Microsoft.CSharp.dll
+/tmp/tmp_cbgpy65/System.Reflection.Emit.dll
+/tmp/tmp_cbgpy65/System.Reflection.Emit.ILGeneration.dll
+/tmp/tmp_cbgpy65/Python.Runtime.dll
+/tmp/tmp_cbgpy65/Python.Runtime.pdb
+/tmp/tmp_cbgpy65/Python.Test.deps.json

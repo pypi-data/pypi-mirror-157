@@ -1,0 +1,14 @@
+/home/benedikt/git/pythonnet/pythonnet/runtime/Python.Runtime.deps.json
+/home/benedikt/git/pythonnet/pythonnet/runtime/Python.Runtime.dll
+/home/benedikt/git/pythonnet/pythonnet/runtime/Python.Runtime.pdb
+/home/benedikt/git/pythonnet/src/runtime/obj/Debug/Python.Runtime.csproj.AssemblyReference.cache
+/home/benedikt/git/pythonnet/src/runtime/obj/Debug/Python.Runtime.GeneratedMSBuildEditorConfig.editorconfig
+/home/benedikt/git/pythonnet/src/runtime/obj/Debug/Python.Runtime.AssemblyInfoInputs.cache
+/home/benedikt/git/pythonnet/src/runtime/obj/Debug/Python.Runtime.AssemblyInfo.cs
+/home/benedikt/git/pythonnet/src/runtime/obj/Debug/Python.Runtime.csproj.CoreCompileInputs.cache
+/home/benedikt/git/pythonnet/src/runtime/obj/Debug/Python.Runtime.sourcelink.json
+/home/benedikt/git/pythonnet/src/runtime/obj/Debug/Python.Runtime.dll
+/home/benedikt/git/pythonnet/src/runtime/obj/Debug/Python.Runtime.pdb
+/home/benedikt/git/pythonnet/tests/domain_tests/bin/Python.Runtime.deps.json
+/home/benedikt/git/pythonnet/tests/domain_tests/bin/Python.Runtime.dll
+/home/benedikt/git/pythonnet/tests/domain_tests/bin/Python.Runtime.pdb

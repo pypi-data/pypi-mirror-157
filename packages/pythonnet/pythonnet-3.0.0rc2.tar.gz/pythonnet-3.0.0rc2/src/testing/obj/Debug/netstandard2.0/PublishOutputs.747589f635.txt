@@ -1,0 +1,9 @@
+/tmp/tmpaaok508k/Python.Test.dll
+/tmp/tmpaaok508k/Python.Test.runtimeconfig.json
+/tmp/tmpaaok508k/Python.Test.pdb
+/tmp/tmpaaok508k/Microsoft.CSharp.dll
+/tmp/tmpaaok508k/System.Reflection.Emit.dll
+/tmp/tmpaaok508k/System.Reflection.Emit.ILGeneration.dll
+/tmp/tmpaaok508k/Python.Runtime.dll
+/tmp/tmpaaok508k/Python.Runtime.pdb
+/tmp/tmpaaok508k/Python.Test.deps.json

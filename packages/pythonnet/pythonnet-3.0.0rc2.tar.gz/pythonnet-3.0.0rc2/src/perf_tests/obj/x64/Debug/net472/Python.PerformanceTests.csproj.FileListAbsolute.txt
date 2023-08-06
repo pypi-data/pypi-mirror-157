@@ -1,0 +1,7 @@
+/home/benedikt/git/pythonnet/src/perf_tests/obj/x64/Debug/net472/Python.PerformanceTests.csproj.AssemblyReference.cache
+/home/benedikt/git/pythonnet/src/perf_tests/obj/x64/Debug/net472/Python.PerformanceTests.csproj.SuggestedBindingRedirects.cache
+/home/benedikt/git/pythonnet/src/perf_tests/obj/x64/Debug/net472/Python.PerformanceTests.dll.config
+/home/benedikt/git/pythonnet/src/perf_tests/obj/x64/Debug/net472/Python.PerformanceTests.GeneratedMSBuildEditorConfig.editorconfig
+/home/benedikt/git/pythonnet/src/perf_tests/obj/x64/Debug/net472/Python.PerformanceTests.AssemblyInfoInputs.cache
+/home/benedikt/git/pythonnet/src/perf_tests/obj/x64/Debug/net472/Python.PerformanceTests.AssemblyInfo.cs
+/home/benedikt/git/pythonnet/src/perf_tests/obj/x64/Debug/net472/Python.PerformanceTests.csproj.CoreCompileInputs.cache
