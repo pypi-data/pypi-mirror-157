@@ -1,0 +1,6 @@
+spacy>=spacy
+pandas>=1.4.3
+openpyxl==3.0.10
+
+[:python_version > "3.4"]
+pathlib2==2.3.7.post1
