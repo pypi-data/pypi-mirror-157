@@ -1,0 +1,15 @@
+LICENSE
+setup.py
+src/calculator_demo_pkg/__init__.py
+src/calculator_demo_pkg.egg-info/PKG-INFO
+src/calculator_demo_pkg.egg-info/SOURCES.txt
+src/calculator_demo_pkg.egg-info/dependency_links.txt
+src/calculator_demo_pkg.egg-info/top_level.txt
+src/calculator_demo_pkg/scientific/__init__.py
+src/calculator_demo_pkg/scientific/cos.py
+src/calculator_demo_pkg/scientific/sin.py
+src/calculator_demo_pkg/standard/__init__.py
+src/calculator_demo_pkg/standard/add.py
+src/calculator_demo_pkg/standard/divide.py
+src/calculator_demo_pkg/standard/multiply.py
+src/calculator_demo_pkg/standard/subtract.py
