@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+tapyr/__init__.py
+tapyr/api.py
+tapyr.egg-info/PKG-INFO
+tapyr.egg-info/SOURCES.txt
+tapyr.egg-info/dependency_links.txt
+tapyr.egg-info/requires.txt
+tapyr.egg-info/top_level.txt
