@@ -1,0 +1,16 @@
+importlib-metadata>=4
+
+[autopep8 >]
+1.0
+
+[build >]
+0.8
+
+[coverage >]
+6.0
+
+[pytest >]
+7.0
+
+[twine >]
+4.0
