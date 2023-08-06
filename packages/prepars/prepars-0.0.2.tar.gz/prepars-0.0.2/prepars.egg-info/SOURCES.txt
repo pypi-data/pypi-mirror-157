@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+prepars.egg-info/PKG-INFO
+prepars.egg-info/SOURCES.txt
+prepars.egg-info/dependency_links.txt
+prepars.egg-info/top_level.txt
+tests/__init__.py
