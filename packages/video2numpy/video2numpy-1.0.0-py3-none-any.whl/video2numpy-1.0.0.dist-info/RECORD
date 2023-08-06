@@ -1,0 +1,12 @@
+video2numpy/__init__.py,sha256=7mx0kycl2VHtS_TKQQlAPv71QgnIZmPDU8K60h_t1Ko,56
+video2numpy/cli.py,sha256=zvN6jyNzOaQRtDKTjdu3S3s8E6Mw55b2zZ5gtyIxYEY,180
+video2numpy/reader.py,sha256=RtbLt6t5fqbtdOP7G0uKtI_uXSHEoK5nBhN8yWj20CY,4910
+video2numpy/resize.py,sha256=Bh1iz8G8cU2D30MqidWHRFN-d_JdmgHSmCI0hMjXyEY,1166
+video2numpy/video2numpy.py,sha256=653w2NR91PNOOtC7XRgR0l2zTktWSgSaKjdsD5I-crI,1358
+video2numpy-1.0.0.data/data/README.md,sha256=dTaG3Hgd9AxX6AG3USMi-0nQul37_5nyzrPtTgPogOA,2522
+video2numpy-1.0.0.dist-info/LICENSE,sha256=kQ7Sg07ctsEZeQxAgGGT8tsbjz8G5o_kY8ToEkxWfjE,1072
+video2numpy-1.0.0.dist-info/METADATA,sha256=PpCtZXjmQOuX4OcJ31UEuNSD9oLIQVpdqy81V4Ww3wE,3218
+video2numpy-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+video2numpy-1.0.0.dist-info/entry_points.txt,sha256=XhywMXvBYGWgyG8QzpBEtDUPzOuGc5rk67miuriwxPk,54
+video2numpy-1.0.0.dist-info/top_level.txt,sha256=-pu4YvOIlqs7bzuhpG8iGaHe00sMDXlPt9e2ER0MNRI,12
+video2numpy-1.0.0.dist-info/RECORD,,
