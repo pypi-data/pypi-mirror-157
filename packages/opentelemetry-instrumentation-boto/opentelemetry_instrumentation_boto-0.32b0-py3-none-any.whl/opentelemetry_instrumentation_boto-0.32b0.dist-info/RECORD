@@ -1,0 +1,9 @@
+opentelemetry/instrumentation/boto/__init__.py,sha256=mti5jgMi5zISDy1QZ5IicLJpJvDl45wylmyEQxjaF00,7655
+opentelemetry/instrumentation/boto/package.py,sha256=v9rMe4LBG1anqBH4EYCpe83FB4XD9r9M0ecf12swV1s,616
+opentelemetry/instrumentation/boto/version.py,sha256=v0fD7MTeddO2cdBqdOmDy9Orz4IAxFK3PyxjRnxfEuo,608
+opentelemetry_instrumentation_boto-0.32b0.dist-info/LICENSE,sha256=h8jwqxShIeVkc8vOo9ynxGYW16f4fVPxLhZKZs0H5U8,11350
+opentelemetry_instrumentation_boto-0.32b0.dist-info/METADATA,sha256=dhl1nJ2sDbzK0N7Lityk9rQ5obfIPCP7NbyFFS0073U,2120
+opentelemetry_instrumentation_boto-0.32b0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+opentelemetry_instrumentation_boto-0.32b0.dist-info/entry_points.txt,sha256=D_L1s3eZD7HQX4qjaznB8rRdtk5suFkJIcej2WoF8_Q,88
+opentelemetry_instrumentation_boto-0.32b0.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_instrumentation_boto-0.32b0.dist-info/RECORD,,
