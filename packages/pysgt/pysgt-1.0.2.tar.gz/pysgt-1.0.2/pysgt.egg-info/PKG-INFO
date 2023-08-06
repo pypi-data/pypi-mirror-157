@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pysgt
+Version: 1.0.2
+Summary: Stochastic Gradient Trees implementation in Python
+Home-page: https://github.com/JoKoum/stochastic-gradient-trees-python
+Author: John Koumentis
+Author-email: jokoum92@gmail.com
+License: MIT
+Description: Stochastic Gradient Trees by Henry Gouk, Bernhard Pfahringer, and Eibe Frank implementation in Python. Based on the parer's accompanied repository code.
+Platform: UNKNOWN
