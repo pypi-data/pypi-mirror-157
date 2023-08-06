@@ -1,0 +1,7 @@
+
+import pytest
+
+import index_calculator as xcalc
+
+def test_xcalc():
+    i=xcalc.preprocessing
