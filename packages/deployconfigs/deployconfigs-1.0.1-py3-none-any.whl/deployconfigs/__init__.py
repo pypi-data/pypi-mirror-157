@@ -1,0 +1,2 @@
+from deployconfigs.deployconfigs import DeployConfigs
+from deployconfigs.djangoconfigs import DjangoDeployConfigs

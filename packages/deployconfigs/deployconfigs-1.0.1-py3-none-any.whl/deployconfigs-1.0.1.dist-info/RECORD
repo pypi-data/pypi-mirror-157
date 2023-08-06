@@ -1,0 +1,15 @@
+deployconfigs/__init__.py,sha256=R34tdZpnBjEHn4dSQ3iw22fDzBWY-_PJnLVmXU54uu4,114
+deployconfigs/deployconfigs.py,sha256=kO3xlbPjUyh101948BTw6hM8fX5B4U1zjqq48YzOuqI,7102
+deployconfigs/djangoconfigs.py,sha256=v82s_IXFmQKjARjAE3IQlyNHYV4UeINYpKp36khyFho,9292
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cache_url.py,sha256=-sGYdI2walDRNu1pplwlcFnmUxkRgNw1LiOUyUltUKA,5999
+tests/test_database_url.py,sha256=Ov3JSt2UwhEAycX1fvdjh3Ddlo-uH4ufN2qtHejsUGA,11875
+tests/test_defaults.py,sha256=eCeA4Q7IunUfXp88TE53vOiEAPlY4QBS36_UobubXog,3309
+tests/test_deployconfigs.py,sha256=qwqmlbqf6PM_h6wVPSSMQHQzdqWDyIpFR7znc5Mhu58,2435
+tests/test_email_url.py,sha256=YJVaWGHxZGgJDRtcQObyFUg9XUhXxKGtc6d5dWmkpmk,4890
+tests/test_storage_url.py,sha256=1n2iIjDebYaFaG46A7onWFvExpQFJPsOeTl6a_95AgU,681
+deployconfigs-1.0.1.dist-info/LICENSE,sha256=vFvJCjB4SRMeX99-sYl-2EqHqjap2SIbkWS_nfgdzw4,1072
+deployconfigs-1.0.1.dist-info/METADATA,sha256=tFVIxvyXga2s1H_f72YNpPqm8hN69bXsaoPk_l0Yq0c,679
+deployconfigs-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+deployconfigs-1.0.1.dist-info/top_level.txt,sha256=JHOtn7V_3XCd8muc1f2U-kWPn6YFzfGvxFyYNH2m5M0,20
+deployconfigs-1.0.1.dist-info/RECORD,,
