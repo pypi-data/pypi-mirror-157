@@ -1,0 +1,17 @@
+LICENSE.txt
+NOTICE.txt
+README.md
+setup.cfg
+setup.py
+amazon_ss1/__init__.py
+amazon_ss1/add_one.py
+amazon_ss1/ap_region.py
+amazon_ss1/version.py
+amazon_ss1.egg-info/PKG-INFO
+amazon_ss1.egg-info/SOURCES.txt
+amazon_ss1.egg-info/dependency_links.txt
+amazon_ss1.egg-info/requires.txt
+amazon_ss1.egg-info/top_level.txt
+test/test_ap.py
+test/test_ipn.py
+test/test_lwa.py
