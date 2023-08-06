@@ -1,0 +1,8 @@
+README.md
+setup.py
+zpp_browser/__init__.py
+zpp_browser/browser.py
+zpp_browser.egg-info/PKG-INFO
+zpp_browser.egg-info/SOURCES.txt
+zpp_browser.egg-info/dependency_links.txt
+zpp_browser.egg-info/top_level.txt
