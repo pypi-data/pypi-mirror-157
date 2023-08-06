@@ -1,0 +1,14 @@
+click
+numpy
+
+[dev]
+black
+isort
+pytest-cov
+mypy
+flake8
+flake8-isort
+flake8-pyi
+pydocstyle
+sphinx-rtd-theme-github-versions
+pre-commit
