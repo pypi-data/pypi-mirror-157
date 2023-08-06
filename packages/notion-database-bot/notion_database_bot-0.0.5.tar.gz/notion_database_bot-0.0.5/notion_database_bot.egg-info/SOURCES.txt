@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+notion_database_bot/__init__.py
+notion_database_bot/main.py
+notion_database_bot.egg-info/PKG-INFO
+notion_database_bot.egg-info/SOURCES.txt
+notion_database_bot.egg-info/dependency_links.txt
+notion_database_bot.egg-info/top_level.txt
