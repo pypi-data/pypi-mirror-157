@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0", "starlette>=0.19.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "starlette_abstract"
+version = "0.0.1"
+authors = [
+  { name="Sebastian Balna", email="sebastianbalna@gmail.com" },
+]
+description = "An abstract middleware for Starlette"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/zaxis23148/starlette_abstract"
+"Bug Tracker" = "https://github.com/zaxis23148/starlette_abstract/issues"

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/starlette_abstract/__init__.py
+src/starlette_abstract/middleware.py
+src/starlette_abstract.egg-info/PKG-INFO
+src/starlette_abstract.egg-info/SOURCES.txt
+src/starlette_abstract.egg-info/dependency_links.txt
+src/starlette_abstract.egg-info/top_level.txt
