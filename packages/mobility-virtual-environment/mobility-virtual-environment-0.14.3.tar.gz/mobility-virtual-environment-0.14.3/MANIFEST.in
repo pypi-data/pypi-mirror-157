@@ -1,0 +1,32 @@
+# https://packaging.python.org/en/latest/guides/using-manifest-in/#using-manifest-in
+# mdc, 21 Jun 2022
+
+exclude Readme.build.mdc.txt
+
+exclude src/move/core/State_testing_dev.py
+exclude src/move/core/udpReceive_msgpack.py
+
+exclude src/move/data_displays/bokeh_bring_up_a_map.py
+exclude src/move/data_displays/gps_move_live_mapping_v1.py
+
+exclude src/move/routes/route_NATO*
+
+# include bin bash scripts
+graft src/move/bin_src
+
+# make sure to include scenario config files
+include src/move/scenario/default.cfg
+include src/move/scenario/live_3_veh.cfg
+include src/move/scenario/missionDefault.cfg
+include src/move/scenario/mission_homerun_3D.cfg
+include src/move/scenario/mission_Multi_Elevation_Intersection.cfg
+
+# include vehicle and pedestrian icons for map display
+graft src/move/data_displays/icons
+
+# include operating system configuration tests to make sure MoVE can run
+# and ssh is setup properly
+graft src/move/test_system_environment
+
+
+
