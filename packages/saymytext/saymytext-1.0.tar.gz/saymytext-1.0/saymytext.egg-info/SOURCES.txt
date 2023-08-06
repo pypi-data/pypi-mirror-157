@@ -1,0 +1,10 @@
+LICENCE
+MANIFEST.in
+pyproject.toml
+readme.md
+setup.py
+saymytext.egg-info/PKG-INFO
+saymytext.egg-info/SOURCES.txt
+saymytext.egg-info/dependency_links.txt
+saymytext.egg-info/requires.txt
+saymytext.egg-info/top_level.txt
