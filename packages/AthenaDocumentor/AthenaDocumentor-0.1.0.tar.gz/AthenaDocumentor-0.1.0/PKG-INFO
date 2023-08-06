@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: AthenaDocumentor
+Version: 0.1.0
+Home-page: https://github.com/DirectiveAthena/AthenaDocumentor
+Author: Andreas Sas
+Author-email: 
+License: GPLv3
+Project-URL: Bug Tracker, https://github.com/DirectiveAthena/AthenaDocumentor/issues
+Requires-Python: >=3.10
+License-File: LICENSE
