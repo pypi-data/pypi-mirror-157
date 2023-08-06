@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+src/nswi177_jinja_templater.egg-info/PKG-INFO
+src/nswi177_jinja_templater.egg-info/SOURCES.txt
+src/nswi177_jinja_templater.egg-info/dependency_links.txt
+src/nswi177_jinja_templater.egg-info/entry_points.txt
+src/nswi177_jinja_templater.egg-info/not-zip-safe
+src/nswi177_jinja_templater.egg-info/requires.txt
+src/nswi177_jinja_templater.egg-info/top_level.txt
