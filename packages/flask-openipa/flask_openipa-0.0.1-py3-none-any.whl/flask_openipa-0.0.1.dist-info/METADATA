@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: flask-openipa
+Version: 0.0.1
+Summary: Flask extension to create REST API documented from marshmallow schema or pydantic BaseModel.
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: flask
+Provides-Extra: marshmallow
+Requires-Dist: marshmallow ; extra == 'marshmallow'
+Requires-Dist: apispec ; extra == 'marshmallow'
+Provides-Extra: pydantic
+Requires-Dist: pydantic ; extra == 'pydantic'
+Provides-Extra: swagger-ui
+Requires-Dist: flask-swagger-ui ; extra == 'swagger-ui'
+
+UNKNOWN
+
