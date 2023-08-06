@@ -1,0 +1,5 @@
+numpy
+lpips
+ftfy
+docarray[common]
+pyyaml
