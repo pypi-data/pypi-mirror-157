@@ -1,0 +1,2 @@
+[console_scripts]
+dvs-bsm = com.dvsnier.std_bm.command.dvs_bsm:execute
