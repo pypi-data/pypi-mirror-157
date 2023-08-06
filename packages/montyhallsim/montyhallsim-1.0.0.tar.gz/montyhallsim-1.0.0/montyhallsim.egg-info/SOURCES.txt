@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+montyhallsim.py
+setup.py
+montyhallsim.egg-info/PKG-INFO
+montyhallsim.egg-info/SOURCES.txt
+montyhallsim.egg-info/dependency_links.txt
+montyhallsim.egg-info/entry_points.txt
+montyhallsim.egg-info/top_level.txt

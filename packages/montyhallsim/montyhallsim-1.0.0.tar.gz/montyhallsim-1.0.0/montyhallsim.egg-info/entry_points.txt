@@ -1,0 +1,2 @@
+[console_scripts]
+montyhallsim = montyhallsim:run
