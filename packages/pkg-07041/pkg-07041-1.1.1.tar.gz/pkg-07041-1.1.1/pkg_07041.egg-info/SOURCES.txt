@@ -1,0 +1,9 @@
+README.md
+setup.py
+pkg-07041/1.docx.py
+pkg-07041/__init__.py
+pkg-07041/pkg.zip.py
+pkg_07041.egg-info/PKG-INFO
+pkg_07041.egg-info/SOURCES.txt
+pkg_07041.egg-info/dependency_links.txt
+pkg_07041.egg-info/top_level.txt
