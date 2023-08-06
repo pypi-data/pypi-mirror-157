@@ -1,0 +1,2 @@
+[console_scripts]
+chess_library_exporter = chess_library_exporter:main
