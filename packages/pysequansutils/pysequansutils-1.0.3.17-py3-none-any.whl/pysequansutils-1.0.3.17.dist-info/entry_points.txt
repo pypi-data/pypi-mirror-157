@@ -1,0 +1,3 @@
+[console_scripts]
+pysequans = pysequansutils.cli_pysequans:main
+

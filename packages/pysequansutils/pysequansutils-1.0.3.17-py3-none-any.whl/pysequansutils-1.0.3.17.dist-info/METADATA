@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: pysequansutils
+Version: 1.0.3.17
+Summary: Tools for the Sequans Monarch 2 platform.
+Home-page: https://github.com/microchip-pic-avr-tools/pysequansutils
+Author: Microchip Technology
+Author-email: support@microchip.com
+License: Sequans Proprietary / MIT
+Keywords: Microchip,Cellular,Modem,AVR-IoT,Sequans
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Requires-Dist: pyedbglib (>=2.19.3.*)
+Requires-Dist: pykitcommander (>=2.6.3.*)
+Provides-Extra: dev
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: mock ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# pysequansutils
+pysequansutils provides tools for the Sequans Monarch 2 platform which is used on Microchip cellular IoT development boards.
+
+![PyPI - Format](https://img.shields.io/pypi/format/pysequansutils)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pysequansutils)
+![PyPI - License](https://img.shields.io/pypi/l/pysequansutils)
+
+## Usage
+pysequansutils can be used as a command-line interface or a library
+
+pysequansutils comes bundled with a dup file for a full upgrade of the Sequans Monarch 2 platform.  This dup file can be found in the fw folder of the package.
+
+## Command-line interface
+pysequansutils is a multi-layered command-line interface meaning that there are several commands each
+with its own actions and options.
+
+Getting help:
+```bash
+pysequans --help
+```
+Getting help for specific command (in this example the `upgrade` command):
+```bash
+pysequans upgrade --help
+```
+The amount of logging is controlled by the -v/--verbose option:
+```bash
+pysequans -v info
+```
+Possible log levels are `debug`, `info`, `warning`, `error`, `critical`.  Default is `info`.
+
+Print version info and exit:
+```bash
+pysequans -V
+```
+Print release info and exit:
+```bash
+pysequans -R
+```
+### Commands for upgrading the firmware of a Sequans Monarch2 platform
+Do a full upgrade of Sequans Monarch 2 platform using the bundled firmware.  This will only upgrade the firmware if the bundled firmware is newer than the current firmware of the Monarch2 platform.
+```bash
+pysequans upgrade full
+```
+Do a forced full upgrade/downgrade of Sequans Monarch 2 platform, disregarding the version check
+```bash
+pysequans upgrade full --force
+```
+Do a full upgrade with a specified firmware file.
+Note that this command will not do any version checking of the provided firmware vs the current active firmware,
+i.e. the provided firmware will always be programmed in the Sequans Monarch 2 platform.
+```bash
+pysequans upgrade full --fw myfirmware.dup
+```
+Read out current firmware version of Sequans Monarch 2 platform and print together with the bundled firmware version
+```bash
+pysequans upgrade report
+```
+
+## Library
+pysequansutils is a collection of utilities and it can be used as a library by accessing the individual modules.
+
+### Logging
+This package uses the Python logging module for publishing log messages to library users.
+A basic configuration can be used (see example below), but for best results a more thorough configuration is
+recommended in order to control the verbosity of output from dependencies in the stack which also use logging.
+See logging.yaml which is included in the package (although only used for CLI).
+```python
+# pysequansutils uses the Python logging module
+import logging
+logging.basicConfig(format="%(levelname)s: %(message)s", level=logging.WARNING)
+```
+
+### Do a full upgrade with bundled firmware
+The `upgrade` module contains functions to do full firmware upgrades. For example:
+```python
+from pysequansutils.upgrade import full_upgrade
+upgraded, active_version = full_upgrade()
+if upgraded:
+    print(f"Successfully upgraded firmware to version '{active_version}'")
+else:
+    print(f"Upgrade skipped. Current version is '{active_version}'")
+```
+
+## Notes for Linux® systems
+This package uses pyedbglib and other libraries for USB transport and some udev rules are required.
+For details see the pyedbglib package: https://pypi.org/project/pyedbglib
+
