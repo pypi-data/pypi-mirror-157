@@ -1,0 +1,179 @@
+
+# BOOME
+
+A python package BOOME, known as BOOsting algorithm for Measurement Error in binary responses and high-dimensional covariates, is used to select informative variables and estimate associated parameters with correction of misclassification in responses and measurement error effects in covariates simultaneously. The key idea of the method in this package is to develop an unbiased estimating function based on logistic regression models or probit models by correcting for measurement error effects in responses (e.g., Yi 2017, ISBN: 978-1493966387) and covariates (e.g., Stefanski and Carroll 1987, <doi:10.2307/2336464>; Chen and Yi 2021, <doi:10.1007/s10463-020-00755-2>). After that, the proposed boosting algorithm is applied to a corrected estimating function and select variables and derive the corresponding estimators. This package can be adopted to model financial data (e.g., the bankruptcy data in https://www.kaggle.com/datasets/fedesoriano/company-bankruptcy-prediction) or gene expression data (e.g., the Leukemia data in R package "SIS").
+
+
+There are three functions in this package: ME_Generate, LR_Boost, and PM_Boost. The function ME_Generate is used to generate the artificial data subject to error-prone covariates and misclassified binary responses. Two functions LR_Boost and PM_Boost aim to correct for measurement error effects in responses, covariates, or both, and then implement the boosting procedure to do variable selection and estimation for logistic regression models (LM) and probit models (PM), respectively.
+
+## Installation
+
+The package requires ```numpy, pandas, scipy.stats, numpy.linalg``` and ```math.``` In addition, the package is tested on Python version 3.5 and above.
+
+To install the package, download this folder and execute:
+```
+pip install BOOME
+```
+
+##  Demonstration and Example Implementation
+
+We describe three functions in the package and give a simple demonstration.
+
+### 1. ME_Generate(n,beta,matrix,X,gamma)
+
+This function is used to generate the error-prone data.
+
+
+
+
+**Arguments**: <br>
+* **n**: The number of observations. <br>
+* **beta**: A p-dimensional vector of parameter in regression models to characterize the response and covariates. <br>
+* **matrix**: A user-specific covariance matrix in the classical measurement error model. <br>
+* **X**: A user-specific matrix of predictors. <br>
+* **gamma**: A p-dimensional vector of parameter to model misclasified probability and can be specified by users. 
+
+
+
+
+
+**Outcomes**: <br>
+* **data**: A dataset with error prone predictors and responses. It is a dataframe, where the column with label y represents the response, and the column with label j represents the jth predictor. <br>
+* **pr**: Two misclassification probabilities (specificity and sensitivity) in misclassification models.
+
+
+**Example code:** 
+
+**Construction of  X** 
+```python
+X=[]
+for i in range(100):
+    X.append(np.random.normal(0, 1, 1000))
+X=np.array(X)
+```
+
+
+**Parameters** 
+```python
+n=100
+beta=[1]*3+[0]*997
+cov=np.identity(1000)*0.2
+gamma=[[1],[1]*1000,[1],[1]*1000]
+```
+
+**Generation of error-prone data** 
+```python
+from BOOME.algorithm  import ME_Generate
+ME=ME_Generate(n,beta,cov,X,gamma)data=ME[1]
+pr=ME[0]
+data=ME[1]
+```
+
+
+
+
+
+
+
+
+
+
+
+### 2. LR_Boost(X,Y,ite,thres,correct_X,correct_Y,pr,lr,matrix)
+This function implements the BOOME method for logistic regression models
+
+**Arguments**: <br>
+* **X**: A matrix of continuous predictors that are precisely measured or subject to measurement error. <br>
+* **Y**: A vector of binary responses that are precisely measured or subject to measurement error. <br>
+* **ite**: A number of iteration for the boosting algorithm. <br>
+* **thres**: A threshold value used to retain variables. <br>
+* **correct_X**: Determine the correction of measurement error in predictors. Select"1" if correction is needed, and "0" otherwise. <br>
+* **correct_Y**: Determine the correction of measurement error in the response. Select"1" if correction is needed, and "0" otherwise. <br>
+* **pr**: Two misclassification probabilities (specificity and sensitivity) in misclassification models. <br>
+* **lr**: A learning rate used to update estimators in the boosting algorithm. <br>
+* **matrix**: A covariance matrix in the classical measurement error model.
+
+
+
+
+**Outcomes**: <br>
+* **estimated coefficients**: A vector of estimators <br>
+* **predictors**: Indexes of nonzero values in *estimated coefficients* <br>
+* **number of predictors**: The number of nonzero values in *estimated coefficients*
+
+**Example code:**
+
+**Decompose data to 'X' and 'Y'** 
+```python
+x=data.drop(['y'],axis=1)
+y=data[['y']]
+```
+
+**Implementation of LR_Boost**
+
+```python
+ite=1000
+thres=0.9
+lr=0.00015
+
+LR_Boost(x,y,ite,thres,1,1,pr,lr,cov)
+```
+
+```
+    estimated coefficient :[1.034212979725094, 1.1510170699913091, 1.0499444673865401, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.16574049090435286, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.11880684398132933, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.012977857969749283, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.010305349538670168, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.05350619906941062, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0355414321875259, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.2542110310704013, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.08084583303060171, 0.0, 0.0, 0.0, ]
+    predictors:[1, 2, 3, 26, 33, 52, 129, 148, 229, 300, 346, 421, 480, 520, 523, 543, 562, 589, 590, 592, 634, 639, 640, 650, 668, 739, 768, 774, 798, 851, 932, 936, 983]
+    number of predictors:33
+```    
+
+
+
+### 3. PM_Boost(X,Y,ite,thres,correct_X,correct_Y,pr,lr,matrix)
+
+The arguments in *PM_Boost* as well as the outcomes produced by *PM_Boost* are the same as those in *LR_Boost*.
+
+**Example code:**
+
+**Construction of  X** 
+```python
+X=[]
+for i in range(1000):
+    X.append(np.random.normal(0, 1, 100))
+X=np.array(X)
+```
+
+**Parameters** 
+```python
+n=1000
+beta=[1]*3+[0]*97
+cov=np.identity(100)*0.2
+gamma=[[1],[1]*100,[1],[1]*100]
+```
+
+**Generation of error-prone data** 
+```python
+ME=ME_Generate(n,beta,cov,X,gamma)
+data=ME[1]
+pr=ME[0]
+x=data.drop(['y'],axis=1)
+y=data[['y']]
+```
+
+
+
+**Implementation of PM_Boost**
+
+```python
+ite=1000
+thres=0.9
+lr=0.000012
+
+PM_Boost(x,y,ite,thres,1,1,pr,lr,cov)
+```
+```
+    estimated coefficients:[0.9769572712462923, 1.0148426909295771, 0.9694489897164331, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.02976937695270201, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.02489111873996184, 0.0, 0.0, 0.010078027643568152, 0.0, 0.0, 0.0, 0.030030345938361926, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.011519695016413343, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    predictors:[1, 2, 3, 10, 31, 34, 38, 92]
+    number of predictors:8
+```    
+
+
+
