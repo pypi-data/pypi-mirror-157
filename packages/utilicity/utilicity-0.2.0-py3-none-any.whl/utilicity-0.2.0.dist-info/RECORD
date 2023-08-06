@@ -1,0 +1,15 @@
+utilicity/__init__.py,sha256=IYXIlnkGO3FnjgtuiVcXBdwSbE0Glwl7WlWK0cfGNls,260
+utilicity/_types.py,sha256=8KlQi5mUfWJ2bkRMnjbaXqvM3hlKS0WsJthIW_S9UnU,2190
+utilicity/fluent.py,sha256=mvuy8pIu40TyHVndPWssqFTqAE8WDyy_ZYfbZ5GNN_0,21112
+utilicity/helpers.py,sha256=JGb-CvFNy4AOtHLwogJUurALjQBI4zf4kKlaoaZNyS4,10322
+utilicity/items/__init__.py,sha256=WwKZ0VdSOUc6n1hUTeLrpQs86MEm-L9A8KcOH_2e8f4,74
+utilicity/items/dicts.py,sha256=gzwJiKlhzUgzPC8gka1K68Tp1tlKffVGXeQGmQbWsY4,3964
+utilicity/items/helpers.py,sha256=qC3wX6br87FgIX-gQZkHitwme7N4d2kpaYamCgE3ciE,13921
+utilicity/iterators.py,sha256=Xft3udv5WFsqoZ_p_Y4FdED6RJVPYVU4AciaJ1bGnoM,4306
+utilicity/sentinels.py,sha256=tXwiFv8-4neyJkaKFX8DBgJwp66kKQK7Je8GY8AAEDM,1800
+utilicity/strings.py,sha256=-c3pVt81nko8Z1MJJ2DvSPR9vmrbkG54jesJGcgkHL0,10082
+utilicity/traversing.py,sha256=HchPRVCKPrc7xIU3xsaSH_IWRxkEy62CfZWKTU08_Aw,4405
+utilicity/vars.py,sha256=HX2nk1h8g53wmBP8aQ0III7fDU80jMus8NNcJCoBfvA,9381
+utilicity-0.2.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+utilicity-0.2.0.dist-info/METADATA,sha256=7yf7wogpOMz6cszCtFGGfKt_HlcGqwhPuPTTttYfqVA,891
+utilicity-0.2.0.dist-info/RECORD,,
