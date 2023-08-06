@@ -1,0 +1,7 @@
+setup.py
+yubi.py
+awsume_yubi_plugin.egg-info/PKG-INFO
+awsume_yubi_plugin.egg-info/SOURCES.txt
+awsume_yubi_plugin.egg-info/dependency_links.txt
+awsume_yubi_plugin.egg-info/entry_points.txt
+awsume_yubi_plugin.egg-info/top_level.txt
