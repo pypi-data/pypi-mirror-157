@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/tapyr.egg-info/PKG-INFO
+src/tapyr.egg-info/SOURCES.txt
+src/tapyr.egg-info/dependency_links.txt
+src/tapyr.egg-info/requires.txt
+src/tapyr.egg-info/top_level.txt
