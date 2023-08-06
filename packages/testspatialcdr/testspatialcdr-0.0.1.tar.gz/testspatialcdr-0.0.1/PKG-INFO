@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: testspatialcdr
+Version: 0.0.1
+Summary: Spacer package for Spatial Transcriptomics
+Author-email: Ashish_Swain <swain.3@iitj.ac.in>
+Maintainer-email: Shreshth Pal <shreshthpal@outlook.com>
+Project-URL: Homepage, https://github.com/swainasish/Spectacular
+Project-URL: Bug Tracker, https://github.com/swainasish/Spectacular
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+This is 0.0.2 of SpectacularST
+## dependencies
+```
+import numpy as np 
+import pandas as pd 
+from sklearn.preprocessing import StandardScaler
+Std = StandardScaler()
+```

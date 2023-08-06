@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+src/__init__.py
+src/testspatialcdr.py
+src/testspatialcdr.egg-info/PKG-INFO
+src/testspatialcdr.egg-info/SOURCES.txt
+src/testspatialcdr.egg-info/dependency_links.txt
+src/testspatialcdr.egg-info/requires.txt
+src/testspatialcdr.egg-info/top_level.txt
