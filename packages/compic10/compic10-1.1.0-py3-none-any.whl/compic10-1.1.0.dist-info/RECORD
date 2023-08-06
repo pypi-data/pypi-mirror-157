@@ -1,0 +1,15 @@
+compic10/__main__.py,sha256=R9aTiMTP8uRWegZvxbqca6eFws8-u2y7BlZgsW8wzbs,8104
+compic10/codegen.py,sha256=XmFsPGMEnksNfhVkgT6-wQ3gEyJWlEqAl2y1dskmbCM,73129
+compic10/compilerexception.py,sha256=Tnei5xvj4vVb1FgXPPnOayKBFc5ZKGXcLMpk47saRs8,878
+compic10/compilerutil.py,sha256=caD59ulqNawRvEWhx7zf3K_q4bahddEa8AHbKXN_Ap4,6006
+compic10/postprocess.py,sha256=vp_MV1SVL89iTvhI8SC6x2QMUlj-PKFdkvxJb6mstTs,18947
+compic10/programdatabase.py,sha256=4ykhwhTA3MMsKxZIEw1dYw9yqP0r_wMdUoPqF5NOiuI,41126
+compic10/syntax.py,sha256=h69PRS8VA0ubEUDZLzIEI9LWYgrONmo5Fmp0u5BmWVw,34912
+compic10/tokens.py,sha256=hKV7K3ckJlMobJCzILiX1Upj9WI14XmYcrB_qdb9ysk,19883
+compic10/vm/__main__.py,sha256=WO4JSfk16o2htW7K7FFmiw6vAHH21LNVwC6ukmvRweA,5518
+compic10/vm/instructionset.py,sha256=eN9BJCcVt1zF2cIUc7tTkl27bszwLpH4rLBNJy3llGw,16119
+compic10/vm/processor.py,sha256=qCWLW5xfg0AsTQuwxVu9v4_3UB4FlfKYqjyebPEXp7A,10195
+compic10-1.1.0.dist-info/LICENSE,sha256=7Q3_oBCBCeEWAu4DneAawVcvQMgQFd7c5awnX9zXdSU,34449
+compic10-1.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+compic10-1.1.0.dist-info/METADATA,sha256=chghXUU4NIabsSmkUlnPbvBbqWXmy-NJpD1Zl6dDaV0,15869
+compic10-1.1.0.dist-info/RECORD,,
