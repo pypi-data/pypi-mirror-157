@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-treehelp
+Version: 0.0.1
+Summary: 适用于 Nonebot2 的树形帮助插件
+Home-page: https://github.com/he0119/nonebot-plugin-treehelp
+License: MIT
+Author: hemengyang
+Author-email: hmy0119@gmail.com
+Requires-Python: >=3.7.3,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: nonebot2 (>=2.0.0-beta.4,<3.0.0)
+Project-URL: Documentation, https://github.com/he0119/nonebot-plugin-treehelp#readme
+Project-URL: Repository, https://github.com/he0119/nonebot-plugin-treehelp
+Description-Content-Type: text/markdown
+
+<!-- markdownlint-disable MD033 MD036 MD041 -->
+
+<p align="center">
+  <a href="https://v2.nonebot.dev/"><img src="https://v2.nonebot.dev/logo.png" width="200" height="200" alt="nonebot"></a>
+</p>
+
+<div align="center">
+
+# NoneBot Plugin TreeHelp
+
+_✨ NoneBot 树形帮助插件 ✨_
+
+</div>
+
+<p align="center">
+  <a href="https://raw.githubusercontent.com/he0119/nonebot-plugin-treehelp/main/LICENSE">
+    <img src="https://img.shields.io/github/license/he0119/nonebot-plugin-treehelp.svg" alt="license">
+  </a>
+  <a href="https://pypi.python.org/pypi/nonebot-plugin-treehelp">
+    <img src="https://img.shields.io/pypi/v/nonebot-plugin-treehelp.svg" alt="pypi">
+  </a>
+  <img src="https://img.shields.io/badge/python-3.7.3+-blue.svg" alt="python">
+  <a href="https://codecov.io/gh/he0119/nonebot-plugin-treehelp">
+    <img src="https://codecov.io/gh/he0119/nonebot-plugin-treehelp/branch/main/graph/badge.svg?token=jd5ufc1alv"/>
+  </a>
+</p>
+
+## 使用方式
+
+加载插件后发送 `/help` 获取具体用法。
+
+## 配置项
+
+配置方式：直接在 `NoneBot` 全局配置文件中添加以下配置项即可。
+
