@@ -1,0 +1,14 @@
+Preln/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Preln/preprocessing.py,sha256=0n0XhygYpdvRu0SEv7i5m7y_BYPAQwioTg23hlqSPj0,1865
+Preln/_external/stopwords.csv,sha256=rt3W6c2QHlFszQ2ZCK9wMOIK1z0j0ehuyea_DbRX6Mw,3973
+Preln/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Preln/core/accents.py,sha256=K5Dd0aM1oHGfKJpxQQ86tmvA4o6T7aHuFa96ocP5ZMA,1169
+Preln/core/date.py,sha256=DH6BGutSifS0EHiBx-A7Wv8Va1N8K_S0G5kzb0GCyhw,1788
+Preln/core/lowercasing.py,sha256=O-sxkuAAmVnykmGzjO0SNT61-IkWZws5opaKuIOaWLo,491
+Preln/core/punctuation.py,sha256=81ayDTq_aK5ms9Te3hBV0rbuYkzVLnZl7Pe3ZEb3J6w,600
+Preln/core/stopwords.py,sha256=0CV4nKxfUKoOWiSGhqR5RLtb6v-PHVgRQ4N0oHtMILY,748
+preln-0.2.5.dist-info/LICENSE,sha256=UNpgUmS00BR5cMPw78c80pVeMrTU4Qcdu71KZKLRSiE,1075
+preln-0.2.5.dist-info/METADATA,sha256=-JijxkJ3tUtbOG71IV8o9r4GxtekumpT_f6GwCBk6sY,209
+preln-0.2.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+preln-0.2.5.dist-info/top_level.txt,sha256=1scQQxdzUk9CsCwk4sMFRNvaX4_B5MxhcEalRmuJnps,6
+preln-0.2.5.dist-info/RECORD,,
