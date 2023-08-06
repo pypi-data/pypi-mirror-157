@@ -1,0 +1,14 @@
+fastapi_sso/__init__.py,sha256=htCjJ7PXQPL0qSVg4haa_SK37B8mVISP2_hCawWt-B4,1110
+fastapi_sso/sso/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_sso/sso/base.py,sha256=IKt9rrf76tPXFtQVJchVRNT5VumW8q9JtvoWaHV4Uy0,8804
+fastapi_sso/sso/facebook.py,sha256=lFoSKJLuC7tQHMut-Q930aCUnQvRV88qWfDAhdG_JtA,1215
+fastapi_sso/sso/fitbit.py,sha256=gA0EJMHykJnzw9FbDog_YWBN3YZ0ynj9gnF1q8O5uUM,1146
+fastapi_sso/sso/generic.py,sha256=kLIFfifUctTJXGYvooT1lAprL6YDUzekdRp3Uk7GvdA,2506
+fastapi_sso/sso/google.py,sha256=7xwnEgfRRkDQ1O94Qwtr5FBp03tyO9Jc9kPGTsScXjQ,1319
+fastapi_sso/sso/kakao.py,sha256=7Ows3QV6eoIbuoCZtnktPDAr_4LqGBZ1MH0WxhBjwEs,753
+fastapi_sso/sso/microsoft.py,sha256=uOy7nzCYRBMknwtaRp9Jzm4qucEkbwtCB0AqE5Umt1o,1503
+fastapi_sso/sso/spotify.py,sha256=_YqhLEy0NMfEB496AA1A7QM4Z3dGAu_usoBDwaU7yYI,1172
+fastapi_sso-0.6.2.dist-info/LICENSE.md,sha256=5NVQtYs6liDtYdWM4VObWmTTKaK0k9C9txx5pLPJSyQ,1093
+fastapi_sso-0.6.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+fastapi_sso-0.6.2.dist-info/METADATA,sha256=RET81U-gZclpHSUCy-1J-JqQAgquGjfIyvd6mOAx8_0,5480
+fastapi_sso-0.6.2.dist-info/RECORD,,
