@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "hubify"
+version = "0.2.3"
+description = "Create GitHub-like visualisations"
+authors = ["Antonio Feregrino <antonio.feregrino@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/fferegrino/hubify"
+repository = "https://github.com/fferegrino/hubify"
+readme = "readme.md"
+
+[tool.poetry.dependencies]
+matplotlib = "^3.5.2"
+pandas = "1.3.5"
+python = ">=3.7.1,<3.11"
+seaborn = "^0.11.2"
+numpy = "1.21.6"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+isort = "^5.10.1"
+pytest = "^7.1.2"
+bump2version = "^1.0.1"
+
+[tool.black]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
