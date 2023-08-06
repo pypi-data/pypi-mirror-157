@@ -1,0 +1,9 @@
+ail_typo_squatting/__init__.py,sha256=Li-MD1jaRcT0lUNWyz359qndO2iGSCKAkdD2-9EdtGA,1109
+ail_typo_squatting/typo.py,sha256=a6lZ0-2YK-3Gkf7wNt36d-t7t2u-EJ0mBWR1gpeBsug,40359
+etc/common-misspellings.json,sha256=CTBSfsb8UCSMh5mL1IWXwV8ziLr19QKe3VtaW_6Gc6o,130949
+etc/homophones.txt,sha256=yZ0WMDZrEwHMr_gGUlKMx8XfzcUj_LMCxhfQnPL8MyI,6028
+etc/tlds-alpha-by-domain.txt,sha256=eeCwU18DVLUo9_bC1uvAEEMrW8vY-voExXw0b7X-f2w,9920
+ail_typo_squatting-0.5.3.dist-info/LICENSE,sha256=9dD1FRQOYoiz5YNJIrFCB5Ou4JihGPfQW5lL9ycGKmg,1480
+ail_typo_squatting-0.5.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+ail_typo_squatting-0.5.3.dist-info/METADATA,sha256=eArqv4OACwWZJRemDFQ9u1m1pk8_qo7vYAw8jwTONxc,12550
+ail_typo_squatting-0.5.3.dist-info/RECORD,,
