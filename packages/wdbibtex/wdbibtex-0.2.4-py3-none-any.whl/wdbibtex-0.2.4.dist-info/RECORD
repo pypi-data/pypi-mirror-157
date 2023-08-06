@@ -1,0 +1,11 @@
+wdbibtex/__init__.py,sha256=KnAtffxz1ZoBDT5gxKrzM0HGIWxOGGQMRt-_2GQz4Iw,381
+wdbibtex/__main__.py,sha256=vTkS2KfsoCt39sig2-xg0N9oax-hqgJ4ZVY_Bwr4mb0,1750
+wdbibtex/latex.py,sha256=E8ycPlcGT5P5_eoXMebZGr0BjqWcIHF_uuodQpKWiGE,35151
+wdbibtex/word.py,sha256=sTsHsLQD44mjpssbAJV0up2CmQsWTqulJSya-swD_VA,14097
+wdbibtex/tests/__init__.py,sha256=J7ihx4qd_ikrktvMWl3InQdablY2-Vc2OmAFM1aFJ0o,71
+wdbibtex/tests/test_latex.py,sha256=TVu4Pia3I7UcJ0C4ELsaO0xZtHjjqNr-EXGHsKKM7GE,12769
+wdbibtex-0.2.4.dist-info/LICENSE,sha256=APQKLA2VoOO3C7sgxrE87A07x22gDNkMFRXy77L9nhw,1082
+wdbibtex-0.2.4.dist-info/METADATA,sha256=AcHYdWmpS6i20FOADqLcHyMeKkbGJrt2IvTpq9P8thg,2281
+wdbibtex-0.2.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wdbibtex-0.2.4.dist-info/top_level.txt,sha256=hmscbQAsn8BaInHUKXA9GUxEdcsLB9smVpjenPO8L-M,9
+wdbibtex-0.2.4.dist-info/RECORD,,
