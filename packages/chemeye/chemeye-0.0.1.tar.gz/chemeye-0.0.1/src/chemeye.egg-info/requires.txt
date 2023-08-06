@@ -1,0 +1,4 @@
+naclo
+numpy
+plotly
+rdkit_pypi
