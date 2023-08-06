@@ -1,0 +1,3 @@
+[console_scripts]
+wk = wukong.__main__:main
+
