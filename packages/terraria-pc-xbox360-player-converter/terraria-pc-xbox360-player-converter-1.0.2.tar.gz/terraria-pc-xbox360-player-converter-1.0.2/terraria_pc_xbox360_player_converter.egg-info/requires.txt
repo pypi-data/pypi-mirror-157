@@ -1,0 +1,2 @@
+terraria-pc-player-api
+terraria-xbox360-player-api
