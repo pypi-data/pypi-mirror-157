@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+promptpay/__init__.py
+promptpay/__main__.py
+promptpay/qrcode.py
+promptpay.egg-info/PKG-INFO
+promptpay.egg-info/SOURCES.txt
+promptpay.egg-info/dependency_links.txt
+promptpay.egg-info/entry_points.txt
+promptpay.egg-info/requires.txt
+promptpay.egg-info/top_level.txt
