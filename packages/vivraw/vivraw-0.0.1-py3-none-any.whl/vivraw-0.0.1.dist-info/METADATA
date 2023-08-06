@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: vivraw
+Version: 0.0.1
+Summary: Common module to interact with raw files created on the Vivent PSR devices
+Home-page: https://github.com/vivent-sarl/vivraw
+Author: Thomas Meacham
+Author-email: thomas.meacham@vivent.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: pyfiglet
+Requires-Dist: PyInquirer
+Requires-Dist: pytest
+
+# vivraw
+
+This repository defines a `pip` package, `vivraw`, that contains functions in python to parse the raw plant data generated
+by the Vivent PhytlSigns devices.
+
+## Installing the package
+This package can be installed directly using `pip` using the following commands:
+```
+pip install vivraw
+```
+
