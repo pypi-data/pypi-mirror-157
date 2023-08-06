@@ -1,0 +1,6 @@
+MANIFEST.in
+setup.py
+semanticgrep.egg-info/PKG-INFO
+semanticgrep.egg-info/SOURCES.txt
+semanticgrep.egg-info/dependency_links.txt
+semanticgrep.egg-info/top_level.txt
