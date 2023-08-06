@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+DisWebhook/Errors.py
+DisWebhook/Webhook.py
+DisWebhook/__init__.py
+DisWebhook/tools.py
+DisWebhook.egg-info/PKG-INFO
+DisWebhook.egg-info/SOURCES.txt
+DisWebhook.egg-info/dependency_links.txt
+DisWebhook.egg-info/requires.txt
+DisWebhook.egg-info/top_level.txt
