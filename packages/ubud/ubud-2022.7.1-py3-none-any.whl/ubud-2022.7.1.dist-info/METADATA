@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ubud
+Version: 2022.7.1
+Author: Woojin Cho
+Author-email: woojin.cho@gmail.com
+License: MIT License
+Requires-Python: >=3.8
+Requires-Dist: aiohttp
+Requires-Dist: click
+Requires-Dist: click-loglevel
+Requires-Dist: clutter
+Requires-Dist: parse
+Requires-Dist: pyjwt
+Requires-Dist: pyzmq
+Requires-Dist: flatdict
+Requires-Dist: pendulum
+Requires-Dist: pydantic
+Requires-Dist: requests
+Requires-Dist: influxdb-client
+Requires-Dist: paho-mqtt
+Requires-Dist: websockets
+Requires-Dist: rel
+
+grafana - github
+woojincho.grafana
+
+influxdb - google 
+https://us-east-1-1.aws.cloud2.influxdata.com/
+
+investing.com
+
+Topic Naming Rule: <topic>/<market>/<SYMBOL>/<CURRENCY>/<quote(type)>/<orderType>
