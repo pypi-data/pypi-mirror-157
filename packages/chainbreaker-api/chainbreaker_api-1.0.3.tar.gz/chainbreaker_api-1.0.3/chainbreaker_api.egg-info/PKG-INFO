@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: chainbreaker-api
+Version: 1.0.3
+Summary: Python library for connecting and using ChainBreaker Community Services.
+Home-page: https://github.com/ChainBreakerCommunity/chainbreaker_api
+Download-URL: https://github.com/ChainBreakerCommunity/chainbreaker_api/archive/refs/tags/1.0.3.tar.gz
+Author: Juan Cepeda
+Author-email: juancepeda.gestion@gmail.com
+License: MIT
+Keywords: CHAINBREAKER,API,HUMAM TRAFFICKING
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
