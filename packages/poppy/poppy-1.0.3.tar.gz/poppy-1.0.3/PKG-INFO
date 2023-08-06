@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: poppy
+Version: 1.0.3
+Summary: Physical optics propagation (wavefront diffraction) for optical simulations, particularly of telescopes.
+Home-page: https://poppy-optics.readthedocs.io/
+Author: Marshall Perrin
+Author-email: mperrin@stsci.edu
+License: BSD
+Requires-Python: >=3.8
+Provides-Extra: all
+Provides-Extra: test
+Provides-Extra: docs
+License-File: LICENSE.md
+
+"POPPY (**P**\ hysical **O**\ ptics **P**\ ropagation in **Py**\ thon) is a Python package that simulates physical optical propagation including diffraction. It implements a flexible framework for modeling Fraunhofer and Fresnel diffraction and point spread function formation, particularly in the context of astronomical telescopes."
