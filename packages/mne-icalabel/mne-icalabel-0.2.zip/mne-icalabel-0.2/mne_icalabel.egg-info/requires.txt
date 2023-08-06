@@ -1,0 +1,8 @@
+mne>=1.0
+numpy>=1.16.0
+scipy>=1.2.0
+torch
+setuptools
+
+[:python_version < "3.9"]
+importlib-resources
