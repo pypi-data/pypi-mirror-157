@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: wfnsympy
+Version: 0.3.5
+Summary: wfnsympy
+Author: Abel Carreras
+Author-email: abelcarreras83@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
