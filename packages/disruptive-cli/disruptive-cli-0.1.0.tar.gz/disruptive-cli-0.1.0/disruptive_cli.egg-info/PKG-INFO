@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: disruptive-cli
+Version: 0.1.0
+Summary: Disruptive Technologies CLI.
+Home-page: https://github.com/jhgjeraker/disruptive-cli
+Author: Johannes H. Gjeraker
+Author-email: johannes.holm.gjeraker@disruptive-technologies.com
+Project-URL: Developers Page, https://developer.disruptive-technologies.com/docs/
+Keywords: disruptive,technologies,dt,api,cli
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# disruptive-cli
+Unofficial Command-Line Interface (CLI) for the Disruptive Technologies REST API.
+
+## Authentication
+Currently, the only way of authenticating is by setting the following environment variables.
+```bash
+export DT_SERVICE_ACCOUNT_KEY_ID="<SERVICE_ACCOUNT_KEY_ID>"
+export DT_SERVICE_ACCOUNT_SECRET="<SERVICE_ACCOUNT_SECRET>"
+export DT_SERVICE_ACCOUNT_EMAIL="<SERVICE_ACCOUNT_EMAIL>"
+```
+
+## Usage
+The CLI is structured in a `<NOUN>` -> `<VERB>` format.
+
+- Fetch a single device.
+```bash
+dt device get <DEVICE_ID>
+```
+
+- Fetch all devices in a project.
+```bash
+dt device list <PROJECT_ID>
+```
+
+## Development
+Virtualenv is used for dependency isolation, wrapped by the following commands.
+
+- Build the distribution:
+```bash
+make build
+```
+
+- Remove build-files:
+```bash
+make clean
+```
