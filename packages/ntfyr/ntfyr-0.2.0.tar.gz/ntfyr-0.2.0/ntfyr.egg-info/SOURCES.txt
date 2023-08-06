@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+ntfyr/__init__.py
+ntfyr.egg-info/PKG-INFO
+ntfyr.egg-info/SOURCES.txt
+ntfyr.egg-info/dependency_links.txt
+ntfyr.egg-info/requires.txt
+ntfyr.egg-info/top_level.txt
+scripts/ntfyr
