@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+pyscreenshotter/__init__.py
+pyscreenshotter/main.py
+pyscreenshotter.egg-info/PKG-INFO
+pyscreenshotter.egg-info/SOURCES.txt
+pyscreenshotter.egg-info/dependency_links.txt
+pyscreenshotter.egg-info/entry_points.txt
+pyscreenshotter.egg-info/requires.txt
+pyscreenshotter.egg-info/top_level.txt
