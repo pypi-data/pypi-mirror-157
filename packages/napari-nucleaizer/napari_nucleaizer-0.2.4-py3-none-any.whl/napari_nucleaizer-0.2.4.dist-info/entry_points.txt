@@ -1,0 +1,2 @@
+[napari.manifest]
+napari_nucleaizer = napari_nucleaizer:napari.yaml
