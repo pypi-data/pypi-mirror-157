@@ -1,0 +1,2 @@
+include txfdjangomix/utils
+recursive-include dir txfdjangomix
