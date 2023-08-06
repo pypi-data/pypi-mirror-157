@@ -1,0 +1,8 @@
+README.md
+setup.py
+dkFlaskStructure.egg-info/PKG-INFO
+dkFlaskStructure.egg-info/SOURCES.txt
+dkFlaskStructure.egg-info/dependency_links.txt
+dkFlaskStructure.egg-info/entry_points.txt
+dkFlaskStructure.egg-info/not-zip-safe
+dkFlaskStructure.egg-info/top_level.txt

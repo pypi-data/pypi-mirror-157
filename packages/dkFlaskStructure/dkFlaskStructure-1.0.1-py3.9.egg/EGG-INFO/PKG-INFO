@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dkFlaskStructure
+Version: 1.0.1
+Summary: This is a package to create the flask folder structure used to deploy to heroku.
+Home-page: https://github.com/DK-denno/Flask-CLI-README
+Author: Kamau Dennis Kihiu
+Author-email: kamaukihiudennis@gmail.com
+License: MIT
+Description: The package below creates a folder structure accepted by heroku for deployments. https://github.com/DK-denno/Flask-CLI-README
+Keywords: flask Structure,Flask,dkFlask
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
