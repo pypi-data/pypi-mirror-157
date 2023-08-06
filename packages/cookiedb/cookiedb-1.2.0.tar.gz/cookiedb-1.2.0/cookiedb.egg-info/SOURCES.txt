@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+DOCS/database/1-1-0.md
+cookiedb/__init__.py
+cookiedb.egg-info/PKG-INFO
+cookiedb.egg-info/SOURCES.txt
+cookiedb.egg-info/dependency_links.txt
+cookiedb.egg-info/requires.txt
+cookiedb.egg-info/top_level.txt
+cookiedb/database/__init__.py
+cookiedb/database/cookiedb.py
+cookiedb/database/exceptions.py
+cookiedb/database/json_handler.py
