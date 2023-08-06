@@ -1,0 +1,17 @@
+protogenie/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protogenie/cli.py,sha256=R1Z18knfX4WSHIQRVKNj2qbZz56UY7YYyr8Oj6up6BA,8714
+protogenie/cli_utils.py,sha256=7Io6IDIJnGHbsGLb-2OhWOJd79U8HOqgJ_JjsD8I9eo,936
+protogenie/configs.py,sha256=M2Z6Cdvv5rEGzmE0gJ0SwbupvVLUElFSV2MkxIVKq80,6579
+protogenie/defaults.py,sha256=8WkTNaoQ-nx7xDfsiTLiG9ufRm1e66ktOf_VtFwIb9Y,175
+protogenie/dispatch.py,sha256=-kHTqRA61gHZFpEgR7_ttGN9E0YHGSyMLIsow5wwAu4,17613
+protogenie/io_utils.py,sha256=-OIAzjLre_3JeBlNi4vT3HRG1Dkymh1fnrkQ4LQ08Q4,909
+protogenie/postprocessing.py,sha256=I0OkrbZK-3DW0kL_CsKaqlig-p8l8uapljUDp-LSqFA,19799
+protogenie/reader.py,sha256=GIR3APQMb2hVolSMcGV3z2uXowmP3ucgM9qlNHmxg-E,3120
+protogenie/sentence_matchers.py,sha256=v51iW_4bPYEsGCg8ndHRgJxpxKvaRbc9mpaVq99B1c4,1382
+protogenie/splitters.py,sha256=1rLHIgqFMSuvsQ1mi3qoMM31id9PpJz6DZ2mzcaKjVM,7747
+protogenie/toolbox.py,sha256=rCnPhxNmRC8jXCzdq6b6cD4E5hcGgzWYHmCJKhh2WZE,4001
+protogenie-0.0.4.dist-info/METADATA,sha256=nWhb-I2UwS5Utke11lVyXr8-ad_u2LKFF6EZUVQNrcY,2433
+protogenie-0.0.4.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+protogenie-0.0.4.dist-info/entry_points.txt,sha256=ct76hE_ywePPqSJI2vqRxZIdBT7sKBhRffmiCVxo1xk,52
+protogenie-0.0.4.dist-info/top_level.txt,sha256=Myud0vjvc34Hxd-gLHkalmb6dBqNXqxuaPc-topTKSM,11
+protogenie-0.0.4.dist-info/RECORD,,
