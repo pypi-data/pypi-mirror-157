@@ -1,0 +1,12 @@
+kraken/std/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+kraken/std/docker/__init__.py,sha256=HYpvupUczDG0Qly2RsydKl_M8qrb7sIfXIVtmAd60vI,82
+kraken/std/docker/api.py,sha256=C3CDvGV8aZzgVPliPp3ixWk5Tjj-29ByDQAn0buuzhM,3459
+kraken/std/docker/backend.py,sha256=gXpzXPKsMvA7KiM5nPs8u9GIp2CMS7oE6bwW7vb3zSo,8205
+kraken/std/docker/cliwrapper.py,sha256=zBCOfDlkC30RUvHUZvxiSwsDyuVSu0oRFtV8Xpx0dXU,1324
+kraken/std/docker/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kraken/std/docker/tasks.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kraken/std/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kraken_std-0.1.0.dist-info/LICENSE,sha256=n1m2B7cI9M4RdEbzD0qQ9ZiNLlEhZAT0kRJSRClqpYw,988
+kraken_std-0.1.0.dist-info/WHEEL,sha256=FWzWAvOOsDP6aqtZj_z3pIhVEk8S9F03Xwafa0tLqIY,90
+kraken_std-0.1.0.dist-info/METADATA,sha256=og5_Yw7KBnKotG_OL6acS_Je9xDvNme214w0ugXA-7s,1129
+kraken_std-0.1.0.dist-info/RECORD,,
