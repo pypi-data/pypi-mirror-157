@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: spt-factory
+Version: 0.0.2
+Summary: SPT resource manager
+Home-page: UNKNOWN
+Author: Mark Poroshin
+Author-email: mporoshin@smartpredictiontech.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+SPT resource manager
+

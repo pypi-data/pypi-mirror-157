@@ -1,0 +1,12 @@
+README.md
+setup.py
+spt_factory/__init__.py
+spt_factory/credentials.py
+spt_factory/factory.py
+spt_factory/resources.py
+spt_factory.egg-info/PKG-INFO
+spt_factory.egg-info/SOURCES.txt
+spt_factory.egg-info/dependency_links.txt
+spt_factory.egg-info/requires.txt
+spt_factory.egg-info/top_level.txt
+test/test.py
