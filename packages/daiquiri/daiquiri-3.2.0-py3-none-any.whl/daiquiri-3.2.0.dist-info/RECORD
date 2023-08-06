@@ -1,0 +1,15 @@
+daiquiri/__init__.py,sha256=gaTS9bcSE4ngZP3Q46xMsfuFUfbc6zZKJaeHLZf1c5M,5261
+daiquiri/formatter.py,sha256=CHOZheRaL4WWIV8iUGEHUVAtXB4-jLRGzMWqjOLJ1Lo,6386
+daiquiri/handlers.py,sha256=YujUWcF2y6WoPCJ27kX13Y2DP4P2SnUx2L9QimpBBG4,5192
+daiquiri/output.py,sha256=22MHOHNB6LJIpwUW-IWh737CG8ObAfAYV3YeJK18K1I,11217
+daiquiri/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+daiquiri/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+daiquiri/tests/test_daiquiri.py,sha256=lJ8KFii443ljZWsmQ0bPXjqf_b5WBhQpLP0zY8k9unY,3732
+daiquiri/tests/test_formatter.py,sha256=h7rUBTqrQSo2AyFsn26UTuleG1kTU7Gj4DDpbFqXfHs,3772
+daiquiri/tests/test_output.py,sha256=Xvm1_YSD6ZwKJgRK_LEFA0q7dZjda0-pmvrXiGOEuBA,4768
+daiquiri-3.2.0.dist-info/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+daiquiri-3.2.0.dist-info/METADATA,sha256=zT0Pfjbd8B3VfK4Rwn_kSw1bBij-NtRmc9eBe8MmqUw,1503
+daiquiri-3.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+daiquiri-3.2.0.dist-info/pbr.json,sha256=TO9TQxzdjJOGk6Ce1xFTqfemU8QUKpXtwXstmlGDmJs,46
+daiquiri-3.2.0.dist-info/top_level.txt,sha256=Yyt6auqQ0quhKy4BnUclkrGv1o1ExC800MZefjnVrRw,9
+daiquiri-3.2.0.dist-info/RECORD,,
