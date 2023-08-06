@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pymlpipe
+Version: 0.1.2
+Summary: PyMLpipe is a Python library for ease Machine Learning Model monitering and Deployment.
+License: MIT
+Author: Indresh Bhattacharya
+Author-email: indresh2neel@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Flask (>=2.1.2,<3.0.0)
+Requires-Dist: Flask-API (>=3.0.post1,<4.0)
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: pandas (>=1.4.3,<2.0.0)
+Requires-Dist: pytest (==5.2)
+Requires-Dist: sklearn (>=0.0,<0.1)
