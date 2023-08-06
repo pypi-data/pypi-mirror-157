@@ -1,0 +1,12 @@
+pyproject.toml
+setup.cfg
+src/gotyno_validation/__init__.py
+src/gotyno_validation/encoding.py
+src/gotyno_validation/gotyno_output.py
+src/gotyno_validation/notifications.py
+src/gotyno_validation/validation.py
+src/gotyno_validation/validation_test.py
+src/gotyno_validation.egg-info/PKG-INFO
+src/gotyno_validation.egg-info/SOURCES.txt
+src/gotyno_validation.egg-info/dependency_links.txt
+src/gotyno_validation.egg-info/top_level.txt
