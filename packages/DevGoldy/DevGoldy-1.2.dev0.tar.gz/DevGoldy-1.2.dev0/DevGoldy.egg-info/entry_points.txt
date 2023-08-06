@@ -1,0 +1,3 @@
+[console_scripts]
+devgoldy = DevGoldy.dev_goldy:devgoldy
+
