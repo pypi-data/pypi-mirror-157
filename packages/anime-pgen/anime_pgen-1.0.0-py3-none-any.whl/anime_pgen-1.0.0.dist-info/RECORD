@@ -1,0 +1,14 @@
+anime_pgen/Item.py,sha256=Jl2-FYYVJeZ-5tIe-Kje5Ih7O723mYTsbqz4_dBCzBQ,3339
+anime_pgen/__init__.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+anime_pgen/constants.py,sha256=Z-Bd4xwv-qoQV7sMDFxqwZGUOB1xFrcq5UiqQdUb2Fc,368
+anime_pgen/download.py,sha256=0X3IJ_i6nfW1EQVbUn8C66BLjg5ynPmB9ni-MlsKWaI,1017
+anime_pgen/main.py,sha256=-RW41I_k_r00Wm9yCEy9fwV5nA21XktVjop4vHIBPGI,6823
+anime_pgen/make.py,sha256=291oWdSD02Zjlyaz2K-ykUZSdaQJ1LjNkm1L2Qg1Sag,12725
+anime_pgen/utils/__init__.py,sha256=yyB502Lop5-frnlkY5Pf0qlo6P6k_G6YoF5tXqML70g,528
+anime_pgen/utils/image.py,sha256=JLCNSq92dZirKtjcYg1fmO-fBcTiGRglqk1KNY_BQKs,2337
+anime_pgen/utils/text.py,sha256=fOThet7Fa8pXUSp0bnrabcSdt9H6jiTU8DjhasKmKY8,925
+anime_pgen-1.0.0.dist-info/entry_points.txt,sha256=OV3uKktP6clrKqJiCU8lSMgd7npk-BU90vo-7z_NSv0,44
+anime_pgen-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+anime_pgen-1.0.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+anime_pgen-1.0.0.dist-info/METADATA,sha256=ARPc5ljlPtbO5_-Pr1DE6j3m_u785PEvq2ddhjz2zI8,12270
+anime_pgen-1.0.0.dist-info/RECORD,,
