@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: PyEnzyme
+Version: 1.1.4
+Summary: Handling of EnzymeML files
+Home-page: https://github.com/EnzymeML/PyEnzyme
+Author: Range, Jan
+Author-email: jan.range@simtech.uni-stuttgart.de
+License: BSD2 Clause
+License-File: LICENSE
+Requires-Dist: python-libsbml
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: python-libcombine
+Requires-Dist: scipy
+Requires-Dist: texttable
+Requires-Dist: pydantic (==1.8.2)
+Requires-Dist: deprecation
+Requires-Dist: deepdiff
+Requires-Dist: python-multipart
+Requires-Dist: openpyxl
+Requires-Dist: xlsxwriter
+Requires-Dist: numexpr
+Requires-Dist: seaborn
+Requires-Dist: plotly
+Requires-Dist: pyyaml (==5.4.1)
+Provides-Extra: all
+Requires-Dist: python-copasi ; extra == 'all'
+Requires-Dist: pysces ; extra == 'all'
+Requires-Dist: lmfit ; extra == 'all'
+Requires-Dist: fastapi ; extra == 'all'
+Requires-Dist: uvicorn ; extra == 'all'
+Requires-Dist: pyDaRUS ; extra == 'all'
+Requires-Dist: easyDataverse ; extra == 'all'
+Requires-Dist: pydataverse ; extra == 'all'
+Provides-Extra: copasi
+Requires-Dist: python-copasi ; extra == 'copasi'
+Provides-Extra: dataverse
+Requires-Dist: pyDaRUS ; extra == 'dataverse'
+Requires-Dist: easyDataverse ; extra == 'dataverse'
+Requires-Dist: pydataverse ; extra == 'dataverse'
+Provides-Extra: modeling
+Requires-Dist: python-copasi ; extra == 'modeling'
+Requires-Dist: pysces ; extra == 'modeling'
+Requires-Dist: lmfit ; extra == 'modeling'
+Provides-Extra: pysces
+Requires-Dist: pysces ; extra == 'pysces'
+Requires-Dist: lmfit ; extra == 'pysces'
+Provides-Extra: rest
+Requires-Dist: fastapi ; extra == 'rest'
+Requires-Dist: uvicorn ; extra == 'rest'
+Provides-Extra: test
+Requires-Dist: pytest-cov ; extra == 'test'
+
