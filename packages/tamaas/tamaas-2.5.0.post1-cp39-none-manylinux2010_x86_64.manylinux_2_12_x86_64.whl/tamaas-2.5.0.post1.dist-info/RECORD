@@ -1,0 +1,13 @@
+tamaas/__init__.py,sha256=TZxP1U77gY6GKRhRQj-Rl8S1dbo1XK_H9s619d8t2uQ,2250
+tamaas/utils.py,sha256=5_dfSmUoRN9MrQJ_QqD2BUFuOgRbCdm3uYXNbd06CT0,11422
+tamaas/_tamaas.cpython-39-x86_64-linux-gnu.so,sha256=7IpNEViyjKS7rVyT0a1WaPFr46BsVNkW9KtoDnckpyQ,4797680
+tamaas/compute.py,sha256=XJnRMnqKbbGnsjYmIZPC9YMGztP8CSnCVwvNxaLFRv4,919
+tamaas/__main__.py,sha256=mweELS5cCcDMGFTb4UM5s51LNWAm6kJkgp2EuzVP0rM,7417
+tamaas/nonlinear_solvers/__init__.py,sha256=o70VGcXKsyEkvSCnznBAxjzJ2GTRbi94dwAyf9En_m0,5664
+tamaas/dumpers/_helper.py,sha256=jZ7Nt9Pci7lFh5MJviwxrIAyb1iW1RlTLuXI8hQMbWI,5036
+tamaas/dumpers/__init__.py,sha256=EpIda_SLHuSlQNrPvvdq8BSXM_SziO7xHVZ-elvNpHs,19333
+tamaas-2.5.0.post1.dist-info/RECORD,,
+tamaas-2.5.0.post1.dist-info/entry_points.txt,sha256=fyxMj6-8krQofhWv00I6Gwtc6sbnb2Z2ULop4CPq_nw,48
+tamaas-2.5.0.post1.dist-info/METADATA,sha256=r2RUOltC7FXGk_HYu4_ADlU9fujBqscUw84oJK3XHQI,3938
+tamaas-2.5.0.post1.dist-info/WHEEL,sha256=LxwUb5cHxiKue6RZf6nCPOpxr4C3qPg-bvQEnj5fysQ,147
+tamaas-2.5.0.post1.dist-info/top_level.txt,sha256=PbD86C6GYTaGxmm46x7ppHw5jGvC-tvULaFLGNB7wC0,7
