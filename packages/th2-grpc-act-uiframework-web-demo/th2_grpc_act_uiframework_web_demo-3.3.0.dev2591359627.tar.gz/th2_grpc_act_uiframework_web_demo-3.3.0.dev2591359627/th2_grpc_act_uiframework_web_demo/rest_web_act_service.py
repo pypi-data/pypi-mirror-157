@@ -1,0 +1,9 @@
+from . import uiframework_web_demo_pb2_grpc as importStub
+
+class RestWebActService(object):
+
+    def __init__(self, router):
+        self.connector = router.get_connection(RestWebActService, importStub.RestWebActStub)
+
+    def getLastMessageFromProvider(self, request, timeout=None, properties=None):
+        return self.connector.create_request('getLastMessageFromProvider', request, timeout, properties)

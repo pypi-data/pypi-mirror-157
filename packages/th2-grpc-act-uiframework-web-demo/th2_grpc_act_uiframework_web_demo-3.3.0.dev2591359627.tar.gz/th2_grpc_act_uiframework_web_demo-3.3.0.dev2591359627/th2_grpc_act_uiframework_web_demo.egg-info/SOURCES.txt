@@ -1,0 +1,14 @@
+README.md
+package_info.json
+setup.py
+th2_grpc_act_uiframework_web_demo/__init__.py
+th2_grpc_act_uiframework_web_demo/demo_rest_act_service.py
+th2_grpc_act_uiframework_web_demo/rest_web_act_service.py
+th2_grpc_act_uiframework_web_demo/ui_frame_work_hand_web_act_service.py
+th2_grpc_act_uiframework_web_demo/uiframework_web_demo.proto
+th2_grpc_act_uiframework_web_demo/uiframework_web_demo_pb2.py
+th2_grpc_act_uiframework_web_demo/uiframework_web_demo_pb2_grpc.py
+th2_grpc_act_uiframework_web_demo.egg-info/PKG-INFO
+th2_grpc_act_uiframework_web_demo.egg-info/SOURCES.txt
+th2_grpc_act_uiframework_web_demo.egg-info/dependency_links.txt
+th2_grpc_act_uiframework_web_demo.egg-info/top_level.txt
