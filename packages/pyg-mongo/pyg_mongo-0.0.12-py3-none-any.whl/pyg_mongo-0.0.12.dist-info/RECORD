@@ -1,0 +1,11 @@
+pyg_mongo/__init__.py,sha256=qiXv82rVjeUIob9qObKKMBrE-Xt2vI5hZOOZerpxiic,327
+pyg_mongo/_base_reader.py,sha256=a7-ctN8q9y4trzd4sHJ1K95vg4LM4Zqs41ztYfyWQvE,9424
+pyg_mongo/_cursor.py,sha256=jdMN9NZVE-gppKSndOBttUn9Y7vY1obJlgL-L52r7iY,18803
+pyg_mongo/_q.py,sha256=S99bOJ1WBFY8wVoX7Zq0oyPBVzBeDzLzVp3htOJhjrE,14394
+pyg_mongo/_reader.py,sha256=N2MNbm4Ua1xUA1zm8GxTyddUkfsSuzjZF0JtnaBxWIU,7303
+pyg_mongo/_table.py,sha256=QrsdifnV3PtgAAXP2L40MTYvSXILU8HjOqo5C28VBPg,2640
+pyg_mongo-0.0.12.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+pyg_mongo-0.0.12.dist-info/METADATA,sha256=gfvMtqQgbYUuNJ8KmNpt5NJ7lzkYUXn1T0_qh8w0hIc,4837
+pyg_mongo-0.0.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyg_mongo-0.0.12.dist-info/top_level.txt,sha256=l5ot-09nL7rOXmSt8YWX3l3BHVXOi9kVNpVo68s2m2w,10
+pyg_mongo-0.0.12.dist-info/RECORD,,
