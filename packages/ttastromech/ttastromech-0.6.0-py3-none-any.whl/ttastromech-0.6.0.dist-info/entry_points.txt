@@ -1,0 +1,3 @@
+[console_scripts]
+astromechspeak=ttastromech.bin.astromechspeak:main
+
