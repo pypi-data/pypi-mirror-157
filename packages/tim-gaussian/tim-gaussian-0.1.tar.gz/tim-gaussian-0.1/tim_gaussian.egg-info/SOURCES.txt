@@ -1,0 +1,10 @@
+setup.py
+tim-gaussian/Binomialdistribution.py
+tim-gaussian/Gaussiandistribution.py
+tim-gaussian/Generaldistribution.py
+tim-gaussian/__init__.py
+tim_gaussian.egg-info/PKG-INFO
+tim_gaussian.egg-info/SOURCES.txt
+tim_gaussian.egg-info/dependency_links.txt
+tim_gaussian.egg-info/not-zip-safe
+tim_gaussian.egg-info/top_level.txt
