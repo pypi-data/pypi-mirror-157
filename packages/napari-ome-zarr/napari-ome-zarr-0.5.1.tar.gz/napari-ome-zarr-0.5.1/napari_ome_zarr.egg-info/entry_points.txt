@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-ome-zarr = napari_ome_zarr:napari.yaml
