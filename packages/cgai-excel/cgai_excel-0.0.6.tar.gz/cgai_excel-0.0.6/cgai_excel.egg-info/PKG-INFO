@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: cgai-excel
+Version: 0.0.6
+Summary: An Excel processing tool.
+Home-page: https://github.com/zxzxde/cgai-excel
+Author: Master Zhang
+Author-email: 360014296@qq.com
+License: UNKNOWN
+Description: # cgai-excel
+        
+        #### 介绍
+        操作excel
+        
+        #### 图片获取  
+        
+        规定： 
+        1. 图片必须以内嵌的形式插入到单元格当中  
+        2. 图片格子中的文字将不会识别  
+        3. 解析到获取的图片路径前以img:为标识，比如: img:C:\\Temp\\output\\EXT\\xl/media\\image6.jpeg
+        
+        
+        #### 安装教程
+        
+        ```python
+        pip install cgai-excel
+        
+        ```
+        
+        #### 使用说明
+        仅支持python3
+        
+        ```python
+        from cgai_excel.Handler import get_excel_data
+        
+        path = r'F:\Temp\Q\excel_module.xlsx'
+        data = get_excel_data(path,extract_dirpath='F:\Temp\Q\Atemp')
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown

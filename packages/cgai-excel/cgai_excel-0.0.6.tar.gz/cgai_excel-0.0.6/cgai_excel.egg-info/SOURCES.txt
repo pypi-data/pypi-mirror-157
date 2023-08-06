@@ -1,0 +1,8 @@
+README.md
+setup.py
+cgai_excel/Handler.py
+cgai_excel/__init__.py
+cgai_excel.egg-info/PKG-INFO
+cgai_excel.egg-info/SOURCES.txt
+cgai_excel.egg-info/dependency_links.txt
+cgai_excel.egg-info/top_level.txt
