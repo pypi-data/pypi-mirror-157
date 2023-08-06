@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: docufix
+Version: 0.2.2
+Summary: 
+Author: Nyakku Shigure
+Author-email: sigure.qaq@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
