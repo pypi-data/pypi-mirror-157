@@ -1,0 +1,3 @@
+pyyaml
+click<9,>=8.0
+click_option_group
