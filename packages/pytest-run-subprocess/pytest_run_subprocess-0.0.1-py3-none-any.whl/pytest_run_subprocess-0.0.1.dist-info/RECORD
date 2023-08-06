@@ -1,0 +1,8 @@
+pytest_run_subprocess/__init__.py,sha256=E45Q2eZ_-MyYy_d25r9otaiKm656NcEsEXfhX-iA-FM,82
+pytest_run_subprocess/fixtures.py,sha256=wSZUHFUANIY9UVcZqA_inhscho5DIE9vb3JXMhLa18s,116
+pytest_run_subprocess-0.0.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+pytest_run_subprocess-0.0.1.dist-info/METADATA,sha256=O8478RgBJ7oMnv99Q7xAE02jQgopOtwwGLlw50DwZPI,8344
+pytest_run_subprocess-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pytest_run_subprocess-0.0.1.dist-info/entry_points.txt,sha256=r_IgJk7D1_WHH4e276gp3O0xP5v8Cb4hbl0AFpEiCiA,57
+pytest_run_subprocess-0.0.1.dist-info/top_level.txt,sha256=Ps7RgmChMDuHf4clgdLrPkN4WNOpMKdXzJygsY-Cyco,22
+pytest_run_subprocess-0.0.1.dist-info/RECORD,,
