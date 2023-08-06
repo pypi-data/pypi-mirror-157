@@ -1,0 +1,15 @@
+# systems hierachical keys to fits cards
+
+
+# predefined keys 
+# $NAME is the actors systemname 
+
+# tcs pwi cards         
+'ra_j2000_hours':           [RA,  "[HOURS] ra j2000 $NAME"] 
+'dec_j2000_degs':           [DEG, "[DEG] dec j2000 $NAME"]
+
+# tcs tan cards         
+'Position':                 [POS, '[DEG] focus position $NAME'] # keys from the system can be referenced
+#'DeviceEncoder.Position':   [ENC, '[$DeviceEncoder.Units] focus position $NAME'] # keys from the system can be referenced
+'Reachable':                [IS_ON, 'Electronic is on $NAME']
+        
