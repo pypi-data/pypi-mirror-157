@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: optipy
+Version: 1.2.2
+Summary: An API for getting Optifine VersionsList/Version/Download-URL.
+Home-page: https://github.com/GoodDay360/OptiPy
+Author: GoodDay360
+Author-email: istartgame31@gmail.com
+License: MIT
+Keywords: optifine,api,optifine_api
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# Optifine-API
+An API for getting Optifine VersionsList/Versions/Download-URL.  
+Download on [Github](https://github.com/GoodDay360/Optifine-API).
+# Installation
+```
+pip install optipy
+```
+# Get Versions List
+This will get list of all Optifine versions.
+- The output might not show all versions in console.
+- Dump the list into file if you want to see all the versions.
+Arguments: 
+- **[ Optional ]** `timeout` use for how long can request take before it cancel. (Default: 30)  
+```python
+from optipy import getVersionList
+
+while True:
+    data = getVersionList(timeout=15)
+    if "408" not in data:
+        print(data)
+        break
+```
+# Get Specify Versions
+This will get Optifine versions informations by just specify Minecraft Version.  
+Arguments: 
+- **[ Required ]** `mcversion` is for specify minecraft version.
+- **[ Optional ]** `single` use to return only one optifine version. (Default: False)  
+- **[ Optional ]** `timeout` use for how long can request take before it cancel. (Default: 30)  
+```python
+from optipy import getVersion
+
+while True:
+    data = getVersion(mcversion="1.18", single=True, timeout=15)
+    if "408" not in data:
+        print(data)
+        break
+```
+# Get Optifine Download URL
+This will get filename from version info and use different method to download it.  
+Arguments: 
+- **[ Required ]** `mcversion` is for specify minecraft version.
+- **[ Optional ]** `single` use to return only one optifine version url. (Default: False)  
+- **[ Optional ]** `timeout` use for how long can request take before it cancel. (Default: 30)  
+```python
+from optipy import getUrl
+
+while True:
+    data = getUrl(mcversion="1.18", single=True, timeout=15)
+    if "408" not in data:
+        print(data)
+        break
+```
+
+
+Change Log
+===========
+
+1.0.5 (10/2/2022)
+------------------
+- First Release
+
+1.0.5 (7/2/2022)
+------------------
+- Fixed Request Time-out return None
+- Added hint arguments
+- Renamed functions
+
