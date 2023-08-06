@@ -1,0 +1,9 @@
+numpy
+pandas
+requests
+beautifulsoup4
+fake-useragent
+python-dateutil
+pytz
+six
+soupsieve
