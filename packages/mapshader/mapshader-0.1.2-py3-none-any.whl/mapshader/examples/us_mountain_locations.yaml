@@ -1,0 +1,37 @@
+---
+
+metadata:
+  version: 1
+
+sources:
+  - name: Location of US Mountains (Point data)
+    key: tiling-point-data
+    text: Example of tiling point data
+    description: Example of tiling point data
+    service_types:
+      - tile
+    cmap:
+      - white
+    geometry_type: point
+    shade_how: linear
+    raster_interpolate: linear
+    geometry_field: geometry
+    filepath: mapshader/tests/fixtures/us_peaks.shp
+    transforms:
+      - name: reproject_vector
+        args:
+          epsg: 3857
+      - name: add_projected_buffered_extent
+        args:
+          crs: 4326
+          buffer_distance: 0.01
+          geometry_field: geometry
+      - name: to_spatialpandas
+    tiling:
+      min_zoom: 1
+      max_zoom: 2
+      xmin_field: buffer_0_4326_xmin
+      xmax_field: buffer_0_4326_xmax
+      ymin_field: buffer_0_4326_ymin
+      ymax_field: buffer_0_4326_ymax
+
