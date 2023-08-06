@@ -1,0 +1,504 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+nonebot_plugin_bfinfo/__init__.py
+nonebot_plugin_bfinfo/bf_translate.json
+nonebot_plugin_bfinfo/general_bg.jpg
+nonebot_plugin_bfinfo.egg-info/PKG-INFO
+nonebot_plugin_bfinfo.egg-info/SOURCES.txt
+nonebot_plugin_bfinfo.egg-info/dependency_links.txt
+nonebot_plugin_bfinfo.egg-info/requires.txt
+nonebot_plugin_bfinfo.egg-info/top_level.txt
+nonebot_plugin_bfinfo/bf1/class_img/Assault.png
+nonebot_plugin_bfinfo/bf1/class_img/Cavalry.png
+nonebot_plugin_bfinfo/bf1/class_img/Medic.png
+nonebot_plugin_bfinfo/bf1/class_img/Pilot.png
+nonebot_plugin_bfinfo/bf1/class_img/Scout.png
+nonebot_plugin_bfinfo/bf1/class_img/Support.png
+nonebot_plugin_bfinfo/bf1/class_img/Tanker.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Airship/C-class airship.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Artillery truck/Artillery truck.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Assault tank/St chamond.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Assault truck/Putilov garford.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Attack plane/A.e.f 2-a2 attack plane.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Attack plane/Bristol f2.b attack plane.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Attack plane/Halberstadt cl. ii attack plane.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Attack plane/Rumpler c.i attack plane.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Behemoth/Airship l30.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Behemoth/Armored train.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Behemoth/Char 2c.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Behemoth/Dreadnought.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Boat/M.a.s. torpedo boat.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Boat/Y lighter landing craft.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Bomber/Airco dh.10.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Bomber/Caproni ca.5 bomber.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Bomber/Gotha g.iv bomber.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Bomber/Hansa-brandenburg g.i.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Destroyer/L-class destroyer.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Fighter/Albatros diii  fighter.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Fighter/Dr.1 fighter.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Fighter/Sopwith camel fighter.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Fighter/Spad s xiii fighter.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Heavy bomber/Ilya muromets.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Heavy tank/A7v heavy tank.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Horse/Horse.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Land vehicle/37_95 scout.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Land vehicle/Ev4 armored car.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Land vehicle/F.t. armored car.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Land vehicle/Kft scout.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Land vehicle/M30 scout.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Land vehicle/Mc 18j sidecar.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Land vehicle/Mc 3.5hp sidecar.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Land vehicle/Rnas armored car.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Land vehicle/Romfell armored car.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Landship/Mark v landship.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Light tank/Ft-17 light tank.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Stationary weapon/305_52 o coastal gun.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Stationary weapon/Bl 9.2 siege gun.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Stationary weapon/Fk 96 field gun.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Stationary weapon/Fortress gun.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Stationary weapon/He auto-cannon.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Stationary weapon/Heavy machine gun.png
+nonebot_plugin_bfinfo/bf1/vehicle_img/Stationary weapon/Qf 1 aa.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Field kit/MG 08_15.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Field kit/Martini-Henry Grenade Launcher.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Field kit/Tankgewehr M1918.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Field kit/Villar Perosa.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Field kit/Wex.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/AA Rocket Gun.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/AT Rocket Gun.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Ammo Crate.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Ammo Pouch.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Anti-Tank Grenade.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Anti-Tank Mine.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Bandage Pouch.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Crossbow Launcher — FRG.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Crossbow Launcher — HE.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Dynamite.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Flare Gun — Flash.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Flare Gun — Spot.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/K Bullets.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Limpet Charge.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Livens Projector.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Medical Crate.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Medical Syringe.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Mortar — AIR.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Mortar — HE.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Repair Tool.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Sniper Decoy.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Sniper Shield.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Trench Periscope.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Tripwire Bomb — GAS.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Tripwire Bomb — HE.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Gadget/Tripwire Bomb — INC.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Grenade/Frag Grenade.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Grenade/Gas Grenade.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Grenade/Impact Grenade.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Grenade/Improvised Grenade.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Grenade/Incendiary Grenade.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Grenade/Light Anti-Tank Grenade.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Grenade/Mini Grenade.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Grenade/Rifle Grenade — FRG.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Grenade/Rifle Grenade — HE.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Grenade/Rifle Grenade — SMK.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Grenade/Russian Standard Grenade.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Grenade/Smoke Grenade.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/BAR M1918 Storm.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/BAR M1918 Telescopic.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/BAR M1918 Trench.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/Chauchat Low Weight.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/Chauchat Telescopic.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/Huot Automatic Low Weight.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/Huot Automatic Optical.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/Lewis Gun Low Weight.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/Lewis Gun Optical.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/Lewis Gun Suppressive.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/M1909 Benét–Mercié Optical.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/M1909 Benét–Mercié Storm.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/M1909 Benét–Mercié Telescopic.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/M1917 MG Low Weight.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/M1917 MG Telescopic.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/MG15 n.A. Low Weight.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/MG15 n.A. Storm.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/MG15 n.A. Suppressive.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/Madsen MG Low Weight.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/Madsen MG Storm.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/Madsen MG Trench.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/Parabellum MG14_17 Low Weight.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/Parabellum MG14_17 Suppressive.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/Perino Model 1908 Defensive.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/Perino Model 1908 Low Weight.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/lMG 08_18 Low Weight.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Lmg/lMG 08_18 Suppressive.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Arditi Dagger.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Bartek Bludgeon.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Bayonet Charge.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Bedouin Dagger.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Billhook.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Cavalry Lance.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Cavalry Sword.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Club.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Cogwheel Club.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Combat Knife.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Compact Trench Knife.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Cossack Dagger.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Coupe Coupe.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Dud Club.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/French Butcher Knife.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Grappling Hook.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Hatchet.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Hellfighter Bolo Knife.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Jambiya Knife.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Kukri.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Meat Cleaver.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Nail Knife.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Naval Cutlass.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Ottoman Flanged Mace.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Ottoman Kilij.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Pickaxe.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Prybar.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Raider Club.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Russian Award Knife.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Russian Axe.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Saber.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Sawtooth Knife.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Shovel.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Sickle.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Spiked Club.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Survival Knife.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Totokia.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Trench Fleur.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Trench Knife.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Trench Mace.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/US Trench Knife.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Welsh Blade.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Wine Bottle.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Melee/Yatagan Sword.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Carcano M91 Carbine.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Gewehr 98 Infantry.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Gewehr 98 Marksman.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Gewehr 98 Sniper.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Gewehr M.95 Carbine.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Gewehr M.95 Infantry.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Gewehr M.95 Marksman.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Lawrence of Arabia's SMLE.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Lebel Model 1886 Infantry.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Lebel Model 1886 Sniper.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Lebel Model 1886.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/M1903 Experimental.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/M1903 Marksman.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/M1903 Sniper.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/M1917 Enfield Infantry.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/M1917 Enfield Silenced.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Martini-Henry Infantry.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Martini-Henry Sniper.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Mosin-Nagant M91 Infantry.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Mosin-Nagant M91 Marksman.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Ross MkIII Infantry.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Ross MkIII Marksman.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Russian 1895 Infantry.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Russian 1895 Sniper.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Russian 1895 Trench.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/SMLE MKIII Carbine.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/SMLE MKIII Infantry.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/SMLE MKIII Marksman.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Type 38 Arisaka Infantry.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Vetterli-Vitali M1870_87 Carbine.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Rifle/Vetterli-Vitali M1870_87 Infantry.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Autoloading 8 .25 Extended.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Autoloading 8 .35 Factory.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Autoloading 8 .35 Marksman.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Carcano M91 Patrol Carbine.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Cei-Rigotti Factory.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Cei-Rigotti Optical.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Cei-Rigotti Trench.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Farquhar-Hill Optical.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Farquhar-Hill Storm.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Fedorov Avtomat Optical.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Fedorov Avtomat Trench.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/General Liu Rifle Factory.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/General Liu Rifle Storm.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Howell Automatic Factory.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Howell Automatic Sniper.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/M1907 SL Factory.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/M1907 SL Sweeper.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/M1907 SL Trench.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/M1917 Patrol Carbine.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Mondragón Optical.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Mondragón Sniper.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Mondragón Storm.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/RSC 1917 Factory.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/RSC 1917 Optical.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Selbstlader 1906 Factory.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Selbstlader 1906 Sniper.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Selbstlader M1916 Factory.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Selbstlader M1916 Marksman.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Self-loading rifle/Selbstlader M1916 Optical.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Shotgun/12g Automatic Backbored.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Shotgun/12g Automatic Extended.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Shotgun/12g Automatic Hunter.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Shotgun/Hellfighter Trench Shotgun.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Shotgun/M97 Trench Gun Backbored.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Shotgun/M97 Trench Gun Hunter.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Shotgun/M97 Trench Gun Sweeper.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Shotgun/Model 10-A Factory.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Shotgun/Model 10-A Hunter.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Shotgun/Model 10-A Slug.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Shotgun/Model 1900 Factory.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Shotgun/Model 1900 Slug.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Shotgun/Sjögren Inertial Factory.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Shotgun/Sjögren Inertial Slug.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/1903 Hammerless.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Auto Revolver.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Bodeo 1889.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Bull Dog Revolver.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/C93.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/C96.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Frommer Stop.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Gasser M1870.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Hellfighter M1911.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Howdah Pistol.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Kolibri.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/M1911.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Mars Automatic.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Mle 1903.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Modello 1915.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Nagant Revolver.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/No. 3 Revolver.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Obrez Pistol.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/P08 Pistol.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Red Baron's P08.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Repetierpistole M1912.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Revolver Mk VI.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Taschenpistole M1914.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Sidearm/Type 38 Arisaka Patrol.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/Annihilator Trench.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/Automatico M1918 Factory.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/Automatico M1918 Storm.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/Automatico M1918 Trench.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/Hellriegel 1915 Defensive.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/Hellriegel 1915 Factory.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/M1917 Trench Carbine.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/MP 18 Experimental.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/MP 18 Optical.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/MP 18 Trench.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/Maschinenpistole M1912_P.16 Experimental.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/Maschinenpistole M1912_P.16 Storm.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/RSC SMG Factory.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/RSC SMG Optical.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/Ribeyrolles 1918 Factory.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/Ribeyrolles 1918 Optical.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/SMG 08_18 Factory.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Smg/SMG 08_18 Optical.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Standard issue rifles/Gewehr 98.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Standard issue rifles/Gewehr M.95.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Standard issue rifles/M1903.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Standard issue rifles/Mosin-Nagant M91.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Standard issue rifles/Russian 1895.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Standard issue rifles/SMLE MKIII.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Tanker_pilot/C93 Carbine.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Tanker_pilot/C96 Carbine.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Tanker_pilot/Frommer Stop Auto.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Tanker_pilot/M1911 Extended.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Tanker_pilot/Mle 1903 Extended.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Tanker_pilot/P08 Artillerie.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Tanker_pilot/Pieper M1893.png
+nonebot_plugin_bfinfo/bf1/weapon_img/Tanker_pilot/Sawed Off Shotgun.png
+nonebot_plugin_bfinfo/bfv/class_img/Assault.png
+nonebot_plugin_bfinfo/bfv/class_img/Medic.png
+nonebot_plugin_bfinfo/bfv/class_img/Recon.png
+nonebot_plugin_bfinfo/bfv/class_img/Scout.png
+nonebot_plugin_bfinfo/bfv/class_img/Support.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/A-20 bomber.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/Bf 109 g-2.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/Bf 109 g-6.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/Blenheim mk if.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/Blenheim mki.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/Corsair f4u-1a.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/Corsair f4u-1c.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/Ju-88 a.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/Ju-88 c.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/Mosquito fb mkvi.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/Mosquito mkii.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/P-70 night fighter.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/P51d fighter.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/P51k fighter.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/Spitfire mk va.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/Spitfire mk vb.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/Stuka b-1.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/Stuka b-2.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/Zero a6m2.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Planes/Zero a6m5.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Stationary/40mm aa.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Stationary/6 pounder.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Stationary/Flak 38.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Stationary/Pak 40.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Stationary/Stationary mg34.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Stationary/Type 10.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Stationary/Type 93 hmg.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Stationary/Vickers.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Churchill crocodile.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Churchill gun carrier.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Churchill mk vii.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Flakpanzer iv.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Hachi.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Ka-mi.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Lvt.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/M8 greyhound.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Panzer 38t.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Panzer iv.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Sdkfz 234 puma.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Sherman.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Staghound t17e1.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Sturmgeschutz iv.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Sturmtiger.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/T34 calliope.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Tiger i.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Type 97.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Valentine aa mk i.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Valentine archer.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Tanks/Valentine mk viii.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Transports/Dinghy.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Transports/Gpw.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Transports/Kettenkrad.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Transports/Kübelwagen.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Transports/Lcvp.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Transports/M3.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Transports/Sd. kfz 251 halftrack.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Transports/Sd. kfz. 251 pakwagen.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Transports/Type 95 car.png
+nonebot_plugin_bfinfo/bfv/vehicle_img/Transports/Universal carrier.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Anti-materiel rifle/Boys AT Rifle.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Anti-materiel rifle/Panzerbüchse 39.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Assault rifle/Breda M1935 PG.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Assault rifle/M1907 SF.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Assault rifle/M2 Carbine.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Assault rifle/Ribeyrolles 1918.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Assault rifle/StG 44.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Assault rifle/Sturmgewehr 1-5.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Bolt action carbine/Commando Carbine.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Bolt action carbine/Jungle Carbine.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Bolt action carbine/M28 con Tromboncino.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Bolt action rifle/Gewehr M95_30.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Bolt action rifle/K31_43.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Bolt action rifle/Kar98k.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Bolt action rifle/Krag–Jørgensen.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Bolt action rifle/Lee-Enfield No.4 Mk I.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Bolt action rifle/Ross Rifle Mk III.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Bolt action rifle/Type 99 Arisaka.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/AP Mine.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/AT Grenade Pistol.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/AT Mine.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Ammo Crate.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Anti-Tank Bundle Grenade.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Bandages.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Demolition Grenade.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Doppel-Schuss.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Firecrackers.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Flare Gun.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Fliegerfaust.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Frag Grenade Rifle.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Frag Grenade.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Impact Grenade.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Incendiary Grenade.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Kampfpistole.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Katana.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Kunai.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Lunge Mine.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/M1A1 Bazooka.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/M2 Flamethrower.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Medical Crate.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Medical Syringe.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/PIAT.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Panzerfaust.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Pistol Flamethrower.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/RMN50 Rifle Frag.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Shaped Charge.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Smoke Grenade Rifle.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Smoke Grenade.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Sniper Decoy.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Spawn Beacon.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Spotting Scope.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Sticky Dynamite.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Throwing Blade.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Gadget/Type 99 Mine.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Lmg/BAR M1918A2.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Lmg/Bren Gun.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Lmg/Chauchat.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Lmg/FG-42.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Lmg/KE7.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Lmg/LS_26.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Lmg/Lewis Gun.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Lmg/Madsen MG.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Lmg/Type 11 LMG.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Lmg/Type 97 MG.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Melee/British Army Jack Knife.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Melee/Club.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Melee/Escape Axe.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Melee/German Naval Dagger.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Melee/Hachiwari.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Melee/Hatchet.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Melee/Ilse's Pickaxe.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Melee/K98 Bayonet.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Melee/Kukri.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Melee/Lever Pipe.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Melee/Lion Head Sword.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Melee/Pickaxe.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Melee/Poignard.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Melee/Scout Knife M1916.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Melee/Shovel.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Mmg/M1919A6.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Mmg/M1922 MG.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Mmg/MG 34.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Mmg/MG 42.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Mmg/S2-200.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Mmg/VGO.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Pistol carbine/P08 Carbine.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Pistol carbine/Trench Carbine.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Self-loading rifle/Model 8.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Self-loading rifle/RSC.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Self-loading rifle/Selbstlader 1906.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Self-loading rifle/ZH-29.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Semi-auto rifle/Ag m_42.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Semi-auto rifle/Gewehr 1-5.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Semi-auto rifle/Gewehr 43.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Semi-auto rifle/Karabin 1938M.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Semi-auto rifle/M1 Garand.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Semi-auto rifle/M1941 Johnson.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Semi-auto rifle/M1A1 Carbine.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Semi-auto rifle/M3 Infrared.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Semi-auto rifle/MAS 44.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Semi-auto rifle/Selbstlader 1916.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Semi-auto rifle/Turner SMLE.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Shotgun/12g Automatic.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Shotgun/M1897.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Shotgun/M30 Drilling.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Shotgun/Model 37.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Shotgun/Sjögren Shotgun.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Sidearm/Liberator.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Sidearm/M1911 Suppressed.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Sidearm/M1911.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Sidearm/Mk VI Revolver.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Sidearm/Model 27.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Sidearm/P08 Pistol.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Sidearm/P38 Pistol.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Sidearm/PPK.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Sidearm/PPKS.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Sidearm/Repetierpistole M1912.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Sidearm/Ruby.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Sidearm/Type 94.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Sidearm/Welrod.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Smg/EMP.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Smg/M1928A1.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Smg/M3 Grease Gun.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Smg/MAB 38.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Smg/MP28.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Smg/MP34.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Smg/MP40.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Smg/STEN.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Smg/Suomi KP_-31.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Smg/Type 100.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Smg/Type 2A.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Smg/Welgun.png
+nonebot_plugin_bfinfo/bfv/weapon_img/Smg/ZK-383.png
