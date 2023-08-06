@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: scikit-yaml
+Version: 0.1.0
+Summary: Define Scikit-Learn objects using YAML
+Home-page: UNKNOWN
+Author: Matheus Couto
+Author-email: matheusccouto@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pyyaml
+Requires-Dist: scikit-learn
+
+UNKNOWN
+
