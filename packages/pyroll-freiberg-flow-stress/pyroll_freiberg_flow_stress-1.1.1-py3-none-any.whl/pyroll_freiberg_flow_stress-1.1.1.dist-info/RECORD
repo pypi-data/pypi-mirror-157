@@ -1,0 +1,12 @@
+pyroll/freiberg_flow_stress/__init__.py,sha256=ta23ZxXxVCPmXJ86Y7v1vaGmi6WWcrBj8zHVeeivyTI,298
+pyroll/freiberg_flow_stress/freiberg_flow_stress.py,sha256=yS6vdRbJETwaDpOAelr9XszY9fsJeLGA7HuYSPGlg5Y,2538
+pyroll/freiberg_flow_stress/hookimpls.py,sha256=KqGAgyr2Pqr57MABFm-JsTCiLcmoeXHfHl9I3qtQlkE,434
+pyroll/freiberg_flow_stress/hookspecs.py,sha256=2684Ortcs6yAa2t7h0DiQ-zMPTZOD44xoQ0Hmr0VZuc,305
+pyroll/freiberg_flow_stress/materials/__init__.py,sha256=GN5bZq3y-gU0PNT7kWf3hxoAQRu-2I2LcGQpZNYivlE,57
+pyroll/freiberg_flow_stress/materials/c20.py,sha256=78NwGeZruxTgbrSbd8Qn51ukMQv4q7JtX55xqF2KKB8,585
+pyroll/freiberg_flow_stress/materials/c45.py,sha256=R5u7yKXQ94_FbiVuypd84zh-Fr9hMWy1gPAAzgBwp80,578
+pyroll/freiberg_flow_stress/materials/s355j2.py,sha256=SljlOsLmN_od11jQJlU2HmAmZA83KdGf6UNFVB33YkM,566
+pyroll_freiberg_flow_stress-1.1.1.dist-info/LICENSE,sha256=cC-Hopqx0dkfeivDS5kNfOOAZ-IBvUe5BEF4z9MY1Mo,1474
+pyroll_freiberg_flow_stress-1.1.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pyroll_freiberg_flow_stress-1.1.1.dist-info/METADATA,sha256=6j6kWEbiyWQAg81Y6wOvq9X9gL4flUvgq-CGOom7dfI,1119
+pyroll_freiberg_flow_stress-1.1.1.dist-info/RECORD,,
