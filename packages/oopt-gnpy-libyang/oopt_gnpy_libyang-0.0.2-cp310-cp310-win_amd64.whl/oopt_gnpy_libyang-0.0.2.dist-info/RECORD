@@ -1,0 +1,17 @@
+oopt_gnpy_libyang.cp310-win_amd64.pyd,sha256=_JpSy-VYpe5TFH_XlfhyG8vzSSKl9lHy1WFLaEbWPtQ,252928
+python310.dll,sha256=-C3cNghfRxmnCJHplU8pfwP0U7IVmsxxq9JOU2ewDes,4862976
+zlib1.dll,sha256=HuOC5SfGQOgj2C8hnOoF5l1Kwj_bMr93wsd2uqXDrtA,89088
+oopt_gnpy_libyang-0.0.2.data/platlib/.load-order-oopt_gnpy_libyang-0.0.2,sha256=6b3YE9QTYv48Q-tsfK6jbSRAfHCD1TleIPY9Tk9ObGk,135
+oopt_gnpy_libyang-0.0.2.data/platlib/concrt140.dll,sha256=N3wG67zOkO2zjV_8DoZRdh9kWc7TeEBfKTYXFpYi6r4,316848
+oopt_gnpy_libyang-0.0.2.data/platlib/dl-cad15d4d.dll,sha256=ytFdTX_jtAx8J_03jBef8OO_SwPDq__Uxn_LRkSE9kk,14848
+oopt_gnpy_libyang-0.0.2.data/platlib/msvcp140.dll,sha256=te-uwRvxlR9REHoaJ1Tsowp2iF-wrj--iebutZswbeQ,687248
+oopt_gnpy_libyang-0.0.2.data/platlib/pcre2-8-950dc236.dll,sha256=lQ3CNnskFCKjg_lhDlEQE6vXQVS8la11mYbcIhD-zj4,535552
+oopt_gnpy_libyang-0.0.2.data/platlib/pthreadVC3-1d0aa5c0.dll,sha256=HQqlwPwj7aoAfu66y7kE0NiL7zFyNZ4UIPlHGFQYt6M,103424
+oopt_gnpy_libyang-0.0.2.data/platlib/yang-b95aa57c.dll,sha256=_eAeRhTA0-cdf5RDKcWVkYvxfxluPRZUKroxsiBwXIQ,1021952
+oopt_gnpy_libyang-0.0.2.data/platlib/yang-cpp-7cd43907.dll,sha256=5yI-W4Kj0XUM_JW4vyxS84iCfQPoDej_5Zghk7C7WTc,212992
+oopt_gnpy_libyang-0.0.2.dist-info/DELVEWHEEL,sha256=a4EHpl0ehBIZjH1q1pGa5apF5d7BTLr-tYmtIIe2I2k,203
+oopt_gnpy_libyang-0.0.2.dist-info/LICENSE,sha256=y8j3ec0ZJI_SphnAA9k2XCeX8CtVLMggA4XNZ5ZsnfM,1526
+oopt_gnpy_libyang-0.0.2.dist-info/METADATA,sha256=4jn8HriJzRF2gDygZ7B90ggC5UKmxgkHYDeUPzYInS0,6163
+oopt_gnpy_libyang-0.0.2.dist-info/RECORD,,
+oopt_gnpy_libyang-0.0.2.dist-info/top_level.txt,sha256=hT7dK99RvNkMRCceHlp3sCSxq6gQQ-0S-c4Md-EcLec,18
+oopt_gnpy_libyang-0.0.2.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
