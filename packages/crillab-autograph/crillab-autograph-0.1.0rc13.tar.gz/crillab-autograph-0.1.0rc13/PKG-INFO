@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: crillab-autograph
+Version: 0.1.0rc13
+Summary: AUtogRAPH - A Unified libRary for drAwing Plots in pytHon
+Home-page: https://github.com/crillab/autograph
+Author: Thibault Falque, Romain Wallon, Hugues Wattez
+Author-email: thibault.falque@exakis-nelite.com, wallon@lix.polytechnique.fr, wattez@cril.fr
+License: MIT
+Keywords: visualization plots
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# AUtogRAPH - A Unified libRary for drAwing Plots in pytHon 
+
+AUtogRAPH is a unified library for creating static and interactive visualization in Python. T
+It offers a unique simplified interface for creating graphics. 
+It currently manages two libraries in the background: [Matplotlib](https://github.com/matplotlib/matplotlib)
+and [Plotly](https://github.com/plotly/plotly.py). New libraries will be added gradually. 
+
+## Install *Autograph*
+
+```
+$ pip install crillab-autograph
+```
+
+## Usage 
+
+A sample notebook is available [here](https://github.com/crillab/autograph/blob/v0.1.0-rc1/example/basic.ipynb). 
+
+

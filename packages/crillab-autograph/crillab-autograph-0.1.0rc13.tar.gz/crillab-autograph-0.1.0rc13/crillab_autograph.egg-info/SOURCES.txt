@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+setup.py
+autograph/__init__.py
+autograph/core/__init__.py
+autograph/core/enumstyle.py
+autograph/core/plot.py
+autograph/core/style.py
+autograph/wrapper/__init__.py
+autograph/wrapper/mpl.py
+autograph/wrapper/plotly.py
+crillab_autograph.egg-info/PKG-INFO
+crillab_autograph.egg-info/SOURCES.txt
+crillab_autograph.egg-info/dependency_links.txt
+crillab_autograph.egg-info/not-zip-safe
+crillab_autograph.egg-info/requires.txt
+crillab_autograph.egg-info/top_level.txt
