@@ -1,0 +1,3 @@
+[console_scripts]
+conversor-divisor = conversor_divisor.app:start_app
+
