@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyweatherbit"
+version = "2.1.1"
+authors = [
+  { name="Colin Craig", email="colin@weatherbit.io" },
+]
+description = "A python weather api wrapper for the Weatherbit.io API."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+keywords = ["weather", "API", "python", "wrapper","weatherbit"]
+
+[project.urls]
+"Homepage" = "https://github.com/weatherbit/weatherbit-python"
+"Bug Tracker" = "https://github.com/weatherbit/weatherbit-python/issues"
