@@ -1,0 +1,52 @@
+*{
+    border:0px;
+    font-family: sans-serif;
+}
+
+body{
+    padding:15px
+}
+
+table{
+    border-collapse: collapse;
+    font-size: 11pt; 
+    font-family: sans-serif;
+}
+
+thead tr th {
+    padding: 5px;
+    background: #F0F2F6;
+    position: sticky;
+    top:-1px;
+}
+
+td, th {
+    word-wrap: break-word;
+    max-width: 250px;
+    border: 1px solid #D6D6D9
+}
+
+.myButton {
+    position:relative;
+    top: 20px;
+    bottom: 20px;
+    background-color: white;
+    border: 2px solid #D6D6D9;
+    font-size: medium;
+    border-radius: 4px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #333333;
+}
+  
+.myButton:hover {
+    color: #FF4B4B;
+    border-color: #FF4B4B;
+}
+
+.myButton:active {
+    background-color: #FF4B4B;
+    color: white;
+}
