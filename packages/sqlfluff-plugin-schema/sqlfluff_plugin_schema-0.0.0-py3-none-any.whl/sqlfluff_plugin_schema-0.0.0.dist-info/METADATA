@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sqlfluff-plugin-schema
+Version: 0.0.0
+License: MIT
+Author-email: Mohamed Seleem <oss@mselee.com>
+Requires-Python: >=3.9,<4.0
+Requires-Dist: more-itertools<9.0.0,>=8.10.0
+Requires-Dist: sqlfluff>=1.0.0,<2.0.0
+Description-Content-Type: text/markdown
+
+# sqlfluff-plugin-schema
+
+
+A plugin for [sqlfluff](https://github.com/sqlfluff/sqlfluff/) that checks postgres schema changes.
+

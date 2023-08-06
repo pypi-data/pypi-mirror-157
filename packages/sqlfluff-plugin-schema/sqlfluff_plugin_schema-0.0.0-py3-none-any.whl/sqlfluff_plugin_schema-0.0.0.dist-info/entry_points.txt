@@ -1,0 +1,3 @@
+[sqlfluff]
+sqlfluff-plugin-schema=sqlfluff_schema.rules
+
