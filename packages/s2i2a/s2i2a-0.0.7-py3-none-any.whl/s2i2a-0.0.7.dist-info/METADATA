@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: s2i2a
+Version: 0.0.7
+Summary: Sweep to int to arguments. Map parameter sweeps to ints to program arguments. Specifically useful for compute canada.
+Home-page: https://github.com/Velythyl/s2i2a
+Author: Charlie Gauthier
+Author-email: charlie.gauthier@umontreal.ca
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# litreview
+
+Maps a parameter sweep to an int and then back again.
+
+# Install
+
+```
+pip3 install s2i2a
+```
+
+# Usage
+
+```
+s2i2a <direction> <command> <sweep arguments>
+```
+
+The goal is to support all the sweep syntax used by [hydra's](https://github.com/facebookresearch/hydra) default sweeper.
+
+But for now, `s2i2a` just supports sweeps of the shape `arg=val1,val2,val3,...`.
+
+
+A help message is also provided
+
+```
+s2i2a --help
+```
+
+## Sample usage
+
+Call `s2i2a s2i` with all the shell arguments necessary to run your script, plus your script's arguments, plus your sweeps.
+
+```
+s2i2a s2i python3 train.py \
+'non-sweep argument' another_non-sweep_arg \
+arg1=val1,val2 arg2=val3,val4,val5
+```
+
+This generates a `s2i.txt` file in your local directory containing
+
+```
+arg1=val1 arg2=val3
+arg1=val1 arg2=val4
+arg1=val1 arg2=val5
+arg1=val2 arg2=val3
+arg1=val2 arg2=val4
+arg1=val2 arg2=val5
+python3 train.py 'non-sweep argument' another_non-sweep_arg
+```
+
+You then build a Docker/Singularity image containing said file, and you
+install s2i2a inside that image.
+
+Then you can call at the end of a `.sh` file (say, an SBATCH script containing `$SLURM_ARRAY_TASK_ID`): 
+
+```
+s2i2a i2a 3
+```
+
+This calls `execvp`, and replaces `s2i2a`'s process by 
+
+```
+python3 train.py 'non-sweep argument' another_non-sweep_arg arg1=val2 arg2=val3
+```
+
+## Quick debugging
+
+You probably don't want to mess up your sweeps *after* uploading to the cluster.
+Instead, you can invoke `test_s2i2a.py`. This will run a dummy `execvp` invokation and will print
+what arguments got passed to the script. *Be aware that it will rewrite the path of the script to point to s2i2a's installation folder*.
+
+

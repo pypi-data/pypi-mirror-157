@@ -1,0 +1,9 @@
+s2i2a/__init__.py,sha256=YGHXqVHJW9vlrFlTP8x0j9FCApZ6Xjk1B8Te85QS7h0,17
+s2i2a/main.py,sha256=_0oHbzNXFIlZ-nZIPUEOOa4-nc742Vk2MiVs54Cnd-E,4277
+s2i2a/test_s2i2a.py,sha256=KUzD7eqPGwi31Ck5tEKzdNsdwbkf-fI1bPo-OVQV35M,110
+s2i2a-0.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+s2i2a-0.0.7.dist-info/METADATA,sha256=7kR0uJYkd-MhTiaaKZeTB1DchUyvj-zfMmTHzeXc4ck,2050
+s2i2a-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+s2i2a-0.0.7.dist-info/entry_points.txt,sha256=odQWbbnXLhsL66amD4GYiGNfkaYYkF4XJrTyMlKTOuk,43
+s2i2a-0.0.7.dist-info/top_level.txt,sha256=5hoZk7KFgKXC3Xgxb5gQq4njDmdaiOWE6t-2krHMPJ4,6
+s2i2a-0.0.7.dist-info/RECORD,,
