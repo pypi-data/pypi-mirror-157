@@ -1,0 +1,5 @@
+rich
+requests
+beautifulsoup4
+Js2Py
+simple-term-menu

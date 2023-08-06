@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+egybest/__init__.py
+egycli/__init__.py
+egycli/__main__.py
+egycli.egg-info/PKG-INFO
+egycli.egg-info/SOURCES.txt
+egycli.egg-info/dependency_links.txt
+egycli.egg-info/entry_points.txt
+egycli.egg-info/requires.txt
+egycli.egg-info/top_level.txt
