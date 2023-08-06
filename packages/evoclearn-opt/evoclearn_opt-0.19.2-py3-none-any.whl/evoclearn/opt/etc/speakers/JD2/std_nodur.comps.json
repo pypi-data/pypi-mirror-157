@@ -1,0 +1,18 @@
+[
+    ["V-HX","C-HX"],
+    ["V-HY","C-HY"],
+    ["V-JX","C-JX"],
+    ["V-JA","C-JA"],
+    ["V-LP","C-LP"],
+    ["V-LD","C-LD"],
+    ["V-VS","C-VS"],
+    ["V-TCX","C-TCX"],
+    ["V-TCY","C-TCY"],
+    ["V-TTX","C-TTX"],
+    ["V-TTY","C-TTY"],
+    ["V-TBX","C-TBX"],
+    ["V-TBY","C-TBY"],
+    ["V-TS1","C-TS1"],
+    ["V-TS2","C-TS2"],
+    ["V-TS3","C-TS3"]
+]
