@@ -1,0 +1,16 @@
+progressbar2
+numpy
+spatialist>=0.11.0
+pyyaml
+requests
+psycopg2
+SQLAlchemy>=1.4
+SQLAlchemy-Utils>=0.37
+GeoAlchemy2
+lxml
+
+[docs]
+sphinx
+sphinxcontrib-bibtex
+cairosvg
+sphinxcontrib-svg2pdfconverter
