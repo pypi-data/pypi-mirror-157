@@ -1,0 +1,3 @@
+[console_scripts]
+omni-cli=omni_cli.main:app
+
