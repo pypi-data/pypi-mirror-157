@@ -1,0 +1,16 @@
+bandcamp_api/__init__.py,sha256=TP8tjKmeNYfxeYkWW2PQRvDtWGoPcsn9BmNHvO05bL8,34
+bandcamp_api/album.py,sha256=OxxED89VzDibEpj7rbg7xIbNJJOzbjHYEdw5UbbBXNk,8636
+bandcamp_api/artist.py,sha256=rjfTRV5mQb_9wGQZ9hL5hZ0mnyj6Y7UaKF_4T3XwU3s,4363
+bandcamp_api/bandcamp_api.py,sha256=RNQeLVKRqXdAZAVH9vSunz8aIudp0yBAJmGA0NnPyZM,5201
+bandcamp_api/bandcampjson.py,sha256=FTw201ki92rvFS1j6tgaRMx679ZPGx_EF9l0YjbFMtY,1615
+bandcamp_api/daily.py,sha256=h5oQuzrkK7axivwd2W7d0I_VOOdJ74ALH-03Rf96SOo,10654
+bandcamp_api/genres.py,sha256=Y2HhVmm-hBPrXzxjL2NzT9KeIpKSHbePrbujIPalirc,1843
+bandcamp_api/homepage.py,sha256=TrY0a8yT7i4Fc6WTmezTdAaIIcTsCfIukQPfRgo7evc,14002
+bandcamp_api/label.py,sha256=YIiSvV1mceI-9nfObUkTZkNsfBGY5_YTH9oFizl5dL8,4538
+bandcamp_api/search.py,sha256=AgRBBnsfmRz5Bbe-hXSzD87u3AMIiA2iFb5lA9m4xWc,6742
+bandcamp_api/track.py,sha256=BR7W4WqfCbIr-zpW7KqQ0herqEhLXp6mzCMHVxqN6TY,4857
+bandcamp_api-0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bandcamp_api-0.1.dist-info/METADATA,sha256=ppYafa4XRD2uQPh7inj935coRCnewl9Q-8IiaKvBejw,440
+bandcamp_api-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bandcamp_api-0.1.dist-info/top_level.txt,sha256=D72bkx6a9s0DoQC8s2IXQwf1DJwvjTVu_XXwh0kgMrM,13
+bandcamp_api-0.1.dist-info/RECORD,,
