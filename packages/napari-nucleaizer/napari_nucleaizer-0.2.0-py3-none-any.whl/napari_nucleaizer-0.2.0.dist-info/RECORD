@@ -1,0 +1,16 @@
+napari_nucleaizer/__init__.py,sha256=K21n_HSxMWtiDoXXHNoAXm4vBmvvmR0gpGLOMaqUHWM,339
+napari_nucleaizer/common_stuff.py,sha256=ApW1C7nHmi09Q29PkwVtY3G_4TLdBCID8mmacvh4WYk,832
+napari_nucleaizer/config_loader.py,sha256=Qdlbo-paiy8CDNxb95zX5B6Q16VmFdwmIOLQbhe-dO8,1910
+napari_nucleaizer/image_transform.py,sha256=PLyZ1GOlzwx5hsjVH7g0pLO1StCVhq7gYVxOWqeoSMc,2058
+napari_nucleaizer/model_db.py,sha256=Lqd-aJhepay9UfcKfCKHaDWDRotPthx9wKzhvuQGKVg,557
+napari_nucleaizer/model_selector_widget.py,sha256=pQIQAYa2VqxRwc2Y3YQ6Pj6mACiCo2GfSUc6wqWiKw4,9022
+napari_nucleaizer/napari.yaml,sha256=FBjoHqeytWbBfTHc7HO0w4V0X3KsTDyagKXCRt3S0dQ,333
+napari_nucleaizer/nucleaizer_widget.py,sha256=AkvoBZY6YqwHuttrwWOBYcJ7sd-68Hlqzyx6p5P0DBw,13315
+napari_nucleaizer/prediction_widget.py,sha256=vmseIZP86lJAvRKYtXc0Fzl3CNRbeTrD51HXATX368w,18283
+napari_nucleaizer/training_widget.py,sha256=sMUWpJOsRaRryN9GXaR7OsUzMonvxHIpnY0lTwEjplg,25569
+napari_nucleaizer-0.2.0.dist-info/LICENSE,sha256=UK4ZeKEoqfDfaJCRnnupC1FaZgLNC_jT8X252ocQVkE,1489
+napari_nucleaizer-0.2.0.dist-info/METADATA,sha256=QAgA7BLqWCGzkS0_D95CNdNJQCuKaOoKNuAPHzOeiJ8,4978
+napari_nucleaizer-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_nucleaizer-0.2.0.dist-info/entry_points.txt,sha256=8KafdSvLgsGXTO3OpZdQXN2yH-W57Hs4e9FmsLag_AU,68
+napari_nucleaizer-0.2.0.dist-info/top_level.txt,sha256=u6VlOBdLLG7qJR8JUQebJxZPYqYtu7f5I2QzN8xyrgM,18
+napari_nucleaizer-0.2.0.dist-info/RECORD,,
