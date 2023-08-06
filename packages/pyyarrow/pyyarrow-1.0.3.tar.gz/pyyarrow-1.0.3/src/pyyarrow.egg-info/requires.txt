@@ -1,0 +1,17 @@
+setuptools
+wheel
+click
+
+[:python_version >= "1.19"]
+numpy
+
+[:python_version >= "1.8"]
+pydantic
+
+[dev]
+black
+isort
+pytest
+pytest-cov
+sphinx
+sphinx-rtd-theme
