@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: conversationalnlp
+Version: 0.0.4
+Summary: Your main project
+Home-page: https://github.com/codenamewei/conversationalnlp
+Author: codenamewei
+Author-email: codenamewei@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch (==1.10.0)
+Requires-Dist: torchaudio (==0.10.0)
+Requires-Dist: transformers (==4.20.)
+Requires-Dist: autocorrect (==2.6.1)
+Requires-Dist: SoundFile (==0.10.3.post1)
+Requires-Dist: librosa (==0.8.1)
+
+# Conversational NLP 
