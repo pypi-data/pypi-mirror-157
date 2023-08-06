@@ -1,0 +1,12 @@
+demo/README.md,sha256=76Gfjx1d7VeHCy8ePCzi52us_le9iyRhgC6bXAe3Tn4,9
+demo/__init__.py,sha256=5YdTwwQoP6maFB-_aV12Jf5cZJMLoUeunz-pb1XWKV0,14
+demo/demo.py,sha256=FZnwe4zU7iIIP1hiYW7UtjwbN5Fx4FyrFbS4NsfMBUM,1975
+demo/sub-02_task-test_nirs.snirf,sha256=kDdyebqHEYxDta8g81vAExm0zir5MmRFakphngqWK7M,8776600
+snirf2bids/__init__.py,sha256=bLWz0XRip9aC4yQtU_Yef0FbwDBBGrrrwAn7XsrVPRc,91
+snirf2bids/__version__.py,sha256=i2-nZAq-30j2id7K04ddnOdj1XDNtRUE1c9MmQXB_Eo,87
+snirf2bids/snirf2bids.py,sha256=-o2xMLHBgC2GPGhNGgQsEvMSB45dL5vfP6bl6dALz3A,46534
+snirf2bids-0.6.4.dist-info/LICENSE,sha256=x1uP_mfSqj7j4It0CMsNqVq0JYc63PYVC9bI-NpcLFY,1064
+snirf2bids-0.6.4.dist-info/METADATA,sha256=VSVol3SPsEFwRm6PtwYk4fmwfSIKS0R5LERyTuCe6mo,3420
+snirf2bids-0.6.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+snirf2bids-0.6.4.dist-info/top_level.txt,sha256=Rc9zWmnIWmZ0zmh6PW7YXYHsmG_Ib3ItkwDkw2LxLMU,16
+snirf2bids-0.6.4.dist-info/RECORD,,
