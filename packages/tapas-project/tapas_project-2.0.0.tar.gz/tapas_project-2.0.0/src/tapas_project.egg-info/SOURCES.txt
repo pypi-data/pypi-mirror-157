@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/sample/__init__.py
+src/sample/package_data.dat
+src/sample/simple.py
+src/tapas_project.egg-info/PKG-INFO
+src/tapas_project.egg-info/SOURCES.txt
+src/tapas_project.egg-info/dependency_links.txt
+src/tapas_project.egg-info/entry_points.txt
+src/tapas_project.egg-info/requires.txt
+src/tapas_project.egg-info/top_level.txt
