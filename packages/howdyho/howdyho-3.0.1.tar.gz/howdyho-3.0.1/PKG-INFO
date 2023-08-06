@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: howdyho
+Version: 3.0.1
+Summary: Забавный скрипт, без остановки печатающий фразу "Хаудихо помоги".
+Home-page: https://github.com/voronin9032/howdyho
+License: MIT
+Author: Voronin9032
+Author-email: voronin9032n3@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Russian
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Project-URL: Repository, https://github.com/voronin9032/howdyho
+Description-Content-Type: text/markdown
+
+# Howdyho
+~~Бесполезный~~ Забавный скрипт, без остановки печатающий фразу "Хаудихо помоги".
+
+# Установка
+```shell
+pip install -U howdyho
+```
+
+# Использование
+```shell
+howdyho
+# или
+python -m howdyho
+```
+
