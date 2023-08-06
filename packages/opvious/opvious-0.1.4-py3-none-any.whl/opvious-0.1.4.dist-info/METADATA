@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: opvious
+Version: 0.1.4
+Summary: Opvious Python SDK
+Home-page: https://github.com/opvious/sdk.py
+Author: Opvious engineering
+Author-email: eng@opvious.ai
+Project-URL: Bug Tracker, https://github.com/opvious/sdk.py
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Opvious SDK
+
+https://opvious.ai
+
+## Quickstart
+
+```py
+from opvious.client import Client
+```
