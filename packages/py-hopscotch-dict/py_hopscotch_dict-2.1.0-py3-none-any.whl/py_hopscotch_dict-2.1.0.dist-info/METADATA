@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: py-hopscotch-dict
+Version: 2.1.0
+Summary: A replacement for dict using hopscotch hashing.
+Author-email: Jeremy Brown <mischif@users.noreply.github.com>
+License: # The Prosperity Public License 3.0.0        
+        Contributor: Jeremy Brown        
+        Source Code: https://github.com/mischif/py-hopscotch-dict        
+        ## Purpose        
+        This license allows you to use and share this software for noncommercial purposes for free and to try this software for commercial purposes for thirty days.        
+        ## Agreement        
+        In order to receive this license, you have to agree to its rules.  Those rules are both obligations under that agreement and conditions to your license.  Don't do anything with this software that triggers a rule you can't or won't follow.        
+        ## Notices        
+        Make sure everyone who gets a copy of any part of this software from you, with or without changes, also gets the text of this license and the contributor and source code lines above.        
+        ## Commercial Trial        
+        Limit your use of this software for commercial purposes to a thirty-day trial period.  If you use this software for work, your company gets one trial period for all personnel, not one trial per person.        
+        ## Contributions Back        
+        Developing feedback, changes, or additions that you contribute back to the contributor on the terms of a standardized public software license such as [the Blue Oak Model License 1.0.0](https://blueoakcouncil.org/license/1.0.0), [the Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [the MIT license](https://spdx.org/licenses/MIT.html), or [the two-clause BSD license](https://spdx.org/licenses/BSD-2-Clause.html) doesn't count as use for a commercial purpose.        
+        ## Personal Uses        
+        Personal use for research, experiment, and testing for the benefit of public knowledge, personal study, private entertainment, hobby projects, amateur pursuits, or religious observance, without any anticipated commercial application, doesn't count as use for a commercial purpose.        
+        ## Noncommercial Organizations        
+        Use by any charitable organization, educational institution, public research organization, public safety or health organization, environmental protection organization, or government institution doesn't count as use for a commercial purpose regardless of the source of funding or obligations resulting from the funding.        
+        ## Defense        
+        Don't make any legal claim against anyone accusing this software, with or without changes, alone or with other technology, of infringing any patent.        
+        ## Copyright        
+        The contributor licenses you to do everything with this software that would otherwise infringe their copyright in it.        
+        ## Patent        
+        The contributor licenses you to do everything with this software that would otherwise infringe any patents they can license or become able to license.        
+        ## Reliability        
+        The contributor can't revoke this license.        
+        ## Excuse        
+        You're excused for unknowingly breaking [Notices](#notices) if you take all practical steps to comply within thirty days of learning you broke the rule.        
+        ## No Liability        
+        ***As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won't be liable to anyone for any damages related to this software or this license, under any kind of legal claim.***        
+Project-URL: repository, https://github.com/mischif/py-hopscotch-dict
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Provides-Extra: test
+Requires-Dist: codecov ; extra == 'test'
+Requires-Dist: coverage[toml] ; extra == 'test'
+Requires-Dist: hypothesis ; extra == 'test'
+Requires-Dist: hypothesis-pytest ; extra == 'test'
+Requires-Dist: pytest (>=6.0) ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+py-hopscotch-dict
+=================
+
+[![GitHub Workflow](https://img.shields.io/github/workflow/status/mischif/py-hopscotch-dict/CI?logo=github&style=for-the-badge)](https://github.com/mischif/py-hopscotch-dict/actions)
+[![Codecov](https://img.shields.io/codecov/c/github/mischif/py-hopscotch-dict?logo=codecov&style=for-the-badge)](https://codecov.io/gh/mischif/py-hopscotch-dict)
+[![Python Versions](https://img.shields.io/pypi/pyversions/py-hopscotch-dict?style=for-the-badge)](https://pypi.org/project/py-hopscotch-dict/)
+[![Package Version](https://img.shields.io/pypi/v/py-hopscotch-dict?style=for-the-badge)](https://pypi.org/project/py-hopscotch-dict/)
+
+py-hopscotch-dict is a package that contains a replacement for the standard Python `dict` which implements the concepts of [hopscotch hashing](https://en.wikipedia.org/wiki/Hopscotch_hashing), as explained in the [foundational paper](http://mcg.cs.tau.ac.il/papers/disc2008-hopscotch.pdf).
+
+Hopscotch hashing provides a number of benefits over the methods used in the standard `dict` implementation, most notably that insertions, deletions and lookups have an expected O(1) runtime.
+
+py-hopscotch-dict has not been tested in a concurrent environment and thusly cannot be guaranteed to function correctly in conjunction with multi-threading, across multiple processes or in an asynchronous environment.
+
+Usage
+-----
+
+	>>> from py_hopscotch_dict import HopscotchDict
+	>>> d = HopscotchDict()
+	>>> d["test"] = True
+	>>> d
+	HopscotchDict({'test': True})
