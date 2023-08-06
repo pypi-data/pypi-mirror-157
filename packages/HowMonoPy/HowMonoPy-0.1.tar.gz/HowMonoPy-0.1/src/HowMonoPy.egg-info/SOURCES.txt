@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/HowMonoPy/__init__.py
+src/HowMonoPy/_wrapper.py
+src/HowMonoPy.egg-info/PKG-INFO
+src/HowMonoPy.egg-info/SOURCES.txt
+src/HowMonoPy.egg-info/dependency_links.txt
+src/HowMonoPy.egg-info/top_level.txt
+src/HowMonoPy.egg-info/zip-safe
+src/HowMonoPy/clib/howmonochromatic.dll
+src/HowMonoPy/clib/libhowmonochromatic.so
