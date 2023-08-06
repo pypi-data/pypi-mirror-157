@@ -1,0 +1,11 @@
+edflib/__init__.py,sha256=yN0JOenJOvJZW8lEpUl9b3BUcu5auDaFFKDUFB7quq8,171
+edflib/_edflib.cp39-win_amd64.pyd,sha256=y1AJ5jQAAm-WCOHIBiNdlUL9dB0FZgYCa_aXaaWbfk4,368128
+edflib/edfreader.py,sha256=5WZ36gzxBcBSzvtz8KnZPR_WaIivG9ZaDGj0f4Prl9k,6627
+edflib/edfwriter.py,sha256=2SyDcf29EnCwMSoOTAuDhc5RSjnxKDgBAKw9rZe6iNQ,9347
+edflib/purepythonheader.py,sha256=JvdRMybP6FWUjvgCO620d3iLJmtMbwu8JWmLGv8ge3E,2874
+edflib/sandbox.py,sha256=MkaLF3u6tkA-B9gGtS1DsslWRfiZasmzzTWamGkYHrw,3900
+edflib/testint16.py,sha256=TqNjECgLgDhFbli-8gUOh8f7ZgO3N4gArWhjj9m0WSE,93
+edflib-0.84.1.dist-info/METADATA,sha256=Wxbt7BT5uOO_rQSKCFDDo9Kj1Q9COWBC3VDStWAN_mc,684
+edflib-0.84.1.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+edflib-0.84.1.dist-info/top_level.txt,sha256=Dvefo3mVPIt_gceGAET0952VEUDldsiMGHp4OMw-OjU,7
+edflib-0.84.1.dist-info/RECORD,,
