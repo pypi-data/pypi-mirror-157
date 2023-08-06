@@ -1,0 +1,3 @@
+recursive-include wordjc/data *
+recursive-include wordjc/dictionary *
+recursive-include wordjc/images *
