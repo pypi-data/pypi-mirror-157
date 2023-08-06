@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyg_mongo/__init__.py
+src/pyg_mongo/_base_reader.py
+src/pyg_mongo/_cursor.py
+src/pyg_mongo/_q.py
+src/pyg_mongo/_reader.py
+src/pyg_mongo/_table.py
+src/pyg_mongo.egg-info/PKG-INFO
+src/pyg_mongo.egg-info/SOURCES.txt
+src/pyg_mongo.egg-info/dependency_links.txt
+src/pyg_mongo.egg-info/requires.txt
+src/pyg_mongo.egg-info/top_level.txt
