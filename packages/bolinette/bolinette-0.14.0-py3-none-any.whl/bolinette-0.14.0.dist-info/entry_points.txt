@@ -1,0 +1,3 @@
+[console_scripts]
+blnt = bolinette.__main__:main
+
