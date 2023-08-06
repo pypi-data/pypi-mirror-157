@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/rdf_summarizer/__init__.py
+src/rdf_summarizer/__main__.py
+src/rdf_summarizer/prefixes.py
+src/rdf_summarizer/summarization.py
+src/rdf_summarizer/trie.py
+src/rdf_summarizer/write_file.py
+src/rdf_summarizer.egg-info/PKG-INFO
+src/rdf_summarizer.egg-info/SOURCES.txt
+src/rdf_summarizer.egg-info/dependency_links.txt
+src/rdf_summarizer.egg-info/entry_points.txt
+src/rdf_summarizer.egg-info/requires.txt
+src/rdf_summarizer.egg-info/top_level.txt

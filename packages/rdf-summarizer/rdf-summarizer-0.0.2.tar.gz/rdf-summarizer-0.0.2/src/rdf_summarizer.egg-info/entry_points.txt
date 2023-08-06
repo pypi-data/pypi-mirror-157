@@ -1,0 +1,2 @@
+[console_scripts]
+rdf-summarize = rdf_summarizer.__main__:main
