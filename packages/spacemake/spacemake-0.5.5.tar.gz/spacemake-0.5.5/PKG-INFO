@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: spacemake
+Version: 0.5.5
+Summary: A bioinformatic pipeline for the analysis of spatial transcriptomic data
+Home-page: https://github.com/rajewsky-lab/spacemake
+Author: Tamas Ryszard Sztanka-Toth, Marvin Jens, Nikos Karaiskos, Nikolaus Rajewsky
+Author-email: TamasRyszard.Sztanka-Toth@mdc-berlin.de
+License: GPL
+Project-URL: Bug Tracker, https://github.com/rajewsky-lab/spacemake/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: COPYING
+
+<a href="https://pypi.org/project/spacemake/">
+   <img src="https://img.shields.io/pypi/v/spacemake.svg" / ></a>
+   
+<a href="https://spacemake.readthedocs.io/">
+   <img src="https://readthedocs.org/projects/spacemake/badge/?version=latest" / ></a>
+   
+ <a href="https://pepy.tech/project/spacemake">
+   <img src="https://pepy.tech/badge/spacemake" / ></a>
+
+# spacemake: processing and analysis of large-scale spatial transcriptomics data
+
+<img src="https://raw.githubusercontent.com/rajewsky-lab/spacemake/master/docs/graphical_abstract_twitter.png" width="500" />
+
+Documentation can be found [here](https://spacemake.readthedocs.io/en/latest/).
+

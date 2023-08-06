@@ -1,0 +1,25 @@
+[Header]
+IEMFileVersion,5
+Investigator Name,Marie 
+Experiment Name,NR_L003
+Date,08/07/2021
+Workflow,GenerateFASTQ
+Application,NextSeq FASTQ Only
+Instrument Type,NextSeq/MiniSeq
+Assay,Nextera XT
+Index Adapters,"Nextera XT v2 Index Kit A"
+Chemistry,Default
+
+[Reads]
+21
+63
+
+[Settings]
+Adapter,CTGTCTCTTATACACATCT
+
+[Data]
+Sample_ID,Sample_Name,Sample_Plate,Sample_Well,I7_Index_ID,index,Sample_Project,Description
+L003_1,NoOptical,,,N703,AGGCAGAA,L003,L003_1_5min_lung_tumor_human
+L003_3,NoOptical,,,N705,GGACTCCT,L003,L003_3_30min_lung_tumor_human
+L003_4,NoOptical,,,N706,TAGGCATG,L003,L003_4_5min_E12head_mouse
+L003_5,NoOptical,,,N707,CTCTCTAC,L003,L003_5_lung_tumor_RNA_human

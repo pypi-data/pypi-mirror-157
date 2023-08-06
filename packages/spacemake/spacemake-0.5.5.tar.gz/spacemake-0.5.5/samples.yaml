@@ -1,0 +1,47 @@
+projects:
+    - sample_sheet: 210708_NR_L003.csv
+      basecalls_dir: /data/remote/basecalls/2021/210708_NS500648_0589_AHL2HKBGXG
+
+run_mode_variables:
+    default:
+        n_beads: 100000
+        umi_cutoff: [50, 100, 300]
+        clean_dge: True
+        plot_bead_size: 0.1
+        detect_tissue: False
+        polyA_adapter_trimming: True
+        count_intronic_reads: True
+        count_mm_reads: True
+    visium:
+        polyA_adapter_trimming: False
+        count_intronic_reads: False
+        count_mm_reads: True
+    slideseq:
+        clean_dge: False
+        plot_bead_size: 0.1
+        detect_tissue: False
+
+additional_projects:
+    - project_id: L003
+      sample_id: L003_1
+    - project_id: L003
+      sample_id: L003_3
+      run_mode: ['default', 'visium']
+    - project_id: L003
+      sample_id: L003_4
+      run_mode: ['default', 'visium']
+    - project_id: L003
+      sample_id: L003_5
+      run_mode: ['default', 'visium']
+      R1: asd.fastq.gz
+      R2: asd.fastq.gz
+
+barcode_flavor: 
+    visium:
+        projects:
+            - test_1
+        samples:
+            - test_2
+    comb1:
+        samples:
+            - test_2

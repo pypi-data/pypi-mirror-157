@@ -1,0 +1,194 @@
+adapters:
+  optical_primer: GAATCACGATACGTACACCA
+  smart: AAGCAGTGGTATCAACGCAGAGTGAATGGG
+barcode_flavors:
+  default:
+    UMI: r1[12:20]
+    bam_tags: CR:{cell},CB:{cell},MI:{UMI},RG:{assigned}
+    cell: r1[0:12]
+  drop_noUMI:
+    UMI: r2[0:8]
+    bam_tags: CR:{cell},CB:{cell},MI:{UMI},RG:{assigned}
+    cell: r1[0:12][::-1]
+  dropseq:
+    UMI: r1[0:8]
+    bam_tags: CR:{cell},CB:{cell},MI:{UMI},RG:{assigned}
+    cell: r1[8:20][::-1]
+  seq_scope:
+    UMI: r2[0:9]
+    bam_tags: CR:{cell},XC:{cell},XM:{UMI},RG:{assigned}
+    cell: r1[0:20]
+  slideseq_14bc:
+    UMI: r1[14:23]
+    bam_tags: CR:{cell},XC:{cell},XM:{UMI},RG:{assigned}
+    cell: r1[0:14]
+  slideseq_15bc:
+    UMI: r1[15:23]
+    bam_tags: CR:{cell},XC:{cell},XM:{UMI},RG:{assigned}
+    cell: r1[0:14]
+  visium:
+    UMI: r1[16:28]
+    bam_tags: CR:{cell},CB:{cell},MI:{UMI},RG:{assigned}
+    cell: r1[0:16]
+  zeisel:
+    UMI: r1[15:25]
+    bam_tags: CR:{cell},CB:{cell},MI:{UMI},RG:{assigned}
+    cell: r1[0:15]
+external_bin:
+  dropseq_tools: /Users/tsztank/Downloads/Drop-seq_tools-2.5.1/
+microscopy_out: ~/Desktop
+puck_data:
+  barcode_file: predictions_ml.csv
+  root: puck_data
+pucks:
+  default:
+    spot_diameter_um: 10
+    width_um: 3000
+  seq_scope:
+    spot_diameter_um: 0.7
+    width_um: 1000
+  slideseq:
+    spot_diameter_um: 10
+    width_um: 3000
+  test:
+    spot_diameter_um: 10.0
+    width_um: !!python/tuple
+    - 50.0
+  visium:
+    barcodes: puck_data/visium_barcode_positions.csv
+    spot_diameter_um: 55
+    width_um: 6500
+root_dir: ''
+run_modes:
+  default:
+    clean_dge: false
+    count_intronic_reads: true
+    count_mm_reads: false
+    detect_tissue: true
+    mesh_data: false
+    mesh_spot_diameter_um: 55
+    mesh_spot_distance_um: 100
+    mesh_type: circle
+    n_beads: 10000
+    polyA_adapter_trimming: true
+    umi_cutoff:
+    - 1
+    - 10
+  exon:
+    count_intronic_reads: false
+    polyA_adapter_trimming: false
+    umi_cutoff:
+    - 10000
+  exon_intron:
+    count_intronic_reads: true
+    polyA_adapter_trimming: false
+  exon_intron_mm:
+    count_intronic_reads: true
+    count_mm_reads: true
+    polyA_adapter_trimming: false
+  exon_intron_mm_trimmed:
+    parent_run_mode: exon_intron_mm
+    polyA_adapter_trimming: true
+  exon_intron_trimmed:
+    parent_run_mode: exon_intron
+    polyA_adapter_trimming: true
+  exon_mm:
+    count_intronic_reads: false
+    count_mm_reads: true
+    polyA_adapter_trimming: false
+    umi_cutoff:
+    - 500
+    - 10000
+    - 11000
+    - 12000
+    - 13000
+    - 14000
+    - 15000
+    - 16000
+    - 20000
+  exon_mm_trimmed:
+    parent_run_mode: exon_mm
+    polyA_adapter_trimming: true
+  exon_trimmed:
+    parent_run_mode: exon
+    polyA_adapter_trimming: true
+  sc_seq:
+    clean_dge: false
+    count_intronic_reads: true
+    count_mm_reads: false
+    n_beads: 1000
+    polyA_adapter_trimming: true
+    umi_cutoff:
+    - 200
+    - 500
+  seq_scope:
+    clean_dge: false
+    count_intronic_reads: false
+    count_mm_reads: false
+    detect_tissue: false
+    mesh_data: true
+    mesh_spot_diameter_um: 10
+    mesh_spot_distance_um: 15
+    mesh_type: hexagon
+    n_beads: 15000000
+    umi_cutoff:
+    - 100
+    - 300
+    - 500
+  seq_scope_normal:
+    mesh_data: false
+    parent_run_mode: seq_scope
+    umi_cutoff:
+    - 5
+  slideseq:
+    clean_dge: false
+    count_intronic_reads: true
+    count_mm_reads: false
+    detect_tissue: false
+    n_beads: 100000
+    polyA_adapter_trimming: true
+    umi_cutoff:
+    - 100
+  slideseq_meshed:
+    mesh_data: true
+    mesh_spot_diameter_um: 55
+    mesh_spot_distance_um: 100
+    parent_run_mode: slideseq
+  slideseq_mm:
+    count_mm_reads: true
+    parent_run_mode: slideseq
+  sts:
+    clean_dge: true
+    count_intronic_reads: true
+    detect_tissue: false
+    polyA_adapter_trimming: false
+    umi_cutoff:
+    - 10
+    - 50
+    - 100
+  visium:
+    parent_run_mode: default
+  visium_mesh:
+    mesh_data: 'True'
+    mesh_spot_diameter_um: 200.0
+    mesh_spot_distance_um: 300.0
+    parent_run_mode: visium
+  zeisel:
+    clean_dge: false
+    count_intronic_reads: true
+    n_beads: 25000
+    polyA_adapter_trimming: false
+    umi_cutoff:
+    - 500
+    - 1000
+species:
+  celegans:
+    annotation: /Users/tsztank/Downloads/ce11.ensembl.UCSC.chromosomes.gtf
+    genome: /Users/tsztank/Downloads/ce11.fa
+  mouse:
+    annotation: /Users/tsztank/Downloads/ce11.ensembl.UCSC.chromosomes.gtf
+    genome: /Users/tsztank/Downloads/ce11.fa
+  test:
+    annotation: annotation.gtf
+    genome: genome.fa
+temp_dir: /data/rajewsky/home/tsztank/projects/spatial/repos/sts-paper/tmp
