@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+0.9.1
+-----
+
+* fix instruments leak error
+* test with py38
+* update workflow config
+* change logzero to loguru in part of code, add test in workflow
+* dump battery with human readable
+* Update \_device.py
+* add energy supports
+* fix \_sock missing error
+* add little tests
+* change all PlistSocket to PlistSocketProxy to make socket release automatically
