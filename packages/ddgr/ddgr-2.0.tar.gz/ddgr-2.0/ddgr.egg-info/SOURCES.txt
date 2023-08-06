@@ -1,0 +1,11 @@
+CHANGELOG
+LICENSE
+MANIFEST.in
+README.md
+ddgr.py
+setup.py
+ddgr.egg-info/PKG-INFO
+ddgr.egg-info/SOURCES.txt
+ddgr.egg-info/dependency_links.txt
+ddgr.egg-info/entry_points.txt
+ddgr.egg-info/top_level.txt
