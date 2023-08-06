@@ -1,0 +1,7 @@
+selenium
+requests
+wget
+python-dateutil
+bs4
+boto
+boto3
