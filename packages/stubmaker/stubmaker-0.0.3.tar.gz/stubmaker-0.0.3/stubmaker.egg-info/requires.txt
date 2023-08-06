@@ -1,0 +1,2 @@
+docstring-parser
+typing_inspect
