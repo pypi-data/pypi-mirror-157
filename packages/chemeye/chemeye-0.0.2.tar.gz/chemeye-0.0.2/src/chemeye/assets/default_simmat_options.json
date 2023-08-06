@@ -1,0 +1,20 @@
+{
+    "color_scale": "magma",
+    "title": {
+        "text": "t-SNE",
+        "position": {
+            "x": "center",
+            "y": "top"
+        }
+    },
+    "axes": {
+        "x": {
+            "show": true,
+            "position": "left"
+        },
+        "y": {
+            "show": true,
+            "position": "bottom"
+        }
+    }
+}
