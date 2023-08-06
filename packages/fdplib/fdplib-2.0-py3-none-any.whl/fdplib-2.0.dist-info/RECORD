@@ -1,0 +1,10 @@
+fdplib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fdplib/animation.py,sha256=hFfPa3kbwl_LNYphm5OKG1GjPyERPpfqWR_Z_r581BA,2553
+fdplib/darab.py,sha256=eROWZ-wXt2OSt6AkQc2ObLhPMlpV71OKq_BAMJXwLVQ,4037
+fdplib/errors.py,sha256=HytAYq7--z4K157wfc7WJqpE22yUK9ASQ9YtfXIm5i4,453
+fdplib/track_classes.py,sha256=wWcz9If4HuQ3wu_lZ-l7UNVx-_zzhQcRht7iXM42Dw0,4488
+fdplib/track_tools.py,sha256=zOliKZafVsVuxSLuF_-loRSTQoP9HOAs7wog2PSwZtM,11960
+fdplib-2.0.dist-info/METADATA,sha256=_vBlMKLyRJC1HI7Hh4m9FpZ8AppdpA2JjE03U1jEcM0,2053
+fdplib-2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fdplib-2.0.dist-info/top_level.txt,sha256=dRvlJAXnIWS3vk0egE2i6aQAZFER-wvK-Gj0czTxl1M,7
+fdplib-2.0.dist-info/RECORD,,
