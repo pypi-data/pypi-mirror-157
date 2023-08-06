@@ -1,0 +1,17 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+time_restricted_eating_experiments/__init__.py
+time_restricted_eating_experiments/_nbdev.py
+time_restricted_eating_experiments/columbia.py
+time_restricted_eating_experiments/core.py
+time_restricted_eating_experiments.egg-info/PKG-INFO
+time_restricted_eating_experiments.egg-info/SOURCES.txt
+time_restricted_eating_experiments.egg-info/dependency_links.txt
+time_restricted_eating_experiments.egg-info/entry_points.txt
+time_restricted_eating_experiments.egg-info/not-zip-safe
+time_restricted_eating_experiments.egg-info/requires.txt
+time_restricted_eating_experiments.egg-info/top_level.txt
