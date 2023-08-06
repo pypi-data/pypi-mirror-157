@@ -1,0 +1,6 @@
+setup.py
+babylogger/__init__.py
+babylogger.egg-info/PKG-INFO
+babylogger.egg-info/SOURCES.txt
+babylogger.egg-info/dependency_links.txt
+babylogger.egg-info/top_level.txt
