@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "aloha_library"
+version = "0.1.0"
+description = ""
+authors = ["Jeff <jeff.we.dev@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pydantic = "^1.9.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
