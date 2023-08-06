@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+../LICENSE
+arsenalgear/__init__.py
+arsenalgear/datascience.py
+arsenalgear/mathematics.py
+arsenalgear/parallelization.py
+arsenalgear/plotter.py
+arsenalgear/utils.py
+arsenalgear.egg-info/PKG-INFO
+arsenalgear.egg-info/SOURCES.txt
+arsenalgear.egg-info/dependency_links.txt
+arsenalgear.egg-info/requires.txt
+arsenalgear.egg-info/top_level.txt
