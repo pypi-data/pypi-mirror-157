@@ -1,0 +1,11 @@
+i18n/__init__.py,sha256=Oa-WZryaP-fWdQr8AI17jCXVUhSTl2ags9PxanDVJZo,105
+i18n/base.py,sha256=zCLfhj5k992huYyrVLHeaqNLrRwCgQ7yrGGQhTsABEI,1966
+i18n/cli.py,sha256=ZHJHK1X4X7K3YMFdZgpD6VXvMI8wNzSvdT62KHdhPyM,2314
+i18n/config.py,sha256=344uVDu9oIBogMdFjwoXfIFmorfPerSpq7_QyYBkzYU,240
+i18n/errors.py,sha256=CJEq8Ck8hpvP7ORQyBhcm9Xz19fNgS9RGyFyHeeVhPk,534
+i18n/parser.py,sha256=jjeggU2BuYW13s4sUIrYcDYWK7hj9j2W2McrHeoOmxQ,4701
+pylemoni18n-0.0.1.dist-info/entry_points.txt,sha256=H5wfriKhy865hdV4O-2F72ZvDifsLt7n87CQehgjN9Q,38
+pylemoni18n-0.0.1.dist-info/LICENSE,sha256=WSsJd5RXgryA4fMByfHoITOaVztWZbl_Sg2LOu_7Vvk,1075
+pylemoni18n-0.0.1.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+pylemoni18n-0.0.1.dist-info/METADATA,sha256=vtcwrokax8MiMTgQhzEGBujexDirxcbQLXp_fsf3P8I,1582
+pylemoni18n-0.0.1.dist-info/RECORD,,
