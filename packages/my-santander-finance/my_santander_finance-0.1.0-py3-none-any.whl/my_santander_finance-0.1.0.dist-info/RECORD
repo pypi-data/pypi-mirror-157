@@ -1,0 +1,17 @@
+my_santander_finance/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+my_santander_finance/app.py,sha256=MvJ9wSkBR3Ue0oi68xx9KRG8UZ3C8ntXdliMCOn7bZI,1443
+my_santander_finance/definitions.py,sha256=UGQ7fg-HnxVD5ad1-_Rgc8ypXd51O5PkH5YGz71ioAw,104
+my_santander_finance/driver/chromedriver.exe,sha256=aI5iou3vDXEiW6QqhJhcQkeibPq9qar8P3MQ5MBqIsE,11771904
+my_santander_finance/driver/chromedriver.url,sha256=PpNEzQLCu9d-BiAOYGxUirdkJvP1_BA-YfVkgMSuZJw,45
+my_santander_finance/func_dir.py,sha256=kh06z57MgoRid-EO3WZDF1qvx2RYnFMIJ1V0gvvnPmk,626
+my_santander_finance/func_excel.py,sha256=h6xU6rmsEiY1jsWITmp8i80Y6IZplzAMyHv_oLFBBzo,1279
+my_santander_finance/get_debito.py,sha256=vdhOH3BikVid8tIjn_S7XJMmbXB5WDkgD_FYg6n2bm8,3995
+my_santander_finance/import_debito.py,sha256=TGf1RkXcyGFGWNB60my60bbbxHYcZgvImR_2aUo2OMQ,6189
+my_santander_finance/init.py,sha256=60bpGY13mwn7FHKRoLUQ5ECnEmIzA9dyOaQ7wDG3U1M,2151
+my_santander_finance/settings.py,sha256=wbXofTeR_tXyAe58rRjGF0KPtpl0mb1lqnUFF-TNAc8,1379
+my_santander_finance/sqlite.sql,sha256=Px9mFsYPtTfav5wgkZZTuy4K671PvtLIVrAFeqKdAhM,418
+my_santander_finance-0.1.0.dist-info/entry_points.txt,sha256=LxgcgLGJgUo22eqJLpt13AFyY6yoW6uJIC4Q0eFiXzQ,53
+my_santander_finance-0.1.0.dist-info/LICENSE,sha256=m4LcOSmpfRSgeGt4SirDPxfFvCPgCthZ2wszyXUuPKg,1092
+my_santander_finance-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+my_santander_finance-0.1.0.dist-info/METADATA,sha256=Z2GMxeXpZL6QJjKcQDWkkDVKgHX_uIM3VQKMbItjkGA,2186
+my_santander_finance-0.1.0.dist-info/RECORD,,

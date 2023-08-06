@@ -1,0 +1,3 @@
+[console_scripts]
+app=my_santander_finance.app:main
+
