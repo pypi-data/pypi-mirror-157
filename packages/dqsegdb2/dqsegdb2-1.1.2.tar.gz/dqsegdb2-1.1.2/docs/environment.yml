@@ -1,0 +1,19 @@
+name: dqsegdb2
+channels:
+  - conda-forge
+dependencies:
+  # build
+  - pip
+  - setuptools
+  - setuptools-scm
+  - wheel
+  # install
+  - igwn-auth-utils
+  - ligo-segments
+  - requests
+  - safe-netrc
+  # docs
+  - sphinx
+  - sphinx-automodapi
+  - pip:
+    - sphinx-immaterial

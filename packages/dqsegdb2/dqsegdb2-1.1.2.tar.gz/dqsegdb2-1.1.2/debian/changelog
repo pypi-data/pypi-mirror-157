@@ -1,0 +1,12 @@
+dqsegdb2 (1.1.2-1) unstable; urgency=low
+
+  * update for 1.1.2, reinstates debian packaging
+  * remove python2 packages
+
+ -- Duncan Macleod <duncan.macleod@ligo.org>  Thu, 30 Jun 2022 17:00:00 +0100
+
+dqsegdb2 (1.0.1-1) unstable; urgency=low
+
+  * first release
+
+ -- Duncan Macleod <duncan.macleod@ligo.org>  Thu, 07 Feb 2019 13:57:00 +0000

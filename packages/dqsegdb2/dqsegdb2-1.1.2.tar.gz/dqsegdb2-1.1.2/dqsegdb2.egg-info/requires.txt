@@ -1,0 +1,11 @@
+igwn-auth-utils[requests]>=0.2.2
+ligo-segments>=1.0.0
+
+[lint]
+flake8>=3.7.0
+flake8-bandit
+
+[test]
+pytest>=2.9.2
+pytest-cov>=2.5.1
+requests-mock>=1.5.0

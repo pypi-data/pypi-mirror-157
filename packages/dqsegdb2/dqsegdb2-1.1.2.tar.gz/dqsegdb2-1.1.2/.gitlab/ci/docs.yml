@@ -1,0 +1,44 @@
+# ---------------------------
+# Documentation workflow
+# ---------------------------
+
+include:
+  # https://computing.docs.ligo.org/gitlab-ci-templates/
+  - project: computing/gitlab-ci-templates
+    file:
+      # https://computing.docs.ligo.org/gitlab-ci-templates/conda/
+      - conda.yml
+      # https://computing.docs.ligo.org/gitlab-ci-templates/python/
+      - python.yml
+
+# -- docs -------------------
+#
+# These jobs run the sphinx
+# documentation build
+#
+
+docs:
+  extends:
+    # https://computing.docs.ligo.org/gitlab-ci-templates/python/#.python:sphinx
+    - .python:sphinx
+    # https://computing.docs.ligo.org/gitlab-ci-templates/conda/#.conda:base
+    - .conda:base
+  image: igwn/base:conda
+  needs: []
+  stage: documentation
+  before_script:
+    - !reference [".conda:base", before_script]
+    - mamba env create --name docs --file docs/environment.yml
+    - mamba activate docs
+    - python -m pip install .
+    - mamba list --name docs
+
+#
+# Publishing is done automatically
+# on readthedocs.org via a webhook,
+# see
+#
+# https://readthedocs.org/projects/dqsegdb2/builds/
+#
+# for full details
+#
