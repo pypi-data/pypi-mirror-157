@@ -1,0 +1,16 @@
+unshell/__init__.py,sha256=7tAdParxY_R3qlAHg0zIR2Zci8fX8xsdhdpCEOt2udc,64
+unshell/cli.py,sha256=v_t7WorZoqI6oApMZhjHq8rd84TgWd32wGyt_4a8awY,2094
+unshell/core.py,sha256=vnUJnGshqGMZB45zuiiKus9Y1hntR2tWdEovbDimV6c,3198
+unshell/py.typed,sha256=qrkHrYJvGoZpU2BpVLNxJB44LlhqVSKyYOwD_L_1m3s,10
+unshell/test_cli.py,sha256=5iG6xzBo5YicWPT2P3Ts8Kf_h3ariDKh6kjs5zZ7FD0,2691
+unshell/test_core.py,sha256=z_mgQAK46ZDjdDd4LX2xZq5ZsEBe8mKeK3LVnuL4ZSk,9053
+unshell/type.py,sha256=Y0-UePPYtpP9_YH-VowFfHea3KZvp-WzFrJF0uI4mFc,688
+unshell/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unshell/utils/colors.py,sha256=lDnpHaQpJT5FbU-ZDRziHN9T_Ix8GTIjmrmcqz37Bn4,126
+unshell/utils/pipe.py,sha256=PxCBFgrlH7bVqaQnryB1-dYsMOflqyDG_Z7hyFtCwVQ,292
+unshell/utils/test_colors.py,sha256=P6WbnWYEqUE_Jy-VfzA6zaluaz6nPCqoKrtKsGb8uPA,336
+unshell/utils/test_pipe.py,sha256=bqYiZd4tneQ-RjcUyvHUl1IvOBIj1Cemhu9-6oo7BBY,783
+unshell-0.7.0.dist-info/LICENSE.md,sha256=Hg0HBhz2z5zjLL8ETX5lE94ufoBVlZ7gx2T3oOuSDJ8,1071
+unshell-0.7.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+unshell-0.7.0.dist-info/METADATA,sha256=VHbpw1sCgZLOnqNZtbta4qRbE4EHY6V50Z4EuXQfguk,2158
+unshell-0.7.0.dist-info/RECORD,,
