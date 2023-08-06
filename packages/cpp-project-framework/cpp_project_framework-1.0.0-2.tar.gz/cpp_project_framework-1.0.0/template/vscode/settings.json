@@ -1,0 +1,5 @@
+{
+    "cmake.buildDirectory": "${workspaceFolder}/${buildType}",
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "testMate.cpp.test.executables": "{build,Build,BUILD,out,Out,OUT,Debug,Release}/**/*{test,Test,TEST}*"
+}

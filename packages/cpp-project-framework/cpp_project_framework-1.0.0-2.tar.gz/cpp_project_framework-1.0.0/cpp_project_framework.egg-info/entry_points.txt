@@ -1,0 +1,2 @@
+[console_scripts]
+create_new_cpp_project = cpp_project_framework.create_new_project:create_new_project
