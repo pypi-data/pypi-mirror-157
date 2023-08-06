@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: q3huff2
+Version: 0.4.2
+Summary: Python 3 C API wrapper for Huffman code found in ioquake3.
+Home-page: https://github.com/JKornev/python-q3huff
+Author: Jeff Kent
+Author-email: jeff@jkent.net
+Maintainer: Jeff Kent
+Maintainer-email: jeff@jkent.net
+License: GNU GPLv2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3
+License-File: COPYING
+
+UNKNOWN
+

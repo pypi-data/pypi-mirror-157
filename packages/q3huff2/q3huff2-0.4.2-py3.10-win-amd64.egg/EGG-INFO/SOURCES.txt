@@ -1,0 +1,14 @@
+COPYING
+MANIFEST.in
+README.md
+setup.py
+q3huff2.egg-info/PKG-INFO
+q3huff2.egg-info/SOURCES.txt
+q3huff2.egg-info/dependency_links.txt
+q3huff2.egg-info/top_level.txt
+src/hufflib.c
+src/huffman.c
+src/msg.c
+src/q_shared.c
+src/q_shared.h
+src/qcommon.h
