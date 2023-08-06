@@ -1,0 +1,10 @@
+name: hera_filters
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - aipy>=3.0rc2
+  - nose
+  - numpy
+  - pyuvdata
+  - scipy

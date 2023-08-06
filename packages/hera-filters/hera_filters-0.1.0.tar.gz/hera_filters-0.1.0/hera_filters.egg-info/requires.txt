@@ -1,0 +1,6 @@
+numpy
+six
+scipy
+
+[aipy]
+aipy>=3.0rc2

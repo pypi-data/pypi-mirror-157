@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: hera-filters
+Version: 0.1.0
+Summary: Tools useful for the handling, visualization, and analysis of interferometric data.
+Home-page: https://github.com/HERA-Team/hera_filters
+Author: HERA Team
+License: MIT
+Provides-Extra: aipy
+License-File: LICENSE
