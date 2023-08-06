@@ -1,0 +1,44 @@
+# Reference https://github.com/pydata/xarray/blob/main/pyproject.toml
+[build-system]
+requires = [
+    "setuptools>=59",
+    "setuptools_scm[toml]>=6.4",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+# pytest
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
+doctest_optionflags = "ALLOW_UNICODE ALLOW_BYTES NORMALIZE_WHITESPACE"
+addopts = "--pyargs --cov=plotnine --cov-report=xml --import-mode=importlib"
+
+# Coverage.py
+[tool.coverage.run]
+branch = true
+source = ["plotnine"]
+include = [
+    "plotnine/*"
+]
+omit = [
+    "setup.py",
+    "plotnine/_version.py",
+    "tests/*",
+]
+
+disable_warnings = ["include-ignored"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "^def test_",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError('Not Implemented')",
+]
+precision = 1
+
+[tool.setuptools_scm]
+fallback_version = "999"
+version_scheme = 'post-release'
