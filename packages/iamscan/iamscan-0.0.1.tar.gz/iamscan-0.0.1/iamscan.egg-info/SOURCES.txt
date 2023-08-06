@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+iamscan/__init__.py
+iamscan/__main__.py
+iamscan/commands.py
+iamscan/policy.py
+iamscan.egg-info/PKG-INFO
+iamscan.egg-info/SOURCES.txt
+iamscan.egg-info/dependency_links.txt
+iamscan.egg-info/entry_points.txt
+iamscan.egg-info/requires.txt
+iamscan.egg-info/top_level.txt
+tests/__init__.py
+tests/test_code.py
+tests/validations.py
