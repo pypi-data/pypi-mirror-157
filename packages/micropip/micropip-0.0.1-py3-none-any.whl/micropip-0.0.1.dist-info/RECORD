@@ -1,0 +1,17 @@
+setup.py,sha256=N8Xbo6ZDrCLh0C5k2IU5BEAPIS0-RaeSGlCLh8nWLX0,360
+micropip/__init__.py,sha256=1aIM7Ma3JFt6GsFCf_PLn09kTl8DPj1t11iX3cbkYg8,77
+micropip/_micropip.py,sha256=0kEMsFcz56BgJxw7KTNL6yorZ5kQt-9Rz8BCjA2-lm4,14894
+micropip/package.py,sha256=cTnXjePvT2YiHQ7Nd0-HbXhH1Tneju4i_aZxtMJamyU,1607
+micropip/externals/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+micropip/externals/pip/__init__.py,sha256=ZNZU8v9IrfrDI50RvkQGOw8mPi89PK7697kXjugRVuk,93
+micropip/externals/pip/_internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+micropip/externals/pip/_internal/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+micropip/externals/pip/_internal/utils/pkg_resources.py,sha256=aIRl0xC8uPrLi34eVb4bwxhEN7tGzZjvHgODWzDU9zo,1105
+micropip/externals/pip/_internal/utils/wheel.py,sha256=B_FIhRMSRWvDueMHhvvJQnpEYAjfrgAsg3hQ19sPelA,6406
+micropip/externals/pip/_vendor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+micropip/externals/pip/_vendor/pkg_resources.py,sha256=89gcqMFlbvAk_wBtalRTPVRnqufoOk3Wbmns179bCbE,15814
+micropip-0.0.1.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+micropip-0.0.1.dist-info/METADATA,sha256=DDlJEh6zYfKHtZwcQo3ReP-CvdtsTRdl292fW8GtrSE,24363
+micropip-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+micropip-0.0.1.dist-info/top_level.txt,sha256=1lLxKQ-JhS_76Sjg3viPNTdxzwJMvf9lpxBF4xulYZM,15
+micropip-0.0.1.dist-info/RECORD,,
