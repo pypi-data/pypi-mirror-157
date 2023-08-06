@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: diffReport
+Version: 0.0.2
+Summary: File comparison and report differences
+Home-page: https://github.com/vish-nu-ram/diffReport
+Author: Vishnuram
+Author-email: vishnu.ram@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+UNKNOWN
+
