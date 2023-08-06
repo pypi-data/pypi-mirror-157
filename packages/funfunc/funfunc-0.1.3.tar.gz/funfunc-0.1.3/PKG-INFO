@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: funfunc
+Version: 0.1.3
+Summary: Make Py Development Much Easier & Fun
+Home-page: https://github.com/jackwolfey/funfunc
+Author: Wei Jia
+Author-email: 437160499@163.com
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+Make Py Development Much Easier & Fun
