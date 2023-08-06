@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: mobileone_pytorch
+Version: 0.1.0
+Summary: MobileOne implemented in PyTorch.
+Home-page: https://github.com/federicopozzi33/MobileOne-PyTorch
+Author: Federico Pozzi
+Author-email: f.pozzi33@campus.unimib.it
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8.0
