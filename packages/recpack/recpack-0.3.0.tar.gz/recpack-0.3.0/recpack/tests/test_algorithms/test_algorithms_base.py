@@ -1,0 +1,141 @@
+import warnings
+
+import numpy as np
+import pandas as pd
+import pytest
+import scipy.sparse
+
+
+from recpack.algorithms.base import Algorithm
+from recpack.algorithms import (
+    ItemKNN,
+    MultVAE,
+    RecVAE,
+    BPRMF,
+    Random,
+    NMFItemToItem,
+    NMF,
+    GRU4RecCrossEntropy,
+    GRU4RecNegSampling,
+    Prod2Vec,
+    Prod2VecClustered,
+    ItemPNN,
+)
+from recpack.matrix import InteractionMatrix
+
+
+def test_check_prediction():
+    a = np.ones(5)
+    b = a.copy()
+    b[2] = 0
+    X_pred = scipy.sparse.diags(b).tocsr()
+    X = scipy.sparse.diags(a).tocsr()
+
+    a = Algorithm()
+
+    with warnings.catch_warnings(record=True) as w:
+        # Cause all warnings to always be triggered.
+        warnings.simplefilter("always")
+        # Trigger a warning.
+        a._check_prediction(X_pred, X)
+        # Verify some things
+        assert len(w) == 1
+
+        assert "1 users" in str(w[-1].message)
+
+        a._check_prediction(X, X)
+        assert len(w) == 1
+
+
+def test_check_fit_complete(pageviews):
+    # Set a row to 0, so it won't have any neighbours
+    pv_copy = pageviews.copy()
+    pv_copy[:, 4] = 0
+
+    a = ItemKNN(2)
+
+    with warnings.catch_warnings(record=True) as w:
+        # Cause all warnings to always be triggered.
+        warnings.simplefilter("always")
+
+        a.fit(pv_copy)
+        # The algorithm might also throw a warning
+        assert len(w) >= 1
+
+        assert "1 items" in str(w[-1].message)
+
+
+@pytest.mark.parametrize(
+    "algo",
+    [
+        ItemPNN,
+        RecVAE,
+        MultVAE,
+        BPRMF,
+        Random,
+        NMFItemToItem,
+        NMF,
+        Prod2Vec,
+        Prod2VecClustered,
+        GRU4RecCrossEntropy,
+        GRU4RecNegSampling,
+    ],
+)
+def test_seed_is_set_consistently_None(algo):
+
+    a = algo()
+    assert hasattr(a, "seed")
+
+
+@pytest.mark.parametrize(
+    "algo",
+    [
+        ItemPNN,
+        RecVAE,
+        MultVAE,
+        BPRMF,
+        Random,
+        NMFItemToItem,
+        NMF,
+        Prod2Vec,
+        Prod2VecClustered,
+        GRU4RecNegSampling,
+        GRU4RecCrossEntropy,
+    ],
+)
+def test_seed_is_set_consistently_42(algo):
+
+    a = algo(seed=42)
+    assert hasattr(a, "seed")
+
+    assert a.seed == 42
+
+
+@pytest.mark.parametrize(
+    "algo_class",
+    [RecVAE, MultVAE, BPRMF, Prod2Vec, Prod2VecClustered, GRU4RecNegSampling, GRU4RecCrossEntropy],
+)
+def test_assert_is_interaction_matrix(algo_class, matrix_sessions):
+    # No error when checking type
+    algo = algo_class()
+
+    algo._assert_is_interaction_matrix(matrix_sessions)
+
+    with pytest.raises(TypeError) as type_error:
+        algo._assert_is_interaction_matrix(matrix_sessions.binary_values)
+
+    assert type_error.match(".* requires Interaction Matrix as input. Got <class 'scipy.sparse._csr.csr_matrix'>.")
+
+
+@pytest.mark.parametrize(
+    "algo_class",
+    [RecVAE, MultVAE, BPRMF, Prod2Vec, Prod2VecClustered, GRU4RecNegSampling, GRU4RecCrossEntropy],
+)
+def test_assert_has_timestamps(algo_class, matrix_sessions):
+
+    algo = algo_class()
+
+    with pytest.raises(ValueError) as value_error:
+        algo._assert_has_timestamps(matrix_sessions.eliminate_timestamps())
+
+    assert value_error.match(".* requires timestamp information in the InteractionMatrix.")
