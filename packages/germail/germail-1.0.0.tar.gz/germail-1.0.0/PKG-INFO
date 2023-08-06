@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: germail
+Version: 1.0.0
+Summary: A python api create temporary mail
+Home-page: https://github.com/kira-xc/Germail
+Author: kira_xc
+License: MIT
+Description: UNKNOWN
+Keywords: geras,geras email,temp email,temp mail,germail,geras mail,gerasmail,kira_xc,python3.x,kira-xc,temporary,temporary mail,temporary email,mail.tm,mohmal,temp-mail,ايميل,ايميل مؤقت,مهمل,بايثون,tempmail,temp-mail,جيرس
+Platform: UNKNOWN
+Requires-Python: >=3.7
