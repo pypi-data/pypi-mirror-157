@@ -1,0 +1,9 @@
+numpy
+pandas
+xarray>=0.17.0
+xgcm<0.7.0
+cftime
+xarrayutils
+pint
+cf_xarray>=0.6.0
+pint-xarray

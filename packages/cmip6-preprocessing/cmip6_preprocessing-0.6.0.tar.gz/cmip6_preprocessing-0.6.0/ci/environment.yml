@@ -1,0 +1,23 @@
+name: test_env_cmip6_preprocessing
+channels:
+  - conda-forge
+dependencies:
+  - xarray>=0.17.0
+  - pandas
+  - netcdf4
+  - scipy
+  - xgcm<0.7.0 #Revert this after fixing the extrapolate option
+  - cftime
+  - regionmask
+  - cartopy
+  - xesmf
+  - xarrayutils #TODO remove when the new xarray polyfit is implemented
+  - pint
+  - cf_xarray>=0.6.0
+  - pint-xarray>=0.2.1
+  - pytest-cov
+  - pytest-xdist
+  - codecov
+  # These are only a patch until xesmf > 0.6.2 is released. See https://github.com/pangeo-data/xESMF/issues/170
+  - numba
+  - sparse>=0.8.0
