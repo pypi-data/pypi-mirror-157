@@ -1,0 +1,11 @@
+report_guided_annotation/__init__.py,sha256=JTMTjR3LHf9_q08clGRf9QxmAY7nBhc4-i1j5vzr4Vg,1069
+report_guided_annotation/__main__.py,sha256=nhNI_EzQG8zC3cxig2qp6NXI_F6feANmgi9hEGL_a7A,1537
+report_guided_annotation/create_automatic_annotations.py,sha256=HmuBT4OpG_lsfhceh4w4hKIxg4YXZexkJsOQPFLoaxE,13412
+report_guided_annotation/extract_lesion_candidates.py,sha256=-MH98xMDXT7kOg09W1vwXSPAemcy77ojxtVFDcWBH0o,6813
+report_guided_annotation/parse_report.py,sha256=ZCN7elT4DbbZEvEBNR6Q3g8_h1jMMl7NSyN1R9MYiG0,20920
+report_guided_annotation/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+report_guided_annotation-0.2.4.dist-info/LICENSE,sha256=RSpXqDnWJHPIa45jbl5cMCRBv8mqB3Dl81VJA7HOwMw,1088
+report_guided_annotation-0.2.4.dist-info/METADATA,sha256=NIYrUSqrwSv9v-W3_qVT84WpEaqxyEV9Gt4UjrwA_jo,9444
+report_guided_annotation-0.2.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+report_guided_annotation-0.2.4.dist-info/top_level.txt,sha256=Xot0hAjyRl7tziVWr-xL1VhhzJh2R9X2q0YyWtKIxSA,25
+report_guided_annotation-0.2.4.dist-info/RECORD,,
