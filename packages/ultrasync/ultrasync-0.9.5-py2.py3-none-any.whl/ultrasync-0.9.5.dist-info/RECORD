@@ -1,0 +1,12 @@
+ultrasync/__init__.py,sha256=I5dpdzRLU2_il0HnJdJbYHBMVvNetl2Zg1p_uCMO21g,1793
+ultrasync/cli.py,sha256=f-6BaI_iahKhismk2XsvN487TEaXm0zvucmM5klwAfU,8954
+ultrasync/common.py,sha256=mK-TrpLSVs0IuQ1tYGgbl18SKFR9YBhOTPtdtXFiXoc,8351
+ultrasync/config.py,sha256=OUSvNYhlkiKK9cCtlHBi7BSrOzyTRIqI7q_UPF7Quew,6747
+ultrasync/logger.py,sha256=YLbEZzbfBb9ULmrrm4t6cKThhY3eAGditEPhSP10URY,2282
+ultrasync/main.py,sha256=cHz4Dw5RjdARFE9yRwoZSNx4zPHHrLeZuGNDSbP1Twc,81936
+ultrasync-0.9.5.dist-info/LICENSE,sha256=LoW3fu2Pfb_UueEvezntGI5-BArdNPPk3jRIVyavUrI,1090
+ultrasync-0.9.5.dist-info/METADATA,sha256=AbRxruy6lx43Im_2EeJnK7SdwO1CWZU1vw8IciInd3I,7253
+ultrasync-0.9.5.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+ultrasync-0.9.5.dist-info/entry_points.txt,sha256=dePCJtLCVFZ5i2rUJJU-nnWB942F75pJTkrVs17htK8,50
+ultrasync-0.9.5.dist-info/top_level.txt,sha256=7ESMKcG97TL4y7DyCYnOOzG_FlEOm2MYSSfzK_bUcv8,10
+ultrasync-0.9.5.dist-info/RECORD,,
