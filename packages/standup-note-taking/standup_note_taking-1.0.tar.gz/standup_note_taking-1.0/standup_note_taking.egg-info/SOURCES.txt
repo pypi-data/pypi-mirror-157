@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+standup/__init__.py
+standup/main.py
+standup/standup.py
+standup/standup_alias.sh
+standup_note_taking.egg-info/PKG-INFO
+standup_note_taking.egg-info/SOURCES.txt
+standup_note_taking.egg-info/dependency_links.txt
+standup_note_taking.egg-info/top_level.txt
