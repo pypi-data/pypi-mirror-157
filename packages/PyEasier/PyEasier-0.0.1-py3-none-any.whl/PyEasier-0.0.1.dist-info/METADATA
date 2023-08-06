@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: PyEasier
+Version: 0.0.1
+Summary: Making your python experience better
+Home-page: UNKNOWN
+Author: Yellow Yams(Vedic Mukherjee)
+Author-email: <yellowyams5@gmail.com>
+License: UNKNOWN
+Keywords: python,PyEasier,quick code,fast development,easy to use,build
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: py2app
+Requires-Dist: pyinstaller
+
+UNKNOWN
+
