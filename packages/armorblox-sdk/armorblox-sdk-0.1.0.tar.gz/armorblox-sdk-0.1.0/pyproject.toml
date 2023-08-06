@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "armorblox-sdk"
+version = "0.1.0"
+description = "Armorblox SDK for Python"
+license="Apache-2.0"
+authors = [
+    "Rajat Upadhyaya <45485+urajat@users.noreply.github.com>"
+]
+readme="README.md"
+repository="https://github.com/armorblox/armorblox-python-sdk"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+packages = [
+    { include = "armorblox", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.27.1"
+cached-property = "^1.5.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-mock = "^3.7.0"
+tox = "^3.24.5"
+responses = "^0.18.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py39
+isolated_build = True
+# skipsdist = true
+
+[testenv]
+whitelist_externals = poetry
+deps =
+    pytest >= 3.0.0, <7
+    responses >= 0.18.0
+commands = pytest -ra
+"""
