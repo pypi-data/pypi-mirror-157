@@ -1,0 +1,13 @@
+.gitignore
+README.md
+requirements.txt
+setup.py
+Punctuator/__init__.py
+Punctuator/punctuator.py
+Punctuator/test.py
+Punctuator/utils.py
+TextPunctuator.egg-info/PKG-INFO
+TextPunctuator.egg-info/SOURCES.txt
+TextPunctuator.egg-info/dependency_links.txt
+TextPunctuator.egg-info/requires.txt
+TextPunctuator.egg-info/top_level.txt
