@@ -1,0 +1,7 @@
+audiowalkman<1.0.0,>=0.19.3
+SoundFile>=0.10.3.post1
+numpy<2.0.0,>=1.23.0
+pyo<2.0.0,>=1.0.4
+
+[testing]
+nose
