@@ -1,0 +1,3 @@
+[console_scripts]
+cic=cic.runnable.cic_cmd:main
+
