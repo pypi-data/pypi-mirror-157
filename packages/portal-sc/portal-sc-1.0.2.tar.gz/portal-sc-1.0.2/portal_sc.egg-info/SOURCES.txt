@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+portal/__init__.py
+portal/model.py
+portal/networks.py
+portal/utils.py
+portal_sc.egg-info/PKG-INFO
+portal_sc.egg-info/SOURCES.txt
+portal_sc.egg-info/dependency_links.txt
+portal_sc.egg-info/not-zip-safe
+portal_sc.egg-info/requires.txt
+portal_sc.egg-info/top_level.txt
