@@ -1,0 +1,3 @@
+[console_scripts]
+ewoks-canvas = ewoksorange.canvas.main:main
+
