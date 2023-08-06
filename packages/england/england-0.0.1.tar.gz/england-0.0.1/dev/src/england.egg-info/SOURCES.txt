@@ -1,0 +1,7 @@
+README.md
+setup.py
+dev/src/england.egg-info/PKG-INFO
+dev/src/england.egg-info/SOURCES.txt
+dev/src/england.egg-info/dependency_links.txt
+dev/src/england.egg-info/top_level.txt
+dev/src/england.egg-info/SOURCES.txt
