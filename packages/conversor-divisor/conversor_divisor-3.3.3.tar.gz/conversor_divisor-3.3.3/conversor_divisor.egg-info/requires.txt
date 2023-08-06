@@ -1,0 +1,14 @@
+PySide2
+toml
+
+[dev]
+flake8
+pytest
+pytest-cov
+pytest-mock
+pytest-qt
+blue
+isort
+PySide2
+toml
+pyinstaller
