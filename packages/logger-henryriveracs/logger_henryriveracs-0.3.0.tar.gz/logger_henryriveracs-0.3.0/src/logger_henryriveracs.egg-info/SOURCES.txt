@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/logger/__init__.py
+src/logger/logger.py
+src/logger_henryriveracs.egg-info/PKG-INFO
+src/logger_henryriveracs.egg-info/SOURCES.txt
+src/logger_henryriveracs.egg-info/dependency_links.txt
+src/logger_henryriveracs.egg-info/top_level.txt
