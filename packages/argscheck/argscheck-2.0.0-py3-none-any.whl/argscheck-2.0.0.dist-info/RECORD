@@ -1,0 +1,16 @@
+argscheck/__init__.py,sha256=sRlSbiMhMTLai3Ne3Ulsb-7Ckg_gMj1nicnw1V3I8Vk,1442
+argscheck/collection.py,sha256=x25oyVNanL8IOx87BFMYQrpYGoKpFzuDXeWDTFWKEdU,3974
+argscheck/comparable.py,sha256=EBwnLIkeQuP0xCEBKKcjuRmo0uJpQG1doo3w8i9k82E,7447
+argscheck/core.py,sha256=XUgR9x7DPfxQVX3Px1vmGRO7-7H0vN6ktKQHoSXdOQU,19686
+argscheck/iter.py,sha256=Sagvr1o9qI70B8NpY8XvpBIgCDPRzlHYY05L0FggF2Q,5228
+argscheck/numeric.py,sha256=MEEfGVmvxJyko6zoB4ipGEX8laGCRlG_q0DeibmLGcU,9256
+argscheck/optional.py,sha256=lQtkJxJQJRC-BgJDBP32JtSgFhaHYQXhFo7urV17j8o,3379
+argscheck/pathlike.py,sha256=RF1UEIOq19aCMgui3oUsWVyqIdZ-r49TBr5CQHgq1yQ,7183
+argscheck/sequence.py,sha256=qhQT8sMS9gWarlPPusCo2qVKL87o9-zIvwdlrAGAPd8,7071
+argscheck/string.py,sha256=qncgZmwQZVO09XSaUqIWBzlP1QrSeMBOtSB2TEKuN_k,2737
+argscheck/utils.py,sha256=oLcciJMRtSRd4ienX9TrcEn1S9hfDG_XppJ2uy9hzrg,4061
+argscheck-2.0.0.dist-info/LICENSE,sha256=_QFaD5_RtoM_wwrI03H4fyKMuBhL-mvSynQ7-qg43zI,1085
+argscheck-2.0.0.dist-info/METADATA,sha256=YTD4uPVBVHN0Jv_xCCSetAUkt_5Gog02qx44C5EyAmA,716
+argscheck-2.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+argscheck-2.0.0.dist-info/top_level.txt,sha256=Ppweny7jfPH130gYB_hVDE-Tuw-7OKDZhV9Gs4T89KU,10
+argscheck-2.0.0.dist-info/RECORD,,
