@@ -1,0 +1,9 @@
+changedetector/__init__.py,sha256=4Hw0ewgDbTR-GavdvuNvwjPgsB6pCJGTYVmEymxRWnU,431
+changedetector/_colors.py,sha256=_lAwifO_puu1VIhkJ9GvSMDV4zZGYHehi58iExHcX9w,254
+changedetector/_purcent.py,sha256=pj9KtFrxtt9A1qpu085aPsa-_ceLMS1sxXGXP9lvyJY,386
+changedetector/detectchange.py,sha256=V0kgxnj04r628b0MdRxNr01KYo5EQxNWYA5FxVbFf0k,6223
+changedetector-0.0.3.dist-info/LICENCE,sha256=qLtr2ZrRkhSsTp9as5NuCxnUkoJyewZkSHzba53bINU,1085
+changedetector-0.0.3.dist-info/METADATA,sha256=n7irYXvj9Tnf7OgIsfk0qcEKg1ZCfMgFuGuXcnhglk4,2380
+changedetector-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+changedetector-0.0.3.dist-info/top_level.txt,sha256=2PeZWeZjwhvLZLSS1y4bNIqTaPscR_fITgx2OtjZrQA,15
+changedetector-0.0.3.dist-info/RECORD,,
