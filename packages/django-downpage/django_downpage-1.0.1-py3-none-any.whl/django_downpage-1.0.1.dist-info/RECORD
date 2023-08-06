@@ -1,0 +1,9 @@
+downpage/__init__.py,sha256=d4QHYmS_30j0hPN8NmNPnQ_Z0TphDRbu4MtQj9cT9e8,22
+downpage/apps.py,sha256=NnuzCXE9XzJzKJnJUUTvIID6n-takJRWrSQOt3NxaF4,148
+downpage/generating.py,sha256=7UOXMRLLRUCr_0vdkV8z0Bny5E1Xq0gQzh_BP-wTKng,728
+downpage/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+downpage/management/commands/downpagegenerate.py,sha256=hD18T-P8rbGPYUjnbZzgTg4SYXDKyFnV1py8t9C2XOI,182
+django_downpage-1.0.1.dist-info/METADATA,sha256=Iu4INWyG3TX0u7OVklgOAfpZrnzhUinFzsaf_ibggI0,1853
+django_downpage-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_downpage-1.0.1.dist-info/top_level.txt,sha256=_OJINQ3_ecgkIGPmfWwd7x7lhYw5j7IkrrOb41j2-IQ,9
+django_downpage-1.0.1.dist-info/RECORD,,
