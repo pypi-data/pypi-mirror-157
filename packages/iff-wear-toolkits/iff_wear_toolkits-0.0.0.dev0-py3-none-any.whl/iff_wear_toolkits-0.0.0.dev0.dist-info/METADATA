@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: iff-wear-toolkits
+Version: 0.0.0.dev0
+Summary: A toolchain for human digital health data analysis
+Home-page: https://iff.qdu.edu.cn
+Author: Qingdao University Institute For Future
+Author-email: iff@qdu.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# iff-wear-toolkits
+
+
