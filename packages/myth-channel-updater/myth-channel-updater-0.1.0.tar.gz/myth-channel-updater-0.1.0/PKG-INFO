@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: myth-channel-updater
+Version: 0.1.0
+Summary: A script to help maintain the list of channels in MythTV.
+Home-page: https://github.com/andrewjw/myth-channel-updater
+Author: Andrew Wilkinson
+Author-email: andrewjwilkinson@gmail.com
+License: UNKNOWN
+Description: # myth-channel-updater
+        
+        [![Coverage Status](https://coveralls.io/repos/github/andrewjw/myth-channel-updater/badge.svg?branch=main)](https://coveralls.io/github/andrewjw/myth-channel-updater?branch=master)
+        
+        A script to help maintain the list of channels in MythTV.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

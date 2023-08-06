@@ -1,0 +1,42 @@
+<ChannelInfoList version="1.0" serializerVersion="1.1">
+    <StartIndex>1</StartIndex>
+    <Count>1</Count>
+    <CurrentPage>2</CurrentPage>
+    <TotalPages>32</TotalPages>
+    <TotalAvailable>32</TotalAvailable>
+    <AsOf>2013-02-04T03:02:13Z</AsOf>
+    <Version>0.27.20130130-1</Version>
+    <ProtoVer>77</ProtoVer>
+    <ChannelInfos>
+        <ChannelInfo>
+        <ChanId>1053</ChanId>
+        <ChanNum>5_3</ChanNum>
+        <CallSign>NBC5-US</CallSign>
+        <IconURL/>
+        <ChannelName>NBC5-US</ChannelName>
+        <MplexId>5</MplexId>
+        <TransportId>1001</TransportId>
+        <ServiceId>7</ServiceId>
+        <NetworkId>0</NetworkId>
+        <ATSCMajorChan>5</ATSCMajorChan>
+        <ATSCMinorChan>3</ATSCMinorChan>
+        <Format>ATSC</Format>
+        <Modulation>8vsb</Modulation>
+        <Frequency>563000000</Frequency>
+        <FrequencyId>29</FrequencyId>
+        <FrequencyTable>default</FrequencyTable>
+        <FineTune>0</FineTune>
+        <SIStandard>atsc</SIStandard>
+        <ChanFilters/>
+        <SourceId>1</SourceId>
+        <InputId>0</InputId>
+        <CommFree>0</CommFree>
+        <UseEIT>false</UseEIT>
+        <Visible>false</Visible>
+        <ExtendedVisible> NotVisible</ExtendedVisible>
+        <XMLTVID/><DefaultAuth/>
+        <Programs/>
+        </ChannelInfo>
+    </ChannelInfos>
+</ChannelInfoList>
+    

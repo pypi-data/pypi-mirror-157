@@ -1,0 +1,4 @@
+- match:
+    channel_name__re: "BBC.*"
+  set:
+    comm_free: false
