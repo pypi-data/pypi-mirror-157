@@ -1,0 +1,2 @@
+[datasette]
+redirect_to_https = datasette_redirect_to_https
