@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/flamingo/Flamingo.py
+src/flamingo/__init__.py
+src/flamingo_histology.egg-info/PKG-INFO
+src/flamingo_histology.egg-info/SOURCES.txt
+src/flamingo_histology.egg-info/dependency_links.txt
+src/flamingo_histology.egg-info/top_level.txt
