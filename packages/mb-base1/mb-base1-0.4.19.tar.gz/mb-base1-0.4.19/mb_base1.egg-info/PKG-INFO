@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: mb-base1
+Version: 0.4.19
+Requires-Python: >=3.10
+Provides-Extra: dev
