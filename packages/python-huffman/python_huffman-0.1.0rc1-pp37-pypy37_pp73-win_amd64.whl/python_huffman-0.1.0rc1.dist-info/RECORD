@@ -1,0 +1,14 @@
+pyhuffman/__init__.py,sha256=XJSwkAkoGUaXcflqY1MfZXhnH-72yhD_oof9Xb667Sw,426
+pyhuffman/backends/__init__.py,sha256=XywP1BY8lg5-vwoQw0cKnqhB-lP27C5UiVRg25FP64c,69
+pyhuffman/backends/cffi/__init__.py,sha256=dZCr_DwFw-7qvnOes2Ql3bRyhzFpNWCjc0OaKWXcNeE,3202
+pyhuffman/backends/cffi/_hfm_cffi.pypy37-pp73-win_amd64.pyd,sha256=HpVBt-2yVk2tu7Nb8uvWo1Haa3ofnyJ--k7XsCDFWE4,19456
+pyhuffman/backends/cffi/build.py,sha256=l2IDqqXWBGwSWNk-SMFxnG6PPk_Lw12bPknuT-WlyIs,1025
+pyhuffman/backends/cython/__init__.py,sha256=jHUJVbRGsVP0xewoL8LFmOyTKCEyTkdgYxfrm7oCffg,118
+pyhuffman/backends/cython/_hfm_cy.cpp,sha256=fhZ88YJPnZi0AzV95taWLjWXDmUBaT3LO3zHj1qxEFA,831477
+pyhuffman/backends/cython/_hfm_cy.pypy37-pp73-win_amd64.pyd,sha256=EcY46fQsUQcctgCE4iyh33BqetI1i1jTdL9usI9v2TY,124928
+pyhuffman/backends/cython/_hfm_cy.pyx,sha256=eVm41zYg0QdHbPfaZSE3kZaHUkx0TO56nfVK5cfF-Vs,3670
+pyhuffman/backends/cython/huffman.pxd,sha256=SnWagiitw-YEqTG_SGxfY9mSO-0ihGQSN0DOA-7EmZE,656
+python_huffman-0.1.0rc1.dist-info/METADATA,sha256=7gt-rBCk9kIEuhkKQYlpAPnZMfyCu2lFeaBFNZsJyEI,2113
+python_huffman-0.1.0rc1.dist-info/WHEEL,sha256=Ut7uqN9dGLPqzGl_YXDFeMyPjGKjOo0e9GUmMGhME9c,107
+python_huffman-0.1.0rc1.dist-info/top_level.txt,sha256=NuLg4VDYCdgeOEOQGqegrYs04b6Wv7WYQHee-XlqQrk,10
+python_huffman-0.1.0rc1.dist-info/RECORD,,
