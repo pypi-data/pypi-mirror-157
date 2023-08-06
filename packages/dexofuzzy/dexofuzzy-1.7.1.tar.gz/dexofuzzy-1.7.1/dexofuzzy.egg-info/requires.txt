@@ -1,0 +1,3 @@
+
+[:platform_system != "Windows"]
+ssdeep==3.4
