@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: easy-transformers
+Version: 0.18.0
+Summary: Utils for dealing with transformers
+Home-page: https://github.com/bhavsarpratik/easy-transformers
+Author: Pratik Bhavsar
+Author-email: pratik.a.bhavsar@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: tokenizers (==0.11.6)
+Requires-Dist: transformers (==4.18.0)
+Requires-Dist: sentence-transformers (==2.*)
+Requires-Dist: spacy (==2.*)
+Requires-Dist: python-json-logger
+Requires-Dist: pytz
+Requires-Dist: rich
+Requires-Dist: onnxruntime (==1.10.0)
+Requires-Dist: cloudpathlib
+Requires-Dist: cloudpathlib[s3]
+Requires-Dist: datasets (==2.*)
+Requires-Dist: optimum[onnxruntime]
+
+
+# easy-transformers
+
+Utility functions to work with transformers
+
