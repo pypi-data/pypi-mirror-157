@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/distributed_mean_estimation/__init__.py
+src/distributed_mean_estimation.egg-info/PKG-INFO
+src/distributed_mean_estimation.egg-info/SOURCES.txt
+src/distributed_mean_estimation.egg-info/dependency_links.txt
+src/distributed_mean_estimation.egg-info/requires.txt
+src/distributed_mean_estimation.egg-info/top_level.txt
