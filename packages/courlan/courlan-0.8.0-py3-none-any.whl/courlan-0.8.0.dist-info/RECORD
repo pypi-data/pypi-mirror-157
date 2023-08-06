@@ -1,0 +1,17 @@
+courlan/__init__.py,sha256=KSIA7feW7-C0NE6R7QYv3O8RhzshqKs2cvrrGv2rpXo,583
+courlan/clean.py,sha256=NcfPvCQdio7naAsg-UzqEiwNPAgyAqUr5o6cu2dsfjo,5621
+courlan/cli.py,sha256=PO2HSkA-RE5AT9COYcEaAOXpUySBI6J-64V0nd9BivY,3761
+courlan/core.py,sha256=7CoylvJj_KlU8WYlipAvL_R6rYLPueyjXflghAGEA2M,7863
+courlan/filters.py,sha256=ZIbh3ve6cKU_ssTraYd-5oKLIZ5e971Vsx1El2wsoRw,6974
+courlan/langinfo.py,sha256=uL8G42Vg2nYY71HC2n22_XGeYnhWR1rPSa2_zCVPZUg,4445
+courlan/network.py,sha256=qk0RXIdlurb-26Ll7HhnJ7XQHf-Ii2nLhIHt3qdF5wY,1142
+courlan/settings.py,sha256=IBpL8yvXd65yXFr0G1lqitTaX6F5qvSYG3jmUpK4ISA,1415
+courlan/urlstore.py,sha256=HNJ5ms1gFKAX0rJzV72rQUA_iFBl5ikUvjIcLKyhhxg,12496
+courlan/urlutils.py,sha256=sbqesZ2mqz9dVB8659wX0vERLM7PAjDKBDyJIapYsqU,4550
+courlan-0.8.0.dist-info/DESCRIPTION.rst,sha256=alw5F2ELvRAQYxKCC7AcsC0qDSCcqx_BJDve_vCsgvs,15328
+courlan-0.8.0.dist-info/METADATA,sha256=VFpkDFOe-vu7JVBqHrzQkym0R88PKnrkFl1ZmEGdY2I,17080
+courlan-0.8.0.dist-info/RECORD,,
+courlan-0.8.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+courlan-0.8.0.dist-info/entry_points.txt,sha256=R1vbmgdxC8pUiaodGCGcgrwdYn__ILUy3CU_5Cksbdw,46
+courlan-0.8.0.dist-info/metadata.json,sha256=yfbZmnghU5MIL51ZREJDAE9mL1qYdCoNCX-HdIxUomY,1935
+courlan-0.8.0.dist-info/top_level.txt,sha256=mNIXZYlTWhDv5JMGmkE35PCU3jWgIWOsweoIYzNxNEs,8
