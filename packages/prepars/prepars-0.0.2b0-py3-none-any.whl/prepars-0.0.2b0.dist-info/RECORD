@@ -1,0 +1,13 @@
+prepars/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prepars/normalizer.py,sha256=5eTXie2sNxfCvvJ3lPNzsizwl6D3NCkuZBUxh6zwr-4,3785
+prepars/regexer.py,sha256=oBw-R-SxNCunyQM45YPvKeKuJLaiybil2cxECrJeXNY,2539
+prepars/spacing.py,sha256=a54T7WSqqkJ5j-5qyS0_kyYxRETaqkr6F9riIYO8gkI,2005
+prepars/verb.py,sha256=fmrjSC14wJ1ETOTl0gJtvMzZrvRj6hFSPxdl-jnTQOA,8163
+prepars/PVC/Data/TXT/all_verbs.txt,sha256=C-huhWBGkDIi14TKZObKjDDJFSQHghbToNBpviG6Bv4,46484391
+prepars/PVC/Data/TXT/prefix.txt,sha256=EgBWz-cONqh19yY0aZPT1WH2GLhrF-Ovbcoy1Vwt4RY,166
+prepars/PVC/Data/TXT/replacement.json,sha256=1-zsN59LZenUn-ikkVdIca75k7L6RbYZTXOQyNKrEFM,2333
+prepars/PVC/Data/TXT/suffix.csv,sha256=cXmh6ScqbYU6CYlkQoWnYlGKbeka1Jmd81yTuTTvsCU,1364
+prepars-0.0.2b0.dist-info/METADATA,sha256=AfJ-GEPf1q7Vg7P7b05kbMVSzNTDIvetg10b5hH_rhI,1932
+prepars-0.0.2b0.dist-info/WHEEL,sha256=yOTNA9tObV38sDe2qbtNoJX3d5TGRO6UtFfus23S8xY,86
+prepars-0.0.2b0.dist-info/license_files/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+prepars-0.0.2b0.dist-info/RECORD,,
