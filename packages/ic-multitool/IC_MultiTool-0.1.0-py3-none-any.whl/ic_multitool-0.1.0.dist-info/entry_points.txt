@@ -1,0 +1,3 @@
+[console_scripts]
+ic=ic_multitool.main:app
+
