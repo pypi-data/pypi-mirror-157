@@ -1,0 +1,3 @@
+[console_scripts]
+tamaas = tamaas.__main__:main
+
