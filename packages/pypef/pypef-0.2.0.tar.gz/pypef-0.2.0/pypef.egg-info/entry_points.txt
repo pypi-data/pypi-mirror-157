@@ -1,0 +1,3 @@
+[console_scripts]
+pypef = pypef.main:run_main
+
