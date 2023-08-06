@@ -1,0 +1,75 @@
+[tool.poetry]
+name = "mystbin.py"
+version = "4.0.2"
+description = "A small simple wrapper around the mystb.in API."
+authors = ["AbstractUmbra <Umbra@AbstractUmbra.xyz>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/AbstractUmbra/mystbin-py"
+repository = "https://github.com/AbstractUmbra/mystbin-py"
+keywords = ["mystbin",  "paste"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Internet",
+    "Typing :: Typed",
+]
+include = [
+    "LICENSE"
+]
+packages = [
+    { include = "mystbin" },
+    { include = "mystbin/**/*.py" },
+    { include = "mystbin/py.typed" }
+]
+
+[tool.poetry.urls]
+"Issue Tracker" = "https://github.com/AbstractUmbra/mystbin.py/issues"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.7.4"
+requests = {version = "^2.24.0", optional = true}
+sphinx = { version = "^4.0.0", optional = true }
+sphinxcontrib-trio = { version = "*", optional = true }
+furo = { version = "*", optional = true }
+
+[tool.poetry.dev-dependencies]
+black = "*"
+
+[tool.poetry.extras]
+requests = ["requests"]
+docs = ["sphinx", "sphinxcontrib-trio", "furo"]
+
+[tool.poetry.scripts]
+version = 'mystbin.__main__:show_version'
+
+[tool.black]
+line-length = 125
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+src_paths = ["mystbin"]
+known_first_party = "mystbin"
+lines_after_imports = 2
+
+[tool.pyright]
+ignore = ["docs/conf.py"]
+useLibraryCodeForTypes = true
+typeCheckingMode = "basic"
+pythonVersion = "3.9"
+strictListInference = true
+strictDictionaryInference = true
+strictSetInference = true
+reportMissingImports = "error"
+reportUnusedImport = "error"
+reportUnusedClass = "error"
+reportUnusedFunction = "error"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
