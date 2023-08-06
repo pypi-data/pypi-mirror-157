@@ -1,0 +1,281 @@
+{
+    "wstl": {
+        "title": "HEA Server AWS Accounts Microservice",
+        "actions": [
+            {
+                "name": "heaserver-accounts-bucket-get-open-choices",
+                "type": "safe",
+                "target": "item read cj",
+                "prompt": "Open"
+            },
+            {
+                "name": "heaserver-awsaccounts-awsaccounts-duplicate",
+                "type": "safe",
+                "target": "item",
+                "prompt": "Duplicate"
+            },
+            {
+                "name": "heaserver-awsaccounts-awsaccounts-open",
+                "type": "safe",
+                "target": "item",
+                "prompt": "Open"
+            },
+            {
+                "name": "heaserver-accounts-awsaccount-get-properties",
+                "description": "View and edit this AWS account's properties",
+                "type": "unsafe",
+                "target": "item cj-template",
+                "action": "update",
+                "prompt": "Properties",
+                "inputs": [
+                    {
+                        "name": "id",
+                        "prompt": "Id",
+                        "readOnly": true
+                    },
+                    {
+                        "name": "display_name",
+                        "prompt": "Name",
+                        "required": true
+                    },
+                    {
+                        "name": "description",
+                        "prompt": "Description",
+                        "type": "textarea"
+                    },
+                    {
+                        "name": "mime_type",
+                        "prompt": "MIME type",
+                        "readOnly": true
+                    },
+                    {
+                        "name": "full_name",
+                        "prompt": "Full Name"
+                    },
+                    {
+                        "name": "email_address",
+                        "prompt": "Email Address",
+                        "hea": {
+                            "type": "email"
+                        }
+                    },
+                    {
+                        "name": "phone_number",
+                        "prompt": "Phone Number",
+                        "hea": {
+                            "type": "tel"
+                        }
+                    },
+                    {
+                        "name": "alternate_contact_name",
+                        "prompt": "Alternate Contact Name"
+                    },
+                    {
+                        "name": "alternate_email_address",
+                        "prompt": "Alternate Email Address",
+                        "hea": {
+                            "type": "email"
+                        }
+                    },
+                    {
+                        "name": "alternate_phone_number",
+                        "prompt": "Alternate Phone Number",
+                        "hea": {
+                            "type": "tel"
+                        }
+                    },
+                    {
+                        "name": "owner",
+                        "prompt": "Owner",
+                        "required": true,
+                        "type": "select",
+                        "hea": {
+                            "optionsFromUrl": {
+                                "path": "/people/",
+                                "value": "id",
+                                "text": "display_name"
+                            }
+                        }
+                    },
+                    {
+                        "name": "created",
+                        "prompt": "Created",
+                        "readOnly": true,
+                        "hea": {
+                            "type": "datetime"
+                        }
+                    },
+                    {
+                        "name": "modified",
+                        "prompt": "Modified",
+                        "readOnly": true,
+                        "hea": {
+                            "type": "datetime"
+                        }
+                    },
+                    {
+                        "name": "source",
+                        "prompt": "Source"
+                    },
+                    {
+                        "hea": {
+                            "section": "shares",
+                            "sectionPrompt": "Shares",
+                            "optionsFromUrl": {
+                                "path": "/people/",
+                                "value": "id",
+                                "text": "display_name"
+                            }
+                        },
+                        "name": "user",
+                        "prompt": "User",
+                        "required": true,
+                        "type": "select"
+                    },
+                    {
+                        "hea": {
+                            "section": "shares",
+                            "cardinality": "multiple"
+                        },
+                        "name": "permissions",
+                        "prompt": "Permissions",
+                        "type": "select",
+                        "suggest": [
+                            {"value":  "COOWNER", "text":  "Co-owner"},
+                            {"value":  "CREATOR", "text":  "Creator"},
+                            {"value":  "DELETER", "text":  "Deleter"},
+                            {"value":  "EDITOR", "text":  "Editor"},
+                            {"value":  "SHARER", "text":  "Sharer"},
+                            {"value":  "VIEWER", "text":  "Viewer"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "heaserver-awsaccounts-awsaccounts-duplicate-form",
+                "description": "Duplicate this awsaccounts",
+                "type": "unsafe",
+                "target": "item cj-template",
+                "action": "update",
+                "prompt": "Duplicate",
+                "inputs": [
+                    {
+                        "name": "display_name",
+                        "prompt": "Name",
+                        "required": true
+                    },
+                    {
+                        "name": "description",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "mime_type",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "full_name",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "email_address",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "phone_number",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "alternate_contact_name",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "alternate_email_address",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "alternate_phone_number",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "owner",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "created",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "modified",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "source",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "hea": {
+                            "section": "shares",
+                            "display": false
+                        },
+                        "name": "user"
+                    },
+                    {
+                        "hea": {
+                            "section": "shares",
+                            "display": false
+                        },
+                        "name": "permissions"
+                    }
+                ]
+            },
+            {
+                "name": "heaserver-accounts-awsaccount-get-open-choices",
+                "description": "Open this account",
+                "type": "safe",
+                "action": "read",
+                "target": "item read cj",
+                "prompt": "Open"
+            },
+            {
+                "name": "heaserver-accounts-account-open-storage",
+                "description": "Open S3 storage",
+                "type": "safe",
+                "action": "read",
+                "target": "item read cj",
+                "prompt": "Open"
+            },
+            {
+                "name": "heaserver-accounts-account-open-buckets",
+                "description": "Open S3 buckets",
+                "type": "safe",
+                "action": "read",
+                "target": "item read cj",
+                "prompt": "Open"
+            }
+        ]
+    }
+}
