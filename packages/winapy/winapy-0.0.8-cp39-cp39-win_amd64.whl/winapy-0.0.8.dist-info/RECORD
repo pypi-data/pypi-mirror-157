@@ -1,0 +1,10 @@
+winapy_gdi.cp39-win_amd64.pyd,sha256=y4YEX8c7DkXo66H2gpo2bzpSQZMF2ussyIe0vCQeFm8,34816
+winapy_mme.cp39-win_amd64.pyd,sha256=kkhbr-H0PqR0HtNQ71Q5lZ8lkc3C0bypoZIUkrZt-Ac,18432
+winapy_user.cp39-win_amd64.pyd,sha256=9JRiVWoozMRfNQaC4UnbvK3g1aqOYiJiA0ho48sTIbs,29184
+winapy/__init__.py,sha256=5rsYGC4CUOKwGV4YleW2yU_JTl1h4-BEz30tyvlWNMo,174
+winapy-0.0.8.data/data/utils.c,sha256=rOWtU4v-f2wBXSMrdHO8l1x8OZPeSJiX0xBPH9CQkcg,606
+winapy_con/__init__.py,sha256=yH6BEb9neMpdLoSU0RGzdDkVI7QmQlxojf5hCp1kB1M,127047
+winapy-0.0.8.dist-info/METADATA,sha256=TKHD9aGNIjtPJ_RpTUZbgIbVjRxUH2K2YIMTsd0byS8,886
+winapy-0.0.8.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+winapy-0.0.8.dist-info/top_level.txt,sha256=zZrfD8uwYMbmhUzbeGDkspDL4XvTppo-6MHmlVtVeHc,52
+winapy-0.0.8.dist-info/RECORD,,
