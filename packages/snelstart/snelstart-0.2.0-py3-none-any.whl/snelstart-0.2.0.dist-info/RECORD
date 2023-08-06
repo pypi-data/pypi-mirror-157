@@ -1,0 +1,10 @@
+snelstart/__init__.py,sha256=NLSGt_wp7tkeA70fm2RarqI6ifLBcMSM_XhZ-9BJFes,237
+snelstart/api.py,sha256=aAOPDJ6_XlZzyjtNGPG9lDdWKj5MALKabGsZxQTPWwY,3327
+snelstart/core.py,sha256=EcYwIP1DlGJgFlU_e-unAvyGpe_0i69VkeFc-9G4jeM,891
+snelstart/tests/__init__.py,sha256=IwJUFRUdmkT7T-fAZfdWShHvD7AREBdaJrguDmov1KQ,94
+snelstart/tests/test_snelstart.py,sha256=Bk9dpQS6Er6n59B0NDERSVk6j5Y3FUZa1rFqQCeiU1U,1063
+snelstart-0.2.0.dist-info/LICENSE,sha256=RNnTva-LCQ8EQYlJb6Wi7ZmJ3KBDaxDFFqAkOejiof0,1060
+snelstart-0.2.0.dist-info/METADATA,sha256=RvSPUsddEDUrTRJECEy-6Y68YvKdaiGmc5ebqBQ-Wj0,2200
+snelstart-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+snelstart-0.2.0.dist-info/top_level.txt,sha256=CbbMz2D-OFn37uNd8p8eb-YgalGUT9btcf2ecqT_ZTE,10
+snelstart-0.2.0.dist-info/RECORD,,
