@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pypdp
+Version: 0.0.0.0
+Summary: A python native pickup-and-Delivery problem (PDP) simulator
+Home-page: UNKNOWN
+Author: Junyoung park
+Author-email: test1234@email.re.kr
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# pdp
+
+
