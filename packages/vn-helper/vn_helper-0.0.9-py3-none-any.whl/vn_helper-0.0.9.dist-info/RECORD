@@ -1,0 +1,14 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/preprocessing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/preprocessing/test_text_preprocessing.py,sha256=0zseQqfN4vQE-AoXM0jynpGozKgM-xzOwC5vZY7__yk,1355
+vn_helper/__init__.py,sha256=AE2tlOFhRpSL6qRRSYCRUqN-kGfo2y4aJHNBkfxPFCc,259
+vn_helper/num_preprocessing/__init__.py,sha256=xDKcKWgsNQw8X8cG8x3jWoHli3q9-wYYLmiXRfIJfGE,192
+vn_helper/num_preprocessing/numeric.py,sha256=-nAPvlCp9a7xibeO28M_2Pq2Qvvq93vNoMkxxLcQORA,261
+vn_helper/text_preprocessing/__init__.py,sha256=AVll_NJG4wUYCu-itmQdn3YN2F-fxK3OuB7l2dilFeY,183
+vn_helper/text_preprocessing/text.py,sha256=T8c2p3giBp8F0HhWgzSd5mf-s15EWNkmh-YOLqGLvMg,7844
+vn_helper-0.0.9.dist-info/AUTHORS.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vn_helper-0.0.9.dist-info/LICENSE.txt,sha256=XizDvTkVGr2V3wwwu8N9UZEnVZCnir_WawABIIbni90,1061
+vn_helper-0.0.9.dist-info/METADATA,sha256=yvk1rTKFjVYtbKenXUhEstjjVgoiBIP0VuXL_xN3gy8,666
+vn_helper-0.0.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vn_helper-0.0.9.dist-info/top_level.txt,sha256=CdtJ5tNfz5v1exgnMXJY47VomOl-YFOHBQSlHmYp-NY,16
+vn_helper-0.0.9.dist-info/RECORD,,
