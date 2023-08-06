@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pysdtw
+Version: 0.0.1
+Summary: Soft-DTW for CUDA devices.
+Home-page: https://github.com/toinsson/pysdtw
+Author: Antoine Loriette
+Author-email: antoine.loriette@gmail.com
+Requires-Python: >=3.7
+License-File: LICENSE
