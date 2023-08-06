@@ -1,0 +1,12 @@
+app_commands/__init__.py,sha256=cJkDqmcr1fb5_elEyoHoTMiTkPTq7Ls9KgyF5QHXpy8,254
+app_commands/base.py,sha256=EVqzllhyTSawCKDZBuCoFG0t5E-GDRPLULFcf5qnuDs,2767
+app_commands/commands.py,sha256=JyBPXWMywNiuXl7D6RzZ4u4-IndJCLJ_xSZm_oJe5RM,4003
+app_commands/handlers.py,sha256=90YiQXmNJW3ToxgRU-HjiLXizfqwNvlfEz9M1lhVyPU,429
+app_commands/lifespan.py,sha256=Y2TW6JhRxNHd3lLgeAV5aVbh3RWH0Qo3XrB-yZOhf1M,1449
+app_commands/termcolors.py,sha256=ff8Pu14S83tTl-yrT2ZEwFM6SCp6cXFolV_y8Ag6rzs,8304
+app_commands-0.1.0.dist-info/AUTHORS.rst,sha256=3ivTYr5ySF9DwdB5pxlTFmUkoewRLrt9jgGhzWW6ioU,162
+app_commands-0.1.0.dist-info/LICENSE,sha256=Gtz959o8E4IPOEfR3ll7Y2OKB3sbX_SfAz7xCvDaDsU,1072
+app_commands-0.1.0.dist-info/METADATA,sha256=712u7s7-gSw_QMBpwf0qxmTzadhbFQnUfRytJQlgnkY,1991
+app_commands-0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+app_commands-0.1.0.dist-info/top_level.txt,sha256=8vo0Dm_W5HT5KKcfxDBDc6TkucqEepUoZqF70caDvxg,13
+app_commands-0.1.0.dist-info/RECORD,,
