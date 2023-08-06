@@ -1,0 +1,11 @@
+chevy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chevy/features.py,sha256=dzLCTuo6FRxwd2bjMS7p3lSgcY-DwTXWmmNKFVdmkfA,20696
+chevy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chevy/tests/test_board_common_features.py,sha256=I9a4aB3IgEEAZ2VnvZuvLDcyWCH14_K72C0OOPtbigQ,39081
+chevy/tests/test_king_safety.py,sha256=LJIn9uEaQQjnlQrsKzsoAxlriNJl-c0C4_97k7cToDg,17482
+chevy/tests/test_pawn_structure.py,sha256=Xkt3ldS2Tr5ml__9M7khUJbi_bdS04zGDGG6n4VUhZg,11012
+chevy/utils.py,sha256=fX3AKITyTO3wV5s7ZVAd-pCUMv_HJL68F5chaAamq3c,422
+chevy-0.2.2.dist-info/LICENSE,sha256=a2Ue89D9aF_Q8RilerkZtzNlV11LiSuYO-vLkHQsoG8,1076
+chevy-0.2.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+chevy-0.2.2.dist-info/METADATA,sha256=3BvjeBbj_fPt4jJpA9P15P_JhOnWWhUWITNoLBwp-ns,2689
+chevy-0.2.2.dist-info/RECORD,,
