@@ -1,0 +1,3 @@
+[console_scripts]
+isecycle=isecycle.script:run
+
