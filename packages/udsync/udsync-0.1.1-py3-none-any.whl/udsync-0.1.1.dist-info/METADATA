@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: udsync
+Version: 0.1.1
+Summary: An interactive urwid based directory synchronizer
+Author-email: erzo <erzo@posteo.de>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: BSD License
+Requires-Dist: urwid
+Requires-Dist: urwid-timed-progress
+Requires-Dist: appdirs
+Requires-Dist: tox ; extra == "test"
+Project-URL: Home, https://gitlab.com/erzo/udsync
+Provides-Extra: test
+
+An interactive urwid based directory synchronizer.
+Similar to [Free File Sync](https://freefilesync.org/) but in a terminal and with the possibility to expand and collapse directories to keep the list of changes to a manageable size.
+
+WARNING:
+This is work in progress.
+Showing the differences between two directories (or several directory pairs) is already possible but the syncronization is not implemented yet.
+
+usage:
+```bash
+udsync <sourcedir> <targetdir>
+udsync [<backupplan>]
+```
+
