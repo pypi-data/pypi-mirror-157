@@ -1,0 +1,12 @@
+160, Aktin-binding-induced-opening-of-CH2-(removal of residue 160 makes opening faster)
+123, Aktin-binding-site
+606, GPIB-alpha-cytoplasmic-domain-complex-requirement
+1241, Aktin-binding-site-(cryptic-binding-in-Ig10/equivalent-to-K1246-FLNa)
+1882, GPIB-alpha-2bp3-FLNa-equivalent
+2375, beta-integrin-interaction-(5xr1)
+2359, migfilin-binding-site-interaction-(2k9u)
+84, Aktin-binding-relevant https://doi.org/10.1038/s41594-018-0128-3
+2301, trans-Pro of PXSPF(Ig20)
+2396, Pro of PXSPF(Ig21)
+2123, cis-Pro of PXSPF(Ig19)
+1711, cis-Pro of PXSPF(Ig17)

@@ -1,0 +1,54 @@
+AMIVA-F Tutorial:
+
+Hello, thanks for using the AMIVA-F package in order to predict the pathogenicity for your mutation of interest.
+AMIVA-F works fully automated and is easy to use, even in the absence of knowledge about the underlying parameters which are used as input for the neural network.
+
+Step 1)
+
+AMIVA-F works at the protein annotation level, therefore if you have mutations of interest in the c notation (DNA), look up the corresponding p.notation.
+
+Once you have your mutation of interest in protein notation, enter it in the entry field location directly above the green button ("Calculate everything for me!").
+The required input should look like this:
+
+	M82K             
+
+This input would correspond to the single point mutation at position 82 in FLNc, where the wildtype amino acid (M, Methionine) is substituted
+by the mutated amino acid (K, Lysine).
+If you by any chance submit a wrong amino acid (the amino acid you specified for the wildtype position is in fact not what you submitted, e.g FLNc position 82
+corresponds to methionine, but you wrote S82K, which would correspond to serine), then AMIVA-F automatically corrects you and offers you to proceed calculations with the correct amino acid in in place.
+
+Step 2)
+
+Click on the button "AMIVA-F Analysis". This will take a couple of seconds and give you afterwards your prediction. 
+
+After you received your prediction, you can save the prediction and its associated parameters used as input for AMIVA-F in simple text format by clicking "Save Mutation prediction".
+This will prompt you in order to choose a directory where the outputfile will be saved.
+In this outputfile you will not only find the prediction together with its input parameters, but furthermore also details about the associated training set accuracy and many more statistically interesting things.
+
+Step 3) (Optional)
+
+If you want to make another mutation, simply delete (or click "clear") and enter your new mutation into the entry field at the beginning.
+It is sufficient to simply delete the old mutation and enter the new mutation and then to click "AMIVA-F Analysis". The old parameters will be deleted and everything will proceed as if you just started AMIVA-F.
+When you are done, simply leave AMIVA-F by clicking " Exit AMIVA-F" which will turn off the Java Virtual Machine in the background.
+
+
+
+
+Additional Information:
+
+For additional information about the posttranslational sites/ binding partners which are used to feed AMIVA-F, there are 2 buttons where you can take a look into them.
+Regarding performance prediction accuracy:
+Currently this seems to be a bit buggy (Given that it only gives you only the summary of 1 out of the 10 crossfold validated runs (Instead the average of 10) and can take values a bit lower or higher than reported in the paper.
+If you take the trainingset to WEKA (a desktop installed version) and do the cross validation there, you will find the exact numbers specified in the publication of 78.6% accuracy.
+For your prediction it can happen that you will find prediction values of 76 - 80%, but these are not true values but instead single models from the 10x cross validation procedure.
+We are working to fix this issue in order to provide the average accuracy of 78.6 %, which results after averaging all 10 models generated in cross validation.
+
+
+
+
+
+
+
+
+
+

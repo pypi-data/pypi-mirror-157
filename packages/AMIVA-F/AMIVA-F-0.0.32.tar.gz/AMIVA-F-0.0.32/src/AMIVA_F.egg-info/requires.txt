@@ -1,0 +1,4 @@
+biopython
+freesasa
+javabridge>=1.0.19
+python-weka-wrapper3

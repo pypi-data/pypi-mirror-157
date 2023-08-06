@@ -1,0 +1,17 @@
+@relation mutation_to_be_predicted
+
+@attribute Absolute_SASA_mutant(A**2) numeric
+@attribute Absolute_SASA_wt(A**2) numeric
+@attribute relative_SASA_wt {accessible,partially,inaccessible}
+@attribute relative_SASA_mutant {accessible,inaccessible,partially}
+@attribute 'delta_number_of_atoms(mutant- wt)' numeric
+@attribute 'dhydrophobicity(mutant - wt)' numeric
+@attribute 'change accessibility(upon mutation)' {no,better,worse}
+@attribute 'clashes AND/OR binding partner interference AND/OR phosphosite' {no,yes}
+@attribute sidechain_orientation {solvent,beta}
+@attribute secondary_structure {beta,loop,helix,ID}
+@attribute SAP_score_average_per_residue numeric
+@attribute malign {no,yes}
+
+@data
+25.98,22.66,inaccessible,inaccessible,1,-5.8,no,yes,beta,loop,-0.71,?
