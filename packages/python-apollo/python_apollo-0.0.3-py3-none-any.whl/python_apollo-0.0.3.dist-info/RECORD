@@ -1,0 +1,8 @@
+apollo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apollo/client.py,sha256=Gt3yo9oba-4zg1ntuAHv6FGlBMjzSvPU28mbM-GjAQc,8826
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/get_config.py,sha256=8p5MroFj8JJoZ2iF7HhP4nTg1cUcp6pZ5aBkbYrBTak,505
+python_apollo-0.0.3.dist-info/METADATA,sha256=u-ZiGTCtxjOuPM-X1MlIbx2rqdLFoUWmGdBdAMXrrkA,1709
+python_apollo-0.0.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+python_apollo-0.0.3.dist-info/top_level.txt,sha256=By29-366HaNrPt_72YVoanyzlNY_8U3zD8JMG4yWJW8,15
+python_apollo-0.0.3.dist-info/RECORD,,
