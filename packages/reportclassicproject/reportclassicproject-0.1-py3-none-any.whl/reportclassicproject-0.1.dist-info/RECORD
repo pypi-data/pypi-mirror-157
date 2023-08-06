@@ -1,0 +1,10 @@
+reportclassicproject/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reportclassicproject/report_classic.py,sha256=hI9YE8HQZHctrX0Trvp9DuxQ43v5gklYXVI9xJWnU6I,8801
+reportclassicproject/report_label.py,sha256=UtIVhKvH_q0_FM74hPGU8znFNvZXvgBZ38MIojGWBtY,3662
+reportclassicproject/report_line_detail.py,sha256=OJaxKNiVaMuLkRdUUWVUgYkmBFja-2q6hSsMF9VXDvM,3000
+reportclassicproject/report_mline_detail.py,sha256=qUbfySHrzoDq_sYWaGdc5YZOJxeWz5423VG1LPhCme0,4005
+reportclassicproject-0.1.dist-info/LICENSE.txt,sha256=u-XkmlDzGOR15pvV2jsZdy22JuX_avI2PmMM4yYDM3U,1099
+reportclassicproject-0.1.dist-info/METADATA,sha256=tx92eE7hhWQaPp2c9nMRgGQVdLttQ1cEULNfvxhZ7dM,501
+reportclassicproject-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+reportclassicproject-0.1.dist-info/top_level.txt,sha256=0YlC1qKpVHsFUr67iBNKVuoJLLo7zQeZbTgiVd7CoZk,21
+reportclassicproject-0.1.dist-info/RECORD,,

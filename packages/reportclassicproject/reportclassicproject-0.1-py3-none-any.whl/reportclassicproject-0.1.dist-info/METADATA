@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: reportclassicproject
+Version: 0.1
+Summary: This is a ReportClassic Project made to print labels and reports in PDF FOR DJANGO FRAMEWORK.
+Home-page: https://github.com/cmsbc/report-classic-project
+Author: Câmara Municipal de São Bernardo do Campo, SP, Brazil
+Author-email: informatica@camarasbc.sp.gov.br
+License: MIT
+Keywords: ReportClassic Project
+License-File: LICENSE.txt
+Requires-Dist: reportlab
+Requires-Dist: django
+Requires-Dist: datetime
+Requires-Dist: requests
+
