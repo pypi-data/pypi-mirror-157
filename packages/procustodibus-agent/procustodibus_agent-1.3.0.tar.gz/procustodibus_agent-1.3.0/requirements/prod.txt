@@ -1,0 +1,5 @@
+docopt-ng
+inflection
+pynacl
+requests
+tabulate
