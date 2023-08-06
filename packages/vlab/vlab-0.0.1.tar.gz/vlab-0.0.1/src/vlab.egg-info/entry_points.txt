@@ -1,0 +1,2 @@
+[console_scripts]
+viso3d = vlab.vis.o3d:cli
