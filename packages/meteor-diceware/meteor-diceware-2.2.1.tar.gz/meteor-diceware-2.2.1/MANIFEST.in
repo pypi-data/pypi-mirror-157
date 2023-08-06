@@ -1,0 +1,6 @@
+include actual_diceware.txt
+exclude diceware.procs.py
+include requirements.txt 
+include snowflake.pdf 
+include init.sql 
+include default.sqlite3 
