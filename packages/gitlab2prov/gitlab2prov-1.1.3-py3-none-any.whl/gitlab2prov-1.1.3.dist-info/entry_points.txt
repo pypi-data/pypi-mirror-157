@@ -1,0 +1,3 @@
+[console_scripts]
+gitlab2prov = gitlab2prov.entrypoints.cli:main
+
