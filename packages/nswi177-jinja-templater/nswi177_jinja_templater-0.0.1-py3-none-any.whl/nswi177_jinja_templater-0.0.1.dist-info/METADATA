@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: nswi177-jinja-templater
+Version: 0.0.1
+Summary: renders Jinja templates
+Home-page: https://gitlab.mff.cuni.cz/teaching/nswi177/2022/student-pokludov/-/tree/master/22
+Author: Vendula Pokludova
+Author-email: vendula.pokludova@outlook.com
+Keywords: learning Jinja templater
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Jinja2 (~=3.1.2)
+Requires-Dist: PyYAML (~=6.0)
+
+Jinja templater
+===============
+
+Running templater with arguments
+
+    --template example.j2 --input example.txt
+
+will load data from example.txt and format them according to
+template in example.j2, producing
+
+    Volume is 42 l (9 imperial gallons).
+
+    The number is 21 (XXI).
+
+    The colors are: red, white, blue.
+
+    This is the content.
