@@ -1,0 +1,3 @@
+[console_scripts]
+laz=laz.main:main
+
