@@ -1,0 +1,7 @@
+click<=8.0,>=7.0
+lxml
+regex
+
+[:python_version < "3.7"]
+dataclasses
+typing
