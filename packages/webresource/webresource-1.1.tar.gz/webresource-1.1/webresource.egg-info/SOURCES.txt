@@ -1,0 +1,16 @@
+CHANGES.rst
+LICENSE.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+docs/source/overview.rst
+webresource/__init__.py
+webresource/_api.py
+webresource/tests.py
+webresource.egg-info/PKG-INFO
+webresource.egg-info/SOURCES.txt
+webresource.egg-info/dependency_links.txt
+webresource.egg-info/not-zip-safe
+webresource.egg-info/requires.txt
+webresource.egg-info/top_level.txt
