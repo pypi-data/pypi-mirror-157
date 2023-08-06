@@ -1,0 +1,143 @@
+@import "variables";
+@import "vendor/bootstrap/scss/bootstrap";
+@import "bootswatch";
+
+$fa-font-path: "vendor/fork-awesome/fonts";
+@import "vendor/fork-awesome/scss/fork-awesome";
+
+#login-salsa-logo {
+  display: block;
+  height: 2em;
+}
+
+#main, .page {
+  padding-top: 1em;
+}
+
+a.btn {
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+// FIXME rewrite in proper SCSS
+//////////////////////////////////////////////////////////////////
+a {
+    color: #d70751;
+}
+a:hover {
+    color: #883535;
+}
+#main td.title {
+    background: #343a40 !important;
+}
+#main td.title, #main td.title a {
+    color: white;
+}
+//////////////////////////////////////////////////////////////////
+
+// Registration form
+$gray-light: $gray-600;
+
+form#register {
+  #hidden-next {
+    display: none;
+  }
+
+  .pgp-fingerprints {
+    font-family: monospace;
+  }
+}
+
+table.register-details {
+  @extend .table-striped;
+  th {
+    max-width: 10rex;
+  }
+}
+
+table.register-invoice {
+  @extend .table;
+
+  tr.line {
+    td {
+      text-align: right;
+    }
+    td:first-child {
+      text-align: left;
+    }
+  }
+  tr.total td {
+    text-align: right;
+  }
+}
+ol.registration-steps {
+  li.current-step {
+    font-weight: bold;
+  }
+  li:not(.current-step) {
+    a.inaccessible-step {
+      color: $gray-light;
+    }
+  }
+}
+
+// Front Desk interface
+.boolean {
+  .fa {
+    font-size: 150%;
+  }
+
+  .fa-check-circle {
+    color: green;
+  }
+
+  .fa-times {
+    color: red;
+  }
+}
+
+.not-paid {
+  color: red;
+  font-weight: 900;
+}
+
+li.invoice {
+  @extend .alert;
+}
+li.invoice-draft {
+  @extend .alert-danger;
+}
+li.invoice-pending {
+  @extend .alert-warning;
+}
+li.invoice-paid {
+  @extend .alert-success;
+}
+
+#main table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+  td, th {
+    padding: 5px;
+    border: 1px solid #babdb6;
+  }
+  td.scheduleslot,
+  th.scheduleslot-header {
+    width: 12ch;
+    hr {
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+  }
+  td.scheduleslot {
+    .local_time {
+      font-weight: bold;
+    }
+    .dc_time {
+      color: #666;
+    }
+  }
+}
+
+// vim: set et ts=2:
