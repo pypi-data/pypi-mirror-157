@@ -1,0 +1,9 @@
+s3_ocr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+s3_ocr/__main__.py,sha256=8hDtWlaFZK24KhfNq_ZKgtXqYHsDQDetukOCMlsbW0Q,59
+s3_ocr/cli.py,sha256=_EnpmU_j4IWTEVFvB61XwT5hesyA0b6avZUgoy52w-M,14880
+s3_ocr-0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+s3_ocr-0.4.dist-info/METADATA,sha256=RObicL4CyUG6wo0CTzxyTPtcMzJwXEVoHbutCTfM1RM,10534
+s3_ocr-0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+s3_ocr-0.4.dist-info/entry_points.txt,sha256=vjb7jo_F0BMDOwpXQnWx9SvMes19W07foLj38YpBeXo,42
+s3_ocr-0.4.dist-info/top_level.txt,sha256=lDfRYt6wD1IlfPd3xn0N71hIyQvz7aL7hOVlbPUnl8Y,7
+s3_ocr-0.4.dist-info/RECORD,,
