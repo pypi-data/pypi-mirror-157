@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: PDPbox1
+Version: 0.2.5
+Summary: python partial dependence plot toolbox
+Home-page: https://github.com/AtrCheema/PDPbox1
+Author: AtrCheema
+Author-email: ather_abbas786@yahoo.com
+License: MIT
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Provides-Extra: all
+Requires-Dist: pandas ; extra == 'all'
+Requires-Dist: numpy ; extra == 'all'
+Requires-Dist: scipy ; extra == 'all'
+Requires-Dist: joblib ; extra == 'all'
+Requires-Dist: psutil ; extra == 'all'
+Requires-Dist: matplotlib ; extra == 'all'
+Requires-Dist: sklearn ; extra == 'all'
+
