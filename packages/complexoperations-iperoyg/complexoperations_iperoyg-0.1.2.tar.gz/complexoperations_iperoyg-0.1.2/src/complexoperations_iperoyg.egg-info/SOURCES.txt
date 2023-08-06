@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/apicomplexoperations/__init__.py
+src/apicomplexoperations/main.py
+src/apicomplexoperations/up.py
+src/complexoperations/JustSomeMath.py
+src/complexoperations/JustSomeString.py
+src/complexoperations/__init__.py
+src/complexoperations_iperoyg.egg-info/PKG-INFO
+src/complexoperations_iperoyg.egg-info/SOURCES.txt
+src/complexoperations_iperoyg.egg-info/dependency_links.txt
+src/complexoperations_iperoyg.egg-info/top_level.txt
