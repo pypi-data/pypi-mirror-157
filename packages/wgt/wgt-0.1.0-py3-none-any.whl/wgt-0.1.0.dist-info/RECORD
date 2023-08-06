@@ -1,0 +1,7 @@
+wgt/__init__.py,sha256=u1ul1u9oCGDGmBEL62BbDO2stLOaIgLkYA2wGKG432A,72
+wgt/wgt.py,sha256=I8P5NHCf9NX4svtf9s-Yx3GrDSvSTz_mYzf1QandSGk,1478
+wgt-0.1.0.dist-info/entry_points.txt,sha256=HI-3WSUj17SlbdbLZwveV29x8ksjjYxjgUI3CBF2inQ,36
+wgt-0.1.0.dist-info/LICENSE,sha256=b3vxbrZdT3C2o9vbsHPxlHbXEV7h0F6N3JsoviOHHHk,1097
+wgt-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+wgt-0.1.0.dist-info/METADATA,sha256=VB-g8a9NxhyNlcpZaH_GtZxVWA56QanDwa8Ob0yvo7s,336
+wgt-0.1.0.dist-info/RECORD,,
