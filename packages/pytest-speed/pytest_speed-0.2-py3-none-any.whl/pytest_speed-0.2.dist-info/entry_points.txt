@@ -1,0 +1,5 @@
+[console_scripts]
+pytest-speed = pytest_speed.cli:cli
+
+[pytest11]
+speed = pytest_speed

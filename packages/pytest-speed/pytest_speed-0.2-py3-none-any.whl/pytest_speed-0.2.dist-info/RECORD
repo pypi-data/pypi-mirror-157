@@ -1,0 +1,11 @@
+pytest_speed/__init__.py,sha256=iNhAGb0AWhbB25yWQHCcrHod_KJfFCRC-OQLJVx71a8,3789
+pytest_speed/benchmark.py,sha256=lre6tM19qLDoqtttMggeSkMkkPfe02YmxLC-O7lH_BE,8960
+pytest_speed/cli.py,sha256=uGSSTeLz4SPue69uWk-UULyetV17dMPTtOtmmK5gL0g,5227
+pytest_speed/save.py,sha256=MkU8n2TEMtyjNAc7cAc9nFKJZLZUFN-uIIs-Dd3rb6U,1903
+pytest_speed/utils.py,sha256=wvtrnlCfDA_ksD7f2YQKkxb4TnQoioxDoCN442_yDsM,2987
+pytest_speed/version.py,sha256=5cibNIIMWcndeIlQvkSMegmyJwm_DCZbcIPFJW-RMXw,16
+pytest_speed-0.2.dist-info/METADATA,sha256=8AyQfaklYXcgmvTbCyRwYqf0hhgwaGXAfh_88ga2Ynw,1624
+pytest_speed-0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pytest_speed-0.2.dist-info/entry_points.txt,sha256=Gbxzi6mfWxUwFOelcy4h7G9Ugq1XS6lKPteuCRcOEiU,87
+pytest_speed-0.2.dist-info/top_level.txt,sha256=uLErxwxIvySJgcnupR8l7UPBnhRPSGJiYw1rkc_xbYc,13
+pytest_speed-0.2.dist-info/RECORD,,
