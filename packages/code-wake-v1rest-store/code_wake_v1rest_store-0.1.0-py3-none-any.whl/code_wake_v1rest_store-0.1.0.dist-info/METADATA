@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: code-wake-v1rest-store
+Version: 0.1.0
+Summary: Code Wake V1 REST API store adapter
+Home-page: https://github.com/mwri/pycodewake-v1rest-store
+Author: Michael Wright
+Author-email: mjw@methodanalysis.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: code-wake (~=0.1.0)
+Requires-Dist: requests (==2.28.0)
+Provides-Extra: dev
+Requires-Dist: black (==22.3.0) ; extra == 'dev'
+Requires-Dist: code-wake-sql14-store (~=0.1.0) ; extra == 'dev'
+Requires-Dist: code-wake-v1wsgi-service (~=0.1.0) ; extra == 'dev'
+Requires-Dist: coverage (==6.2) ; extra == 'dev'
+Requires-Dist: flask (==2.1.2) ; extra == 'dev'
+Requires-Dist: isort (==5.10.1) ; extra == 'dev'
+Requires-Dist: mypy (==0.961) ; extra == 'dev'
+Requires-Dist: pytest (==7.0.1) ; extra == 'dev'
+Requires-Dist: types-requests (==2.28.0) ; extra == 'dev'
+
+# Python Code Wake V1 REST API store adapter (pycodewake-v1rest-store)
+
+[![test](https://github.com/mwri/pycodewake-v1rest-store/actions/workflows/test.yml/badge.svg)](https://github.com/mwri/pycodewake-v1rest-store/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/mwri/pycodewake-v1rest-store/branch/main/graph/badge.svg)](https://codecov.io/gh/mwri/pycodewake-v1rest-store)
+
+This store adapter provides backing via the V1 REST API for Code Wake. A server
+implementing this API may be achieved by using pycodewake-v1wsgi-service (a middleware
+you could use to provide the API via a Flask server say, if that suits.
+
+For example:
+
+```python
+import code_wake
+from code_wake_v1rest_store import V1RestStore
+
+cwproc = code_wake.Process(
+    app_name="my_app",
+    app_vsn="1.2.3",
+    env_name="production",
+    store=V1RestStore("https://code.wake.server/path/to/api"),
+)
+```
+
+
