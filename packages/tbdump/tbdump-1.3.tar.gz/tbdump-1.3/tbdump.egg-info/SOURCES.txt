@@ -1,0 +1,8 @@
+README.md
+setup.py
+tbdump/__init__.py
+tbdump.egg-info/PKG-INFO
+tbdump.egg-info/SOURCES.txt
+tbdump.egg-info/dependency_links.txt
+tbdump.egg-info/requires.txt
+tbdump.egg-info/top_level.txt
