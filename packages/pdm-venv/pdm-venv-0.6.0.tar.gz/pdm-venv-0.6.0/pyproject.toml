@@ -1,0 +1,110 @@
+[build-system]
+requires = [
+    "pdm-pep517",
+]
+build-backend = "pdm.pep517.api"
+
+[project]
+name = "pdm-venv"
+description = "(Deprecated)A plugin for pdm that enables virtualenv management"
+authors = [
+    { name = "Frost Ming", email = "mianghong@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "virtualenv>=20.4",
+    "platformdirs>=2.4",
+    "pdm<2,>=1.13.0",
+]
+dynamic = []
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+version = "0.6.0"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Repository = "https://github.com/pdm-project/pdm-venv"
+Homepage = "https://github.com/pdm-project/pdm-venv"
+Documentation = "https://pdm-project.github.io/pdm-venv"
+
+[project.optional-dependencies]
+doc = [
+    "mkdocs>=1.1",
+    "mkdocs-material>=6.2",
+]
+
+[project.entry-points.pdm]
+venv = "pdm_venv.plugin:entry_point"
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.build]
+package-dir = "src"
+
+[tool.pdm.scripts]
+release = "python -m tasks.release"
+test = "pytest tests/"
+lint = "pre-commit run --all-files"
+
+[tool.pdm.scripts.doc]
+shell = "cd docs && mkdocs serve"
+help = "Start the dev server for doc preview"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=6.1",
+    "towncrier>=19.2",
+    "parver>=0.3",
+    "pytest-mock>=3.5",
+    "pre-commit>=2.15",
+    "nox>=2021.6",
+]
+
+[tool.black]
+line-length = 88
+exclude = "/(\n    \\.eggs\n  | \\.git\n  | \\.hg\n  | \\.mypy_cache\n  | \\.tox\n  | \\.venv\n  | _build\n  | buck-out\n  | build\n  | dist\n  | tests/fixtures\n)/\n"
+
+[tool.towncrier]
+package = "pdm_venv"
+filename = "CHANGELOG.md"
+issue_format = "[#{issue}](https://github.com/pdm-project/pdm-venv/issues/{issue})"
+directory = "news/"
+start_string = "<!-- insertion marker -->"
+title_format = "[v{version}](https://github.com/pdm-project/pdm-venv/releases/tag/{version}) ({project_date})"
+template = "news/towncrier_template.md"
+underlines = "-~^"
+type = [
+    { directory = "feature", name = "Features & Improvements", showcontent = true },
+    { directory = "bugfix", name = "Bug Fixes", showcontent = true },
+    { directory = "doc", name = "Improved Documentation", showcontent = true },
+    { directory = "dep", name = "Dependencies", showcontent = true },
+    { directory = "removal", name = "Removals and Deprecations", showcontent = true },
+    { directory = "misc", name = "Miscellany", showcontent = true },
+]
+
+[tool.isort]
+profile = "black"
+atomic = true
+skip_glob = [
+    "*/setup.py",
+]
+filter_files = true
+known_first_party = [
+    "pdm_venv",
+]
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
