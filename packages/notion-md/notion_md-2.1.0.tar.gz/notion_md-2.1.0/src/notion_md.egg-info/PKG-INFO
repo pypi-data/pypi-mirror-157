@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: notion-md
+Version: 2.1.0
+Summary: A package for notion2md
+Home-page: https://github.com/qxxiao/notion2md
+Author: qxxiao
+Author-email: 1063064004@qq.com
+License: MIT
+Platform: all
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+
+notion2md package
+
+use offical notion api with [**notion_client**](https://github.com/ramnes/notion-sdk-py)    
+
+Convert multiple notion pages to markdown files and try to keep the formatting usable.
