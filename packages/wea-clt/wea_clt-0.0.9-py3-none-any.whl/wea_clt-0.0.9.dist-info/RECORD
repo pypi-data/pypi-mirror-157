@@ -1,0 +1,15 @@
+wea/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wea/wea.py,sha256=-ouEsbNgz_wcKnzIuj6cS06xWyefBx3nFwp_gSousNI,2699
+wea/backend/config.py,sha256=ar5Cvo0wA53BbcDf02YW29Xotqb-H8AzOYJ8vmmuUPk,4489
+wea/backend/nominatim.py,sha256=_wiuxhbyqE_4me0He2nv5gElBOqZHo2jIhO2a_mpxfA,3703
+wea/backend/openweather.py,sha256=suyA2CBVNmveZCNqRphrDNiLKKWbC8e4GwxkIwB7Q3Q,1976
+wea/backend/weather.py,sha256=StEQYjIJEPkM3a2dnXx2H9MUKbDLixgiTu_cGMVGriI,7247
+wea/frontend/art.py,sha256=zkl9N72cbRh4yDJbcdViXlo9piYvmFQDADVM7yAFvkE,5609
+wea/frontend/translations.py,sha256=GmC0OdolLGpPMzBkGZttsnGuZSJLAmWMALF-wAbC0Uo,10194
+wea/frontend/ui.py,sha256=PJagtLcPn-141RP0reS4sSDbLffKRxddBLCKqrlj4C0,12489
+wea_clt-0.0.9.dist-info/LICENSE,sha256=mjuuaeU2c4O51Y8rbq3ROeBwTx1UnUvfCQ_SQXCi_7c,1086
+wea_clt-0.0.9.dist-info/METADATA,sha256=R-KjArvmix87c1lcRPZ2cQO1ju20-Jk3XeCsoE304Qc,3034
+wea_clt-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wea_clt-0.0.9.dist-info/entry_points.txt,sha256=29ZVA3hC2isdk3mne8F-66WAA3RHk4IJiwR8c5Ts9Jo,37
+wea_clt-0.0.9.dist-info/top_level.txt,sha256=t-AbStgMVR3phyaCIk1OdsGuVEo46LCG656K1nG3S-Y,4
+wea_clt-0.0.9.dist-info/RECORD,,
