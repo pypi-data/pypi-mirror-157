@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: cubeofrubik
+Version: 0.0.1
+Summary: A rubiks cube model and solver
+Author-email: Breno Levi <brenolevi@ymail.com>
+License: MIT License        
+        Copyright (c) 2022 Breno        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.        
+Project-URL: Homepage, https://github.com/blevic/rubikscube
+Project-URL: Bug Tracker, https://github.com/blevic/rubikscube/issues
+Keywords: rubik's cube,layer-by-layer,singmaster,puzzle,solver
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# rubikscube
+Rubik's cube model and solver
+
+To install:
+    
+```bash
+pip install cubeofrubik
+```
+
+To use:
+```python
+>>> from rubikscube import RubiksCube
+
+>>> cube = RubiksCube.RubiksCube()
+
+>>> cube.draw()
+⬛ ⬛ ⬛ ⬜ ⬜ ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+⬛ ⬛ ⬛ ⬜ ⬜ ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+⬛ ⬛ ⬛ ⬜ ⬜ ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+🟧 🟧 🟧 🟩 🟩 🟩 🟥 🟥 🟥 🟦 🟦 🟦
+🟧 🟧 🟧 🟩 🟩 🟩 🟥 🟥 🟥 🟦 🟦 🟦
+🟧 🟧 🟧 🟩 🟩 🟩 🟥 🟥 🟥 🟦 🟦 🟦
+⬛ ⬛ ⬛ 🟨 🟨 🟨 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+⬛ ⬛ ⬛ 🟨 🟨 🟨 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+⬛ ⬛ ⬛ 🟨 🟨 🟨 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+>>> cube.scramble()
+'B′DU′F′DB2FRDBF2URBDB2U′D′L2D'
+
+>>> cube.draw()
+⬛ ⬛ ⬛ 🟧 🟦 🟦 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+⬛ ⬛ ⬛ ⬜ ⬜ 🟩 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+⬛ ⬛ ⬛ 🟦 🟨 ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+🟩 🟥 🟨 🟧 🟥 🟩 🟥 🟥 ⬜ 🟥 🟥 🟨
+🟩 🟧 ⬜ 🟦 🟩 🟨 🟧 🟥 🟧 🟦 🟦 🟧
+🟧 🟩 🟨 🟩 🟦 🟨 🟥 🟧 ⬜ 🟧 🟩 🟩
+⬛ ⬛ ⬛ 🟥 🟨 🟦 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+⬛ ⬛ ⬛ 🟨 🟨 ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+⬛ ⬛ ⬛ ⬜ ⬜ 🟦 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+
+>>> cube.solve()
+'DU′R2U′B2L′BUB′RU2R′U′RUR′FU2F′R′U′RFUF′U′FUF′LUL′U′B′U′BU2F′U′FURUR′U′LUL′U′B′U′BUFUF′U′L′U′LU2FRUR′U′RUR′U′F′RUR′URU2R′U2BUB′UBU2B′URDR′D′RDR′D′URDR′D′RDR′D′URDR′D′RDR′D′U2'
+
+>>> cube.draw()
+⬛ ⬛ ⬛ 🟨 🟨 🟨 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+⬛ ⬛ ⬛ 🟨 🟨 🟨 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+⬛ ⬛ ⬛ 🟨 🟨 🟨 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+🟧 🟧 🟧 🟦 🟦 🟦 🟥 🟥 🟥 🟩 🟩 🟩
+🟧 🟧 🟧 🟦 🟦 🟦 🟥 🟥 🟥 🟩 🟩 🟩
+🟧 🟧 🟧 🟦 🟦 🟦 🟥 🟥 🟥 🟩 🟩 🟩
+⬛ ⬛ ⬛ ⬜ ⬜ ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+⬛ ⬛ ⬛ ⬜ ⬜ ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+⬛ ⬛ ⬛ ⬜ ⬜ ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+
+>>> cube.move("RUR′U′")
+>>> cube.draw()
+⬛ ⬛ ⬛ 🟨 🟨 🟧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+⬛ ⬛ ⬛ 🟨 🟨 🟦 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+⬛ ⬛ ⬛ 🟨 🟨 🟦 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+🟩 🟧 🟧 🟦 🟦 ⬜ 🟥 🟥 🟨 🟩 🟥 🟥
+🟧 🟧 🟧 🟦 🟦 🟨 🟩 🟥 🟥 🟩 🟩 🟩
+🟧 🟧 🟧 🟦 🟦 🟦 🟨 🟥 🟥 🟩 🟩 🟩
+⬛ ⬛ ⬛ ⬜ ⬜ 🟥 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+⬛ ⬛ ⬛ ⬜ ⬜ ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+⬛ ⬛ ⬛ ⬜ ⬜ ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 
+```
