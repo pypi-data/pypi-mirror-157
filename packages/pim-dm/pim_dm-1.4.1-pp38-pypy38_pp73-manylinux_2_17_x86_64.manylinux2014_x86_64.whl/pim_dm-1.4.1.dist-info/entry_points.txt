@@ -1,0 +1,2 @@
+[console_scripts]
+pim-dm = pimdm.Run:main
