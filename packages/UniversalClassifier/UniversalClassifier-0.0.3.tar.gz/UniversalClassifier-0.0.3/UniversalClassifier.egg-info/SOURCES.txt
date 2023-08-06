@@ -1,0 +1,8 @@
+README.md
+setup.py
+UniversalClassifier/__init__.py
+UniversalClassifier.egg-info/PKG-INFO
+UniversalClassifier.egg-info/SOURCES.txt
+UniversalClassifier.egg-info/dependency_links.txt
+UniversalClassifier.egg-info/requires.txt
+UniversalClassifier.egg-info/top_level.txt

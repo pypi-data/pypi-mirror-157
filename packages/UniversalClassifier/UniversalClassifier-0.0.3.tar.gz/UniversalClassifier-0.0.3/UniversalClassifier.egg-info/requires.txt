@@ -1,0 +1,9 @@
+ftfy
+regex
+tqdm
+torch
+Pillow
+torchvision
+torchaudio
+
+[dev]
