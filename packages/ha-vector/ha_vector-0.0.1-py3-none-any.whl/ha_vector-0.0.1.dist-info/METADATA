@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ha-vector
+Version: 0.0.1
+Summary: Home Assistant Vector SDK implementation
+Home-page: https://github.com/mtrab/ha_vector
+Author: Malene Trab
+Author-email: malene@trab.dk
+License: MIT
+Project-URL: Bug Tracker, https://github.com/mtrab/ha_vector/issues
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow (>=3.3)
+Requires-Dist: aiogrpc (>=1.4)
+Requires-Dist: cryptography (>=36.0.2)
+Requires-Dist: flask (>=2.1.0)
+Requires-Dist: googleapis-common-protos (>=1.56.0)
+Requires-Dist: grpc-tools (>=0.0.1)
+Requires-Dist: grpcio-tools (>=1.47.0)
+Requires-Dist: numpy (>=1.11)
+Requires-Dist: requests (>=2.0.0)
+
+<a href="https://www.buymeacoffee.com/mtrab" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
+# ha_vector
+
+This is a custom PyPI module for enabling communication between [Home Assistant](https://home-assistant.io) and Vector robots.<br/>
+<br/>
+This is a rewrite of the public [Anki SDK](https://github.com/anki/vector-python-sdk)
+
+
