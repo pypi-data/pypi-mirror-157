@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: chrisrichardmiles
+Version: 0.0.2
+Summary: Helpful tools for machine learning and coding.
+Home-page: https://github.com/chrisrichardmiles/chrisrichardmiles/tree/master/
+Author: Chris Richard Miles
+Author-email: chrisrichardmiles@gmail.com
+License: Apache Software License 2.0
+Keywords: machine learning coding
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pip
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scipy
+Requires-Dist: psutil
+Requires-Dist: lightgbm
+Requires-Dist: neptune-client
+Requires-Dist: neptune-lightgbm
+Requires-Dist: kaggle
+Provides-Extra: dev
+
+# chrisrichardmiles
+> Helpful tools for machine learning and coding.
+
+
+## Install
+
+`pip install chrisrichardmiles`
+
+

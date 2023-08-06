@@ -1,0 +1,14 @@
+chrisrichardmiles/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+chrisrichardmiles/_nbdev.py,sha256=S8H3qxa9Ku9BBeU96E0OF8IJDB8NoBwajhylzHiL9xs,3796
+chrisrichardmiles/core.py,sha256=y_omGNpa3ZnBz20-03ODUOJxtOW2r5OBLog-j7DZsQs,13500
+chrisrichardmiles/m5/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chrisrichardmiles/m5/daily_models.py,sha256=SGtNgtRQu6UznGqD04g5fvO7z5PFrq6PvC_FEXo-krs,6704
+chrisrichardmiles/m5/fe.py,sha256=ENJgVMBYF3pNodyyRUTZ8vTOCWctkaVKAJAync-Rj7I,43460
+chrisrichardmiles/m5/metric.py,sha256=zD6z4KodKXooKV5yA7sPIlG48vRuxUrTZGR2XAI31GA,18842
+chrisrichardmiles/m5/oos.py,sha256=AwR20Hy38ad428rMk1ptOUNVHfUWsjm_Xm-R3MKqJ6w,5064
+chrisrichardmiles-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+chrisrichardmiles-0.0.2.dist-info/METADATA,sha256=pG07kqZIh-bMVtlCPRfRZcSd2UVENZK7Mb662tjrJxQ,1185
+chrisrichardmiles-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+chrisrichardmiles-0.0.2.dist-info/entry_points.txt,sha256=rZD5lAyzI-uv7QXbyAhE-eeq1-EkkB4niy9_QUP3xuY,938
+chrisrichardmiles-0.0.2.dist-info/top_level.txt,sha256=EAbkcGo6XEUYql5McPb-YTAll4tNOHpI9LBOoWbmdLI,18
+chrisrichardmiles-0.0.2.dist-info/RECORD,,
