@@ -1,0 +1,61 @@
+[tool]
+[tool.poetry]
+name = "ssl_certinfo"
+version = "1.1.2"
+description = "SSL CertInfo displays expiration dates and other information for SSL certificates from a set of hosts."
+authors = ["StdTom <stdtom@gmx.net>"]
+license = "Apache Software License 2.0"
+
+readme = "README.rst"
+
+homepage = "https://github.com/stdtom/ssl_certinfo"
+repository = "https://github.com/stdtom/ssl_certinfo"
+
+classifiers = [
+#    "Development Status :: 1 - Planning",
+#    "Development Status :: 2 - Pre-Alpha",
+#    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
+#    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyOpenSSL = "*"
+PyYAML = "*"
+tqdm = "*"
+pandas = "*"
+tabulate = "*"
+
+[tool.poetry.dev-dependencies]
+black = "21.7b0"
+bump2version = "*"
+coverage = "*"
+flake8 = "*"
+isort = "*"
+pre-commit = "*"
+pytest = "*"
+pytest-runner = "*"
+pytest-timeout = "*"
+Sphinx = "*"
+tox = "*"
+twine = "*"
+watchdog = "*"
+wheel = "*"
+"proxy.py" = "2.3.1"
+click = "<=8.0.4"
+pyinstaller = "*"
+
+[tool.poetry.scripts]
+ssl_certinfo = "ssl_certinfo.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
