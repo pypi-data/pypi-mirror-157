@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyzab
+Version: 0.0.10
+Summary: Simple Python implementation of the Zabbix API.
+Home-page: https://github.com/LucasRochaAbraao/pyzab
+Author: Lucas Rocha Abraão
+Author-email: lucasrabraao@gmail.com
+Project-URL: Bug Tracker, https://github.com/LucasRochaAbraao/pyzab
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+
+# pyzab
+Simple Python implementation of the Zabbix API.
