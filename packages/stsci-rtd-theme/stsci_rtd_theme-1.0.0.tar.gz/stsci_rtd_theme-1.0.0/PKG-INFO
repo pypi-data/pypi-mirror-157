@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: stsci_rtd_theme
+Version: 1.0.0
+Summary: STScI Branded Sphinx theme
+Home-page: https://github.com/spacetelescope/stsci_rtd_theme/
+Author: STScI
+Author-email: help@stsci.edu
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+License-File: LICENSE
+License-File: LICENSE.rst
+
+UNKNOWN
+
