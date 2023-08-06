@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+timeprofiles.egg-info/PKG-INFO
+timeprofiles.egg-info/SOURCES.txt
+timeprofiles.egg-info/dependency_links.txt
+timeprofiles.egg-info/requires.txt
+timeprofiles.egg-info/top_level.txt
