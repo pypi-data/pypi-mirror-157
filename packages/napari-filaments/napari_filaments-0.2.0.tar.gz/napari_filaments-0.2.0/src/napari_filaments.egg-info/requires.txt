@@ -1,0 +1,13 @@
+magic-class>=0.6.7
+magicgui
+matplotlib
+numpy
+qtpy
+
+[testing]
+napari
+pyqt5
+pytest
+pytest-cov
+pytest-qt
+tox
