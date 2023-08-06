@@ -1,0 +1,10 @@
+gotyno_validation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gotyno_validation/encoding.py,sha256=pG-2P67ElB8BFmvohFocr_AcvWb7YQBZuAf59UnDXhg,3889
+gotyno_validation/gotyno_output.py,sha256=zO8RA-pKRll_5fvS4pFO06P9RDnDanUYmiNRcaQUKtw,11000
+gotyno_validation/notifications.py,sha256=epj8yq3LWvIHw41bnBbQvh6L67K2fK-Tloobdw9aJ4o,20382
+gotyno_validation/validation.py,sha256=HgdC96zUA6uBPJoqTZps7U1NEVwlWgXjayG7Eelgo-Q,14176
+gotyno_validation/validation_test.py,sha256=UrwaEdEKBeaJ6R873MZpeWSUk5Fvi3S3lgCghyEsato,9783
+gotyno_validation-0.0.3.dist-info/METADATA,sha256=yVnadDCwsBM6Rw5ctgLaw_-VR4ltPG30Dm5zmoUGYiU,500
+gotyno_validation-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gotyno_validation-0.0.3.dist-info/top_level.txt,sha256=QDsjDozrqJWD_s7EprWViMSi6J022si0rZxbjlD5-jQ,18
+gotyno_validation-0.0.3.dist-info/RECORD,,
