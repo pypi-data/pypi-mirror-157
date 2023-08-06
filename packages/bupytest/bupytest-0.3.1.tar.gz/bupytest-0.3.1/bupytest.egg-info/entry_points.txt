@@ -1,0 +1,2 @@
+[console_scripts]
+bupytest = bupytest.main:main
