@@ -1,0 +1,12 @@
+napari_ome_zarr/__init__.py,sha256=u1kupXSjMrRuPLRa6VQqKSyZB807ZGpPlO0utcnP2Ks,151
+napari_ome_zarr/_reader.py,sha256=IfMgcjE5sX3An67nQoso4hi8i7Mk28p23lXk45BdnUg,5979
+napari_ome_zarr/_version.py,sha256=ufze38oNuGbrFijv8Po7tPe-GVPhs4n88KfUQUQ9ink,176
+napari_ome_zarr/napari.yaml,sha256=Wg-vSXkmBM3TNhzMHj6e-ColQKY2dfDCDDm2_9UE2rs,346
+napari_ome_zarr/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_ome_zarr/_tests/test_reader.py,sha256=vaTI9CyAbA5vQn7DVIBbaBKy0TQMHZSCr7MwrWtyJMM,4135
+napari_ome_zarr-0.5.1.dist-info/LICENSE,sha256=18tPy-Qb41aFImRhjJn4MxfhE_HYyqWZeg7GrpT-XeM,1482
+napari_ome_zarr-0.5.1.dist-info/METADATA,sha256=tSVlDasIB67BkvOGzCxn3L8OMCgO7Ygn4J_d42rh498,4425
+napari_ome_zarr-0.5.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_ome_zarr-0.5.1.dist-info/entry_points.txt,sha256=Y3rbo3UVGXggJMmXp1XvD0OUFsFuck1creASEaw__7w,64
+napari_ome_zarr-0.5.1.dist-info/top_level.txt,sha256=4GXoT-36mS5X0pZxQy9jKpXIVot8gxZdFjk2_6ILU2g,16
+napari_ome_zarr-0.5.1.dist-info/RECORD,,
