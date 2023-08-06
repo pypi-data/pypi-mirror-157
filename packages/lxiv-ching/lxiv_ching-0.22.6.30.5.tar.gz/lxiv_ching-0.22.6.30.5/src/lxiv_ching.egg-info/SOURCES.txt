@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/lxiv_ching/__init__.py
+src/lxiv_ching/db.py
+src/lxiv_ching/lxiv_ching.py
+src/lxiv_ching.egg-info/PKG-INFO
+src/lxiv_ching.egg-info/SOURCES.txt
+src/lxiv_ching.egg-info/dependency_links.txt
+src/lxiv_ching.egg-info/top_level.txt
