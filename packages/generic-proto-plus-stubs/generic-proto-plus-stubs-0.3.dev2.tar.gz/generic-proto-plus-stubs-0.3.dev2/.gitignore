@@ -1,0 +1,9 @@
+*
+!*/
+!/.github/**
+!/.gitignore
+!/proto-stubs/**
+!/pyproject.toml
+!/README.md
+!/LICENSE
+__pycache__
