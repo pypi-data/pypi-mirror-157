@@ -1,0 +1,12 @@
+torch>=1.5
+torchvision>=0.6.0
+pandas
+pytest
+pysbd
+layoutparser[effdet]>=0.2
+transformers==4.5
+datasets
+pdfplumber
+pdf2image
+tqdm
+scikit-learn
