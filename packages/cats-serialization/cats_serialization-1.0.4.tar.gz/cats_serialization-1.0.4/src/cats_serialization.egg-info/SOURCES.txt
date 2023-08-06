@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/cats_serialization/__init__.py
+src/cats_serialization/fields.py
+src/cats_serialization/generic_field.py
+src/cats_serialization/scheme.py
+src/cats_serialization/utils.py
+src/cats_serialization.egg-info/PKG-INFO
+src/cats_serialization.egg-info/SOURCES.txt
+src/cats_serialization.egg-info/dependency_links.txt
+src/cats_serialization.egg-info/top_level.txt
