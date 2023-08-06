@@ -1,0 +1,9 @@
+LICENSE,sha256=8VgBE2OC5Nns5Pnbl19h-AjUaUvjeVzpwJbxa8S0r6k,1081
+pytcm/__init__.py,sha256=hQ5eBcCqp4VFntsR5MsZyxU3fJjA05tH72hVoX-770Q,187
+pytcm/command.py,sha256=sPEc-91SMHaQ1_bFTsKwbMDNxI4XPoT6Ep-3lyOHZ4k,2064
+pytcm/options.py,sha256=sLPkC7CqkeFHuN5xt7WxC6C1qUhQatNcgY1cXm1Oy_8,1393
+pytcm/utils.py,sha256=0SslSX_UBfOJPkufI6kfarA1nbQjw7JVdsbQeGlzQpU,751
+pytcm-0.5.4.dist-info/LICENSE,sha256=8VgBE2OC5Nns5Pnbl19h-AjUaUvjeVzpwJbxa8S0r6k,1081
+pytcm-0.5.4.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pytcm-0.5.4.dist-info/METADATA,sha256=16DnVHLYJkg_XF0KuQkKcBe8iESRj6xdkBUszTlUw6Y,2153
+pytcm-0.5.4.dist-info/RECORD,,
