@@ -1,0 +1,8 @@
+setup.py
+WizDriver/WizDriver.py
+WizDriver/__init__.py
+wiznavigator.egg-info/PKG-INFO
+wiznavigator.egg-info/SOURCES.txt
+wiznavigator.egg-info/dependency_links.txt
+wiznavigator.egg-info/requires.txt
+wiznavigator.egg-info/top_level.txt
