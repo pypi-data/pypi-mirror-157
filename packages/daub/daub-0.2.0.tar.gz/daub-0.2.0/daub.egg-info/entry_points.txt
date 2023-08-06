@@ -1,0 +1,3 @@
+[console_scripts]
+daub = daub.cli:app
+

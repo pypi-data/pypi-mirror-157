@@ -1,0 +1,4 @@
+markdown2
+beautifulsoup4
+typer
+pyppeteer
