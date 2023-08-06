@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+addons_installer/__init__.py
+addons_installer/__version__.py
+addons_installer/addons_installer.py
+addons_installer/api.py
+addons_installer/git_addons.py
+addons_installer/local_addons.py
+addons_installer.egg-info/PKG-INFO
+addons_installer.egg-info/SOURCES.txt
+addons_installer.egg-info/dependency_links.txt
+addons_installer.egg-info/requires.txt
+addons_installer.egg-info/top_level.txt
