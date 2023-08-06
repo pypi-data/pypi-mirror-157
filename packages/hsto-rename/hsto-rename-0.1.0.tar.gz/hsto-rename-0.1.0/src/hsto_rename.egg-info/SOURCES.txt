@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/hsto-rename/__init__.py
+src/hsto-rename/__main__.py
+src/hsto_rename.egg-info/PKG-INFO
+src/hsto_rename.egg-info/SOURCES.txt
+src/hsto_rename.egg-info/dependency_links.txt
+src/hsto_rename.egg-info/requires.txt
+src/hsto_rename.egg-info/top_level.txt
