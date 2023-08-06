@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+boa/__init__.py
+boa/contract.py
+boa/env.py
+boa/interpret.py
+titanoboa.egg-info/PKG-INFO
+titanoboa.egg-info/SOURCES.txt
+titanoboa.egg-info/dependency_links.txt
+titanoboa.egg-info/top_level.txt
