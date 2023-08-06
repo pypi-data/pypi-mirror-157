@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: visitingcard
+Version: 0.0.2
+Summary: Proteus visiting card ocr File
+Home-page: UNKNOWN
+Author: Proteus Technology PVT. LTD.
+Author-email: <apps@baseinformation.com>
+License: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: opencv-python
+Requires-Dist: pytesseract
+Requires-Dist: kraken
+Requires-Dist: pyzbar
+Requires-Dist: pdf2image
+
+Proteus visiting card ocr File
+
+
