@@ -1,0 +1,3 @@
+[console_scripts]
+cougar-log=cougar_log.main:app
+
