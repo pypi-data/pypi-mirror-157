@@ -1,0 +1,8 @@
+indoNLP/__init__.py,sha256=stMRlGPB9HFbe36_HxrRQjPGbGgkqXAWERt5fUs4eAU,209
+indoNLP/preprocessing/__init__.py,sha256=SXESZ7ZNzgbeUJp-sxwDfaY5d3QQ_oDOe4SPyVdLu5Y,5103
+indoNLP/preprocessing/slang_data.py,sha256=EQP65APAOp5cOKpL3k68cpcUhV80tRmpwE98kPluuhw,111965
+indoNLP/preprocessing/stopwords_data.py,sha256=H_TQSBAenD8-YZMEpP49ZN13WsfczBlbwo1raZbCZ50,11928
+indonlp-0.1.1.dist-info/LICENSE,sha256=xaWHF9bud65e4sARkY_0p7dTHl9i_ael51QO5DKBFfk,1070
+indonlp-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+indonlp-0.1.1.dist-info/METADATA,sha256=AiOxLrVNYPohvpelbRyZYBpm-qgaaiUo0Q850SOMqtA,3232
+indonlp-0.1.1.dist-info/RECORD,,
