@@ -1,0 +1,14 @@
+{% for resource in located_resources %}{{ resource.resource }}
+{{
+  resource.locations|as_table(
+    structure=(
+      ("country", "Country"),
+      ("city", "City"),
+      ("resources", "Resources", "list"),
+      ("covered_percentage", "Coverage"),
+      (("latitude", "longitude"), "Location", "map"),
+    )
+  )
+}}{% if resource.unknown_percentage %}
+Unknown percentage: {{ resource.unknown_percentage }}%{% endif %}
+{% endfor %}

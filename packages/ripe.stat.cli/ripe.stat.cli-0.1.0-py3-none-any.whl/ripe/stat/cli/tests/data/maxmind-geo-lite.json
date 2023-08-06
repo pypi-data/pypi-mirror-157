@@ -1,0 +1,45 @@
+{
+    "messages": [],
+    "see_also": [],
+    "version": "1.0",
+    "data_call_name": "maxmind-geo-lite",
+    "data_call_status": "supported",
+    "cached": false,
+    "data": {
+        "located_resources": [
+            {
+                "resource": "193.0.6.158/32",
+                "locations": [
+                    {
+                        "country": "NL",
+                        "city": "",
+                        "resources": [
+                            "193.0.0.0/20"
+                        ],
+                        "latitude": 52.3824,
+                        "longitude": 4.8995,
+                        "covered_percentage": 100.0
+                    }
+                ],
+                "unknown_percentage": 0
+            }
+        ],
+        "unknown_percentage": {
+            "v4": 0.0
+        },
+        "result_time": "2022-06-13T16:04:19",
+        "latest_time": "2022-06-13T16:04:19",
+        "earliest_time": "2022-06-13T16:04:19",
+        "parameters": {
+            "resource": "193.0.6.158/32",
+            "resolution": "raw"
+        }
+    },
+    "query_id": "20220615065749-3afe7422-889c-4ae5-afd6-880eca6e5d06",
+    "process_time": 16,
+    "server_id": "app130",
+    "build_version": "live.2022.5.19.96",
+    "status": "ok",
+    "status_code": 200,
+    "time": "2022-06-15T06:57:49.214107"
+}

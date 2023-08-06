@@ -1,0 +1,3 @@
+[console_scripts]
+ripestat=ripe.stat.cli.command:main
+
