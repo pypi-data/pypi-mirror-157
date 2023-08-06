@@ -1,0 +1,14 @@
+meteor_diceware/__init__.py,sha256=nV49X_aNnumAYQx6bB6cpaotWrySyaRiWR6_ui7bhPY,3132
+meteor_diceware/__main__.py,sha256=d8f7g5gXsZdWJw50Zxq3IVlbeJQWzVcGxBqyRQXLqt8,118
+meteor_diceware/cfg.py,sha256=jf3a7rb-Tp6tL1-LvLsoC_PQG9wTgPECZ1Eu-3ODVHA,1418
+meteor_diceware/dicecalls.proc.py,sha256=TB_eHxph9WFItJ4mPNr8Q5g3ntAhD4CJ857m9vHhJEI,725
+meteor_diceware/histograms.py,sha256=j9YRflzV4mYIHfB_nNOrQdq2TJmCiF5xf-l6bRLDzQ0,1275
+meteor_diceware/scraper.py,sha256=G3i40_3Y2DoaT4spzmLDqHirxAosBBNLz9ZjIkg_lVE,1958
+meteor_diceware/setup.py,sha256=lV4ozO065_iFDLVeIEissY7rNvaBFAbkhpNFC7Xx7Gg,1600
+meteor_diceware/snowflake.py,sha256=HNCcCInMX118ehWjWYggNKigHMebSPLDSCZaM1FtId4,7609
+meteor_diceware/utils.py,sha256=yZJDBLUuq3f1Jh2utHMhx9XGb4_WEPiX4-r7s22ZXeA,27335
+meteor_diceware-2.1.1.dist-info/LICENSE,sha256=17ggb9x2LkbeDoan3jsbRUVlbVCS5XsFrrB8DS1gfN0,1100
+meteor_diceware-2.1.1.dist-info/METADATA,sha256=Abj_1LR6T_XQYakVYfUzh24TdTYbSe_TMSW-fnMGf9U,4910
+meteor_diceware-2.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+meteor_diceware-2.1.1.dist-info/top_level.txt,sha256=qZ1nOx6k4EB4XZwTR9gcM1G9SsKxdQaa4uCnCrXgbAQ,16
+meteor_diceware-2.1.1.dist-info/RECORD,,
