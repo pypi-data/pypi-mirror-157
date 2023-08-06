@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "status-cog"
+version = "0.1.0-alpha.2"
+description = "Shows the bot status in your discord server."
+license = "MIT"
+authors = ["Pjay <Pjay1@tutanota.com>"]
+readme = "README.md"
+repository = "https://github.com/1Pjay/StatusCog.git"
+keywords = ["bot", "discord", "discord-bot", "discord-api", "discord-py"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities"
+]
+exclude = [".idea/*"]
+
+
+[tool.poetry.dependencies]
+python = "^3.7.2"
+"discord.py" = "^1.7.3"
+"aiohttp" = "^3.7.4"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+pylint = "^2.14.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
