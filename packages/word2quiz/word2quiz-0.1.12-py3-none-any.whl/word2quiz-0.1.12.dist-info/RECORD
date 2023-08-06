@@ -1,0 +1,12 @@
+LICENSE,sha256=lrGHHF21M8MQfEPg-AcPPOcCQ8Fth50CXLxmQ_boGyo,1122
+word2quiz/__init__.py,sha256=88_FONakxSgWIewRtk2vla7tnzMnb2jgtLE6Gr1FzGg,223
+word2quiz/canvasrobot/__init__.py,sha256=ErnldtZ4FNX--gokklba8OkxAJUBFibJ-xI1LpgtWBA,52
+word2quiz/canvasrobot/main.py,sha256=GYv_9Wl1REVwOAjCBS7tCuPrC5j_qrkSeY1CHmqat4U,6319
+word2quiz/canvasrobot/model.py,sha256=S9ZNyFogJIwM4TxFYzZXDt-XU8LFpq1vCUWW6HnQj-8,2004
+word2quiz/locales/en/LC_MESSAGES/base.po,sha256=IoP3gGn-8fmFByfgzT8zokaypNXCweUeytjFef-PH3Y,572
+word2quiz/main.py,sha256=AH0axd3I9zeK0VuR_WeOCGwcUT1mzVzUIfVr7ocXDKw,17457
+word2quiz/word2quiz.log,sha256=3zsxRLRcODffJ-BiKiIB2KdQXBmLVDyRcTrYtom6CJ8,606298
+word2quiz-0.1.12.dist-info/LICENSE,sha256=lrGHHF21M8MQfEPg-AcPPOcCQ8Fth50CXLxmQ_boGyo,1122
+word2quiz-0.1.12.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+word2quiz-0.1.12.dist-info/METADATA,sha256=h-Ki8aAfrG12CcCPxruAKMrnmwtdY1xGbraPBIn4T6Y,1220
+word2quiz-0.1.12.dist-info/RECORD,,
