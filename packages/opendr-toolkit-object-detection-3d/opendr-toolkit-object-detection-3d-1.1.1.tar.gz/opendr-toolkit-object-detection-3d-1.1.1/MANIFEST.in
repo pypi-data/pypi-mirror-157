@@ -1,0 +1,8 @@
+recursive-include src/opendr/perception/object_detection_3d *
+include src/opendr/perception *
+exclude src/opendr/__init__.py 
+include description.txt 
+include packages.txt 
+include README.md 
+include src/opendr/_version.py 
+include src/opendr/_setup.py 
