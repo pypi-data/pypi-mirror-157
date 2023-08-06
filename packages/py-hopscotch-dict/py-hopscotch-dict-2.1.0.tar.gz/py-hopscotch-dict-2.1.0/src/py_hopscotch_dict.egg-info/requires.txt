@@ -1,0 +1,8 @@
+
+[test]
+codecov
+coverage[toml]
+hypothesis
+hypothesis-pytest
+pytest>=6.0
+pytest-cov

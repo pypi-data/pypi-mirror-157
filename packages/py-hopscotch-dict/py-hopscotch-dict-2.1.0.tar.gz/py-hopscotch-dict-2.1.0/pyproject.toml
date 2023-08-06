@@ -1,0 +1,102 @@
+################################################################################
+#                              py-hopscotch-dict                               #
+#    Full-featured `dict` replacement with guaranteed constant-time lookups    #
+#                    (C) 2017, 2019-2020, 2022 Jeremy Brown                    #
+#                Released under Prosperity Public License 3.0.0                #
+################################################################################
+
+[project]
+name = "py-hopscotch-dict"
+description = "A replacement for dict using hopscotch hashing."
+requires-python = "~=3.8"
+license = {file = "LICENSE.md"}
+readme = {file = "README.md", content-type = "text/markdown"}
+
+dynamic = ["version"]
+
+authors = [{name = "Jeremy Brown", email = "mischif@users.noreply.github.com"}]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+
+    "Intended Audience :: Developers",
+
+    "Operating System :: OS Independent",
+
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.optional-dependencies]
+test = [
+    "codecov",
+    "coverage[toml]",
+    "hypothesis",
+    "hypothesis-pytest",
+    "pytest >= 6.0",
+    "pytest-cov",
+    ]
+
+[project.urls]
+repository = "https://github.com/mischif/py-hopscotch-dict"
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools >= 61.0.0",
+    "setuptools_scm[toml] >= 3.5.0",
+    "wheel",
+    ]
+
+[tool.setuptools]
+zip-safe = false
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+combine_star = true
+lines_after_imports = 2
+lines_between_types = 1
+py_version = 38
+
+[tool.mypy]
+pretty = true
+python_version = "3.8"
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_subclassing_any = true
+disallow_untyped_calls = true
+disallow_untyped_decorators = true
+disallow_untyped_defs = true
+implicit_reexport = false
+no_implicit_optional = true
+strict_optional = true
+strict_equality = true
+warn_no_return = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+warn_unused_ignores = true
+allow_redefinition = false
+
+[tool.coverage.report]
+fail_under = 99
+show_missing = true
+skip_covered = true
+skip_empty = true
+
+[tool.pytest.ini_options]
+addopts = "-v --lf --cov=py_hopscotch_dict --cov-report term"
+testpaths = ["test"]
