@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: raghavcalculator
+Version: 0.0.3
+Summary: A very basic calculator
+Home-page: UNKNOWN
+Author: Raghav Aggarwal
+Author-email: raghavaggarwal200004@gmail.com
+License: MIT
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a basic calculator which performs basic arithmetic operations
+
+Change Log
+==========
+
+0.0.3 (30/06/2022)
+-------------------
+- Adding a few changes
+- First Release
+
