@@ -1,0 +1,26 @@
+{
+    "python.pythonPath": "venv/bin/python",
+    "python.testing.pytestArgs": [
+        "-v",
+        "--doctest-modules"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--ignore",
+        "E201,E202,E226,E231,E302,E401,E501,W291"
+    ],
+    "cSpell.words": [
+        "assertpy",
+        "NTS",
+        "uologging"
+    ],
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.egg-info": true,
+    }
+}

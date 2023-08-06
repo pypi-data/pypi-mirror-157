@@ -1,0 +1,41 @@
+# 
+# This package is managed using Hatch: a modern, extensible Python project manager.
+#
+# > Additional Hatch-config for this project is in "hatch.toml"
+# 
+# > See [Hatch Documentation](https://hatch.pypa.io/latest/).
+#
+
+#
+# Details about this package (analogous to setup.py)
+#
+[project]
+name = "uologging"
+readme = "docs/user-guide.md"
+dynamic = ["version"]
+python = "3.6"
+description = "Auto-Configuration solution for Python built-in logging."
+authors = [
+  {name = "University of Oregon", email = "ntsjenkins@uoregon.edu"},
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.8",
+]
+keywords = [
+  "NTS",
+  "UO",
+]
+license = "MIT"
+
+#
+# (Meta) Build-system details, required by Hatch (hatch.toml).
+#
+[build-system]
+build-backend = "hatchling.build"
+requires = [
+  "hatchling>=0.21.0",
+]

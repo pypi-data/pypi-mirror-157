@@ -1,0 +1,6 @@
+@Library('buildtools') _
+
+buildPythonProject(
+    doctest: true,
+    hatch: true,
+)
