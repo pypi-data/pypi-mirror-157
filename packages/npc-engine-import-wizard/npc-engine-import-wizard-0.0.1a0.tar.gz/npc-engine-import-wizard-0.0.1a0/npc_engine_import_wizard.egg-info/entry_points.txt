@@ -1,0 +1,2 @@
+[console_scripts]
+npc-engine-import-wizard = npc_engine_import_wizard.cli:cli
