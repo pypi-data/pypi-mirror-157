@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pythonagent
+Version: 0.0.11
+Summary: Cavisson Python Agent
+Home-page: https://github.com/pypa/sampleproject
+Author: Cavisson System
+Author-email: pythonagent@cavisson.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.6, !=3.0.*, !=3.1.*, !=3.2.*
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Cavisson Python Agent 
+
+Cavisson agent for instrumenting Python applications
+
+
