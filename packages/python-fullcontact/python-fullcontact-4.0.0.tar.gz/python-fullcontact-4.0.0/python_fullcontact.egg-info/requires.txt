@@ -1,0 +1,5 @@
+requests<3,>=2.23.0
+urllib3<2,>=1.25.7
+
+[develop]
+pytest==5.4.1
