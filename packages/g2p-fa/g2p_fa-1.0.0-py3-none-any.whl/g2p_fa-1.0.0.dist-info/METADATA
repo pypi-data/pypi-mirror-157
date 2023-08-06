@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: g2p-fa
+Version: 1.0.0
+Summary: A Persian Grapheme to Phoneme model using LSTM implemented in pytorch
+Home-page: https://github.com/de-mh/g2p_fa
+Author: Mohamadhosein Dehghani
+Author-email: demh1377@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+
+# g2p_fa
+A Grapheme to Phoneme model using LSTM implemented in pytorch
+## usage:
+```
+
+>>> from g2p_fa import G2P_Fa
+>>> g2p = G2P_Fa()
+>>> g2p('طلا')
+'tʰælɒː'
+>>> g2p('تلاش')
+'tʰælɒːʃ'

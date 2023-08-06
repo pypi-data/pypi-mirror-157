@@ -1,0 +1,11 @@
+g2p_fa/__init__.py,sha256=TdEXQ_eg6jPEiSoVdv6QZHN83_QUkEXqP1yUlTxqNTw,32
+g2p_fa/g2p_fa.py,sha256=UnSwsEYTwIc9eOkQy1tbdz0WJ8n95a8QTarLRghwtNE,3808
+g2p_fa/hparams.py,sha256=1Mnz4iUEzJeX4uuGVxbm5-8T1SlffavbufxQRr1bgyY,205
+g2p_fa/model.py,sha256=kBU9PRHdPxcTm_5Zjma8Olkrbl3GZv5LkaiOhViUzco,2718
+g2p_fa/utils.py,sha256=dpErUbzPTMISR7MR_dIs02c9-XuoCUD1VVH5kWudIjY,1682
+g2p_fa/data/weights,sha256=pi92sOIymMKe0k4AjHF4_1HivzBsqLZ1gwQiAybi-jE,1680023
+g2p_fa-1.0.0.dist-info/LICENSE,sha256=OPx33YkRjWIpwApi_4Q0mJcRRyY9l_vVxWyPfbBCg7U,1100
+g2p_fa-1.0.0.dist-info/METADATA,sha256=wnoifa5BFOs0hA-yNi1tILo5By0acLtw_ujEykYsZEI,690
+g2p_fa-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+g2p_fa-1.0.0.dist-info/top_level.txt,sha256=keXrRj-sBp3eUsVIhbmPSHZwtJ9_MVpkR0jDumCRJ1o,7
+g2p_fa-1.0.0.dist-info/RECORD,,
