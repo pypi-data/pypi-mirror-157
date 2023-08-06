@@ -1,0 +1,5 @@
+alembic
+platformdirs
+requests
+tabulate
+
