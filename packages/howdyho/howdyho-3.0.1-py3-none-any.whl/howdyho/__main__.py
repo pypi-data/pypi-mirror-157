@@ -1,0 +1,3 @@
+from howdyho import while_true_print_howdyho_help
+
+while_true_print_howdyho_help()

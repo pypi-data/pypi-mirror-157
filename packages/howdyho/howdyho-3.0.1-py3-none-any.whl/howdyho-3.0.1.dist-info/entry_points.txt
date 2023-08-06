@@ -1,0 +1,3 @@
+[console_scripts]
+howdyho=howdyho:while_true_print_howdyho_help
+
