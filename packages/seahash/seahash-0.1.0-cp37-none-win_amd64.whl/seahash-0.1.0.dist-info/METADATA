@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: seahash
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Typing :: Typed
+Requires-Dist: pytest==7.1.2; extra == 'dev'
+Requires-Dist: black==22.6.0; extra == 'dev'
+Provides-Extra: dev
+License-File: LICENSE
+Keywords: hash,hashing,checksum,checksumming,portable
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: homepage, https://github.com/RealOrangeOne/seahash-py
+
+# SeaHash
+
+[![CI](https://github.com/RealOrangeOne/seahash-py/actions/workflows/ci.yml/badge.svg)](https://github.com/RealOrangeOne/seahash-py/actions/workflows/ci.yml)
+
+Python bindings to [`seahash`](https://docs.rs/seahash/).
+
