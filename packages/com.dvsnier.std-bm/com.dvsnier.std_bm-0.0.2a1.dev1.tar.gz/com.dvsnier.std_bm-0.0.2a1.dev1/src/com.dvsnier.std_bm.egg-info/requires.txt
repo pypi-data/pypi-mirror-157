@@ -1,0 +1,7 @@
+
+[docs]
+
+[test]
+
+[virtualenv]
+virtualenv>=20.0.35
