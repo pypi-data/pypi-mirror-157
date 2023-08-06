@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+edgerun_galileo_experiments_extensions.egg-info/PKG-INFO
+edgerun_galileo_experiments_extensions.egg-info/SOURCES.txt
+edgerun_galileo_experiments_extensions.egg-info/dependency_links.txt
+edgerun_galileo_experiments_extensions.egg-info/requires.txt
+edgerun_galileo_experiments_extensions.egg-info/top_level.txt
+galileoexperimentsextensions/__init__.py
+galileoexperimentsextensions/mobilenet/__init__.py
+galileoexperimentsextensions/mobilenet/app.py
+galileoexperimentsextensions/mobilenet/util.py
+galileoexperimentsextensions/mobilenet/profiling/__init__.py
+galileoexperimentsextensions/mobilenet/profiling/main.py
+galileoexperimentsextensions/mobilenet/scenario/__init__.py
+galileoexperimentsextensions/mobilenet/scenario/main.py
