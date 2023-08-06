@@ -1,0 +1,8 @@
+click
+pdal
+PDAL
+dask
+dask[distributed]
+twine
+pandas
+matplotlib
