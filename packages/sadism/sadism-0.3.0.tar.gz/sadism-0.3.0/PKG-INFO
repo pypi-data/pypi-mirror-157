@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: sadism
+Version: 0.3.0
+Summary: Simplified Active Directory Information Search Mechanism
+Home-page: https://gitlab.com/blackstream-x/python-sadism
+Author: Rainer Schwarzbach
+Author-email: undisclosed@example.com
+Project-URL: Documentation, https://blackstream-x.gitlab.io/python-sadism/
+Project-URL: Source, https://gitlab.com/blackstream-x/python-sadism
+Project-URL: Tracker, https://gitlab.com/blackstream-x/python-sadism/-/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory :: LDAP
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Simplified Active Directory Information Search Mechanism
+
+Simplified Active Directory access base Module for Python 3
+
+Requires [python-ldap](https://pypi.org/project/python-ldap/).
+
+
+

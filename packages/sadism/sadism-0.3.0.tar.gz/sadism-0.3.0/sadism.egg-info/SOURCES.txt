@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+sadism.py
+setup.cfg
+sadism.egg-info/PKG-INFO
+sadism.egg-info/SOURCES.txt
+sadism.egg-info/dependency_links.txt
+sadism.egg-info/requires.txt
+sadism.egg-info/top_level.txt
