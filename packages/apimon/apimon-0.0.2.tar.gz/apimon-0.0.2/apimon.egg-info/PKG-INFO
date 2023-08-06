@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: apimon
+Version: 0.0.2
+Summary: monitor apis metrics
+Home-page: UNKNOWN
+Author: yangwb
+Author-email: yangwb@yxt.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+An exporter about prometheus, written in Python, mainly provides monitoring of api data functions, as follows:
+     1. Request quantity
+     2. Request duration per second
+     3. The number being requested
+     4. The last request took time
+
+For details, please see: https://github.com/prometheus/client_python
+
+Usage example:
+    """
+    
+    from apimon import ApiMonitor
+
+    apimonitor = ApiMonitor(app_name="your app name")
+    apimonitor.setup_metrics(app)  # your app object instance
+    
+    """
+
+
