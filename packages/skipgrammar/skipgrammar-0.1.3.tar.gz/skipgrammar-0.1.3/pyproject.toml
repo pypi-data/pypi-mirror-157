@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "skipgrammar"
+version = "0.1.3"
+description = "A framework for representing sequences as embeddings."
+authors = ["Emmanuel Fuentes <emmanuel.i.fuentes+pypi@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/eifuentes/skipgrammar"
+repository = "https://github.com/eifuentes/skipgrammar"
+documentation = "https://github.com/eifuentes/skipgrammar"
+keywords = ["skipgram", "word2vec", "sequences", "deep-learning", "machine-learning"]
+classifiers = [
+    "Environment :: Console",
+    "Natural Language :: English",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.6.2,<3.10"
+torch = "^1.4"
+numpy = "^1.17.2"
+pandas = "^1.1"
+pytorch-lightning = "^1"
+
+[tool.poetry.dev-dependencies]
+Markdown = "3.3.6"
+isort = "^5.10"
+flake8 = "^3.0"
+mypy = "^0.961"
+pytest = ">=6.0"
+black = "^22.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
