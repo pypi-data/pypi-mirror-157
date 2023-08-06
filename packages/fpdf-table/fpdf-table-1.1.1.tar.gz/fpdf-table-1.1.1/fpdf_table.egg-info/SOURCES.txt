@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+fpdf_table/__init__.py
+fpdf_table/main.py
+fpdf_table.egg-info/PKG-INFO
+fpdf_table.egg-info/SOURCES.txt
+fpdf_table.egg-info/dependency_links.txt
+fpdf_table.egg-info/requires.txt
+fpdf_table.egg-info/top_level.txt
