@@ -1,0 +1,10 @@
+n4s/__init__.py,sha256=_fVz7hGWKJG2x6XIq5ZQm9s2ms845U82w8NnNl3nyYI,77
+n4s/fs.py,sha256=5n-V9Kutn5WoIDlt6WxKoOlBsk22KJ_unNdM3ZLWWG4,8894
+n4s/strgs.py,sha256=pIVcZBLWFpHMaZSDrDgssTBHQZyYUTF92Bky9P2DtC4,9518
+n4s/term.py,sha256=GEVNgH7CG4uqmHWHz18_0d68ZxFCjtREnI-SL2vkF-Q,493
+n4s/web.py,sha256=B1D8RsPrAzz9ITxbs0rr8uTONu3MeM43eq_g5jzaC-c,13500
+n4s-1.2.dist-info/LICENSE,sha256=-qnQPOHsLtIJ6FtYrhL_mXl0MOZvfnLDrzL_Z7BBPp4,1067
+n4s-1.2.dist-info/METADATA,sha256=jNvnG76nS_xwJr2bXYlQ9f7CQD7FJgmX0B-hPy5yPVg,399
+n4s-1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+n4s-1.2.dist-info/top_level.txt,sha256=0Qpywd-vxEN3cAth46ob2gzTH_sFYM91QgwHaa6EJ_0,4
+n4s-1.2.dist-info/RECORD,,
