@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: rhos
+Version: 0.1
+Summary: Recursive high-order statistics for Python
+Author: Claudio Satriano
+Author-email: satriano@ipgp.fr
+License: GNU Lesser General Public License, Version 3 (LGPLv3)
+Project-URL: Source, https://github.com/claudiodsf/rhos
+Project-URL: Documentation, https://rhos.readthedocs.io
+Platform: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# rhos
+
+Recursive high-order statistics for Python.
+
+(c) 2022 - Claudio Satriano <satriano@ipgp.fr>
+
+Check the documentation on https://rhos.readthedocs.io.
