@@ -1,0 +1,13 @@
+appdirs
+esbonio
+sphinx
+
+[dev]
+black
+flake8
+pytest
+pytest-cov
+mock
+
+[tutorial]
+nbformat
