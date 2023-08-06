@@ -1,0 +1,12 @@
+numpy
+pandas
+pyyaml
+fire
+requests
+openpyxl
+
+[DOC]
+sphinx>=5.0.1
+nbsphinx
+sphinx_rtd_theme
+pandoc
