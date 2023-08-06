@@ -1,0 +1,11 @@
+ci-info>=0.2
+
+[:python_version < "3.8"]
+typing_extensions
+
+[dev]
+black
+isort
+
+[test]
+pytest
