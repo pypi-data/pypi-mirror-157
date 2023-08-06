@@ -1,0 +1,11 @@
+unitsofmeasure/__init__.py,sha256=q-uFgc8ztaopyLZE07K5-_W8dmKP4Chvdu8FJmy11c4,10877
+unitsofmeasure/accepted.py,sha256=uc8QTZ-9GckIbIN0hEgkUn361jeNRFcBCs9KT2bKo7M,1057
+unitsofmeasure/base.py,sha256=UgCm2tAhxuq3rahI37GfAhJRAXXwADuq-WqiV9kRFJc,784
+unitsofmeasure/binprefix.py,sha256=oDTzXcdBAPGQb3a0U2gn4UszRl5CfElHFrg9ioSdfN4,467
+unitsofmeasure/decprefix.py,sha256=NKeSN3IHYsd35eis3p7Jq7QXBAp1O_I7I-XKinAOduY,1070
+unitsofmeasure/derived.py,sha256=n1Q_BGoVjCwnA3yi_Cuj9yqcgNOXqfBtLabRzLLkCGk,2921
+units_of_measure-1.1.0.dist-info/METADATA,sha256=4vdXsaP2q3ysTEl9KRx-TSZhcCjIHRAfZGVGhbvww9A,3264
+units_of_measure-1.1.0.dist-info/WHEEL,sha256=5vr2ZUYMIPpdABBOSv8-NuqiKYrGTWMNuyATpVRyrq8,86
+units_of_measure-1.1.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+units_of_measure-1.1.0.dist-info/license_files/LICENSE,sha256=7CZhSePaxRcovd1uBArc4uh3xVlpAm_RfpVGdVaTIqE,1688
+units_of_measure-1.1.0.dist-info/RECORD,,
