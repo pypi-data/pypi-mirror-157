@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+UpgradePipPkgs/__init__.py
+UpgradePipPkgs/main.py
+UpgradePipPkgs.egg-info/PKG-INFO
+UpgradePipPkgs.egg-info/SOURCES.txt
+UpgradePipPkgs.egg-info/dependency_links.txt
+UpgradePipPkgs.egg-info/entry_points.txt
+UpgradePipPkgs.egg-info/requires.txt
+UpgradePipPkgs.egg-info/top_level.txt
+UpgradePipPkgs/logs/.gitkeep
+UpgradePipPkgs/scripts/upgrade_all.ps1
+img/README_screenshot.png
