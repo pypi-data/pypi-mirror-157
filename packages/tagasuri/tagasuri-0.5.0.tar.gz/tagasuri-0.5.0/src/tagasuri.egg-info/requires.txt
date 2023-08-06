@@ -1,0 +1,3 @@
+chess
+pretty-html-table
+pandas
