@@ -1,0 +1,6 @@
+LICENSE.txt
+setup.py
+Crypto20373215155.egg-info/PKG-INFO
+Crypto20373215155.egg-info/SOURCES.txt
+Crypto20373215155.egg-info/dependency_links.txt
+Crypto20373215155.egg-info/top_level.txt
