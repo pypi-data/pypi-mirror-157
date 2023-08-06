@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+PyEasier/PyEasier.py
+PyEasier/__init__.py
+PyEasier.egg-info/PKG-INFO
+PyEasier.egg-info/SOURCES.txt
+PyEasier.egg-info/dependency_links.txt
+PyEasier.egg-info/requires.txt
+PyEasier.egg-info/top_level.txt
