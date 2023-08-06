@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+snapdb.egg-info/PKG-INFO
+snapdb.egg-info/SOURCES.txt
+snapdb.egg-info/dependency_links.txt
+snapdb.egg-info/not-zip-safe
+snapdb.egg-info/top_level.txt

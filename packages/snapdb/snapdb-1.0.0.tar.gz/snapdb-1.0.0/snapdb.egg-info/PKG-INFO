@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: snapdb
+Version: 1.0.0
+Summary: Python adapter for SnapDB
+Home-page: https://github.com/scruwys/snapdb-python
+Author: Scott Cruwys
+Author-email: scruwys@gmail.com
+License: MIT License
+Keywords: snapdb
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
+# snapdb
+
+Package for managing SnapDB instances.
