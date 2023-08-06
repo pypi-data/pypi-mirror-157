@@ -1,0 +1,10 @@
+django_jinja_markdown/__about__.py,sha256=24p8DwwjI2P0_GW7umxAVBTBL4GsbDCMnGm4D3F_fNA,560
+django_jinja_markdown/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_jinja_markdown/extensions.py,sha256=Jzypr2g2uLLlWBTJ7Z7V0AAGAzY8bvYUFKXU8hpxBBc,1086
+django_jinja_markdown/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_jinja_markdown/templatetags/md.py,sha256=0_uEMQPTstLv-zIjfTqwAkGvgc81rvJJCc2Zx0cRxV4,592
+django_jinja_markdown-1.1.dist-info/LICENSE,sha256=QiwlItpLKwf_7Z-lvr0Z31VW3rmgga2SBzJ_89fAEB4,1098
+django_jinja_markdown-1.1.dist-info/METADATA,sha256=xvkJBbdru2mpP6YX0v5uLYqfyxUReFneoCQpagJnMx4,2959
+django_jinja_markdown-1.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+django_jinja_markdown-1.1.dist-info/top_level.txt,sha256=cPbJ2JTv7ra-QW1sRNHBKRClwcZXzp1YXjRuDAnMKvQ,22
+django_jinja_markdown-1.1.dist-info/RECORD,,
