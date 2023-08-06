@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: kraken-std
+Version: 0.1.2
+Summary: The Kraken standard library.
+License: MIT
+Author: Niklas Rosenstein
+Author-email: rosensteinniklas@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: kraken-core (>=0.1.3,<0.2.0)
+Description-Content-Type: text/markdown
+
+# kraken-std
+
+The Kraken standard library.
+
+__Features__
+
+* [Docker](#docker)
+
+---
+
+## Docker
+
+  [Kaniko]: https://github.com/GoogleContainerTools/kaniko
+  [Buildx]: https://docs.docker.com/buildx/working-with-buildx/
+
+Build and publish Docker images.
+
+__Supported backends__
+
+* [ ] Native Docker
+* [ ] [Buildx][]
+* [x] [Kaniko][]
+
+__Quickstart__
+
+```py
+from kraken.std import docker
+
+docker.build(
+    name="buildDocker",
+    dockerfile=dockerfile.action.file,
+    dependencies=[dockerfile],
+    tags=["kraken-example"],
+    load=True,
+)
+```
+
