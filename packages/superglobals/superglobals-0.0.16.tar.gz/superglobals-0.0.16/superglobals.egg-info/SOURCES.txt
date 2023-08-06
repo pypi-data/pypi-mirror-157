@@ -1,0 +1,9 @@
+LICENSE.txt
+README.rst
+setup.py
+superglobals/__init__.py
+superglobals/superglobals_module.py
+superglobals.egg-info/PKG-INFO
+superglobals.egg-info/SOURCES.txt
+superglobals.egg-info/dependency_links.txt
+superglobals.egg-info/top_level.txt
