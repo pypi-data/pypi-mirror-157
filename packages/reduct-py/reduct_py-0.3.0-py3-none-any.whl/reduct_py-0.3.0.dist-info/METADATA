@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: reduct-py
+Version: 0.3.0
+Summary: Reduct Storage Client SDK for Python
+Home-page: https://github.com/reduct-storage/reduct-py
+Author: Alexey Timin, Ciaran Moyne
+Author-email: atimin@gmai.com
+License: UNKNOWN
+Project-URL: ReductStorage, https://reduct-storage.dev
+Project-URL: Documentation, https://reduct-py.readthedocs.io/
+Project-URL: Source, https://github.com/reduct-storage/reduct-py
+Project-URL: Changelog, https://github.com/reduct-storage/reduct-py/blob/main/CHANGELOG.md
+Project-URL: Twitter, https://twitter.com/ReductStorage
+Project-URL: Blog, https://dev.to/reduct-storage
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp (~=3.8)
+Requires-Dist: pydantic (~=1.9)
+Provides-Extra: docs
+Requires-Dist: mkdocs (~=1.3) ; extra == 'docs'
+Requires-Dist: mkdocs-material (~=8.3) ; extra == 'docs'
+Requires-Dist: plantuml-markdown (~=3.5) ; extra == 'docs'
+Requires-Dist: mkdocs-same-dir (~=0.1) ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] (~=0.19) ; extra == 'docs'
+Provides-Extra: format
+Requires-Dist: black (~=22.6) ; extra == 'format'
+Provides-Extra: lint
+Requires-Dist: pylint (~=2.14) ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: pytest (~=7.1) ; extra == 'test'
+Requires-Dist: pytest-asyncio (~=0.18) ; extra == 'test'
+
+# Reduct Storage Client SDK for Python
+
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/reduct-storage/reduct-py)
+![PyPI - Downloads](https://img.shields.io/pypi/dw/reduct-py)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/reduct-storage/reduct-py/ci)
+
+Asynchronous HTTP client for [Reduct Storage](https://reduct-storage.dev) written in Python.
+
+## Features
+
+* Support Reduct Storage HTTP API v0.5
+* Based on aiohttp
+
+## Install
+
+```
+pip install reduct-py
+```
+
+## Example
+
+```python
+import time
+import asyncio
+from reduct import Client, Bucket
+
+async def main():
+    client = Client('https://play.reduct-storage.dev')
+    bucket: Bucket = await client.create_bucket("my-bucket", exist_ok=True)
+
+    ts = time.time_ns() / 1000
+    await bucket.write("entry-1", b"Hey!!", ts)
+    data = await bucket.read("entry-1", ts)
+    print(data)
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
+```
+
+## References
+
+* [Documentation](http://reduct-py.rtfd.io/)
+* [Reduct Storage HTTP API](https://docs.reduct-storage.dev/http-api)
+
+

@@ -1,0 +1,11 @@
+reduct/VERSION,sha256=2RXMldbKj0euKXcT7UbU5cXZnd0p_Dxh4mO98wXytbA,6
+reduct/__init__.py,sha256=8P6In9FxrvfonY5Llz7ZbPDHLkgOjp-oTQpyJUCfj2c,216
+reduct/bucket.py,sha256=sFKhA5nm5aI4uIGs0rEP9Re3d3IX4u6p9_Enb_OTRT0,7040
+reduct/client.py,sha256=bD2ZiXpCqZufREuv3ozxW0c6Ft8zKyXgI7HEvzVEG50,3415
+reduct/error.py,sha256=fkD7cC8NE6v4gcg2eCRGGsCFDYqs7NF6Hq7HzVndmsM,536
+reduct/http.py,sha256=pZp1Qbaedkrsl5STxstsLvHrm5-8P_yGhhhrn9iHYeU,2661
+reduct_py-0.3.0.dist-info/LICENSE,sha256=O1HCoKgNDYQKUfRoqGeq40ojije0oDmDwj5Lal-Isxk,1069
+reduct_py-0.3.0.dist-info/METADATA,sha256=2j_Cw30wfbW2ekavqCdUEqCCnmlezn09n7fCGLWiHLA,2443
+reduct_py-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+reduct_py-0.3.0.dist-info/top_level.txt,sha256=8s2_F74CILNOol5Ir-po8CNNDvpyilgVKiSCtwXmmN0,7
+reduct_py-0.3.0.dist-info/RECORD,,
