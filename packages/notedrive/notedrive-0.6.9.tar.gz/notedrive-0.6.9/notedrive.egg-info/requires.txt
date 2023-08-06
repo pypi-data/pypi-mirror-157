@@ -1,0 +1,5 @@
+requests
+notesecret
+demjson
+tqdm
+requests_toolbelt
