@@ -1,0 +1,2 @@
+[datasette]
+unsafe_expose_env = datasette_unsafe_expose_env
