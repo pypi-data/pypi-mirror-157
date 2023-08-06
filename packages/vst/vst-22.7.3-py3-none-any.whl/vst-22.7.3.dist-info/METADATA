@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: vst
+Version: 22.7.3
+Summary: VST - Voice Simple Tools
+Home-page: http://github.com/8tm/vst
+Author: Tadeusz Miszczyk
+Author-email: 42252259+8tm@users.noreply.github.com
+Requires-Python: >=3.7.13,<4.0.0
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: SpeechRecognition (>=3.8.1,<4.0.0)
+Requires-Dist: ffmpeg-python (>=0.2.0,<0.3.0)
+Requires-Dist: phonemizer (>=3.2.1,<4.0.0)
+Requires-Dist: pydub (>=0.25.1,<0.26.0)
+Requires-Dist: requests (>=2.28.0,<3.0.0)
+Project-URL: Documentation, https://test.pypi.org/project/vst
+Project-URL: Repository, http://github.com/8tm/vst
+Description-Content-Type: text/markdown
+
+# VST (Voice Simple Tools)
+
+Please check [WIKI](https://github.com/8tm/vst/wiki) pages for project description.
+
+Probably you may be also interested with [CHANGELOG.md](https://github.com/8tm/vst/blob/master/CHANGELOG.md) file.
+
