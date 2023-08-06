@@ -1,0 +1,3 @@
+[console_scripts]
+lwm2pdf=lwm2pdf.main:lwm2pdf
+
