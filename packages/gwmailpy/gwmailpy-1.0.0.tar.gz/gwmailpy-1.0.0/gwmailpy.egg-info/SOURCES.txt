@@ -1,0 +1,7 @@
+setup.py
+gwmailpy/__init__.py
+gwmailpy/gwmailpy.py
+gwmailpy.egg-info/PKG-INFO
+gwmailpy.egg-info/SOURCES.txt
+gwmailpy.egg-info/dependency_links.txt
+gwmailpy.egg-info/top_level.txt
