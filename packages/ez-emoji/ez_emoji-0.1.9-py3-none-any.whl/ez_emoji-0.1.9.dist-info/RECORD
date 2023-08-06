@@ -1,0 +1,10 @@
+ez_emoji/__init__.py,sha256=3oA9rwlJNYadFx7mJ4YZSH2dMv5nzk1lAmf9HbyM0zQ,262
+ez_emoji/downloader.py,sha256=cmpH7oXQxPVtMe51QXXOf_hvvxTSZVqcSMLBAILvlc8,10558
+ez_emoji/emoji_log.py,sha256=9XvE7zaCGH1D8Khknj_FVVj4jNoTxwrNpHQB8VA7sfA,2159
+ez_emoji/utils.py,sha256=QhOLKylPaISds8kC9x35JEwrd27p7lA9ccqKZ1KTelk,5349
+ez_emoji-0.1.9.dist-info/LICENSE,sha256=v5fYim0gUX526HKxElR9az605lttFNU4X1o4b9a5UzU,689
+ez_emoji-0.1.9.dist-info/METADATA,sha256=EcHntAymheGCe8T8P48R-uZpdvyKWdAZ_TaxSXuD8f0,3161
+ez_emoji-0.1.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ez_emoji-0.1.9.dist-info/entry_points.txt,sha256=fHnqF_BPDqUxHPFGoLwkN4CUtpwc4N_G2aGLc4E2w-Y,53
+ez_emoji-0.1.9.dist-info/top_level.txt,sha256=QFEn3ybbrYta9qon2QBam9jBtEydTL2BhQMTPZNI4A8,9
+ez_emoji-0.1.9.dist-info/RECORD,,
