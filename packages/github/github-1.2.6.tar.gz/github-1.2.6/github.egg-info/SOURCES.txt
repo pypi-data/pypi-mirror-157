@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+github/__init__.py
+github/cache.py
+github/client.py
+github/exceptions.py
+github/http.py
+github/objects.py
+github/urls.py
+github.egg-info/PKG-INFO
+github.egg-info/SOURCES.txt
+github.egg-info/dependency_links.txt
+github.egg-info/requires.txt
+github.egg-info/top_level.txt
