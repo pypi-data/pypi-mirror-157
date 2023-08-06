@@ -1,0 +1,14 @@
+anvil/__init__.py,sha256=MJrDDwvvBukA9K9OSOPi7CC5FfzsbaRxZmtmst9FL_Y,234
+anvil/block.py,sha256=ND4F-aLUCIqMKoAah3CI7tZ1zr_bphkNi6nGJCdfXXM,2554
+anvil/chunk.py,sha256=yHCiAcesOCJIqlVhqyIZbeQG0DmC2hP79RR3HoPysOI,8998
+anvil/empty_chunk.py,sha256=_WL8OpIIvWSBtZ_W9CXlsrv6XFozfL8YYGRRG-6a5So,5144
+anvil/empty_region.py,sha256=o_tdUc8OBe7ztfwecT7El6_b2_rSA98sUzB01m4E7m4,9144
+anvil/empty_section.py,sha256=kmC4PP64oOkIpGeWJY9OTnr177WUcUyDNfbrVmUrNxs,6199
+anvil/errors.py,sha256=MEyEwfe1lxhQlO9BsF709I4xNIVZkny8yxwNiTE9msE,510
+anvil/raw_section.py,sha256=wjS2rZTiyjwFQ7yj8ypAilMkEWl4dnKQBwbQVFf46E8,1971
+anvil/region.py,sha256=o-CfvuosESHFtq5ZKI9anMIJdn-DnOHn9nKQPRaqdes,3380
+anvil_new-1.0.1.dist-info/LICENSE,sha256=w8DVd9240z6BrwPj4H0qiKUqrMq0qEUkgrlJwRhXnZg,1084
+anvil_new-1.0.1.dist-info/METADATA,sha256=8nXOX5IUvdGkAYS8YIirt0RG_WDl34VP7b5C80Va8YA,1384
+anvil_new-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+anvil_new-1.0.1.dist-info/top_level.txt,sha256=gycA6f_tks_RgSgpD1RCnCajfy82IfDuPAziVsc5ce4,6
+anvil_new-1.0.1.dist-info/RECORD,,
