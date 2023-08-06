@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: neuro-mf
+Version: 0.0.1
+Summary: iNeuron Model Factory helps us to generate model training and grid search code automatically based 
+Author: Avnish Yadav
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML
+Requires-Dist: scikit-learn
+
