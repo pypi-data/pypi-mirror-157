@@ -1,0 +1,11 @@
+toolconfig/__init__.py,sha256=2x7g6ckukZuOApV5ueZX0EttbOMFQwJxn3Nlm47NUVA,213
+toolconfig/crud.py,sha256=C-Qle9HIxA6F5AYTj_SSPbnE9jmRogz3p5osJhF_JDw,4276
+toolconfig/exceptions.py,sha256=xlVLTECUp1Dv9ZfKAQfA6Ek1Ub5DSbVakYzPrfFF3AA,93
+toolconfig/filesystem.py,sha256=lwC2NMtF7PeZo7xAqkwPmv8_NSGAYSPD9kUCCGGGlHM,1606
+toolconfig/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+toolconfig/spec.py,sha256=ojX9yXRhLUtXvCwkH5h_fbXYZ4INrsNSuqq7tZQn--E,690
+toolconfig/validation.py,sha256=9t2yCRSQGr36QUD1MoN42LdAJaPdm-1aMc-VWV_E6Y8,3146
+toolconf-0.1.2.dist-info/LICENSE,sha256=PDNZT0dWSG5xP2MwiQZkeQde5zaHfgvdWxU1dt-nPVE,1084
+toolconf-0.1.2.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+toolconf-0.1.2.dist-info/METADATA,sha256=0MLwRpucunBfOHbaDfKUhuH2zw9fojqK-m_RgP7VEHU,249
+toolconf-0.1.2.dist-info/RECORD,,
