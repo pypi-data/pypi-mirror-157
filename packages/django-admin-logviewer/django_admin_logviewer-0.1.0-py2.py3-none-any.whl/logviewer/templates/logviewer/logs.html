@@ -1,0 +1,84 @@
+{% extends "logviewer/base.html" %}
+{% load i18n static admin_modify admin_urls logviewer_tags %}
+
+
+{% block content %}
+    {% for log in logs %}
+         <fieldset class="module aligned collapse">
+            <h2>
+                {{ log|dirname }}&nbsp;/&nbsp;
+                <a href="{% url 'logviewer:download' forloop.counter0 %}" class="button" title="{% trans 'Download log file ...' %}">{{ log|basename }}</a>
+                <div style="float: right;">
+                    <input type="checkbox" checked id="scroll-{{forloop.counter0}}"> {% trans 'Autoscroll' %}
+                </div>
+            </h2>
+            <div class="log">
+                <div style="text-align: center; width: 100%; margin-bottom: 5px;">
+                    <div class="log-windows" id="log-window-{{forloop.counter0}}" rows=20>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    {% endfor %}
+
+{% endblock content %}
+
+
+{% block extrahead %}
+    {{ block.super }}
+    <script type="text/javascript">
+
+        var LOGVIEWER_URL_GETLOGLINES = '{% url "logviewer:get_log_lines" 11111 %}';
+        var REFRESH_INTERVAL = {{refresh_interval}};
+        var log_objects = [];
+
+        (function ($) {
+
+            $(document).ready(function () {
+                {% for log in logs %}
+                    var selector = '#log-window-{{forloop.counter0}}';
+                    var log_object = new Log($(selector), {{forloop.counter0}}, '{{log}}');
+                    log_object.start();
+                    log_objects.push(log_object);
+                {% endfor %}
+
+                $('.collapse-toggle').on('click', toggle_log_window);
+            });
+
+        })(django.jQuery);
+
+        function toggle_log_window(event) {
+            console.log('toggle');
+        }
+
+    </script>
+{% endblock extrahead %}
+
+
+{% block extrastyle %}
+    {{ block.super }}
+    <style>
+
+        .module {
+            margin-bottom: 4px;
+        }
+
+        fieldset.collapsed div.log {
+            display: none;
+        }
+
+        .log-windows {
+            width: 98%;
+            text-align: left;
+            background-color: #000;
+            color: #ccc;
+            font-size: 14px;
+            height: 250px;
+            overflow: auto;
+            padding: 10px;
+            line-height: 18px;
+            margin: 0 auto;
+        }
+
+    </style>
+{% endblock extrastyle %}
