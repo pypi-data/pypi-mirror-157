@@ -1,0 +1,85 @@
+[tool.poetry]
+name = "py-check-updates"
+version = "0.1.1"
+description = "A Python dependency update checker."
+authors = ["Takahiro Ueda <takahiro.ueda@yahoo.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/tueda/py-check-updates"
+keywords = ["check", "updates", "dependencies", "version"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development",
+    "Topic :: Utilities",
+]
+packages = [{ include = "check_updates" }]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+PyYAML = "^6.0"
+requests = "^2.28.1"
+tomlkit = "^0.11.0"
+
+importlib-metadata = { version = ">=1.4", python = "<3.8" }
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.19.0"
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+pytest-mock = "^3.8.1"
+taskipy = "^1.10.2"
+
+[tool.poetry.scripts]
+py-check-updates = "check_updates:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.report]
+exclude_lines = [
+    "@overload",
+    "if TYPE_CHECKING:",
+    "pragma: no cover",
+    "raise AssertionError()",
+    "return NotImplemented",
+]
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = [
+    "E203", # for black
+]
+per-file-ignores = [
+    "tests/__init__.py:D104",
+    "tests/test_*.py:D100,D103,S101",
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+pretty = true
+show_error_codes = true
+strict = true
+warn_unreachable = true
+
+[tool.pytest.ini_options]
+addopts = [
+    "--cov-report=html",
+    "--cov-report=term",
+    "--cov=check_updates",
+    "--doctest-modules",
+]
+
+[tool.taskipy.tasks]
+prepare.cmd = "pre-commit install && pre-commit install --hook-type commit-msg"
+prepare.help = "sets up a development environment"
+
+lint.cmd = "pre-commit run --all-files"
+lint.help = "runs linters (+ fix)"
+
+test.cmd  = "pytest"
+test.help = "run tests"
