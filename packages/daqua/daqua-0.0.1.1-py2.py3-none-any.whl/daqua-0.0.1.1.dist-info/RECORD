@@ -1,0 +1,13 @@
+daqua/__init__.py,sha256=f2zeNOv3lKhYer2g2CqWRyJFIHLgUiey1ctLsmMWvR0,219
+daqua/config.py,sha256=Rq4t0j_0oDIWx4nRu4I5GoqLPrnUFUQpuoGLK8vWW3k,168
+daqua/descriptive_util.py,sha256=K946zAf5pIPtXMkznsWyd9E2BSVVZgde0QFN4RwfTWk,5156
+daqua/main.py,sha256=aUM6EV2EmtJbFwlduYgCK_p639rpzp0v47vCDbVQcCE,1209
+daqua/read_flat_file.py,sha256=-T2ah4yAsesPZxVrj8FP4lkuG2E2pnSQTWM79nuGYrA,1534
+daqua/read_from_db.py,sha256=mtGUbyHBU73LmzKGVrbAzzm6xRdaIwFPg3mfun1Rs9c,154
+daqua/stats_util.py,sha256=1mE4nhSGJq4qDgYB4aaqjkztlKgNccKTy2yCv1Hpr3I,338
+daqua-0.0.1.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+daqua-0.0.1.1.dist-info/METADATA,sha256=2slzMEkedepWK-GQCA4NldUhmQIkfrUG4gv5Jjv8p1k,1144
+daqua-0.0.1.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+daqua-0.0.1.1.dist-info/entry_points.txt,sha256=XLJEE5H4zepjswNz3hfBnPBHJjBFq9I6MtD_cKgXc-g,43
+daqua-0.0.1.1.dist-info/top_level.txt,sha256=8pGSHHtyy-Y6sMUHi2Sdd_82Dv8vpsf1N2zK_oXefdM,6
+daqua-0.0.1.1.dist-info/RECORD,,
