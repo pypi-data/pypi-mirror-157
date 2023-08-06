@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+XLRP/__init__.py
+XLRP/drawplot.py
+XLRP/xl_ddt.py
+XLRP/xlconf.py
+XLRP/xlrp.py
+xlrp.egg-info/PKG-INFO
+xlrp.egg-info/SOURCES.txt
+xlrp.egg-info/dependency_links.txt
+xlrp.egg-info/requires.txt
+xlrp.egg-info/top_level.txt
