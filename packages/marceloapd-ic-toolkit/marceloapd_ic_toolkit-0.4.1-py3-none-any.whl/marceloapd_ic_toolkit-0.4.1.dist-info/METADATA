@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: marceloapd-ic-toolkit
+Version: 0.4.1
+Summary: 
+Author: Marcelo Assis
+Author-email: 94455042+marceloapda@users.noreply.github.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyMySQL
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: certifi
+Requires-Dist: click
+Requires-Dist: colorama
+Requires-Dist: distlib
+Requires-Dist: filelock
+Requires-Dist: jmespath
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pipenv
+Requires-Dist: platformdirs
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: s3transfer
+Requires-Dist: six
+Requires-Dist: typer[all] (>=0.4.1,<0.5.0)
+Requires-Dist: urllib3
+Requires-Dist: virtualenv
+Requires-Dist: virtualenv-clone
+Description-Content-Type: text/markdown
+
+toolkit
