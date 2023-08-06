@@ -1,0 +1,8 @@
+src/__init__.py,sha256=J8j0InagegmhLbud8iKuDESeFCrldz7OSg0K9rxAJO8,66
+src/logger.py,sha256=U9spufHy8PhL5jzx2qz31cfOXVEXIcjSLerm82_wrxQ,343
+src/says/__init__.py,sha256=HSt1uXDABWd7N93ZkfGGsK0dPQZ79tA91QV15-k5_jE,37
+src/says/hello.py,sha256=eUNUZ1R1-2UOQr_IE9696p1WMyHudDpUYYh89VegYP4,35
+cseveutils-0.0.3.dist-info/METADATA,sha256=tSuPgpIZJq5FnoK6yLBJg_1MiJbsz1DB_k-43wymHfg,519
+cseveutils-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cseveutils-0.0.3.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+cseveutils-0.0.3.dist-info/RECORD,,
