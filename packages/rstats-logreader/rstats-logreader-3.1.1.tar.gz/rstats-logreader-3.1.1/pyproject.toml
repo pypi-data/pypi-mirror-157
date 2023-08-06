@@ -1,0 +1,91 @@
+################################################################################
+#                               rstats-logreader                               #
+#   Parse RStats logfiles, display bandwidth usage, convert to other formats   #
+#                    (C) 2016, 2019-2020, 2022 Jeremy Brown                    #
+#                Released under Prosperity Public License 3.0.0                #
+################################################################################
+
+[project]
+name = "rstats-logreader"
+description = "Parse RStats-format bandwidth logfiles and perform simple analysis/aggregation."
+requires-python = "~=3.8"
+license = {file = "LICENSE.md"}
+readme = {file = "README.md", content-type = "text/markdown"}
+
+dynamic = ["version"]
+
+authors = [{name = "Jeremy Brown", email = "mischif@users.noreply.github.com"}]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+
+    "Environment :: Console",
+
+    "Intended Audience :: Information Technology",
+
+    "Operating System :: OS Independent",
+
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+
+    "Topic :: System :: Networking",
+    "Topic :: System :: Networking :: Monitoring",
+
+    "Topic :: Utilities",
+]
+
+[project.optional-dependencies]
+test = [
+    "codecov",
+    "coverage[toml]",
+    "hypothesis",
+    "hypothesis-pytest",
+    "pytest >= 6.0",
+    "pytest-cov",
+    ]
+
+[project.urls]
+repository = "https://github.com/mischif/rstats-logreader"
+
+[project.scripts]
+rstats-reader = "rstats_logreader.cli:main"
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools >= 61.0.0",
+    "setuptools_scm[toml] >= 3.5.0",
+    "wheel",
+    ]
+
+
+[tool.setuptools]
+zip-safe = true
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+write_to = "src/rstats_logreader/VERSION"
+write_to_template = "{version}"
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+combine_star = true
+lines_after_imports = 2
+lines_between_types = 1
+py_version = 38
+
+[tool.coverage.report]
+fail_under = 99
+show_missing = true
+skip_covered = true
+skip_empty = true
+
+[tool.pytest.ini_options]
+addopts = "-v --lf --cov=rstats_logreader --cov-report term"
+testpaths = ["test"]
