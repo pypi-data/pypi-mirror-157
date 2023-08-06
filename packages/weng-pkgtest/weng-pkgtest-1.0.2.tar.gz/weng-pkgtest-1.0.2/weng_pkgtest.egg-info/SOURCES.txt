@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+weng_pkgtest/__init__.py
+weng_pkgtest/__version__.py
+weng_pkgtest/print1.py
+weng_pkgtest/print2.py
+weng_pkgtest.egg-info/PKG-INFO
+weng_pkgtest.egg-info/SOURCES.txt
+weng_pkgtest.egg-info/dependency_links.txt
+weng_pkgtest.egg-info/not-zip-safe
+weng_pkgtest.egg-info/requires.txt
+weng_pkgtest.egg-info/top_level.txt
+weng_pkgtest/static/.gitkeep
+weng_pkgtest/templates/.gitkeep
