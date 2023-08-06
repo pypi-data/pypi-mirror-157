@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: manager-hj3415
+Version: 0.1.0
+Summary: management of entire nfs system
+Home-page: https://pypi.org/project/manager_hj3415/
+Author: hyungjin kim
+Author-email: hj3415@gmail.com
+Project-URL: Bug Tracker, https://pypi.org/project/manager_hj3415/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scraper-hj3415 (>=0.5.1)
+Requires-Dist: krx-hj3415 (>=0.3.6)
+Requires-Dist: db-hj3415 (>=1.2.5)
+Requires-Dist: util-hj3415 (>=0.3.8)
+Requires-Dist: eval-hj3415 (>=0.6.3)
+Requires-Dist: dart-hj3415 (>=0.8.5)
+
+manager_hj3415
+===========
+
+Management of entire nfs system
+
+
+Quick start
+------------
+
