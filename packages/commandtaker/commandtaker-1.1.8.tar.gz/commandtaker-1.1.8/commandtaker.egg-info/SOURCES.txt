@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+commandtaker/__init__.py
+commandtaker/cmndtkr.py
+commandtaker.egg-info/PKG-INFO
+commandtaker.egg-info/SOURCES.txt
+commandtaker.egg-info/dependency_links.txt
+commandtaker.egg-info/requires.txt
+commandtaker.egg-info/top_level.txt

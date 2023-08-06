@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: commandtaker
+Version: 1.1.8
+Summary: Takes command from user and converts text to speech, this module is used for A.I Systems to make system speak and listen
+Home-page: UNKNOWN
+Author: Mahfuz Rahman
+Author-email: mahfuzrahman038@gmail.com
+License: UNKNOWN
+Keywords: speech recognition,text to speech,take command,A.I system,A.i Assistant,jarvis,personal assistant,mahfuz rahman,how to make personal assistant using python,python personal assistant,commandtaker,CommandTaker,Command Taker,command taker
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A package to make system speak and listen
+
