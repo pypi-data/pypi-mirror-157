@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: plantuml-local-client
+Version: 1.2022.5
+Summary: PlantUML : a free UML diagram generator - A Python wrapper script around PlantUML. Provides a "plantuml" command
+Home-page: https://plantuml.com/
+Author: Arnaud Roques
+Platform: any
+Classifier: Programming Language :: Java
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+PlantUML : a free UML diagram generator
+=======================================
+
+A Python wrapper script around the PlantUML UML diagram renderer. It
+can be used together with
+[sphinxcontrib-plantuml](https://pypi.org/project/sphinxcontrib-plantuml).
+Requires Java! Installs a `plantuml` command.
+
+For more information about PlantUML check <https://plantuml.com/>.
