@@ -1,0 +1,7 @@
+nameko_cachelib/__init__.py,sha256=1-Us6FDok0Rz1FqYlVgIkvcSpCcxBNVOYD6RTqasIpo,45
+nameko_cachelib/proxy.py,sha256=EI2xa-_REAW2_cGNwH8Eh5U6mMw_LeHuP_AY8L8vhk8,6871
+nameko_cachelib/rpc.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nameko_cachelib-0.1.1.dist-info/LICENSE,sha256=dCjn7kW1MLfpQ06A0VW_D40zFmXfAYeNVCz2YNh_Emo,1064
+nameko_cachelib-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+nameko_cachelib-0.1.1.dist-info/METADATA,sha256=wsv4Et8oJN8-xqPcZ6iw0OB3QzDNIulaICzHB9ipWOM,976
+nameko_cachelib-0.1.1.dist-info/RECORD,,
