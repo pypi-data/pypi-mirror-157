@@ -1,0 +1,14 @@
+click
+geojson
+numpy
+pandas
+scikit-learn
+
+[dev]
+black
+wheel
+pre-commit
+pytest
+
+[full]
+keplergl
