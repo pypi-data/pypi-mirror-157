@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+kitaevmodel/__init__.py
+kitaevmodel/eigenstates.py
+kitaevmodel/hamiltonian_creator.py
+kitaevmodel/image_generator.py
+kitaevmodel/time_evolution.py
+kitaevmodel.egg-info/PKG-INFO
+kitaevmodel.egg-info/SOURCES.txt
+kitaevmodel.egg-info/dependency_links.txt
+kitaevmodel.egg-info/requires.txt
+kitaevmodel.egg-info/top_level.txt
