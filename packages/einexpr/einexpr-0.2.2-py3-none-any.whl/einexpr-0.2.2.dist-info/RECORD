@@ -1,0 +1,17 @@
+einexpr/__init__.py,sha256=uU19CG205mRcQTkTIQS8R_9NjxIsZljNcJhIt27ddIQ,190
+einexpr/array_api.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+einexpr/backends.py,sha256=9p2CTsCAkWrX6i-pfUGxvJt19R56XW6cuSYkRznqSwk,10676
+einexpr/base_typing.py,sha256=gJEhhaNNd3FLJPgAipaCvX6VZwC-FJB6Gz0Yu2Zmyow,413
+einexpr/dim_calcs.py,sha256=jfQNQoPSIRy0FsK2snDlPzsTKN_tH_qZTr-uvtS5BkI,12342
+einexpr/einarray_utils.py,sha256=KeB-gfTnzGvVa5TJzxGufna6qT5faDjE3t0mykBzxgc,663
+einexpr/exceptions.py,sha256=Un0pM-lr_UPxs70Hyf30IaXpIwujnB_eWHMdaUO9T0I,54
+einexpr/expression.py,sha256=dFNqq67zmgzEss3aa1-MVTDpKtYNF09pK6BEE-rJD_k,14413
+einexpr/index.py,sha256=IuPsLjIMrxANymX3Ulkw7-s-1Kr4B8qbRgI1cDbjues,1319
+einexpr/parse_numpy_ufunc_signature.py,sha256=_BDvIS5qUVDJaADQreVLsZkA_KFOkDWRE3OqemxQ7RA,5961
+einexpr/raw_ops.py,sha256=tA8c0uE-6W_7m0B93zHwChgV2HUSjsFYU1IGvxkgWQY,2601
+einexpr/typing.py,sha256=CqGeIG0FGha8uHieXdeQ1KTlznfvFdcCl5lG7fnYDfI,62
+einexpr/utils.py,sha256=11dKkBGj8lJqJ45YYv9F4s7qPZACROZb_fKCOlVfgYk,7751
+einexpr-0.2.2.dist-info/LICENSE,sha256=c1ub23N1kHUqpqLkKt399blTzhzeG9is2J6VbzJzbFM,1067
+einexpr-0.2.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+einexpr-0.2.2.dist-info/METADATA,sha256=W8Sa-O4rMLW3o36myQfuvOlX_DkS58pB66arwyLBqHw,392
+einexpr-0.2.2.dist-info/RECORD,,
