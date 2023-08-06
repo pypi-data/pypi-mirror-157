@@ -1,0 +1,7 @@
+prune docs/
+exclude .gitignore
+prune changelog.d/
+exclude .git-blame-ignore-revs
+prune .github/
+exclude .pre-commit-config.yaml
+exclude requirements.txt
