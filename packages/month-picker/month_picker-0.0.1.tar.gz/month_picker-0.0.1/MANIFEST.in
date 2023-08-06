@@ -1,0 +1,11 @@
+include month_picker/month_picker.min.js
+include month_picker/month_picker.min.js.map
+include month_picker/async-*.js
+include month_picker/async-*.js.map
+include month_picker/*-shared.js
+include month_picker/*-shared.js.map
+include month_picker/metadata.json
+include month_picker/package-info.json
+include README.md
+include LICENSE
+include package.json

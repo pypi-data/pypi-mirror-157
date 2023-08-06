@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+month_picker/MonthPicker.py
+month_picker/__init__.py
+month_picker/_imports_.py
+month_picker/metadata.json
+month_picker/month_picker.min.js
+month_picker/month_picker.min.js.map
+month_picker/package-info.json
+month_picker.egg-info/PKG-INFO
+month_picker.egg-info/SOURCES.txt
+month_picker.egg-info/dependency_links.txt
+month_picker.egg-info/top_level.txt
