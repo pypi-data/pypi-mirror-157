@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: plenopticam
+Version: 0.9.3
+Summary: Light field photography application
+Home-page: http://github.com/hahnec/plenopticam
+Author: Christopher Hahne
+Author-email: inbox@christopherhahne.de
+License: GNU GPL V3.0
+Keywords: lightfield plenoptic rendering engine image processing software application lytro toolbox calibration light field depth refocusing refocus baseline disparity resolution
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+License-File: LICENSE.rst
+Requires-Dist: numpy
+Requires-Dist: scipy (>=1.6.0)
+Requires-Dist: colour-demosaicing (>=0.2.2)
+Requires-Dist: colour
+Requires-Dist: color-matcher (==0.4.0)
+Requires-Dist: color-space-converter (>=0.1.4)
+Requires-Dist: imageio (>=2.17.0)
+Requires-Dist: docutils
+Requires-Dist: Pillow (>=9.0.1)
+Requires-Dist: requests
+Requires-Dist: depthy (>=0.3.0)
+Requires-Dist: certifi (>=2020.06.20)
+Requires-Dist: scikit-image (>=0.18.0)
+Requires-Dist: tifffile (==2022.4.8)
+Requires-Dist: pyinstaller (==4.10)
+
+PlenoptiCam comes as a cross-platform, open-source software (see releases page) for scientific light field computation with few dependencies and a lean graphical user interface.
+Raw exposures from a plenoptic camera require four-dimensional image alignment in order to be decoded as a light field. Provided software addresses this by its ability to calibrate an image taken by a plenoptic camera and extract sub-aperture images or synthetically focused photographs.
+This application is meant for researchers, developers, beginners and other fiddlers who like to experiment with light field technology. Its scope comprises custom-types of plenoptic cameras and is thus not limited to Lytro's image data.
+
