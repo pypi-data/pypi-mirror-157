@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ShortReport
+Version: 0.0.1
+Summary: It generates the Report of the dataset
+Home-page: UNKNOWN
+Author: Chiransh Singh Mehra , Raghav Aggarwal
+Author-email: singhchiransh4@gmail.com , raghavaggarwal200004@gmail.com
+License: MIT
+Keywords: report
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This will print the report of the dataset provided by the user
+
+Change Log
+==========
+
+0.0.1 (02/07/2022)
+-------------------
+- First Release
+
