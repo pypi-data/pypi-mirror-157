@@ -1,0 +1,15 @@
+README.md
+setup.py
+hl7v2json/__init__.py
+hl7v2json/parser.py
+hl7v2json.egg-info/PKG-INFO
+hl7v2json.egg-info/SOURCES.txt
+hl7v2json.egg-info/dependency_links.txt
+hl7v2json.egg-info/requires.txt
+hl7v2json.egg-info/top_level.txt
+hl7v2json/data/__init__.py
+hl7v2json/data/27/__init__.py
+hl7v2json/data/bamboo/__init__.py
+tests/__init__.py
+tests/samples.py
+tests/test_parser.py
