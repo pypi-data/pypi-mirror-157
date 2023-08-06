@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: mhi-psout
+Version: 1.0.0
+Summary: PSOUT File Reader
+Home-page: https://www.pscad.com/webhelp-v5-al/index.html
+Author: Arthur Neufeld
+Author-email: aneufeld@mhi.ca
+License: BSD-3-Clause-Clear
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires: wheel
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PSOut Reader
+
+A reader for the PSCAD *.psout file
+
+## Example
+
+```python
+import mhi.psout
+import matplotlib.pyplot as plt
+
+with mhi.psout.File('Cigre.psout') as file:
+
+    ac_voltage = file.call("Root/Main/AC Voltage/0")
+    run = file.run(0)
+
+    for call in ac_voltage.calls():
+        trace = run.trace(call)
+        time = trace.domain
+        plt.plot(time.data, trace.data, label=trace['Description'])
+
+    plt.xlabel(time['Unit'])
+    plt.ylabel(trace['Unit'])
+    plt.legend()
+    plt.show()
+```
+
