@@ -1,0 +1,29 @@
+# This is the Generalized Object Detection Package
+
+#### This package is used to isolate the coordinates of objects in an image.
+
+#### Instructions
+### 1.) Install using 
+    pip install genobjdet
+
+### 2.) Run in Python
+    from genobjdet import *
+
+## Function Description
+
+### def request(image="", api_key="", prompt="", write_to_file=False):
+
+    api_key: The necessary RapidAPI key to access the server.
+
+    image: directory of the image to be processed
+
+    prompt: prompt for which object the server should analyze the image for
+
+    write_to_file: Write bounding box coordinates directly to the image.
+
+    return: The bounding box coordinates of the object in the image.
+
+    (If write_to_file is True, the coordinates are written to the image instead of being returned.)
+
+### Call Function
+    request(image="[image dir]", api_key="[RapidAPI-Key]", prompt="[what to isolate]", write_to_file=[False/True])
