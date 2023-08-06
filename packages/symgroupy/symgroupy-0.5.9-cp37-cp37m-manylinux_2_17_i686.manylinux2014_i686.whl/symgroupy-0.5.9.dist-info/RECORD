@@ -1,0 +1,12 @@
+symgroupy.libs/libquadmath-e2ac3af2.so.0.0.0,sha256=DRJDSNQt5sWGt4X3guXSTAAdvdSEJ-2dIpPAnUwjlBk,362300
+symgroupy.libs/libgfortran-8dce24b7.so.3.0.0,sha256=yHq6vOzwwoop108H40twKOD1kMfuqkaRU8b801ppXt4,1103080
+symgroupy.libs/liblapack-c75bbe03.so.3.4.2,sha256=b2o9lRzGOalTKXI1swFUhQk0R686rAVDiEWDt7EYg9M,5760640
+symgroupy.libs/libblas-3b437dff.so.3.4.2,sha256=JPfNMn1rtYVudKAkcMQkTns9XON7C4iTfRauq9y4_xc,378380
+symgroupy.libs/libgfortran-a8535147.so.5.0.0,sha256=m50XYLF0di-_5LI0kR4xUpHOA8PHTqhpxXu-JyrjkRI,2491808
+symgroupy/symgrouplib.cpython-37m-i386-linux-gnu.so,sha256=XWJ9JGan5saEHY4jY3NCLk75QMW7PuuBZMDIpVNVwTM,260592
+symgroupy/__init__.py,sha256=SHqgLIZQJUrtfzvCtjwZx1DITAp2HHRp9ealwu7QH2g,9477
+symgroupy-0.5.9.dist-info/top_level.txt,sha256=V0dnXTXBUT9AMLvPbvZOG1FTxpPr4czUdN4inKF-Gw0,10
+symgroupy-0.5.9.dist-info/WHEEL,sha256=5tZ1jhQp7QE5qmPsh4H0qeuam6ryxn2gu46n9P15_I8,146
+symgroupy-0.5.9.dist-info/LICENSE,sha256=Y1Z_uu_boe5FXTchq6uoqS5ew23rrrKL8-_xik3TTfY,1097
+symgroupy-0.5.9.dist-info/METADATA,sha256=-OP63c_Tg-3muSg9Q_m8FE9U3APDFbFAomqdbExm2MA,346
+symgroupy-0.5.9.dist-info/RECORD,,
