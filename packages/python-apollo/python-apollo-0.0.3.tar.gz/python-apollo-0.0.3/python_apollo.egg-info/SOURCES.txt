@@ -1,0 +1,11 @@
+README.md
+setup.py
+apollo/__init__.py
+apollo/client.py
+example/__init__.py
+example/get_config.py
+python_apollo.egg-info/PKG-INFO
+python_apollo.egg-info/SOURCES.txt
+python_apollo.egg-info/dependency_links.txt
+python_apollo.egg-info/requires.txt
+python_apollo.egg-info/top_level.txt
