@@ -1,0 +1,7 @@
+setup.py
+PyPanel/__init__.py
+PyPanel.egg-info/PKG-INFO
+PyPanel.egg-info/SOURCES.txt
+PyPanel.egg-info/dependency_links.txt
+PyPanel.egg-info/requires.txt
+PyPanel.egg-info/top_level.txt
