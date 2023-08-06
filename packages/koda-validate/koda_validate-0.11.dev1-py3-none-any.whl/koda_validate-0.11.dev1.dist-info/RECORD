@@ -1,0 +1,11 @@
+koda_validate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+koda_validate/_cruft.py,sha256=oxwuLvXuibURDMjpPssWnDRBmepEONlGwq-Hmuj0vWA,19178
+koda_validate/_generics.py,sha256=n4VunsyV8OyJUFaA20bdE2PSbFlpis6lkueH1QBQ7wA,381
+koda_validate/openapi.py,sha256=Hz4XPfsK77EXxCR6pMwYmX4iLNCdnYiEH9iC5haDOFs,9196
+koda_validate/serialization.py,sha256=eY1Hw0T7YS8hwUVA33FG-_xOlSVvMrKgmb49E4wHNKQ,1339
+koda_validate/typedefs.py,sha256=6tPQDliBQ_Oo0ykUqFsjlJ403b4I51GbTYnnup5XtjE,2249
+koda_validate/utils.py,sha256=4DZh084tky5QF9Z3I7k5i59w9oT_Lqxyz8sSvWGFBpU,913
+koda_validate/validation.py,sha256=01Aw4LhDyCrtDdS5izJMVbxM5bi1oWAsTr32Om9PiTs,41615
+koda_validate-0.11.dev1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+koda_validate-0.11.dev1.dist-info/METADATA,sha256=9l0KExUvebk1miofWmBWWGpPpybLiStRYB-u3mqSahI,253
+koda_validate-0.11.dev1.dist-info/RECORD,,
