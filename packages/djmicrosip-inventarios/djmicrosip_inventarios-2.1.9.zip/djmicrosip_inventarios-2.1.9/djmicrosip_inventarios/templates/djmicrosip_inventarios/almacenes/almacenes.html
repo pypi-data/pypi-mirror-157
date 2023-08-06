@@ -1,0 +1,70 @@
+{% extends "djmicrosip_inventarios\base.html" %}
+{% block title %}Inventarios Fisicos{% endblock %}
+
+<!-- CSS Code -->
+{% block style_css %}{% endblock %}
+
+<!-- JavaScript Code -->
+{% block js_code %}
+<script type="text/javascript">
+$(document).ready(function(){
+  debugger
+    var sucursal_id=$("#sucursal_id").val();
+    if (sucursal_id != '')
+    {
+     document.getElementById("id_sucursal").value = sucursal_id; 
+    }
+    });
+  $('#id_sucursal').change(function() {
+  $('.form').submit();
+}); 
+
+</script>
+{% endblock %}
+
+{% block breadcrumb %}{{ block.super }} <li class='active'> Almacenes </li>{% endblock %}
+{% block content %}
+ 
+<div class="page-header">
+
+    <h1>Sucursal</h1>
+    <input type="" class="hidden" name="" id=sucursal_id value="{{sucursal.sucursal_id}}">
+    <div>
+
+    <form method="post" class="form" action=""  enctype='multipart/form-data'>
+      {% csrf_token %} 
+      {{form_sucursal.sucursal}}
+      </form>
+    </div>
+    <h1>Almacenes</h1>
+</div>
+<table class="table table-striped table-hover">
+    <tr>
+      <th>Nombre</th>
+      <th></th>
+    </tr>
+
+
+    {% for almacen in almacenes %}
+    </tr>
+      <td>{{ almacen.nombre }}</td>
+      <td>
+      {% if almacen.inventariando %}
+        <a href="/inventarios/inventarios_fisicos/{{ almacen.ALMACEN_ID }}/{{sucursal.sucursal_id}}/" class="btn btn-default"><i class="glyphicon glyphicon-list-alt"></i> inventario fisico</a>
+      {% else %}
+        
+        {% if request.user.username = 'SYSDBA' %}
+        <a href="/inventarios/almacenes/abririnventario/{{ almacen.ALMACEN_ID }}/{{sucursal.sucursal_id}}/" class='btn btn-default' ><i class="glyphicon glyphicon-folder-open"></i> Abrir inventario fisico</a>
+        {% else %}
+        <div class="alert alert-warning" role="alert">No estas Autorizado para abrir inventarios</div>
+        {% endif %}
+      {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+
+
+</table>
+
+
+{% endblock %}
