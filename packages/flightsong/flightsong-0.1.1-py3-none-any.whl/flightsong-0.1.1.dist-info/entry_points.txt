@@ -1,0 +1,3 @@
+[console_scripts]
+flightsong=flightsong.main:app
+
