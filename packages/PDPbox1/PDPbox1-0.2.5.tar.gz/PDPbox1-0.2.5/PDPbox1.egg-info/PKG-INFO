@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: PDPbox1
+Version: 0.2.5
+Summary: python partial dependence plot toolbox
+Home-page: https://github.com/AtrCheema/PDPbox1
+Author: AtrCheema
+Author-email: ather_abbas786@yahoo.com
+License: MIT
+Provides-Extra: all
+License-File: LICENSE.txt
