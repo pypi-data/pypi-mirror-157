@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: lmlib
+Version: 2.0.2
+Summary: A Model-Based Signal Processing Library Working With Windowed Linear State-Space and Polynomial Signal Models.
+Home-page: http://lmlib.ch
+Download-URL: https://pypi.python.org/pypi/lmlib
+Author: Reto Wildhaber, Frédéric Waldmann, Luca Fleischmann, Christof Baeriswyl
+Author-email: reto.wildhaber@fhnw.ch, frederic.waldmann@fhnw.ch
+License: MIT
+Requires-Python: >=3
+Provides-Extra: jit-backend
+License-File: LICENSE.md
