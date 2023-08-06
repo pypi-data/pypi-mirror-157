@@ -1,0 +1,9 @@
+arashpdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arashpdf/pdf2image.py,sha256=_CfV1QCfdpJ4oS5S7sMIz2FOZ03ehaUlLYb7t2ZjLCM,37
+arashpdf/pdf2text.py,sha256=6iOXfagwXP90VpvKcSY0LUumjwRCMPmbgzNzqd-lwrc,36
+arashpdf-1.0.dist-info/DESCRIPTION.rst,sha256=Vu9jvnJ1tQruTJwaO4kBLgTDa1LbF1Q7XVt5bLMm6J0,53
+arashpdf-1.0.dist-info/METADATA,sha256=cRD7Br_dweBd2Qts06DAPNY_WYjoe__q6E5JzoDuA4I,197
+arashpdf-1.0.dist-info/RECORD,,
+arashpdf-1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+arashpdf-1.0.dist-info/metadata.json,sha256=IRKlxeCTG0h17MchiWj3-3Atluw6LEkUQDfxS72AR50,241
+arashpdf-1.0.dist-info/top_level.txt,sha256=duJH7RRf0uG3WQ76rhhzRC0tKpiVxuWiVG7dhXoUvI8,9
