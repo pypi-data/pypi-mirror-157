@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pysocmed/__init__.py
+src/pysocmed/api.py
+src/pysocmed.egg-info/PKG-INFO
+src/pysocmed.egg-info/SOURCES.txt
+src/pysocmed.egg-info/dependency_links.txt
+src/pysocmed.egg-info/top_level.txt
