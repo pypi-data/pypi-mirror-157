@@ -1,0 +1,9 @@
+README.rst
+setup.py
+sqlalchemy_debug/__init__.py
+sqlalchemy_debug/main.py
+sqlalchemy_debug.egg-info/PKG-INFO
+sqlalchemy_debug.egg-info/SOURCES.txt
+sqlalchemy_debug.egg-info/dependency_links.txt
+sqlalchemy_debug.egg-info/requires.txt
+sqlalchemy_debug.egg-info/top_level.txt
