@@ -1,0 +1,82 @@
+#!/usr/bin/env python3
+#
+# Stream-based realtime scientific data plotter.
+# Copyright (c) 2022, Hiroyuki Ohsaki.
+# All rights reserved.
+#
+# $Id: rplot,v 1.8 2022/07/03 13:50:09 ohsaki Exp $
+#
+
+import fileinput
+import re
+import sys
+import time
+
+from perlcompat import die, warn, getopts
+import rplot
+import tbdump
+
+def usage():
+    die(f"""\
+usage: {sys.argv[0]} [-vca] [-F #] [-x n[,n...]] [file...]
+  -v       verbose mode
+  -c       curses mode (disable GUI display)
+  -a       automatic window mode
+  -F fps   limit the frequency of display
+  -x list  exclude specified files from display
+""")
+
+def process_line(rp, line):
+    fields = line.split()
+    for n, v in enumerate(fields):
+        sr = rp.series(n)
+        # Regard the prceeding string as a field label.
+        m = re.search(r'^(\w+)=(.+)', v)
+        if m:
+            label, v = m.groups()
+            sr.label = label
+        sr.append(float(v))
+
+def redraw_display(rp, excluded=None, fps=30, last_draw=[0]):
+    curtime = time.time()
+    # Limit the frame rate by FPS.
+    if curtime - last_draw[0] < 1 / fps:
+        return
+    last_draw[0] = curtime
+    rp.clear()
+    rp.draw_series(excluded=excluded)
+    rp.update()
+
+def may_update_window(rp, started=[None]):
+    if rp.window:
+        return
+    curtime = time.time()
+    # Record the program invokation time.
+    if started[0] is None:
+        started[0] = curtime
+    if curtime - started[0] >= 5:
+        # Automatically change to the fixed window mode after 5 seconds.
+        rp.window = len(rp.series(0))
+
+def main():
+    opt = getopts('ctaF:x:') or usage()
+    use_curses = opt.c
+    automatic_window = opt.a
+    print(automatic_window)
+    fps = float(opt.F) if opt.F else 30.
+    excluded = [int(s) for s in opt.x.split(',')] if opt.x else []
+
+    rp = rplot.Plot(curses=use_curses, grid=1, subgrid=.2)
+    rp.init_screen()
+
+    _hook = fileinput.hook_encoded('utf-8', 'backslashreplace')
+    for line in fileinput.input(openhook=_hook):
+        line = line.rstrip()
+        process_line(rp, line)
+        redraw_display(rp, excluded, fps)
+        if automatic_window:
+            may_update_window(rp)
+    rp.wait()
+
+if __name__ == "__main__":
+    main()
