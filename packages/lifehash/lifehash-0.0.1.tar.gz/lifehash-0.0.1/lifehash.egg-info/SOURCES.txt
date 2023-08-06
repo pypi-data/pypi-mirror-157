@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+lifehash/__init__.py
+lifehash/lifehash.py
+lifehash.egg-info/PKG-INFO
+lifehash.egg-info/SOURCES.txt
+lifehash.egg-info/dependency_links.txt
+lifehash.egg-info/top_level.txt
