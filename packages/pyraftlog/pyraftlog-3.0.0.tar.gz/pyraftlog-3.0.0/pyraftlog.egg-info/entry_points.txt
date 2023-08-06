@@ -1,0 +1,3 @@
+[console_scripts]
+pyraftlog-migrate = pyraftlog.migrate:main
+pyraftlog-mock = pyraftlog.mock:main
