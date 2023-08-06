@@ -1,0 +1,42 @@
+Metadata-Version: 1.1
+Name: DataQC
+Version: 0.0.101
+Summary: Data quality checker.
+Home-page: UNKNOWN
+Author: Md Ismail Hossain
+Author-email: mdismail.hossain@student.nmt.edu
+License: MIT
+Description: This package does summary analysis when data accepted from the client and compares the structure with the reference file. In many practical data science project we had to feed same structure data in the analysis process in regular interval. This package could be helpful for users to chect the data structure before feed into the production process or somewhere else. 
+        
+        ## Main function
+        Quick_QC(INPUT_LOCATION,OUTPUT_LOCATION,REF_LOCATION,SEP)
+        
+        ## Inputs parameters
+        
+        INPUT_LOCATION = Local folder where data saved.
+        
+        OUTPUT_LOCATION = Local folder where the output will be saved.
+        
+        REF_LOCATION = Local folder where reference files saved.
+        
+        SEP = The separator between data columns.
+        
+        ## Outputs
+        
+        In the output folder there will be several word files. Among them "Data QC summary" is the merged report using
+        all the word files availabe there.
+        
+        
+        Change log
+        ==========
+        
+        0.0.1 (07/03/2022)
+        ==================
+        First release
+Keywords: Data QC
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
