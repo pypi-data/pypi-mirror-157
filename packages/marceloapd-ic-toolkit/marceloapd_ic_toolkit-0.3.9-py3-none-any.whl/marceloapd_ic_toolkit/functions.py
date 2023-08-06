@@ -1,0 +1,35 @@
+import os
+import platform
+
+def read_credentials():
+    if platform.system() == "Windows":
+        if os.path.exists(f"C:/Users/{os.getlogin()}/.intuitivecare"):
+            credentials_file = open(f"C:/Users/{os.getlogin()}/.intuitivecare/.credentials", "r")
+            credentials = credentials_file.read().split("\n")
+            user_db = credentials[0].replace("userDB:", "")
+            password_db = credentials[1].replace("passwordDB:", "")
+            host_db = credentials[2].replace("hostDB:", "")
+            port_db = credentials[3].replace("portDB:", "")
+            name_db = credentials[4].replace("nameDB:", "")
+        else:
+            return
+    else:
+        if os.path.exists(f"{os.path.expanduser('~')}/.intuitivecare"):
+            credentials_file = open(f"{os.path.expanduser('~')}/.intuitivecare/.credentials", "r")
+            credentials = credentials_file.read().split("\n")
+            user_db = credentials[0].replace("userDB:", "")
+            password_db = credentials[1].replace("passwordDB:", "")
+            host_db = credentials[2].replace("hostDB:", "")
+            port_db = credentials[3].replace("portDB:", "")
+            name_db = credentials[4].replace("nameDB:", "")
+        else:
+            return
+
+    return {"userDB": user_db, "passwordDB": password_db, "hostDB": host_db, "portDB": port_db, "nameDB": name_db}
+
+def identify_system():
+    if platform.system() == "Windows":
+        return 'Windows'
+    else:
+        return 'Linux'
+    
