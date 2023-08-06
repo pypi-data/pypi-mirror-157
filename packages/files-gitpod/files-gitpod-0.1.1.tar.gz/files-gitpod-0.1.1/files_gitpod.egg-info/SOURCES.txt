@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bundle/.gitpod.yml
+bundle/__init__.py
+bundle/.gitpod/Dockerfile
+bundle/.gitpod/docker-compose.yml
+files_gitpod.egg-info/PKG-INFO
+files_gitpod.egg-info/SOURCES.txt
+files_gitpod.egg-info/dependency_links.txt
+files_gitpod.egg-info/top_level.txt
