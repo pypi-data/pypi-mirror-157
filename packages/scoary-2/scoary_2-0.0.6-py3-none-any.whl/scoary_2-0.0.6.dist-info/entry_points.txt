@@ -1,0 +1,3 @@
+[console_scripts]
+scoary=scoary.scoary:main
+
