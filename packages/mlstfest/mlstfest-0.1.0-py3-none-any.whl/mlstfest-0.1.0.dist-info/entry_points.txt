@@ -1,0 +1,3 @@
+[console_scripts]
+mlstfest=mlstfest.main:app
+
