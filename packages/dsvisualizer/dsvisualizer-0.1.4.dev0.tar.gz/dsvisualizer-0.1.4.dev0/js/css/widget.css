@@ -1,0 +1,21 @@
+.viz text {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.viz .box rect {
+  fill: darkcyan;
+}
+
+.viz .box text {
+  fill: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  .viz .arrow {
+    stroke: white;
+  }
+
+  .viz .arrow line {
+    stroke: white;
+  }
+}
