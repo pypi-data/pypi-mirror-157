@@ -1,0 +1,51 @@
+{
+  "allocation_policy": {
+    "instance_templates": [
+      "CHANGE_TO_INSTANCE_TEMPLATE_NAME"
+    ],
+    "location": {
+      "allowed_locations": [
+        "regions/us-west1",
+        "zones/us-west1-a",
+        "zones/us-west1-b",
+        "zones/us-west1-c"
+      ]
+    }
+  },
+  "taskGroups": [
+    {
+      "taskSpec": {
+        "runnables": [
+          {
+            "container": {
+              "imageUri": "gcr.io/prod-635e/mapping-snakemake:0.0.1",
+              "entrypoint": "/bin/sh",
+              "commands": [
+                "-c",
+                "chmod 755 /tmp/repo/cloudbatch-snakemake-highmem.sh && /tmp/repo/cloudbatch-snakemake-highmem.sh ecker-snm3c-novaseq 220608-MouseMiSeqTest CEMBA3C_18A3C_R2_P10-2-O5 mm10"
+              ]
+            }
+          }
+        ],
+        "volumes": [
+          {
+            "deviceName": "new-pd",
+            "mount_path": "/mnt/data",
+            "mountOptions": "rw,async"
+          }
+        ],
+        "maxRetryCount": 2,
+        "maxRunDuration": "86400s"
+      },
+      "taskCount": 1
+    }
+  ],
+  "labels": {
+    "lab": "ecker",
+    "user": "hanqing",
+    "tool": "cloudbatch"
+  },
+  "logsPolicy": {
+    "destination": "CLOUD_LOGGING"
+  }
+}
