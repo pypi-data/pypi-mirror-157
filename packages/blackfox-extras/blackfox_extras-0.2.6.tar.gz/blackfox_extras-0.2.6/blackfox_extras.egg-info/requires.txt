@@ -1,0 +1,7 @@
+blackfox>=5.1.1
+numpy>=1.21.4
+scikit-learn>=1.0.0
+pandas>=0.25.3
+category_encoders>=2.3.0
+tensorflow>=2.6.1
+xgboost>=1.5.0
