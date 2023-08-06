@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+tag_matcher.egg-info/PKG-INFO
+tag_matcher.egg-info/SOURCES.txt
+tag_matcher.egg-info/dependency_links.txt
+tag_matcher.egg-info/top_level.txt
+tagmatcher/__init__.py
