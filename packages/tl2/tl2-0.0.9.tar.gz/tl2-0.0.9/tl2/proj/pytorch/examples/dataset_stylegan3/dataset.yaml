@@ -1,0 +1,30 @@
+ImageFolderDataset: &ImageFolderDataset
+  register_modules:
+    - "tl2.proj.pytorch.examples.dataset_stylegan3.dataset"
+  name: "ImageFolderDataset_of_stylegan"
+  path: 'tl2_lib/data/images_r512'
+  use_labels: False
+  max_size: null
+#  max_size: 100
+  xflip: True
+  resize_resolution: null
+#  resize_resolution: 1024
+  random_seed: 0
+
+data_loader_cfg: &data_loader_cfg
+  sampler_seed: 0
+  pin_memory: True
+  prefetch_factor: 2
+
+
+build_ImageFolderDataset:
+  data_cfg: *ImageFolderDataset
+  data_loader_cfg: *data_loader_cfg
+
+build_dataloader_ddp:
+  data_cfg:
+    base: ImageFolderDataset
+    path: 'tl2_lib/data/images_r512/194.png'
+  data_loader_cfg: *data_loader_cfg
+
+

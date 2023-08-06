@@ -1,0 +1,7 @@
+# will copy the entire package including non-python files.
+graft tl2
+graft data
+
+# list files you dont want to include here.
+global-exclude __pyache__ *.md
+

@@ -1,0 +1,29 @@
+_build_ModFC:
+  in_channel: 128
+  out_channel: 128
+  style_dim: 256
+  use_style_fc: true
+
+mapping_cfg: &mapping_cfg
+  z_dim: 256
+  hidden_dim: 256
+  base_layers: 4
+  head_layers: 0
+  add_norm: true
+  norm_out: true
+
+_build_ModFCBlock:
+  mapping_cfg: *mapping_cfg
+  in_dim: 128
+  out_dim: 128
+  style_dim: 256
+
+
+_build_CIPSNet:
+  mapping_cfg: *mapping_cfg
+  input_dim: 128
+  hidden_dim: 128
+  out_dim: 64
+  style_dim: 256
+  num_blocks: 4
+  add_out_layer: True

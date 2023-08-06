@@ -1,0 +1,9 @@
+[global]
+
+index-url = http://repo.myhuaweicloud.com/repository/pypi/simple
+
+format = columns
+
+[install]
+
+trusted-host = repo.myhuaweicloud.com

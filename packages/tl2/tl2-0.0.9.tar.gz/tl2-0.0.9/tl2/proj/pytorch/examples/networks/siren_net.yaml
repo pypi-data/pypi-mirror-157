@@ -1,0 +1,69 @@
+_build_ModFiLMLayer:
+  in_dim: 128
+  out_dim: 256
+  style_dim: 512
+  gradient_scale: 1/15
+
+
+mapping_cfg: &mapping_cfg
+  z_dim: 256
+  hidden_dim: 256
+  base_layers: 4
+  head_layers: 0
+  add_norm: true
+  norm_out: true
+
+
+_build_ModFiLMBlock:
+  mapping_cfg: *mapping_cfg
+  in_dim: 128
+  out_dim: 128
+  style_dim: 256
+
+
+_build_SIRENNet_skip:
+  mapping_cfg: *mapping_cfg
+  input_dim: 3
+  hidden_dim: 128
+  out_dim: 64
+  style_dim: 256
+  num_blocks: 4
+  add_out_layer: false
+  add_in_layer: true
+
+
+_build_ModSIREN_Net:
+  mapping_cfg: *mapping_cfg
+  input_dim: 3
+  hidden_dim: 128
+  out_dim: 128
+  style_dim: 256
+  N_layers: 4
+  use_pos_enc: true
+  PEF_cfg:
+    N_freqs: 10
+
+_shape_cfg: &_shape_cfg
+  input_dim: 3
+  hidden_dim: 256
+  out_dim: 256
+  style_dim: 256
+  N_layers: 8
+  use_pos_enc: true
+  PEF_cfg:
+    N_freqs: 10
+
+_app_cfg: &_app_cfg
+#  input_dim: 64
+  hidden_dim: 128
+  out_dim: 32
+  style_dim: 256
+  num_blocks: 1
+  disable_to_rgb: true
+  skip: false
+
+_build_NeRF_Net:
+  shape_net_cfg: *_shape_cfg
+  app_net_cfg: *_app_cfg
+  shape_block_end_index: 3
+  app_block_end_index: 1

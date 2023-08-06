@@ -1,0 +1,31 @@
+root_obs: &root_obs s3://bucket-7001/ZhouPeng
+modelarts_download: &modelarts_download
+  data_root:
+    datapath_obs: '{global_cfg.root_obs}/keras/mixed_faces/mixed_faces1024_v3.zip'
+    datapath: datasets/mixed_faces/mixed_faces1024_v3.zip
+    overwrite: false
+    eval: true
+    unzip: false
+  inception:
+    datapath_obs: '{global_cfg.root_obs}/keras/stylegan2-ada-pytorch-exp/datasets/pretrained/metrics/inception-2015-12-05.pt'
+    datapath: datasets/pretrained/metrics/inception-2015-12-05.pt
+    overwrite: false
+    eval: true
+    unzip: false
+  ffhq1024:
+    datapath_obs: '{global_cfg.root_obs}/keras/stylegan2-ada-pytorch-exp/datasets/pretrained/transfer-learning-source-nets/ffhq-res1024-mirror-stylegan2-noaug.pkl'
+    datapath: datasets/pretrained/transfer-learning-source-nets/ffhq-res1024-mirror-stylegan2-noaug.pkl
+    overwrite: false
+    eval: true
+    unzip: false
+
+
+multi_process_main:
+  image_list_file: "tl2_lib/data/images_r512/image_list.txt"
+  model_cfg:
+    register_modules:
+      - exp.dev.hrinversion.models.projector_v4
+    name: exp.dev.hrinversion.models.projector_v4.StyleGAN2Projector
+  root_obs: *root_obs
+  modelarts_download: *modelarts_download
+

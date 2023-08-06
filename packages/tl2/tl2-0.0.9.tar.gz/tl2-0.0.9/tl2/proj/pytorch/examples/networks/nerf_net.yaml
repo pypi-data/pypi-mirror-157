@@ -1,0 +1,56 @@
+_build_PosEmbedding:
+  N_freqs: 10
+  affine_dim: 16
+  xyz_affine: true
+
+shape_net_cfg: &shape_net_cfg
+  input_dim: 128
+  hidden_dim: 128
+  out_dim: 64
+  style_dim: 128
+  num_blocks: 3
+
+app_net_cfg: &app_net_cfg
+#  input_dim: 64
+  hidden_dim: 128
+  out_dim: 64
+  style_dim: 128
+  num_blocks: 3
+
+_build_NeRFNetwork_CIPS:
+  scale_factor: null
+  PEF_cfg:
+    N_freqs: 10
+    affine_dim: 16
+    xyz_affine: true
+  use_PEF: true
+  shape_net_cfg: *shape_net_cfg
+  app_net_cfg: *app_net_cfg
+
+
+shape_siren_skip_cfg: &shape_siren_skip_cfg
+  input_dim: 3
+  hidden_dim: 256
+  out_dim: 64
+  style_dim: 256
+  num_blocks: 4
+  add_out_layer: false
+  add_in_layer: true
+
+app_siren_skip_cfg: &app_siren_skip_cfg
+#  input_dim: 64
+  hidden_dim: 256
+  out_dim: 64
+  style_dim: 256
+  num_blocks: 1
+
+_build_NeRFNetwork_SIREN_skip:
+  scale_factor: null
+  PEF_cfg:
+    N_freqs: 10
+    xyz_affine: false
+  use_PEF: false
+  shape_net_cfg: *shape_siren_skip_cfg
+  app_net_cfg: *app_siren_skip_cfg
+  shape_block_end_index: 4
+  app_block_end_index: 1

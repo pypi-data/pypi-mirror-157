@@ -1,0 +1,6 @@
+build_model:
+  model:
+    register_modules:
+      - tl2_lib.tl2.proj.fvcore.dummy_model
+    name: tl2_lib.tl2.proj.fvcore.dummy_model.DummyModel
+

@@ -1,0 +1,35 @@
+root_obs: &root_obs s3://bucket-3690/ZhouPeng
+
+align_face:
+  root_obs: *root_obs
+  port: 8561
+  sidebar:
+    sidebar_name: "align_face"
+  model_cfg:
+    register_modules:
+      - tl2_lib.tl2.proj.dlib.ffhq_face_align.align_face_stmodel
+    name: tl2_lib.tl2.proj.dlib.ffhq_face_align.align_face_stmodel.AlignFace
+  mode:
+    - align_face
+  align_face:
+    landmark_model: "cache_pretrained/dlib/shape_predictor_68_face_landmarks.dat"
+    image_list:
+      raw_img_list:
+        image_list_file:
+          - "tl2_lib/tl2/proj/dlib/datasets/raw_face_list.txt"
+    save_in_source_dir: false
+
+crop_face_by_landmarks:
+  base: align_face
+  mode:
+    - crop_face_by_landmarks
+  crop_face_by_landmarks:
+    landmark_model: "datasets/pretrained/shape_predictor_68_face_landmarks.dat"
+    image_list:
+      raw_img_list:
+        image_list_file:
+          - "tl2_lib/tl2/proj/dlib/datasets/raw_face_list.txt"
+
+
+
+
