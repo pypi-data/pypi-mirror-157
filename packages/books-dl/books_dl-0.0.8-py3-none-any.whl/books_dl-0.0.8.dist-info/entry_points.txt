@@ -1,0 +1,3 @@
+[console_scripts]
+books-dl = books_dl:main
+
