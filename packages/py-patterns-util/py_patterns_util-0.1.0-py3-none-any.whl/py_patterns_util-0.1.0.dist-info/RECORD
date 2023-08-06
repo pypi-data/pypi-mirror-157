@@ -1,0 +1,9 @@
+LICENSE,sha256=vD51xoCw55PatYQPxS6a9n1YfqHSe9523QgyyhDfCg0,1071
+py_patterns/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+py_patterns/adapters/__init__.py,sha256=q7jej-ZwOZU11PTXWf2O1qLVyRzBPCOpuIKmNeUM6vE,35
+py_patterns/adapters/adapter.py,sha256=4Y9_YTzyHyJxGrPx2BIPBN5JG9CroOZoxAA1xYYkLMQ,4814
+py_patterns/base.py,sha256=cSRfoxri0eboMu-gbz6L_d1gfvMQ8Hj3uL60OJU7CHw,35
+py_patterns_util-0.1.0.dist-info/LICENSE,sha256=vD51xoCw55PatYQPxS6a9n1YfqHSe9523QgyyhDfCg0,1071
+py_patterns_util-0.1.0.dist-info/WHEEL,sha256=DRf8A_Psd1SF2kVqTQOOFU1Xzl3-A2qljAxBMTOusUs,83
+py_patterns_util-0.1.0.dist-info/METADATA,sha256=Z5OsElkEByNH3AyFjYj_cdRjYgwOHZUWBZTy6OP-Kcs,1196
+py_patterns_util-0.1.0.dist-info/RECORD,,
