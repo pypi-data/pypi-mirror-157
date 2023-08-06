@@ -1,0 +1,161 @@
+Metadata-Version: 2.1
+Name: apifiny
+Version: 1.1.4
+Summary: This is a lightweight library that works as a connector to Apifiny OPEN API.
+Home-page: https://github.com/Apifiny-IO/apifiny-connector-python
+License: MIT
+Keywords: apifiny,api,unified APIs,connect,market data,cryptocurrency,tickdata,spot,futures,orderbook data,executed transactions data,history market data,real time market data,fix protocol,websocket api,http api,rest api,fix api
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: PyJWT (==2.3.0)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: websocket-client (==1.0.1)
+
+# Apifiny OPEN API Connector Python
+[![GitHub issues](https://img.shields.io/github/issues/Apifiny-IO/apifiny-connector-python)](https://github.com/Apifiny-IO/apifiny-connector-python/issues)
+[![GitHub forks](https://img.shields.io/github/forks/Apifiny-IO/apifiny-connector-python)](https://github.com/Apifiny-IO/apifiny-connector-python/network)
+[![GitHub stars](https://img.shields.io/github/stars/Apifiny-IO/apifiny-connector-python)](https://github.com/Apifiny-IO/apifiny-connector-python/stargazers)
+[![GitHub license](https://img.shields.io/github/license/Apifiny-IO/apifiny-connector-python)](https://github.com/Apifiny-IO/apifiny-connector-python/blob/main/LICENSE)
+[![contributors](https://img.shields.io/github/contributors/Apifiny-IO/apifiny-connector-python)](https://github.com/Apifiny-IO/apifiny-connector-python/graphs/contributors)
+[![PyPI](https://img.shields.io/pypi/v/apifiny)](https://pypi.org/project/apifiny/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/apifiny)](https://pypi.org/project/apifiny/)
+[![Downloads](https://pepy.tech/badge/apifiny/month)](https://pepy.tech/project/apifiny)
+
+This is a library that works as a connector to [APIFINY OPEN API](https://github.com/Apifiny-IO/apifiny-connector-python)
+
+- Supported APIs:
+>- REST trading/market API
+>- WebSocket trading/market API
+
+
+## OPEN API Documentation
+
+[https://doc.apifiny.com/connect/#introduction](https://doc.apifiny.com/connect/#introduction)
+
+
+## Install
+```python
+pip3 install apifiny
+```
+Use windows, installing quickfix fails,Please use the link to download the file and install locally.
+https://www.lfd.uci.edu/~gohlke/pythonlibs/#quickfix
+
+## RESTful APIs
+**Usage examples:**
+
+Get all supported exchanges
+```python
+from apifiny.rest_api import API as Client
+
+client = Client()
+print(client.list_venue())
+```
+Get Market Data
+```python
+from apifiny.rest_market import MarketData as MD_Client
+
+md_client = MD_Client()
+# Get BINANCE orderbook of BTCUSDT
+print(md_client.market_order_book("BINANCE", "BTCUSDT"))
+# Get BINANCE klines of BTCUSDT at 1m interval
+print(md_client.market_kline("BINANCE", "BTC", "USDT", "1m"))
+```
+Create Order
+```python
+from apifiny.rest_api import API as Client
+from apifiny.lib import venue_list
+
+client = Client(False,venue_list.BINANCE)
+
+# Get server timestamp
+print(client.server_time())
+
+# api key/secret are required for trade endpoints
+client = Client(unified_url=False, venue="BINANCE", account_id='<account_id>', key='<api_key>', secret='<api_secret>')
+
+# Post a new order
+params = {
+    "accountId": account_id,
+    "venue": "BINANCE",
+    "orderId": "",
+    "orderInfo": {
+        "limitPrice": "30000",
+        "orderSide": "BUY",
+        "orderType": "LIMIT",
+        "quantity": "0.0001",
+        "symbol": "BTCUSDT",
+        "timeInForce": 1,
+    }
+}
+
+response = client.new_order(**params)
+print(response)
+```
+Access sandbox environment
+```python
+from apifiny.rest_api import API as Client
+
+client = Client(test=True)
+print(client.list_venue())
+```
+
+## WebSocket APIs
+
+**Usage examples:**
+
+Subscribe Market Data
+```python
+from apifiny.ac_websocket import ACSpotApi as Client
+
+# Get BINANCE orderbook of BTCUSDT
+msg = {"channel": "orderbook", "symbol": 'BTCUSDT', "venues": ["BINANCE"], "action": "sub"}
+# Get BINANCE klines of BTCUSDT at 1m interval
+# msg = {"channel": "kline_1m", "symbol": "BTCUSDT", "venues": ["BINANCE"], "action": "sub"}
+# client = Client(test=True) # test=True,Access sandbox environment
+client = Client()
+client.connect(md=True)
+client.send_msg(msg)
+```
+Create Order
+```python
+from apifiny.ac_websocket import ACSpotApi as Client
+
+# Post a new order
+params = {
+    "accountId": account_id,
+    "venue": "BINANCE",
+    "orderId": "",
+    "orderInfo": {
+        "limitPrice": "30000",
+        "orderSide": "BUY",
+        "orderType": "LIMIT",
+        "quantity": "0.0001",
+        "symbol": "BTCUSDT",
+        "timeInForce": 1,
+    }
+}
+# api key/secret are required for trade endpoints
+client = Client(venue="BINANCE")
+client.connect(account_id, api_key_id, secret_key)
+client.new_order(**params)
+# client.close()
+```
+
+Please find `examples` folder to check for more endpoints.
+
+
+## Contributing
+
+Contributions are welcome.<br/>
+If you've found a bug within this project, please open an issue to discuss what you would like to change.<br/>
+If it's an issue with the API, please report any new issues at [apifiny-connector-python issues](https://github.com/Apifiny-IO/apifiny-connector-python/issues)
+
