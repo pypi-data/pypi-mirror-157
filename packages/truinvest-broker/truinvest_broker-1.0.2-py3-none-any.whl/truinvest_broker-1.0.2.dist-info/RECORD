@@ -1,0 +1,12 @@
+client/IciciTrading.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client/KiteTrading.py,sha256=usaOePZnOzJq3dyljbPagTMuXYS5Cmap9MmFcrla-LE,4400
+client/KotakTrading.py,sha256=dIyxbbc6faVttoWK9pErvIR_m34QAgCXC4MBpL2T-Wo,1604
+client/MasterTrust.py,sha256=3ONpCaBNvoBctro5IJWxVimqPnumEG478uPmzvFDuYo,5787
+client/TradingInterface.py,sha256=_z5kf_w719yayjfGhUWWssxYJB3OmrLBgMy1N9l3l3Q,603
+client/TruinvestBroker.py,sha256=VmS_XuxDqeZb9EqJn-1wuC6wgJUtS4Tf8OCKa8xsMkQ,2994
+client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client/uTradeBroker.py,sha256=sOHC66qyygC65MhNlfj8YP6xjYKau5lo2EypIibrBH0,7292
+truinvest_broker-1.0.2.dist-info/METADATA,sha256=cG8nYHLlqbG8Ixz49ihp0s2J_kHIi7Dyw9KBDYFkSvI,673
+truinvest_broker-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+truinvest_broker-1.0.2.dist-info/top_level.txt,sha256=DJiuN0ty6vOMYewH87cxtQ0LWVaJpE0bZ1Blm0e3RCE,7
+truinvest_broker-1.0.2.dist-info/RECORD,,
