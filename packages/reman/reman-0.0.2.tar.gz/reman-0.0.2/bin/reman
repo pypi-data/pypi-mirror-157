@@ -1,0 +1,59 @@
+#!/usr/bin/python3
+
+from reman import ReMan
+import argparse
+import sys
+
+reman = ReMan.ReMan()
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("action", help="The action to perform: getUserChannels getChannel createConanData")
+parser.add_argument("-r", "--releaseName", type=str, help="The release name")
+parser.add_argument("-u", "--userName", type=str, help="The user name")
+parser.add_argument("-c", "--channelName", type=str, help="The channel name")
+
+def checkReleaseName():
+	if (args.releaseName is None):
+		print(f"Release name not specified")
+		sys.exit(1)
+
+def checkUserName():
+	if (args.userName is None):
+		print(f"User name not specified")
+		sys.exit(1)
+
+def checkChannel():
+	if (args.version is None):
+		print(f"Channel not specified")
+		sys.exit(1)
+
+
+def getUserChannels(releaseName):
+	print(reman.getUserChannels(releaseName))
+
+def getChannel(releaseName, userName):
+	print(reman.getChannel(releaseName, userName))
+
+def createConanData(releaseName):
+	data = reman.getUserChannels(releaseName)
+	print("create conandata.yml")
+	f = open("conandata.yml", "w")
+	f.write("repositories:\n")
+	for row in data:
+		f.write(f"  {row[0]}: \"{row[1]}\"\n")
+	f.close()
+
+args = parser.parse_args()
+
+if (args.action == "getUserChannels"):
+	checkReleaseName()
+	getUserChannels(args.releaseName)
+elif (args.action == "getChannel"):
+	checkReleaseName()
+	checkUserName()
+	getChannel(args.releaseName, args.userName)
+elif (args.action == "createConanData"):
+	checkReleaseName()
+	createConanData(args.releaseName)
+
