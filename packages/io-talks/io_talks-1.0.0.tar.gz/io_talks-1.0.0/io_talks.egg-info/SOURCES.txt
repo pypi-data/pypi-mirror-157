@@ -1,0 +1,8 @@
+README.rst
+setup.py
+io_talks/__init__.py
+io_talks/main.py
+io_talks.egg-info/PKG-INFO
+io_talks.egg-info/SOURCES.txt
+io_talks.egg-info/dependency_links.txt
+io_talks.egg-info/top_level.txt
