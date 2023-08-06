@@ -1,0 +1,9 @@
+pyembroidery
+
+[docs]
+sphinx
+numpydoc
+sphinx-gallery
+sphinx_rtd_theme
+sphinx-intl
+matplotlib
