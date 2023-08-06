@@ -1,0 +1,12 @@
+boosql/exceptions/exception.py,sha256=BMFyEwVHgD5apHtv0whaIFD6kn5nR3dM0I8PSCUlW-k,230
+boosql/exceptions/failedparse.py,sha256=1XSIKnsXyD80Thbg2TfcIHYjbIc7wOHxgejH6kFqits,301
+boosql/exceptions/invalidpath.py,sha256=Q7Kb__EvMX19T6NN1B8oFcMGzpyUF3cktAFh5b01SOc,230
+boosql/exceptions/unknownerrorfile.py,sha256=-QVNbzU2xmMaOMAH8i5CjagN7vxtDv6EI1dZWYgOZrw,259
+boosql/initializer.py,sha256=1MTizJ9nI5vtAA_cDbq990WlJoaf8-dhbr_atnc0hOM,1685
+boosql/main.py,sha256=z_0ZrlD0FN9_sP-waKNW5i_Qp_0K0TsESNXFs5X1-wY,1297
+boosql/manager.py,sha256=I395lQGUYn8P_5Bnag1CjJfuHQ0S3UaOnOslUmXnBp8,3726
+boosql/parser.py,sha256=sudCpynui3sqz1IoYNYeOZ3E1lQMJ_Hr32hsEpbf-rA,702
+boosql-0.9.9.dist-info/LICENSE,sha256=Bk0Uc4pl8n_ctgsns3IFnT8bEKirstGxNI2W73D7Ml4,1064
+boosql-0.9.9.dist-info/WHEEL,sha256=wycAfLpmmoS0r5FEKIVwKB-iEMUiIZXv6P5GBpfA1-Q,87
+boosql-0.9.9.dist-info/METADATA,sha256=Bvn_n5hwIT8QsHsGS68NmOBQVG0cRvW5RYWdnAC3_h4,569
+boosql-0.9.9.dist-info/RECORD,,
