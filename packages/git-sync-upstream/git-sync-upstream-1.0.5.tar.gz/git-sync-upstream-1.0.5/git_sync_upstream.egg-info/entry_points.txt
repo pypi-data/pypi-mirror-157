@@ -1,0 +1,2 @@
+[console_scripts]
+git-sync-upstream = gitsyncupstream.__main__:main

@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: git-sync-upstream
+Version: 1.0.5
+Summary: Sync git upstream remote branches and tags to local clone and origin remote
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+=================
+git-sync-upstream
+=================
+
+git-sync-upstream is a CLI to sync git `upstream` remote branches and tags with
+the local clone and `origin` remote.
+
+Installation
+------------
+
+git-sync-upstream is distributed on `PyPI`_. It requires Python 3.7+. To
+install:
+
+.. code-block:: console
+
+    $ python -m pip install git-sync-upstream
+
+Usage
+-----
+
+Change directory to the git project to sync. The project must have a remote
+named `upstream` and `origin`. The remote `upstream` will be used to sync
+_from_. Its branches and tags will be synced locally and _to_ `origin`.
+
+.. code-block:: console
+
+    $ cd myproject
+    # To sync the current branch
+    $ git-sync-upstream
+    # To sync all branches
+    $ git-sync-upstream --all
+
+It is convenient to add a git alias to the command:
+
+.. code-block:: console
+
+    $ git config --global alias.sync "!git-sync-upstream"
+
+Then:
+
+.. code-block:: console
+
+    $ cd myproject
+    # To sync the current branch
+    $ git sync
+    # To sync all branches
+    $ git sync --all
+
+.. _PyPI: https://pypi.org
