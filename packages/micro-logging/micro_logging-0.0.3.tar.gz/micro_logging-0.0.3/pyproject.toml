@@ -1,0 +1,15 @@
+[project]
+name = "micro_logging"
+version = "0.0.3"
+authors = [
+    { name="Max Paul", email="maxkpaul21@gmail.com" },
+]
+description = "A logging solution to connect all your microservices :) "
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
