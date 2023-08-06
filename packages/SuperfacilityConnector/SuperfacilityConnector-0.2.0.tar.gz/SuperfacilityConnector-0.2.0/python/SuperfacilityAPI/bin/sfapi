@@ -1,0 +1,285 @@
+#!/usr/bin/env python3
+
+import sys
+from unicodedata import name
+from SuperfacilityAPI import (
+    SuperfacilityAPI,
+    SuperfacilityAccessToken
+)
+from SuperfacilityAPI.nersc_systems import NERSC_DEFAULT_COMPUTE
+
+import click
+from pprint import pprint
+from pathlib import Path
+import json
+import logging
+
+try:
+    import tabulate
+except ImportError:
+    logging.warning("tabulate not installed falling back to json")
+
+tabprint = False
+runasync = True
+
+
+def mypprint(x):
+    if isinstance(x, str):
+        print(x)
+        return
+    elif tabprint:
+        printerly = {key: [i[key] for i in x] for key in x[0]}
+        print(tabulate.tabulate(printerly, headers=printerly.keys()))
+    else:
+        try:
+            print(json.dumps(x))
+        except Exception as e:
+            print(x)
+
+    return
+
+
+def check_file_and_open(file_path: str = "") -> str:
+    contents = None
+    pth = Path(file_path)
+    if pth.is_file():
+        with open(pth.absolute()) as f:
+            contents = f.read()
+    return contents
+
+
+@click.group()
+@click.option('--clientid', default=None,
+              help='Client ID for your key. Can be used to specify which key to look for in $HOME/.superfacility.')
+@click.option('--debug', is_flag=True, default=False, help='Print debug messages from sfapi and SuperfacilityConnector')
+@click.option('--pretty', is_flag=True, default=False, help='Print in table format.')
+@click.option('--sync', is_flag=True, default=False, help='Run async')
+@click.pass_context
+def cli(ctx, clientid, debug, pretty, sync):
+    # Entrypoint for all the cli subcommands
+    # Basically an __init__ function that sets up the sfapi
+    ctx.ensure_object(dict)
+    if debug:
+        logging.basicConfig(encoding='utf-8', level=logging.DEBUG)
+    else:
+        logging.basicConfig(encoding='utf-8', level=logging.WARNING)
+
+    global tabprint
+    if pretty:
+        try:
+            import tabulate
+            tabprint = True
+        except ImportError:
+            logging.warning("tabulate not installed falling back to json")
+            tabprint = False
+    if sync:
+        runasync = True
+
+    access_token = SuperfacilityAccessToken(client_id=clientid)
+    sfapi = SuperfacilityAPI(token=access_token.token)
+
+    ctx.obj['sfapi'] = sfapi
+
+
+@cli.command()
+@click.argument('site', default=NERSC_DEFAULT_COMPUTE)
+@click.pass_context
+def status(ctx, site):
+    sfapi = ctx.obj['sfapi']
+
+    if site in ['compute', 'computes']:
+        site = 'cori,perlmutter'
+    elif site in ['filesystem', 'filesystems']:
+        site = 'dna,dtns,global_homes,projectb,global_common,community_filesystem'
+    elif site in ['login', 'logins']:
+        site = 'cori,perlmutter,jupyter,dtns'
+
+    if site == 'all':
+        ret = sfapi.status(None)
+    else:
+        ret = [sfapi.status(site) for site in site.split(",")]
+
+    ret = [oj for oj in ret if oj['description'] != 'Retired']
+
+    ret = [{k: oj[k] for k in ['full_name', 'description',
+                               'status', 'updated_at']} for oj in ret]
+
+    mypprint(ret)
+
+
+@cli.command()
+@click.pass_context
+def token(ctx):
+    sfapi = ctx.obj['sfapi']
+    mypprint(sfapi.access_token)
+
+
+@cli.command()
+@click.pass_context
+def systems(ctx):
+    sfapi = ctx.obj['sfapi']
+    mypprint(sfapi.system_names())
+
+
+@cli.command()
+@click.pass_context
+def roles(ctx):
+    sfapi = ctx.obj['sfapi']
+    ret = sfapi.roles()
+    try:
+        ret = [{k: oj[k] for k in ['repo_name', 'id',
+                                   'iris_role', 'description']} for oj in ret]
+        mypprint(ret)
+    except Exception as e:
+        print(ret, file=sys.stderr)
+
+
+@cli.command()
+@click.pass_context
+def projects(ctx):
+    sfapi = ctx.obj['sfapi']
+
+    ret = sfapi.projects()
+    mypprint(ret)
+
+
+@cli.command()
+@click.option('--group', default=None, help='NERSC Group')
+@click.pass_context
+def group(ctx, group):
+    sfapi = ctx.obj['sfapi']
+
+    ret = sfapi.get_groups(groups=group)
+
+    mypprint(ret)
+
+
+@cli.command()
+@click.argument('site', default=NERSC_DEFAULT_COMPUTE)
+@click.option('--path', default=None, help='Path to slurm submit file at NERSC.')
+@click.option('--local', default=None, help='Path to local file to submit.')
+@click.pass_context
+def sbatch(ctx, site, path, local):
+    sfapi = ctx.obj['sfapi']
+    script = None
+    isPath = False
+
+    if path is not None:
+        isPath = True
+        script = path
+    elif local is not None:
+        script = check_file_and_open(local)
+
+    ret = sfapi.post_job(site=site, script=script,
+                         isPath=isPath, run_async=runasync)
+    if runasync:
+        mypprint(ret)
+    else:
+        try:
+            mypprint(ret['jobid'])
+        except Exception as e:
+            mypprint(e)
+
+
+@cli.command()
+@click.argument('site', default=NERSC_DEFAULT_COMPUTE)
+@click.option('--path', default=None, help='Path to slurm submit file at NERSC.')
+@click.pass_context
+def ls(ctx, site, path):
+    sfapi = ctx.obj['sfapi']
+
+    ret = sfapi.ls(site=site, remote_path=path)
+    try:
+        mypprint(ret['entries'])
+    except Exception as e:
+        mypprint(e)
+
+
+@cli.command()
+@click.argument('site', default=NERSC_DEFAULT_COMPUTE)
+@click.option('--path', default=None, help='Path to slurm submit file at NERSC.')
+@click.pass_context
+def cat(ctx, site, path):
+    sfapi = ctx.obj['sfapi']
+
+    ret = sfapi.download(site=site, remote_path=path, save=False)
+
+    try:
+        print(ret['file'])
+    except Exception as e:
+        mypprint(e)
+
+
+@cli.command()
+@click.argument('site', default=NERSC_DEFAULT_COMPUTE)
+@click.option('--sacct/--no-sacct', default=False)
+@click.option('--user', default=None, help='User to to get queue info for.')
+@click.option('--jobid', default=None, help='Specific jobid to get queue info for.')
+@click.pass_context
+def squeue(ctx, site, sacct, user, jobid):
+    sfapi = ctx.obj['sfapi']
+
+    ret = sfapi.get_job(site=site, sacct=sacct, user=user, jobid=jobid)
+
+    cols = ['jobid',
+            'name',
+            'account',
+            'cpus',
+            'features',
+            'partition',
+            'reason',
+            'start_time',
+            'state',
+            'submit_time',
+            'time',
+            'time_left',
+            'time_limit',
+            ]
+
+    try:
+        if sacct:
+            mypprint(ret['output'])
+        else:
+            ret = [{k: oj[k] for k in cols} for oj in ret['output']]
+            mypprint(ret)
+    except Exception as e:
+        mypprint(f"Error {e}")
+
+
+@cli.command()
+@click.argument('jobid', default=NERSC_DEFAULT_COMPUTE)
+@click.argument('site', default=NERSC_DEFAULT_COMPUTE)
+@click.pass_context
+def scancel(ctx, site, jobid):
+    sfapi = ctx.obj['sfapi']
+    logging.info(f"Running delete on {jobid}@{site}")
+
+    ret = sfapi.delete_job(site=site, jobid=jobid)
+    mypprint(ret)
+
+
+@cli.command()
+@click.argument('taskid', default=NERSC_DEFAULT_COMPUTE)
+@click.pass_context
+def task(ctx, taskid):
+    sfapi = ctx.obj['sfapi']
+    # Waits (up to {timeout} seconds) for the job to be submited before returning
+    timeout = 40
+    sleeptime = 1
+    from time import sleep
+    for i in range(timeout):
+        if i > 0:
+            sleep(sleeptime)
+
+        logging.debug(f"Running {i}")
+        task = sfapi.tasks(task_id=taskid)
+        logging.debug(f"task = {task}")
+        if task is not None and task['status'] == 'completed':
+            jobinfo = json.loads(task['result'])
+            print(
+                {'error': jobinfo['error'], 'jobid': jobinfo['jobid'], 'task_id': taskid})
+            return
+
+
+if __name__ == '__main__':
+    cli(obj={})

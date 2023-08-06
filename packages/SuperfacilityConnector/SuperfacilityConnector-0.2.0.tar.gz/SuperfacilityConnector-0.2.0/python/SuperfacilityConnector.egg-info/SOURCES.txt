@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+python/SuperfacilityAPI/SuperfacilityAPI.py
+python/SuperfacilityAPI/SuperfacilityAccessToken.py
+python/SuperfacilityAPI/__init__.py
+python/SuperfacilityAPI/api_version.py
+python/SuperfacilityAPI/error_warnings.py
+python/SuperfacilityAPI/nersc_systems.py
+python/SuperfacilityAPI/bin/sfapi
+python/SuperfacilityConnector.egg-info/PKG-INFO
+python/SuperfacilityConnector.egg-info/SOURCES.txt
+python/SuperfacilityConnector.egg-info/dependency_links.txt
+python/SuperfacilityConnector.egg-info/requires.txt
+python/SuperfacilityConnector.egg-info/top_level.txt
