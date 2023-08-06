@@ -1,0 +1,5 @@
+import sys
+from browserpedals import browserpedals
+
+browserpedals.run_main(*sys.argv[1:])
+

@@ -1,0 +1,125 @@
+.browserpedalsUiDivClass {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 3%;
+    width: 80%;
+    height: 60%;
+
+    background-color: rgba(188, 187, 156, 0.9);
+    border-style: none;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.browserpedalsUiInformDivClass {
+    width: 90%;
+    height: 35%;
+
+    color: rgba(0, 0, 216, 0.7);
+    font-size: 2vw;
+    font-weight: 700;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.browserpedalsUiInformSelectClass {
+    color: rgba(0, 0, 216, 0.7);
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.browserpedalsUiInformSelectOptionClass {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.browserpedalsUiButtonsDivClass {
+    width: 65%;
+    height: 15%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.browserpedalsUiProgressDivClass {
+    width: 90%;
+    height: 10%;
+
+    background-color: rgba(172, 162, 171, 0.8);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.browserpedalsUiEventsDivClass {
+    width: 70%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+}
+
+.browserpedalsUiYesNoDivClass {
+    width: 25%;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.browserpedalsUiYesNoButtonClass {
+    width: 80%;
+    height: 80%;
+
+    color: rgba(0, 0, 216, 0.7);
+    font-size: 1.6vw;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.browserpedalsUiProgressValClass {
+    background-color: rgba(238, 58, 100, 0.8);
+}
+
+.browserpedalsUiProgressTextClass {
+    color: rgba(0, 0, 216, 0.4);
+    font-size: 1.9vw;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.browserpedalsUiEventTextClass {
+    height: 25%;
+
+    font-size: 1.5vw;
+    font-weight: 700;
+    white-space: nowrap;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}

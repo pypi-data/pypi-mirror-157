@@ -1,0 +1,47 @@
+{
+'roles': {
+  'possible_values': ['PausePedal', 'JumpPedal'],
+  'values': ['PausePedal', 'JumpPedal'],
+  },
+'pedals': {
+  (1103, 45572): {
+    'windows': {
+      'name': 'Thrustmaster : Thrustmaster wheel',
+      'usages': {
+        (1, 49): {
+          'name': 'Generic Desktop device, Y usage',
+          ('PausePedal', 'Pressed'): {
+            'is_range': 1,
+            'values': [1, 127],
+            },
+          ('PausePedal', 'Released'): {
+            'values': [128],
+            },
+          ('JumpPedal', 'Pressed'): {
+            'is_range': 1,
+            'values': [129, 255],
+            },
+          ('JumpPedal', 'Released'): {
+            'values': [128],
+            },
+          },
+        },
+      },
+    'linux': {
+      'name': 'Thrustmaster Thrustmaster wheel',
+      ('PausePedal', 'Pressed'): {
+        (3, 1): [1, 127],
+        },
+      ('PausePedal', 'Released'): {
+        (3, 1): [128],
+        },
+      ('JumpPedal', 'Pressed'): {
+        (3, 1): [129, 255],
+        },
+      ('JumpPedal', 'Released'): {
+        (3, 1): [128],
+        },
+      },
+    },
+  },
+}

@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: browserpedals
+Version: 0.0.2
+Summary: Control videos in web browser with pedals
+Home-page: https://github.com/shmygov/browserpedals
+Author: Dmitry Shmygov
+Author-email: shmygov@rambler.ru
+License: UNKNOWN
+Keywords: browser foot pedals video audio transcribing pause play typing selenium webdriver
+Platform: UNKNOWN
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: JavaScript
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Multimedia :: Video :: Display
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Printing
+Classifier: Topic :: Internet
+Requires-Python: >=3.6
+License-File: LICENSE
+
+
+Control any video or audio in a web browser with foot pedals (pause/play or jump back),
+even when the web browser is not in focus (for example, while typing in text editor).
+
+| This may be helpful during transcribing (listening to a video and typing the spoken text).
+| The program will attempt to recognize new foot pedals automatically.
+| (Under the hood, the program uses Selenium project to control the browser.)
+
+To install the program on Linux, open command line and type::
+
+$ python3 -m pip install --no-cache-dir browserpedals
+
+To install the program on Windows, open command line or Windows PowerShell and type::
+
+$ py -m pip install --no-cache-dir browserpedals
+
+During the installation, ``BrowserPedals`` icon will be created on the Desktop.
+To run the program, double-click on this icon and wait for new browser window to open.
+In the browser, home page will open with information about the program and
+a pop-up dialog for detecting and testing the pedals.
+
