@@ -1,0 +1,13 @@
+# ChemicalTaggerPy
+
+这是一个调用中科大校内网ChemicalTagger REST-API的包
+
+```python
+from ctpy import ChemicalTagger
+sent = 'To a stirred solution of 4-hydroxypiperidine (0.97 g, 9.60 mmol) in anhydrous dimethylformamide (20 mL) at 0°C was added 1-(bromomethyl)-4-methoxybenzene (1.93 g, 9.60 mmol) and triethylamine (2.16 g, 21.4 mmol).'
+mols = ChemicalTagger.sentence_to_mols(sent)
+
+# mols: [{'name': '4-hydroxypiperidine', 'smiles': 'OC1CCNCC1'}, 
+#        {'name': 'dimethylformamide', 'smiles': 'CN(C=O)C'},
+#        ...]
+```

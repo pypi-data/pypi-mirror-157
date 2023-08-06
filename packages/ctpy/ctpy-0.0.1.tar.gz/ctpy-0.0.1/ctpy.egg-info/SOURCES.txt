@@ -1,0 +1,10 @@
+README.md
+setup.py
+ctpy/__init__.py
+ctpy/chemical_tagger.py
+ctpy.egg-info/PKG-INFO
+ctpy.egg-info/SOURCES.txt
+ctpy.egg-info/dependency_links.txt
+ctpy.egg-info/entry_points.txt
+ctpy.egg-info/requires.txt
+ctpy.egg-info/top_level.txt
