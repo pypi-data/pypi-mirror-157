@@ -1,0 +1,16 @@
+README.md
+setup.py
+wuggy/__init__.py
+wuggy.egg-info/PKG-INFO
+wuggy.egg-info/SOURCES.txt
+wuggy.egg-info/dependency_links.txt
+wuggy.egg-info/requires.txt
+wuggy.egg-info/top_level.txt
+wuggy/evaluators/__init__.py
+wuggy/evaluators/ld1nn.py
+wuggy/generators/__init__.py
+wuggy/generators/wuggygenerator.py
+wuggy/plugins/__init__.py
+wuggy/plugins/baselanguageplugin.py
+wuggy/utilities/__init__.py
+wuggy/utilities/bigramchain.py

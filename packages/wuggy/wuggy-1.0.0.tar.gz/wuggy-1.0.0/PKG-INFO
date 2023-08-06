@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wuggy
+Version: 1.0.0
+Summary: Wuggy: A multilingual pseudoword generator
+Home-page: https://github.com/WuggyCode/wuggy
+Author: Emmanuel Keuleers
+Author-email: E.A.Keuleers@tilburguniversity.edu
+License: UNKNOWN
+Description: Wuggy: A multilingual pseudoword generator implemented as a Python library
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
