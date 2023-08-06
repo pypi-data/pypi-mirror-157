@@ -1,0 +1,4 @@
+[console_scripts]
+radiotherapyai=radiotherapyai.__main__:app
+rtai=radiotherapyai.__main__:app
+
