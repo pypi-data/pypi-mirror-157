@@ -1,0 +1,190 @@
+name: Tests
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  schedule:
+    - cron: "0 8 * * *"
+
+jobs:
+  test:
+    name: ${{ matrix.os }} ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+    env:
+      CI: True
+      CODECOV_TOKEN: e025254a-fe54-4914-8890-0c26e7aa0d07
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python_version: ["3.7", "3.10"]
+        include:
+          - os: windows-latest
+            python-version: "3.9"
+          - os: ubuntu-latest
+            python-version: "pypy-3.7"
+          - os: macos-latest
+            python-version: "3.8"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Base Setup
+        uses: jupyterlab/maintainer-tools/.github/actions/base-setup@v1
+      - name: Install project dependencies
+        run: |
+          pip install -e ".[test]"
+      - name: Run the tests
+        if: ${{ !startsWith(matrix.python-version, 'pypy') && !startsWith(matrix.os, 'windows') }}
+        run: |
+          args="-vv -raXs --cov jupyterlab_server --cov-branch --cov-report term-missing:skip-covered --durations 10 --color=yes --cov-fail-under 65"
+          python -m pytest $args || python -m pytest $args --lf
+      - name: Run the tests on pypy and windows
+        if: ${{ startsWith(matrix.python_version, 'pypy') || startsWith(matrix.os, 'windows') }}
+        run: |
+          python -m pytest -vv -raXs || python -m pytest -vv -raXs --lf
+      - name: Upload coverage
+        run: |
+          codecov
+
+  pre-commit:
+    name: Run pre-commit hook
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: jupyterlab/maintainer-tools/.github/actions/base-setup@v1
+      - name: Run pre-commit
+        uses: pre-commit/action@v2.0.0
+      - name: Help message if pre-commit fail
+        if: ${{ failure() }}
+        run: |
+          echo "You can install pre-commit hooks to automatically run formatting"
+          echo "on each commit with:"
+          echo "    pre-commit install"
+          echo "or you can run by hand on staged files with"
+          echo "    pre-commit run"
+          echo "or after-the-fact on already committed files with"
+          echo "    pre-commit run --all-files --hook-stage=manual"
+
+  docs:
+    name: Docs Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Base Setup
+        uses: jupyterlab/maintainer-tools/.github/actions/base-setup@v1
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+          activate-environment: jupyterlab_server_documentation
+          environment-file: docs/environment.yml
+      - name: Install lib
+        shell: bash -l {0}
+        run: |
+          pip install .
+      - name: Build docs
+        shell: bash -l {0}
+        run: |
+          pushd docs
+          make html SPHINXOPTS="-W"
+
+  check_release:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        group: [check_release, link_check]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Base Setup
+        uses: jupyterlab/maintainer-tools/.github/actions/base-setup@v1
+      - name: Install Dependencies
+        run: |
+          pip install -e .
+      - name: Check Release
+        if: ${{ matrix.group == 'check_release' }}
+        uses: jupyter-server/jupyter_releaser/.github/actions/check-release@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run Link Check
+        if: ${{ matrix.group == 'link_check' }}
+        uses: jupyter-server/jupyter_releaser/.github/actions/check-links@v1
+
+  test_miniumum_verisons:
+    name: Test Minimum Versions
+    timeout-minutes: 20
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Base Setup
+        uses: jupyterlab/maintainer-tools/.github/actions/base-setup@v1
+        with:
+          python_version: "3.7"
+      - name: Install miniumum versions
+        uses: jupyterlab/maintainer-tools/.github/actions/install-minimums@v1
+      - name: Run the unit tests
+        run: python -m pytest -vv -raXs || python -m pytest -vv -raXs --lf
+
+  test_prereleases:
+    name: Test Prereleases
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Base Setup
+        uses: jupyterlab/maintainer-tools/.github/actions/base-setup@v1
+      - name: Install the Python dependencies
+        run: |
+          pip install --pre -e ".[test]"
+      - name: List installed packages
+        run: |
+          pip freeze
+          pip check
+      - name: Run the tests
+        run: python -m pytest -vv -raXs || python -m pytest -vv -raXs --lf
+
+  make_sdist:
+    name: Make SDist
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v2
+      - name: Base Setup
+        uses: jupyterlab/maintainer-tools/.github/actions/base-setup@v1
+      - name: Build SDist
+        run: |
+          pip install build
+          python -m build --sdist
+      - uses: actions/upload-artifact@v2
+        with:
+          name: "sdist"
+          path: dist/*.tar.gz
+
+  test_sdist:
+    runs-on: ubuntu-latest
+    needs: [make_sdist]
+    name: Install from SDist and Test
+    timeout-minutes: 20
+    steps:
+      - name: Base Setup
+        uses: jupyterlab/maintainer-tools/.github/actions/base-setup@v1
+      - name: Download sdist
+        uses: actions/download-artifact@v2
+      - name: Install From SDist
+        run: |
+          set -ex
+          cd sdist
+          mkdir test
+          tar --strip-components=1 -zxvf *.tar.gz -C ./test
+          cd test
+          pip install .[test]
+      - name: Run Test
+        run: |
+          cd sdist/test
+          python -m pytest -vv -raXs || python -m pytest -vv -raXs --lf
+          # Ensure that the pytest plugin is importable.
+          python -c "from jupyterlab_server import pytest_plugin"
