@@ -1,0 +1,7 @@
+nonebot/adapters/onebot_qq_extension/__init__.py,sha256=8NrPLR0qcOX6-dDgsjO7V4W_s0yqm0MbECvQ9osSKl4,50
+nonebot/adapters/onebot_qq_extension/adapter.py,sha256=O_kPgb01k6LXE-GZb8G1PDt_9al3Kg0QsFqC7hJGMzA,3152
+nonebot/adapters/onebot_qq_extension/exception.py,sha256=XgIbye-0-ZtirIRQRgwtQ3DC4Eeb2TIzJRnUAhbFAn8,6242
+nonebot/adapters/onebot_qq_extension/utils.py,sha256=jGuJ41o8CV7urmPEU5S4sPFzXFkV8fv1yFT8e1F9UH4,561
+onebot_qq_extension-0.1.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+onebot_qq_extension-0.1.1.dist-info/METADATA,sha256=_diEWza_tUujsy5YsIldgUXUUZwN7d4_RsKknsa2Oas,3951
+onebot_qq_extension-0.1.1.dist-info/RECORD,,
