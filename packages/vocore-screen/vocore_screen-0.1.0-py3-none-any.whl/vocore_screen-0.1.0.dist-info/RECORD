@@ -1,0 +1,10 @@
+vocore_screen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vocore_screen/example.py,sha256=mGtf7OWlutD0AuXuulqrYU2Q5yiRgGwkXIB5miUwOMM,674
+vocore_screen/font.py,sha256=limFx4NyUWrjec51zTuLc1Uz0eVRH4bUxss_L7KHlLQ,3013
+vocore_screen/image.py,sha256=Rjayg5SXsBangTRCBWyyy03F7JylLqkGw0uPfsQcXmA,1920
+vocore_screen/screen.py,sha256=yOybV6Z0Wc1_mrMj_md5GG5CP7NKrn6-Doq0z7R9mzU,6805
+vocore_screen-0.1.0.dist-info/METADATA,sha256=261_gW9B2uQKoXzBN9TtljGpfgYUczYXvdxo2tQQ63w,42500
+vocore_screen-0.1.0.dist-info/WHEEL,sha256=5vr2ZUYMIPpdABBOSv8-NuqiKYrGTWMNuyATpVRyrq8,86
+vocore_screen-0.1.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vocore_screen-0.1.0.dist-info/license_files/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+vocore_screen-0.1.0.dist-info/RECORD,,
