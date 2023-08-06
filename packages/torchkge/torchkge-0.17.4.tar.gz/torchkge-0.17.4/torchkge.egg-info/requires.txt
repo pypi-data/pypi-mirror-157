@@ -1,0 +1,4 @@
+torch>=1.2.0
+tqdm
+pandas>=1.4
+numpy>=1.22
