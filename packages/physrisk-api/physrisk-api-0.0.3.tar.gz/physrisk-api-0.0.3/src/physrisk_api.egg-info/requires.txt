@@ -1,0 +1,4 @@
+waitress
+Flask
+flask-cors
+physrisk-lib>=0.3.2
