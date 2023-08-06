@@ -1,0 +1,16 @@
+pims_api_client/__init__.py,sha256=yStcDXMmdfcwbMZ_ko1rkjAOmhqIk5CRLtUfIPFXKzA,113
+pims_api_client/api.py,sha256=4j35c4h7n3NIyeFlI403Csyrc7mhOO8UBzy9GSCbQRo,507
+pims_api_client/client.py,sha256=mMBwp-UbII_EsUhHWYORakwobfvERJGWCnwcB7IqSfE,1889
+pims_api_client/configurator.py,sha256=UN6GH5lo4rk36-xPAJt3FcgzvtR1RcaSlQpIg_wQk9U,570
+pims_api_client/exceptions.py,sha256=U7SueYSUxw-NWDAx3WrkTWG1FcqBKZVfq-qfYoZe9CQ,2395
+pims_api_client/methods/__init__.py,sha256=FaDdSAprDIdDhaQEpb6r6mTr5tMwNTTsIUp8CHxVUmc,94
+pims_api_client/methods/attributes.py,sha256=aIldWvSMx9jGvublnift4THxX9_aJekMzp2gHkM3KNI,823
+pims_api_client/methods/base_executor.py,sha256=Qba0FzdDdjAbDnYb27d4usEKkXqY48AduRhHhTxTwOo,293
+pims_api_client/methods/products.py,sha256=Zn5wVyMnq5Wv-Wi523ZpVmwI5g0MNPToktr3LSPOrxw,552
+pims_api_client/schemas/__init__.py,sha256=TcbRl6tYlN5wYmCjMnWTDWVk7RTyL9jOonhuJHt7djs,185
+pims_api_client/schemas/attributes.py,sha256=ANFBPvHGjn7lY5aKBd-uldAqZ40u32-SinK82FC7Quk,817
+pims_api_client/schemas/base.py,sha256=XuP9Wb7V_f0a6opkMgVAMvgycBmGPsnBkWlJ4mvbbRw,344
+pims_api_client/schemas/products.py,sha256=jkMSVFF9Pcl7r1csRJyQkmxtX0UKlTDXJJbYlDdjGxE,596
+pims_api_client-0.1.7.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pims_api_client-0.1.7.dist-info/METADATA,sha256=JHB0_5YlpRc_zaio_MBNM0UPGipvGTsEl4Zqkf-Eu4E,717
+pims_api_client-0.1.7.dist-info/RECORD,,
