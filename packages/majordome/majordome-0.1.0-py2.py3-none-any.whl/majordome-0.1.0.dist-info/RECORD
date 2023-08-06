@@ -1,0 +1,11 @@
+majordome/__init__.py,sha256=kicKoDrsfBfwG2dUkRw3RH-kyil75buPFym0Y2Xf1g0,219
+majordome/extensions.py,sha256=SjM36njKe_nfaDuvH4HgQncSRC45QIMLS9OwYDoPEsQ,670
+majordome/utilities.py,sha256=8faTyiGCerRYOB5TEriwia7n5jNJQUgaJUqMn8guqWM,728
+majordome/version.py,sha256=fehsiqRwOCpnx3jy1WyjFNAtauqw535yI78KIytAQoQ,377
+majordome/tests/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+majordome/tests/test_extensions.py,sha256=tvgxOHuUlbPdTbSR-m535xHqKmOQhpxHASUWzaB67mA,697
+majordome-0.1.0.dist-info/LICENSE,sha256=N_P49FIWYbLj2p-z3A0Z35ker2xIef-lxsfx9XIeeoE,1077
+majordome-0.1.0.dist-info/METADATA,sha256=nyQFKUEbrUUDctTf4HWhe91YB0hk5PfF1AD6EqpqQsg,1874
+majordome-0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+majordome-0.1.0.dist-info/top_level.txt,sha256=Ci_XCZfOgX7KoJGgXpMCtTia1qg8qO732kEyj8z0vpY,10
+majordome-0.1.0.dist-info/RECORD,,
