@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: x-access-dumper
+Version: 0.1.4
+Summary: Dumps everything web accessible: `.git`, `.DS_Store`, sql dumps, backups...
+Home-page: https://github.com/tz4678/x-access-dumper
+License: MIT
+Author: tz4678
+Author-email: tz4678@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aiodns (>=3.0.0,<4.0.0)
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: cchardet (>=2.1.7,<3.0.0)
+Requires-Dist: ds-store (>=1.3.0,<2.0.0)
+Project-URL: Repository, https://github.com/tz4678/x-access-dumper
+Description-Content-Type: text/markdown
+
+# X-Access-Dumper
+
+Dumps everything web accessible: `.git`, `.DS_Store`, sql dumps, backups...
+
+Use asdf or pyenv to install latest python version.
+
+Install:
+
+```bash
+$ pip install x-access-dumper
+$ pipx install x-access-dumper
+```
+
+Usage:
+
+```
+$ x-access-dumper -h
+$ x-access-dumper url1 url2 url3
+$ x-access-dumper < urls.txt
+$ command | x-access-dumper
+$ x-access-dumper -e '\.(png|jpe?g|gif)$' -vv https://target 2> err.log
+```
+
