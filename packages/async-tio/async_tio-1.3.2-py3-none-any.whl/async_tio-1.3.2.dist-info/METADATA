@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: async-tio
+Version: 1.3.2
+Summary: An unoffical API wrapper for tio.run
+Home-page: https://github.com/Tom-the-Bomb/async-tio
+Author: Tom-the-Bomb
+License: MIT
+Project-URL: Repository, https://github.com/Tom-the-Bomb/async-tio
+Project-URL: Issue tracker, https://github.com/Tom-the-Bomb/async-tio/issues
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: typing-extensions
+
+# Async-Tio
+This is a simple unofficial async Api-wrapper for [tio.run](https://tio.run/#)
+
+**Installation**
+```bash
+$ py -m pip install async_tio
+```
+**Install Latest**
+```bash
+$ py -m pip install git+https://github.com/Tom-the-Bomb/async-tio.git
+```
+**Example**
+
+```py
+# assuming you are already inside an async environment and have already imported everything
+# to instantiate
+# recommended to have a global class if you are going to run .execute more than 1 time throughout the program
+# alternatively you can use the async context manager if it's a one time use:
+# async with async_tio.Tio() as tio: ...
+tio = async_tio.Tio() # Optional 'loop' and 'session' kwargs etc. if needed
+
+# to execute
+output = await tio.execute("print('')", language="python3") # pass in other optional kwargs if needed
+
+print(str(output)) # the formatted output along with the stats
+print(output.stdout) # the output by itself
+print(int(output)) # returns the exit status
+
+# print(vars(output).keys())
+# -> dict_keys(['token', 'output', 'stdout', 'real_time', 'user_time', 'sys_time', 'cpu_usage', 'exit_status'])
+# all the attributes of the response object you can access
+```
+
