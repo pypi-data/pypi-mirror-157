@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+ProtViewer.egg-info/PKG-INFO
+ProtViewer.egg-info/SOURCES.txt
+ProtViewer.egg-info/dependency_links.txt
+ProtViewer.egg-info/top_level.txt
+misc/interface.py
