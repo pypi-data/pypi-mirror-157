@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+pyproject.toml
+WinMagnification.egg-info/PKG-INFO
+WinMagnification.egg-info/SOURCES.txt
+WinMagnification.egg-info/dependency_links.txt
+WinMagnification.egg-info/top_level.txt
+win_magnification/__init__.py
+win_magnification/_functional_wrapper.py
+win_magnification/_object_utils.py
+win_magnification/_object_wrapper.py
+win_magnification/_utils.py
+win_magnification/_wrapper.py
+win_magnification/const.py
+win_magnification/old.py
+win_magnification/tools.py
+win_magnification/types.py
