@@ -1,0 +1,3 @@
+[console_scripts]
+scrape-721=scrape_721.main:app
+
