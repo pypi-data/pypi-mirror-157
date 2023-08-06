@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+genobjdet/__init__.py
+genobjdet/isolate_library.py
+genobjdet.egg-info/PKG-INFO
+genobjdet.egg-info/SOURCES.txt
+genobjdet.egg-info/dependency_links.txt
+genobjdet.egg-info/requires.txt
+genobjdet.egg-info/top_level.txt
