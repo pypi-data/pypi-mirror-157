@@ -1,0 +1,14 @@
+PCILib/PCIhashLib.py,sha256=0I7tv6lb-HJUBFEt-P_BV4cAYryyW7yTOby0o6feQuo,7715
+PCILib/PCIosLib.py,sha256=zO0G0ioCs0nU28ypl1e-KPfbClwzknvLkZvhF-vc6N4,24448
+PCILib/__init__.py,sha256=ZGPI0wKq5-81_zGAC-nmKGwxQ0VkRXTtv3M6JuuKHos,2540
+PCILib/PCImathLib/__init__.py,sha256=PkzWY4KKJUtUYKJLRQUMGd8KyNi4Wzt1Nz6aBizqcjs,3115
+PCILib/PCImathLib/analysis/__init__.py,sha256=D53TWDAywb15O6vszP5QuYLOqvKHvB3g0BPYQI0QuaU,8090
+PCILib/PCImathLib/discrete/__init__.py,sha256=8UCqzI6Gb_Fq0xOo1yWwWWuXyd-RrGaC-IMMRXsiqtg,16030
+PCILib/PCImathLib/stat/__init__.py,sha256=YT9sJOTnrPwmePWZjCKe7DwP9uVra9orh1HqwK002_Y,1861
+PCILib/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PCILib/core/bit.py,sha256=9koi-Mp8AEUiNXaZ5muH_0kqjycZeKa0sBO3WuHOQp8,5419
+PCILib-0.0.3.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+PCILib-0.0.3.dist-info/METADATA,sha256=2jqK1oQ8Prd6qbXiCdQGlYfhDNmt1K-7ILC7lOqhKK8,1752
+PCILib-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+PCILib-0.0.3.dist-info/top_level.txt,sha256=4cXgTDQrHQjLrsaR5xeP9_i_bzciNdwtpjF3zvVDOn0,7
+PCILib-0.0.3.dist-info/RECORD,,
