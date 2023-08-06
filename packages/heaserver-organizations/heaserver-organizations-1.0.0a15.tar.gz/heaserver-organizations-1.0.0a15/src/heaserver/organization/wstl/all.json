@@ -1,0 +1,273 @@
+{
+    "wstl": {
+        "title": "HEA Server Organization",
+        "actions": [
+            {
+                "name": "heaserver-organizations-organization-duplicate",
+                "type": "safe",
+                "target": "item",
+                "prompt": "Duplicate"
+            },
+            {
+                "name": "heaserver-organizations-organization-get-open-choices",
+                "description": "Open this organization",
+                "type": "safe",
+                "action": "read",
+                "target": "item read cj",
+                "prompt": "Open"
+            },
+            {
+                "name": "heaserver-organizations-organization-get-properties",
+                "description": "View and edit this Organization's properties",
+                "type": "unsafe",
+                "target": "item cj-template",
+                "action": "update",
+                "prompt": "Properties",
+                "inputs": [
+                    {
+                        "name": "id",
+                        "prompt": "Id",
+                        "readOnly": true
+                    },
+                    {
+                        "name": "display_name",
+                        "prompt": "Name",
+                        "required": true
+                    },
+                    {
+                        "name": "description",
+                        "prompt": "Description",
+                        "type": "textarea"
+                    },
+                    {
+                        "name": "mime_type",
+                        "prompt": "MIME type",
+                        "readOnly": true
+                    },
+                    {
+                        "hea": {
+                            "cardinality": "multiple",
+                            "optionsFromUrl": {
+                                "path": "/awsaccounts/",
+                                "value": "id",
+                                "text": "display_name"
+                            }
+                        },
+                        "name": "aws_account_ids",
+                        "prompt": "AWS Accounts",
+                        "type": "select"
+                    },
+                    {
+                        "name": "principal_investigator_id",
+                        "prompt": "Principal Investigator",
+                        "type": "select",
+                        "hea": {
+                            "optionsFromUrl": {
+                                "path": "/people/",
+                                "value": "id",
+                                "text": "display_name"
+                            }
+                        }
+                    },
+                    {
+                        "hea": {
+                            "cardinality": "multiple",
+                            "optionsFromUrl": {
+                                "path": "/people/",
+                                "value": "id",
+                                "text": "display_name"
+                            }
+                        },
+                        "name": "manager_ids",
+                        "prompt": "Managers",
+                        "type": "select"
+                    },
+                    {
+                        "hea": {
+                            "cardinality": "multiple",
+                            "optionsFromUrl": {
+                                "path": "/people/",
+                                "value": "id",
+                                "text": "display_name"
+                            }
+                        },
+                        "name": "member_ids",
+                        "prompt": "Members",
+                        "type": "select"
+                    },
+                    {
+                        "name": "owner",
+                        "prompt": "Owner",
+                        "required": true,
+                        "type": "select",
+                        "hea": {
+                            "optionsFromUrl": {
+                                "path": "/people/",
+                                "value": "id",
+                                "text": "display_name"
+                            }
+                        }
+                    },
+                    {
+                        "name": "created",
+                        "prompt": "Created",
+                        "readOnly": true,
+                        "hea": {
+                            "type": "datetime"
+                        }
+                    },
+                    {
+                        "name": "modified",
+                        "prompt": "Modified",
+                        "readOnly": true,
+                        "hea": {
+                            "type": "datetime"
+                        }
+                    },
+                    {
+                        "name": "source",
+                        "prompt": "Source"
+                    },
+                    {
+                        "hea": {
+                            "section": "shares",
+                            "sectionPrompt": "Shares",
+                            "optionsFromUrl": {
+                                "path": "/people/",
+                                "value": "id",
+                                "text": "display_name"
+                            }
+                        },
+                        "name": "user",
+                        "prompt": "User",
+                        "required": true,
+                        "type": "select"
+                    },
+                    {
+                        "hea": {
+                            "section": "shares",
+                            "cardinality": "multiple"
+                        },
+                        "name": "permissions",
+                        "prompt": "Permissions",
+                        "type": "select",
+                        "suggest": [
+                            {"value":  "COOWNER", "text":  "Co-owner"},
+                            {"value":  "CREATOR", "text":  "Creator"},
+                            {"value":  "DELETER", "text":  "Deleter"},
+                            {"value":  "EDITOR", "text":  "Editor"},
+                            {"value":  "SHARER", "text":  "Sharer"},
+                            {"value":  "VIEWER", "text":  "Viewer"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "heaserver-organizations-organization-duplicate-form",
+                "description": "Duplicate this organization",
+                "type": "unsafe",
+                "target": "item cj-template",
+                "action": "update",
+                "prompt": "Duplicate",
+                "inputs": [
+                    {
+                        "name": "display_name",
+                        "prompt": "Name",
+                        "required": true
+                    },
+                    {
+                        "name": "description",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "mime_type",
+                        "prompt": "MIME type",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "hea": {
+                            "display": false
+                        },
+                        "name": "aws_account_ids"
+                    },
+                    {
+                        "name": "principal_investigator_id",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "hea": {
+                            "display": false
+                        },
+                        "name": "manager_ids"
+                    },
+                    {
+                        "hea": {
+                            "display": false
+                        },
+                        "name": "member_ids"
+                    },
+                    {
+                        "name": "owner",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "created",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "modified",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "name": "source",
+                        "hea": {
+                            "display": false
+                        }
+                    },
+                    {
+                        "hea": {
+                            "section": "shares",
+                            "display": false
+                        },
+                        "name": "user"
+                    },
+                    {
+                        "hea": {
+                            "section": "shares",
+                            "display": false
+                        },
+                        "name": "permissions"
+                    }
+                ]
+            },
+            {
+                "name": "heaserver-organizations-organization-open-aws-accounts",
+                "description": "Open AWS accounts",
+                "type": "safe",
+                "action": "read",
+                "target": "item read cj",
+                "prompt": "Open"
+            },
+            {
+                "name": "heaserver-organizations-aws-account-get-open-choices",
+                "description": "Open this AWS account",
+                "type": "safe",
+                "action": "read",
+                "target": "item read cj",
+                "prompt": "Open"
+            }
+        ]
+    }
+}
