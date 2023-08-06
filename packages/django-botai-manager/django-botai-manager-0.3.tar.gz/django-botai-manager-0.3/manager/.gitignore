@@ -1,0 +1,10 @@
+apps/sales_module/migrations/*.py
+.DS_Store
+.env
+utilities/template.html
+EFICACIA.pdf
+EFICACIA.md
+api_reference.pdf
+capalia_api_reference.pdf
+CAPALIA.md
+

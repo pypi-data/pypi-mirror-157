@@ -1,0 +1,5 @@
+include LICENSE
+include README.rst
+recursive-include manager *
+recursive-include manager/configuration *
+recursive-include manager/manager *
