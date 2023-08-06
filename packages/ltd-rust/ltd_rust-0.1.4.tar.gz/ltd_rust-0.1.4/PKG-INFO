@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ltd_rust
+Version: 0.1.4
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE.txt
+Requires-Python: >=3.7
+Project-URL: homepage, https://github.com/prokie/ltd-rust
