@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: springcraft
+Version: 0.1.0
+Summary: Investigate molecular dynamics with elastic network models
+Home-page: https://springcraft.biotite-python.org
+License: BSD-3-Clause
+Keywords: Bioinformatics,Computational biology,Elastic network models,Normal mode analysis
+Author: Patrick Kunzmann
+Author-email: patrick.kunzm@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha 
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: biotite (>=0.32)
+Requires-Dist: numpy (>=1.15,<2.0)
+Project-URL: Documentation, https://springcraft.biotite-python.org
+Project-URL: Repository, https://github.com/biotite-dev/springcraft
+Description-Content-Type: text/x-rst
+
+Springcraft
+===========
+
+The project in the CBS Hackathon to compute *Elastic Network Models*
+with *Biotite*.
+
+Installation
+------------
+
+All packages required for the development (including tests) are installed via
+
+.. code-block:: console
+
+   $ conda env create -f environment.yml
+
+if *Conda* installed.
+The package is installed for development via
+
+.. code-block:: console
+
+   $ pip install -e .
+
+This command requires a recent *pip* version.
+
+Example
+=======
+
+.. code-block:: python
+
+   import biotite.structure.io.mmtf as mmtf
+   import springcraft
+   import numpy as np
+   
+   
+   mmtf_file = mmtf.MMTFFile.read("path/to/1l2y.mmtf")
+   atoms = mmtf.get_structure(mmtf_file, model=1)
+   ca = atoms[(atoms.atom_name == "CA") & (atoms.element == "C")]
+   ff = springcraft.InvariantForceField()
+   hessian, pairs = springcraft.compute_hessian(ca.coord, ff, 7.0)
+   
+   np.set_printoptions(linewidth=100)
+   print(hessian)
