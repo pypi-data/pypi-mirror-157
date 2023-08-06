@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: HamodyTools
+Version: 0.0.1
+Summary: • Scrape Instagram Profile and login Instagram
+Home-page: 
+Author: Hamody
+Author-email: 
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+<h1 align="center">gdolib</h1>
+<p align="center">It's a Usefull Project for Developers ... It checkers Emails Found Or Not Found</p>
+
+<p align="center"> • DevVlopered The Lib BY GDØ • </p>
+
+
+## Installing :
+```
+pip install gdolib
+
+```
+## • Domains •
+
+⌯ Gmail 
+
+⌯ Hotmail 
+
+⌯ Outlook
+
+⌯ Yahoo 
+
+⌯ mail.ru
+
+⌯ Aol
+

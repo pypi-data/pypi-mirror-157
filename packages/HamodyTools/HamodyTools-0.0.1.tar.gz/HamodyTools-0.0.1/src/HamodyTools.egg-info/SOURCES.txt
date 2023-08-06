@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/HamodyTools/HamodyTools.py
+src/HamodyTools/__init__.py
+src/HamodyTools.egg-info/PKG-INFO
+src/HamodyTools.egg-info/SOURCES.txt
+src/HamodyTools.egg-info/dependency_links.txt
+src/HamodyTools.egg-info/top_level.txt
