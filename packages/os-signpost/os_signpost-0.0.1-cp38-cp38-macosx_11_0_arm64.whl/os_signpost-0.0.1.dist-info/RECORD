@@ -1,0 +1,13 @@
+os_signpost/__init__.py,sha256=MxNbU6HSVue48FrsoYgA4FIqwu6EGHVKV4KodY3VxTE,27
+os_signpost/cy.cpython-38-darwin.so,sha256=gt9NfXKL0xKXSm35ruWBim4_sutcrRq85P5KLiggiVM,107764
+os_signpost/cy.pxd,sha256=1zcZLbl-6FXVp_kppgdvCsIGCH433TMJQTFUEFk5aHc,735
+os_signpost/cy.pyx,sha256=XZFQUIrGhL7B9P4L-nMC6G8zulUiopfJvMAkSpPEaCc,1337
+os_signpost/signpost_wrap.h,sha256=quHgVHd3n71WWgZKuUSgGPd83FI2R9oOcyn9YUO9kQk,404
+os_signpost/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+os_signpost/tests/test_signposter.py,sha256=AxDyyHcOIrTOVA4mUi-5FcVkhkW_6qGHEHX30tjfMMM,637
+os_signpost-0.0.1.dist-info/LICENSE,sha256=tOUBWHi-AmTXp0ejBTOMwjyy06UNb-tzhHEJp7bpfpk,1083
+os_signpost-0.0.1.dist-info/METADATA,sha256=w30hQgG7PsXeI8OK3JsfioZiuEWy18AAn6eQmsl1M-4,4015
+os_signpost-0.0.1.dist-info/WHEEL,sha256=u895uB4FIjm1puccTaPTl57dorjncEYygQxItKHr_T0,108
+os_signpost-0.0.1.dist-info/top_level.txt,sha256=CaW7JqP6dmEOz-0oZZ6kAJi3YXGRNMKaqaBbaW1U5j4,12
+os_signpost-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+os_signpost-0.0.1.dist-info/RECORD,,
