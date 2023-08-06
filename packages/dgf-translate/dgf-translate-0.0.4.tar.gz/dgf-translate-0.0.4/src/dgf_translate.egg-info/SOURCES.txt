@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/dgf_translate/__init__.py
+src/dgf_translate/dgf_to_geojson.py
+src/dgf_translate.egg-info/PKG-INFO
+src/dgf_translate.egg-info/SOURCES.txt
+src/dgf_translate.egg-info/dependency_links.txt
+src/dgf_translate.egg-info/top_level.txt

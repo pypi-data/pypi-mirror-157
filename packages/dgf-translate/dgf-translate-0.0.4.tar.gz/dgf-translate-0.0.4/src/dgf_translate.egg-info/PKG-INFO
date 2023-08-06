@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: dgf-translate
+Version: 0.0.4
+Summary: A python package to convert dfg file to GIS readable format such as geojson
+Home-page: https://github.com/Kumail09/dgf-translate
+Author: Kumail Raza
+Author-email: kumail0691@gmail.com
+Project-URL: Bug Tracker, https://github.com/Kumail09/dgf-translate/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# dgf_translate
+
+This Python Library deals with reading DGF Files and converting them into a usable GIS File format that can be imported into GDAL, Fiona and other Geospatial libraries. 
+
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
+
+```bash
+pip install dgf_translate
+```
+
+## Usage
+
+```python
+from dgf_translate import dgf_to_geojson
+
+
+# returns geojson file path
+dgf_to_geojson('/home/usr/file.geojson', '/home/usr/file.geojson', in_crs=25833)
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Please make sure to update tests as appropriate.
