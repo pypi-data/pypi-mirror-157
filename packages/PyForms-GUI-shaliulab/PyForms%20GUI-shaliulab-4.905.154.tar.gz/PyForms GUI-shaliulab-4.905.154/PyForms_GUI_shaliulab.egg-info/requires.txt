@@ -1,0 +1,17 @@
+anyqt
+PyQtWebEngine
+pyopengl
+visvis
+matplotlib
+python-dateutil
+numpy
+opencv-python==3.4.5.20
+confapp
+natsort
+
+[:python_version >= "3"]
+pyqt5
+QScintilla
+
+[imgstore]
+imgstore-shaliulab>=0.4.4
