@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: project2022
+Version: 0.1dev
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UT
+Description: This is a test Package.
+        
+        Usage:
+        import project2020 
+        print(project2020.add(2,3))
+                
+        
+Platform: UNKNOWN
