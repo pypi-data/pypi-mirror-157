@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+RandomDataGenerators/RandomDataFrameGenerator.py
+RandomDataGenerators/RandomFunctions.py
+RandomDataGenerators/__init__.py
+RandomDataGenerators.egg-info/PKG-INFO
+RandomDataGenerators.egg-info/SOURCES.txt
+RandomDataGenerators.egg-info/dependency_links.txt
+RandomDataGenerators.egg-info/requires.txt
+RandomDataGenerators.egg-info/top_level.txt
+RandomDataGenerators/resources/dfEnglishWords.csv
+RandomDataGenerators/resources/dfPetNameCounts.csv
