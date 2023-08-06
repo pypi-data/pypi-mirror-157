@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+lmfit_slider/__init__.py
+lmfit_slider/slider.py
+lmfit_slider.egg-info/PKG-INFO
+lmfit_slider.egg-info/SOURCES.txt
+lmfit_slider.egg-info/dependency_links.txt
+lmfit_slider.egg-info/requires.txt
+lmfit_slider.egg-info/top_level.txt
