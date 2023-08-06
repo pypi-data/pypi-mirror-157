@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: authx_core
+Version: 0.0.4
+Summary: Utilities to help reduce boilerplate and reuse common functionality, Based to Support Building of Authx & Authx-lite
+Home-page: https://github.com/yezz123/authx-core
+Author: Yasser Tahiri
+Author-email: hello@yezz.me
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: FastAPI
+Classifier: Framework :: AsyncIO
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
+Classifier: Typing :: Typed
+Requires-Dist: fastapi >=0.65.2,<0.78.0
+Requires-Dist: p
+Requires-Dist: pydantic==1.9.1
+Requires-Dist: SQLAlchemy==1.4.37
+Requires-Dist: mkdocs >=1.1.2,<2.0.0 ; extra == "docs"
+Requires-Dist: mkdocs-material >=8.1.4,<9.0.0 ; extra == "docs"
+Requires-Dist: mdx-include >=1.4.1,<2.0.0 ; extra == "docs"
+Requires-Dist: mkdocs-markdownextradata-plugin >=0.1.7,<0.3.0 ; extra == "docs"
+Requires-Dist: mkdocs-mermaid2-plugin==0.5.2 ; extra == "docs"
+Requires-Dist: markdown-include==0.6.0 ; extra == "docs"
+Requires-Dist: pymdown-extensions==9.1 ; extra == "docs"
+Requires-Dist: jinja2==3.0.3 ; extra == "docs"
+Requires-Dist: pre-commit==2.19.0 ; extra == "lint"
+Requires-Dist: sqlalchemy-stubs ; extra == "lint"
+Requires-Dist: mypy==0.931 ; extra == "lint"
+Requires-Dist: pytest==7.1.2 ; extra == "test"
+Requires-Dist: pytest-asyncio == 0.18.3 ; extra == "test"
+Requires-Dist: requests==2.27.1 ; extra == "test"
+Requires-Dist: uvicorn==0.17.6 ; extra == "test"
+Requires-Dist: asynctest==0.13.0 ; extra == "test"
+Requires-Dist: codecov==2.1.12 ; extra == "test"
+Requires-Dist: pytest-cov==3.0.0 ; extra == "test"
+Requires-Dist: uvloop==0.16.0 ; extra == "test"
+Requires-Dist: websockets==10.3 ; extra == "test"
+Requires-Dist: aiofiles ; extra == "test"
+Requires-Dist: requests ; extra == "test"
+Project-URL: Documentation, https://authx.yezz.me/
+Provides-Extra: docs
+Provides-Extra: lint
+Provides-Extra: test
+
+# authx-core 💫
+
+![authx](https://user-images.githubusercontent.com/52716203/136962014-280d82b0-0640-4ee5-9a11-b451b338f6d8.png)
+
+[![codecov](https://codecov.io/gh/yezz123/authx-core/branch/main/graph/badge.svg?token=VPIFTYFNUO)](https://codecov.io/gh/yezz123/authx-core)
+[![Pypi](https://img.shields.io/pypi/pyversions/authx_core.svg?color=%2334D058)](https://pypi.org/project/authx_core)
+[![framework](https://img.shields.io/badge/Framework-FastAPI-blue?style)](https://fastapi.tiangolo.com/)
+
+## Features
+
+Utilities to help reduce boilerplate and reuse common functionality, Based to
+Support Building of [Authx](https://authx.yezz.me) &amp; Authx-lite ⚡:
+
+- **SQLAlchemy Sessions**: The `AuthxDB` class provides an easily-customized
+  SQLAlchemy Session dependency.
+- **Middleware**: Log basic timing information for every request
+- **Inferring Router**: Let FastAPI infer the `response_model` to use based on
+  your return type annotation.
+- **OpenAPI Simplification**: Simplify your OpenAPI Operation IDs for cleaner
+  output from OpenAPI Generator
+- **Views**: Stop repeating the same dependencies over and over in the signature
+  of related endpoints.
+
+It also adds a variety of more basic utilities that are useful across a wide
+variety of projects:
+
+- **GUID Type**: The provided GUID type makes it easy to use UUIDs as the
+  primary keys for your database tables
+
+## Requirements
+
+This package is intended for use with any recent version of FastAPI (depending
+on `pydantic` and `FastAPI` and `SQLAlchemy`), and Python 3.8+.
+
+## Installation
+
+```bash
+pip install authx_core
+```
+
+## License
+
+This project is licensed under the terms of the MIT license.
+
