@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: neuroimagingtools
+Version: 0.5.0
+Summary: Neuroimaging analysis tools
+Home-page: https://github.com/DiedrichsenLab/nitools
+Author: Jörn Diedrichsen
+Author-email: joern.diedrichsen@googlemail.com
+License: MIT
+Download-URL: https://github.com/DiedrichsenLab/nitools/archive/refs/tags/v0.5.0.tar.gz
+Description: UNKNOWN
+Keywords: imaging analysis,nifti,gifti,cifti
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
