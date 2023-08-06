@@ -1,0 +1,14 @@
+wuggy/__init__.py,sha256=JGZ3lIyn3T97yyR7Gvg8jwYJWfy8LkmSU8rlbdNLHrE,208
+wuggy/evaluators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wuggy/evaluators/ld1nn.py,sha256=QwHQUbV51OjGwcqaBXNEFq-mCEvEOIPdg2b54gJgCcY,3216
+wuggy/generators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wuggy/generators/wuggygenerator.py,sha256=NSJ5jdTdME88OymTc09sNvkB7xwhHxfi3ceO-wlwwBY,32063
+wuggy/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wuggy/plugins/baselanguageplugin.py,sha256=693xfUnW81Y7NrUSllo5bmLdw7wPjBn3tv7ed09OCN4,6918
+wuggy/utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wuggy/utilities/bigramchain.py,sha256=YFqQCahyPr3IQRty3e4RIBguDCYSJSlYDnQF3luNixI,7299
+wuggy-1.0.0.dist-info/LICENSE,sha256=BSlroonA-OaDK7YyKStauvmnU1cG069HgDWqXBK3D2o,1093
+wuggy-1.0.0.dist-info/METADATA,sha256=shHrUhphXtrBxgjshHzvol1lM9d1MnGEHus5ExVTBN4,627
+wuggy-1.0.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+wuggy-1.0.0.dist-info/top_level.txt,sha256=luGlr30vcWxE9J5htyU7LbkMyHlfCcV_4cBLRySPAhI,6
+wuggy-1.0.0.dist-info/RECORD,,
