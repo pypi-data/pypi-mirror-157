@@ -1,0 +1,9 @@
+setup.py
+aicore_cloudword.egg-info/PKG-INFO
+aicore_cloudword.egg-info/SOURCES.txt
+aicore_cloudword.egg-info/dependency_links.txt
+aicore_cloudword.egg-info/requires.txt
+aicore_cloudword.egg-info/top_level.txt
+aicore_wordcloud/GoogleSheetHelper.py
+aicore_wordcloud/__init__.py
+aicore_wordcloud/__main__.py
