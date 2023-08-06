@@ -1,0 +1,9 @@
+Change Log
+==========
+
+0.0.13 (02/07/2022)
+-------------------
+- Fixing a minor bug
+- Adding a unique library
+- Adding a few changes
+- First Release
