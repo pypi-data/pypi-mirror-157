@@ -1,0 +1,13 @@
+arlulacore/__init__.py,sha256=A6UTLcOp68zRUrOp7kUbu7sO02BMl2aUetNxyKwIoPc,483
+arlulacore/archive.py,sha256=30hUElylMHqTgHpv_AN8X23M8qIEuqpXmxBDVtPIYWc,9549
+arlulacore/arlula.py,sha256=5GKy_R_upeUM6tCcLSAnYSDgHl2AfPthLvmvmSnBTKs,717
+arlulacore/auth.py,sha256=gM2bfvCSCef_r-d7NGE87eCaCRu3rQX3173SnCXzzPA,1422
+arlulacore/common.py,sha256=q7f_hNcfETdt5vnYMFwn9-qH-1c_MxTAmONw8r16GUI,160
+arlulacore/exception.py,sha256=eL-QxU8ccwlO-oDhk_aHVQ1f2GVLkFQh8E1ZqPtTRGM,181
+arlulacore/orders.py,sha256=3wb9_AXa4m0_LLoZY06mF48q6hxZmzGKRSyiHC3zL_A,6443
+arlulacore/util.py,sha256=G3QWyWkU1LvLn_Ilj8g30P5dgn242Pg5HiSBWXGQBws,1473
+arlulacore-3.0.0.dist-info/LICENSE,sha256=FRvBmaO9sptfQgJwyT2tLnEDA_eCWeN6P9tpjG5uPJ8,1049
+arlulacore-3.0.0.dist-info/METADATA,sha256=NgsddiU2-PByyT0M5NzSyx_5JXzZdI8NyQdejnjEaHI,3131
+arlulacore-3.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+arlulacore-3.0.0.dist-info/top_level.txt,sha256=RYSt9x3j-3JJhKi_db5wis-vEYitjyC3wkrCwMtON2o,11
+arlulacore-3.0.0.dist-info/RECORD,,
