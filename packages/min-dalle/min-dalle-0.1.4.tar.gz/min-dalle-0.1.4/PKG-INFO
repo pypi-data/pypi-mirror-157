@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: min-dalle
+Version: 0.1.4
+Summary: min(DALL·E)
+Author: Brett Kuprel
+Author-email: brkuprel@gmail.com
+License: MIT
+Keywords: artificial intelligence,deep learning,text to image
+License-File: LICENSE
