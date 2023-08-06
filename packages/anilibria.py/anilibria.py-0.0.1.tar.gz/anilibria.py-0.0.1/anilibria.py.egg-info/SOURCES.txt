@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+anilibria/__init__.py
+anilibria/client.py
+anilibria.py.egg-info/PKG-INFO
+anilibria.py.egg-info/SOURCES.txt
+anilibria.py.egg-info/dependency_links.txt
+anilibria.py.egg-info/requires.txt
+anilibria.py.egg-info/top_level.txt
