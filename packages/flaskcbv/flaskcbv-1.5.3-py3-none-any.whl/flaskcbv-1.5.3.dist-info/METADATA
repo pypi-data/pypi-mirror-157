@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: flaskcbv
+Version: 1.5.3
+Summary: FlaskCBV is Alternative Framework for working with flask with the class Based Views approach (CBV)
+Requires-Dist: Flask
+Requires-Dist: Werkzeug (==2.0.0)
+Requires-Dist: setuptools
+
+Home-page: UNKNOWN
+Author: procool
+Author-email: ya.procool@ya.ru
+License: BSD 2 Clause
+Description: README
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
