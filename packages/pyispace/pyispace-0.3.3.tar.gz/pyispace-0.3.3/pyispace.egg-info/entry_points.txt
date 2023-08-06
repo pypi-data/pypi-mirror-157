@@ -1,0 +1,2 @@
+[console_scripts]
+isa = pyispace.cli:main
