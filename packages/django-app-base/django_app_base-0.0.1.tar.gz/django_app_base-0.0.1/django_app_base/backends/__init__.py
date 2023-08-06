@@ -1,0 +1,1 @@
+from django_app_base.backends.TokenAuthentication import TokenAuthentication

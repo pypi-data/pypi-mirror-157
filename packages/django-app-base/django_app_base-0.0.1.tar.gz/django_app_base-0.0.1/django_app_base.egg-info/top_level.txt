@@ -1,0 +1,9 @@
+django_app_base
+django_app_base\backends
+django_app_base\common
+django_app_base\drf
+django_app_base\middleware
+django_app_base\models
+django_app_base\services
+django_app_base\signals
+django_app_base\utils

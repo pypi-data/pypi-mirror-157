@@ -1,0 +1,5 @@
+from django_app_base.middleware.authentication import AuthenticationMiddleware
+from django_app_base.middleware.common import CommonMiddleware
+from django_app_base.middleware.must_login import MustLoginMiddleware
+from django_app_base.middleware.local import LocalMiddleware
+from django_app_base.middleware.permit_user_middleware import PermitUserMiddleware
