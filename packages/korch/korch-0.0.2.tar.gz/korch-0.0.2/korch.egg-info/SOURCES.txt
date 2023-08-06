@@ -1,0 +1,15 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+korch/__init__.py
+korch/_nbdev.py
+korch/core.py
+korch.egg-info/PKG-INFO
+korch.egg-info/SOURCES.txt
+korch.egg-info/dependency_links.txt
+korch.egg-info/not-zip-safe
+korch.egg-info/requires.txt
+korch.egg-info/top_level.txt

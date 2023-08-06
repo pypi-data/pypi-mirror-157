@@ -1,0 +1,8 @@
+pip
+packaging
+torchvision
+tqdm
+torchmetrics
+torch
+
+[dev]
