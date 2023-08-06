@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+unlockNN.egg-info/PKG-INFO
+unlockNN.egg-info/SOURCES.txt
+unlockNN.egg-info/dependency_links.txt
+unlockNN.egg-info/requires.txt
+unlockNN.egg-info/top_level.txt
+unlocknn/__init__.py
+unlocknn/download.py
+unlocknn/initializers.py
+unlocknn/kernel_layers.py
+unlocknn/megnet_utils.py
+unlocknn/metrics.py
+unlocknn/model.py
