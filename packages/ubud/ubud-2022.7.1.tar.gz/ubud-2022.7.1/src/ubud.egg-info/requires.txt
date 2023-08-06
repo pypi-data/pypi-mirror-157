@@ -1,0 +1,15 @@
+aiohttp
+click
+click_loglevel
+clutter
+parse
+pyjwt
+pyzmq
+flatdict
+pendulum
+pydantic
+requests
+influxdb-client
+paho-mqtt
+websockets
+rel
