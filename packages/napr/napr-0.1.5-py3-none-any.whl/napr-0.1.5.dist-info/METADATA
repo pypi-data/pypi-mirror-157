@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: napr
+Version: 0.1.5
+Summary: Machine learning meets natural products
+License: MIT
+Author: Morteza Hosseini
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: keras-tuner (>=1.1.2,<2.0.0)
+Requires-Dist: matplotlib (>=3.5.1,<4.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Requires-Dist: scikit-learn (>=1.1.1,<2.0.0)
+Requires-Dist: scipy (>=1.8.0,<2.0.0); python_version >= "3.8" and python_version < "3.11"
+Requires-Dist: seaborn (>=0.11.2,<0.12.0)
+Requires-Dist: tensorflow (>=2.9.1,<3.0.0); python_version >= "3.9" and python_version < "3.11"
+Requires-Dist: tqdm (>=4.64.0,<5.0.0)
+Requires-Dist: xgboost (>=1.6.1,<2.0.0)
