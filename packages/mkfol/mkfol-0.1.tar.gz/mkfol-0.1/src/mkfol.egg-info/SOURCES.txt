@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/mkfol.egg-info/PKG-INFO
+src/mkfol.egg-info/SOURCES.txt
+src/mkfol.egg-info/dependency_links.txt
+src/mkfol.egg-info/entry_points.txt
+src/mkfol.egg-info/requires.txt
+src/mkfol.egg-info/top_level.txt
