@@ -1,0 +1,10 @@
+README.md
+setup.py
+dev/src/ireland.egg-info/PKG-INFO
+dev/src/ireland.egg-info/SOURCES.txt
+dev/src/ireland.egg-info/dependency_links.txt
+dev/src/ireland.egg-info/top_level.txt
+dev/src/ireland.egg-info/PKG-INFO
+dev/src/ireland.egg-info/SOURCES.txt
+dev/src/ireland.egg-info/dependency_links.txt
+dev/src/ireland.egg-info/top_level.txt
