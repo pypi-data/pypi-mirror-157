@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: idtrackerai-app-shaliulab
+Version: 1.0.7
+Home-page: https://idtrackerai-app.readthedocs.org
+Author: ['Ricardo Ribeiro', 'Francisco Romero Ferrero']
+Author-email: idtrackerai@gmail.com, ricardojvr@gmail.com, paco.romero.ferrero@gmail.com
+Requires-Dist: rich
+Requires-Dist: pyforms-terminal (==4.*)
+Requires-Dist: imgstore-shaliulab (>=0.4.9)
+Provides-Extra: gui
+Requires-Dist: pyforms-gui (==4.904.152) ; extra == 'gui'
+Requires-Dist: python-video-annotator (==3.306) ; extra == 'gui'
+Requires-Dist: python-video-annotator-module-idtrackerai (==1.0.0a0) ; extra == 'gui'
+Provides-Extra: only-gui
+Requires-Dist: pyforms-gui (==4.904.152) ; extra == 'only-gui'
+
