@@ -1,0 +1,2 @@
+[datasette]
+query_files = datasette_query_files
